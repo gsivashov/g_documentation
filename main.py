@@ -65,7 +65,6 @@ if __name__ == '__main__':
         '--file',
         type=str,
         help='file path',
-        required=True,
         default='url_list.txt',
     )
     params = parser.parse_args()
