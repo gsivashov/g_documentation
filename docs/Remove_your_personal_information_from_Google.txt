@@ -1,0 +1,21 @@
+Remove your personal information from GoogleGoogle Search shows information gathered from websites across the web. The best way to remove information about yourself in Google’s search results is to contact the website owner who published the information. If they remove it, Google won’t find the information to list in search results.
+If the website owner won’t remove it, Google will remove certain types of sensitive personal information.
+Contact the owner of the website
+To contact the website owner:
+Contact us link: Find a "Contact us" link or an email address for the site owner. This information is often at the bottom of the site's homepage.
+Find contact information using Whois: You can perform a Whois ("who is?") search for the site owner using Google. Go to google.com and search for whois www.example.com. The email address to contact the site owner can often be found under Registrant Email or Administrative Contact.
+Contact the site's hosting company: The Whois search result usually includes information about who hosts the website. If you're unable to reach the website owner, try contacting the site's hosting company.
+If the website owner has removed the information, it will eventually be removed from Google Search as part of our regular updating process. To speed up the process of removing it from Google Search, use the Outdated Content Removal tool.
+Personal information that Google will remove
+If you are unable to have a website remove material, Google may remove personal information that creates significant risks of identity theft, financial fraud, or other specific harms. Here is more advice about common removal requests:
+Remove unwanted & explicit personal images from Google
+Remove involuntary fake pornography from Google
+Remove content about me on sites with exploitative removal practices from Google
+Remove select financial, medical and national ID information from Google
+Remove “doxxing” content - content exposing contact information with an intent to harm
+If you believe your request meets one of our policy guidelines mentioned above, you can make a removal request here.
+Other information that Google will remove
+Google also removes content for specific legal reasons, such as DMCA copyright violation reports and child sexual abuse imagery. To request a removal for a legal reason, use the legal troubleshooter form.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+HelpRemove your personal information from GoogleProblems with Google SearchReport a problem with Google Search

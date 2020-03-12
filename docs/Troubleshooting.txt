@@ -1,0 +1,11 @@
+Home
+Products
+Search for Developers
+Guides
+Troubleshooting
+If your podcast isn't appearing in Google Search or Google Podcasts, try the following steps. Note that Google doesn't guarantee that every podcast will show up in Google Search or Google Podcasts.
+Make sure your feed is indexed using the link generator tool. If the tool shows that your feed “is not currently indexed by Google Podcasts,” make sure you are following our podcast guidelines. If you have additional questions, visit the Google Webmaster Central Help Forum.
+Register your feed URL with Google
+PubSubHubbub site. This can prompt Google to crawl and ingest your feed faster.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-05-21.

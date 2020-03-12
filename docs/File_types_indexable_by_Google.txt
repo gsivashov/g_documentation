@@ -1,0 +1,32 @@
+File types indexable by GoogleGoogle can index the content of most types of pages and files. The most common file types we index include:
+Adobe Flash (.swf)
+Adobe Portable Document Format (.pdf)
+Adobe PostScript (.ps)
+Autodesk Design Web Format (.dwf)
+Google Earth (.kml, .kmz)
+GPS eXchange Format (.gpx)
+Hancom Hanword (.hwp)
+HTML (.htm, .html, other file extensions)
+Microsoft Excel (.xls, .xlsx)
+Microsoft PowerPoint (.ppt, .pptx)
+Microsoft Word (.doc, .docx)
+OpenOffice presentation (.odp)
+OpenOffice spreadsheet (.ods)
+OpenOffice text (.odt)
+Rich Text Format (.rtf)
+Scalable Vector Graphics (.svg)
+TeX/LaTeX (.tex)
+Text (.txt, .text, other file extensions), including source code in common programming languages:
+Basic source code (.bas)
+C/C++ source code (.c, .cc, .cpp, .cxx, .h, .hpp)
+C# source code (.cs)
+Java source code (.java)
+Perl source code (.pl)
+Python source code (.py)
+Wireless Markup Language (.wml, .wap)
+XML (.xml)
+Search by file type
+You can use the filetype: operator in Google Search to limit results to a specific file type. For example, filetype:rtf galway will search for RTF files with the term "galway" in them.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

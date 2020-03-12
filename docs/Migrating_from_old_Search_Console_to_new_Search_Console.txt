@@ -1,0 +1,114 @@
+Migrating from old Search Console to new Search ConsoleMigration guide for existing usersIf you have been using old Search Console, this guide will show you the main differences between old and new Search Console. You can find the full list of new reports, and some old favorites, in the Reports at a Glance page.
+General changes
+New Search Console has the following improvements over the old version:
+Sixteen months of search traffic data, versus three months in the old product
+Detailed information about a specific page, including index coverage, canonical URL, mobile usability, and more
+Tracking flows to help you monitor, fix, and request a recrawl of pages affected by crawling issues.
+New and improved reports and tools, described next.
+Works on mobile devices.
+Comparison of tools and reports
+We have created new versions of many reports and tools, and will continue to migrate more. Here is a comparison of the of tools and reports in the old and new new Search Console. This list will change as we continue to add new reports.
+Old Search Console report
+Replacement in New Search Console
+Comparison
+Search Analytics
+Performance
+New report has 16 months' of data and is much easier to use.
+Rich Cards
+Individual Enhancement reports
+New reports provide detailed debugging information, and a one-click request to recrawl fixed issues.
+Links to your Site
+Internal links
+Links
+New report combines both Links to your Site and Internal Links report, with more reliable link count numbers.
+Index status
+Index Coverage
+New report provides all the information of the old report, plus detailed crawl status information from the Google Index.
+Sitemaps report
+Sitemaps
+Similar information, but better-designed report. The old report supports testing a sitemap without submitting it; the new report tests only upon submission.
+Accelerated Mobile Pages
+AMP
+Many more error types reported in the new report, plus a fix flow to request reindexing of fixed pages.
+Manual Actions
+Manual Actions
+The new report shows your manual action history, including review requests and results.
+Fetch as Google
+URL Inspection tool
+The URL Inspection tool shows information about the indexed and live versions of a URL, with the ability to request a crawl. New information includes the URL of the canonical page, any noindex/nocrawl blocks, and whether or not the URL is in the Google index.
+Mobile Usability
+Mobile Usability
+Similar information, but in a more usable format. Also provides a fix flow to request reindexing of pages with fixed mobile usability issues.
+Crawl Errors report
+Index coverage report and URL Inspection tool
+Crawl errors are shown at the site level in the new Index Coverage report, and at the individual URL level in the new URL Inspection tool. These reports help prioritize the severity of the issue, and group pages by similar issue to help you find common underlying causes.
+The old report showed every single error encountered over the past three months, including some stale, transient, or relatively unimportant errors. The new reports focus on the issues in the past month that matter to Google: you are only shown an issue if it threatens to remove your page from the index or prevent the page from being indexed.
+We also prioritize the importance of issues shown; for example, 404s are only considered an error if you specifically asked us to crawl a URL, such as through a sitemap.
+These new behaviors help you focus on issues that affect your site in the Google index, rather than simply reporting a laundry list of all errors that Googlebot ever encountered on your site.
+The following errors are remapped or not shown in the new Index Coverage report:​
+URL errors - Desktop
+Old error category
+Replacement
+Server error
+All server errors are reported in Index Coverage as Server error (5xx).
+Soft 404
+Reported in Index Coverage as one of the following, depending on whether or not you submitted the error to be crawled:
+Error: Submitted URL seems to be a soft 404
+Excluded: Soft 404
+Access denied
+Reported in Index Coverage as one of the following, depending on whether or not you submitted the error to be crawled:
+Error: Submitted URL returns unauthorized request (401)
+Excluded: Blocked due to unauthorized request (401)
+Not found
+Reported in Index Coverage as one of the following, depending on whether or not you submitted the error to be crawled:
+Error: Submitted URL not found (404)
+Excluded: Not found (404)
+Other
+Reported as Crawl Anomaly in Index Coverage report.
+URL errors - Smartphone
+Not currently reported, but we hope to provide a solution to this.
+Site errors
+Site errors are not shown in new Search Console.
+Security Issues
+New Security Issues report
+The new Security Issues report replaces most of the functionality of the old report, plus shows a history of issues for your site.
+Structured Data
+Rich Results test and Rich Results reports
+For individual URLs, use the Rich Results test (or URL Inspection tool). For site-wide reporting see the individual Rich Results reports for your site. Although not every rich result type has a report yet, our coverage is increasing.
+HTML Improvements
+None
+No equivalent report provided; please follow best practices to improve your titles and snippets.
+Blocked Resources
+URL Inspection tool
+No site-wide view of blocked resources is available, but you can see a list of blocked resources for individual URLs using the URL Inspection tool.
+Android apps
+None
+Android apps are no longer supported in Search Console after March, 2019.
+Property sets
+None
+Property sets are no longer supported in Search Console after March, 2019.
+Messages
+Message panel
+For messages dating from May 23, 2019 onward, you can read your messages in the message panel. You can find older messages in the old message list page.
+Other tools and reports
+A few reports and tools exist in legacy state; you can find them on the Reports at a Glance page.
+New ways to perform old tasks
+Some common task steps have changed in new Search Console. Here is a summary of the most common:
+Add a new property: Read the new property flow. All properties are now listed in the dropdown list in the navigation bar in every page. You can remove a property from the list to stop receiving notifications about it.
+Manage users and permissions: Use the new user management page in Search Console.
+Change properties: Use the property selector dropdown in the navigation section of the document.
+Check for robots.txt or noindex: Use the URL Inspection tool to inspect robots.txt and noindex status for an indexed or live version of a page.
+Test Googlebot's ability to fetch a page: Use the URL Inspection tool to run a live test of the page.
+Upload a sitemap: Use the new Sitemaps report to upload sitemaps. Uploaded sitemaps will be tested immediately.
+Debug rich results: Use the Individual Enhancement reports visible in the status page.
+Look for site-level indexing errors: Use the Index Coverage report to view indexing stats at the site level.
+Look for page-level index errors: Use the new URL Inspection tool to learn detailed crawling issues for a specific page.
+Request a page crawl: Inspect the live page using the new URL Inspection tool and request a recrawl.
+Inspect a live page: Using the new URL Inspection tool. Screenshots of the Googlebot requested page are now available.
+Read site clicks, impressions, and CTR (Search Analytics): Use the equivalent Performance Report.
+Users and permissions and verification details are still accessible through the settings icon
+on the navigation panel.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+HelpReports at a glanceAll reports and toolsUsing Search Console with your websiteGet your site on Search ConsoleMigrating from old Search Console to new Search Console
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

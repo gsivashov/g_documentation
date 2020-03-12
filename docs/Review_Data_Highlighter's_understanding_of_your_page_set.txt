@@ -1,0 +1,19 @@
+Review Data Highlighter's understanding of your page setBefore you publish a page set, consider looking through some of the pages and reviewing Data Highlighter's understanding of them. The more tagging errors you find and correct before publishing your page set, the more data that Data Highlighter can make available to Google products.
+Review Data Highlighter's understanding of your page set:
+View the page set's Publish page:
+On the Webmaster Tools home page, click the site.
+On the Dashboard, click Search Appearance.
+Click Data Highlighter.
+Click the name of a page set.
+In the search bar at the top of the Publish page, click the down arrow and select one of the following filters:
+Most atypical pages - displays up to ten pages that are unlike other pages in your page set. These are the pages most likely to have tagging errors.
+Randomly selected pages - displays up to ten random pages.
+My example pages - displays the example pages that you tagged and reviewed.
+Review the tagging on the pages and correct any tagging errors. For example, if Boston displays, click Boston. Then review the tagging and do one of the following:
+If the tagging is incorrect, click the X next to the data. Then re-tag the data.
+If the tagging is correct, click the alert icon itself () and select Clear warning.
+Select a different filter and review the tagging.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Create a page setCreate a page set that contains a single pageCreate a page set that contains multiple pagesTagging datesTagging ratingsReview Data Highlighter's understanding of your page setAdd missing data
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

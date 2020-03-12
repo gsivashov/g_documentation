@@ -1,0 +1,23 @@
+Remove tagsIf you want to undo some or all of the tags Structured Data Markup Helper has created, you can clear tags.
+Clear a specific tag
+To view the Tag Data page:
+While creating an example: The Tag Data page shows when you click Start Tagging on Markup Helper's first page.
+After creating an example:
+In your browser, enter the URL for the example markup that Markup Helper created. (Markup Helper does not maintain the list of example pages you specifically created, so you'll need to bookmark the example page before you leave.)
+Click Back to tagging
+Click on the tag in the example page or email.
+From the pop-up menu that displays after you click the tag, select Clear tag.
+Alternatively, you can find the data in the My Data Items column, rest the mouse pointer on the data, and click the X that appears.
+You can clear all of the tags Structured Data Markup Helper has created, but be careful: you cannot undo a clear all tags request. Instead, you'll need to start tagging again from scratch. If your content already has markup, Markup Helper will not remove the existing markup. Clearing all tags will only remove the tags that Markup Helper has added.
+Clear all tags
+To view the Tag Data page:
+While creating an example: The Tag Data page shows when you click Start Tagging on Markup Helper's first page.
+After creating an example:
+In your browser, enter the URL for the example markup that Markup Helper created. (Markup Helper does not maintain the list of example pages you specifically created, so you'll need to bookmark the example page before you leave.)
+Click Back to tagging
+Click the gear icon.
+Select Clear all tags from this page.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Structured Data Markup HelperStructured Data Markup HelperTagging datesAdd missing dataRemove tagsTag an email templateManually add markup for a propertyReview and download the markup example
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

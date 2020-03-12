@@ -1,0 +1,240 @@
+Home
+Products
+Search for Developers
+Reference
+Article
+Adding structured data to your news, blog, and sports article page can enhance your appearance in Google Search results. Enhanced features can include placement in the Top stories carousel, host carousel, Visual stories, and rich result features such as headline text and larger-than-thumbnail images. Your page may be eligible for different features depending on how you code your page:
+AMP with structured data: [Recommended] AMP
+pages with structured data can appear in the Top stories carousel, host carousel of rich
+results, Visual stories, and rich results in mobile Search results. These results can include
+images, page logos, and other interesting search result features.
+Non-AMP web page with structured data: Non-AMP
+article pages that include structured data can increase the likelihood of appearing in search
+results with rich result features.
+By structuring your content according to this guide,
+your content may be automatically turned into an Action on the Google Assistant.
+Examples
+Here's an example of JSON-LD code for an Article object.
+<html>
+<head>
+<title>Article headline</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "NewsArticle",
+"mainEntityOfPage": {
+"@type": "WebPage",
+"@id": "https://google.com/article"
+},
+"headline": "Article headline",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"datePublished": "2015-02-05T08:00:00+08:00",
+"dateModified": "2015-02-05T09:20:00+08:00",
+"author": {
+"@type": "Person",
+"name": "John Doe"
+},
+"publisher": {
+"@type": "Organization",
+"name": "Google",
+"logo": {
+"@type": "ImageObject",
+"url": "https://google.com/logo.jpg"
+}
+},
+"description": "A most wonderful article"
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Implementation
+AMP with structured data
+AMP pages that have structured data can appear in a carousel of stories in search results.
+Without structured data, AMP pages may only appear as standard blue links in Google Search results.
+For more information about AMP in search results, see
+About AMP on Google Search.
+To create an AMP page with structured data:
+Follow the AMP Project
+specifications.
+Follow the additional page guidelines to ensure that
+Google can crawl your page.
+Add a structured data element describing the article on the page.
+If you have duplicate pages for the same content, we recommend placing the
+same structured data on all page duplicates, not just on the canonical page. For more
+information on placement, see the Structured Data
+General Guidelines.
+Test your structured data using the Structured Data Testing Tool.
+Non-AMP page with structured data
+Non-AMP pages can be shown as a rich result in a rich result list, or in a carousel of similar
+non-AMP pages. Rich results can include headlines and images. Although Google can try to extract
+enough information from your page automatically to qualify for these features, if you include
+structured data on the page it can help Google better understand your page content and increase
+the likelihood of a rich or carousel result.
+Non-AMP search results can include a headline and an image, as shown here:
+Two non-carousel results for non-AMP web pages.
+Carousel results for non-AMP web pages
+To add structured data to your non-AMP article page:
+Add a structured data element to your page, describing the
+article on the page.
+Read the guidelines to ensure that
+Google can crawl your page.
+Test your structured data using the Structured Data Testing Tool.
+Google recommends creating an AMP version of your page to provide a better user experience on
+mobile devices. Read more about the benefits
+of AMP on mobile devices.
+Guidelines
+You must follow these guidelines to enable structured data to be eligible for inclusion in Google Search results.
+Warning: If your site violates one or more of these guidelines, then Google may take manual action against it. Once you have remedied the problem, you can submit your site for reconsideration.
+Webmaster guidelines
+General structured data guidelines
+Technical guidelines
+AMP logo guidelines (if applicable)
+AMP story metadata requirements (if applicable)
+Technical guidelines
+If you offer subscription-based access to your website content, or if users must register for access,
+you should add structured data for subscription and paywalled content.
+For multi-part content, make sure that the rel=canonical points at either
+each individual page or a "view-all" page (and not to page 1 of a multi-part series). Learn
+more about canonicalization.
+AMP logo guidelines
+The following guidelines apply to logos for all AMP pages, including AMP stories.
+The file must be a raster file, such as .jpg, .png, or .gif. Don't use vector files, such as .svg or .eps.
+Don't use animation.
+The graphic part of the logo should be legible on the background color.
+The following guidelines apply to logos used for general AMP pages, not AMP stories. There are different logo requirements for AMP stories.
+The logo must be a rectangle, not a square.
+The logo should fit in a 60x600px rectangle, and either be exactly 60px high (preferred), or exactly 600px wide.
+For example, 450x45px would not be acceptable, even though it
+fits within the 600x60px rectangle.
+Publishers should use only one logo per brand that is consistent across general AMP pages.
+Use full wordmark or full logo; not an icon.
+The text in word-based logos should be at most 48px tall and centered vertically within
+the 60px image height. Add additional space to pad the height to 60px.
+Logos with a solid background should include 6px minimum padding around the
+graphic.
+Structured data type definitions
+The following section describes the property requirements for Article
+structured data. You must include the required properties for your content to be eligible for display as a rich result. You can also include the recommended properties to add more information about your content, which could provide a better user experience.
+Article objects
+Article objects must be based on one of the following
+schema.org types: Article,
+NewsArticle, BlogPosting.
+AMP
+The following properties apply to AMP pages.
+Required properties
+author
+Person or Organization
+The author of the article.
+author.name
+Text
+The name of the author.
+datePublished
+DateTime
+The date and time the article was first published, in ISO 8601 format.
+Best practices:
+The date shouldn't change over time.
+We recommend including the hour information in addition to the day in the timestamp.
+The value for dateModified should be more recent than the value for datePublished.
+headline
+Text
+The headline of the article. Headlines should not exceed 110 characters. For AMP stories, the headline should match the text in the first cover page in the AMP Story.
+image
+Repeated property of ImageObject or URL
+The URL to an image that is representative of the article or AMP story.
+Due to format differences in search results, the following image guidelines only apply to general AMP pages, not AMP stories. AMP stories have different requirements for images.
+Only a marked-up image that directly belongs to the article should be specified.
+Images should be at least 1200 pixels wide.
+Every page must contain at least one image (whether or not you include markup). Google will pick
+the best image to display in Search results based on the aspect ratio and resolution.
+Image URLs must be crawlable and indexable.
+Images must represent the marked up content.
+Images must be in .jpg, .png, or .gif format.
+For best results, provide multiple high-resolution images (minimum of 800,000 pixels when multiplying width and
+height) with the following aspect ratios: 16x9, 4x3, and 1x1.
+For example:
+{
+"@context": "https://schema.org",
+"@type": "NewsArticle",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+]
+}
+publisher
+Organization
+The publisher of the article.
+publisher.logo
+ImageObject
+The logo of the publisher. See the AMP logo guidelines for details.
+publisher.logo.height
+Number
+The height of the logo, in pixels.
+publisher.logo.url
+URL
+The URL of the logo.
+publisher.logo.width
+Number
+The width of the logo, in pixels.
+publisher.name
+Text
+The name of the publisher.
+Recommended properties
+dateModified
+DateTime
+The date and time the article was most recently modified, in ISO 8601 format.
+description
+Text
+A short description of the article.
+mainEntityOfPage
+URL
+The canonical URL of the article page. Specify mainEntityOfPage when the
+article is the primary topic of the article page.
+Non-AMP
+The following properties apply to non-AMP pages.
+Recommended properties
+dateModified
+DateTime
+The date and time the article was most recently modified, in ISO 8601 format.
+Add the dateModified property if you want to provide more accurate date information to Google.
+The Structured Data Testing Tool doesn't show a warning for this property,
+as it's only recommended if you decide that it's applicable to your site.
+datePublished
+DateTime
+The date and time the article was first published, in ISO 8601 format.
+Add the datePublished if you want to provide more accurate date information to Google.
+The Structured Data Testing Tool doesn't show a warning for this property,
+as it's only recommended if you decide that it's applicable to your site.
+headline
+Text
+The headline of the article. Headlines should not exceed 110 characters.
+image
+Repeated ImageObject or URL
+The URL to an image that is representative of the article. Only a marked-up image that directly
+belongs to the article should be specified. Images should be at least 696 pixels wide.
+Additional image guidelines:
+Every page must contain at least one image (whether or not you include markup). Google will pick
+the best image to display in Search results based on the aspect ratio and resolution.
+Image URLs must be crawlable and indexable.
+Images must represent the marked up content.
+Images must be in .jpg, .png, or. gif format.
+For best results, provide multiple high-resolution images (minimum of 300,000 pixels when multiplying width and
+height) with the following aspect ratios: 16x9, 4x3, and 1x1.
+For example:
+{
+"@context": "https://schema.org",
+"@type": "NewsArticle",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+]
+}
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

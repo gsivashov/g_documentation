@@ -1,0 +1,94 @@
+Add a website propertyHere is how to add a website property to your Search Console account. Note that you must be able to prove that you own the site (or appropriate section of that site) in order to add it to your Search Console account. You can create a property that includes an entire domain (example.com) or a property that is limited to a single branch (example.com/clothing/).
+Contents:
+Types of website properties
+Add a new property
+Re-add a removed property
+Types of website properties
+Search Console supports the following website property types:
+URL-prefix property
+Domain property
+Description
+Includes only URLs with the specified prefix, including the protocol (http/https). If you want your property to match any protocol or subdomain (http/https/www./m. and so on), consider adding a Domain property instead. See more details.
+A domain-level property that Includes all subdomains (m, www, and so on) and multiple protocols (http, https, ftp). See more details.
+Verification
+Many types
+DNS record verification only
+Examples
+Property http://example.com/
+✔ http://example.com/dresses/1234
+🅧 https://example.com/dresses/1234 - https does not match
+🅧 http://www.example.com/dresses/1234 - www. does not match
+Property example.com
+✔ http://example.com/dresses/1234
+✔ https://example.com/dresses/1234
+✔ http://www.example.com/dresses/1234
+✔ http://support.m.example.com/dresses/1234
+Add a new property
+To add a new property:
+Open the property selector dropdown in any Search Console page.
+Select + Add property on the dropdown.
+Choose the type of property to add:
+URL-prefix property
+Specify the URL of your property exactly as it appears in the browser bar, including the final / mark. Any URLs that start with this prefix are included in your property.
+If your site supports multiple protocols (http and https), you must add a separate property for each protocol. Similarly, if you support multiple subdomains (such as example.com, m.example.com, and www.example.com) you must add a separate property for each subdomain.
+If you support other variations in your domain or protocol (m.example.com, http://example.com, https://example.com), consider telling Google which URLs are canonical.
+If you need to track data separately for multiple subsections of your site, consider creating a Search Console property for each domain or subpath that you want to track separately, as well as a property that contains them all. For example, if you have a travel site with specific subfolders covering Ireland, France, and Spain, you might create accounts for the following URL-prefix properties:
+https://www.example.com/ (or a Domain property for example.com)
+https://www.example.com/france/
+https://www.example.com/ireland/
+https://www.example.com/spain/
+http://m.example.com/ (for your mobile site)
+Domain property
+Specify the domain to cover. See below to learn the supported URL syntax and which URLs are included in your property. A Domain property requires DNS record verification to prove ownership, unless the property is on a Google product such as Blogger or Google Sites.
+Syntax
+A Domain property URL is a URL without a protocol (http/https) or any directory parts (/some/path/). Note that the public suffix (.org, .com, and so on) is part of the property name, so the Domain property "example.com" does not include "example.org" or "example.il.com".
+The following URLs are all valid Domain property definitions:
+m.example.com
+example.com
+support.m.example.org
+support.m.example.co.es
+www is ignored. If you add www to your property name, the www will be ignored. For example, if you specify www.example.com as your property URL, the property will be created as example.com
+Coverage
+A Domain property aggregates data for all subdomains, protocols, and subpaths of the property. For example, if you define a Domain property as "example.com", the data includes example.com, any subdomains of example.com (for example, m.example.com, support.m.example.com, www.example.com, and so on), and any subpaths of any of those domains, on http, https, and ftp.
+Here are some example Domain properties, and what they aggregate:
+This domain ...
+... includes these URLs.
+example.com
+http://example.com
+https://example.com
+http://m.example.com
+http://a.b.c.example.com
+https://m.example.com/any/path/here
+...
+fish.example.com
+http://fish.example.com
+https://fish.example.com
+https://support.fish.example.com
+https://support.fish.example.com/any/path/here
+...
+NOT example.com
+example.co.cn
+http://example.co.cn
+https://example.co.cn
+https://support.example.co.cn
+https://support.example.co.cn/any/path/here
+...
+NOT example.co
+If you want to separate your Domain property data by subdomain, path, or protocol, use one of the following techniques:
+Add a page filter in the Performance report to see data for specific protocols or subdomains
+Create additional URL-prefix properties for segments of the Domain property; for example for the Domain property example.com, create additional properties for m.example.com, http://example.com, https://example.com/spain/, and so on.
+Google-hosted property
+If you own a Google-hosted property, such as a Sites or Blogger site, or a G Suite account, you can create either a URL-prefix or Domain property, as appropriate, depending on whether you own the domain or just a subpath below the domain. Verification will happen automatically, if you are signed in with the same account as the Google-hosted property.
+You will be given a selection of verification methods to use for your property. When you choose a verification method in Search Console you will be shown the required verification steps for that method. You can verify immediately or save your settings and resume the process later:
+To verify immediately, follow the verification steps described without closing the popup window, then click Verify in the popup window. If it will take you some time to perform these steps, you can always save your settings and resume the process later (described next).
+To pause and resume the process later, click Verify later to save your current state, close the popup, and verify your site at your convenience. After you have performed the required verification steps, finish verification by selecting the saved (but unverified) property in the property selector in the navigation bar, and selecting Verify.
+Data should begin to appear in your property in a few days. Data collection for a property starts as soon anyone adds the property in any Search Console account, even before verification. Data collection continues as long as any user has that property in their account, whether or not it has a verified owner. If your property has no data several days after verification, it is possibly because the site hasn't been seen in Google Search, or that you have specified the wrong URL (for example, you specified http instead of https for your URL-prefix property).
+Support for non-latin characters in property URLs
+Search Console supports Internationalizing Domain Names in Applications (IDNA) as site URLs. Just type your domain name as usual, and it will appear correctly in Search Console. For example, if you type http://bücher.example.com/ in the Add property box, it will appear correctly.
+Re-add a removed property
+You can re-add a property that you have removed without verification, as long as the property still has one verified owner.
+To re-add the property, simply add the property as described above in steps 1-3, and you should automatically be re-verified.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Get your site on Search ConsoleAdd a website propertyRemove a property from your listVerify your site ownershipManaging owners, users, and permissionsI don't recognize this new owner
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -1,0 +1,46 @@
+Home
+Products
+Search for Developers
+Guides
+3D and AR Early Adopters Program
+3D and Augmented Reality (AR) results help people view your 3D content directly from Google
+Search results. If people tap the View in 3D chip, it takes them into an
+immersive experience where they can interact with your 3D asset or even place it in their
+space with AR. From this viewer experience, they can either tap a chip to continue to your
+website or exit to the Google Search results page.
+The following are examples of how, with this feature, people can interact with your content
+in a more immersive way:
+Product models for product pages
+Popular characters or objects from media entertainment that come to life in 3D
+Educational content that is more effectively understood in 3D
+Feature availability
+3D and AR in Google Search is available in all languages and countries where Google Search is
+available.
+Example
+Here's an example that shows the entire flow from when a user views a 3D and AR
+result to
+when that user lands on a website. The pink bubbles indicate where a user taps on the
+screen.
+Understanding how 3D models work
+This feature uses 3D models to allow a user to view objects in 3D and place them in their
+space. A 3D model is an immersive media format that allows a user to zoom in, zoom out, and
+rotate with limitless granularity to explore every angle of an object. 3D models differ from
+video in that the user is in control of what angles of an object they see, where a video only
+shows the angles that it captures. They differ from 360 panoramas in that they allow limitless
+granularity when the user rotates and zooms, whereas 360 panoramas only allow the user to
+rotate and zoom to preset angles.
+3D models can be used with AR to allow a user to place a model of an object in their space,
+which provides another level of immersion. While images can also be used with AR, they're 2D
+and won’t provide the level of realism that a 3D model does.
+3D model files store information about a model’s geometry, texture, and color and can also
+include information about its scene and animations. The glTF and USDZ formats are used to
+render a 3D model in real-time on mobile devices. To use this feature, you'll need to provide
+us with at least one glTF file. There are hundreds of other formats such as FBX, OBJ, and
+COLLADA, but these formats need to be converted to glTF or USDZ to render on mobile devices.
+Express interest
+To ensure the best experience for users, this feature is currently restricted to a limited
+number of organizations. If you would like to participate,
+register your interest with our
+form.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-11-21.

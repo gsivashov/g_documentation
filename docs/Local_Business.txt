@@ -1,0 +1,486 @@
+Home
+Products
+Search for Developers
+Reference
+Local Business
+When users search for businesses on Google Search or Maps, Search results may
+display a prominent Knowledge Graph card with details about a business that matched
+the query. When users query for a type of business (for example, "best NYC restaurants"), they
+may see a carousel of businesses related to the query. With Local Business structured data, you
+can tell Google about your business hours, different departments within a business, reviews for
+your business, and more. If you want to help users to make a reservation or place an order
+directly in Search results, you can use the Maps Booking API to enable bookings, payments, and other actions.
+Examples
+Simple local business listing
+Here's an example of a simple local business listing using JSON-LD.
+<html>
+<head>
+<title>Dave's Steak House</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Restaurant",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"@id": "http://davessteakhouse.example.com",
+"name": "Dave's Steak House",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "148 W 51st St",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10019",
+"addressCountry": "US"
+},
+"review": {
+"@type": "Review",
+"reviewRating": {
+"@type": "Rating",
+"ratingValue": "4",
+"bestRating": "5"
+},
+"author": {
+"@type": "Person",
+"name": "Lillian Ruiz"
+}
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.761293,
+"longitude": -73.982294
+},
+"url": "http://www.example.com/restaurant-locations/manhattan",
+"telephone": "+12122459600",
+"servesCuisine": "American",
+"priceRange": "$$$",
+"openingHoursSpecification": [
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": [
+"Monday",
+"Tuesday"
+],
+"opens": "11:30",
+"closes": "22:00"
+},
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": [
+"Wednesday",
+"Thursday",
+"Friday"
+],
+"opens": "11:30",
+"closes": "23:00"
+},
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": "Saturday",
+"opens": "16:00",
+"closes": "23:00"
+},
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": "Sunday",
+"opens": "16:00",
+"closes": "22:00"
+}
+],
+"menu": "http://www.example.com/menu",
+"acceptsReservations": "True"
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Restaurant carousel (limited access)
+Here's an example of a restaurant carousel. The Restaurant carousel is currently limited to a
+small set of restaurant providers. If you would like to participate, register your interest in our form.
+<html>
+<head>
+<title>Trattoria Luigi</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "Restaurant",
+"name": "Trattoria Luigi",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"priceRange": "$$$",
+"servesCuisine": "Italian",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "148 W 51st St",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10019",
+"addressCountry": "US"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Business hours
+The following examples demonstrate how to mark up different types of business
+hours.
+We accept both the official schema.org notation for indicating
+dayOfWeek
+(canonical URLs for Monday, Tuesday), as well as a
+shorter form being discussed in the schema.org community. We expect
+to update this documentation to track the
+eventual outcome of those discussions, and to continue to accept both
+variations for backwards compatibility.
+Standard hours
+Excluding the validFrom and validThrough properties signify that the hours are valid year-round.This example defines a business that is open weekdays from 9am to 9pm, with
+weekend hours from 10am until 11pm.
+"openingHoursSpecification": [
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": [
+"Monday",
+"Tuesday",
+"Wednesday",
+"Thursday",
+"Friday"
+],
+"opens": "09:00",
+"closes": "21:00"
+},
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": [
+"Saturday",
+"Sunday"
+],
+"opens": "10:00",
+"closes": "23:00"
+}
+]
+Late night hours
+For hours past midnight, define opening and closing hours using
+a single OpeningHoursSpecification property. This example defines hours from Saturday
+at 6pm until Sunday at 3am.
+"openingHoursSpecification": {
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": "Saturday",
+"opens": "18:00",
+"closes": "03:00"
+}
+All-day hours
+To show a business as open 24 hours a day, set the open
+property to "00:00" and the closes property to "23:59".To show a business is closed
+all day, set both opens and closes properties to "00:00". This example
+shows a business open all day Saturday and closed all day Sunday.
+"openingHoursSpecification": [
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": "Saturday",
+"opens": "00:00",
+"closes": "23:59"
+},
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": "Sunday",
+"opens": "00:00",
+"closes": "00:00"
+}
+]
+Seasonal hours
+Use both the validFrom and validThrough properties to define seasonal
+hours. This example shows a business closed for winter holidays.
+"openingHoursSpecification": {
+"@type": "OpeningHoursSpecification",
+"opens": "00:00",
+"closes": "00:00",
+"validFrom": "2015-12-23",
+"validThrough": "2016-01-05"
+}
+Multiple departments
+For a business with departments, each with its own distinct properties such
+as opening hours or telephone numbers, you can mark up the department property
+with an element for each department. Define properties that differ
+from the main store individually in each respective department element.
+<html>
+<head>
+<title>Dave's Department Store</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Store",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"@id": "http://davesdeptstore.example.com",
+"name": "Dave's Department Store",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "1600 Saratoga Ave",
+"addressLocality": "San Jose",
+"addressRegion": "CA",
+"postalCode": "95129",
+"addressCountry": "US"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 37.293058,
+"longitude": -121.988331
+},
+"url": "http://www.example.com/store-locator/sl/San-Jose-Westgate-Store/1427",
+"priceRange": "$$$",
+"telephone": "+14088717984",
+"openingHoursSpecification": [
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": [
+"Monday",
+"Tuesday",
+"Wednesday",
+"Thursday",
+"Friday",
+"Saturday"
+],
+"opens": "08:00",
+"closes": "23:59"
+},
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": "Sunday",
+"opens": "08:00",
+"closes": "23:00"
+}
+],
+"department": [
+{
+"@type": "Pharmacy",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"name": "Dave's Pharmacy",
+"telephone": "+14088719385",
+"openingHoursSpecification": [
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": [
+"Monday",
+"Tuesday",
+"Wednesday",
+"Thursday",
+"Friday"
+],
+"opens": "09:00",
+"closes": "19:00"
+},
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": "Saturday",
+"opens": "09:00",
+"closes": "17:00"
+},
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": "Sunday",
+"opens": "11:00",
+"closes": "17:00"
+}
+]
+}
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Guidelines
+You must follow these guidelines to be eligible to appear in Local Business rich results.
+Warning: If your site violates one or more of these guidelines,
+then Google may issue a manual
+action against it. Once you have remedied the problem, you can submit your site for reconsideration.
+Webmaster guidelines
+General structured data guidelines
+Carousel guidelines (if applicable). The
+Restaurant carousel is currently limited to a small set of restaurant providers. If you would
+like to participate, register your interest in our form.
+Structured data type definitions
+The following tables list properties and usage for local business and business
+action types, based on the full definitions at
+schema.org/LocalBusiness.
+You must include the required properties for your content to be eligible for display as a rich result.
+You can also include the recommended properties to add more information about your content,
+which could provide a better user experience.
+LocalBusiness
+The full definition of LocalBusiness is available at
+schema.org/LocalBusiness. Define each local
+business location as a LocalBusiness type. Use
+the most specific LocalBusiness sub-type possible; for example,
+Restaurant,
+DaySpa,
+HealthClub, and so on.
+Required properties
+@id
+URL
+Globally unique ID of the specific business location in the form of a URL. The
+ID should be stable and unchanging over time. Google Search treats the URL as
+an opaque string and it does not have to be a working link. If the business has
+multiple locations, make sure the @id is unique for each location.
+address
+PostalAddress
+The physical location of the business. Include as many properties as possible. The more
+properties you provide, the higher quality the result is to users. For example:
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "148 W 51st St",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10019",
+"addressCountry": "US"
+}
+name
+Text
+The name of the business.
+Recommended properties
+aggregateRating
+AggregateRating
+The average rating of the local business based on multiple ratings or reviews. Follow the
+Review snippet
+guidelines and the list of required and recommended
+aggregate
+rating properties.
+department
+LocalBusiness
+A nested item for a single department. You can define any of the
+properties in this table for a department.
+Additional guidelines:
+Include the store name with the department name in the following
+format: {store name} {department name}. For example, gMart and
+gMart Pharmacy.
+If the department name is explicitly branded, specify a department name by itself. For
+example: Best Buy and Geek Squad.
+geo
+GeoCoordinates
+Geographic coordinates of the business.
+geo.latitude
+Number
+The latitude of the business location. The precision should be at least 5
+decimal places.
+geo.longitude
+Number
+The longitude of the business location. The precision should be at least 5
+decimal places.
+menu
+URL
+For food establishments, the fully-qualified URL of the menu.
+openingHoursSpecification
+Array or single object (both supported) of
+OpeningHoursSpecification
+Hours during which the business location is open.
+openingHoursSpecification.closes
+Time
+The time the business location closes, in hh:mm:ss format.
+openingHoursSpecification.dayOfWeek
+Text
+One or more of the following:
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Sunday
+We accept both the official schema.org notation for indicating
+dayOfWeek
+(canonical URLs for Monday, Tuesday), as well as a
+shorter form being discussed in the schema.org community. We expect
+to update this documentation to track the
+eventual outcome of those discussions, and to continue to accept both
+variations for backwards compatibility.
+openingHoursSpecification.opens
+Time
+The time the business location opens, in hh:mm:ss format.
+openingHoursSpecification.validFrom
+Date
+The start date of a seasonal business closure, in YYYY-MM-DD format.
+openingHoursSpecification.validThrough
+Date
+The end date of a seasonal business closure, in YYYY-MM-DD format.
+priceRange
+Text
+The relative price range of a business, commonly specified by either a numerical range
+(for example, "$10-15") or a normalized number of currency signs (for example, "$$$")
+review
+Review
+A review of the local business. Follow the
+Review snippet
+guidelines and the list of required and recommended
+review
+properties.
+servesCuisine
+servesCuisine
+The type of cuisine the restaurant serves.
+telephone
+Text
+A business phone number meant to be the primary contact method for customers.
+Be sure to include the country code and area code in the phone number.
+url
+URL
+The fully-qualified URL of the specific business location. Unlike the @id
+property, this URL property should be a working link.
+Restaurant carousel (limited access)
+The Restaurant carousel is currently limited to a small set of restaurant providers.
+If you would like to participate, register your interest in our form.
+If you have multiple restaurants listed on your site, and you want them to be eligible for a
+host carousel, add the Carousel object. In addition to the standard Carousel properties, define the following properties in your Carousel object. While carousel properties
+aren't required, you must add the following properties if you want your restaurant list to be
+eligible for a host carousel.
+Required properties
+image
+Repeated URL or ImageObject
+One or more images of the restaurant.
+Additional image guidelines:
+Every page must contain at least one image (whether or not you include markup). Google will pick
+the best image to display in Search results based on the aspect ratio and resolution.
+Image URLs must be crawlable and indexable.
+Images must represent the marked up content.
+Images must be in .jpg, .png, or. gif format.
+For best results, provide multiple high-resolution images (minimum of 50K pixels when multiplying width and
+height) with the following aspect ratios: 16x9, 4x3, and 1x1.
+For example:
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+]
+name
+Text
+The name of the restaurant.
+Recommended properties
+address
+PostalAddress
+The physical location of the business. Include as many properties as possible. The more
+properties you provide, the higher quality the result is to users. For example:
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "148 W 51st St",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10019",
+"addressCountry": "US"
+}
+servesCuisine
+servesCuisine
+The type of cuisine the restaurant serves.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

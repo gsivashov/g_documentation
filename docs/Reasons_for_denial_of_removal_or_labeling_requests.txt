@@ -1,0 +1,30 @@
+Reasons for denial of removal or labeling requestsHere is a list of reasons that your request for a cache clear, search result removal, or SafeSearch label might have been denied.
+Cache removal denials
+Cache removal requests are submitted using either the Remove outdated content tool for websites that you don't own, or the Removals tool for websites that you do own. Here are the various reasons why your cache removal request might have been denied:
+Outdated content not in index
+The text or image that you described in your cache removal request does not seem to be present in the Google's cached copy, so it seems that the outdated content is already gone from our index and results! No need to do anything more.
+Page not indexed
+The page for which you requested a cache removal does not appear in our search results at all. No need to do anything more.
+Content still on page
+The text or image that you described in your cache removal request is still present on the live page. Contact the webmaster and ask them to remove the content, then you can submit another request, if necessary. Requests to the Remove Outdated Content tool can succeed only when the content is changed or no longer available.
+Duplicate request
+A cache removal request that you submitted for this URL is still in progress; no need to submit a new request for the same URL before an existing request is fulfilled.
+Unspecified
+Your cache removal request could not be fulfilled for another reason; we don't have any more details--sorry.
+Search result removal denials
+Outdated result removal or temporary removal requests are submitted using either the Remove outdated content tool for websites that you don't own, or the Removals tool for websites that you do own. Here are the various reasons why your result removal request might have been denied.
+Page not indexed
+You requested that a page be removed from our results, but it's already gone! No need to do anything more.
+Page not removed
+You requested that a non-functional page be removed from search results, but the page still exists, and is accessible by Google. Requests to the Remove Outdated Content tool can succeed only when the page is no longer available.
+Unspecified
+Your search result removal request could not be fulfilled for another reason; we don't have any more details--sorry.
+SafeSearch labeling denials
+Here are reasons why your request to label a page as containing adult content might have been denied:
+Content not considered explicit
+Google has determined that the image or webpage in question doesn't meet our criteria for SafeSearch filtering.
+Unspecified
+Your SafeSearch labeling request could not be fulfilled for another reason; we don't have any more details--sorry.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -1,0 +1,12 @@
+Associate your Android app with a websiteYou can associate your Google Play Store Android app with a website property in Search Console. If an app is associated with a website, Google will automatically try to index and crawl your app by inferring the app structure from the website structure, and the website can get a ranking boost in Google Search results.
+Associate your app
+More details about association
+Association between an app and a website (called affiliation in Google Play) verifies to Google that there is a relationship between an app and a website. Association has several benefits:
+Associated apps get some free HTTP URL mapping. If you associate your app with a website, Google will try to index your app automatically, based on the structure of the associated website, if the app supports HTTP intents.
+Even if the app has not explicitly mapped app pages to web pages, a mobile search result for a website with an associated app can link to the default view for that app.
+Opting out of these benefits
+You can opt your app out of these benefits while remaining associated with a website using a noindex.xml file in your app.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+MobileMobile viewing on feature phonesWeb Light: Faster and lighter mobile pages from searchAd network support for Web Light pages in Google SearchGoogle DiscoverResources for developing mobile-friendly pagesAnnounce mobile billing charges clearlyAssociate your Android app with a website
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

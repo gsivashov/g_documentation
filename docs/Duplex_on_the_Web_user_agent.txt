@@ -1,0 +1,27 @@
+Duplex on the Web user agentDuplexWeb-Google is the user agent that supports the Duplex on the Web service. This service supports various features and products, such as Google Assistant in Chrome. You can see the user agent token and full user agent strings here.
+Crawl frequency and behavior
+No services that use DuplexWeb-Google will perform any purchases or perform any other significant actions when crawling your site.
+DuplexWeb-Google crawls occur a few times a day to a few times an hour, depending on the feature being trained, but these runs are calculated not to overload your site or disturb your traffic.
+DuplexWeb-Google crawls are not used by Google Search for indexing. Because they are not used for indexing, the DuplexWeb-Google user agent does not recognize the noindex directive.
+DuplexWeb-Google crawls can be used by Google to provide additional information to Google users about the website supported by Duplex on the Web (for example, seat availability for movie theaters).
+Google Analytics does not record page requests made by DuplexWeb-Google during crawling and analysis.
+Use robots.txt rules to control crawling
+You must explicitly block DuplexWeb-Google using the Disallow robots.txt rule to prevent it from crawling your site. Disabling crawling (training) in your Search Console property setting is not enough.
+DuplexWeb-Google obeys robots.txt rules normally, with the following significant exception:
+When Google Assistant in Chrome is enabled using Search Console (the default), the DuplexWeb-Google user agent is not affected by the * wildcard user-agent string in Disallow statements. When Google Assistant in Chrome is disabled using Search Console, the DuplexWeb-Google user agent respects the * wildcard user-agent string in Disallow statements. Examples:
+# Example 1: Block DuplexWeb-Google from crawling your site
+User-agent: DuplexWeb-Google
+Disallow: /
+# Example 2:
+# * If Google Assistant in Chrome is enabled for this property in Search Console,
+#
+block all user agents except DuplexWeb-Google.
+# * If Google Assistant in Chrome is disabled for this property in Search Console,
+#
+block all user agents including Duplex-WebGoogle.
+User-agent: *
+Disallow: /
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Google crawlersOverview of Google crawlers (user agents)GooglebotGoogle Read Aloud user agentAPIs-Google User AgentFeedfetcherDuplex on the Web user agentVerifying Googlebot
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

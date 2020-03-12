@@ -1,0 +1,413 @@
+Home
+Products
+Search for Developers
+Reference
+Carousels
+You can use structured data to make your rich results eligible for a list-like display called a carousel. Carousels typically appear only on mobile devices, and only for certain content types, as described below. If you use carousel markup for a content type not currently supported in carousel format, it is not an error; the information can still be displayed, but it not in a carousel.
+In some cases, Google Search may display your rich result inside a carousel even if the page does not include structured data for a list: for example, a recipe might appear in a recipes carousel of results from many different websites.
+Example
+Here is a list of chicken recipes from a single website shown in a carousel:
+Guidelines
+In addition to the standard structured data
+guidelines, the following guidelines apply to all list markup:
+All items in the list must be of the same type, for example: Article or
+Recipe.
+The text visible to the user must be similar to the information contained in the structured
+data on the page.
+Items shown in list format will be shown in the order specified by the position
+property.
+List format is currently supported for the
+following content types:
+Recipe, Course,
+Article, Restaurant, Movie.
+There are two ways to implement a list format for your structured data:
+Summary page + multiple full details pages
+A single, all-in-one-page list
+Summary page + multiple full details pages
+The summary page has a short description of each item in the list, and each description points to a separate details page that is focused entirely on one item.
+Summary page
+Details page
+Defines an ItemList, where each ListItem has only three properties: @type (set to "ListItem"), position (the position in the list), and url (the URL of a page with full details about that item).
+Defines a structured data element appropriate for that list type.
+Pseudocode for best_dessert_recipes.html:
+ItemList
+itemListElement: [
+{
+@type: ListItem
+position: 1
+url: http://example.com/coffee_cake.html
+},
+{
+@type: ListItem
+position:2
+url: http://example.com/apple_pie.html,
+},
+... more recipes ...
+]
+Pseudocode for coffee_cake.html:
+@type: Recipe
+name: Party Coffee Cake
+author: George Smith
+.... more properties ...
+Sample code:
+<html>
+<head>
+<title>Grandma's Best Cake Recipes</title>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"ItemList",
+"itemListElement":[
+{
+"@type":"ListItem",
+"position":1,
+"url":"http://example.com/coffee_cake.html"
+},
+{
+"@type":"ListItem",
+"position":2,
+"url":"http://example.com/apple_pie.html"
+},
+{
+"@type":"ListItem",
+"position":3,
+"url":"http://example.com/blueberry-pie.html"
+}
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Sample code:
+Single, all-in-one-page list
+A single, all-in-one-page list hosts all list information, including full text of each item: for example, a gallery of recipes for various kinds of muffins, all contained on one page.
+Single page
+Defines an ItemList, where each element is a ListItem with the item property populated with the structured data for that schema.org element type (for example, Movie or Course). The page should contain user-visible text and an anchor to match each ListItem element.
+Pseudocode for best_dessert_recipes.html:
+ItemList
+itemListElement: [
+{
+@type: ListItem
+position: 1
+item: {
+@type: Recipe
+url: http://example.com/big_list_of_recipes#recipe_1
+name: George's Cherry Pie
+author: George Smith
+... all other required Recipe type properties ...}
+},
+{
+@type: ListItem
+position: 2
+item: {
+@type: Recipe
+url: http://example.com/big_list_of_recipes#recipe_2
+name: Party Coffee Cake
+author: Mary Stone
+... all other required Recipe type properties ...}
+},
+... more recipes ...
+]
+Sample code:
+<html>
+<head>
+<title>Grandma's Best Cake Recipes</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ItemList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": "1",
+"item": {
+"@type": "Recipe",
+"url": "http://example.com/big_list_of_recipes#cherry_pie",
+"name": "George's Cherry Pie",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"author": {
+"@type": "Person",
+"name": "Mary Stone"
+},
+"datePublished": "2018-03-10",
+"description": "I learned this recipe as a youngster.",
+"prepTime": "PT20M",
+"cookTime": "PT45M",
+"totalTime": "PT65M",
+"keywords": "cake for a party, coffee",
+"recipeYield": "8 servings",
+"recipeCategory": "Dessert",
+"recipeCuisine": "American",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.2",
+"ratingCount": "71"
+},
+"nutrition": {
+"@type": "NutritionInformation",
+"calories": "270 calories"
+},
+"recipeIngredient": [
+"2 store-bought pie shells",
+"4 cups tart canned cherries",
+"1 cup sugar",
+"1/4 teaspoon almond extract",
+"3 tablespoons corn or tapioca starch"
+],
+"recipeInstructions": [
+{
+"@type": "HowToStep",
+"text": "Defrost one pie crust"
+},
+{
+"@type": "HowToStep",
+"text": "Bake the second pie crust at 350ºF for 20 minutes, or until brown."
+},
+{
+"@type": "HowToStep",
+"text": "In a large bowl, combine sugar, cherries, starch, and almond extract."
+},
+{
+"@type": "HowToStep",
+"text": "Let the baked crust cool, pour in cherry filling."
+},
+{
+"@type": "HowToStep",
+"text": "Flatten the defrosted crust on a sheet of wax paper and cut into strips. Weave the strips over the top of the filled pie shell."
+},
+{
+"@type": "HowToStep",
+"text": "Cover the baked pie crust edge with tin foil to prevent additional browning."
+},
+{
+"@type": "HowToStep",
+"text": "Bake for 20 minutes, or until firm, and the top crust begins to brown."
+},
+{
+"@type": "HowToStep",
+"text": "Allow to cool."
+}
+],
+"video": [
+{
+"name": "How to make George's famous cherry pie",
+"description": "Prepare and bake a great cherry pie",
+"thumbnailUrl": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"contentUrl": "http://www.example.com/video789.mp4",
+"embedUrl": "http://www.example.com/videoplayer?video=789",
+"uploadDate": "2018-02-06T08:00:00+08:00",
+"duration": "PT22M12S",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 2347
+},
+"expires": "2020-02-07T08:00:00+08:00"
+}
+]
+}
+},
+{
+"@type": "ListItem",
+"position": "2",
+"item": {
+"@context": "https://schema.org/",
+"@type": "Recipe",
+"url": "http://example.com/big_list_of_recipes#coffee_cake",
+"name": "Party Coffee Cake",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"author": {
+"@type": "Person",
+"name": "Mary Stone"
+},
+"datePublished": "2018-03-10",
+"description": "This coffee cake is awesome and perfect for parties.",
+"prepTime": "PT20M",
+"cookTime": "PT30M",
+"totalTime": "PT50M",
+"keywords": "cake for a party, coffee",
+"recipeYield": "10 servings",
+"recipeCategory": "Dessert",
+"recipeCuisine": "American",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "5",
+"ratingCount": "18"
+},
+"nutrition": {
+"@type": "NutritionInformation",
+"calories": "270 calories"
+},
+"recipeIngredient": [
+"2 cups of flour",
+"3/4 cup white sugar",
+"2 teaspoons baking powder",
+"1/2 teaspoon salt",
+"1/2 cup butter",
+"2 eggs",
+"3/4 cup milk"
+],
+"recipeInstructions": [
+{
+"@type": "HowToStep",
+"text": "Preheat the oven to 350 degrees F. Grease and flour a 9x9 inch pan."
+},
+{
+"@type": "HowToStep",
+"text": "In a large bowl, combine flour, sugar, baking powder, and salt."
+},
+{
+"@type": "HowToStep",
+"text": "Mix in the butter, eggs, and milk."
+},
+{
+"@type": "HowToStep",
+"text": "Spread into the prepared pan."
+},
+{
+"@type": "HowToStep",
+"text": "Bake for 30 to 35 minutes, or until firm."
+},
+{
+"@type": "HowToStep",
+"text": "Allow to cool."
+}
+],
+"video": [
+{
+"name": "How to make George's famous cherry pie",
+"description": "Prepare and bake a great cherry pie",
+"thumbnailUrl": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"contentUrl": "http://www.example.com/video456.mp4",
+"embedUrl": "http://www.example.com/videoplayer?video=456",
+"uploadDate": "2018-02-06T08:00:00+08:00",
+"duration": "PT15M22S",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 2347
+},
+"expires": "2020-02-05T08:00:00+08:00"
+}
+]
+}
+}
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Structured data type definitions
+To specify a list, you must define an ItemList containing at least two
+ListItems. You must include the required properties for your content to be eligible
+for display as a rich result. You can also include the recommended properties to add more
+information about your content, which could provide a better user experience.
+ItemList
+ItemList is the
+container item that holds all elements in the list. If used on a summary page, all URLs in the list must point to different pages on the same domain. If used on an all-in-one-page list, all URLs must point to the page hosting the list structured data.
+The full definition of ItemList is
+available at schema.org/ItemList.
+Required properties
+itemListElement
+ListItem
+List of items. All items must be of the same type. See
+ListItem for details.
+ListItem
+ListItem contains details about an individual item in the list.
+If this is a summary page, the ListItem should include only
+the type, position, and url properties.
+If this is an all-in-one-page list, the ListItem should
+include all the additional schema.org properties for the data type that it describes (for
+example, Recipe or
+Course objects).
+The full definition of ListItem is available at
+schema.org/ListItem.
+Example item in simple summary list (JSON-LD):
+{
+"@type":"ListItem",
+"position":1,
+"url":"http://example.com/desserts/apple-pie"
+}
+Example item in all-in-one list (JSON-LD):
+{
+"@type": "ListItem",
+"position": 1,
+"item": {
+"@type": "Recipe",
+"url": "http://example.com/desserts/pies/#apple-pie",
+"name": "Apple Pie",
+"image": "https://example.com/300px-Apple_pie.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "6",
+"reviewCount": "32"
+},
+"recipeYield": "8 servings",
+"recipeIngredient": [
+"Pastry crust for bottom and top",
+"1/2 cup unsalted butter",
+"3 tablespoons all-purpose flour",
+"1/4 cup water",
+"1/4 cup white sugar",
+"1/2 cup brown sugar",
+"10 cups peeled, chopped green apples"
+], ... snip ...
+}
+}
+Required properties
+item
+Thing
+Used for all-in-one-page lists only. This property is required for all-in-one-page lists.
+Do not include for summary pages. Populate this object with the following
+values, plus all the members of the specific structured data type being described:
+item.name
+item.url
+Any other properties required for this data type, as described in schema.org and the rules
+described in these documents for your content type (for example
+Article or
+Book). As an example, for a book in a list,
+you would provide bookFormat and isbn properties; for a recipe,
+you would provide prepTime and image properties.
+item.name
+Text
+String name of the item, displayed in the rendered gallery. HTML formatting is ignored.
+This property is required for all-in-one-page lists. Do not include for
+summary pages.
+item.url
+URL
+Fully-qualified URL + page anchor to this item on the page. This property is required for
+all-in-one-page lists. Do not include for summary pages. The URL must be
+the current page, and you must include an HTML anchor (<a> tag or
+name or id value) in your page near the user-visible text.
+Example: https://example.org/recipes/pies#apple_pie.
+position
+Integer
+The item's position in the carousel. This is a 1-based number.
+url
+URL
+Used for summary page lists only. This property is required for summary pages. Do not
+include for all-in-one-page lists. The canonical URL of the item detail page. All URLs in
+the list must be unique, but live on the same domain (the same domain or sub/super domain as
+the current page).
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

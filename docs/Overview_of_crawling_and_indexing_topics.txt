@@ -1,0 +1,34 @@
+Overview of crawling and indexing topicsThe topics in this section describe how you can control Google's ability to find and parse your content in order to show it in Search and other Google properties, as well as how to prevent Google from crawling specific content on your site.
+Here's a brief description of each page. Read the full story here.
+Topic
+Description
+Manage your sitemaps
+Tell Google about pages on your site that are new or updated.
+Block access to your content
+Prevent Google from accessing or showing content from your site on Search or other Google properties. See which method is most appropriate for your needs.
+Remove information from Google
+Remove content from your site that appears on Google.
+Tell Google about your duplicate content
+Tell Google about any duplicate pages on your site in order to avoid excessive crawling. Learn how Google auto-detects duplicate content, how it treats duplicate content, and how it assigns a canonical page to any duplicate page groups found.
+Ask Google to recrawl your URLs
+You've just published an important new or updated page and need Google to find it quickly.
+Make sure Googlebot is not blocked
+Be sure that Google can access all the pages on your site that you want to appear in Search.
+Create custom 404 pages
+How to properly create a custom 404 page that works for users as well as Googlebot.
+Transfer, move, or migrate your site
+If you're moving your site from one domain to another, here's how to minimize any disruption in search results.
+International and multilingual sites
+If your site contains content in different languages, or with different content for different locations, here's how to help Google understand your site.
+Special tags that Google understands
+Google supports several tag extensions that govern search appearance and behavior.
+Google crawlers
+Information about the various crawlers used by Google for different tasks.
+Crawl Stats report
+The Crawl Stats report shows information about when and how much Google crawled your site.
+Change Googlebot crawl rate
+In the unlikely chance that Google is making too many crawl requests to your site, you can tell us to slow down our requests.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Crawling and indexingOverview of crawling and indexing topicsManage your sitemapsBlock access to your contentRemove information from GoogleTell Google about your duplicate contentAsk Google to recrawl your URLsMake sure Googlebot is not blockedCreate custom 404 pagesTransfer, move, or migrate your siteInternational and multilingual sitesSpecial tags that Google understandsGoogle crawlersCrawl Stats reportChange Googlebot crawl rate
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

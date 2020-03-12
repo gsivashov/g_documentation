@@ -1,0 +1,40 @@
+Manage your sitemapsSplit up your large sitemapsNext: Video sitemaps and video sitemap alternativesIf you have many sitemaps, you can use a sitemaps index file as a way to submit them at once. The XML format of a sitemap index file is very similar to the XML format of a sitemap file. The sitemap index file uses the following XML tags:
+sitemapindex - the parent tag surrounds the file.
+sitemap - the parent tag for each sitemap listed in the file (a child of sitemapindex)
+loc - the location of the sitemap (a child of sitemap)
+You can see the Sitemap Protocol page for more information on syntax.
+The following example shows a sitemap index in XML format that lists two sitemaps:
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemap>
+<loc>http://www.example.com/sitemap1.xml.gz</loc>
+</sitemap>
+<sitemap>
+<loc>http://www.example.com/sitemap2.xml.gz</loc>
+</sitemap>
+</sitemapindex>
+Once you’ve made and saved your index file, you can submit your index file to Google as long as you upload and save all your sitemaps to the same location on your host server. You can submit up to 500 sitemap index files for each site in your account.
+Manage sitemaps for multiple sites
+If you have multiple websites, you can simplify the process of creating and submitting sitemaps by creating one or more sitemaps that include URLs for all your verified sites, and saving the sitemap(s) to a single location. All sites must be verified in Search Console. You can choose to use:
+A single sitemap that includes URLs for multiple websites, including sites from different domains. For example, the sitemap located at http://host1.example.com/sitemap.xml can include the following URLs.
+http://host1.example.com
+http://host2.example.com
+http://host3.example.com
+http://host1.example1.com
+http://host1.example.ch
+Individual sitemaps (one for each site) that all reside in a single location.
+http://host1.example.com/host1-example-sitemap.xml
+http://host1.example.com/host2-example-sitemap.xml
+http://host1.example.com/host3-example-sitemap.xml
+http://host1.example.com/host1-example1-sitemap.xml
+http://host1.example.com/host1-example-ch-sitemap.xml
+Note that cross-site submissions work only if all sites have been verified in Search Console.
+To host cross-site sitemaps in a single location, follow the steps below:
+Make sure that you have verified ownership of all the sites.
+Create a sitemap that includes URLs from all the sites that you want to cover. You can create a single sitemap that includes URLs from all sites or you can create one or more separate sitemaps for each site.
+Using Google Search Console, submit your sitemap(s).
+Next: Video sitemaps and video sitemap alternatives
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Manage your sitemapsLearn about sitemapsBuild and submit a sitemapSitemaps reportSplit up your large sitemapsSitemap extensionsVideo sitemaps and video sitemap alternativesImage sitemapsCreate a Google News sitemap
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

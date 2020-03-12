@@ -1,0 +1,38 @@
+FeedfetcherFeedfetcher is how Google grabs RSS or Atom feeds for Google Play Newsstand and PubSubHubbub. Feedfetcher collects and periodically refreshes these user-initiated feeds, but does not index them in Blog Search or Google's other search services (feeds appear in our search results only if they've been crawled by Googlebot). Find answers below to some of the most commonly asked questions about how this user-controlled feed grabber works.
+How do I request that Google not retrieve some or all of my site's feeds?
+How often will Feedfetcher retrieve my feeds?
+Why is Feedfetcher trying to download incorrect links from my server, or from a server that doesn't exist?
+Why is Feedfetcher downloading information from our "secret" web server?
+Why isn't Feedfetcher obeying my robots.txt file?
+Why are there hits from multiple machines at Google.com, all with user-agent Feedfetcher?
+Can you tell me the IP addresses from which Feedfetcher makes requests so that I can filter my logs?
+Why is Feedfetcher downloading the same page on my site multiple times?
+What kinds of links does Feedfetcher retrieve?
+My Feedfetcher question isn't answered here. Where can I get more help?
+How do I request that Google not retrieve some or all of my site's feeds?
+When users add a service or app that uses Feedfetcher data, Google's Feedfetcher attempts to obtain the content of the feed in order to display it. Since Feedfetcher requests come from explicit action by human users, and not from automated crawlers, Feedfetcher does not follow robots.txt guidelines.
+If your feed is publicly available, Google can't restrict users from accessing it. One solution is to configure your site to serve a 404, 410, or other error status message to user-agent Feedfetcher-Google.
+If your feed is provided by a blog or site hosting service, please work directly with that service to restrict access to your feed.
+How often will Feedfetcher retrieve my feeds?
+Feedfetcher shouldn't retrieve feeds from most sites more than once every hour on average. Some frequently updated sites may be refreshed more often. Note, however, that due to network delays, it's possible that Feedfetcher may briefly appear to retrieve your feeds more frequently.
+Why is Feedfetcher trying to download incorrect links from my server, or from a server that doesn't exist?
+Feedfetcher retrieves feeds at the request of services or apps installed by users. It is possible that a user has requested a feed URL location that does not exist.
+Why is Feedfetcher downloading information from our "secret" web server?
+Feedfetcher retrieves feeds at the request of services or apps installed by users. It is possible that the request came from a user who knows about your "secret" server or typed it in by mistake.
+Why isn't Feedfetcher obeying my robots.txt file?
+Feedfetcher retrieves feeds only after users have explicitly started a service or app that requests data from the feed. Feedfetcher behaves as a direct agent of the human user, not as a robot, so it ignores robots.txt entries. Feedfetcher does have one special advantage, though: because it's acting as the agent of multiple users, it conserves bandwidth by making requests for common feeds only once for all users.
+You can prevent Feedfetcher from crawling your site by configuring your server to serve a 404, 410, or other error status message to user-agent Feedfetcher-Google.
+Why are there hits from multiple machines at Google.com, all with user-agent Feedfetcher?
+Feedfetcher was designed to be distributed on several machines to improve performance and scale as the web grows. To cut down on bandwidth usage, the machines used are often located near the sites that they're retrieving in the network.
+Can you tell me the IP addresses from which Feedfetcher makes requests so that I can filter my logs?
+The IP addresses used by Feedfetcher change from time to time. The best way to identify accesses by Feedfetcher is to use its identifiable user-agent: Feedfetcher-Google.
+Why is Feedfetcher downloading the same page on my site multiple times?
+In general, Feedfetcher should only download one copy of each file from your site during a given feed retrieval. Very occasionally, the machines are stopped and restarted, which may cause it to again retrieve pages that it's recently visited.
+What kinds of links does Feedfetcher follow?
+Unlike normal web crawlers, Feedfetcher isn't following links at all; instead, it follows the requests given to it by users of a service or app that uses Feedfetcher.
+My Feedfetcher question isn't answered here. Where can I get more help?
+If you're still having trouble, try posting your question in the Search Console forum.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Google crawlersOverview of Google crawlers (user agents)GooglebotGoogle Read Aloud user agentAPIs-Google User AgentFeedfetcherDuplex on the Web user agentVerifying Googlebot
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

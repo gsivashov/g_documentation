@@ -1,0 +1,54 @@
+Manage your sitemapsCreate a Google News sitemapNews sitemap guidelines
+When you create your News sitemap, follow the requirements below:
+Include URLs for articles published in the last 2 days. You can remove articles after 2 days from the News sitemap, but they remain in the index for the regular 30-day period.
+Update your News sitemap with new articles as they're published. Google News crawls News sitemaps as often as it crawls the rest of your site.
+Add up to 1,000 full URLs to include more, break these URLs into multiple sitemaps, and use a sitemap index file to manage them. Use the XML format provided in the sitemap protocol. Do not list more than 50,000 sitemaps in your sitemap file. These limits help ensure that your web server isn't using large files.
+Update your current sitemap with your new article URLs. Do not create a new sitemap with each update.
+Do not use the Google sitemap Generator to create a News sitemap. The generator includes URLs that don't correspond to specific news articles.
+Example sitemap entry
+A Google News sitemap uses the sitemap protocol. Here’s an example of a News sitemap entry:
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<url>
+<loc>http://www.example.org/business/article55.html</loc>
+<news:news>
+<news:publication>
+<news:name>The Example Times</news:name>
+<news:language>en</news:language>
+</news:publication>
+<news:publication_date>2008-12-23</news:publication_date>
+<news:title>Companies A, B in Merger Talks</news:title>
+</news:news>
+</url>
+</urlset>
+Sites with a News sitemap aren't favored in ranking results. Google News will use normal crawl methods to search and label the homepages and sections of all news sites, regardless of the availability of a News sitemap.
+Submit your sitemap
+After you've created your News sitemap, submit it through Search Console. Visit the Search Console Help Center for more information on how to manage sitemaps. We recommend that you upload your sitemap to the highest level directory that contains your news articles.
+News-specific tag definitions
+Review the Google News tags for sitemaps below:
+Tag
+Required?
+Description
+<publication>
+Yes
+The publication where the article appears. It has 2 required child tags: <name> and <language>.
+The <name> is the name of the news publication. It must exactly match the name as it appears on your articles on news.google.com, except for anything in parentheses.
+The <language> is the language of your publication. Use an ISO 639 language code (2 or 3 letters).
+Exception: For Simplified Chinese, use "zh-cn" and for Traditional Chinese, use "zh-tw."
+<publication_date>
+Yes
+Article publication date in W3C format. Use either the "complete date" format (YYYY-MM-DD) or the "complete date plus hours, minutes, and seconds" format with time zone designator format (YYYY-MM-DDThh:mm:ssTZD). Specify the original date and time when the article was published on your site. Do not specify the time when you added the article to your sitemap.
+Our crawler accepts any of the formats below:
+Complete date: YYYY-MM-DD (1997-07-16)
+Complete date plus hours and minutes: YYYY-MM-DDThh:mmTZD (1997-07-16T19:20+01:00)
+Complete date plus hours, minutes, and seconds: YYYY-MM-DDThh:mm:ssTZD (1997-07-16T19:20:30+01:00)
+Complete date plus hours, minutes, seconds, and a decimal fraction of a second: YYYY-MM-DDThh:mm:ss.sTZD (1997-07-16T19:20:30.45+01:00)
+<title>
+Yes
+The title of the news article.
+Tip: The title can be shortened for space reasons when shown on Google News. Include the title of the article as it appears on your site. Do not include author name, publication name, or publication date in the title tag.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Manage your sitemapsLearn about sitemapsBuild and submit a sitemapSitemaps reportSplit up your large sitemapsSitemap extensionsVideo sitemaps and video sitemap alternativesImage sitemapsCreate a Google News sitemap
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

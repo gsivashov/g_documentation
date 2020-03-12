@@ -1,0 +1,108 @@
+Reports at a glanceAn overview of the Search Console reports and toolsHere is a summary of the current Search Console reports, and a few older, but useful reports and tools.
+Report or tool
+Description
+Overview page
+Shows a summary of your property's health, including any manual actions or security issues applied to your site, graphs of total clicks and error/valid indexed pages, and summaries of error/valid enhancements for your site (mobile-friendly URLs, AMP pages, structured data found on your site).
+Suggested use: If only checking in periodically, check for manual actions or security issues. Look for spikes in coverage or enhancement errors, and if found, open the report to troubleshoot. Look for dramatic dips in your click count; if found, open the report to investigate.
+Useful for: Everyone
+Performance report for Search and Discover
+Explore how many people saw and clicked on your site in Google Search, what queries showed your site in Search, and your average search position.
+If your site has Discover data, you will also see a similar report just for your Discover data.
+Data includes clicks, impressions, CTR, and position for your site, as well as query strings that users were searching for.
+Data can be grouped by page URL, country of query, or device type.
+Suggested use: Periodically review to check for spikes or dips in clicks or impressions. Examine the query strings that show your site, and see if the queries that you expect show your site. Read more about traffic drops on your site.
+Useful for: SEOs, site owners [Performance (Search) documentation] [Performance (Discover) documentation]
+URL Inspection tool
+See the information that the Google index has about a specific URL on your site, or test a live page. Information is quite extensive, and includes page HTML code and errors, AMP/mobile usability errors and code, JavaScript output and errors encountered when rendering the page, any canonicals selected for a page, and more. Use the tool by typing a URL in the bar at the top of Search Console.
+Suggested use: Use this report to troubleshoot any crawling errors that Google encountered on your site. You can reach this tool by clicking into a specific URL in the Coverage report. You can also use this report to fix and retest a page before resubmitting the page for indexing.
+Useful for: SEOs, developers [Documentation]
+Coverage report
+Shows index status for all the pages in your site. Pages are grouped according whether they are, or can be, indexed, with a description of why they could or could not be indexed.
+Suggested use: Periodically scan for spikes in errors, or drops in indexed counts to identify crawling problems on your site.
+Useful for: SEOs, developers/site administrators [Documentation]
+Sitemaps report
+Shows which sitemaps have been submitted for your site, sitemap statistics, and any errors Google encountered when processing your sitemaps.
+Suggested use: Periodically check to see if Google could process your sitemaps, or use for debugging if Google can't seem to find new pages on your site.
+Useful for: SEOs [Documentation]
+Speed report
+Shows how fast your page performs in real-world usage.
+Suggested use: Check how fast your pages load for your users; fix slow loading pages.
+Useful for: SEOs, Developers [Documentation]
+Mobile Usability report
+See a mobile usability evaluation for all indexed pages on your site.
+Suggested use: Periodically check to find mobile usability issues on your site.
+Useful for: SEOs, developers [Documentation]
+AMP report
+See which AMP pages on your site could or couldn't be indexed.
+Suggested use: Periodically check for issues affecting all AMP pages on your site, or to see if you have an unexpected spike in errors or drop in indexed AMP pages.
+Useful for: SEOs, developers [Documentation]
+Rich Result Status reports
+See which rich results Google could or couldn't crawl. Only a subset of rich results are supported by this report; see the documentation to learn which types are supported. A given report type will only be present if Google has detected items of that type on your site.
+Suggested use: Periodically scan for errors and debug the issues. Can also be used to see how many rich results of a given type Google is able to process.
+Useful for: SEOs, developers [Documentation]
+Manual Actions report
+Shows any manual actions against your site.
+Suggested use: If you see a manual action in your overview page, open the report to learn details about the report, how to fix the issue, and to file a reconsideration request after you have fixed the issue.
+Useful for: Everyone [Documentation]
+Security Issues report
+Shows any security issues detected by Google on your site.
+Suggested use: If you see a security issue in your overview page, or if your site is showing browser alerts for dangerous or hacked content, open the report to learn details about the report, how to fix the issue, and to file a reconsideration request after you have fixed the issue.
+Useful for: Everyone [Documentation]
+Links report
+Shows which sites link to yours, what the link text is, and internal link targets within your own site.
+Suggested use: Can be used to determine if you are linked to by either spammy or useful sites.
+Useful for: SEOs [Documentation]
+AMP Test tool
+Test an AMP page for validity.
+Useful for: Developers, technical SEOs [Documentation]
+Mobile-Friendly Test Tool
+Test whether a given page is mobile-friendly.
+Useful for: Developers, technical SEOs [Documentation]
+Change of address
+Tell Google when you migrate your site to another domain.
+Useful for: Site owners, site developers [Documentation and tool link]
+Removals Tool
+Allows you to temporarily block URLs on your site from appearing in Google Search, or to clear the search snippet until the next document crawl. Also shows a history of your block requests, as well as a history of user requests to mark pages on your site as adult-only.
+Useful for: Site owners [Documentation]
+Legacy tools and reports
+These tools and reports do not yet have a full replacement in new Search Console, but can still be reached at the links given below. The Search Console team is working on a replacement strategy for these items.
+Report or tool
+Description
+Crawl Stats
+Shows how often Google is crawling your site, and how many requests it is making.
+Suggested use: If your site is being overloaded by Google crawl requests, you can track the issue here, and request a reduced crawl rate.
+Useful for: Advanced SEO, website administrators [Documentation]
+robots.txt Tester
+Test the syntax of your robots.txt file, and whether it will block a given URL.
+Suggested use: Good for syntax testing of your robots.txt files, and also for debugging/fixing blocked resources or pages on your site.
+Useful for: SEOs, developers [Documentation]
+URL Parameters Tool
+Tell Google about any special parameters you use in your page URLs that make important page or site changes, such as a country parameter that changes the content of the site, to enable Google to crawl it better.
+Suggested uses: For advanced users only; you can hurt your site crawling if you don't know what you're doing.
+Useful for: Advanced SEOs, developers [Documentation]
+International Targeting
+Debug hreflang settings on multi-lingual sites, or set a country to target in your search results.
+Suggested use: Use when adding hreflang tags to your site to ensure proper crawling for different languages or regions. Use to set a single top target country for your site, if not evident in your site content.
+Useful for: SEOs [Documentation]
+Google Analytics association
+Other associations
+Import Search Console analytics data for your property into your Google Analytics account. For other property types (YouTube channel, Android app, and so on), approve or deny association requests.
+Useful for: Site owners [Google Analytics association documentation]
+Data Highlighter tool
+A simple tool to help Google extract data from template pages on your site.
+Suggested use: If your site has many pages with templated data (for example, bus routes or event schedules) and you can't use structured data for some reason, you can use this tool to help Google extract similar data from identically coded pages. You must retrain Google every time you change the design of the page.
+Useful for: Site owners on basic site hosting services [Documentation]
+Messages report
+See messages sent to your properties.
+Crawl rate settings
+Lower Google's crawling traffic to your site.
+Suggested use: Use only if Google seems to be overloading your site with crawling requests.
+Useful for: Website owners, Advanced SEOs [Documentation]
+Email preferences
+Specify whether or not Search Console should send informational or alert emails to you about your properties. [Documentation]
+Web tools
+Various other tools that might be useful for your site.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+HelpReports at a glanceAll reports and toolsUsing Search Console with your websiteGet your site on Search ConsoleMigrating from old Search Console to new Search Console
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

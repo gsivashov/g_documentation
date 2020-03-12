@@ -1,0 +1,75 @@
+Using Search Console with your websiteWelcome to Search Console!Search Console provides actionable reports, tools, and learning resources designed to get your content on Google Search.
+Sign up for Search Console if you haven’t already: it’s easy and it’s free.
+Managing your website with Search Console
+Day to day
+Relax — After you've signed up for Search Console, you'll receive email if any unusual events occur with your website. Unusual events include indications that your website has been hacked or problems that Google had when crawling or indexing your site. We will also email you if we detect that your site violates any of Google’s search quality guidelines.
+Note: It can take some time after verifying your site to start seeing data in Search Console reports; we’ll let you know when your data becomes available.
+Monthly
+Every month or so, take a look at your Search Console status; the status page is the simplest way to get a quick health check on your site:
+Make sure that you aren’t experiencing an increase in errors for your site.
+Check that you don’t have any unusual dips in your click counts. Note that a weekly rhythm of weekend dips, or dips or spikes over holidays, is normal.
+If you have questions about how to read a report, click the help button  at the top of the page to learn more. See a list of our reports and what they're used for.
+When your content changes
+Check Search Console whenever you make important site changes to monitor your site’s behavior in Google Search.
+Adding new content to your site:
+Test that Google can access your pages using the URL Inspection tool.
+Tell Google which pages to crawl by updating your sitemap.
+Tell Google which pages not to crawl using robots.txt or noindex tags.
+A few weeks after you post content, confirm that the number of indexed pages in your site is rising.
+Adding new properties:
+We recommend using a single site that adapts to users on any device, but if you decide to have a separate site for mobile users, be sure to add it to Search Console, and add <link rel=”alternate”> tags to connect it to your existing site.
+For sites targeted at a specific country or language, follow our guidelines for international or multilingual sites.
+If you change your site’s domain name:
+Use the change of address tool to point Google search to your new location.
+Removing a page from search results:
+Use the Remove URLs tool and take other appropriate steps to block crawling and/or indexing.
+More topics
+How do I make my site appear first in Google Search results?
+Everyone asks us this question. The answer is: there is no secret, there are only good practices. Here are the best practices for improving your site's appearance in Google search results:
+Provide high quality content on your site. Google tries to find the best answer for our users’ requests; if you write the best material, you’re in the game. Use the Performance report to see which queries lead to your pages, and what the click-through rate is for links to your site.
+Make sure that you follow our guidelines for good sites and avoid pitfalls that could affect your search rankings.
+Make your site mobile friendly. Many users search on mobile devices; our search results favor pages that we think answer the user’s request best with the best possible user experience on their platform.
+Use informative titles and snippets. Good, clear titles and accurate meta tag descriptions help us understand the purpose of a page and generate useful snippets in our search results. Learn more.
+Add search features such as stars, event information, or site search boxes, which add to the user experience, making your site more valuable to readers.
+Glossary of Search terms
+The reports in Search Console are organized according to the general outline of the Google Search pipeline: Content is first crawled (discovered), then it is indexed (parsed and analyzed for content), after which you, the website owner, analyze the search traffic to your site and also consider how search results are displayed to the user or linked to by other sites.
+Crawl
+Google’s web crawlers follow links and sitemaps to generate a list of publicly available URLs to visit and index for content. This is the first step in the process of being added to Google’s search results.
+Property
+A generic term for a website that you have added to your Search Console account. You can see a list of your properties on your account homepage.
+Verify
+To prove that you own the website referred to in your Search Console account. A property must be verified before you can start seeing any data for it. You’ll be asked to verify a site after you add it to your Search Console account.
+Googlebot
+Google’s web crawler. Google has a few different Googlebots that request your pages as different device types (a smartphone, a feature phone, or a desktop computer) to calculate different search results for users searching on these devices.
+Canonical
+If you host the same page at different URLs, your search results can be diluted across these duplicate pages. For example, you might have the same page at http://example.com/dogs and http://www.example.com/dogs; a search might then show separate, lower ranked results for each page than if you had only a single page. In this case, you should indicate to Google that these pages are the same, and choose one to be canonical (the official page) to show in search results. Indicate canonical pages or sites using a Sitemap, HTML tags, or Search Console settings.
+robots.txt
+The name of a file on your site that tells Google which pages not to index or show in search results.
+Sitemap
+A list of URLs in your site that Google uses as starting locations to begin crawling a website. A sitemap is contained in one or more files stored on your website.
+Index
+The process of visiting URLs and analyzing the content and meaning of each page. This helps Google determine the best search results for a user’s query.
+Resource
+A web page typically loads many additional resources such as CSS, JavaScripts, and images. Be sure that Googlebot isn’t blocked from accessing any resources that affect the meaning of the page during the indexing process.
+Render
+Google tries to display all pages that it indexes in order to view the page as a user would. Rendering is the process of displaying the page with the images and layout to help Google analyze the meaning of the page.
+Search traffic
+Manual action
+If your page violates one of Google’s quality guidelines, such as spammy content, it can be subject to a manual action, which will demote it in Google search results.
+International targeting
+Explicitly targeting your search results at users by language or country. This can be done using hreflang link tags or the country targeting setting in Search Console.
+Search appearance
+How your page appears in search.
+Structured data
+A standards-based way of describing information about your pages, in a format that the Google crawling engine understands. For instance, you can add ratings, event information, or video information. Some types of structured data are used to create rich results.
+Snippets
+The small descriptive lines of text that appear under each result in Google search results. These are generated programmatically by Google during indexing, and can have visual characteristics known as rich results.
+Rich result
+A visually enhanced Google search result, such as star ratings or event times. Rich results are often generated from structured data added by the page author.
+Sitelink
+If your website has a logical hierarchy or structure, Google might display a set of sub-links below the main search result. For example, for an airline site, the main result will be the airline home page, and the smaller links below would be direct links to the booking page, the flight status page, the baggage policies page, and so on. You cannot specify sitelinks for your site.
+OPEN YOUR DASHBOARD
+Was this helpful?How can we improve it?YesNoSubmit
+true
+HelpReports at a glanceAll reports and toolsUsing Search Console with your websiteGet your site on Search ConsoleMigrating from old Search Console to new Search Console
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -1,0 +1,38 @@
+Why does my search result look wrong?Troubleshoot titles or snippets, missing Job, Event, Recipe, or other result typesGoogle supports many special features in search results. Some are explicitly enabled, such as sitelinks searchboxes or job postings, while others, such as featured snippets, are applied by Google without any actions by the page owner.
+If the appearance or text of your Google search results look different than you expect, here are some troubleshooting tips:
+Title or snippet issues
+If your result title or page description isn't what you want or expect, please be aware that search result titles and snippets are determined algorithmically. Read how to improve your page title or snippet in search.
+If your snippet is absent, with a message like this, you've used robots.txt to block the page. To enable a page snippet you must unblock your page from robots.txt.
+Rich result or search feature issue
+If you have implemented a job posting, event, sitelinks search box, or other rich result or search feature on your page and it's not appearing, here's how to troubleshoot the issue:
+Test whether your page is appearing in search results at all, with or without a rich result. If your page is not appearing at all in search results, a rich result will never be shown.
+Test on both desktop and mobile. Many rich results can appear on only one device type.
+See the following common reasons why rich results don't appear in search results:
+Read any troubleshooting documentation for your rich result type. For example, the Event troubleshooting guide, or the podcast troubleshooting guide.
+Google hasn't crawled your pages yet. It can take some time for Google to crawl new or updated pages. Even if you have requested a crawl of your site, a crawl request can take a week to fulfill.
+To test: Run the URL Inspection tool on your URL to see if it has been indexed, or if not, why not.
+Google can't access the page. In this case the page won't be in the index.
+To test: Run the URL Inspection tool on your URL to see if it can be accessed.
+The page structured data is incorrect.
+To test:
+If the rich result type is listed as a supported type here, run the Rich Results test on your URL. (If you want to see Google's indexed version of the page, use the URL Inspection tool.)
+If your rich result type isn't yet supported in the Rich Results test, use the Structured Data Testing Tool instead to test your page. Submit the URL of the live page rather than pasting in your code, because that is a more reliable test.
+The structured data might be violating a policy guideline.
+​To test: See if you have a manual action against your site. You can read the general Webmaster Guidelines, structured data general guidelines, and the guidelines for your specific structured data type.
+Your rich result might not be supported for your location yet.
+​To test: Check the documentation to see if your rich result type is supported for your location.
+Google doesn't guarantee display of rich results for any given page. Even if your rich result is implemented correctly and no other problems exist, Google doesn't guarantee that it will show a rich result for a given page. There are many reasons for this, but essentially Google makes decisions about what result type works best for a given query, user, time, place, and many other factors. Sometimes we decide that a specific rich result isn't the best result for that query.
+See here for more rich result troubleshooting information.
+AMP issues
+If your AMP isn't appearing as an AMP search result: Use the URL inspection tool on your AMP page to see any errors found. If that tool doesn't recognize the page as AMP,  try the AMP test tool.
+If your AMP isn't appearing in results at all: See here to troubleshoot a missing page or site.
+If your AMP isn't appearing in a top stories carousel:
+Confirm that your page conforms with Google Search guidelines, including the types of AMP pages eligible for a carousel.
+Troubleshoot the structured data on the page using the AMP test tool.
+Be aware that AMP pages are not guaranteed to appear in a carousel:  Even if your AMP is implemented correctly and no other problems exist, Google doesn't guarantee that it will appear in a top stories carousel. There are many reasons for this, but essentially Google makes decisions about what result type works best for a given query, user, time, place, and many other factors.
+Featured snippet issues
+Featured snippets are chosen by entirely programmatic means; you can't request a featured snippet for your page. Read more.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Troubleshooting resultsWhy did my site traffic drop?Why is my page missing from Google Search?Why is my site blocked from Google Search?Why does my search result look wrong?
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

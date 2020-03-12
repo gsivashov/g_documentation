@@ -1,0 +1,29 @@
+European press publication settingSpecify whether or not your site is a European press publication as defined by the 2019 Directive on copyright and related rights and implementing legislation in France. This setting affects the display of text snippets and thumbnail images from your property in France which goes into effect in October 2019.
+View or edit your designation
+Effects of this designation
+If a property is designated as a European press publication in its site settings, then search results on Google for this site, such as in Web Search or Discover, will not include text snippets or thumbnail images when shown to users in France, unless the result page overrides the site setting with a directive such as max-snippet or max-image-preview.
+The default result for a European press publication looks something like this in Google Search:
+Does this setting affect my ranking?
+Some features depend on the availability of preview content - for example, there can’t be a Featured Snippet without a snippet.  Other features may re-order results to group together results that take up less space because of their smaller previews.  Beyond those design considerations, Google isn’t making any changes to Search ranking on the basis of European press publication status. However, it is possible that you might see a CTR change if users prefer one style of preview to another.
+How to enable snippets, thumbnails, and rich results
+Text snippets and thumbnail images can help people who are looking at your result by giving them a preview of your page and a better sense of how it relates to their search. To enable these text or image previews, use max-snippet or max-image-preview directives. You can enable other special features and rich results by using structured data.
+What pages are affected by this designation
+Your designation, indicated by your property setting, affects all URLs in the same domain or subdomain, unless:
+It is overridden by a child property's settings (see Inheritance), or
+It is overridden by page-level directives such as max-snippet or max-image-preview.
+Inheritance
+This setting is inherited by all child properties. However, a child property can explicitly override its parent property's settings.
+You can see the parent property's settings by opening the parent property in Search Console. If you don't have access to the parent property, you can perform a Google Search for pages on the child site to see the appearance of the results.
+Alternate URLs
+Designation as a European press publication does not affect alternate versions of a page, if the alternate version lives on a different property than the canonical version. For example, if a desktop page lives at example.com/page and the AMP version lives at exampleamp.com/page, the European press publication setting for each URL is managed by its own property.
+However, if the alternate version lives in the same property or a child property, then the child property (m.example.com) inherits the parent property (example.com), unless the child property explicitly overrides the parent property.
+Change your designation
+To change your designation of a European press publication, open the settings page:
+If the "Inherit settings" box is checked, this property's setting is inherited from a containing property. To override the inherited setting:
+Uncheck Inherit settings.
+Check or uncheck the property setting for this property.
+If the "Inherit settings" box is not checked, check or uncheck the property setting for this property. The setting that you choose overrides the setting from any containing property.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingGoogle Assistant in ChromeInternational Targeting reportChange Googlebot crawl rate
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

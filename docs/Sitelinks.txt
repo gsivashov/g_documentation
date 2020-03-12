@@ -1,0 +1,8 @@
+SitelinksThe links shown below some of Google's search results, called sitelinks, are meant to help users navigate your site. Our systems analyze the link structure of your site to find shortcuts that will save users time and allow them to quickly find the information they're looking for.
+1: The main search result
+2: Sitelinks
+We only show sitelinks for results when we think they'll be useful to the user. If the structure of your site doesn't allow our algorithms to find good sitelinks, or we don't think that the sitelinks for your site are relevant for the user's query, we won't show them.
+At the moment, sitelinks are automated. We're always working to improve our sitelinks algorithms, and we may incorporate webmaster input in the future. There are best practices you can follow, however, to improve the quality of your sitelinks. For example, for your site's internal links, make sure you use anchor text and alt text that's informative, compact, and avoids repetition.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

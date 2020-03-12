@@ -1,0 +1,67 @@
+Home
+Products
+Search for Developers
+Guides
+Welcome!
+Mobile is changing the world. Today, everyone has smartphones with them, constantly
+communicating and looking for information. In many countries, the number of
+smartphones has surpassed the number of personal computers; having a mobile-friendly
+website has become a critical part of having an online presence.
+If you haven't made your website mobile-friendly, you should. The majority of
+users coming to your site are likely to be using a mobile device.
+If you don't know if your website is mobile-friendly, take the Mobile Friendly
+Test now.
+If you used content management software like Wordpress to build your website,
+check out our guide to customizing your website software.
+If you're technical enough to do it yourself, check out our Mobile SEO Guide.
+Why make a website mobile-friendly?
+If not mobile-friendly, a site can be difficult to view and use on a mobile device. A non-mobile-friendly site requires users to pinch or
+zoom in order to read the content. Users find this a frustrating experience and
+are likely to abandon the site. Alternatively, the mobile-friendly version is
+readable and immediately usable.
+In the USA, 94% of people with smartphones search for local information on their phones.
+Interestingly, 77% of mobile searches occur at home or at work, places where desktop computers are likely to be present.
+Mobile is critical to your business – whether
+you're blogging about your favorite sports team, working on the website for
+your community theater, or selling products to potential clients. Make sure that visitors can have a good experience on your site when they're visiting from their mobile devices.
+How do I start?
+The work involved in making a mobile-friendly site depends on your developer
+resources, business model, and expertise. For an example of how a desktop site
+might be redesigned to work on mobile, see the following diagram:
+On a very basic implementation level, transitioning an existing
+desktop site to mobile entails using existing sections of content from the
+desktop site and organizing them in a mobile-friendly design pattern.
+For more information on the technical implementation of a mobile site, see our docs on
+Mobile SEO.
+How much does it cost to build a site for mobile devices?
+It varies. For example, here are some of the possibilities:
+Going mobile can be free if you can
+select a responsive template or theme for your website. A responsive
+template or theme adapts the display to the visitor no matter if they are
+using a desktop, tablet, or mobile phone.
+Going mobile can be free if you have the technical skills to build your
+mobile site. Check out Web Fundamentals.
+Going mobile will likely cost time and money if you need to hire a developer.
+Furthermore, if your website was created several years ago, a new developer
+might recommend starting from scratch (so you'll be paying for a complete
+makeover). This is because there are new web development techniques and
+themes (or page templates) that may make it more efficient to re-do -- rather
+than modify -- your site. This is especially the case for sites:
+Built with Flash
+Using outdated e-commerce platforms
+The good news is that if you start from scratch there may be an existing
+template or theme that you can utilize. You may be able to reuse your
+existing content which can hopefully save time and money.
+What are the next steps?
+If your site was made by selecting a template or theme from third-party
+website software, check out Customize Your Website Software for Mobile
+Users, which can be the fastest way to become mobile-friendly.
+If you want more information on the mobile website implementation process,
+check out our docs on Mobile SEO.
+If you're ready to build a mobile-friendly site, choose responsive web design.
+View our docs on Mobile SEO or go straight to Web Fundamentals.
+If you'd like to learn more about making your business mobile-friendly, we
+recommend: The Mobile Playbook, Think with Google for the
+Mobile Platform, and Google's Multi-Screen Success Stories.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-06-17.

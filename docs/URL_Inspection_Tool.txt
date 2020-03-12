@@ -1,0 +1,196 @@
+URL Inspection ToolAbout the URL Inspection tool
+The URL Inspection tool provides information about Google's indexed version of a specific page. Information includes AMP errors, structured data errors, and indexing issues.
+Common tasks:
+See the current index status of a URL: Retrieve information about Google's indexed version of your page. See why Google could or couldn't index your page.
+Inspect a live URL: Test whether a page on your site is able to be indexed.
+Request indexing for a URL: You can request that an URL be crawled (or recrawled) by Google.
+View a rendered version of the page: See a screenshot of how Googlebot sees the page.
+View loaded resources list, JavaScript output, and other information: See a list of resources, page code, and more information by clicking the more information link on the page verdict card.
+Open URL Inspection
+URL Inspection Tool - Google Search Console Training
+See the current index status of a URL
+See detailed Google Index information about a URL in your property.
+To run the URL Inspection tool to see URL's current index status:
+Open the URL Inspection tool (click the button above, or select URL inspection in the navigation panel of Search Console).
+Enter the complete URL to inspect. A few notes:
+The URL must be in the current property. URLs outside the current property cannot be tested. If you own that other property, you must switch properties to test the URL.
+AMP vs non-AMP URLs: You can inspect both AMP and non-AMP URLs. The tool provides information about the corresponding AMP or non-AMP version of the page.
+Alternate page versions: If the page has alternate/duplicate versions, the report also provides information about the canonical version, if the canonical version is in a property that you own.
+Read how to understand the results.
+Optionally run an indexability test on the live URL
+Optionally request indexing for the URL.
+There is a daily limit of inspection requests for each property that you own.
+Understanding the results: Indexed URL
+Important notes:
+This is not a live test. This tool describes the most recently indexed version of a page, not the live version on the web. The information shown in the tool is used by Google to evaluate Search results. Your page may have changed or become unavailable since Google last saw it. To test the current version of the page as Google would see it, select the Live Test button on the page.
+The "Last crawl" date in the Coverage section shows the date when the information shown here was retrieved (if the page was successfully crawled).
+"URL is on Google" doesn't actually mean that your page is appearing in Search results. Actual appearance in Search results requires that the page and its structured data conform to quality and security guidelines. The URL Inspection tool doesn't take into account manual actions, content removals, or temporarily blocked URLs. To see if your URL is appearing, search for your URL on Google; if your URL is missing but this tool says it was indexed, here's how to find out why.
+The inspection results include the following expandable sections:
+Presence on Google
+This card describes whether or not the URL can appear in Google Search results. The following values are possible:
+URL is on Google
+What it means: The URL has been indexed, can appear in Google Search results, and no problems were found with any enhancements found in the page (structured data, linked AMP pages, and so on).
+What to do next: Typically nothing, although you can explore what Google knows about your page by navigating into the details of the index coverage or enhancement sections.
+If an URL is temporarily blocked using the Remove URLs tool, the URL Inspection tool will report the URL as "URL is on Google," with Index coverage status "Crawled". This does not mean that your URL is appearing in Search results. To see if your URL is still blocked, visit the Remove URLs tool or search for your URL on Google.
+URL is on Google, but has issues
+What it means: The URL has been indexed and can appear in Google Search results, but there are some problems that might prevent it from appearing with the enhancements that you applied to the page. This might mean a problem with an associated AMP page, or malformed structured data for a rich result (such as a recipe or job posting) on the page.
+What to do next: Read the warnings or errors information in the report and try to fix the problems described.
+URL is not on Google: Indexing errors
+What it means: There was at least one critical error that prevented the URL from being indexed, and it cannot appear in Google Search until those issues are fixed.
+What to do next: Expand the Index coverage section to see details about the indexing attempt. See the list of index coverage errors and possible fix steps.
+URL is not on Google
+What it means: This URL won't appear in Google Search results, but we think that was your intention. Most common reasons include a password-protected page, a noindex directive, or that this is an alternate version of a canonical page (alternate version pages are not indexed).
+What to do next: Read the details in the Index coverage section to learn more about the reason. A few possible reasons:
+If the "User-declared canonical" and "Google-selected canonical" values are different, this means that this URL is one of a set of similar pages, and Google has chosen to index another version of the same page. There's probably no need to do anything here, though you might consider removing your explicit canonical tag, or considering why you need another page as canonical.
+If there is a noindex or robots.txt blockage that you didn't expect (see the Index coverage details section below), you must remove that blockage to allow Google to access your site.
+For other index coverage reasons, read the list of values and possible fix instructions.
+URL is unknown to Google: If the index coverage status "URL is unknown to Google" appears, it means that Google hasn't indexed the URL either because it hasn't seen the URL before, or because it has found it as a properly marked alternate page, but it can't be crawled. To fix, run a live inspection, fix any issues you might see, and submit the page for indexing. (Hint: if this is a properly marked but uncrawlable alternate page, if you inspect the canonical page you will see this page listed, with a crawl error.
+URL is an alt version
+What it means: This URL is one of a set of alternate versions of the same page. Pages in this group include AMP/canonical pairs or desktop version/mobile version page pairs. You can see the indexed URL in the Google-selected canonical value under Index coverage.
+What to do: Generally there is nothing to do, though you might check the Google-selected canonical to make sure it is an expected page.
+Index coverage
+This section describes the index status of the URL and the details of the indexing process for this URL. The following information can be provided, depending on the index coverage status:
+Index coverage status
+A more detailed description of the Presence on Google label, explaining why the URL is or isn't on Google. This is a success, warning, failure, or excluded value. See the list of values and possible fix instructions. See URL is unknown to Google.
+Sitemaps
+Any known sitemaps that point to this URL. Note: This includes only sitemaps submitted using the Sitemaps report or listed in the robots.txt for this site. Sitemaps discovered through other means won't be listed. For larger or new sites, it is a good practice to provide a sitemap to help Google know which pages to crawl. See known issues.
+Referring page
+A page that Google possibly used to discover this URL. The referring page might directly link to this URL, or it might be a grandparent or great-grandparent of a page that links to this URL. If this value is absent it doesn't mean that no referring page exists, just that this information might not be available to the URL Inspection tool at this time. If you see "URL might be known from other sources that are currently not reported", it means that Google found this URL through some means other than a sitemap or referring page, but the referring information currently isn't available to this tool.
+Last crawl
+The last time this page was crawled by Google, in your local time. All information shown in this tool is derived from this last crawled version.
+Crawl allowed?
+Indicates whether your page allowed Google to crawl (visit) the page or blocked it with a robots.txt rule. If you did not intend to block Google, you should remove the robots.txt block. Note that this is not the same as allowing indexing, which is given by the "Indexing allowed?" value.
+Page fetch
+Whether or not Google could actually get the page from your server. If crawling is not allowed, this field will always show a failure. If crawling is allowed, page fetch might still fail for various reasons. See explanations of fetch failures. Crawl allowed is an indication of whether you want the page to be reachable; page fetch is whether Google could actually reach it, if allowed.
+Indexing allowed?
+Whether or not your page explicitly disallowed indexing. If indexing is disallowed, the reason is explained, and the page won't appear in Google Search results. IMPORTANT If your page is blocked by robots.txt (see "Crawl allowed"), then "Indexing allowed" will always be "Yes" because Google can't see and respect the noindex directive. In that case, your page might appear in Search results.
+User-declared canonical
+Your declared canonical URL, if the page explicitly declares one. You can declare a canonical URL in several ways: a <link rel="canonical"> tag, an HTTP header, a sitemap, or a few other methods. If your page is one of a set of similar or duplicate pages, we recommend explicitly declaring the canonical URL. For AMP pages, this should be the non-AMP version (unless it is a self-canonical AMP).
+Google-selected canonical
+The page that Google selected as the canonical (authoritative) URL, when it found similar or duplicate pages on your site. If you declared a canonical URL, Google might select the same URL, but sometimes Google might choose another URL that it considers a better canonical example. You can't guarantee the Google-selected canonical for a URL, but you can suggest one. If the page has no alternate versions, the Google-selected canonical is the inspected URL. If you find an unexpected page here, consider explicitly declaring a canonical version.
+The canonical URL is not always the one shown in Search results: for example, if a page has a desktop canonical and a mobile version, mobile searches will probably show the mobile page URL.
+Note that this value can be a few hours behind the value in our index.
+If the page is not the canonical URL, you can inspect the Google-selected canonical URL by selecting Inspect (but only if the URL is in a property that you manage).
+Enhancements (AMP, Jobs, and more)
+This section describes any Search enhancements detected by Google on your URL the last time it was indexed. If the URL could not be indexed, or no enhancements were detected, this section will be empty.
+This tool does not yet show all possible enhancements. Here are the enhancements supported by this tool:
+Mobile Usability
+Discover whether your page is easy to use on a mobile device.
+The following verdicts are possible:
+Page is not mobile friendly: The page won't work well on a mobile device because of a few issues.
+Page is mobile friendly: The page should probably work well on a mobile device. More details.
+No data available: For some reason we couldn't retrieve the page or test its mobile-friendliness. Please wait a bit and try again.
+You can see a description of the possible errors here.
+To see which other pages on your site are affected by an issue, select the issue row, then select Open Report.
+AMP
+If the page has a linked AMP version, you can see information about it by selecting the row in the report. Use this information to help find and troubleshoot AMP-specific indexing and other issues.
+Details shown here apply to the AMP version referenced by the current page; they do not apply to the current page.
+In addition to standard AMP errors, you might see these Google-specific AMP errors.
+To see other pages on your site affected by a specific issue, select the issue description row, then select Open Report.
+An URL page inspected with URL Inspection tool as an AMP can have the following possible statuses:
+Linked AMP version is valid: The AMP is valid and indexed.
+Linked AMP version is invalid: The AMP has an error that will prevent it from being indexed.
+Linked AMP version isn't indexed (indexed version) or Linked AMP version cannot be indexed (live inspection): The page is blocked from indexing, typically because of a robots.txt rule or a noindex directive.
+Linked AMP version is valid with warnings: AMP can be indexed, but there are some issues that might prevent it from getting full features, or it uses tags or attributes that are deprecated, and might become invalid in the future.
+Not an AMP page: The page inspected was not an AMP page.
+Various rich result types
+You can see information about any rich result types (structured data) found on the page. Information includes the number of valid items found on the URL, descriptions of each item, and details about any warnings or errors found. The following rich result types are supported:
+Breadcrumb
+Dataset
+Event
+FAQ
+Fact check
+How-to
+Job posting
+Logo
+Product
+Q&A page
+Recipe
+Review snippet
+Sitelinks searchbox
+Video
+My rich result isn't here! Not all rich result types are supported by the tool yet. Unsupported types might be present and valid on the page, and can appear in Search results, but won't appear in the tool.
+Inspect a live URL
+You can test a live URL in your property to see whether it is capable of being indexed by Google. This will run a test against the live page for information similar to the indexed URL. It is useful when you want to test changes in the page against the currently indexed version of the page.
+To test a live URL for potential indexing errors:
+First you must inspect the indexed URL as described in Inspect an indexed URL. Note: it's fine if the page hasn't been indexed yet, or has failed indexing, but it must be accessible from the internet without any login information.
+Click Test live URL on the index results page.
+Read understanding the live test results to understand what you're looking at.
+You can toggle between the live test results and the indexed results by selecting Google Index or Live Test on the page.
+To rerun a live test, select the  (reload) button on the page.
+To see details about the page, including a screenshot and HTTP response headers, select View crawled page.
+There is a per-property daily limit of live inspections.
+Understanding the results: Live test
+Important notes:
+This is a live test. This tool fetches and examines the URL in real time. The information shown in the live test can differ from the indexed URL for reasons described below.
+The live test does not check for the presence of the URL in any sitemaps or any referring pages.
+The Indexable status in the live URL can be different from the Index coverage status on the indexed URL for these reasons:
+You have changed or fixed something in the live URL, such as removing (or adding) a noindex tag or a robots.txt block, and the changes were not yet indexed. Examine the difference in the Indexed and Live tests, or check the page version history on your site to discover the differences between the indexed version and the live version.
+The live test does not support all the index states in the indexed version report. Some states in the indexed report aren't tested or don't make sense in a live test, and will be reported differently in the live test. See the indexable section details to learn the unsupported states.
+Does a valid result mean that my page will be indexed?
+No. This test only confirms that Googlebot can access your page for indexing. Even if you get a valid or warning verdict in the live test, your page must still fulfill other conditions in order to be indexed. For instance:
+The page cannot be subject to any manual actions or legal issues.
+The page cannot be a duplicate of another indexed page; it must either be unique, or selected as the canonical version of a set of similar pages.
+The page quality must be high enough to warrant indexing.
+The inspection results include the following expandable sections:
+Potentially available on Google?
+The top card gives a general evaluation of whether or not the live URL has the ability to be indexed. A positive result is not a guarantee that it will appear in Search results. Search results requires that the page and its structured data conform to quality and security guidelines. The URL Inspection tool doesn't take into account manual actions, content removals, or temporarily blocked URLs.
+The following values are possible:
+URL is available to Google
+What it means: The URL isn't blocked and doesn't have any detectable errors to prevent full indexing. If Google indexes the URL it can appear in Google Search results, provided that it conforms to quality and security guidelines, and is not subject to manual actions, content removals, or temporarily blocked URLs.
+What to do next: If the page is different from the indexed version, you can request indexing by selecting the button on the page. Alternatively you could submit a sitemap, or wait for it to be crawled naturally.
+URL is available to Google, but has issues
+What it means: The URL can be indexed by Google, but there are some problems that might prevent it from appearing with the enhancements that you tried to implement. This might mean a problem with an associated AMP page, or malformed structured data for a rich result (such as a recipe or job posting) on the page.
+What to do next: Read the warnings or errors information in the report and try to fix the problems described.
+URL is not available to Google
+What it means: This URL can't appear in Google Search results due to a critical issue.
+What to do next: Read the details in the Availability section to learn more about the reason.
+URL is an alternate version
+What it means: The URL is not considered the canonical version of this page, so it is not indexed, but this is not an error.
+What to do next: Probably nothing. Google has a canonical URL for this page that should be indexed. The current index information will show the canonical URL in Coverage > Google-selected canonical.
+Availability
+This section of the report describes whether the page can be indexed by Google. However, a positive result is no guarantee that it will appear in search results. Appearance in Search results additionally requires that the page and its structured data conform to quality and security guidelines. The URL Inspection tool doesn't take into account manual actions, content removals, or temporarily blocked URLs.
+For an explanation of the various properties, see the property descriptions in the indexed version.
+Differences between indexed test and live test results
+Not all availability values shown in the indexed report are possible in the live report. Here is a list of unsupported states with explanations.
+Indexed report status
+Why not shown in live test
+Submitted URL ....
+Any status that starts with "Submitted URL" cannot be shown in a live test, as these states are only shown when the user submitted the page using a sitemap, and sitemap information is not available in a live test.
+Submitted and indexed
+Indexed, not submitted in sitemap
+The equivalent status "URL can be indexed" is shown.
+Indexed, though blocked by robots.txt
+The phrase "Indexed" is not applicable in a live test. If blocked, the corresponding error "Blocked by robots.txt" will be shown.
+Discovered, currently not indexed
+Not applicable to a live test.
+Crawled, not indexed
+Not applicable to a live test.
+"Duplicate page" statuses:
+Alternate page with proper canonical tag
+URL indexed as an alt version
+Duplicate page without canonical tag
+Google chose different canonical than user
+Submitted URL not selected as canonical
+Google's canonical information is not available in a live test, nor is any knowledge of duplicate pages. If the user declares a canonical page, that information is available.
+Enhancements (Mobile usability, AMP, Jobs, and more)
+This is similar to the enhancements section in the indexed version of the URL.
+View the rendered page
+You can view a screenshot of the rendered page as Googlebot sees it. This is useful for confirming that all elements of the page are present and appear as you intend. Differences might be the result of resources that are blocked to Googlebot.
+Screenshots are available only for the live URL test; screenshots are not available for the indexed URL. The page must be reachable to generate a screenshot. If your page is behind a firewall, you can expose it to the URL Inspection tool using a tunnel.
+To view the rendered page:
+Run a live test on a URL.
+Click View tested page on the page verdict card to open additional information panels. If this option is not available it is typically because the page cannot be reached for the live test.
+Navigate to the Screenshot tab.
+Request (re)indexing
+You can request that an inspected URL be indexed by Google. Indexing can take up to a week or two; you can check the progress using this tool.
+To request indexing for a URL:
+Inspect the page URL.
+Click Request indexing on the inspection result page for the URL. If the page passes a quick check to test for immediate indexing errors, it will be submitted to the indexing queue. You cannot request indexing if the page is considered to be non-indexable in the live test.
+To request indexing of many new or updated pages, your best choice is to submit a sitemap, with the updated pages marked by <lastmod>.
+Known issues
+In a few cases, we don't report the sitemap for a page that was submitted in a sitemap. We are working to fix this.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemove URLs ToolRemovals ToolRich Results Tools and ReportsSecurity Issues reportSettingsSitemaps reportSpeed reportURL Inspection Tool
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -1,0 +1,203 @@
+Performance reportThe Performance report shows important metrics about how your site performs in Google Search results: how often it comes up; average position in search results; click through rate; and any special features (such as rich results) associated with your results. Use this information to improve your site’s search performance, for example:
+See how your search traffic changes over time, where it’s coming from, and what search queries are most likely to show your site.
+Learn which queries are made on smartphones, and use this to improve your mobile targeting.
+See which pages have the highest (and lowest) click-through rate from Google search results.
+OPEN THE PERFORMANCE REPORT
+Performance reports in Search Console - Google Search Console Training
+Configuring the report
+The default view of the report shows the click count on your pages in Google Search results for the past three months.
+Choose which metrics to see by selecting tabs above the chart. Metrics are the numbers to show (clicks, impressions, position, CTR).
+Choose which dimension to show by selecting a data grouping tab in the table. The dimension defines how data is grouped: by Page URL, by country, by query string, and so on.
+Optionally Filter your data by adding or changing filters.
+Optionally Compare dimension groups: for example, compare results from Brazil and China, or image data vs web data.
+Exporting report data
+Many reports provide an export button
+to export the report data. Both chart and table data are exported.
+Reading the chart
+Depending on which tabs you select, the chart shows total clicks, total impressions, average CTR (click through rate), and average position for your property. Data on the chart is aggregated by property. See Metrics for explanations of these metric types and how they are calculated. The newest data can be preliminary; preliminary data is indicated when you hover or select it on the graph.
+The chart data is always aggregated by property unless you filter by page or search appearance.
+The totals for each metric are shown on the chart. The chart totals can differ from the table totals.
+See dimensions, metrics, and about the data to understand the numbers.
+Reading the table
+The table shows data grouped by the selected dimension (for example, by query, page, or country).
+The table data is aggregated by property unless you filter or view results by page or search appearance.
+The chart totals can differ from the table totals for various reasons.
+See dimensions, metrics, and about the data to understand the numbers.
+Why did the report table disappear?
+In certain cases where the table does not add any additional information to the chart, the table is omitted from the report. For example, if you show click counts in a table grouped by country, and compare USA to UK, you would get a table like this:
+Country
+USA clicks
+UK clicks
+USA
+1,000
+0
+UK
+0
+1,000
+This table provides no information that the graph doesn't already show, so it is omitted.
+Dimensions and filters
+You can group and filter your data by the following dimensions. To group, select the dimension tab above the table. To filter, read here.
+Queries
+Represents the query strings that users searched for on Google. Only searches that returned your site are shown.
+Anonymized queries
+Very rare queries (called anonymized queries) are not shown in these results to protect the privacy of the user making the query. Anonymized queries are always omitted from the table. Anonymized queries are omitted from the chart totals when you filter by query (either queries containing or queries not containing a given string).
+If your site has a significant number of anonymized queries, you may see a significant discrepancy between the filtered (Queries containing: some_string) and unfiltered (Queries not containing: some_string) total, because because the anonymized queries have been omitted.
+Data is aggregated by property when grouping or filtering by query.
+When filtering by query, you can lose long-tail data in the table or the chart. When grouping by query, you can lose long-tail data only in the table. This is most noticeable in very large sites.
+If you can no longer see a search query that you saw recently, check that you haven't added a filter that hides the results.
+Common uses
+Review the Query list for expected keywords.
+If keywords that you expect to see don't appear, your site might not have enough useful content relevant to those keywords. If unexpected words (like "Viagra" or "casino") appear, it's likely that your site has been hacked.
+Find queries with high impressions and low CTR. These queries can help identify where you can improve your  titles and snippets to match your users’ interests.
+Find branded or not-branded query totals. You might want to see how many queries show your site when the user does or doesn't include a specific string, such as a brand name. Because anonymized queries can't be counted, and long-tail data is dropped when filtering by query, you can only approximate this value, but very roughly, the branded query percentage is:
+(Queries containing "some value")
+(Queries not containing "some value") + (Queries containing "some value")
+Pages
+The final URL linked by a Search result after any skip redirects (see below).
+Most performance data in this report is assigned to the page's canonical URL, not to a duplicate URL. This means that when a user clicks a duplicate URL in Search results, the click counts for the canonical URL, not the URL that the user visits. Therefore, the Performance report can show zero clicks for a duplicate URL even though your site logs show that users reached that page from Google Search. You can learn the canonical URL for a page using the URL Inspection tool.
+A small amount of clicks and impressions might be assigned to the actual URL rather than the canonical URL. Examples include some knowledge panel links in mobile search results, as well as some hreflang results.
+You can try to determine actual traffic for duplicates if you have separate versions for desktop, mobile, or AMP. In this case, you can see traffic for the actual clicked URL by filtering data by device (for desktop or mobile) or by AMP search appearance.
+Choosing the pages dimension aggregates data by page rather than by property in the table; the graph aggregates data by property whatever the dimension.
+When grouping by page, you can lose long-tail data in the table. This is most noticeable in very large sites.
+Skip redirects: The URL that Google displays for a search result might be different from the actual URL of the link. For example, consider a site with two versions of a page: example.com/mypage for desktop users, and m.example.com/mypage for mobile users. Google might show the desktop URL for both desktop and mobile searches, but the <a> link target will be different, depending on whether the search is from a desktop or mobile device. On a desktop, the underlying link points to the desktop page; on a mobile device, the underlying link points to the mobile page, which is called a skip redirect.
+Countries
+The country where the search came from; for example, Canada or Mexico.
+Devices
+The type of device on which the user is searching: desktop, tablet, or mobile. If you have separate properties for your different device types (for example m.example.com for mobile and example.com for desktop), you might not be able to compare metrics unless you use a Domain property.
+Search Type
+The type of Google search run by the user: web search (the default), image search, video search, and so on.
+Grouping is not supported for search type because the results page layout is very different for different search types. For example, position 30 in image search results might be on the first result page, but position 30 in web search would be on page three.
+AMP Stories data can appear in Image search, Web search, and Discover search type results.
+Data is stored separately by search type
+For a given URL, all click, impression, and position data is stored separately for each search type. So, for instance, an image can appear in both web results and image results, but the click, impression, and position data for that image are recorded separately for web searches and image searches.
+As an example, given an image hosted on the page example.com/aboutme.html, you might have this data:
+Search type
+Impressions
+Clicks
+Position
+Image
+20
+10
+23
+Web
+30
+30
+7
+Search Appearance
+Represents a special search result feature such as a rich result type or an AMP.
+Supported search appearance types include:
+AMP on image result - An Image Search result, where the image is hosted in an AMP page.
+AMP non-rich results - A basic, non-graphical (plain blue link) search result for an AMP page.
+AMP article - A visually-decorated search result link, such as an image from the AMP page, plus a content summary. The result can be either free-standing in the results page, or embedded in a carousel of similar result types. AMP article rich results are also counted as rich results.
+AMP story - a visual storytelling format built on AMP that enables a user to tap through full screen images and videos.
+Android App - An Android app installation link or Android app page result in a mobile search. To get your Android app indexed and in search results, follow the Firebase Android App indexing guidelines.
+Event - An event rich result. Read about measuring clicks and impressions for Event items.
+FAQ rich results - A FAQ page.
+Google Play Instant - A mobile app designed to run in a trial form on a mobile device directly from Search results, without needing to be installed on the phone first.
+How-to rich results - A How-to rich result.
+Job details - A job posting result that shows an expanded description of a job. Read about measuring clicks and impressions for jobs.
+Job listing - A job posting result that shows a summarized view of a job. Read about measuring clicks and impressions for jobs.
+Media Actions - Actions for music, television, and movie structured data, such as listen or watch.
+Product results - Items marked up with Product schema.org markup, or identified as a product result by some other mechanism.
+Q&A rich results - A Q&A page rich result.
+Rich results - Any type of rich result defined in structured data listed in the search gallery. This includes all rich-result subtypes such as job listing and AMP article rich results.
+Review snippet - A review snippet rich result.
+Search result link - Any link shown in search results.
+Web Light results - A lightweight, transcoded version of a webpage, optimized for viewing over slow data connections.
+Videos - Videos that appear in either general search results (type Web) or Discover.
+Dimensioning or filtering by search appearance will aggregate data by page rather than by property in the table only; data in the graph will still be grouped by property.
+The filter feature list shows filter options only for types for which you have impressions; for example, if you have no AMP results, you will not see AMP in the filter list.
+The same page can have multiple search appearance features in a single session, but only one impression is counted for each feature type. For example, a page can have both a rich result and a search result link in one query.
+Filtered click counts
+If you filter by search result feature, it is not guaranteed that all clicks for a given URL were on a link in the filtered feature type. This is because clicks are assigned to a URL, not to a (URL + feature). However it is guaranteed that the user saw a link with this URL and feature in the same set of results where she clicked a link with that URL.
+For example: A user searches Google for "new cars" and the results show both a standard result link and an AMP link pointing to the same page on Bob's Car Dealership. A click on either link will count toward the same URL, of course. The next day, Bob (owner of the website) opens Search Analytics for his site, groups results by page, filters by AMP feature, and sees that URL listed with 1 click, no matter whether the user clicked the AMP link or the standard link.
+Dates
+Groups your data by day. This data can include preliminary data. All dates are in Pacific Time Zone (PT)
+By default, only complete days are included (days where we have data from midnight to midnight); if you want to include partial days (for example, today), you must change the date filter to specify the exact starting date.
+Metrics
+Choose which metrics to display by toggling the appropriate tab on the report.
+The following metrics are available:
+Clicks - Count of clicks from a Google search result that landed the user on your property. Learn more.
+Impressions - How many links to your site a user saw on Google search results. Impressions are counted when the user visits that page of results, even if the result was not scrolled into view. However, if a user views only page 1 but the result is on page 2, the impression is not counted. The count is aggregated by property or page. Note that infinitely scrolling result pages (image search) the impression might require the item to be scrolled into view. Learn more.
+CTR - Click-through rate: the click count divided by the impression count. If a row of data has no impressions, the CTR will be shown as a dash (-) because CTR would be division by zero.
+Average position - The average position of the topmost result from your site. So, for example, if your site has three results at positions 2, 4, and 6, the position is reported as 2. If a second query returned results at positions 3, 5, and 9, your average position would be (2 + 3)/2 = 2.5. If a row of data has no impressions, the position will be shown as a dash (-), because the position doesn't exist. Learn more.
+Position [Only in the table] - The position value in the table represents the average position in search results for the item in that specific row. For example, when grouping by query, the position is the average position for the given query in search results. See the average position above to learn how the value is calculated.
+Filtering your data
+You can filter data by multiple dimensions. For example, if you are currently grouping data by query, you can add the filters "country='USA' AND device='Mobile'".
+To add a filter:
+Click the + NEW label next to the existing type and date filters on the page.
+To remove a filter:
+Click  next to an existing filter. You cannot remove the search type or date filters.
+To modify a filter:
+Click the filter and reset the values.
+Filtering your data by query or URL can affect the totals.
+When filtering data by date, only complete days of information are included. So, for example, if you choose "last 7 days," only the most recent seven complete days of data are covered; if there is half a day of data for today, the seven day span is yesterday plus the six earlier days.
+Comparing data
+You can compare data between two exact values in any one grouping dimension, whether or not it is the currently selected grouping. For example, when grouped by Query you can compare clicks between this week and last week, or between clicks from USA and France. Comparing by page or search appearance can change the metric calculation for CTR, impressions, and clicks. When comparing values for a single metric, the results table will display a Difference column to compare values in each row.
+Some useful comparisons:
+Sort by difference to see queries with significant change from the previous week.
+Compare total searches on your mobile site to mobile searches on your desktop site. If you have both mobile and non-mobile versions of your site (m.example.com and www.example.com), and your sites are configured correctly, you should see many more mobile searches on your mobile site. Open a separate Search Analytics report for each site and compare searches from mobile devices on your desktop site (www.example.com) to all searches on your mobile site (m.example.com).
+You can compare data in only one dimension at a time (Dates, Queries, and so on). Adding a new comparison in another grouping dimension will remove the existing comparison. For example, if you are comparing clicks for this week versus last week (Date), then add a comparison between US and Japan (Country), the date range will reset to the default.
+If you compare two groups, and a value is very rare in one group but not rare in the other group, the rare group will show ~ for that row to indicate that the number is not available. For example, if you compare query impressions between Germany and Thailand, the result row for "Deutsche Bundesbank" will probably show an impression number for Germany, and a ~ (not available) for Thailand. This is because the impression count for Thailand is at the end of a very long tail of results. It does not necessarily mean zero, but it is far down the list for that group. However, if you filter by the rare value (in this example "Deutsche Bundesbank"), you should see data values for both dimensions.
+About the data
+Search analytics counts data independently for each unique property. That is, data are counted separately for each of the following:
+https://example.com/
+http://example.com/
+http://m.example.com/
+However, if you use a Domain property, all data from the same domain is combined, for both http and https.
+Last updated date
+The Last updated date on the report shows the last date for which the report has any data.
+How are clicks, impressions, and position calculated?
+Read details about how clicks, impressions, and position are counted and calculated.
+Preliminary data
+The newest data in the Search Performance report is sometimes preliminary – this means that the data might change slightly before it is confirmed. Preliminary data is usually less than three days old; at some point, all preliminary data is confirmed. Preliminary data is indicated when you hover over it in the chart.
+Preliminary data is included in both the chart and the tables for Search performance, as well as the Performance chart in the Search Console Overview page.
+Data discrepancies
+You might see a few kinds of data discrepancies in Search Console
+Discrepancies between chart totals and table totals
+You can see differences between the chart totals and the table totals for several reasons:
+Chart totals higher:
+The table can show a maximum of 1,000 rows, so some rows might be omitted.
+When filtering by page or query, the "matches" and "does not match" totals might not add up to the unfiltered total. For example, adding the totals for "Queries containing:mouse" and "Queries not containing:mouse" might not equal the total values when no query filters are applied. This is because anonymized queries are omitted, and data is truncated due to serving limitations.
+When viewing by query, anonymized (rare) results are omitted from the table.
+Adding an ineffective filter (such as filtering results to your sites root URL - "example.com/") will likely increase the number of chart totals, because it does not remove any results while changing data aggregation from property to page aggregation, which counts multiple views of the same site individually.
+Table totals higher:
+When the table is grouped by page or search appearance, the table totals are grouped by URL but the chart totals are still grouped by property. Therefore, if a single property appears multiple times in a single search, it count as 1 result in the chart but multiple results in the table.
+Some search appearances are subcategories of others. For example, Job listing is a subcategory of Rich result, so the same result will be listed in both rows.
+Discrepancies between Search Console and other tools
+Search Console data can differ slightly from the data displayed in other tools. Possible reasons for this include the following:
+To protect user privacy, Search Analytics doesn't show all data. For example, we might not track some queries that are made a very small number of times or those that contain personal or sensitive information.
+Some processing of our source data might cause these stats to differ from stats listed in other sources (for example, to eliminate duplicates and visits from robots). However, these changes should not be significant.
+Some tools define "keywords" differently. For example, the Keywords tool in Google Ads displays the total number of Google searches for that keyword across the web. Search Analytics shows only those keyword searches that returned your pages in Google search results.
+There can be a lag between when the numbers are calculated and when they are visible to webmasters. Although data gets published in intervals, we continually collect it. Normally, however, collected data should be available in 2-3 days.
+Time zones matter. The Performance report tracks daily data according to local time in California, where data for each day is labeled according to the local time in California. If your other systems use different time zones, your daily views may not match exactly. For example, Google Analytics shows time in the webmaster’s local time zone.
+Some tools, such as Google Analytics, track traffic only from users who have enabled JavaScript in their browser.
+Downloaded data unavailable/not a number values. If you download the data in the report, any values shown as ~ or - (not available/not a number) on the report will be zeros in the downloaded data.
+Aggregating data by property vs by page
+All data on the chart is aggregated by property. All data in the table is aggregated by property except when grouped by page or search appearance.
+When aggregating data by property, the site credited with the data is the site containing the canonical URL of the target of the search result link.
+For impressions, if a property appears twice on a search results page when aggregating by property, it counts as a single impression; if grouping by page or search appearance, each unique page is counted separately.
+For clicks, if a property appears twice in search results when grouped by property, and the user clicks on one link, backs up, then clicks the other link, it counts as a single click, since the final destination is the same site.
+For position, when aggregating by property, the topmost position of your property in search results is reported; when grouped by page or search appearance, the topmost position of the page in search results is reported.
+For click through rate, because of the different accounting methods, the click-through rate and average position are higher when aggregating by property if multiple pages from the same site appear in the search results. For example, imagine that search results for "fun pets for children" returns only the following three results, all from the same property, and that users click each of them with equal frequency:
+Google Search Results
+Metrics Aggregated by Property
+Metrics Aggregated by Page
+www.petstore.example.com/monkeys
+www.petstore.example.com/ponies
+www.petstore.example.com/unicorns
+Click-through rate: 100%
+All clicks for a site are combined
+Click-through rate: 33%
+3 pages shown, 1/3 of clicks to each page
+Average position: 1
+Highest position from the site in the results
+Average position: 2
+(1 + 2 + 3) / 3 = 2
+Known issues
+The following are known issues in Search Console. No need to report them to us, but we'd love your feedback on any other features or issues you spot. Use the Feedback mechanism built into the report in the navigation bar.
+The graph now only shows data aggregated by property, never by URL. (This is a feature!)
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Performance ReportsPerformance reportPerformance report (Discover)
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

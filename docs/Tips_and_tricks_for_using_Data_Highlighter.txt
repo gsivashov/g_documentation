@@ -1,0 +1,22 @@
+Tips and tricks for using Data HighlighterHere are some tips for using Data Highlighter:
+When you're creating a tag, take care to accurately highlight all of the text that you want to tag.
+Good: The Punch Brothers
+Not as good: The Punch Brothers
+When tagging a list of multiple items--for example, multiple performers or multiple dates--tag each item separately.
+Good: Chris Thile  Chris Eldrigde  Noam Pickelny  Gabe Witcher  Paul Kowert (five separate tags)
+Not as good: Chris Thile Chris Eldrigde Noam Pickelny Gabe Witcher  Paul Kowert (one tag for all five performers)
+When tagging a page with multiple events, start at the top of the page and work your way down towards the bottom. After you tag enough data, Data Highlighter will guess and automatically tag the rest of the page, saving you from having to tag everything manually.
+In page sets with multiple pages, tag the pages consistently when possible. For example, if your pages display event locations at both the top and bottom of each page, always tag the address at the top.
+Make sure you tag all of the required data. (The Data Items column displays required next to each required item that isn't tagged yet.) You don't need to tag the unrequired fields.
+If pages are missing data, you can supply defaults for the missing data by clicking Add missing values from the gear menu. The defaults will be used for all pages in the page set, so make sure that the data applies to all pages in the page set. For example, if you provide a default address, make sure that the address is applicable to all events on all pages in the page set that don't already specify an address.
+If you tag an event name that also happens to be a hypertext link, Data Highlighter automatically uses the link's URL for the event. For example, if you tag an event name that looks something like this in raw HTML: <a href="http://example.com/eventName">My Event Name</a>, then Data Highlighter uses "http://example.com/eventName" as the event URL. Note that:
+Data Highlighter automatically uses the URL only if the URL points to a page in your page set.
+The URL will not display in the My Data Items column. You can confirm that the URL was added by viewing the structured data page.
+If you explicitly tag a different URL for the event, Data Highlighter will use the URL that you tag.
+Before you finish tagging a page and click the Done or Next button, be sure to do the following:
+Review and correct any tagging marked with the alert icon (). If you leave alert icons unaddressed, Data Highlighter might not be able to understand the data on other pages in your page set.
+Count the number of events in the My Data Items column and make sure that the page contains the same number of events. For example, if the My Data Items column lists five events, but the page contains only one event, you'll need to fix the tags on the page.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Data HighlighterAbout Data HighlighterData types supported by Data HighlighterCreate a page setPublish or unpublish a page setDelete a page setTips and tricks for using Data HighlighterTroubleshooting Data Highlighter
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -1,0 +1,10 @@
+Scraped contentSome webmasters use content taken (“scraped”) from other, more reputable sites on the assumption that increasing the volume of pages on their site is a good long-term strategy regardless of the relevance or uniqueness of that content. Purely scraped content, even from high-quality sources, may not provide any added value to your users without additional useful services or content provided by your site; it may also constitute copyright infringement in some cases. It's worthwhile to take the time to create original content that sets your site apart. This will keep your visitors coming back and will provide more useful results for users searching on Google.
+Some examples of scraping include:
+Sites that copy and republish content from other sites without adding any original content or value
+Sites that copy content from other sites, modify it slightly (for example, by substituting synonyms or using automated techniques), and republish it
+Sites that reproduce content feeds from other sites without providing some type of unique organization or benefit to the user
+Sites dedicated to embedding content such as video, images, or other media from other sites without substantial added value to the user
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Quality guidelinesAutomatically generated contentSneaky redirectsLink schemesCloakingHidden text and linksDoorway pagesScraped contentAffiliate programsIrrelevant keywordsCreating pages with malicious behaviorUser-generated spamWays to Prevent Comment SpamReport spam, paid links, or malware
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

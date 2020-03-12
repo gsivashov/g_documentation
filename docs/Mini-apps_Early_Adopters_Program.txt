@@ -1,0 +1,27 @@
+Home
+Products
+Search for Developers
+Guides
+Mini-apps Early Adopters Program
+The program is no longer accepting submissions.
+Thank you for your interest in Mini-apps! Mini-apps enable you to engage users with
+interactive workflows and live content directly on Search and the Assistant. The goal of this
+Early Adopters Program is to assess the suitability of Mini-apps for developers and users.
+Learn more about Mini-apps in
+our presentation at I/O 2019.
+Requirements
+To be considered for inclusion in the Mini-apps Early Adopters Program, your Mini-app must
+meet the following requirements:
+The Mini-app must help users find information more quickly or accomplish a task more
+easily.
+The Mini-app must closely align with the organization’s primary purpose.
+The Mini-app is only eligible to trigger on queries that include the name of the Mini-app
+provider, such as “brand_name machine learning courses”.
+The Mini-app must not contain content that is obscene, profane, hateful, harrassing, sexually
+explicit, misleading, or graphically violent.
+The Mini-app
+must not promote dangerous or illegal activities.
+The Mini-app must not deceive or mislead users. Don't impersonate any
+organization, or misrepresent your ownership, affiliation, or primary purpose.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-09-16.

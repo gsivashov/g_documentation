@@ -1,0 +1,35 @@
+Home
+Products
+Search for Developers
+Reference
+Method: urlNotifications.publish
+HTTP request
+Request body
+Response body
+JSON representation
+Authorization Scopes
+Try it!
+Notifies that a URL has been updated or deleted.
+HTTP request
+POST https://indexing.googleapis.com/v3/urlNotifications:publishThe URL uses Google API HTTP annotation syntax.
+Request body
+The request body contains an instance of UrlNotification.
+Response body
+If successful, the response body contains data with the following structure:
+Output for urlNotifications.publish
+JSON representation
+{
+"urlNotificationMetadata": {
+object(UrlNotificationMetadata)
+}
+}
+Fields
+urlNotificationMetadata
+object(UrlNotificationMetadata)
+Description of the notification events received for this URL.
+Authorization Scopes
+Requires the following OAuth scope:
+https://www.googleapis.com/auth/indexing
+Try it!
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-07-02.

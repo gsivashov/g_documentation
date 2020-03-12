@@ -1,0 +1,57 @@
+Web Light: Faster and lighter mobile pages from searchInformation for website ownersGoogle shows faster, lighter pages to people searching on slow mobile clients. To do this, we transcode (convert) web pages on the fly into a version optimized for slow clients, so that these pages load faster while saving data. This technology is called Web Light. Web Light pages preserve a majority of the relevant content and provide a link for users to view the original page. Our experiments show that optimized pages load four times faster than the original page and use 80% fewer bytes. Because these pages load so much faster, we also saw a 50% increase in traffic to these pages.
+Here's an example of a web page being loaded with and without transcoding:
+See the Web Light version of a web page
+You can preview a Web Light version of a non-AMP webpage on your mobile device or desktop as described here:
+If you have a Google account:
+View the transcoded page
+Otherwise:
+On your mobile device, browse to the link http://googleweblight.com/i?u=[your_website_URL] where the url is fully qualified (http://www.example.com).
+OR
+On your desktop, open the Chrome device mode emulator with the link http://googleweblight.com/i?u=[your_website_URL] where the url is fully qualified (http://www.example.com)
+Some pages are currently not transcoded, including video sites, pages that require cookies (such as personalized sites), and other websites that are technically challenging to transcode. In these cases, you will see a "not transcoded" notification if you request the transcoded page using one of the tools listed above.
+Compare load times
+You can see a side-by-side load comparison between a Web Light page and a non-transcoded page (this test takes a few minutes).
+Opting out of Web Light
+If you do not want your pages to be transcoded, set the HTTP header "Cache-Control: no-transform" in your page response. If Googlebot sees this header, your page will not be transcoded.
+FAQ
+General
+When will a user see these Web Light pages?
+Users will see these pages only if Google has detected that they are on a slow clients.
+Will Google Analytics work on my page?
+Yes. Note that we support only page view statistics to keep the pages small and fast-loading: for example, event tracking is not reported. Also we currently support only Universal Analytics (the analytics.js JavaScript library).
+Metrics for the transcoded version of a page are shown in Analytics with googleweblight.com appended to the page's host name. So, if you have a page at example.com/mypage, metrics for the unencoded page are shown as example.com/mypage, and metrics for the transcoded page are shown as example.com.googleweblight.com/mypage.
+Will my pages be transcoded for users on faster clients?
+Pages will not be transcoded if the user is using a fast client.
+Will my pages be transcoded for users doing searches from desktop computers or tablets?
+Pages will be transcoded only for users on mobile phones, not desktops or tablets.
+What browsers are supported?
+Pages are currently transcoded for searches from the Chrome browser and the Android browser (version 2.3+), as well as Google Go.
+How do I provide feedback about these optimized pages?
+Please send feedback to googleweblight@google.com. If you see issues with a particular page, please include the URL.
+Do you cache my transcoded page?
+Pages are generally transcoded when the user requests them, from the current version of the page. Google caches the main content for up to 24 hours. Other resources such as CSS, JS and images could be cached longer.
+Do you transcode just the page linked by search results, or do you transcode the whole site?
+We transcode the page and any pages that the user clicks to from within that page, unless the page is non-transcodable or opted out from transcoding.
+Ads and Revenue
+How will this affect my ad revenue?
+We currently support ads from several networks and are working to include more. Our experiments show that transcoded sites get 50% more traffic than non-transcoded sites and we expect that this will help monetize your site.
+What ad networks are currently supported?
+As of October 2018, we support Sovrn, Zedo, AdSense, and Google Publisher Tags (GPT). We are working to support Google Ad Manager and more ad networks as well.
+How many ads are shown on a single page?
+To keep the page size down and make pages load faster, we limit the number of ads shown on a single page. Currently this limit is set at 3.
+I use multiple ad networks. How does Google select which ads are shown?
+Ads are currently chosen in the order in which they are requested by the original page.
+I'm an ad network and my network is not supported. How can I get added?
+We're interested in supporting your network. Please check our page for ad networks.
+Opt-out
+What happens if I opt out of Web Light?
+If you opt out, Google will not transcode your page for users on slow devices. Please note that traffic to your site from search users on slow devices may decrease, as they would need to spend more time loading your pages.
+I didn't opt out, why is my page not transcoded?
+Due to technical limitations, some pages cannot be currently transcoded. These pages will also be labeled as non-transcoded in search results. This includes:
+Sites that require cookies (e.g. personalized site or sites that require you to login before using them)
+Sites that use a significant amount of data (e.g. video sites)
+Other sites that are technically difficult to transcode.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+MobileMobile viewing on feature phonesWeb Light: Faster and lighter mobile pages from searchAd network support for Web Light pages in Google SearchGoogle DiscoverResources for developing mobile-friendly pagesAnnounce mobile billing charges clearlyAssociate your Android app with a website
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

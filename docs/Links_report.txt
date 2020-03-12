@@ -1,0 +1,114 @@
+Links reportSee who links to you the most, your top-linked pages, and more.
+Open the links report
+Some notes about the data:
+Pages on your site are grouped by canonical URL. This means that the anchor tags and possibly some parameters are omitted before grouping.
+Duplicate links are combined. A duplicate link is a link from the same source URL to the same target URL, after removal of all parameters and other normalization. In the link text report, duplicates are based on link text not URL.
+Tables are limited to 1,000 rows, so data may be truncated in larger or more linked-to sites.
+Although the report uses the term "site", data is actually grouped by root domain in the Links report; protocol (http/https), subdomain (m., www) and subdirectories are stripped and grouped together. Therefore, all the following are grouped under example.com:
+example.com
+m.example.com
+example.com/pet_store/
+https://example.com
+http://example.com
+TLDs (top level domains) are not omitted when grouped and displayed, so the following are NOT identical:
+example.com
+example.com.de
+"External sites" or links are anything outside of your current property.
+There are some data differences between this report and the links reports in old Search Console.
+This report has the following information:
+Top linking domains (Which sites link to me the most?)
+See which sites link to you the most.
+This report shows the root domain of sites with the most links to your site, sorted by count of links. Sites are shown by their root domain, with any subdomain omitted (so www.example.com would show as example.com).
+If you see a domain listed that is identical to your property, it is because it represents a subdomain that is omitted in the table. For example, if a link comes from m.example.com, the table entry will be example.com.
+To navigate there
+Links report > Top linking sites table
+For more detail
+Click the More link at the bottom of the table for the full list. Click a site in the list to see your most linked pages from that site.
+Uses for this report
+Confirm that you recognize the sites listed here. If you see any unknown and possibly spammy sites, you might need to ask to be removed or, if all else fails, disavow them to avoid having your ranking harmed by known spammy sites.
+See whether sites that are important to you point to your site. For example, if you have a restaurant website, are you mentioned in food blogs or review sites?
+Top linked pages (Which are my top linked pages from other sites?)
+See which of your pages are most linked by other sites. Use this to see if you're getting the recognition that you think you deserve.
+To navigate there
+Links report > Top linked pages table
+For more detail
+Click the More link at the bottom of the table for the full list. Select a URL in the list to see the top sites linking to that page. Sites are shown by their root domain, with any subdomain omitted (so www.example.com would show as example.com).
+Uses for this report
+Confirm that your most linked pages are the ones that you expect.
+Which are my top linked pages from a specific site?
+See which pages are linked from a given site, sorted by link count.
+To navigate there
+Links report > External links > Top linked pages table
+For more detail
+Click the More link at the bottom of the table for the full list. Select a URL in the list to see all links to that page from that site. Sites are shown by their root domain, with any subdomain omitted (so www.example.com would show as example.com).
+Uses for this report
+If the linking site is good, see which pages are benefiting from that site.
+If the linking site is spammy, try to get these pages unlinked from this site. For known spam sites, Google typically will ignore the links, but you might want to remove or disavow these links.
+Top linking text (What link text points to my site?)
+See which link text is used in sites that point to your site. Only links from outside your property are counted.
+Duplicates are combined, where a duplicate is a case-insensitive exact match. So "Hello world" and "HELLO WORLD" are considered duplicates, but "Hello world" and "Hello worlds" are not considered duplicates.
+Links with no text (for example, image links) are shown as "(empty)" in the Link Text column on the report, and as empty rows in the exported data.
+Link text is grouped by exact match and sorted by count. Sites are shown by their root domain, with any subdomain omitted (so www.example.com would show as example.com).
+To navigate there
+Links report > Top linking text table
+For more detail
+Click the More link at the bottom of the table for the full list.
+Uses for this report
+Confirm that the link text is what you expect, and not spammy text.
+Confirm that other sites are describing your site accurately. If not, you might need to clarify your site content.
+What are the links from a specific site to my page?
+See all links from a specific site to a specific page on your site.
+To navigate there
+Links report > [top linking site] > [URL]
+For more detail
+Select a URL in the list to see all links to that page from that site. Sites are shown by their root domain, with any subdomain omitted (so www.example.com would show as example.com).
+Top linking pages table
+The table includes the following columns:
+Linking page: The page that has a link to the target page on your site.
+Target URL (if different): If no value is shown, it means that the link URL on the linking page is identical to the URL of the target page. If a value is shown, it means that the link URL on the linking page is different from the URL of the target page. Here are two reasons why the link URL might not be the target page URL:
+Your site redirects visitors from the link URL to the target URL. For example, your site might redirect users from example.com/old_page to example.com/replacement_page. You can test this by visiting the linking page and clicking this link, and tracking the redirects.
+Google has decided that the canonical URL for URL on linking page is the target URL. In this case, if you visit the linking page and click the link, you would (probably) reach the actual link URL. However, if you do a Google search for URL on linking page and click the result, you would be redirected you to the (canonical) target URL.
+Uses for this report
+Track down how users get from a given site to a given page.
+What are the top sites linking to my page?
+Learn which are the top sites linking to a specific page on your site.
+To navigate there
+Links report > Top target pages > [URL]
+For more detail
+Select a URL in the list to see all links to that page from that site. Sites are shown by their root domain, with any subdomain omitted (so www.example.com would show as example.com).
+Uses for this report
+Learn which sites, or which types of sites, are most interested in a specific page. If these sites are important to you, consider expanding your coverage of those topics on your site.
+Top linked pages (Which of my pages is linked the most from within my own site?)
+See which of your pages is linked the most from within your own site.
+To navigate there
+Links report > Top internally-linked pages table
+For more detail
+Select a URL in the list to see which of your other pages link to it.
+Uses for this report
+Confirm that the core site pages (home page, contact page) are properly linked within your site.
+Which of my pages links to my page?
+See which pages on your site link to a specific page.
+To navigate there
+Links report > Internal links > Top linked pages table > More...
+For more detail
+Select a URL in the list to see which of your other pages link to it.
+Uses for this report
+Clean up the traffic flow within your site by confirming that users can get from page A to page B with the fewest clicks.
+Exporting report data
+Many reports provide an export button
+to export the report data. Both chart and table data are exported.
+You can export your link data as a CSV file or a Google Sheet.
+Landing page
+Export up to 100,000 rows of data using the Export button. The following data slices are available:
+Latest links
+The most recently discovered links to your site (up to 100,000 rows), sorted by discovery date.
+More sample links
+A sample of links to your site (up to 100,000 rows), extracted from the full set of links known to Google. This is useful when you have many more than 100,000 pages linking to your site, because it shows some data truncated by the Latest Links export due to length limits.
+Single-table pages
+Pages containing a single table offer a download button to export the entire table (up to 1,000 rows).The table sorting on the page does not affect the exported data.
+Known issues and differences with the old report
+Data in this report is more accurate than the old Links to your site report. As a result, the values in the new report may be lower, but this does not indicate a drop in links, but rather a more accurate and secure way of reporting them.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemove URLs ToolRemovals ToolRich Results Tools and ReportsSecurity Issues reportSettingsSitemaps reportSpeed reportURL Inspection Tool
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

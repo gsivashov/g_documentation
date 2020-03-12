@@ -1,0 +1,88 @@
+Create a page set that contains multiple pagesA page set can contain up to 500,000 pages. If you want to extract data from more pages than that, you'll need to create multiple page sets.
+To create a page set with multiple pages, Data Highlighter takes you through the following process:
+Specifying and tagging a starting page.
+Identifying the rest of the pages in the page set.
+Confirming or correcting Data Highlighter's understanding of your data.
+Reviewing and publishing the page set.
+Specifying and tagging a starting page
+The first step in creating a page set is to show Data Highlighter how your site presents the information you want to be available for rich snippets. The most important part of this step is to provide a starting page that is representative of the other pages on your site and, ideally, that contains as much data as possible. Tagging the first page establishes a pattern that Data Highlighter will look for in other pages.
+Specify and tag a starting page:
+On the Search Console home page, click a verified site.
+On the Dashboard, click Crawl.
+Click Data Highlighter.
+Specify the starting page for teaching Data Highlighter about your site:
+Click Start Highlighting.
+Enter a URL. For example, enter www.example.com/events/details/101112.html
+Data Highlighter requires all pages in a page set to be in the same domain as the verified site. For example, if on the Webmaster Tools home page you clicked the www.example.com site, then Data Highlighter requires the URL to start with www.example.com.
+Select a type of data to highlight on the page.
+Click Tag this page and others like it.
+Click OK.
+Teach Data Highlighter how the page displays data by tagging information:
+On the Tagger page, use the mouse to select an image or piece of text.
+From the pop-up menu that displays after you make your selection, click the type of data that you selected. For example, click Name.
+Continue selecting and clicking the type for all required data and any optional data that is available.
+Helpful hints.
+Under My Data Items, required displays next
+to each required data item that you have not yet tagged. If the page is missing any required data,
+you can add the missing data.
+If you apply a consistent pattern of two or more tags of the same type, Data Highlighter will
+automatically tag other similar items on the page. For example, if you tag a date twice and a
+name twice, Data Highlighter will automatically tag the other dates and names on the page.
+If you tag an event name that also happens to be a hypertext link, Data Highlighter automatically uses
+the link's URL for the event. See Data Highlighter - Events for
+a description of event URLs.
+If date and time information is split into pieces (for example, the year displays at the top of
+the page while the month and day display in the middle of the page), you can tag the individual pieces.
+See Tagging Dates.
+If rating information is split into pieces (for example, the actual rating is in the middle of the page
+while the best possible rating is in a footer), you can tag the individual pieces.
+See Tagging ratings.
+Confirm the tagging by viewing the data in the My Data Items column. If the alert icon () displays, click the data next to the icon. For example, if Boston displays, click Boston. Then review the tagging and do one of the following:
+If the tagging is incorrect, click the X next to the data. Then re-tag the data.
+If the tagging is correct, click the alert icon itself () and select Clear warning.
+Click Done.
+Identifying the rest of the pages in the page set
+On most web sites, the URLs for similar pages follow a similar pattern. For example, the URLs for pages about events might start with http://www.example.com/events, and continue with /music/ for all music events and /speaking/ for all speaking events.
+After you confirm tagging on the starting page, Data Highlighter examines the pages on your site and suggests a collection of pages to be in your page set. Data Highlighter uses a URL pattern to identify the suggested collection of pages. The pattern uses a simple syntax:
+Starts with the site's protocol and host name.
+Specifies case-insensitive URL component names for exact matches.
+Uses * (asterisks) as a wildcard for a URL component.
+For example:
+http://www.example.com/events/music/* - Identifies all pages immediately under /music/, such as both of the following:
+http://www.example.com/events/music/123.html
+http://www.example.com/events/music/456.html
+http://www.example.com/events/*/* - Identifies all pages immediately under /events/ as well as all pages under /events/music/ and /events/speakers/:
+http://www.example.com/events/music/123.html
+http://www.example.com/events/music/456.html
+http://www.example.com/events/speakers/789.html
+http://www.example.com/events/speakers/012.html
+Identify the rest of the pages in the page set:
+After you tag and confirm the starting page, the Page Picker pop-up suggests a URL pattern for the pages on your site. Do one of the following:
+If the pattern correctly identifies the pages you want to be in the page set...
+Click Create page set.
+If none of the suggested patterns are quite right...
+Do the following:
+Click Custom.
+Specify a pattern for the URLs of the pages you want to extract. Follow these rules when specifying a pattern:
+Start with the protocol and host name. For example, http://www.example.com/
+Use * (asterisk) as a wildcard for a single URL component. You can use * up to three times. Note that Data Highlighter does not support regular expressions. You cannot use * to represent part of a URL, such as *-music for pop-music.
+Use case-insensitive URL component names for exact matches.
+Click Check page set to confirm your pattern.
+If Data Highlighter can't find at least one page that corresponds to the pattern, a message displays. Correct your syntax and click Check page set again.
+Click Create page set.
+Confirming or correcting Data Highlighter's automatic tags
+Data Highlighter examines the specified pages and automatically tags data from a few pages. Some of the pages are similar to the starting page that you tagged, and some are dissimilar.
+Confirm or correct Data Highlighter's automatic tags:
+Data Highlighter tags data on a few pages and shows you the results. Do one of the following for each result:
+If the tagging is correct, click Next.
+If the tagging is incorrect, under My Data Items click the X next to the data. Then re-tag the data. When all of the data on the page is correct, click Next.
+If the alert icon () displays but the tagging is correct, click the alert icon itself () and select Clear warning. When all of the tagging on the page is correct, click Next.
+If the page does not contain data that you want to make available to Google, click Remove page.
+On the last page that Data Highlighter presents, correct the tagging if necessary and click Done.
+If Data Highlighter still lacks confidence in its understanding of the data on your site, Data Highlighter will examine and tag data from a few more pages and ask you to confirm or correct the tagging. Otherwise, the Publish page displays.
+Reviewing and publishing the page set
+Before publishing a page set, take time to review Data Highlighter's understanding of your data. Then, you can publish the page set immediately, or you can wait until you are ready.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Create a page setCreate a page set that contains a single pageCreate a page set that contains multiple pagesTagging datesTagging ratingsReview Data Highlighter's understanding of your page setAdd missing data
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

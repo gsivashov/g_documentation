@@ -1,0 +1,14 @@
+Property Settings pageThe Property Settings page enables you to view your settings for the current property. Click the appropriate item on the page to view or manage that setting.
+Setting
+Description
+Ownership verification
+Manage your verification of this property.
+Users and permissions
+See and manage the list of users for the current property. (Management rights apply only to property owners.)
+Removing a property
+Remove a property from your list, with the option of adding it back later (in most cases).
+Open Site Settings page
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingGoogle Assistant in ChromeInternational Targeting reportChange Googlebot crawl rate
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

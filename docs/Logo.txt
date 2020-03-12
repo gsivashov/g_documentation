@@ -1,0 +1,47 @@
+Home
+Products
+Search for Developers
+Reference
+Logo
+Specify the image Google Search uses for your organization's logo in Search
+results and in the Knowledge Graph.
+Google Search uses the markup in the use
+case example to recognize the image to use as the organization’s logo. This
+ensures that, when possible, the image appears in search results about the
+company. Markup like this is a strong signal to Google Search algorithms to
+show this image in Knowledge Graph displays.
+Example
+Here's an example of a logo in JSON-LD code.
+<html>
+<head>
+<title>About Us</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Organization",
+"url": "http://www.example.com",
+"logo": "http://www.example.com/images/logo.png"
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Structured data type definitions
+For logo usage, Google Search recognizes the following properties of an
+Organization.
+You must include the required properties for your content to be eligible
+for display as a rich result.
+Required properties
+logo
+URL
+URL of a logo that is representative of the organization.
+Additional image guidelines:
+The image must be 112x112px, at minimum.
+The image URL must be crawlable and indexable.
+The image must be in .jpg, .png, or. gif format.
+url
+URL
+The URL of the website associated with the logo.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

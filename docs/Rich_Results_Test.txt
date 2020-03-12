@@ -1,0 +1,108 @@
+Rich Results TestPut structured data on your page to enable special features in Google Search results, then test it with the Rich Results test.
+This is a beta version of the test. Not all rich result types or error types are supported yet. Results are not guaranteed to be accurate, or to guarantee appearance in search results. See the Supported Types section below for details.
+OPEN THE RICH RESULTS TEST
+Run the test
+For a URL
+Submit the full URL of the page to test. Important: All page resources must be accessible by an anonymous user accessing the code from the internet. Any resources that are behind a firewall or password-protected will not be available to the test. If your page is behind a firewall or hosted on your local machine, you can test it by exposing a tunnel.
+For a code snippet
+You can test an arbitrary code snippet using this tool. In the tool landing page, choose Code instead of URL for the test, then paste the code to be tested. You can modify the code and rerun the test by clicking Run test as often as you like.
+Optionally choose a user agent
+You can choose which user agent to use when testing your page: that is, test your page with a smartphone or a desktop computer. Choose a user agent from the list below the URL or code entry textbox.
+The default user agent is smartphone, because of Google's mobile-first initiative, which reflects the increased use of mobile devices to access web pages. If your site is mobile-first, we recommend using the smartphone user agent for your testing, unless you have specific reasons to use the desktop user agent. For all sites, we recommend using the mobile user agent because this is how the majority of users browse the web today.
+You can see if your site is mobile-first on your property's settings page.
+Review the results
+The test shows which rich result types were found on the page, as well as any errors or suggestions for your structured data.
+If there are errors or warnings, expand the individual item to see details, and click the description to open the code explorer in the corresponding location. The explorer uses the rendered source code.
+Page can't be reached
+If for some reason the tool cannot access the page, it will display an error describing the problem. Access problems include network connectivity issues or the site being down.
+This tool accesses the page as Googlebot (that is, not using your credentials, but as Google). This means that it can be blocked by a robots.txt file.
+Page has unloadable resources
+If a test cannot load certain resources used by a page, you will get a warning. Resources are external elements included by the page, such JavaScript files. The Rich Results test tries to load only certain types of resources; others that won't affect the test are ignored.
+Here are some common reasons for resource loading issues:
+The resource wasn't loadable in a reasonable amount of time. In this case, try running the test again. If it continues to happen, consider hosting the resource somewhere else, or else try to discover and fix the reason for lack of response from the host.
+The resource does not exist at the URL referenced (404 error). Fix the resource URL.
+The resource is inaccessible to non-logged-in users. The test accesses the page as an anonymous user; ensure that all resources are accessible to anonymous users.
+The resource is blocked to Googlebot by a robots.txt file. If the resource is important (see below), if it is on your own site, you might want to unblock the resource to Googlebot; if it is on another site, you might want to contact the site's webmaster and ask to have it unblocked.
+Unblocking important resources
+If a blocked resource is important, it could have a big effect on how Google understands the page. For example, a JavaScript that handles page DOM generation would cause problems if it were not reachable. Make sure that important resources are not blocked to Googlebot by robots.txt and are generally accessible.
+Inconsistent test results
+If you have unloadable resources or other page loading issues, you might see slightly different results every time you run the test. This is because the set of resources that were loaded can vary during each test run. If your page rendering changes each time you run the test, and you have not changed anything, check for a "page loading issues" warning; if present, click for more information to see what might have happened to prevent the page from being rendered consistently and correctly.
+Syntax errors in items of unknown type
+Certain errors can halt the parser before it can even determine the rich result type. If you have such an error, you will get a section labeled "Syntax errors in items of unknown type". Here are the errors that can cause this condition:
+Error type
+Description
+Invalid JSON document
+The JSON had a top-level syntax error.
+Incorrect value type
+The value specified for a property was of the wrong type. For example, you specified a string when a number or array was expected.
+Parsing error: Missing ':'
+Missing a ':' mark.
+Parsing error: Missing ',' or '}'
+Missing a ',' or closing bracket.
+Parsing error: Missing '}' or object member name
+Missing a closing bracket or object member name.
+Parsing error: Missing ',' or ']' in array declaration
+Error parsing an array value: missing a ',' or ']' in the array declaration.
+Unable to parse token length
+For some reason, the start and end of a property or value could not be found.
+Invalid number
+Property value expected to be a number, but another value type was used.
+Empty escape sequence in string
+A string value include an empty escape sequence character: for example:
+"description" : "Call me \ John"
+rather than
+"description" : "Call me \"John\"".
+Bad escape sequence in string
+An invalid escape sequence used in a string value. For example:
+"description" : "Some \q unknown sequence"
+Truncated Unicode character
+Missing the last 6 characters in a Unicode surrogate pair.
+Invalid Unicode character
+Missing a \u token at the start of the second half of a Unicode surrogate pair.
+Invalid Unicode escape sequence: four digits expected
+A Unicode escape sequence has a syntax error: it should contain four digits.
+Invalid Unicode escape sequence: hexadecimal digit expected
+A Unicode escape sequence has a syntax error: a hexadecimal digit was expected but not provided.
+Duplicate unique property
+You provided two definitions for a unique property in your structured data object. For example, two @context values.
+Invalid top level element
+A top-level item in your JSON-LD is invalid.
+Reference to nonexistent item
+An itemref attribute points to a non-existent identifier.
+Supported rich result types
+This test currently supports only the following rich result types:
+Breadcrumb
+Course
+Dataset
+Event
+FAQ
+Fact check
+How-to
+Job posting
+Local business
+Logo
+Movie
+Product
+Q&A page
+Recipe
+Review snippet
+Sitelinks searchbox
+Software app
+Video
+Save test history
+Search Console saves your code and test state each time you run the test. To save a version history of your code and tests, bookmark the page URL after running a test. Test history is saved for approximately 90 days. These bookmarks are accessible by anyone.
+Share test results
+You can use the Share button to share the test results browser link with anyone; permissions are not required to view the results. Test result links are valid for approximately 90 days.
+See how your page might look in Google Search results
+For some rich result types you can preview how the result might appear in Google Search or Google Assistant. If your page is eligible for multiple Search result layouts, this tool will include selectors to let you view the different layouts, including layouts for desktop and mobile searches.
+You can experiment with your page by changing the code and rerunning the test to generate new layouts. You can share the URL in your browser with other users to share your rendered results.
+Depending on what the tool finds on the page, you can choose a result type to view and select a desktop or mobile version.
+Google does not guarantee that your page will appear exactly as shown here, or that any of the views shown will be applied to your page result; Google tries to show the best result for a search request, based on the user's search history, location, and many other variables.
+More structured data resources
+Here are some more resources about structured data and Google Search result features:
+Structured data gallery shows the search result features supported by Google Search.
+Overview of structured data on Google for web page developers to enable these features.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Rich Results Tools and ReportsRich result status reportsRich Results TestUnparsable structured data report
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

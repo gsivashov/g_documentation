@@ -1,0 +1,12 @@
+Soft 404 errorsWhat is a soft 404?
+A soft 404 is a URL that returns a page telling the user that the page does not exist and also a 200-level (success) code. In some cases, it might be a page with little or no content--for example, a sparsely populated or empty page.
+Why does it matter?
+Returning a success code, rather than 404/410 (not found) or 301 (moved), is a bad practice. A success code tells search engines that there’s a real page at that URL. As a result, the page may be listed in search results, and search engines will continue trying to crawl that non-existent URL instead of spending time crawling your real pages.
+What should I do?
+If your page is no longer available, and has no clear replacement, it should return a 404 (not found) or 410 (Gone) response code. Either code clearly tells both browsers and search engines that the page doesn’t exist. You can also display a custom 404 page to the user, if appropriate: for example, a page containing list of your most popular pages, or a link to your home page.
+If your page has moved or has a clear replacement, return a 301 (permanent redirect) to redirect the user as appropriate.
+If you think that your page is incorrectly flagged as a soft 404, use the URL Inspection tool to examine the rendered content and the returned HTTP code. If the rendered page is blank, or nearly blank, it could be that your page references many resources that can't be loaded (images, scripts, and other non-textual elements), which can be interpreted as a soft 404. Reasons that resources can't be loaded include blocked resources (blocked by robots.txt), having too many resources on a page, or slow loading/very large resources. The URL Inspection tool should list which resources could not be loaded, and also show you the rendered live page.
+Use the URL Inspection tool to verify whether your URL is actually returning the correct code.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

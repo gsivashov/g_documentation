@@ -1,0 +1,68 @@
+Troubleshooting Data HighlighterIf you have problems creating or publishing a page set, look through the troubleshooting information on this page.
+Creating a page set
+After I enter my starting URL and click OK, I get an error.
+This could be caused by any number of reasons, including:
+If you get a "URL not found" error, the verified page or URL might not be indexed by Google. For example, any of the following could prevent Google from indexing a site:
+A robots.txt file, crawl errors, or meta tags on your page prohibit Google from indexing it. Learn more.
+Information on your site is unreachable by Googlebot because it's only accessible by filling out a form.
+A Digital Millennium Copyright Act (DMCA) claim has been made against some of the materials in the page set you are trying to create.
+The URL for the page you specified isn't in the same site as the one verified in Search Console. For example, if you clicked the http://www.example.com site on the Search Console home page, then Data Highlighter requires the URL to start with http://www.example.com. To highlight a URL that starts differently, such as http://example.com, http://reviews.example.com, or https://www.example.com, you need to add that site separately.
+When I try to create a custom page set, an error message displays.
+Any of the following error messages could display in the page picker popup when trying to create a page set:
+This message...
+Displays if...
+Pattern does not include start page.
+The URL pattern you specified doesn't include the starting page that you used to create the page set.
+For example, if you specified the following URL as the starting page:
+http://www.example.com/events/music/123.html
+and you specify the following for a URL pattern:
+http://www.example.com/events/*
+the "Pattern does not include start page" message will display because the pattern you specified excludes the /music/ subpath. While the specified pattern includes pages such as
+http://www.example.com/events/891.html and
+http://www.example.com/events/125.html,
+it excludes pages such as
+http://www.example.com/events/music/123.html.
+To highlight URLs containing the /music/ subpath, use a pattern such as
+http://www.example.com/events/music/* or
+http://www.example.com/events/*/*
+Pattern includes too many pages.
+The URL pattern you specified includes more than 500,000 pages. Consider creating multiple page sets with fewer than 500,000 pages each.
+For example, if your site contained information about events under
+http://www.example.com/events/music/...
+and
+http://www.example.com/events/speaking/...
+Instead of specifying a URL pattern of http://www.example.com/events/*/*, you could create two page sets with a smaller scope, such as
+http://www.example.com/events/music/*
+and
+http://www.example.com/events/speaking/*
+Pattern includes pages that you do not manage.
+The URL pattern you specified includes pages that are not part of the verified site on Search Console.
+For example, if
+http://www.example.com/events/music/*
+is registered as a verified site on Search Console, a URL pattern of
+http://www.example.com/events/*/*
+will also include
+http://www.example.com/events/meetings/*
+which is not registered as part of a verified site.
+Specify a narrower URL pattern, such as http://www.example.com/events/music/*
+Pattern does not match any pages.
+Data Highlighter didn't find any pages that match the pattern you specified. Check for typos and make sure you've entered the correct URL.
+If you still see this message after checking for typos, try to expand the scope of the URL pattern. For example, change
+http://www.example.com/events/music/*
+to
+http://www.example.com/events/*/*
+When creating a custom page set, make sure that you:
+Specify a valid URL pattern. Note that Data Highlighter does not support regular expressions. Instead, you can use * as a wildcard for an entire URL component only. For example, this URL pattern is valid:
+http://www.example.com/*/events/*
+But the following pattern is not valid because it's trying to use * as a wildcard for part of a URL component:
+http://www.example.com/*-people-*/events/*
+Specify a URL that identifies at least one page that has been crawled and indexed by Google.
+Data Highlighter doesn't understand my site.
+If you've already gone through a few rounds of tagging and Data Highlighter still doesn't understand your site, try starting over and creating a page set with just one page. If that succeeds, create a single-page page set for each important page on your site. If this doesn't succeed, you'll need to use HTML markup instead of Data Highlighter.
+Publishing a page set
+Extracted data displays on the Structured Data page, but still no rich snippets are shown in search results.
+The Structured Data Dashboard displays extracted data after Google crawls a page, it may take some time for rich snippets to appear in search results or Place Pages. If data has been extracted but rich snippets aren't appearing for your site, see possible reasons why.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Data HighlighterAbout Data HighlighterData types supported by Data HighlighterCreate a page setPublish or unpublish a page setDelete a page setTips and tricks for using Data HighlighterTroubleshooting Data Highlighter
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

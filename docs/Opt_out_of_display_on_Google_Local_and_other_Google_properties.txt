@@ -1,0 +1,13 @@
+Opt out of display on Google Local and other Google propertiesYou can opt out of having content that Google has crawled from your site displayed on various Google properties:
+Google Shopping
+Google Flights
+Google Hotels
+Google Local (specialized search results pages that trigger in response to a local query)
+If you choose the opt-out option, content from your site that has been crawled by Googlebot will not be displayed on any of the properties listed above. Content currently being displayed on any of these properties will be removed within 30 days of opting out.
+The opt-out option applies on a domain name basis. For instance, you may designate example.com to subject all content on that domain name to the opt out. If you own additional domains (like example.org or example2.com), including domains that may serve content to an opted out domain, you must opt them out separately for the opt-out to apply to the content on each of those separate domains. You may not designate only individual sub-domains (such as sub.example.com) or individual directories within a domain (such as example.com/sub).
+Note that for Google Local, this opt-out option applies globally. For the remaining covered properties, this opt-out option applies only to services hosted on the google.com domain.
+View or change your opt-out setting in Search Console
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Block access to your contentControl what you share with GoogleBlock search indexing with 'noindex'About robots.txtOpt out of display on Google Local and other Google propertiesPrevent images on your page from appearing in search results
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

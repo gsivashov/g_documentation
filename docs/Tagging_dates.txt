@@ -1,0 +1,63 @@
+Tagging datesStructured Data Markup Helper understands dates in many formats as long as the dates include a month, day, and year. You can supply any missing data (such as a year) by adding missing data to the page set.
+If your sample content displays dates in one piece (for example, June 4, 2012), it's recommended that you tag dates in one piece. The fewer tags you create, the faster your tagging will be and the more accurate Markup Helper will be.
+Tag dates in one piece:
+Start tagging data as described in Tag a page or Tag an email.
+On the Tagger page, use the mouse to select a date. For example, select the following: June 4, 2012
+Select Date > Date/time or range from the context menu that displays.
+Markup Helper adds the date to the My Data Items column.
+Finish tagging the page as described in Tag a page or Tag an email.
+Tagging dates in separate pieces
+Some content displays date information in separate pieces or uses labels to identify the separate date components. For example, a page that lists multiple events might display the month and year once at the top, and display specific days next to each event. If your content displays dates in separate pieces, you'll need to tag dates in separate pieces.
+Note that Markup Helper does not understand dates that are both tagged in separate pieces and that specify a range (such as June 4-5 and 2012).
+Tag dates in separate pieces:
+Start tagging data as described in Tag a page or Tag an email.
+On the Tagger page, use the mouse to select part of a date. For example, select the following: June
+Select Date > Advanced > date piece from the context menu that displays. For example, select Date > Advanced > Month.
+Markup Helper adds the date to the My Data Items column.
+Continue tagging pieces of the date until you've tagged all of the data that's available for the date.
+Finish tagging as described in Tag a page or Tag an email.
+Examples of date tags
+Here are some examples of dates you can tag:
+A single date. For example, you can tag any of the following:
+June 4, 2012
+4 June 2012
+6/4/12 - Your tags can include other delimiters and four-digit years as well, such as 6-4-2012. When numerical dates are ambiguous, Google assumes that the first number is the month. For example, 6/4/12 is intrepreted as June 4, 2012, while 13/4/12 would be interpreted as April 13, 2012.
+You can tag multiple dates on a page. For example, if you tag June 4, 2012 and June 6, 2012, the event will be intepreted as occuring twice: once on June 4th and once on June 6th.
+A range of days. For example, June 4-7 2012
+Note that delimiter between the beginning and ending days needs to be a dash (-).
+Dates with times. For example, you can tag any of the following:
+June 4, 2012 3pm - a time followed by am or pm. Google uses normal business hours to interpet times not followed by am or pm. For example, 11 would be interpreted as 11am and 2 would be interpreted as 2pm.
+June 4, 2012 15:00 - military time
+June 4, 2012 3pm EST or  June 4, 2012 3pm -5:00 - Times with a time zone or with a UTC/GMT offset.
+June 4, 2012 2-3pm or  June 4-5, 2012 2-3pm - Time ranges with or without a date range.
+Dates in separate pieces.You can use the advanced tagging option to tag the following separate pieces of text as a single date:
+Day: Tuesday, June 4 Year: 2013
+June 4 | Time: 7:30pm-9:30pm and 2012
+Google does not recognize date ranges that have been split into multiple tags. For example, the following tags are not valid date tags:
+June 4-5 and 2012
+Manually specify the date format
+Markup Helper assumes that the dates in your content follow the formatting rules associated with the content's language. For example, if a page's language is en-US, Markup Helper assumes that 12-06-12 means December 6th, 2012. If a page's language is en-GB, Helper assumes that 12-06-12 means June 12th, 2012. Markup Helper automatically determines the page's language and therefore the date's formatting rules.
+To override Markup Helper and specify a different date format:
+To view the Tag Data page:
+While creating an example: The Tag Data page shows when you click Start Tagging on Markup Helper's first page.
+After creating an example:
+In your browser, enter the URL for the example markup that Markup Helper created. (Markup Helper does not maintain the list of example pages you specifically created, so you'll need to bookmark the example page before you leave.)
+Click Back to tagging
+Click the gear icon and select Settings.
+In the Settings popup, select a format from the Date format list.
+Click Save.
+Manually specify the language
+Structured Data Markup Helper automatically detects the language of your example content so it can better understand the data on your page. If the markup that Markup Helper creates is incorrect, you can explicitly tell Markup Helper about the language you're using.
+To manually specify the language:
+To view the Tag Data page:
+While creating an example: The Tag Data page shows when you click Start Tagging on Markup Helper's first page.
+After creating an example:
+In your browser, enter the URL for the example markup that Markup Helper created. (Markup Helper does not maintain the list of example pages you specifically created, so you'll need to bookmark the example page before you leave.)
+Click Back to tagging
+Click the gear icon and select Settings.
+In the Settings popup, select a language from the Site language list.
+Click Save.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Structured Data Markup HelperStructured Data Markup HelperTagging datesAdd missing dataRemove tagsTag an email templateManually add markup for a propertyReview and download the markup example
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

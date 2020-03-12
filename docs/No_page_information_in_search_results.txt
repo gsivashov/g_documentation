@@ -1,0 +1,37 @@
+No page information in search resultsIf a Google search result says that no information is available for a page, like this:
+It means that the website prevented Google from creating a page description, but didn't actually hide the page from Google.
+If you own this site you can improve this result either by letting Google read the page to create a good description, or by hiding the page entirely from Google Search results. Read below to learn how.
+How to fix it
+This isn't my site
+The page owner isn't allowing Google to read the page, so we couldn't create a good page description. Unfortunately there's nothing that Google can do about this.
+If you know the site owners, tell them about it, and send them a link to this page.
+This is my site
+You are probably seeing this result for one of the following reasons:
+The page is blocked by robots.txt
+Description
+You have a rule in your site's robots.txt file* that prevents Google from reading the page (which is how we generate a description in search results). However, this doesn't prevent Google from showing the page in Search results. Therefore if the page appears in Search results, it will appear without any description.
+*A robots.txt file is a standard file that websites use to prevent search engines from crawling specific pages on their site. Some site hosting services create this file automatically for their customers. The next section describes how to confirm that this file is present, and that this is the issue.
+Confirm the issue
+If you have verified your site in Search Console, you can test whether a page is blocked to Google using the robots.txt Tester:
+Open the Robots testing tool for your site
+Enter the URL of the page that is missing the description. Omit the site prefix URL shown next to the page URL entry box.
+Click Test.
+Fix the issue
+To fix this problem, take one of the following actions:
+Option 1: Let Google read your page
+If you want a proper page description in Google Search, you must allow Google to read the page by removing or modifying the robots.txt rule that blocks Google.
+Find the rule that blocks Google, as described above in Confirm the issue.
+Update or remove the rule, according to robots.txt syntax.
+If you are using a website hosting service (for example, if your site is on Wix, Joomla, or Drupal), we can't provide exact guidance here because every site hosting provider has different ways to manage robots.txt on their service. Please search your provider's documentation to learn how to unblock your page or site to Google. Suggested terms to search for: "robots.txt provider_name" or "unblock page to Google provider_name". Example search: robots.txt Wix.
+Option 2: Remove the page from Google search results
+Prevent the page from appearing in Google Search results by following these steps:
+Take one of the following actions to block your page:
+Remove the page from your site, or
+Require a user login to access the page, or
+Use "noindex" on your page. If using noindex, you must also remove the robots.txt rule that blocks the page to search engines. Sounds strange, but we need to be able to read the page in order to see your "noindex" instruction. Learn about robots.txt here.
+Tell Google about the change using the remove outdated content tool. This will remove any stored copies of the page from search results. Copy the URL from search results into the tool.
+You are a European press publisher
+If you are a European press publisher, you can allow Google to generate search result snippets for your site by adding max-snippet or other directives to your pages. Learn more about managing your designation as a European press publisher, including how to modify your designation in Search Console,
+Was this helpful?How can we improve it?YesNoSubmit
+true
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

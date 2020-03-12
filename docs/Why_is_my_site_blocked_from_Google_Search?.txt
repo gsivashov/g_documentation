@@ -1,0 +1,109 @@
+Why is my site blocked from Google Search?If Google suspects your site of hosting dangerous or spammy downloads, engaging in practices that are bad or dangerous to the user, or of being hacked, you will see a warning either in Google Search results or in your browser (or both).
+Google Search results might show labels such as "This site may harm your computer" or "This site may be hacked" next to your site.
+Your browser might display an interstitial page when you try to open your page, either from a link in Google Search results or anywhere else.
+If you are a verified site owner in Search Console, you should receive an email from Search Console warning that your site is suspected of being hacked or containing content that is harmful to visitors. You can also see warnings in the Security Issues report for your site.
+Example warnings that you might see in your browser
+Other labels or warnings that you might see
+Your website contains malware.
+The term malware covers all sorts of malicious software designed to harm a computer or network. Kinds of malware include (but are not limited to) viruses, worms, spyware, and Trojan horses. Once a site or computer has been compromised, it can be used to host malicious content such as phishing sites (sites designed to trick users into parting with personal and credit card information). Some hackers may even take administrative control over a hacked site.
+If your site has been infected, it is generally because some vulnerability has allowed a hacker to take control of your site. The hacker may change the content of the site (for example, to add spam), or add additional pages to the site, usually with the intent of phishing. Alternatively, they may inject malicious code (malware)—for example, scripts or iframes that pull content from another website that tries to attack any computer that views the page. Learn how Google defines malware and unwanted software.
+This site may be hacked.​
+Hacked content is any content placed on your site without your permission as a result of vulnerabilities in your site’s security. In order to protect our users and to maintain the integrity of our search results, Google tries its best to keep hacked content out of our search results. Hacked content is often of poor quality, and may be designed to mislead users or infect their computer or device. We recommend that you keep your site secure, and clean up hacked content when you find it.
+See What can I do? below to learn how to handle these problems.
+Read more about Chrome's malware warnings.
+Why did this happen?
+Google checks the pages that it indexes for malicious scripts or downloads, content violations, policy violations, and many other quality and legal issues that can affect users.  When Google detects content that should be blocked, it can take the following actions:
+Hide search results silently
+Label search results as dangerous or omitted for a specific purpose
+Add pages to the Safe Browsing list of dangerous sites, which is used by most major browsers. These browsers typically warn users in some way before visiting affected pages.
+The material on the page or site might violate our policies, whether or not you intended to.
+You might have hired someone to manage your content or search performance, and this person engaged in practices that violate the Google Webmaster Quality guidelines: for example, link purchasing in order to increase search rankings).
+Your site might have been hacked without your knowledge by professionals who engage in bad practices for money or other nefarious goals.
+What material can be blocked or labeled?
+Material that violates a Google policy, a law, or has been banned for some other reason can be labeled or removed.
+Common reasons for content labeling or removal
+Reason
+Explanation
+Omitted from results
+Labeled search result
+Browser warning page
+Spammy or low quality pages
+If we think that your page or site is engaging in practices that violate Google's quality guidelines, we simply won’t show the page in Google Search results. Violations include cloaking (showing different URLs to search engines than to visitors) and scraped content (reusing content from another site without adding value to it).
+✔
+Legal removals
+Pages removed due to a legal request to Google.
+✔
+SafeSearch
+SafeSearch is a personal setting in your account that blocks inappropriate or explicit images without any notification in search results. You can enable or disable this in your account settings.
+* Results omitted when user has SafeSearch turned on.
+✔*
+Malware and Unwanted software
+Software specifically designed to harm a computer, the software it's running, or its users.
+✔
+✔
+Hacked content
+If we detect that one or more of your pages has been hacked manually, it can be removed our search results, and will require the website owner to manually request reinclusion. If the hacking was detected programmatically, the content will be reincluded when it is detected as clean during a regular recrawl.
+✔
+Phishing/social engineering
+The page pretends to be a trusted party to trick a user into divulging sensitive information (such as a credit card number) or performing some dangerous or costly action.
+✔
+✔
+Google policy
+The page is omitted from results because contains certain personal information including leaked financial account information or certain explicit photos shared without consent.
+✔
+What can I do?
+If you have edit rights to the website, you can fix the problem:
+Verify and understand the problem (If you are engaging in these processes intentionally you can probably skip this step.)
+Fix the problem
+Request a review
+Verify that you are no longer triggering a warning
+1. Verify and understand the problem
+It might sound obvious, but verify the existence and nature of the problem before trying to fix it.
+We highly recommend that you sign up for Search Console, if you are a website owner. Verified site owners in Search Console will receive notifications when we suspect their site of being hacked, or if it gets flagged for engaging in behavior such as phishing, social engineering, or other harmful activities.
+Browser warning pages
+Visit the link in Chrome to see if you get an interstitial warning (a Chrome popup or warning page) asking if you want to visit the site. Chrome is part of a program called Safe Browsing that warns users before they visit a site suspected of containing malware, being hacked, or engaging in phishing or other bad behavior.
+If you get a warning, open the Manual Actions report and Security Issues report for your site in Search Console and look for warnings. If you are not the verified site owner in Search Console, you can visit the Google Safe Browsing transparency report and enter the URL of your site. If it is marked as dangerous, you need to fix your site.
+If you do not get a warning, the problem may have been resolved since you last tried it.
+Labeled search results
+Search for a specific page URL in Google and see if the page is labeled.
+Do a site-restricted search to see if your site is flagged with any warnings in the results. Site-restricted searches are searches that limit all results to a specified site.  Try doing a site-restricted search for spammy keywords that you aren't expecting, such as pharmaceutical or luxury brand names that you don't carry, porn terms, or other spammy terms such as "loans". For example, searching for site:example.com viagra will search for the word "viagra" on the site www.example.com.
+If your site is in Search Console:
+Open the Manual Actions report and Security Issues report for your site. These reports will show you if your site or page has been flagged as violating webmaster guidelines, or has been hacked. Typically you should have received an email of any alerts listed on these pages; if not, verify that you are still configured to receive messages, and that you are not filtering them in email (some hackers change this setting in your account to prevent you from getting messages)
+If you do not see any warnings, this might be an algorithmically detected issue, and you might not see warnings in Search Console. You will still need to fix the problem, but you will not need to request a review manually after you fix the issue; the next time Google crawls your site, the fix will be detected, and your site will be unflagged.
+If your site is not in Search Console, see if your site appears in the safe browsing site as a dangerous site.
+2. Fix the problem
+Labeled results
+For results labeled with warnings in Google Search, test how we see the page or site, try doing a site-restricted search for spammy keywords that you aren't expecting, such as "viagra" or other drugs, luxury brand names that you don't carry, porn terms, or "loans". For example: site:www.example.com viagra
+If you find pages with these results, your site may have been hacked (see the next section).
+Hacked websites
+If you were hacked, you will have to shut down your site, then find, fix, clean the compromised page(s), and secure your site before bringing it back online. We recommend that everyone understand  best practices to avoid hacking. However, many hacking attacks these days are quite sophisticated, so unless you feel comfortable looking at .htaccess files or making disk images, we recommend that you find a reliable professional that can clean and fix your site thoroughly, and secure it against additional attacks. Here are some guidelines about fixing a hacked website.
+Malware
+Review our definition of malware and unwanted software and fix any issues that you see in your site.
+Policy issues, legal removals, low quality or spammy pages
+For content violations, read our Quality Guidelines and fix your site so that it conforms both with those guidelines and Google's policies. For legal issues, you may wish to consult your own attorney. In many cases, Google will send you a notification in Search Console explaining the basis for the legal removal request.
+3. Request a review
+If your site is in Search Console
+Pages omitted for legal reasons, policy violations, or low-quality/spammy pages:
+Google will eventually recrawl and re-evaluate your pages; you do not need to request a review by Google.
+Visit the Security Issues report for your site and select Request a review. In order to submit a review, we ask that you provide more information that the site is cleaned of the hacker’s damage. For example, for each category within Security Issues, you can write a sentence explaining how the site was cleaned (for example, “For Content injection hacked URLs, I removed the spammy content and corrected the vulnerability: updating an out-of-date plugin.”).
+Be sure that the problem is truly fixed before requesting a review; if the problem still exists, you will only prolong the period of time that your site is flagged as problematic.
+Reviews for sites infected with malware require a few days to process. Once the review is completed, the response will be available within your Messages in Search Console.
+Hacked review process time Reviews for sites hacked with spam may require up to several weeks to process. This is because spam reviews can involve manual investigation or a complete reprocessing of the hacked pages. If the review is approved, Security Issues will no longer display hacked category types or example hacked URLs.
+If Google finds that your site is clean, warnings from browsers and search results will be removed within a few days after you receive your notice.
+There is often a slight delay in updates to the warning system. This is because it can take a few days for updates to travel between the Google Safe Browsing database, the Chrome browser, and Search Console's Security or Manual Actions reports. This means that errors are no longer reported for your site in the transparency report, but your browser still shows a warning page for your site. Wait for a day to see if you still see a warning page for a site not listed as dangerous by the transparency report.
+If your site is not in Search Console
+Consider enrolling your site in Search Console; it makes things much easier!
+Pages omitted for legal reasons, policy violations, or low-quality/spammy pages, Google recrawls your pages periodically and will notice any changes that you make automatically.
+For phishing reconsideration, request a review here.
+For all other issues, including malware or spam, you can file a request at stopbadware.org. It will take a few days after they have reviewed and cleared your page for Google to update their listings.
+There is often a slight delay in updates to the warning system. This is because it can take a few days for updates to travel between the Google Safe Browsing database, the Chrome browser, and Search Console's Security or Manual Actions reports. This means that errors are no longer reported for your site in the transparency report, but your browser still shows a warning page for your site. Wait for a day to see if you still see a warning page for a site not listed as dangerous by the transparency report.
+4. Verify the results
+Note that it can take several days for your fix to be verified and any labeling to be removed. Additionally, being flagged may affect your search ranking for a while, so you might not see results on the first page.
+For omitted or labeled search results: Do a site-restricted search to see if your page appears, or search for your exact page URL. If you do not see any changes after a week, go back to step 1 and verify that you've indeed fixed the problem.
+For browser warnings: After your request for a review is approved, wait a day or so, then visit your page in a Chrome browser to see if you get any warnings about the site. Note that there is often a day or two delay in updates to the warning system as updates travel between the Google Safe Browsing database, the Chrome browser, and Search Console's Security or Manual Actions reports.
+More resources
+stopbadware.org: Information on fixing a hacked site, protecting your site from hackers, and requesting a review for repaired sites.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Troubleshooting resultsWhy did my site traffic drop?Why is my page missing from Google Search?Why is my site blocked from Google Search?Why does my search result look wrong?
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

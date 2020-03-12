@@ -1,0 +1,44 @@
+Data Highlighter: EventsYou can use Data Highlighter to tag data about events, such as a concert or an art festival. Then Google can present your data more attractively — and in new ways — in search results and other products.
+Open Data Highlighter
+For example, Google Search results can display tagged information as an events rich snippet like this:
+Usage guidelines
+After Google crawls your page set, each Google product applies its own rules when deciding whether and how to display your data. For example, Google search results will display as rich snippets only for events that are in the future and that appear to be valid events. A valid event has a name, date, and location, and follows the content guidelines.
+Valid event names:
+East Bay Symphony Concert
+Music Festival Northwest
+Invalid event names:
+Trip package: San Diego/LA, 7 nights (Don't use Data Highlighter to promote non-event products or services.)
+Music festival - only $10! (Instead, tag ticket prices using the Ticket property.)
+Sale on dresses! (Non-event information)
+Concert - buy your tickets now! (Promotion)
+Concert - 50% off until Saturday! (Promotion)
+If rich snippets aren't appearing after Google has crawled your site, see possible reasons why.
+Event tags
+You can use Data Highlighter to tag any of the properties described in Structured data type definitions. Each event must have a unique URL. You must highlight the following tags:
+Tag
+Description
+Location
+The location of the event, specified as two separate sub-properties:
+Tag
+Description
+Name
+The name of the venue.
+Address
+The event's detailed address.
+Name
+The name of the event.
+Best practices:
+Mention the full title of the event.
+Highlight a unique aspect of the event in the title. This helps users make faster decisions (for example, "feat. Q&A with the artist").
+Don't add short-term promotions (for example, "buy your tickets now").
+Don't add prices in the title. Instead, use the price property.
+Start Date
+The start date and start time of the event in the local timezone. For details on how to tag dates, see Tagging Dates.
+Best practices:
+If you don't know the start time, don't enter fake time or 00:00. Instead, only specify the start date.
+The data you can tag with Data Highlighter is a subset of the properties in the Schema.org/Event schema.
+If your site is missing any of the data described in Structured data type definitions, you can add missing data from Data Highlighter. If Data Highlighter has a low level of confidence in the tagged data, an alert icon () displays while you are creating a page set. Data Highlighter will still make the low-confidence data available to Google Search , but other Google products might not use it.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Data types supported by Data HighlighterData Highlighter: ArticlesData Highlighter: Book ReviewsData Highlighter: EventsData Highlighter: Local BusinessesData Highlighter: MoviesData Highlighter: ProductsData Highlighter: RestaurantsData Highlighter: Software ApplicationsData Highlighter: TV Episodes
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

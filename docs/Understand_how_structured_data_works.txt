@@ -1,0 +1,168 @@
+Home
+Products
+Search for Developers
+Guides
+Understand how structured data works
+Try
+our new Structured Data Codelab. This codelab walks you through adding several types of
+structured data to a simple HTML site, including where to place structured data on a site and
+how to validate it.
+Google Search works hard to understand the content of a page. You can help us by providing explicit
+clues about the meaning of a page to Google by including structured data on the page.
+Structured data is a standardized format for providing information about a page and classifying
+the page content; for example, on a recipe page, what are the ingredients, the cooking
+time and temperature, the calories, and so on.
+Structured data can help Google display your site with interesting search
+appearance elements. Learn more about
+how your content can appear on
+Google.
+Google uses structured data that it finds on the web to understand the content of the page,
+as well as to gather information about the web and the world in general. For example,
+here is a JSON-LD structured data snippet that might appear
+on the contact page of the Unlimited Ball Bearings corporation, describing their contact information:
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Organization",
+"url": "http://www.example.com",
+"name": "Unlimited Ball Bearings Corp.",
+"contactPoint": {
+"@type": "ContactPoint",
+"telephone": "+1-401-555-1212",
+"contactType": "Customer service"
+}
+}
+</script>
+Google Search also uses structured data to enable special search result features and
+enhancements. For example, a recipe page with valid structured data is eligible to appear in
+a graphical search result, as shown here:
+Search result feature
+Equivalent structured data (trimmed for brevity)
+<html>
+<head>
+<title>Grandma's Holiday Pie</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "Recipe",
+"name": "Grandma's Holiday Apple Pie",
+"author": "Elaine Smith",
+"image": "http://images.edge-generalmills.com/56459281-6fe6-4d9d-984f-385c9488d824.jpg",
+"description": "A classic apple pie.",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4",
+"reviewCount": "276",
+"bestRating": "5",
+"worstRating": "1"
+},
+"prepTime": "PT30M",
+"totalTime": "PT1H",
+"recipeYield": "8",
+"nutrition": {
+"@type": "NutritionInformation",
+"servingSize": "1 medium slice",
+"calories": "230 calories",
+"fatContent": "1 g",
+"carbohydrateContent": "43 g"
+},
+"recipeIngredient": [
+"1 box refrigerated pie crusts, softened as directed on box",
+"6 cups thinly sliced, peeled apples (6 medium)",
+"..."
+],
+"recipeInstructions": [
+"1...",
+"2..."
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Because the structured data labels each individual element of the recipe, users can search
+for your recipe by ingredient, calorie count, cook time, and so on.
+Structured data is coded using in-page markup on the page that the information applies to.
+The structured data on the page should describe the content of that page. You should not create
+blank or empty pages just to hold structured data; nor should you add structured data about
+information that is not visible to the user, even if the information is accurate. For more technical
+and quality guidelines, see the Structured data
+general guidelines.
+The Google Structured Data Testing Tool is an easy and useful
+tool for validating your structured data, and in some cases, previewing a feature in Google Search.
+Try it out:
+<html>
+<head>
+<title>Contact Us</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Organization",
+"url": "http://www.your-company-site.com",
+"contactPoint": [
+{ "@type": "ContactPoint",
+"telephone": "+1-401-555-1212",
+"contactType": "customer service"
+}
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Structured data format
+This documentation describes which properties are required, recommended, or optional for structured data with special meaning to Google Search.
+Most Search structured data uses schema.org
+vocabulary, but you should rely on the documentation on developers.google.com as definitive
+for Google Search behavior, rather than the schema.org documentation. Attributes or
+objects not described here are not required by Google Search, even if marked as required
+by schema.org.
+As of April 6, 2020, data-vocabulary.org markup will no longer be
+eligible for Google rich result features. To be eligible after April 6, 2020, you
+need to replace data-vocabulary.org markup with schema.org markup. Learn more about
+sunsetting support for data-vocabulary.
+Be sure to test your structured data using the Structured
+Data Testing tool during development, and the
+Rich result status reports
+after deployment, to monitor the health of your pages, which might break
+after deployment due to templating or serving issues.
+You must include all the required properties for an object to be eligible for appearance in
+Google Search with enhanced display. In general, defining more recommended features can make
+it more likely that your information can appear in Search results with enhanced display.
+However, it is more important to supply fewer but complete and accurate
+recommended properties rather than trying to provide every possible recommended property with
+less complete, badly-formed, or inaccurate data.
+In addition to the properties and objects documented here, Google can make general use of the
+sameAs property and other schema.org
+structured data. Some of these elements may be used to enable future Search features, if they
+are deemed useful.
+Google Search supports structured data in the following formats, unless documented otherwise:
+Format
+Description and Placement
+JSON-LD* (Recommended)
+JavaScript notation embedded in a <script> tag in the page head or body. The
+markup is not interleaved with the user-visible text, which makes nested data items easier
+to express, such as the Country of a PostalAddress of a MusicVenue of an Event.
+Also, Google can read JSON-LD data when it is dynamically injected into the
+page's contents, such as by JavaScript code or embedded widgets in your content
+management system.
+Microdata
+An open-community HTML specification used to nest structured data within HTML
+content. Like RDFa, it uses HTML tag attributes to name the properties you want
+to expose as structured data. It is typically used in the page body, but can be used in the head.
+RDFa
+An HTML5 extension that supports linked data by introducing
+HTML tag attributes that
+correspond to the user-visible content that you want to describe for search engines. RDFa
+is commonly used in both the head and body sections of the HTML page.
+Google recommends using JSON-LD for structured data whenever possible.
+Structured data guidelines
+Be sure to follow the general structured data guidelines, as well
+as any guidelines specific to your structured data type; otherwise your structured
+data might be ineligible for rich result display in Google Search.
+Building, testing, and releasing your structured data
+See our recommended process for creating new structured data pages.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-07.

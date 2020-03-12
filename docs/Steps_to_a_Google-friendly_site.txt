@@ -1,0 +1,20 @@
+Steps to a Google-friendly siteCheck out our SEO Starter Guide!
+Things to do
+Our Webmaster Guidelines provide general design, technical, and quality guidelines. Below are more detailed tips for creating a Google-friendly site.
+Give visitors the information they're looking for
+Provide high-quality content on your pages, especially your homepage. This is the single most important thing to do. If your pages contain useful information, their content will attract many visitors and entice webmasters to link to your site. In creating a helpful, information-rich site, write pages that clearly and accurately describe your topic. Think about the words users would type to find your pages and include those words on your site.
+Make sure that other sites link to yours
+Links help our crawlers find your site and can give your site greater visibility in our search results. When returning results for a search, Google uses sophisticated text-matching techniques to display pages that are both important and relevant to each search. Google interprets a link from page A to page B as a vote by page A for page B. Votes cast by pages that are themselves "important" weigh more heavily and help to make other pages "important."
+Keep in mind that our algorithms can distinguish natural links from unnatural links. Natural links to your site develop as part of the dynamic nature of the web when other sites find your content valuable and think it would be helpful for their visitors. Unnatural links to your site are placed there specifically to make your site look more popular to search engines. Some of these types of links (such as link schemes and doorway pages) are covered in our Webmaster Guidelines.
+Only natural links are useful for the indexing and ranking of your site.
+Make your site easily accessible
+Build your site with a logical link structure. Every page should be reachable from at least one static text link.
+Use a text browser, such as Lynx, to examine your site. Most spiders see your site much as Lynx would. If features such as JavaScript, cookies, session IDs, DHTML, or Macromedia Flash keep you from seeing your entire site in a text browser, then spiders may have trouble crawling it.
+Things to avoid
+Don't fill your page with lists of keywords, attempt to "cloak" pages, or put up "crawler only" pages. If your site contains pages, links, or text that you don't intend visitors to see, Google considers those links and pages deceptive and may ignore your site.
+Don't feel obligated to purchase a search engine optimization service. Some companies claim to "guarantee" high ranking for your site in Google's search results. While legitimate consulting firms can improve your site's flow and content, others employ deceptive tactics in an attempt to fool search engines. Be careful; if your domain is affiliated with one of these deceptive services, it could be banned from our index.
+Don't use images to display important names, content, or links. Our crawler doesn't recognize text contained in graphics. Use ALT attributes if the main content and keywords on your page can't be formatted in regular HTML.
+Don't create multiple copies of a page under different URLs. Many sites offer text-only or printer-friendly versions of pages that contain the same content as the corresponding graphic-rich pages. If your site has identical content that can be reached via different URLs, there are several ways of indicating the canonical (preferred) version of a page. More information about canonicalization.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -1,0 +1,101 @@
+Enable Search result features for your site
+Google supports many interesting search appearance elements that can be applied to your page in search results:
+A few of these result types are generated automatically by Google Search, but most of them can be coded for by your site, as we will explain. But first, let's talk about the general categories of Search results.
+General categories of Search results
+Google Search results include many types of display features. How they look changes over time, and the same result can be displayed differently depending on whether you're seeing it on a desktop computer or a phone, what country you are in, or many other factors. Google is trying to show a result in the most useful format for the searcher. These search results mostly fall into the following general categories:
+Plain blue link
+The beloved, the original. The term "plain blue link" is not an official term, but is commonly used outside of our official documentation. (In fact, there is no official name for this type of result.)
+This result type contains many common components seen in other result types:
+Title - The title of the site. Google determines the appropriate title for the site based on many characteristics, but you can indicate your preferences in the <title> tag.
+URL - The URL of the result. You might also want to specify breadcrumbs for your pages.
+Snippet - A description of the page, generated algorithmically by Google. Read more about enabling good snippets for your page.
+Enhancement
+You can enhance your plain or rich results with several types of enhancements, including breadcrumbs, sitelinks searchboxes, corporate logos, and more. Most enhancements require structured data on the page.
+Breadcrumbs in a result
+Sitelinks searchbox in a result
+Logo in a result
+Rich result
+A rich result is a result that contains graphical elements, including review stars, thumbnail images, or some kind of visual enhancement. Rich results can stand alone in search results, like this:
+Some types of rich result can be included in a carousel of results, like this:
+There are many kinds of rich results. Most are linked to the specific content type being displayed (book, movie, article, and so on). The exact appearance can change over time as Google refines the optimal layout and behavior of a result type. Rich results with a more immersive experience are called enriched results, and feature advanced interaction capabilities.
+In most cases, you provide information for a Search feature by providing structured data in the coding of your web page. Google processes this information when it crawls your page. When you provide structured data for a feature on your page, if the requested feature or information can make a better search experience for the user, it can appear in Google Search results, Assistant, Maps, or in other Google products. These pages discuss only the behavior on Google Search.
+Structured data is used not only to specify search features, but also to help Google understand and present the information on your site in new and interesting ways (such as Assistant actions), to enable better search results (such as enabling users to search for recipes containing chicken or with less than 500 calories), or to store information in the knowledge panel.
+See the full list of rich result types.
+Knowledge panel entry
+The Google knowledge panel is a collection of information from one or more pages, displayed in a rich result with images text, and links. It can be difficult to distinguish visually between a rich card and a knowledge panel result. Knowledge panel results can include identity (logo, preferred site name). The knowledge panel can potentially ingest data using any schema.org elements, even those not described in this documentation.
+Learn how to manage your knowledge panel data
+Featured snippet
+When a user asks a question in Google Search, we might show a search result extracted from your site in a special featured snippet block at the top of the search results page. Learn more about featured snippets.
+OneBox result
+A OneBox result presents an inline answer or a tool in search results. Examples are the local time OneBox or the translation OneBox. You can't add a custom OneBox to search results.
+Discover
+Not part of Google Search results, but your page can appear in a scrolling list of results shown in a special viewing panel on Android devices. Each result card summarizes a single page.
+Learn more
+Why specify Search features for a page?
+Adding Search features can provide Search results that are more engaging to users and might encourage them to interact more with your website. Here are some case studies of websites that have implemented search features for their site:
+Rotten Tomatoes added search features to 100,000 unique pages and measured a 25% higher click-through rate for pages enhanced with structured data, compared to pages without structured data.
+The Food Network has converted 80% of their pages to enable search features, and has seen a 35% increase in visits.
+Rakuten has found that users spend 1.5x more time on pages that implemented search features than on non-structured data pages, and have a 3.6x higher interaction rate on AMP pages with search features vs non-feature AMP pages.
+Nestlé has measured pages that show as rich results in search have an 82% higher click through rate than non-rich result pages.
+Read case studies from sites that have implemented Search features.
+What features are best for my page or site?
+Some features are appropriate or available only for specific types of information on your site: for example, review stars are available for a recipe but not a dataset. Other features are available only for a specific device type (mobile or desktop). The following table shows features that you might want to use, based on the content of your page or site. Some features are site-wide, some are per page. The gallery page shows details about each feature.
+Your content type is...
+Recommended features and enhancements
+Articles/blogs
+Article, AMP, Fact check, How-to, Speakable, Subscription and paywalled content
+Books
+Book, Review
+Education
+Course, Carousel, Dataset
+Entertainment/media/news
+Carousel, Event, Fact check, Livestream, movie, Review, Subscription and paywalled content, Video (and Video Livestream), Podcast, (see also Video best practices)
+Business
+Business or corporate identity information, Local business (for a business with a physical store), Top places list
+Events
+Event, Video and Video Livestream
+Recipes
+Recipe, Carousel, AMP, Review
+Products
+Product type, Review, Software app, FAQ
+Scientific or research organization
+Dataset
+Job-related content
+Job posting, Occupation, Employer aggregate rating
+Any type
+Breadcrumbs
+Sitelinks search box (for larger sites)
+[Experimental] Actions: Integrate with Google Assistant, a spoken interface that enables users to interact with your content using voice commands.
+See Image best practices for including images
+See AMP and Mobile-friendly best practices to learn about practices and features to make your site mobile-friendly.
+Q&A tags let you indicate questions and answers on your page.
+Provide search-friendly limited free access to your site by using the Subscription and paywalled content tags.
+Business or corporate identity information
+Google offers a variety of ways to help you provide key business details so that they show up for users in Search results. Corporate identity information provides a way for businesses to indicate preferred site name and logo, as well as other company information to Google.
+You can claim ownership or manage your knowledge panel data for a business or individual as well.
+Businesses with physical stores might also want to include physical store information. Additionally, you can register a physical business with Google My Business to enable your local business information to show up in Google Maps and in knowledge panel cards. Note: Google My Business information is considered authoritative.
+See Get Your Content on Google to learn other ways to register your business information with various Google products.
+Enabling Search features for your site
+Some features can be requested using structured data on the page, for example, review stars and recipe cards. Some features are implemented automatically by Google, without any in-page coding, for example sitelinks.
+Important! Providing structured data to enable an enhanced search feature is no guarantee that the page will appear with that designated feature; structured data only enables a feature to be displayed. Google tries to display the most appropriate and engaging results to a user, and it might be the case that the feature you code for is not appropriate for a particular user at a particular time.
+To implement search features:
+Use the table to help choose features appropriate for your page or site. Some features are available for all content types (for example, preferred site name can be used for all types of pages), and some rich results are specific to the content type (for example a recipe rich card is only available for a recipe).
+Read the detailed information about each appearance element to decide if it's right for you.
+Implement the feature as described on the Google Developers website. The developer should validate any structured data using the Rich Results Test tool to ensure that it is valid and complete. Be sure to follow the structured data quality guidelines to ensure that the contents of your page, and your usage, complies with these guidelines. Pages that do not comply will not be eligible for structured data usage.
+Use the appropriate Rich Result Status report to see whether Google has found, and can process, your structured data.
+Periodically check the Rich Result Status report for errors. Structured data that was valid in the past can suddenly develop errors if you change a site template or as a result of other unforeseen events.
+Monitor clicks and impressions for your search elements.
+Watch a Google I/O talk on structured data
+Measuring the performance of Search features
+For some Search features, you can directly track user traffic on the Performance report. To monitor your traffic, select Search Appearance in the report. If you don't see a filter for your specific feature:
+Not all feature types are currently trackable. Read the documentation to see which features can be tracked in Search Console.
+Google hasn't detected any instances of that feature on your site.
+Comparing the effect of Search features
+You probably want to compare performance of your pages with search features with those pages that don't have search features, in order to decide if it's worth your effort. The best way to do that is to run a before and after test on a few pages on your site. This can be a little tricky, since page views can vary for a single page for various reasons.
+Take some pages on your site that are not using any structured data, and have several months of data in Search Console. Be sure to choose pages that won't be affected by the time of year or timeliness of the page content; use pages that won't change much, but are still popular enough to be read often enough to generate meaningful data.
+Add structured data or other features to your pages. Confirm that your page code is valid, and that Google has found your features using the URL Inspection tool on your page.
+Record the performance for a few months in the Performance report, filter by URL to compare performance of your page.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Search AppearanceCreate good titles and snippets in Search ResultsEnable Search result features for your siteTools for adding structured data (for beginners)Enriched Search ResultsProvide a publication date to Google SearchDefine a favicon to show in search resultsFlexible Sampling general guidanceTop Places ListFeatured snippets in search
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

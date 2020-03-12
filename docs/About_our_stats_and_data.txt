@@ -1,0 +1,21 @@
+About our stats and dataWhen does Search Console data appear
+When you add your site to Search Console, it may take some time before diagnostic and other data is available. This is normal; it can take some time for Search Console to gather and process data for your site. In general, if you see a "No data yet" message, check back later. Once Google starts crawling your site more often, you'll notice that Search Console will begin to show more detailed data, and that this data is updated more often.
+If you still don't see any data, it may be for one of these reasons:
+If you are seeing no data for the site www.example.com, it may be because you have added your site using http://example.com. To Google, these are entirely different sites. If you feel like you're missing some data, add both the www and the non-www version of your domain to your Search Console account. Take a look at the data for both sites.
+If you see no data in the Crawl Errors report, it may be because Google simply didn't find any problems. That's great news—but we encourage you to check back regularly.
+If you see no data in the Search Analytics report, it may be because people aren't yet clicking on your site in search results. Check out possible reasons why your site may not be performing well in search.
+If you see no data in the Sitemaps report, consider helping Google discover content on your site by creating and submitting a Sitemap.
+We're always working to increase the update frequency for your verified sites' data, such as crawl, index, and search analytics stats. Much of this data depends on the content of your site, and is a close approximation of the status of your site. Our internal systems are always changing, and the web itself is an ever-shifting ecosystem. In addition, there may be a lag between when the numbers are calculated and when they are visible to webmasters - although data gets published in intervals, we are continually collecting it. If your content doesn't change very often, or if you're not getting new links to your site, you may not see updates to your data every time you sign in to Search Console.
+If data is missing or appears out of date
+When you add your site to Search Console, it will take some time before diagnostic and other data is available.
+If after a week you are seeing no data for your new site www.example.com, it may be that you added your site as http://example.com. To Search Console, example.com and www.example.com are different properties. If you feel that you're missing some data, add both the www and the non-www version of your domain to your Search Console account. Take a look at the data for both sites.
+Do a site: search for your domain without the www (e.g. [site:example.com]). This should return pages from your domain and any of your indexed subdomains (www.example.com, rollergirl.example.com, etc.). You should be able to tell from the results whether your site is mainly indexed with or without the www subdomain. The version that's indexed is likely to be the version that shows the most data in your Search Console account. More information about specifying the canonical version of a page.
+Why doesn't Search Console data match Google Analytics data?
+The data displayed in Search Console may differ from the data displayed in other tools, such as Google Analytics. Possible reasons for this include:
+We may not have crawled your site since the changes were last made.
+Search Console does some additional data processing - for example, to eliminate duplicates and visits from robots - that may cause your stats to differ from stats listed in other sources.
+Some tools, such as Google Analytics, track traffic only from users who have enabled JavaScript in their browser.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Important conceptsHow Google Search WorksWhat are impressions, position, and clicks?About our stats and data
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

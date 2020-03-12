@@ -1,0 +1,34 @@
+About Data HighlighterData Highlighter is a webmaster tool for teaching Google about the pattern of structured data on your website. You simply use Data Highlighter to tag the data fields on your site with a mouse. Then Google can present your data more attractively -- and in new ways -- in search results and in other products such as the Google Knowledge Graph.
+Open Data Highlighter
+For example, if your site contains event listings you can use Data Highlighter to tag data (name, location, date, and so on) for the events on your site. The next time Google crawls your site, the event data will be available for rich snippets on search results pages:
+Note that Data Highlighter can only access pages that have been crawled by Google recently. If Google hasn't crawled or can't crawl some of your pages, such as pages behind sign-in forms, you can't use Data Highlighter for those pages.
+Supported data types
+You can use Data Highlighter to teach Google about the following types of data on your site:
+Articles
+Events
+Local Businesses
+Restaurants
+Products
+Software Applications
+Movies
+TV Episodes
+Books
+Organizing pages into page sets
+To tell Data Highlighter which of the pages on your site contain data, you create one or more page sets. A page set is a collection of pages on a site that display data consistently (possibly generated from the same template) and are organized so that URLs follow a simple pattern. Data Highlighter will only teach Google about pages that are in a page set.
+Data Highlighter doesn't teach Google about pages that already contain HTML markup specifying the data structure. You can still use Data Highlighter if some of the pages on a site already contain HTML markup, but Data Highlighter will teach Google only about the pages without the markup.
+If your site organizes data in different ways (such as using different templates for music and speaking events), you can create a page set for each organization.
+For example, consider a site that contains information about music and speaking events in the following pages:
+www.example.com/events/music/pop/pop-music.html
+www.example.com/events/music/classical/classical-music.html
+www.example.com/events-speaking/europe/europe-reviews.html
+www.example.com/events-speaking/asia/asia-reviews.html
+Pages one and two could be in one page set because they both describe music events and their URLs follow a simple pattern: www.example.com/events/music/*/* (where each * is a wildcard for a single URL component).
+Likewise, pages three and four could be in another page set because they both describe speaking events and their URLs follow a simple pattern: www.example.com/events-speaking/*/*
+Detecting changes in a page set
+Each time Google crawls pages on your site, Data Highlighter extracts data and makes the data available for rich snippets. If you make significant changes to the way your pages display information or to the site's URLs, you should delete the original page sets and teach Data Highlighter about the new structure of your site.
+Ready to get started?
+To start using Data Highlighter, create a page set.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Data HighlighterAbout Data HighlighterData types supported by Data HighlighterCreate a page setPublish or unpublish a page setDelete a page setTips and tricks for using Data HighlighterTroubleshooting Data Highlighter
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

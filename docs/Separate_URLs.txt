@@ -1,0 +1,128 @@
+Home
+Products
+Search for Developers
+Guides
+Separate URLs
+Google doesn't recommend Separate URLs as a site setup
+because it's difficult to implement and maintain. Consider
+Responsive Web Design instead.
+In this configuration, the desktop and mobile pages have different URLs.
+A common setup would be pages on www.example.com serving desktop users with
+corresponding pages served on m.example.com for mobile users. Google does not
+favor any particular URL format as long as they are all accessible for all
+Googlebot user-agents.
+TL;DR
+Signal the relationship between two URLs by <link> tag with rel="canonical"
+and rel="alternate" elements.
+Detect user-agent strings and redirect them correctly.
+Annotations for desktop and mobile URLs
+To help our algorithms understand separate mobile URLs, we recommend using the
+following annotations:
+On the desktop page, add a rel="alternate" tag pointing to the
+corresponding mobile URL. This helps Googlebot discover the location of your
+site's mobile pages.
+On the mobile page, add a rel="canonical" tag pointing to the
+corresponding desktop URL.
+We support two methods to have this annotation: in the HTML of the pages
+themselves and in sitemaps. For example, suppose that the desktop
+URL is http://example.com/page-1 and the corresponding mobile URL is
+http://m.example.com/page-1. The annotations in this example would be as
+follows.
+Annotations in the HTML
+On the desktop page (http://www.example.com/page-1), add the following annotation:
+<link rel="alternate" media="only screen and (max-width: 640px)"
+href="http://m.example.com/page-1">
+On the mobile page (http://m.example.com/page-1), the required annotation
+should be:
+<link rel="canonical" href="http://www.example.com/page-1">
+This rel="canonical" tag on the mobile URL pointing to the desktop page is
+required.
+Annotations in sitemaps
+We support including the rel="alternate" annotation for the desktop pages in
+sitemaps like this:
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>http://www.example.com/page-1/</loc>
+<xhtml:link rel="alternate" media="only screen and (max-width: 640px)"
+href="http://m.example.com/page-1" />
+</url>
+</urlset>
+The required rel="canonical" tag on the mobile URL should still be added to the
+mobile page's HTML.
+Annotation in detail
+Notice the attributes of the link tag on the desktop page:
+The rel="alternate" attribute signals that this tag specifies an alternative
+URL to the desktop page.
+The media attribute's value is a CSS media query string that specifies the
+media features describing when Google should use the alternative URL. In this
+case, we're using a media query that's typically used to target mobile
+devices.
+The href attribute specifies the location of the alternative URL, namely the
+page on m.example.com.
+This two-way ("bidirectional") annotation helps Googlebot discover your content
+and helps our algorithms understand the relationship between your desktop and
+mobile pages and treat them accordingly. When you use different URLs to serve
+the same content in different formats, the annotation tells Google's algorithms
+that those two URLs have equivalent content and should be treated as one entity
+instead of two entities. If the desktop and mobile version of the page are
+treated as separate entities, both desktop and mobile URLs can be shown in
+desktop search results, and their ranking may be lower than if Google
+understood their relationship. Here are some of the common
+mistakes in this configuration:
+When using rel="alternate" and rel="canonical" markup, maintain a 1-to-1
+ratio between the mobile page and the corresponding desktop page. In
+particular, avoid annotating many desktop pages that refer to a single mobile
+page (or vice versa).
+Double-check your redirects – make sure that desktop pages don't
+inadvertently redirect to a single, unrelated mobile page.
+If you choose to implement a separate mobile site, be aware of
+common mistakes, such as configuring faulty redirects for mobile users.
+Automatic redirection
+When a website is configured to serve desktop and mobile browsers using
+different URLs, webmasters may want to automatically redirect users to the URL
+that best serves them.
+If your website uses automatic redirection, be sure to
+treat all Googlebots just like any other user-agent and redirect
+them appropriately.
+Supported redirection techniques
+Googlebot supports the following two redirection implementations:
+HTTP redirects
+JavaScript redirects
+Using HTTP redirects
+HTTP redirection is a commonly used to redirect clients to device-specific URLs.
+Usually, the redirection is done based on the user-agent in the HTTP request
+headers.
+It is important to keep the redirection consistent with the alternate
+URL specified in the page's rel="alternate" tag or in the Sitemap.
+For this purpose, it does not matter if the server redirects with an HTTP 301 or
+a 302 status code, but use of 302 is recommended whenever possible.
+JavaScript redirects
+If HTTP redirection is difficult to implement, you can use JavaScript to
+redirect users to the URLs pointed to by the rel="alternate"
+tag. If you choose to use this technique, be aware of the latency caused
+by the client side of redirection due to the need to first download the page,
+then parse and execute the JavaScript before triggering the redirect.
+There are many approaches to implementing a JavaScript-based redirect. For
+example, you can use JavaScript to execute the media queries your site already
+uses in the link annotations on the page using the matchMedia() JavaScript
+function.
+Bidirectional vs unidirectional redirects
+Different websites implement different redirection policies. Some websites only
+redirect mobile users visiting a desktop page to the mobile page
+("unidirectional" redirects), and some websites redirect both mobile and desktop
+users if they visit pages on, respectively, the desktop and mobile sites
+("bidirectional" redirects).
+For Googlebot, we do not have any preference and recommend that webmasters
+consider their users when deciding on their redirection policy. The most
+important thing is to serve correct and consistent redirects, or in other words, to redirect to
+the equivalent content on the desktop or mobile site.
+If your configuration is
+wrong, some users may not be able to see your content at all.
+Also, we suggest giving users a way to override the redirect policy, or in other words,
+allowing mobile users to view the desktop page and allowing desktop users to see
+the mobile page if they so choose.
+Caution: Visit our common mistakes section to make sure you don't run into one.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-01-06.

@@ -1,0 +1,25 @@
+Crawl Stats reportThe Crawl Stats report provides information on Googlebot's activity on your site for the last 90 days. These stats take into account all content types that we download (such as CSS, JavaScript, Flash, and PDF files, and images).
+Open the Crawl Stats report
+Crawl stats are available only for verified websites.
+Understanding the data
+There's no "good" crawl number, but you should see a relatively even chart that increases over time as you increase the size of your site. If you see a sudden drop or spike, read on.
+Why did my crawl rate drop?
+In general, your Google crawl rate should be relatively stable over the time span of a week or two; if you see a sudden drop, here are a few possible reasons:
+You added a new (or very broad) robots.txt rule. Make sure that you are only blocking the resources that you need to. If Google needs specific resources such as CSS or JavaScript to understand the content, be sure you do not block them from Googlebot.
+Broken HTML or unsupported content on your pages: If Googlebot can't parse the content of the page, perhaps because it uses an unsupported media type or the page is only images, it won't be able to crawl them. Use the URL Inspection tool to see how Googlebot sees your page.
+If your site is responding slowly to requests, Googlebot will throttle back its requests to avoid overloading your server. Check the Crawl Stats report to see if your site has been responding more slowly.
+If your server error rate increases, Googlebot will throttle back its requests to avoid overloading your server.
+Ensure that you haven't lowered your preferred maximum crawl rate.
+If a site has information that changes less frequently, or isn't very high quality, we might not crawl it as frequently.  Take an honest look at your site, get neutral feedback from people not associated with your site, and think about how or where your site could be improved overall.
+Why did my crawl rate spike?
+If you put up a bunch of new information, or have some really useful information on your site, you might be crawled a bit more than you'd like. Here are some tips for managing Googlebot's crawl rate for your site, if you feel that your server is being overwhelmed:
+Confirm that Googlebot is accessing your site and not another requester by looking at the Crawl Stats report and also checking the user agent in your logs.
+If you need to urgently block Googlebot crawling, return 503 HTTP result codes to its requests.
+Fine tune your robots.txt file to block out pages that shouldn't be called.
+You can set your  preferred maximum crawl rate in Search Console as a short-term solution. We don't recommend using this long term, because it doesn't let you tell us specifically which pages or resources you do want crawled versus those you don't want crawled.
+Be sure that you don't allow crawling to pages with "infinite" results, like an infinite calendar or infinite search page. Block them with robots.txt or nofollow tags.
+If URLs no longer exist or have moved, be sure to return the correct response codes: use 404 or 410 for URLs that no longer exist or which are invalid; use 301 redirects for URLs that were permanently replaced by others (302 if it's not permanent); use 503 for temporary planned downtime; make sure your server returns a 500 error when it sees issues that it can't handle.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Crawling and indexingOverview of crawling and indexing topicsManage your sitemapsBlock access to your contentRemove information from GoogleTell Google about your duplicate contentAsk Google to recrawl your URLsMake sure Googlebot is not blockedCreate custom 404 pagesTransfer, move, or migrate your siteInternational and multilingual sitesSpecial tags that Google understandsGoogle crawlersCrawl Stats reportChange Googlebot crawl rate
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

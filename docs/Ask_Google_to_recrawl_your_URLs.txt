@@ -1,0 +1,26 @@
+Ask Google to recrawl your URLsIf you’ve recently added or made changes to a page on your site, you can ask Google to (re)index it using any of the methods listed here.
+General guidelines
+Crawling can take anywhere from a few days to a few weeks. Be patient and monitor progress using either the Index Status report or the URL Inspection tool.
+All methods described here have about the same response time.
+There is a quota for submitting individual URLs.
+Requesting a recrawl multiple times for the same URL or sitemap won't get it crawled any faster.
+Crawl request methods
+Use the URL Inspection tool
+Use the URL Inspection tool to submit individual URLs to the Google index. Note that if you have large numbers of URLs, you should submit a sitemap instead.
+To submit a URL to the index:
+Inspect the URL using the URL Inspection tool.
+Select Request indexing. The tool will run a live test on the URL to see whether it has any obvious indexing issues, and if not, the page will be queued for indexing. If the tool finds issues with the page you should try to fix them.
+Submit a sitemap
+A sitemap is an important way for Google to discover URLs on your site. A sitemap can also include additional metadata about alternate language versions and video-, image-, or news-specific pages. Learn how to create a sitemap.
+Here are the different ways you can request that Google index your sitemap:
+Submit a sitemap using the sitemaps report.
+Use the ping tool. Send a GET request in your browser or the command line to this address, specifying the full URL of the sitemap. Be sure that the sitemap file is accessible:
+http://www.google.com/ping?sitemap=<full_URL_of_sitemap>
+Example:
+http://www.google.com/ping?sitemap=https://example.com/sitemap.xml
+Insert the following line anywhere in your robots.txt file, specifying the path to your sitemap. We will find it the next time we crawl your site:
+Sitemap: http://example.com/my_sitemap.xml
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Crawling and indexingOverview of crawling and indexing topicsManage your sitemapsBlock access to your contentRemove information from GoogleTell Google about your duplicate contentAsk Google to recrawl your URLsMake sure Googlebot is not blockedCreate custom 404 pagesTransfer, move, or migrate your siteInternational and multilingual sitesSpecial tags that Google understandsGoogle crawlersCrawl Stats reportChange Googlebot crawl rate
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

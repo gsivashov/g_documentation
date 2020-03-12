@@ -1,0 +1,114 @@
+Home
+Products
+Search for Developers
+Reference
+Employer Aggregate Rating
+Does your site provide salary estimates? Consider adding Estimated salary structured data.
+Does your site provide job postings? Consider adding JobPosting structured data.
+If your site publishes user-generated ratings about hiring organizations, you should add EmployerAggregateRating structured data to your site. EmployerAggregateRating is an evaluation of a hiring organization compiled from many users. Adding EmployerAggregateRating can provide job seekers with ratings about a hiring organization to help them choose a job. It also offers prominent brand placement in the enriched job search experience on Google.
+During the beta phase, we recommended adding review snippet structured data for your page to be eligible for the jobs enriched search results. If you currently have review snippet structured data on your site, we recommend that you transition from review snippet structured data to Employer Aggregate Rating structured data soon.
+Example
+Here's an example for EmployerAggregateRating using JSON-LD code in the Structured Data Testing Tool.
+<html>
+<head>
+<title>World's Best Coffee Shop</title>
+<script type="application/ld+json">
+{
+"@context" : "https://schema.org/",
+"@type": "EmployerAggregateRating",
+"itemReviewed": {
+"@type": "Organization",
+"name" : "World's Best Coffee Shop",
+"sameAs" : "http://www.worlds-best-coffee-shop.example.com"
+},
+"ratingValue": "91",
+"bestRating": "100",
+"worstRating": "1",
+"ratingCount" : "10561"
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Here's how ratings about hiring organizations may look in the enriched job search experience on Google.
+Add aggregate ratings
+Ensure that Googlebot can crawl your web pages that post employer aggregate ratings (not protected by a robots.txt file or robots meta tag).
+Follow our guidelines.
+Add EmployerAggregateRating structured data to your web page.
+Validate your code using the Structured
+Data Testing Tool. Paste your code into the tool and click the validate button.
+Deploy a few pages using your structured data and use the
+URL Inspection tool to test
+how Google sees the page.
+Be sure that your page is accessible to Google and not blocked by
+robots, noindex, or login requirements. If the page looks okay, use that tool to request an
+index of the page. Read here to
+find out how to test a page
+hosted on a local server or behind a firewall.
+To monitor errors, verify your site ownership in Search Console. If Search Console notices
+any dramatic changes in error rates, you might be notified by email about the change.
+After Google has indexed the page, look for errors and properly processed data in the appropriate
+Rich Result report in
+Search Console.
+Ideally you should see an increase of rich results or structured data types
+and no increase in error rates.
+If you see your structured data being crawled without errors, update your sitemap to have Google crawl
+those pages regularly.
+If you find problems in your structured data, fix it, retest on URL Inspection, and request another
+index until everything looks good in the reports. Then deploy the rest of your pages.
+Monitor your error rates periodically using the
+Rich Result report, especially after releasing new templates or updating your code.
+Guidelines
+You must follow these guidelines to be eligible to appear in the Google job search experience.
+Warning: If your site violates one or more of these guidelines, then Google may take manual action against it. Once you have remedied the problem, you can submit your site for reconsideration.
+Technical guidelines
+Content guidelines
+Enriched search quality guidelines
+Webmaster guidelines
+General structured data guidelines
+Technical guidelines
+Make sure that the ratings are available to users from the page where you add EmployerAggregateRating structured data. It should be immediately obvious to users that the page has rating content.
+Provide rating information about a specific hiring organization, not about a category or a list of items. For example, “top 10 best places to work” and “tech companies” aren't specific hiring organizations.
+By default, Google assumes that your site uses a 5-point scale, where 5 is the best possible rating and 1 is the worst, but you can use any other scale. If you use a different scale, you can specify the best and worst ratings, and Google scales that to the 5-star system.
+Content guidelines
+Users must be able to post their own ratings on your site and your site must host those user ratings.
+The number of ratings should reflect actual ratings that users provide.
+The aggregate score should be accurately derived from the provided ratings.
+Structured data type definitions
+This section describes the structured data types related to employer aggregate ratings. You must
+include the required properties for your content to be eligible for display in enhanced search results.
+The full definition of EmployerAggregateRating is avalailable at
+schema.org/EmployerAggregateRating.
+Required properties
+bestRating
+Number
+The highest value allowed in this rating system. This property is only required if the
+rating system is not a 5-point scale. If bestRating is omitted, 5 is assumed.
+itemReviewed
+Organization
+The organization that is being rated. The itemReviewed property must point to a schema.org/Organizaton that represents the company being rated.
+For example:
+{
+"@context" : "https://schema.org/",
+"@type": "EmployerAggregateRating",
+"itemReviewed": {
+"@type": "Organization",
+"name" : "World's Best Coffee Shop",
+"sameAs" : "http://www.worlds-best-coffee-shop.example.com"
+}
+}
+ratingCount
+Number
+The total number of ratings of the organization on your site.
+ratingValue
+Number
+A numerical quality rating for the organization. The numerical quality rating must be an
+aggregate score that is accurately derived from the provided ratings.
+worstRating
+Number
+The lowest value allowed in this rating system. This property is only required if the
+rating system is not a 5-point scale. If worstRating is omitted, 1 is
+assumed.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

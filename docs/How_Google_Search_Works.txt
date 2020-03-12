@@ -1,0 +1,82 @@
+How Google Search WorksLearn how Google discovers, crawls, and serves web pagesHow does Google work? Here is a short version and a long version.
+Google gets information from many different sources, including:
+Web pages,
+User-submitted content such as Google My Business and Maps user submissions,
+Book scanning,
+Public databases on the Internet,
+and many other sources.
+However, this page focuses on web pages.
+The short version
+Google follows three basic steps to generate results from web pages:
+Crawling
+The first step is finding out what pages exist on the web. There isn't a central registry of all web pages, so Google must constantly search for new pages and add them to its list of known pages. This process of discovery is called crawling.
+Some pages are known because Google has already crawled them before. Other pages are discovered when Google follows a link from a known page to a new page. Still other pages are discovered when a website owner submits a list of pages (a sitemap) for Google to crawl. If you're using a managed web host, such as Wix or Blogger, they might tell Google to crawl any updated or new pages that you make.
+To improve your site crawling:
+For changes to a single page, you can submit an individual URL to Google.
+Get your page linked to by another page that Google already knows about. However, be warned that links in advertisements, links that you pay for in other sites, links in comments, or other links that don't follow the Google Webmaster Guidelines won't be followed.
+If you ask Google to crawl only one page, make it your home page. Your home page is the most important page on your site, as far as Google is concerned. To encourage a complete site crawl, be sure that your home page (and all pages) contain a good site navigation system that links to all the important sections and pages on your site; this helps users (and Google) find their way around your site.
+Google doesn't accept payment to crawl a site more frequently, or rank it higher. If anyone tells you otherwise, they're wrong.
+Indexing
+After a page is discovered, Google tries to understand what the page is about. This process is called indexing. Google analyzes the content of the page, catalogs images and video files embedded on the page, and otherwise tries to understand the page. This information is stored in the Google index, a huge database stored in many, many (many!) computers.
+To improve your page indexing:
+Create short, meaningful page titles.
+Use page headings that convey the subject of the page.
+Use text rather than images to convey content. (Google can understand some image and video, but not as well as it can understand text. At minimum, annotate your video and images with alt text and other attributes as appropriate.)
+Serving (and ranking)
+When a user types a query, Google tries to find the most relevant answer from its index based on many factors. Google tries to determine the highest quality answers, and factor in other considerations that will provide the best user experience and most appropriate answer, by considering things such as the user's location, language, and device (desktop or phone). For example, searching for "bicycle repair shops" would show different answers to a user in Paris than it would to a user in Hong Kong. Google doesn't accept payment to rank pages higher, and ranking is done programmatically.
+To improve your serving and ranking:
+Make your page fast to load, and mobile-friendly.
+Put useful content on your page and keep it up to date.
+Follow the Google Webmaster Guidelines, which help ensure a good user experience.
+Read more tips and best practices in our SEO starter guide.
+You can find more information here, including the guidelines that we provide to our quality raters to ensure that we're providing good results
+The long version
+Want more information? Here it is:
+The long version
+Crawling
+Crawling is the process by which Googlebot discovers new and updated pages to be added to the Google index.
+We use a huge set of computers to fetch (or "crawl") billions of pages on the web. The program that does the fetching is called Googlebot (also known as a robot, bot, or spider). Googlebot uses an algorithmic process: computer programs determine which sites to crawl, how often, and how many pages to fetch from each site.
+Google's crawl process begins with a list of web page URLs, generated from previous crawl processes, and augmented with Sitemap data provided by webmasters. As Googlebot visits each of these websites it detects links on each page and adds them to its list of pages to crawl. New sites, changes to existing sites, and dead links are noted and used to update the Google index.
+How does Google find a page?
+Google uses many techniques to find a page, including:
+Following links from other sites or pages
+Reading sitemaps
+How does Google know which pages not to crawl?
+Pages blocked in robots.txt won't be crawled, but still might be indexed if linked to by another page. (Google can infer the content of the page by a link pointing to it, and index the page without parsing its contents.)
+Google can't crawl any pages not accessible by an anonymous user. Thus, any login or other authorization protection will prevent a page from being crawled.
+Pages that have already been crawled and are considered duplicates of another page, are crawled less frequently.
+Improve your crawling
+Use these techniques to help Google discover the right pages on your site:
+Submit a sitemap.
+Submit crawl requests for individual pages
+Use a simple, human-readable, and logical URL paths for your pages and provide clear and direct internal links within the site.
+If you use URL parameters on your site for navigation, for instance if you indicate the user's country in a global shopping site, use the URL parameters tool to tell Google about important parameters.
+Use robots.txt wisely: Use robots.txt to indicate to Google which pages you'd prefer Google to know about or crawl first, in order to protect your server load, not as a method to block material from appearing in the Google index.
+Use hreflang to point to alternate language pages.
+Clearly identify your canonical page and alternate pages.
+View your crawl and index coverage using the Index Coverage Report
+Indexing
+Googlebot processes each of the pages it crawls in order to compile a massive index of all the words it sees and their location on each page. In addition, we process information included in key content tags and attributes, such as <title> tags and alt attributes. Googlebot can process many, but not all, content types. For example, we cannot process the content of some rich media files.
+Somewhere between crawling and indexing, Google determines if a page is a duplicate or canonical of another page. If the page is considered a duplicate, it will be crawled much less frequently.
+Note that Google doesn't index pages with a noindex directive (header or tag). However, it must be able to see the directive; if the page his blocked by a robots.txt file, a login page, or other device, it is possible that the page might be indexed even if Google didn't visit it!
+Improve your indexing
+There are many techniques to improve Google's ability to understand the content of your page:
+Prevent Google from crawling or finding pages that you want to hide using noindex. Do not "noindex" a page that is blocked by robots.txt; if you do so, the noindex won't be seen and the page might still be indexed.
+Use structured data.
+Follow the Google Webmaster Guidelines.
+Read our SEO guide for more tips.
+Serving results
+When a user enters a query, our machines search the index for matching pages and return the results we believe are the most relevant to the user. Relevancy is determined by over 200 factors, and we always work on improving our algorithm. Google considers the user experience in choosing and ranking results, so be sure that your page loads fast and is mobile-friendly.
+Improving your serving
+If your results are aimed at users in specific locations or languages, you can tell Google your preferences.
+Be sure that your page loads fast and is mobile-friendly.
+Follow the Webmaster Guidelines to avoid common pitfalls and improve your site's ranking.
+Consider implementing Search result features for your site, such as recipe cards or article cards.
+Implement AMP for faster loading pages on mobile devices. Some AMP pages are also eligible for additional search features, such as the top stories carousel.
+Google's algorithm is constantly being improved; rather than trying to guess the algorithm and design your page for that, work on creating good, fresh content that users want, and following our guidelines.
+An even longer version
+You can find an even longer version about how Google Search works here (with pictures and video!)
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Important conceptsHow Google Search WorksWhat are impressions, position, and clicks?About our stats and data
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

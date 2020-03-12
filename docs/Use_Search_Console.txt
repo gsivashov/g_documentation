@@ -1,0 +1,148 @@
+Home
+Products
+Web
+Web Fundamentals
+Use Search Console
+If you've already
+verified ownership
+of your site, you can skip the first action below and go right to checking your
+site information in Search Console.
+You'll need
+The ability to
+verify ownership
+of your site using a technique such as adding a file in the root directory,
+authoring of
+meta tags,
+owning a Google Analytics administrative account for the site, etc.
+What you'll do
+In this section, you'll perform the following actions:
+Verify ownership of your site in Search Console.
+Check that the hacker didn't already verify ownership in Search Console
+and make unwanted settings changes.
+Determine the nature of the attack.
+Verify ownership of your site in Search Console
+Open a browser and navigate to Webmaster Central at
+<[http://www.google.com/webmasters>.
+Click Search Console.
+Sign in to Search Console using a
+Google account. If you don't have a
+Google account, click Create an account. A new Google account doesn't
+mean you'll lose your existing email account with another company.
+(More information about accounts.)
+Click Add a site. Type your site's URL in the box, then click
+Continue.
+Decide the most convenient verification method for you. The
+Recommended method tab on the verification page shows the method Google
+thinks will work best. Additional methods are listed on the
+Alternate methods tab.
+(More information about verification.)
+Bring your site back online if you selected a verification method that
+requires access to your site, such as HTML meta tag or HTML file.
+Click Verify to verify ownership using your selected method. If
+verification is successful, you'll see a congratulatory screen mentioning
+that you're a verified owner. You can take your site back offline, but
+be aware that it will need to be back online in future steps.
+Check that the hacker didn't already verify ownership
+Once verified, check that the hacker didn't already verify ownership in
+Search Console and make unwanted settings changes.
+Navigate to the main Search Console homepage by clicking the Search Console logo.
+Find your site, then click Manage site.
+Click Add or remove users.
+Be sure that all
+users and owners
+listed are authorized.
+Document the email address of any unauthorized user (in case it's helpful
+in the future), then delete the user from your site. For unauthorized
+owners, you'll need to both delete the owner and any possible verification
+tokens, such as a verification metatag on your homepage or a HTML file on
+your server.
+(More information.)
+Investigate for unwanted settings changes in Search Console. Click the
+settings Settings icon, then click
+Site Settings
+to check for possible undesirable changes by the hacker such as a lower
+Crawl rate
+(perhaps with the goal to avoid search engine spiders). Also, check that
+nothing unusual is listed in the section Google Index >
+Remove URLs or
+settings >
+Change of Address.
+Determine the nature of the attack
+The information in the Message Center and Security Issues in Search Console can
+help you determine whether your site was compromised in any of the following
+ways:
+With spammy content that could reduce the quality and relevance of
+search results.
+For phishing purposes.
+To distribute malware.
+To investigate hacking or malware using Search Console, complete the following
+steps:
+Navigate to the Search Console homepage by clicking the Search Console logo
+in the upper corner.
+Click Messages.
+Check if there is are any critical messages from Google regarding whether
+your site was used for 1) serving spammy pages, text or links, 2) phishing,
+3) distributing malware. If you have a phishing notification, please do
+not delete this message until you have completed the entire recovery process.
+Navigate to Security Issues in Webmaster tools.
+Sites affected with malware will show a top-level heading of "Malware,"
+and then categories of malware types, such as "Modified server
+configuration" or "Error template injection." In these cases, the hacker
+may be using your site to infect your visitors with software designed to
+access confidential information or harm their computers. To find out
+how to fix this, please continue to
+Assess malware damage.
+Sites that were hacked to serve spam may display a top-level heading of
+"Hacked" and then categories hack types, such as "Content injection."
+It’s likely the hacker has placed spammy pages, text, or links on your
+site. To find out how to fix this, please continue to
+Assess spam damage.
+Sites with a "phishing notification" in Search Console Message Center
+may not show any information within Security Issues. By creating phishing
+pages on your site, the hacker is using your site to obtain users' login,
+password, or financial details, often by masquerading as a trustworthy
+site. Since the cleanup for phishing is similar to spam, please continue
+to Assess spam damage.
+Feedback
+Was this page helpful?
+Yes
+What was the best thing about this page?
+It helped me complete my goal(s)
+Thank you for the feedback. If you have specific ideas on how to improve this page, please
+create an issue.
+It had the information I needed
+Thank you for the feedback. If you have specific ideas on how to improve this page, please
+create an issue.
+It had accurate information
+Thank you for the feedback. If you have specific ideas on how to improve this page, please
+create an issue.
+It was easy to read
+Thank you for the feedback. If you have specific ideas on how to improve this page, please
+create an issue.
+Something else
+Thank you for the feedback. If you have specific ideas on how to improve this page, please
+create an issue.
+No
+What was the worst thing about this page?
+It didn't help me complete my goal(s)
+Thank you for the feedback. If you have specific ideas on how to improve this page, please
+create an issue.
+It was missing information I needed
+Thank you for the feedback. If you have specific ideas on how to improve this page, please
+create an issue.
+It had inaccurate information
+Thank you for the feedback. If you have specific ideas on how to improve this page, please
+create an issue.
+It was hard to read
+Thank you for the feedback. If you have specific ideas on how to improve this page, please
+create an issue.
+Something else
+Thank you for the feedback. If you have specific ideas on how to improve this page, please
+create an issue.
+Previous
+arrow_back
+Quarantine your site
+Next
+Overview
+arrow_forward
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.

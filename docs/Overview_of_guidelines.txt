@@ -1,0 +1,9 @@
+Overview of guidelinesThe guidelines sections provide advice on how to code your site in order to be eligible to appear on Google. These guidelines fall into the following categories:
+Webmaster guidelines: General best practices to help your site appear in Google Search, as well as quality guidelines that, if not followed, can cause your page or site to be omitted from Search.
+General guidelines: Best practices for having your site show up and look its best in Google.
+Content-specific guidelines: Additional tips for specific content types on your site, including images, video, AMP, AJAX, and mobile-friendly sites. For more information about general best practices, or how to enable specific features for your site, see the Search Appearance topic.
+Quality guidelines: These describe specific prohibited techniques that can get your page or site omitted from Search results. Engaging in these techniques can incur a manual action for your site.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+GuidelinesOverview of guidelinesWebmaster GuidelinesGeneral guidelinesContent-specific guidelinesQuality guidelines
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

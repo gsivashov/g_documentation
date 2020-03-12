@@ -1,0 +1,12 @@
+Delete a page setIf you no longer want Data Highlighter to extract data for your pages, or if your site has changed significantly and you need to redo the tagging, delete the page set. Once you delete a page set, you cannot recover it.
+Delete a page set:
+View the page set's Publish page:
+On the Webmaster Tools home page, click the site.
+On the Dashboard, click Search Appearance.
+Click Data Highlighter.
+Click the name of a page set.
+Click the trash can icon.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Data HighlighterAbout Data HighlighterData types supported by Data HighlighterCreate a page setPublish or unpublish a page setDelete a page setTips and tricks for using Data HighlighterTroubleshooting Data Highlighter
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

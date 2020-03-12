@@ -1,0 +1,239 @@
+Rich result status reportsSee your Job postings, Recipes, and moreLearn which rich results Google could or could not read from your site, and troubleshoot rich result errors.
+Rich result reports for your site are listed under Enhancements in the menu pane. There is a separate report for each rich result type. You will see a rich result report only if:
+Google finds rich results of that type in your property, and
+The type is a supported rich result type listed below.
+If you have implemented a supported type and you don't see the report in your property, see Missing rich results.
+OPEN SEARCH CONSOLE
+Monitoring Rich Results in Search Console - Google Search Console Training
+Supported rich result reports
+Search Console provides reports for the following rich result types:
+Breadcrumb
+Dataset
+Event
+FAQ
+Fact check
+How-to
+Job posting
+Logo
+Product
+Q&A page
+Recipe
+Review snippet
+Sitelinks searchbox
+Video
+Using the report
+Open the appropriate report from the navigation panel in Search Console.
+You will see a report only if Search Console has data for that rich result type on your site, and Search Console implements a report for that type.
+The report consists of a summary page and a details page:
+The summary page shows a chart of errors, warnings, and valid items on your site over time, and a table showing status + description category combinations that shows how many structured data items currently fall in each category.
+Click a row in the summary page table to see details about items in that category.
+What to look for
+Ideally your current error count should be 0. Current error, warning, and valid counts are shown at the top of the chart on all pages in the report.
+If you find errors, handle them as described in the Troubleshooting section below.
+If you find warnings, they do not disqualify your rich results from being shown in Google Search with special features, but they can provide a somewhat reduced experience for your users. Debug warnings as described in the Troubleshooting section below.
+Sharing the report
+You can share issue details in the coverage or enhancement reports by clicking the Share
+button on the page. This link grants access only to the current issue details page, plus any validation history pages for this issue, to anyone with the link. It does not grant access to other pages for your resource, or enable the shared user to perform any actions on your property or account. You can revoke the link at any time by disabling sharing for this page.
+Exporting report data
+Many reports provide an export button
+to export the report data. Both chart and table data are exported.
+Troubleshooting
+Here is a basic process for prioritizing and fixing rich result issues on your site:
+On the summary page of a rich result report, filter out the warnings and valid items and focus on the errors first.
+Fix errors according to the number of affected pages:
+If there is a spike in the error chart, look for a corresponding spike in the error rows in the table.
+Fix the issue on your site, test your fix, and ensure that your fixes are live on the web. See Inspecting errors to learn about the different tools to view and troubleshoot your structured data items.
+Return to the issue details page and click the Validate Fix button to begin the validation process. This process can take several days, and you will receive email notifications of the progress.
+If all instances of that issue are found to be fixed (that is, the fix is validated), the count of pages affected by that issue will become 0 and the issue status will be updated.
+Continue fixing errors.
+When all errors have been fixed, remove the filter for warnings, and consider fixing the warnings. Most warnings are about missing optional properties in your structured data. Having more information in rich result can be more useful to your site visitors.
+Inspecting errors
+You can use several different tools to inspect your structured data errors:
+In the error details page:
+Click a URL in the table to see the structured data code.
+Click the inspect icon
+next to the URL in the table to run the URL Inspection tool, which offers error details, indexed and live test results, and a screenshot.
+Use the Rich Results Test tool to test your page, or to iteratively test, modify, and retest your code directly in the browser. Either submit the URL of the page to test, or copy and paste code into the tool.
+Troubleshoot error spikes
+The most common reason for a spike in errors is adding an error to a template used by many pages on your site.
+Determine if a spike caused was by a group of items moving from one severity to another:
+If you see a spike, look for a corresponding drop in another state (warning or valid).
+If you find a corresponding drop, confirm that the spike and drop are the same URLs.
+If the items moved from one state to another, determine what caused it by drilling in to the error spike.
+Troubleshoot the specific issue by drilling down into an example item and inspecting the errors as described previously.
+Troubleshoot missing rich results / drop in total rich results
+Here are some reasons why a rich result might not appear in the report:
+Not all rich result types are currently supported in this report. See the list of supported rich result types.
+Only rich results from indexed pages can be shown. Not all the pages on your site might be crawled for various reasons; for very large sites, you might see a significant difference between the number of pages with structured data on your site, and the number of rich results in this report. If you see a sharp drop in the number of rich results on your site, see if you can find a corresponding dip in indexed pages.
+Google hasn't crawled the pages yet. It can take some time for Google to crawl new or updated pages. You can ask Google to recrawl your URLs. Indexing requests are not immediate; it can take up to a week to fulfill an index request.
+Google can't access the page. Use the URL Inspection tool to see whether Google can access the page.
+The structured data might be so invalid that Google doesn't recognize it as a rich result. Use the Rich Results Test Tool to check your page (check the URL of the live page rather than pasting your structured data code). If structured data is found but it could not be parsed at all, it should appear in the Unparsable structured data report.
+Your rich result might not be supported for your location yet. Check the documentation to see if your rich result type is supported for your location.
+Use the Structured Data Testing Tool on your page to see if Google can access your page and see the rich result code, and to confirm the validity of the rich result code.
+Use the URL Inspection tool to see if the page is indexed, and if it is accessible by Google. Test the live version of the page as well to confirm that Google can access it.
+List of structured data errors
+Here is a list of the most common errors shown in this report:
+Error
+Description
+Invalid URL in property "property name"
+Invalid URL in the specified property.
+Missing property "property name"
+Missing required property.
+Invalid calorie format in property "property name"
+Invalid value for calories property.
+Date/time not in ISO 8601 format in property "property name"
+Invalid date value for the specified property. Date should be in ISO 8601 format.
+Missing value in property "property name"
+Empty value for the specified property.
+Invalid value in property "property name"
+Invalid value for the specified property.
+Invalid string length in property "property name"
+String value too long or too short for the specified property.
+Invalid object type for property "property name"
+Wrong structured data object type for the specified property.
+Invalid value type for property "property name"
+Wrong value type for the specified property.
+Unrecognized property "property name"
+You defined an unknown property in your structured data.
+Duplicate property "property name"
+Duplicate property definitions in the same object.
+Either "property 1" or "property 2" should be specified
+You must specify only one of these two properties.
+Either "property 1", "property 2", or "property 3" should be specified
+You must specify only one of these three properties.
+No global identifier provided (e.g., gtin, mpn, isbn)
+You must provide at least one of the following global identifier properties to uniquely identify your product: gtin8, gtin13, gtin14, mpn, or isbn
+Value in property "property name" must be positive
+The indicated property value must be a positive number.
+Invalid integer in property "property"
+Invalid integer value for the specified property.
+Invalid price format in property "property"
+Invalid price format for the specified property.
+Invalid product availability value in property "property name"
+Invalid value for product availability.
+You rated a review, rather than an item
+You rated a review in an aggregated rating, rather than the item itself.
+Couldn't determine the rating scale
+You provided a rating scale that we could not understand.
+Rating is missing required best and/or worst values
+Missing the best and/or worst values for a rating.
+Rating value is out of range
+The rating value provided is out of range.
+Review has multiple aggregate ratings
+The Review has multiple aggregate ratings; you can provide only one.
+Multiple reviews without aggregateRating object
+You provided multiple reviews without an aggregate rating.
+Number out of range for property "property name"
+Numeric property is out of the allowed (or defined) range.
+Syntax error in Sitelinks Searchbox
+Generic syntax error in a Sitelinks Searchbox definition.
+Custom query parameter not defined in target URL
+(Sitelinks Searchbox) Issue string for undefined query value in sitelinks url template.
+Mismatched query parameter name in target URL
+(Sitelinks Searchbox) The query variable name used in target is different from the variable name used in query-input. For example, you might have done something like this:
+"target": "https://query.example.com/search?q={search_term_string}",
+"query-input": "required name=my_query"
+The name used in 'q' and 'query-input' should be the same:
+"target": "https://query.example.com/search?q={search_term_string}",
+"query-input": "required name=search_term_string"
+Target URL domain is outside the website URL domain
+(Sitelinks Searchbox) The URLs in target and url must have the same root domain. Here are examples of matching and non-matching URLs:
+http://www.example.com and http://example.com -- Match
+http://m.example.com and http://query.example.com - Match
+http://www.example.com and http://example.fr.co -- No match
+http://www.example.com and http://exaample.com -- No match
+Invalid target URL
+(Sitelinks Searchbox) Invalid URL in the target property.
+Non-HTTP target URL
+(Sitelinks Searchbox) Invalid URL in the target property: must be either http or https.
+Error in Sitelinks Searchbox definition
+(Sitelinks Searchbox) Error in Sitelinks Searchbox definition.
+Invalid enum value in property "property name"
+Property value does not match any of the allowed enumerated values.
+Unknown error
+An error occurred that doesn't fall into any of the other categories listed here.
+Summary page
+In the graph, an item is assigned the most severe status that affects it: so an item with both an error and a warning is assigned the status "Error". An item is counted only once in the graph. See A note about the status totals.
+In the table, issue status is assigned to a specific item property (not to the entire item), so a structured data item can appear multiple times in the table.
+The following statuses apply:
+Error: A rich result with an error cannot appear in Google Search as a rich result. Items in error state have at least one error, and can also have one or more warnings.
+Warning: A rich result with a warning issue is eligible to appear in Google Search as a rich result. Warning issues are either suggestions for missing or invalid optional values, errors in non-critical properties, or warnings about usage of deprecated properties. Providing more optional properties in your structured data can often enable a better experience for the user.
+Complete: A rich result with status complete is eligible to appear in Google Search as a rich result. All required and optional data is correctly provided.
+If you want to see all issues for a single rich result, see Inspecting errors.
+A note about the status totals
+The total value per status in the table can exceed the total value in the corresponding status for the graph. Two examples why this is so:
+A single item with 3 different warnings will appear 3 times in the table (total = 3), but count as only 1 item (total = 1) in the warning tab total.
+An item with both an error and a warning (two table rows) will count only as 1 error item in the error tab total. (An item is counted as the most severe status it contains.)
+Issue details page
+Select an issue row in the summary page table to open a page showing details for the selected issue. An issue can affect rich results on different pages, multiple rich results on a single page, or a single rich result multiple times.
+The issue details page contains the following information:
+State
+Validation state of this issue.
+First detected
+The date when this issue was first detected on your site. Note: If all issues of this type are resolved, but a new instance of this issue appears within 90 days, the date will be original first detected date, not the date of the new instance.
+Examples
+A list of rich results affected by this issue. Note that it's possible that the examples list might omit rows for various reasons, such as issue instances that happened after the last crawl of your site, or instances that affect more than 1,000 items (the table is limited to 1,000 rows).
+Item type
+The name value in the item's structured data.
+Last crawled
+The last time the page containing this issue was crawled.
+To see more information about an issue on a specific page, select the issue in the examples table.
+Click the inspect icon
+next to the URL in the table to run the URL Inspection tool, which offers error details, indexed and live test results, and a screenshot.
+About validation
+After you fix all instances of a specific issue on your site, you can ask Google to validate your changes. If all known instances are gone, the issue is marked as fixed in the status table and dropped to the bottom of the table. Search Console tracks the validation state of the issue as a whole, as well as the state of each instance of the issue. When all instances of the issue are gone, the issue is considered fixed. (For actual states recorded, see Issue validation state and Instance validation state.)
+More about issue lifetime...
+An issue's lifetime extends from the first time any instance of that issue was detected on your site until 90 days after the last instance was marked as gone from your site. If ninety days pass without any recurrences, the issue is removed from the report history.
+The issue's first detected date is the first time the issue was detected during the issue's lifetime, and does not change. Therefore:
+If all instances of an issue are fixed, but a new instance of the issue occurs 15 days later, the issue is marked as open, and "first detected" date remains the original date.
+If the same issue occurs 91 days after the last instance was fixed, the previous issue was closed, and so this is recorded as a new issue, with the first detected date set to "today".
+Basic validation flow
+Here is an overview of the validation process after you click Validate Fix for an issue. This process can take several days, and you will receive progress notifications by email.
+When you click Validate Fix, Search Console immediately checks a few pages.
+If the current instance exists in any of these pages, validation ends, and the validation state remains unchanged.
+If the sample pages do not have the current error, validation continues with state Started. If validation finds other unrelated issues, these issues are counted against that other issue type and validation continues.
+Search Console works through the list of known URLs affected by this issue. Only URLs with known instances of this issue are queued for recrawling, not the whole site. Search Console keeps a record of all URLs checked in the validation history, which can be reached from the issue details page.
+When a URL is checked:
+If the issue is not found, the instance validation state changes to Passing. If this is the first instance checked after validation has started, the issue validation state changes to Looking good.
+If the URL is no longer reachable, the instance validation state changes to Other (which is not an error state).
+If the instance is still present, issue state changes to Failed and validation ends. If this is a new page discovered by normal crawling, it is considered another instance of this existing issue.
+When all error and warning URLs have been checked and the issue count is 0, the issue state changes to Passed. Important: Even when the number of affected pages drops to 0 and issue state changes to Passed, the original severity label will still be shown (Error or Warning).
+Even if you never click "start validation" Google can detect fixed instances of an issue. If Google detects that all instances of an issue have been fixed during its regular crawl, it will change the issue state to "N/A" on the report.
+When is an issue considered "fixed" for a URL or item?
+An issue is marked as fixed for a URL or item when either of the following conditions are met:
+When the URL is crawled and the issue is no longer found on the page. For an AMP tag error, this can mean that you either fixed the tag or that the tag has been removed (if the tag is not required). During a validation attempt, it will be considered as "passed."
+If the page is not available to Google for any reason (page removed, marked noindex, requires authentication, and so on), the issue will be considered as fixed for that URL. During a validation attempt, it is counted in the "other" validation state.
+Revalidation
+When you click Revalidate for a failed validation, validation restarts for all failed instances, plus any new instances of this issue discovered through normal crawling.
+You should wait for a validation cycle to complete before requesting another cycle, even if you have fixed some issues during the current cycle.
+Instances that have passed validation (marked Passed) or are no longer reachable (marked Other) are not checked again, and are removed from the history when you click Revalidate.
+Validation history
+You can see the progress of a validation request by clicking the validation details link in the issue details page.
+Entries in the validation history page are grouped by URL for the AMP report and Index Status report. In the Mobile Usability and Rich Result reports, items are grouped by the combination of URL + structured data item (as determined by the item's Name value). The validation state applies to the specific issue that you are examining. You can have one issue labeled "Passed" on a page, but other issues labeled "Failed", "Pending," or "Other".
+Issue validation state
+The following validation states apply to a given issue:
+Not started: There are one or more pages with an instance of this issue that you have never begun a validation attempt for. Next steps:
+Click into the issue to learn the details of the error. Inspect the individual pages to see examples of the error on the live page using the AMP Test. (If the AMP Test does not show the error on the page, it is because you fixed the error on the live page after Google found the error and generated this issue report.)
+Click "Learn more" on the details page to see the details of the rule that was violated.
+Click an example URL row in the table to get details on that specific error.
+Fix your pages and then click Validate fix to have Google recrawl your pages. Google will notify you about the progress of the validation. Validation takes anywhere from a few days up to about two weeks, so please be patient.
+Started:  You have begun a validation attempt and no remaining instances of the issue have been found yet. Next step: Google will send notifications as validation proceeds, telling you what to do, if necessary.
+Looking good: You started a validation attempt, and all issue instances that have been checked so far have been fixed. Next step: Nothing to do, but Google will send notifications as validation proceeds, telling you what to do.
+Passed: All known instances of the issue are gone (or the affected URL is no longer available). You must have clicked "Validate fix" to get to this state (if instances disappeared without you requesting validation, state would change to N/A). Next step: Nothing more to do.
+N/A: Google found that the issue was fixed on all URLs, even though you never started a validation attempt. Next step: Nothing more to do.
+Failed: A certain threshold of pages still contain this issue, after you clicked "Validate." Next steps: Fix the issue and revalidate.
+Instance validation state
+After validation has been requested, every instance of the issue is assigned one of the following validation states:
+Pending validation: Queued for validation. The last time Google looked, this issue instance existed.
+Passed: [Not available in all reports] Google checked for the issue instance and it no longer exists. Can reach this state only if you explicitly clicked Validate for this issue instance.
+Failed: Google checked for the issue instance and it's still there. Can reach this state only if you explicitly clicked Validate for this issue instance.
+Other: [Not available in all reports] Google couldn't reach the URL hosting the instance, or (for structured data) couldn't find the item on the page any more. Considered equivalent to Passed.
+Note that the same URL can have different states for different issues; For example, if a single page has both issue X and issue Y, issue X can be in validation state Passed and issue Y on the same page can be in validation state Pending.
+Known issues
+The following are known issues in Search Console. No need to report them to us, but we'd love your feedback on any other features or issues you spot. Use the Feedback mechanism built into the navigation bar.
+Some issues have long names that are not easy to understand.
+If your site has a very large number of issues (whether or not there are active instances), the report will show only the first 200 issues, sorted by importance.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Rich Results Tools and ReportsRich result status reportsRich Results TestUnparsable structured data report
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

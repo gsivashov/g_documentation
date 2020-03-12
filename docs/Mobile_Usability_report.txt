@@ -1,0 +1,119 @@
+Mobile Usability reportThe Mobile Usability report shows which pages in your property have usability problems when viewed on mobile devices.
+The top level view shows all pages with more than a threshold level of mobile usability issues. Click a specific issue to see issue details, including a sample list of pages affected by that issue, information about how to fix it, and a process to notify Google about your fixes.
+OPEN MOBILE USABLITY REPORT
+Summary page
+The chart shows the number of pages in error and/or valid state, depending on your selection. The Impressions checkbox shows page impressions of your property from mobile devices.
+About the data
+The tables can show up to 1,000 rows of data. Some affected pages might not be shown because you have more than 1,000 affected pages, because we didn't detect the issue, because the issue is very new, or because the issue occurs on a page that is above the threshold usability score.
+The following information is shown in the report:
+Status: A page has two possible states:
+Error: The page is not mobile friendly
+Valid: The page is mobile friendly.
+Pages: The count of pages in Error state with this issue.
+Details about page status
+Google marks a page valid or error depending on an internal mobile usability score. This score is a calculated according to the number of issues and their relative severity.
+Error means that the page is below a minimum mobile usability level. If a page is in Error state, it will be listed in the details page for every mobile usability issue that affects it.
+Valid state means that the page meets a minimum mobile usability level, although it might still have some mobile usability issues, which won't be attributed to the page in this report. If you want to confirm that a valid page is entirely free of mobile usability issues, you must test it using the Mobile-Friendly Test tool.
+When did this issue start?
+Imagine a page that is considered valid, but it has a minor usability issue. This page is then affected by another issue that affects the usability score enough to cause the page to be marked as error. In this case, you will see both issues appear at the same time for the page, however one issue appeared some time ago. Takeaway: all issues shown on a page did not necessarily occur at the time when the page was assigned the error state.
+Details about affected page count
+Pages in valid state are not included in the affected page count for any issues that they might have. Valid pages are also not shown in the affected pages list for any issues that they might have. Only pages in error state are counted for any issues affecting that page, and shown in the affected pages list.
+Example:
+Imagine this scenario with two pages:
+Page 1 is affected by issues A and B, but is marked as Valid, because its mobile usability score is above the valid threshold.
+Page 2 is affected by issues B, C, and D is marked as Error, because its mobile usability score is below the valid threshold.
+In this scenario:
+Affected page count for issue A is zero.
+Affected page count for issue B, C, and D are 1.
+Pages shown as affected by issue B: Page 2.
+Prioritize and fix issues
+On the summary report page, issues are sorted by a combination of validation state and the count of affected pages; we recommend that you address them in this default order. Fix common causes first (such as a bad template), then fix less common instances.
+See if any increase in the total error count is caused mostly by a single error: look for a corresponding spike in a single issue in the table. See information below about error types and debugging error spikes.
+Select a row in the table to see the error details page:
+The details page includes a sample of affected URLs. The list is not always complete, because it is limited to 1,000 rows, and might not include very recently discovered instances of this error.
+select Learn more to get official documentation about the proper syntax.
+Select an affected URL in the table to open a panel with more information, including a count of mobile usability issues, and an Inspect link to run the Inspect URL tool against the indexed version of this page, and a Test live version link to run the Mobile Friendly Test on this page. It is possible that an error has been fixed in the live page but is still listed in the Mobile Usability report because the page was not recrawled since the fix; if so, request validation after you have fixed all instances of this issue.
+Fix all instances of the issue on your site, test your fix, and ensure that your fixes are live on the web.
+Return to the issue details page and click the "Validate & Update Google" button to begin the validation process. This process is not immediate. See About validation to understand the validation process.
+Continue fixing errors.
+Sharing the report
+You can share issue details in the coverage or enhancement reports by clicking the Share
+button on the page. This link grants access only to the current issue details page, plus any validation history pages for this issue, to anyone with the link. It does not grant access to other pages for your resource, or enable the shared user to perform any actions on your property or account. You can revoke the link at any time by disabling sharing for this page.
+Exporting report data
+Many reports provide an export button
+to export the report data. Both chart and table data are exported.
+Debugging error spikes
+Determine if a spike caused by a group of pages moving from one severity to another:
+If you see a spike, look for a corresponding drop in another state (error or valid).
+If you find a corresponding drop, confirm that they are the same URLs.
+If the URLs moved from one state to another, determine what you changed to cause this.
+The most common reason for a spike in errors is adding an error to a template used by many pages on your site.
+Errors
+The following errors can appear in the Mobile Usability report:
+Uses incompatible plugins
+The page includes plugins, such as Flash, that are not supported by most mobile browsers We recommend redesigning your page using modern, broadly-supported web technologies, such as HTML5. Read more about web animation guidelines.
+Viewport not set
+The page does not define a viewport property, which tells browsers how to adjust the page’s dimension and scaling to suit the screen size. Because visitors to your site use a variety of devices with varying screen sizes—from large desktop monitors, to tablets and small smartphones—your pages should specify a viewport using the meta viewport tag. Learn more in Responsive Web Design Basics.
+Viewport not set to "device-width"
+The page defines a fixed-width viewport property, which means that it can't adjust for different screen sizes. To fix this error, adopt a responsive design for your site’s pages, and set the viewport to match the device’s width and scale accordingly. Read how to correctly Set the Viewport.
+Content wider than screen
+Horizontal scrolling is necessary to see words and images on the page. This happens when pages use absolute values in CSS declarations, or use images designed to look best at a specific browser width (such as 980px). To fix this error, make sure the pages use relative width and position values for CSS elements, and make sure images can scale as well. Read more in Size Content to Viewport.
+Text too small to read
+The font size for the page is too small to be legible and would require mobile visitors to “pinch to zoom” in order to read. After specifying a viewport for your web pages, set your font sizes to scale properly within the viewport. Read more about font size best practices in Use Legible Font Sizes.
+Clickable elements too close together
+Touch elements, such as buttons and navigational links, are so close to each other that a mobile user cannot easily tap a desired element with their finger without also tapping a neighboring element. To fix these errors, make sure to correctly size and space buttons and navigational links to be suitable for your mobile visitors. Read more in Size Tap Targets Appropriately.
+Validation
+After you fix errors on your site, tell Google to recrawl your fixed pages. Expand the section below for details.
+About validation
+After you fix all instances of a specific issue on your site, you can ask Google to validate your changes. If all known instances are gone, the issue is marked as fixed in the status table and dropped to the bottom of the table. Search Console tracks the validation state of the issue as a whole, as well as the state of each instance of the issue. When all instances of the issue are gone, the issue is considered fixed. (For actual states recorded, see Issue validation state and Instance validation state.)
+More about issue lifetime...
+An issue's lifetime extends from the first time any instance of that issue was detected on your site until 90 days after the last instance was marked as gone from your site. If ninety days pass without any recurrences, the issue is removed from the report history.
+The issue's first detected date is the first time the issue was detected during the issue's lifetime, and does not change. Therefore:
+If all instances of an issue are fixed, but a new instance of the issue occurs 15 days later, the issue is marked as open, and "first detected" date remains the original date.
+If the same issue occurs 91 days after the last instance was fixed, the previous issue was closed, and so this is recorded as a new issue, with the first detected date set to "today".
+Basic validation flow
+Here is an overview of the validation process after you click Validate Fix for an issue. This process can take several days, and you will receive progress notifications by email.
+When you click Validate Fix, Search Console immediately checks a few pages.
+If the current instance exists in any of these pages, validation ends, and the validation state remains unchanged.
+If the sample pages do not have the current error, validation continues with state Started. If validation finds other unrelated issues, these issues are counted against that other issue type and validation continues.
+Search Console works through the list of known URLs affected by this issue. Only URLs with known instances of this issue are queued for recrawling, not the whole site. Search Console keeps a record of all URLs checked in the validation history, which can be reached from the issue details page.
+When a URL is checked:
+If the issue is not found, the instance validation state changes to Passing. If this is the first instance checked after validation has started, the issue validation state changes to Looking good.
+If the URL is no longer reachable, the instance validation state changes to Other (which is not an error state).
+If the instance is still present, issue state changes to Failed and validation ends. If this is a new page discovered by normal crawling, it is considered another instance of this existing issue.
+When all error and warning URLs have been checked and the issue count is 0, the issue state changes to Passed. Important: Even when the number of affected pages drops to 0 and issue state changes to Passed, the original severity label will still be shown (Error or Warning).
+Even if you never click "start validation" Google can detect fixed instances of an issue. If Google detects that all instances of an issue have been fixed during its regular crawl, it will change the issue state to "N/A" on the report.
+When is an issue considered "fixed" for a URL or item?
+An issue is marked as fixed for a URL or item when either of the following conditions are met:
+When the URL is crawled and the issue is no longer found on the page. For an AMP tag error, this can mean that you either fixed the tag or that the tag has been removed (if the tag is not required). During a validation attempt, it will be considered as "passed."
+If the page is not available to Google for any reason (page removed, marked noindex, requires authentication, and so on), the issue will be considered as fixed for that URL. During a validation attempt, it is counted in the "other" validation state.
+Revalidation
+When you click Revalidate for a failed validation, validation restarts for all failed instances, plus any new instances of this issue discovered through normal crawling.
+You should wait for a validation cycle to complete before requesting another cycle, even if you have fixed some issues during the current cycle.
+Instances that have passed validation (marked Passed) or are no longer reachable (marked Other) are not checked again, and are removed from the history when you click Revalidate.
+Validation history
+You can see the progress of a validation request by clicking the validation details link in the issue details page.
+Entries in the validation history page are grouped by URL for the AMP report and Index Status report. In the Mobile Usability and Rich Result reports, items are grouped by the combination of URL + structured data item (as determined by the item's Name value). The validation state applies to the specific issue that you are examining. You can have one issue labeled "Passed" on a page, but other issues labeled "Failed", "Pending," or "Other".
+Issue validation state
+The following validation states apply to a given issue:
+Not started: There are one or more pages with an instance of this issue that you have never begun a validation attempt for. Next steps:
+Click into the issue to learn the details of the error. Inspect the individual pages to see examples of the error on the live page using the AMP Test. (If the AMP Test does not show the error on the page, it is because you fixed the error on the live page after Google found the error and generated this issue report.)
+Click "Learn more" on the details page to see the details of the rule that was violated.
+Click an example URL row in the table to get details on that specific error.
+Fix your pages and then click Validate fix to have Google recrawl your pages. Google will notify you about the progress of the validation. Validation takes anywhere from a few days up to about two weeks, so please be patient.
+Started:  You have begun a validation attempt and no remaining instances of the issue have been found yet. Next step: Google will send notifications as validation proceeds, telling you what to do, if necessary.
+Looking good: You started a validation attempt, and all issue instances that have been checked so far have been fixed. Next step: Nothing to do, but Google will send notifications as validation proceeds, telling you what to do.
+Passed: All known instances of the issue are gone (or the affected URL is no longer available). You must have clicked "Validate fix" to get to this state (if instances disappeared without you requesting validation, state would change to N/A). Next step: Nothing more to do.
+N/A: Google found that the issue was fixed on all URLs, even though you never started a validation attempt. Next step: Nothing more to do.
+Failed: A certain threshold of pages still contain this issue, after you clicked "Validate." Next steps: Fix the issue and revalidate.
+Instance validation state
+After validation has been requested, every instance of the issue is assigned one of the following validation states:
+Pending validation: Queued for validation. The last time Google looked, this issue instance existed.
+Passed: [Not available in all reports] Google checked for the issue instance and it no longer exists. Can reach this state only if you explicitly clicked Validate for this issue instance.
+Failed: Google checked for the issue instance and it's still there. Can reach this state only if you explicitly clicked Validate for this issue instance.
+Other: [Not available in all reports] Google couldn't reach the URL hosting the instance, or (for structured data) couldn't find the item on the page any more. Considered equivalent to Passed.
+Note that the same URL can have different states for different issues; For example, if a single page has both issue X and issue Y, issue X can be in validation state Passed and issue Y on the same page can be in validation state Pending.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Mobile Usability Tools and ReportsMobile-Friendly Test ToolMobile Usability report
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -1,0 +1,21 @@
+Move a site with no URL changes1. Set up the new hosting infrastructureNext: 2. Start the site moveThis section covers steps to take before you start the actual site move.
+A. Copy and test your new site
+First, upload a copy of your site to your new hosting provider. Once you do that, verify that it works as expected by thoroughly testing all aspects of how your users interact with your site. Here are a few suggestions:
+Open your site in a web browser and review all elements of your site: webpages, images, forms, and downloads (such as PDF files).
+Create a testing environment, perhaps with IP-restricted access, through which you test all of the features before the website goes live.
+Allow for public testing with a temporary hostname for your new infrastructure (like beta.example.com) so you can test accessibility by browsers. A temporary hostname can help you test whether Googlebot can reach your site or not (details below).
+Test the new site with a small portion of your live traffic if possible.
+B. Check that Googlebot is able to access the new hosting infrastructure
+If you don’t already have a Search Console account, create a new account and add the temporary hostname you set up for your copy in the previous step (beta.example.com). Check that Googlebot can access your new infrastructure using the Fetch as Google function in Search Console.
+Check your firewall configuration or denial of service (DoS) protection. Make sure it does not block Googlebot’s ability to reach the DNS or the hosting provider’s servers.
+C. Check the TTL value for your DNS
+You can help make your site move go faster if you lower the DNS’s TTL value. DNS settings are usually cached by ISPs based on the specified Time to Live (TTL) setting. If the TTL is set to a long time, consider lowering it at least a week before the site move to help users move to the new site faster.
+D. Review Search Console verification
+Make sure your Search Console verification will continue to work after the site move.
+If you’re using the HTML file method to verify ownership of your site in Search Console, make sure you don’t forget to include your current verification file in your new copy of the site.
+Likewise, if you include in your content management system’s templates a meta tag or Google Analytics to verify ownership, ensure the new CMS copy includes these as well.
+Next: 2. Start the site move
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Move a site with no URL changesOverview: Site moves without URL changes1. Set up the new hosting infrastructure2. Start the site move3. Monitor traffic4. Shut down old hosting
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

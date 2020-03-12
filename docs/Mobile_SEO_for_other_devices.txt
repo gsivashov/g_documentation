@@ -1,0 +1,102 @@
+Home
+Products
+Search for Developers
+Guides
+Mobile SEO for other devices
+Tablets
+When thinking about how to configure your website for mobile users, it's common
+to think about visitors using tablet devices to access your site. Although we
+don't have specific recommendations for building search-engine-friendly
+tablet-optimized websites, here are some tips for building websites that serve
+desktop, smartphone, and tablet users.
+Responsive Web Design
+Our general recommendation is to use responsive web design. This means that your
+website serves the same HTML code to all devices along with different CSS style
+rules to optimize the site's interface on desktops, smartphones, and tablets.
+If your website uses responsive web design, test it on a variety of tablets to
+make sure it renders correctly as, just like for smartphones, there are a
+variety of tablet sizes and screen resolutions.
+Device-specific content
+A website can return different pages (for example, different HTML, CSS, and JavaScript) for
+different devices. These pages can be served on the same URL (a configuration
+called dynamic serving) or on separate dedicated URLs.
+If your website has different pages to serve desktop and smartphone users and
+does not have tablet-specific pages, in our experience tablet users usually
+expect to see your desktop site rather than the site's smartphone pages.
+If your website has tablet-optimized sites, these guidelines can help you
+configure your site:
+Dynamic serving: Here the same URLs serves desktop, smartphone, and
+tablet users by serving different HTML (and CSS) depending on the user agent.
+As described in our smartphone website recommendations, we strongly suggest
+using the Vary HTTP header.
+Separate tablet-dedicated URLs: In this case, we strongly suggest that you allow
+Googlebot to crawl the tablet URLs and use a rel="canonical" on each tablet
+URL to point to the equivalent desktop URL.
+Feature phones
+Our recommendation for sites serving smartphone users is to use responsive web
+design if possible. However, since feature phones don't have the capability to
+follow CSS media queries, webmasters wishing to serve feature phones would need
+to configure their sites to either use dynamic serving or separate URLs to serve
+the feature phone content.
+We also recommend that any page intended to support feature phones includes
+the <link rel="alternate" media="handheld"> tag as described below.
+This section demonstrates how to implement each of these configurations.
+Dynamic Serving
+Configuring your server to dynamically serve feature phone optimized contents on
+the same URL that serves other devices uses the same implementation as when
+serving smartphones. The server should include the Vary: User-Agent HTTP
+response header, and you should also be aware of the common pitfalls when
+detecting user agents. Additionally, on your page, include the following tag:
+<link rel="alternate" media="handheld" href="[current page URL]" />
+Separate URLs
+Webmasters have three supported configurations when serving desktop, smartphone,
+and feature phone users on different URLs. These configurations use the annotations
+we've previously described for building feature phone and smartphone optimized sites.
+Dedicated URLs configuration
+In this configuration, the setup would be like this:
+http://www.example.com/page-1 serves desktop requests
+http://m.example.com/page-1 serves smartphone users
+http://phone.example.com/page-1 serves feature phone users
+In this configuration, we recommend to add the following annotations to help our
+algorithms understand the relationship between the equivalent pages targeting
+different devices:
+On www.example.com/page-1 add:
+<link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.example.com/page-1" />
+<link rel="alternate" media="handheld" href="http://phone.example.com/page-1" />
+On m.example.com/page-1 add:
+<link rel="canonical" href="http://www.example.com/page-1" />
+On phone.example.com/page-1 add:
+<link rel="canonical" href="http://www.example.com/page-1" />
+Desktop and all-mobile URLs configuration
+In this configuration, a website would serve desktop devices on one URL and all
+mobiles (in other words, both smartphones and feature phones), on a separate URL. For example:
+http://www.example.com/page-1 serves desktop users
+http://m.example.com/page-1 serves both smartphone and feature phone users
+In this case, the annotation on http://www.example.com/page-1 is the following:
+<link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.example.com/page-1" />
+<link rel="alternate" media="handheld" href="http://m.example.com/page-1" />
+On the m.example.com page, include the following tag:
+<link rel="canonical" href="http://www.example.com/page-1" />
+This rel="canonical" needs to be included regardless of if they are feature phone
+pages or smartphone pages or not.
+The server should include the HTTP Vary: User-Agent header in its response. This
+sends a signal to Internet caches and Googlebot that the server's response may
+differ depending on the user agent. Googlebot uses this signal for crawling.
+Separate feature phone URLs configuration
+In this configuration, a website serves desktops and smartphones on one URL using
+responsive web design or dynamic serving, and feature phones on a separate URL.
+For example:
+http://www.example.com/page-1 serves desktop and smartphone users
+http://m.example.com/page-1 serves feature phone users
+In this case, the annotation on http://www.example.com/page-1 is the following tag:
+<link rel="alternate" media="handheld" href="http://m.example.com/page-1" />
+The annotation on http://m.example.com/page-1 is the following tag:
+<link rel="canonical" href="http://www.example.com/page-1" />
+Redirects and the Vary HTTP header
+If your site automatically redirects mobile visitors coming to
+the desktop site to the mobile site, or vice versa, be sure to configure
+your server to include the Vary HTTP header.
+Sitemaps
+Our recommendations for using feature phone sitemaps and sitemaps for smartphone alternate URLs remain unchanged.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-06-17.

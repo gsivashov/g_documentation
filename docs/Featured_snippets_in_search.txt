@@ -1,0 +1,17 @@
+Featured snippets in searchFeatured snippets are special boxes where the format of regular listings is reversed, showing the descriptive snippet first. Read more about how Google's Featured Snippets work.
+How can I opt out of featured snippets?
+Block both featured and regular search snippets
+The nosnippet tag blocks all snippets (featured snippets and regular snippets) for the tagged page.
+Text marked by the data-nosnippet tag won't appear in featured snippets (or regular snippets either).
+If both nosnippet and data-nosnippet appear in a page, nosnippet takes priority, and snippets won't be shown for the page.
+Block featured snippets only
+Those who wish to retain snippets in regularly-formatted search results but not appear in featured snippets should experiment with setting the max-snippet tag to lower lengths. Featured snippets will only appear if enough text can be shown to generate a useful featured snippet.
+Keep lowering the value if pages continue to show for featured snippets. In general, the shorter your max-snippet tag setting, the less likely the page will appear as a featured snippet.
+Google does not provide an exact minimum length required to appear as a featured snippet. This is because the minimum length is variable based on a number of factors, including—but not limited to—the information in the snippet, the language, and the platform (mobile device, app, or desktop).
+Please note that using a low max-snippet setting does not guarantee that featured snippets won't be shown for your page. If you need a guaranteed solution, use the nosnippet tag.
+How can I mark my page as a featured snippet?
+You can't. Google systems determine whether a page would make a good featured snippet for a user's search request, and if so, elevates it.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Search AppearanceCreate good titles and snippets in Search ResultsEnable Search result features for your siteTools for adding structured data (for beginners)Enriched Search ResultsProvide a publication date to Google SearchDefine a favicon to show in search resultsFlexible Sampling general guidanceTop Places ListFeatured snippets in search
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

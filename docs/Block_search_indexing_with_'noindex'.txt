@@ -1,0 +1,26 @@
+Block search indexing with 'noindex'You can prevent a page from appearing in Google Search by including a noindex meta tag in the page's HTML code, or by returning a 'noindex' header in the HTTP request. When Googlebot next crawls that page and sees the tag or header, Googlebot will drop that page entirely from Google Search results, regardless of whether other sites link to it.
+Important! For the noindex directive to be effective, the page must not be blocked by a robots.txt file. If the page is blocked by a robots.txt file, the crawler will never see the noindex directive, and the page can still appear in search results, for example if other pages link to it.
+Using noindex is useful if you don't have root access to your server, as it allows you to control access to your site on a page-by-page basis.
+Implementing noindex
+There are two ways to implement noindex: as a meta tag and as an HTTP response header. They have the same effect; choose the method that is more convenient for your site.
+<meta> tag
+To prevent most search engine web crawlers from indexing a page on your site, place the following meta tag into the <head> section of your page:
+<meta name="robots" content="noindex">
+To prevent only Google web crawlers from indexing a page:
+<meta name="googlebot" content="noindex">
+You should be aware that some search engine web crawlers might interpret the noindex directive differently. As a result, it is possible that your page might still appear in results from other search engines.
+Read more about the noindex meta tag.
+Help us spot your meta tags
+We have to crawl your page in order to see your meta tags. If your page is still appearing in results, it's probably because we haven't crawled your site since you added the tag. You can request that Google recrawl your page using the Fetch as Googletool. Another reason could also be that your robots.txt file is blocking this URL from Google web crawlers, so we can't see the tag. To unblock your page from Google, you must edit your robots.txt file. You can edit and test your robots.txt using the robots.txt Tester tool.
+HTTP response header
+Instead of a meta tag, you can also return an X-Robots-Tag header with a value of either noindex or none in your response. Here's an example of an HTTP response with an X-Robots-Tag instructing crawlers not to index a page:
+HTTP/1.1 200 OK
+(…)
+X-Robots-Tag: noindex
+(…)
+Read more about the noindex response header.
+NEXT: OPT-OUT OF DISPLAY ON GOOGLE+ AND OTHER GOOGLE PROPERTIES
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Block access to your contentControl what you share with GoogleBlock search indexing with 'noindex'About robots.txtOpt out of display on Google Local and other Google propertiesPrevent images on your page from appearing in search results
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

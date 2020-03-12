@@ -1,0 +1,41 @@
+Tag an email templateStructured Data Markup Helper can show you how to mark up emails that contain any of the following data types:
+Event Reservations
+Flight Reservations
+Restaurant Reservations
+Hotel Reservations
+Car Rental Reservations
+The schemas for these data types are currently under review by the schema.org community. The finalized schemas might be different. Google will support the schemas as they are revised by schema.org and will try to make any necessary transition as smooth as possible.
+What is schema.org?
+schema.org is a collaboration by Google, Microsoft, and Yahoo! to improve the web by creating a common vocabulary for describing the data on the web. If you add schema.org markup to your HTML pages, many companies and products—including Google search—will understand the data on your site. Likewise, if you add schema.org markup to your HTML-formatted email, other email products in addition to GMail might understand the data.
+You can use different types of markup to describe your data with the schema.org vocabulary. Markup Helper can show you how to use microdata and JSON-LD.
+For more information about schema.org, see schema.org FAQ.
+Tag an email template:
+Access Markup Helper:
+On the Search Console home page, click Additional Tools.
+Click Structured Data Markup Helper.
+Click the Email tab.
+Paste the email's source HTML. Note that you'll need to paste the source HTML  -- that is, the HTML tags and text that you see when you right-click on an email in a web browser and select View source.
+Select a type of data to tag. For example, click Flight Reservations if you send email about flight reservations.
+Click Start Tagging.
+Show Markup Helper how the email displays data by tagging information on the Tagger page:
+Use the mouse to select an image or piece of text.
+From the pop-up menu that displays after you make your selection, click the type of data that you selected. For example, click Name.
+Continue selecting and clicking the type for all required data and any optional data that is available.
+Helpful hints.
+Under My Data Items, required displays next to each required data item that you have not yet tagged. If the page is missing any required data, you can add the missing data.
+If you apply a consistent pattern of two or more tags of the same type, Markup Helper will automatically tag other similar items on the page. For example, if you tag a date twice and a name twice, Markup Helper will automatically tag the other dates and names on the page.
+You can tag each piece of text or an image only once. If, for example, the name of an event also happens to be a hypertext link for the event's URL, you'll need to decide between tagging it as the name or as the URL. Note that schema.org does allow adding multiple tags to a single element, so after you download the the example, you can add the additional microdata by hand.
+If date and time information is split into pieces (for example, the year displays at the top of the page while the month and day display in the middle of the page), you can tag the individual pieces. See Tagging Dates.
+Confirm the tagging by viewing the data in the My Data Items column. If the alert icon () displays, click the data next to the icon. For example, if Boston displays, click Boston. Then review the tagging and do one of the following:
+If the tagging is incorrect, click the X next to the data. Then re-tag the data.
+If the tagging is correct, click the alert icon itself () and select Clear warning.
+Click Create HTML.
+After you click Create HTML, Markup Helper displays the HTML source. The markup that Markup Helper added is highlighted.
+Next steps
+To add or change tags, click Back to tagging.
+If you're finished, review and download the markup example.
+Google keeps your marked up example for a month after your last access, so if you bookmark your example, you can come back to Structured Data Markup Helper and change or add to it. If you don't revisit the example for more than a month, Google will eventually delete it.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Structured Data Markup HelperStructured Data Markup HelperTagging datesAdd missing dataRemove tagsTag an email templateManually add markup for a propertyReview and download the markup example
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

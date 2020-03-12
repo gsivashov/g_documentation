@@ -1,0 +1,35 @@
+Disavow backlinksIf you have a manual action against your site for unnatural links to your site, or if you think you're about to get such a manual action (because of paid links or other link schemes that violate our quality guidelines), you should try to remove those links from the other site. If you can't get these links removed, then you should disavow those links to your website.
+Google works very hard to make sure that actions on third-party sites do not negatively affect a website. In some circumstances, incoming links can affect Google’s opinion of a page or site. For example, you or a search engine optimizer (SEO) you’ve hired may have built bad links to your site via paid links or other link schemes that violate our quality guidelines. First and foremost, we recommend that you remove as many spammy or low-quality links from the web as possible.
+This is an advanced feature and should only be used with caution. If used incorrectly, this feature can potentially harm your site’s performance in Google’s search results.
+Step 0: Decide if this is necessary
+In most cases, Google can assess which links to trust without additional guidance, so most sites will not need to use this tool.
+You should disavow backlinks only if:
+You believe you have a considerable number of spammy, artificial, or low-quality links pointing to your site, and
+The links have caused a manual action, or likely will cause a manual action, on your site.
+Step 1: Create a list of links to disavow
+You need to assemble your list of links to disavow in a text file that you will upload to Google.
+Link file format:
+Specify one URL or domain to disavow per line. You cannot disavow an entire subpath, such as example.com/en/
+To disavow a domain (or subdomain) prefix it with "domain:", for example: domain:example.com
+The file must be a text file encoded in UTF-8 or 7-bit ASCII
+The file name must end in .txt
+You can include comments for yourself by starting a line with a # mark. Any lines that begin with # will be ignored by Google.
+Example:
+# Two pages to disavow
+http://spam.example.com/stuff/comments.html
+http://spam.example.com/stuff/paid-links.html
+# One domain to disavow
+domain:shadyseo.com
+If you have found URLs or sites to disavow in the links report for your site, you can download the data from the Links report by clicking the export button. Be sure to remove any URLs from the downloaded file that you don't want to disavow.
+Step 2: Upload your list
+Now upload the list of pages or domains to disavow.
+Uploading a new disavow list will replace all previously uploaded disavow lists.
+Go to the disavow links tool page.
+Select your website.
+Click Disavow links.
+Click Choose file and choose the file you created.
+It can take a few weeks for Google to process the information that you upload. Your list will be incorporated into our index as we recrawl the web and reprocess the pages that we see.
+Disavowed links will continue to be shown in the Links report.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

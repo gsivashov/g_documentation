@@ -1,0 +1,57 @@
+Performance report (Discover)The Performance report for Discover shows important metrics about how your site performs in Discover. This report is visible only if your property has reached a minimum threshold of impressions in Discover.
+OPEN THE DISCOVER PERFORMANCE REPORT
+Why can't I see the report?
+The Performance report for Discover is visible only if your property reaches a threshold number of Discover impressions in the past 16 months.
+Performance reports in Search Console - Google Search Console Training
+Configuring the report
+The default view of the report shows the clicks, impressions, and average CTR (click-through rate) for your property.
+Choose which metrics to see by selecting the desired metrics above the chart. Metrics are the numbers to show (clicks, impressions, CTR).
+Choose which dimension to show by selecting a data grouping tab in the table. The dimension defines how data is grouped. Discover supports the dimensions of page and country.
+Optionally filter your data by date, dimension, and so on.
+Optionally compare dimension groups: for example, you can compare impressions from Brazil and China.
+Exporting report data
+Many reports provide an export button
+to export the report data. Both chart and table data are exported.
+Reading the chart
+Choose which metrics to show in the chart by selecting or deselecting metrics at the top of the chart. All data is aggregated by page.
+The totals for each metric are shown on the chart. The individual day totals might be less than the total shown in the chart because very small values for one or more dimensions on a specific date are omitted from the chart to protect user privacy, but are counted in the chart totals.
+Reading the table
+The table shows data grouped by the selected dimension (page or country).
+Metrics
+Choose which metrics to display by toggling the appropriate tab on the report. Learn more about these metrics and how they are calculated for Discover.
+All data is aggregated by page. This means that if a single site provides multiple Discover results in a single user session, each result is credited to the page URL it points to (rather than to the property containing the page).
+All page metrics are assigned to the canonical URL, not the page where the user lands when they click a Discover result. This means that if you have a page with both AMP and desktop versions, all metrics will be credited to, and viewable in, the desktop property (which is usually the canonical property).
+You can view metrics grouped by the following categories:
+Page: The page that served as the source of the information shown to the user. This is the canonical page URL, not the page where the user lands when they click a Discover result.
+Country: The country where the content was viewed or clicked.
+Discover appearance: The type of page linked to by the result. One of the following values:
+AMP article: Any AMP page, including AMP story results.
+AMP story: A subset of AMP articles that are optimized for visual content rather than textual content.
+Preliminary data in the report
+The newest data in the Search Performance report is sometimes preliminary – this means that the data might change slightly before it is confirmed. Preliminary data is usually less than three days old; at some point, all preliminary data is confirmed. Preliminary data is indicated when you hover over it in the chart.
+Preliminary data is included in both the chart and the tables for Discover performance, as well as the Performance chart in the Search Console Overview page.
+Filtering your data
+You can filter data by date, page, country, or Discover appearance type.
+To add a filter:
+Click the + NEW label next to the existing filters on the page.
+To remove a filter:
+Click the X next to an existing filter. You cannot remove the date filter.
+To modify a filter:
+Click the filter and reset the values.
+Comparing data
+You can compare data between two values in any one grouping dimension, whether or not it is the currently selected grouping. For example, when grouped by Country you can compare clicks between this week and last week, or between clicks from USA and France. When comparing values for a single metric, the results table will display a Difference column to compare values in each row.
+To compare data:
+Click to add a new filter or modify an existing filter.
+In the filter properties dialog box, choose Compare.
+Add the dimensions or times to compare, and click Apply.
+You can compare data in only one dimension at a time (Date, Country, and so on). Adding a new comparison in another grouping dimension will remove the existing comparison. For example, if you are comparing clicks for this week versus last week (Date), and then add a comparison between US and Japan (Country), the country comparison will erase the date comparison, and date range will reset to the default.
+Data discrepancies
+Search Console data can differ slightly from the data displayed in other tools. Here are possible reasons for the differences:
+There can be a lag between when the numbers are calculated and when they are visible to webmasters. Although data gets published in intervals, we continually collect it. Normally, however, collected data should be available in 2-3 days.
+Time zones matter. The Performance report tracks daily data according to local time in California, where data for each day is labeled according to the local time in California. If your other systems use different time zones, your daily views may not match exactly. For example, Google Analytics shows time in the webmaster’s local time zone.
+Downloaded data unavailable/not a number values. If you download the data in the report, any values shown as ~ or - (not available/not a number) on the report will be zeros in the downloaded data.
+Daily totals might be less than chart totals. If your property has few impressions on a given day, that day will be shown as zero impressions on the chart. However, we will still count these impressions in the totals shown.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Performance ReportsPerformance reportPerformance report (Discover)
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

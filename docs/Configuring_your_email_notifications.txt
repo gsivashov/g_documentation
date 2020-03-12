@@ -1,0 +1,27 @@
+Configuring your email notifications
+Search Console may occasionally send you messages about your properties. You can see the most recent messages in your Search Console home page, or see all messages in the Message Center.
+Messages are sent to the email account associated with your Search Console account. You cannot add additional addresses or specify a different notification address than the one you are logged in with.
+To open the Search Console message preferences page
+In any Search Console page, click the gear icon
+Click Search Console Preferences.
+Change your messaging settings on the preferences page and save your changes. Settings apply to all properties for that Search Console account.
+To enable or disable all messages from Search Console
+By default, you will receive messages for your Search Console account. However, you can choose to disable messaging from Search Console.
+To change your global Search Console messaging preference:
+Open the Search Console Preferences page
+Check or uncheck the email notifications checkbox on the page to enable or disable receiving messages from Search Console. If you have enabled messaging you can disable specific messages as described below.
+If you disable all messages for your account you will also disable receiving critical messages, including site hacking warnings, manual actions, and notifications of new owners. We recommend that you enable messaging and disable specific messages instead.
+To enable or disable specific Search Console messages
+You can enable or disable specific messages only if email notifications are enabled globally for Search Console. This setting is enabled by default.
+To disable a specific message:
+Follow the unsubscribe link at the bottom of the email. You can't unsubscribe from a message without this link.
+After you unsubscribe from a message, the message will appear in the message list on your preferences page. This list shows all messages that you have unsubscribed from at least once. You can resubscribe to any message in the list by changing the message status.
+To start receiving messages of a specific type again:
+Open the Search Console Preferences page
+Find the message that you want to start receiving again and change the message status appropriately.
+To change your message language or other settings
+Message language and other settings are set in your global Google account settings page.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+User SettingsConfiguring your email notifications
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

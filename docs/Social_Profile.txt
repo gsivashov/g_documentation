@@ -1,0 +1,75 @@
+Home
+Products
+Search for Developers
+Reference
+Social Profile
+Social profile markup for Google knowledge panels is deprecated. We now
+automatically discover social profiles to include in Google knowledge panels. If you’re
+verified as an official representative, you can suggest a change directly. Learn more at
+Update
+your Google knowledge panel.
+Use markup on your official website to add your social profile information to a
+Google Knowledge panel. Knowledge panels prominently display your social
+profile information in some Google Search results.
+Examples
+Here's an example of a person’s social profile in JSON-LD:
+<html>
+<head>
+<title>The title of the page</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Person",
+"name": "your name",
+"url": "http://www.your-site.com",
+"sameAs": [
+"http://www.facebook.com/your-profile",
+"http://instagram.com/yourProfile",
+"http://www.linkedin.com/in/yourprofile",
+"http://plus.google.com/your_profile"
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Here's an example of visible links on structured data SPAN in Microdata:
+FB
+Twitter
+Guidelines
+In addition to the general structured data
+guidelines, Social Profile markup should follow these guidelines:
+The social profiles in your markup must correspond to what users see on the same page.
+Supported Social Profiles
+Use structured data markup embedded in your public website to specify your preferred social
+profiles. You can specify these types of social profiles:
+Facebook
+Twitter
+Google+
+Instagram
+YouTube
+LinkedIn
+Myspace
+Pinterest
+SoundCloud
+Tumblr
+You can specify other social profiles as well, but they aren't currently included in Google
+Search results.
+Structured data type definitions
+You can define social profiles for a Person
+or Organization. You must
+include the required properties for your content to be eligible for display as a rich result.
+Required properties
+name
+Text
+The name of the person or organization.
+sameAs
+URL
+A single or an [array] of URLs for the person's or organization's official
+social media profile page(s).
+url
+URL
+The URL for the person's or organization's official website.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

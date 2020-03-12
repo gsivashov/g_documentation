@@ -1,0 +1,29 @@
+Home
+Products
+Search for Developers
+Guides
+Follow our guidelines
+To be eligible for inclusion in podcast features in Google Podcasts, you
+must do the following:
+Expose a valid RSS feed describing the podcast that conforms to the RSS
+2.0 specifications and our feed
+requirements.
+Make sure the feed contains at least one episode that conforms to the
+episode requirements.
+Make sure the podcast has a
+dedicated homepage that follows
+our requirements. The homepage must have a <link> pointing to your
+RSS feed.
+Make sure Googlebot can access the homepage and the RSS feed. The homepage and the RSS
+feed must not require a login, and must not be disallowed from crawling by the robots.txt or
+noindex robots meta tag. We also recommend that Googlebot can access and crawl any audio
+files within your RSS feed, though this is not required.
+Make sure the podcast homepage follows the
+Webmaster Guidelines.
+If you want your podcast to appear in Google Play Music, your podcast must meet the
+Google
+Play Music podcast RSS feed specifications. The RSS specifications for Google Play
+Music and Google Search are complimentary but not identical, so if you enable support for
+one, you neither prevent nor enable support for the other.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-08-28.

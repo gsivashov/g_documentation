@@ -1,0 +1,19 @@
+About robots.txtTest your robots.txt with the robots.txt TesterNext: Submit your updated robots.txt to GoogleThe robots.txt Tester tool shows you whether your robots.txt file blocks Google web crawlers from specific URLs on your site. For example, you can use this tool to test whether the Googlebot-Image crawler can crawl the URL of an image you wish to block from Google Image Search.
+Open robots.txt Tester
+You can submit a URL to the robots.txt Tester tool. The tool operates as Googlebot would to check your robots.txt file and verifies that your URL has been blocked properly.
+Test your robots.txt file
+Open the tester tool for your site, and scroll through the robots.txt code to locate the highlighted syntax warnings and logic errors. The number of syntax warnings and logic errors is shown immediately below the editor.
+Type in the URL of a page on your site in the text box at the bottom of the page.
+Select the user-agent you want to simulate in the dropdown list to the right of the text box.
+Click the TEST button to test access.
+Check to see if TEST button now reads ACCEPTED or BLOCKED to find out if the URL you entered is blocked from Google web crawlers.
+Edit the file on the page and retest as necessary. Note that changes made in the page are not saved to your site! See the next step.
+Copy your changes to your robots.txt file on your site. This tool does not make changes to the actual file on your site, it only tests against the copy hosted in the tool.
+Limitations of the robots.txt Tester tool:
+Changes you make in the tool editor are not automatically saved to your web server. You need to copy and paste the content from the editor into the robots.txt file stored on your server.
+The robots.txt Tester tool only tests your robots.txt with Google user-agents or web crawlers, like Googlebot. We cannot predict how other web crawlers interpret your robots.txt file.
+Next: Submit your updated robots.txt to Google
+Was this helpful?How can we improve it?YesNoSubmit
+true
+About robots.txtIntroduction to robots.txtCreate a robots.txt fileTest your robots.txt with the robots.txt TesterSubmit your updated robots.txt to GoogleRobots FAQs
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

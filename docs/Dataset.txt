@@ -1,0 +1,519 @@
+Home
+Products
+Search for Developers
+Reference
+Dataset
+Datasets are easier to find when you provide supporting information such as their name, description, creator and distribution formats
+as structured data. Google's approach to dataset discovery
+makes use of schema.org and other metadata standards that can be added to pages that describe datasets. The purpose of this markup is to
+improve discovery of datasets from fields such as life sciences, social sciences, machine
+learning, civic and government data, and more. You can find datasets by using the
+Dataset Search tool.
+Here are some examples of what can qualify as a dataset:
+A table or a CSV file with some data
+An organized collection of tables
+A file in a proprietary format that contains data
+A collection of files that together constitute some meaningful dataset
+A structured object with data in some other format that you might want to
+load into a special tool for processing
+Images capturing data
+Files relating to machine learning, such as trained parameters or neural network structure definitions
+Anything that looks like a dataset to you
+Our approach to dataset discovery
+We can understand structured data in Web pages about datasets, using either schema.org Dataset markup, or equivalent
+structures represented in W3C's
+Data Catalog Vocabulary (DCAT) format. We also are exploring
+experimental support for structured data based on W3C CSVW, and expect to evolve and adapt our approach as best practices for dataset description emerge. For more information about our
+approach to dataset discovery, see
+Making it easier to discover datasets.
+Examples
+Here's an example for datasets using JSON-LD and schema.org syntax (preferred) in the
+Rich Results Test. The same schema.org vocabulary can also be used in RDFa 1.1 or Microdata syntaxes.
+You can also use the W3C DCAT vocabulary to describe the metadata. The following example is based on a
+real-world
+dataset description.
+JSON-LD
+Here's an example of a dataset in JSON-LD:
+<html>
+<head>
+<title>NCDC Storm Events Database</title>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org/",
+"@type":"Dataset",
+"name":"NCDC Storm Events Database",
+"description":"Storm Data is provided by the National Weather Service (NWS) and contain statistics on...",
+"url":"https://catalog.data.gov/dataset/ncdc-storm-events-database",
+"sameAs":"https://gis.ncdc.noaa.gov/geoportal/catalog/search/resource/details.page?id=gov.noaa.ncdc:C00510",
+"identifier": ["https://doi.org/10.1000/182",
+"https://identifiers.org/ark:/12345/fk1234"],
+"keywords":[
+"ATMOSPHERE > ATMOSPHERIC PHENOMENA > CYCLONES",
+"ATMOSPHERE > ATMOSPHERIC PHENOMENA > DROUGHT",
+"ATMOSPHERE > ATMOSPHERIC PHENOMENA > FOG",
+"ATMOSPHERE > ATMOSPHERIC PHENOMENA > FREEZE"
+],
+"license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+"hasPart" : [
+{
+"@type": "Dataset",
+"name": "Sub dataset 01",
+"description": "Informative description of the first subdataset...",
+"license" : "https://creativecommons.org/publicdomain/zero/1.0/"
+},
+{
+"@type": "Dataset",
+"name": "Sub dataset 02",
+"description": "Informative description of the second subdataset...",
+"license" : "https://creativecommons.org/publicdomain/zero/1.0/"
+}
+],
+"creator":{
+"@type":"Organization",
+"url": "https://www.ncei.noaa.gov/",
+"name":"OC/NOAA/NESDIS/NCEI > National Centers for Environmental Information, NESDIS, NOAA, U.S. Department of Commerce",
+"contactPoint":{
+"@type":"ContactPoint",
+"contactType": "customer service",
+"telephone":"+1-828-271-4800",
+"email":"ncei.orders@noaa.gov"
+}
+},
+"includedInDataCatalog":{
+"@type":"DataCatalog",
+"name":"data.gov"
+},
+"distribution":[
+{
+"@type":"DataDownload",
+"encodingFormat":"CSV",
+"contentUrl":"http://www.ncdc.noaa.gov/stormevents/ftp.jsp"
+},
+{
+"@type":"DataDownload",
+"encodingFormat":"XML",
+"contentUrl":"http://gis.ncdc.noaa.gov/all-records/catalog/search/resource/details.page?id=gov.noaa.ncdc:C00510"
+}
+],
+"temporalCoverage":"1950-01-01/2013-12-18",
+"spatialCoverage":{
+"@type":"Place",
+"geo":{
+"@type":"GeoShape",
+"box":"18.0 -65.0 72.0 172.0"
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+RDFa
+Here's an example of a dataset in RDFa using the DCAT vocabulary:
+Name:
+ACME Inc Cash flow data
+Identifiers:
+https://doi.org/10.1000/182
+https://identifiers.org/ark:/12345/fk1234
+Description:
+Financial Statements - Consolidated Statement of Cash Flows
+Category:
+Financial
+Downloads:
+Consolidated_Statement_of_Cash_Flows_en.csv
+Consolidated_Statement_of_Cash_Flows_en.xls
+consolidated_statement_of_cash_flows_en.xml
+Guidelines
+Sites should follow the structured data
+guidelines. In addition to the structured data guidelines, we recommend the following
+sitemap and source and provenance
+best practices listed below.
+Sitemap best practices
+Use a sitemap file to help
+Google find your URLs. Using sitemap files and sameAs markup helps document how
+dataset descriptions are published throughout your site.
+If you have a dataset repository, you likely have at least two types of pages: the canonical
+("landing") pages for each dataset and pages that list multiple datasets (for example, search
+results, or some subset of datasets). We recommend that you add structured data about a dataset to
+the canonical pages. Use the sameAs
+property to link to the canonical page if you add structured data to multiple copies of the
+dataset, such as listings in search results pages.
+Google doesn't need every mention of the same dataset to be explicitly marked
+up, but if you do so for other reasons, we strongly encourage the use of
+sameAs.
+Source and provenance best practices
+It is common for open datasets to be republished, aggregated, and to be based on other datasets.
+This is an initial outline of our approach to representing situations in which a dataset is a copy
+of, or otherwise based upon, another dataset.
+Use the sameAs
+property to indicate the most canonical URLs for the original in cases when the dataset or
+description is a simple republication of materials published elsewhere. The value of
+sameAs needs to
+unambiguously indicate the dataset's identity - in other words two different datasets should
+not use the same URL as
+sameAs value.
+Use the isBasedOn property
+in cases where the republished dataset (including its metadata) has been changed
+significantly.
+When a dataset derives from or aggregates several originals, use the
+isBasedOn property.
+Use the identifier
+property to attach any relevant Digital Object identifiers (DOIs) or
+Compact Identifiers. If
+the dataset has more than one identifier, repeat the identifier property. If
+using JSON-LD, this is represented using JSON list syntax.
+We hope to improve our recommendations based on feedback, in particular around the description of
+provenance, versioning, and the dates associated with time series publication. Please join in
+community discussions.
+Textual property recommendations
+We recommend limiting all textual properties to 5000 characters or less. Google Dataset Search only uses the first 5000 characters of any textual property. Names and titles are typically a few words or a short sentence.
+Known Errors and Warnings
+You may experience errors or warnings in Google's Structured
+Data Testing Tool and other validation systems. Specifically, validation systems may
+suggest that organizations should have contact information including a contactType; useful values include
+customer service, emergency, journalist, newsroom, and public engagement.
+You can also ignore errors for
+csvw:Table being an unexpected value for the mainEntity property.
+Structured data type definitions
+You must include the required properties for your content to be eligible for display as a rich result.
+You can also include the recommended properties to add more information about your content,
+which could provide a better user experience.
+You can use the Structured
+Data Testing Tool to validate your markup.
+The focus is on describing information about a dataset (its metadata) and representing its
+contents. For example, dataset metadata states what the dataset is about, which variables it
+measures, who created it, and so on. It does not, for example, contain specific values for the
+variables.
+Dataset
+The full definition of Dataset is available at
+schema.org/Dataset.
+You can describe additional information about the publication of the dataset, such as the
+license, when it was published, its
+DOI,
+or a sameAs pointing to a canonical version of the dataset in a different
+repository. Add identifier, license, and sameAs for
+datasets that provide provenance and license information.
+Required properties
+description
+Text
+A short summary describing a dataset.
+Guidelines
+The summary must be between 50 and 5000 characters long.
+The summary may include Markdown syntax. Embedded images need to use absolute path URLs
+(instead of relative paths).
+When using the JSON-LD format, denote new lines with \n (two characters: backslash and lower case
+letter "n").
+name
+Text
+A descriptive name of a dataset. For example, "Snow depth in Northern Hemisphere".
+Recommended properties
+alternateName
+Text
+Alternative names that have been used to refer to this dataset, such as aliases or
+abbreviations. Example (in JSON-LD format):
+"name": "The Quick, Draw! Dataset"
+"alternateName": ["Quick Draw Dataset", "quickdraw-dataset"]
+creator
+Person or
+Organization
+The creator or author of this dataset. To uniquely identify individuals, use
+ORCID ID as the value of the sameAs property
+of the Person type. To uniquely identify institutions and organizations, use
+ROR ID.
+Example (in JSON-LD format):
+"creator": [
+{
+"@type": "Person",
+"sameAs": "http://orcid.org/0000-0000-0000-0000",
+"givenName": "Jane",
+"familyName": "Foo",
+"name": "Jane Foo"
+},
+{
+"@type": "Person",
+"sameAs": "http://orcid.org/0000-0000-0000-0001",
+"givenName": "Jo",
+"familyName": "Bar",
+"name": "Jo Bar"
+},
+{
+"@type": "Organization",
+"sameAs": "http://ror.org/xxxxxxxxx",
+"name": "Fictitious Research Consortium"
+}
+]
+citation
+Text or CreativeWork
+Identifies academic articles that are recommended by the data provider be cited in addition to the
+dataset itself. Provide the citation for the dataset itself with other properties, such as name, identifier,
+creator, and publisher properties.
+For example, this property can uniquely identify a related academic publication such as a
+data descriptor, data paper, or an article for which this dataset is supplementary
+material for. Examples (in JSON-LD format):
+"citation": "https://doi.org/10.1111/111"
+"citation": "https://identifiers.org/pubmed:11111111"
+"citation": "https://identifiers.org/arxiv:0111.1111v1"
+"citation":
+"Doe J (2014) Influence of X ... https://doi.org/10.1111/111"
+Additional guidelines
+Don’t use this property to provide citation information for the dataset itself. It is
+intended to identify related academic articles, not the dataset itself. To provide
+information necessary to cite the dataset itself use name,
+identifier, creator, and publisher properties
+instead.
+When populating the citation property with a citation snippet, provide the
+article identifier (such as a DOI) whenever possible.
+Recommended:
+"Doe J (2014) Influence of X.
+Biomics 1(1). https://doi.org/10.1111/111"
+Not recommended: "Doe J (2014) Influence of X.
+Biomics 1(1)."
+hasPart or isPartOf
+URL or
+Dataset
+If the dataset is a collection of smaller datasets, use the hasPart property
+to denote such relationship. Conversly, if the dataset is part of a larger
+dataset, use isPartOf. Both properties can take the form of a URL
+or a Dataset instance. In case Dataset is used as a value it has
+to include all of the properties required for a standalone Dataset.
+Examples:
+"hasPart" : [
+{
+"@type": "Dataset",
+"name": "Sub dataset 01",
+"description": "Informative description of the first subdataset...",
+"license" : "https://creativecommons.org/publicdomain/zero/1.0/"
+},
+{
+"@type": "Dataset",
+"name": "Sub dataset 02",
+"description": "Informative description of the second subdataset...",
+"license" : "https://creativecommons.org/publicdomain/zero/1.0/"
+}
+]
+"isPartOf" : "https://example.com/aggregate_dataset"
+identifier
+URL, Text, or PropertyValue
+An identifier, such as a DOI or a Compact Identifier. If the dataset has more than one
+identifier, repeat the identifier property. If using JSON-LD, this is represented
+using JSON list syntax.
+keywords
+Text
+Keywords summarizing the dataset.
+license
+URL, CreativeWork
+A license under which the dataset is distributed. For example:
+"license" : "https://creativecommons.org/publicdomain/zero/1.0/"
+"license" : {
+"@type": "CreativeWork",
+"name": "Custom license",
+"url": "https://example.com/custom_license"
+}
+Additional guidelines
+Provide a URL that unambiguously identifies a specific version of the license used.
+Recommended
+"license" : "https://creativecommons.org/licenses/by/4.0"
+Not recommended
+"license" : "https://creativecommons.org/licenses/by"
+sameAs
+URL
+URL of a reference Web page that unambiguously indicates the dataset's identity, usually in a
+different repository.
+spatialCoverage
+Text, Place
+You can provide a single point that describes the spatial aspect of the dataset. Only
+include this property if the dataset has a spatial dimension. For example,
+a single point where all the measurements were collected, or the coordinates of a bounding
+box for an area.
+Points
+"spatialCoverage:" {
+"@type": "Place",
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 39.3280,
+"longitude": 120.1633
+}
+}
+Shapes
+Use GeoShape to describe areas of different shapes. For example, to specify a bounding box.
+"spatialCoverage:" {
+"@type": "Place",
+"geo": {
+"@type": "GeoShape",
+"box": "39.3280 120.1633 40.445 123.7878"
+}
+}
+Points inside box, circle, line, or
+polygon properties must be expressed as a space separated pair of two
+values corresponding to latitude and longitude (in that order).
+Named locations
+"spatialCoverage:" "Tahoe City, CA"
+temporalCoverage
+Text
+The data in the dataset covers a specific time interval. Only include this property if the
+dataset has a temporal dimension. Schema.org uses the ISO 8601 standard
+to describe time intervals and time points. You can describe dates differently depending
+upon the dataset interval. Indicate open-ended intervals with two decimal points (..).
+Single date
+"temporalCoverage" : "2008"
+Time period
+"temporalCoverage" : "1950-01-01/2013-12-18"
+Open-ended time period
+"temporalCoverage" : "2013-12-19/.."
+variableMeasured
+Text, PropertyValue
+The variable that this dataset measures. For example, temperature or pressure.
+The variableMeasured
+property is proposed and pending standardization at schema.org. We encourage publishers to
+share any feedback on this property with the schema.org community.
+version
+Text, Number
+The version number for the dataset.
+url
+URL
+Location of a page describing the dataset.
+DataCatalog
+The full definition of DataCatalog is available at
+schema.org/DataCatalog.
+Datasets are often published in repositories that contain many other
+datasets. The same dataset can be included in more than one such repository. You
+can refer to a data catalog that this dataset belongs to by referencing it
+directly.
+Recommended properties
+includedInDataCatalog
+DataCatalog
+The catalog to which the dataset belongs.
+DataDownload
+The full definition of DataDownload is available at
+schema.org/DataDownload. In addition to Dataset properties,
+add the following properties for datasets that provide download options.
+The distribution property describes how to get the dataset itself because the URL
+often points to the landing page describing the dataset. The distribution
+property describes where to get the data and in what format. This property can
+have several values: for instance, a CSV version has one URL and an Excel
+version is available at another.
+Required properties
+distribution.contentUrl
+URL
+The link for the download.
+Recommended properties
+distribution
+DataDownload
+The description of the location for download of the dataset and the file format for
+download.
+distribution.encodingFormat
+Text,
+URL
+The file format of the distribution.
+Tabular datasets
+Beta: This approach is currently in beta and therefore subject to change.
+A tabular dataset is one organized primarily in terms of a grid of rows and columns.
+For pages that embed tabular datasets, you can also create more explicit markup, building on the basic approach described above. At this time we understand a variation of
+CSVW ("CSV on the Web", see W3C), provided in parallel to user-oriented tabular content on the HTML page.
+Here is an example showing a small table encoded in CSVW JSON-LD format. There are some known errors in the Rich Results Test.
+<html>
+<head>
+<title>American Humane Association</title>
+<script type="application/ld+json">
+{
+"@context": ["https://schema.org", {"csvw": "http://www.w3.org/ns/csvw#"}],
+"@type": "Dataset",
+"name":"AMERICAN HUMANE ASSOCIATION",
+"description": "ProPublica's Nonprofit Explorer lets you view summaries of 2.2 million tax returns from tax-exempt organizations and see financial details such as their executive compensation and revenue and expenses. You can browse raw IRS data released since 2013 and access over 9.4 million tax filing documents going back as far as 2001.",
+"publisher": {
+"@type": "Organization",
+"name": "ProPublica"
+},
+"mainEntity" : {
+"@type" : "csvw:Table",
+"csvw:tableSchema": {
+"csvw:columns": [
+{
+"csvw:name": "Year",
+"csvw:datatype": "string",
+"csvw:cells": [
+{
+"csvw:value": "2016",
+"csvw:primaryKey": "2016"
+},
+{
+"csvw:value": "2015",
+"csvw:primaryKey": "2015"
+}]
+},
+{
+"csvw:name": "Organization name",
+"csvw:datatype": "string",
+"csvw:cells": [
+{
+"csvw:value": "AMERICAN HUMANE ASSOCIATION",
+"csvw:primaryKey": "2016"
+},
+{
+"csvw:value": "AMERICAN HUMANE ASSOCIATION",
+"csvw:primaryKey": "2015"
+}]
+},
+{
+"csvw:name": "Organization address",
+"csvw:datatype": "string",
+"csvw:cells": [
+{
+"csvw:value": "1400 16TH STREET NW",
+"csvw:primaryKey": "2016"
+},
+{
+"csvw:value": "1400 16TH STREET NW",
+"csvw:primaryKey": "2015"
+}]
+},
+{
+"csvw:name": "Organization NTEE Code",
+"csvw:datatype": "string",
+"csvw:cells": [
+{
+"csvw:value": "D200",
+"csvw:notes": "Animal Protection and Welfare",
+"csvw:primaryKey": "2016"
+},
+{
+"csvw:value": "D200",
+"csvw:notes": "Animal Protection and Welfare",
+"csvw:primaryKey": "2015"
+}]
+},
+{
+"csvw:name": "Total functional expenses ($)",
+"csvw:datatype": "integer",
+"csvw:cells": [
+{
+"csvw:value": "13800212",
+"csvw:primaryKey": "2016"
+},
+{
+"csvw:value": "13800212",
+"csvw:primaryKey": "2015"
+}]
+}]
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Help and tools
+Google's Structured Data Markup Helper has support for Dataset markup.
+Use the Rich result status report
+in Search Console to see how your dataset performs in Google Search results. You can
+automatically pull these results with the
+Search Console API.
+The Google Webmaster Central Help Forum for Structured Data
+provides a community forum where you can ask (and answer) questions about structured data
+(including Datasets) and review our
+Frequently
+Asked Questions about Datasets.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

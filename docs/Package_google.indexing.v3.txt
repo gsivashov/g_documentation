@@ -1,0 +1,80 @@
+Home
+Products
+Search for Developers
+Reference
+Package google.indexing.v3
+Index
+UrlService (interface)
+GetUrlNotificationMetadataRequest (message)
+PublishUrlNotificationRequest (message)
+PublishUrlNotificationResponse (message)
+UrlNotification (message)
+UrlNotificationMetadata (message)
+UrlNotificationType (enum)
+UrlService
+Allows web developers to notify Google about state changes in the URLs they own.
+GetUrlNotificationMetadata
+rpc GetUrlNotificationMetadata(GetUrlNotificationMetadataRequest) returns (UrlNotificationMetadata)
+Gets metadata about a Web Document. This method can only be used to query URLs that were previously seen in successful Indexing API notifications. Includes the latest UrlNotification received via this API.
+Authorization Scopes
+Requires the following OAuth scope:
+https://www.googleapis.com/auth/indexing
+PublishUrlNotification
+rpc PublishUrlNotification(PublishUrlNotificationRequest) returns (PublishUrlNotificationResponse)
+Notifies that a URL has been updated or deleted.
+Authorization Scopes
+Requires the following OAuth scope:
+https://www.googleapis.com/auth/indexing
+GetUrlNotificationMetadataRequest
+Input for GetUrlNotificationMetadata call.
+Fields
+url
+string
+URL that is being queried.
+PublishUrlNotificationRequest
+Input for PublishUrlNotification
+Fields
+url_notification
+UrlNotification
+Description of the URL event that is being notified.
+PublishUrlNotificationResponse
+Output for PublishUrlNotification
+Fields
+url_notification_metadata
+UrlNotificationMetadata
+Description of the notification events received for this URL.
+UrlNotification
+UrlNotification is the resource used in all Indexing API calls. It describes one event in the life cycle of a Web Document.
+Fields
+url
+string
+The object of this notification. The URL must be owned by the publisher of this notification and, in case of URL_UPDATED notifications, it must be crawlable by Google.
+type
+UrlNotificationType
+The URL life cycle event that Google is being notified about.
+notify_time
+Timestamp
+Creation timestamp for this notification. Users should not specify it, the field is ignored at the request time.
+UrlNotificationMetadata
+Summary of the most recent Indexing API notifications successfully received, for a given URL.
+Fields
+url
+string
+URL to which this metadata refers.
+latest_update
+UrlNotification
+Latest notification received with type URL_UPDATED.
+latest_remove
+UrlNotification
+Latest notification received with type URL_REMOVED.
+UrlNotificationType
+Specifies the different events that can happen to a given URL.
+Enums
+URL_NOTIFICATION_TYPE_UNSPECIFIED
+Unspecified.
+URL_UPDATED
+The given URL (Web document) has been updated.
+URL_DELETED
+The given URL (Web document) has been deleted.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2018-11-16.

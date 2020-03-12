@@ -1,0 +1,45 @@
+Ways to Prevent Comment Spam
+Comments are a great way for webmasters to build community and readership. Unfortunately, they're often abused by spammers and nogoodniks, many of whom use scripts or other software to generate and post spam. If you've ever received a comment that looked like an advertisement or a random link to an unrelated site, then you've encountered comment spam.
+This type of spam can be harmful to your site in several ways including:
+Low-quality content on some parts of a website can impact the whole site’s rankings.
+Spam can distract and annoy your users and lower the reputation of your site.
+Unintended traffic from unrelated content on your site can slow down your site and raise bandwidth costs.
+Google might remove or demote pages overrun with user-generated spam to protect the quality of our search results.
+Content dropped by spammers can lead to malicious sites that can negatively affect your users.
+It’s important to find ways to protect your website from this kind of malicious spam. Here are some ideas for reducing or preventing comment spam on your website.
+Think twice about enabling a guestbook or comments
+Pages full of spam don't give users a good impression of your site. If this feature isn't adding much value to your users, or if you won't have time to regularly monitor your comments, consider turning them off. Most blogging software, such as Blogger, will let you turn comments off for individual posts.
+Turn on comment and profile creation moderation
+Comment moderation means that no comments will appear on your site until they are reviewed and approved. This means you'll spend more time monitoring your comments, but it can really help to improve the user experience for your visitors. It's particularly worthwhile if you regularly post about controversial subjects, where emotions can become heated. It's generally available as a setting in your blogging software, such as Blogger.
+Requiring people to validate a real email address when they sign up for a new account can prevent many spam bots from automatically creating accounts. Additionally, you can set up filters to block email addresses that are suspicious or coming from email services that you don’t trust.
+Use anti-spam tools
+Many commenting systems require users to prove they're a real live human, not a nasty spamming script. Generally the user is presented with a distorted image (a CAPTCHA) and asked to type the letters or numbers she sees in the image. Some CAPTCHA systems also support audio CAPTCHAs. This is a pretty effective way of preventing comment spam.
+Google's free reCAPTCHA's service is easy to implement on your site. In addition, data collected from the service is used to improve the process of scanning text, such as from books, newspapers, or maps. By using reCAPTCHA, you're not only protecting your site from spammers; you're helping to digitize the world's books. You can sign up here if you’d like to implement reCAPTCHA for free on your own site. reCAPTCHA Plugins are available for popular applications and programming environments such as WordPress and PHP.
+You can also look into external tools that can help you combat comment spam. For example, your content management system might have useful tools available to install. There are also a number of free tools like Project Honeypot that can help prevent and fight user-generated spam on your site. Visit their websites for instructions on how to implement their tools.
+Use "nofollow" or more specific attributes
+Together with Yahoo! and MSN, Google introduced the "nofollow" HTML microformat several years ago, and the attribute has been widely adopted. Any link with the rel="nofollow" or more specific attributes such as rel="sponsored", will generally not be used to calculate PageRank or determine the relevancy of your pages for a user query. For example, if a spammer includes a link in your comments like this:
+<a href="http://www.example.com/">This is a nice site!</a>
+it will get converted to:
+<a href="http://www.example.com/" rel="nofollow">This is a nice site! </a>
+Or:
+<a href="http://www.example.com/" rel="ugc">This is a nice site! </a>
+This new link will generally not be taken into account when calculating PageRank. This won't prevent spam, but it will avoid problems with passing PageRank and deter spammers from targeting your site. By default, many blogging sites (such as Blogger) automatically add this attribute to any posted comments.
+Prevent untrusted content from showing in search
+If your site allows users to create pages like profile pages, forum threads, or websites, you can deter spam abuse by preventing new or untrusted content from showing up in search.
+For example, you can use the noindex meta standard to block access to pages for new and not-yet-trusted users. Like this:
+<html> <head> <META NAME="googlebot" CONTENT="noindex">
+Or you can use the robots.txt standard to temporarily block the page:
+Disallow:/guestbook/newpost.php
+Once you believe the user is legitimate and not a spammer, you can remove the crawling or indexing restrictions. There are a number of ways that you can tell if a new user is a spammer, including using signals from your community.
+Get help from your community
+Your users care about your website and are annoyed by spam too. Let them help you solve the problem.
+Allow trusted users to flag spam comments or threads when they see it. This type of system can be abused, so you should be careful how it’s implemented. One option is to temporarily remove a post or thread that has crossed a threshold of spam reports until it has been manually reviewed.
+Creating a user reputation system can not only help you engage users, but it can also help identify spammers. Since many comment spammers want their content in search engines, consider adding a noindex robots meta tag on posts that come from new users that don’t have any reputation in your community. Then, after some time, when the user gains reputation, you can allow their posts to be indexed. This will greatly demotivate spammers from trying to post in your community.
+Use a blacklist to prevent repetitive spamming attempts
+Once you find a single spammy profile, make it simple to remove any others. For example, if you see several spammy profiles coming from the same IP address, you can add that IP address to a permanent ban list.
+Monitor your site for spammy content
+One of the best tools for this is Google Alerts. Set up a site: query using commercial or adult keywords that you wouldn't expect to see on your site. Google Alerts is also a great tool to help detect hacked pages.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Quality guidelinesAutomatically generated contentSneaky redirectsLink schemesCloakingHidden text and linksDoorway pagesScraped contentAffiliate programsIrrelevant keywordsCreating pages with malicious behaviorUser-generated spamWays to Prevent Comment SpamReport spam, paid links, or malware
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -1,0 +1,257 @@
+Home
+Products
+Search for Developers
+Reference
+Q&A
+Does your site publish FAQ content, with no way for users to submit
+alternative answers? Use
+FAQ structured data instead.
+Q&A Pages are web pages that contain data in a question and answer format, which is one question
+followed by its answers. For content that represents a question and its
+answers, you can mark up your data with the
+schema.org QAPage, Question, and Answer types.
+Properly marked up pages are eligible to have a rich result displayed on the search results
+page. This rich treatment helps your site reach the right users on Search.
+Here's an example of a result you might see for the user query “How do I remove a cable that is
+stuck in a USB port?" if the page has been marked up to answer that question:
+In addition to enabling your content for the rich result treatment shown above, marking up
+your Q&A page helps Google generate a better
+snippet for your page.
+In the example above, the content from the answers may appear in the basic result if the rich
+result is not shown.
+Keep in mind the actual appearance might be different. To see the most up-to-date layout
+of basic results and rich results in a search results page, search on
+google.com.
+Examples
+The following markup example includes the QAPage, Question,
+and Answer type definitions in JSON-LD:
+JSON-LD
+<html>
+<head>
+<title>How many ounces are there in a pound?</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "QAPage",
+"mainEntity": {
+"@type": "Question",
+"name": "How many ounces are there in a pound?",
+"text": "I have taken up a new interest in baking and keep running across directions in ounces and pounds. I have to translate between them and was wondering how many ounces are in a pound?",
+"answerCount": 3,
+"upvoteCount": 26,
+"dateCreated": "2016-07-23T21:11Z",
+"author": {
+"@type": "Person",
+"name": "New Baking User"
+},
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "1 pound (lb) is equal to 16 ounces (oz).",
+"dateCreated": "2016-11-02T21:11Z",
+"upvoteCount": 1337,
+"url": "https://example.com/question1#acceptedAnswer",
+"author": {
+"@type": "Person",
+"name": "SomeUser"
+}
+},
+"suggestedAnswer": [
+{
+"@type": "Answer",
+"text": "Are you looking for ounces or fluid ounces? If you are looking for fluid ounces there are 15.34 fluid ounces in a pound of water.",
+"dateCreated": "2016-11-02T21:11Z",
+"upvoteCount": 42,
+"url": "https://example.com/question1#suggestedAnswer1",
+"author": {
+"@type": "Person",
+"name": "AnotherUser"
+}
+}, {
+"@type": "Answer",
+"text": " I can't remember exactly, but I think 18 ounces in a lb. You might want to double check that.",
+"dateCreated": "2016-11-06T21:11Z",
+"upvoteCount": 0,
+"url": "https://example.com/question1#suggestedAnswer2",
+"author": {
+"@type": "Person",
+"name": "ConfusedUser"
+}
+}
+]
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Microdata
+<html>
+<body itemscope itemtype="https://schema.org/QAPage">
+How many ounces are there in a pound?
+52
+I have taken up a new interest in baking and keep running across directions in ounces and pounds. I have to translate between them and was wondering how many ounces are in a pound?
+asked Nov 11
+'10 at 20:07
+New Baking User
+3 answers
+26 votes
+1337
+1 pound (lb) is equal to 16 ounces (oz).
+Answer Link
+answered Dec 1 '10 at 22:01
+SomeUser
+42
+Are you looking for ounces or fluid ounces? If you are looking for fluid ounces there are 15.34 fluid ounces in a pound of water.
+Answer Link
+answered Dec 6 '10 at 21:11
+AnotherUser
+0
+I can't remember exactly, but I think 18 ounces in a lb. You might want to double check that.
+Answer Link
+answered Dec 6 '10 at 21:11
+ConfusedUser
+</body>
+</html>
+Guidelines
+For your Q&A page to be eligible for this rich treatment, you must follow
+these guidelines:
+General structured data guidelines
+Webmaster guidelines
+Content Guidelines
+Content guidelines
+Only use the QAPage markup if your page has information in a question and answer format, which is
+one question followed by its answers.
+Users must be able to submit answers to the question. Don't use QAPage markup for
+content that has only one answer for a given question with no way for users to add alternative
+answers; instead, use FAQPage. Here
+are some examples:
+Valid use cases:
+A forum page where users can submit answers to a single question
+A product support page where users can submit answers to a single question
+Invalid use cases:
+An FAQ page written by the site itself with no way for users to submit alternative answers
+A product page where users can submit multiple questions and answers on a single page
+A how-to guide that answers a question
+A blog post that answers a question
+An essay that answers a question
+Don't apply QAPage markup to all pages on a site or forum if not all the content is eligible.
+For example, a forum may have lots of questions posted, which are individually elgible for the markup. However,
+if the forum also has pages that are not questions, those pages are not eligible.
+Don't use QAPage markup for FAQ pages or pages where there are multiple questions
+per page. QAPage markup is for pages where the focus of the page is a single question
+and its answers.
+Don’t use QAPage markup for advertising purposes.
+Make sure each Question includes the entire text of the question and
+make sure each Answer includes the entire text of the answer.
+Answer markup is for answers to the question, not for comments on the question or
+comments on other answers. Don't mark up non-answer comments as an Answer.
+Question and answer content may not be displayed as a rich result if it contains any of the
+following types of content: obscene, profane, sexually explicit, graphically violent,
+promotion of dangerous or illegal activities, or hateful or harassing language.
+Structured data type definitions
+This section describes the structured data types related to QAPage.
+You must include the required properties for your content to be eligible for display as a rich result. You can also
+include the recommended properties to add more information to your structured data, which could
+provide a better user experience.
+You can use Google’s Rich Results Test to
+validate and preview your structured data.
+QAPage
+The QAPage type indicates that the
+page is focused on a specific question and its answer(s). We will only use Question
+structured data from pages with QAPage markup. There should only be one
+QAPage type definition per page.
+The full definition of QAPage is available at https://schema.org/QAPage.
+The following table describes the properties of the QAPage type that are used by Google Search.
+Required properties
+mainEntity
+Question
+The Question for this page must be nested under the
+mainEntity property of the QAPage item.
+Question
+The Question type defines the question that this page answers, and includes
+the answers, if any, to that question. Exactly one Question type is expected on the
+page, nested under the mainEntity property of the schema.org/QAPage. There
+should only be one Question type definition per page.
+The full definition of Question is available at https://schema.org/Question.
+If your site doesn't support a recommended property, omit that property from your
+structured data.
+Required properties
+answerCount
+Integer
+The total number of answers to the question. For example, if there are 15 answers, but only the first 10 are
+marked up due to pagination, this value would be 15. This may also be 0 for questions with no answers.
+Either acceptedAnswer or suggestedAnswer
+Answer
+To be eligible for the rich result, a question must have at least one answer – either an
+acceptedAnswer or a suggestedAnswer. However, questions may not
+have answers when they are first posted. For questions without answers, set
+the answerCount property to 0. Questions without answers aren't eligible for
+the rich result.
+acceptedAnswer
+Answer
+A top answer to the question. There can be zero or more of these per question. This should
+represent answers that are accepted in some way on your site. For example, accepted as a
+top answer by question asker, a moderator, or a voting system. Other forms of sorting answers,
+such as most-recent, should not be used to identify top answers.
+suggestedAnswer
+Answer
+One possible answer, but not accepted as a top answer (acceptedAnswer).
+There can be zero or more of these per Question.
+name
+Text
+The full text of the short form of the question. For example, "How many teaspoons in a cup?".
+Recommended properties
+author
+Person or
+Organization
+The author of the question.
+dateCreated
+Date or DateTime
+The date at which the question was added to the page, in ISO-8601 format.
+text
+Text
+The full text of the long form of the question. For example, "I’m cooking, and I need to know how many
+teaspoons are in a cup. How many teaspoons are in 1 cup?"
+upvoteCount
+Integer
+The total number of votes that this question has received. If the page supports upvotes and
+downvotes, then set the upvoteCount value to a single aggregate value that represents both upvotes and downvotes.
+For example, if there are 5 upvotes and 2 downvotes, the aggregate value used for upvoteCount is 3. If there
+are 5 upvotes and downvotes are not supported, then the value for upvoteCount is 5.
+Answer
+The Answer type defines the suggested and accepted answers to the
+Question on this page. Define Answers inside the Question,
+as values for the suggestedAnswer and acceptedAnswer properties.
+The following table describes the properties of the Answer type that is used within a
+Question.
+The full definition of Answer is available at
+https://schema.org/Answer.
+If your site doesn't support a recommended property, omit that property from
+your structured data.
+Required properties
+text
+Text
+The full text of the answer. If only a portion is marked up, your
+content may not be shown and Google cannot determine the best text to display.
+Recommended properties
+author
+Person or
+Organization
+The author of the answer.
+dateCreated
+Date or DateTime
+The date at which the answer was added to the page, in ISO-8601 format.
+upvoteCount
+Integer
+The total number of votes that this answer has received. If the page supports upvotes and
+downvotes, then set the upvoteCount value to a single aggregate value that represents both upvotes and downvotes.
+For example, if there are 5 upvotes and 2 downvotes, the aggregate value used for upvoteCount is 3. If there
+are 5 upvotes and downvotes are not supported, then the value for upvoteCount is 5.
+url
+URL
+A URL that links directly to this answer. For example: https://www.examplesite.com/question#answer1
+It is strongly recommended to provide a URL for each answer because
+it improves the user experience when the user clicks through to your site.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

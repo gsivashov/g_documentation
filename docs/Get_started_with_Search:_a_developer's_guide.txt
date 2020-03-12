@@ -1,0 +1,127 @@
+Home
+Products
+Search for Developers
+Guides
+Get started with Search: a developer's guide
+Making your content search-friendly matters because it's how you get more relevant users viewing
+your content. This is called search engine optimization (SEO), which can result in more
+interested users coming to your site. If Google Search has trouble understanding your page,
+you're possibly missing out on an important source of traffic.
+This guide covers what developers can do to make sure that their sites work well with Google
+Search. In addition to the items in this guide, make sure that your site is
+secure,
+fast,
+accessible to all, and
+works on all devices.
+For help that's not so technical, visit the
+SEO starter guide. The SEO
+started guide covers other aspects of SEO, like authoring content.
+Find out how Google sees your site
+To get started, test your site in the
+Mobile-Friendly Test to
+see how Googlebot sees your site.
+Googlebot is Google's web
+crawling bot that discovers new and updated pages and adds them to the Google index. For
+more information about the process, go to
+How Google Search Works.
+You may be surprised to find that Googlebot doesn't always see everything that you see in the
+browser. In the following example, Googlebot doesn't know there are images on this page
+because the page uses a JavaScript feature that isn't supported by Googlebot.
+User
+Here's how a user views the page. Users can view the images and text in the browser.
+Googlebot
+Here's how Googlebot views the page. Googlebot doesn't know there are images on this page
+because the page uses a JavaScript feature that isn't supported by Googlebot.
+Check your links
+Googlebot navigates from URL to URL by following links, sitemaps, and redirects. Googlebot
+treats every URL as if it's the first and only URL it has seen from your site. To make sure
+that Googlebot can find all the URLs on your site:
+Use <a href> with a valid URL. Ensure that all pages on the site can be
+reached by a link from another
+findable page. The referring link should include either text or, for images, an alt
+attribute, that is relevant to the target page. Crawlable links are
+tags with an
+href attribute.
+Build and submit a
+sitemap to help Googlebot more intelligently crawl your site. A sitemap is a file where
+you provide information about the pages, videos, and other files on your site, and the
+relationships between them.
+For JavaScript apps that have only one HTML page, make sure that each screen or piece of
+individual content has a URL.
+Check how you're using JavaScript
+While Googlebot does run JavaScript, there are some differences and limitations that you need
+to account for when designing your pages and applications to accommodate how crawlers access
+and render your content.
+Learn more about the basics of JavaScript SEO or how to fix
+Search-related JavaScript problems.
+To learn more about how Googlebot handles JavaScript when crawling, rendering and indexing, see the following video.
+Keep Google updated when content changes
+To make sure that Google finds your new or updated pages quickly:
+Submit sitemaps.
+Ask Google to recrawl your
+URLs.
+Use the Indexing API when
+applicable.
+If you're still having trouble getting your page indexed, check your server logs for errors.
+Don't forget about the words on the page
+Googlebot can only find content that is textually visible. For example, text in videos is
+invisible to Googlebot. To make sure that Google Search understands what your page is about:
+Make sure that your visual content is expressed in text form.
+For example, a product category page that contains a list of images of shirts with no textual
+context about each image is suboptimal. The product category page should include some
+textual explanation for each image.
+Make sure that every page has a
+descriptive
+title and
+meta
+description. Unique titles and meta descriptions help Google show how your
+pages are relevant to users, which in turn can increase your search traffic.
+Use semantic HTML. While Googlebot indexes HTML, PDF content, images,
+and videos, it doesn't index content that requires plugins (for example, Flash, Java, or Silverlight)
+or content that is rendered in a canvas. Instead of using a plugin, use semantic HTML markup
+for your content whenever possible.
+Tell Google about other versions of your content
+Googlebot doesn't automatically know that there are multiple versions of your site or content. For
+example, a mobile and desktop version, or international versions of your site. To make sure
+that Google serves the right version to users, you can:
+Consolidate duplicate
+URLs.
+Tell
+Google about localized versions of your site.
+Make your AMP pages
+discoverable.
+Control what content Google sees
+There are several ways to block Googlebot:
+To block Googlebot from finding your page, restrict access to your content to logged in
+users (for example, use a login page or
+password-protect your
+page).
+To block Googlebot from crawling your page,
+create a robots.txt.
+A robots.txt is not a mechanism for keeping a web page out of Google. To
+keep a web page out of Google, you should use noindex tags or directives, or
+password-protect your page.
+To block Googlebot from indexing your page, allow crawling and
+add a noindex
+meta tag.
+Combining multiple crawling and indexing directives might cause some
+directives to counteract other directives. Learn how to configure these directives properly
+by reading
+Combining crawling with indexing / serving directives.
+If your content isn't showing up in Google Search and you want it to show up, follow the
+steps below:
+Check if Googlebot can access the page with the
+URL inspection tool.
+Check your
+robot.txt file to see if you're unintentionally blocking Googlebot from crawling your
+site.
+Check your HTML for "noindex" rules in meta tags.
+Enable rich results for your site
+A rich result can include styling, images, or other interactive features that can help your
+site stand out more in Search results. You can help Google understand your page better and
+show rich results for it in Search by providing explicit clues about the meaning of a page
+with structured data on the page. If
+you're not sure where to start, explore our
+gallery of available features.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-09-12.

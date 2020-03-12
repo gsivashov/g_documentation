@@ -1,0 +1,200 @@
+Home
+Products
+Search for Developers
+Reference
+RSS feed requirements for Google Podcasts
+To be eligible to appear in Google Podcasts, you must expose an RSS feed describing your
+podcast. This RSS feed should conform to the
+RSS 2.0 specification,
+with additional tags and values as described in the following section. Some of these tags are
+podcast-level, and some are episode-level.
+If you're just getting started, read through the
+Podcast guides. In addition to the
+RSS feed requirements, you must follow the homepage requirements.
+If you use any tags defined by either the Google Play or iTunes extension, be sure to include
+the appropriate xmlns attributes in the <rss> tag at the top of your feed, as shown here:
+<rss version="2.0"
+xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
+xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+Here is an example of a podcast feed with two episodes that lives at
+https://www.example.com/podcasts/dafnas-zebras/rss/podcast.rss:
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
+xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<channel>
+<title>Dafna's Zebra Podcast</title>
+<googleplay:author>Dafna</googleplay:author>
+<description>A pet-owner's guide to the popular striped equine.</description>
+<googleplay:image href="http://www.example.com/podcasts/dafnas-zebras/img/dafna-zebra-pod-logo.jpg"/>
+<language>en-us</language>
+<link>https://www.example.com/podcasts/dafnas-zebras/</link>
+<item>
+<title>Top 10 myths about caring for a zebra</title>
+<description>Here are the top 10 misunderstandings about the care, feeding, and breeding of these lovable striped animals.</description>
+<pubDate>Tue, 14 Mar 2017 12:00:00 GMT</pubDate>
+<enclosure url="https://www.example.com/podcasts/dafnas-zebras/audio/toptenmyths.mp3"
+type="audio/mpeg" length="34216300"/>
+<itunes:duration>30:00</itunes:duration>
+<guid isPermaLink="false">dzpodtop10</guid>
+</item>
+<item>
+<title>Keeping those stripes neat and clean</title>
+<description>Keeping your zebra clean is time consuming, but worth the effort.</description>
+<pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
+<enclosure url="https://www.example.com/podcasts/dafnas-zebras/audio/cleanstripes.mp3"
+type="audio/mpeg" length="26004388"/>
+<itunes:duration>22:48</itunes:duration>
+<guid>dzpodclean</guid>
+</item>
+</channel>
+</rss>
+Podcast-level RSS tags
+To be eligible to appear in Google Podcasts, you must include the required podcast-level tags.
+You can also include the recommended tags to add more information about
+your content, which could provide a better user experience.
+Required tags
+<item>
+One or more descriptions of individual episodes. You must have at least one
+<item> element in the feed. For details on markup used to describe
+episodes, see Episode-level RSS tags.
+<link>
+Fully-qualified URL of the homepage of your podcast. Be sure to test that the homepage
+is accessible to Googlebot using either the
+URL Inspection tool or
+the Mobile-Friendly Test.
+<title>
+Name of the podcast.
+Recommended tags
+Author tags
+The author(s) of the podcast. You can provide an author by using one or both of the
+following tags:
+<googleplay:author>...</googleplay:author>
+<itunes:author>...</itunes:author>
+Examples: "Example Corporation" or "Dafna Smith".
+Category tags
+The general topic of the podcast to be shown in the Search results. The category must
+be in English and & must be provided as &. You
+can provide a category by using one or both of the following tags:
+<googleplay:category text="..."/>
+<itunes:category text="..."/>
+Google Play example
+<googleplay:category text="Games & Hobbies"/>
+iTunes example
+<itunes:category text="Games & Hobbies"/>
+Recommended categories
+We recommend using one of the following categories:
+Arts
+Business
+Comedy
+Education
+Games & Hobbies
+Government & Organizations
+Health
+Kids & Family
+Music
+News & Politics
+Religion & Spirituality
+Science & Medicine
+Society & Culture
+Sports & Recreation
+TV & Film
+Technology
+Description tags
+A plaintext description of the podcast, which is shown if the user clicks for more
+information in Search results. HTML tags are ignored and the description is truncated
+to 1,000 characters. If present, the description should generally agree with the content
+on the podcast homepage, but need not be an exact copy of that text. You can provide a
+description by using one or any combination of the following tags:
+<description>...</description>
+<googleplay:description>...</googleplay:description>
+<itunes:summary>...</itunes:summary>
+Explicit tags
+If present and set to yes (case insensitive), this tag indicates that the
+podcast contains explicit material. You can also tag individual episodes with this
+property for finer-grained control. You can indicate explicit content by using one or
+both of the following tags:
+<googleplay:explicit>yes</googleplay:explicit>
+<itunes:explicit>yes</itunes:explicit>
+Image tags
+An image to associate with your podcast. It must not be blocked to Googlebot. You can
+provide an image by using one or any combination of the following tags:
+<googleplay:image href="...">
+<itunes:image href="...">
+<image>
+<link>...</link>
+<title>...</title>
+<url>...</url>
+</image>
+Extension image element example
+<googleplay:image href="http://google.com/google_podcast_cover_art.jpg"/>
+Standard RSS image element
+example
+When using the standard
+RSS <image> tag, it must contain a
+<title> that is the same as the <title> element in
+the homepage and a <link> element pointing to the podcast homepage.
+<image>
+<link>href="https://www.example.com/podcasts/dafnas-zebras/"</link>
+<title>Dafna's Zebra Podcast</title>
+<url>http://google.com/google_podcast_cover_art.jpg</url>
+</image>
+<language>
+The two-letter language code of the podcast as defined by
+ISO 639-1.
+Examples
+<language>es</language>
+<language>it</language>
+Episode-level RSS tags
+To be eligible to appear in Google Podcasts, you must include the required episode-level RSS
+tags. You can also include the recommended tags to add more information about
+your podcast, which could provide a better user experience.
+Required tags
+<enclosure>
+Fully-qualified URL of the episode audio file. Audio files with the following extensions
+are supported: aac, m4a, mp3, ogg, wav. Episodes will only appear in search results if the
+majority of the episodes are supported audio file formats. Ensure that these files are not
+protected by robots.txt files, and are otherwise available to Googlebot.
+Example
+<enclosure url="https://www.example.com/tenmyths.mp3"
+type="audio/mpeg" length="34216300"/>
+<title>
+Title of the podcast episode.
+Recommended tags
+Description tags
+A description of this episode, to show in search results. HTML tags are ignored, and the
+description will be truncated to 200 characters. You can provide a description by using one
+or any combination of the following tags:
+<description>...</description>
+<googleplay:description>...</googleplay:description>
+<itunes:summary>...</itunes:summary>
+Explicit tags
+If present and set to yes (case insensitive), indicates that the episode
+contains explicit material. You can indicate explicit content by using one or both of the
+following tags:
+<googleplay:explicit>yes</googleplay:explicit>
+<itunes:explicit>yes</itunes:explicit>
+<guid>
+A permanently-assigned, case-sensitive Globally Unique Identifier for a podcast episode.
+Should be unique and unchanging over time, scoped to this podcast. GUIDs are compared to
+indicate which episodes are new. Add isPermaLink="false" when the string isn't a
+valid URL. If a <guid> tag isn't specified, the file
+URL in the <enclosure> tag is used instead.
+<itunes:duration>
+Duration of the episode, in one of the following formats:
+[hours]:[minutes]:[seconds]
+[minutes]:[seconds]
+[total_seconds]
+In the first two formats the values for hours, minutes, or
+seconds cannot exceed two digits each.
+Examples
+<itunes:duration>1:10:00</itunes:duration>
+<itunes:duration>10:00</itunes:duration>
+<itunes:duration>1800</itunes:duration>
+<pubDate>
+Publication date of the episode, in
+RFC 822 (section 5.1)
+format.
+Example
+<pubDate>Wednesday, 04 Feb 2015 00:00:00 EST</pubDate>
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-09-12.

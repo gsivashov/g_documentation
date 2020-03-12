@@ -1,0 +1,109 @@
+Home
+Products
+Search for Developers
+Reference
+Install Client Libraries
+The Indexing API is built on HTTP and JSON, so any standard HTTP client
+can send requests to it and parse the responses.
+However, the Google API client libraries provide better language
+integration, improved security, and support for making calls that require
+user authorization. The client libraries are available in a number of
+programming languages; by using them you can avoid the need to manually set
+up HTTP requests and parse the responses.
+To get started, select the programming language that you are using for
+development.
+Go
+Get the latest Indexing API client library for Go (alpha).
+Read the client library's developer's guide.
+Java
+This page contains information about getting started with the Indexing API using the Google API Client Library for Java.
+In addition, you may be interested in the following documentation:
+Browse the JavaDoc reference for the Indexing API.
+Read the Developer's Guide for the Google API Client Library for Java.
+Interact with this API in your browser using the APIs Explorer for the Indexing API.
+Add Library to Your Project
+Select your build environment (Maven or Gradle) from the following tabs, or download a zip file containing all of the jars you need:
+Download
+Download the Indexing API v3 Client Library for Java.
+See the indexing/readme.html file for details on:
+What the zip file contains.
+Which dependent jars are needed for each application type (web, installed, or Android application).
+The libs folder contains all the of the globally applicable dependencies you might need across all application types.
+Maven
+Add the following to your pom.xml file:
+See all versions available on the Maven Central Repository.
+Gradle
+Add the following to your build.gradle file:
+See all versions available on the Maven Central Repository.
+JavaScript
+Read the client library's developer's guide.
+.NET
+This page contains information about getting started with the Indexing API using the Google API Client Library for .NET.
+In addition, you may be interested in the following documentation:
+Browse the .NET reference documentation for the Indexing API.
+Read the Developer's guide for the Google API Client Library for .NET.
+Interact with this API in your browser using the APIs Explorer for the Indexing API.
+Downloading the library
+Install the NuGet package:
+Google.Apis.
+Node.js
+Get the latest Indexing API client library for Node.js.
+Read the client library's developer's guide.
+Obj-C
+Get the latest Indexing API client library for Objective-C.
+Read the client library's developer's guide.
+PHP
+Get the latest Indexing API client library for PHP (beta).
+Read the client library's developer's guide.
+Python
+This page contains information about getting started with the Indexing API using the Google API Client Library for Python.
+In addition, you may be interested in the following documentation:
+Browse the PyDoc reference for the Indexing API.
+Read the Developer's guide for the Google API Client Library for Python.
+Interact with this API in your browser using the APIs Explorer for the Indexing API.
+System requirements
+Operating systems:
+Linux
+Mac OS X
+Windows
+Python 2.7, or 3.4 or higher
+Installing the client library
+You can either use a package manager or download and install the Python client library
+manually:
+Managed installation
+Use pip or setuptools to manage your installation (you might
+need to run sudo first):
+pip (preferred):
+$ pip install --upgrade google-api-python-client
+Setuptools:
+Use the easy_install tool included in the
+setuptools package:
+$ easy_install --upgrade google-api-python-client
+Manual installation
+Download the latest client
+library for Python, unpack the code, and run python setup.py install
+App Engine
+Because the Python client libraries are not installed in the
+App Engine Python runtime environment,
+they must be
+vendored into your application just like third-party libraries.
+Ruby
+This page contains information about getting started with the Indexing API using the Google API Client Library for Ruby. In addition, you may be interested in the following documentation:
+Read the Getting started guide for the Google API Client Library for Ruby.
+Interact with this API in your browser using the APIs Explorer for the Indexing API.
+Installing the google-api-client gem
+If you haven't installed the Google API Client Library for Ruby before, open a terminal and install using RubyGems:
+$ gem install google-api-client
+If you already have the gem installed and would simply like to update to the latest version:
+$ gem update -y google-api-client
+Depending on your system, you may need to prepend these commands with sudo.
+Getting started with the Google API Client Library for Ruby
+Be sure to check our extensive Getting started guide for a quick overview of how to make your first request.
+Other ways to access the Indexing API
+The table below lists some other convenient ways to access the Indexing API.
+Access method
+Description
+APIs Explorer
+An interactive tool that lets you easily try out Google APIs right from your browser.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-03.

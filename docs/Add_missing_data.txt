@@ -1,0 +1,19 @@
+Add missing dataIf your example content is missing data, such as the year for an event, you can specify a value. Structured Data Markup Helper will add HTML markup for the value.
+You can add missing data at any time, and you can change or delete it if needed.
+Add, change, or delete missing data:
+To view the Tag Data page:
+While creating an example: The Tag Data page shows when you click Start Tagging on Markup Helper's first page.
+After creating an example:
+In your browser, enter the URL for the example markup that Markup Helper created. (Markup Helper does not maintain the list of example pages you specifically created, so you'll need to bookmark the example page before you leave.)
+Click Back to tagging
+Click Add missing tags, which is at the bottom of the My Data Items column.
+Do any of the following:
+Add a value by selecting a tag from the Select a tag list. Then type the value in the text box. For example, select Category and type Irish Traditional Music.
+Delete existing data by clicking the X in a text box.
+Edit existing data by changing the value in the text box.
+Click Save.
+Markup Helper displays the specified value under My Data Items.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Structured Data Markup HelperStructured Data Markup HelperTagging datesAdd missing dataRemove tagsTag an email templateManually add markup for a propertyReview and download the markup example
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

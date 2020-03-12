@@ -1,0 +1,2 @@
+Block access to your contentLearn how to block Google and other search engines from retrieving web pages on your site.
+Control what you share with GoogleBlock search indexing with 'noindex'About robots.txtOpt out of display on Google Local and other Google propertiesPrevent images on your page from appearing in search results

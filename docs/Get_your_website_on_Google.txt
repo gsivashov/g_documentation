@@ -1,0 +1,34 @@
+Get your website on GoogleInclusion in Google's search results is free and easy; you don't even need to submit your site to Google. Google is a fully automated search engine that uses software known as "web crawlers" that explore the web on a regular basis to find sites to add to our index. In fact, the vast majority of sites listed in our results aren't manually submitted for inclusion, but found and added automatically when our bots crawl the web.
+Is my site on Google?
+To determine whether your site is currently included in Google's index, do a site: search for your site's URL. For example, a search for "site:wikipedia.org" returns these results.
+My site isn't on Google!
+Although Google crawls billions of pages, it's inevitable that some sites will be missed. When our spiders miss a site, it's frequently for one of the following reasons:
+The site isn't well connected from other sites on the web.
+You've just launched a new site and Google hasn't had time to crawl it yet.
+The design of the site makes it difficult for Google to crawl its content effectively.
+Google received an error when trying to crawl your site.
+How do I get my site or mobile app on Google?
+We offer guidelines for building a crawler-friendly website. While there's no guarantee that our site crawler will find a particular site, following these guidelines should make your site appear in our search results.
+Google Search Console provides tools to help you submit your content to Google and monitor how you're doing in Google Search. If you want, Search Console can even send you alerts on critical issues that Google encounters with your site or mobile app.
+SIGN UP FOR SEARCH CONSOLE
+If you want to add business information, map information, or other specialized information to Google, see Get your content on Google.
+Basic checklist for appearing in Google Search results
+Download a printable version of this checklist here.
+Here are a few basic questions to ask yourself about your website when you get started. You can find additional getting started information on Google Webmasters and in the SEO Starter Guide.
+Is my website showing up on Google?
+Inclusion in Google Search results is free and easy; you usually don't even need to do anything except post it on the web. To see if your pages are already indexed, search for your site in Google Search with a query like this:
+site:example.com
+Substitute your own site for "example.com". If your site doesn't show up, you can verify ownership of your website in Google Search Console and then submit your pages to Google .
+Do I serve high-quality content to users?
+Your number one priority should be ensuring that your users have the best possible experience on your site. Think about what makes your site unique, valuable, or engaging.  Read the Google Webmaster Guidelines and make sure that you’re managing your website using Google-friendly practices.
+Is my local business showing up on Google?
+Google My Business is a free and easy-to-use tool that helps you manage how your business information appears across Google, including Search and Maps. Consider adding your business and its website to google.com/business
+Is my content fast and easy to access on all devices?
+Most searches are now done from mobile devices; make sure that your content is optimized to load quickly and display properly on all screen sizes. Test if your pages are mobile-friendly .
+Is my website secure?
+Modern users expect a secure online experience. Secure your website's connection with HTTPS.
+Do I need additional help?
+SEOs (search engine optimizers) are professionals who can help you improve your website and increase visibility on search engines. Learn more about why and how to hire an SEO.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

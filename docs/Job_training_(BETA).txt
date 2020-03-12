@@ -1,0 +1,1013 @@
+Home
+Products
+Search for Developers
+Reference
+Job training (BETA)
+Looking for other job-related features?
+Does your site provide job postings? Consider adding JobPosting structured data in addition to job training structured data.
+Does your site provide reviews about other employers? Add Employer Aggregate Rating structured data.
+Does your site provide salary estimates? Add Estimated salary structured data.
+For job seekers and prospective students looking to acquire marketable skills for their next
+role, it’s often difficult to find programs, compare cost, and know which jobs are in demand. The
+job training experience on Google Search helps people discover a new career path and acquire skills for
+their next job. Learn more about the job
+training experience on Google.
+You can integrate with the job training experience by adding structured data to your program
+web pages. Structured data helps Google better understand the content of your page, and
+therefore enables Google to better surface job training programs to users. If you're getting
+started with structured data, read our guide to
+Understand how structured data works.
+Note: The actual appearance in search results might be different.
+Feature availability
+To ensure a good user experience, we're slowly rolling out coverage throughout the US. We are
+currently developing this feature and you may see changes in requirements or guidelines. You
+may not see results in Google Search right away. To ensure robust coverage and better serve our
+users, this feature is currently limited to
+job training providers in the
+US.
+Examples
+Educational Organization
+Here's an example of an educational organization that provides job training.
+<html>
+<head>
+<title>ACME Community College</title>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "EducationalOrganization",
+"name": "ACME Community College",
+"leiCode": "ABCDEFG123",
+"taxID": "123-34-5678",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "123 Main Street",
+"addressLocality": "Boston",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "02134"
+},
+"contactPoint": {
+"@type": "ContactPoint",
+"contactType": "Admissions",
+"telephone": "+15551234567"
+},
+"subOrganization": {
+"@type": "EducationalOrganization",
+"name": "ACME Community College - Berkshires Campus",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "123 Elm Street",
+"addressLocality": "Amherst",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "01002"
+}
+},
+"hasCredential": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "Accreditation",
+"recognizedBy": {
+"@type": "Organization",
+"name": "Southern Association of Colleges and Schools Commission on Colleges"
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Program with multiple classes and no wages
+Here's an example of a program that has multiple classes and doesn't provide any wages for attending the program.
+<html>
+<head>
+<title>Associate degree in Computer Science</title>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "EducationalOccupationalProgram",
+"name": "Associate degree in Computer Science from ACME College",
+"description": "a piece of text about what it might mean to take this program",
+"url": "http://www.acme.edu/CS",
+"identifier": [{
+"@type": "PropertyValue",
+"propertyID": "CIP2010",
+"value": "12.3456"
+}, {
+"@type": "PropertyValue",
+"propertyID": "ProgramID",
+"value": "CS-101"
+}],
+"provider": {
+"@type": "EducationalOrganization",
+"name": "ACME Community College",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "123 Main Street",
+"addressLocality": "Boston",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "02134"
+},
+"contactPoint": {
+"@type": "ContactPoint",
+"contactType": "Admissions",
+"telephone": "+1-555-123-4567"
+}
+},
+"timeToComplete": "P2Y",
+"occupationalCredentialAwarded": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "Associate Degree"
+},
+"programPrerequisites": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "HighSchool"
+},
+"applicationStartDate": "2019-05-14",
+"applicationDeadline": "2019-09-14",
+"startDate": "2019-10-01",
+"endDate": "2021-10-01",
+"dayOfWeek":
+[
+"Wednesday",
+"Thursday",
+"Friday"
+],
+"timeOfDay": "Morning",
+"numberOfCredits": "30",
+"typicalCreditsPerTerm": "12",
+"termDuration": "P4M",
+"termsPerYear": "2",
+"maximumEnrollment": "30",
+"educationalProgramMode": "in-person",
+"financialAidEligible": "Federal aid",
+"offers": [
+{
+"@type": "Offer",
+"category": "Tuition",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 16278,
+"priceCurrency": "USD"
+}
+}, {
+"@type": "Offer",
+"category": "Program Fees",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 200,
+"priceCurrency": "USD"
+}
+}
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Work-based program
+Here's an example of a program that provides job training and wages.
+<html>
+<head>
+<title>About the IBEW Apprenticeship</title>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "WorkBasedProgram",
+"name": "IBEW Apprenticeship",
+"description": "a piece of text about what it might mean to take this program",
+"url": "http://www.acme.edu/CS",
+"provider": {
+"@type": "EducationalOrganization",
+"name": "International Brotherhood of Electrical Workers",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "123 Main Street",
+"addressLocality": "Boston",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "02134"
+},
+"contactPoint": {
+"@type": "ContactPoint",
+"contactType": "Admissions",
+"telephone": "+1-555-123-4567"
+}
+},
+"timeToComplete": "P2Y",
+"occupationalCredentialAwarded": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "Welding Licence"
+},
+"programPrerequisites": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "HighSchool"
+},
+"applicationStartDate": "2019-05-14",
+"applicationDeadline": "2019-09-14",
+"startDate": "2019-10-01",
+"endDate": "2021-10-01",
+"maximumEnrollment": "30",
+"offers": [
+{
+"@type": "Offer",
+"category": "Tuition",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 16278,
+"priceCurrency": "USD"
+}
+}, {
+"@type": "Offer",
+"category": "Program Fees",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 200,
+"priceCurrency": "USD"
+}
+}
+],
+"trainingSalary" : {
+"@type": "MonetaryAmountDistribution",
+"currency": "USD",
+"duration": "P1H",
+"median": 16.00
+},
+"salaryUponCompletion": {
+"@type": "MonetaryAmountDistribution",
+"currency": "USD",
+"duration": "P1H",
+"median": 20.00
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Guidelines
+You must follow these guidelines to be eligible to appear in the job training experience on Google.
+Warning: If Google detects that some of the markup on your pages
+may be using techniques that are outside our structured data guidelines, your site may receive
+a manual action.
+Program eligibility guidelines
+Enriched Search quality guidelines
+Webmaster guidelines
+General structured data guidelines
+Program eligibility
+To be eligible for the program, you must meet the following criteria:
+Your web page includes all required structured data properties.
+Eligible programs must lead to occupations that require less than a bachelor's degree.
+This includes certificate programs, associate degrees, and other programs that require
+full-time enrollment of up to around two years, where students pay to attend. For example,
+community college programs, private college programs, employer-run education, NGO-led
+education, and occupation-specific education.
+For programs that pay a wage, there is no limit
+to the length of the program. For example, employer-run apprenticeships, on-the-job trainings,
+and union and NGO apprenticeships.
+The program must match occupations that are in-demand in your area.
+The program accepts applicants with no degree beyond a high school diploma.
+The completion of the program prepares students for an occupation. Preparatory courses
+aren't accepted.
+The program must have a local presence. Online-only programs are not accepted.
+Programs that require students to pay to attend are eligible, as long as the programs are intended to be
+around two years or less for full-time enrolled students.
+Programs that train for a job but don’t have credits or don’t lead to a degree are
+allowed.
+For the small subset of occupations that have programmatic accreditation according to the US DoE, programs must have
+programmatic accreditation (for example, physical therapy assistant).
+Even though the feature is focused on a subset of positions, you can implement markup on all of
+your programs should this feature or other features use this information in the future.
+Structured data type definitions
+This section describes the structured data types related to the job training experience on Google.
+Programs must add one of the following types based on the type of program:
+Does the program cost money or is it free to attend? Add the EducationalOccupationalProgram properties.
+Does the program provide a wage while the sudent attends the program? Add WorkBasedProgram properties.
+Work-based programs can also use Job Posting
+structured data in addition to or in place of
+Work-based structured data.
+If your institution has an accreditation from a certification board, use the
+EducationalOrganization
+properties. You can add EducationalOrganization to a top-level page on your site,
+or as a provider field for a specific
+program.
+You must include the required properties for your content to be eligible for display in enhanced Search results.
+You can also include the recommended properties to add more information about your content,
+which could provide a better user experience.
+EducationalOccupationalProgram
+The full definition of EducationalOccupationalProgram is available at
+schema.org/EducationalOccupationalProgram.
+The following properties are required for programs with a cost or are free. If the program is
+work-based, add the WorkBasedProgram properties instead.
+Required properties
+applicationDeadline
+DateTime
+The date at which the program will stop accepting applications in
+ISO-8601 format.
+If the program is offered more than once per calendar year, specify the deadline for each
+date that term applications end. If applications are rolling,
+specify the latest possible date.
+Starting Jan 2020, we changed our documentation to require
+applicationDeadline instead of offers.availabilityEnds.
+While we continue to support offers.availabilityEnds, we require
+applicationDeadline moving forward.
+"applicationDeadline": "2020-04-01T19:30"
+identifier
+PropertyValue
+A property value containing two entries:
+CIP2010
+The 6 digit CIP code, as published in the 2010 specification from the US Department of Education.
+ProgramID
+The program identifier, as used by the institution (if applicable).
+For example:
+"identifier": [
+{
+"@type": "PropertyValue",
+"propertyID": "CIP2010",
+"value": "12.3456"
+},
+{
+"@type": "PropertyValue",
+"propertyID": "ProgramID",
+"value": "CS-101"
+}
+]
+name
+Text
+The name of the program.
+offers
+Offer
+The estimated cost for the program, if applicable. The estimated cost can be the total
+cost of the program or broken down by tuition, fees, and other costs. The cost must be the
+cost for in-state residents without aid.
+Additional guidelines:
+offers.priceSpecification.price must be a number (no other text is accepted).
+Only include fees that are related to the program. For example: scrubs, estimated cost
+of required textbooks, shopping cart fees.
+Don't include fees that aren't required to complete the program. For example,
+post-graduation tests, pre-admission tests, room and board, health care, child care.
+Example of total cost
+If you know the total cost, provide one Offer with that total cost program,
+including tuition, fees, books, materials, and supplies of any educational component.
+For example:
+{
+"@type": "Offer",
+"category": "Total Cost",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 16200,
+"priceCurrency": "USD"
+}
+Example of a cost breakdown
+If you know tuition and fees separately, you can submit them to us separately, and we
+will add them together for a total cost. For example:
+[
+{
+"@type": "Offer",
+"category": "Tuition",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 16000,
+"priceCurrency": "USD"
+},{
+"@type": "Offer",
+"category": "Program Fees",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 200,
+"priceCurrency": "USD"
+}
+]
+Example of a tuition calculation breakdown
+If you need to calculate tuition based on per credit cost and number of credits, with
+fees separately, you can submit them to us separately, and we will add them together for
+a total cost. For example, $400/credit X 40 credits = $16000 cost, plus $200 in fees for
+a total cost of $16,200:
+[
+{
+"@type": "Offer",
+"category": "CostPerCredit",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 400,
+"priceCurrency": "USD"
+}, {
+"@type": "Offer",
+"category": "Program Fees",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 200,
+"priceCurrency": "USD"
+}
+]
+provider
+EducationalOrganization or subtypes of EducationalOrganization
+The educational organization providing the program.
+provider.address
+PostalAddress
+The physical address where students go to take the program. If there are multiple
+locations for this program, list each address as shown in the following example for each
+individual location.
+Show example
+"provider": {
+"@type": "EducationalOrganization",
+"name": "ACME Community College",
+"address": [{
+"@type": "PostalAddress",
+"name": "Main Campus",
+"streetAddress": "123 Main Street",
+"addressLocality": "Boston",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "02134"
+}, {
+"@type": "PostalAddress",
+"name": "Somerville Campus",
+"streetAddress": "456 Powderhouse Street",
+"addressLocality": "Somerville",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "02143"
+}],
+}
+provider.contactPoint
+ContactPoint
+The phone number that a prospective enrollee can call for more information. Set
+contactType to Admissions.
+"provider": {
+"@type": "EducationalOrganization",
+"contactPoint": {
+"@type": "ContactPoint",
+"contactType": "Admissions",
+"telephone": "+15551234567"
+}
+}
+timeToComplete
+Text
+The time it takes for a full-time student to complete the program in weeks, months, or
+years, expressed in ISO-8601 format.
+Express as a typical time for a full-time student to complete. For example:
+2 year program
+P2Y
+2 month program
+P2M
+If you don’t know the duration, we recommend you use the number of credits multiplied by
+the expected full-time student workload. For example: 48 units divided by 12 units
+expected per semester for a full-time student x 4 months per semester = 16 months, or
+less than 1.5 years.
+url
+Text
+The URL to the detailed web page that explains the program.
+Recommended properties
+applicationStartDate
+DateTime
+The date when the program begins collecting applications in
+ISO-8601 format.
+If applications are rolling, specify the property for
+each date that applications for a term begin. If applications are accepted multiple
+times in a year, specify the earliest possible date.
+Starting Jan 2020, we changed our documentation to recommend
+applicationStartDate instead of offers.availabilityStarts.
+While we continue to support offers.availabilityStarts, we recommend
+applicationStartDate moving forward.
+"applicationStartDate": "2020-04-01T19:30"
+dayOfWeek
+Text
+The day of the week when the program is offered.
+Use one of the following values:
+Sat
+Sun
+Mon
+Tues
+Wed
+Thurs
+Fri
+You can include multiple days for the same program.
+Show example
+"dayOfWeek": ["Sat",
+"Sun"]
+endDate
+DateTime
+The date when the term officially ends, where students are no longer required to show
+up for classes or exams in ISO-8601 format.
+If there are multiple end dates, specify the property for each date that the program could end.
+"endDate": "2020-04-01T19:30"
+educationalProgramMode
+Text
+The format in which course content is conveyed, and whether the student can be
+in person or remote. You can specify if the programs is offered in-person, online,
+or hybrid. Don't use online for a program that requires some attendance; only programs
+that are 100% online are considered online courses.
+financialAidEligible
+Text
+The different types of aid the program is eligible for. For example, federal aid,
+specific state workforce grands (for example, Indiana Next Level Jobs).
+Show example
+"financialAidEligible": "Federal Aid",
+"financialAidEligible": "Indiana Next Level Jobs"
+hasCredential
+EducationalOccupationalCredential
+The programmatic accreditation for the program. Only programs that have a
+program-specific
+accreditation from the US Department of Education show this field.
+Show example
+"hasCredential": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "Accreditation",
+"recognizedBy": {
+"@type": "Organization",
+"name": "American Physical Therapy Association, CAPTE"
+}
+}
+maximumEnrollment
+Number
+The maximum capacity of students that can be enrolled in the program per time it is
+offered.
+Starting Jan 2020, we changed our documentation to recommend
+maximumEnrollment instead of offers.inventoryLevel. While we
+continue to support offers.inventoryLevel, we recommend
+maximumEnrollment moving forward.
+"maximumEnrollment": "50"
+numberOfCredits
+Number
+The number of credits required to complete this course.
+"numberOfCredits": "30"
+occupationalCredentialAwarded
+EducationalOccupationalCredential
+The credential provided upon completion of the program. For example: Associate’s
+Degree, Certificate.
+Show example
+"occupationalCredentialAwarded": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "Associate Degree"
+}
+offers.category
+Text
+The category of the costs that are related to the program.
+If the tuition is different for in-state and out-of-state students, you can use
+additional category fields to specify that. You can add similar categories for
+"In-district", "Out-of-district" and so on. Here are some example values for
+offers.category:
+Total Cost
+Tuition
+In-state
+Out-of-state
+CostPerCredit
+CostPerTerm
+Program Fees
+Books and Supplies Fees
+Uniform Fees
+Activities Fees
+Technology Fees
+Other Fees
+Example of a tuition which is different for In-state/Out-of-state students
+[
+{
+"@type": "Offer",
+"category": "CostPerCredit",
+"category": "In-state",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 400,
+"priceCurrency": "USD"
+}, {
+"@type": "Offer",
+"category": "FeesPerTerm",
+"category": "In-state",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 200,
+"priceCurrency": "USD"
+}, {
+"@type": "Offer",
+"category": "CostPerCredit",
+"category": "Out-of-state",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 800,
+"priceCurrency": "USD"
+}, {
+"@type": "Offer",
+"category": "FeesPerTerm",
+"category": "Out-of-state",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 500,
+"priceCurrency": "USD"
+}]
+Example of additional costs associated with the course
+[
+{
+"@type": "Offer",
+"category": "Technology Fees",
+"category": "CostPerUnit",
+"category": "In-state",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 400,
+"priceCurrency": "USD"
+}, {
+"@type": "Offer",
+"category": "Uniform Fees",
+"category": "CostPerTerm",
+"category": "In-state",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 200,
+"priceCurrency": "USD"
+}
+]
+programPrerequisites
+EducationalOccupationalCredential
+The prerequisites for attending the program.
+If you require a high school diploma, set credentialCategory to HighSchool.
+Show example
+"programPrerequisites": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "HighSchool"
+}
+startDate
+DateTime
+The start date of the program, formatted in ISO-8601 format.
+If the program is offered more than once per calendar year, specify the property multiple times.
+"startDate": "2020-04-01T19:30"
+termDuration
+Text
+The time it takes to complete a term, expressed in
+ISO-8601 format.
+For example, a quarter could be 3 months (P3M), a semester could be 4 months (P4M).
+"termDuration": "P4M"
+termsPerYear
+Number
+The number of times that terms of study are offered per year. Semesters and quarters
+are common units for term. For example, if the student can only take two semesters for
+the program in one year, then termsPerYear must be 2.
+"termsPerYear": "2"
+timeOfDay
+Text
+The time of day when the program runs.
+"timeOfDay": "Afternoon",
+"timeOfDay": "Morning",
+"timeOfDay": "3pm"
+typicalCreditsPerTerm
+Number
+The number of credits a full-time student is expected to take. For example, if student
+is expected to take 12 credits per semester typicalCreditsPerTerm must be 12.
+"typicalCreditsPerTerm": "12"
+WorkBasedProgram
+The full definition of WorkBasedProgram is available at
+schema.org/WorkBasedProgram.
+The following properties are required for work-based programs. If the program is available at a
+cost, add the EducationalOccupationalProgram properties instead.
+Required properties
+description
+Text
+The description of the program.
+name
+Text
+The name of the program.
+provider
+EducationalOrganization
+The educational organization providing the program.
+provider.address
+PostalAddress
+The physical address where students go to take the program. If there are multiple
+locations for this program, repeat the address as shown in the example for each
+individual location.
+Show example
+"provider": {
+"@type": "EducationalOrganization",
+"name": "ACME Community College",
+"address": [{
+"@type": "PostalAddress",
+"name": "Main Campus",
+"streetAddress": "123 Main Street",
+"addressLocality": "Boston",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "02134"
+},
+{
+"@type": "PostalAddress",
+"name": "Somerville Campus",
+"streetAddress": "456 Powderhouse Street",
+"addressLocality": "Somerville",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "02143"
+}
+]
+}
+url
+Text
+The URL to the detailed web page that explains the program.
+Recommended properties
+applicationDeadline
+DateTime
+The date at which the program will stop accepting applications. If the program is
+offered more than once per calendar year, specify the application deadline for each term
+. If applications are rolling, specify the latest possible date.
+Starting Jan 2020, we changed our documentation to recommend
+applicationDeadline instead of offers.availabilityEnds.
+While we continue to support offers.availabilityEnds, we recommend
+applicationDeadline moving forward.
+"applicationDeadline": "2020-04-01T19:30"
+applicationStartDate
+DateTime
+The date when the program begins collecting applications in
+ISO-8601 format.
+If applications are rolling, specify the property for
+each date that applications for a term begin. If applications are accepted multiple
+times in a year, specify the earliest possible date.
+Starting Jan 2020, we changed our documentation to recommend
+applicationStartDate instead of offers.availabilityStarts.
+While we continue to support offers.availabilityStarts, we recommend
+applicationStartDate moving forward.
+"applicationStartDate": "2020-04-01T19:30"
+endDate
+DateTime
+The date when the term officially ends, where students are no longer required to show
+up for classes or exams in ISO-8601 format.
+If there are multiple end dates, specify the property for each date that the program could end.
+"endDate": "2020-04-01T19:30"
+maximumEnrollment
+Number
+The maximum capacity of students that can be enrolled in the program per time it is
+offered.
+Starting Jan 2020, we changed our documentation to recommend
+maximumEnrollment instead of offers.inventoryLevel. While we
+continue to support offers.inventoryLevel, we recommend
+maximumEnrollment moving forward.
+"maximumEnrollment": "50"
+occupationalCredentialAwarded
+EducationalOccupationalCredential
+The credential provided upon completion of the program. For example: Associate’s
+Degree, Certificate.
+offers
+Offer
+The estimated cost for the program, if applicable. The estimated cost can be the total
+cost of the program or broken down by tuition, fees, and other costs. The cost must be the
+cost for in-state residents without aid.
+Additional guidelines:
+Offer.price_specification.price must be a number (no other text is accepted).
+Only include fees that are related to the program. For example: scrubs, estimated cost
+of required textbooks, shopping cart fees.
+Don't include fees that aren't required to complete the program. For example,
+post-graduation tests, pre-admission tests, room and board, health care, child care.
+Example of total cost
+If you know the total cost, provide one Offer with that total cost program,
+including tuition, fees, books, materials, and supplies of any educational component.
+For example:
+{
+"@type": "Offer",
+"category": "Total Cost",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 16200,
+"priceCurrency": "USD"
+}
+Example of a cost breakdown
+If you know tuition and fees separately, you can submit them to us separately, and we
+will add them together for a total cost. For example:
+[
+{
+"@type": "Offer",
+"category": "Tuition",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 16000,
+"priceCurrency": "USD"
+},{
+"@type": "Offer",
+"category": "Program Fees",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 200,
+"priceCurrency": "USD"
+}
+]
+Example of a tuition calculation breakdown
+If you need to calculate tuition based on per credit cost and number of credits, with
+fees separately, you can submit them to us separately, and we will add them together for
+a total cost. For example, $400/credit X 40 credits = $16000 cost, plus $200 in fees for
+a total cost of $16,200:
+[
+{
+"@type": "Offer",
+"category": "CostPerCredit",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 400,
+"priceCurrency": "USD"
+}, {
+"@type": "Offer",
+"category": "Program Fees",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 200,
+"priceCurrency": "USD"
+}
+]
+offers.category
+Text
+The category of the costs that are related to the program.
+If the tuition is different for in-state and out-of-state students, you can use
+additional category fields to specify that. You can add similar categories for
+"In-district", "Out-of-district" and so on. Here are some example values for
+offers.category:
+Total Cost
+Tuition
+In-state
+Out-of-state
+CostPerCredit
+CostPerTerm
+Program Fees
+Books and Supplies Fees
+Uniform Fees
+Activities Fees
+Technology Fees
+Other Fees
+Example of a tuition which is different for In-state/Out-of-state students
+[
+{
+"@type": "Offer",
+"category": "CostPerCredit",
+"category": "In-state",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 400,
+"priceCurrency": "USD"
+}, {
+"@type": "Offer",
+"category": "FeesPerTerm",
+"category": "In-state",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 200,
+"priceCurrency": "USD"
+}, {
+"@type": "Offer",
+"category": "CostPerCredit",
+"category": "Out-of-state",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 800,
+"priceCurrency": "USD"
+}, {
+"@type": "Offer",
+"category": "FeesPerTerm",
+"category": "Out-of-state",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 500,
+"priceCurrency": "USD"
+}]
+Example of additional costs associated with the course
+[
+{
+"@type": "Offer",
+"category": "Technology Fees",
+"category": "CostPerUnit",
+"category": "In-state",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 400,
+"priceCurrency": "USD"
+}, {
+"@type": "Offer",
+"category": "Uniform Fees",
+"category": "CostPerTerm",
+"category": "In-state",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 200,
+"priceCurrency": "USD"
+}
+]
+occupationalCategory
+Text
+The BLS soc-6 code as published in the
+2010 SOC guide.
+programPrerequisites
+EducationalOccupationalCredential
+The prerequisites for attending the program.
+If you require a high school diploma, set credentialCategory to HighSchool.
+Show example
+"programPrerequisites": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "HighSchool"
+}
+salaryUponCompletion
+MonetaryAmountDistribution
+The actual or estimated hourly wage the trainee will earn upon successful completion
+of the training. Specify the duration as P1H.
+"salaryUponCompletion": {
+"@type": "MonetaryAmountDistribution",
+"currency": "USD",
+"duration": "P1H",
+"median": "20.00"
+}
+startDate
+DateTime
+The start date of the program, formatted in ISO-8601 format.
+If the program is offered more than once per calendar year, specify the property multiple times.
+"startDate": "2020-04-01T19:30"
+timeToComplete
+Text
+The time it takes for a full-time student to complete the program in weeks, months, or
+years, expressed in ISO-8601 format.
+Express as a typical time for a full-time student to complete. For example:
+2 year program
+P2Y
+2 month program
+P2M
+2 month, 2 year
+"P26M" "P2Y2M"
+If you don’t know the duration, we recommend you use the number of credits multiplied by
+the expected full-time student workload. For example: 48 units divided by 12 units
+expected per semester for a full-time student x 4 months per semester = 16 months, or
+less than 1.5 years.
+trainingSalary
+MonetaryAmountDistribution
+The hourly wage the trainee will earn on the first day of the program. Specify the duration as
+P1H.
+"trainingSalary": {
+"@type": "MonetaryAmountDistribution",
+"currency": "USD",
+"duration": "P1H",
+"median": "16.00"
+}
+EducationalOrganization
+The full definition of EducationalOrganization is available at
+schema.org/EducationalOrganization.
+If your institution has an accreditation from a certification board, use
+EducationalOrganization. You can add EducationalOrganization to a
+top-level page on your site, or as a provider field for a specific
+program.
+Required properties
+address
+PostalAddress
+The address of the main campus. Include as many address properties as possible. The more
+properties you provide, the higher quality the program is to our users. For example:
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "123 Elm Street",
+"addressLocality": "Amherst",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "01002"
+}
+contactPoint
+ContactPoint
+The main admissions telephone number that a prospective student can contact. Set
+contactType to Admissions.
+"contactPoint": {
+"@type": "ContactPoint",
+"contactType": "Admissions",
+"telephone": "+15551234567"
+}
+name
+Text
+The name of the organization.
+Recommended properties
+Identification
+AdministrativeArea
+Identification for the organization by using one or any combination of the following properties:
+leiCode
+Text
+The Legal Entity Identifier of the organization.
+taxID
+Text
+The US tax Identification number of the organization.
+hasCredential
+EducationalOccupationalCredential
+The national or regional accreditation granted to the institution, based on US Department of Education accrediting bodies.
+"hasCredential": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "Accreditation",
+"recognizedBy": {
+"@type": "Organization",
+"name": "Accrediting Commission of Career Schools and Colleges"
+}
+}
+subOrganization
+EducationalOrganization
+Any secondary campuses included within the organization.
+This is in the event that there are multiple campuses.
+Show example
+"subOrganization": {
+"@type": "EducationalOrganization",
+"name": "ACME Community College - Berkshires Campus",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "123 Elm Street",
+"addressLocality": "Amherst",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "01002"
+}
+}
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

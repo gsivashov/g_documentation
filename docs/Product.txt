@@ -1,0 +1,798 @@
+Home
+Products
+Search for Developers
+Reference
+Product
+Add markup to your product pages so Google can provide detailed product information in
+rich Search results — including Google Images. Users can see price, availability, and
+review ratings right on Search results.
+Using markup to enable rich product results lets you attract potential buyers while
+they are searching for items to buy on Google or images that include products you sell. Maintain the accuracy and freshness of your
+product information, so your customers find the relevant, current items they're looking for.
+This page explains how to mark up your product information so that Google can display rich
+results. There are two types of pages where you would typically use this markup:
+Product page that describes a single product
+Shopping aggregator page that lists a single product, along with information about
+different sellers offering that product
+Product markup enables a badge on the
+image in mobile image search results, which can encourage more users to click your content.
+Try it out
+Single product page
+Here's an example of a single product page that you can copy and paste to your own HTML
+page.
+JSON-LD
+<html>
+<head>
+<title>Executive Anvil</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "Product",
+"name": "Executive Anvil",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"description": "Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height.",
+"sku": "0446310786",
+"mpn": "925872",
+"brand": {
+"@type": "Brand",
+"name": "ACME"
+},
+"review": {
+"@type": "Review",
+"reviewRating": {
+"@type": "Rating",
+"ratingValue": "4",
+"bestRating": "5"
+},
+"author": {
+"@type": "Person",
+"name": "Fred Benson"
+}
+},
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.4",
+"reviewCount": "89"
+},
+"offers": {
+"@type": "Offer",
+"url": "https://example.com/anvil",
+"priceCurrency": "USD",
+"price": "119.99",
+"priceValidUntil": "2020-11-20",
+"itemCondition": "https://schema.org/UsedCondition",
+"availability": "https://schema.org/InStock",
+"seller": {
+"@type": "Organization",
+"name": "Executive Objects"
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head>
+<title>Executive Anvil</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "Product",
+"name": "Executive Anvil",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"description": "Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height.",
+"sku": "0446310786",
+"mpn": "925872",
+"brand": {
+"@type": "Brand",
+"name": "ACME"
+},
+"review": {
+"@type": "Review",
+"reviewRating": {
+"@type": "Rating",
+"ratingValue": "4",
+"bestRating": "5"
+},
+"author": {
+"@type": "Person",
+"name": "Fred Benson"
+}
+},
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.4",
+"reviewCount": "89"
+},
+"offers": {
+"@type": "Offer",
+"url": "https://example.com/anvil",
+"priceCurrency": "USD",
+"price": "119.99",
+"priceValidUntil": "2020-11-20",
+"itemCondition": "https://schema.org/UsedCondition",
+"availability": "https://schema.org/InStock",
+"seller": {
+"@type": "Organization",
+"name": "Executive Objects"
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+RDFa
+<html>
+<head>
+<title>Executive Anvil</title>
+</head>
+<body>
+<div typeof="schema:Product">
+<div rel="schema:review">
+<div typeof="schema:Review">
+<div rel="schema:reviewRating">
+<div typeof="schema:Rating">
+<div property="schema:ratingValue" content="4"></div>
+<div property="schema:bestRating" content="5"></div>
+</div>
+</div>
+<div rel="schema:author">
+<div typeof="schema:Person">
+<div property="schema:name" content="Fred Benson"></div>
+</div>
+</div>
+</div>
+</div>
+<div rel="schema:image" resource="https://example.com/photos/4x3/photo.jpg"></div>
+<div property="schema:mpn" content="925872"></div>
+<div property="schema:name" content="Executive Anvil"></div>
+<div property="schema:description" content="Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height."></div>
+<div rel="schema:image" resource="https://example.com/photos/1x1/photo.jpg"></div>
+<div rel="schema:brand">
+<div typeof="schema:Brand">
+<div property="schema:name" content="ACME"></div>
+</div>
+</div>
+<div rel="schema:aggregateRating">
+<div typeof="schema:AggregateRating">
+<div property="schema:reviewCount" content="89"></div>
+<div property="schema:ratingValue" content="4.4"></div>
+</div>
+</div>
+<div rel="schema:offers">
+<div typeof="schema:Offer">
+<div property="schema:price" content="119.99"></div>
+<div property="schema:availability" content="https://schema.org/InStock"></div>
+<div rel="schema:seller">
+<div typeof="schema:Organization">
+<div property="schema:name" content="Executive Objects"></div>
+</div>
+</div>
+<div property="schema:priceCurrency" content="USD"></div>
+<div property="schema:priceValidUntil" datatype="xsd:date" content="2020-11-20"></div>
+<div rel="schema:url" resource="https://example.com/anvil"></div>
+<div property="schema:itemCondition" content="https://schema.org/UsedCondition"></div>
+</div>
+</div>
+<div rel="schema:image" resource="https://example.com/photos/16x9/photo.jpg"></div>
+<div property="schema:sku" content="0446310786"></div>
+</div>
+</body>
+</html>
+<html>
+<head>
+<title>Executive Anvil</title>
+</head>
+<body>
+<div typeof="schema:Product">
+<div rel="schema:review">
+<div typeof="schema:Review">
+<div rel="schema:reviewRating">
+<div typeof="schema:Rating">
+<div property="schema:ratingValue" content="4"></div>
+<div property="schema:bestRating" content="5"></div>
+</div>
+</div>
+<div rel="schema:author">
+<div typeof="schema:Person">
+<div property="schema:name" content="Fred Benson"></div>
+</div>
+</div>
+</div>
+</div>
+<div rel="schema:image" resource="https://example.com/photos/4x3/photo.jpg"></div>
+<div property="schema:mpn" content="925872"></div>
+<div property="schema:name" content="Executive Anvil"></div>
+<div property="schema:description" content="Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height."></div>
+<div rel="schema:image" resource="https://example.com/photos/1x1/photo.jpg"></div>
+<div rel="schema:brand">
+<div typeof="schema:Brand">
+<div property="schema:name" content="ACME"></div>
+</div>
+</div>
+<div rel="schema:aggregateRating">
+<div typeof="schema:AggregateRating">
+<div property="schema:reviewCount" content="89"></div>
+<div property="schema:ratingValue" content="4.4"></div>
+</div>
+</div>
+<div rel="schema:offers">
+<div typeof="schema:Offer">
+<div property="schema:price" content="119.99"></div>
+<div property="schema:availability" content="https://schema.org/InStock"></div>
+<div rel="schema:seller">
+<div typeof="schema:Organization">
+<div property="schema:name" content="Executive Objects"></div>
+</div>
+</div>
+<div property="schema:priceCurrency" content="USD"></div>
+<div property="schema:priceValidUntil" datatype="xsd:date" content="2020-11-20"></div>
+<div rel="schema:url" resource="https://example.com/anvil"></div>
+<div property="schema:itemCondition" content="https://schema.org/UsedCondition"></div>
+</div>
+</div>
+<div rel="schema:image" resource="https://example.com/photos/16x9/photo.jpg"></div>
+<div property="schema:sku" content="0446310786"></div>
+</div>
+</body>
+</html>
+Microdata
+<html>
+<head>
+<title>Executive Anvil</title>
+</head>
+<body>
+<div>
+<div itemtype="http://schema.org/Product" itemscope>
+<meta itemprop="mpn" content="925872" />
+<meta itemprop="name" content="Executive Anvil" />
+<link itemprop="image" href="https://example.com/photos/16x9/photo.jpg" />
+<link itemprop="image" href="https://example.com/photos/4x3/photo.jpg" />
+<link itemprop="image" href="https://example.com/photos/1x1/photo.jpg" />
+<meta itemprop="description" content="Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height." />
+<div itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
+<link itemprop="url" href="https://example.com/anvil" />
+<meta itemprop="availability" content="https://schema.org/InStock" />
+<meta itemprop="priceCurrency" content="USD" />
+<meta itemprop="itemCondition" content="https://schema.org/UsedCondition" />
+<meta itemprop="price" content="119.99" />
+<meta itemprop="priceValidUntil" content="2020-11-20" />
+<div itemprop="seller" itemtype="http://schema.org/Organization" itemscope>
+<meta itemprop="name" content="Executive Objects" />
+</div>
+</div>
+<div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+<meta itemprop="reviewCount" content="89" />
+<meta itemprop="ratingValue" content="4.4" />
+</div>
+<div itemprop="review" itemtype="http://schema.org/Review" itemscope>
+<div itemprop="author" itemtype="http://schema.org/Person" itemscope>
+<meta itemprop="name" content="Fred Benson" />
+</div>
+<div itemprop="reviewRating" itemtype="http://schema.org/Rating" itemscope>
+<meta itemprop="ratingValue" content="4" />
+<meta itemprop="bestRating" content="5" />
+</div>
+</div>
+<meta itemprop="sku" content="0446310786" />
+<div itemprop="brand" itemtype="http://schema.org/Brand" itemscope>
+<meta itemprop="name" content="ACME" />
+</div>
+</div>
+</div>
+</body>
+</html>
+<html>
+<head>
+<title>Executive Anvil</title>
+</head>
+<body>
+<div>
+<div itemtype="http://schema.org/Product" itemscope>
+<meta itemprop="mpn" content="925872" />
+<meta itemprop="name" content="Executive Anvil" />
+<link itemprop="image" href="https://example.com/photos/16x9/photo.jpg" />
+<link itemprop="image" href="https://example.com/photos/4x3/photo.jpg" />
+<link itemprop="image" href="https://example.com/photos/1x1/photo.jpg" />
+<meta itemprop="description" content="Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height." />
+<div itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
+<link itemprop="url" href="https://example.com/anvil" />
+<meta itemprop="availability" content="https://schema.org/InStock" />
+<meta itemprop="priceCurrency" content="USD" />
+<meta itemprop="itemCondition" content="https://schema.org/UsedCondition" />
+<meta itemprop="price" content="119.99" />
+<meta itemprop="priceValidUntil" content="2020-11-20" />
+<div itemprop="seller" itemtype="http://schema.org/Organization" itemscope>
+<meta itemprop="name" content="Executive Objects" />
+</div>
+</div>
+<div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+<meta itemprop="reviewCount" content="89" />
+<meta itemprop="ratingValue" content="4.4" />
+</div>
+<div itemprop="review" itemtype="http://schema.org/Review" itemscope>
+<div itemprop="author" itemtype="http://schema.org/Person" itemscope>
+<meta itemprop="name" content="Fred Benson" />
+</div>
+<div itemprop="reviewRating" itemtype="http://schema.org/Rating" itemscope>
+<meta itemprop="ratingValue" content="4" />
+<meta itemprop="bestRating" content="5" />
+</div>
+</div>
+<meta itemprop="sku" content="0446310786" />
+<div itemprop="brand" itemtype="http://schema.org/Brand" itemscope>
+<meta itemprop="name" content="ACME" />
+</div>
+</div>
+</div>
+</body>
+</html>
+Shopping aggregator page
+Here's an example of a shopping aggregator page that you can copy and paste to your own HTML
+page.
+JSON-LD
+<html>
+<head>
+<title>Executive Anvil</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "Product",
+"name": "Executive Anvil",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"description": "Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height.",
+"sku": "0446310786",
+"mpn": "925872",
+"brand": {
+"@type": "Brand",
+"name": "ACME"
+},
+"review": {
+"@type": "Review",
+"reviewRating": {
+"@type": "Rating",
+"ratingValue": "4",
+"bestRating": "5"
+},
+"author": {
+"@type": "Person",
+"name": "Fred Benson"
+}
+},
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.4",
+"reviewCount": "89"
+},
+"offers": {
+"@type": "AggregateOffer",
+"offerCount": "5",
+"lowPrice": "119.99",
+"highPrice": "199.99",
+"priceCurrency": "USD"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>Executive Anvil</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "Product",
+"name": "Executive Anvil",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"description": "Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height.",
+"sku": "0446310786",
+"mpn": "925872",
+"brand": {
+"@type": "Brand",
+"name": "ACME"
+},
+"review": {
+"@type": "Review",
+"reviewRating": {
+"@type": "Rating",
+"ratingValue": "4",
+"bestRating": "5"
+},
+"author": {
+"@type": "Person",
+"name": "Fred Benson"
+}
+},
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.4",
+"reviewCount": "89"
+},
+"offers": {
+"@type": "AggregateOffer",
+"offerCount": "5",
+"lowPrice": "119.99",
+"highPrice": "199.99",
+"priceCurrency": "USD"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+RDFa
+<html>
+<head>
+<title>Executive Anvil</title>
+</head>
+<body>
+<div typeof="schema:Product">
+<div rel="schema:review">
+<div typeof="schema:Review">
+<div rel="schema:reviewRating">
+<div typeof="schema:Rating">
+<div property="schema:ratingValue" content="4"></div>
+<div property="schema:bestRating" content="5"></div>
+</div>
+</div>
+<div rel="schema:author">
+<div typeof="schema:Person">
+<div property="schema:name" content="Fred Benson"></div>
+</div>
+</div>
+</div>
+</div>
+<div rel="schema:aggregateRating">
+<div typeof="schema:AggregateRating">
+<div property="schema:reviewCount" content="89"></div>
+<div property="schema:ratingValue" content="4.4"></div>
+</div>
+</div>
+<div rel="schema:image" resource="https://example.com/photos/4x3/photo.jpg"></div>
+<div property="schema:mpn" content="925872"></div>
+<div property="schema:name" content="Executive Anvil"></div>
+<div property="schema:description" content="Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height."></div>
+<div rel="schema:image" resource="https://example.com/photos/1x1/photo.jpg">
+</div>
+<div rel="schema:brand">
+<div typeof="schema:Brand">
+<div property="schema:name" content="ACME"></div>
+</div>
+</div>
+<div rel="schema:offers">
+<div typeof="schema:AggregateOffer">
+<div property="schema:offerCount" content="5"></div>
+<div property="schema:lowPrice" content="119.99"></div>
+<div property="schema:highPrice" content="199.99"></div>
+<div property="schema:priceCurrency" content="USD"></div>
+<div rel="schema:url" resource="https://example.com/anvil"></div>
+</div>
+</div>
+<div rel="schema:image" resource="https://example.com/photos/16x9/photo.jpg"></div>
+<div property="schema:sku" content="0446310786"></div>
+</div>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>Executive Anvil</title>
+</head>
+<body>
+<div typeof="schema:Product">
+<div rel="schema:review">
+<div typeof="schema:Review">
+<div rel="schema:reviewRating">
+<div typeof="schema:Rating">
+<div property="schema:ratingValue" content="4"></div>
+<div property="schema:bestRating" content="5"></div>
+</div>
+</div>
+<div rel="schema:author">
+<div typeof="schema:Person">
+<div property="schema:name" content="Fred Benson"></div>
+</div>
+</div>
+</div>
+</div>
+<div rel="schema:aggregateRating">
+<div typeof="schema:AggregateRating">
+<div property="schema:reviewCount" content="89"></div>
+<div property="schema:ratingValue" content="4.4"></div>
+</div>
+</div>
+<div rel="schema:image" resource="https://example.com/photos/4x3/photo.jpg"></div>
+<div property="schema:mpn" content="925872"></div>
+<div property="schema:name" content="Executive Anvil"></div>
+<div property="schema:description" content="Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height."></div>
+<div rel="schema:image" resource="https://example.com/photos/1x1/photo.jpg">
+</div>
+<div rel="schema:brand">
+<div typeof="schema:Brand">
+<div property="schema:name" content="ACME"></div>
+</div>
+</div>
+<div rel="schema:offers">
+<div typeof="schema:AggregateOffer">
+<div property="schema:offerCount" content="5"></div>
+<div property="schema:lowPrice" content="119.99"></div>
+<div property="schema:highPrice" content="199.99"></div>
+<div property="schema:priceCurrency" content="USD"></div>
+<div rel="schema:url" resource="https://example.com/anvil"></div>
+</div>
+</div>
+<div rel="schema:image" resource="https://example.com/photos/16x9/photo.jpg"></div>
+<div property="schema:sku" content="0446310786"></div>
+</div>
+</body>
+</html>
+Microdata
+<html>
+<head>
+<title>Executive Anvil</title>
+</head>
+<body>
+<div>
+<div itemtype="http://schema.org/Product" itemscope>
+<meta itemprop="mpn" content="925872" />
+<meta itemprop="name" content="Executive Anvil" />
+<link itemprop="image" href="https://example.com/photos/16x9/photo.jpg" />
+<link itemprop="image" href="https://example.com/photos/4x3/photo.jpg" />
+<link itemprop="image" href="https://example.com/photos/1x1/photo.jpg" />
+<meta itemprop="description" content="Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height." />
+<div itemprop="offers" itemtype="http://schema.org/AggregateOffer" itemscope>
+<meta itemprop="lowPrice" content="119.99" />
+<meta itemprop="highPrice" content="199.99" />
+<meta itemprop="offerCount" content="6" />
+<meta itemprop="priceCurrency" content="USD" />
+</div>
+<div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+<meta itemprop="reviewCount" content="89" />
+<meta itemprop="ratingValue" content="4.4" />
+</div>
+<div itemprop="review" itemtype="http://schema.org/Review" itemscope>
+<div itemprop="author" itemtype="http://schema.org/Person" itemscope>
+<meta itemprop="name" content="Fred Benson" />
+</div>
+<div itemprop="reviewRating" itemtype="http://schema.org/Rating" itemscope>
+<meta itemprop="ratingValue" content="4" />
+<meta itemprop="bestRating" content="5" />
+</div>
+</div>
+<meta itemprop="sku" content="0446310786" />
+<div itemprop="brand" itemtype="http://schema.org/Brand" itemscope>
+<meta itemprop="name" content="ACME" />
+</div>
+</div>
+</div>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>Executive Anvil</title>
+</head>
+<body>
+<div>
+<div itemtype="http://schema.org/Product" itemscope>
+<meta itemprop="mpn" content="925872" />
+<meta itemprop="name" content="Executive Anvil" />
+<link itemprop="image" href="https://example.com/photos/16x9/photo.jpg" />
+<link itemprop="image" href="https://example.com/photos/4x3/photo.jpg" />
+<link itemprop="image" href="https://example.com/photos/1x1/photo.jpg" />
+<meta itemprop="description" content="Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height." />
+<div itemprop="offers" itemtype="http://schema.org/AggregateOffer" itemscope>
+<meta itemprop="lowPrice" content="119.99" />
+<meta itemprop="highPrice" content="199.99" />
+<meta itemprop="offerCount" content="6" />
+<meta itemprop="priceCurrency" content="USD" />
+</div>
+<div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+<meta itemprop="reviewCount" content="89" />
+<meta itemprop="ratingValue" content="4.4" />
+</div>
+<div itemprop="review" itemtype="http://schema.org/Review" itemscope>
+<div itemprop="author" itemtype="http://schema.org/Person" itemscope>
+<meta itemprop="name" content="Fred Benson" />
+</div>
+<div itemprop="reviewRating" itemtype="http://schema.org/Rating" itemscope>
+<meta itemprop="ratingValue" content="4" />
+<meta itemprop="bestRating" content="5" />
+</div>
+</div>
+<meta itemprop="sku" content="0446310786" />
+<div itemprop="brand" itemtype="http://schema.org/Brand" itemscope>
+<meta itemprop="name" content="ACME" />
+</div>
+</div>
+</div>
+</body>
+</html>
+Guidelines
+Product rich results provide users with information about a specific
+product, such as its price, availability, and reviewer ratings.
+The following guidelines apply to product markup:
+Use markup for a specific product, not a category or list of products.
+For example, "shoes in our shop" is not a specific product.
+See also our
+structured data guidelines for multiple entities on the same page.
+Adult-related products are not supported.
+If you add a review for the product, the reviewer’s name must be a valid name for a Person or
+Team.
+Not recommended: 50% off on Black Friday
+Recommended: "James Smith" or "CNET Reviewers"
+To include product information in Google Images, you must add additional properties:
+To show your product information in the rich image viewer: Include the
+name, image, price, and priceCurrency
+properties.
+To show your product information in the Related Items feature: Include the
+name, image, price, priceCurrency, and
+availability properties.
+Structured data type definitions
+You must include the required properties for your content to be eligible for display as a rich result.
+You can also include the recommended properties to add more information about your content,
+which could provide a better user experience.
+Product
+The full definition of Product is available at
+schema.org/Product. When you mark up
+your content for product information, use the following properties of the
+schema.org Product type:
+Required properties
+image
+Repeated ImageObject or
+URL
+The URL of a product photo. Pictures clearly showing the product (for example, against
+a white background) are preferred. This property is required for Google Images and
+recommended for Google Search.
+Additional image guidelines:
+Every page must contain at least one image (whether or not you include markup). Google will pick
+the best image to display in Search results based on the aspect ratio and resolution.
+Image URLs must be crawlable and indexable.
+Images must represent the marked up content.
+Images must be in .jpg, .png, or. gif format.
+For best results, provide multiple high-resolution images (minimum of 50K pixels when multiplying width and
+height) with the following aspect ratios: 16x9, 4x3, and 1x1.
+For example:
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+]
+name
+Text
+The name of the product.
+Either review or aggregateRating or offers
+You must include one of the following properties:
+review
+aggregateRating
+offers
+Note: Once you include a review or aggregateRating or
+offers, the other two properties become recommended in the Rich Results Test.
+Recommended properties
+aggregateRating
+AggregateRating
+A nested aggregateRating of the product. Follow the
+Review snippet
+guidelines and the list of required and recommended
+AggregateRating
+properties.
+brand
+Brand or Organization
+The brand of the product.
+Note: If you set the type to anything other than Brand or Organization, we will understand it to be a Thing. This is not specific enough, so we highly recommend using the type Brand or Organization instead.
+description
+Text
+The product description.
+offers
+Offer
+An offer to sell the product. Include either a nested Offer or
+AggregateOffer.
+Show me Offer properties
+The full definition of Offer is available at
+schema.org/Offer. When marking up
+offers within a product, use the following properties of the schema.org
+Offer type:
+Required properties
+availability
+ItemAvailability
+The possible product availability options. Use one of the following values and express
+it with a URL link in the markup. Google also understands their short names (for
+example InStock or OutOfStock), without the full URL scope.
+https://schema.org/Discontinued
+https://schema.org/InStock
+https://schema.org/InStoreOnly
+https://schema.org/LimitedAvailability
+https://schema.org/OnlineOnly
+https://schema.org/OutOfStock
+https://schema.org/PreOrder
+https://schema.org/PreSale
+https://schema.org/SoldOut
+For Google Images: This property required for your product to be eligible for the
+Related Items feature in Google Images.
+price
+Number
+The offer price of a product. Follow
+schema.org usage guidelines.
+For Google Images: This property required for your product to be eligible for the rich image viewer and the Related Items feature in Google Images.
+priceCurrency
+Text
+The currency used to describe the product price, in three-letter
+ISO 4217 format.
+For Google Images: This property required for your product to be eligible for the rich
+image viewer and the Related Items feature in Google Images.
+Recommended properties
+itemOffered
+Thing
+The item being sold. Typically, this includes a nested product, but it can also contain
+other item types or free text.
+priceValidUntil
+Date
+The date (in ISO 8601
+date format) after which the price will no longer be available. Your product snippet
+may not display if the priceValidUntil property indicates a past date.
+url
+URL
+A URL to the product web page (that includes the Offer).
+Show me AggregateOffer properties
+The full definition of AggregateOffer is available at
+schema.org/AggregateOffer. An
+AggregateOffer is a kind of Offer representing an aggregation of
+other offers. When marking up aggregate offers within a product, use the following properties
+of the schema.org AggregateOffer type:
+Required properties
+lowPrice
+Number
+The lowest price of all offers available. Use a floating point number.
+priceCurrency
+Text
+The currency used to describe the product price, in three-letter
+ISO 4217 format.
+For Google Images: This property required for your product to be eligible for the
+rich image viewer and the Related Items feature in Google Images.
+Recommended properties
+highPrice
+Number
+The highest price of all offers available. Use a floating point number.
+offerCount
+Number
+The number of offers for the product.
+review
+Review
+A nested Review of the product. Follow the
+Review snippet
+guidelines and the list of required and recommended
+review
+properties.
+gtin8 | gtin13 | gtin14 | mpn | isbn
+Text
+Include all applicable global identifiers; these are described at
+schema.org/Product.
+sku
+Text
+Merchant-specific identifier for product.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

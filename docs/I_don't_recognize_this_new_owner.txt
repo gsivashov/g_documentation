@@ -1,0 +1,15 @@
+I don't recognize this new ownerWhenever a new owner is added to your property, Search Console notifies all existing verified owners of the change. If you don't recognize the new owner, email that person; maybe it's an alternate email address of someone you know.
+If the person doesn't answer, or if you're the only property owner and didn't add anyone else, it's possible that your site has been hacked, and someone is verifying ownership of your Search Console property in order to gain something.
+If you think your property was hacked:
+Learn how the person verified ownership, as described below.
+If you can permanently eliminate the verification token (for example, an html file on your site), do so, then delete/unverify the owner. This is only a temporary solution: even if you remove the token, a hacker can probably add it back, so you'll have to take the next step to secure and fix your site.
+Either visit the Webmasters Hacked! site and try to fix the problem yourself, or else contact a website security professional to help repair your site.
+How did this person verify ownership of my property?
+To learn how this person verified ownership of your Search Console property:
+Open Site Settings (navigate to  Settings > Users and permissions)
+In the list of verified owners, find the unknown owner and select Remove access from the menu for that user. You will be shown information describing how they verified, and what you must do to remove their access to the property. Here is a list of verification methods, with explanations.
+Remember that as long as you have write ability on the property itself, a hacker can't permanently remove your ownership of the property in Search Console; if they remove your verification token, you can always add it back.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Get your site on Search ConsoleAdd a website propertyRemove a property from your listVerify your site ownershipManaging owners, users, and permissionsI don't recognize this new owner
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

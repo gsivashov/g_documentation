@@ -1,0 +1,191 @@
+Home
+Products
+Search for Developers
+Reference
+Breadcrumb
+A breadcrumb trail on a page indicates the page's position in the site hierarchy.
+A user can navigate all the way up in the site hierarchy, one level at a time,
+by starting from the last breadcrumb in the breadcrumb trail.
+As of April 6, 2020, data-vocabulary.org markup will no longer be
+eligible for the breadcrumb feature in Google Search. To be eligible after April 6, 2020, you
+need to replace data-vocabulary.org markup with schema.org markup. Learn more about
+sunsetting support
+for data-vocabulary.
+Examples
+Google Search uses breadcrumb markup in the body of a web page to categorize
+the information from the page in search results. Often, as illustrated in
+following use cases, users can arrive at a page from very different types of
+search queries. While each search may return the same web page, the breadcrumb
+categorizes the content within the context of the Google Search query. The page
+ancillaryjustice.html might display the following breadcrumb trails
+depending upon the search context:
+A search query for the book title "Ancillary Justice" may generate the following breadcrumb:
+Books ›
+Authors ›
+Ann Leckie ›
+Ancillary Justice
+Here's an example in JSON-LD to support that breadcrumb:
+<html>
+<head>
+<title>The title of the page</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [{
+"@type": "ListItem",
+"position": 1,
+"name": "Books",
+"item": "https://example.com/books"
+},{
+"@type": "ListItem",
+"position": 2,
+"name": "Authors",
+"item": "https://example.com/books/authors"
+},{
+"@type": "ListItem",
+"position": 3,
+"name": "Ann Leckie",
+"item": "https://example.com/books/authors/annleckie"
+},{
+"@type": "ListItem",
+"position": 4,
+"name": "Ancillary Justice",
+"item": "https://example.com/books/authors/ancillaryjustice"
+}]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+A search query for a year and genre-based award, "2014 Nebula Award best novel", may generate
+the following breadcrumb:
+Books ›
+Science Fiction ›
+Award Winners
+RDFa
+Here's an example in RDFa to support that breadcrumb:
+Books
+›
+Science Fiction
+›
+Award Winners
+Microdata
+Here's an example in Microdata to support that breadcrumb:
+Books
+›
+Science Fiction
+›
+Award winners
+Here's an example of a multiple breadcrumb trail:
+Books ›
+Science Fiction ›
+Award Winners
+Literature ›
+Speculative Fiction
+RDFa
+Here's the example RDFa to support that breadcrumb:
+Books
+›
+Science Fiction
+›
+Award Winners
+Literature
+›
+Speculative Fiction
+Microdata
+Here's the example Microdata to support that breadcrumb:
+Books
+›
+Science Fiction
+›
+Award Winners
+Literature
+›
+Speculative Fiction
+HTML Example
+Here's an example of an HTML breadcrumb block within the page as part of the visual design.
+<ol>
+<li>
+<a href="http://www.example.com/books">Books</a>
+</li>
+<li>
+<a href="http://www.example.com/sciencefiction">Science Fiction</a>
+</li>
+<li>
+Award Winners
+</li>
+</ol>
+Guidelines
+You must follow these guidelines to be eligible to appear with breadcrumbs in Google Search.
+Warning: If Google detects that some of the markup on your pages
+may be using techniques that are outside our structured data guidelines, your site may receive
+a manual action.
+Webmaster guidelines
+General structured data guidelines
+Structured data type definitions
+To specify breadcrumbs, define an BreadcrumbList that contains at least two
+ListItems. You must include the required properties for your content to be eligible
+for display with breadcrumbs.
+BreadcrumbList
+BreadcrumbList is the
+container item that holds all elements in the list. The
+full definition of BreadcrumbList is available at
+schema.org/BreadcrumbList.
+Required properties
+itemListElement
+BreadcrumbList
+An array of breadcrumbs listed in a specific order. Specify each breadcrumb with a
+ListItem For example:
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [{
+"@type": "ListItem",
+"position": 1,
+"name": "Books",
+"item": "https://example.com/books"
+},{
+"@type": "ListItem",
+"position": 2,
+"name": "Authors",
+"item": "https://example.com/books/authors"
+},{
+"@type": "ListItem",
+"position": 3,
+"name": "Ann Leckie",
+"item": "https://example.com/books/authors/annleckie"
+}]
+}
+ListItem
+ListItem contains details about an individual item in the list. The full
+definition of ListItem is available at
+schema.org/ListItem.
+Required properties
+item
+URL or a
+subtype of Thing
+The URL to the webpage that represents the breadcrumb. There are two ways to specify item:
+URL: Specify the URL of the page. For example:
+"item": "https://example.com/books"
+Thing: Use an id to specify the URL based on the markup format
+you're using:
+JSON-LD: Use @id to specify the URL.
+Microdata: You can use href or itemid
+to specify the URL.
+RDFa: You can use about, href,
+or resource to specify the URL.
+If the breadcrumb is the last item in the breadcrumb trail, item is not
+required. If item isn't included for the last item, Google uses the URL
+of the containing page.
+name
+Text
+The title of the breadcrumb displayed for the user. If you're using a
+Thing with a name instead of a URL to specify item, then name is not required.
+position
+Integer
+The position of the breadcrumb in the breadcrumb trail. Position 1 signifies
+the beginning of the trail.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

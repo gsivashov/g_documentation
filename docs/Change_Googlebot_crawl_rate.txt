@@ -1,0 +1,17 @@
+Change Googlebot crawl rate
+The term crawl rate means how many requests per second Googlebot makes to your site when it is crawling it: for example, 5 requests per second.
+You cannot change how often Google crawls your site, but if you want Google to crawl new or updated content on your site, you can request a recrawl.
+Proper usage
+Google has sophisticated algorithms to determine the optimal crawl speed for a site. Our goal is to crawl as many pages from your site as we can on each visit without overwhelming your server's bandwidth.
+If Google is making too many requests per second to your site and slowing down your server, you can limit how fast Google crawls your site.
+You can limit the crawl rate for root-level sites—for example, www.example.com and http://subdomain.example.com. The crawl rate that you set is the maximum crawl rate that Googlebot should make. Note that it does not guarantee that Googlebot will reach this maximum rate.
+We recommend against limiting the crawl rate unless you are seeing server load problems that are definitely caused by Googlebot hitting your server too hard.
+You cannot change the crawl rate for sites that are not at the root level—for example, www.example.com/folder.
+Limit the crawl rate
+Open the Crawl Rate Settings page for your property.
+If your crawl rate is described as "calculated as optimal," the only way to reduce the crawl rate is by filing a special request. You cannot increase the crawl rate.
+Otherwise, select the option you want and then limit the crawl rate as desired. The new crawl rate will be valid for 90 days.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingGoogle Assistant in ChromeInternational Targeting reportChange Googlebot crawl rate
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

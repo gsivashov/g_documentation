@@ -1,0 +1,50 @@
+Change of Address ToolMove your site from one domain to anotherAbout this tool
+Use the Change of Address tool when you move your website from one domain or subdomain to another: for instance, from example.com to example.org or example2.com. This tool tells Google about your change, and helps to migrate your Google Search results from your old site to your new site.
+When not to use this tool
+Don't use the Change of Address tool for the following moves:
+Changing address from http to https. For an http to https move, follow the guidelines for site move with URL changes, but don't use this tool; Google will figure out your changes for you.
+Moving some pages from one location to another within your site: For example, from example.com/oldpath/... to example.com/newpath/...). In this case, just add redirects, and update your sitemaps as appropriate.
+Moving between www and non-www in the same domain: For example, www.example.com to example.com. In this case, use canonical tagging and/or redirects without using the change of address tool.
+Moving a site without any user-visible URL changes (that is, when your site URL remains the same but you are changing hosting providers or CDNs). For this, read Move a site with no URL changes.
+Best practices in a site move
+Don't chain site moves. If you submit a change of address to redirect traffic from site A to site B, you can't immediately submit another change of address from site B to site C.
+Try not to combine multiple moves to a single location. Moving sites A, B, and C all to new location D can cause some confusion and traffic loss. You might want to move sites one at a time to the new, combined location and wait till traffic stabilizes before moving the next site.
+If you want to migrate a Domain property to one location (A.com to B.com) and a subdomain to a second property (m.A.com to m.C.com), create a property for subdomain m.A.com and migrate it separately.
+When moving a site, keeping the same site architecture in the new location helps to pass the signals more directly to the new site. If you combine a site move with a redesign of the site's content and URL structure in the new location, you will probably see some traffic loss as Google might need to relearn and reassess the individual pages.
+Step 1: Pre-work
+Perform these steps for all site moves:
+Implement a 301 redirect from your old homepage to your new homepage. we recommend also implementing 301 redirects for the canonical pages on your old site.
+Read the following topics:
+What is a site move? - Recommendations for all site moves.
+Move a site with URL changes - A step-by-step guide for moving a site from one domain to another.
+Perform any other pre-move actions described in Move a site with URL changes.
+Sites at the domain level (such as example.com, https://example.com, m.example.com) can then use the Change of Address tool (step 2).
+Step 2: Use the Change of Address tool
+After performing the pre-work, if you fulfill the requirements below, you can use the Change of Address tool to forward your old site signals to your new site.
+Requirements:
+You must be a verified owner of both the old and new properties in Search Console. You must use the same Google account to manage both sites.
+The Change of Address tool can be used only on domain-level properties: that is, example.com, m.example.com, or http://example.com. It cannot be used for properties below the domain level, such as http://example.com/petstore/
+The tool does not move any subdomains below the specified domain (including www). So if you specify example.com in the tool, it will not move www.example.com or m.example.com. However, all paths under the domain are affected (example.com/any/path/here).
+The tool moves all protocols of your source property. So if you specify http://example.com, it also moves https://example.com
+Use the Change of Address tool:
+Perform Step 1: Pre-work.
+Ensure that you fulfill all the requirements listed above.
+Open the Change of Address tool.
+Follow the instructions provided in the tool. The tool runs a few pre-move checks before telling Google about the move. If you fail any critical pre-move checks, you must fix the issue before you can continue. If you fail non-critical pre-move checks, you will see a warning with recommendations, but your request can continue.
+If critical pre-checks pass, all sites being migrated from or to will display a notification in Search Console that the move is in progress. You will see these notifications for 180 days.
+Monitor your traffic as indicated in Move a site with URL changes.
+Maintain the redirects for at least 180 days--longer if you still see any traffic to them from Google Search. Remove your old pages, but we recommend continuing to pay for the old domain for at least a year to prevent others from buying and using your abandoned domain for malicious purposes. After the 180 day period, Google does not recognize any relationship between the old and new sites, and treats the old site as an unrelated site, if still present and crawlable.
+What happens when I run this tool?
+When you file a change of address request using Search Console, it tells Google to emphasize crawling and indexing your new site over crawling your old site. It also forwards various signals from the old site to the new site, and tells Google to prefer the new site over the old when determining canonical pages. These actions continue for 180 days after you start migration in Search Console.
+Google does not erase the old site from the index, and URLs from the old site can continue to be shown in Search results if they are available and don't have an equivalent page on the new site. If you have equivalent pages on your new site, providing redirects from the old site to the new and providing rel=canonical tags can reduce the number of old URLs shown in Search.
+The tool runs a quick check before sending the move request to Google, to confirm that you own both sites, and to check for 301s on a few pages on your site.
+Cancel a change of address request
+You can cancel a change of address request for 180 days after it was made.
+To cancel an address change:
+Remove any 301-redirect directives previously set up on your server. If you don't do this, Google will see those directives the next time it crawls your site and might continue to redirect the URLs as instructed by the directive.
+Add 301 redirects from the new site to the old site.
+Open the Change of address tool in the old site and click Cancel Move. Repeat for every old site that you no longer want to move.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingGoogle Assistant in ChromeInternational Targeting reportChange Googlebot crawl rate
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

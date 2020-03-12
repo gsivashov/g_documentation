@@ -1,0 +1,173 @@
+Home
+Products
+Search for Developers
+Reference
+Prerequisites for the Indexing API
+Before you can start using the Indexing API, there are a few
+things you need to do, if you haven't done them already:
+Create a project for your client
+Create a service account
+Verify site ownership in Search Console
+Create a project for your client
+Before you can send requests to the Indexing API, you need to tell Google about your client and activate access to the API. You do this by using the Google API Console to create a project, which is a named collection of settings and API access information, and register your application.
+To get started using Indexing API, you need to first
+use
+the setup tool, which guides you through creating a project in the
+Google API Console, enabling the API, and creating credentials.
+Create a service account
+Open the Service accounts page. If prompted,
+select a project.
+Click add Create Service Account, enter a name and
+description for the service account. You can use the default service account ID, or choose a
+different, unique one. When done click Create.
+The Service account permissions (optional) section that follows is not required. Click
+Continue.
+On the Grant users access to this service account screen, scroll down to the
+Create key section. Click add Create key.
+In the side panel that appears, select the format for your key: JSON is recommended.
+Click Create. Your new public/private key pair is generated and downloaded to your
+machine; it serves as the only copy of this key. For information on how to store it securely,
+see
+Managing service account keys.
+Click Close on the Private key saved to your computer dialog, then click
+Done to return to the table of your service accounts.
+The following steps are only necessary if you want to
+grant G Suite domain-wide authority to the service account.
+Locate the newly-created service account in the table. Under Actions, click
+more_vert then Edit.
+In the service account details, click expand_more
+Show domain-wide delegation, then ensure the Enable G Suite Domain-wide Delegation
+checkbox is checked.
+If you haven't yet configured your app's OAuth consent screen, you must do so before you can
+enable domain-wide delegation. Follow the on-screen instructions to configure the OAuth consent
+screen, then repeat the above steps and re-check the checkbox.
+Click Save to update the service account, and return to the table of service accounts.
+A new column, Domain-wide delegation, can be seen. Click
+View Client ID, to obtain and make a note of the client ID.
+Verify site ownership in Search Console
+In this step, you'll verify that you have control over your web property.
+To verify ownership of your site:
+Follow the recommended steps to verify ownership of your property.
+After your property has been verified, open Search Console.
+Click your verified property.
+Select Verification details from the Settings gear
+next to your verified property.
+Under Verified owners, click Add an owner.
+Add your service account email address as an owner to the property. You can find your
+service account email address in two places:
+The client_email field in the JSON private key that you downloaded when
+you created your project.
+The Service account ID column of the Service Accounts view in
+the Developer Console.
+The email address has a format similar to the following:
+my-service-account@project-name.google.com.iam.gserviceaccount.com
+For example, "my-service-account@test-project-42.google.com.iam.gserviceaccount.com".
+Get an access token
+To call the Indexing API, the call must be authenticated with an OAuth token that you get
+in exchange for your private key. Google provides API client libraries
+to get OAuth tokens for a number of languages.
+Requirements
+When submitting a request to the Indexing API, your request must:
+Use https://www.googleapis.com/auth/indexing as the scope.
+Use one of the endpoints described in Using the API.
+Include the service account access token.
+Define the body of the request as described in Using the API.
+Examples
+The following examples show how to obtain an OAuth access token:
+Python
+Obtains an OAuth token using the Google API Client library for Python:
+from oauth2client.service_account import ServiceAccountCredentials
+import httplib2
+SCOPES = [ "https://www.googleapis.com/auth/indexing" ]
+ENDPOINT = "https://indexing.googleapis.com/v3/urlNotifications:publish"
+# service_account_file.json is the private key that you created for your service account.
+JSON_KEY_FILE = "service_account_file.json"
+credentials = ServiceAccountCredentials.from_json_keyfile_name(JSON_KEY_FILE, scopes=SCOPES)
+http = credentials.authorize(httplib2.Http())
+# Define contents here as a JSON string.
+# This example shows a simple update request.
+# Other types of requests are described in the next step.
+content = """{
+\"url\": \"http://example.com/jobs/42\",
+\"type\": \"URL_UPDATED\"
+}"""
+response, content = http.request(ENDPOINT, method="POST", body=content)
+Java
+Obtains an OAuth token using the API Client Library for Java:
+String scopes = "https://www.googleapis.com/auth/indexing";
+String endPoint = "https://indexing.googleapis.com/v3/urlNotifications:publish";
+JsonFactory jsonFactory = new JacksonFactory();
+// service_account_file.json is the private key that you created for your service account.
+InputStream in = IOUtils.toInputStream("service_account_file.json");
+GoogleCredential credentials =
+GoogleCredential.fromStream(in, this.httpTransport, jsonFactory).createScoped(Collections.singleton(scopes));
+GenericUrl genericUrl = new GenericUrl(endPoint);
+HttpRequestFactory requestFactory = this.httpTransport.createRequestFactory();
+// Define content here. The structure of the content is described in the next step.
+String content = "{"
++ "\"url\": \"http://example.com/jobs/42\","
++ "\"type\": \"URL_UPDATED\","
++ "}";
+HttpRequest request =
+requestFactory.buildPostRequest(genericUrl, ByteArrayContent.fromString("application/json", content));
+credentials.initialize(request);
+HttpResponse response = request.execute();
+int statusCode = response.getStatusCode();
+PHP
+Obtains an OAuth token using the API Client Library for PHP:
+require_once 'google-api-php-client/vendor/autoload.php';
+$client = new Google_Client();
+// service_account_file.json is the private key that you created for your service account.
+$client->setAuthConfig('service_account_file.json');
+$client->addScope('https://www.googleapis.com/auth/indexing');
+// Get a Guzzle HTTP Client
+$httpClient = $client->authorize();
+$endpoint = 'https://indexing.googleapis.com/v3/urlNotifications:publish';
+// Define contents here. The structure of the content is described in the next step.
+$content = '{
+"url": "http://example.com/jobs/42",
+"type": "URL_UPDATED"
+}';
+$response = $httpClient->post($endpoint, [ 'body' => $content ]);
+$status_code = $response->getStatusCode();
+Node.js
+Obtains an OAuth token using the Node.js Client Library:
+var request = require("request");
+var google = require("googleapis");
+var key = require("./service_account.json");
+const jwtClient = new google.auth.JWT(
+key.client_email,
+null,
+key.private_key,
+["https://www.googleapis.com/auth/indexing"],
+null
+);
+jwtClient.authorize(function(err, tokens) {
+if (err) {
+console.log(err);
+return;
+}
+let options = {
+url: "https://indexing.googleapis.com/v3/urlNotifications:publish",
+method: "POST",
+// Your options, which must include the Content-Type and auth headers
+headers: {
+"Content-Type": "application/json"
+},
+auth: { "bearer": tokens.access_token },
+// Define contents here. The structure of the content is described in the next step.
+json: {
+"url": "http://example.com/jobs/42",
+"type": "URL_UPDATED"
+}
+};
+request(options, function (error, response, body) {
+// Handle the response
+console.log(body);
+});
+});
+In addition to showing how to obtain a token, these examples show where you can add the body of
+the request message. For information about the types of calls you can make, and the structure of the
+message bodies for those calls, see Using the API.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-01-31.

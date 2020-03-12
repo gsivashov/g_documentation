@@ -1,0 +1,28 @@
+Review and download the markup example
+Review the generated markup
+Markup Helper can show schema.org markup in these formats:
+JSON-LD: Uses a JavaScript object in your HTML page to define data. Google prefers JSON-LD  for web content.  See JSON-LD for more information.
+Microdata: Uses attributes in HTML tags to define data. See About microdata for more information.
+To review your generated markup:
+After tagging your content, click Create HTML.
+Your generated code will appear in the HTML source pane next to your tagged content. Markup Helper shows JSON-LD by default. You can change to Microdata by choosing that in the Format list.
+To modify your tags, click Back to tagging.
+If you want to modify the markup or add more markup for any properties that are included in schema.org schemas but beyond the scope of Markup Helper, you'll need to wait until you have downloaded the markup. See Manually add markup.
+If you want to remove specific tags (or all tags) see Remove tags
+Download your example markup
+Click Download on the View HTML page.
+Bookmark the View HTML page.
+Bookmarking is optional, but if you want to revisit and modify your example, you'll need a bookmark or some other way of remembering the URL. Markup Helper does not maintain a list of example pages that you specifically have created. It does keep your example for a month after you've last accessed it.
+Your browser will download the sample code as a file named markup.html.
+Next steps
+Modify or add markup in the file you downloaded, if necessary.
+Test your markup:
+For web pages, use the Structured Data Testing Tool. Google requires specific fields for each data type: for example, an Event requires a name, a start date, and an address. If your information is incomplete, it might not be used by Google.
+For email, either send an email with markup to your Gmail account, or use the email schema validator.
+Add the markup to your site or email templates.
+After you add markup to your site—and after Google crawls your site—the structured data should appear in a rich result status report, if it is a supported type. This can take a few weeks. If your data is crawled and is complete and correct, it can appear as rich results. If rich results aren't appearing for your site, see possible reasons why.
+Be sure to remove any personal details from your sample page or email before you share the markup example with others. For example, if you pasted an email that contains someone's personal details, such as a name or address, remove that information before you share the marked up email.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Structured Data Markup HelperStructured Data Markup HelperTagging datesAdd missing dataRemove tagsTag an email templateManually add markup for a propertyReview and download the markup example
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

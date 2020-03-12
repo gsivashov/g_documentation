@@ -1,0 +1,11 @@
+Automatically generated contentAutomatically generated—or “auto-generated”—content is content that’s been generated programmatically.  In cases where it is intended to manipulate search rankings and not help users, Google may take actions on such content. These include, but are not limited to:
+Text that make no sense to the reader but which may contain search keywords.
+Text translated by an automated tool without human review or curation before publishing
+Text generated through automated processes, such as Markov chains
+Text generated using automated synonymizing or obfuscation techniques
+Text generated from scraping Atom/RSS feeds or search results
+Stitching or combining content from different web pages without adding sufficient value
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Quality guidelinesAutomatically generated contentSneaky redirectsLink schemesCloakingHidden text and linksDoorway pagesScraped contentAffiliate programsIrrelevant keywordsCreating pages with malicious behaviorUser-generated spamWays to Prevent Comment SpamReport spam, paid links, or malware
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

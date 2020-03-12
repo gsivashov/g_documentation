@@ -1,0 +1,74 @@
+Home
+Products
+Search for Developers
+Guides
+Getting Started
+What are the top three things I should know when building a site for mobile devices?
+1. Make it easy for customers.
+Help your site's visitors to complete their objectives. They may want to be
+entertained by your blog posts, get your restaurant's address, or check reviews
+on your products. Walgreens GVP and Chief Technology Officer of eCommerce, Abhi
+Dhar, explains,
+"Our goal with everything we do on mobile is to make our customers' lives easier."
+Design your site to help make it easier for your customer to visit your site and complete a task.
+Outline the potential steps in your customers' journey to make sure
+that the steps are easy to complete on a mobile device. Try to streamline the
+experience and reduce the number of user interactions. In this example: (1) the
+customer clicks on a site after searching for lamps to buy; (2) browses through
+a selection of lamps; and (3) purchases the desired lamp.
+2. Measure the effectiveness of your website by how easily mobile customers can complete common tasks.
+Making a mobile site requires prioritization. Start by working out what the
+most important and common tasks are for your customers on mobile. Being able
+to support these tasks is critical and this is why the measure of your
+mobile site is how well customers can complete their objectives. There are ways
+to make the design of your site support ease of use too. Focus on consistency in
+your interface and providing an unified experience across platforms.
+"Mobile shoppers put ease of use foremost when it comes to mobile shopping
+sites, with 48% of respondents citing it as the most important quality of a
+mobile site they visit," says
+MediaPost.
+3. Select a mobile template, theme, or design that's consistent for all devices (for example, use responsive web design).
+Responsive web design means that the page uses the same URL and
+the same code whether the user is on a desktop computer, tablet, or mobile
+phone – only the display adjusts or responds according to the screen size.
+Google recommends using responsive web design over other design patterns. One of the
+benefits of responsive web design is that you only need to maintain one version of your site
+instead of two. You don't have to maintain the desktop site at
+www.example.com and the mobile version at m.example.com – you'll maintain only
+one site, such as www.example.com, for desktop and mobile visitors.
+A responsive site adjusts the display to various screen sizes while
+using the same URL and code. All three devices above use www.example.com
+(rather than the mobile page at m.example.com and the tablet page at
+t.example.com).
+"Using responsive web design enabled Baines & Ernst to optimise its site experience across
+different screen sizes without creating multiple websites. They noticed that
+visitors visited 11% more pages on their site per visit and mobile conversions
+grew by 51%."
+Conversions happen when a customer performs a desired action, such as buying
+products, calling the business, or signing-up for a newsletter.
+For details on how to implement responsive web design, refer to Web Fundamentals. If you'd like to weigh the pros and cons of different
+implementations for mobile, tablet, and desktop websites, read Building
+Websites for the Multi-Screen Consumer.
+What are the top three mistakes beginners want to avoid?
+Mistake 1 - Forgetting their mobile customer.
+Remember that good mobile sites are useful – they help visitors complete
+their tasks, whether that's reading an interesting article or checking your
+store's location. Don't get caught in the trap of only creating a
+mobile-formatted site that doesn't provide the full functionality. Instead, remember to build a
+mobile-friendly site (one that's truly useful for mobile customers and
+optimized for customers most common tasks).
+Mistake 2 - Implementing the mobile site on a different domain, subdomain, or subdirectory from the desktop site.
+While Google supports multiple mobile site configurations, creating
+separate mobile URLs greatly increases the amount of work required to maintain
+and update your site, and introduces possible sources of technical problems.
+You can often simplify things significantly by using responsive web design and serving desktop and mobile on the same URL. Responsive web design is
+Google's recommended configuration.
+Mistake 3 - Working in isolation rather than looking around for inspiration.
+Check out other sites in your space or your competitors for inspiration and
+best practices. While you may not be the first in your industry with a mobile
+site, you have the benefit of being able to learn from those before you.
+The Mobile Playbook and
+Google
+Multi-screen Success Stories are also full of ideas.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-06-17.

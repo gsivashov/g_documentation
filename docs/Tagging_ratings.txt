@@ -1,0 +1,30 @@
+Tagging ratingsIf you tag a rating in Data Highlighter, Google can display the rating as review rich snippets or in other Google products. Data Highlighter understands ratings that are displayed in many formats (words, numbers, or images) as long as the rating specifies or implies all of the following:
+The best possible rating
+The actual rating
+The number of ratings
+If a single piece of data specifes both the best possible rating and the actual rating, you can use a single Rating tag. For example, you can use a Rating tag for the following:
+65% - the best possible rating is 100, and the actual rating is 65
+- the best possible rating is 5, and the actual rating is 4
+8 out of 10 or 8/10 - the best possible rating is 10, and the actual rating is 8
+A+ - Data Highlighter assumes that the best rating is A+, and the actual rating is A+.
+If a site displays ratings both as images and as text, we recommend that you tag the text.
+Sometimes pages display the current rating in one location and display the best possible rating in a footer or other location that's not near the current rating. In this case, you can tag the two data items separately. For example:
+80 - the actual rating, with no scale implied or specified nearby
+100 - the best possible rating, specified elsewhere on the page. or added to the page set .
+If any data is unspecified, such as the best possible rating or the number of ratings, you can add missing data to the page set.
+If your site displays ratings in one piece, it's recommended that you use a single Rating tag. The fewer tags you create, the faster your tagging will be and the more accurate Data Highlighter will be.
+Tag a rating
+Start tagging data on a page. See Create a page set that contains a single page or Create a page set that contains multiple pages for help on how to start tagging a page.
+On the Tagger page, select a rating:
+If you can tag the actual and best possible rating in one piece, use the mouse to select the rating. Then select Average Rating > Rating from the context menu that displays.
+For example, select 8 out of 10 with the mouse and Average Rating > Rating from the context menu.
+If the actual rating is separate, select the actual rating with your mouse. Then select Average Rating > Advanced > Score from the context menu that displays.
+For example, select 80 with the mouse and Average Rating > Advanced > Score from the context menu.
+If the best possible rating is separate, select the best possible rating with your mouse. Then select Average Rating > Advanced > Best possible from the context menu that displays.
+For example, select 100 with the mouse and Average Rating > Advanced > Best possible from the context menu.
+Select the total number of ratings. Then select Average Rating > Votes from the context menu that displays.
+Finish creating the page set. See Create a page set that contains a single page or Create a page set that contains multiple pages for more information.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Create a page setCreate a page set that contains a single pageCreate a page set that contains multiple pagesTagging datesTagging ratingsReview Data Highlighter's understanding of your page setAdd missing data
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

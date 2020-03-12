@@ -1,0 +1,185 @@
+Home
+Products
+Search for Developers
+Reference
+Corporate Contact
+Corporate Contact markup for Google knowledge panels is deprecated. We now
+automatically discover corporate contact information to include in Google knowledge panels.
+If you’re verified as an official representative of a Google knowledge panel, you can suggest
+a change directly. Learn more at
+Update
+your Google knowledge panel.
+Use corporate contact markup on your official website to add your company's
+contact information to the Google Knowledge panel in some searches, for example
+when a user enters your company’s name into the Search bar.
+Examples
+Here's an example of a customer service number in JSON-LD.
+<html>
+<head>
+<title>Contact Us</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Organization",
+"url": "http://www.your-company-site.com",
+"contactPoint": [
+{ "@type": "ContactPoint",
+"telephone": "+1-401-555-1212",
+"contactType": "customer service"
+}
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Here's an example of multiple contact numbers in JSON-LD.
+<html>
+<head>
+<title>Contact Us</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Organization",
+"url": "http://www.t-mobile.com",
+"contactPoint": [{
+"@type": "ContactPoint",
+"telephone": "+1-877-746-0909",
+"contactType": "customer service",
+"contactOption": "TollFree",
+"areaServed": "US"
+},{
+"@type": "ContactPoint",
+"telephone": "+1-505-998-3793",
+"contactType": "customer service"
+},{
+"@type": "ContactPoint",
+"telephone": "+1-877-296-1018",
+"contactType": "customer service",
+"contactOption": [
+"HearingImpairedSupported",
+"TollFree"
+],
+"areaServed": "US"
+},{
+"@type": "ContactPoint",
+"telephone": "+1-877-453-1304",
+"contactType": "technical support",
+"contactOption": "TollFree",
+"areaServed": [
+"US",
+"CA"
+],
+"availableLanguage": [
+"English",
+"French"
+]
+},{
+"@type": "ContactPoint",
+"telephone": "+1-877-453-1304",
+"contactType": "bill payment",
+"contactOption": "TollFree",
+"areaServed": [
+"US",
+"CA"
+]
+}]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Here's an example of a customer service number and logo in JSON-LD.
+<html>
+<head>
+<title>Contact Us</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Organization",
+"url": "http://www.your-company-site.com",
+"logo": "http://www.example.com/logo.png",
+"contactPoint": [{
+"@type": "ContactPoint",
+"telephone": "+1-401-555-1212",
+"contactType": "customer service"
+}]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Guidelines
+In addition to the
+general structured data guidelines, Corporate Contact markup should follow these guidelines:
+The organization record is specified first. The only required properties are:
+url — must be the home page of the company's official site
+contactPoint — one or more ContactPoint records
+Pages with markup must not be blocked from crawling by robots.txt directives.
+Structured data type definitions
+You must include the required properties for your content to be eligible for display as a rich result.
+You can also include the recommended properties to add more information about your content,
+which could provide a better user experience.
+Required properties
+contactType
+Text
+One of the following values, not case sensitive. Additional contact types may be
+supported later.
+customer service
+technical support
+billing support
+bill payment
+sales
+reservations
+credit card support
+emergency
+baggage tracking
+roadside assistance
+package tracking
+For each number, you can also indicate the following attributes:
+Toll-free
+Serves the hearing-impaired
+Specific to a country or countries
+telephone
+Text
+An internationalized version of the phone number, starting with the
+"+" symbol and country code (+1 in the US and Canada).
+Examples:
++1-800-555-1212
++44-2078225951
+Recommended properties
+areaServed
+Text
+The geographical region served by the number, specified as a
+AdministrativeArea. Countries may be
+specified concisely using just their standard ISO-3166 two-letter code, as in the examples
+below. If omitted, the number is assumed to be global.
+Examples:
+"areaServed": "US"
+"areaServed": [
+"US",
+"CA",
+"MX"
+]
+availableLanguage
+Text
+or Language
+Details about the language spoken. Languages may be specified by their common English
+name. If omitted, the language defaults to English.
+Examples:
+"availableLanguage": "English"
+"availableLanguage": [
+"English",
+"Spanish",
+"French"
+]
+contactOption
+ContactPointOption
+Details about the phone number. Currently only these are supported:
+TollFree
+HearingImpairedSupported
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-07.

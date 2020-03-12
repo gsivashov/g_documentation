@@ -1,0 +1,160 @@
+Verify your site ownershipWhat is verification?
+Verification is the process of proving that you own the property that you claim to own. We need to confirm ownership because once you are verified for a property, you have access to its Google Search data, and can affect its presence on Google Search. Every Search Console property requires at least one verified owner.
+VERIFY YOUR PROPERTY
+Verify a website
+Either add a new property or choose an unverified property from the property selector bar.
+Choose one of the verification methods listed below and follow the instructions. Not all verification methods are available for all types of properties; the verification page will list which methods are available and recommended for your site.
+Multiple people can add and verify a website property separately, using the same or different verification methods. If you use the same verification method, just be sure that you don't overwrite the verification tokens of any other owners.
+Using multiple verification methods
+You can add additional verification methods in your property's verification settings page. You might want to add more than one verification method in case one of your existing verification methods fails (for example, if you verified using a Google Analytics tracking code, and someone changes a template on your website that omits the tag).
+To add an additional verification method, visit the Settings page for the property and click Ownership verification.
+How long does verification last?
+Google periodically checks if your verification is valid (for example, checking if your HTML verification tag is still present). If verification can no longer be confirmed, your permissions on that property will expire after a certain grace period.
+If all verified owners lose access to a property, all delegated owners (owners added by a verified owner), users, and associates of the property will lose access to the Search Console property.
+When will I start to see data?
+Data is collected for a property from the time that you first add it as a Search Console property. Any gaps in verification do not typically cause a gap in data collection.
+We lost our site owner!
+If the verified owner of your site leaves, or you're not sure who the verified owner is, verify another site owner. The new owner will be able to see the list of all owners and users verified to that site, as well as the verification methods for each owner. You can then optionally unverify previous owners by removing their verification token (for example, removing the HTML tag from the site, for HTML-tag-verified owners). See Add or remove owners for more information.
+Verification method details
+HTML file upload
+HTML file upload for site ownership verification - Google Search Console Training
+You can verify ownership of a site by uploading a special HTML file to your site. This file is tied to a specific user. Follow the instructions on the verification details page. Removing this verification file from your site will cause you to lose verification for the site.
+To verify ownership using a HTML file, choose the HTML file upload method on the verification details page for your site, and follow the instructions shown.
+The user agent that performs file upload verification has the user agent token Google-Site-Verification and the full user agent string Mozilla/5.0 (compatible; Google-Site-Verification/1.0)
+Potential errors:
+The following errors can occur with HTML file upload verification:
+Your verification file was not found.
+Please download the verification file provided on the Verification page of Search Console, and upload it to the specified location without any modifications. If the file name or content does not match the HTML file provided, we won't be able to verify your site ownership.
+Your verification file has the wrong content.
+Search Console checks to see if your verification file has the same filename and content as the file provided on the Verification page. If the file name or content does not match the HTML file provided, we won't be able to verify your site ownership. Please download the verification file provided on the Verification page of Search Console, and upload it to the specified location without any modifications.
+Hacked verification file.
+Your verification attempt failed in a way that indicates that your site might have been hacked. Learn more about detecting and fixing hacked sites.
+Your verification file redirects to a disallowed location.
+Googlebot will not follow redirects for verification files; if your site redirects all traffic to another site, we recommend using meta tag verification. Redirects within a single site—for example, from http://example.com/ to http://www.example.com/—are allowed.
+More common verification problems are listed below.
+HTML tag
+HTML tag for site ownership verification - Google Search Console Training
+You can verify your ownership of a site by adding a <meta> tag to the HTML of a specified page. We'll verify that the meta tag exists in the correct location. If we can't find the tag, we'll give you information about the error we encountered. This tag is tied to a specific user.
+To verify ownership with an HTML tag, choose the HTML tag method on the verification details page for your site and follow the instructions shown.
+The user agent that performs HTML tag verification has the user agent token Google-Site-Verification and the full user agent string Mozilla/5.0 (compatible; Google-Site-Verification/1.0)
+Potential errors:
+The following verification errors can occur with HTML tag verification:
+Meta tag not found/in the wrong location.
+The verification meta tag must be within the <head> section of the page. If you see these errors, check the following:
+Is the meta tag on the correct page? We look for it on your site's home page. This is the page that your server returns when someone requests your site (such as http://www.example.com/). This page is often named index.html or index.htm, but could be named differently, depending on your server's configuration.
+Is the meta tag in the correct place on the page? We look for it in the page's <head> section. An example of correct placement is shown here:
+<html>
+<head>
+<title>Your Page Title</title>
+<meta name="google-site-verification" content="your verification string">
+</head>
+<body>
+...
+If you're using a web editor or a WYSIWYG editor to edit your page, make sure you've selected the 'Edit HTML' option or are editing the source code of the page.
+Your meta tag is incorrect.
+We found the verification meta tag, but the contents were incorrect. To avoid errors, copy and paste the meta tag provided on the Verification page of Search Console.
+More common verification problems are listed below.
+DNS record
+DNS record for site ownership verification - Google Search Console Training
+You can verify ownership of a property at the domain level by adding a DNS record in your domain name provider.
+To use this method, you must sign in to your domain name provider (for example, GoDaddy.com or networksolutions.com) and add a new TXT record. Google will verify that your personal record is present and assigned to your domain. Each DNS record associates a specific user with a specific domain.
+To verify using a DNS record:
+Get your TXT record: When asked to verify your property, choose the Domain verification method (or create a Domain property) and you will be given a string value to use in the next step.
+Add the TXT record to your domain provider: Add your TXT record from step 1 to your domain provider's records:
+Find the G Suite documentation for your provider
+Ignore G Suite's step 1 (Get your unique verification record): you already got your TXT record in step 1 above.
+Follow Step 2 (Sign in to your domain host)
+Follow Step 3 (Add the verification record to your provider's DNS records)
+Ignore G Suite's step 4 (the verification step): that will come next.
+Verify your property in Search Console: Open your unverified property in Search Console (or switch to your unverified property using the property selector). When prompted, click Verify. Successful attempts should be verified immediately; if you have an error, see the list of potential errors below. Note: DNS changes may take some time to verify; if we don't find your record immediately, wait a day and try step 3 again
+Important: To stay verified, don't remove the DNS record, even after verification succeeds.
+Potential errors:
+The following verification errors can occur with DNS record verification:
+Your verification DNS TXT record was not found
+Your verification TXT record was not found. It can take a few minutes after posting the record for it to be visible to Google; wait a bit then try again.
+Your verification record did not match
+No verification records on your DNS provider matched the value given to you by Search Console. Be sure to use the record provided by the verification page.
+More common verification problems are listed below.
+Google Analytics tracking code
+Google Analytics for site ownership verification - Google Search Console Training
+If you use Google Analytics to track your site's traffic, you can verify your site using the Google Analytics tracking code associated with the site. To do this, you must have "edit" permission for the web property whose tracking code is used by that page. Also, your tracking code must use either the analytics.js or gtag.js snippet.
+To verify ownership using Google Analytics:
+Choose Google Analytics in the verification details page for your site, and follow the instructions shown.
+Put the tracking code in the <head> section, not the <body> section, of your page. If you do not, verification will fail.
+Use the code exactly as provided; do no modify it. If you modify it, verification will fail.
+Other administrators of your Google Analytics account will be granted access to your site's data in Search Console.
+The Google Analytics tracking code is used only to verify site ownership. No Google Analytics data will be accessed.
+The user agent that performs Google Analytics verification has the user agent token Google-Site-Verification and the full user agent string Mozilla/5.0 (compatible; Google-Site-Verification/1.0)
+Potential errors:
+The following verification errors can occur with Google Analytics tracking code verification:
+Snippet not found
+Did you put the snippet in the right location of the home page?
+Malformed snippet
+Be sure to use the snippet exactly as provided.
+Wrong snippet found (old Google Analytics snippet)
+Search Console supports only the latest version of the Google Analytics snippet.
+Wrong snippet type (Tag manager/third-party tag manager)
+Be sure that you are using your Google Analytics snippet.
+Snippet in wrong location
+The snippet must be in the <head> section of your home page.
+You don't have a Google Analytics account / Insufficient permissions
+You must have a valid Google Analytics account and you must have Edit permissions on that account.
+More common verification problems are listed below.
+Google Tag Manager container snippet
+Google Tag Manager for site ownership verification - Google Search Console Training
+If you have a Google Tag Manager account, you can verify ownership of a site using your Google Tag Manager container snippet code.
+To verify ownership using Google Tag Manager:
+Choose Google Tag Manager in the verification details page for your site, and follow the instructions shown.
+You must have Publish permission for the Google Tag Manager container on the page.
+Place the <noscript> portion of the Tag Manager code immediately after the opening <body> tag of your page. If you do not, verification will fail.
+You cannot insert a data layer (or anything other than HTML comments) between the <body> tag and the tag manager code. If you do, verification will fail.
+Use the code exactly as provided; do no modify it. If you modify it, verification will fail.
+The user agent that performs Google Tag Manager verification has the user agent token Google-Site-Verification and the full user agent string Mozilla/5.0 (compatible; Google-Site-Verification/1.0)
+Potential errors:
+The following verification errors can occur with Google Tag Manager verification:
+Insufficient permissions
+You need Publish permission on your Google Tag Manager container.
+Wrong tag
+Be sure that you are using the proper tag associated with the account used to sign in to Search Console.
+No tag manager container
+You haven't created any containers in your Tag Manager account.
+Tag not found / wrong location
+Be sure to put the tag on the proper page and location, as described above.
+More common verification problems are listed below.
+Google Sites
+Google Sites ownership verification - Google Search Console Training
+To verify a new style Google Site, you must use the Google Analytics Tracking Code method to verify your site.
+If you are using classic Google Sites, or sites with a custom domain URL, use the HTML tag method.
+Note that your site must be created using the same Google Account you use for Search Console.
+Be sure that you are logged in to Search Console with the same account used to manage your Google Site.
+Blogger
+Blogger for site ownership verification - Google Search Console Training
+New blogs that you create in Blogger should be added and verified automatically in your Search Console account. If your blog doesn't appear automatically on the Search Console home page, add the property and it should be verified automatically.
+Older blogs are not automatically verified, and should be verified using the HTML tag method.
+Be sure that you are logged in to Search Console with the same account used to manage your blog.
+Google Domains
+If you've registered a domain with Google Domains, any property that you register on that domain should be verified automatically when you add it to Search Console.
+Common verification errors
+In addition to any method-specific verification errors, the following verification errors are possible in most verification methods:
+Incorrect tag/snippet/file errors
+Be sure to use the exact tag, code snippet, or file provided to you when beginning verification.
+The connection to your server timed out.
+We were unable to verify your file because we received a server timeout. This could be because your server is down or is busy and responding slowly. Make sure that your server is responding and try again.
+We encountered an error looking up your site's domain name.
+We tried to access your verification file, but were unable to access your domain due to a DNS error. This could be because your server is down, or there is an issue with the DNS routing to your domain. Make sure that your domain is resolving correctly and try again.
+The download request was redirected too many times.
+Check the URL for potential issues, such as an infinite loop.
+Your server returned an invalid response.
+This can happen if your site is requires password authentication, or if we cannot access it for other reasons.
+We were unable to connect to your server.
+Make sure that your server is not down, and that your domain is resolving correctly, and try again.
+An internal error occurred.
+If this problem persists, check the Webmaster Central Help Forum for updates.
+Timeout
+Either your site or the domain server stopped responding to our requests (depending on the verification method used). Confirm that your site is responding, and then try again.
+Could not find your domain
+We tried to resolve the site URL that you gave us, but it is unknown to the DNS service. Check that you are providing the correct URL for your property.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Get your site on Search ConsoleAdd a website propertyRemove a property from your listVerify your site ownershipManaging owners, users, and permissionsI don't recognize this new owner
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

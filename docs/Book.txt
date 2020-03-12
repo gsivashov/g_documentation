@@ -1,0 +1,266 @@
+Home
+Products
+Search for Developers
+Reference
+Book
+Book actions make Google Search an entry point for discovering books and authors, enabling Search
+users to quickly buy the books that they find directly from Search results. As a provider of e-books,
+you can provide a feed of data to Google using the structured data schema below.
+To ensure robust
+coverage and better serve our users, this feature is currently limited to
+book providers that have broad book availability. If you would like to participate, register your
+interest in our form. Indicating interest in this feature does not guarantee participation.
+Examples
+The user’s query can indicate an intent to find a book, such as
+a book title, like The Catcher in the Rye, or the books of J.D. Salinger.
+For
+relevant queries, we might show a Knowledge
+Graph card for the book. Read more about managing your Knowledge Graph data. Read actions, which are incorporated into the cards, display
+options for acquiring the book. Through links you provide, read actions
+send users directly from the Knowledge Graph card to a book page on your
+site or app.
+<html>
+<head>
+<title>The Catcher in the Rye</title>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Book",
+"name" : "The Catcher in the Rye",
+"author": {
+"@type":"Person",
+"name":"J.D. Salinger"
+},
+"url" : "http://www.barnesandnoble.com/store/info/offer/JDSalinger",
+"workExample" : [{
+"@type": "Book",
+"isbn": "031676948",
+"bookEdition": "2nd Edition",
+"bookFormat": "https://schema.org/Hardcover",
+"potentialAction":{
+"@type":"ReadAction",
+"target":
+{
+"@type":"EntryPoint",
+"urlTemplate":"http://www.barnesandnoble.com/store/info/offer/0316769487?purchase=true",
+"actionPlatform":[
+"http://schema.org/DesktopWebPlatform",
+"http://schema.org/IOSPlatform",
+"http://schema.org/AndroidPlatform"
+]
+},
+"expectsAcceptanceOf":{
+"@type":"Offer",
+"Price":6.99,
+"priceCurrency":"USD",
+"eligibleRegion" : {
+"@type":"Country",
+"name":"US"
+},
+"availability": "https://schema.org/InStock"
+}
+}
+},{
+"@type": "Book",
+"isbn": "031676947",
+"bookEdition": "1st Edition",
+"bookFormat": "https://schema.org/EBook",
+"potentialAction":{
+"@type":"ReadAction",
+"target":
+{
+"@type":"EntryPoint",
+"urlTemplate":"http://www.barnesandnoble.com/store/info/offer/031676947?purchase=true",
+"actionPlatform":[
+"http://schema.org/DesktopWebPlatform",
+"http://schema.org/IOSPlatform",
+"http://schema.org/AndroidPlatform"
+]
+},
+"expectsAcceptanceOf":{
+"@type":"Offer",
+"Price":1.99,
+"priceCurrency":"USD",
+"eligibleRegion" : {
+"@type":"Country",
+"name":"UK"
+},
+"availability": "https://schema.org/InStock"
+}
+}
+}]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Guidelines
+In addition to the
+general structured
+data guidelines, follow these guidelines that are specific to books and read actions:
+If you have duplicate pages for the same content, the link should be the
+canonical URL that
+contains the book title and other book information.
+Upon clicking a read action link, your user should be sent to a page that directly
+supports the acquisition of the book.
+Read action links must point to a page where users can acquire the content. Read action
+links must not point to pages that to click more pages to acquire the content or view more
+details, such as a search results page or product summary page.
+Structured data type definitions
+You must include the required properties for your content to be eligible for display as a rich result.
+You can also include the recommended properties to add more information about your content,
+which could provide a better user experience.
+Book
+While the full definition of Book is available at
+schema.org/Book, you only need to define
+the properties listed below. You must define the following required properties for every book
+in your site.
+Required properties
+author
+Person
+The author(s) of the book. For each author you list, you must provide a
+specific Person entity.
+See Person.
+name
+Text
+The title of the book. If you provide
+multiple editions, use the title of the book edition.
+url
+URL
+URL of the page on your site about the book. The page
+may list all available editions.
+workExample
+Book
+The editions of this book. See sub-properties for
+workExample.
+Recommended properties
+@id
+URL
+Globally unique ID of the work in the a URL format. The ID should be stable and
+not change over time. The URL is treated as an opaque string and
+does not have to resolve to an actual web page.
+sameAs
+URL
+A reference page that unambiguously indicates the book's identity; for example,
+the URL of the book's Wikipedia page, Freebase page, or official website.
+Country
+This subset of Offer defines the two-letter country
+code where the Offer is eligible.
+Required properties
+name
+Text
+The name of the country, in compliance with the alpha-2 3166 standard.
+EntryPoint
+The EntryPoint serves as the mechanism for you to
+provide the deep links to your books. You can specify the deep links by the type of
+platform they intend to serve.
+Required properties
+actionPlatform
+Text
+The platform(s) on which the link works. One or more of the following:
+http://schema.org/DesktopWebPlatform: Works on desktop web browsers.
+http://schema.org/MobileWebPlatform: Works on mobile web browsers.
+http://schema.org/AndroidPlatform: Works on Android native app.
+http://schema.org/IOSPlatform: Works on iOS native app.
+This property can be omitted for deep links with a custom
+Android scheme.
+urlTemplate
+URL
+Link(s) to content.
+Offer
+Offer defines the terms and conditions for purchase.
+Required properties
+price
+Number
+The offer price of a product, currency will be appointed in priceCurrency
+property.
+priceCurrency
+Text
+The currency (in 3-letter ISO 4217 format).
+Recommended properties
+@id
+URL
+Globally unique ID of the offer.
+availability
+ItemAvailability
+The availability of this item; for example, InStock, OutOfStock,
+or PreOrder.
+eligibleRegion
+Country
+Countries in which the offer is valid.
+ineligibleRegion
+Country
+Countries which the offer is not valid
+(may override eligible regions if one
+country appears in both eligible region set and ineligible region set).
+Person
+Google uses the Person type for the author.
+Required properties
+name
+Text
+The name of the person.
+Recommended properties
+sameAs
+URL
+A reference page that unambiguously indicates the item's identity; for example,
+the URL of the item's Wikipedia page, Freebase page, or official website.
+ReadAction
+ReadAction properties determine both
+the platform for the content as well as the conditions in which the action can
+occur, such as purchase of the content before reading can begin.
+Required properties
+expectsAcceptanceOf
+Offer
+A container for the action conditions.
+target
+EntryPoint
+A container for the action target.
+workExample
+Either a specific edition of the written work, or the volume of the work.
+Required properties
+bookFormat
+BookFormatType
+The format of the book using one or more of the following values:
+EBook
+Hardcover
+Paperback
+AudioBook
+isbn
+Text
+The ISBN of the tome. The ISBN can be either 10 or 13 digits, but we recommend 13 digits if
+available. Use the ISBN of the print book instead if there is no ISBN for
+the edition being described; for example, for the Kindle edition.
+potentialAction
+ReadAction
+Read action(s) for the book.
+Recommended properties
+@id
+URL
+Globally unique ID of the volume in the form of a URL. The ID should be stable
+and not change over time. It should also be distinct from the ID used
+for the book. The URL is treated as an opaque string and does not
+have to be a working link.
+author
+Person
+The author(s) of the tome. Only use this property if the author(s) of the tome differ from the
+related book. Provide one Person entity per author.
+bookEdition
+Text
+The edition of the book.
+datePublished
+Date
+Date of first publication of this tome.
+name
+Text
+The title of the tome. Only use this property for the title of the tome if it differs from the
+book.
+sameAs
+URL
+A reference page that unambiguously indicates the item's identity; for example,
+the URL of the item's Wikipedia page, Freebase page, or official website.
+url
+URL
+URL specific to this edition if one exists.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

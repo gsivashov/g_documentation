@@ -1,0 +1,16 @@
+Add an image to GoogleTo include a picture in Google search results, add your image to a website along with a description. While you can’t directly upload images into search results, searchable images posted on a website can show up in our search results.
+Add your image to the web
+Post your image to a website
+If you'd like your photograph or image to appear in Google search results, you'll need to post the image on a website. If you don't own a website, here are some free content hosting services that you can use:
+Add the images to a blog using Blogger
+Create your own website using Google Sites
+Make sure the image you post is public and searchable
+By posting the image on a public and searchable website, you'll make it possible for Google to find your image and add it to the Images index. When you upload the image, make sure that the page your image is on is publicly accessible. For example, if you posted the photo on Google+, make sure the privacy setting was Public.
+For more tips on posting on a site that Google will index, read about adding a site to Google.
+Tips to help your image appear in Search
+To help your image appear in Google search results, follow these image publishing guidelines:
+Include descriptive text. Include text somewhere near the image, like an "alt" tag or a caption. This helps Google understand what the image is showing and what searches it relates to.
+Upload high-quality photos. Great image content is an excellent way to build traffic to your site.
+​Finally, be patient. Images you upload to the web won’t instantly appear in search results. You’ll need to wait until your site is indexed by Google before your images show up in search results.
+Was this helpful?How can we improve it?YesNoSubmit
+false

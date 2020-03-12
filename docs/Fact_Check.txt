@@ -1,0 +1,297 @@
+Home
+Products
+Search for Developers
+Reference
+Fact Check
+If you have a web page that reviews a claim made by others, you can include
+ClaimReview structured data on your web page. ClaimReview structured
+data can enable a summarized version of your fact check to display in Google Search results
+when your page appears in search results for that claim.
+This guide describes the details on how to implement ClaimReview structured data.
+If you don’t want to add structured data manually, you can check out the
+Fact Check
+Markup Tool. To learn more, visit
+About the Fact Check
+Markup Tool.
+Example
+Imagine a page that evaluates the claim that the earth is flat. Here is what a
+search for "the world is flat" might look like in Google Search results if the page
+provides a ClaimReview element (note that the actual visual design may change):
+Here's an example of structured data on the page that hosts this fact check:
+<html>
+<head>
+<title>The world is flat</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ClaimReview",
+"datePublished": "2016-06-22",
+"url": "http://example.com/news/science/worldisflat.html",
+"claimReviewed": "The world is flat",
+"itemReviewed": {
+"@type": "Claim",
+"author": {
+"@type": "Organization",
+"name": "Square World Society",
+"sameAs": "https://example.flatworlders.com/we-know-that-the-world-is-flat"
+},
+"datePublished": "2016-06-20",
+"appearance": {
+"@type": "OpinionNewsArticle",
+"url": "http://skeptical.example.net/news/a122121",
+"name": "Square Earth - Flat earthers for the Internet age",
+"datePublished": "2016-06-22",
+"author": {
+"@type": "Person",
+"name": "T. Tellar"
+}
+}
+},
+"author": {
+"@type": "Organization",
+"name": "Example.com science watch"
+},
+"reviewRating": {
+"@type": "Rating",
+"ratingValue": "1",
+"bestRating": "5",
+"worstRating": "1",
+"alternateName": "False"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Guidelines
+In addition to general guidelines
+that apply to all structured data markup, these additional guidelines apply to fact checks:
+To be eligible for fact check search results, your site must have several pages marked
+with ClaimReview structured data.
+Fact checks associated with news articles can be shown in either News results or the
+combined search results view; all other fact checks can appear only in combined search results view.
+Fact checks of a news claim must meet the
+News Publisher criteria for fact checks.
+Fact checks are not guaranteed to be shown:
+inclusion of fact check elements in Google Search results is determined programmatically.
+Fact check elements are scored based on a programmatic ranking of the site. Sites are
+evaluated in a process similar to page ranking: if the site
+ranking is high enough, the fact check element can be displayed in search results along with
+your page.
+The entire process is conducted programmatically; human intervention only occurs when user
+feedback is filed as violating the
+Google News Publisher criteria for fact checks,
+general
+guidelines for structured data, or when the publisher (whether or not a news site) does not
+meet standards for accountability and transparency, readability or site misrepresentation as
+articulated in our
+Google News General Guidelines.
+A single page can host multiple ClaimReview elements, each for a separate claim.
+If different reviewers on the page check the same fact, you can include a
+separate ClaimReview element for each reviewer's analysis. For more
+information, visit Posting multiple fact checks on a page.
+The page hosting the ClaimReview element must have at least a brief summary
+of the fact check and the evaluation, if not the full text.
+You should host a specific ClaimReview on only one page on your site. Do
+not repeat the same fact check on multiple pages, unless they are variations of the same
+page (for example, you can post the same ClaimReview on the mobile and desktop
+versions of a page).
+If your website aggregates fact-check articles, ensure that all articles match the above
+criteria and that you provide an open and publicly available list of all fact-check websites
+you aggregate.
+Posting multiple fact checks on a page
+Multiple ClaimReview
+elements on a single page don't need to be about the same claim, but they should all be
+relevant to the main topic of the page. Most sites implement multiple fact checks per page
+in one of two ways:
+Create a summary page with multiple summarized fact checks, each with its own ClaimReview
+element. Post the full-text version of each fact check on its own page.
+Each ClaimReview element on the summary page points to the full-page version
+rather than to the summary page.
+OR
+Create a single page with multiple full-length reviews, each with an HTML anchor. Each
+ClaimReview element points to that summary_page.html#anchor.
+If a page hosts multiple ClaimReview elements, Google Search may display all
+items in a carousel. The carousel only displays on mobile devices. For example:
+Structured data type definitions
+The following structured data types are required to implement fact checks:
+ClaimReview
+Claim
+Rating
+You must include the required properties for your content to be eligible for display as a rich result.
+You can also include the recommended properties to add more information about your content,
+which could provide a better user experience.
+If your organization is interested in implementing or experiencing issues with
+ClaimReview,
+submit
+your contact information. Our team may reach out to you.
+ClaimReview
+The full definition of ClaimReview is available at
+schema.org/ClaimReview.
+Required properties
+claimReviewed
+Text
+A short summary of the claim being evaluated. Try to keep this less than 75 characters
+to minimize wrapping when displayed on a mobile device.
+reviewRating
+Rating
+The assessment of the claim. This object supports both a numeric and a textual assessment.
+The textual value is currently the only value shown in search results.
+Different fact-checking projects have a variety of rating schemes which can have subtle differences,
+particularly for intermediate values. It is important to document such rating schemes to clarify
+the meaning of the numeric ratings. Minimally, there should be a number to text rating system
+for all your fact checks that carry numeric scores.
+1 = "False"
+2 = "Mostly false"
+3 = "Half true"
+4 = "Mostly true"
+5 = "True"
+For more information, see Rating.
+url
+URL
+Link to the page hosting the full article of the fact check. If the page has multiple
+ClaimReview elements, be sure that the fact check has an HTML anchor, and
+this property points to that anchor. Examples: http://example.com/longreview.html or
+http://example.com/summarypage.html#fact1
+The domain of this URL value must be the same domain as, or a subdomain of, the
+page hosting this ClaimReview element. Redirects or shortened URLs (such
+as g.co/searchconsole) are not resolved, and so will not work here.
+Recommended properties
+author
+Organization
+The publisher of the fact check article, not the publisher of the
+claim. The author must be an organization or a person. The
+author have at least one of the following properties:
+name
+Text
+Name of the organization that is publishing the fact check.
+url
+URL
+The URL of the publisher of the fact check. This can be a homepage, contact page,
+or other appropriate page.
+datePublished
+DateTime
+The date when the fact check was published
+itemReviewed
+Claim
+An object describing the claim being made. For more information, see
+Claim.
+Backwards compatibility: Upon the initial launch
+of fact check, Google Search recommended CreativeWork as the
+itemReviewed. Google Search continues to support earlier markup patterns.
+Here's an example that shows the original markup style:
+<html>
+<head>
+<title>The world is flat</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ClaimReview",
+"datePublished": "2016-06-22",
+"url": "http://example.com/news/science/worldisflat.html",
+"itemReviewed":
+{
+"@type": "CreativeWork",
+"author":
+{
+"@type": "Organization",
+"name": "Square World Society",
+"sameAs": "https://example.flatworlders.com/we-know-that-the-world-is-flat"
+},
+"datePublished": "2016-06-20"
+},
+"claimReviewed": "The world is flat",
+"author":
+{
+"@type": "Organization",
+"name": "Example.com science watch"
+},
+"reviewRating":
+{
+"@type": "Rating",
+"ratingValue": "1",
+"bestRating": "5",
+"worstRating": "1",
+"alternateName" : "False"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Claim
+The full definition of Claim is available at
+schema.org/Claim.
+Recommended properties
+appearance
+URL or
+CreativeWork
+A link to, or inline description of, a CreativeWork in which this claim
+appears.
+author
+Organization or
+Person
+The author of the claim, not the author of the fact check. Don't include
+the author property if the claim doesn't have an author. If you add
+author, define the following properties:
+nameText, required
+The publisher of the claim. The publisher can be a person or organization.
+sameAs
+URL, recommended
+Indicates the party that is making the claim, regardless of whether the party
+is a Person or
+Organization. When multiple publishers
+report on the same claim, the appearance property can be repeated. When
+multiple parties are making essentially the same claim, the author
+property can be repeated.
+The URL can be:
+The homepage of the organization that is making the claim.
+Another definitive URL that provides information about the party that is making
+the claim, such as a person or organization's Wikipedia or Wikidata entry.
+datePublished
+DateTime
+The date when the claim was made or entered public discourse (for example, when it became
+popular in social networks).
+firstAppearance
+URL or
+CreativeWork
+A link to, or inline description of, a CreativeWork in which this specific
+claim first appears.
+Rating
+The full definition of Rating is available at schema.org/Rating.
+Required properties
+alternateName
+Text
+The truthfulness rating assigned to ClaimReview.reviewRating, as a human-readible
+short word or phrase. This value is displayed
+in the fact check in search results. Examples: "True" or
+"Mostly true".
+If using a longer sentence, be sure that the beginning of the sentence
+expresses the meaning, in case the sentence is truncated to fit the display. For example:
+"Mostly true in the specifics, although the overall claim is somewhat misleading"
+Recommended properties
+bestRating
+Number
+For numeric ratings, the best value possible in the scale from worst to best. Must be greater than
+worstRating. Must be able to be evaluated as a number. Example:
+4
+name
+Text
+Same as alternateName, and used when alternateName is not
+provided, but we recommend that you specify alternateName instead of name.
+ratingValue
+Number
+A numeric rating of this claim, in the range worstRating —
+bestRating inclusive. Integer values are recommended but not required. The closer the numeric
+rating is to bestRating, the more true it is; the closer this value is to
+worstRating, the more false it is. The numeric rating must be able to
+be evaluated as a number. Example: 4
+worstRating
+Number
+For numeric ratings, the worst value possible in a scale from worst to best. Must be less than
+bestRating. Must be able to be evaluated as a number. Must have a minimum value
+of 1. Example: 1
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-11.

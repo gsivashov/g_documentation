@@ -1,0 +1,68 @@
+Home
+Products
+Search for Developers
+Guides
+Manage your podcast
+This guide describes how to manage and monitor your podcasts on Google Search.
+Preview on Android devices
+You can preview how your podcast may look in search results in the Google Search App on
+Android. The preview tool generates a QR code, which you can scan on an Android device to see the
+experience. Previewing a podcast requires v8.0 or higher of the Google Search App, even though
+the experience is available on v6.5 or higher.
+Preview
+Update
+Google Podcasts automatically checks for updates to feeds that Google finds on the web, often
+as quickly as five minutes. To ensure that the update is noticed quickly, use the
+Google
+PubSubHubbub site. For example, you could use the Google PubSubHubbub site when you change your
+show’s description or release a new episode. Enter your feed URL in the Topic URL field and click
+Publish. If you are submitting a feed for the first time and it complies with
+the podcast guidelines, your podcast
+should be available within a week.
+To avoid the manual process of entering a URL, you can automate the process with the
+PubSubHubbub API.
+Remove
+There are several ways to remove a podcast or episode from Google Podcasts. Choose the solution
+that best fits your situation.
+Remove an episode: Unpublish the episode from your RSS feed by removing
+it from the list of items. Depending on a variety of factors, the change may take effect in
+as little as five minutes or—in the worst case—as long as a couple days.
+Remove a podcast: Block Google by using one of the following solutions:
+Use one or both of the following tags, which may take effect within a couple of days:
+<googleplay:block>yes</googleplay:block>
+<itunes:block>yes</itunes:block>
+These tags prevent the podcast from appearing in Google Podcasts, including Google Search,
+Google Home, and the Google Podcasts app. These tags don't affect the
+visibility of the host page in Google Search.
+Use robots.txt to block Googlebot from the RSS
+feed, which may take effect within a few weeks.
+Report copyright infringement: To remove content from Google's services
+under applicable laws (such as copyright infringement), follow our
+legal troubleshooter
+and select Web Search.
+Distribute
+To drive more traffic to your podcast from your web page, you can add a button to your
+web page with the Google Podcasts app logo. Upon clicking the button, users are directed to your
+podcast in the Google Podcasts app on Android devices. If users don't have the Google Podcasts app
+installed or are using a different platform (for example, iOS or desktop), they are directed to
+the Google Podcasts web page version of your podcast. You
+can generate a direct link to
+create the link URL. You can also download the Google Podcasts brand assets to use the Google Podcasts app logo as a button on your web page that links directly to your podcast.
+Generate direct links
+Download brand assets
+Monitor
+When a user streams or downloads an episode of your podcast, the episode is obtained directly
+from the URL specified in the episode’s <enclosure> tag in the RSS feed. You
+can distinguish Google Podcasts requests from other podcast player requests by looking at the user-agent HTTP
+header:
+Track requests from Google Podcasts by looking for the regular expression
+\b(GoogleChirp|GSA)\/.
+To split out analytics for Google Podcasts on Android from Google Podcasts on smart
+speakers, look for the following regular expressions:
+Google Podcasts on Android: \bGSA\/
+Google Podcasts on smart speakers: \bGoogleChirp\/
+To build the search index, Google periodically crawls RSS feeds
+and episodes. However, these requests don't match the user-agent patterns described above, so
+the requests don't appear as podcast listeners.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-05-21.

@@ -1,0 +1,27 @@
+Get started with Search ConsoleHow you use Search Console depends on your role, your site, and your personal needs. Read the appropriate section to get started.
+What is your role?
+Not much time to manage my site
+If you have a website on an automated web hosting platform like Blogger, Wix, or Squarespace, or run a small business and don't have much time to put into your website, you might not need to use Search Console at all.
+However, it's still worth reading a little bit about managing your presence in search engines by reading the following guides. A little knowledge can go a long way toward helping people find your site. It should only take about twenty minutes to read these guides.
+How does Google Search work? - Read this short guide to understand how Google works.
+Get on Google - See the different ways to get your business or identity on various Google products, including Maps, Search, and YouTube.
+Optimize your site for search engines - Read this six-point guide about making your website more findable and useful to readers.
+Measuring your performance on Google - Is your site on Google? How many people found your site on Google? What is your ranking in search results? What were people searching for when they found your site? Learn how to answer these questions.
+If you think your site needs more help than you can provide, you might consider hiring a professional search engine consultant.
+You can watch the video series for beginners after you've read these documents.
+Beginning user (willing to learn)
+If you're interested in improving your site's appearance on Google Search, and you're willing to put in a little time learning about search engine optimization (SEO) and Search Console, here is your getting started guide.
+You don't need to understand HTML or coding, but you do need to spend some time thinking about how your site is organized and written, and be willing to make some changes to your site. The good news is that a little effort can go a long way in improving your search results.
+Get started
+SEO (advanced user)
+If you're ready to spend more time digging into the reports, learning how Google Search works, and redesigning your site, you can really analyze and customize your site's performance on Google Search. This track assumes that you are familiar with basic SEO practices and terms.
+Get started
+Web developer
+If you build or manage the website, implement structured data, or generally do most of your work in a code editor, you'll use Search Console for monitoring, testing, and debugging your site code. Here are our recommendations:
+Learn how search works. Understanding the basics of crawling, indexing, and serving is important in order to help you debug Search-related issues on your site.
+Monitor for errors or spikes in the Index Coverage report, Performance report, and Mobile Usability report. If you have AMP pages or rich results, monitor the AMP status report or Rich result status reports, respectively.
+To inspect a single page, either drill down into a single URL from the appropriate report and click Inspect, or use the URL Inspection tool to inspect a specific URL. The URL Inspection tool provides information about all types of issues, including indexing, AMP, mobile usability, HTML, and scripting issues.
+Read the developer documentation for Search to learn about structured data, AMP in search, mobile best practices, API access to Search Console's tools and reports, and more.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+HelpAbout Search ConsoleGet started with Search ConsoleGet on Google

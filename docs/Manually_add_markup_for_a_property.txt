@@ -1,0 +1,24 @@
+Manually add markup for a propertyWhile Markup Helper can show you how to add markup for the most common data properties, it doesn't support all of schema.org's properties. If your page contains data that's beyond the common properties, you can look up the data type on schema.org, use the schema.org information to add markup, and then use the Structured Data Testing Tool to test your markup.
+Manually add microdata markup for a property
+Tag as much data as possible in Markup Helper.
+Download the example markup from Markup Helper.
+If your page contains data that is not supported by Markup Helper, view the schema.org reference documentation for the data type that's on your page. Click on data type in the Data types supported by Markup Helper list. Then click the link to the schema.org reference documentation for the data type.
+Find the name of the property for the additional data you want to mark up. For example, if you want to mark up an award that the movie has won, find the name of an appropriate property, such as the award property of Movie.
+If the data on your HTML page isn't already surrounded by its own HTML tag, surround the data with a tag. You can use a <span> tag to surround inline data, and a <div> tag to surround a block of data.
+Add the itemprop attribute to the surrounding tag and specify the name of the schema.org property as the attribute value.
+For example, the following HTML code snippet shows that the movie "The Sting" won the Academy Award for Best Picture:
+<div itemscope itemtype="https://schema.org/Movie">
+In 1974, <span itemprop="name">The Sting</span> won
+the <span itemprop="award">Academy Award for Best Picture</span>.
+<img itemprop="image" src="sting.jpg" alt="Movie poster for The Sting"/>
+</div>
+For more information and examples of adding microdata, see About microdata.
+For more information about adding JSON-LD markup, see JSON-LD.
+After you add markup, use the Structured Data Testing Tool to check your markup and make sure that Google can extract the structured data from your page.
+About schema.org data types
+To provide a consistent way of describing the data on web pages, schema.org organizes data into types and provides a schema for each data type. Each schema is organized as a collection of properties. For example, schema.org provides the Movie schema that you can use to mark up pages containing data about movies. The Movie schema defines properties for a movie's name, actor, director, and so on.
+The schemas are organized into a hierarchy. The schemas near the top of the hierarchy are generic, while the schemas lower in the hierarchy are more specific. For example, a Movie is a type of CreativeWork, and a CreativeWork is a type of Thing.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Structured Data Markup HelperStructured Data Markup HelperTagging datesAdd missing dataRemove tagsTag an email templateManually add markup for a propertyReview and download the markup example
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

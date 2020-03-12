@@ -1,0 +1,36 @@
+Home
+Products
+Search for Developers
+Guides
+StyleCraze improved site CTR 1.2x by leveraging How-to structured data
+1.2x CTR improvement
+100% URLs with markup observed a positive uplift on CTR
+Implemented markup in 3 languages (English, Hindi, and Telugu)
+Challenge
+StyleCraze is an online magazine that focuses on the latest updates, tips, and resources in
+beauty, health and wellness, and all topics that matter the most to the woman of today. The
+biggest challenge for StyleCraze was a lack of an image-driven experience that could aid
+discovery of content. StyleCraze has a library of how-to content, and they were looking for a
+way to reach their users effectively.
+Solution
+StyleCraze wanted to provide their users with richer previews of step-by-step tasks. To be
+eligible for the How-to rich result feature, they decided to test HowTo
+structured data on the relevant articles on their site by following the
+How-to developer documentation.
+They selected one article and applied markup along with images and text. They also tested
+the implementation with the Structured
+Data Testing Tool. Once the page was indexed, they were able to see the mobile version
+immediately. Here are some examples of the How-to rich results they saw in Google Search.
+Results
+StyleCraze saw their click-through-rate (CTR) increase by 20% (from 4.4% to 5.3%) for the
+first URL. They implemented How-to structured data to five other how-to articles to
+understand how this could work for them at scale. After a pre-post analysis, they noticed
+that all articles with structured data showed positive results. As a result, they swiftly
+expanded markup implementation to
+regional language articles as well. "We saw tremendous
+impact in CTRs from using How-to Structured data on our website", says Abhishek Jha, VP
+Marketing at StyleCraze.
+What’s next for StyleCraze? They plan to implement Howto structured data to all
+how-to articles on their site.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-14.

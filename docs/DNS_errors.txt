@@ -1,0 +1,17 @@
+DNS errorsWhat is a DNS error?
+A DNS error means that Googlebot can't communicate with the DNS server either because the server is down, or because there’s an issue with the DNS routing to your domain.
+Specific errors you might see include:
+Server error: DNS
+Server error: DNS Lookup
+Server error: DNS timeout
+While most DNS warnings or errors don’t affect Googlebot's ability to access your site, they may be a symptom of high latency, which can negatively impact your users.
+How to deal with DNS errors
+Make sure Google can crawl your site.
+Use Fetch as Google on a key page, such as your home page. If it returns the content of your homepage without problems, you can assume that Google is able to access your site properly.
+For persistent or re-occuring DNS errors, check with your DNS provider.
+Often your DNS provider and your web hosting service are the same.
+Configure your server to respond to non-existent hostnames with an HTTP error code such as 404 or 500.
+A website such as example.com can be configured with a wildcard DNS setup to respond to requests for foo.example.com, made-up-name.example.com and any other subdomain. This makes sense in the case where a site with user-generated content gives each user account its own domain (http://username.example.com). However, in some cases, this kind of configuration can cause content to be unnecessarily duplicated across different hostnames, and it can also affect Googlebot’s crawling.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

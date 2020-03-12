@@ -1,0 +1,49 @@
+Add or remove propertiesYou can have up to 1,000 properties in your Search Console account.
+Who can add or remove a property:
+Property owners can add or remove themselves or others.
+Users can only add or remove themselves.
+Add a property
+Anyone who can verify ownership of a property can become a verified owner. Read more about the different permission levels.
+Add a new property
+To add a new property that you've never accessed before:
+See Add a website
+Re-add a former property
+If you were granted access by another user, you can re-add a property as long as any verified owner exists for the property (not necessarily the one who granted you access before). If you are a verified owner, and your verification token is still valid, you can re-add the property to your list.
+If you removed the property yourself without unverifying yourself
+Click Add property in the property list dropdown on the menu bar and add information about the property. Your access will be regranted automatically.
+If someone else removed your access, or you unverified yourself
+Either:
+Ask an existing owner to grant you access
+or
+Verify ownership
+Remove a property
+Removing a property has the following effects:
+You will no longer see the property in your property list.
+You will no longer receive messages for the property.
+You will not be able to see any information about the property or access the property settings.
+Your message history for the property will be retained.
+To remove a property from your account
+You can remove a property in your own account without or with unverifying it.
+Remove a property without unverifying it
+Verified owners: If you remove a property without unverifying it, you can later add it back without re-verification, if your verification token is still valid.
+Delegated owners or users: If you were granted access by another user, you can remove the property and later re-add it as long as at least one verified owner exists for the property.
+To remove:
+In the Settings page, select "Remove access".
+Remove and unverify a property
+This applies only if you are a verified owner; otherwise, you can simply remove the property without verifying it as described above.
+To remove and unverify:
+Follow the instructions for deleting a verified owner. This will permanently remove your access to the property in Search Console. To regain access, you will need to reverify it. Your verification history for the property will be removed after 18 months.
+To remove a property from someone else's account
+Removing another user has the following rules:
+A delegated owner can remove access by a user.
+A verified owner can remove access by a delegated owner or user.
+You can remove a verified owner by removing their access token.
+Removing a property from someone else's account permanently deletes their access to the property.
+In order to regain access, the removed user must be re-granted access by an owner, or verify themselves as described in Verification.
+The removed user's verification history for the property will be removed after 18 months.
+To remove another user:
+Follow the instructions for deleting a user or delegated owner.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Get your site on Search ConsoleAdd a website propertyRemove a property from your listVerify your site ownershipManaging owners, users, and permissionsI don't recognize this new owner
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

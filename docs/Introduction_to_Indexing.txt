@@ -1,0 +1,86 @@
+Home
+Products
+Search for Developers
+Guides
+Introduction to Indexing
+The indexing of your content by Google is determined by system algorithms that
+take into account user demand and quality checks. You can influence the Google
+indexing process by how you manage the discovery of your content, which relies
+on the URL of the page. Without your pages’ URLs, our systems cannot crawl,
+index, and ultimately present your information in Search.
+This document
+introduces the notion of getting into the Google index by helping you decide
+how to manage discovery of your content by Google, which is the first step in
+the indexing process.
+Ways to manage your resources for discovery by Google
+You can choose a number of approaches to help Google find your resources and
+data, from entirely passive to very pro-active.
+This section describes the
+general choices you might want to make to providing resource metadata—sitemaps
+and resource linking—to best position your content to appear in Search.
+While these approaches help Google find the URLs on your site, it doesn't
+guarantee that your content will be indexed and served in Search results.
+A. Take a passive approach
+If you create a website without providing a sitemap, our systems attempt to
+find and index the content on your site unless you specifically block your
+content from crawlers.
+As a normal course of business, Google systems crawl
+the relationships between your pages and other website pages that link to your
+content.
+For more information, see the
+Introductory Guide.
+Advantages: No additional work beyond producing your content.
+This
+approach is adequate for situations where you have a simple website and do not require timely
+content discovery in Search results.
+Disadvantages: Relying on natural links as a sole means to discovery means
+that our systems might not be able to find all the content on your site, especially if it is
+new or has few references.
+This might cause problems for new content that you are eager to see
+in Search, such as content you mark up especially for inclusion in rich results.
+B. Actively manage your URLs
+By providing our systems a direct list of URLs to your content, known as a
+sitemap, our ability to find your pages no longer relies solely on your page’s
+relationship to other referring pages on the wider web. This speeds up the
+process of our systems discovering your content. Typically, you host the
+sitemap on your domain in a place accessible by Googlebot.
+In addition, if you have multiple URLs that contain essentially the same
+content—such as an AMP page, and HTML page, and a mobile app view—it helps to
+indicate that relationship between those resources. Establishing the
+relationship between your resources allows our system to correctly serve the
+right content, such as a link to your app or to your AMP pages.
+To do this,
+you establish the canonical pages for your site and set up a linking
+relationship between those pages and alternative web or app content.
+Once we
+establish the relationships between your various resources, we can determine
+which type of content to display to the user in Search results, such as showing
+a link to your app for users who search from their phone and have your app
+already installed.
+Advantages: Enhances the performance of your rich results in Search. Speeds up the process
+of ingesting new and low-referral content into the system.
+This approach
+removes one potential obstacle for getting your content quickly served by
+Google in a variety of forms.
+Disadvantages: You do the additional work of providing resource
+metadata, which is your sitemap and relationships you specify between your web pages, your
+app, and your AMP pages.
+C. Submit new and updated URLs to Google
+While you can merely host your sitemap on your site for our systems to
+discover, you can also provide notification about new URLs or existing URLs
+that have changed content.
+For new URLs, submitting your sitemap helps us more quickly discover them. For
+content changes to existing URLs, you can provide an XML sitemap with
+modification timestamps to notify us of changed content ready for re-indexing.
+When our systems receive the list of URLs, we then determine when to crawl the
+content. For the content that we do crawl, we establish the existence of the
+resource on your server—a process known as verifying—and then make that content
+ready for our indexing process.
+Advantages: Submitting URLs to Google helps drive the timeliness of content
+updates from your domain to Search.
+Disadvantages: Not many. Once you’ve done the work of creating a sitemap,
+submitting it to Google is a simple process and many content management systems offer
+programmatic sitemap updates.
+Learn more about sitemaps and why you might need one for your site in the Search Console Help Center.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-01-29.

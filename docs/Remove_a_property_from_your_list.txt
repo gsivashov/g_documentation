@@ -1,0 +1,10 @@
+Remove a property from your list To remove a property from your property list, open the property settings page of the property to remove and click Remove property. You can add a property back, as described below, but be aware of the following:
+You will no longer receive notifications for the removed property.
+If other verified property owners remain, the only effect is to remove the property from your list; other users will not be affected.
+If you are the last verified owner of a property, all users or delegated owners of the property will lose access to the property in Search Console.
+Re-add a removed property
+You can re-add a removed property without the need for verification (as long as the property still has at least one verified owner). Learn more.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Get your site on Search ConsoleAdd a website propertyRemove a property from your listVerify your site ownershipManaging owners, users, and permissionsI don't recognize this new owner
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

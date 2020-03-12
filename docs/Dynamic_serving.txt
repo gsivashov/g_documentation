@@ -1,0 +1,70 @@
+Home
+Products
+Search for Developers
+Guides
+Dynamic serving
+This page explains how to serve different versions of your page for different user agents (mobile, tablet, or desktop). For more information on how to provide crawlers with a non-JavaScript version of a page see our guide on dynamic rendering.
+Dynamic serving is a setup where the server responds with different HTML (and
+CSS) on the same URL depending on which user agent requests the page (mobile, tablet, or desktop).
+As it is not immediately apparent in this setup that the site alters the HTML
+for mobile user agents (the mobile content is "hidden" when crawled with a
+desktop user agent), we recommend that the server send a hint to request that
+Googlebot for smartphones also crawl the page, and thus discover the mobile
+content. This hint is implemented using the Vary HTTP header.
+Dynamic serving serves different code to each device, but on the same URL.
+Consider implementing Responsive Web Design instead. Google
+recommends Responsive
+Web Design because it's the easiest design pattern to implement and
+maintain.
+TL;DR
+Use the Vary HTTP header to signal your changes depending on the user-agent.
+Detect user-agent strings correctly.
+The Vary HTTP Header
+The Vary HTTP header has two important and useful implications:
+It signals to caching servers used in ISPs and elsewhere that they should
+consider the user agent when deciding whether to serve the page from cache or
+not. Without the Vary HTTP header, a cache may mistakenly serve mobile users
+the cache of the desktop HTML page or vice versa.
+It helps Googlebot discover your mobile-optimized content faster, as a valid
+Vary HTTP header is one of the signals we may use to crawl URLs that serve
+mobile-optimized content.
+The Vary HTTP header is part of the server's response to a request, like this:
+HTTP/1.1 200 OK
+Content-Type: text/html
+Vary: User-Agent
+Content-Length: 5710
+(... rest of HTTP response headers...)
+The Vary HTTP header tells the browser that the contents of the response varies
+depending on the user agent that requests the page. If your server already uses
+the Vary HTTP header, you can add User-Agent to the list that's already
+served.
+Correctly detecting user-agents
+Detecting user-agents (sometimes called user-agent "sniffing") is generally an
+error-prone technique.
+There are many reasons why, but three kinds of failures
+are common:
+User-agent detection depends on having a list of user-agent strings (or
+substrings) to match against. Such lists need constant maintenance and
+updating and don't match new user-agents.
+In reality, many such lists are
+not maintained appropriately and are stale, giving your users a bad
+experience.
+When matching user-agents, it's common to mismatch, sometimes detecting a
+desktop user-agent as a mobile one or detecting a mobile user-agent as a
+desktop. Likewise, a common mistake for sites is to inadvertently treat tablet
+devices as smartphones. If you are detecting the user-agent of browsers
+accessing your site, be sure the detection looks for smartphone-specific
+strings (such as checking for both the words "Android" and "Mobile") as
+opposed to generic mobile strings (checking for just "Android"). Learn more in
+our blog post.
+Be very careful of cloaking when detecting user-agents. When detecting the
+user-agent, the site is detecting the device class or type by looking for the
+device name in the user-agent string; it should not be looking specifically
+for Googlebot. All Googlebot user-agents identify
+themselves as specific mobile devices, and you should treat these Googlebot
+user-agents exactly like you would treat these devices.
+Pre-rendering content for crawlers like
+Googlebot isn't considered cloaking when set up correctly.
+Caution: Visit our common mistakes section to make sure you don't run into one.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-01-06.

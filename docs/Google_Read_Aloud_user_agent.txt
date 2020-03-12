@@ -1,0 +1,12 @@
+Google Read Aloud user agentGoogle-Read-Aloud is the user agent for the Google Read Aloud service. This service enables reading web pages using text-to-speech (TTS). This service is activated when an end user has text to speech enabled and visits a page. The Read Aloud service is used by Google Go.
+Crawl frequency and behavior
+Google Read Aloud is triggered by a user request. Google Read Aloud conserves bandwidth by caching page results, so you should not see more than one request every few hours for a given page.
+Google Read Aloud is not a web crawler: Google Read Aloud fetches only one page at a time, according to a user read request, and it doesn’t follow hyperlinks. A user request for listening to a web page results in either zero or one visit to a page, depending on whether the page has been fetched recently.
+Google Read Aloud ignores robots.txt rules
+Google Read Aloud acts as a direct agent of a human user, not as a robot, so it ignores robots.txt rules.
+What is the google-speakr agent?
+google-speakr is an older version of the user agent that is now deprecated. Its new name is Google-Read-Aloud.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Google crawlersOverview of Google crawlers (user agents)GooglebotGoogle Read Aloud user agentAPIs-Google User AgentFeedfetcherDuplex on the Web user agentVerifying Googlebot
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

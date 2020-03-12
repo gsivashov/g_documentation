@@ -1,0 +1,53 @@
+Social Engineering (Phishing and Deceptive Sites)Social engineering is content that tricks visitors into doing something dangerous, such as revealing confidential information or downloading software. If Google detects that your website contains social engineering content, the Chrome browser may display a "Deceptive site ahead" warning when visitors view your site. You can check if any pages on your site are suspected of containing social engineering attacks by visiting the Security Issues report.
+Open the Security Issues Report
+Overview
+What is social engineering?
+A social engineering attack is when a web user is tricked into doing something dangerous online.
+There are different types of social engineering attacks:
+Phishing: The site tricks users into revealing their personal information (for example, passwords, phone numbers, or credit cards). In this case, the content pretends to act, or looks and feels, like a trusted entity — for example, a browser, operating system, bank, or government.
+Deceptive content: The content tries to trick you into doing something you’d only do for a trusted entity — for example, sharing a password, calling tech support, downloading software, or the content contains an ad that falsely claims that device software is out-of-date, prompting users into installing unwanted software.
+Insufficiently labeled third-party services: A third-party service is someone that operates a site or service on behalf of another entity. If you (third party) operate a site on behalf of another (first) party without making the relationship clear, that might be flagged as social engineering. For example, if you (first party) run a charity website that uses a donation management website (third party) to handle collections for your site, the donation site must clearly identify that it is a third-party platform acting on behalf of that charity site, or else it could be considered social engineering.
+Google Safe Browsing protects web users by warning users before they visit pages that consistently engage in social engineering.
+Web pages are considered social engineering when they either:
+Pretend to act, or look and feel, like a trusted entity, like your own device or browser, or the website itself, or
+Try to trick you into doing something you’d only do for a trusted entity, like sharing a password,  or calling a tech support number, or downloading software.
+Social engineering in embedded content
+Social engineering can also show up in content that is embedded in otherwise benign websites, usually in ads. Embedded social engineering content is a policy violation for the host page.
+Sometimes embedded social engineering content will be visible to users on the host page, as shown in the examples below. In other cases, the host site does not contain any visible ads, but leads users to social engineering pages via pop-ups, pop-unders, or other types of redirection. In both cases, this type of embedded social engineering content will result in a policy violation for the host page.
+But I don't engage in social engineering!
+Deceptive social engineering content may be included via resources embedded in the page, such as images, other third-party components, or ads. Such deceptive content may trick site visitors into downloading unwanted software.
+Additionally, hackers can take control of innocent sites and use them to host or distribute social engineering content. The hacker could change the content of the site or add additional pages to the site, often with the intent of tricking visitors into parting with personal information such as credit card numbers. You can find out if your site has been identified as a site that hosts or distributes social engineering content by checking the Security Issues report in Search Console.
+See our Help for Hacked Sites if you believe that your site has been hacked.
+Examples of social engineering violations
+Deceptive content examples
+Here are some examples of pages that engage in social engineering practices:
+Deceptive popup intended to trick the user into installing malware.
+Deceptive popup claiming to help the user update their browser
+Fake Google login page. Note the deceptive URL. Other phishing sites like this could trick you into giving up other personal information such as credit card information. Phishing sites may look exactly like the real site—so be sure to look at the address bar to check that the URL is correct, and also check to see that the website begins with https://
+Deceptive ad examples
+Here are some examples of deceptive content inside embedded ads. These ads appear to be part of the page interface rather than ads.
+Deceptive popup claiming that the user's software is out of date.
+Deceptive popup claiming to come from the FLV developer
+Ads masquerading as page action buttons.
+Fixing the problem
+If your site is flagged for containing social engineering (deceptive content), ensure that your page doesn't engage in any of the practices described above, and then follow these steps:
+Check in with Search Console.
+Verify that you own your site in Search Console and that no new, suspicious owners have been added.
+Check the Security Issues report to see if your site is listed as containing deceptive content (the reporting term for social engineering). Visit some sample flagged URLs listed in the report, but use a computer that's not inside the network that is serving your website (clever hackers can disable their attacks if they think the visitor is a site webmaster).
+Remove deceptive content. Ensure that none of your site's pages contain deceptive content. If you believe Safe Browsing has classified a web page in error, please report it here.
+Check the third-party resources included in your site. Ensure that any ads, images, or other embedded third-party resources on your site's pages are not deceptive.
+Note that ad networks may rotate the ads shown on your site's pages. You therefore might need to refresh a page a few times before you're able to see any social engineering ads appear.
+Some ads may appear differently on mobile devices and desktop computers. You can use the URL Inspection tool to view your site in both mobile and desktop views.
+Follow the third-party service guidelines described below for any third-party services, such as payment services, that you use in your site.
+Request a review. After you remove all social engineering content from your site, you can request a security review in the Security Issues report. A review can take several days to complete.
+Third-party service guidelines
+If you include a third-party service in your site, you should meet the following conditions in order to avoid being labeled as social engineering:
+On every page, the third-party site should clearly include the third party brand in a way that ensures users understand who is operating the site. For example, by including the third party brand at the top of the page.
+On every page that contains first-party branding, explicitly state the relationship between the first and third party, and provide a link for more information.  For example, a statement like this:
+This service is hosted by Example.com on behalf of Example.charities.com. More information
+A good usability guideline is whether a user viewing the page in isolation understands which site they are on, and the relationship between the first and third party at all times.
+Best practice: If you need a third-party to perform a basic support service for your site, a best practice is to use an industry standard third party for that service. For example, to manage user authentication on your site, you should use OAuth rather than managing authentication yourself.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Security, malware, and manual actionsWhat is hacking or hacked content?Malware and unwanted softwarePreventing malware infectionSecurity Issues reportSocial Engineering (Phishing and Deceptive Sites)Manual Actions reportGoogle Safe Browsing Repeat Offenders PolicyVerifying Googlebot
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

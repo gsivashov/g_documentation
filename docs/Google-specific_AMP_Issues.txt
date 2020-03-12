@@ -1,0 +1,32 @@
+Google-specific AMP Issues
+Issue
+Description
+Content mismatch: Missing embedded video
+The canonical web page has an embedded video that is missing in the AMP version. It is usually best to include all the same important content resources in your AMP version as in the canonical web page. Note that the video is detected by URL; if you have two different URLs pointing to the same video, you will see this warning.
+Image size smaller than recommended size
+The structured data in the AMP refers to an image that is smaller than our recommended size. This may prevent the page from appearing with all AMP-related features on Google Search, and may also prevent your Discover cards from appearing with large images (leading to decreased website traffic and user engagement). To fix, use a larger image according to our guidelines.
+AMP page domain mismatch
+The AMP page is hosted on a different domain than its canonical version. This can be confusing to mobile searchers who see one URL domain in search results and a different one when they open the page in the AMP reader. (Does not affect page indexing or ranking.)
+URL not found (404)
+The AMP URL requested could not be found. Learn more about 404 pages.
+Server error (5XX)
+Unspecified 5XX server error when requesting the AMP page. Learn more about server errors.
+Blocked by robots.txt
+The requested AMP URL was blocked by a robots.txt rule.
+Crawl issue
+Unspecified crawling error for the AMP page. Use the URL Inspection tool on your AMP URL to troubleshoot the problem.
+Referenced AMP URL is not an AMP
+A canonical page references an AMP that is not, in fact, an AMP page. Learn how a non-AMP page should reference an AMP page.
+Referenced AMP URL is self-canonical AMP
+The canonical page points to a stand-alone AMP. You cannot reference a stand-alone AMP as the AMP version of a page. Learn how to reference an AMP from a non-AMP page.
+URL marked 'noindex'
+AMP is blocked by a 'noindex' directive. Google cannot index a page that is blocked by noindex; either remove the noindex directive, or remove the reference to the blocked page.
+'unavailable_after' date for this page has expired
+AMP page has an "unavailable_after" meta tag or directive that has already passed, indicating that it should no longer be served. You should either update the tag to a future date, or remove the tag.
+Canonical points to invalid URL
+A canonical page references an AMP version using an invalidly formatted URL. Learn how to properly reference an AMP version.
+amp-story canonical error
+A page incorrectly references an amp-story page as its AMP version. This is not allowed because an amp-story page is, by definition, self-canonical: it must point to itself with a <rel="canonical"> tag, and cannot serve as an AMP version of another page.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

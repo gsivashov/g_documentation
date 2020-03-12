@@ -1,0 +1,5 @@
+Move a site with no URL changes4. Shut down old hostingCheck the server logs on the old provider and, once the traffic to the old provider reaches zero, you can shut down your old hosting infrastructure. This completes the site move.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Move a site with no URL changesOverview: Site moves without URL changes1. Set up the new hosting infrastructure2. Start the site move3. Monitor traffic4. Shut down old hosting
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

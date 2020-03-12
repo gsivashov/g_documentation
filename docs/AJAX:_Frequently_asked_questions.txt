@@ -1,0 +1,46 @@
+AJAX: Frequently asked questionsThis FAQ answers the most common questions about AJAX crawling.
+When should I use _escaped_fragment_ and when should I use #! in my AJAX URLs?
+Your site should use the #! syntax in all URLs that have adopted the AJAX crawling scheme. Googlebot will not follow hyperlinks in the _escaped_fragment_ format.
+Where can I see this scheme in action?
+See sample AJAX application at http://gwt.google.com/samples/Showcase/Showcase.html. If you click on any of the links on the left, you'll see that the URL will contain a #! hash fragment, and the application will navigate to the state corresponding to this hash fragment. If you change the #! (for example http://gwt.google.com/samples/Showcase/Showcase.html#!CwRadioButton) to ?_escaped_fragment_= (for example, http://gwt.google.com/samples/Showcase/Showcase.html?_escaped_fragment_=CwRadioButton), the site will return an HTML snapshot.
+What happens if I choose not to implement #! on my AJAX site?
+In the near term your pages may not appear properly in Google's search results pages. However, we are continously working to make Googlebot behave more like a browser. As features required by your site are implemented, Googlebot may start to index your pages properly without help. However, this AJAX crawling scheme provides a solution for sites that are already using AJAX and wish to ensure that their content is properly indexed today. We expect that it will be a good solution for anyone who already has HTML snapshots of their pages or who chooses to use a headless browser to get such HTML snapshots.
+How current should I keep my content?
+The answer to this question depends entirely on how frequently your app's content changes. If it changes frequently, you should always construct a fresh HTML snapshot in response to a crawler request. On the other hand, consider an library archive whose inventory does not change on a regular basis. To keep the server from having to produce the same HTML snapshots over and over, you could create all relevant HTML snapshots once, possibly offline, and then save them for future reference. You could also respond to Googlebot with a 304 (Not modified) HTTP status code.
+What if my app doesn't use hash fragments?
+Maybe it should! You can greatly speed up your application by using hash fragments, because hash fragments are handled by the browser on the client side and do not cause the entire page to refresh. Additionally, they will allow you to make history work in your application (the infamous "browser back button"). Various AJAX frameworks support hash fragments. For example, see Really Simple History, jQuery's history plugin, Google Web Toolkit's history mechanism, or ASP.NET AJAX's support for history management.
+If, however, it is not feasible to structure your app to use hash fragments, you can do the following use a special token in your hash fragments (that is, everything after the # sign in a URL). Hash fragments that represent unique page states must begin with an exclamation mark. For example, if your AJAX app contains a URL like this:
+www.example.com/ajax.html#mystate
+it should now become this:
+www.example.com/ajax.html#!mystate
+When your site adopts the scheme, your site will be considered "AJAX crawlable." This means that the crawler will see the content of your app if your site supplies HTML snapshots.
+Will this approach lead to a proliferation of "ugly" _escaped_fragment_ URLs?
+The _escaped_fragment_ syntax for URLs is a temporary URL that should never be seen by the end user. In all contexts that the user will see, the pretty URL (with #! instead of _escaped_fragment_) should be used: in normal app interaction, in Sitemaps, in hyperlinks, in redirects, and in any other situation where the user might see the URL. For the same reason, search results are pretty URLs rather than ugly URLs.
+Does this scheme open the door to cloaking?
+Cloaking is serving different content to users from the content served to search engines. This is generally done with the intent of boosting one's ranking in search results. Cloaking has always been (and will always be) an important issue for search engines, and it's important to note that making AJAX applications crawlable is by no means an invitation to make cloaking easier. For this reason, the HTML snapshot must contain the same content as the end user would see in a browser. If this is not the case, it may be considered cloaking. See this answer for more details.
+Can I use this scheme to make my Flash or other rich media files more crawlable?
+Google does index many rich media file types, and we're continually working on improving our crawling and indexing. However, Googlebot may not be able to see all the content of a Flash or other rich media application (just like it cannot crawl all dynamic content on your site), so it can be useful to use this scheme to provide Googlebot with additional content. Again, the HTML snapshot must contain the same content as the end user would see in a browser. Google reserves the right to exclude sites from its index that are considered to use cloaking.
+What if my site has some hash fragment URLs that should not be crawled?
+When your site adopts the AJAX crawling scheme, the Google crawler will crawl every hash fragment URL it encounters. If you have hash fragment URLs that should not be crawled, we suggest that you add a regular expression directive to your robots.txt file. For example, you can use a convention in your hash fragments that should not be crawled and then exclude all URLs that match it in your robots.txt file. Suppose all your non-indexable states are of the form #DONOTCRAWLmyfragment. Then you could prevent Googlebot from crawling these pages by adding the following to your robots.txt:
+Disallow: /*_escaped_fragment_=DONOTCRAWL
+What about existing uses of #! in hash fragments?
+#! is an infrequently used token in existing hash fragments; however, it is not disallowed by the URL specification. What happens if your application uses #! but does not want to adopt the new AJAX crawling scheme? One approach you can take is to add a directive in your robots.txt to indicate this to the crawler.
+Disallow: /*_escaped_fragment_
+Please note that this means that if your application contains only this URL: www.example.com/index.html#!mystate, then this URL will not be crawled. If your application additionally contains the bare URL www.example.com/ajax.html, this URL will be crawled.
+What about accessibility?
+One side-effect of the current practice to provide static content to search engines is that webmasters have made their applications more accessible to users with disabilities. This new agreement takes accessibility to a new level: without manual intervention, webmasters can use a headless browser to create HTML snapshots, which contain all the relevant content and are usable by screen readers. This means that it is now easier to keep the static content up-to-date, as less manual work is required. In other words, webmasters now have an even greater incentive to make their applications accessible to those with disabilities.
+How should I use rel="canonical"?
+Use <link rel="canonical" href="http://example.com/ajax.html#!foo=123" /> (don't use <link rel="canonical" href="http://example.com/ajax.html?_escaped_fragment_=foo=123" />.
+Which URL should I include in my Sitemap?
+Your Sitemap should include the version you prefer displayed in search results, so it should be http://example.com/ajax.html#!foo=123.
+How will the #! URLs affect product feeds?
+It's common for sites to want the same URLs for Product Search and Web Search. Generally, the #! version of the URL should be treated as the "canonical" version that should be used in all contexts. The _escaped_fragment_ URL is considered a temporary URL that end users should never see.
+I'm using HtmlUnit as the headless browser, and it doesn't work. Why not?
+If "doesn't work" means that HtmlUnit does not return the snapshot you were expecting to see, it's very likely that the culprit is that you didn't give it enough time to execute the JavaScript and/or XHR requests. To fix this, try any or all of the following:
+Use NicelyResynchronizingAJAXController. This will cause HtmlUnit to wait for any outstanding XHR calls.
+Bump up the wait time for waitForBackgroundJavaScript and/or waitForBackgroundJavaScriptStartingBefore.
+This will very likely fix your problem. If it doesn't, you can also try the FAQ for HtmlUnit here: http://htmlunit.sourceforge.net/faq.html. HtmlUnit also has a user forum.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+AJAX-enhanced sitesDesign AJAX-powered sites for accessibilityAJAX: Frequently asked questions
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

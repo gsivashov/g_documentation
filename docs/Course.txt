@@ -1,0 +1,90 @@
+Home
+Products
+Search for Developers
+Reference
+Course
+Mark up your course lists with structured data so prospective students find you through
+Google Search. You can provide details including the course name, who's offering it, and a
+short description.
+Example
+Here's an example of a course in JSON-LD:
+<html>
+<head>
+<title>Introduction to Computer Science and Programming</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Course",
+"name": "Introduction to Computer Science and Programming",
+"description": "Introductory CS course laying out the basics.",
+"provider": {
+"@type": "Organization",
+"name": "University of Technology - Eureka",
+"sameAs": "http://www.ut-eureka.edu"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Guidelines
+You must follow these guidelines to be eligible to appear in a Course carousel.
+Warning: If your site violates one or more of these guidelines, then Google may take manual action against it. Once you have remedied the problem, you can submit your site for reconsideration.
+Content guidelines
+Technical guidelines
+Carousel guidelines
+Webmaster guidelines
+General structured data guidelines
+Content guidelines
+Only use course markup for educational content that fits the following definition of a course:
+A series or unit of curriculum that contains lectures, lessons, or modules in a particular
+subject and/or topic.
+A course must have an explicit educational outcome of knowledge and/or
+skill in a particular subject and/or topic, and be led by one or more instructors with a roster of students.
+A general public event such as “Astronomy Day” is not a course, and a single 2-minute “How
+to make a Sandwich Video” is not a course.
+Technical guidelines
+Each course's name and
+provider must be a valid
+name and have a valid title. For example, the following naming practices are not valid:
+Promotional phrases: "Best school in the world"
+Prices in course titles: "Learn ukulele - only $30!"
+Using a non-course for a title, such as:
+"Make money fast with this class!"
+Discounts or purchase opportunties, such as: "Leaders in their fields
+share their secrets — 25% off!"
+Structured data type definitions
+You must include the required properties for your content to be eligible for display as a rich result.
+You can also include the recommended properties to add more information about your content,
+which could provide a better user experience.
+Course
+The full definition of Course is available at
+schema.org/Course.
+Required properties
+description
+Text
+A description of the course. Display limit of 60 characters.
+name
+Text
+The title of the course.
+Recommended properties
+provider
+Organization
+The organization that publishes the source content of the course. For example,
+UC Berkeley.
+ItemList
+The full definition of ItemList is
+available at schema.org/ItemList.
+Required properties
+itemListElement
+ListItem
+Annotation for a single item page.
+ListItem.position
+Integer
+Ordinal position of the item page in the list.
+ListItem.url
+URL
+The canonical URL of the item page. Every item should have a unique URL.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

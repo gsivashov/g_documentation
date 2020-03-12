@@ -1,0 +1,47 @@
+Home
+Products
+Search for Developers
+Guides
+Fix lazy-loaded content
+Deferring loading of non-critical or non-visible content, also commonly known as "lazy loading",
+is a common performance and UX best practice. For more information, see the Web Fundamentals
+guide
+for lazy loading images and video. However, if not implemented correctly, this technique can
+inadvertently hide content from Google. This document explains how to make sure Google can crawl and
+index lazy-loaded content.
+Load content when it's visible in the viewport
+To ensure that Googlebot sees all content on your page, make sure that your lazy
+loading implementation loads all relevant content whenever it is visible in the
+viewport. Here are a few examples on how you can do this:
+IntersectionObserver API and a polyfill
+A JavaScript library that supports loading data when it enters the viewport.
+Make sure to test your implementation.
+Support paginated loading for infinite scroll
+If you are implementing an infinite scroll experience, make sure to support
+paginated loading. Paginated loading is important for users because it allows
+them to share and reengage with your content. It also allows Google to show a
+link to a specific point in the content, rather than the top of an infinite
+scrolling page.
+To support paginated loading, provide a unique link to each section that users
+can share and load directly. We recommend using the History
+API to update the URL when the content is loaded dynamically.
+Test
+After you set up your implementation, you should make sure it works
+correctly. One way you do this is by using a Puppeteer
+script to locally test your implementation. Puppeteer is a Node.js
+library for controlling headless
+Chrome. To run the script, you'll need Node.js.
+Use the following commands to check out the script and run it:
+git clone https://github.com/GoogleChromeLabs/puppeteer-examples
+cd puppeteer-examples
+npm i
+node lazyimages_without_scroll_events.js -h
+After running the script, manually review the screenshot images that it created
+to make sure they contain all the content you expect to be visible and indexed
+by Googlebot.
+You can also use the
+URL inspection tool
+in Search Console to see if all images were loaded. Check the screenshot and the rendered HTML
+to make sure your images are loaded.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-01-06.

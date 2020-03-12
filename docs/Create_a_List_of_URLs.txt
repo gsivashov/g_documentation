@@ -1,0 +1,88 @@
+Home
+Products
+Search for Developers
+Guides
+Create a List of URLs
+In order for our systems to find your content, we need their URLs. As stated in
+Introduction to Indexing, our systems can crawl
+your website content through the natural course
+determined by our algorithms, without any additional work on your part.
+This
+may be adequate for your goals.
+However, when you have content not readily linked by other pages, such as new
+pages or obscure information, you can help our system learn about your URLs by
+providing them in a list, known as a sitemap. In many cases, this is all you
+need to make it easier for our systems to find your latest markup and serve
+rich result previews for your content in Search results.
+Allow access to your sitemap. If you use a
+robots.txt file, make sure to allow access to the sitemap so that Googlebot
+can see and crawl it.
+Read more on the
+proper use of a robots.txt file.
+Types of URLs you provide
+URLs that you provide to Google fall into two general classifications:
+Canonical URLs—the primary URLs for your content.
+In most cases, the canonical URL is the is the preferred URL used to access a
+specific piece of content on a website. For example, if content is available
+under separate URLs for HTML and AMP HTML, and you prefer HTML version, then
+you set the URL of the HTML version as the canonical URL.
+Conversely, if the
+site is created entirely in AMP HTML with no corresponding HTML content, then
+the AMP URL should be the canonical URL since there is no other URL. Learn more
+about
+Canonical URLs in our Help Center.
+Alternate URLs—the URLs for alternative content to the primary content resource.
+Typically, you will specify alternate URLs when you have multiple URL forms for
+the same content, such as AMP pages or content translated from the original.
+When these URLs are linked, our systems can more easily consolidate ranking for
+similar content and serve the right resource to the user, such as an AMP page
+to a mobile user.
+For more information, learn how to Associate
+Your Online Resources.
+Create a simple sitemap
+The most basic sitemap is a text file list of your canonical URLs. You can
+generate the list and host it on your site. You have one URL per line; for
+example:
+http://www.example.com/dogs/poodles/poodle1.html
+http://www.example.com/dogs/poodles/poodle2.html
+Sitemap generators simplify the file creation for your site, and are available
+for many content management systems, such as WordPress and Drupal. Sitemap
+generators typically generate XML files, which we also support.
+A text-based sitemap only helps with content discovery.
+It does not help our
+systems know when your content has been updated because it doesn’t contain
+additional meta-data such as the change date, or a list of alternate URLs.
+Indicate any alternate content by linking to it from within the canonical page,
+and make sure that the alternate pages link back to the canonical URL, as
+described in Associate Your Online Resources.
+Learn about sitemaps in the Search Console Help Center.
+Create an XML sitemap
+If you want to provide information updates about your URLs and establish
+relationships between them and alternate URLs, it might make sense to use an
+XML sitemap, which can list both canonical and alternate URLs in one file
+and provide modification dates.
+The following example shows a simple XML sitemap with a single page entry
+that uses both canonical and AMP URLs, and establishes a modification
+date.
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:xhtml="https://www.w3.org/1999/xhtml" >
+<url>
+<loc>http://example.com/dogs/poodles/poodle1.html</loc>
+<xhtml:link rel="amphtml" href="http://example.com/dogs/poodles/poodle1.amp.html"/>
+<lastmod>2016-01-13T18:30:02Z</lastmod>
+</url>
+</urlset>
+The timestamp for your date should be in W3C Datetime format.
+This format allows you to omit the time portion, if desired, and use YYYY-MM-DD.
+Sitemap Guidelines
+We recommend that you use either plain text or XML as formats for your
+sitemap.
+In addition, a sitemap file can't contain more than 50,000 URLs and
+must be no larger than 50 MB uncompressed, so you should split large numbers of
+URLs into multiple files.
+See the complete list of sitemap guidelines under
+Build and
+Submit a Sitemap in the Search Console Help Center.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-01-15.

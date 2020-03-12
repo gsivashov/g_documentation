@@ -1,0 +1,170 @@
+Manage your sitemapsSitemaps reportNext: Split up your large sitemapsUse the Sitemaps report to tell Google about any new sitemaps for your property, to see your sitemap submission history, and to see any errors that Google encountered when parsing your submitted sitemaps.
+OPEN SITEMAPS REPORT
+What is a sitemap? Is this report for me?
+A sitemap is a file on your site that tells Google which pages we should know about. If you have a small site (fewer than 100 pages), it might be easier simply to request indexing of the homepage; as long as all pages on your site are linked from the homepage (or linked from a page that is linked from the homepage, or linked from a page that is linked from a page that... you get the idea), your site should get indexed. Learn more about sitemaps here.
+Managing sitemaps
+Submit a sitemap
+"Submitting" a sitemap means telling Google where to find it on your site. You cannot actually upload a sitemap to Google.
+To submit a new sitemap for crawling:
+Prerequisite: You must have owner permission for a property in order to submit a sitemap using the Sitemaps report. If you don't have owner permissions, you can instead reference it from your robots.txt file.
+Post the sitemap on your site.
+The sitemap must use one of the acceptable sitemap formats. Follow the sitemap guidelines for syntax, file location, and so on.
+We recommend putting a sitemap at your site root, but if using a site hosting service (such as Blogger, Wix, or GoDaddy) you should read your service's documentation to learn where and how to post your sitemap (or if it's even necessary).
+The sitemap must be accessible to Googlebot, and must not be blocked by any login requirements. You can test if the sitemap is accessible to Googlebot by seeing if you can browse to the sitemap URL in incognito mode.
+Open the Sitemaps report.
+Enter the relative URL to the sitemap in the Sitemaps report and click Submit.
+The sitemap should be processed immediately. However, it can take some time to crawl the URLs listed in a sitemap, and it is possible that not all URLs in a sitemap will be crawled, depending on the site size, activity, traffic, and so on.
+Resubmit a sitemap
+You shouldn't need to resubmit a sitemap that we already know about, even if you've changed it. Google will notice any changes the next time we crawl your site.
+Delete a sitemap
+Deleting a sitemap removes it from this report, but doesn't make Google forget the sitemap or any URLs listed on it. If you truly need Google to stop visiting the URLs listed in a sitemap you will need to use a robots.txt rule.
+To delete a sitemap:
+In the table on the main Sitemaps report, find and click sitemap that you wish to delete.
+Click the more options button
+Click Remove sitemap.
+To prevent Google from continuing to visit the sitemap, either use a robots.txt rule to block Google from reading it, or delete the sitemap file from your site.
+Reading the report
+This report shows only sitemaps that you submitted using this report. It does not show any sitemaps discovered through a robots.txt reference or other discovery methods. However, even if we already discovered a sitemap through other means, you can still submit it using this report in order to track our success and error rates.
+The report shows only sitemaps that are in the current property.
+You can submit image, video, or news URLs in your sitemap. However, the report doesn't currently show any data for those types of URLs.
+The following information is shown for each sitemap:
+Sitemap URL
+The URL where the sitemap is posted, relative to the property root.
+Type
+The type of sitemap. Possible values:
+Sitemap: Sitemap in XML or text format.
+Sitemap index: A sitemap of sitemaps.
+RSS: Sitemap in RSS feed format.
+Atom: Sitemap in Atom feed format.
+Unknown: The submitted file is not a known sitemap type or the sitemap hasn't been processed yet.
+Submitted
+The date when the sitemap was last submitted to Google using this report.
+Last read
+The last time the sitemap was processed by Google.
+Status
+Status of the submit or crawl. Possible values:
+Success: The sitemap was loaded and processed successfully with no errors. All URLs will be queued for crawling.
+Has errors: The sitemap could be parsed but has one or more errors; any URLs that could be parsed from the sitemap will be queued for crawling. Click the sitemap in the table to see the list of errors. See full error descriptions below.
+Couldn't fetch: The sitemap could not be fetched for some reason. To learn why not, run a live test on the sitemap with the URL Inspection tool:
+Specify the complete path to your sitemap by copying the path prefix from "Add a new sitemap" and add the submitted sitemap's relative path, for example: https://example.com/sitemaps/mobile/sitemap.txt. Use the values copied from the report in order to guarantee that you are testing the same URL that Google is using.
+Click Live test in the URL Inspection tool. This should give you information about whether the sitemap exists and can be fetched by Google.
+Discovered URLs
+The number of URLs listed in the sitemap. If this is a sitemap index, the number is the count of all URLs in all child sitemaps. Duplicate URLs are counted only once.
+Opens a report showing the index coverage of all URLs in this sitemap. For a sitemap index, it includes all URLs listed in any child sitemaps.
+My sitemap isn't listed!
+Here are a few reasons that your sitemap might be not listed in the report:
+It lives in another property. Sitemaps associated with one property won't be visible in another property. Thus, sitemaps that you've submitted for the site http://example.com won't be visible in the Sitemaps report for http://m.example.com. or https://example.com. To address this issue, make sure that you've added all versions of your site.
+You didn't submit the sitemap using this report. Only sitemaps submitted using this report are listed; sitemaps found or submitted other methods won't be shown, even if Google can find and use them.
+Sitemap errors
+The following errors are reported by the sitemaps report.
+Complete error list
+URLs not accessible
+Google encountered an error when attempting to crawl a URL in your sitemap. Inspect the URL in the sitemap using the URL inspection tool to see whether the URL is available to Google.
+URLs not followed
+Google couldn't crawl all the URLs listed in your sitemap. Here are some possible reasons:
+The URL contains too many redirects for Google web crawlers to follow. We suggest that you replace any redirect URLs in your sitemaps with the URLs that should actually be crawled.
+If you are permanently redirecting from one page to another, use a permanent redirect.
+Avoid using JavaScript or meta-refresh type redirects.
+Google is having problems with relative URLs in your sitemap. Where possible, use absolute or complete links rather than relative links. For instance, when linking to another page in your site, link to https://www.example.com/mypage.html rather than simply mypage.html.
+URL not allowed
+Your sitemap includes some URLs that are at a higher level or different domain than the sitemap file.
+Higher level: If your sitemap is listed under http://www.example.com/mysite/sitemap.xml, the following URLs are not valid for that sitemap:
+http://www.example.com/ - Higher level than the sitemap
+http://www.example.com/yoursite/ - In a sibling directory of the sitemap (you must go up and then down to get to it).
+Different domain: Check that the URLs all begin with the same domain as your sitemap location. For instance, if your sitemap is at http://www.example.com/sitemap.xml, the following URLs are not valid for that sitemap:
+http://example.com/ - Missing "www"
+www.example.com/ - Missing "http"
+https://www.example.com/ - Using https rather than http
+Compression error
+Google encountered an error when trying to uncompress your compressed sitemap file. Recompress your sitemap (using a tool such as gzip), upload it to your site, and resubmit it.
+Empty sitemap
+Your sitemap doesn't contain any URLs. Check your sitemap to ensure that it is not empty.
+Sitemap file size error: Your sitemap exceeds the maximum file size limit.
+Your sitemap is larger than 50MB when uncompressed. If your sitemap is larger than the limit, break it into several smaller sitemaps and list these in a sitemap index file and submit the sitemap index file(s).
+Invalid attribute value
+You assigned an invalid value to an XML tag attribute. Check your sitemaps to make sure that only the allowed attributes are present, and that you assign only allowed values according to the sitemap specifications. Check your attributes and values for typos.
+Invalid date
+Your sitemap contains one or more invalid dates. This error could be because a date is in the incorrect format, or the date itself is not valid. Dates must use W3C Datetime encoding, although you can omit the time portion. Make sure your dates match one of the following W3C Datetime formats:
+2005-02-21
+2005-02-21T18:00:15+00:00
+Specifying time is optional (the time defaults to 00:00:00Z), but if you do specify a time, you must also specify a time zone.
+Invalid tag value
+Your sitemap contains one or more tags with an invalid value. Check the specifications for your sitemap type (index, standard, video, and so on).
+Invalid URL
+A URL in your sitemap is not valid. This error might be because it contains unsupported characters, spaces, or other characters such as quotes, or it might be incorrectly formatted (for example, htp:// instead of http:// ).
+Make sure that the URLs listed in your sitemap are encoded for readability and escaped properly. Check for any incorrect characters such as spaces or quotes. You also try copying the URL into a browser to see if the browser can understand the URL and load the page.
+Invalid URL in sitemap index file: incomplete URL
+Your sitemap index file doesn't include the full URL for each sitemap file that it lists. When we see a sitemap index file, we look in the same directory for the files that it references. For instance, if your sitemap index file is http://www.example.com/folder1/sitemap_index.xml and lists a sitemap as sitemap.xml (no / at the beginning), then we'll look for that sitemap at http://www.example.com/folder1/sitemap.xml. If we can't find it there, you'll see this error.
+Update your sitemap index file to include the complete path to each listed sitemap file, then resubmit.
+Invalid XML: too many tags
+Your sitemap contains duplicate tags. For example, the following entry would cause this error because the <loc> tag is listed twice:
+<url>
+<loc>http://www.example.com/</loc>
+<loc>http://www.example.com/page1.html</loc>
+<lastmod>2005-01-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+The error lists the problematic tag and the line number. Remove the duplicate tag and resubmit your sitemap.
+Missing XML attribute
+A tag in your sitemap is missing a required attribute. Check your sitemaps to make sure that no required attributes are missing. Once you have fixed the attribute values, resubmit your sitemap.
+Missing XML tag
+One or more entries in your sitemap is missing a required tag. The error message lists the line number. Review the sitemap fundamentals page for information on required tags.
+Missing thumbnail URL
+One or more video entries is missing a URL to a thumbnail image. Make sure that the location of any thumbnail URLs are specified using the <video:thumbnail_loc> tag.
+Missing video title
+One or more video entries is missing a title. Make sure that each video in your sitemap has a title, specified in the the <video:title> tag.
+Incorrect sitemap index format: Nested sitemap indexes
+One or more entries in your sitemap index file uses its own URL or the URL of another sitemap index file. A sitemap index file can't list other sitemap index files, only sitemap files.
+Remove any entries pointing to sitemap index files, then resubmit your sitemap.
+Parsing error
+Google could not parse the sitemap's XML.
+Often, this problem is caused by an unescaped character in the URL. As with all XML files, any data values (including URLs) must use entity escape codes for certain characters such as & ' " < > symbols. Be sure that your URLs are properly escaped.
+Temporary error
+Our system experienced a temporary problem that prevented us from processing your sitemap. Generally, when you receive this error, you do not need to resubmit your sitemap. Google can try to retrieve your sitemap again later. If the error still exists after several hours, try resubmitting your sitemap.
+Too many sitemaps in sitemap index file
+Your sitemap index file lists more than 50,000 sitemaps. Split your sitemap index into multiple sitemap index files and ensure that each lists no more than 50,000 sitemaps.
+Too many URLs in sitemap
+Your sitemap lists more than 50,000 URLs. Split your sitemap into multiple sitemaps and ensure that each contains no more than 50,000 URLs. You can also use a sitemap index file to manage your sitemaps.
+Unsupported format
+Your sitemap is not in a supported format.
+Some common XML mistakes:
+Your sitemap must use the correct header. For example, if your sitemap contains video information, it would have the following header:
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+The namespace in the header must be "http://www.sitemaps.org/schemas/sitemap/0.9" (not .9).
+All XML attributes must enclosed in either single quotes (') or double quotes (") and those quotes must be straight, not curly. Word-processing programs such as Microsoft Word can insert curly quotes.
+Path mismatch: Missing www
+The path to your sitemap does not contain the www prefix (for example, http://example.com/sitemap.xml), but the URLs it lists do (for example, http://www.example.com/myfile.html).
+Modify your sitemap to remove "www" from all the URLs to match your sitemap location.
+Path mismatch: Includes www
+The path to your sitemap contains the www prefix (for example, http://www.example.com/sitemap.xml), but the URLs it contains do not (for example, http://example.com/myfile.xml.
+Modify your sitemap to add "www" to all the URLs to match your sitemap location.
+Incorrect namespace
+The root element of your sitemap doesn't contain the correct namespace, or the namespace is declared incorrectly, or has a typo or incorrect URL.
+Be sure that you are using the correct namespace for your file type. For example:
+A sitemap file: xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+A video sitemap file: xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+A sitemap index file:  <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+Other sitemap types...
+Leading whitespace
+Your sitemap begins with leading whitespace, rather than a namespace declaration. XML files should begin with the XML declaration that specifies the version of XML being used.
+This error won't prevent Google from processing your sitemap, but you might want to remove the whitespace so that the file adheres to the XML standard and you no longer see this error.
+HTTP error [specific code]
+Google encountered an HTTP error when when attempting to download your sitemap. This message displays the status code we received (for example, 404). Make sure that the sitemap URL you specified is correct and that the sitemap exists at that location. Then, resubmit your sitemap.
+Thumbnail too large
+The video thumbnail image specified in your sitemap is too large. Resize your video thumbnail image to 160 x 120 px. Update your sitemap with the new information, and then resubmit it. More information about adding video information to a sitemap.
+Thumbnail too small
+A video thumbnail image specified in your sitemap is too small. Resize your video thumbnail image to 160 x 120 px. Update your sitemap if necessary. More information about adding video information to a sitemap.
+Video location and play page location are the same
+In a video sitemap, the video content URL and the player URL cannot be the same. If you provide  both <video:player_loc> and <video:content_loc>, the URLs must be different. More information about adding video information to a sitemap.
+Video location URL appears to be a play page URL
+In a video sitemap, the <video:content_loc> URL points to the page hosting the player. More information about adding video information to a sitemap.
+Sitemap contains urls which are blocked by robots.txt
+Google cannot access your sitemap, or can't access all the content listed in your sitemap, because it is blocked by a robots.txt file. Use the URL Inspection tool to confirm which file is being blocked, and modify your robots.txt file to allow Googlebot to access it.
+Next: Split up your large sitemaps
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Manage your sitemapsLearn about sitemapsBuild and submit a sitemapSitemaps reportSplit up your large sitemapsSitemap extensionsVideo sitemaps and video sitemap alternativesImage sitemapsCreate a Google News sitemap
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

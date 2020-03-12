@@ -1,0 +1,35 @@
+Home
+Products
+Search for Developers
+Guides
+Monster India listed jobs on Google Search, leading to 94% increase in organic traffic on job details pages
+94% increase in organic traffic on job details pages
+10% increase in applications
+Jobs on Google Search connects users with relevant, high-quality jobs from across the web and
+reduces friction between user inquiry and apply action.
+About Monster India
+Monster.com is a global online employment solution for people seeking jobs and the employers who
+need great people. They have expanded from being a job board to being a global provider of a full
+array of job seeking, career management, recruitment, and talent management products and
+services. Monster India started its operations in 2001 and has presence in 11 cities of India.
+Jobs on Google Search
+Monster India’s search engine optimization (SEO) team began
+using structured data in April 2018 with
+the goal to improve their applicant and resume database. The team launched
+Job Posting structured data
+with a pilot that was later scaled to markup all their jobs in India after realizing initial
+positive performance in Jobs on Google Search.
+Results
+Jobs on Google Search provided huge incremental traffic, detail views, and applications over what
+Monster.com was previously able to achieve with SEO efforts as well as paid campaigns.
+Monster.com is set to launch in South East Asia as soon as Jobs on Google Search is live in these
+markets.
+"Jobs on Google Search is a great way for job seekers to find relevant content in an easy-to-use
+format. We tested it first for Monster India and saw an increase in organic traffic as well as
+job applications. Based on this experience, the integration was implemented for Monster Gulf,
+Monster Philippines, Monster Singapore, Monster Malaysia, and the results are great across all
+regions. The organic traffic to website has almost doubled since we have launched this across
+countries."
+— Anshul Punhani, Chief Marketing Officer, (APAC and Gulf regions), Monster.com
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-06-18.

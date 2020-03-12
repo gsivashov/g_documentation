@@ -1,0 +1,13 @@
+Podcasts
+Google can expose podcasts to users through many different mechanisms, including:
+Google Search results as a link to a podcast page or as an embedded episode player
+Google Search App for Android (requires v6.5 or higher of the Google Search App)
+Google Podcasts app
+Google Home
+Content Action for the Google Assistant
+Android Auto
+Google simply needs to find and index your podcast in order to make it available. See here to learn how to make your podcast available on Google.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Content-specific guidelinesAMP on Google Search guidelinesAJAX-enhanced sitesImages and videoPodcastsMobile
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

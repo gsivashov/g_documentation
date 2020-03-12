@@ -1,0 +1,14 @@
+About robots.txtSubmit your updated robots.txt to GoogleNext: Robots FAQsThe Submit function of the robots.txt Tester tool allows you to easily put in place and ask Google to more quickly crawl and index a new robots.txt file for your site. Update and notify Google of changes to your robots.txt file by following the steps below.
+1. Click Submit in the bottom-right corner of the robots.txt editor. This action opens up a Submit dialog.
+2. Download your edited robots.txt code from the robots.txt Tester page by clicking Download in the Submit dialog.
+3. Upload your new robots.txt file to the root of your domain as a text file named robots.txt (the URL for your robots.txt file should be /robots.txt).
+If you do not have permission to upload files to the root of your domain, you should contact your domain manager to make changes.
+For example, if your site home page resides under subdomain.example.com/site/example/, you likely cannot update the robots file subdomain.example.com/robots.txt. In this case, you should contact the owner of example.com/ to make any necessary changes to the robots.txt file.
+4. Click Verify live version to see that your live robots.txt is the version that you want Google to crawl.
+5. Click Submit live version to notify Google that changes have been made to your robots.txt file and request that Google crawl it.
+6. Check that your newest version was successfully crawled by Google by refreshing the page in your browser to update the tool’s editor and see your live robots.txt code. After you refresh the page, you can also click the dropdown above the text editor to view the timestamp of when Google first saw the latest version of your robots.txt file.
+Next: Robots FAQs
+Was this helpful?How can we improve it?YesNoSubmit
+true
+About robots.txtIntroduction to robots.txtCreate a robots.txt fileTest your robots.txt with the robots.txt TesterSubmit your updated robots.txt to GoogleRobots FAQs
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

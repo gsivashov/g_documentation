@@ -1,0 +1,39 @@
+Home
+Products
+Search for Developers
+Guides
+Frequently Asked Questions
+What's the difference between the PageSpeed Insights UX Score and the Mobile-Friendly Test results?
+The Mobile-Friendly Test uses Googlebot to fetch the page. PageSpeed
+Insights does not use Googlebot, but fetches the page in a way that mimics how a
+real user fetches the page.
+This means that the Mobile-Friendly Test follows robots.txt rules rules and PSI does not.
+If Googlebot is blocked from fetching the page, JavaScript, CSS, or other
+resources, the Mobile-Friendly Test may not be able to detect if a page is mobile-friendly.
+To
+find out if your page is mobile friendly, use the
+Mobile-Friendly Test.
+I have a separate mobile website on m.example.com, while my desktop site is at www.example.com. What should I do with mobile pages on m.example.com that don't have an equivalent desktop page on www.example.com?
+It's fine to have a mobile page without a desktop equivalent (just make
+sure these pages don't include a rel="canonical" to a non-corresponding desktop
+version). Mobile-only pages need to build a reputation on their own (in other words, contain unique content, be well-linked from
+other pages on your site or the web) because they don't receive shared
+indexing signals from an existing desktop version of the page.
+Is it okay if I have some pages using responsive design and others using dynamic serving?
+Yes, it's fine to use more than one configuration for your site. Check
+that on a page-level basis, each provides the right indications to search
+engines (for example, the responsive page has the @media only screen and (max-width:
+600px) {...} information and the dynamic serving page uses the Vary HTTP
+header). Or, if you're using a hybrid of responsive design (for example, responsive
+but with images dynamically served), Google still considers that responsive since
+the page is nearly the same – keep the markup @media only screen and
+(max-width: 600px) {...} and forego the Vary HTTP header if it's included
+specifically for Google. If you're using responsive images, include the
+<picture> element.
+I have both a mobile website and a native app. Any advice?
+Build your mobile website and native apps with "deep linking
+capability" or URIs that provide pointers to specific areas of content. Deep links and URIs
+provide more acquisition possibilities for your business through Search or
+social sharing.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-06-17.

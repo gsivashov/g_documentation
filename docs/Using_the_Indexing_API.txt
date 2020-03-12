@@ -1,0 +1,166 @@
+Home
+Products
+Search for Developers
+Reference
+Using the Indexing API
+Overview
+You can use the Indexing API to tell Google to update or remove pages from the Google index.
+The requests must specify the location of a web page. You can also get the status of notifications
+that you have sent to Google. Currently, the Indexing API can only be used to crawl pages with
+either JobPosting or
+BroadcastEvent embedded in a
+VideoObject.
+When you send a request to the Indexing API, define location of a standalone web page to
+notify Google that it can crawl or remove this page from its index.
+The following examples show the actions that you can perform with the Indexing
+API:
+Update a URL
+Send the following HTTP POST request to https://indexing.googleapis.com/v3/urlNotifications:publish endpoint
+{
+"url": "https://careers.google.com/jobs/google/technical-writer",
+"type": "URL_UPDATED"
+}
+Remove a URL
+Send the following HTTP POST request to https://indexing.googleapis.com/v3/urlNotifications:publish endpoint
+"url": "https://careers.google.com/jobs/google/technical-writer",
+"type": "URL_DELETED"
+}
+Get notification status
+Send a HTTP GET request to https://indexing.googleapis.com/v3/urlNotifications/metadata endpoint
+Parameters
+The following table describes the fields needed for all methods (update and remove a URL):
+Fields
+url
+Required
+The fully-qualified location of the item that you want to update or remove.
+type
+Required
+The type of the notification that you submitted.
+Guidelines
+The following guidelines apply to update and remove a URL requests.
+All calls to https://indexing.googleapis.com/v3/UrlNotifications:publish MUST use "application/json" as the Content-Type header.
+You can submit one URL only in the body of an update request, or combine up to 100 requests
+in a batch, as described in Send batch indexing requests.
+The request body in these examples is the value of the content variable that is used
+in the access token examples.
+Update a URL
+To notify Google of a new URL to crawl or that content at a previously-submitted URL has been
+updated, follow the steps below:
+Submit a POST request to the following endpoint:
+Send a HTTP POST request to https://indexing.googleapis.com/v3/urlNotifications:publish
+In the body of the request, specify the location of the page using the following syntax:
+{
+"url": "content_location",
+"type": "URL_UPDATED"
+}
+Google responds to successful Indexing API calls with the an HTTP 200. An HTTP 200 response means that Google may try to recrawl this URL soon. The body of
+the response contains a UrlNotificationMetadata object, whose fields correspond to those returned by a notification status request.
+If you don't receive an HTTP 200 response, see the Indexing API specific errors.
+If the page's contents change, submit another update notification, which should trigger Google to
+recrawl the page.
+You may need more quota than the default. To view your current quota and request more quota, see Quota.
+Remove a URL
+After you delete a page from your servers, notify Google so that we can remove the page from
+our index and so that we don't attempt to crawl the URL again. Before you request removal, you must remove the page from your server and the URL must return a 404 or 410 status code.
+To request removal from our index, follow the steps below:
+Submit a POST request to the
+following endpoint:
+Send a HTTP POST request to https://indexing.googleapis.com/v3/urlNotifications:publish
+Specify the URL that you want to remove in the body of the request using the following syntax:
+{
+"url": "content_location",
+"type": "URL_DELETED"
+}
+For example:
+{
+"url": "https://careers.google.com/jobs/google/technical-writer",
+"type": "URL_DELETED"
+}
+Google responds to successful Indexing API calls with the an HTTP 200. An HTTP 200 response means that Google may remove this URL from the index. The body of
+the response contains a UrlNotificationMetadata object, whose fields correspond to those returned by a notification status request.
+If you don't receive an HTTP 200 response, see the Indexing API specific errors.
+You may need more quota than the default. To view your current quota and request more quota, see Quota.
+Get notification status
+You can use the Indexing API to check the last time Google received each kind of notification for a given URL. The GET request doesn't tell you when Google indexes or removes a URL; it only returns whether you successfully submitted a request.
+To get the status of a notification, follow the steps below:
+Submit a GET request to
+the following endpoint. The URLs you specify must be URL-encoded. For example, replace : (colons) with %3A
+and / (forward slashes) with %2F.
+Send a HTTP GET request to https://indexing.googleapis.com/v3/urlNotifications/metadata?url=url-encoded_url
+For example:
+GET https://indexing.googleapis.com/v3/urlNotifications/metadata?url=https%3A%2F%2Fcareers.google.com%2Fjobs%2Fgoogle%2Ftechnical-writer
+The Indexing API responds with an
+HTTP 200 message, with a payload that contains details about the notification. The following example shows the body of a response that contains information about an update and delete notification:
+{
+url: “http://foo.com“
+latest_update {
+type: “URL_UPDATED”
+notify_time: “2017-07-31T19:30:54.524457662Z”
+}
+latest_remove {
+type: “URL_DELETED”
+notify_time: “2017-08-31T19:30:54.524457662Z”
+}
+}
+If you don't receive an HTTP 200 response, see the Indexing API specific errors.
+You may need more quota than the default. To view your current quota and request more quota, see Quota.
+Send batch indexing requests
+To reduce the number of HTTP connections your client has to make, you can combine up to 100 calls
+to the Indexing API into a single HTTP request. You do this in a multi-part request called a
+batch.
+Quota is counted at the URL level. For example, if you combine 10 requests into a
+single HTTP request, it still counts as 10 requests for your quota. Learn more about how to Request more quota.
+When sending a batch request to the Indexing API, use the following endpoint:
+https://indexing.googleapis.com/batch
+The body of a batch request contains multiple parts. Each part is itself a complete HTTP request,
+with its own verb, URL, headers, and body. Each part within a batch request cannot exceed 1MB in
+size.
+To make it easier for you to send batch requests, Google's API Client Libraries support batching
+functionality. For more information about batching with the client libraries, see the following
+language-specific pages:
+Java
+Batch Python
+JavaScript
+PHP
+.NET
+If you use the batching examples on these pages, you may need to update your
+code to reflect the implementation requirements described in
+Get an access token.
+The following example batch request message body includes an update notification and a removal notification:
+POST /batch HTTP/1.1
+Host: indexing.googleapis.com
+Content-Length: content_length
+Content-Type: multipart/mixed; boundary="===============7330845974216740156=="
+Authorization: Bearer oauth2_token
+--===============7330845974216740156==
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: <b29c5de2-0db4-490b-b421-6a51b598bd22+2>
+POST /v3/urlNotifications:publish [1]
+Content-Type: application/json
+accept: application/json
+content-length: 58
+{ "url": "http://example.com/jobs/42", "type": "URL_UPDATED" }
+--===============7330845974216740156==
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: <b29c5de2-0db4-490b-b421-6a51b598bd22+1>
+POST /v3/urlNotifications:publish [2]
+Content-Type: application/json
+accept: application/json
+content-length: 75
+{ "url": "http://example.com/widgets/1", "type": "URL_UPDATED" }
+--===============7330845974216740156==
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: <b29c5de2-0db4-490b-b421-6a51b598bd22+3>
+POST /v3/urlNotifications:publish [3]
+Content-Type: application/json
+accept: application/json
+content-length: 58
+{ "url": "http://example.com/jobs/43", "type": "URL_DELETED" }
+--===============7330845974216740156==
+For more information, see
+Sending Batch Requests.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-01-08.

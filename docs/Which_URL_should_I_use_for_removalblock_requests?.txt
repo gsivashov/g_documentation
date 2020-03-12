@@ -1,0 +1,32 @@
+Which URL should I use for removal/block requests?When you file a removal or temporary block request for a web page, don't just copy the page URL from your browser's URL bar (the bar at the top of the browser). That probably won't work. (Why not?)
+Here's how to find the right URL to remove from Google:
+Find a webpage URL
+When requesting removal of a URL, it's important to enter the exact URL that's appearing in search results. Small variations in URLs—such as www.example.com/dragon vs. www.example.com/Dragon—may not look significant, but these are actually two different URLs (and, on some servers, can point to different content). In order for Google to remove the content you want, you must enter the exact URL that you found in our search results.
+To find the correct URL:
+Hover over the blue link in search results. Do NOT copy the text of the displayed link. Do NOT click the link and copy the URL from the page in your browser.
+Right-click, then select Copy Link Address in the popup menu.
+Find any additional URLs for the same page: It's common for the same content to appear in multiple URLs. For example, all the following blog post URLs all point to the same page:
+http://www.example.com/forum/thread/123
+http://www.example.com/forum/post/456
+http://www.example.com/forum/thread/123?post=456
+http://www.example.com/forum/thread/123?post=456&sessionid=12837460
+Even if you successfully request removal of one URL, the content you're trying to remove may also appear in our search results under other URLs. If this is the case, you can simply submit additional removal requests—one for each URL that displays this content.
+Find an image URL
+Here’s how to find the URL of an image for image removal requests:
+Find the image on Google Images using Google Chrome browser.
+Right-click the image and select Copy Link Address. Do not left-click the image first. (The URL should be something like this: https://www.google.com/imgres?imgurl=https....)
+Paste the URL into a file or document, so it’s available when you use the URL removal tool.
+Find any additional URLs for the same image; an image can be hosted at multiple URLs on the same site, or on different sites. To find additional copies of an image:
+Right-click an image in search results and choose Search Google for Image
+Click Find other sizes of this image: All sizes to get a page with all sizes
+Also browse "Pages that include matching images" on the bottom of the results page.
+Removed image or page still appearing?
+If one of your removal requests has been marked as 'Removed' but you still see that content in our search results, double-check whether the URL that's appearing in our search results is exactly the same as the one you submitted for removal (including capitalization). If not, you should request removal of the additional URL(s) that still appear in search results.
+Also check to see if your removal requests have expired in the Remove URLs tool.
+Why can't I use the URL in my browser window?
+It seems like you should be able to navigate to a web page (or image) and simply copy the URL from the browser, doesn't it? However, it's more complicated than that.
+To simplify things, a page might have a chain of URLs pointing to it (one URL gets redirected to another, which redirects to another, which finally redirects to the page), or a site might have several different URLs that all point to the same page (for example, example.com/greendresses/1234 and example.com/product=1234 might point to the same page on the site).
+The URL that you care about is the one that appears in Google Search. So you should copy the URL in Google Search. In many cases the search result URL is the same as the page URL, but in some cases it's different.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

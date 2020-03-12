@@ -1,0 +1,72 @@
+Block crawling of parameterized duplicate contentWhen and how to use the URL Parameters toolURL parameters and duplicate content
+If your site uses URL parameters for insignificant page variations (for instance, color=red vs color=green), or if your site uses parameters that can show essentially the same content using different URLs (for example, example.com/shirts?style=polo,long-sleeve and example.com/shirts?style=polo&style=long-sleeve), Google might be crawling your site inefficiently.
+Here is an example of URLs that lead to essentially duplicate content, distinguished only by different parameters:
+URL
+Description
+https://example.com/products/women/dresses/green.html
+Static, non-parameterized page
+https://example.com/products/women?category=dresses&color=green
+URL uses  parameters category and color to deliver the same content as non-parameterized page.
+https://example.com/products/women/dresses/green.html?limit=20&sessionid=123
+URL includes parameters to limit the number of results,  and a session ID for the user to show the same content.
+If you have many such URL parameters in your site, then you might benefit by using the URL Parameters tool to reduce crawling of duplicate URLs.
+Important: If your site serves duplicate content to different URLs without using parameters, you should define a canonical page rather than block crawling, as described in this page.
+Block crawling of URLs containing specific parameters
+You can prevent Google from crawling URLs that contain specific parameters, or parameters with specific values, in order to avoid crawling duplicate pages.
+Requirements
+You should use the URL Parameters tool only if your site fulfills ALL of the following requirements.
+Your site has more than 1,000 pages, AND
+In your logs, you see a significant number of duplicate pages being indexed by Googlebot, in which all duplicate pages vary only by URL parameters (for example: example.com?product=green_dress and example.com?type=dress&color=green).
+Incorrect usage warning
+You should use the URL Parameters tool only if your site fulfills the requirements above, and you are an experienced SEO. Using the URL Parameters tool incorrectly can cause Google to ignore important pages on your site, with no warning or reporting about ignored pages. If this sounds a little dire, it's because many people misuse the tool, or use it unnecessarily. If you are unsure whether you are using this tool correctly, it's better not to use it.
+Usage
+You can specify Google's behavior when crawling your site with specific parameters. Parameter behavior applies to the entire property; you cannot limit crawling behavior for a given parameter to a specific URL or branch of your site.
+To use the URL Parameters tool:
+Verify that your site meets the requirements listed previously.
+Open the URL Parameters tool.
+Either Edit an existing parameter, or click Add parameter to create a new one. Note that this tool is case-sensitive, so type your parameter name exactly as it appears in your URL.
+Specify whether your URL parameter affects page content:
+No: Doesn't affect page content: Your parameter doesn't affect how page content is presented. This type of parameter might be used to track visits and referrers, but has no effect on the actual content of the page. For example, sessionID or userName. If Google finds many URLs that differ only in this parameter value, it will crawl one of them. Google tries to detect these types of parameters, but if your logs indicate that we are not identifying this static parameter correctly, you can specify it here.
+Yes: Changes, reorders, or narrows page content:  Your parameter can change page content. Examples might be brand, gender, country, or sortorder. Choose the purpose of the parameter:
+Sorts (for example, sort=price_ascending): Changes the order in which content is presented.
+Narrows (for example, t-shirt_size=XS): Filters the content on the page.
+Specifies (for example, store=women): Determines the general class of content displayed on a page. If this specifies an exact item, and this is the only way to reach this content, should select "Every URL" for the behavior.
+Translates (for example, lang=fr): Displays a translated version of the content. If you use a parameter to show different languages, you probably do want Google to crawl the translated versions using hreflang to indicate language variants of your page rather than blocking content with this tool.
+Paginates (for example, page=2): Displays a specific page of a long listing or article.
+Which URLs with this parameter should Googlebot crawl? Choose an option to indicate Google's behavior when encountering URLs that contain this parameter:
+Let Googlebot decide: This setting is the default for already-known parameters. Select if you're unsure of a parameter's behavior, or if the parameter behavior changes for different parts of the site. Googlebot can analyze your site to determine how best to handle the parameter.
+Every URL: Tells Google never to block URLs with this parameter. URLs with unique values of this parameter do not contain duplicate content. For example, after you implement this type of setting for URLs containing the productid parameter, Google automatically considers the URL http://www.example.com/dresses/real.htm?productid=1202938 to be entirely different from http://www.example.com/dresses/real.htm?productid=5853729 because each URL has a different productid parameter value.
+Only URLs with value: Tells Google to crawl only URLs where your URL parameter is set to a specified value. URLs with a different parameter value won’t be crawled. This is particularly useful if your site uses the parameter value to change the order in which otherwise identical content is displayed. For example, http://www.example.com/dresses/real.htm?sort=price_high contains the same content as http://www.example.com/dresses/real.htm?sort=price_low. You could use this setting to tell Googlebot to crawl only those URLs where sort=price_low to avoid crawling the duplicate content.
+No URLs: Tells Google not to crawl any URLs with a specific parameter. Google won't crawl any URLs containing the parameter you entered. For example, you can tell Google not to crawl URLs with parameters such as pricefrom and priceto (like http://www.examples.com/search?category=shoe&brand=nike&color=red&size=5&pricefrom=10&priceto=1000) to prevent unnecessary crawling of duplicated content already available from http://www.examples.com/search?category=shoe&brand=nike&color=red&size=5.
+If your site uses multiple parameters in a URL, see managing URLs with multiple parameters.
+Note that your rules might be inherited by other properties (see Inheritance of parameter rules).
+Inheritance of parameter rules
+If you have separate properties for http and https, or separate parent and child properties (for example, example.com and example.com/fr/, or example.com and m.example.com) then your parameter settings might be inherited between properties, according to these rules:
+http/https: If only one of your http or https properties has rules, then the rules are applied to both. If both your http and https properties have their own rules defined, then only their own rules are applied.
+Parent/child: If a parent property (example.com) has parameter rules, any child property (example.com/fr/) without parameter rules inherits those rules; any child property with parameter rules uses only its own rules. Note that subdomains (m.example.com) count as children of parent domains (example.com).
+Managing URLs with multiple parameters
+A single URL can contain many parameters; you can specify crawling settings for each one separately. If a single URL contains multiple managed parameters, Google will obey the following rule when deciding whether to crawl the URL:
+The more restrictive parameter settings override the less restrictive parameter settings.
+For example, below are three URL parameters and their respective Google crawling settings:
+Parameter
+Parameter crawl settings
+shopping-category
+Crawl all URLs with this parameter
+sort-by
+Crawl only URLs with value = production-year
+sort-order
+Crawl only URLs with value = asc
+Example 1
+http://www.example.com?shopping-category=shoes&sort-by=size&sort-order=asc.
+Google won't crawl this URL because the sort-by parameter is not set to production-year even though the URL contains a valid  sort-order value (asc)
+Example 2
+http://www.example.com?shopping-category=DVD-movies&sort-by=production-year&sort-order=asc.
+Google can crawl this URL because the sort-by and sort-order values match the allowed settings.
+Example 3
+http://www.example.com/shoes/33453
+http://www.example.com?country=fr
+Google can crawl both URLs because they don't have any flagged parameters.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Tell Google about your duplicate contentConsolidate duplicate URLsBlock crawling of parameterized duplicate content
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -1,0 +1,23 @@
+Message panelRead your Search Console messages for the current property in the message panel. All messages sent to you by email are available in the message panel.
+Read messages
+Open the message panel by clicking the bell icon  at the top of Search Console.
+If a number is shown on top of the message icon, it indicates the number of unread messages. A number will only be shown when a new message arrives, and will disappear after you open the panel.
+Click a message in the panel to view it.
+Message history and visibility
+Messages are stored in a property's message history only when the property has a verified owner. The message history includes all messages sent to the property during this time, even if you did not yet have any permissions on this property.
+A message is only visible to you if you have the proper permission level for that message.
+Reading older messages
+The message panel shows messages only from May 23, 2019 onward. Messages sent before that date can be viewed only in your personal email or in the legacy message list.
+Mark as read/unread
+Reading a message in the message page will mark it as read. You can change the read/unread status for single messages or multiple messages as described here:
+Single messages
+Mark an open message as unread using the mail icon  at the top of the message, or by using the bulk action checkbox in message list view.
+Marking multiple messages as read or unread
+Select one or more messages in the message list view, then choose a status (read or unread) to assign all selected messages.
+Filter messages
+Filter messages by type using the dropdown selection box above the list. Choose a message type to filter by, or select "All types" to see all your messages.
+Set message preferences
+You can set your messaging preferences in the Email Preferences page.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

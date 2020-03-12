@@ -1,0 +1,792 @@
+Home
+Products
+Search for Developers
+Reference
+Get your recipes on Google
+Does your page provide instructions for something other than
+food or drinks? Add HowTo structured data
+instead of Recipe.
+Help users find your recipe content by telling Google about your recipe with structured data.
+When you provide information such as reviewer ratings, cooking and
+preparation times, and nutrition information, Google can better understand your recipe and
+present it to users in interesting ways. Recipes can appear in Google Search results and
+Google Images.
+Based on how you mark up your content, your recipes can be eligible for the following enhancements:
+Recipe enhancements
+Guided Recipes: Enable the Google Assistant to guide users through your recipes on Google
+Home and smart displays by adding Recipe structured data.
+There are a few additional properties that are required for Guided Recipes, but only
+recommended for Google Search. Make sure you add recipeIngredient and
+recipeInstructions.
+For more information about recipes on the Google Assistant, learn how you can
+build Actions from web content.
+Recipe host carousel: Enable users to explore your recipe gallery
+pages by adding ItemList structured data.
+Examples
+Here are some examples of recipes using JSON-LD code.
+Note: The actual appearance in Search results might
+be different. Preview the structured data in the Rich Results Test for the most up-to-date
+layout.
+Guided Recipes
+Here's an example of a page that's eligible for display on Google Search and as a Guided Recipe on the Assistant.
+<html>
+<head>
+<title>Party Coffee Cake</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "Recipe",
+"name": "Party Coffee Cake",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"author": {
+"@type": "Person",
+"name": "Mary Stone"
+},
+"datePublished": "2018-03-10",
+"description": "This coffee cake is awesome and perfect for parties.",
+"prepTime": "PT20M",
+"cookTime": "PT30M",
+"totalTime": "PT50M",
+"keywords": "cake for a party, coffee",
+"recipeYield": "10",
+"recipeCategory": "Dessert",
+"recipeCuisine": "American",
+"nutrition": {
+"@type": "NutritionInformation",
+"calories": "270 calories"
+},
+"recipeIngredient": [
+"2 cups of flour",
+"3/4 cup white sugar",
+"2 teaspoons baking powder",
+"1/2 teaspoon salt",
+"1/2 cup butter",
+"2 eggs",
+"3/4 cup milk"
+],
+"recipeInstructions": [
+{
+"@type": "HowToStep",
+"name": "Preheat",
+"text": "Preheat the oven to 350 degrees F. Grease and flour a 9x9 inch pan.",
+"url": "https://example.com/party-coffee-cake#step1",
+"image": "https://example.com/photos/party-coffee-cake/step1.jpg"
+},
+{
+"@type": "HowToStep",
+"name": "Mix dry ingredients",
+"text": "In a large bowl, combine flour, sugar, baking powder, and salt.",
+"url": "https://example.com/party-coffee-cake#step2",
+"image": "https://example.com/photos/party-coffee-cake/step2.jpg"
+},
+{
+"@type": "HowToStep",
+"name": "Add wet ingredients",
+"text": "Mix in the butter, eggs, and milk.",
+"url": "https://example.com/party-coffee-cake#step3",
+"image": "https://example.com/photos/party-coffee-cake/step3.jpg"
+},
+{
+"@type": "HowToStep",
+"name": "Spread into pan",
+"text": "Spread into the prepared pan.",
+"url": "https://example.com/party-coffee-cake#step4",
+"image": "https://example.com/photos/party-coffee-cake/step4.jpg"
+},
+{
+"@type": "HowToStep",
+"name": "Bake",
+"text": "Bake for 30 to 35 minutes, or until firm.",
+"url": "https://example.com/party-coffee-cake#step5",
+"image": "https://example.com/photos/party-coffee-cake/step5.jpg"
+},
+{
+"@type": "HowToStep",
+"name": "Enjoy",
+"text": "Allow to cool and enjoy.",
+"url": "https://example.com/party-coffee-cake#step6",
+"image": "https://example.com/photos/party-coffee-cake/step6.jpg"
+}
+],
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "5",
+"ratingCount": "18"
+},
+"video": {
+"@type": "VideoObject",
+"name": "How to make a Party Coffee Cake",
+"description": "This is how you make a Party Coffee Cake.",
+"thumbnailUrl": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"contentUrl": "http://www.example.com/video123.mp4",
+"embedUrl": "http://www.example.com/videoplayer?video=123",
+"uploadDate": "2018-02-05T08:00:00+08:00",
+"duration": "PT1M33S",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 2347
+},
+"expires": "2019-02-05T08:00:00+08:00"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Recipe on Search only
+Here's an example of a page that's eligible to be displayed on Search. It's not eligible for
+display as a Guided Recipe on the Assistant.
+<html>
+<head>
+<title>Non-alcoholic Pina Colada</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "Recipe",
+"name": "Non-alcoholic Pina Colada",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"author": {
+"@type": "Person",
+"name": "Mary Stone"
+},
+"datePublished": "2018-03-10",
+"description": "This non-alcoholic pina colada is everyone's favorite!",
+"recipeCuisine": "American",
+"prepTime": "PT1M",
+"cookTime": "PT2M",
+"totalTime": "PT3M",
+"keywords": "non-alcoholic",
+"recipeYield": "1 serving",
+"recipeCategory": "Drink",
+"nutrition": {
+"@type": "NutritionInformation",
+"calories": "120 calories"
+},
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "5",
+"ratingCount": "18"
+},
+"recipeIngredient": [
+"2 cups of pineapple juice",
+"5/8 cup cream of coconut",
+"ice"
+],
+"recipeInstructions": [
+{
+"@type": "HowToStep",
+"text": "Blend 2 cups of pineapple juice and 5/8 cup cream of coconut until smooth."
+},
+{
+"@type": "HowToStep",
+"text": "Fill a glass with ice."
+},
+{
+"@type": "HowToStep",
+"text": "Pour the pineapple juice and coconut mixture over ice."
+}
+],
+"video": {
+"@type": "VideoObject",
+"name": "How to make a Party Coffee Cake",
+"description": "This is how you make a Party Coffee Cake.",
+"thumbnailUrl": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"contentUrl": "http://www.example.com/video123.mp4",
+"embedUrl": "http://www.example.com/videoplayer?video=123",
+"uploadDate": "2018-02-05T08:00:00+08:00",
+"duration": "PT1M33S",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 2347
+},
+"expires": "2019-02-05T08:00:00+08:00"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Carousel
+Here's an example of a recipe summary page (a page with a list of recipes) with itemList structured data. This content may be eligible to be displayed in a grid in Search results.
+<html>
+<head>
+<title>Grandma's Best Pie Recipes</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ItemList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"url": "https://example.com/apple-pie.html"
+},
+{
+"@type": "ListItem",
+"position": 2,
+"url": "https://example.com/blueberry-pie.html"
+},
+{
+"@type": "ListItem",
+"position": 3,
+"url": "https://example.com/cherry-pie.html"
+}]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Enhance your recipes on Google
+Here's an overview of how to enhance your recipes on Google:
+Ensure that Googlebot can crawl your recipe pages (meaning, your pages aren't protected by
+a robots.txt file or robots meta tag).
+Make sure you follow our guidelines.
+Add structured data to your recipe pages.
+If you’re just getting started, learn more about
+how structured data works. You
+can also try the structured data codelab, which walks you through how to add structured data to
+your website.
+Test and preview your structured data.
+Check the index status of your URLs and request for your URL to be
+crawled with the
+URL inspection tool in
+Search Console. To confirm if crawlers are able to access structured data on your page, use
+the Live Test feature.
+Keep Google informed of new recipe pages or
+changes to existing recipe pages.
+Monitor performance in Search
+To understand how users interact with your recipes, use the following Google tools:
+Use the Performance
+Report in Search Console to see how your recipes appear in Search results. You can
+automatically pull these results with the
+Search
+Console API.
+Use the Rich result status
+report in Search Console to understand what Google could or could not read from your
+site, and troubleshoot rich result errors.
+If you're experiencing unexpected fluctuations or inconsistencies in your traffic, use the
+troubleshooter to
+identify and resolve the issues.
+Guidelines
+You must follow the general structured data
+guidelines for your recipe to be eligible to appear in Search results. If you want your
+recipe to display as a Guided Recipe on the Assistant, make sure your content follows the
+content restrictions policy
+for the Assistant.
+If you violate these policies, your recipe might not show up as a rich result,
+but your content will still appear in Search results. Read about
+Spammy Structured Markup.
+The following guidelines apply to recipe structured data.
+Use recipe structured data for content about preparing a particular dish. For example,
+"facial scrub" or "party ideas" are not valid names for a dish.
+To enable your recipes to appear in a
+carousel or grid, you must follow these
+guidelines:
+Provide ItemList structured data to summarize the recipes for your list.
+You can provide ItemList structured data separately or together with recipe
+structured data.
+Your site must have a summary page that lists all the recipes in the collection. For
+example, when a user clicks the summary link from Search results, they are properly
+directed to a page on your site listing the recipes related to their search.
+Structured data type definitions
+You must include the required properties for your content to be eligible for display as a rich
+result in Google Search. You can also include the recommended properties to add more information
+about your content, which could provide a better user experience.
+If you want your recipe to display as a Guided Recipe on the Assistant, make sure you
+add recipeIngredient and recipeInstructions. If your recipe doesn't
+have these properties, the recipe won't eligible for Guided Recipes (but may still be eligible
+to appear in Search results).
+Recipe
+Mark up your recipe content with the following properties of the
+schema.org Recipe type. The full definition of
+Recipe is available at
+schema.org/Recipe.
+Required properties
+image
+URL or ImageObject
+Image of the completed dish.
+Additional image guidelines:
+Every page must contain at least one image (whether or not you include markup). Google will pick
+the best image to display in Search results based on the aspect ratio and resolution.
+Image URLs must be crawlable and indexable.
+Images must represent the marked up content.
+Images must be in .jpg, .png, or. gif format.
+For best results, provide multiple high-resolution images (minimum of 50K pixels when multiplying width and
+height) with the following aspect ratios: 16x9, 4x3, and 1x1.
+For example:
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+]
+name
+Text
+The name of the dish.
+Recommended properties
+aggregateRating
+AggregateRating
+Annotation for the average review score assigned to the item. Follow the Review snippet guidelines and list of required and recommended AggregateRating properties.
+If the recipe structured data contains a single review, the reviewer’s name must be a valid
+person or organization. For example, "50% off ingredients" is not a valid name for a
+reviewer.
+author
+Person
+or Organization
+The name of the person or organization that wrote the recipe.
+cookTime
+Duration
+The time it takes to actually cook the dish in ISO
+8601 format. You can use min and max as child elements to specify a range of time.
+Always use in combination with prepTime.
+datePublished
+Date
+The date the recipe was published in ISO 8601 format.
+description
+Text
+A short summary describing the dish.
+keywords
+Text
+Other terms for your recipe such as the season ("summer"), the holiday ("Halloween"), or other descriptors ("quick", "easy", "authentic").
+Additional guidelines
+Separate multiple entries in a keywords list with commas.
+Don't use a tag that should be in recipeCategory
+or recipeCuisine.
+Not recommended
+"keywords": "dessert, American"
+Recommended
+"keywords": "winter apple pie, nutmeg crust"
+nutrition.calories
+Energy
+The number of calories in each serving produced with this
+recipe. If nutrition.calories is defined, recipeYield must be defined
+with the number of servings.
+prepTime
+Duration
+The length of time it takes to prepare the dish, in ISO 8601 format. You can use min and max as child elements to specify a range of time.
+Always use in combination with cookTime.
+recipeCategory
+Text
+The type of meal or course your recipe is about. For example: "dinner", "main course", or "dessert, snack".
+recipeCuisine
+Text
+The region associated with your recipe. For example, "French", Mediterranean", or "American".
+recipeIngredient
+Text
+This property required for Guided Recipes.
+An ingredient used in the recipe.
+For example:
+"recipeIngredient": [
+"1 (15 ounce) package double crust ready-to-use pie crust",
+"6 cups thinly sliced, peeled apples (6 medium)",
+"3/4 cup sugar",
+"2 tablespoons all-purpose flour",
+"3/4 teaspoon ground cinnamon",
+"1/4 teaspoon salt",
+"1/8 teaspoon ground nutmeg",
+"1 tablespoon lemon juice"
+]
+Additional guidelines:
+Include only the ingredient text that is necessary for making the recipe.
+Don't include unnecessary information, such as a definition of the ingredient.
+recipeInstructions
+HowToStep, HowToSection, or Text
+This property required for Guided Recipes.
+The steps to make the dish.
+There are several options for setting the value of recipeInstructions. We recommend using HowToStep. HowToSection can also be used to group HowToSteps when the recipe has sections.
+HowToStep: Specify this recipe’s steps with HowToStep.
+HowToStep example
+"recipeInstructions": [
+{
+"@type": "HowToStep",
+"name": "Preheat",
+"text": "Heat oven to 425°F.",
+"url": "https://example.com/recipe#step1",
+"image": "https://example.com/photos/recipe/step1.jpg"
+}, {
+"@type": "HowToStep",
+"name": "Prepare crust",
+"text": "Place 1 pie crust in ungreased 9-inch glass pie plate, pressing firmly against side and bottom.",
+"url": "https://example.com/recipe#step2",
+"image": "https://example.com/photos/recipe/step2.jpg"
+}, {
+"@type": "HowToStep",
+"name": "Make filling",
+"text": "In large bowl, gently mix filling ingredients; spoon into crust-lined pie plate.",
+"url": "https://example.com/recipe#step3",
+"image": "https://example.com/photos/recipe/step3.jpg"
+}, {
+"@type": "HowToStep",
+"name": "Cover",
+"text": "Top with second crust. Cut slits or shapes in several places in top crust.",
+"url": "https://example.com/recipe#step4",
+"image": "https://example.com/photos/recipe/step4.jpg"
+}, {
+"@type": "HowToStep",
+"name": "Bake",
+"text": "Bake 40 to 45 minutes. The pie is ready when the apples are tender and the crust is golden brown.",
+"url": "https://example.com/recipe#step5",
+"image": "https://example.com/photos/recipe/step5.jpg"
+}, {
+"@type": "HowToStep",
+"name": "Cool",
+"text": "Cool on cooling rack at least 2 hours before serving.",
+"url": "https://example.com/recipe#step6",
+"image": "https://example.com/photos/recipe/step6.jpg"
+}
+]
+HowToSection (only if a recipe has multiple sections):
+Use to group steps into multiple sections. See HowToSection for an example.
+Single or repeated property of text: A block of text that includes one or more steps. Google treats all steps as being in a single section. Repeated
+property values are concatenated into a single block of text. Google then attempts to
+automatically split the single block of text into individual steps. Google tries to
+find and remove any section names, step numbers, keywords, and anything else that
+can incorrectly appear in recipe step text. For best results, we recommend you
+unambiguously specify steps with HowToStep.
+Single property of text example
+"recipeInstructions": [
+"In large bowl, gently mix filling ingredients; spoon into crust-lined pie
+plate. Top with second crust. Cut slits or shapes in several places in top
+crust. Bake 40 to 45 minutes. The pie is ready when the or until apples are
+tender and the crust is golden brown. Cool on cooling rack at least 2 hours
+before serving."
+]
+Additional guidelines
+Don't include metadata that belongs elsewhere. In particular, use the author
+property to specify the author, recipeCuisine for cuisine,
+recipeCategory for category, and keywords for other keywords.
+Include only text on how to make the dish and don't include other text such as
+"Directions", "Watch the video", "Step 1". Those phrases should be specified
+outside of the structured data.
+Not recommended
+"recipeInstructions": [{
+"@type": "HowToStep",
+"text": "Step 1. Heat oven to 425°F."
+}]
+Recommended
+"recipeInstructions": [{
+"@type": "HowToStep",
+"text": "Heat oven to 425°F."
+}]
+recipeYield
+Text
+The quantity produced by the recipe. Specify the number of servings
+produced from this recipe with just a number. If you wish to use a different unit (for
+example, number of items), you may include additional yields.
+This is required if you
+specify any nutritional information per serving (such as nutrition.calories).
+Example
+"recipeYield": [
+"6",
+"24 cookies"
+}
+totalTime
+Duration
+The total time it takes to prepare
+the cook the dish, in ISO 8601 format.
+You can use min and max as child elements to specify a range of time.
+Use totalTime or a combination of both cookTime and prepTime.
+video
+VideoObject
+A video depicting the steps to make the dish. Follow the list of required and recommended
+Video properties.
+Video without clips
+Show example
+{
+"@context": "https://schema.org/",
+"@type": "Recipe",
+"video": [
+{
+"@type": "VideoObject",
+"name": "Delicious PieParty Coffee Cake",
+"description": "How to make a delicious pie - quickly and easily!How to make Party Coffee Cake.",
+"thumbnailUrl": "https://example.com/photos/photo.jpg",
+"thumbnailUrl": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"contentUrl": "https://www.example.com/videos/123_600x400.mp4",
+"embedUrl": "https://www.example.com/videoplayer?id=123",
+"uploadDate": "2018-02-05T08:00:00+08:00"
+}
+]
+}
+]
+Video with clips: A video with clips that correspond to segments of the video. Other parts of the recipe (such as steps) can refer to these clips, which are defined in video.hasPart.
+Show example
+{
+"@context": "http://schema.org/",
+"@type": "Recipe",
+"video": {
+"@type": "VideoObject",
+"name": "Make a pie",
+"description": "How to make a delicious pie - quickly and easily!",
+"thumbnailUrl": "https://example.com/photos/photo.jpg",
+"contentUrl": "https://www.example.com/videos/123_600x400.mp4",
+"embedUrl": "https://www.example.com/videoplayer?id=123",
+"uploadDate": "2018-02-05T08:00:00+08:00",
+"duration": "P1MT10S",
+"hasPart": [{
+"@type": "Clip",
+"@id": "Clip1",
+"name": "Preheat oven",
+"startOffset": 20,
+"endOffset": 29
+"url": "https://www.example.com/example?t=20"
+},
+{
+"@type": "Clip",
+"@id": "Clip2",
+"name": "Arrange pie crust",
+"startOffset": 29,
+"endOffset": 36
+"url": "https://www.example.com/example?t=29"
+},
+{
+"@type": "Clip",
+"@id": "Clip3",
+"name": "Make filling",
+"startOffset": 36,
+"endOffset": 45
+"url": "https://www.example.com/example?t=36"
+},
+{
+"@type": "Clip",
+"@id": "Clip4",
+"name": "Add filling",
+"startOffset": 45,
+"endOffset": 65
+"url": "https://www.example.com/example?t=45"
+},
+{
+"@type": "Clip",
+"@id": "Clip5",
+"name": "Bake",
+"startOffset": 65,
+"endOffset": 80
+"url": "https://www.example.com/example?t=65"
+},
+{
+"@type": "Clip",
+"@id": "Clip6",
+"name": "Let cool",
+"startOffset": 80,
+"endOffset": 90
+"url": "https://www.example.com/example?t=80"
+}]
+}
+}
+video.hasPart
+Clip
+A video clip that is part of the entire video.
+video.hasPart.endOffset
+Number
+The end time of the clip expressed as the number of seconds from the beginning of the video.
+video.hasPart.name
+Text
+The name of the clip. For example, "Arrange pie crust" could be the name of the clip that
+shows how to arrange and press the pie crust into the pie plate.
+video.hasPart.startOffset
+Number
+The start time of the clip expressed as the number of seconds from the beginning of the video.
+video.hasPart.url
+URL
+A link to the start of the clip. The start of the clip must match the value set in
+video.hasPart.startOffset. For example:
+"startOffset": 20,
+"endOffset": 29,
+"url": "https://www.example.com/example?t=20"
+HowToSection
+Most recipes don't have sections. Start by splitting the recipe instructions
+into HowToStep properties, and only add HowToSection if you need to
+additionally specify sections of steps.
+Use HowToSection to group a sequence of steps (or sub-sections) that make up
+part of the instructions for a recipe. Specify HowToSection directly within the
+definition of recipeInstructions property, or as an itemListElement of another
+HowToSection.
+The HowToSection type defines a section of a single recipe and
+contains one or multiple steps. Don't use HowToSection to define different recipes
+for the same dish; instead, use HowToSection as part of a single recipe. For listing
+multiple recipes for a dish, use multiple Recipe objects. For example,
+multiple ways to make an apple pie should be listed as multiple Recipe objects, not
+HowToSection objects.
+The full definition of HowToSection is available at
+schema.org/HowToSection.
+Required properties
+itemListElement
+HowToStep
+A list of detailed steps for the section, and/or sub-sections. For example, a pizza recipe may have
+one section of steps for making the crust, one for preparing the
+toppings, and one for combining and baking. If a recipe has sections,
+but they aren’t defined with HowToSections, the Assistant may
+mistakenly present the section name as just another step (for example, a
+"Make the crust" step followed by a "Combine the flour and yeast"
+step).
+Example:
+{
+"@type": "HowToSection",
+"name": "Assemble the pie",
+"itemListElement": [
+{
+"@type": "HowToStep",
+"text": "In large bowl, gently mix filling ingredients; spoon into crust-lined pie plate."
+}, {
+"@type": "HowToStep",
+"text": "Top with second crust. Cut slits or shapes in several places in top crust."
+}
+]
+}
+name
+Text
+The name of the section.
+HowToStep
+Use HowToStep to group one or more sentences that explain how to
+do part of the recipe. Define the text property with the
+sentences or, alternately, define itemListElement with
+a HowToDirection or HowToTip for each sentence.
+Mark up your recipe steps with the following properties of
+the HowToStep type. Specify
+a HowToStep directly within the definition of recipeInstructions
+property, or as an itemListElement of a HowToSection.
+The full definition of HowToStep is available at
+schema.org/HowToStep.
+Required properties
+itemListElement
+HowToDirection or HowToTip
+A list of detailed substeps, including directions or tips.
+Optional if text is used.
+text
+Text
+The full instruction text of this step.
+Optional if itemListElement is used. Additional guidelines:
+Include only instructional text and don't include other text such as
+"Directions", "Watch the video", "Step 1". Specify those phrases outside of the marked
+up property.
+Show example
+Not recommended
+{
+"@type": "HowToStep",
+"text": "Step 1. Heat oven to 425°F."
+}
+Recommended
+{
+"@type": "HowToStep",
+"text": "Heat oven to 425°F."
+}
+Recommended properties
+image
+ImageObject or URL
+An image for the step. Additional image guidelines:
+Image URLs must be crawlable and indexable.
+Images must represent the marked up content.
+Images must be in .jpg, .png, or. gif format.
+name
+Text
+The word or short phrase summarizing the step (for example, "Arrange pie crust").
+Don't use non-descriptive text (for example, "Step 1: [text]") or other form of step number
+(for example, "1. [text]").
+url
+URL
+A URL that directly links to the step (if one is available). For example,
+an anchor link fragment.
+video
+VideoObject or Clip
+A video for this step or a clip of the video.
+For VideoObject, follow the list of required and
+recommended
+Video
+or Clip properties.
+Show example using VideoObject
+{
+"@context": "https://schema.org/",
+"@type": "Recipe",
+"video": {
+"@type": "VideoObject",
+"name": "How to make a Party Coffee Cake",
+"description": "This is how you make a Party Coffee Cake.",
+"thumbnailUrl": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"contentUrl": "http://www.example.com/video123.mp4",
+"embedUrl": "http://www.example.com/videoplayer?video=123",
+"uploadDate": "2018-02-05T08:00:00+08:00",
+"duration": "PT1M33S",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 2347
+}
+"expires": "2019-02-05T08:00:00+08:00"
+}
+}
+Show example using Clip
+{
+"@type": "Clip",
+"@id": "Clip2",
+"name": "Arrange pie crust",
+"startOffset": 29,
+"endOffset": 36
+"url": "https://www.example.com/example?t=29"
+}
+HowToDirection and HowToTip
+Use HowToDirection and HowToTip to describe directions or tips.
+They have the same required and recommended properties.
+The full definitions of HowToDirection and HowToTip are available at
+schema.org/HowToDirection and
+schema.org/HowToTip.
+Required properties
+text
+Text
+The text of the direction or tip.
+ItemList
+In addition to Recipe properties, add the following properties for
+host-specific lists. While ItemList isn't required,
+you must add the following properties if you want your recipe to be eligible for a
+host carousel. For more information about host carousel, see
+Carousel.
+The full definition of ItemList is
+available at schema.org/ItemList.
+Required properties
+itemListElement
+ListItem
+Annotation for a single item page.
+ListItem.position
+Integer
+Ordinal position of the item page in the list. For example:
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+}, {
+"@type": "ListItem",
+"position": 2,
+}
+]
+ListItem.url
+URL
+The canonical URL of the item page. Every item should have a unique URL.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

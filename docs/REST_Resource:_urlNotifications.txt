@@ -1,0 +1,43 @@
+Home
+Products
+Search for Developers
+Reference
+REST Resource: urlNotifications
+Resource: UrlNotification
+JSON representation
+UrlNotificationType
+Methods
+Resource: UrlNotification
+UrlNotification is the resource used in all Indexing API calls. It describes one event in the life cycle of a Web Document.
+JSON representation
+{
+"url": string,
+"type": enum(UrlNotificationType),
+"notifyTime": string
+}
+Fields
+url
+string
+The object of this notification. The URL must be owned by the publisher of this notification and, in case of URL_UPDATED notifications, it must be crawlable by Google.
+type
+enum(UrlNotificationType)
+The URL life cycle event that Google is being notified about.
+notifyTime
+string (Timestamp format)
+Creation timestamp for this notification. Users should not specify it, the field is ignored at the request time.A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
+UrlNotificationType
+Specifies the different events that can happen to a given URL.
+Enums
+URL_NOTIFICATION_TYPE_UNSPECIFIED
+Unspecified.
+URL_UPDATED
+The given URL (Web document) has been updated.
+URL_DELETED
+The given URL (Web document) has been deleted.
+Methods
+getMetadata
+Gets metadata about a Web Document.
+publish
+Notifies that a URL has been updated or deleted.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-07-02.

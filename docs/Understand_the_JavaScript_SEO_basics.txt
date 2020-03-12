@@ -1,0 +1,162 @@
+Home
+Products
+Search for Developers
+Guides
+Understand the JavaScript SEO basics
+Do you suspect that JavaScript issues might be blocking your page or some of your content from
+showing up in Google Search? Learn how to fix JavaScript-related problems with our
+troubleshooting guide
+JavaScript is an important part of the web platform because it provides many features that turn
+the web into a powerful application platform. Making your JavaScript-powered web applications
+discoverable via Google Search can help you find new users and re-engage existing users as they
+search for the content your web app provides.
+While Google Search runs JavaScript with an
+evergreen
+version of Chromium, there are
+a few things
+that you can optimize.
+This guide describes how Google Search processes JavaScript and best practices for improving
+JavaScript web apps for Google Search.
+How Googlebot processes JavaScript
+Googlebot processes JavaScript web apps in three main phases:
+Crawling
+Rendering
+Indexing
+Googlebot crawls, renders, and indexes a page.
+Googlebot queues pages for both crawling and rendering. It is not immediately obvious when a
+page is waiting for crawling and when it is waiting for rendering.
+When Googlebot fetches a URL from the crawling queue by making an HTTP request it first checks
+if you allow crawling. Googlebot reads the
+robots.txt file. If it
+marks the URL as disallowed, then Googlebot skips making an HTTP request to this URL and skips the URL.
+Googlebot then parses the response for other URLs in the href attribute of HTML links
+and adds the URLs to the crawl queue. To prevent link discovery, use the
+nofollow mechanism.
+Crawling a URL and parsing the HTML response works well for classical websites or server-side
+rendered pages where the HTML in the HTTP response contains all content. Some JavaScript sites
+may use the app shell model
+where the initial HTML does not contain the actual content and Googlebot needs to execute JavaScript
+before being able to see the actual page content that JavaScript generates.
+Googlebot queues all pages for rendering, unless a
+robots meta tag or header
+tells Googlebot not to index the page. The page may stay on this queue for a few seconds,
+but it can take longer than that. Once Googlebot's resources allow, a headless Chromium renders
+the page and executes the JavaScript. Googlebot parses the rendered HTML for links again and queues
+the URLs it finds for crawling. Googlebot also uses the rendered HTML to index the page.
+Keep in mind that
+server-side or pre-rendering is still a great idea because it makes your website faster for
+users and crawlers, and not all bots can run JavaScript.
+Describe your page with unique titles and snippets
+Unique, descriptive titles and helpful meta descriptions help users to quickly identify the best
+result for their goal and we explain what makes
+good titles and
+descriptions in our guidelines.
+You can use JavaScript to set or change the meta description as well as the title.
+Google Search might show a different title or description based on the user's query.
+This happens when the title or description have a low relevance for the page content or when
+we found alternatives in the page that better match the search query. See this page for more
+information on titles and the description snippet.
+Write compatible code
+Browsers offer many APIs and JavaScript is a quickly-evolving language. Googlebot has some
+limitations regarding which APIs and JavaScript features it supports. To make sure your code is
+compatible with Googlebot, follow our
+guidelines for
+troubleshooting JavaScript problems.
+We recommend using differential serving and polyfills if you feature-detect a missing browser API that you need.
+Since some browser features cannot be polyfilled, we recommend that you check the polyfill documentation for potential limitations.
+Use meaningful HTTP status codes
+Googlebot uses HTTP status codes to find out if something went wrong when crawling the page.
+You should use a meaningful status code to tell Googlebot if a page should not be crawled or
+indexed, like a 404 for a page that could not be found or a 401 code for pages behind
+a login. You can use HTTP status codes to tell Googlebot if a page has moved to a new URL, so
+that the index can be updated accordingly.
+Here's a list of HTTP status codes and when to use them:
+HTTP status
+When to use
+301 / 302
+The page has moved to a new URL.
+401 / 403
+The page is unavailable due to permission issues.
+404 / 410
+The page is no longer available.
+5xx
+Something went wrong on the server side.
+Use meta robots tags carefully
+You can prevent Googlebot from indexing a page or following links through the meta robots tag.
+For example, adding the following meta tag to the top of your page blocks Googlebot from indexing
+the page:
+<!-- Googlebot won't index this page or follow links on this page -->
+<meta name="robots" content="noindex, nofollow">
+You can use JavaScript to add a meta robots tag to a page or change its content. The following example code shows
+how to change the meta robots tag with JavaScript to prevent indexing of the current page if an
+API call doesn't return content.
+fetch('/api/products/' + productId)
+.then(function (response) { return response.json(); })
+.then(function (apiResponse) {
+if (apiResponse.isError) {
+// get the robots meta tag
+var metaRobots = document.querySelector('meta[name="robots"]');
+// if there was no robots meta tag, add one
+if (!metaRobots) {
+metaRobots = document.createElement('meta');
+metaRobots.setAttribute('name', 'robots');
+document.head.appendChild(metaRobots);
+}
+// tell Googlebot to exclude this page from the index
+metaRobots.setAttribute('content', 'noindex');
+// display an error message to the user
+errorMsg.textContent = 'This product is no longer available';
+return;
+}
+// display product information
+// ...
+});
+When Googlebot encounters noindex in the robots meta tag before running JavaScript,
+it doesn't render or index the page.
+If Googlebot encounters noindex, it skips rendering and JavaScript execution.
+Because Googlebot skips your JavaScript in this case, there is no chance to remove the tag from
+the page.
+Using JavaScript to change or remove the robots meta tag might not work as expected. Googlebot
+skips rendering and JavaScript execution if the meta robots tag initially contains noindex.
+If there is a possibility that you do want the page indexed, don't use a noindex
+in the original page code.
+Follow best practices for web components
+Googlebot supports web components.
+When Googlebot renders a page, it flattens the shadow DOM and light DOM content.
+This means Googlebot can only see content that's visible in the rendered HTML. To make sure that Googlebot can still see your content after it's rendered,
+use the Mobile-Friendly Test or the URL Inspection Tool
+and look at the rendered HTML.
+If the content isn't visible in the rendered HTML, Googlebot won't be able to index it.
+The following example creates a web component that displays its light DOM content inside its shadow DOM.
+One way to make sure both light DOM and shadow DOM content is displayed in the rendered HTML is to use a Slot element.
+<script>
+class MyComponent extends HTMLElement {
+constructor() {
+super();
+this.attachShadow({ mode: 'open' });
+}
+connectedCallback() {
+let p = document.createElement('p');
+p.innerHTML = 'Hello World, this is shadow DOM content. Here comes the light DOM: <slot></slot>';
+this.shadowRoot.appendChild(p);
+}
+}
+window.customElements.define('my-component', MyComponent);
+</script>
+<my-component>
+<p>This is light DOM content. It's projected into the shadow DOM.</p>
+<p>WRS renders this content as well as the shadow DOM content.</p>
+</my-component>
+After rendering, Googlebot will index this content:
+<my-component>
+Hello World, this is shadow DOM content. Here comes the light DOM:
+<p>This is light DOM content. It's projected into the shadow DOM<p>
+<p>WRS renders this content as well as the shadow DOM content.</p>
+</my-component>
+Fix images and lazy-loaded content
+Images can be quite costly on bandwidth and performance. A good strategy is to use lazy-loading
+to only load images when the user is about to see them. To make sure you're implementing lazy-loading
+in a search-friendly way, follow
+our lazy-loading guidelines.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-11-22.

@@ -1,0 +1,128 @@
+Home
+Products
+Search for Developers
+Guides
+Responsive Web Design
+Responsive web design is a setup where the server always sends the same
+HTML code to all devices and CSS is used to alter the rendering of the page on
+the device.
+Google's algorithms should be able to automatically detect this setup if all
+Googlebot user agents are allowed to crawl the page and its assets (CSS,
+JavaScript, and images).
+Responsive design serves all devices with the same code that adjusts for
+screen size.
+TL;DR
+Use the meta name="viewport" tag to tell the browser how to adjust the content.
+Check out Web Fundamentals for more documentation.
+Using meta name="viewport"
+To signal to browsers that your page adapts to all devices, add a meta tag
+to the head of the document:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+The meta viewport tag gives the browser instructions on how to
+adjust the dimensions and scaling of the page to the width of the device. When
+the meta viewport element is absent, mobile browsers default to rendering the
+page at a desktop screen width (usually about 980px, though this varies across
+devices). Mobile browsers then try to make the content look better by increasing
+font sizes and either scaling the content to fit the screen or showing only the
+part of the content that fits within the screen.
+For users, this means that font sizes may have an inconsistent appearance, and
+users may have to double-tap or pinch-to-zoom in order to be able to see and
+interact with the content. For Google, we might not judge a page as
+mobile-friendly because it requires this type of interaction on a
+mobile device.
+On the left is a page without a meta viewport specified - the mobile
+browser therefore assumes desktop width and scales the page to fit the screen,
+making the content hard to read. On the right is the same page with a viewport
+specified that matches the device width - the mobile browser doesn't scale the
+page and the content is readable.
+For responsive images, include the <picture> element.
+As a general rule, if your site works in a recent browser such as Google Chrome
+or Apple Mobile Safari, it would work with our algorithms.
+Why responsive design
+We recommend using responsive web design because it:
+Makes it easier for users to share and link to your content with a single URL.
+Helps Google's algorithms accurately assign indexing properties to the page
+rather than needing to signal the existence of corresponding desktop/mobile pages.
+Requires less engineering time to maintain multiple pages for the same content.
+Reduces the possibility of the common mistakes that affect mobile sites.
+Requires no redirection for users to have a device-optimized view, which
+reduces load time. Also, user agent-based redirection is error-prone and can
+degrade your site's user experience (see Pitfalls when detecting user agents
+for details).
+Saves resources when Googlebot crawls your site. For responsive web design
+pages, a single Googlebot user agent only needs to crawl your page once,
+rather than crawling multiple times with different Googlebot user agents to
+retrieve all versions of the content. This improvement in crawling efficiency
+can indirectly help Google index more of your site's content and keep it
+appropriately fresh.
+If you're interested in responsive web design, start with our blog post
+on Webmaster Central and visit the Web Fundamentals site.
+Important: Be sure not to block the crawling of any page assets (CSS, JavaScript, and
+images) for any Googlebot using robots.txt or other methods. Being able to
+fully access these external files helps our algorithms detect your site's
+responsive web design configuration and treat it appropriately.Caution: To make sure your implementation is successful, avoid the common mistakes.
+JavaScript
+One part of building mobile-friendly sites that requires careful
+consideration is the use of JavaScript to alter the rendering and behavior of
+the site on different devices. Typical uses of
+JavaScript include deciding
+which ad or which image resolution variant to show in the page.
+This section describes different approaches to using JavaScript and how they
+relate to Google's recommendation of using responsive web design.
+Common configurations
+Three popular implementations of JavaScript for mobile-friendly sites are:
+JavaScript-adaptive: In this configuration, all devices are served the
+same HTML, CSS, and JavaScript content. When the JavaScript is executed on
+the device, the rendering or behavior of the site is altered. If a
+website requires JavaScript, this is Google's recommended configuration.
+Combined detection: In this implementation, the website uses both
+JavaScript and server-side detection of device capabilities to serve
+different content to different devices.
+Dynamically-served JavaScript: In this configuration, all devices are
+served the same HTML, but the JavaScript is served from a URL that
+dynamically serves different JavaScript code depending on the device's
+user-agent.
+Let's look at each of these configurations in detail.
+JavaScript-adaptive
+In this configuration, a URL serves the same contents (HTML, CSS, JavaScript, an
+image) to all devices. Only when the JavaScript is executed on the device is the
+rendering or behavior of the site altered. This is similar to how responsive web
+design, using CSS media queries, works.
+As an example, a page serves all devices the same HTML that includes a
+<script> element that requests an external URL that serves the JavaScript. All
+devices requesting the JavaScript's URL get the same code. When executed, the
+JavaScript detects the device and decides to alter something about the page, say
+to include a smartphone-friendly image or add code instead of the
+desktop alternatives.
+This configuration is very closely related to responsive web design and our
+algorithms can detect this setup automatically. Further, this configuration does
+not have a requirement for the Vary HTTP header because the URLs of the page and
+its assets do not dynamically serve content. Because of these advantages, if
+your website requires the use of JavaScript, this is our recommended
+configuration.
+Combined detection
+Combined detection is a setup where the server works in tandem with JavaScript
+on the client to detect the device's capabilities and alter the content being
+served.
+For example, a site may choose to alter the rendering of the content based on
+whether the device is a desktop or smartphone. In this case, the website can
+include JavaScript that detects the screen dimensions, which are then sent to
+the server that updates or alters the code sent to the device. Typically, the
+JavaScript stores the detected device capabilities in a cookie that the server
+reads on subsequent visits from the same device.
+Given that the server returns different HTML to different user-agents, combined
+detection is considered a type of dynamic serving configuration. The details are
+described in full in the dynamic serving section, but to briefly summarize,
+the website should include the "Vary: User-agent" HTTP response header when a
+URL that serves different HTML content to different user-agents is requested.
+Dynamically-served JavaScript
+In this configuration, all devices are served the same HTML which includes a
+<script> element to include an external JavaScript file that can have
+different content depending on the requesting user-agent. That is, the
+JavaScript code is dynamically served.
+In this case, we recommend that the JavaScript file be served with the "Vary:
+User-agent" HTTP header. This is a signal to Internet caches and Googlebot that
+the JavaScript can be different for different user agents, and is a signal for
+Googlebot to crawl the JavaScript file using different Googlebot user-agents.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-01-06.

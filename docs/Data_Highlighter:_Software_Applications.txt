@@ -1,0 +1,115 @@
+Data Highlighter: Software ApplicationsYou can use Data Highlighter to tag data from a description of a software application, such as its name, publisher, reviews, and user ratings. Then Google can present your data more attractively -- and in new ways -- in search results and in other products. (Each Google product applies its own rules when deciding whether and how to display your data.)
+Software application tags
+You can use Data Highlighter to tag any of the data described in the table below. Each tag corresponds to a property in the schema.org/SoftwareApplication schema. The name of each tag is followed by the name of the schema.org property in parentheses.  Required tags are listed in bold.
+Note that the data you can tag with Data Highlighter is a subset of the properties in the schema.org schema.
+If your site is missing any of the data described below, you can add missing data from Data Highlighter. If Data Highlighter has a low level of confidence in the tagged data, an alert icon () displays while you are creating a page set. Data Highlighter will still make the low-confidence data available to Google, but other Google products might not use it.
+Tag
+Description
+Name
+(name)
+The name of the software application.
+Image
+(image)
+An image that illustrates the application. For example, you can tag an image that appears on the application's web site. You can tag more than one image. Note that you can use the Screenshot tag specifically for screenshots of the application.
+Category
+(applicationCategory)
+The type of application. For example, Game or Productivity. You can tag more than one category.
+Publisher
+(publisher)
+A company that released the application. You can tag more than one publisher.
+Official URL
+(url)
+The URL of the application's web page.
+Download URL
+(downloadUrl)
+The URL for downloading the application.
+Operating System
+(operatingSystem)
+The name of an operating system that the application can run on. You can tag more than one operating systems if applicable.
+Date Published
+(datePublished)
+The date the application was released. For details on how to tag dates, see Tagging Dates.
+Here are some examples of dates you can tag:
+A single date. For example, you can tag any of the following:
+June 4, 2012
+4 June 2012
+6/4/12 - Your tags can include other delimiters and four-digit years as well, such as 6-4-2012. When numerical dates are ambiguous, Google assumes that the first number is the month. For example, 6/4/12 is intrepreted as June 4, 2012, while 13/4/12 would be interpreted as April 13, 2012.
+You can tag multiple dates on a page. For example, if you tag June 4, 2012 and June 6, 2012, the event will be intepreted as occuring twice: once on June 4th and once on June 6th.
+A range of days. For example, June 4-7 2012
+Note that delimiter between the beginning and ending days needs to be a dash (-).
+Dates with times. For example, you can tag any of the following:
+June 4, 2012 3pm - a time followed by am or pm. Google uses normal business hours to interpet times not followed by am or pm. For example, 11 would be interpreted as 11am and 2 would be interpreted as 2pm.
+June 4, 2012 15:00 - military time
+June 4, 2012 3pm EST or  June 4, 2012 3pm -5:00 - Times with a time zone or with a UTC/GMT offset.
+June 4, 2012 2-3pm or  June 4-5, 2012 2-3pm - Time ranges with or without a date range.
+Dates in separate pieces.You can use the advanced tagging option to tag the following separate pieces of text as a single date:
+Day: Tuesday, June 4 Year: 2013
+June 4 | Time: 7:30pm-9:30pm and 2012
+Google does not recognize date ranges that have been split into multiple tags. For example, the following tags are not valid date tags:
+June 4-5 and 2012
+Software Version
+(softwareVersion)
+The number or name describing the version of the software application.
+Average Rating (aggregateRating)
+The overall rating of the application, specified by the following tags (see Tagging ratings for more information):
+Tag
+Description
+Rating
+(ratingValue and
+bestRating)
+Words, numbers, or an image that describes the rating. The rating must specify the best possible rating and the actual rating.
+If a single piece of data specifes both the best possible rating and the actual rating, you can use a single Rating tag. For example, tag 65% to indicate a score of 65 out of 100; tag 8 out of 10 to indicate a score of 8 out of 10.
+If the data is in different locations on a page, specify the following tags:
+Score (ratingValue) - The actual rating.
+Best Possible (bestRating) - The highest value in the rating system. For example, if the rating scale is between one and five stars, specify 5 as the best rating.
+Votes
+(ratingCount)
+The total number of ratings.
+Review
+(review)
+A review of the application. You can tag more than one review. Use the following tags for each review:
+Tag
+Description
+Reviewer
+(author)
+The person or organization that wrote the review.
+Review text
+(reviewBody)
+The text or content of the review.
+Note: This is not supported in Books data type.
+Review Rating
+(aggregateRating)
+The rating that other people have given to the review (see Tagging ratings for more information). You'll need three pieces of information for a rating: the actual rating, the best possible rating, and the total number of ratings.
+Some pages display the actual rating and the best possible rating in a single piece of text or image. Other pages display the two values in separate locations.
+If a single piece of data specifes or implies both the best possible rating and the actual rating, use the following tags:
+Rating (bestRating and ratingValue) - The rating of the review. For example, tag 65% to indicate a score of 65 out of 100; tag 8 out of 10 to indicate a score of 8 out of 10.
+Votes (ratingCount) - The total number of ratings.
+If the data is in different locations on a page, use the following tags:
+Score (ratingValue) - The actual rating. For example, tag 8 if the page lists 8 as the rating without listing the best possible rating nearby.
+Best Possible (bestRating) - The highest value in the rating system. For example, tag 10 if the page specifies the best possible rating in the footer.
+Votes (ratingCount) - The total number of ratings.
+Review Date
+(datePublished)
+The date on which the review was published. For details on how to tag dates, see Tagging Dates.
+Here are some examples of dates you can tag:
+A single date. For example, you can tag any of the following:
+June 4, 2012
+4 June 2012
+6/4/12 - Your tags can include other delimiters and four-digit years as well, such as 6-4-2012. When numerical dates are ambiguous, Google assumes that the first number is the month. For example, 6/4/12 is intrepreted as June 4, 2012, while 13/4/12 would be interpreted as April 13, 2012.
+You can tag multiple dates on a page. For example, if you tag June 4, 2012 and June 6, 2012, the event will be intepreted as occuring twice: once on June 4th and once on June 6th.
+A range of days. For example, June 4-7 2012
+Note that delimiter between the beginning and ending days needs to be a dash (-).
+Dates with times. For example, you can tag any of the following:
+June 4, 2012 3pm - a time followed by am or pm. Google uses normal business hours to interpet times not followed by am or pm. For example, 11 would be interpreted as 11am and 2 would be interpreted as 2pm.
+June 4, 2012 15:00 - military time
+June 4, 2012 3pm EST or  June 4, 2012 3pm -5:00 - Times with a time zone or with a UTC/GMT offset.
+June 4, 2012 2-3pm or  June 4-5, 2012 2-3pm - Time ranges with or without a date range.
+Dates in separate pieces.You can use the advanced tagging option to tag the following separate pieces of text as a single date:
+Day: Tuesday, June 4 Year: 2013
+June 4 | Time: 7:30pm-9:30pm and 2012
+Google does not recognize date ranges that have been split into multiple tags. For example, the following tags are not valid date tags:
+June 4-5 and 2012
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Data types supported by Data HighlighterData Highlighter: ArticlesData Highlighter: Book ReviewsData Highlighter: EventsData Highlighter: Local BusinessesData Highlighter: MoviesData Highlighter: ProductsData Highlighter: RestaurantsData Highlighter: Software ApplicationsData Highlighter: TV Episodes
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

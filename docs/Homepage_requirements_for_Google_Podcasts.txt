@@ -1,0 +1,42 @@
+Home
+Products
+Search for Developers
+Reference
+Homepage requirements for Google Podcasts
+Your podcast must have a homepage that clearly describes what the podcast is about.
+If you're just getting started, read through the
+Podcast guides. In addition to the
+homepage requirements, you must follow the RSS feed requirements.
+The homepage cannot have another <link type="application/rss+xml" rel="alternate">
+element on it. The homepage must be available to Googlebot at the exact URL specified in the
+RSS feed. The homepage must have the following HTML element somewhere in the page code:
+<link type="application/rss+xml" rel="alternate"
+title="Your Podcast's Name" href="Your podcast's RSS url"/>
+The HTML element must contain the following required attributes. You can also include the
+recommended attributes to add more information about your podcast, which could provide a better
+user experience.
+Required HTML attributes
+href
+URL of the podcast's RSS feed.
+Recommended HTML attributes
+title
+Short descriptive title of the podcast.
+Here is an example of a minimal homepage for the RSS feed example above. It must be located
+at https://www.example.com/podcasts/dafnas-zebras/ in order to comply with the
+RSS feed's definition.
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="Podcast"
+href="https://www.example.com/podcasts/dafnas-zebras/rss/podcast.rss"/>
+<title>Dafna's Zebra Podcast</title>
+</head>
+<body>
+<h1>Dafna's Zebra Podcast</h1>
+<p>Most people don't realize that zebras actually make fabulous house pets.
+They're clean, well behaved, and always well dressed. In this podcast series
+we talk to zebra lovers and zebra experts to get to the bottom of this amazing
+striped animal.</p>
+</body>
+</html>
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-06-25.

@@ -1,0 +1,1 @@
+Data HighlighterAbout Data HighlighterData types supported by Data HighlighterCreate a page setPublish or unpublish a page setDelete a page setTips and tricks for using Data HighlighterTroubleshooting Data Highlighter

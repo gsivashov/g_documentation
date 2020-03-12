@@ -1,0 +1,386 @@
+Home
+Products
+Search for Developers
+Reference
+Image License Metadata in Google Images (BETA)
+Note: This feature is in beta and subject to change. We're currently developing this
+feature and you may see changes in requirements, guidelines, and how the feature appears in
+Google Images.
+When you specify license information for the images on your website, the image can display with
+a Licensable badge on image thumbnails in Google Images. This tells people that license
+information is available for the image, and provides a link to the license in the Image Viewer,
+which offers more detail on how someone can use the image.
+Want to provide image credit and copyright notice
+information? Visit Image
+Rights Metadata in Google Images.
+Feature availability
+This feature isn't available in Google Images yet. You can provide metadata in advance, to
+ensure your images are eligible when the feature becomes available.
+Prepare your web pages and images
+To make sure Google can discover and index your images:
+Make sure people can access and view your pages without needing an account or logging in.
+Make sure Googlebot can access your pages (meaning, your pages aren't disallowed by a robots.txt file or robots meta tag). You can see all pages blocked on your site in the Index Coverage report, or test a specific page using the URL Inspection tool.
+To learn more about how to use the URL Inspection tool, watch the Search Console training video.
+Follow the Webmaster
+Guidelines to make sure Google can discover your content.
+Follow the Google
+Images best practices.
+To keep Google informed of changes, we recommend that you
+submit a
+sitemap. You can automate this with the
+Search Console Sitemap
+API.
+Add metadata
+To tell Google which images are licensable, add metadata to each licensable image on your site.
+If you have the same image on multiple pages, add metadata for each image on each page that it
+appears.
+There are two ways that you can add metadata. You only need to provide Google with one form of
+metadata to be eligible for the Licensable badge, and any of the following methods is sufficient:
+Structured data: Structured data is an association between
+the image and the page where it appears with the mark up. You need to add structured data for
+every instance an image is used, even if it's the same image.
+IPTC photo metadata: IPTC photo metadata is embedded
+into the image itself, and the image and metadata can move from page to page while still
+staying intact. You only need to embed IPTC photo metadata once per image.
+Note: If you choose to use both IPTC photo metadata and structured
+data, and if any information conflicts between the two, Google will use the structured data
+information.
+The following diagram shows how license information may show up in Google Images:
+A URL to a page that describes the license governing an image’s use. Specify this
+information with the Schema.org license property or the IPTC Web Statement of
+Rights field.
+A URL to a page that describes where the user can find information on how to license that
+image. Specify this information with the Schema.org acquireLicensePage property
+or the IPTC Licensor URL (of a Licensor) field.
+Structured data
+One way to tell Google that an image is licensable is to add structured data fields. Structured
+data is a standardized format for providing information about a page and classifying the page
+content. If you’re new to structured data, you can learn more about
+how structured data works.
+Here's an overview of how to build, test, and release structured data. For a step-by-step guide
+on how to add structured data to a web page, check out the
+structured
+data codelab.
+Add the required properties. For information
+about where to put structured data on the page, watch
+JSON-LD structured
+data: Where to insert on the page.
+Follow the General structured data guidelines.
+Validate your code using the
+Structured
+Data Testing Tool.
+Deploy a few pages that include your structured data and use the URL Inspection tool
+to test how Google sees the page. Be sure that your page is accessible to Google and not
+blocked by a robots.txt file, the noindex tag, or login requirements. If the page
+looks okay, you can
+ask Google to
+recrawl your URLs.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+To keep Google informed of future changes, we recommend that you
+submit a
+sitemap. You can automate this with the
+Search Console Sitemap
+API.
+Examples
+Single image
+Here's an example of a page with a single licensable image.
+JSON-LD
+<html>
+<head>
+<title>Black labrador puppy</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "ImageObject",
+"url": "https://example.com/photos/1x1/black-labrador-puppy.jpg",
+"license": "https://example.com/license",
+"acquireLicensePage": "https://example.com/how-to-use-my-images"
+}
+</script>
+</head>
+<body>
+<img alt="Black labrador puppy" src="https://example.com/photos/1x1/black-labrador-puppy.jpg">
+<p><a href="https://example.com/license">License</a></p>
+<p><a href="https://example.com/how-to-use-my-images">How to use my images</a></p>
+</body>
+</html>
+<html>
+<head>
+<title>Black labrador puppy</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "ImageObject",
+"url": "https://example.com/photos/1x1/black-labrador-puppy.jpg",
+"license": "https://example.com/license",
+"acquireLicensePage": "https://example.com/how-to-use-my-images"
+}
+</script>
+</head>
+<body>
+<img alt="Black labrador puppy" src="https://example.com/photos/1x1/black-labrador-puppy.jpg">
+<p><a href="https://example.com/license">License</a></p>
+<p><a href="https://example.com/how-to-use-my-images">How to use my images</a></p>
+</body>
+</html>
+RDFa
+<html>
+<head>
+<title>Black labrador puppy</title>
+</head>
+<body>
+<div vocab="http://schema.org/" typeof="ImageObject">
+<img alt="Black labrador puppy" itemprop="url" src="https://example.com/photos/1x1/black-labrador-puppy.jpg" /><br />
+<span property="license"> https://example.com/license</span><br />
+<span property="acquireLicensePage">https://example.com/how-to-use-my-images</span>
+</div>
+</body>
+</html>
+<html>
+<head>
+<title>Black labrador puppy</title>
+</head>
+<body>
+<div vocab="http://schema.org/" typeof="ImageObject">
+<img alt="Black labrador puppy" itemprop="url" src="https://example.com/photos/1x1/black-labrador-puppy.jpg" /><br />
+<span property="license"> https://example.com/license</span><br />
+<span property="acquireLicensePage">https://example.com/how-to-use-my-images</span>
+</div>
+</body>
+</html>
+Microdata
+<html>
+<head>
+<title>Black labrador puppy</title>
+</head>
+<body>
+<div itemscope itemtype="http://schema.org/ImageObject">
+<img alt="Black labrador puppy" itemprop="url" src="https://example.com/photos/1x1/black-labrador-puppy.jpg" /><br />
+<span itemprop="license"> https://example.com/license</span><br />
+<span itemprop="acquireLicensePage">https://example.com/how-to-use-my-images</span>
+</div>
+</body>
+</html>
+<html>
+<head>
+<title>Black labrador puppy</title>
+</head>
+<body>
+<div itemscope itemtype="http://schema.org/ImageObject">
+<img alt="Black labrador puppy" itemprop="url" src="https://example.com/photos/1x1/black-labrador-puppy.jpg" /><br />
+<span itemprop="license"> https://example.com/license</span><br />
+<span itemprop="acquireLicensePage">https://example.com/how-to-use-my-images</span>
+</div>
+</body>
+</html>
+Multiple image on a page
+Here's an example of a page with multiple licensable images.
+JSON-LD
+<html>
+<head>
+<title>Photos of black labradors</title>
+<script type="application/ld+json">
+[{
+"@context": "https://schema.org/",
+"@type": "ImageObject",
+"url": "https://example.com/photos/1x1/black-labrador-puppy.jpg",
+"license": "https://example.com/license",
+"acquireLicensePage": "https://example.com/how-to-use-my-images"
+},
+{
+"@context": "https://schema.org/",
+"@type": "ImageObject",
+"url": "https://example.com/photos/1x1/adult-black-labrador.jpg",
+"license": "https://example.com/license",
+"acquireLicensePage": "https://example.com/how-to-use-my-images"
+}]
+</script>
+</head>
+<body>
+<h2>Black labrador puppy</h2>
+<img alt="Black labrador puppy" src="https://example.com/photos/1x1/black-labrador-puppy.jpg">
+<p><a href="https://example.com/license">License</a></p>
+<p><a href="https://example.com/how-to-use-my-images">How to use my images</a></p>
+<h2>Adult black labrador</h2>
+<img alt="Adult black labrador" src="https://example.com/photos/1x1/adult-black-labrador.jpg">
+<p><a href="https://example.com/license">License</a></p>
+<p><a href="https://example.com/how-to-use-my-images">How to use my images</a></p>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>Photos of black labradors</title>
+<script type="application/ld+json">
+[{
+"@context": "https://schema.org/",
+"@type": "ImageObject",
+"url": "https://example.com/photos/1x1/black-labrador-puppy.jpg",
+"license": "https://example.com/license",
+"acquireLicensePage": "https://example.com/how-to-use-my-images"
+},
+{
+"@context": "https://schema.org/",
+"@type": "ImageObject",
+"url": "https://example.com/photos/1x1/adult-black-labrador.jpg",
+"license": "https://example.com/license",
+"acquireLicensePage": "https://example.com/how-to-use-my-images"
+}]
+</script>
+</head>
+<body>
+<h2>Black labrador puppy</h2>
+<img alt="Black labrador puppy" src="https://example.com/photos/1x1/black-labrador-puppy.jpg">
+<p><a href="https://example.com/license">License</a></p>
+<p><a href="https://example.com/how-to-use-my-images">How to use my images</a></p>
+<h2>Adult black labrador</h2>
+<img alt="Adult black labrador" src="https://example.com/photos/1x1/adult-black-labrador.jpg">
+<p><a href="https://example.com/license">License</a></p>
+<p><a href="https://example.com/how-to-use-my-images">How to use my images</a></p>
+</body>
+</html>
+RDFa
+<html>
+<head>
+<title>Photos of black labradors</title>
+</head>
+<body>
+<div vocab="http://schema.org/" typeof="ImageObject">
+<h2 property="name">Black labrador puppy</h2>
+<img alt="Black labrador puppy" itemprop="url" src="https://example.com/photos/1x1/black-labrador-puppy.jpg" /><br />
+<span property="license"> https://example.com/license</span><br />
+<span property="acquireLicensePage">https://example.com/how-to-use-my-images</span>
+</div>
+<br />
+<div vocab="http://schema.org/" typeof="ImageObject">
+<h2 property="name">Adult black labrador</h2>
+<img alt="Adult black labrador" itemprop="url" src="https://example.com/photos/1x1/adult-black-labrador.jpg" /><br />
+<span property="license"> https://example.com/license</span><br />
+<span property="acquireLicensePage">https://example.com/how-to-use-my-images</span>
+</div>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>Photos of black labradors</title>
+</head>
+<body>
+<div vocab="http://schema.org/" typeof="ImageObject">
+<h2 property="name">Black labrador puppy</h2>
+<img alt="Black labrador puppy" itemprop="url" src="https://example.com/photos/1x1/black-labrador-puppy.jpg" /><br />
+<span property="license"> https://example.com/license</span><br />
+<span property="acquireLicensePage">https://example.com/how-to-use-my-images</span>
+</div>
+<br />
+<div vocab="http://schema.org/" typeof="ImageObject">
+<h2 property="name">Adult black labrador</h2>
+<img alt="Adult black labrador" itemprop="url" src="https://example.com/photos/1x1/adult-black-labrador.jpg" /><br />
+<span property="license"> https://example.com/license</span><br />
+<span property="acquireLicensePage">https://example.com/how-to-use-my-images</span>
+</div>
+</body>
+</html>
+Microdata
+<html>
+<head>
+<title>Photos of black labradors</title>
+</head>
+<body>
+<div itemscope itemtype="http://schema.org/ImageObject">
+<h2 itemprop="name">Black labrador puppy</h2>
+<img alt="Black labrador puppy" itemprop="url" src="https://example.com/photos/1x1/black-labrador-puppy.jpg" /><br />
+<span itemprop="license"> https://example.com/license</span><br />
+<span itemprop="acquireLicensePage">https://example.com/how-to-use-my-images</span>
+</div>
+<br />
+<h2 itemprop="name">Adult black labrador</h2>
+<div itemscope itemtype="http://schema.org/ImageObject">
+<img alt="Adult black labrador" itemprop="url" src="https://example.com/photos/1x1/adult-black-labrador.jpg" /><br />
+<span itemprop="license"> https://example.com/license</span><br />
+<span itemprop="acquireLicensePage">https://example.com/how-to-use-my-images</span>
+</div>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>Photos of black labradors</title>
+</head>
+<body>
+<div itemscope itemtype="http://schema.org/ImageObject">
+<h2 itemprop="name">Black labrador puppy</h2>
+<img alt="Black labrador puppy" itemprop="url" src="https://example.com/photos/1x1/black-labrador-puppy.jpg" /><br />
+<span itemprop="license"> https://example.com/license</span><br />
+<span itemprop="acquireLicensePage">https://example.com/how-to-use-my-images</span>
+</div>
+<br />
+<h2 itemprop="name">Adult black labrador</h2>
+<div itemscope itemtype="http://schema.org/ImageObject">
+<img alt="Adult black labrador" itemprop="url" src="https://example.com/photos/1x1/adult-black-labrador.jpg" /><br />
+<span itemprop="license"> https://example.com/license</span><br />
+<span itemprop="acquireLicensePage">https://example.com/how-to-use-my-images</span>
+</div>
+</body>
+</html>
+Structured data type definitions
+The full definition of ImageObject is provided on
+schema.org/ImageObject.
+If you're using structured data to specify a licensable image, you must include the license
+property for your image to be eligible to be shown with the Licensable badge. We recommend that
+you also add the acquireLicensePage property if you have that information.
+Required properties
+license
+URL
+A URL to a page that describes the license governing an image’s use. For example, it
+could be the terms and conditions that you have on your website. Where applicable, it
+could also be a Creative Commons License (for example,
+BY-NC 4.0).
+Recommended properties
+acquireLicensePage
+URL
+A URL to a page where the user can find information on how to license that image. Here
+are some examples:
+A check-out page for that image where the user can select specific resolutions or usage rights
+A general page that explains how to contact you
+Note: You can start using the acquireLicensePage
+property even though it's still under development on Schema.org.
+IPTC photo metadata
+Alternatively, you can embed
+IPTC
+photo metadata directly inside an image. You must include the Web Statement of Rights
+field for your image to be eligible to be shown with the licensable badge. We recommend that
+you also add the Licensor URL field if you have that information.
+Required properties
+Web Statement of Rights
+A URL to a page that describes the license governing an image’s use, and optionally other
+rights information. For example, it could be the terms and conditions that you have on
+your website. Where applicable, it could also be a Creative Commons License (for example,
+BY-NC 4.0).
+Recommended properties
+Licensor URL (of a Licensor)
+A URL to a page where the user can find information on how to license that image. Here
+are some examples:
+A check-out page for that image where the user can select specific resolutions
+A general page that explains how to contact you
+Troubleshooting
+Important: Google does not guarantee that structured data or IPTC
+photo metadata will show up in search results. For a list of common reasons why Google may not
+show structured data in search results, see the General
+Structured Data Guidelines.
+If you're having trouble implementing license metadata, here are some resources that may help you.
+You might have an error in your structured data. Check the
+list of structured
+data errors.
+Troubleshoot
+missing rich results / drop in total rich results.
+For general questions about crawling and indexing, check the
+Webmaster FAQ.
+Ask a question in the Webmaster
+Office Hours.
+Post a question in the Webmaster
+forum. For help with IPTC photo metadata, you can
+post in their forum.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-25.

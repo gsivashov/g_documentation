@@ -1,0 +1,133 @@
+Speed reportFix slow user experiences on your siteThe Speed report shows how fast your pages perform according to real world usage data (sometimes called field data).
+OPEN SPEED REPORT
+Why speed matters
+Longer page load times have a severe effect on bounce rates. For example:
+If page load time increases from 1 second to 3 seconds, bounce rate increases 32%
+If page load time increases from 1 second to 6 seconds, bounce rate increases by 106%
+Pages considered slow may be demoted in Google Search.
+Read case studies here.
+Understand the report
+The report shows performance grouped by speed status, metric type, and similar URL type. The Speed report is based on two metrics: FCP and FID. If a URL does not have a threshold of data for any metric, it will be omitted from the report.
+"No data available"
+If you see a "no data available" screen, it means either that your property is new in Search Console, or that there is not enough visitor data available in the CrUX report to provide meaningful speed information for the given device type (mobile or desktop) in your property. You can still run a live test of URLs on your site using the PageSpeed Insights testing tool (or the Chrome Lighthouse tool, if you want to use an in-browser tool).
+If you recently created your Search Console property, it might take a few days for us to analyze and post any existing data from the CrUX database. The CrUX database gathers information about URLs whether or not the URL is part of a Search Console property.
+To drill down into the report:
+Toggle the slow, moderate, or fast tabs on the overview page chart to see how URLs on your site perform based on historical user data.
+Click Open Report to see the mobile or desktop summary page, showing speed numbers for that platform.
+Click a row in the table to see details about URLs affected by the selected issue, including a set of example URLs.
+Click a URL in the Examples table of the issue details page to see more information about that URL and similar URLs.
+Overview page
+The overview page of the Speed report breaks down the data by the device type that opened the URL: Mobile or Desktop (tablet data is not included). All data is grouped by Status (slow, moderate, or fast).
+Open the report for a specific device type to see more speed data for that type.
+Summary pages for mobile or desktop
+The top level report for a specific device type (mobile or desktop) shows status and issues for all URLs on your site for which we have data. Click a row in the details table to learn more about that specific status + issue type combination.
+Chart
+The tabs above the chart show the current total of URLs in the given speed status, as well as the number of table rows with that speed status where at least 1 URL was affected. Toggle the tabs to choose which speed statuses to show in the chart. The chart shows the count of URLs with a given speed status on a given day.
+Why is the chart total less than the table total?
+The chart counts each URL only once, for the slowest speed issue affecting that URL. The table counts an URL once for each issue that affects it. So if a URL has one slow and one moderate issue, it is counted once as "slow" in the chart totals, but is counted and shown in both "slow" and "moderate" rows in the table.
+Table
+The table groups URLs into rows by speed status + issue type. Each row shows the validation state, a sparkline showing a simplified timeline of that row, and the number of URLs currently in that status + issue state.
+A URL can appear in multiple table rows if it is affected by multiple issues.
+Issue details page for mobile or desktop
+Click on a table row in the top-level summary page for mobile or desktop to open a details page for that speed + issue combination. The details page shows the URLs and other details for the selected issue.
+Chart
+The issue details chart shows the count of URLs with that speed + issue combination on a given day, as well as the total count of URLs currently affected by the selected speed + issue.
+Table
+The issue details table shows a set of example URLs known to be affected by the selected issue. Each example URL is one of a group of similar URLs. Click an example URL to see a some of the other pages in that group, as well as other information, and a link to run the PageSpeed Insights test on the URL. The table has a limit of 200 rows.
+The table includes the following information:
+URL: Each row in the table represents a group of similar URLs.
+FCP: In the past 28 days, 75% of page requests took this amount of time or less to reach first contentful paint.
+FID: In the past 28 days, 95% of page requests took this amount of time or less to be able to react to the first user input.
+To test a URL using PageSpeed Insights: In the issue details view, click a URL in the Examples table to expose example details, then click the Pagespeed Insights link.
+Finding the status of a specific URL
+The report is not designed find the status of a specific URL, but rather to see your site's performance as a whole, and troubleshoot issues affecting multiple pages on your site. If you want to see speed data about a specific URL, use PageSpeed Insights, which shows historic user data  as well as live test data for a given URL. Although you can drill down on a status and issue and see specific affected URLs, finding a given URL using this report can be challenging.
+Report data sources
+The data for the Speed report comes from the CrUX report. The CrUX report gathers anonymized metrics about performance times from actual users visiting your URL (called field data).
+Speed status: Slow, Moderate, Fast
+The labels slow, moderate, and fast are applied to a URL on specific device type.
+URL speed
+A URL's speed is the slowest speed assigned to it. So if a URL on mobile has slow FCP but moderate FID, the URL is labeled slow on mobile. If a URL on mobile has moderate FCP but fast FID, it is considered moderate on mobile. A URL on mobile with fast FID and fast FCP, or fast FID and no FCP data, is considered fast on mobile.
+If a URL has less than a threshold of data for a given metric (FCP or FID), that metric is omitted from the report for that URL. A URL with data in only one metric is assigned the speed category of that metric. A URL without threshold data for either metric will not be on the report.
+Issue speed
+Issue speed is evaluated against the following metrics:
+Fast
+Moderate
+Slow
+FCP
+<1s
+<3s
+>=3s
+FID
+<100ms
+<300ms
+>=300ms
+FCP and FID
+FCP (first contentful paint): The time from when the user requests the URL until the browser renders the first visible element in the URL. This is important because it tells the reader that the URL is actually loading.
+Agg FCP (aggregated FCP) shown in the report is the time it takes for 75% of the visits to a URL in the group to reach the FCP state.
+FID (first input delay): The time from when a user first interacts with your page (when they clicked a link, tapped on a button, and so on) to the time when the browser responds to that interaction. This measurement is taken from whatever interactive element that the user first clicks. This is important on pages where the user needs to do something, because this is when the page has become interactive.
+Agg FID (aggregated FID) shown in the report is the lowest common FID for 95% of the visits to a URL in the group.
+You can find recommendations on fixing these issues by running the PageSpeed Insights test on an affected URL.
+URL groups
+An issue is assigned to a group of URLs that have a similar user experience. This is because it is assumed that performance issues in similar pages is probably due to the same underlying problem, such as a common slow-loading feature in the pages.
+Fix page speed issues
+Non-technical users
+Prioritize your issues: we recommend fixing everything considered "slow." URLs considered "moderate" could be improved, but are less important to fix than slow URLs. Prioritize your work either by issues that affect the most URLs, or by issues that affect your most important URLs.
+When you've sorted by priority, share the report with your engineer or whomever will be updating your URLs.
+Common page fixes:
+Reduce your page size (best practice: less than 500KB for a page and all its resources).
+Limit the number of page resources to 50 for best performance on mobile.
+Consider using AMP, which almost guarantees fast page loading on both mobile and desktop.
+Test your fixes using the PageSpeed Insights testing tool (or the Chrome Lighthouse tool, if you want to use an in-browser tool).
+When you think a particular issue is fixed, click Start Tracking on the issue details page in the Search Console Speed report.
+Track your validation process.
+Website developers
+Prioritize your issues: we recommend fixing everything considered "slow." URLs considered "moderate" could be improved, but are less important to fix than slow pages. Prioritize either by issues that affect the most pages, or by issues that affect your most important pages.
+We recommend reading the web.dev fast loading guidelines and the Web Fundamentals performance pages on developers.google.com for theory and guidelines on improving page speed.
+Test your fixes using the PageSpeed Insights testing tool (or the Chrome Lighthouse tool, if you want to use an in-browser tool).
+When you think a particular issue is fixed, click Start Tracking on the issue details page in the Search Console Speed report.
+Track your validation process.
+Additional useful resources:
+Guides for understanding and improving your page load times
+Lighthouse, the open source tool for measuring your page performance
+More Google tools for measuring page performance
+If you want to add tests to your page for FCP, FID, and other metrics, read User-centric Performance Metrics.
+My site speed changed, but my site didn't change
+If you didn't make any changes in your site, but you see a big change in speed status for a lot of pages, it's possible that you had a borderline status for many pages, and some site-wide event pushed your pages over the border: for example, your site traffic dramatically increased or the service that serves your image files experienced a latency change, either of which could slow your site down. A small, but site-wide, change might have been just enough to push a bunch of borderline fast pages into the moderate category, or from moderate to slow.
+Another possible, though less likely, reason is a large-scale change in clients. For example, a widely-adopted browser version update, or an influx of users over a slower network. Remember that speed is measured by actual usage data. You can check your logs to see if any browser, device, or location changes coincide with site speed changes.
+Check your site traffic data during this period for any big swings, and also drill down into specific issues and look at the aggregate FCP/FID numbers for affected pages. If these numbers are just at the border for slow/medium/fast status, it's possible that a small change has nudged them into a new status.
+Sharing the report
+You can share issue details in the coverage or enhancement reports by clicking the Share
+button on the page. This link grants access only to the current issue details page, plus any validation history pages for this issue, to anyone with the link. It does not grant access to other pages for your resource, or enable the shared user to perform any actions on your property or account. You can revoke the link at any time by disabling sharing for this page.
+Exporting report data
+Many reports provide an export button
+to export the report data. Both chart and table data are exported.
+Validate fixes
+When you've fixed a specific speed issue in all of your URLs, you can confirm whether you fixed the issue for all URLs. Click Start Tracking to start a 28-day monitoring session to check for instances of this issue in your site. If this issue is not present in any URLs on your site during the 28-day window, the issue is considered fixed. The presence of that issue in any URL is enough to mark the issue as not fixed; however the status of individual URLs continue to be evaluated for the entire 28 days, regardless of issue status.
+To see the validation details for an in-progress validation request or for a request that has failed:
+Click See details in the validation status section of the issue details page.
+To restart the validation tracking period at any time:
+Open the validation details page and click Start new validation.
+If validation fails:
+Try again to fix your issues.
+Restart the tracking period by opening the validation details page, and clicking Start new validation.
+Starting validation does not trigger re-indexing or any other active behavior from Google. It just (re)starts the clock on a 4-week monitoring period of CrUX data for your site by Search Console.
+The following validation statuses are possible:
+Issue validation status
+This is the status of the entire validation request, shown for each issue on the summary page, as well as the issue details page.
+Not started: There are one or more URLs with an instance of this issue that have never been in a validation request.
+Started:  You have begun a validation attempt and no remaining instances of the issue have been found yet.
+Looking good: You started a validation attempt, and all issue instances that have been checked so far have been fixed.
+Passed: All URLs are either in Passed or Other state. You must have clicked Validate fix to get to this state (if instances disappeared without you requesting validation, state would change to N/A)
+N/A: Google found that the issue was fixed on all URLs, even though you never started a validation attempt.
+Failed: One or more URLs are in Failed state after a validation attempt.
+URL validation status
+This is the validation status of each URL in the validation progress page. Pending/Fixed/Still Affected are visible during an active validation period; Still Affected is the only status visible once the period has ended (fixed items are removed from the list after the period has ended).
+Pending: Google is awaiting enough data to determine whether or not this URL is still affected.
+Fixed: The URL seems not to be affected by this issue any more.
+Still Affected: The URL is still affected by the listed speed issue.
+The Fixed and Still Affected URL statuses can be reached only during a validation tracking period. If the issue appeared and then vanished for a URL outside of a validation request, the URL would simply vanish from the list without a status.
+Any URLs that have been removed from the web and have no data in the last 28 days will no longer appear in the validation history or the report.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemove URLs ToolRemovals ToolRich Results Tools and ReportsSecurity Issues reportSettingsSitemaps reportSpeed reportURL Inspection Tool
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

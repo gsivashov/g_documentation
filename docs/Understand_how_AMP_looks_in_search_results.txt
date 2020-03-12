@@ -1,0 +1,118 @@
+Home
+Products
+Search for Developers
+Guides
+Understand how AMP looks in search results
+Google Search indexes AMP pages to provide a fast, reliable web experience. When an AMP page
+is available, it can be featured on mobile search as part of rich results and carousels. While
+AMP itself isn't a ranking factor, speed
+is a ranking factor for Google Search. Google Search applies the same standard to all
+pages, regardless of the technology used to build the page. For more information on the
+benefits of using AMP, see the
+AMP Project success stories.
+On mobile search, the AMP icon helps users quickly identify pages that load quickly and
+smoothly. When users select an AMP page, Google Search retrieves the page from the
+Google AMP Cache, enabling a variety of load optimizations that often
+make these pages appear instantly, such as prerendering. Currently, AMP pages on desktop don’t
+display with rich features (such as the AMP logo and carousels) and aren't served from the
+Google AMP Cache/AMP Viewer.
+Canonical AMP Pages behave
+like standard results.
+Initial display in Search results
+The following table describes how your AMP content could appear in Google Search results.
+To help Google better understand your page, you can add
+structured data to your page. It's
+important to note that Google doesn't guarantee that adding
+structured data will enable a rich result in Search results. For more information, refer to the
+Structured Data General Guidelines.
+If you have duplicate pages for the same content, place the same structured
+data on all page duplicates, not just on the canonical page. For more information on placement,
+see the Structured Data General
+Guidelines.
+Search feature categories
+Basic result: This category describes regular web results, often called
+"blue links".
+Top stories carousel: A container that includes articles, live blogs,
+and videos. To help Google better understand your page, add structured data to your page
+for one or more of the following schema types (depending on your content type):
+Article
+NewsArticle (subtype of Article)
+BlogPosting (subtype of Article)
+LiveBlogPosting (subtype of
+BlogPosting)
+DiscussionForumPosting
+(subtype of Article)
+VideoObject
+Host carousel: A container for multiple rich results of the same type
+on your site. To help Google better understand your page, add structured data to your
+page for one or more of the following schema types (depending on your content type):
+Article
+NewsArticle (subtype of Article)
+BlogPosting (subtype of Article)
+LiveBlogPosting (subtype of
+BlogPosting)
+DiscussionForumPosting
+(subtype of Article)
+VideoObject
+Rich result: A result that includes styling, images, and other
+features. To help Google better understand your page, add structured data to your page
+for one or more of the following schema types (depending on your content type):
+Article
+NewsArticle (subtype of Article)
+BlogPosting (subtype of Article)
+LiveBlogPosting (subtype of
+BlogPosting)
+DiscussionForumPosting
+(subtype of Article)
+VideoObject (subtype of
+Article)
+Restaurant
+Recipe
+Video
+Visual stories: A visual storytelling format in Google Search results that
+immerses the user in a tap-through full-screen experience. To create an AMP story, add the
+amp-story component, follow the
+AMP
+Project best practices for AMP stories, and add structured data
+for one or more of the following schema types (depending on your content type):
+Article
+NewsArticle (subtype of Article)
+BlogPosting (subtype of Article)
+LiveBlogPosting (subtype of
+BlogPosting)
+DiscussionForumPosting
+(subtype of Article)
+VideoObject
+Restaurant
+Recipe
+Video
+For more
+information about what AMP stories are, see
+AMP stories.
+After users click AMP content
+When users click your AMP content in Google Search, AMP content may be shown in one of two ways:
+Google AMP Viewer: The default way your content is cached and served to
+optimize the delivery of content for a better user experience. At the top of the Google AMP
+Viewer, the domain of your content is displayed so that users understand who published
+it.
+Signed exchange: A technology that allows the browser to treat a document
+as belonging to your
+Origin.
+About the Google AMP Viewer
+The Google AMP Viewer is a hybrid environment where you can collect data about the user. Data
+collection by Google is governed by Google’s
+privacy policy. As an AMP page publisher
+whose content is displayed in the Google AMP Viewer, your data collection is governed by your
+privacy policy. Because you choose the behaviors and vendor integrations in your AMP page, you
+are responsible for fulfilling the compliance obligations that result from those choices.
+About signed exchange
+A signed exchange allows you to use first party cookies to customize content and measure
+analytics. Your page appears under your URL instead of the google.com/amp URL.
+Google Search prioritizes linking to content as signed exchange over using the Google AMP
+Viewer in browsers that support signed exchange. To provide users with results in this format,
+you must publish AMP content as a signed exchange in addition to the regular AMP HTML format.
+Currently, signed exchange is only supported in Google Search for rich results and basic
+results, not carousels. To learn more about setting up signed exchange for AMP pages, visit
+Serve AMP using Signed Exchanges.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

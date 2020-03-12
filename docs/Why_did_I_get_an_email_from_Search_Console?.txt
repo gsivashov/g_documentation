@@ -1,0 +1,9 @@
+Why did I get an email from Search Console?Search Console sends messages to website owners when an important event occurs on their site. If you receive a website message from Search Console, it means that either you've signed up with Search Console as the site owner, that another site owner has added you as a site owner in Search Console, or that your website hosting service has automatically registered you as a site owner with Search Console.
+Although we think these messages are useful, if you find them distracting or not useful, you can disable either specific messages or all messages.
+To disable messages:
+Open Search Console. Be sure that you are signed in with the same account that you use to manage your website. (If you don't know what that means, then sign in to your website as if you were going to make a change, open a second tab in your browser, and then open Search Console.)
+To disable specific messages, select Mute next to the message you wish to disable.To disable all messages, uncheck Enable email notifications.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Basic usersHow search works (for beginners)Optimize your site for search enginesMeasure your performance on GoogleWhy did I get an email from Search Console?
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -1,0 +1,160 @@
+Home
+Products
+Search for Developers
+Guides
+Implement dynamic rendering
+This page explains how to provide crawlers with a non-JavaScript version of a page.
+For more information on how to serve different versions of your page for different user agents (mobile, tablet, or desktop),
+see our guide on dynamic serving.
+Currently, it's difficult to process JavaScript and not all search engine crawlers are able to
+process it successfully or immediately. In the future, we hope that this problem can be fixed, but
+in the meantime, we recommend dynamic rendering as a workaround solution to this problem. Dynamic
+rendering means switching between client-side rendered and pre-rendered content for specific user
+agents.
+Sites that should use dynamic rendering
+Dynamic rendering is good for indexable, public JavaScript-generated content that changes rapidly, or
+content that uses JavaScript features that aren't
+supported by the crawlers you care about. Not all sites need to use dynamic rendering, and
+it's worth noting that dynamic rendering is a workaround for crawlers.
+Understand how dynamic rendering works
+Dynamic rendering requires your web server to detect crawlers (for example, by checking the
+user agent). Requests from crawlers are routed to a renderer, requests from users are served
+normally. Where needed, the dynamic renderer serves a version of the content that's suitable
+to the crawler, for example, it may serve a static HTML version. You can choose to enable the
+dynamic renderer for all pages or on a per-page basis.
+Dynamic rendering is not cloaking
+Googlebot generally doesn't consider dynamic rendering as
+cloaking.
+As long as your dynamic rendering produces similar content, Googlebot won't view dynamic rendering as cloaking.
+When you're setting up dynamic rendering, your site may produce error pages. Googlebot doesn't
+consider these error pages as cloaking and treats the error as any other error page.
+Using dynamic rendering to serve completely different content to users and crawlers can be
+considered cloaking. For example, a website that serves a page about cats to users and a page
+about dogs to crawlers can be considered cloaking.
+Implement dynamic rendering
+To setup dynamic rendering for your content, follow our general guidelines. You will need to
+refer to your specific configuration details, as they vary greatly between implementations.
+For a hands on approach, try our new
+Implement dynamic
+rendering with Rendertron codelab. This codelab walks you through implementing dynamic
+rendering using Rendertron, which is an open source solution based on headless Chromium.
+Install and configure a dynamic renderer to transform your content into static HTML that's
+easier for crawlers to consume. Some common dynamic renderers are
+Puppeteer,
+Rendertron,
+and prerender.io.
+Choose the user agents that you think should receive your static HTML and refer to your
+specific configuration details on how to update or add user agents. Here's an example of a
+list of common user agents in the Rendertron middleware:
+export const botUserAgents = [
+'googlebot',
+'google-structured-data-testing-tool',
+'bingbot',
+'linkedinbot',
+'mediapartners-google',
+];
+If pre-rendering slows down your server or you see a high number of pre-rendering
+requests, consider implementing a cache for pre-rendered content, or
+verifying that requests are
+from legitimate crawlers.
+Determine if the user agents require desktop or mobile content. Use
+dynamic serving to provide the
+appropriate desktop or mobile version. Here's an example of how
+a configuration could determine if a user agent requires desktop or mobile content:
+isPrerenderedUA = userAgent.matches(botUserAgents)
+isMobileUA = userAgent.matches(['mobile', 'android'])
+if (!isPrerenderedUA) {
+} else {
+servePreRendered(isMobileUA)
+}
+In this example, use if (!isPrerenderedUA) {...} to
+serve regular, client-side rendered content. Use
+else { servePreRendered(isMobileUA)} to serve the mobile version, if needed.
+Configure your server to deliver the static HTML to the crawlers that you selected. There
+are several ways you can do this depending on your technology; here are a few examples:
+Proxy requests coming from crawlers to the dynamic renderer.
+Pre-render as part of your deployment process and make your server serve the static
+HTML to crawlers.
+Build dynamic rendering into your custom server code.
+Serve static content from a pre-rendering service to crawlers.
+Use a middleware for your server (for example,
+the
+rendertron middleware).
+Verify your configuration
+After you finish implementing dynamic rendering, verify that
+everything works as expected by checking a URL with the following tests:
+Test your mobile content with the
+Mobile-Friendly Test to make
+sure Google can see your content.
+done Success: Your mobile content matches
+what you expect a user to see.
+error Try again: If the content you see
+does not match what you expect,
+see the troubleshooting section.
+Test your desktop content with the
+URL Inspection tool to
+make sure that the desktop content is also visible on the rendered page (the rendered page
+is how Googlebot sees your page).
+done Success: The desktop content matches
+what you expect a user to see.
+error Try again: If the content you see
+doesn't match what you expect, see the troubleshooting
+section.
+If you use structured data, test that your structured data renders properly with the
+Structured Data Testing
+Tool.
+done Success: The structured data appears
+as you expect it to.
+error Try again: If the structured data
+doesn't appear as you expect it to, see the troubleshooting
+section.
+Troubleshooting
+If your content is showing errors in the
+Mobile-Friendly Test or if it
+isn't appearing in Google Search results, try to resolve the most common issues listed below.
+If you're still experiencing issues,
+post a new topic in the
+Webmaster Forum.
+Content is incomplete or looks different
+error What caused the issue: Your renderer
+might be misconfigured or your web application might be incompatible with your rendering
+solution. Sometimes timeouts can also cause content to not be rendered correctly.
+done Fix the issue: Refer to the documentation
+for your specific rendering solution to debug your dynamic rendering setup.
+High response times
+error What caused the issue: Using a headless
+browser to render pages on demand often causes high response times, which can cause crawlers
+to cancel the request and not index your content. High response times can also result in
+crawlers reducing their crawl-rate when crawling and indexing your content.
+done Fix the issue
+Set up a cache for the pre-rendered HTML or create a static HTML version of your content
+as part of your build process.
+Make sure to enable the cache in your configuration (for example, by pointing crawlers to
+your cache).
+Check that crawlers get your content quickly by using testing tools such as the
+Mobile-Friendly Test or
+webpagetest (with a custom user
+agent string from the list of
+Google Crawler user
+agents). Your requests should not time out.
+Web Components don't render as expected
+error What caused the issue:
+Shadow DOM is isolated from the rest of the page.
+Rendering solutions (like Rendertron) cannot see content inside the isolated shadow DOM.
+For more information see the best practices for web components.
+done Fix the issue
+Load the webcomponents.js polyfills for custom elements and shadow DOM.
+Use the Mobile-Friendly Test or the URL Inspection Tool to check if the content appears in the rendered HTML of your rendering solution.
+Structured data is missing
+error What caused the issue: Missing the
+structured data user agent, or not including JSON-LD script tags in the output can cause
+structured data errors.
+done Fix the issue
+Use the
+Structured Data Testing
+Tool to make sure the structured data is present on the page. Then configure the
+user agent for the Structured Data Testing Tool to test the pre-rendered content.
+Make sure JSON-LD script tags are included in the dynamically rendered HTML of your
+content. Consult the documentation of your rendering solution for more information.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-11-01.

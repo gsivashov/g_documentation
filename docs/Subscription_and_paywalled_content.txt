@@ -1,0 +1,159 @@
+Home
+Products
+Search for Developers
+Reference
+Subscription and paywalled content
+This page describes how to use schema.org JSON-LD to indicate paywalled content on your site with
+CreativeWork properties. This
+structured data helps Google differentiate paywalled content from the
+practice of cloaking, which
+violates our
+guidelines. Learn more about
+subscription and paywalled content.
+Example
+Here's an example of
+NewsArticle structured data with
+paywalled content.
+<html>
+<head>
+<title>Article headline</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "NewsArticle",
+"mainEntityOfPage": {
+"@type": "WebPage",
+"@id": "https://example.org/article"
+},
+"headline": "Article headline",
+"image": "https://example.org/thumbnail1.jpg",
+"datePublished": "2025-02-05T08:00:00+08:00",
+"dateModified": "2025-02-05T09:20:00+08:00",
+"author": {
+"@type": "Person",
+"name": "John Doe"
+},
+"publisher": {
+"name": "The Exemplary Times",
+"@type": "Organization",
+"logo": {
+"@type": "ImageObject",
+"url": "https://example.org/logo.jpg"
+}
+},
+"description": "A most wonderful article",
+"isAccessibleForFree": "False",
+"hasPart":
+{
+"@type": "WebPageElement",
+"isAccessibleForFree": "False",
+"cssSelector" : ".paywall"
+}
+}
+</script>
+</head>
+<body>
+<div class="non-paywall">
+Non-Paywalled Content
+</div>
+<div class="paywall">
+Paywalled Content
+</div>
+</body>
+</html>
+Guidelines
+You must follow the general structured data guidelines and
+technical guidelines for your
+page to be eligible to appear in search results. In addition, the following guidelines apply
+to paywalled content:
+Note: If you violate these policies, your page might not be
+eligible to be displayed in Search results. Read about
+Spammy Structured Markup
+to learn more.
+JSON-LD and microdata formats are accepted methods for specifying structured data for
+paywalled content.
+Don't nest content sections.
+Only use .class selectors for the cssSelector property.
+Add markup to paywalled content
+If you offer any subscription-based
+access to your website content, or if users must register for access to any content you want to be indexed, follow
+the steps below. The following example applies to NewsArticle structured data. Make
+sure to follow these steps for all versions of your page (including AMP and non-AMP).
+Add a class name around each paywalled section of your page. For example:
+<body>
+<p>This content is outside a paywall and is visible to all.</p>
+<div class="paywall">This content is inside a paywall, and requires a subscription or registration.</div>
+</body>
+Add NewsArticle
+structured data.
+Add the highlighted JSON-LD structured data to your NewsArticle structured data.
+Note: The cssSelector references the class name that you
+added in Step 1.
+{
+"@context": "https://schema.org",
+"@type": "NewsArticle",
+"mainEntityOfPage": {
+"@type": "WebPage",
+"@id": "https://example.org/article"
+},
+(...)
+"isAccessibleForFree": "False",
+"hasPart": {
+"@type": "WebPageElement",
+"isAccessibleForFree": "False",
+"cssSelector": ".paywall"
+}
+}
+Multiple paywalled sections
+If you have multiple paywalled sections on a page, add the class names as an array.
+Here's an example of the paywalled sections on a page:
+<body>
+<div class="section1">This content is inside a paywall, and requires a subscription or registration.</div>
+<p>This content is outside a paywall and is visible to all.</p>
+<div class="section2">This is another section that's inside a paywall, and requires a subscription or registration.</div>
+</body>
+Here's an example of NewsArticle
+structured data with multiple paywalled sections.
+{
+"@context": "https://schema.org",
+"@type": "NewsArticle",
+"mainEntityOfPage": {
+"@type": "WebPage",
+"@id": "https://example.org/article"
+},
+(...)
+"isAccessibleForFree": "False",
+"hasPart": [
+{
+"@type": "WebPageElement",
+"isAccessibleForFree": "False",
+"cssSelector": ".section1"
+}, {
+"@type": "WebPageElement",
+"isAccessibleForFree": "False",
+"cssSelector": ".section2"
+}
+]
+}
+AMP considerations
+Here's a list of considerations to keep in mind if you use AMP pages:
+If you have an AMP page with paywalled content, use
+amp-subscriptions where appropriate.
+Make sure that your authorization endpoint grants access to content to the appropriate bots
+from Google and others. This is different per publisher.
+Ensure that your bot access policy is the same for AMP and non-AMP pages, otherwise this can
+result in content mismatch errors that appear in Search Console.
+Make sure Google can crawl and index your pages
+Use the URL Inspection tool
+to test how Google crawls and renders a URL on your site.
+There are several ways to make sure Google can crawl and index the content on your page:
+If you only want Google to crawl and index the content of a page that's outside of a paywall
+and visible to all, skip this step.
+If you want Google to crawl and index your entire page, including the paywalled sections, make sure
+Googlebot, and Googlebot-News
+if applicable, can access your page.
+If you want to prevent Google from showing the cached link for your page, use the
+noarchive robots
+meta tag.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-05.

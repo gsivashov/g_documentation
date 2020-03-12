@@ -1,0 +1,126 @@
+Unparsable structured data reportThis report lists structured data found on your site that could not be parsed because of a serious syntax error. The intended type of structured data (Job, Event, and so on) could not be determined because of the parsing error.
+OPEN REPORT
+Using the report
+All items in this report are structured data errors; there are no warnings or valid items.
+Errors are automatically sorted by severity as determined by most affected pages and other factors.
+The most common cause of a single error affecting multiple pages is an underlying template error.
+Click an error row to see affected pages, error details, and links for debugging tools. See the full descriptions of the error types in the table below.
+Use the Structured Data Testing Tool to fix and test the syntax of your structured data.
+After you have fixed an issue, click Validate Fix in the error details page.
+Note that after you fix a parsing error, you might trigger additional warnings or errors that were hidden because the item could not be parsed at all.
+Sharing the report
+You can share issue details in the coverage or enhancement reports by clicking the Share
+button on the page. This link grants access only to the current issue details page, plus any validation history pages for this issue, to anyone with the link. It does not grant access to other pages for your resource, or enable the shared user to perform any actions on your property or account. You can revoke the link at any time by disabling sharing for this page.
+Exporting report data
+Many reports provide an export button
+to export the report data. Both chart and table data are exported.
+Error types
+The following error types are exposed by this report:
+Error type
+Description
+Invalid JSON document
+The JSON had a top-level syntax error.
+Incorrect value type
+The value specified for a property was of the wrong type. For example, you specified a string when a number or array was expected.
+Parsing error: Missing ':'
+Missing a ':' mark.
+Parsing error: Missing ',' or '}'
+Missing a ',' or closing bracket.
+Parsing error: Missing '}' or object member name
+Missing a closing bracket or object member name.
+Parsing error: Missing ',' or ']' in array declaration
+Error parsing an array value: missing a ',' or ']' in the array declaration.
+Unable to parse token length
+For some reason, the start and end of a property or value could not be found.
+Invalid number
+Property value expected to be a number, but another value type was used.
+Empty escape sequence in string
+A string value include an empty escape sequence character: for example:
+"description" : "Call me \ John"
+rather than
+"description" : "Call me \"John\"".
+Bad escape sequence in string
+An invalid escape sequence used in a string value. For example:
+"description" : "Some \q unknown sequence"
+Truncated Unicode character
+Missing the last 6 characters in a Unicode surrogate pair.
+Invalid Unicode character
+Missing a \u token at the start of the second half of a Unicode surrogate pair.
+Invalid Unicode escape sequence: four digits expected
+A Unicode escape sequence has a syntax error: it should contain four digits.
+Invalid Unicode escape sequence: hexadecimal digit expected
+A Unicode escape sequence has a syntax error: a hexadecimal digit was expected but not provided.
+Duplicate unique property
+You provided two definitions for a unique property in your structured data object. For example, two @context values.
+Invalid top level element
+A top-level item in your JSON-LD is invalid.
+Reference to nonexistent item
+An itemref attribute points to a non-existent identifier.
+Issue details page
+Selecting an issue row in a rich result summary page opens a page that contains details for that issue. An issue can affect items on different pages or multiple items on a single page.
+The issue details page contains the following information:
+State
+Validation state of this issue.
+First detected
+The date when this issue was first detected on your site. If all issues of this type are resolved, and then a new instance of this issue appears within 90 days since the last instance was fixed, the date will be original first detected date, not date of the new appearance.
+Examples
+A list of rich results affected by this issue. It's possible that not all instances of an issue on your site will be listed for various reasons, such as instances that have appeared since the last crawl of your site, or issues that affect more than 1,000 items.
+Last crawled
+The last time the page containing this issue was crawled.
+About validation
+After you fix all instances of a specific issue on your site, you can ask Google to validate your changes. If all known instances are gone, the issue is marked as fixed in the status table and dropped to the bottom of the table. Search Console tracks the validation state of the issue as a whole, as well as the state of each instance of the issue. When all instances of the issue are gone, the issue is considered fixed. (For actual states recorded, see Issue validation state and Instance validation state.)
+More about issue lifetime...
+An issue's lifetime extends from the first time any instance of that issue was detected on your site until 90 days after the last instance was marked as gone from your site. If ninety days pass without any recurrences, the issue is removed from the report history.
+The issue's first detected date is the first time the issue was detected during the issue's lifetime, and does not change. Therefore:
+If all instances of an issue are fixed, but a new instance of the issue occurs 15 days later, the issue is marked as open, and "first detected" date remains the original date.
+If the same issue occurs 91 days after the last instance was fixed, the previous issue was closed, and so this is recorded as a new issue, with the first detected date set to "today".
+Basic validation flow
+Here is an overview of the validation process after you click Validate Fix for an issue. This process can take several days, and you will receive progress notifications by email.
+When you click Validate Fix, Search Console immediately checks a few pages.
+If the current instance exists in any of these pages, validation ends, and the validation state remains unchanged.
+If the sample pages do not have the current error, validation continues with state Started. If validation finds other unrelated issues, these issues are counted against that other issue type and validation continues.
+Search Console works through the list of known URLs affected by this issue. Only URLs with known instances of this issue are queued for recrawling, not the whole site. Search Console keeps a record of all URLs checked in the validation history, which can be reached from the issue details page.
+When a URL is checked:
+If the issue is not found, the instance validation state changes to Passing. If this is the first instance checked after validation has started, the issue validation state changes to Looking good.
+If the URL is no longer reachable, the instance validation state changes to Other (which is not an error state).
+If the instance is still present, issue state changes to Failed and validation ends. If this is a new page discovered by normal crawling, it is considered another instance of this existing issue.
+When all error and warning URLs have been checked and the issue count is 0, the issue state changes to Passed. Important: Even when the number of affected pages drops to 0 and issue state changes to Passed, the original severity label will still be shown (Error or Warning).
+Even if you never click "start validation" Google can detect fixed instances of an issue. If Google detects that all instances of an issue have been fixed during its regular crawl, it will change the issue state to "N/A" on the report.
+When is an issue considered "fixed" for a URL or item?
+An issue is marked as fixed for a URL or item when either of the following conditions are met:
+When the URL is crawled and the issue is no longer found on the page. For an AMP tag error, this can mean that you either fixed the tag or that the tag has been removed (if the tag is not required). During a validation attempt, it will be considered as "passed."
+If the page is not available to Google for any reason (page removed, marked noindex, requires authentication, and so on), the issue will be considered as fixed for that URL. During a validation attempt, it is counted in the "other" validation state.
+Revalidation
+When you click Revalidate for a failed validation, validation restarts for all failed instances, plus any new instances of this issue discovered through normal crawling.
+You should wait for a validation cycle to complete before requesting another cycle, even if you have fixed some issues during the current cycle.
+Instances that have passed validation (marked Passed) or are no longer reachable (marked Other) are not checked again, and are removed from the history when you click Revalidate.
+Validation history
+You can see the progress of a validation request by clicking the validation details link in the issue details page.
+Entries in the validation history page are grouped by URL for the AMP report and Index Status report. In the Mobile Usability and Rich Result reports, items are grouped by the combination of URL + structured data item (as determined by the item's Name value). The validation state applies to the specific issue that you are examining. You can have one issue labeled "Passed" on a page, but other issues labeled "Failed", "Pending," or "Other".
+Issue validation state
+The following validation states apply to a given issue:
+Not started: There are one or more pages with an instance of this issue that you have never begun a validation attempt for. Next steps:
+Click into the issue to learn the details of the error. Inspect the individual pages to see examples of the error on the live page using the AMP Test. (If the AMP Test does not show the error on the page, it is because you fixed the error on the live page after Google found the error and generated this issue report.)
+Click "Learn more" on the details page to see the details of the rule that was violated.
+Click an example URL row in the table to get details on that specific error.
+Fix your pages and then click Validate fix to have Google recrawl your pages. Google will notify you about the progress of the validation. Validation takes anywhere from a few days up to about two weeks, so please be patient.
+Started:  You have begun a validation attempt and no remaining instances of the issue have been found yet. Next step: Google will send notifications as validation proceeds, telling you what to do, if necessary.
+Looking good: You started a validation attempt, and all issue instances that have been checked so far have been fixed. Next step: Nothing to do, but Google will send notifications as validation proceeds, telling you what to do.
+Passed: All known instances of the issue are gone (or the affected URL is no longer available). You must have clicked "Validate fix" to get to this state (if instances disappeared without you requesting validation, state would change to N/A). Next step: Nothing more to do.
+N/A: Google found that the issue was fixed on all URLs, even though you never started a validation attempt. Next step: Nothing more to do.
+Failed: A certain threshold of pages still contain this issue, after you clicked "Validate." Next steps: Fix the issue and revalidate.
+Instance validation state
+After validation has been requested, every instance of the issue is assigned one of the following validation states:
+Pending validation: Queued for validation. The last time Google looked, this issue instance existed.
+Passed: [Not available in all reports] Google checked for the issue instance and it no longer exists. Can reach this state only if you explicitly clicked Validate for this issue instance.
+Failed: Google checked for the issue instance and it's still there. Can reach this state only if you explicitly clicked Validate for this issue instance.
+Other: [Not available in all reports] Google couldn't reach the URL hosting the instance, or (for structured data) couldn't find the item on the page any more. Considered equivalent to Passed.
+Note that the same URL can have different states for different issues; For example, if a single page has both issue X and issue Y, issue X can be in validation state Passed and issue Y on the same page can be in validation state Pending.
+Known issues
+The following are known issues in Search Console. No need to report them to us, but we'd love your feedback on any other features or issues you spot. Use the Feedback mechanism built into the navigation bar.
+Some issues have long names that are not easy to understand.
+If your site has a very large number of issues (whether or not there are active instances), the report will show only the first 200 issues, sorted by importance.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Rich Results Tools and ReportsRich result status reportsRich Results TestUnparsable structured data report
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

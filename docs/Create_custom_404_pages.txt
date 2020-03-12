@@ -1,0 +1,16 @@
+Create custom 404 pagesA 404 page is what a user sees when they try to reach a non-existent page on your site (because they've clicked on a broken link, the page has been deleted, or they've mistyped a URL).
+Why create one?
+You can rely on your server to return a standard 404 page, but it might not be attractive, and won't be branded with your website. A custom 404 page can be branded with your site and provide helpful information
+If you have access to your server, we recommend that you create a custom 404 page. A good custom 404 page will help people find the information they're looking for, as well as providing other helpful content and encouraging them to explore your site further.
+(Note: This article covers guidelines for creating the content of your custom 404 page. For information on configuring your server to display your new 404 page, check your server or web hoster documentation. You should still make sure that your webserver returns a 404 status code to users and spiders, so that search engines don't accidentally index your custom 404 page.)
+Because a 404 page can also be a standard HTML page, you can customize it any way you want. Here are some suggestions for creating an effective 404 page that can help keep visitors on your site and help them find the information they're looking for:
+Tell visitors clearly that the page they're looking for can't be found. Use language that is friendly and inviting.
+Make sure your 404 page uses the same look and feel (including navigation) as the rest of your site.
+Consider adding links to your most popular articles or posts, as well as a link to your site's home page.
+Think about providing a way for users to report a broken link.
+No matter how beautiful and useful your custom 404 page, you probably don't want it to appear in Google search results. In order to prevent 404 pages from being indexed by Google and other search engines, make sure that your webserver returns an actual 404 HTTP status code when a missing page is requested.
+Use the Change of Address tool to tell Google about your site's move.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Crawling and indexingOverview of crawling and indexing topicsManage your sitemapsBlock access to your contentRemove information from GoogleTell Google about your duplicate contentAsk Google to recrawl your URLsMake sure Googlebot is not blockedCreate custom 404 pagesTransfer, move, or migrate your siteInternational and multilingual sitesSpecial tags that Google understandsGoogle crawlersCrawl Stats reportChange Googlebot crawl rate
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

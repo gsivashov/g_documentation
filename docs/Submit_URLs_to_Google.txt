@@ -1,0 +1,33 @@
+Home
+Products
+Search for Developers
+Guides
+Submit URLs to Google
+The simplest way to submit your new and updated URLs is to
+register your site and app with
+Search Console. After you register, use the
+Sitemaps report to see
+which sitemaps were processed for your site, any processing errors, or to submit a new sitemap
+for your site. For help with the Sitemaps report, see the
+Sitemaps report in the
+Search Console help center.
+Notify us of changes
+When you make changes to your structured data and you want to notify our
+systems ahead of our regular schedule, you can resubmit your sitemap to Search
+Console following the same process you used to submit your first sitemap.
+If you use XML format, change the <lastmod> field to the date of the change.
+Read more
+about this field in the Sitemap.org tag definitions.
+Other XML files have a similar field, such as <updated> for Atom XML.
+You can also learn how to compute this date.
+If you prefer, we also support the following programmatic methods to notify us
+of your content updates:
+Ping Google specifically with the location of the sitemap:
+http://www.google.com/ping?sitemap=URL/of/file
+Use Pubsubhubbub
+if you use Atom/RSS for your sitemap and want to broadcast your changes to other search
+engines in addition to Google.
+Learn more about how to build
+a sitemap and make it available to Google.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-12.

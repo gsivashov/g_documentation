@@ -1,0 +1,48 @@
+Why is my page missing from Google Search?Troubleshooting missing pages and sitesHere's how to troubleshoot and fix the most common problems when your page or site is missing from Google Search results.
+Step 1: Verify that your page or site is missing
+It sounds obvious, but first verify that your page or site is actually missing from Google's index. Many people assume that they are not on Google, when in fact their page simply appears very low in Search results.
+Did you recently create the page or request indexing? It can take time for Google to index your page; allow at least a week after submitting a sitemap or a submit to index request before assuming a problem. If your page or site change is recent, check back in a week to see if it is still missing.
+To verify your presence on Google:
+Turn off safe search, which might be filtering your results.
+Search Google for your site or page:
+For a missing site: Do a site search with the syntax site:your_domain_name
+Examples: site:example.com or site:example.com/petstore
+For a missing page: Search Google for the full URL of your page.
+If you see results, then the site or page is in the index:
+For a site: It is possible that not every page on the site is indexed, but the site itself is in our index. Consider adding a sitemap to help Google discover all the pages in your site.
+For a page: If a page is in the index, but not performing as well as you think it should, check our webmaster guidelines for tips on improving your search performance. If the page has suffered a recent ranking drop, you can try to troubleshoot that. If you have multiple versions of a page (for example a mobile and a desktop version, or two URLs that point to the same page), Google will consider one to be canonical (authoritative) and all others to be duplicates, and Search results will point only to the canonical page. (You can use the URL Inspection tool on a page to see if it is considered a duplicate.)
+If you still can't find your site or page in Search results, move to Step 2: Fix the problem.
+Step 2: Fix the problem
+These instructions assume that you have a Search Console account because it is much easier to diagnose indexing problems using Search Console.
+Did you recently buy or inherit this site from someone else? It's possible that you got a site with existing manual actions filed against it. The history pages in the Manual Actions report and Security Issues report will show any outstanding actions filed against it. Read the documentation for your report to learn how to resolve pre-existing issues in a purchased site.
+If your site or page is new, it might not be in our index because we haven't had a chance to crawl or index it yet. It takes some time after you post a new page before we crawl it, and and more time after that to index it. The total time can be anywhere from a day or two to a few weeks, typically, depending on many factors. Learn how Google crawls the web.
+If you recently restructured your site, or moved to a new domain or to https, pages that previously performed well may now rank poorly if mistakes were made when executing the move. To fix: Use 301 redirects ("RedirectPermanent") to redirect users, Googlebot, and other crawlers. (In Apache, you can do this with an .htaccess file; in IIS, you can do this through the administrative console.) If you recently moved to https, check for the presence of both your http and https URLs in Google. Read more about how to move your site with minimal effect on Search results.
+Check to see if any manual actions have been applied to your page. Manual actions will lower your page ranking or remove it entirely from Search results. The Manual Actions report should provide guidance on how to fix your manual action. For legal removals, learn more about legal removal requests and removal policies.
+Check to see if any security issues have been reported on your site. Security issues can lower your page ranking, or display a warning in the browser or in search results. The Security Issues report should provide guidance on how to fix your manual action.
+Inspect your page using the URL Inspection tool:
+If the report says that the page has not been indexed
+Read the documentation to learn why, and how to fix it. Here are the most common reasons:
+You are blocking the page with a robots.txt file, a noindex directive, or some other mechanism, such as password protection. In any case, use the appropriate means to unblock it.
+If the report describes other technical issues, read the documentation to learn why else the page might be blocked.
+If there are no errors, and the page is not blocked to Google, you might have a problem with findability.
+Request indexing of the page using the URL Inspection tool.
+If the report says that the page has been indexed
+​Check whether you (or someone else) successfully requested that the site or URL be removed from the index. Open the URL removal tool to look for approved requests of URL or site removal. If so, you can revoke the request.
+The page may have been dropped or omitted from the index for totally innocuous reasons. (The web is immense, and Google doesn't get to every page, though we try to!) Ask Google to recrawl your page.
+Still having problems? Visit the Webmaster Forum and explain your problem (please be sure to describe the issue completely, and include links to your site).
+Improve Google's ability to find and crawl your site
+If Google doesn't seem to be finding all the pages on your site, it could indicate that either Google can't find the pages (crawl), or can't understand them properly when it does find them (index). Read the basics of crawling and indexing.
+Crawling issues
+Google needs to be able to find your pages in order to index them. Here are the main ways to help Google find your pages:
+Submit a sitemap. This tells Google exactly which pages you want crawled. Many website hosting services create and submit a sitemap for you, so you don't need to; read your hosting service's documentation to find out (search for the term "sitemap").
+Make sure that people know about your site. Google discovers new sites from existing sites.
+Provide comprehensive link navigation within your site. Be sure that you can reach any page on your site by following a chain of one or more links from your homepage. Avoid using links that require user interaction to appear, or non-standard linking technology, or links embedded in media files or other complex technologies.
+Submit an indexing request for your homepage. If your pages are well linked among themselves, Google should be able to find all your pages from your home page.
+Sites that use URL parameters rather than URL paths or page names can be harder to crawl. A page at example.com/petstore/zebra is easier for Google to find than a page at example.com?page=1234.
+Indexing issues
+Read the SEO Starter Guide for many good tips on improving your site's crawling and indexing.
+Also be sure that your page follows Google's Webmaster Guidelines.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Troubleshooting resultsWhy did my site traffic drop?Why is my page missing from Google Search?Why is my site blocked from Google Search?Why does my search result look wrong?
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

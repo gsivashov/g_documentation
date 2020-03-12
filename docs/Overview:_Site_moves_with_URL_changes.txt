@@ -1,0 +1,54 @@
+Move a site with URL changesOverview: Site moves with URL changesMake sure Google can index your content under your new URLsNext: 1. Prepare the new siteThis article describes how to change the URLs of existing pages on your site with minimal impact on your Google Search results. Examples of this kind of site move include:
+URL changes from HTTP to HTTPS
+Domain name changes such as example.com to example.net or merging multiple domains or hostnames
+URL paths changes: example.com/page.php?id=1 > example.com/widget, or example.com/page.html > example.com/page.htm
+If you are making site changes without visible URL changes, start here instead.
+FAQs for all site moves with URL changes
+Should I move everything together, or is it fine to move in sections?
+Moving in sections is fine.
+How can I test how many pages were indexed?
+Verify data for each property separately in Search Console. Use the Index Status report for a broad look, or the sitemaps indexed count on the Sitemaps report for sitemap URLs.
+How long will it take for Google to recognize my URL changes?
+There are no fixed crawl frequencies; it depends on the size of your site, and the speed of crawling that's possible. The move takes place on a per-URL basis.
+Do I lose credit for links when I redirect to new URLs?
+No, 301 or 302 redirects do not cause a loss in PageRank.
+Migrating from HTTP–>HTTPS
+Review the best practices for HTTPS.
+Be sure to add the HTTPS property to Search Console. Search Console treats HTTP and HTTPS separately; data for these properties is not shared in Search Console. So if you have pages in both protocols, you must have a separate Search Console property for each one.
+Here are additional FAQs for migrating pages from HTTP to HTTPS:
+HTTP–>HTTPS migration FAQs
+Will this migration affect my ranking?
+As with all migrations, you may experience some ranking fluctuation during a migration. However, you should also review the best practices information for HTTPS pages to avoid HTTPS-specific pitfalls.
+HTTPS sites receive a small ranking boost, but don't expect a visible change. Google uses HTTPS as a positive ranking signal. This signal is one amongst many others, and currently carries less weight than high-quality site content; you should not expect a major SEO advantage for moving to HTTPS in the short term. In the longer term, Google may increase the strength of the HTTPS boost.
+Is it OK to move just some pages to HTTPS?
+Yes, no problem! Start with a part, test it, then move more, as you like.
+If you are migrating from HTTP to HTTPS in pieces, and you want to avoid early indexing of the staged URLs, we recommend using rel=canonical rather than redirects. If you use redirects, you won't be able to test the redirected pages.
+Which certificate do I need?
+For Google Search, any modern certificate that's accepted by modern browsers is acceptable.
+Will I see search keywords for my HTTPS site?
+This won't change with HTTPS; you can still see search queries in Search Console.
+We reference our HTTP sitemaps in robots.txt. Should we update the robots.txt to include our new HTTPS sitemaps?
+We recommend separate robots.txt files for HTTP and HTTPS, pointing to separate sitemap files for HTTP and HTTPS. We also recommend listing a specific URL in only one sitemap file.
+Which sitemap should map the section in the HTTPS trial?
+You can create a separate sitemap just for the updated section of your site. This will enable you to track indexing of the trial section more precisely. Be sure not to duplicate these URLs in any other sitemaps, though.
+What URLs should our sitemaps list if we have redirects (from HTTP to HTTPS or the reverse)?
+List all HTTP URLs in your HTTP sitemap, and all HTTPS URLs in your HTTPS sitemap, regardless of redirects when the user visits the page. Having pages listed in your sitemap regardless of redirects will help search engines discover the new URLs faster.
+Are there any other specific things we need to add to the robots.txt for the HTTPS version?
+No.
+Should we support HSTS?
+HSTS increases security, but adds complexity to your rollback strategy. See HTTPS best practices for more information.
+We use a single Google News sitemap for our entire site. What do we do if we're migrating our site piece by piece?
+If you want to use a Google News sitemap for the new HTTPS section, you will have to contact the News team to let them know about the protocol change, and then in your HTTPS property in Search Console you can submit a new Google News sitemap as you migrate each section of your site to HTTPS.
+Are there any specific recommendations for Google News Publisher Center with HTTPS migration?
+Google News Publisher Center handles the HTTP->HTTPS moves transparently. In general you don't have to do anything from Google News perspective, unless you're also making use of News sitemaps. In that case, please contact the News team and let them know about the change. You can also let the team know about changing sections, for example in case you're moving to HTTPS, you can specify that you're moving http://example.com/section to https://example.com/section .﻿
+Move your site
+Review basic information about site moves. Know what to expect, and how it might affect your users and rankings. If moving from HTTP to HTTPS, review the best practices for HTTPS.
+Prepare the new site and test it thoroughly.
+Prepare a URL mapping from the current URLs to their corresponding new format.
+Start the site move by configuring the server to redirect from the old URLs to the new ones.
+Monitor the traffic on both the old and new URLs.
+Next: 1. Prepare the new site
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Move a site with URL changesOverview: Site moves with URL changes1. Prepare the new site2. Prepare a URL mapping3. Start the site move4. Monitor the traffic
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

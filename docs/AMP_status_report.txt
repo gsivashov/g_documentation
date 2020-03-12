@@ -1,0 +1,134 @@
+AMP status reportThis report helps you fix errors that prevent your AMP pages from appearing in Google Search results with AMP-specific features.
+The top level view shows all AMP pages with issues found by Google on your site, grouped by issue. Click a specific issue to see issue details, including a sample list of pages affected by that issue, information about how to fix it, and a process to notify Google about your fixes.
+To see charts showing the affect of issues and fixes, visit the Status page.
+Why is this a sample list? We show as many pages affected by errors as we can. However we have a hard limit of 1,000 urls that we can show in our table. Also, it's possible that there are additional pages that we didn't detect or count for some reason.
+OPEN AMP REPORT
+What to look for
+Ideally you should see this on the report:
+Zero AMP errors on your site (warnings are considered recommendations, not errors; see Understanding warnings below). If not, see Prioritize and fix issues.
+The total count of AMP pages on the report (valid + warning + error pages) should equal the number of AMP pages on your site. If not, see Missing AMP pages.
+AMP errors
+In addition to standard AMP-specific errors, the report can expose the following additional issues (errors and warnings).
+Google-specific AMP issues
+Issue
+Description
+Content mismatch: Missing embedded video
+The canonical web page has an embedded video that is missing in the AMP version. It is usually best to include all the same important content resources in your AMP version as in the canonical web page. Note that the video is detected by URL; if you have two different URLs pointing to the same video, you will see this warning.
+Image size smaller than recommended size
+The structured data in the AMP refers to an image that is smaller than our recommended size. This may prevent the page from appearing with all AMP-related features on Google Search, and may also prevent your Discover cards from appearing with large images (leading to decreased website traffic and user engagement). To fix, use a larger image according to our guidelines.
+AMP page domain mismatch
+The AMP page is hosted on a different domain than its canonical version. This can be confusing to mobile searchers who see one URL domain in search results and a different one when they open the page in the AMP reader. (Does not affect page indexing or ranking.)
+URL not found (404)
+The AMP URL requested could not be found. Learn more about 404 pages.
+Server error (5XX)
+Unspecified 5XX server error when requesting the AMP page. Learn more about server errors.
+Blocked by robots.txt
+The requested AMP URL was blocked by a robots.txt rule.
+Crawl issue
+Unspecified crawling error for the AMP page. Use the URL Inspection tool on your AMP URL to troubleshoot the problem.
+Referenced AMP URL is not an AMP
+A canonical page references an AMP that is not, in fact, an AMP page. Learn how a non-AMP page should reference an AMP page.
+Referenced AMP URL is self-canonical AMP
+The canonical page points to a stand-alone AMP. You cannot reference a stand-alone AMP as the AMP version of a page. Learn how to reference an AMP from a non-AMP page.
+URL marked 'noindex'
+AMP is blocked by a 'noindex' directive. Google cannot index a page that is blocked by noindex; either remove the noindex directive, or remove the reference to the blocked page.
+'unavailable_after' date for this page has expired
+AMP page has an "unavailable_after" meta tag or directive that has already passed, indicating that it should no longer be served. You should either update the tag to a future date, or remove the tag.
+Canonical points to invalid URL
+A canonical page references an AMP version using an invalidly formatted URL. Learn how to properly reference an AMP version.
+amp-story canonical error
+A page incorrectly references an amp-story page as its AMP version. This is not allowed because an amp-story page is, by definition, self-canonical: it must point to itself with a <rel="canonical"> tag, and cannot serve as an AMP version of another page.
+Prioritize and fix issues
+On the summary AMP page, filter out the warnings and focus on the errors first. By default, issues are sorted by a combination of severity, validation state, and number of affected pages; we recommend that you address them in this default order. Fix errors caused by a common cause first (such as a bad template), then fix errors that are unique to each page.
+See if any increase in the total error count is caused mostly by a single error: look for a corresponding spike in a single issue in the table.
+See information below about debugging spikes and missing AMP pages.
+Click a row in the table to see the error details page:
+The details page includes a sample of affected URLs. The list is not always complete, because it is limited to 1,000 rows, and might not include very recently discovered instances of this error.
+If it is a syntax error, click Learn more to get official documentation about the proper syntax.
+Click the inspect icon to run a validity test against an affected page. This test will pinpoint all errors (not just the current issue) and provide a code explorer highlighting the errors and providing more information. It is possible that an error has been fixed in the live page but is still listed as an error because it has not yet been recrawled; if so, request validation after you have fixed all instances of this issue.
+Fix all instances of the issue on your site, test your fix, and ensure that your fixes are live on the web.
+Return to the issue details page and click the "Validate & Update Google" button to begin the validation process. This process is not immediate. See About validation to understand the validation process.
+Continue fixing errors.
+When all errors have been fixed, remove the filter for warnings, and consider fixing the warnings. Some warnings are about missing optional structured data markup, which can enable new search features for pages with relevant content.
+Sharing the report
+You can share issue details in the coverage or enhancement reports by clicking the Share
+button on the page. This link grants access only to the current issue details page, plus any validation history pages for this issue, to anyone with the link. It does not grant access to other pages for your resource, or enable the shared user to perform any actions on your property or account. You can revoke the link at any time by disabling sharing for this page.
+Exporting report data
+Many reports provide an export button
+to export the report data. Both chart and table data are exported.
+Error spikes
+Determine if a spike caused by a group of pages moving from one severity to another:
+If you see a spike, look for a corresponding drop in another state (error or valid).
+If you find a corresponding drop, confirm that they are the same URLs.
+If the URLs moved from one state to another, determine what you changed to cause this.
+The most common reason for a spike in errors is adding an error to a template used by many pages on your site.
+Troubleshooting missing AMP pages
+If the count of AMP pages (valid + warning + error) in the report is less than the count of AMP pages on your site, here are some possible reasons:
+Confirm that your canonical non-AMP page is correctly linking to your AMP page.
+Confirm that your AMP or canonical pages are not roboted or noindexed, or protected by auth or login requirements.
+Check for the presence of your AMP and canonical pages in the index by searching Google for the URL of the canonical page. If it is not listed, it's not indexed.
+If the canonical is there, confirm that it correctly links to your AMP page.
+If the canonical is not there, submit it for indexing.
+Is your AMP/canonical linked to by other pages? Are they listed in a sitemap? Use the URL Inspection tool on the canonical to request indexing for a small number of AMP pages, but for large numbers of pages, use sitemaps. (You only need to list the canonical in the sitemap.) Consider using the Sitemaps report to submit a sitemap.
+It can take a few days for Google to find and crawl the missing pages, depending on how you notify Google about the new pages.
+Some valid AMP pages might not be included in this report, although they might be listed in the Index Coverage report. This is because the Index Coverage report must be more comprehensive in order to help you debug indexing issues on your report, while the AMP Status report potentially covers fewer, but more relevant pages, but in greater detail, in order to help you debug specific AMP issues on your site. To confirm whether an AMP page is indexed, use the URL Inspection tool, which will have the definitive answer.
+Understanding warnings
+AMP pages with warnings are indexed and can be shown in Google Search results, but might not be shown with all possible AMP features (such as being shown in a Top Stories carousel). In other words, these pages might only be shown as plain blue link search results.
+About validation
+After you fix all instances of a specific issue on your site, you can ask Google to validate your changes. If all known instances are gone, the issue is marked as fixed in the status table and dropped to the bottom of the table. Search Console tracks the validation state of the issue as a whole, as well as the state of each instance of the issue. When all instances of the issue are gone, the issue is considered fixed. (For actual states recorded, see Issue validation state and Instance validation state.)
+More about issue lifetime...
+An issue's lifetime extends from the first time any instance of that issue was detected on your site until 90 days after the last instance was marked as gone from your site. If ninety days pass without any recurrences, the issue is removed from the report history.
+The issue's first detected date is the first time the issue was detected during the issue's lifetime, and does not change. Therefore:
+If all instances of an issue are fixed, but a new instance of the issue occurs 15 days later, the issue is marked as open, and "first detected" date remains the original date.
+If the same issue occurs 91 days after the last instance was fixed, the previous issue was closed, and so this is recorded as a new issue, with the first detected date set to "today".
+Basic validation flow
+Here is an overview of the validation process after you click Validate Fix for an issue. This process can take several days, and you will receive progress notifications by email.
+When you click Validate Fix, Search Console immediately checks a few pages.
+If the current instance exists in any of these pages, validation ends, and the validation state remains unchanged.
+If the sample pages do not have the current error, validation continues with state Started. If validation finds other unrelated issues, these issues are counted against that other issue type and validation continues.
+Search Console works through the list of known URLs affected by this issue. Only URLs with known instances of this issue are queued for recrawling, not the whole site. Search Console keeps a record of all URLs checked in the validation history, which can be reached from the issue details page.
+When a URL is checked:
+If the issue is not found, the instance validation state changes to Passing. If this is the first instance checked after validation has started, the issue validation state changes to Looking good.
+If the URL is no longer reachable, the instance validation state changes to Other (which is not an error state).
+If the instance is still present, issue state changes to Failed and validation ends. If this is a new page discovered by normal crawling, it is considered another instance of this existing issue.
+When all error and warning URLs have been checked and the issue count is 0, the issue state changes to Passed. Important: Even when the number of affected pages drops to 0 and issue state changes to Passed, the original severity label will still be shown (Error or Warning).
+Even if you never click "start validation" Google can detect fixed instances of an issue. If Google detects that all instances of an issue have been fixed during its regular crawl, it will change the issue state to "N/A" on the report.
+When is an issue considered "fixed" for a URL or item?
+An issue is marked as fixed for a URL or item when either of the following conditions are met:
+When the URL is crawled and the issue is no longer found on the page. For an AMP tag error, this can mean that you either fixed the tag or that the tag has been removed (if the tag is not required). During a validation attempt, it will be considered as "passed."
+If the page is not available to Google for any reason (page removed, marked noindex, requires authentication, and so on), the issue will be considered as fixed for that URL. During a validation attempt, it is counted in the "other" validation state.
+Revalidation
+When you click Revalidate for a failed validation, validation restarts for all failed instances, plus any new instances of this issue discovered through normal crawling.
+You should wait for a validation cycle to complete before requesting another cycle, even if you have fixed some issues during the current cycle.
+Instances that have passed validation (marked Passed) or are no longer reachable (marked Other) are not checked again, and are removed from the history when you click Revalidate.
+Validation history
+You can see the progress of a validation request by clicking the validation details link in the issue details page.
+Entries in the validation history page are grouped by URL for the AMP report and Index Status report. In the Mobile Usability and Rich Result reports, items are grouped by the combination of URL + structured data item (as determined by the item's Name value). The validation state applies to the specific issue that you are examining. You can have one issue labeled "Passed" on a page, but other issues labeled "Failed", "Pending," or "Other".
+Issue validation state
+The following validation states apply to a given issue:
+Not started: There are one or more pages with an instance of this issue that you have never begun a validation attempt for. Next steps:
+Click into the issue to learn the details of the error. Inspect the individual pages to see examples of the error on the live page using the AMP Test. (If the AMP Test does not show the error on the page, it is because you fixed the error on the live page after Google found the error and generated this issue report.)
+Click "Learn more" on the details page to see the details of the rule that was violated.
+Click an example URL row in the table to get details on that specific error.
+Fix your pages and then click Validate fix to have Google recrawl your pages. Google will notify you about the progress of the validation. Validation takes anywhere from a few days up to about two weeks, so please be patient.
+Started:  You have begun a validation attempt and no remaining instances of the issue have been found yet. Next step: Google will send notifications as validation proceeds, telling you what to do, if necessary.
+Looking good: You started a validation attempt, and all issue instances that have been checked so far have been fixed. Next step: Nothing to do, but Google will send notifications as validation proceeds, telling you what to do.
+Passed: All known instances of the issue are gone (or the affected URL is no longer available). You must have clicked "Validate fix" to get to this state (if instances disappeared without you requesting validation, state would change to N/A). Next step: Nothing more to do.
+N/A: Google found that the issue was fixed on all URLs, even though you never started a validation attempt. Next step: Nothing more to do.
+Failed: A certain threshold of pages still contain this issue, after you clicked "Validate." Next steps: Fix the issue and revalidate.
+Instance validation state
+After validation has been requested, every instance of the issue is assigned one of the following validation states:
+Pending validation: Queued for validation. The last time Google looked, this issue instance existed.
+Passed: [Not available in all reports] Google checked for the issue instance and it no longer exists. Can reach this state only if you explicitly clicked Validate for this issue instance.
+Failed: Google checked for the issue instance and it's still there. Can reach this state only if you explicitly clicked Validate for this issue instance.
+Other: [Not available in all reports] Google couldn't reach the URL hosting the instance, or (for structured data) couldn't find the item on the page any more. Considered equivalent to Passed.
+Note that the same URL can have different states for different issues; For example, if a single page has both issue X and issue Y, issue X can be in validation state Passed and issue Y on the same page can be in validation state Pending.
+Known issues
+The following are known issues in Search Console. No need to report them to us, but we'd love your feedback on any other features or issues you spot. Use the Feedback mechanism built into the navigation bar.
+Some issues have long names that are not easy to understand.
+There can be a lag between when an issue is added to the graph and when it is added to the table.
+If your site has a very large number of issues (whether or not there are active instances), the report will show only the first 200 issues, sorted by importance.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+AMP Tools and ReportsAMP status reportAMP Test
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

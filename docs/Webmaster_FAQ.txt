@@ -1,0 +1,140 @@
+Webmaster FAQThis article brings together answers to the questions about organic search we at Google hear most often.
+In this article:
+Crawling and indexing
+Your site’s position in search results
+Your site’s search results listing
+Removing content from Google
+Other questions
+Crawling and indexing
+My site isn't indexed yet!
+Crawling and indexing are processes which can take some time and which rely on many factors. In general, we cannot make predictions or guarantees about when or if your URLs will be crawled or indexed. When looking at a site's indexing in Search Console, make sure that you have both the "www" and the "non-www" versions (like "www.example.com" and "example.com") verified. Keep in mind that while a sitemap file can help us learn about your site, it does not guarantee indexing or increase your site's ranking.
+We have several Help Center articles that explain these processes:
+Google Basics - explains how crawling, indexing and ranking works
+My site isn't doing well in search - explains common questions and issues
+Google-friendly sites - provides some information about how to create a website so that it can easily be crawled and indexed
+Google's Webmaster Guidelines - provide technical, content and quality guidelines for webmasters
+Adding a site to Google - for specific advice and additional tips
+Your site in Google's index - gives some simple ways to check your site's indexing
+In general, the most common reason that a site is not indexed is because it's just too new -- be patient (and ask Google to crawl and index it)!. Here are the other common reasons why a website or parts of a website might not be indexed yet:
+A website might not be well connected through multiple links from other sites on the web.
+The design of the website might make crawling and indexing difficult. Maybe the site itself is even explicitly blocking crawling or indexing?
+Perhaps it was temporarily unavailable when we attempted to crawl? You might find crawl errors in Search Console in this case.
+Verify that the website complies with our Webmaster Guidelines and hasn't been hacked or otherwise modified by a third party.
+In very rare cases, it might be that content previously hosted on a domain name is causing issues. In this case, you may wish to submit a reconsideration request detailing the change of content and ownership.
+If the website recently moved to a different address, make sure that you follow our guidelines for moving a site.
+It's possible that a previous owner or someone else with access to the website requested removal through Search Console. You can cancel these requests by going to "Site configuration" / "Crawler access" / "Remove URLs" in your Search Console account.
+Google is crawling my site too much
+Google has algorithms that determine crawl rate for a site, and slows down the crawl rate when it thinks it needs to, but if, for some reason, you think it's crawling too often, you can request a slower crawl rate.
+I have the same content available on two domains. How do I tell Google that the two domains are the same site?
+Use a 301 redirect to direct traffic from the alternative domain (example2.org) to your preferred domain (example.com). This tells Google to always look for your content in one location, and is the best way to ensure that Google (and other search engines!) can crawl and index your site correctly. Ranking signals (such as PageRank or incoming links) will be passed appropriately across 301 redirects. If you're changing domains, read about some best practices for making the move.
+Do I have duplicate content? Am I being penalized for it? What should I do about it?
+In most cases, having duplicate content on your site does not mean your site is penalized. Read this article right now. If you're still concerned or want to know more, read these articles (you're not the first person to ask about duplicate content!):
+Dealing with duplicate content
+Duplicate content caused by URL parameters
+Duplicate content caused by scrapers
+Even more info about duplicate content!
+And more...
+About rel="canonical"
+Handling cross-domain duplication
+Is it better to use subfolders or subdomains?
+You should choose whatever is easiest for you to organize and manage. From an indexing and ranking perspective, Google doesn't have a preference.
+Does validating my site's code (with a tool such as the W3C validator) help my site's ranking in Google?
+No, at least not directly. However, to the extent that cleaning up your HTML makes your site render better in a variety of browsers, more accessible to people with disabilities or folks accessing your pages on portable or other devices, and so on, it can improve the popularity of your site... increasing traffic, natural links to your site (which can help with your Google ranking), and so on.
+I'm using a hosting service for my site that uses frames, "masked redirects", or "masked forwarding." Will this affect my site's crawling, indexing or ranking?
+We recommend always hosting your content directly using your domain name. Using a forwarding service that uses frames will generally make crawling, indexing and ranking of your content using your domain name impossible.
+I changed some text on my pages, why isn't it updated in the search results?
+Crawling and indexing of pages within a website can take some time. While there's no way to force an update, here are some tips that may help to speed this process up:
+If you have removed unique content (such as a name) from the page and need to have it updated as soon as possible, removing the cached page with the URL removal tools may be a possibility.
+If you are using a Sitemap file, make sure to update the last modification date.
+If your site's content is indexed with multiple URLs, resolving the duplicate content issue within your site will generally allow crawlers to find updated content quicker.
+My website uses pages made with PHP, ASP, CGI, JSP, CFM, etc. Will these still get indexed?
+Yes! Provided these technologies serve pages that are visible in a browser, Googlebot will generally be able to crawl, index and rank them without problems. We have no preference, they're all equivalent in terms of crawling, indexing and ranking as long as we can crawl them. One way to double-check how a search engine crawler might see your page is to use a text-only browser such as Lynx to view your pages.
+I recently purchased a domain that was previously associated with a spammy website. What can I do to make sure that spammy history doesn't affect my site now?
+Verify your site in Search Console, then request reconsideration of your site. In your request, let us know that you've recently acquired the domain.
+Your site’s position in search results
+How do I get people to link to my site?
+The key to getting links to your site is to create unique, compelling content that other people want to link to. However, you should maintain quality content on your site; Google is very good at detecting unnatural links that violate our Webmaster Guidelines (for example, those that come from link-exchange schemes, paid links schemes, or are auto-generated), so participating in such schemes could end up doing more harm than good.
+Watch this video for some ideas about getting people to link to your site:
+What are some effective techniques for building links?
+My site used to rank really well, but now it doesn't. What happened?
+The web is an organic, constantly shifting ecosystem, and your site’s performance in search can change for many reasons. Maybe Google is having problems crawling your site, or maybe there’s a problem with your content. To start troubleshooting, check out My site isn’t doing well in search.
+.com, .org, .gov, .ponies—does my top-level domain impact my site's performance in search?
+Google's goal is to return the best and most relevant results to the user, regardless of the top-level domain. If our system determines that the best result is a page on a new gTLD, we'll return that page in search results.
+Can a competitor do anything to damage my site’s performance in search results?
+We work really hard to make sure that competitors can’t negatively affect other sites’ rankings. If you're concerned about another site linking to yours, we suggest contacting the webmaster of the site in question. Google aggregates and organizes information published on the web; we don't control the content of these pages.
+What techniques might cause Google to place a manual spam action on my site in search results?
+Our goal is to provide users with the best and most relevant results for their query. Sometimes webmasters—accidentally or on purpose—use techniques that attempt to game the system. For example, a site might include hidden text or links, or use cloaking or sneaky redirects. The quality guidelines section of our webmaster guidelines outlines some of the illicit practices which can lead to a manual action.
+I made some changes so that my site is no longer in violation of the Webmaster Guidelines. How can I make sure Google knows that my site is clean?
+Submit a reconsideration request. Please allow several weeks for the reconsideration process. Unfortunately, we can't reply individually to reconsideration requests at this time. If it's been several weeks since you submitted your reconsideration request, and you haven't seen any changes in your site's performance, this probably means that your site is still in violation of the Webmaster Guidelines, or it simply is not ranking as well as you'd like.
+Why don’t my images appear in Google Image Search?
+In general, you can improve your images’ performance in search by giving Google as much information about your images as possible. You can do this by providing detailed, informative filenames and alt text, or by submitting an Image Sitemap.
+Why don’t my videos appear in Google Search?
+You can help us find and index your video content by creating and submitting a Video Sitemap. This tells Google about videos on your site that we might not otherwise discover, and lets you provide useful information, such as the title or running time of the video.
+Create and submit a Video Sitemap
+Video publishing guidelines
+Does buying ads improve my search ranking?
+No. Google's advertising programs are independent of our search results. Search results display on the left side of our results page; ads appear on the right and in the colored box at the top.
+Participation in an advertising program doesn't positively or negatively affect inclusion or ranking in the Google search results. Inclusion and ranking are free services; we don't accept payment to expedite inclusion or improve a site's ranking for particular keywords. Learn more about how Google ranks pages.
+Your site’s search result listing
+The wrong title appears for my page
+The first line of any search result is the title of the web page. This text is generally taken from the contents of the <title> tag for that page (which is also the text that appears in the title bar of your browser).
+Your page title gives Google additional information about the content of the page. Relevant, useful titles also help users decide which site to click in the results page.
+Creating useful titles and descriptions
+I don’t want a snippet (an excerpt from my site) to appear on my site’s search results.
+Google automatically attempts to extract the part of the page that's most relevant to the user’s query. You can use the <meta name="robots" content="noindex"> tag to prevent Google from showing snippets, or you can help us pick good snippets by writing useful meta descriptions.
+How to write good meta descriptions
+Use the meta tag to prevent Google from showing a site snippet
+How do I get stars (or prices, or reviews) to appear on my site’s search results?
+Some sites, especially large-scale review sites, use RDFa, microdata, or microformats to identify structured information—such as reviews, product data, or contact information—in their content. This can be very helpful to users, but it does require you to mark up your site’s content in a very structured way.
+More information about rich snippets
+What’s a cached version of a page?
+Google links to the current version of a page, and also stores a copy of a recent version of that page so you can see what it looked like recently, or view the stored ("cached") copy if the current page is not available. You can also view a text-only version of your cached page. Because search engines crawl mainly text, this is a great way to see how your page appears to Google. (For example, if important content isn't visible in the text-only version of the page, it may be because it's embedded in an image or otherwise unavailable to search engines.)
+Remove the cached version of a page
+Why isn’t my site listed in local business results?
+If Google detect that your query is location based (for example, [seattle pizza]) we'll display a map with relevant locations. In addition, we may also display relevant images alongside the map (for example, we might show a picture of the Space Needle in the results for Seattle).
+If you have a business or other location that is not showing up on a map in search results, make sure that it's been added to Google My Business.
+Get your site back on Google
+If your site was removed or blocked from Google for some reason, you can request reinclusion:
+If your site was distributing malware but is now clean, request a malware review.
+If your site was showing spam but is now clean, submit a reconsideration request.
+If your site was in violation of the Webmaster Guidelines but is now clean, submit a reconsideration request.
+If you asked for your own page or site to be removed from Google but you've changed your mind, request reinclusion of the content.
+If you received a phishing warning but believe that it's actually a legitimate page, report an incorrect phishing warning.
+Removing information from Google search results
+How do I get a page removed from Google?
+Google doesn't control the content of the web, so before we remove a page from our search results, the owner has to change it or take it down. If that's you, just make the changes you want. We'll see them the next time we crawl your site, and we'll update our index.
+After you've made the changes, you can expedite the removal process by submitting a URL removal request. If you don't own the site, and the webmaster won't take the content down, you can still request removal of certain confidential or personal information, such as your government ID number, bank account number, or signature.
+Read more about removing information Google's search results
+How can I remove the cached version of a page?
+If a page has changed and you urgently need to expedite the removal of outdated information, you can file a removal request and select the "Remove page from cache only" option. If you don't want Google to ever display a Cached link for a page, use the noarchive meta tag.
+Somebody is using my content or violating my copyright. How can I get their pages taken down?
+If you find that another site is duplicating your content by scraping (misappropriating and republishing) it, it's unlikely that this will negatively impact your site's ranking in Google search results pages. If you do spot a case that's particularly frustrating, you are welcome to file a DMCA request to claim ownership of the content and request removal of the other site from Google's index.
+How do I keep my content out of Google's search results?
+If your content is private, you must use server side authentication (password-protection) to block access to it. Don't rely on robots.txt or meta/header tags to keep private content from becoming public. This video gives some recommendations for various ways to prevent Google and other search engines from crawling private content.
+Matt Cutts Discusses Search Console
+You can also use a noindex meta tag to tell search engines not to index a certain page. In this case, make sure that that page is not disallowed in your robots.txt file. If we're not allowed to crawl the page, we won't be able to see and obey the meta tag on it.
+You can also use the X-Robots-Tag directive, which adds Robots Exclusion Protocol (REP) meta tag support for non-HTML pages. This directive gives you the same control over your videos, spreadsheets, and other indexed file types.
+More information about keeping content out of Google
+Why was my URL removal request denied?
+Next to the denial you should see a
+icon or a link to learn more. This will provide details about why your specific removal was denied.
+If you requested removal of a directory or an entire site, you have to have blocked that content with your robots.txt file in order for your request to be successful. (Returning 404s isn't enough.)
+If you were requesting a cache removal, make sure you entered the URL of the page (e.g. http://www.example.com) and not the URL of the Google cache (e.g. http://209.85.273.132/search?q=cache:VE9bONM_7xsJ:www.example.com).
+Make sure your URL met the requirements for removal. If you're still stumped, post a new question in our forum with the details, including what you were trying to remove and what the denial reason says.
+Report spam, paid links, or malware
+If you find information in Google's search results that you believe result from spam, paid links or malware, you can report it to us.
+Other questions
+How can I get images I own to appear across Google products and services?
+There are many ways to have your images appear in Google products. From Google Maps to Google Search and beyond, we work hard to make sure that the imagery we show reflects the world around you in a variety of ways. Below are some of the ways that you can contribute your imagery to Google:
+To appear in Google Search, make sure that your images are discoverable by following our image publisher guidelines.
+Create AMP Stories that showcase visual content in the most engaging ways
+Contribute photos & videos directly to a place on Google Maps. You can earn points for uploading through the Local Guide program.
+Upload imagery to Search and Maps via Google My Business. Adding business photos to showcase your products and services allows potential customers to find what you offer.
+For more immersive experiences, Google may partner with image providers to obtain imagery for certain products and services such as the Nest Hub. Typically, these products and services rely on high resolution images appropriate to where they’re being displayed.
+If you can't find the answer to your question on this page, check out Google's Webmaster Help resources (including how to communicate with Google). On the Google Webmaster Help forum, you can get assistance from Googlers and other webmasters.
+We provide official Google forums in the following languages: Deutsch • Español • Français • Italiano • Nederlands • Polski • Português • Türkçe • Русский • العربية • 中文（简体） • 日本語 • 한국어
+In addition, visit extensive additional FAQs on our forum companion site. For the very latest in news, check out the official Google Webmaster blog.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+HelpRemoving informationTroubleshooting resultsWhat is hacking or hacked content?Webmaster FAQEuropean press publisher FAQMore support resources
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

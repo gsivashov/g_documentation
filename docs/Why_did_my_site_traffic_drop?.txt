@@ -1,0 +1,89 @@
+Why did my site traffic drop?Diagnose ranking and impression drops for your siteWhy did your page or site suffer a drop in impressions, clicks, or position on Google Search? Follow this troubleshooting guide (you'll need to be a verified user/owner of the site in Search Console).
+Top reasons for drops
+Here are the most common reasons for drops in impressions, clicks, and position on Google Search:
+#1: Your property definition doesn't match your site URL
+Does your Search Console property definition match your site URL? That is, if your site is http://example.com, is your Search Console property defined as http://example.com or https://example.com? Mixing up http and https is probably the most common reason for "missing" search traffic; your traffic might not have dropped, you might just be looking at the wrong Search Console property.
+#2: Google hasn't crawled (or recrawled) your site yet
+You posted your page, or fixed it, and requested a (re)crawl very recently, but Google hasn't crawled it yet. Many people expect Google to index or re-index a page instantly. In fact, it can take a week or more to recrawl a site, based on many factors.
+If you've submitted a sitemap or requested a URL crawl, please be patient. If you have posted a page on your site without telling us about it, it might take us even longer to find the page, so you should request a crawl.
+#3: Your site is missing, removed, or affected by a manual action
+Is your site on Google? Confirm that your site is still available in Google Search:
+For a page, search for the exact page URL in Google -- www.example.com/pets/llama
+For a site, do a site: search for your site -- site:www.example.com
+If either your page or site is missing from Google, here's how to figure out why.
+Are you subject to a manual action or security issue?
+Check the Manual Actions report.
+Check the Security Issues report.
+If you have a manual action or security issue, fix them as described in the report's help pages.
+See if you or anyone else has filed a successful URL removal request on your site. If so, you'll have to cancel or dispute the request to appear in search again.
+#4: You recently moved your site
+Did you change your host name (for example, from www.example.com to www.newexample.com)?
+Did you move existing pages to new URLs on the same site (for example, example.com/mypage to example.com/anotherpage)?
+Did you move from http to https?
+If any of these are true, read the troubleshooting section for site moves.
+If none of these reasons apply:
+Continue with the rest of this troubleshooting guide.
+1. Check your index coverage
+If Google can't find and index your site, all your numbers will drop, so start by checking your site coverage in the Google index:
+Open the Index Coverage report for your site.
+Toggle the report to show valid pages, and look at the chart for any drops in indexed pages. If so, toggle the report to show indexing errors, warnings, and excluded URLs. Look for spikes that correspond to your indexing drops and drill into the details. You should find clues that explain why pages that were once indexed can no longer be indexed, and the documentation for the error should explain how to fix the issue. Here are the most common root causes:
+Template issues - New templates can cause problems that affect large portions of your site at once.
+Site moves - Be sure to follow our guidelines for site moves, and see our troubleshooting guide.
+Permission/access or other crawling issues - These will be noted and described in the issue summary table. These are typically 'noindex' directives, robots.txt exclusions, or site login pages.
+If you have found and fixed indexing issues, request validation of your fixes. Validation and re-indexing can take a week or two, so check your traffic again in a few weeks to see if it has recovered.
+If indexing errors don't seem to be an issue, continue to the next step, checking your search traffic numbers.
+2. Check your search traffic numbers
+Determine exactly what numbers have changed for your site:
+Open the Performance report for your site.
+Display data for impressions, CTR, and position.
+View your search traffic by query, country, and device to see if your drop is related to a specific category. If you see a drop tied to a specific category, investigate that issue more deeply:
+If your mobile traffic has dropped, examine your site's Mobile Usability report.
+If your traffic for specific countries is low, ensure that you have enabled any hreflang implementation correctly, and that you haven't accidentally set your site targeting incorrectly.
+If traffic to a specific page has dropped, use the URL Inspection tool. The tool has detailed troubleshooting information. Among the most common issues:
+The page is not canonical. If Google has selected another page as canonical, it will not show up in search results.
+The page can't be crawled. There are many reasons why a page can't be crawled or indexed; the documentation for the URL Inspection tool describes how to troubleshoot crawling and indexing issues.
+If your video traffic has dropped, confirm that you haven't introduced any changes recently, and see if you are following video best practices.
+If your image traffic has dropped, confirm that you haven't introduced any changes recently, and see if you are following image best practices, and confirm that you're not blocking images from Google with your robots.txt file. You can use the URL Inspection tool on the image host page to see whether Google can fetch the image.
+If your AMP pages have dropped in position, impressions, or clicks, troubleshoot your AMP changes.
+Check whether your drop is periodic.
+See if you have a drop in CTR without a matching drop in impressions.
+See if you have matching drop in both CTR and impressions.
+See if you have a significant, persistent drop in position.​
+Periodic drop
+See if you can detect a pattern to your drop over a weekly, monthly, or yearly span. If you see a pattern, think how it might be related to the content on your site. For example, if you sell ice cream you will probably see an annual fluctuation in search traffic. Be sure that if your site has services for all seasons (for example, if you sell both ice cream and hot chocolate) that your site emphasizes all services.
+Drop in CTR without a matching drop in impressions
+If users are seeing your site but not clicking through, the most likely cause is that other search results are more compelling than yours. This could be because the other sites have more meaningful titles, snippets, or search features, or that other sites could be considered more reliable or authoritative by users.
+Do some site searches to learn what other results are appearing. Are these results more useful? More informative? Do they have a special search feature that might be appealing?
+Read about improving your titles and snippets and implementing rich results.
+Drop in impressions and CTR
+If your site has a general drop in both impressions and CTR, here are some things to investigate:
+Is your site mobile-friendly? See how many queries are from mobile devices, and look at the Mobile Usability report for your site or run the Mobile-Friendly test on specific pages. Compare your mobile and desktop impressions separately in the Performance report by adding a filter to compare desktop vs mobile.
+Has your search position dropped below the fold? It's not easy to determine whether a position is past the first "page" of results, but look for a position change that corresponds to your impression drop. If you see a position change, see Drop in position.
+Is your page showing for the queries that you expect? In the Performance report, look at your queries and see how your impressions change over time; if impressions are dropping,
+See if your site is being indexed correctly. If Google isn't finding your pages, or if they are dropping from the index, they won't appear for those queries.
+See if someone else is performing better for those queries. Do an incognito search for those queries to see the results in Google Search. Do pages that rank higher than yours have more, better, or newer content?
+Is your site targeting the wrong language or locale? Check for hreflang errors, or country-specific targeting that might have  caused a drop in your impressions or clicks.
+Is your page canonical? Only a canonical page will appear in search results. If Google has selected another page as canonical, it will not appear in search results. If impressions have dropped for a specific page, use the URL inspection tool to see if that page is canonical and whether it can be crawled. If the canonical page is in a property that you don't own, you won't be able to see the traffic, or even the canonical URL.
+Occasionally we see bad actors on the web who copy large portions of an existing website onto their own site in order to draw traffic. If you see a site that has copied your content, you can file a removal request. If someone has filed a bogus takedown request on your site after copying its content, you can file a counter-claim.
+Drop in position
+In general, you should not focus too much on your absolute position, or even small fluctuations in position. Impressions, clicks and total visitor count are, in the end, the ultimate measure of success for your site. However, if you do see a dramatic, persistent drop in position, you can try to address it. Drops in position are often caused by one of the following reasons:
+Another site has improved their quality or relevance more than yours. Perform some search queries in incognito mode, see which sites are performing better than yours, and try to determine why that is so: are the other results more useful, complete, or up-to-date than yours?
+Your site has content that has become stale, incorrect, or less useful than it used to be. Try to keep your site accurate, useful, and up to date.
+Google is having problems finding or reading your site. This will be seen as an increase in indexing errors in the Index Coverage report. If you recently made changes to your site, give us a few weeks to update our index. You can follow our progress in the Index Coverage report.
+You used to qualify for search appearance features (which generally have a higher position) but no longer do so. Examine your site's rich result reports and AMP report to ensure that you haven't introduced any new errors.
+Your site's mobile usability has decreased, making the site less useful for mobile visitors.
+There has been a drop in the number or quality of sites that link to you. You can see who is linking to your site here.
+There was a change to our ranking or reporting algorithms. See if a change is mentioned in the Webmaster Central blog and our data anomalies page; otherwise, follow best practices in the Webmaster Guidelines and Google search quality rater guidelines.
+Check your traffic data and see if your drop is tied to a specific factor (query, page, country, or device). If so, try to determine the root cause.
+Read our quality guidelines to learn what we value in a website.
+Follow the recommendations in the SEO starter guide, particularly the recommendations on optimizing your content.
+AMP impression/click/position drop
+AMP ranking and CTR drops can occur if you are not getting a rich result for your AMP results. Confirm that your AMP pages are being indexed, and that they are eligible for rich results.
+For a site-wide perspective, open the AMP report for your site, and look for an increase in errors, which are non-indexable pages.
+Drill down to a few URLs and debug the problems.
+If you have included structured data on your AMP pages to enable them to be shown as a rich result, test your pages using the Structured Data Testing Tool. Enter the URL of your live page rather than copying your page code into the tool.
+To test an individual page, run the URL inspection tool on your AMP URL, and test the page using the Structured Data Testing Tool.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Troubleshooting resultsWhy did my site traffic drop?Why is my page missing from Google Search?Why is my site blocked from Google Search?Why does my search result look wrong?
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

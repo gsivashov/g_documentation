@@ -1,0 +1,16 @@
+Google DiscoverOptimize your content for DiscoverGoogle can present a summary of your page as a card shown to users in Discover, which is a scrollable list of topics that users can browse on their mobile devices. Tapping a card will send the user to the page that is the source of the Discover entry.
+Discover shows users a mix of content based on their interactions with Google products or content that they choose to follow directly. And we're not limited to what's published today — if we think that a user would find earlier content interesting, then Discover will show it.
+Discover also features videos, sports scores, entertainment updates (such as a new movie release), stock prices, event information (such as the nominees for a major award ceremony, or the lineup of an upcoming music festival), and more. Discover is a content hub for all of your interests.
+Optimize your content for Discover
+Discover content is algorithmically ranked by what Google thinks a user would find most interesting. Content ranking is powered by the strength of the match between an article's content and a user's interests, so there aren't any methods for boosting the ranking of your pages other than posting content that you think users will find interesting.
+We strongly encourage you to follow Google's Webmaster Guidelines to make sure your pages are indexed correctly and easily accessible to users. Your pages are eligible to appear in Discover if they are indexed by Google and meet Google News content policies. No special tags or structured data are required.
+The two best ways to boost the ranking and performance of your Discover content are (1) to post content that you think users would find interesting and (2) to use high-quality images in your content. Publishers experience a 5% increase in clickthrough rate, a 3% increase in time spent on their pages, and a 3% increase in user satisfaction when Discover cards feature large images instead of thumbnail images.
+To enable large images in your Discover results:
+Use large, high-quality images that are at least 1,200 px wide, and
+Ensure that Google has the rights to display your high-quality images to users, either by using AMP or by filling out this form to express your interest in our opt-in program.
+Monitor your performance on Discover
+If you have content on Discover, you can monitor your performance using the Performance Report for Discover. This report shows impressions, clicks, and CTR for any of your content that has appeared in on Discover in the last 16 months, as long as your data reaches a minimum threshold of impressions.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+MobileMobile viewing on feature phonesWeb Light: Faster and lighter mobile pages from searchAd network support for Web Light pages in Google SearchGoogle DiscoverResources for developing mobile-friendly pagesAnnounce mobile billing charges clearlyAssociate your Android app with a website
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

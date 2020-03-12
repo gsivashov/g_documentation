@@ -1,0 +1,51 @@
+Get my personal information off GoogleHandle leaks of personal informationThis page describes how to request removal of certain types of personal information from Google.
+Step 1 - Is the information covered by our policies?
+Under our voluntary Search Removal policies, Google may voluntarily remove web pages from our search results if the pages contain the following kinds of personal information:
+Information we may remove:
+Bank account numbers
+National ID numbers
+Confidential, private personal medical records
+Images of hand-written signatures
+Nude or sexually explicit images or videos of a person shared without consent
+Other information that can create significant risks of identity theft, financial fraud, or other specific harms
+If the information is one of these types, continue to the next step.
+However, our voluntary removal policies do not cover the following:
+Dates of birth
+Addresses
+Telephone numbers
+Unflattering or unwanted pictures of you, your house, or your family (unless they are sexually explicit and posted without your consent)
+A social media post about a recent injury
+If our voluntary removal policies don't cover the information that you want removed, take a look at the general removals page.
+Step 2 - Where does the information appear?
+Your next step depends on where the information appears:
+Only in Google
+But no longer on the website (that is, the page is no longer available or the information was removed):
+If the information appears in Google Search autocomplete, learn how to report a prediction.
+If the information is no longer on the website, but still appears in Google Search results (that is, it is cached by Google), you should file an outdated content removal request. Be sure that you have the correct URL for the page. (If you are signed up for Search Console and are a verified site owner, file a URL removal request instead and then follow additional steps below for website owners.)
+Only on the website
+But no longer in Google Search results:
+If the information does not appear in Google Search results but only on the website, there's nothing we can do, unfortunately. You should contact the site's webmaster and ask them to remove the information. If you own the website, see the additional steps for website owners below.
+Both on Google and the website
+If the information is covered by our voluntary removal policies and is available both on the website and in Search results, visit the troubleshooter to file a removal request. Be sure that you have the correct URL for the page. If you own the website, see the additional steps for website owners below.
+If you own the website hosting the content
+If you operate the website hosting the content, you can take additional steps to remove it from your own site, as well as from Google’s search results. (If you do not operate the website, the site’s webmaster may be able to do this.)
+Determine which pages host the information
+Which folders or subdomains of the website (URL patterns) are involved?
+Is it simply one URL? If multiple URLs, do you have a list of all the URL patterns involved?
+Be sure that you are using the correct URL for the page.
+Remove the information from Google
+Use the Remove URLs tool to remove the page from Google Search, but be sure that you also block or remove the information from the page itself; the tool removes pages from Google Search only temporarily. Removed pages may return to our search results if no changes are made on the website. Read the tool documentation carefully to learn how to remove single pages, directories, or entire sites. If you have removed the information from your site, you can clear the cache only; otherwise, remove the affected pages as well as the cache.
+Remove the information from your site
+Ensure that you have people with the appropriate rights on your website to make the required changes.
+Remove or block the information using the appropriate method:
+Remove the information from your page [Safest]
+Require a login
+Use the "noindex" tag to block pages from Google, or robots.txt to block images from Google.
+Read more about blocking URLs.
+Prevent the information from being shown again
+Perform regular spot checks for information using the site: search operator for your site. For example: site:example.com <private ID number here>
+Ensure that anyone working on users' personal data is made aware of how to prevent search engine discovery of that data on the site, and how to prevent anonymous access to user data.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Removing informationRemove information from GoogleGet my personal information off GoogleRemove outdated content tool
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -1,0 +1,211 @@
+Home
+Products
+Search for Developers
+Guides
+Build, Test, and Release Your Structured Data
+Google recommends becoming a
+verified site owner
+of your site in Search Console. Search
+Console provides many useful debugging and monitoring
+reports and tools to test rendering, availability, and structured data indexing.
+Create new pages
+Try
+our new Structured Data Codelab. This codelab walks you through adding several types of
+structured data to a simple HTML site, including where to place structured data on a site
+and how to validate it.
+Here is our recommended process for creating new structured data pages:
+Follow the structured data guidelines for your page and
+feature type. For example, if your page is a recipe, be sure to follow the
+guidelines for Recipes.
+Validate your code using the Structured
+Data Testing Tool. Paste your code into the tool and click the validate button.
+Tip:
+For some result types, the Structured Data Testing Tool lets you generate a sample view of a
+result from your data. For those types, after you click "validate" on the tool, if
+the code is valid
+you will see a "Preview" button, which will generate a sample
+search result display based on your data.
+Deploy a few pages using your structured data and use the
+URL Inspection tool to test
+how Google sees the page.
+Be sure that your page is accessible to Google and not blocked by
+robots, noindex, or login requirements. If the page looks okay, use that tool to request an
+index of the page. Read here to find out how
+to test a page hosted on a local server or behind a firewall.
+After Google has indexed the page, look for errors and properly processed data using the applicable
+Rich result status reports.
+Ideally you should see an increase of rich results or structured data types
+and no increase in error rates.
+If you see your structured data being crawled without errors, update your sitemap to have Google crawl
+those pages regularly.
+If you find problems in your structured data, fix it, retest on URL Inspection, and request another
+index until everything looks good in the reports. Then deploy the rest of your pages.
+Monitor your error rates periodically using the applicable
+Rich result status reports, especially after releasing new templates or updating your code.
+Fix existing pages
+Sign up as a verified site
+owner of your site in Search Console. If
+Search Console notices any dramatic changes in error rates, you might be notified by email
+about the change.
+Periodically monitor your pages using the applicable
+Rich result status
+reports. Here are some common reasons for errors:
+If you see an increase in errors, perhaps you rolled out a new
+template that doesn't work, or your site interacts with the existing template in
+a new and bad way.
+If you see a total decrease in structured data, check whether the
+sudden decrease in indexed structured data is matched by an
+increase in errors. If not, perhaps you are
+no longer embedding structured data in your pages, or the pages are inaccessible to
+Google (perhaps pages are blocked by robots.txt or noindex). Test page
+availability using the
+URL Inspection tool.
+You can retest a specific page using the Structured
+Data Testing Tool.
+Fix your code and test it using the Structured
+Data Testing Tool. Read here to find out how
+to test a page hosted on a local server or behind a firewall.
+Roll out your fix and wait for Google to recrawl your page. Remember that this can take a few days.
+Allow time for re-crawling and re-indexing! Remember that it
+takes several days after publishing a page for Google to find and crawl it.
+Fix pages with manual actions
+If you have a structured data manual action against your page,
+the structured data on the page
+will be ignored (although the page can still appear in Google Search results).
+Verified site owners in Search
+Console receive an email message when their site is affected by a manual action. You can
+open the Manual Actions page in
+Search Console to see any manual actions affecting your site.
+If you are not a
+verified site owner in Search Console, you will not be
+able to check if your site has manual actions.
+To diagnose and fix your code:
+Open the Manual Actions page for your site.
+Expand the Site-wide matches and Partial
+matches sections, if they are collapsed, and look for any structured data issues.
+Determine which pages and which rich result types are affected.
+For
+partial matches (actions that affect only part of your site), you should see the URLs
+of some example pages that are non-compliant.
+For issues that affect the entire site, you won't see URLs for example pages, so you
+will have to do some detective work to determine the cause of the failure. Look into
+recent changes in your templates as a clue to what changed recently and might be
+triggering the action.
+Read all the guidelines (very carefully!) for each rich result
+type affected by the action to find which guideline you are not compliant with:
+General technical
+guidelines for all result types
+General quality
+guidelines for all result types
+Guidelines for your specific rich result type (for example,
+Event,
+Review snippet,
+or Job Posting)
+Take a look at Common structured data errors below. The problem
+can be caused by either spammy content or spammy markup usage. However, the issue may not
+be a syntax issue, and so a markup validator won't be able to identify these issues.
+Fix the issue and republish your pages.
+Submit a reconsideration
+request in the Manual Actions report for each specific manual action. Do not
+submit a reconsideration request unless you think the issue is fixed; filing multiple
+reconsideration requests on unfixed content can negatively affect the page review time.
+Wait for the results of the request, which can take several days
+(more than 3). You will get either a confirmation that you fixed the issue, or a notice that
+the problem was not fixed.
+Common structured data errors
+Here are some common causes of structured data manual actions.
+Affected types
+Description
+All items
+The information in the structured data is not shown in the user-visible text. For
+example, review stars are in the structured data but not on the page. This would cause the
+stars to appear only in Search results, but not on the page. This often occurs with Products
+or Reviews.
+Relevant guidelines:
+The marked-up content is hidden
+from the user.
+Markup should not be used to hide
+content not visible to users in any form, since it might create a misleading or deceptive
+search experience. For example, if the JSON-LD markup describes a performer, the HTML
+body should describe that same performer.
+Make sure the
+reviews and ratings you mark up are readily available to users from the marked-up page.
+Event
+A page is using event markup but there is no visible event content on the page.
+The visible text or description in markup is more concerned with promoting/selling the event than
+describing what it is.
+Relevant guidelines:
+Avoid marking non-events as events: Don’t
+promote non-event products or services such as "Trip package: San Diego/LA, 7 nights" as events.
+Don’t add short-term discounts or
+purchase opportunities, such as: "Concert — buy your tickets now," or
+"Concert - 50% off until Saturday".
+Job
+Job markup used, but no job related content on the page
+No way to apply for the job
+Job markup doesn't match the user-visible job description
+Payment required to apply, or the job seems to be fake
+Misleading job documentation
+Relevant guidelines:
+Job Posting guidelines
+List items
+Don't treat a list of items (of any type) as a single item when assigning item properties.
+For example, do not assign a single review rating or location to a list of items; instead you should apply
+individual attributes to each item in the list. Don't treat lists of
+"summer dresses" or "cake recipes" as a single items.
+Relevant guidelines:
+Marking up just one category entity
+from all listed on the page is against our guidelines.
+Provide review
+and/or rating information about a specific item, not about a category or a list of
+items. For example, "summer dresses" or
+"cake recipes" are not specific items.
+Use markup for a specific product, not a
+category or list of products. For example, "shoes in our shop" is not a
+specific product.
+Use recipe property markup for a single
+recipe, not a category of recipes or a list of recipes. For example, "10 apple pie
+recipes" is not a single recipe.
+Product
+The name of the product must be 1) The name of the product itself, not the name of the
+manufacturing or selling company, and 2) A real product name, not a description. Examples of
+invalid product names: "Android Phones", " "Nexus Phones,"
+or "Top-Selling Nexus Phones". Example of a valid product name: "Nexus 5X".
+Relevant guidelines:
+Use markup for a specific product, not a
+category or list of products. For example, "shoes in our shop" is not a
+specific product.
+Product, Review
+A review is written by the site or person providing the product or service, rather than a customer or independent,
+unpaid reviewer.
+Relevant guidelines:
+Snippets must not
+be written or provided by the business or content provider unless they are genuine,
+independent, and unpaid editorial reviews.
+Product, Review
+Reviews are shown on the page without a mechanism for
+readers to submit their own reviews. Exception: A page can offer
+a single review without a mechanism to submit reviews when it is clearly
+indicated who the author is (and
+the reviewer cannot be the one making the
+product). For example, an art dealer can offer a review of the Mona Lisa for sale on his
+website; however, Leonardo DaVinci could not offer a review of the Mona Lisa for sale on his
+own website (even if he provided a mechanism for users to submit other reviews).
+Relevant guidelines:
+Make sure the
+reviews and ratings you mark up are readily available to users from the marked-up page.
+Review
+The review rating assigned is the average of all items on the page or
+list, rather than the value for that specific item. Review ratings must be targeted to a single item.
+Relevant guidelines:
+Provide review
+and/or rating information about a specific item, not about a category
+or a list of items. For example, "summer dresses"
+or "cake recipes" are not specific items. See also our structured data
+guidelines for multiple entities on the same page.
+Recipe
+A page using recipe markup isn't about recipes.
+Relevant guidelines:
+Recipe guidelines.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-06.

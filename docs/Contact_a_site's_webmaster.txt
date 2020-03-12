@@ -1,0 +1,14 @@
+Contact a site's webmasterTo remove content from a website, you usually need to contact the webmaster, the person who owns the website . Even if you found the content using Google, Google doesn't control the content on the site.
+Why contact the webmaster?
+Even if Google deletes the site or image from our search results, the page still exists on the site. This means it can be found through the URL to the site, social media sharing, or other search engines.
+Your best option is to contact the webmaster because they can remove the page entirely.
+Note: If a photo or information shows up in Google search results, it just means that the information exists on the Internet and it doesn’t mean that Google endorses it.
+How to contact a webmaster
+There are several ways to contact the owner of a site:
+Contact us link: Find a “Contact us” link or an email address for the webmaster. This information is often on the site's homepage.
+Find contact information using Whois: You can perform a Whois ("who is?") search for the site owner using Google. Go to google.com and search for whois www.example.com. The email address to contact the webmaster can often be found under "Registrant Email" or "Administrative Contact."
+Contact the site's hosting company: The Whois search result usually includes information about who hosts the website. If you're unable to reach the webmaster, try contacting the site's hosting company.
+If the webmaster has already made the changes you requested to a site that appears in our search results, you can ask that we remove outdated information by sending a webpage removal request.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Contact a site's webmaster

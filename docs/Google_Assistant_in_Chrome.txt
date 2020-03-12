@@ -1,0 +1,24 @@
+Google Assistant in ChromeGoogle Assistant in Chrome (powered by Duplex on the Web) automates certain user tasks, such as buying movie tickets, for your site visitors. This page describes how to enable or disable Google Assistant in Chrome for your website. Learn more about Google Assistant in Chrome.
+Enable Google Assistant in Chrome for your site
+Google Assistant in Chrome is enabled by default on your site. Google Assistant in Chrome has two parts:
+Crawling and Analyzing: Google Assistant in Chrome is powered by the Duplex on the Web user agent. To control how Google Assistant in Chrome crawls and analyzes your site, see Duplex on the Web user agent.
+Serving: When serving is enabled, Google Assistant in Chrome can offer your site visitors to perform various tasks, such as purchasing movie tickets. Serving is configured in your Search Console property settings and is enabled by default.
+If crawling and analyzing is disabled, but serving is enabled, Google Assistant in Chrome might not work well, or at all, on your site.
+To enable serving of Google Assistant in Chrome for your site:
+Open the Google Assistant in Chrome settings page for your property and click Enable, if not already selected.
+Optional: If your site is password-protected, we recommend providing a name and password on this page to enable Google Assistant in Chrome to access and train against your site.
+Google notifies you when your request has been processed and the assistant has begun training against your site.
+The following rules apply to the Google Assistant in Chrome settings page:
+Permissions:
+You must be a property owner to change the enabled state of Google Assistant in Chrome.
+Google Assistant in Chrome settings are visible and configurable only in a domain property. URL-prefix properties cannot see or modify these settings.
+Multiple property owners: The enabled state applies to the property, not to the user. All property owners will be able to see a setting change.
+Nested properties: Google Assistant in Chrome settings are inherited from the topmost containing property, and can be modified only in the topmost containing property. Child properties have read-only access to the settings. So if you own both m.example.com and example.com, you can only change settings on example.com.
+Disable Google Assistant in Chrome on your site
+To disable Google Assistant in Chrome on your site, click Disable in the Google Assistant in Chrome settings page. Disabling should be effective within a few minutes.
+To disable crawling, you can add a robots.txt rule to your site. The robots.txt rules take effect at the next training session.
+If you choose to enable it again, it may take a few days Google Assistant in Chrome to take effect.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingGoogle Assistant in ChromeInternational Targeting reportChange Googlebot crawl rate
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

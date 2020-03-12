@@ -1,0 +1,46 @@
+Manage your sitemapsImage sitemapsNext: Create a Google News sitemapFollow Webmaster Guidelines and best practices for publishing images to increase the likelihood that your images can be found in Image Search results. Additionally, you can use Google image extensions for sitemaps to give Google more information about the images available on your pages. Image sitemap information helps Google discover images that we might not otherwise find (such as images your site reaches with JavaScript code), and allows you to indicate images on your site that you want Google to crawl and index.
+You can use a separate sitemap to list images, or you can add image information to an existing sitemap. The following example shows a sitemap entry for the page http://example.com/sample.html, which contains two images.
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>http://example.com/sample.html</loc>
+<image:image>
+<image:loc>http://example.com/image.jpg</image:loc>
+</image:image>
+<image:image>
+<image:loc>http://example.com/photo.jpg</image:loc>
+</image:image>
+</url>
+</urlset>
+You can list up to 1,000 images for each page, using the syntax outline in the example above!
+XML namespace
+xmlns="http://www.google.com/schemas/sitemap-image/1.1"
+Image tag definitions
+Tag
+Required
+Description
+<image:image>
+Yes
+Encloses all information about a single image. Each <url> tag can contain up to 1,000 <image:image> tags.
+<image:loc>
+Yes
+The URL of the image.
+In some cases, the image URL may not be on the same domain as your main site. This is fine, as long as both domains are verified in Search Console. If, for example, you use a content delivery network such as Google Sites to host your images, make sure that the hosting site is verified in Search Console. In addition, make sure that your robots.txt file doesn’t disallow the crawling of any content you want indexed.
+<image:caption>
+Optional
+The caption of the image.
+<image:geo_location>
+Optional
+The geographic location of the image. For example, <image:geo_location>Limerick, Ireland</image:geo_location>.
+<image:title>
+Optional
+The title of the image.
+<image:license>
+Optional
+A URL to the license of the image.
+Next: Create a Google News sitemap
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Manage your sitemapsLearn about sitemapsBuild and submit a sitemapSitemaps reportSplit up your large sitemapsSitemap extensionsVideo sitemaps and video sitemap alternativesImage sitemapsCreate a Google News sitemap
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

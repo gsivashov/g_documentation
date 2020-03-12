@@ -1,0 +1,607 @@
+Home
+Products
+Search for Developers
+Reference
+Get your event on Google
+The event experience on Google makes it easier for people to discover and attend events through Google Search results and other Google products, like Google Maps. This feature brings many benefits:
+More interactive results: Your events can be eligible to be displayed in
+the event experience on Google, featuring your logo, description of the event, and more.
+Increased chances of discovery and conversion: People have a new way to
+interact with your event posting and click through to your site. Learn how
+Eventbrite saw a 100% increase in
+the typical year-over-year growth of traffic from Google Search.
+There are three options to make your events eligible to appear on Google:
+If you use a third-party website to post events (for example, you post events on ticketing websites or social platforms), check to see if your event publisher is
+already participating in the event search experience on Google. If your event publisher is
+integrated with Google, continue to post your events on the third-party website. You can
+stop reading here.
+If you use a CMS (for example, WordPress) and you don't have access to your HTML, check
+with your CMS to see if there's a plugin that can add structured data to your site for you.
+Alternatively, you can use the
+Data Highlighter to tell
+Google about your events without editing the HTML of your site.
+If you're comfortable editing your HTML, use
+structured data to directly integrate with Google. You’ll need to edit the HTML of the
+event pages.
+Example
+Here's an example of Event in JSON-LD. You can also use Microdata or RDFa
+syntax.
+The actual appearance in search results might be different. Preview the
+structured data in the Structured Data Testing Tool for the most up-to-date layout.
+<html>
+<head>
+<title>The Adventures of Kira and Morrison</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Event",
+"name": "The Adventures of Kira and Morrison",
+"startDate": "2025-07-21T19:00",
+"endDate": "2025-07-21T23:00",
+"location": {
+"@type": "Place",
+"name": "Snickerpark Stadium",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "100 West Snickerpark Dr",
+"addressLocality": "Snickertown",
+"postalCode": "19019",
+"addressRegion": "PA",
+"addressCountry": "US"
+}
+},
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"description": "The Adventures of Kira and Morrison is coming to Snickertown in a can’t miss performance.",
+"offers": {
+"@type": "Offer",
+"url": "https://www.example.com/event_offer/12345_201803180430",
+"price": "30",
+"priceCurrency": "USD",
+"availability": "https://schema.org/InStock",
+"validFrom": "2024-05-21T12:00"
+},
+"performer": {
+"@type": "PerformingGroup",
+"name": "Kira and Morrison"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Region and language availability
+We are excited to bring the event search experience on Google to more regions around the world. The experience is currently available in the following regions and languages.
+List of available regions and languages
+Region
+Available languages
+Australia
+English
+Bangladesh
+English
+Brazil
+Portuguese
+Canada
+English
+Germany
+German
+India
+English
+Latin America
+Spanish
+Netherlands
+English
+Nigeria
+English
+Pakistan
+English
+Philippines
+English
+Singapore
+English
+Spain
+Spanish
+United Kingdom
+English
+United States
+English
+Integrate with the event experience on Google
+Here's an overview of how to integrate with the event experience on Google:
+Ensure that Googlebot can crawl your event pages (meaning, your pages aren't protected by
+a robots.txt file or robots meta tag).
+Ensure that your server can handle
+increased crawl rate.
+Make sure you follow our guidelines.
+If you have several copies of the same event posting on your site hosted under different
+URLs, use canonical URLs
+on each copy of the page.
+Add structured data to your event pages. Currently, the event
+experience on Google only supports pages that focus on a single event. We recommend
+focusing on adding markup to your event posting pages instead of pages that list schedules
+or multiple events.
+If you’re just getting started, learn more about
+how structured data works. You can
+also try the
+structured
+data codelab, which walks you through how to add structured data to your website.
+Test and preview your structured data.
+Check the index status of your URLs and request for your URL to be
+crawled with the
+URL inspection tool in
+Search Console. To confirm if crawlers are able to access structured data on your page, use
+the Live Test feature.
+Keep Google informed of new event pages or
+changes to existing event pages.
+We recommend that you
+make your sitemap available
+automatically through your server. This is the best way to make sure that your new
+and updated content is highlighted to search engines as quickly as possible. Most content
+management systems (CMS) can take care of this for you.
+Monitor performance in Search
+To understand how users interact with your event postings, use the following Google tools:
+Use the Performance
+Report in Search Console to
+showevent listing or
+detail view data for a given event posting in Search results. You can automatically
+pull these results with the
+Search
+Console API.
+Use the Rich result status
+report in Search Console to understand what Google could or could not read from your
+site, and troubleshoot rich result errors.
+Guidelines
+You must follow these guidelines to be eligible to appear in the event search experience on
+Google.
+Warning: If your site violates one or more of these guidelines,
+then Google may take manual
+action against it. Once you have remedied the problem, you can submit your site for reconsideration.
+Technical guidelines
+Content guidelines
+Webmaster guidelines
+General structured data guidelines
+Technical guidelines
+The target page must contain structured data items from event types on schema.org.
+Each event MUST have a unique URL (a leaf page) and markup on that URL.
+Currently, the event experience on Google only supports pages that focus on a single
+event. We recommend focusing on adding markup to your event posting pages instead of pages
+that list schedules or multiple events.
+Content guidelines
+Each event must accurately describe the event name, start date, and location.
+Avoid marking non-events as events:
+Don’t promote non-event products or services such as "Trip package: San Diego/LA, 7
+nights" as events.
+Don’t add short-term discounts or purchase opportunities, such as: "Concert — buy your
+tickets now," or "Concert - 50% off until Saturday."
+Don’t mark business hours as events, such as: "Adventure park open 8 AM to 5PM."
+Don't mark coupons or vouchers as events, such as: "5% off your first order."
+Mark up multi-day events correctly:
+If your event or ticket info is for an event that runs over several days, specify both
+the start and end dates of the event.
+If there are several different performances across different days, each with individual tickets,
+add a separate Event element for each performance.
+Structured data type definitions
+The full definition of Event is available
+at schema.org/Event.
+You must include the required properties for your content to be eligible for display in enhanced search results.
+You can also include the recommended properties to add more information about your content,
+which could provide a better user experience.
+Required properties
+location
+Place
+A nested Place. For example:
+"location": {
+"@type": "Place",
+"name": "Snickerpark Stadium",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "100 West Snickerpark Dr",
+"addressLocality": "Snickertown",
+"postalCode": "19019",
+"addressRegion": "PA",
+"addressCountry": "US"
+}
+}
+location.address
+PostalAddress
+The venue's detailed street address.
+Not recommended: Sydney
+Recommended: Bennelong Point,
+Sydney NSW 2000, Australia
+United States example
+"location": {
+"@type": "Place",
+"name": "Snickerpark Stadium",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "100 West Snickerpark Dr",
+"addressLocality": "Snickertown",
+"postalCode": "19019",
+"addressRegion": "PA",
+"addressCountry": "US"
+}
+}
+Japan example
+You can write addresses for Japan in different ways, and Google still understands the
+address. Here's an example with the street address, locality, and country in
+different fields.
+"location": {
+"@type": "Place",
+"name": "ダイバーシティ東京",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "江東区青海1-10",
+"addressLocality": "東京",
+"addressCountry": "日本"
+}
+}
+Here's an example of the street address and address country in different fields.
+"location": {
+"@type": "Place",
+"name": "ダイバーシティ東京",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "東京都江東区青海1-10",
+"addressCountry": "日本"
+}
+}
+Here's an example of the entire address on one line.
+"location": {
+"@type": "Place",
+"name": "ダイバーシティ東京",
+"address": {
+"@type": "PostalAddress",
+"name": "東京都江東区青海 1-1-10 ダイバーシティ東京プラザ"
+}
+}
+Best practices:
+If the event happens across several streets, define the starting location and mention
+the full details in description.
+If the event happens without a well-defined location, use the city name or the most
+representative location.
+If the event happens at multiple locations at the same time, create different events for
+each location.
+name
+Text
+The full title of the event.
+DO NOT put the name of the event location. Instead, use
+location.name to specify the name of the location
+where the event is being held.
+Not recommended: Bill Graham Civic Auditorium
+Not recommended: **LIMITED TIME SALE -
+Kesha and Macklemore Concert - $25**
+Recommended: The Adventures of Kesha and
+Macklemore
+Recommended: Meet and Greet: Kesha and
+Macklemore
+Best practices:
+Don't use the type of event as the name of the event. For example, "Concert" is not
+a descriptive name for an event.
+Don't include extraneous information like URLs, prices, or performers. Instead, use
+the appropriate properties for those values.
+Highlight a unique aspect of the event in the title. This helps users make faster
+decisions (for example, "feat. Q&A with the artist").
+Don't add short-term promotions (for example, "buy your tickets now").
+startDate
+DateTime
+The start date and start time of the event in
+ISO-8601 format.
+Add both the date and time so users can more easily find events that fit into their
+schedule. For example:
+"startDate": "2025-07-21T19:00"
+If you don't know the start time or the event is a day long event, don't enter fake
+time or 00:00 (00:00 means a midnight start time). Instead, only specify the
+start date.
+Recommended: "startDate": "2025-07-21"
+Not recommended: "startDate": "2019-08-15T00:00:00+00:00"
+Not recommended: "startDate": "2019-07-20T00:00:00"
+How to specify timezones
+Specify the timezone by including the offset to UTC or GMT. If the event starts at 7pm on September 5 in
+New York, the startDate value would be GMT/UTC-5 during standard time
+and GMT/UTC-4 during daylight savings time. During standard time, startDate
+value would be "2019-09-05T19:00:00-05:00" or
+"2019-09-05T19:00:00-04:00" respectively. If no timezone is provided,
+Google uses the timezone of the event's location as specified in location.
+Best practices
+Event takes place over a range of dates: If the event takes place
+over the course of multiple days, indicate both the start and end date. Don't
+indicate the time if you don't know the time.
+Recommended
+"startDate": "2019-07-01T10:00:00",
+"endDate": "2019-07-26T17:00:00"
+Recommended
+"startDate": "2019-07-01",
+"endDate": "2019-07-26"
+Not recommended
+"startDate": "2019-07-01T00:00:00+00:00",
+"endDate": "2019-07-26T23:59:59+00:00"
+Event starts at a specific hour:
+If the event starts at a specific time, such as 5pm locally, use
+2019-07-20T17:00:00. Include the appropriate UTC offset (for example,
+use 2019-07-20T17:00:00-07:00 if the event is in California).
+Event is a day long event: If the event is happening all day,
+don't specify a granular hour for the start date. For example, you can use
+2019-08-15 as both the startDate and endDate
+for a day-long event.
+Event start hour isn't known: If you don't know the hour for the
+start time, don't specify a granular hour. For example, you can use
+2019-08-15 as both the startDate and endDate.
+Examples of how Google
+interprets dates
+Here are some examples of how Google interprets start date and time:
+Structured data
+Interpretation
+2019-08-15T00:00:00+00:00
+Google interprets the startTime to be
+2019-08-14T17:00:00-07:00 (if location is set to California) or
+2019-08-15T09:00:00 (if location is set to Korea).
+2019-08-15T23:59:59+00:00
+This doesn't mean the end of 2019-08-15 unless the event happens in
+the GMT timezone. Google interprets the startTime to be
+2019-08-15T16:59:59-07:00 (if location is set to California) or
+2019-08-16T08:59:59 (if location is set to Korea).
+2019-07-10
+This means the date regardless of the timezone. When used in startDate,
+it means the event starts in the location from sometime in that day. When used in
+endDate, it means the event ends in the location from sometime in that
+day.
+2019-07-20T00:00:00
+This means midnight on 2019-07-20 for the timezone where the
+event happens. This is also likely wrong unless the event was meant to start at
+midnight.
+Recommended properties
+description
+Text
+Description of the event. Describe all details of the event to make it easier for
+users to understand and attend the event.
+Best practices:
+Add a clear and concise description of the specific event.
+Focus on the event details and not your site's features.
+Don't repeat other facts like date and location, which should be marked up in the
+respective properties.
+Example
+"description": "The Adventures of Kira and Morrison is coming to Snickertown in a can’t miss performance."
+Google only shows a snippet of the full description.
+endDate
+DateTime
+The end date and end time of the event in
+ISO-8601 format.
+Use the same format as startDate. Add both the
+date and time so users can more easily find events that fit into their schedule. For example:
+"endDate": "2025-07-21T23:00"
+If you don't know the end time or the event is a day long event, don't enter fake
+time or 00:00 (00:00 means a midnight start time). Instead, only specify the
+end date.
+Recommended: "endDate": "2025-07-21"
+Not recommended: "endDate": "2019-08-15T00:00:00+00:00"
+Not recommended: "endDate": "2019-07-20T00:00:00"
+How to specify timezones
+Specify the timezone by including the offset to UTC or GMT. If the event ends at 7pm on September 5 in
+New York, the endDate value would be GMT/UTC-5 during standard time
+and GMT/UTC-4 during daylight savings time. During standard time, endDate
+value would be "2019-09-05T19:00:00-05:00" or
+"2019-09-05T19:00:00-04:00" respectively. If no timezone is provided,
+Google uses the timezone of the event's location as specified in location.
+Best practices
+Event takes place over a range of dates: If the event takes place
+over the course of multiple days, indicate both the start and end date. Don't
+indicate the time if you don't know the time.
+Recommended
+"startDate": "2019-07-01T10:00:00",
+"endDate": "2019-07-26T17:00:00"
+Recommended
+"startDate": "2019-07-01",
+"endDate": "2019-07-26"
+Not recommended
+"startDate": "2019-07-01T00:00:00+00:00",
+"endDate": "2019-07-26T23:59:59+00:00"
+Event ends at a specific hour:
+If the event ends at a specific time, such as 5pm locally, use
+2019-07-20T17:00:00. Include the appropriate UTC offset (for example,
+use 2019-07-20T17:00:00-07:00 if the event is in California).
+Event is a day long event: If the event is happening all day,
+don't specify a granular hour for the end date. For example, you can use
+2019-08-15 as both the startDate and endDate
+for a day-long event.
+Event end hour isn't known: If you don't know the hour for the
+end time, don't specify a granular hour. For example, you can use
+2019-08-15 as both the startDate and endDate.
+Examples of how Google
+interprets dates
+Here are some examples of how Google interprets end date and time:
+Structured data
+Interpretation
+2019-08-15T00:00:00+00:00
+Google interprets the endDate to be
+2019-08-14T17:00:00-07:00 (if location is set to California) or
+2019-08-15T09:00:00 (if location is set to Korea).
+2019-08-15T23:59:59+00:00
+This doesn't mean the end of 2019-08-15 unless the event happens in
+the GMT timezone. Google interprets the endDate to be
+2019-08-15T16:59:59-07:00 (if location is set to California) or
+2019-08-16T08:59:59 (if location is set to Korea).
+2019-07-10
+This means the date regardless of the timezone. When used in startDate,
+it means the event starts in the location from sometime in that day. When used in
+endDate, it means the event ends in the location from sometime in that
+day.
+2019-07-20T00:00:00
+This means midnight on 2019-07-20 for the timezone where the
+event happens. This is also likely wrong unless the event was meant to end at
+midnight.
+image
+Repeated ImageObject or
+URL
+URL of an image or logo for the event or tour. Including an image helps users
+understand and engage with your event. We recommend that images are 1920px wide
+(the minimum width is 720px).
+Additional image guidelines:
+Every page must contain at least one image (whether or not you include markup). Google will pick
+the best image to display in Search results based on the aspect ratio and resolution.
+Image URLs must be crawlable and indexable.
+Images must represent the marked up content.
+Images must be in .jpg, .png, or. gif format.
+For best results, provide multiple high-resolution images (minimum of 50K pixels when multiplying width and
+height) with the following aspect ratios: 16x9, 4x3, and 1x1.
+For example:
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+]
+location.name
+Text
+The detailed name of the place or venue where the event is being held.
+DO NOT put the title of the event in this field. Instead, use
+name to specify the name of the event.
+Not recommended: San Francisco, CA
+Recommended: Bill Graham Civic Auditorium
+Best practices:
+Don't include a city name unless it is a city-wide event.
+The location.name property must be the name of the venue or location, not a repeat of
+the title of the event. If you don't know the name of the location, don't use this property.
+offers
+Offer
+A nested Offer, one for each ticket
+type. For example:
+"offers": {
+"@type": "Offer"
+}
+offers.availability
+Text
+One of the following:
+InStock
+SoldOut
+PreOrder
+For example:
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock"
+}
+Note: If the ticket is not yet on sale to the general public, you can
+omit availability and specify validFrom.
+offers.price
+Number
+The lowest available price available for your tickets, including service charges and
+fees. Don’t forget to update it as prices change or tickets sell out. For example:
+"offers": {
+"@type": "Offer",
+"price": "30"
+}
+offers.priceCurrency
+Text
+The 3-letter currency code. For example:
+"offers": {
+"@type": "Offer",
+"priceCurrency": "USD"
+}
+offers.validFrom
+DateTime
+The date and time when tickets go on sale (only required on date-restricted offers), in
+ISO-8601 format. For
+example:
+"offers": {
+"@type": "Offer",
+"validFrom": "2024-05-21T12:00"
+}
+offers.url
+URL
+The URL of a page providing the ability to buy tickets. For example:
+"offers": {
+"@type": "Offer",
+"url": "https://www.example.com/event_offer/12345_201803180430"
+}
+This URL must meet the following requirements:
+Direct to a landing page that clearly and predominantly provides the opportunity to buy
+a ticket offering admittance to that specific event to any user from the general
+public.
+Be a link that a user could click on the web page that contains the event.
+Be followable by the Googlebot (not blocked by robots.txt).
+performer
+Person
+The participants performing at the event, such as artists and comedians. Use a nested
+PerformingGroup or
+Person, one for each performer. For
+example:
+"performer": {
+"@type": "PerformingGroup"
+}
+performer.name
+Text
+The name of the participant performing at the event, such as the name of the artist or
+comedian. For example:
+"performer": {
+"@type": "PerformingGroup",
+"name": "Kira and Morrison"
+}
+Troubleshooting
+If your event isn't appearing in the event experience on Google or if you've received a
+manual action for
+Spammy
+Structured Markup in Search Console, resolve the most common issues listed below
+and review our guidelines. If
+you're still experiencing issues, check the
+Event FAQ or post in the
+Webmaster forum.
+Google does not guarantee that your structured data will show up in
+search results, even if your page is marked up correctly according to the
+Rich Results Test. For a list of
+common reasons why Google may not show your structured data in search results, see the
+General Structured Data Guidelines.
+Event location is missing or incorrect
+error What caused the issue: Googlebot doesn't understand the values provided for the eventLocation, addressLocality, or addressRegion properties.
+Google tries to match the location information to a physical location, and the location
+provided is either missing or incorrect.
+done Fix the issue
+Make sure the structured data includes values for eventLocation,
+addressLocality, or addressRegion (depending on the location,
+since not all of the location properties are applicable).
+Check that the location.name field uses the location name, or leave it blank
+if it does not have a name. A common issue is accidentally placing the event name in the
+location.name field.
+Validate the fix:
+Open the Rich Results Test.
+Enter the event posting URL in the Fetch URL box.
+Click Validate.
+Click Preview.
+Success: The Rich Results Test displays the correct
+eventLocation in the Google Search Preview Tool.
+Try again: The Rich Results Test displays "false" where the event
+location should be in the Google Search Preview Tool. Make sure the location is a real
+location.
+My site isn't showing up as an option for
+purchasing tickets
+error What caused the issue: The
+offers.url property is missing or doesn't meet the
+URL requirements.
+done Fix the issue
+Make sure that your structured data includes the
+offers.url property.
+Ensure that your URL meets the URL requirements for
+offers.url.
+Ask Google to recrawl your
+site.
+Submit a request for (re)evaluation.
+Time or date is incorrect
+error What caused the issue: The time or date is incorrect. Common errors include
+not offsetting for the time zone or specifying an incorrect start time (for example, midnight
+as a start time).
+done Fix the issue
+Specify the correct local time offset. For example, if your event starts
+at 7pm in New York (UTC - 5) and ends at 9pm, then the value for startDate is
+2019-08-15T19:00:00-05:00 and the value for endDate is
+2019-08-15T21:00:00-05:00. If you are unable to fill in the offset for your
+events, don't offset the time (for example, use 2019-08-15T19:00:00).
+Make sure the start or end time is accurate. One common mistake is
+setting an event to start at midnight when the event doesn't actually start at midnight. If
+the event is a day long event, or the start hour hasn't been announced, only specify the
+day. For example:
+Recommended: 2019-07-20
+Not recommended: 2019-07-20T00:00:00
+Not recommended: 2019-08-15T00:00:01+00:00
+Not recommended2019-08-15T00:00:00+00:00
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-28.

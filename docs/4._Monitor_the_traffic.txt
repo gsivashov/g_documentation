@@ -1,0 +1,32 @@
+Move a site with URL changes4. Monitor the trafficMake sure your site move progresses smoothlyUse Search Console to monitor traffic
+Many features of Search Console help you monitor a site move, including:
+Sitemaps: Submit the two sitemaps you saved earlier from the mapping. Initially, the sitemap containing the new URLs would have zero pages indexed, while the sitemap of the old URLs would have many pages indexed. Over time the number of pages indexed from the old URLs sitemap would drop to zero with a corresponding increase of indexing of the new URLs.
+Index Coverage report: The graphs would reflect the site move, showing a drop in indexed URL counts on the old site and an increase of indexing on the new site. Check regularly for any unexpected crawl errors.
+Search queries: As more pages of the new site get indexed and start ranking, the search queries reports would start showing the URLs on the new site getting search impressions and clicks.
+Use other tools to monitor traffic
+Keep an eye on your server access and error logs, checking in particular for crawling by Googlebot, any URLs that unexpectedly return HTTP error status codes, and, normal user traffic.
+If you have installed any web analytics software on your site, or if your CMS provides analytics, it's also recommended you review traffic this way so that you can see the progress of traffic from your old to new site. In particular, Google Analytics offers real-time reporting, and this is a handy feature to use during the initial site move phase. You should expect to see traffic drop on the old site and rise on the new site.
+Troubleshooting your site move
+Here are some common mistakes when migrating a site with URL changes (including HTTP to HTTPS). These mistakes can prevent your new site from being indexed completely.
+noindex or robots.txt blocks
+Don't forget to remove any noindex or robots.txt blocks that were only needed for the migration.
+It is fine if you don't have a robots.txt file on your site, but be sure to return a proper 404 quickly if the robots.txt file is requested but not provided.
+To test:
+Examine your robots.txt file in your HTTPS site and see if anything needs to be changed.
+Run the URL inspection tool on any pages that seem to be missing from Google in the new site.
+Incorrect redirects
+Check your redirects from the old site to the new one. We frequently see people directing to the wrong (non-existent) URLs on the new site.
+Other crawl errors
+Examine the Index Coverage report for a spike in other errors on your new site during migration events.
+Insufficient host load
+After a migration, Google will crawl your new site more heavily than usual. This is because your site redirects traffic from the old to the new site, and any crawls of the old site will be redirected to the new site, in addition to any other crawling. Ensure that your site has sufficient host load to handle the increased traffic from Google.
+Not updating app links
+If you open your web pages within your app, update the app links to the new URLs before you implement your old to new page redirects. Otherwise Google won't suggest using the app to open the new URLs in search results, but will direct users to the website in the browser instead.
+Not updating sitemaps
+Be sure that your sitemaps are all updated with the new URLs.
+Not updating Data Highlighter
+If you used Data Highlighter to map your old pages, you will need to redo your mappings for your new site.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Move a site with URL changesOverview: Site moves with URL changes1. Prepare the new site2. Prepare a URL mapping3. Start the site move4. Monitor the traffic
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

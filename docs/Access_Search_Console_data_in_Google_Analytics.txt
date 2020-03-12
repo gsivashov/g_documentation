@@ -1,0 +1,28 @@
+Access Search Console data in Google AnalyticsIf you associate a Google Analytics property with a site in your Search Console account, you’ll be able to see Search Console data in your Google Analytics reports. Note that you can only associate a website; you cannot associate an app.
+Associate Properties
+You must be an owner of the Google Analytics property to be able to associate it with a website in Search Console.
+You can open the Google Analytics association page from the
+property settings dropdown in Search Console.
+When you associate a site in your Search Console account with a Google Analytics property, by default Search Console data is enabled for all profiles associated with that property. As a result, anybody with access to that Google Analytics property may be able to see Search Console data for that site. For example, if a Google Analytics admin adds a user to a profile, that user may be able to see Search Console data in Search Optimization reports.
+A site can be associated with only one property, and vice versa. Creating a new association removes the previously existing association.
+Every Google Analytics property can have a number of views. When you associate a site with a property, clicking a link to Google Analytics from Search Console will take you to that property’s default view. (If you previously associated your site with a different view, clicking a link will now take you to the default view instead. If you want to see a different view, you can switch views from within Google Analytics.)
+If your site is already associated with a Google Analytics property, it could be for a couple of reasons. Either you already used Google Analytics to associate this property with the site, or another site owner has made the association.
+If your site is associated with an Analytics property you don’t recognize (and don’t want), it may be because another site owner associated the site with an Analytics property you don’t own. In this case, you can delete the association and create a new one.
+If your site used to be associated with a property, but no longer is, it may be that the property was later associated with a different site. (Remember, a site can be associated with only one property. Creating a new association will remove the previously existing association.)
+You can also create association using the Analytics admin page if you're an account administrator for the Google Analytics property.
+Google Analytics account administrators can move their Analytics property from one Analytics account to another. Any associated Search Console properties will maintain their association as part of the move. After the move, any users of the new Analytics account will be able to see data from the associated Search Console property without a notification in Search Console. Learn more.
+Removing Search Console data from Google Analytics
+To remove Search Console data from a Google Analytics property, unlink the association using Search Console's association page, or manage association in the  Analytics admin page (if you're an administrator for the Google Analytics property).
+Why doesn't Search Console data match Google Analytics data?
+Search Console data may differ from the data displayed in other tools, such as Google Analytics. Possible reasons for this include:
+Search Console does some additional data processing—for example, to handle duplicate content and visits from robots—that may cause your stats to differ from stats listed in other sources.
+Some tools, such as Google Analytics, track traffic only from users who have enabled JavaScript in their browser.
+Google Analytics tracks visits only to pages which include the correctly configured Analytics Javascript code. If pages on the site don't have the code, Analytics will not track visits to those pages. Visits to pages without the Analytics tracking code will, however, be tracked in Search Console if users reach them via search results or if Google crawls or otherwise discovers them.
+Some tools define "keywords" differently. For example:
+The Keywords page in Search Console displays the most significant words Google found on your site.
+The Keywords tool in Google Ads displays the total number of user queries for that keyword across the web.
+Analytics uses the term "keywords" to describe both search engine queries and Google Ads paid keywords.
+The Search Console Search Analytics page lists shows the total number of keyword search queries in which your page's listing was seen in search results, and this is a smaller number. Also, Search Console rounds search query data to one or two significant digits.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

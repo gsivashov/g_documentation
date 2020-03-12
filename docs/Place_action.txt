@@ -1,0 +1,311 @@
+Home
+Products
+Search for Developers
+Reference
+Place action
+This documentation is deprecated as of June 17, 2019. We're no longer accepting
+new markup-based Place Action partners. Instead, scheduling providers can use
+the Maps Booking API. Google
+Search continues to support existing partners that added Place Action structured data prior to
+June 17, 2019.
+A Place Action enables
+users to make a reservation or order products or services, directly from the business listing in
+Google Search and Maps.
+Examples
+Here's an example of location-based queries such as "nearby barbers" or "hair salons
+within 15 miles".
+<html>
+<head>
+<title>Dave's House of Yoga</title>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"HealthClub",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"@id":"http://daveshouseofyoga.example.com/",
+"name":"Dave's House of Yoga",
+"address":{
+"@type":"PostalAddress",
+"streetAddress":"3986 Rivermark Pkwy",
+"addressLocality":"Santa Clara",
+"addressRegion":"CA",
+"postalCode":"95054",
+"addressCountry":"US"
+},
+"geo":{
+"@type":"GeoCoordinates",
+"latitude":37.3952149,
+"longitude":-121.9474023
+},
+"telephone":"+14085551135",
+"potentialAction":{
+"@type":"ReserveAction",
+"target":{
+"@type":"EntryPoint",
+"urlTemplate":"https://www.example.com/reserve?merchantId=20373",
+"inLanguage":"en-US",
+"actionPlatform":[
+"http://schema.org/DesktopWebPlatform",
+"http://schema.org/IOSPlatform",
+"http://schema.org/AndroidPlatform"
+]
+},
+"result":{
+"@type":"Reservation",
+"name":"Book a class"
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Business markup can specify multiple Action types
+and qualify the actions with other parameters. Depending upon your offering, you might mark up
+your content with more than a single combination of actions and qualifying parameters.
+Scenarios
+OrderAction
+Supported parameters
+potentialAction.@type
+potentialAction.target.inLanguage
+potentialAction.target.actionPlatform
+ReserveAction
+Supported parameters
+potentialAction.@type
+potentialAction.target.inLanguage
+potentialAction.target.actionPlatform
+potentialAction.result.provider
+The following examples show markup for a single action target for different businesses.
+Order food
+{
+"@context": "https://schema.org",
+"@type": "Restaurant",
+"@id": "http://davescafe.example.com/",
+"name": "Dave's Cafe",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"address" :{
+"@type": "PostalAddress",
+"streetAddress": "123 William St",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10038",
+"addressCountry": "US"
+},
+"geo":{
+"@type": "GeoCoordinates",
+"latitude": 40.709312,
+"longitude": -74.007136
+},
+"telephone": "+19172423826",
+"potentialAction": {
+"@type": "OrderAction",
+"target": {
+"@type": "EntryPoint",
+"urlTemplate": "https://www.example.com/daves-cafe-new-york",
+"inLanguage": "en-US",
+"actionPlatform": [
+"http://schema.org/DesktopWebPlatform",
+"http://schema.org/IOSPlatform",
+"http://schema.org/AndroidPlatform"
+]
+},
+"deliveryMethod": [
+"http://purl.org/goodrelations/v1#DeliveryModePickUp",
+"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet"
+],
+"priceSpecification": {
+"@type": "DeliveryChargeSpecification",
+"appliesToDeliveryMethod": "http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+"priceCurrency": "USD",
+"price": 0.0,
+"eligibleTransactionVolume": {
+"@type": "PriceSpecification",
+"priceCurrency": "USD",
+"price": 12.00
+}
+}
+}
+}
+Book a class
+{
+"@context": "https://schema.org",
+"@type": "HealthClub",
+"@id": "http://daveshouseofyoga.example.com/",
+"name": "Dave's House of Yoga",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "3986 Rivermark Pkwy",
+"addressLocality": "Santa Clara",
+"addressRegion": "CA",
+"postalCode": "95054",
+"addressCountry": "US"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 37.3952149,
+"longitude": -121.9474023
+},
+"telephone": "+14085551135",
+"potentialAction": {
+"@type": "ReserveAction",
+"target": {
+"@type": "EntryPoint",
+"urlTemplate": "https://www.example.com/reserve?merchantId=20373",
+"inLanguage": "en-US",
+"actionPlatform": [
+"http://schema.org/DesktopWebPlatform",
+"http://schema.org/IOSPlatform",
+"http://schema.org/AndroidPlatform"
+]
+},
+"result": {
+"@type": "Reservation",
+"name": "Book a class"
+}
+}
+}
+Reserve a table
+{
+"@context": "https://schema.org",
+"@type": "Restaurant",
+"@id": "http://davescafe.example.com/",
+"name": "Dave's Cafe",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "123 William St",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10038",
+"addressCountry": "US"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.709312,
+"longitude": -74.007136
+},
+"telephone": "+19172423826",
+"potentialAction": {
+"@type": "ReserveAction",
+"target": {
+"@type": "EntryPoint",
+"urlTemplate": "https://www.example.com/reserve?merchantId=20373",
+"inLanguage": "en-US",
+"actionPlatform": [
+"http://schema.org/DesktopWebPlatform",
+"http://schema.org/IOSPlatform",
+"http://schema.org/AndroidPlatform"
+]
+},
+"result": {
+"@type": "FoodEstablishmentReservation",
+"name": "Reserve table"
+}
+}
+}
+Many other combinations of actions and parameters are possible. When developing more
+complex business actions, be sure to use only a single value
+in either
+potentialAction.target.url OR potentialAction.target.urlTemplate.
+The following illustrates some scenarios for using OrderAction
+and ReserveAction types:
+One OrderAction and one ReserveAction: A restaurant that accepts
+delivery orders and table reservations.
+One OrderAction for each provider: A restaurant that accepts delivery orders
+from two different providers.
+One ReserveAction for the following:
+A yoga studio that offers different classes through
+a single provider that includes all classes.
+A hair salon that has multiple stylists, each with a unique menu of services
+that includes all stylists.
+Guidelines
+You must follow these guidelines to be eligible for Place Actions.
+Warning: If your site violates one or more of these guidelines,
+then Google may take manual
+action against it. Once you have remedied the problem, you can submit your site for reconsideration.
+Technical guidelines
+Webmaster guidelines
+General structured data guidelines
+Technical guidelines
+Provide only a single value in either
+potentialAction.target.url OR potentialAction.target.urlTemplate.
+The target web page or app must let the user complete the action online. For
+example, a web page that displays the menu of a restaurant is not a valid
+action page if the user must make a telephone call to place an order or reserve
+a table.
+Structured data type definitions
+Structured data in Google Search supports two types of business actions:
+OrderAction—represents an order for products or services to be delivered.
+ReserveAction—represents a reservation for a physical object such as a restaurant table,
+automobile, or hotel room for a specific date and time.
+The following two tables list the properties for each action type.
+You must include the required properties for your content to be eligible for display as an action.
+You can also include the recommended properties to add more information about your content,
+which could provide a better user experience.
+OrderAction properties
+Recommended properties
+deliveryMethod
+DeliveryMethod
+Method by which the order is delivered to the user. Use one of the following
+values:
+http://purl.org/goodrelations/v1#DeliveryModePickUp
+http://purl.org/goodrelations/v1#DeliveryModeOwnFleet
+priceSpecification
+DeliveryChargeSpecification
+Cost of delivery service if applicable.
+priceSpecification.appliesToDeliveryMethod
+DeliveryMethod
+This property applies only to the delivery method: http://purl.org/goodrelations/v1#DeliveryModeOwnFleet
+priceSpecification.price
+Number
+Total delivery cost as a numerical only value. Use the priceCurrency property
+to denote the type of currency instead of currency symbols.
+priceSpecification.priceCurrency
+Text
+The 3-letter ISO 4217 currency code.
+priceSpecification.eligibleTransaction.price
+Number
+Numeric only minimum order amount. Use the eligibleTransaction.priceCurrency
+property to specify the type of currency instead of including currency symbols.
+priceSpecification.eligibleTransaction.priceCurrency
+Text
+The 3-letter ISO 4217 currency code.
+priceSpecification.eligibleTransactionVolume
+PriceSpecification
+The minimum order amount to be eligible for the delivery service.
+ReserveAction properties
+Required properties
+result
+Reservation
+The details of the reservation. Use the most granular sub-type of Reservation
+possible; for example, FoodEstablishmentReservation to reserve a restaurant table.
+result.name
+Text
+The name of the object being reserved; for example, "Table at La Boheme."
+Recommended properties
+result.provider
+Person
+Details of the individual assisting the customer.
+result.provider.name
+Text
+Name of the provider.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-05.

@@ -1,0 +1,26 @@
+Home
+Products
+Search for Developers
+Guides
+Google Podcasts
+A podcast is an audio program that consists of one or more episodes. Your podcast can show
+up on Google in the following ways:
+Google Search on all browsers
+Google Search App for Android (requires v6.5 or higher of the Google Search App)
+Google Podcasts app
+Chrome for Android
+Google Home
+An Action on the Google Assistant
+Android Auto
+To help Google better understand your podcast,
+follow the podcast guidelines. It's
+important to note that Google doesn't guarantee that your podcast will show up in any of these
+products.
+Get started
+If you want your podcast to appear in Google Play Music, your podcast must meet the
+Google
+Play Music podcast RSS feed specifications. The RSS specifications for Google Play
+Music and Google Search are complimentary but not identical, so if you enable support for
+one, you neither prevent nor enable support for the other.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-11-18.

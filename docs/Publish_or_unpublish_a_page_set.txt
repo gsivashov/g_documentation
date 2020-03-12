@@ -1,0 +1,21 @@
+Publish or unpublish a page setPublishing a page set instructs Data Highlighter to make the data available to Google. The next time Google crawls the page, the structured data in your page set will display on the structured data page. It might take some time for the data to appear as rich snippets, in the Google Knowledge Graph, or in other Google products. If rich snippets aren't appearing for your site, see possible reasons why.
+Page sets with only one page are automatically published when you create them. You can publish page sets with multiple pages immediately after creating them, or you can wait until you are ready.
+Publish a page set:
+View the page set's Publish page:
+On the Webmaster Tools home page, click the site.
+On the Dashboard, click Search Appearance.
+Click Data Highlighter.
+Click the name of a page set.
+Click Publish.
+Unpublishing a page set instructs Google to ignore the data extracted by Data Highlighter the next time Google crawls pages on your site. You can republish the page set later.
+Unpublish a page set:
+View the page set's Publish page:
+On the Webmaster Tools home page, click the site.
+On the Dashboard, click Search Appearance.
+Click Data Highlighter.
+Click the name of a page set.
+Click Unpublish.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Data HighlighterAbout Data HighlighterData types supported by Data HighlighterCreate a page setPublish or unpublish a page setDelete a page setTips and tricks for using Data HighlighterTroubleshooting Data Highlighter
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

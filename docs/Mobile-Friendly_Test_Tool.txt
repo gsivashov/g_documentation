@@ -1,0 +1,42 @@
+Mobile-Friendly Test ToolHaving a mobile-friendly website is a critical part of your online presence. In many countries, smartphone traffic now exceeds desktop traffic. If you haven't made your website mobile-friendly, you should. Search Console's Mobile-Friendly Test Tool is a quick, easy way to test whether a page on your site is mobile-friendly.
+Open the Mobile-Friendly Test Tool
+Using the tool
+The Mobile-Friendly test tool is easy to use; simply type in the full URL of the web page that you want to test. Any redirects implemented by the page will be followed by the test. The test typically takes less than a minute to run.
+Test results include a screenshot of how the page looks to Google on a mobile device, as well as a list of any mobile usability problems that it finds. Mobile usability problems are issues that can affect a user that visits the page on a mobile (small screen) device, including small font sizes (which are hard to read on a small screen) and use of Flash (which isn't supported by most mobile devices).
+If the page can't be reached
+If for some reason the tool cannot access the page, it will display an error describing the problem. Access problems include network connectivity issues or the site being down.
+This tool accesses the page as Googlebot (that is, not using your credentials, but as Google). This means that it can be blocked by a robots.txt file.
+If the page has unloadable resources
+If a test cannot load all resources used by a page, you will get a warning. Resources are external elements included by the page, such as images, CSS, or script files. This can happen for several reasons:
+The resource wasn't loadable in a reasonable amount of time. In this case, try running the test again. If it continues to happen, consider hosting the resource somewhere else, or else try to discover and fix the reason for lack of response from the host.
+The resource does not exist in the location listed (404 error). Fix the resource URL.
+The resource is inaccessible to non-logged-in users. The test accesses the page as an anonymous user; ensure that all resources are accessible to anonymous users.
+The resource is blocked to Googlebot by a robots.txt file. If the resource is important (see below), if it is on your own site, you might want to unblock the resource to Googlebot; if it is on another site, you might want to contact the site's webmaster and ask to have it unblocked.
+Unblocking important resources
+If a blocked resource is important, it could have a big effect on how Google understands the page. For example, a blocked large image could make a page appear to be mobile-friendly when it is not, or a blocked CSS file could result in incorrect font styles being applied (for example, too small for a device). This affects both the mobile usability score and Google's ability to crawl your page. You should make sure that important resources are not blocked to Googlebot by robots.txt and are generally accessible.
+Flaky test results/Page loading issues
+If you have unloadable resources or other page loading issues, you might see slightly different results every time you run the test. This is because the set of resources that were loaded can vary during each test run. If your page rendering changes each time you run the test, and you have not changed anything, check for a "page loading issues" warning; if present, click for more information to see what might have happened to prevent the page from being rendered consistently and correctly.
+Mobile-usability errors
+The Mobile-Friendly Test tool can identify the following usability errors:
+List of errors
+Uses incompatible plugins
+The page includes plugins, such as Flash, that are not supported by most mobile browsers We recommend redesigning your page using modern, broadly-supported web technologies, such as HTML5. Read more about web animation guidelines.
+Viewport not set
+The page does not define a viewport property, which tells browsers how to adjust the page’s dimension and scaling to suit the screen size. Because visitors to your site use a variety of devices with varying screen sizes—from large desktop monitors, to tablets and small smartphones—your pages should specify a viewport using the meta viewport tag. Learn more in Responsive Web Design Basics.
+Viewport not set to "device-width"
+The page defines a fixed-width viewport property, which means that it can't adjust for different screen sizes. To fix this error, adopt a responsive design for your site’s pages, and set the viewport to match the device’s width and scale accordingly. Read how to correctly Set the Viewport.
+Content wider than screen
+Horizontal scrolling is necessary to see words and images on the page. This happens when pages use absolute values in CSS declarations, or use images designed to look best at a specific browser width (such as 980px). To fix this error, make sure the pages use relative width and position values for CSS elements, and make sure images can scale as well. Read more in Size Content to Viewport.
+Text too small to read
+The font size for the page is too small to be legible and would require mobile visitors to “pinch to zoom” in order to read. After specifying a viewport for your web pages, set your font sizes to scale properly within the viewport. Read more about font size best practices in Use Legible Font Sizes.
+Clickable elements too close together
+Touch elements, such as buttons and navigational links, are so close to each other that a mobile user cannot easily tap a desired element with their finger without also tapping a neighboring element. To fix these errors, make sure to correctly size and space buttons and navigational links to be suitable for your mobile visitors. Read more in Size Tap Targets Appropriately.
+Next steps
+See what mobile usability issues we've detected on your entire site using the Mobile Usability report (requires you to verify ownership of the site in Search Console).
+Learn how to make your CMS website mobile friendly (for pages hosted on WordPress, Joomla! or other CMS services).
+Learn how to work with a developer to fix your site.
+Learn more about designing mobile-friendly pages.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Mobile Usability Tools and ReportsMobile-Friendly Test ToolMobile Usability report
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

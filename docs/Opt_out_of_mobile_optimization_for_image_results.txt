@@ -1,0 +1,30 @@
+Opt out of mobile optimization for image resultsGoogle is always improving search results so that users from any device get a beautiful and fast search experience. For people on mobile devices, image search results can load slowly when they tap on an image because the browser is trying to retrieve an image with larger dimensions only to then fit it inside the small mobile screen.
+To fix this, Google is improving the image search experience for some mobile users by optimizing those images that users tap to view on their mobile devices.
+How mobile image optimization works
+When an image is tapped on from Google Search image results, Google does two things:
+Reduces the dimensions of the image: This makes it render more quickly for the mobile user because it’s more suitable for that screen size.
+Caches the optimized version for approximately one day: This delivers images even faster to subsequent mobile users when they tap to view it.
+The optimization helps users by showing them smaller images, and also helps website owners who want to optimize their server resources and reduce bandwidth costs. It achieves this by only retrieving a file once from your server for any given image you serve to mobile users that day. If the image is large, you save on unnecessary bandwidth costs incurred when delivering higher-resolution images to mobile search queries.
+To opt out of image optimization for mobile
+If for some reason you want to opt out of having your images cached and/or optimized for mobile users, you can use standard HTTP caching directives to do so. You have two options.
+Option 1: Disable image caching with no-cache directives
+To allow the image to be rendered in a resolution suitable for smaller displays, but keep it from being cached for the day, set your header directives to no-cache for your server or CDN.
+The following illustrates with a simple Apache server-side directive for all GIF files:
+<FilesMatch "*.gif">
+<IfModule mod_headers.c>
+Header set Cache-control no-cache
+</IfModule>
+</FilesMatch>
+Cache control headers are the best way to let Google Search know whether to cache the image. We will respect cache control headers, so if you tell us not to cache your image for optimization, we won't. Images that are cached remain so for only a day.
+Option 2: Complete opt-out using no-transform directives
+To opt out of both optimized rendering and caching of your images for mobile search users, set your header directives to no-transform for your server or CDN. The following illustrates with a simple Apache server-side directive for all GIF files:
+<FilesMatch "*.gif">
+<IfModule mod_headers.c>
+Header set Cache-control no-transform
+</IfModule>
+</FilesMatch>
+The no-transform directive tells our servers to ignore the image for both optimization and caching.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+MobileMobile viewing on feature phonesWeb Light: Faster and lighter mobile pages from searchAd network support for Web Light pages in Google SearchGoogle DiscoverResources for developing mobile-friendly pagesAnnounce mobile billing charges clearlyAssociate your Android app with a website
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

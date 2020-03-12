@@ -1,0 +1,460 @@
+Home
+Products
+Search for Developers
+Reference
+Critic review
+Does your site provide combined rating scores from reviewers?
+Use review snippet structured data.
+Does your site provide reviews about other employers? Use
+Employer Aggregate Rating structured
+data.
+Does your site review claims made by others? Use
+Fact check structured data.
+A critic review is a snippet from a longer review article that a single editor has created,
+curated, or compiled for a publisher. Critic reviews appear in Search results with a snippet
+from the critic, the critic's name and the publisher icon, helping your readers to easily
+find the reviews and navigate to your website to read the complete reviews. You can supply
+critic reviews for the following content types:
+Local businesses
+Movies
+Books
+Currently, Google is working with a limited number of providers at a time to
+integrate each provider into the feature. You're welcome to read the documentation and
+implement structured data until we can open it up to more providers. Keep in mind that
+Google doesn't guarantee that your structured data will show up in search results, even if
+your page is marked up correctly according to the Structured Data Testing Tool.
+Examples
+You can embed critic reviews inside LocalBusiness. This is useful for sites that
+provide booking services for many businesses or for business listing aggregators. Here's an
+example of an embedded review of a business in JSON-LD:
+<html>
+<head>
+<title>Dave's Steak House</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Restaurant",
+"@id": "http://davessteakhouse.example.com",
+"name": "Dave's Steak House",
+"image": "http://davessteakhouse.example.com/logo.jpg",
+"sameAs": "http://davessteakhouse.example.com",
+"servesCuisine": "Steak House",
+"priceRange": "$$$",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "148 W 51st St",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10019",
+"addressCountry": "US"
+},
+"telephone": "+12122459600",
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.761293,
+"longitude": -73.982294
+},
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "88",
+"bestRating": "100",
+"worstRating": "1",
+"ratingCount": "20"
+},
+"review": {
+"@type": "Review",
+"url": "http://www.localreviews.com/restaurants/1/2/3/daves-steak-house.html",
+"author": {
+"@type": "Person",
+"name": "Lisa Kennedy",
+"sameAs": "https://plus.google.com/114108465800532712602"
+},
+"publisher": {
+"@type": "Organization",
+"name": "Denver Post",
+"sameAs": "http://www.denverpost.com"
+},
+"datePublished": "2014-03-13T20:00",
+"description": "Great old fashioned steaks but the salads are sub par.",
+"inLanguage": "en",
+"reviewRating": {
+"@type": "Rating",
+"worstRating": 1,
+"bestRating": 4,
+"ratingValue": 3.5
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+You can provide standalone critic review objects, which are suitable for sites that perform no
+direct function for the business being reviewed, such as news sites. Here's an example of a
+standalone review of a business in JSON-LD:
+<html>
+<head>
+<title>Dave's Steak House</title>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Review",
+"author": {
+"@type":"Person",
+"name":"Lisa Kennedy",
+"sameAs":"https://plus.google.com/114108465800532712602"
+},
+"url": "http://www.localreviews.com/restaurants/1/2/3/daves-steak-house.html",
+"datePublished":"2014-03-13T20:00",
+"publisher": {
+"@type":"Organization",
+"name":"Denver Post",
+"sameAs":"http://www.denverpost.com"
+},
+"description":"Great old fashioned steaks but the salads are sub par.",
+"inLanguage":"en",
+"itemReviewed": {
+"@type":"Restaurant",
+"name": "Dave's Steak House",
+"sameAs": "http://davessteakhouse.example.com",
+"image": "http://davessteakhouse.example.com/logo.jpg",
+"servesCuisine": "Steak House",
+"priceRange": "$$$",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "148 W 51st St",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10019",
+"addressCountry": "US"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.761293,
+"longitude": -73.982294
+},
+"telephone": "+12122459600",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "88",
+"bestRating": "100",
+"ratingCount": "20"
+}
+},
+"reviewRating": {
+"@type":"Rating",
+"worstRating":1,
+"bestRating":4,
+"ratingValue":3.5
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Guidelines
+Your content must follow these guidelines to be eligible to appear as a rich result.
+Warning: If your site violates one or more of these guidelines,
+then Google may take manual
+action against it. Once you have remedied the problem, you can submit your site for
+reconsideration.
+Technical guidelines
+Content guidelines
+Webmaster guidelines
+General structured data guidelines
+Technical guidelines
+Refer clearly to a specific product or service by nesting the review within the markup of
+another schema.org type, such as schema.org/Book or
+schema.org/LocalBusiness, or by using a
+schema.org type as a value for the itemReviewed property.
+Make sure the reviews and ratings you mark up are readily available to users from the
+marked-up page. It should be immediately obvious to users that the page has review
+content.
+Provide review information about a specific item, not about a category or a list of
+items.
+Recommended: Hesperia Madrid Hotel
+Not recommended: Top 10 hotels in Madrid
+Content guidelines
+Authoritative human editor(s) must create, curate, or compile content for critic
+reviews.
+The snippet can't exceed 200 characters.
+The snippet must clearly indicate an opinion about the review subject. It should not
+merely define the subject (for example, ""Gravity" is a film by Alfonso Cuarón") or a plot
+synopsis (for example, "Dr. Ryan Stone is an engineer on her first space mission").
+Critic reviews can't be template sentences built from data or automated metrics.
+Don't include critic reviews that are duplicated or similar across many
+businesses.
+Only include critic reviews that have been directly produced by your site, not reviews
+from third-party sites or syndicated reviews.
+Use non-smart double quotation marks (") to denote titles (for example, ""Gravity" is the
+best movie.")
+The snippet must make sense on its own and should not be confusing to someone who isn't
+reading the whole article.
+The snippet must be an exact excerpt from the long-form body of the review. It should
+not be the review headline, a question or a teaser.
+The snippet must be complete (not cut off, truncated, or ending in ellipses) and
+well-formed (having correct punctuation and grammar) thought.
+Avoid profanity and vulgar language. Reviews should be appropriate for a broad and diverse
+audience. Consequently, reviews containing vulgar or profane language may be ineligible for
+use.
+Don't add critic review structured data for adult-related products or services.
+If the critic review is for a local business, you must follow these additional guidelines:
+Snippets must not be written by the business or content provider, and may not be
+provided by the business or content provider unless
+they are genuine, independent, and unpaid editorial reviews.
+Critic reviews must allow for customers to express both positive and negative
+sentiments. They may not be vetted by the business or restricted by the content provider
+based on the positive or negative sentiment of the review before submission to
+Google.
+Critic reviews for multiple-location businesses such as retail chains or franchises can
+only be submitted for the specific business location for which they were written. In
+other words, critic reviews for multiple-location businesses can't be syndicated or
+applied to all business locations of the same company.
+There can't be any commercial agreements (paid or otherwise) to provide critic reviews
+between the content provider and the reviewed business.
+Structured data type definitions
+You must include the following required
+properties for your content to be eligible for display as a rich result. You can also include
+the following recommended properties to add more information about your content, which could provide a
+better user experience.
+Review
+The full definition of Review is available at
+schema.org/Review.
+Required properties
+datePublished
+Date
+Date of the review's first publication, in
+ISO 8601 date format.
+description
+Text
+A snippet from the body of the actual review that captures the author's opinion about
+the review subject. The snippet must follow our content
+guidelines.
+itemReviewed
+Book, Movie,
+or LocalBusiness
+The item that is being reviewed.
+itemReviewed.address
+PostalAddress
+The address of the specific business location. The itemReviewed.address
+property is required only for reviews about a local business.
+itemReviewed.address.addressCountry
+Text
+The 2-letter ISO 3166-1 alpha-2 country code. The
+itemReviewed.address.addressCountry property is required only for reviews
+about a local business.
+itemReviewed.address.addressLocality
+Text
+The city of the local business (if applicable). The
+itemReviewed.address.addressLocality property is required only for reviews
+about a local business.
+itemReviewed.address.addressRegion
+Text
+The state or province of the local business (if applicable). The
+itemReviewed.address.addressRegion property is required only for reviews
+about a local business.
+itemReviewed.address.postalCode
+Text
+The postal or zip code of the local business (if applicable). The
+itemReviewed.address.postalCode property is required only for reviews about
+a local business.
+itemReviewed.address.streetAddress
+Text
+The street number, street name, and unit number of the local business (if applicable).
+The itemReviewed.address.streetAddress property is required only for
+reviews about a local business.
+itemReviewed.author
+Person
+The annotation for the author of the book. The itemReviewed.author
+property is required only for reviews about a book.
+itemReviewed.author.name
+Text
+The name of author of the book. The itemReviewed.author.name
+property is required only for reviews about a book.
+itemReviewed.isbn
+Text
+The ISBN of the book. In cases where no ISBN exists, use
+itemReviewed.sameAs. The
+itemReviewed.isbn property is required only for reviews about a book.
+itemReviewed.name
+Text
+The name of the item that is the subject of the review. It can be the name of the book,
+movie, or local business.
+itemReviewed.sameAs
+URL
+The URL of a page that unambiguously identifies the item that is the subject of the
+review. Google strongly prefers the following URLs based on the subject of the
+review:
+Books: The book's Google Play Books page, Wikipedia page, or
+official website.
+Movies: The movie's IMDB page, Wikipedia page, or official website.
+Local Business: The business's official website.
+For books only, the itemReviewed.sameAs property isn't required if you
+define itemReviewed.isbn.
+publisher
+Organization
+Annotation for the publisher of the review.
+publisher.name
+Text
+Name of the publisher of the review. For example, "The New York Times".
+Recommended properties
+aggregateRating
+AggregateRating
+The average score assigned to the item being reviewed. This typically
+applies to user ratings rather than professional critic ratings.
+aggregateRating.bestRating
+Text
+The highest value allowed in the reviewer's rating system. If this property is omitted,
+5 is assumed. Letter grades are allowed (for example, "A").
+aggregateRating.ratingCount
+Number
+The number of ratings given to the reviewed item.
+aggregateRating.ratingValue
+Text
+The average rating given to the reviewed item. Letter grades are allowed (for example,
+"B+").
+aggregateRating.worstRating
+Text
+The lowest value allowed in the reviewer's rating system. If this property is omitted,
+1 is assumed. Letter grades are allowed (for example, "C-").
+author
+Person or
+Organization
+The author of the review. The reviewer’s name must be a valid name. For example,
+"50% off until Saturday" is not a valid name for a reviewer.
+author.name
+Text
+Name of the author of the review. Provide the full name of the author. The value should
+be capitalized correctly. Names comprised of entirely uppercase or lowercase letters are
+edited such that the first letter of every word is capitalized.
+author.sameAs
+URL
+URL of a page that unambiguously identifies the author (for example, the author's
+official website, a profile page, a Wikipedia article).
+inLanguage
+Text
+The BCP-47 language code of the review description (for example, "ja" is Japanese).
+We strongly recommended inLanguage for non-English reviews.
+itemReviewed.actor
+Person
+The annotation(s) for main cast of the movie. The itemReviewed.actor
+property is only recommended for movie reviews.
+itemReviewed.actor.name
+Text
+The name of the actor. The itemReviewed.actor.name property is only
+recommended for movie reviews.
+itemReviewed.actor.sameAs
+URL
+The URL of a page that unambiguously identifies the actor. Google strongly prefers the
+actor's IMDB or Wikipedia page. The itemReviewed.actor.sameAs
+property is only recommended for movie reviews.
+itemReviewed.datePublished
+Date
+The original publication date of the book or the original theatrical or direct-to-video
+release date of the movie, in
+ISO 8601 format.
+The itemReviewed.datePublished property is only recommended for reviews
+about a book or movie.
+itemReviewed.director
+Person
+The annotation for the director of the movie. The itemReviewed.director
+property is only recommended for movie reviews.
+itemReviewed.director.name
+Text
+The name of the director. The itemReviewed.director.name property is only
+recommended for movie reviews.
+itemReviewed.director.sameAs
+URL
+The URL of a page that unambiguously identifies the director. Google strongly prefers
+URLs to director's IMDB or Wikipedia page. The itemReviewed.director.sameAs
+property is only recommended for movie reviews.
+itemReviewed.geo
+GeoCoordinates
+The geographic coordinates of the business. The itemReviewed.geo
+property is only recommended for reviews about a local business.
+itemReviewed.geo.latitude
+Number or
+Text
+The latitude of the business location. The precision should be at least 5 decimal
+places. The itemReviewed.geo.latitude property is only recommended for
+reviews about a local business.
+itemReviewed.geo.longitude
+Number or
+Text
+The longitude of the business location. The precision should be at least 5 decimal
+places. The itemReviewed.geo.longitude property is only recommended for
+reviews about a local business.
+itemReviewed.telephone
+Text
+The public phone number of the business that's normally used by customers, including
+the country code. The itemReviewed.telephone property is only recommended
+for reviews about a local business.
+publisher.sameAs
+URL
+The URL of the publisher's official website or Wikipedia page.
+reviewRating
+Must be one of the following:
+Rating
+The rating given in this review on a scale (for example, 3 out of 5 stars).
+Ratings can be either numeric (for example, 1-5) or text (for example, A-F), where
+you define the best and worst score in the bestRating and
+worstRating properties. The rating
+can be a nested Rating or more specific
+subtype. The most typical subtype is
+AggregateRating. Here’s an
+example of reviewRating.Rating:
+"reviewRating": [{
+"@type": "Rating",
+"ratingValue": "3.0",
+"bestRating": "5",
+"worstRating": "0"
+}]
+EndorsementRating
+A rating that expresses some level of positive endorsement for the item being
+reviewed. For example, inclusion in a "critic's pick" blog, a "Like", or "+1" on a
+social network. EndorsementRating is a rating by itself (for example,
+“2 thumbs up”), not a rating on a scale. Here’s an example of
+reviewRating.EndorsementRating:
+"reviewRating": [{
+"@type": "EndorsementRating",
+"name": "2 thumbs up",
+"ratingValue": "2"
+}]
+Additional guidelines:
+Google recommends using a text string up to a few words in length
+(approximately 10-15 characters).
+An EndorsementRating may be part of a numeric scale or organized
+system.
+If the scale is not numeric, indicate that the endorsement is positive to help
+consumers understand that the rating is broadly positive.
+reviewRating.bestRating
+Text
+The highest value allowed in this rating system. This property is required if the
+rating system is not on a 5-point scale. If bestRating is omitted, 5 is
+assumed.
+reviewRating.ratingValue
+Text
+The rating given to the reviewed item. Letter grades are allowed. For example,
+"B+".
+reviewRating.worstRating
+Text
+The lowest value allowed in this rating system. The worstRating property
+is required if the rating system is not on a 5-point scale. If worstRating
+is omitted, 1 is assumed.
+URL
+URL
+URL of the web page that contains the full text of the review.
+The webpage indicated by this property must contain a full-length review that is longer
+than 300 words.
+Other use cases:
+If no value is provided, Google assumes that the crawled page is the
+location of the review in its entirety.
+If your structured data is on a page other than the one containing the full text of
+the review, or if you have multiple URLs for the full-text review, you must populate
+this property.
+If you have duplicate pages for the same content, make sure you use the
+canonical URL.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.

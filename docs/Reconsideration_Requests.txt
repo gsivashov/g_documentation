@@ -1,0 +1,5 @@
+Reconsideration RequestsWhat is a reconsideration request?
+A reconsideration request is a request to have Google review your site after you fix problems identified in a manual action or security issues notification. To learn more about manual actions and security issues, visit the Manual Actions report or the Security Issues report.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

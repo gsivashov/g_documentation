@@ -1,0 +1,142 @@
+Home
+Products
+Search for Developers
+Reference
+Software App
+Mark up software application information in the body of a web page to better display your app
+details in Google Search results.
+Examples
+JSON-LD
+Here's an example of a software app in JSON-LD:
+<html>
+<head>
+<title>Angry Birds</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "SoftwareApplication",
+"name": "Angry Birds",
+"operatingSystem": "ANDROID",
+"applicationCategory": "https://schema.org/GameApplication",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.6",
+"ratingCount": "8864"
+},
+"offers": {
+"@type": "Offer",
+"price": "1.00",
+"priceCurrency": "USD"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+RDFa
+Here's an example of a software app in RDFa:
+Angry Birds -
+REQUIRES ANDROID
+RATING:
+4.6 (
+8864 ratings )
+Price: $1.00
+Microdata
+Here's an example of a software app in Microdata:
+Angry Birds -
+REQUIRES ANDROID
+RATING:
+4.6 (
+8864 ratings )
+Price: $1.00
+Guidelines
+You must follow these guidelines for your app to be eligible to appear as a rich result.
+Warning: If your site violates one or more of these guidelines,
+then Google may take manual
+action against it. Once you have remedied the problem, you can submit your site for
+reconsideration.
+Webmaster guidelines
+General structured data guidelines
+Structured data type definitions
+You must include the required properties for your content to be eligible for display as a rich result.
+You can also include the recommended properties to add more information about your content,
+which could provide a better user experience.
+SoftwareApplication
+The full definition of SoftwareApplication is available at
+schema.org/SoftwareApplication.
+Required properties
+name
+Text
+The name of the app.
+offers.price
+Offer
+An offer to sell the app. For developers, offers can indicate the
+marketplaces that carry the application. For marketplaces, use offers to
+indicate the price of the app for a specific app instance.
+If the app is free of charge, set offers.price to 0. For example:
+"offers": {
+"@type": "Offer",
+"price": "0"
+}
+If the app has a price greater than 0, you must include offers.currency.
+For example:
+"offers": {
+"@type": "Offer",
+"price": "1.00",
+"priceCurrency": "USD"
+}
+Rating or review
+A rating or review of the app. You must include one of the following properties:
+aggregateRating
+AggregateRating
+The average review score of the app. Follow the
+Review snippet
+guidelines and list of required and recommended
+AggregateRating properties.
+review
+Review
+A single review of the app. Follow the
+Review snippet
+guidelines and list of required and recommended
+Review properties.
+Recommended properties
+applicationCategory
+Text or
+URL
+The type of app (for example, BusinessApplication or
+GameApplication). The value must be a supported app type.
+List of supported app types
+GameApplication
+SocialNetworkingApplication
+TravelApplication
+ShoppingApplication
+SportsApplication
+LifestyleApplication
+BusinessApplication
+DesignApplication
+DeveloperApplication
+DriverApplication
+EducationalApplication
+HealthApplication
+FinanceApplication
+SecurityApplication
+BrowserApplication
+CommunicationApplication
+DesktopEnhancementApplication
+EntertainmentApplication
+MultimediaApplication
+HomeApplication
+UtilitiesApplication
+ReferenceApplication
+operatingSystem
+Text
+The operating system(s) required to use the app (for example, Windows 7,
+OSX 10.6, Android 1.6)
+Extended properties for app subtypes
+For mobile applications and web applications, Google also supports
+MobileApplication
+and WebApplication
+.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.
