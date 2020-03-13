@@ -18,8 +18,8 @@ This feature isn't available in Google Images yet. You can provide metadata in a
 ensure your images are eligible when the feature becomes available.
 Prepare your web pages and images
 To make sure Google can discover and index your images:
-Make sure people can access and view your pages without needing an account or logging in.
-Make sure Googlebot can access your pages (meaning, your pages aren't disallowed by a robots.txt file or robots meta tag). You can see all pages blocked on your site in the Index Coverage report, or test a specific page using the URL Inspection tool.
+Make sure people can access and view your pages that contain images without needing an account or logging in.
+Make sure Googlebot can access your pages that contain images (meaning, your pages aren't disallowed by a robots.txt file or robots meta tag). You can see all pages blocked on your site in the Index Coverage report, or test a specific page using the URL Inspection tool.
 To learn more about how to use the URL Inspection tool, watch the Search Console training video.
 Follow the Webmaster
 Guidelines to make sure Google can discover your content.
@@ -383,4 +383,4 @@ Post a question in the Webmaster
 forum. For help with IPTC photo metadata, you can
 post in their forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-25.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-12.
