@@ -143,6 +143,121 @@ Here's an example of a page that's eligible for display on Google Search and as 
 <body>
 </body>
 </html>
+Show me the example
+<html>
+<head>
+<title>Party Coffee Cake</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "Recipe",
+"name": "Party Coffee Cake",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"author": {
+"@type": "Person",
+"name": "Mary Stone"
+},
+"datePublished": "2018-03-10",
+"description": "This coffee cake is awesome and perfect for parties.",
+"prepTime": "PT20M",
+"cookTime": "PT30M",
+"totalTime": "PT50M",
+"keywords": "cake for a party, coffee",
+"recipeYield": "10",
+"recipeCategory": "Dessert",
+"recipeCuisine": "American",
+"nutrition": {
+"@type": "NutritionInformation",
+"calories": "270 calories"
+},
+"recipeIngredient": [
+"2 cups of flour",
+"3/4 cup white sugar",
+"2 teaspoons baking powder",
+"1/2 teaspoon salt",
+"1/2 cup butter",
+"2 eggs",
+"3/4 cup milk"
+],
+"recipeInstructions": [
+{
+"@type": "HowToStep",
+"name": "Preheat",
+"text": "Preheat the oven to 350 degrees F. Grease and flour a 9x9 inch pan.",
+"url": "https://example.com/party-coffee-cake#step1",
+"image": "https://example.com/photos/party-coffee-cake/step1.jpg"
+},
+{
+"@type": "HowToStep",
+"name": "Mix dry ingredients",
+"text": "In a large bowl, combine flour, sugar, baking powder, and salt.",
+"url": "https://example.com/party-coffee-cake#step2",
+"image": "https://example.com/photos/party-coffee-cake/step2.jpg"
+},
+{
+"@type": "HowToStep",
+"name": "Add wet ingredients",
+"text": "Mix in the butter, eggs, and milk.",
+"url": "https://example.com/party-coffee-cake#step3",
+"image": "https://example.com/photos/party-coffee-cake/step3.jpg"
+},
+{
+"@type": "HowToStep",
+"name": "Spread into pan",
+"text": "Spread into the prepared pan.",
+"url": "https://example.com/party-coffee-cake#step4",
+"image": "https://example.com/photos/party-coffee-cake/step4.jpg"
+},
+{
+"@type": "HowToStep",
+"name": "Bake",
+"text": "Bake for 30 to 35 minutes, or until firm.",
+"url": "https://example.com/party-coffee-cake#step5",
+"image": "https://example.com/photos/party-coffee-cake/step5.jpg"
+},
+{
+"@type": "HowToStep",
+"name": "Enjoy",
+"text": "Allow to cool and enjoy.",
+"url": "https://example.com/party-coffee-cake#step6",
+"image": "https://example.com/photos/party-coffee-cake/step6.jpg"
+}
+],
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "5",
+"ratingCount": "18"
+},
+"video": {
+"@type": "VideoObject",
+"name": "How to make a Party Coffee Cake",
+"description": "This is how you make a Party Coffee Cake.",
+"thumbnailUrl": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"contentUrl": "http://www.example.com/video123.mp4",
+"embedUrl": "http://www.example.com/videoplayer?video=123",
+"uploadDate": "2018-02-05T08:00:00+08:00",
+"duration": "PT1M33S",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 2347
+},
+"expires": "2019-02-05T08:00:00+08:00"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 Recipe on Search only
 Here's an example of a page that's eligible to be displayed on Search. It's not eligible for
 display as a Guided Recipe on the Assistant.
@@ -226,8 +341,119 @@ display as a Guided Recipe on the Assistant.
 <body>
 </body>
 </html>
+Show me the example
+<html>
+<head>
+<title>Non-alcoholic Pina Colada</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "Recipe",
+"name": "Non-alcoholic Pina Colada",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"author": {
+"@type": "Person",
+"name": "Mary Stone"
+},
+"datePublished": "2018-03-10",
+"description": "This non-alcoholic pina colada is everyone's favorite!",
+"recipeCuisine": "American",
+"prepTime": "PT1M",
+"cookTime": "PT2M",
+"totalTime": "PT3M",
+"keywords": "non-alcoholic",
+"recipeYield": "1 serving",
+"recipeCategory": "Drink",
+"nutrition": {
+"@type": "NutritionInformation",
+"calories": "120 calories"
+},
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "5",
+"ratingCount": "18"
+},
+"recipeIngredient": [
+"2 cups of pineapple juice",
+"5/8 cup cream of coconut",
+"ice"
+],
+"recipeInstructions": [
+{
+"@type": "HowToStep",
+"text": "Blend 2 cups of pineapple juice and 5/8 cup cream of coconut until smooth."
+},
+{
+"@type": "HowToStep",
+"text": "Fill a glass with ice."
+},
+{
+"@type": "HowToStep",
+"text": "Pour the pineapple juice and coconut mixture over ice."
+}
+],
+"video": {
+"@type": "VideoObject",
+"name": "How to make a Party Coffee Cake",
+"description": "This is how you make a Party Coffee Cake.",
+"thumbnailUrl": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"contentUrl": "http://www.example.com/video123.mp4",
+"embedUrl": "http://www.example.com/videoplayer?video=123",
+"uploadDate": "2018-02-05T08:00:00+08:00",
+"duration": "PT1M33S",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 2347
+},
+"expires": "2019-02-05T08:00:00+08:00"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 Carousel
 Here's an example of a recipe summary page (a page with a list of recipes) with itemList structured data. This content may be eligible to be displayed in a grid in Search results.
+<html>
+<head>
+<title>Grandma's Best Pie Recipes</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ItemList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"url": "https://example.com/apple-pie.html"
+},
+{
+"@type": "ListItem",
+"position": 2,
+"url": "https://example.com/blueberry-pie.html"
+},
+{
+"@type": "ListItem",
+"position": 3,
+"url": "https://example.com/cherry-pie.html"
+}]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
 <html>
 <head>
 <title>Grandma's Best Pie Recipes</title>
@@ -789,4 +1015,4 @@ ListItem.url
 URL
 The canonical URL of the item page. Every item should have a unique URL.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

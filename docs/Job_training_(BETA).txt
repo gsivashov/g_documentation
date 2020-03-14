@@ -77,6 +77,55 @@ Here's an example of an educational organization that provides job training.
 <body>
 </body>
 </html>
+<html>
+<head>
+<title>ACME Community College</title>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "EducationalOrganization",
+"name": "ACME Community College",
+"leiCode": "ABCDEFG123",
+"taxID": "123-34-5678",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "123 Main Street",
+"addressLocality": "Boston",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "02134"
+},
+"contactPoint": {
+"@type": "ContactPoint",
+"contactType": "Admissions",
+"telephone": "+15551234567"
+},
+"subOrganization": {
+"@type": "EducationalOrganization",
+"name": "ACME Community College - Berkshires Campus",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "123 Elm Street",
+"addressLocality": "Amherst",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "01002"
+}
+},
+"hasCredential": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "Accreditation",
+"recognizedBy": {
+"@type": "Organization",
+"name": "Southern Association of Colleges and Schools Commission on Colleges"
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 Program with multiple classes and no wages
 Here's an example of a program that has multiple classes and doesn't provide any wages for attending the program.
 <html>
@@ -167,8 +216,176 @@ Here's an example of a program that has multiple classes and doesn't provide any
 <body>
 </body>
 </html>
+Show me the example
+<html>
+<head>
+<title>Associate degree in Computer Science</title>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "EducationalOccupationalProgram",
+"name": "Associate degree in Computer Science from ACME College",
+"description": "a piece of text about what it might mean to take this program",
+"url": "http://www.acme.edu/CS",
+"identifier": [{
+"@type": "PropertyValue",
+"propertyID": "CIP2010",
+"value": "12.3456"
+}, {
+"@type": "PropertyValue",
+"propertyID": "ProgramID",
+"value": "CS-101"
+}],
+"provider": {
+"@type": "EducationalOrganization",
+"name": "ACME Community College",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "123 Main Street",
+"addressLocality": "Boston",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "02134"
+},
+"contactPoint": {
+"@type": "ContactPoint",
+"contactType": "Admissions",
+"telephone": "+1-555-123-4567"
+}
+},
+"timeToComplete": "P2Y",
+"occupationalCredentialAwarded": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "Associate Degree"
+},
+"programPrerequisites": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "HighSchool"
+},
+"applicationStartDate": "2019-05-14",
+"applicationDeadline": "2019-09-14",
+"startDate": "2019-10-01",
+"endDate": "2021-10-01",
+"dayOfWeek":
+[
+"Wednesday",
+"Thursday",
+"Friday"
+],
+"timeOfDay": "Morning",
+"numberOfCredits": "30",
+"typicalCreditsPerTerm": "12",
+"termDuration": "P4M",
+"termsPerYear": "2",
+"maximumEnrollment": "30",
+"educationalProgramMode": "in-person",
+"financialAidEligible": "Federal aid",
+"offers": [
+{
+"@type": "Offer",
+"category": "Tuition",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 16278,
+"priceCurrency": "USD"
+}
+}, {
+"@type": "Offer",
+"category": "Program Fees",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 200,
+"priceCurrency": "USD"
+}
+}
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 Work-based program
 Here's an example of a program that provides job training and wages.
+<html>
+<head>
+<title>About the IBEW Apprenticeship</title>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "WorkBasedProgram",
+"name": "IBEW Apprenticeship",
+"description": "a piece of text about what it might mean to take this program",
+"url": "http://www.acme.edu/CS",
+"provider": {
+"@type": "EducationalOrganization",
+"name": "International Brotherhood of Electrical Workers",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "123 Main Street",
+"addressLocality": "Boston",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "02134"
+},
+"contactPoint": {
+"@type": "ContactPoint",
+"contactType": "Admissions",
+"telephone": "+1-555-123-4567"
+}
+},
+"timeToComplete": "P2Y",
+"occupationalCredentialAwarded": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "Welding Licence"
+},
+"programPrerequisites": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "HighSchool"
+},
+"applicationStartDate": "2019-05-14",
+"applicationDeadline": "2019-09-14",
+"startDate": "2019-10-01",
+"endDate": "2021-10-01",
+"maximumEnrollment": "30",
+"offers": [
+{
+"@type": "Offer",
+"category": "Tuition",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 16278,
+"priceCurrency": "USD"
+}
+}, {
+"@type": "Offer",
+"category": "Program Fees",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 200,
+"priceCurrency": "USD"
+}
+}
+],
+"trainingSalary" : {
+"@type": "MonetaryAmountDistribution",
+"currency": "USD",
+"duration": "P1H",
+"median": 16.00
+},
+"salaryUponCompletion": {
+"@type": "MonetaryAmountDistribution",
+"currency": "USD",
+"duration": "P1H",
+"median": 20.00
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
 <html>
 <head>
 <title>About the IBEW Apprenticeship</title>
@@ -1010,4 +1227,4 @@ Show example
 }
 }
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

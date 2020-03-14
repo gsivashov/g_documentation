@@ -28,6 +28,26 @@ Here's an example of a course in JSON-LD:
 <body>
 </body>
 </html>
+<html>
+<head>
+<title>Introduction to Computer Science and Programming</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Course",
+"name": "Introduction to Computer Science and Programming",
+"description": "Introductory CS course laying out the basics.",
+"provider": {
+"@type": "Organization",
+"name": "University of Technology - Eureka",
+"sameAs": "http://www.ut-eureka.edu"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 Guidelines
 You must follow these guidelines to be eligible to appear in a Course carousel.
 Warning: If your site violates one or more of these guidelines, then Google may take manual action against it. Once you have remedied the problem, you can submit your site for reconsideration.
@@ -87,4 +107,4 @@ ListItem.url
 URL
 The canonical URL of the item page. Every item should have a unique URL.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

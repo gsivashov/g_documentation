@@ -1,0 +1,896 @@
+Home
+Products
+Search for Developers
+Reference
+Get your videos on Google
+Does your video give users step-by-step guidance to make food or drinks?
+Embed your video content within Recipe structured data.
+Or, does your video give users step-by-step guidance for some other task?
+Embed your video content within How-to structured data.
+Google Search is an entry point for people to discover and watch videos. While Google
+tries to automatically understand details about your video, you can explicitly provide
+information, such as the
+description, thumbnail URL, upload date, and duration, by marking up
+your video with VideoObject. Videos can appear in
+Google Search results, video search results, Google Images, and
+Google Discover.
+Based on how you mark up your content, your videos may also be eligible for the following video
+enhancements:
+Video enhancements
+LIVE badge: Get a LIVE badge added to your video by marking your video with
+BroadcastEvent. The LIVE badge can be applied to
+any public video that is live-streamed for any length of time. Here are a few examples:
+Sporting events
+Awards shows
+Influencer videos
+Live streaming video games
+Make sure you follow the LIVE badge guidelines and use
+the Indexing API to make sure
+Google crawls your page at the right time.
+Clips (limited access): Help users quickly navigate to specific points in a
+video.
+If your video is hosted on YouTube, Google Search may automatically enable clips
+based on the video description on YouTube. Check out the
+best practices for marking timestamps in YouTube
+descriptions.
+If your video is hosted on your web page, you can add
+Clip structured data to your VideoObject to
+help Google understand the important points in your video.
+This feature is currently limited to a
+small set of providers. If you would like to participate, register your interest in our form.
+Video host carousel (limited access): Enable users to explore your video gallery
+pages by adding ItemList structured data.
+This feature is currently limited to a small set of providers. Google
+Search may automatically show a host carousel for your site without you having to add
+ItemList structured data.
+Examples
+Standard video rich result
+Here's an example of a single VideoObject.
+<html>
+<head>
+<title>Introducing the self-driving bicycle in the Netherlands</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "VideoObject",
+"name": "Introducing the self-driving bicycle in the Netherlands",
+"description": "This spring, Google is introducing the self-driving bicycle in Amsterdam, the world’s premier cycling city. The Dutch cycle more than any other nation in the world, almost 900 kilometres per year per person, amounting to over 15 billion kilometres annually. The self-driving bicycle enables safe navigation through the city for Amsterdam residents, and furthers Google’s ambition to improve urban mobility with technology. Google Netherlands takes enormous pride in the fact that a Dutch team worked on this innovation that will have great impact in their home country.",
+"thumbnailUrl": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"uploadDate": "2016-03-31T08:00:00+08:00",
+"duration": "PT1M54S",
+"contentUrl": "https://www.example.com/video/123/file.mp4",
+"embedUrl": "https://www.example.com/embed/123",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 5647018
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head>
+<title>Introducing the self-driving bicycle in the Netherlands</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "VideoObject",
+"name": "Introducing the self-driving bicycle in the Netherlands",
+"description": "This spring, Google is introducing the self-driving bicycle in Amsterdam, the world’s premier cycling city. The Dutch cycle more than any other nation in the world, almost 900 kilometres per year per person, amounting to over 15 billion kilometres annually. The self-driving bicycle enables safe navigation through the city for Amsterdam residents, and furthers Google’s ambition to improve urban mobility with technology. Google Netherlands takes enormous pride in the fact that a Dutch team worked on this innovation that will have great impact in their home country.",
+"thumbnailUrl": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"uploadDate": "2016-03-31T08:00:00+08:00",
+"duration": "PT1M54S",
+"contentUrl": "https://www.example.com/video/123/file.mp4",
+"embedUrl": "https://www.example.com/embed/123",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 5647018
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+LIVE badge
+Here's an example of VideoObject and BroadcastEvent in JSON-LD code.
+<html>
+<head>
+<title>Bald Eagle at the Park - Livestream</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "VideoObject",
+"contentURL": "https://example.com/bald-eagle-at-the-park.mp4",
+"description": "Bald eagle at the park livestream.",
+"duration": "PT37M14S",
+"embedUrl": "https://example.com/bald-eagle-at-the-park",
+"expires": "2018-10-30T14:37:14+00:00",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 4756
+},
+"name": "Bald eagle nest livestream!",
+"thumbnailUrl": "https://example.com/bald-eagle-at-the-park",
+"uploadDate": "2018-10-27T14:00:00+00:00",
+"publication": [
+{
+"@type": "BroadcastEvent",
+"isLiveBroadcast": true,
+"startDate": "2018-10-27T14:00:00+00:00",
+"endDate": "2018-10-27T14:37:14+00:00"
+},
+{
+"@type": "BroadcastEvent",
+"isLiveBroadcast": true,
+"startDate": "2018-10-27T18:00:00+00:00",
+"endDate": "2018-10-27T18:37:14+00:00"
+}
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>Bald Eagle at the Park - Livestream</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "VideoObject",
+"contentURL": "https://example.com/bald-eagle-at-the-park.mp4",
+"description": "Bald eagle at the park livestream.",
+"duration": "PT37M14S",
+"embedUrl": "https://example.com/bald-eagle-at-the-park",
+"expires": "2018-10-30T14:37:14+00:00",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 4756
+},
+"name": "Bald eagle nest livestream!",
+"thumbnailUrl": "https://example.com/bald-eagle-at-the-park",
+"uploadDate": "2018-10-27T14:00:00+00:00",
+"publication": [
+{
+"@type": "BroadcastEvent",
+"isLiveBroadcast": true,
+"startDate": "2018-10-27T14:00:00+00:00",
+"endDate": "2018-10-27T14:37:14+00:00"
+},
+{
+"@type": "BroadcastEvent",
+"isLiveBroadcast": true,
+"startDate": "2018-10-27T18:00:00+00:00",
+"endDate": "2018-10-27T18:37:14+00:00"
+}
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Video host carousel (limited access)
+Here's an example of VideoObject
+and ItemList structured data. This feature is currently
+limited to a small set of providers.
+JSON-LD
+<html>
+<head>
+<title>Introducing the self-driving bicycle in the Netherlands</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ItemList",
+"itemListElement": [
+{
+"@type": "VideoObject",
+"position": 1,
+"name": "Introducing the self-driving bicycle in the Netherlands",
+"url": "https://www.example.com/video/self-driving-bicycle",
+"description": "This spring, Google is introducing the self-driving bicycle in Amsterdam, the world’s premier cycling city. The Dutch cycle more than any other nation in the world, almost 900 kilometres per year per person, amounting to over 15 billion kilometres annually. The self-driving bicycle enables safe navigation through the city for Amsterdam residents, and furthers Google’s ambition to improve urban mobility with technology. Google Netherlands takes enormous pride in the fact that a Dutch team worked on this innovation that will have great impact in their home country.",
+"thumbnailUrl": [
+"https://www.example.com/video/self-driving-bicycle/1x1/photo.jpg",
+"https://www.example.com/video/self-driving-bicycle/4x3/photo.jpg",
+"https://www.example.com/video/self-driving-bicycle/16x9/photo.jpg"
+],
+"uploadDate": "2016-03-31T08:00:00+08:00",
+"duration": "PT1M54S",
+"contentUrl": "https://www.example.com/video/self-driving-bicycle/file.mp4",
+"embedUrl": "https://www.example.com/embed/self-driving-bicycle",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 5647018
+}
+},
+{
+"@type": "VideoObject",
+"position": 2,
+"name": "How to tie a tie",
+"url": "https://www.example.com/video/how-to-tie-a-tie",
+"description": "How to tie a four-in-hand knot.",
+"thumbnailUrl": [
+"https://www.example.com/video/how-to-tie-a-tie/1x1/photo.jpg",
+"https://www.example.com/video/how-to-tie-a-tie/4x3/photo.jpg",
+"https://www.example.com/video/how-to-tie-a-tie/16x9/photo.jpg"
+],
+"uploadDate": "2019-02-28T08:00:00+08:00",
+"duration": "PT5M01S",
+"contentUrl": "https://www.example.com/video/how-to-tie-a-tie/file.mp4",
+"embedUrl": "https://www.example.com/embed/how-to-tie-a-tie",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 102111
+}
+}
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>Introducing the self-driving bicycle in the Netherlands</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ItemList",
+"itemListElement": [
+{
+"@type": "VideoObject",
+"position": 1,
+"name": "Introducing the self-driving bicycle in the Netherlands",
+"url": "https://www.example.com/video/self-driving-bicycle",
+"description": "This spring, Google is introducing the self-driving bicycle in Amsterdam, the world’s premier cycling city. The Dutch cycle more than any other nation in the world, almost 900 kilometres per year per person, amounting to over 15 billion kilometres annually. The self-driving bicycle enables safe navigation through the city for Amsterdam residents, and furthers Google’s ambition to improve urban mobility with technology. Google Netherlands takes enormous pride in the fact that a Dutch team worked on this innovation that will have great impact in their home country.",
+"thumbnailUrl": [
+"https://www.example.com/video/self-driving-bicycle/1x1/photo.jpg",
+"https://www.example.com/video/self-driving-bicycle/4x3/photo.jpg",
+"https://www.example.com/video/self-driving-bicycle/16x9/photo.jpg"
+],
+"uploadDate": "2016-03-31T08:00:00+08:00",
+"duration": "PT1M54S",
+"contentUrl": "https://www.example.com/video/self-driving-bicycle/file.mp4",
+"embedUrl": "https://www.example.com/embed/self-driving-bicycle",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 5647018
+}
+},
+{
+"@type": "VideoObject",
+"position": 2,
+"name": "How to tie a tie",
+"url": "https://www.example.com/video/how-to-tie-a-tie",
+"description": "How to tie a four-in-hand knot.",
+"thumbnailUrl": [
+"https://www.example.com/video/how-to-tie-a-tie/1x1/photo.jpg",
+"https://www.example.com/video/how-to-tie-a-tie/4x3/photo.jpg",
+"https://www.example.com/video/how-to-tie-a-tie/16x9/photo.jpg"
+],
+"uploadDate": "2019-02-28T08:00:00+08:00",
+"duration": "PT5M01S",
+"contentUrl": "https://www.example.com/video/how-to-tie-a-tie/file.mp4",
+"embedUrl": "https://www.example.com/embed/how-to-tie-a-tie",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 102111
+}
+}
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Microdata
+<div>
+<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<!-- Thumbnail -->
+<a href="https://example.com/videos/self-driving-bicycle"
+title="Introducing the self-driving bicycle in the Netherlands">
+<img src="https://example.com/videos/self-driving-bicycle/thumbnail.jpg"
+alt="Introducing the self-driving bicycle in the Netherlands"
+title="Introducing the self-driving bicycle in the Netherlands"
+itemprop="thumbnailUrl">
+</a>
+<!-- URL, name, and description -->
+<h1>
+<a itemprop="url" href="https://example.com/videos/self-driving-bicycle"
+title="Introducing the self-driving bicycle in the Netherlands">
+<span itemprop="name">Introducing the self-driving bicycle in the Netherlands</span>
+</a>
+</h1>
+<a href="https://example.com/videos/self-driving-bicycle"
+title="Introducing the self-driving bicycle in the Netherlands">
+<div itemprop="description">"This spring, Google is introducing the self-driving bicycle
+in Amsterdam, the world’s premier cycling city. The Dutch cycle more than any other
+nation in the world, almost 900 kilometres per year per person, amounting to over 15
+billion kilometres annually. The self-driving bicycle enables safe navigation through
+the city for Amsterdam residents, and furthers Google’s ambition to improve urban
+mobility with technology. Google Netherlands takes enormous pride in the fact that a
+Dutch team worked on this innovation that will have great impact in their home country.
+"</div>
+</a>
+<!-- Other metadata -->
+<meta itemprop="duration" content="PT1M54S" />
+<meta itemprop="uploadDate" content="2016-03-31T08:00:00+08:00" />
+<span itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+<span itemprop="interactionType" itemscope itemtype="http://schema.org/WatchAction"></span>
+<meta itemprop="userInteractionCount" content="5647018" />
+</span>
+</div>
+<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<!-- Thumbnail -->
+<a href="https://example.com/videos/how-to-tie-a-tie"
+title="How to tie a tie">
+<img src="https://example.com/videos/how-to-tie-a-tie/thumbnail.jpg"
+alt="How to tie a tie"
+title="How to tie a tie"
+itemprop="thumbnailUrl">
+</a>
+<!-- URL, name, and description -->
+<h1>
+<a itemprop="url" href="https://example.com/videos/how-to-tie-a-tie"
+title="Tie a Tie">
+<span itemprop="name">Tie a Tie</span>
+</a>
+</h1>
+<a href="https://example.com/videos/how-to-tie-a-tie"
+title="Tie a Tie">
+<div itemprop="description">How to tie a four-in-hand knot.</div>
+</a>
+<!-- Other metadata -->
+<meta itemprop="duration" content="PT5M01S" />
+<meta itemprop="uploadDate" content="2019-01-05T08:00:00+08:00" />
+<span itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+<span itemprop="interactionType" itemscope itemtype="http://schema.org/WatchAction"></span>
+<meta itemprop="userInteractionCount" content="102111" />
+</span>
+</div>
+</div>
+Show me the example
+<div>
+<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<!-- Thumbnail -->
+<a href="https://example.com/videos/self-driving-bicycle"
+title="Introducing the self-driving bicycle in the Netherlands">
+<img src="https://example.com/videos/self-driving-bicycle/thumbnail.jpg"
+alt="Introducing the self-driving bicycle in the Netherlands"
+title="Introducing the self-driving bicycle in the Netherlands"
+itemprop="thumbnailUrl">
+</a>
+<!-- URL, name, and description -->
+<h1>
+<a itemprop="url" href="https://example.com/videos/self-driving-bicycle"
+title="Introducing the self-driving bicycle in the Netherlands">
+<span itemprop="name">Introducing the self-driving bicycle in the Netherlands</span>
+</a>
+</h1>
+<a href="https://example.com/videos/self-driving-bicycle"
+title="Introducing the self-driving bicycle in the Netherlands">
+<div itemprop="description">"This spring, Google is introducing the self-driving bicycle
+in Amsterdam, the world’s premier cycling city. The Dutch cycle more than any other
+nation in the world, almost 900 kilometres per year per person, amounting to over 15
+billion kilometres annually. The self-driving bicycle enables safe navigation through
+the city for Amsterdam residents, and furthers Google’s ambition to improve urban
+mobility with technology. Google Netherlands takes enormous pride in the fact that a
+Dutch team worked on this innovation that will have great impact in their home country.
+"</div>
+</a>
+<!-- Other metadata -->
+<meta itemprop="duration" content="PT1M54S" />
+<meta itemprop="uploadDate" content="2016-03-31T08:00:00+08:00" />
+<span itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+<span itemprop="interactionType" itemscope itemtype="http://schema.org/WatchAction"></span>
+<meta itemprop="userInteractionCount" content="5647018" />
+</span>
+</div>
+<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<!-- Thumbnail -->
+<a href="https://example.com/videos/how-to-tie-a-tie"
+title="How to tie a tie">
+<img src="https://example.com/videos/how-to-tie-a-tie/thumbnail.jpg"
+alt="How to tie a tie"
+title="How to tie a tie"
+itemprop="thumbnailUrl">
+</a>
+<!-- URL, name, and description -->
+<h1>
+<a itemprop="url" href="https://example.com/videos/how-to-tie-a-tie"
+title="Tie a Tie">
+<span itemprop="name">Tie a Tie</span>
+</a>
+</h1>
+<a href="https://example.com/videos/how-to-tie-a-tie"
+title="Tie a Tie">
+<div itemprop="description">How to tie a four-in-hand knot.</div>
+</a>
+<!-- Other metadata -->
+<meta itemprop="duration" content="PT5M01S" />
+<meta itemprop="uploadDate" content="2019-01-05T08:00:00+08:00" />
+<span itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+<span itemprop="interactionType" itemscope itemtype="http://schema.org/WatchAction"></span>
+<meta itemprop="userInteractionCount" content="102111" />
+</span>
+</div>
+</div>
+Clips (limited access)
+Here's an example of VideoObject
+and Clip in JSON-LD code. This feature is currently limited
+to a small set of providers. If you would like to participate,
+register your interest in our form.
+<html>
+<head>
+<title>Cat jumps over the fence</title>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "VideoObject",
+"name": "Cat video",
+"duration": "P10M",
+"uploadDate": "2019-07-19",
+"thumbnailUrl": "http://www.example.com/cat.jpg",
+"description": "Watch this cat jump over a fence!",
+"contentUrl": "http://www.example.com/cat_video_full.mp4",
+"hasPart": [{
+"@type": "Clip",
+"name": "Cat jumps",
+"startOffset": 30,
+"endOffset": 45,
+"url": "http://www.example.com/example?t=30"
+},
+{
+"@type": "Clip",
+"name": "Cat misses the fence",
+"startOffset": 111,
+"endOffset": 150,
+"url": "http://www.example.com/example?t=111"
+}]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>Cat jumps over the fence</title>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "VideoObject",
+"name": "Cat video",
+"duration": "P10M",
+"uploadDate": "2019-07-19",
+"thumbnailUrl": "http://www.example.com/cat.jpg",
+"description": "Watch this cat jump over a fence!",
+"contentUrl": "http://www.example.com/cat_video_full.mp4",
+"hasPart": [{
+"@type": "Clip",
+"name": "Cat jumps",
+"startOffset": 30,
+"endOffset": 45,
+"url": "http://www.example.com/example?t=30"
+},
+{
+"@type": "Clip",
+"name": "Cat misses the fence",
+"startOffset": 111,
+"endOffset": 150,
+"url": "http://www.example.com/example?t=111"
+}]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+AMP page with a video
+Here's an example of a VideoObject on an AMP page.
+<html>
+<head>
+<title>Introducing the self-driving bicycle in the Netherlands</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "VideoObject",
+"name": "Introducing the self-driving bicycle in the Netherlands",
+"description": "This spring, Google is introducing the self-driving bicycle in Amsterdam, the world’s premier cycling city. The Dutch cycle more than any other nation in the world, almost 900 kilometres per year per person, amounting to over 15 billion kilometres annually. The self-driving bicycle enables safe navigation through the city for Amsterdam residents, and furthers Google’s ambition to improve urban mobility with technology. Google Netherlands takes enormous pride in the fact that a Dutch team worked on this innovation that will have great impact in their home country.",
+"thumbnailUrl": "https://www.example.com/thumbnail.jpg",
+"uploadDate": "2016-03-31T08:00:00+08:00",
+"duration": "PT1M54S",
+"publisher": {
+"@type": "Organization",
+"name": "Google Nederland",
+"logo": {
+"@type": "ImageObject",
+"url": "https://example.com/logo.jpg",
+"width": 600,
+"height": 60
+}
+},
+"contentUrl": "https://www.example.com/video/123/file.mp4",
+"embedUrl": "https://www.example.com/embed/123",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 5647018
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>Introducing the self-driving bicycle in the Netherlands</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "VideoObject",
+"name": "Introducing the self-driving bicycle in the Netherlands",
+"description": "This spring, Google is introducing the self-driving bicycle in Amsterdam, the world’s premier cycling city. The Dutch cycle more than any other nation in the world, almost 900 kilometres per year per person, amounting to over 15 billion kilometres annually. The self-driving bicycle enables safe navigation through the city for Amsterdam residents, and furthers Google’s ambition to improve urban mobility with technology. Google Netherlands takes enormous pride in the fact that a Dutch team worked on this innovation that will have great impact in their home country.",
+"thumbnailUrl": "https://www.example.com/thumbnail.jpg",
+"uploadDate": "2016-03-31T08:00:00+08:00",
+"duration": "PT1M54S",
+"publisher": {
+"@type": "Organization",
+"name": "Google Nederland",
+"logo": {
+"@type": "ImageObject",
+"url": "https://example.com/logo.jpg",
+"width": 600,
+"height": 60
+}
+},
+"contentUrl": "https://www.example.com/video/123/file.mp4",
+"embedUrl": "https://www.example.com/embed/123",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 5647018
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Enhance your videos on Google
+Here's an overview of how to enhance your videos on Google:
+Ensure that Googlebot can crawl your video pages (meaning, your pages aren't protected by
+a robots.txt file or robots meta tag).
+Make sure you follow our guidelines.
+If you have several copies of the same video on your site hosted under different URLs,
+use canonical URLs on
+each copy of the page.
+Add structured data to your video pages.
+If you’re just getting started, learn more about
+how structured data works. You
+can also try the structured data codelab, which walks you through how to add structured data to
+your website.
+Test and preview your structured data.
+Check the index status of your URLs and request for your URL to be
+crawled with the
+URL inspection tool in
+Search Console. To confirm if crawlers are able to access structured data on your page, use
+the Live Test feature.
+Keep Google informed of new video pages or
+changes to existing video pages.
+Review the guidelines for
+video sitemaps.
+If you're implementing BroadcastEvent, use the
+Indexing API to make sure Google crawls
+your livestream video at the right time.
+Monitor performance in Search
+To understand how users interact with your videos, use the following Google tools:
+Use the Performance
+Report in Search Console to see how your videos appear in either general Search results
+or Discover. You can automatically pull these results with the
+Search
+Console API.
+Use the Rich result status
+report in Search Console to understand what Google could or could not read from your
+site, and troubleshoot rich result errors.
+If you're experiencing unexpected fluctuations or inconsistencies in your traffic, use the
+troubleshooter to
+identify and resolve the issues.
+Guidelines
+To help Google better understand your video, make sure you follow the guidelines:
+Warning: If Google detects that some of the markup on your pages
+may be using techniques that are outside our structured data guidelines, your site may receive
+a manual action.
+Webmaster guidelines
+General structured data guidelines
+Video best practices
+Video sitemap guidelines
+Livestream guidelines (if applicable)
+Carousel guidelines (if applicable)
+Clip guidelines (if applicable)
+Best practices for marking timestamps on YouTube (if applicable)
+LIVE badge guidelines
+If you're adding BroadcastEvent to livestream
+videos, follow these guidelines:
+Don't use vulgar or potentially offensive language in the structured data.
+To make sure Google crawls your livestream video at the right time, use the
+Indexing API. Call the API for the
+following events:
+When the video goes live
+When the video has stopped streaming, and the page's markup has been updated
+to indicate the endDate
+Whenever a change has happened in the markup and Google needs to be notified
+The Indexing API only supports livestream videos.
+Best practices for marking timestamps on YouTube
+If your video is hosted on YouTube, Google Search may automatically enable clips for your video based
+on the video description on YouTube, and you may not have to mark specific timestamps in your
+YouTube description. However, you can tell us more explicitly about the important points in
+your video and we will prefer that information. The following diagram shows how timestamps and
+labels in a YouTube video description can appear in Search results:
+1. Timestamp: When a clip starts.2. Label: The name of the clip.
+Keep in mind the following guidelines when formatting timestamps and labels for YouTube descriptions:
+Format the timestamp in the following format: [hour]:[minute]:[second]. If
+there's no hour, you don't need to include it.
+Specify the label of the timestamp on the same line as the timestamp.
+Place each timestamp on a new line in the video description.
+Link the timestamp to the specified point in the video.
+Make sure the label contains at least one word.
+List the timestamps in chronological order.
+Clip guidelines (limited access)
+If you're adding Clip to mark video segments, follow these guidelines:
+The video must be publicly available to watch without a subscription.
+The video must have the ability to deep link into some point other than the start
+point in the video URL. For example, http://www.example.com/example?t=30 starts
+30 seconds into a video.
+Clip structured data must be added to a page where users can watch the video. It's
+a bad user experience to point users to a page where they can't watch the video.
+The total video duration must be a minimum of 30 seconds.
+Make sure that no two clips on the same video defined on the same page share a start
+time.
+The video must have VideoObject structured data.
+Structured data type definitions
+This section describes the structured data types related to video features in Google Search.
+You must include the required VideoObject properties for your
+content to be eligible for display as a video rich result. You can also include the
+recommended properties to add more information about your content, which could provide a better
+user experience. In addition to VideoObject, you can add the
+following data types to enable video enhancements in Google Search:
+BroadcastEvent: Mark up livestream
+videos to enable a LIVE badge on your video.
+ItemList: Mark up pages with a list of videos
+to enable a video host carousel.
+Clip: Mark important segments in your video to help
+users quickly navigate to specific points in a video.
+Does your video teach users how to complete a task step-by-step?
+Embed your video content within HowTo.
+VideoObject
+The full definition of VideoObject is available at
+schema.org/VideoObject.
+If you don't include the required properties, Google may not be able to extract
+any information about the video. You can also include the recommended properties to
+add more information about your content, which could provide a better user experience.
+Required properties
+description
+Text
+The description of the video. HTML tags are ignored.
+name
+Text
+The title of the video
+thumbnailUrl
+Repeated ImageObject or URL
+A URL pointing to the video thumbnail image file.
+Image URLs must be
+crawlable and indexable.
+Images must represent the marked up content.
+Images must be in .jpg, .png, or. gif format.
+Images must 60px x 30px, at minimum.
+uploadDate
+Date
+The date the video was first published, in
+ISO 8601 format.
+Recommended properties
+contentUrl
+URL
+We recommend that you provide a URL to your video. You can provide a
+URL by using one or both of the following properties: contentUrl and
+embedUrl.
+A URL pointing to the actual video media file, in one of the
+supported
+encoding formats. Don't link to the page where the video lives; this must be the
+URL of the video media file itself.
+Example
+"contentUrl": "https://www.example.com/video/123/file.mp4"
+Make sure to follow our
+Video best practices.
+Tip: You can ensure that only Googlebot accesses your
+content by using a
+reverse DNS lookup.
+duration
+Duration
+The duration of the video in
+ISO 8601 format.
+For example, T00H30M5S represents a duration of "thirty minutes and five seconds".
+embedUrl
+URL
+We recommend that you provide a URL to your video. You can provide a
+URL by using one or both of the following properties: contentUrl and
+embedUrl.
+A URL pointing to a player for the specific video, in one of the
+supported
+encoding formats. Don't link to the page where the video lives; this must be the
+URL of the video media file itself. Usually this is the information in
+the src element of an <embed> tag.
+Example
+"embedUrl": "https://www.example.com/embed/123"
+Make sure to follow our
+Video best practices.
+Tip: You can ensure that only Googlebot accesses your
+content by using a reverse
+DNS lookup.
+expires
+Date
+If applicable, the date after which the video will no longer be available, in
+ISO 8601 format. Don't
+supply this information if your video does not expire.
+hasPart
+If your video has important segments, nest the required Clip properties in your VideoObject. For example:
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "VideoObject",
+"name": "Cat video",
+"hasPart": {
+"@type": "Clip",
+"name": "Cat jumps",
+"startOffset": 30,
+"url": "http://www.example.com/example?t=30"
+}
+}
+</script>
+interactionStatistic
+InteractionCounter
+The number of times the video has been watched. For example:
+"interactionStatistic":
+{
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 12345
+}
+Starting October 2019, we changed our documentation to recommend interactionStatistic instead of interactionCount. While we continue to support interactionCount, we recommend interactionStatistic moving forward.
+publication
+If your video is happening live and you want to be eligible for the LIVE badge, nest
+the BroadcastEvent properties in your
+VideoObject. For example:
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "VideoObject",
+"name": "Cat video",
+"publication": {
+"@type": "BroadcastEvent",
+"name": "First scheduled broadcast",
+"isLiveBroadcast": true,
+"startDate": "2018-10-27T14:00:00+00:00",
+"endDate": "2018-10-27T14:37:14+00:00"
+}
+}
+</script>
+BroadcastEvent
+To be eligible for display with a LIVE badge, nest the following
+properties in your VideoObject. While
+BroadcastEvent properties aren't required, you must add the following properties if you
+want your video to display with a LIVE badge.
+The full definition of BroadcastEvent is available at
+schema.org/BroadcastEvent.
+Required properties
+publication
+BroadcastEvent
+Describes when the video is to be streamed live. Can be a list or a single instance.
+publication.endDate
+DateTime
+Time and date of when the livestream ends or is expected to end, in
+ISO 8601 format.
+It is required to provide the endDate once the video has finished and is no
+longer live. If the expected endDate is unknown prior to the livestream
+starting, we recommend providing an approximate endDate.
+If endDate is in the past or present, it indicates stream actually ended
+and is no longer live. If endDate is in the future, it indicates stream is
+scheduled to end at that time.
+publication.isLiveBroadcast
+Boolean
+Set to true if the video is, has been, or will be streamed live.
+publication.startDate
+DateTime
+Time and date of when the livestream starts or is expected to start, in
+ISO 8601 format. If
+startDate is in the past or present, it indicates that the stream actually
+started. If startDate is in the future, it indicates stream is
+scheduled to start at that time.
+ItemList (limited access)
+To help Google better understand your video gallery pages, add the following ItemList
+properties in addition to VideoObject properties. For more
+information about carousels, see Carousel.
+The full definition of ItemList is
+available at schema.org/ItemList.
+Required properties
+itemListElement
+ListItem
+Annotation for a single item page. Each ListItem element should include
+VideoObject properties as well as ListItem properties.
+ListItem.position
+Integer
+Ordinal position of the item page in the list. For example:
+"itemListElement": [
+{
+"@type": "VideoObject",
+"position": 1,
+... other VideoObject properties ...
+}, {
+"@type": "VideoObject",
+"position": 2,
+... other VideoObject properties ...
+}
+]
+ListItem.url
+URL
+The canonical URL of the item page. Every item should have a unique URL.
+Clip (limited access)
+This feature is currently limited to a small set of providers. If you
+would like to participate,
+register your interest in our form.
+To be eligible for clips, nest the following properties in your
+VideoObject. While
+Clip properties aren't required, you must add the following properties if you
+want your video to display with video segments.
+The full definition of Clip is
+available at schema.org/Clip.
+Required properties
+name
+Text
+A descriptive title for the content of the clip.
+startOffset
+Number
+The start time of the clip expressed as the number of seconds from the beginning of the
+work.
+url
+URL
+A URL that points to the start time of the clip.
+The clip URL must point to the same URL path as the video with
+additional query
+parameters that specify the time.
+For example, the following URL means the video starts at 2:00 minutes:
+"url": "https://www.example.com/example?t=120"
+Recommended properties
+endOffset
+Number
+The end time of the clip expressed as the number of seconds from the
+beginning of the work.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

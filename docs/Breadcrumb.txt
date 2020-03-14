@@ -18,16 +18,18 @@ following use cases, users can arrive at a page from very different types of
 search queries. While each search may return the same web page, the breadcrumb
 categorizes the content within the context of the Google Search query. The page
 ancillaryjustice.html might display the following breadcrumb trails
-depending upon the search context:
-A search query for the book title "Ancillary Justice" may generate the following breadcrumb:
+depending upon the search context.
+Single breadcrumb trail
+A search query for a year and genre-based award, "2014 Nebula Award best novel", may generate
+the following breadcrumb:
 Books ›
-Authors ›
-Ann Leckie ›
-Ancillary Justice
+Science Fiction ›
+Award Winners
+JSON-LD
 Here's an example in JSON-LD to support that breadcrumb:
 <html>
 <head>
-<title>The title of the page</title>
+<title>Award Winners</title>
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
@@ -40,18 +42,12 @@ Here's an example in JSON-LD to support that breadcrumb:
 },{
 "@type": "ListItem",
 "position": 2,
-"name": "Authors",
-"item": "https://example.com/books/authors"
+"name": "Science Fiction",
+"item": "https://example.com/books/sciencefiction"
 },{
 "@type": "ListItem",
 "position": 3,
-"name": "Ann Leckie",
-"item": "https://example.com/books/authors/annleckie"
-},{
-"@type": "ListItem",
-"position": 4,
-"name": "Ancillary Justice",
-"item": "https://example.com/books/authors/ancillaryjustice"
+"name": "Award Winners"
 }]
 }
 </script>
@@ -59,53 +55,159 @@ Here's an example in JSON-LD to support that breadcrumb:
 <body>
 </body>
 </html>
-A search query for a year and genre-based award, "2014 Nebula Award best novel", may generate
-the following breadcrumb:
-Books ›
-Science Fiction ›
-Award Winners
+<html>
+<head>
+<title>Award Winners</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [{
+"@type": "ListItem",
+"position": 1,
+"name": "Books",
+"item": "https://example.com/books"
+},{
+"@type": "ListItem",
+"position": 2,
+"name": "Science Fiction",
+"item": "https://example.com/books/sciencefiction"
+},{
+"@type": "ListItem",
+"position": 3,
+"name": "Award Winners"
+}]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 RDFa
 Here's an example in RDFa to support that breadcrumb:
-Books
+<html>
+<head>
+<title>Award Winners</title>
+</head>
+<body>
+<ol vocab="https://schema.org/" typeof="BreadcrumbList">
+<li property="itemListElement" typeof="ListItem">
+<a property="item" typeof="WebPage"
+href="https://example.com/books">
+<span property="name">Books</span></a>
+<meta property="position" content="1">
+</li>
 ›
-Science Fiction
+<li property="itemListElement" typeof="ListItem">
+<a property="item" typeof="WebPage"
+href="https://example.com/books/sciencefiction">
+<span property="name">Science Fiction</span></a>
+<meta property="position" content="2">
+</li>
 ›
-Award Winners
+<li property="itemListElement" typeof="ListItem">
+<span property="name">Award Winners</span>
+<meta property="position" content="3">
+</li>
+</ol>
+</body>
+</html>
+<html>
+<head>
+<title>Award Winners</title>
+</head>
+<body>
+<ol vocab="https://schema.org/" typeof="BreadcrumbList">
+<li property="itemListElement" typeof="ListItem">
+<a property="item" typeof="WebPage"
+href="https://example.com/books">
+<span property="name">Books</span></a>
+<meta property="position" content="1">
+</li>
+›
+<li property="itemListElement" typeof="ListItem">
+<a property="item" typeof="WebPage"
+href="https://example.com/books/sciencefiction">
+<span property="name">Science Fiction</span></a>
+<meta property="position" content="2">
+</li>
+›
+<li property="itemListElement" typeof="ListItem">
+<span property="name">Award Winners</span>
+<meta property="position" content="3">
+</li>
+</ol>
+</body>
+</html>
 Microdata
 Here's an example in Microdata to support that breadcrumb:
-Books
+<html>
+<head>
+<title>Award Winners</title>
+</head>
+<body>
+<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<a itemprop="item" href="https://example.com/books">
+<span itemprop="name">Books</span></a>
+<meta itemprop="position" content="1" />
+</li>
 ›
-Science Fiction
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<a itemscope itemtype="https://schema.org/WebPage"
+itemprop="item" itemid="https://example.com/books/sciencefiction"
+href="https://example.com/books/sciencefiction">
+<span itemprop="name">Science Fiction</span></a>
+<meta itemprop="position" content="2" />
+</li>
 ›
-Award winners
-Here's an example of a multiple breadcrumb trail:
-Books ›
-Science Fiction ›
-Award Winners
-Literature ›
-Speculative Fiction
-RDFa
-Here's the example RDFa to support that breadcrumb:
-Books
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<span itemprop="name">Award winners</span>
+<meta itemprop="position" content="3" />
+</li>
+</ol>
+</body>
+</html>
+<html>
+<head>
+<title>Award Winners</title>
+</head>
+<body>
+<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<a itemprop="item" href="https://example.com/books">
+<span itemprop="name">Books</span></a>
+<meta itemprop="position" content="1" />
+</li>
 ›
-Science Fiction
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<a itemscope itemtype="https://schema.org/WebPage"
+itemprop="item" itemid="https://example.com/books/sciencefiction"
+href="https://example.com/books/sciencefiction">
+<span itemprop="name">Science Fiction</span></a>
+<meta itemprop="position" content="2" />
+</li>
 ›
-Award Winners
-Literature
-›
-Speculative Fiction
-Microdata
-Here's the example Microdata to support that breadcrumb:
-Books
-›
-Science Fiction
-›
-Award Winners
-Literature
-›
-Speculative Fiction
-HTML Example
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<span itemprop="name">Award winners</span>
+<meta itemprop="position" content="3" />
+</li>
+</ol>
+</body>
+</html>
+HTML
 Here's an example of an HTML breadcrumb block within the page as part of the visual design.
+<html>
+<head>
+<title>Award Winners</title>
+</head>
+<body>
 <ol>
 <li>
 <a href="http://www.example.com/books">Books</a>
@@ -117,6 +219,310 @@ Here's an example of an HTML breadcrumb block within the page as part of the vis
 Award Winners
 </li>
 </ol>
+</body>
+</html>
+Multiple breadcrumb trail
+If there are multiple ways to navigate to a page on your site, you can specify multiple
+breadcrumb trails for a single page. Here's one breadcrumb trail that leads to a page
+for award winning books:
+Books ›
+Science Fiction ›
+Award Winners
+Here's the another breadcrumb trail that leads to the same page:
+Literature ›
+Award Winners
+JSON-LD
+Here's the example JSON-LD that supports multiple breadcrumb trails:
+<html>
+<head>
+<title>Award Winners</title>
+<script type="application/ld+json">
+[{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [{
+"@type": "ListItem",
+"position": 1,
+"name": "Books",
+"item": "https://example.com/books"
+},{
+"@type": "ListItem",
+"position": 2,
+"name": "Science Fiction",
+"item": "https://example.com/books/sciencefiction"
+},{
+"@type": "ListItem",
+"position": 3,
+"name": "Award Winners"
+}]
+},
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [{
+"@type": "ListItem",
+"position": 1,
+"name": "Literature",
+"item": "https://example.com/literature"
+},{
+"@type": "ListItem",
+"position": 2,
+"name": "Award Winners"
+}]
+}]
+</script>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head>
+<title>Award Winners</title>
+<script type="application/ld+json">
+[{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [{
+"@type": "ListItem",
+"position": 1,
+"name": "Books",
+"item": "https://example.com/books"
+},{
+"@type": "ListItem",
+"position": 2,
+"name": "Science Fiction",
+"item": "https://example.com/books/sciencefiction"
+},{
+"@type": "ListItem",
+"position": 3,
+"name": "Award Winners"
+}]
+},
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [{
+"@type": "ListItem",
+"position": 1,
+"name": "Literature",
+"item": "https://example.com/literature"
+},{
+"@type": "ListItem",
+"position": 2,
+"name": "Award Winners"
+}]
+}]
+</script>
+</head>
+<body>
+</body>
+</html>
+RDFa
+Here's the example RDFa that supports multiple breadcrumb trails:
+<html>
+<head>
+<title>Award Winners</title>
+</head>
+<body>
+<ol vocab="https://schema.org/" typeof="BreadcrumbList">
+<li property="itemListElement" typeof="ListItem">
+<a property="item" typeof="WebPage"
+href="https://example.com/books">
+<span property="name">Books</span></a>
+<meta property="position" content="1">
+</li>
+›
+<li property="itemListElement" typeof="ListItem">
+<a property="item" typeof="WebPage"
+href="https://example.com/books/sciencefiction">
+<span property="name">Science Fiction</span></a>
+<meta property="position" content="2">
+</li>
+›
+<li property="itemListElement" typeof="ListItem">
+<a property="item" typeof="WebPage"
+href="https://example.com/books/sciencefiction/awardwinners">
+<span property="name">Award Winners</span></a>
+<meta property="position" content="3">
+</li>
+</ol>
+<ol vocab="https://schema.org/" typeof="BreadcrumbList">
+<li property="itemListElement" typeof="ListItem">
+<a property="item" typeof="WebPage"
+href="https://example.com/literature">
+<span property="name">Literature</span></a>
+<meta property="position" content="1">
+</li>
+›
+<li property="itemListElement" typeof="ListItem">
+<span property="name">Award Winners</span>
+<meta property="position" content="2">
+</li>
+</ol>
+</body>
+</html>
+<html>
+<head>
+<title>Award Winners</title>
+</head>
+<body>
+<ol vocab="https://schema.org/" typeof="BreadcrumbList">
+<li property="itemListElement" typeof="ListItem">
+<a property="item" typeof="WebPage"
+href="https://example.com/books">
+<span property="name">Books</span></a>
+<meta property="position" content="1">
+</li>
+›
+<li property="itemListElement" typeof="ListItem">
+<a property="item" typeof="WebPage"
+href="https://example.com/books/sciencefiction">
+<span property="name">Science Fiction</span></a>
+<meta property="position" content="2">
+</li>
+›
+<li property="itemListElement" typeof="ListItem">
+<a property="item" typeof="WebPage"
+href="https://example.com/books/sciencefiction/awardwinners">
+<span property="name">Award Winners</span></a>
+<meta property="position" content="3">
+</li>
+</ol>
+<ol vocab="https://schema.org/" typeof="BreadcrumbList">
+<li property="itemListElement" typeof="ListItem">
+<a property="item" typeof="WebPage"
+href="https://example.com/literature">
+<span property="name">Literature</span></a>
+<meta property="position" content="1">
+</li>
+›
+<li property="itemListElement" typeof="ListItem">
+<span property="name">Award Winners</span>
+<meta property="position" content="2">
+</li>
+</ol>
+</body>
+</html>
+Microdata
+Here's the example Microdata that supports multiple breadcrumb trails:
+<html>
+<head>
+<title>Award Winners</title>
+</head>
+<body>
+<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<a itemprop="item" href="https://example.com/books">
+<span itemprop="name">Books</span></a>
+<meta itemprop="position" content="1" />
+</li>
+›
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<a itemscope itemtype="https://schema.org/WebPage"
+itemprop="item" itemid="https://example.com/books/sciencefiction"
+href="https://example.com/books/sciencefiction">
+<span itemprop="name">Science Fiction</span></a>
+<meta itemprop="position" content="2" />
+</li>
+›
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<a itemprop="item" href="https://example.com/books/sciencefiction/awardwinners">
+<span itemprop="name">Award Winners</span></a>
+<meta itemprop="position" content="3" />
+</li>
+</ol>
+<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<a itemprop="item" href="https://example.com/literature">
+<span itemprop="name">Literature</span></a>
+<meta itemprop="position" content="1" />
+</li>
+›
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<span itemprop="name">Award Winners</span>
+<meta itemprop="position" content="2" />
+</li>
+</ol>
+</body>
+</html>
+<html>
+<head>
+<title>Award Winners</title>
+</head>
+<body>
+<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<a itemprop="item" href="https://example.com/books">
+<span itemprop="name">Books</span></a>
+<meta itemprop="position" content="1" />
+</li>
+›
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<a itemscope itemtype="https://schema.org/WebPage"
+itemprop="item" itemid="https://example.com/books/sciencefiction"
+href="https://example.com/books/sciencefiction">
+<span itemprop="name">Science Fiction</span></a>
+<meta itemprop="position" content="2" />
+</li>
+›
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<a itemprop="item" href="https://example.com/books/sciencefiction/awardwinners">
+<span itemprop="name">Award Winners</span></a>
+<meta itemprop="position" content="3" />
+</li>
+</ol>
+<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<a itemprop="item" href="https://example.com/literature">
+<span itemprop="name">Literature</span></a>
+<meta itemprop="position" content="1" />
+</li>
+›
+<li itemprop="itemListElement" itemscope
+itemtype="https://schema.org/ListItem">
+<span itemprop="name">Award Winners</span>
+<meta itemprop="position" content="2" />
+</li>
+</ol>
+</body>
+</html>
+HTML
+Here's an example of an HTML breadcrumb block within the page as part of the visual design.
+<html>
+<head>
+<title>Award Winners</title>
+</head>
+<body>
+<ol>
+<li>
+<a href="http://www.example.com/books">Books</a>
+</li>
+<li>
+<a href="http://www.example.com/books/sciencefiction">Science Fiction</a>
+</li>
+<li>
+Award Winners
+</li>
+</ol>
+<ol>
+<li>
+<a href="http://www.example.com/literature">Literature</a>
+</li>
+<li>
+Award Winners
+</li>
+</ol>
+</body>
+</html>
 Guidelines
 You must follow these guidelines to be eligible to appear with breadcrumbs in Google Search.
 Warning: If Google detects that some of the markup on your pages
@@ -188,4 +594,4 @@ Integer
 The position of the breadcrumb in the breadcrumb trail. Position 1 signifies
 the beginning of the trail.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

@@ -191,6 +191,167 @@ for some steps.
 <body>
 </body>
 </html>
+Show me the example
+<html>
+<head>
+<title>How to tile a kitchen backsplash</title>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "HowTo",
+"name": "How to tile a kitchen backsplash",
+"description": "Any kitchen can be much more vibrant with a great tile backsplash. This guide will help you install one with beautiful results, like our example kitchen seen here.",
+"image": {
+"@type": "ImageObject",
+"url": "https://example.com/photos/1x1/photo.jpg",
+"height": "406",
+"width": "305"
+},
+"estimatedCost": {
+"@type": "MonetaryAmount",
+"currency": "USD",
+"value": "100"
+},
+"supply": [
+{
+"@type": "HowToSupply",
+"name": "tiles"
+}, {
+"@type": "HowToSupply",
+"name": "thin-set mortar"
+}, {
+"@type": "HowToSupply",
+"name": "tile grout"
+}, {
+"@type": "HowToSupply",
+"name": "grout sealer"
+}
+],
+"tool": [
+{
+"@type": "HowToTool",
+"name": "notched trowel"
+}, {
+"@type": "HowToTool",
+"name": "bucket"
+},{
+"@type": "HowToTool",
+"name": "large sponge"
+}
+],
+"step": [
+{
+"@type": "HowToStep",
+"url": "https://example.com/kitchen#step1",
+"name": "Prepare the surfaces",
+"itemListElement": [{
+"@type": "HowToDirection",
+"text": "Turn off the power to the kitchen and then remove everything that is on the wall, such as outlet covers, switchplates, and any other item in the area that is to be tiled."
+}, {
+"@type": "HowToDirection",
+"text": "Then clean the surface thoroughly to remove any grease or other debris and tape off the area."
+}],
+"image": {
+"@type": "ImageObject",
+"url": "https://example.com/photos/1x1/photo-step1.jpg",
+"height": "406",
+"width": "305"
+}
+}, {
+"@type": "HowToStep",
+"name": "Plan your layout",
+"url": "https://example.com/kitchen#step2",
+"itemListElement": [{
+"@type": "HowToTip",
+"text": "The creases created up until this point will be guiding lines for creating the four walls of your planter box."
+}, {
+"@type": "HowToDirection",
+"text": "Lift one side at a 90-degree angle, and fold it in place so that the point on the paper matches the other two points already in the center."
+}, {
+"@type": "HowToDirection",
+"text": "Repeat on the other side."
+}],
+"image": {
+"@type": "ImageObject",
+"url": "https://example.com/photos/1x1/photo-step2.jpg",
+"height": "406",
+"width": "305"
+}
+}, {
+"@type": "HowToStep",
+"name": "Prepare your and apply mortar (or choose adhesive tile)",
+"url": "https://example.com/kitchen#step3",
+"itemListElement": [{
+"@type": "HowToDirection",
+"text": "Follow the instructions on your thin-set mortar to determine the right amount of water to fill in your bucket. Once done, add the powder gradually and make sure it is thoroughly mixed."
+}, {
+"@type": "HowToDirection",
+"text": "Once mixed, let it stand for a few minutes before mixing it again. This time do not add more water. Double check your thin-set mortar instructions to make sure the consistency is right."
+}, {
+"@type": "HowToDirection",
+"text": "Spread the mortar on a small section of the wall with a trowel."
+}, {
+"@type": "HowToTip",
+"text": "Thinset and other adhesives set quickly so make sure to work in a small area."
+}, {
+"@type": "HowToDirection",
+"text": "Once it’s applied, comb over it with a notched trowel."
+}],
+"image": {
+"@type": "ImageObject",
+"url": "https://example.com/photos/1x1/photo-step3.jpg",
+"height": "406",
+"width": "305"
+}
+}, {
+"@type": "HowToStep",
+"name": "Add your tile to the wall",
+"url": "https://example.com/kitchen#step4",
+"itemListElement": [{
+"@type": "HowToDirection",
+"text": "Place the tile sheets along the wall, making sure to add spacers so the tiles remain lined up."
+}, {
+"@type": "HowToDirection",
+"text": "Press the first piece of tile into the wall with a little twist, leaving a small (usually one-eight inch) gap at the countertop to account for expansion. use a rubber float to press the tile and ensure it sets in the adhesive."
+}, {
+"@type": "HowToDirection",
+"text": "Repeat the mortar and tiling until your wall is completely tiled, Working in small sections."
+}],
+"image": {
+"@type": "ImageObject",
+"url": "https://example.com/photos/1x1/photo-step4.jpg",
+"height": "406",
+"width": "305"
+}
+}, {
+"@type": "HowToStep",
+"name": "Apply the grout",
+"url": "https://example.com/kitchen#step5",
+"itemListElement": [{
+"@type": "HowToDirection",
+"text": "Allow the thin-set mortar to set. This usually takes about 12 hours. Don’t mix the grout before the mortar is set, because you don’t want the grout to dry out!"
+}, {
+"@type": "HowToDirection",
+"text": "To apply, cover the area thoroughly with grout and make sure you fill all the joints by spreading it across the tiles vertically, horizontally, and diagonally. Then fill any remaining voids with grout."
+}, {
+"@type": "HowToDirection",
+"text": "Then, with a moist sponge, sponge away the excess grout and then wipe clean with a towel. For easier maintenance in the future, think about applying a grout sealer."
+}],
+"image": {
+"@type": "ImageObject",
+"url": "https://example.com/photos/1x1/photo-step5.jpg",
+"height": "406",
+"width": "305"
+}
+}
+],
+"totalTime": "P2D"
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 Microdata
 Here's an example of a text based how-to page using Microdata. The example only has one image that
 represents the final state of the how-to. In this result, users may see a preview of the content
@@ -200,55 +361,355 @@ for some steps.
 <title>How to tile a kitchen backsplash</title>
 </head>
 <body>
-How to tile a kitchen backsplash
-About
+<div itemscope itemtype="http://schema.org/HowTo">
+<strong><span itemprop="name">How to tile a kitchen backsplash</span></strong>
+<div>About <span itemprop="estimatedCost" itemscope itemtype="http://schema.org/MonetaryAmount">
+<meta itemprop="currency" content="USD"/>
+<meta itemprop="value" content="100"/>
 $100
-About 2 days
-Any kitchen can be much more vibrant with a great
+</span>
+</div>
+<div>About <span itemprop="totalTime" content="P2D">2 days</span></div>
+<div itemprop="description">Any kitchen can be much more vibrant with a great
 tile backsplash. This guide will help you install one with beautiful
 results, like our example kitchen seen here.
-Necessary Items:
-tiles
-thin-set mortar
-tile grout
-grout sealer
-notched trowel
-bucket
-large sponge
-Preparation
-Turn off the power to the kitchen and then remove
+</div>
+<div>Necessary Items:</div>
+<div itemprop="supply" itemscope itemtype="http://schema.org/HowToSupply">
+<a itemprop="url" href="https://example.com/supplies?id=1">
+<span itemprop="name">tiles</span>
+</a>
+<img alt="image of a tiles" itemprop="image" src="https://example.com/photos/1x1/photo.jpg"/>
+</div>
+<div itemprop="supply" itemscope itemtype="http://schema.org/HowToSupply">
+<a itemprop="url" href="https://example.com/supplies?id=2">
+<span itemprop="name">thin-set mortar</span>
+</a>
+<img alt="image of thin-set mortar" itemprop="image"
+src="https://example.com/photos/1x1/photo.jpg"/>
+</div>
+<div itemprop="supply" itemscope itemtype="http://schema.org/HowToSupply">
+<a itemprop="url" href="https://example.com/supplies?id=3">
+<span itemprop="name">tile grout</span>
+</a>
+<img alt="image of a tile grout" itemprop="image"
+src="https://example.com/photos/1x1/photo.jpg"/>
+</div>
+<div itemprop="supply" itemscope itemtype="http://schema.org/HowToSupply">
+<a itemprop="url" href="https://example.com/supplies?id=4">
+<span itemprop="name">grout sealer</span>
+</a>
+<img alt="image of grout sealer" itemprop="image"
+src="https://example.com/photos/1x1/photo.jpg"/>
+</div>
+<div itemprop="tool" itemscope itemtype="http://schema.org/HowToTool">
+<a itemprop="url" href="https://example.com/supplies?id=5">
+<span itemprop="name">notched trowel</span>
+</a>
+<img alt="image of a notched trowel" itemprop="image"
+src="https://example.com/photos/1x1/photo.jpg"/>
+</div>
+<div itemprop="tool" itemscope itemtype="http://schema.org/HowToTool">
+<a itemprop="url" href="https://example.com/tools?id=6">
+<span itemprop="name">bucket</span>
+</a>
+<img alt="image of a bucket" itemprop="image" src="https://example.com/photos/1x1/photo.jpg"/>
+</div>
+<div itemprop="tool" itemscope itemtype="http://schema.org/HowToTool">
+<a itemprop="url" href="https://example.com/tools?id=7">
+<span itemprop="name">large sponge</span>
+</a>
+<img alt="image of a large sponge" itemprop="image"
+src="https://example.com/photos/1x1/photo.jpg"/>
+</div>
+<div id="step1" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<link itemprop="url" href="https://example.com/example#step1" />
+<div itemprop="name">Preparation</div>
+<img itemprop="image" alt="image showing preparation"
+src="https://example.com/photos/1x1/photo-step1.jpg"/>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Turn off the power to the kitchen and then remove
 everything that is on the wall, such as outlet covers, switchplates, and any other item in
 the area that is to be tiled. Then clean the surface thoroughly to remove any grease or
 other debris and tape off the area.
-Plan your Layout
-Lay out your tile horizontally below the wall where you’re going to
+</div>
+</div>
+</div>
+<div id="step2" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<link itemprop="url" href="https://example.com/example#step2" />
+<div itemprop="name">Plan your Layout</div>
+<img itemprop="image" alt="image showing layout planning"
+src="https://example.com/photos/1x1/photo-step2.jpg"/>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Lay out your tile horizontally below the wall where you’re going to
 place it. This makes it easy to ensure that your pattern will fit in the space provided.
 Also it helps you double check that you have enough tile and know exactly where each piece
 will go.
-Spread the mortar on a small section of the wall with a trowel. Thinset
+</div>
+</div>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Spread the mortar on a small section of the wall with a trowel. Thinset
 and other adhesives set quickly so make sure to work in a small area. Once it’s applied,
 comb over it with a notched trowel.
-Add your tile to the wall
-Place the tile sheets along the wall, making sure to add spacers so the
+</div>
+</div>
+</div>
+<div id="step3" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<link itemprop="url" href="https://example.com/example#step3" />
+<div itemprop="name">Add your tile to the wall</div>
+<img itemprop="image" alt="image grout application"
+src="https://example.com/photos/1x1/photo-step3.jpg"/>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Place the tile sheets along the wall, making sure to add spacers so the
 tiles remain lined up. Press the first piece of tile into the wall with a little twist,
 leaving a small (usually one-eight inch) gap at the countertop to account for expansion.
 use a rubber float to press the tile and ensure it sets in the adhesive. Repeat the mortar
 and tiling until your wall is completely tiled, working in small sections.
-Apply the grout
-Allow the thin-set mortar to set. This usually takes about 12 hours.
+</div>
+</div>
+</div>
+<div id="step4" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<link itemprop="url" href="https://example.com/example#step4" />
+<div itemprop="name">Apply the grout</div>
+<img itemprop="image" alt="image grout application"
+src="https://example.com/photos/1x1/photo-step4.jpg"/>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Allow the thin-set mortar to set. This usually takes about 12 hours.
 Don’t mix the grout before the mortar is set, because you don’t want the grout to dry out!
 To apply, cover the area thoroughly with grout and make sure you fill all the joints by
 spreading it across the tiles vertically, horizontally, and diagonally. Then fill any
 remaining voids with grout.
-Then, with a moist sponge, sponge away the excess grout and then wipe
+</div>
+</div>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Then, with a moist sponge, sponge away the excess grout and then wipe
 clean with a towel. For easier maintenance in the future, think about applying a grout
 sealer.
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>How to tile a kitchen backsplash</title>
+</head>
+<body>
+<div itemscope itemtype="http://schema.org/HowTo">
+<strong><span itemprop="name">How to tile a kitchen backsplash</span></strong>
+<div>About <span itemprop="estimatedCost" itemscope itemtype="http://schema.org/MonetaryAmount">
+<meta itemprop="currency" content="USD"/>
+<meta itemprop="value" content="100"/>
+$100
+</span>
+</div>
+<div>About <span itemprop="totalTime" content="P2D">2 days</span></div>
+<div itemprop="description">Any kitchen can be much more vibrant with a great
+tile backsplash. This guide will help you install one with beautiful
+results, like our example kitchen seen here.
+</div>
+<div>Necessary Items:</div>
+<div itemprop="supply" itemscope itemtype="http://schema.org/HowToSupply">
+<a itemprop="url" href="https://example.com/supplies?id=1">
+<span itemprop="name">tiles</span>
+</a>
+<img alt="image of a tiles" itemprop="image" src="https://example.com/photos/1x1/photo.jpg"/>
+</div>
+<div itemprop="supply" itemscope itemtype="http://schema.org/HowToSupply">
+<a itemprop="url" href="https://example.com/supplies?id=2">
+<span itemprop="name">thin-set mortar</span>
+</a>
+<img alt="image of thin-set mortar" itemprop="image"
+src="https://example.com/photos/1x1/photo.jpg"/>
+</div>
+<div itemprop="supply" itemscope itemtype="http://schema.org/HowToSupply">
+<a itemprop="url" href="https://example.com/supplies?id=3">
+<span itemprop="name">tile grout</span>
+</a>
+<img alt="image of a tile grout" itemprop="image"
+src="https://example.com/photos/1x1/photo.jpg"/>
+</div>
+<div itemprop="supply" itemscope itemtype="http://schema.org/HowToSupply">
+<a itemprop="url" href="https://example.com/supplies?id=4">
+<span itemprop="name">grout sealer</span>
+</a>
+<img alt="image of grout sealer" itemprop="image"
+src="https://example.com/photos/1x1/photo.jpg"/>
+</div>
+<div itemprop="tool" itemscope itemtype="http://schema.org/HowToTool">
+<a itemprop="url" href="https://example.com/supplies?id=5">
+<span itemprop="name">notched trowel</span>
+</a>
+<img alt="image of a notched trowel" itemprop="image"
+src="https://example.com/photos/1x1/photo.jpg"/>
+</div>
+<div itemprop="tool" itemscope itemtype="http://schema.org/HowToTool">
+<a itemprop="url" href="https://example.com/tools?id=6">
+<span itemprop="name">bucket</span>
+</a>
+<img alt="image of a bucket" itemprop="image" src="https://example.com/photos/1x1/photo.jpg"/>
+</div>
+<div itemprop="tool" itemscope itemtype="http://schema.org/HowToTool">
+<a itemprop="url" href="https://example.com/tools?id=7">
+<span itemprop="name">large sponge</span>
+</a>
+<img alt="image of a large sponge" itemprop="image"
+src="https://example.com/photos/1x1/photo.jpg"/>
+</div>
+<div id="step1" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<link itemprop="url" href="https://example.com/example#step1" />
+<div itemprop="name">Preparation</div>
+<img itemprop="image" alt="image showing preparation"
+src="https://example.com/photos/1x1/photo-step1.jpg"/>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Turn off the power to the kitchen and then remove
+everything that is on the wall, such as outlet covers, switchplates, and any other item in
+the area that is to be tiled. Then clean the surface thoroughly to remove any grease or
+other debris and tape off the area.
+</div>
+</div>
+</div>
+<div id="step2" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<link itemprop="url" href="https://example.com/example#step2" />
+<div itemprop="name">Plan your Layout</div>
+<img itemprop="image" alt="image showing layout planning"
+src="https://example.com/photos/1x1/photo-step2.jpg"/>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Lay out your tile horizontally below the wall where you’re going to
+place it. This makes it easy to ensure that your pattern will fit in the space provided.
+Also it helps you double check that you have enough tile and know exactly where each piece
+will go.
+</div>
+</div>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Spread the mortar on a small section of the wall with a trowel. Thinset
+and other adhesives set quickly so make sure to work in a small area. Once it’s applied,
+comb over it with a notched trowel.
+</div>
+</div>
+</div>
+<div id="step3" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<link itemprop="url" href="https://example.com/example#step3" />
+<div itemprop="name">Add your tile to the wall</div>
+<img itemprop="image" alt="image grout application"
+src="https://example.com/photos/1x1/photo-step3.jpg"/>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Place the tile sheets along the wall, making sure to add spacers so the
+tiles remain lined up. Press the first piece of tile into the wall with a little twist,
+leaving a small (usually one-eight inch) gap at the countertop to account for expansion.
+use a rubber float to press the tile and ensure it sets in the adhesive. Repeat the mortar
+and tiling until your wall is completely tiled, working in small sections.
+</div>
+</div>
+</div>
+<div id="step4" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<link itemprop="url" href="https://example.com/example#step4" />
+<div itemprop="name">Apply the grout</div>
+<img itemprop="image" alt="image grout application"
+src="https://example.com/photos/1x1/photo-step4.jpg"/>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Allow the thin-set mortar to set. This usually takes about 12 hours.
+Don’t mix the grout before the mortar is set, because you don’t want the grout to dry out!
+To apply, cover the area thoroughly with grout and make sure you fill all the joints by
+spreading it across the tiles vertically, horizontally, and diagonally. Then fill any
+remaining voids with grout.
+</div>
+</div>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Then, with a moist sponge, sponge away the excess grout and then wipe
+clean with a towel. For easier maintenance in the future, think about applying a grout
+sealer.
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
 How-to rich result with images for each step
 JSON-LD
 Here's an example of a how-to page with images for each step using JSON-LD. When there's an image
 for each step, users may see a preview with a carousel of images.
+<html>
+<head>
+<title>How to tie a tie</title>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "HowTo",
+"image": {
+"@type": "ImageObject",
+"url": "https://example.com/1x1/photo.jpg"
+},
+"name": "How to tie a tie",
+"description": "The four-in-hand knot is a great look for any occasion. From formal suits to casual jacket and tie affairs, it’s a simple way to quickly look great. Once you have mastered the knot you can tie it in just a minute, so it’s also great when you’re in a pinch too. ",
+"totalTime": "PT2M",
+"video": {
+"@type": "VideoObject",
+"name": "Tie a Tie",
+"description": "How to tie a four-in-hand knot.",
+"thumbnailUrl": "https://example.com/photos/photo.jpg",
+"contentUrl": "http://www.example.com/videos/123_600x400.mp4",
+"embedUrl": "http://www.example.com/videoplayer?id=123",
+"uploadDate": "2019-01-05T08:00:00+08:00",
+"duration": "P1MT10S"
+},
+"supply": [
+{
+"@type": "HowToSupply",
+"name": "A tie"
+}, {
+"@type": "HowToSupply",
+"name": "A collared shirt"
+}
+],
+"tool": [
+{
+"@type": "HowToTool",
+"name": "A mirror"
+}
+],
+"step":[
+{
+"@type": "HowToStep",
+"name": "Preparations",
+"text": "Button your shirt how you’d like to wear it, then drape the tie around your neck. Make the thick end about 1/3rd longer than the short end. For formal button down shirts, it usually works best with the small end of the tie between 4th and 5th button.",
+"image": "https://example.com/1x1/step1.jpg",
+"url": "https://example.com/tie#step1"
+}, {
+"@type": "HowToStep",
+"name": "Crossing once",
+"text": "Cross the long end over the short end. This will form the basis for your knot.",
+"image": "https://example.com/1x1/step2.jpg",
+"url": "https://example.com/tie#step2"
+}, {
+"@type": "HowToStep",
+"name": "Second crossing",
+"text": "Bring the long end back under the short end, then throw it back over the top of the short end in the other direction.",
+"image": "https://example.com/1x1/step3.jpg",
+"url": "https://example.com/tie#step3"
+}, {
+"@type": "HowToStep",
+"name": "Loop in",
+"text": "Now pull the long end through the loop near your neck, forming another loop near your neck.",
+"image": "https://example.com/1x1/step4.jpg",
+"url": "https://example.com/tie#step4"
+}, {
+"@type": "HowToStep",
+"name": "Pull and tighten",
+"text": "Pull the long end through that new loop and tighten to fit!",
+"image": "https://example.com/1x1/step5.jpg",
+"url": "https://example.com/tie#step5"
+}
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
 <html>
 <head>
 <title>How to tie a tie</title>
@@ -335,34 +796,291 @@ for each step, users may see a preview with a carousel of images.
 <title>How to tie a tie</title>
 </head>
 <body>
-How to tie a tie
-About 2 minutes
-The four-in-hand knot is a great look for any occasion. From formal suits to casual jacket and tie affairs, it’s a simple way to quickly look great. Once you have mastered the knot you can tie it in just a minute, so it’s also great when you’re in a pinch too.
-...
-Necessary Items:
-A tie
-A collared Shirt
-A mirror
-Preparations
-Button your shirt how you’d like to wear it, then drape the tie around your neck. Make the thick end about 1/3rd longer than the short end. For formal button down shirts, it usually works best with the small end of the tie between 4th and 5th button.
-https://example.com/1x1/photo1.jpg
-Crossing once
-Cross the long end over the short end. This will form the basis for your knot.
-https://example.com/1x1/photo2.jpg
-Second crossing
-Bring the long end back under the short end, then throw it back over the top of the short end in the other direction.
-https://example.com/1x1/photo3.jpg
-Loop in
-Now pull the long end through the loop near your neck, forming another loop near your neck.
-https://example.com/1x1/photo4.jpg
-Pull and tighten
-Pull the long end through that new loop and tighten to fit!
-https://example.com/1x1/photo5.jpg
+<div itemscope itemtype="http://schema.org/HowTo">
+<strong><span itemprop="name">How to tie a tie</span></strong>
+<div>About <span itemprop="totalTime" content="PT2M">2 minutes</span></div>
+<div itemprop="description">The four-in-hand knot is a great look for any occasion. From formal suits to casual jacket and tie affairs, it’s a simple way to quickly look great. Once you have mastered the knot you can tie it in just a minute, so it’s also great when you’re in a pinch too. </div>
+<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="name" content="Tie a Tie" />
+<meta itemprop="description" content="How to tie a four-in-hand knot." />
+<link itemprop="thumbnailUrl" content="https://example.com/photos/photo.jpg" />
+<link itemprop="contentUrl" content="http://www.example.com/videos/123_600x400.mp4" />
+<link itemprop="embedUrl" content="http://www.example.com/videoplayer?id=123" />
+<meta itemprop="duration" content="P1MT10S" />
+<meta itemprop="uploadDate" content="2019-01-05T08:00:00+08:00" />
+<video>...</video>
+</div>
+<div>Necessary Items:</div>
+<div itemprop="supply" itemtype="http://schema.org/HowToSupply">A tie</div>
+<div itemprop="supply" itemtype="http://schema.org/HowToSupply">A collared Shirt</div>
+<div itemprop="tool" itemtype="http://schema.org/HowToTool">A mirror</div>
+<div>
+<div id="step1" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Preparations</div>
+<div itemprop="text">Button your shirt how you’d like to wear it, then drape the tie around your neck. Make the thick end about 1/3rd longer than the short end. For formal button down shirts, it usually works best with the small end of the tie between 4th and 5th button.</div>
+<div itemprop="image">https://example.com/1x1/photo1.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step1" />
+</div>
+<div id="step2" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Crossing once</div>
+<div itemprop="text">Cross the long end over the short end. This will form the basis for your knot.</div>
+<div itemprop="image">https://example.com/1x1/photo2.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step2" />
+</div>
+<div id="step3" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Second crossing</div>
+<div itemprop="text">Bring the long end back under the short end, then throw it back over the top of the short end in the other direction.</div>
+<div itemprop="image">https://example.com/1x1/photo3.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step3" />
+</div>
+<div id="step4" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Loop in</div>
+<div itemprop="text">Now pull the long end through the loop near your neck, forming another loop near your neck.</div>
+<div itemprop="image">https://example.com/1x1/photo4.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step4" />
+</div>
+<div id="step5" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Pull and tighten</div>
+<div itemprop="text">Pull the long end through that new loop and tighten to fit!</div>
+<div itemprop="image">https://example.com/1x1/photo5.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step5" />
+</div>
+</div>
+</div>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>How to tie a tie</title>
+</head>
+<body>
+<div itemscope itemtype="http://schema.org/HowTo">
+<strong><span itemprop="name">How to tie a tie</span></strong>
+<div>About <span itemprop="totalTime" content="PT2M">2 minutes</span></div>
+<div itemprop="description">The four-in-hand knot is a great look for any occasion. From formal suits to casual jacket and tie affairs, it’s a simple way to quickly look great. Once you have mastered the knot you can tie it in just a minute, so it’s also great when you’re in a pinch too. </div>
+<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="name" content="Tie a Tie" />
+<meta itemprop="description" content="How to tie a four-in-hand knot." />
+<link itemprop="thumbnailUrl" content="https://example.com/photos/photo.jpg" />
+<link itemprop="contentUrl" content="http://www.example.com/videos/123_600x400.mp4" />
+<link itemprop="embedUrl" content="http://www.example.com/videoplayer?id=123" />
+<meta itemprop="duration" content="P1MT10S" />
+<meta itemprop="uploadDate" content="2019-01-05T08:00:00+08:00" />
+<video>...</video>
+</div>
+<div>Necessary Items:</div>
+<div itemprop="supply" itemtype="http://schema.org/HowToSupply">A tie</div>
+<div itemprop="supply" itemtype="http://schema.org/HowToSupply">A collared Shirt</div>
+<div itemprop="tool" itemtype="http://schema.org/HowToTool">A mirror</div>
+<div>
+<div id="step1" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Preparations</div>
+<div itemprop="text">Button your shirt how you’d like to wear it, then drape the tie around your neck. Make the thick end about 1/3rd longer than the short end. For formal button down shirts, it usually works best with the small end of the tie between 4th and 5th button.</div>
+<div itemprop="image">https://example.com/1x1/photo1.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step1" />
+</div>
+<div id="step2" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Crossing once</div>
+<div itemprop="text">Cross the long end over the short end. This will form the basis for your knot.</div>
+<div itemprop="image">https://example.com/1x1/photo2.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step2" />
+</div>
+<div id="step3" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Second crossing</div>
+<div itemprop="text">Bring the long end back under the short end, then throw it back over the top of the short end in the other direction.</div>
+<div itemprop="image">https://example.com/1x1/photo3.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step3" />
+</div>
+<div id="step4" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Loop in</div>
+<div itemprop="text">Now pull the long end through the loop near your neck, forming another loop near your neck.</div>
+<div itemprop="image">https://example.com/1x1/photo4.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step4" />
+</div>
+<div id="step5" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Pull and tighten</div>
+<div itemprop="text">Pull the long end through that new loop and tighten to fit!</div>
+<div itemprop="image">https://example.com/1x1/photo5.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step5" />
+</div>
+</div>
+</div>
 </body>
 </html>
 How-to rich result with video
 JSON-LD
 Here's an example of a how-to page that contains a mix of text, images, and video clips using JSON-LD.
+<html>
+<head>
+<title>How to create a Trivia action</title>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "HowTo",
+"image": {
+"@type": "ImageObject",
+"url": "https://example.com/1x1/photo.jpg"
+},
+"name": "How to create a Trivia action",
+"description": "Learn how to create a Trivia action for Assistant within minutes.",
+"totalTime": "PT2M",
+"video": {
+"@type": "VideoObject",
+"name": "Build a Trivia Game for the Google Assistant with No Code",
+"description": "Learn how to create a Trivia action for Assistant within minutes.",
+"thumbnailUrl": "https://example.com/photos/photo.jpg",
+"contentUrl": "https://www.youtube.com/watch?v=4AOI1tZrgMI",
+"embedUrl": "https://www.youtube.com/embed/4AOI1tZrgMI",
+"uploadDate": "2019-01-05T08:00:00+08:00",
+"duration": "P1MT10S",
+"hasPart": [
+{
+"@type": "Clip",
+"@id": "Clip1",
+"name": "Open Actions on Google Console",
+"startOffset": 29,
+"endOffset": 36,
+"url": "http://www.example.com/example&t=29"
+},
+{
+"@type": "Clip",
+"@id": "Clip2",
+"name": "Select Trivia Template",
+"startOffset": 36,
+"endOffset": 45,
+"url": "http://www.example.com/example&t=36"
+},
+{
+"@type": "Clip",
+"@id": "Clip3",
+"name": "Choose a Personality",
+"startOffset": 45,
+"endOffset": 65,
+"url": "http://www.example.com/example&t=45"
+},
+{
+"@type": "Clip",
+"@id": "Clip4",
+"name": "Feed your content",
+"startOffset": 65,
+"endOffset": 154,
+"url": "http://www.example.com/example&t=65"
+},
+{
+"@type": "Clip",
+"@id": "Clip5",
+"name": "Create the action",
+"startOffset": 154,
+"endOffset": 172,
+"url": "http://www.example.com/example&t=154"
+},
+{
+"@type": "Clip",
+"@id": "Clip6",
+"name": "Test your action",
+"startOffset": 172,
+"endOffset": 212,
+"url": "http://www.example.com/example&t=172"
+},
+{
+"@type": "Clip",
+"@id": "Clip7",
+"name": "Submit your action",
+"startOffset": 212,
+"endOffset": 285,
+"url": "http://www.example.com/example&t=212"
+}
+]
+},
+"step": [
+{
+"@type": "HowToStep",
+"name": "Open Actions on Google Console",
+"text": "Navigate to https://console.actions.google.com to get started.",
+"image": "https://example.com/1x1/step1.jpg",
+"url": "https://example.com/tie#step1",
+"video": {
+"@id": "Clip1"
+}
+},
+{
+"@type": "HowToStep",
+"name": "Select Trivia Template",
+"text": "Create a new project and select Templates | You have a choice to select between Trivia, Flashcard or Personality Quiz.",
+"image": "https://example.com/1x1/step2.jpg",
+"url": "https://example.com/tie#step2",
+"video": {
+"@id": "Clip2"
+}
+},
+{
+"@type": "HowToStep",
+"name": "Choose a Personality",
+"text": "Select one of the three personalities- Mr, Montgomery, Regal Queen, or the Trivia Bot.",
+"image": "https://example.com/1x1/step3.jpg",
+"url": "https://example.com/tie#step3",
+"video": {
+"@id": "Clip3"
+}
+},
+{
+"@type": "HowToStep",
+"name": "Feed your content",
+"itemListElement": [
+{
+"@type": "HowToDirection",
+"text": "Make a copy of our pre-filled sheet and replace with your content."
+},
+{
+"@type": "HowToDirection",
+"text": "Ensure you make the sheet publicly accessible. Copy the URL of the sheet and paste it into the Console."
+}
+],
+"image": "https://example.com/1x1/step4.jpg",
+"url": "https://example.com/tie#step4",
+"video": {
+"@id": "Clip4"
+}
+},
+{
+"@type": "HowToStep",
+"name": "Create the action",
+"text": "Create the action. Once content is successfully uploaded, it will take couple of minutes to create the action.",
+"image": "https://example.com/1x1/step5.jpg",
+"url": "https://example.com/tie#step5",
+"video": {
+"@id": "Clip5"
+}
+},
+{
+"@type": "HowToStep",
+"name": "Test your action",
+"text": "Navigate to the Simulator to test your action and simulate various surfaces, locations and locales.",
+"image": "https://example.com/1x1/step6.jpg",
+"url": "https://example.com/tie#step6",
+"video": {
+"@id": "Clip6"
+}
+},
+{
+"@type": "HowToStep",
+"name": "Submit your action",
+"text": "Once you complete directory information and invocation names, submit your action for all Assistant users to see and use your action.",
+"image": "https://example.com/1x1/step7.jpg",
+"url": "https://example.com/tie#step7",
+"video": {
+"@id": "Clip7"
+}
+}
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
 <html>
 <head>
 <title>How to create a Trivia action</title>
@@ -539,60 +1257,240 @@ Here's an example of a how-to page that contains a mix of text, images, and vide
 <title>How to create a Trivia action</title>
 </head>
 <body>
-How to create a Trivia action
-About 2 minutes
-Learn how to create a Trivia action for Assistant within minutes.
-Open Actions on Google Console
-29
-36
-http://www.example.com/example&t=29
-Select Trivia Template
-36
-45
-http://www.example.com/example&t=36
-Choose a Personality
-45
-65
-http://www.example.com/example&t=45
-Feed your content
-65
-154
-http://www.example.com/example&t=65
-Create the action
-154
-172
-http://www.example.com/example&t=154
-Test your action
-172
-212
-http://www.example.com/example&t=172
-Submit your action
-212
-285
-http://www.example.com/example&t=212
-...
-Open Actions on Google Console
-Navigate to https://console.actions.google.com to get started.
-https://example.com/1x1/photo1.jpg
-Select Trivia Template
-Create a new project and select Templates | You have a choice to select between Trivia, Flashcard or Personality Quiz.
-https://example.com/1x1/photo2.jpg
-Choose a Personality
-Select one of the three personalities- Mr, Montgomery, Regal Queen, or the Trivia Bot.
-https://example.com/1x1/photo3.jpg
-Feed your content
-Make a copy of our pre-filled sheet and replace with your content.
-Ensure you make the sheet publicly accessible. Copy the URL of the sheet and paste it into the Console.
-https://example.com/1x1/photo4.jpg
-Create the action
-Create the action. Once content is successfully uploaded, it will take couple of minutes to create the action.
-https://example.com/1x1/photo5.jpg
-Test your action
-PNavigate to the Simulator to test your action and simulate various surfaces, locations and locales.
-https://example.com/1x1/photo6.jpg
-Submit your action
-Once you complete directory information and invocation names, submit your action for all Assistant users to see and use your action.
-https://example.com/1x1/photo7.jpg
+<div itemscope itemtype="http://schema.org/HowTo">
+<strong><span itemprop="name">How to create a Trivia action</span></strong>
+<div>About <span itemprop="totalTime" content="PT2M">2 minutes</span></div>
+<div itemprop="description"> Learn how to create a Trivia action for Assistant within minutes. </div>
+<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="name" content="Tie a Tie" />
+<meta itemprop="description" content="How to tie a four-in-hand knot." />
+<link itemprop="thumbnailUrl" content="https://example.com/photos/photo.jpg" />
+<link itemprop="contentUrl" content="http://www.example.com/videos/123_600x400.mp4" />
+<link itemprop="embedUrl" content="http://www.example.com/videoplayer?id=123" />
+<meta itemprop="duration" content="P1MT10S" />
+<meta itemprop="uploadDate" content="2019-01-05T08:00:00+08:00" />
+<div>
+<div itemprop="hasPart" itemscope itemtype="http://schema.org/Clip" itemid="Clip1">
+<div itemprop="name">Open Actions on Google Console</div>
+<div itemprop="startOffset">29</div>
+<div itemprop="endOffset">36</div>
+<div itemprop="url">http://www.example.com/example&t=29</div>
+</div>
+<div itemprop="hasPart" itemscope itemtype="http://schema.org/Clip" itemid="Clip2">
+<div itemprop="name">Select Trivia Template</div>
+<div itemprop="startOffset">36</div>
+<div itemprop="endOffset">45</div>
+<div itemprop="url">http://www.example.com/example&t=36</div>
+</div>
+<div itemprop="hasPart" itemscope itemtype="http://schema.org/Clip" itemid="Clip3">
+<div itemprop="name">Choose a Personality</div>
+<div itemprop="startOffset">45</div>
+<div itemprop="endOffset">65</div>
+<div itemprop="url">http://www.example.com/example&t=45</div>
+</div>
+<div itemprop="hasPart" itemscope itemtype="http://schema.org/Clip" itemid="Clip4">
+<div itemprop="name">Feed your content</div>
+<div itemprop="startOffset">65</div>
+<div itemprop="endOffset">154</div>
+<div itemprop="url">http://www.example.com/example&t=65</div>
+</div>
+<div itemprop="hasPart" itemscope itemtype="http://schema.org/Clip" itemid="Clip5">
+<div itemprop="name">Create the action</div>
+<div itemprop="startOffset">154</div>
+<div itemprop="endOffset">172</div>
+<div itemprop="url">http://www.example.com/example&t=154</div>
+</div>
+<div itemprop="hasPart" itemscope itemtype="http://schema.org/Clip" itemid="Clip6">
+<div itemprop="name">Test your action</div>
+<div itemprop="startOffset">172</div>
+<div itemprop="endOffset">212</div>
+<div itemprop="url">http://www.example.com/example&t=172</div>
+</div>
+<div itemprop="hasPart" itemscope itemtype="http://schema.org/Clip" itemid="Clip7">
+<div itemprop="name">Submit your action</div>
+<div itemprop="startOffset">212</div>
+<div itemprop="endOffset">285</div>
+<div itemprop="url">http://www.example.com/example&t=212</div>
+</div>
+</div>
+<video>...</video>
+</div>
+<div itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Open Actions on Google Console</div>
+<div itemprop="text">Navigate to https://console.actions.google.com to get started.</div>
+<div itemprop="image">https://example.com/1x1/photo1.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step1" />
+<link itemprop="video" href="Clip1" />
+</div>
+<div itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Select Trivia Template</div>
+<div itemprop="text">Create a new project and select Templates | You have a choice to select between Trivia, Flashcard or Personality Quiz.</div>
+<div itemprop="image">https://example.com/1x1/photo2.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step2" />
+<link itemprop="video" href="Clip2" />
+</div>
+<div itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Choose a Personality</div>
+<div itemprop="text">Select one of the three personalities- Mr, Montgomery, Regal Queen, or the Trivia Bot.</div>
+<div itemprop="image">https://example.com/1x1/photo3.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step3" />
+<link itemprop="video" href="Clip3" />
+</div>
+<div itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Feed your content</div>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Make a copy of our pre-filled sheet and replace with your content.</div>
+</div>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Ensure you make the sheet publicly accessible. Copy the URL of the sheet and paste it into the Console.</div>
+</div>
+<div itemprop="image">https://example.com/1x1/photo4.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step4" />
+<link itemprop="video" href="Clip4" />
+</div>
+<div itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Create the action</div>
+<div itemprop="text">Create the action. Once content is successfully uploaded, it will take couple of minutes to create the action.</div>
+<div itemprop="image">https://example.com/1x1/photo5.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step5" />
+<link itemprop="video" href="Clip5" />
+</div>
+<div itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Test your action</div>
+<div itemprop="text">PNavigate to the Simulator to test your action and simulate various surfaces, locations and locales.</div>
+<div itemprop="image">https://example.com/1x1/photo6.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step6" />
+<link itemprop="video" href="Clip6" />
+</div>
+<div itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Submit your action</div>
+<div itemprop="text">Once you complete directory information and invocation names, submit your action for all Assistant users to see and use your action.</div>
+<div itemprop="image">https://example.com/1x1/photo7.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step7" />
+<link itemprop="video" href="Clip7" />
+</div>
+</div>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>How to create a Trivia action</title>
+</head>
+<body>
+<div itemscope itemtype="http://schema.org/HowTo">
+<strong><span itemprop="name">How to create a Trivia action</span></strong>
+<div>About <span itemprop="totalTime" content="PT2M">2 minutes</span></div>
+<div itemprop="description"> Learn how to create a Trivia action for Assistant within minutes. </div>
+<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="name" content="Tie a Tie" />
+<meta itemprop="description" content="How to tie a four-in-hand knot." />
+<link itemprop="thumbnailUrl" content="https://example.com/photos/photo.jpg" />
+<link itemprop="contentUrl" content="http://www.example.com/videos/123_600x400.mp4" />
+<link itemprop="embedUrl" content="http://www.example.com/videoplayer?id=123" />
+<meta itemprop="duration" content="P1MT10S" />
+<meta itemprop="uploadDate" content="2019-01-05T08:00:00+08:00" />
+<div>
+<div itemprop="hasPart" itemscope itemtype="http://schema.org/Clip" itemid="Clip1">
+<div itemprop="name">Open Actions on Google Console</div>
+<div itemprop="startOffset">29</div>
+<div itemprop="endOffset">36</div>
+<div itemprop="url">http://www.example.com/example&t=29</div>
+</div>
+<div itemprop="hasPart" itemscope itemtype="http://schema.org/Clip" itemid="Clip2">
+<div itemprop="name">Select Trivia Template</div>
+<div itemprop="startOffset">36</div>
+<div itemprop="endOffset">45</div>
+<div itemprop="url">http://www.example.com/example&t=36</div>
+</div>
+<div itemprop="hasPart" itemscope itemtype="http://schema.org/Clip" itemid="Clip3">
+<div itemprop="name">Choose a Personality</div>
+<div itemprop="startOffset">45</div>
+<div itemprop="endOffset">65</div>
+<div itemprop="url">http://www.example.com/example&t=45</div>
+</div>
+<div itemprop="hasPart" itemscope itemtype="http://schema.org/Clip" itemid="Clip4">
+<div itemprop="name">Feed your content</div>
+<div itemprop="startOffset">65</div>
+<div itemprop="endOffset">154</div>
+<div itemprop="url">http://www.example.com/example&t=65</div>
+</div>
+<div itemprop="hasPart" itemscope itemtype="http://schema.org/Clip" itemid="Clip5">
+<div itemprop="name">Create the action</div>
+<div itemprop="startOffset">154</div>
+<div itemprop="endOffset">172</div>
+<div itemprop="url">http://www.example.com/example&t=154</div>
+</div>
+<div itemprop="hasPart" itemscope itemtype="http://schema.org/Clip" itemid="Clip6">
+<div itemprop="name">Test your action</div>
+<div itemprop="startOffset">172</div>
+<div itemprop="endOffset">212</div>
+<div itemprop="url">http://www.example.com/example&t=172</div>
+</div>
+<div itemprop="hasPart" itemscope itemtype="http://schema.org/Clip" itemid="Clip7">
+<div itemprop="name">Submit your action</div>
+<div itemprop="startOffset">212</div>
+<div itemprop="endOffset">285</div>
+<div itemprop="url">http://www.example.com/example&t=212</div>
+</div>
+</div>
+<video>...</video>
+</div>
+<div itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Open Actions on Google Console</div>
+<div itemprop="text">Navigate to https://console.actions.google.com to get started.</div>
+<div itemprop="image">https://example.com/1x1/photo1.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step1" />
+<link itemprop="video" href="Clip1" />
+</div>
+<div itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Select Trivia Template</div>
+<div itemprop="text">Create a new project and select Templates | You have a choice to select between Trivia, Flashcard or Personality Quiz.</div>
+<div itemprop="image">https://example.com/1x1/photo2.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step2" />
+<link itemprop="video" href="Clip2" />
+</div>
+<div itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Choose a Personality</div>
+<div itemprop="text">Select one of the three personalities- Mr, Montgomery, Regal Queen, or the Trivia Bot.</div>
+<div itemprop="image">https://example.com/1x1/photo3.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step3" />
+<link itemprop="video" href="Clip3" />
+</div>
+<div itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Feed your content</div>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Make a copy of our pre-filled sheet and replace with your content.</div>
+</div>
+<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+<div itemprop="text">Ensure you make the sheet publicly accessible. Copy the URL of the sheet and paste it into the Console.</div>
+</div>
+<div itemprop="image">https://example.com/1x1/photo4.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step4" />
+<link itemprop="video" href="Clip4" />
+</div>
+<div itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Create the action</div>
+<div itemprop="text">Create the action. Once content is successfully uploaded, it will take couple of minutes to create the action.</div>
+<div itemprop="image">https://example.com/1x1/photo5.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step5" />
+<link itemprop="video" href="Clip5" />
+</div>
+<div itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Test your action</div>
+<div itemprop="text">PNavigate to the Simulator to test your action and simulate various surfaces, locations and locales.</div>
+<div itemprop="image">https://example.com/1x1/photo6.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step6" />
+<link itemprop="video" href="Clip6" />
+</div>
+<div itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+<div itemprop="name">Submit your action</div>
+<div itemprop="text">Once you complete directory information and invocation names, submit your action for all Assistant users to see and use your action.</div>
+<div itemprop="image">https://example.com/1x1/photo7.jpg</div>
+<meta itemprop="url" content="https://example.com/tie#step7" />
+<link itemprop="video" href="Clip7" />
+</div>
+</div>
 </body>
 </html>
 Guidelines
@@ -1057,4 +1955,4 @@ text
 Text
 The text of the direction or tip.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

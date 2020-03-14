@@ -64,6 +64,52 @@ Here's an example of structured data on the page that hosts this fact check:
 <body>
 </body>
 </html>
+<html>
+<head>
+<title>The world is flat</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ClaimReview",
+"datePublished": "2016-06-22",
+"url": "http://example.com/news/science/worldisflat.html",
+"claimReviewed": "The world is flat",
+"itemReviewed": {
+"@type": "Claim",
+"author": {
+"@type": "Organization",
+"name": "Square World Society",
+"sameAs": "https://example.flatworlders.com/we-know-that-the-world-is-flat"
+},
+"datePublished": "2016-06-20",
+"appearance": {
+"@type": "OpinionNewsArticle",
+"url": "http://skeptical.example.net/news/a122121",
+"name": "Square Earth - Flat earthers for the Internet age",
+"datePublished": "2016-06-22",
+"author": {
+"@type": "Person",
+"name": "T. Tellar"
+}
+}
+},
+"author": {
+"@type": "Organization",
+"name": "Example.com science watch"
+},
+"reviewRating": {
+"@type": "Rating",
+"ratingValue": "1",
+"bestRating": "5",
+"worstRating": "1",
+"alternateName": "False"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 Guidelines
 In addition to general guidelines
 that apply to all structured data markup, these additional guidelines apply to fact checks:
@@ -294,4 +340,4 @@ For numeric ratings, the worst value possible in a scale from worst to best. Mus
 bestRating. Must be able to be evaluated as a number. Must have a minimum value
 of 1. Example: 1
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-11.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

@@ -17,12 +17,33 @@ Google Assistant returns up to three articles from around the web and supports a
 TTS for sections in the article with speakable structured data. When the
 Google Assistant reads aloud a speakable section, it attributes the source and sends
 the full article URL to the user's mobile device through the Google Assistant app.
-For more information about what content can be eligible for speakable structured
-data for the Google Assistant, see
-Eligibility.
 Example
 The following is an example of speakable structured data using JSON-LD code and the
 xPath content-locator value:
+<html>
+<head>
+<title>Speakable markup example</title>
+<meta name="description" content="This page is all about the quick brown fox" />
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "WebPage",
+"name": "Quick Brown Fox",
+"speakable":
+{
+"@type": "SpeakableSpecification",
+"xpath": [
+"/html/head/title",
+"/html/head/meta[@name='description']/@content"
+]
+},
+"url": "http://www.quickbrownfox_example.com/quick-brown-fox"
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 <html>
 <head>
 <title>Speakable markup example</title>
@@ -135,4 +156,4 @@ your own custom applications. For example, allowing users to interact with the a
 Google Assistant. For more information, see the Actions on Google developer
 guide.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-07.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

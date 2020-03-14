@@ -65,8 +65,116 @@ The following JSON-LD example shows a simple Occupation with salary estimate dat
 <body>
 </body>
 </html>
+<html>
+<head>
+<title>Software Developer, Applications</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "Occupation",
+"name": "Software Developer, Applications",
+"mainEntityOfPage": {
+"@type": "WebPage",
+"lastReviewed": "2017-07-23T14:20:00-05:00"
+},
+"description": "Develops information systems by designing, developing, and installing software solutions",
+"estimatedSalary": [
+{
+"@type": "MonetaryAmountDistribution",
+"name": "base",
+"currency": "USD",
+"unitText": "YEAR",
+"percentile10": "100000.5",
+"percentile25": "115000",
+"median": "120000.28",
+"percentile75": "130000",
+"percentile90": "150000"
+}
+],
+"occupationLocation": [
+{
+"@type": "City",
+"name": "Mountain View"
+}
+]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 The following JSON-LD example shows a more complex example of
 OccupationAggregationByEmployer with salary estimate data:
+<html>
+<head>
+<title>App/Web App Developer</title>
+<script type="application/ld+json">
+{
+"@context": "http://schema.googleapis.com/",
+"@type": "OccupationAggregationByEmployer",
+"name": "App/Web App Developer",
+"mainEntityOfPage": {
+"@type": "WebPage",
+"lastReviewed": "2017-07-23T14:20:00-05:00"
+},
+"description": "Develops information systems by designing, developing, and installing software solutions.",
+"estimatedSalary": [
+{
+"@context": "https://schema.org/",
+"@type": "MonetaryAmountDistribution",
+"name": "base",
+"currency": "USD",
+"unitText": "YEAR",
+"percentile10": "100000.5",
+"percentile25": "115000",
+"median": "120000.28",
+"percentile75": "130000",
+"percentile90": "150000"
+},
+{
+"@context": "https://schema.org/",
+"@type": "MonetaryAmountDistribution",
+"name": "bonus",
+"currency": "USD",
+"unitText": "YEAR",
+"percentile10": "10000",
+"percentile25": "20000",
+"median": "25000",
+"percentile75": "27000",
+"percentile90": "60000"
+}
+],
+"occupationLocation": [
+{
+"@context": "https://schema.org/",
+"@type": "State",
+"name": "Oregon"
+},
+{
+"@context": "https://schema.org/",
+"@type": "State",
+"name": "Washington"
+},
+{
+"@context": "https://schema.org/",
+"@type": "State",
+"name": "California"
+}
+],
+"hiringOrganization": {
+"@context": "https://schema.org/",
+"@type": "Organization",
+"name": "Google LLC"
+},
+"sampleSize":1000,
+"yearsExperienceMin": 3
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
 <html>
 <head>
 <title>App/Web App Developer</title>
@@ -415,4 +523,4 @@ Number
 The 90th percentile value. For example, 90% of the salaries for this occupation are at or below
 this value.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

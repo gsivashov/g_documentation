@@ -14,8 +14,8 @@ A table or a CSV file with some data
 An organized collection of tables
 A file in a proprietary format that contains data
 A collection of files that together constitute some meaningful dataset
-A structured object with data in some other format that you might want to
-load into a special tool for processing
+A structured object with data in some other format that you might want to load into a
+special tool for processing
 Images capturing data
 Files relating to machine learning, such as trained parameters or neural network structure definitions
 Anything that looks like a dataset to you
@@ -109,21 +109,141 @@ Here's an example of a dataset in JSON-LD:
 <body>
 </body>
 </html>
+<html>
+<head>
+<title>NCDC Storm Events Database</title>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org/",
+"@type":"Dataset",
+"name":"NCDC Storm Events Database",
+"description":"Storm Data is provided by the National Weather Service (NWS) and contain statistics on...",
+"url":"https://catalog.data.gov/dataset/ncdc-storm-events-database",
+"sameAs":"https://gis.ncdc.noaa.gov/geoportal/catalog/search/resource/details.page?id=gov.noaa.ncdc:C00510",
+"identifier": ["https://doi.org/10.1000/182",
+"https://identifiers.org/ark:/12345/fk1234"],
+"keywords":[
+"ATMOSPHERE > ATMOSPHERIC PHENOMENA > CYCLONES",
+"ATMOSPHERE > ATMOSPHERIC PHENOMENA > DROUGHT",
+"ATMOSPHERE > ATMOSPHERIC PHENOMENA > FOG",
+"ATMOSPHERE > ATMOSPHERIC PHENOMENA > FREEZE"
+],
+"license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+"hasPart" : [
+{
+"@type": "Dataset",
+"name": "Sub dataset 01",
+"description": "Informative description of the first subdataset...",
+"license" : "https://creativecommons.org/publicdomain/zero/1.0/"
+},
+{
+"@type": "Dataset",
+"name": "Sub dataset 02",
+"description": "Informative description of the second subdataset...",
+"license" : "https://creativecommons.org/publicdomain/zero/1.0/"
+}
+],
+"creator":{
+"@type":"Organization",
+"url": "https://www.ncei.noaa.gov/",
+"name":"OC/NOAA/NESDIS/NCEI > National Centers for Environmental Information, NESDIS, NOAA, U.S. Department of Commerce",
+"contactPoint":{
+"@type":"ContactPoint",
+"contactType": "customer service",
+"telephone":"+1-828-271-4800",
+"email":"ncei.orders@noaa.gov"
+}
+},
+"includedInDataCatalog":{
+"@type":"DataCatalog",
+"name":"data.gov"
+},
+"distribution":[
+{
+"@type":"DataDownload",
+"encodingFormat":"CSV",
+"contentUrl":"http://www.ncdc.noaa.gov/stormevents/ftp.jsp"
+},
+{
+"@type":"DataDownload",
+"encodingFormat":"XML",
+"contentUrl":"http://gis.ncdc.noaa.gov/all-records/catalog/search/resource/details.page?id=gov.noaa.ncdc:C00510"
+}
+],
+"temporalCoverage":"1950-01-01/2013-12-18",
+"spatialCoverage":{
+"@type":"Place",
+"geo":{
+"@type":"GeoShape",
+"box":"18.0 -65.0 72.0 172.0"
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 RDFa
 Here's an example of a dataset in RDFa using the DCAT vocabulary:
-Name:
-ACME Inc Cash flow data
-Identifiers:
-https://doi.org/10.1000/182
-https://identifiers.org/ark:/12345/fk1234
-Description:
-Financial Statements - Consolidated Statement of Cash Flows
-Category:
-Financial
-Downloads:
-Consolidated_Statement_of_Cash_Flows_en.csv
-Consolidated_Statement_of_Cash_Flows_en.xls
-consolidated_statement_of_cash_flows_en.xml
+<article about="/node/1234" typeof="dcat:Dataset">
+<dl>
+<dt>Name:</dt>
+<dd property="dc:title">ACME Inc Cash flow data</dd>
+<dt>Identifiers:</dt>
+<dd property="dc:identifier">https://doi.org/10.1000/182</dd>
+<dd property="dc:identifier">https://identifiers.org/ark:/12345/fk1234</dd>
+<dt>Description:</dt>
+<dd property="dc:description">Financial Statements - Consolidated Statement of Cash Flows</dd>
+<dt>Category:</dt>
+<dd rel="dc:subject">Financial</dd>
+<dt class="field-label">Downloads:</dt>
+<dd>
+<ul>
+<li>
+<a rel="dcat:distribution" href="Consolidated_Statement_of_Cash_Flows_en.csv"><span property="dcat:mediaType" content="text/csv" >Consolidated_Statement_of_Cash_Flows_en.csv</span></a>
+</li>
+<li>
+<a rel="dcat:distribution"
+href="files/Consolidated_Statement_of_Cash_Flows_en.xls"><span property="dcat:mediaType" content="application/vnd.ms-excel">Consolidated_Statement_of_Cash_Flows_en.xls</span></a>
+</li>
+<li>
+<a rel="dcat:distribution"
+href="files/consolidated_statement_of_cash_flows_en.xml"><span property="dcat:mediaType" content="application/xml">consolidated_statement_of_cash_flows_en.xml</span></a>
+</li>
+</ul>
+</dd>
+</dl>
+</article>
+<article about="/node/1234" typeof="dcat:Dataset">
+<dl>
+<dt>Name:</dt>
+<dd property="dc:title">ACME Inc Cash flow data</dd>
+<dt>Identifiers:</dt>
+<dd property="dc:identifier">https://doi.org/10.1000/182</dd>
+<dd property="dc:identifier">https://identifiers.org/ark:/12345/fk1234</dd>
+<dt>Description:</dt>
+<dd property="dc:description">Financial Statements - Consolidated Statement of Cash Flows</dd>
+<dt>Category:</dt>
+<dd rel="dc:subject">Financial</dd>
+<dt class="field-label">Downloads:</dt>
+<dd>
+<ul>
+<li>
+<a rel="dcat:distribution" href="Consolidated_Statement_of_Cash_Flows_en.csv"><span property="dcat:mediaType" content="text/csv" >Consolidated_Statement_of_Cash_Flows_en.csv</span></a>
+</li>
+<li>
+<a rel="dcat:distribution"
+href="files/Consolidated_Statement_of_Cash_Flows_en.xls"><span property="dcat:mediaType" content="application/vnd.ms-excel">Consolidated_Statement_of_Cash_Flows_en.xls</span></a>
+</li>
+<li>
+<a rel="dcat:distribution"
+href="files/consolidated_statement_of_cash_flows_en.xml"><span property="dcat:mediaType" content="application/xml">consolidated_statement_of_cash_flows_en.xml</span></a>
+</li>
+</ul>
+</dd>
+</dl>
+</article>
 Guidelines
 Sites should follow the structured data
 guidelines. In addition to the structured data guidelines, we recommend the following
@@ -504,6 +624,99 @@ Here is an example showing a small table encoded in CSVW JSON-LD format. There a
 <body>
 </body>
 </html>
+Show me the example
+<html>
+<head>
+<title>American Humane Association</title>
+<script type="application/ld+json">
+{
+"@context": ["https://schema.org", {"csvw": "http://www.w3.org/ns/csvw#"}],
+"@type": "Dataset",
+"name":"AMERICAN HUMANE ASSOCIATION",
+"description": "ProPublica's Nonprofit Explorer lets you view summaries of 2.2 million tax returns from tax-exempt organizations and see financial details such as their executive compensation and revenue and expenses. You can browse raw IRS data released since 2013 and access over 9.4 million tax filing documents going back as far as 2001.",
+"publisher": {
+"@type": "Organization",
+"name": "ProPublica"
+},
+"mainEntity" : {
+"@type" : "csvw:Table",
+"csvw:tableSchema": {
+"csvw:columns": [
+{
+"csvw:name": "Year",
+"csvw:datatype": "string",
+"csvw:cells": [
+{
+"csvw:value": "2016",
+"csvw:primaryKey": "2016"
+},
+{
+"csvw:value": "2015",
+"csvw:primaryKey": "2015"
+}]
+},
+{
+"csvw:name": "Organization name",
+"csvw:datatype": "string",
+"csvw:cells": [
+{
+"csvw:value": "AMERICAN HUMANE ASSOCIATION",
+"csvw:primaryKey": "2016"
+},
+{
+"csvw:value": "AMERICAN HUMANE ASSOCIATION",
+"csvw:primaryKey": "2015"
+}]
+},
+{
+"csvw:name": "Organization address",
+"csvw:datatype": "string",
+"csvw:cells": [
+{
+"csvw:value": "1400 16TH STREET NW",
+"csvw:primaryKey": "2016"
+},
+{
+"csvw:value": "1400 16TH STREET NW",
+"csvw:primaryKey": "2015"
+}]
+},
+{
+"csvw:name": "Organization NTEE Code",
+"csvw:datatype": "string",
+"csvw:cells": [
+{
+"csvw:value": "D200",
+"csvw:notes": "Animal Protection and Welfare",
+"csvw:primaryKey": "2016"
+},
+{
+"csvw:value": "D200",
+"csvw:notes": "Animal Protection and Welfare",
+"csvw:primaryKey": "2015"
+}]
+},
+{
+"csvw:name": "Total functional expenses ($)",
+"csvw:datatype": "integer",
+"csvw:cells": [
+{
+"csvw:value": "13800212",
+"csvw:primaryKey": "2016"
+},
+{
+"csvw:value": "13800212",
+"csvw:primaryKey": "2015"
+}]
+}]
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 Help and tools
 Google's Structured Data Markup Helper has support for Dataset markup.
 Use the Rich result status report
@@ -516,4 +729,4 @@ provides a community forum where you can ask (and answer) questions about struct
 Frequently
 Asked Questions about Datasets.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

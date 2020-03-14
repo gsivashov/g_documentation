@@ -34,22 +34,92 @@ Here's an example of a software app in JSON-LD:
 <body>
 </body>
 </html>
+<html>
+<head>
+<title>Angry Birds</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "SoftwareApplication",
+"name": "Angry Birds",
+"operatingSystem": "ANDROID",
+"applicationCategory": "https://schema.org/GameApplication",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.6",
+"ratingCount": "8864"
+},
+"offers": {
+"@type": "Offer",
+"price": "1.00",
+"priceCurrency": "USD"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 RDFa
 Here's an example of a software app in RDFa:
-Angry Birds -
-REQUIRES ANDROID
+<div vocab="https://schema.org/" typeof="SoftwareApplication">
+<span property="name">Angry Birds</span> -
+REQUIRES <span property="operatingSystem">ANDROID</span>
+<link property="applicationCategory" href="https://schema.org/GameApplication"/>
 RATING:
-4.6 (
-8864 ratings )
-Price: $1.00
+<div property="aggregateRating" typeof="AggregateRating">
+<span property="ratingValue">4.6</span> (
+<span property="ratingCount">8864</span> ratings )
+</div>
+<div property="offers" typeof="Offer">
+Price: $<span property="price">1.00</span>
+<meta property="priceCurrency" content="USD" />
+</div>
+</div>
+<div vocab="https://schema.org/" typeof="SoftwareApplication">
+<span property="name">Angry Birds</span> -
+REQUIRES <span property="operatingSystem">ANDROID</span>
+<link property="applicationCategory" href="https://schema.org/GameApplication"/>
+RATING:
+<div property="aggregateRating" typeof="AggregateRating">
+<span property="ratingValue">4.6</span> (
+<span property="ratingCount">8864</span> ratings )
+</div>
+<div property="offers" typeof="Offer">
+Price: $<span property="price">1.00</span>
+<meta property="priceCurrency" content="USD" />
+</div>
+</div>
 Microdata
 Here's an example of a software app in Microdata:
-Angry Birds -
-REQUIRES ANDROID
+<div itemscope itemtype="https://schema.org/SoftwareApplication">
+<span itemprop="name">Angry Birds</span> -
+REQUIRES <span itemprop="operatingSystem">ANDROID</span>
+<link itemprop="applicationCategory" href="https://schema.org/GameApplication"/>
 RATING:
-4.6 (
-8864 ratings )
-Price: $1.00
+<div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+<span itemprop="ratingValue">4.6</span> (
+<span itemprop="ratingCount">8864</span> ratings )
+</div>
+<div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+Price: $<span itemprop="price">1.00</span>
+<meta itemprop="priceCurrency" content="USD" />
+</div>
+</div>
+<div itemscope itemtype="https://schema.org/SoftwareApplication">
+<span itemprop="name">Angry Birds</span> -
+REQUIRES <span itemprop="operatingSystem">ANDROID</span>
+<link itemprop="applicationCategory" href="https://schema.org/GameApplication"/>
+RATING:
+<div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+<span itemprop="ratingValue">4.6</span> (
+<span itemprop="ratingCount">8864</span> ratings )
+</div>
+<div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+Price: $<span itemprop="price">1.00</span>
+<meta itemprop="priceCurrency" content="USD" />
+</div>
+</div>
 Guidelines
 You must follow these guidelines for your app to be eligible to appear as a rich result.
 Warning: If your site violates one or more of these guidelines,
@@ -139,4 +209,4 @@ MobileApplication
 and WebApplication
 .
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

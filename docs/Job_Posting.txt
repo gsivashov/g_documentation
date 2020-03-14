@@ -69,7 +69,56 @@ Example
 Here is an example of job search results.
 Note: The actual appearance in search results might be different. Preview the structured data
 in the Rich Results Test for the most up-to-date layout.
-Here's an example of an individual job posting using JSON-LD code in the Rich Results Test.
+Here's an example of an individual job posting using JSON-LD code.
+<html>
+<head>
+<title>Software Engineer</title>
+<script type="application/ld+json">
+{
+"@context" : "https://schema.org/",
+"@type" : "JobPosting",
+"title" : "Software Engineer",
+"description" : "<p>Google aspires to be an organization that reflects the globally diverse audience that our products and technology serve. We believe that in addition to hiring the best talent, a diversity of perspectives, ideas and cultures leads to the creation of better products and services.</p>",
+"identifier": {
+"@type": "PropertyValue",
+"name": "MagsRUs Wheel Company",
+"value": "1234567"
+},
+"datePosted" : "2017-01-18",
+"validThrough" : "2017-03-18T00:00",
+"employmentType" : "CONTRACTOR",
+"hiringOrganization" : {
+"@type" : "Organization",
+"name" : "Google",
+"sameAs" : "http://www.google.com",
+"logo" : "http://www.example.com/images/logo.png"
+},
+"jobLocation": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "1600 Amphitheatre Pkwy",
+"addressLocality": ", Mountain View",
+"addressRegion": "CA",
+"postalCode": "94043",
+"addressCountry": "US"
+}
+},
+"baseSalary": {
+"@type": "MonetaryAmount",
+"currency": "USD",
+"value": {
+"@type": "QuantitativeValue",
+"value": 40.00,
+"unitText": "HOUR"
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 <html>
 <head>
 <title>Software Engineer</title>
@@ -678,4 +727,4 @@ Try again: The Rich Results Test displays "false"
 where the job location should be in the Google Search Preview Tool. Make sure the
 location is a real location.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

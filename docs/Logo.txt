@@ -27,6 +27,21 @@ Here's an example of a logo in JSON-LD code.
 <body>
 </body>
 </html>
+<html>
+<head>
+<title>About Us</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Organization",
+"url": "http://www.example.com",
+"logo": "http://www.example.com/images/logo.png"
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 Structured data type definitions
 For logo usage, Google Search recognizes the following properties of an
 Organization.
@@ -44,4 +59,4 @@ url
 URL
 The URL of the website associated with the logo.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

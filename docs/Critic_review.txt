@@ -90,6 +90,69 @@ example of an embedded review of a business in JSON-LD:
 <body>
 </body>
 </html>
+<html>
+<head>
+<title>Dave's Steak House</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Restaurant",
+"@id": "http://davessteakhouse.example.com",
+"name": "Dave's Steak House",
+"image": "http://davessteakhouse.example.com/logo.jpg",
+"sameAs": "http://davessteakhouse.example.com",
+"servesCuisine": "Steak House",
+"priceRange": "$$$",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "148 W 51st St",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10019",
+"addressCountry": "US"
+},
+"telephone": "+12122459600",
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.761293,
+"longitude": -73.982294
+},
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "88",
+"bestRating": "100",
+"worstRating": "1",
+"ratingCount": "20"
+},
+"review": {
+"@type": "Review",
+"url": "http://www.localreviews.com/restaurants/1/2/3/daves-steak-house.html",
+"author": {
+"@type": "Person",
+"name": "Lisa Kennedy",
+"sameAs": "https://plus.google.com/114108465800532712602"
+},
+"publisher": {
+"@type": "Organization",
+"name": "Denver Post",
+"sameAs": "http://www.denverpost.com"
+},
+"datePublished": "2014-03-13T20:00",
+"description": "Great old fashioned steaks but the salads are sub par.",
+"inLanguage": "en",
+"reviewRating": {
+"@type": "Rating",
+"worstRating": 1,
+"bestRating": 4,
+"ratingValue": 3.5
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 You can provide standalone critic review objects, which are suitable for sites that perform no
 direct function for the business being reviewed, such as news sites. Here's an example of a
 standalone review of a business in JSON-LD:
@@ -147,6 +210,70 @@ standalone review of a business in JSON-LD:
 "worstRating":1,
 "bestRating":4,
 "ratingValue":3.5
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>Dave's Steak House</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Restaurant",
+"@id": "http://davessteakhouse.example.com",
+"name": "Dave's Steak House",
+"image": "http://davessteakhouse.example.com/logo.jpg",
+"sameAs": "http://davessteakhouse.example.com",
+"servesCuisine": "Steak House",
+"priceRange": "$$$",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "148 W 51st St",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10019",
+"addressCountry": "US"
+},
+"telephone": "+12122459600",
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.761293,
+"longitude": -73.982294
+},
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "88",
+"bestRating": "100",
+"worstRating": "1",
+"ratingCount": "20"
+},
+"review": {
+"@type": "Review",
+"url": "http://www.localreviews.com/restaurants/1/2/3/daves-steak-house.html",
+"author": {
+"@type": "Person",
+"name": "Lisa Kennedy",
+"sameAs": "https://plus.google.com/114108465800532712602"
+},
+"publisher": {
+"@type": "Organization",
+"name": "Denver Post",
+"sameAs": "http://www.denverpost.com"
+},
+"datePublished": "2014-03-13T20:00",
+"description": "Great old fashioned steaks but the salads are sub par.",
+"inLanguage": "en",
+"reviewRating": {
+"@type": "Rating",
+"worstRating": 1,
+"bestRating": 4,
+"ratingValue": 3.5
+}
 }
 }
 </script>
@@ -457,4 +584,4 @@ this property.
 If you have duplicate pages for the same content, make sure you use the
 canonical URL.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

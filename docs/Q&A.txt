@@ -85,32 +85,156 @@ JSON-LD
 <body>
 </body>
 </html>
+<html>
+<head>
+<title>How many ounces are there in a pound?</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "QAPage",
+"mainEntity": {
+"@type": "Question",
+"name": "How many ounces are there in a pound?",
+"text": "I have taken up a new interest in baking and keep running across directions in ounces and pounds. I have to translate between them and was wondering how many ounces are in a pound?",
+"answerCount": 3,
+"upvoteCount": 26,
+"dateCreated": "2016-07-23T21:11Z",
+"author": {
+"@type": "Person",
+"name": "New Baking User"
+},
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "1 pound (lb) is equal to 16 ounces (oz).",
+"dateCreated": "2016-11-02T21:11Z",
+"upvoteCount": 1337,
+"url": "https://example.com/question1#acceptedAnswer",
+"author": {
+"@type": "Person",
+"name": "SomeUser"
+}
+},
+"suggestedAnswer": [
+{
+"@type": "Answer",
+"text": "Are you looking for ounces or fluid ounces? If you are looking for fluid ounces there are 15.34 fluid ounces in a pound of water.",
+"dateCreated": "2016-11-02T21:11Z",
+"upvoteCount": 42,
+"url": "https://example.com/question1#suggestedAnswer1",
+"author": {
+"@type": "Person",
+"name": "AnotherUser"
+}
+}, {
+"@type": "Answer",
+"text": " I can't remember exactly, but I think 18 ounces in a lb. You might want to double check that.",
+"dateCreated": "2016-11-06T21:11Z",
+"upvoteCount": 0,
+"url": "https://example.com/question1#suggestedAnswer2",
+"author": {
+"@type": "Person",
+"name": "ConfusedUser"
+}
+}
+]
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 Microdata
 <html>
 <body itemscope itemtype="https://schema.org/QAPage">
-How many ounces are there in a pound?
-52
-I have taken up a new interest in baking and keep running across directions in ounces and pounds. I have to translate between them and was wondering how many ounces are in a pound?
-asked Nov 11
-'10 at 20:07
-New Baking User
-3 answers
-26 votes
-1337
+<div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+<h2 itemprop="name">How many ounces are there in a pound?</h2>
+<div itemprop="upvoteCount">52</div>
+<div itemprop="text">I have taken up a new interest in baking and keep running across directions in ounces and pounds. I have to translate between them and was wondering how many ounces are in a pound?</div>
+<div>asked <time itemprop="dateCreated" datetime="2010-11-04T20:07Z">Nov 11
+'10 at 20:07</time></div>
+<div itemprop="author" itemscope itemtype="https://schema.org/Person"><span
+itemprop="name">New Baking User</span></div>
+<div>
+<div><span itemprop="answerCount">3</span> answers</div>
+<div><span itemprop="upvoteCount">26</span> votes</div>
+<div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+<div itemprop="upvoteCount">1337</div>
+<div itemprop="text">
 1 pound (lb) is equal to 16 ounces (oz).
-Answer Link
-answered Dec 1 '10 at 22:01
-SomeUser
-42
+</div>
+<a itemprop="url" href="https://example.com/question1#acceptedAnswer">Answer Link</a>
+<div>answered <time itemprop="dateCreated" datetime="2010-12-01T22:01Z">Dec 1 '10 at 22:01</time></div>
+<div itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">SomeUser</span></div>
+</div>
+<div itemprop="suggestedAnswer" itemscope itemtype="https://schema.org/Answer">
+<div itemprop="upvoteCount">42</div>
+<div itemprop="text">
 Are you looking for ounces or fluid ounces? If you are looking for fluid ounces there are 15.34 fluid ounces in a pound of water.
-Answer Link
-answered Dec 6 '10 at 21:11
-AnotherUser
-0
+</div>
+<a itemprop="url" href="https://example.com/question1#suggestedAnswer1">Answer Link</a>
+<div>answered <time itemprop="dateCreated"datetime="2010-12-06T21:11Z">Dec 6 '10 at 21:11</time></div>
+<div itemprop="author" itemscope itemtype="https://schema.org/Person"><span
+itemprop="name">AnotherUser</span></div>
+</div>
+<div itemprop="suggestedAnswer" itemscope itemtype="https://schema.org/Answer">
+<div itemprop="upvoteCount">0</div>
+<div itemprop="text">
 I can't remember exactly, but I think 18 ounces in a lb. You might want to double check that.
-Answer Link
-answered Dec 6 '10 at 21:11
-ConfusedUser
+</div>
+<a itemprop="url" href="https://example.com/question1#suggestedAnswer2">Answer Link</a>
+<div>answered <time itemprop="dateCreated"datetime="2010-12-06T21:11Z">Dec 6 '10 at 21:11</time></div>
+<div itemprop="author" itemscope itemtype="https://schema.org/Person"><span
+itemprop="name">ConfusedUser</span></div>
+</div>
+</div>
+</div>
+</body>
+</html>
+<html>
+<body itemscope itemtype="https://schema.org/QAPage">
+<div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+<h2 itemprop="name">How many ounces are there in a pound?</h2>
+<div itemprop="upvoteCount">52</div>
+<div itemprop="text">I have taken up a new interest in baking and keep running across directions in ounces and pounds. I have to translate between them and was wondering how many ounces are in a pound?</div>
+<div>asked <time itemprop="dateCreated" datetime="2010-11-04T20:07Z">Nov 11
+'10 at 20:07</time></div>
+<div itemprop="author" itemscope itemtype="https://schema.org/Person"><span
+itemprop="name">New Baking User</span></div>
+<div>
+<div><span itemprop="answerCount">3</span> answers</div>
+<div><span itemprop="upvoteCount">26</span> votes</div>
+<div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+<div itemprop="upvoteCount">1337</div>
+<div itemprop="text">
+1 pound (lb) is equal to 16 ounces (oz).
+</div>
+<a itemprop="url" href="https://example.com/question1#acceptedAnswer">Answer Link</a>
+<div>answered <time itemprop="dateCreated" datetime="2010-12-01T22:01Z">Dec 1 '10 at 22:01</time></div>
+<div itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">SomeUser</span></div>
+</div>
+<div itemprop="suggestedAnswer" itemscope itemtype="https://schema.org/Answer">
+<div itemprop="upvoteCount">42</div>
+<div itemprop="text">
+Are you looking for ounces or fluid ounces? If you are looking for fluid ounces there are 15.34 fluid ounces in a pound of water.
+</div>
+<a itemprop="url" href="https://example.com/question1#suggestedAnswer1">Answer Link</a>
+<div>answered <time itemprop="dateCreated"datetime="2010-12-06T21:11Z">Dec 6 '10 at 21:11</time></div>
+<div itemprop="author" itemscope itemtype="https://schema.org/Person"><span
+itemprop="name">AnotherUser</span></div>
+</div>
+<div itemprop="suggestedAnswer" itemscope itemtype="https://schema.org/Answer">
+<div itemprop="upvoteCount">0</div>
+<div itemprop="text">
+I can't remember exactly, but I think 18 ounces in a lb. You might want to double check that.
+</div>
+<a itemprop="url" href="https://example.com/question1#suggestedAnswer2">Answer Link</a>
+<div>answered <time itemprop="dateCreated"datetime="2010-12-06T21:11Z">Dec 6 '10 at 21:11</time></div>
+<div itemprop="author" itemscope itemtype="https://schema.org/Person"><span
+itemprop="name">ConfusedUser</span></div>
+</div>
+</div>
+</div>
 </body>
 </html>
 Guidelines
@@ -254,4 +378,4 @@ A URL that links directly to this answer. For example: https://www.examplesite.c
 It is strongly recommended to provide a URL for each answer because
 it improves the user experience when the user clicks through to your site.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

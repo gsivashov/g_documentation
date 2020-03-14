@@ -27,7 +27,53 @@ Example
 Here's an example of Event in JSON-LD. You can also use Microdata or RDFa
 syntax.
 The actual appearance in search results might be different. Preview the
-structured data in the Structured Data Testing Tool for the most up-to-date layout.
+structured data in the Rich Results Test for the most up-to-date layout.
+<html>
+<head>
+<title>The Adventures of Kira and Morrison</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Event",
+"name": "The Adventures of Kira and Morrison",
+"startDate": "2025-07-21T19:00",
+"endDate": "2025-07-21T23:00",
+"location": {
+"@type": "Place",
+"name": "Snickerpark Stadium",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "100 West Snickerpark Dr",
+"addressLocality": "Snickertown",
+"postalCode": "19019",
+"addressRegion": "PA",
+"addressCountry": "US"
+}
+},
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"description": "The Adventures of Kira and Morrison is coming to Snickertown in a can’t miss performance.",
+"offers": {
+"@type": "Offer",
+"url": "https://www.example.com/event_offer/12345_201803180430",
+"price": "30",
+"priceCurrency": "USD",
+"availability": "https://schema.org/InStock",
+"validFrom": "2024-05-21T12:00"
+},
+"performer": {
+"@type": "PerformingGroup",
+"name": "Kira and Morrison"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 <html>
 <head>
 <title>The Adventures of Kira and Morrison</title>
@@ -604,4 +650,4 @@ Not recommended: 2019-07-20T00:00:00
 Not recommended: 2019-08-15T00:00:01+00:00
 Not recommended2019-08-15T00:00:00+00:00
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-28.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.

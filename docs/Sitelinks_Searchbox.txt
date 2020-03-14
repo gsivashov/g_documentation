@@ -39,9 +39,68 @@ Here's an example in JSON-LD:
 <body>
 </body>
 </html>
+<html>
+<head>
+<title>The title of the page</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "WebSite",
+"url": "https://www.example.com/",
+"potentialAction": {
+"@type": "SearchAction",
+"target": "https://query.example.com/search?q={search_term_string}",
+"query-input": "required name=search_term_string"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 Microdata
 Here's an example in Microdata:
+<div itemscope itemtype="https://schema.org/WebSite">
+<meta itemprop="url" content="https://www.example.com/"/>
+<form itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+<meta itemprop="target" content="https://query.example.com/search?q={search_term_string}"/>
+<input itemprop="query-input" type="text" name="search_term_string" required/>
+<input type="submit"/>
+</form>
+</div>
+<div itemscope itemtype="https://schema.org/WebSite">
+<meta itemprop="url" content="https://www.example.com/"/>
+<form itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+<meta itemprop="target" content="https://query.example.com/search?q={search_term_string}"/>
+<input itemprop="query-input" type="text" name="search_term_string" required/>
+<input type="submit"/>
+</form>
+</div>
 Here's an example of a site and an app in JSON-LD:
+<html>
+<head>
+<title>The title of the page</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "WebSite",
+"url": "https://www.example.com/",
+"potentialAction": [{
+"@type": "SearchAction",
+"target": "https://query.example.com/search?q={search_term_string}",
+"query-input": "required name=search_term_string"
+},{
+"@type": "SearchAction",
+"target": "android-app://com.example/https/query.example.com/search/?q={search_term_string}",
+"query-input": "required name=search_term_string"
+}]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
 <html>
 <head>
 <title>The title of the page</title>
@@ -179,4 +238,4 @@ URL
 Specifies the URL of the site being searched. Set to the canonical homepage of your
 site. For example: https://www.example.org
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-07.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.
