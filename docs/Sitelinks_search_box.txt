@@ -1,0 +1,257 @@
+Home
+Products
+Search for Developers
+Reference
+Sitelinks search box
+A sitelinks search box is a quick way for people to search your site or app immediately on the
+search results page. The search box implements real-time suggestions and other features.
+Google Search may automatically expose a search box scoped to your website when it appears as
+a search result, without you having to do anything additional to make this happen. This search
+box is powered by Google Search. However, you can explicitly provide information by adding
+WebSite structured data, which can help Google better understand your site.
+Important: Google doesn't guarantee that a sitelinks search box
+will be shown in search results. Additionally, using the sitelinks search box markup doesn't
+make it more likely that a sitelinks search box will be shown. For a list of common reasons why Google may not
+show structured data in search results, review the General
+Structured Data Guidelines.
+Example
+Here is an example search result for "Pinterest" on Google that returns a sitelinks search box
+for the Pinterest website:
+Here is some example markup that would implement a sitelinks search box that uses the
+website's custom search engine:
+JSON-LD
+Here's an example in JSON-LD:
+<html>
+<head>
+<title>The title of the page</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "WebSite",
+"url": "https://www.example.com/",
+"potentialAction": {
+"@type": "SearchAction",
+"target": "https://query.example.com/search?q={search_term_string}",
+"query-input": "required name=search_term_string"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head>
+<title>The title of the page</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "WebSite",
+"url": "https://www.example.com/",
+"potentialAction": {
+"@type": "SearchAction",
+"target": "https://query.example.com/search?q={search_term_string}",
+"query-input": "required name=search_term_string"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Microdata
+Here's an example in Microdata:
+<div itemscope itemtype="https://schema.org/WebSite">
+<meta itemprop="url" content="https://www.example.com/"/>
+<form itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+<meta itemprop="target" content="https://query.example.com/search?q={search_term_string}"/>
+<input itemprop="query-input" type="text" name="search_term_string" required/>
+<input type="submit"/>
+</form>
+</div>
+<div itemscope itemtype="https://schema.org/WebSite">
+<meta itemprop="url" content="https://www.example.com/"/>
+<form itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+<meta itemprop="target" content="https://query.example.com/search?q={search_term_string}"/>
+<input itemprop="query-input" type="text" name="search_term_string" required/>
+<input type="submit"/>
+</form>
+</div>
+Here's an example of a site and an app in JSON-LD:
+<html>
+<head>
+<title>The title of the page</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "WebSite",
+"url": "https://www.example.com/",
+"potentialAction": [{
+"@type": "SearchAction",
+"target": "https://query.example.com/search?q={search_term_string}",
+"query-input": "required name=search_term_string"
+},{
+"@type": "SearchAction",
+"target": "android-app://com.example/https/query.example.com/search/?q={search_term_string}",
+"query-input": "required name=search_term_string"
+}]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>The title of the page</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "WebSite",
+"url": "https://www.example.com/",
+"potentialAction": [{
+"@type": "SearchAction",
+"target": "https://query.example.com/search?q={search_term_string}",
+"query-input": "required name=search_term_string"
+},{
+"@type": "SearchAction",
+"target": "android-app://com.example/https/query.example.com/search/?q={search_term_string}",
+"query-input": "required name=search_term_string"
+}]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Guidelines
+In addition to structured data general
+guidelines, these additional guidelines apply to sitelinks search box markup.
+Here are the steps to make your site eligible to display with a search box in Google Search results:
+Install a working search engine on your web site or Android app.
+Sitelinks search queries send the user to the search results page for your site or app, so
+you need a functioning search engine to power this feature.
+Websites: Set up a search engine on your website or Android app. The feature
+forwards the user's query to your target using the syntax specified in your structured
+data. Your search engine should support UTF-8-encoded queries.
+Apps: See
+Search Overview
+on the Android Developer Site to learn how to implement a search engine for your app.
+Your Android app should support an ACTION_VIEW intent from Search results,
+with the corresponding data URI specified in your markup's
+potentialAction.target property.
+Implement the WebSite structured data element on the homepage for your
+site. An app must have an associated website to enable this feature, even if the
+website is only a single page. A few additional guidelines:
+Add this markup only to the homepage, not to any other pages.
+Always specify one SearchAction for the website, and optionally another if
+supporting app search. You should always have a SearchAction for the website
+even if the app is your preferred search target; this ensures that if the user is not
+searching from an Android phone or does not have your Android app installed, the search
+result directs to your website.
+Verify your structured data using the
+Rich Results Test.
+Verify your search engine implementation by copying the
+WebSite.potentialAction.target URL from your structured data, replacing
+{search_term_string} with a test query, and browsing to that URL in a web browser.
+For example, if your website is example.com, and you want to test the query
+"kittens", you would browse to
+https://www.example.com/search/?q=kittens.
+Set a preferred
+canonical URL for your domain's homepage using the rel="canonical"
+link element on all variants of the homepage. This helps Google Search choose the correct
+URL for your markup. Your server must support UTF-8 character encoding.
+For apps, enable the proper intent filters to support the URL you specify
+in the app target of your markup. For an example of how to create intent filters for Google
+Search urls, see
+Firebase
+App Indexing for Android.
+Prevent a sitelinks search box from appearing
+Google Search can choose to add a sitelinks searchbox to your site even if it does not include
+the structured data described here. However, you can prevent this behavior by add the
+following meta tag to your homepage:
+<meta name="google" content="nositelinkssearchbox" />
+The sitelinks search box will be disabled as part of the normal Googlebot
+crawling and processing of the page, which can take a few weeks depending on
+the site and other factors.
+Structured data type definitions
+To make your content eligible for display with a sitelinks search box, include the required properties.
+Modified type WebSite
+Google Search uses a modified WebSite structured data type both for website and
+app search boxes. The full definition of WebSite
+is provided on schema.org, although Google Search deviates slightly from the standard.
+The description shown below is definitive.
+Required properties
+potentialAction
+Array of one or two SearchAction objects
+This object describes the URI to send the query to, and the syntax of the request that
+is sent. You must implement a webpage or intent handler that can receive the request,
+and perform an appropriate search on the submitted string. If the user is not on an
+Android app (or is on an Android app but has not specified an Android intent target), the
+search box will send the website version of the query to the location specified; if the
+user is on an Android device and has specified an Android intent URI, it will send that
+intent.
+You should always create a website SearchAction to enable the desktop
+search case. If also supporting app search, you can additionally specify a
+SearchAction object for your app. Each SearchAction object has
+the following members:
+potentialAction.@type
+potentialAction.target
+potentialAction.query-input
+Website example
+The following example sends a GET request to
+https://query.example.com/search?q=user%20search%20string.
+"potentialAction": [{
+"@type": "SearchAction",
+"target": "https://query.example.com/search?q={search_term_string}",
+"query-input": "required name=search_term_string"
+}]
+App example
+The following example sends an Android intent to
+android-app://com.example/https/query.example.com/search/?q=user_search_string.
+"potentialAction": [{
+"@type": "SearchAction",
+"target": "android-app://com.example/https/query.example.com/search/?q={search_term_string}",
+"query-input": "required name=search_term_string"
+}]
+potentialAction.query-input
+Text
+Use the literal string required name = search_term_string, or whatever
+placeholder you used in target.
+potentialAction.target
+Text
+A string in this format: search_handler_uri?q={search_term_string}
+For example:
+https://query.example.com/search?q={search_term_string}
+search_handler_uri
+For websites, the URL of the handler that should receive and handle the
+search query; for apps, the URI of the intent handler for your search
+engine that should handle queries.
+search_term_string
+A placeholder string that is replaced by user's search query when the user
+clicks the "Search" button in the search box.
+url
+URL
+Specifies the URL of the site being searched. Set to the canonical homepage of your
+site. For example: https://www.example.org
+Troubleshooting
+Important: Google doesn't guarantee that a sitelinks search box
+will be shown in search results. Additionally, using the sitelinks search box markup doesn't
+make it more likely that a sitelinks search box will be shown. For a list of common reasons why Google may not
+show structured data in search results, review the General
+Structured Data Guidelines.
+If you're having trouble implementing sitelinks search box structured data, here are some resources that may help you.
+You might have an error in your structured data. Check the
+list of structured
+data errors.
+Troubleshoot
+missing rich results / drop in total rich results.
+For general questions about crawling and indexing, check the
+Webmaster FAQ.
+Ask a question in the Webmaster
+Office Hours.
+Post a question in the Webmaster
+forum.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-17.

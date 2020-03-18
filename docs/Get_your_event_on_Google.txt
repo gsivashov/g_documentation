@@ -3,7 +3,9 @@ Products
 Search for Developers
 Reference
 Get your event on Google
-The event experience on Google makes it easier for people to discover and attend events through Google Search results and other Google products, like Google Maps. This feature brings many benefits:
+The event experience on Google makes it easier for people to discover and attend events
+through Google Search results and other Google products, like Google Maps. This feature brings
+many benefits:
 More interactive results: Your events can be eligible to be displayed in
 the event experience on Google, featuring your logo, description of the event, and more.
 Increased chances of discovery and conversion: People have a new way to
@@ -11,7 +13,8 @@ interact with your event posting and click through to your site. Learn how
 Eventbrite saw a 100% increase in
 the typical year-over-year growth of traffic from Google Search.
 There are three options to make your events eligible to appear on Google:
-If you use a third-party website to post events (for example, you post events on ticketing websites or social platforms), check to see if your event publisher is
+If you use a third-party website to post events (for example, you post
+events on ticketing websites or social platforms), check to see if your event publisher is
 already participating in the event search experience on Google. If your event publisher is
 integrated with Google, continue to post your events on the third-party website. You can
 stop reading here.
@@ -27,8 +30,9 @@ Examples
 The actual appearance in search results might be different. Preview the
 structured data in the Rich Results Test for the most up-to-date layout.
 Standard event
-Here's an example of standard Event in JSON-LD. You can also use Microdata or RDFa
-syntax.
+Here's an example of standard Event in JSON-LD. A standard event means that the event
+is happening at a physical location only and the event is happened as scheduled. You can also
+use Microdata or RDFa syntax.
 <html>
 <head>
 <title>The Adventures of Kira and Morrison</title>
@@ -39,6 +43,8 @@ syntax.
 "name": "The Adventures of Kira and Morrison",
 "startDate": "2025-07-21T19:00",
 "endDate": "2025-07-21T23:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
 "location": {
 "@type": "Place",
 "name": "Snickerpark Stadium",
@@ -85,6 +91,8 @@ syntax.
 "name": "The Adventures of Kira and Morrison",
 "startDate": "2025-07-21T19:00",
 "endDate": "2025-07-21T23:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
 "location": {
 "@type": "Place",
 "name": "Snickerpark Stadium",
@@ -121,11 +129,207 @@ syntax.
 <body>
 </body>
 </html>
-Canceled event
+Online event
+Here's an example of an event that's happening online.
+On March 17, 2020, we added eventStatus,
+VirtualLocation, eventAttendanceMode, and previousStartDate to the documentation. The Rich Results Test might not reflect the new properties yet, and it might show warnings or errors. You can disregard the warnings and errors, and refer to the documentation for the most up to date set of requirements until we update the tool.
+<html>
+<head>
+<title>The Adventures of Kira and Morrison</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Event",
+"name": "The Adventures of Kira and Morrison",
+"startDate": "2025-07-21T19:00",
+"endDate": "2025-07-21T23:00",
+"eventStatus": "https://schema.org/EventScheduled",
+"eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+"location": {
+"@type": "VirtualLocation",
+"url": "https://operaonline.stream5.com/"
+},
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"description": "The Adventures of Kira and Morrison is coming to Snickertown in a can’t miss performance.",
+"offers": {
+"@type": "Offer",
+"url": "https://www.example.com/event_offer/12345_201803180430",
+"price": "30",
+"priceCurrency": "USD",
+"availability": "https://schema.org/InStock",
+"validFrom": "2024-05-21T12:00"
+},
+"performer": {
+"@type": "PerformingGroup",
+"name": "Kira and Morrison"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>The Adventures of Kira and Morrison</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Event",
+"name": "The Adventures of Kira and Morrison",
+"startDate": "2025-07-21T19:00",
+"endDate": "2025-07-21T23:00",
+"eventStatus": "https://schema.org/EventScheduled",
+"eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+"location": {
+"@type": "VirtualLocation",
+"url": "https://operaonline.stream5.com/"
+},
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"description": "The Adventures of Kira and Morrison is coming to Snickertown in a can’t miss performance.",
+"offers": {
+"@type": "Offer",
+"url": "https://www.example.com/event_offer/12345_201803180430",
+"price": "30",
+"priceCurrency": "USD",
+"availability": "https://schema.org/InStock",
+"validFrom": "2024-05-21T12:00"
+},
+"performer": {
+"@type": "PerformingGroup",
+"name": "Kira and Morrison"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Mixed online and offline event
+Here's an example of an event that has parts that are online and parts that are happening at
+a physical location.
+On March 17, 2020, we added eventStatus,
+VirtualLocation, eventAttendanceMode, and previousStartDate to the documentation. The Rich Results Test might not reflect the new properties yet, and it might show warnings or errors. You can disregard the warnings and errors, and refer to the documentation for the most up to date set of requirements until we update the tool.
+<html>
+<head>
+<title>The Adventures of Kira and Morrison</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Event",
+"name": "The Adventures of Kira and Morrison",
+"startDate": "2025-07-21T19:00",
+"endDate": "2025-07-21T23:00",
+"eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"location": [{
+"@type": "VirtualLocation",
+"url": "https://operaonline.stream5.com/"
+},
+{
+"@type": "Place",
+"name": "Snickerpark Stadium",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "100 West Snickerpark Dr",
+"addressLocality": "Snickertown",
+"postalCode": "19019",
+"addressRegion": "PA",
+"addressCountry": "US"
+}
+}],
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"description": "The Adventures of Kira and Morrison is coming to Snickertown in a can’t miss performance.",
+"offers": {
+"@type": "Offer",
+"url": "https://www.example.com/event_offer/12345_201803180430",
+"price": "30",
+"priceCurrency": "USD",
+"availability": "https://schema.org/InStock",
+"validFrom": "2024-05-21T12:00"
+},
+"performer": {
+"@type": "PerformingGroup",
+"name": "Kira and Morrison"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>The Adventures of Kira and Morrison</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Event",
+"name": "The Adventures of Kira and Morrison",
+"startDate": "2025-07-21T19:00",
+"endDate": "2025-07-21T23:00",
+"eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"location": [{
+"@type": "VirtualLocation",
+"url": "https://operaonline.stream5.com/"
+},
+{
+"@type": "Place",
+"name": "Snickerpark Stadium",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "100 West Snickerpark Dr",
+"addressLocality": "Snickertown",
+"postalCode": "19019",
+"addressRegion": "PA",
+"addressCountry": "US"
+}
+}],
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"description": "The Adventures of Kira and Morrison is coming to Snickertown in a can’t miss performance.",
+"offers": {
+"@type": "Offer",
+"url": "https://www.example.com/event_offer/12345_201803180430",
+"price": "30",
+"priceCurrency": "USD",
+"availability": "https://schema.org/InStock",
+"validFrom": "2024-05-21T12:00"
+},
+"performer": {
+"@type": "PerformingGroup",
+"name": "Kira and Morrison"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Event with an updated status
+There are multiple ways to set the status of an event. Here are some common examples of events that have an updated status. For more information, refer to the eventStatus property.
+On March 17, 2020, we added eventStatus,
+VirtualLocation, eventAttendanceMode, and previousStartDate to the documentation. The Rich Results Test might not reflect the new properties yet, and it might show warnings or errors. You can disregard the warnings and errors, and refer to the documentation for the most up to date set of requirements until we update the tool.
+Canceled
 Here's an example of an event that's been canceled.
-On March 16, 2020, we added the eventStatus
-and previousStartDate properties
-to the documentation. The Rich Results Test might not reflect the new properties yet.
 <html>
 <head>
 <title>The Adventures of Kira and Morrison</title>
@@ -137,6 +341,7 @@ to the documentation. The Rich Results Test might not reflect the new properties
 "startDate": "2025-07-21T19:00",
 "endDate": "2025-07-21T23:00",
 "eventStatus": "https://schema.org/EventCancelled",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "location": {
 "@type": "Place",
 "name": "Snickerpark Stadium",
@@ -185,6 +390,7 @@ Show me the example
 "startDate": "2025-07-21T19:00",
 "endDate": "2025-07-21T23:00",
 "eventStatus": "https://schema.org/EventCancelled",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "location": {
 "@type": "Place",
 "name": "Snickerpark Stadium",
@@ -221,11 +427,8 @@ Show me the example
 <body>
 </body>
 </html>
-Rescheduled event
+Rescheduled
 Here's an example of an event that's been rescheduled.
-On March 16, 2020, we added the eventStatus
-and previousStartDate properties
-to the documentation. The Rich Results Test might not reflect the new properties yet.
 <html>
 <head>
 <title>The Adventures of Kira and Morrison</title>
@@ -237,6 +440,7 @@ to the documentation. The Rich Results Test might not reflect the new properties
 "startDate": "2025-07-21T19:00",
 "endDate": "2025-07-21T23:00",
 "eventStatus": "https://schema.org/EventRescheduled",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "previousStartDate": "2025-03-21T19:00",
 "location": {
 "@type": "Place",
@@ -286,6 +490,7 @@ Show me the example
 "startDate": "2025-07-21T19:00",
 "endDate": "2025-07-21T23:00",
 "eventStatus": "https://schema.org/EventRescheduled",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "previousStartDate": "2025-03-21T19:00",
 "location": {
 "@type": "Place",
@@ -298,6 +503,97 @@ Show me the example
 "addressRegion": "PA",
 "addressCountry": "US"
 }
+},
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"description": "The Adventures of Kira and Morrison is coming to Snickertown in a can’t miss performance.",
+"offers": {
+"@type": "Offer",
+"url": "https://www.example.com/event_offer/12345_201803180430",
+"price": "30",
+"priceCurrency": "USD",
+"availability": "https://schema.org/InStock",
+"validFrom": "2024-05-21T12:00"
+},
+"performer": {
+"@type": "PerformingGroup",
+"name": "Kira and Morrison"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Moved online and rescheduled
+Here's an example of an event that's been rescheduled and moved online.
+<html>
+<head>
+<title>The Adventures of Kira and Morrison</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Event",
+"name": "The Adventures of Kira and Morrison",
+"startDate": "2025-07-21T19:00",
+"endDate": "2025-07-21T23:00",
+"eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+"eventStatus": [
+"https://schema.org/EventRescheduled",
+"https://schema.org/EventMovedOnline"
+],
+"previousStartDate": "2025-03-21T19:00",
+"location": {
+"@type": "VirtualLocation",
+"url": "https://operaonline.stream5.com/"
+},
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"description": "The Adventures of Kira and Morrison is coming to Snickertown in a can’t miss performance.",
+"offers": {
+"@type": "Offer",
+"url": "https://www.example.com/event_offer/12345_201803180430",
+"price": "30",
+"priceCurrency": "USD",
+"availability": "https://schema.org/InStock",
+"validFrom": "2024-05-21T12:00"
+},
+"performer": {
+"@type": "PerformingGroup",
+"name": "Kira and Morrison"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Show me the example
+<html>
+<head>
+<title>The Adventures of Kira and Morrison</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Event",
+"name": "The Adventures of Kira and Morrison",
+"startDate": "2025-07-21T19:00",
+"endDate": "2025-07-21T23:00",
+"eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+"eventStatus": [
+"https://schema.org/EventRescheduled",
+"https://schema.org/EventMovedOnline"
+],
+"previousStartDate": "2025-03-21T19:00",
+"location": {
+"@type": "VirtualLocation",
+"url": "https://operaonline.stream5.com/"
 },
 "image": [
 "https://example.com/photos/1x1/photo.jpg",
@@ -502,9 +798,21 @@ You can also include the recommended properties to add more information about yo
 which could provide a better user experience.
 Required properties
 location
-Place
-A nested Place. For example:
-"location": {
+Place or VirtualLocation
+The location of the event. There are different requirements depending on if the event
+is happening online or at a physical location:
+Physical location: If the event is happening at a physical location, set the @type to Place. Add the location.address and
+location.name properties.
+Online event: If the event is happening online, set the @type to VirtualLocation. Add the location.url property.
+You can start using the VirtualLocation type even though it's still pending on schema.org.
+Mix of online and physical locations: If an event has a mix of
+online and physical location components, include both online and physical nested location
+properties in a nested array. For example:
+"location": [{
+"@type": "VirtualLocation",
+"url": "https://operaonline.stream5.com/"
+},
+{
 "@type": "Place",
 "name": "Snickerpark Stadium",
 "address": {
@@ -515,10 +823,14 @@ A nested Place. For example:
 "addressRegion": "PA",
 "addressCountry": "US"
 }
-}
+}]
+Physical locations
+If an event is happening at a physical location, nest the following properties for location. For example:
+Required properties
 location.address
 PostalAddress
-The venue's detailed street address.
+The venue's detailed street address. This property is only required for events that take
+place at a physical location.
 Not recommended: Sydney
 Recommended: Bennelong Point,
 Sydney NSW 2000, Australia
@@ -568,13 +880,37 @@ Here's an example of the entire address on one line.
 "name": "東京都江東区青海 1-1-10 ダイバーシティ東京プラザ"
 }
 }
-Best practices:
+Best practices for addresses:
 If the event happens across several streets, define the starting location and mention
 the full details in description.
 If the event happens without a well-defined location, use the city name or the most
 representative location.
 If the event happens at multiple locations at the same time, create different events for
 each location.
+Recommended properties
+location.name
+Text
+The detailed name of the place or venue where the event is being held. This property
+is only recommended for events that take place at a physical location.
+DO NOT put the title of the event in this field. Instead, use
+name to specify the name of the event.
+Not recommended: San Francisco, CA
+Recommended: Bill Graham Civic Auditorium
+Best practices:
+Don't include a city name unless it is a city-wide event.
+The location.name property must be the name of the venue or location, not a repeat of
+the title of the event. If you don't know the name of the location, don't use this property.
+Online events
+If an event is happening online, nest the following property in location.
+Required properties
+location.url
+URL
+The URL of the online event, where people can join. This property is required if your
+event is happening online.
+"location": {
+"@type": "VirtualLocation",
+"url": "https://operaonline.stream5.com/"
+}
 name
 Text
 The full title of the event.
@@ -629,15 +965,68 @@ Make sure to follow the Date and time
 guidelines.
 For example:
 "endDate": "2025-07-21T23:00"
+eventAttendanceMode
+EventAttendanceModeEnumeration
+Indicates whether the event occurs online, offline at a physical location, or a mix of
+both online and offline. If you don't include this property, Google understands the
+event mode to be
+OfflineEventAttendanceMode, which means Google
+understands that the event is happening at a physical location. Use one of the
+following values:
+OfflineEventAttendanceMode
+OnlineEventAttendanceMode
+MixedEventAttendanceMode
+You can start using eventAttendanceMode even though
+it's still pending on schema.org.
+Online event example
+Here's an example of an event that's only happening online:
+{
+"@context": "https://schema.org",
+"@type": "Event",
+"eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+"location": {
+"@type":"VirtualLocation",
+"url": "https://operaonline.stream5.com/"
+}
+}
+Mix of both online and offline example
+Here's an example of an event that has parts that are happening online and offline:
+{
+"@context": "https://schema.org",
+"@type": "Event",
+"eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+"location": {
+"@type": "VirtualLocation",
+"url": "https://operaonline.stream5.com/"
+},
+{
+"@type": "Place",
+"name": "Snickerpark Stadium",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "100 West Snickerpark Dr",
+"addressLocality": "Snickertown",
+"postalCode": "19019",
+"addressRegion": "PA",
+"addressCountry": "US"
+}
+}]
 eventStatus
 EventStatusType
 Warning: When the event status changes,
 DON'T remove the startDate. The startDate
 property is required to help identify the unique event.
-The status of the event, particularly when the event has been rescheduled, postponed, or
-canceled. Use one of the following values:
+The status of the event. If you don't use this field, Google understands the eventStatus to be EventScheduled. Here are the supported values. You can use multiple statuses, if
+applicable (for example, if an event was both rescheduled and moved online).
 EventCancelled
-The event has been canceled. Keep the original date in the startDate and endDate of the event.
+The event has been canceled.
+Don't remove or change other properties (for
+example, don't remove startDate or location);
+instead, keep all values as the same as they were before the cancelation, and
+update the eventStatus to EventCancelled.
+Why? Properties like startDate and
+location help identify the unique event and
+make sure people understand the new status of the event.
 Show example
 {
 "@context": "https://schema.org",
@@ -645,8 +1034,29 @@ Show example
 "eventStatus": "https://schema.org/EventCancelled",
 "startDate": "2020-07-21T19:00"
 }
+EventMovedOnline
+The event has been moved from in-person attendance to online attendance.
+Show example
+{
+"@context": "https://schema.org",
+"@type": "Event",
+"eventStatus": "https://schema.org/EventMovedOnline",
+"eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+"location": {
+"@type":"VirtualLocation",
+"url": "https://operaonline.stream5.com/"
+},
+"startDate": "2020-07-21T19:00"
+}
 EventPostponed
 The event has been postponed to a later date, but the date isn't known yet. Keep the original date in the startDate of the event until you know when the event will take place. Once you know the new date information, change the eventStatus to EventRescheduled and update the startDate and endDate with the new date information.
+Don't remove or change other properties (for
+example, don't remove the startDate or location);
+instead, keep all values as the same as they were before the postponement, and
+update the eventStatus to EventPostponed.
+Why? Properties like startDate and
+location help identify the unique event and
+make sure people understand the new status of the event.
 Show example
 {
 "@context": "https://schema.org",
@@ -655,12 +1065,27 @@ Show example
 "startDate": "2020-07-21T19:00"
 }
 EventRescheduled
-The event has been rescheduled to a later date. Update the startDate and endDate with the relevant new dates. Optionally, you can also mark the eventStatus field as rescheduled and add the previousStartDate.
+The event has been rescheduled to a later date. Update the
+startDate and endDate
+with the relevant new dates. Optionally, you can also mark the eventStatus
+field as rescheduled and add the previousStartDate.
 Show example
 {
 "@context": "https://schema.org",
 "@type": "Event",
 "eventStatus": "https://schema.org/EventRescheduled",
+"startDate": "2020-07-21T19:00",
+"endDate": "2025-07-21T23:00",
+"previousStartDate": "2025-03-21T19:00"
+}
+EventScheduled
+The event is scheduled to happen. This value is the default status for events. If you
+don't set eventStatus, Google understands the event to be happening on schedule.
+Show example
+{
+"@context": "https://schema.org",
+"@type": "Event",
+"eventStatus": "https://schema.org/EventScheduled",
 "startDate": "2020-07-21T19:00"
 }
 image
@@ -683,17 +1108,6 @@ For example:
 "https://example.com/photos/4x3/photo.jpg",
 "https://example.com/photos/16x9/photo.jpg"
 ]
-location.name
-Text
-The detailed name of the place or venue where the event is being held.
-DO NOT put the title of the event in this field. Instead, use
-name to specify the name of the event.
-Not recommended: San Francisco, CA
-Recommended: Bill Graham Civic Auditorium
-Best practices:
-Don't include a city name unless it is a city-wide event.
-The location.name property must be the name of the venue or location, not a repeat of
-the title of the event. If you don't know the name of the location, don't use this property.
 offers
 Offer
 A nested Offer, one for each ticket
@@ -853,4 +1267,4 @@ Not recommended: 2019-07-20T00:00:00
 Not recommended: 2019-08-15T00:00:01+00:00
 Not recommended2019-08-15T00:00:00+00:00
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-16.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-17.

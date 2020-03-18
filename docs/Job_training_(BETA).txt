@@ -724,20 +724,6 @@ specific state workforce grands (for example, Indiana Next Level Jobs).
 Show example
 "financialAidEligible": "Federal Aid",
 "financialAidEligible": "Indiana Next Level Jobs"
-hasCredential
-EducationalOccupationalCredential
-The programmatic accreditation for the program. Only programs that have a
-program-specific
-accreditation from the US Department of Education show this field.
-Show example
-"hasCredential": {
-"@type": "EducationalOccupationalCredential",
-"credentialCategory": "Accreditation",
-"recognizedBy": {
-"@type": "Organization",
-"name": "American Physical Therapy Association, CAPTE"
-}
-}
 maximumEnrollment
 Number
 The maximum capacity of students that can be enrolled in the program per time it is
@@ -1227,4 +1213,4 @@ Show example
 }
 }
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-17.
