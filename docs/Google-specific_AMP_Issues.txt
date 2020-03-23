@@ -8,7 +8,7 @@ The structured data in the AMP refers to an image that is smaller than our recom
 AMP page domain mismatch
 The AMP page is hosted on a different domain than its canonical version. This can be confusing to mobile searchers who see one URL domain in search results and a different one when they open the page in the AMP reader. (Does not affect page indexing or ranking.)
 URL not found (404)
-The AMP URL requested could not be found. Learn more about 404 pages.
+The AMP URL requested could not be found. Learn about fixing 404 pages.
 Server error (5XX)
 Unspecified 5XX server error when requesting the AMP page. Learn more about server errors.
 Blocked by robots.txt

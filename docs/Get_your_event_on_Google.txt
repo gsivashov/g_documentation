@@ -3,6 +3,12 @@ Products
 Search for Developers
 Reference
 Get your event on Google
+On March 17, 2020, we added several optional properties: eventStatus,
+eventAttendanceMode, and
+previousStartDate. Due to COVID-19, we
+encourage you to add these new properties so people can understand the status of your event
+and how they can attend. For more information about this change, check out our
+blog post.
 The event experience on Google makes it easier for people to discover and attend events
 through Google Search results and other Google products, like Google Maps. This feature brings
 many benefits:
@@ -131,8 +137,6 @@ use Microdata or RDFa syntax.
 </html>
 Online event
 Here's an example of an event that's happening online.
-On March 17, 2020, we added eventStatus,
-VirtualLocation, eventAttendanceMode, and previousStartDate to the documentation. The Rich Results Test might not reflect the new properties yet, and it might show warnings or errors. You can disregard the warnings and errors, and refer to the documentation for the most up to date set of requirements until we update the tool.
 <html>
 <head>
 <title>The Adventures of Kira and Morrison</title>
@@ -217,8 +221,6 @@ Show me the example
 Mixed online and offline event
 Here's an example of an event that has parts that are online and parts that are happening at
 a physical location.
-On March 17, 2020, we added eventStatus,
-VirtualLocation, eventAttendanceMode, and previousStartDate to the documentation. The Rich Results Test might not reflect the new properties yet, and it might show warnings or errors. You can disregard the warnings and errors, and refer to the documentation for the most up to date set of requirements until we update the tool.
 <html>
 <head>
 <title>The Adventures of Kira and Morrison</title>
@@ -326,8 +328,6 @@ Show me the example
 </html>
 Event with an updated status
 There are multiple ways to set the status of an event. Here are some common examples of events that have an updated status. For more information, refer to the eventStatus property.
-On March 17, 2020, we added eventStatus,
-VirtualLocation, eventAttendanceMode, and previousStartDate to the documentation. The Rich Results Test might not reflect the new properties yet, and it might show warnings or errors. You can disregard the warnings and errors, and refer to the documentation for the most up to date set of requirements until we update the tool.
 Canceled
 Here's an example of an event that's been canceled.
 <html>
@@ -1267,4 +1267,4 @@ Not recommended: 2019-07-20T00:00:00
 Not recommended: 2019-08-15T00:00:01+00:00
 Not recommended2019-08-15T00:00:00+00:00
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-17.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-20.

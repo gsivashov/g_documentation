@@ -120,6 +120,13 @@ Using JavaScript to change or remove the robots meta tag might not work as expec
 skips rendering and JavaScript execution if the meta robots tag initially contains noindex.
 If there is a possibility that you do want the page indexed, don't use a noindex
 in the original page code.
+Use long-lived caching
+Googlebot caches aggressively in order to reduce
+network requests and resource usage. WRS may ignore caching headers. This may lead WRS to use
+outdated JavaScript or CSS resources. Content fingerprinting avoids this problem by making a
+fingerprint of the content part of the filename, like main.2bb85551.js.
+The fingerprint depends on the content of the file, so updates generate a different filename
+every time. Check out the web.dev guide on long-lived caching strategies to learn more.
 Follow best practices for web components
 Googlebot supports web components.
 When Googlebot renders a page, it flattens the shadow DOM and light DOM content.
@@ -159,4 +166,4 @@ to only load images when the user is about to see them. To make sure you're impl
 in a search-friendly way, follow
 our lazy-loading guidelines.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-11-22.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-20.

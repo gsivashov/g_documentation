@@ -34,7 +34,10 @@ AMP enhancement report
 January 23, 2019
 Some users may see elevated error levels of type "Crawl Issue" on their AMP URLs due to a processing error on our side. The issue is now fixed and error counts should return to their actual levels within few days
 Rich result reports
-January 21 forward
+March 19, 2020 onward
+Event
+New optional event properties and property values for virtual and canceled events were introduced. If you previously had a valid event, it might show valid with warnings if you do not use these new properties, or error if you incorrectly define these new properties.
+January 21, 2020 onward
 All rich result types
 Starting April 6, 2020, Google will no longer support data-vocabulary.org structured data to enable rich results in Google Search. From January 20 until April 6, any data-vocabulary.org structured data on a web page will trigger a warning for the appropriate rich result type. After April 6, an error will be triggered. Read the Webmaster Central Blog posting for more background and detail.
 January 13-16, 2020

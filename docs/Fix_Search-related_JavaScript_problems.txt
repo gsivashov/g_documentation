@@ -118,6 +118,13 @@ server and client redirects, same as a regular browser. However, WRS does not
 retain state across page loads:
 Local Storage and Session Storage data are cleared across page loads.
 HTTP Cookies are cleared across page loads.
+Use content fingerprinting to avoid caching issues with Googlebot.
+Tell me more: Googlebot caches aggressively in order to reduce
+network requests and resource usage. WRS may ignore caching headers. This may lead WRS to use
+outdated JavaScript or CSS resources. Content fingerprinting avoids this problem by making a
+fingerprint of the content part of the filename, like main.2bb85551.js.
+The fingerprint depends on the content of the file, so updates generate a different filename
+every time. Check out the web.dev guide on long-lived caching strategies to learn more.
 Ensure that your application uses
 feature detection for all critical APIs that it needs and provide a fallback
 behavior or polyfill where applicable.
@@ -143,4 +150,4 @@ see errors, post in the
 JavaScript
 Sites in Search Working Group.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-28.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-20.
