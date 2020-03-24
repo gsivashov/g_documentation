@@ -36,7 +36,7 @@ Ads and Revenue
 How will this affect my ad revenue?
 We currently support ads from several networks and are working to include more. Our experiments show that transcoded sites get 50% more traffic than non-transcoded sites and we expect that this will help monetize your site.
 What ad networks are currently supported?
-As of October 2018, we support Sovrn, Zedo, AdSense, and Google Publisher Tags (GPT). We are working to support Google Ad Manager and more ad networks as well.
+As of October 2018, we support Sovrn, Zedo, AdSense, and Google Publisher Tags (GPT). We are working to support more ad networks as well.
 How many ads are shown on a single page?
 To keep the page size down and make pages load faster, we limit the number of ads shown on a single page. Currently this limit is set at 3.
 I use multiple ad networks. How does Google select which ads are shown?

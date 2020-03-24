@@ -51,6 +51,8 @@ TimestampEvent
 The timestamp of an event associated with a given package.
 LocationEvent
 The location of an event associated with a given package.
+CanReschedule
+Whether this package can be re-scheduled.
 We don't accept the following information:
 Any personal data about the recipient or sender of the package.
 Any geographical information about the recipient or sender of the package.
@@ -58,4 +60,4 @@ Express interest
 Interested in participating in the Package tracking Early Adopters Program?
 Fill out the form.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-05.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-23.

@@ -75,11 +75,13 @@ Supported types
 Breadcrumb
 Course
 Dataset
+Estimated salary
 Event
 FAQ
 Fact check
 How-to
 Job posting
+Job training
 Local business
 Logo
 Movie
