@@ -808,6 +808,7 @@ You can start using the VirtualLocation type even though it's still pending on s
 Mix of online and physical locations: If an event has a mix of
 online and physical location components, include both online and physical nested location
 properties in a nested array. For example:
+Show example
 "location": [{
 "@type": "VirtualLocation",
 "url": "https://operaonline.stream5.com/"
@@ -907,6 +908,7 @@ location.url
 URL
 The URL of the online event, where people can join. This property is required if your
 event is happening online.
+Show example
 "location": {
 "@type": "VirtualLocation",
 "url": "https://operaonline.stream5.com/"
@@ -940,7 +942,7 @@ Add both the date and time so users can more easily find events that fit into th
 schedule.
 Make sure to follow the Date and time
 guidelines.
-For example:
+Show example
 "startDate": "2025-07-21T19:00"
 Recommended properties
 description
@@ -952,7 +954,7 @@ Add a clear and concise description of the specific event.
 Focus on the event details and not your site's features.
 Don't repeat other facts like date and location, which should be marked up in the
 respective properties.
-Example
+Show example
 "description": "The Adventures of Kira and Morrison is coming to Snickertown in a can’t miss performance."
 Google only shows a snippet of the full description.
 endDate
@@ -963,7 +965,7 @@ Use the same format as startDate. Add both the
 date and time so users can more easily find events that fit into their schedule.
 Make sure to follow the Date and time
 guidelines.
-For example:
+Show example
 "endDate": "2025-07-21T23:00"
 eventAttendanceMode
 EventAttendanceModeEnumeration
@@ -1111,7 +1113,8 @@ For example:
 offers
 Offer
 A nested Offer, one for each ticket
-type. For example:
+type.
+Show example
 "offers": {
 "@type": "Offer"
 }
@@ -1121,7 +1124,7 @@ One of the following:
 InStock
 SoldOut
 PreOrder
-For example:
+Show example
 "offers": {
 "@type": "Offer",
 "availability": "https://schema.org/InStock"
@@ -1131,14 +1134,16 @@ omit availability and specify validFrom.
 offers.price
 Number
 The lowest available price available for your tickets, including service charges and
-fees. Don’t forget to update it as prices change or tickets sell out. For example:
+fees. Don’t forget to update it as prices change or tickets sell out.
+Show example
 "offers": {
 "@type": "Offer",
 "price": "30"
 }
 offers.priceCurrency
 Text
-The 3-letter currency code. For example:
+The 3-letter currency code.
+Show example
 "offers": {
 "@type": "Offer",
 "priceCurrency": "USD"
@@ -1146,15 +1151,16 @@ The 3-letter currency code. For example:
 offers.validFrom
 DateTime
 The date and time when tickets go on sale (only required on date-restricted offers), in
-ISO-8601 format. For
-example:
+ISO-8601 format.
+Show example
 "offers": {
 "@type": "Offer",
 "validFrom": "2024-05-21T12:00"
 }
 offers.url
 URL
-The URL of a page providing the ability to buy tickets. For example:
+The URL of a page providing the ability to buy tickets.
+Show example
 "offers": {
 "@type": "Offer",
 "url": "https://www.example.com/event_offer/12345_201803180430"
@@ -1169,15 +1175,16 @@ performer
 Person
 The participants performing at the event, such as artists and comedians. Use a nested
 PerformingGroup or
-Person, one for each performer. For
-example:
+Person, one for each performer.
+Show example
 "performer": {
 "@type": "PerformingGroup"
 }
 performer.name
 Text
 The name of the participant performing at the event, such as the name of the artist or
-comedian. For example:
+comedian.
+Show example
 "performer": {
 "@type": "PerformingGroup",
 "name": "Kira and Morrison"
@@ -1267,4 +1274,4 @@ Not recommended: 2019-07-20T00:00:00
 Not recommended: 2019-08-15T00:00:01+00:00
 Not recommended2019-08-15T00:00:00+00:00
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-20.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-24.

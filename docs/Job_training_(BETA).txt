@@ -26,106 +26,6 @@ users, this feature is currently limited to
 job training providers in the
 US.
 Examples
-Educational Organization
-Here's an example of an educational organization that provides job training.
-<html>
-<head>
-<title>ACME Community College</title>
-<script type="application/ld+json">
-{
-"@context": "http://schema.org/",
-"@type": "EducationalOrganization",
-"name": "ACME Community College",
-"leiCode": "ABCDEFG123",
-"taxID": "123-34-5678",
-"address": {
-"@type": "PostalAddress",
-"streetAddress": "123 Main Street",
-"addressLocality": "Boston",
-"addressRegion": "MA",
-"addressCountry": "US",
-"postalCode": "02134"
-},
-"contactPoint": {
-"@type": "ContactPoint",
-"contactType": "Admissions",
-"telephone": "+15551234567"
-},
-"subOrganization": {
-"@type": "EducationalOrganization",
-"name": "ACME Community College - Berkshires Campus",
-"address": {
-"@type": "PostalAddress",
-"streetAddress": "123 Elm Street",
-"addressLocality": "Amherst",
-"addressRegion": "MA",
-"addressCountry": "US",
-"postalCode": "01002"
-}
-},
-"hasCredential": {
-"@type": "EducationalOccupationalCredential",
-"credentialCategory": "Accreditation",
-"recognizedBy": {
-"@type": "Organization",
-"name": "Southern Association of Colleges and Schools Commission on Colleges"
-}
-}
-}
-</script>
-</head>
-<body>
-</body>
-</html>
-<html>
-<head>
-<title>ACME Community College</title>
-<script type="application/ld+json">
-{
-"@context": "http://schema.org/",
-"@type": "EducationalOrganization",
-"name": "ACME Community College",
-"leiCode": "ABCDEFG123",
-"taxID": "123-34-5678",
-"address": {
-"@type": "PostalAddress",
-"streetAddress": "123 Main Street",
-"addressLocality": "Boston",
-"addressRegion": "MA",
-"addressCountry": "US",
-"postalCode": "02134"
-},
-"contactPoint": {
-"@type": "ContactPoint",
-"contactType": "Admissions",
-"telephone": "+15551234567"
-},
-"subOrganization": {
-"@type": "EducationalOrganization",
-"name": "ACME Community College - Berkshires Campus",
-"address": {
-"@type": "PostalAddress",
-"streetAddress": "123 Elm Street",
-"addressLocality": "Amherst",
-"addressRegion": "MA",
-"addressCountry": "US",
-"postalCode": "01002"
-}
-},
-"hasCredential": {
-"@type": "EducationalOccupationalCredential",
-"credentialCategory": "Accreditation",
-"recognizedBy": {
-"@type": "Organization",
-"name": "Southern Association of Colleges and Schools Commission on Colleges"
-}
-}
-}
-</script>
-</head>
-<body>
-</body>
-</html>
 Program with multiple classes and no wages
 Here's an example of a program that has multiple classes and doesn't provide any wages for attending the program.
 <html>
@@ -216,7 +116,6 @@ Here's an example of a program that has multiple classes and doesn't provide any
 <body>
 </body>
 </html>
-Show me the example
 <html>
 <head>
 <title>Associate degree in Computer Science</title>
@@ -1213,4 +1112,4 @@ Show example
 }
 }
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-17.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-24.

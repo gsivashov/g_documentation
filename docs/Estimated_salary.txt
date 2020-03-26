@@ -45,7 +45,7 @@ The following JSON-LD example shows a simple Occupation with salary estimate dat
 "@type": "MonetaryAmountDistribution",
 "name": "base",
 "currency": "USD",
-"unitText": "YEAR",
+"duration": "P1Y",
 "percentile10": "100000.5",
 "percentile25": "115000",
 "median": "120000.28",
@@ -83,7 +83,7 @@ The following JSON-LD example shows a simple Occupation with salary estimate dat
 "@type": "MonetaryAmountDistribution",
 "name": "base",
 "currency": "USD",
-"unitText": "YEAR",
+"duration": "P1Y",
 "percentile10": "100000.5",
 "percentile25": "115000",
 "median": "120000.28",
@@ -124,7 +124,7 @@ OccupationAggregationByEmployer with salary estimate data:
 "@type": "MonetaryAmountDistribution",
 "name": "base",
 "currency": "USD",
-"unitText": "YEAR",
+"duration": "P1Y",
 "percentile10": "100000.5",
 "percentile25": "115000",
 "median": "120000.28",
@@ -136,7 +136,7 @@ OccupationAggregationByEmployer with salary estimate data:
 "@type": "MonetaryAmountDistribution",
 "name": "bonus",
 "currency": "USD",
-"unitText": "YEAR",
+"duration": "P1Y",
 "percentile10": "10000",
 "percentile25": "20000",
 "median": "25000",
@@ -194,7 +194,7 @@ Show me the example
 "@type": "MonetaryAmountDistribution",
 "name": "base",
 "currency": "USD",
-"unitText": "YEAR",
+"duration": "P1Y",
 "percentile10": "100000.5",
 "percentile25": "115000",
 "median": "120000.28",
@@ -206,7 +206,7 @@ Show me the example
 "@type": "MonetaryAmountDistribution",
 "name": "bonus",
 "currency": "USD",
-"unitText": "YEAR",
+"duration": "P1Y",
 "percentile10": "10000",
 "percentile25": "20000",
 "median": "25000",
@@ -304,7 +304,7 @@ The following example shows an estimated salary range:
 "@type": "MonetaryAmountDistribution",
 "name": "base",
 "currency": "USD",
-"unitText": "YEAR",
+"duration": "P1Y",
 "minValue": "100000", // Inherited from QuantitativeValue
 "maxValue": "150000", // Inherited from QuantitativeValue
 "median": "124900" // Inherited from QuantitativeValueDistribution
@@ -318,7 +318,7 @@ Example with a bonus
 "@type": "MonetaryAmountDistribution",
 "name": "base",
 "currency": "USD",
-"unitText": "YEAR",
+"duration": "P1Y",
 "minValue": "100000",
 "maxValue": "150000",
 "median": "124900"
@@ -326,7 +326,7 @@ Example with a bonus
 "@type": "MonetaryAmountDistribution",
 "name": "bonus",
 "currency": "USD",
-"unitText": "YEAR",
+"duration": "P1Y",
 "minValue": "0",
 "maxValue": "34500",
 "median": "4450"
@@ -493,14 +493,15 @@ QuantitativeValue
 type. The full definition of QuantitativeValueDistribution is available at
 schema.org/QuantitativeValueDistribution.
 Required properties
-unitText
-Text
+duration
+Duration
 The frequency of the specified value. Typical values for unitText are:
 "DAY"
 "HOUR"
 "MONTH"
 "WEEK"
 "YEAR"
+Starting March 24, 2020, we updated the documentation to require duration instead of unitText. While we continue to support unitText, we require duration moving forward. We recommend that you switch over to using duration, if possible.
 Recommended properties
 median
 Number
@@ -523,4 +524,4 @@ Number
 The 90th percentile value. For example, 90% of the salaries for this occupation are at or below
 this value.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-25.

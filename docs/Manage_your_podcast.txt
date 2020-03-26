@@ -47,9 +47,12 @@ podcast in the Google Podcasts app on Android devices. If users don't have the G
 installed or are using a different platform (for example, iOS or desktop), they are directed to
 the Google Podcasts web page version of your podcast. You
 can generate a direct link to
-create the link URL. You can also download the Google Podcasts brand assets to use the Google Podcasts app logo as a button on your web page that links directly to your podcast.
+create the link URL.
 Generate direct links
-Download brand assets
+You can also download the Google Podcasts brand assets, which include the Google Podcasts icon
+and Listen on Google Podcasts badges. Use the badges to link directly to your show or episode
+on Google Podcasts wherever you market your podcast. The badges are localized in 49 languages.
+get_appDownload the Google Podcasts brand assets
 Monitor
 When a user streams or downloads an episode of your podcast, the episode is obtained directly
 from the URL specified in the episode’s <enclosure> tag in the RSS feed. You
@@ -65,4 +68,4 @@ To build the search index, Google periodically crawls RSS feeds
 and episodes. However, these requests don't match the user-agent patterns described above, so
 the requests don't appear as podcast listeners.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-05-21.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-24.
