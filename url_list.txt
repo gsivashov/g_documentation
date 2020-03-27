@@ -67,6 +67,7 @@ https://developers.google.com/search/docs/guides/lazy-loading
 https://developers.google.com/search/docs/guides/mini-apps
 https://developers.google.com/search/docs/guides/mobile-recharge
 https://developers.google.com/search/docs/guides/package-tracking
+https://developers.google.com/search/docs/guides/pause-online-business
 https://developers.google.com/search/docs/guides/podcast-guidelines
 https://developers.google.com/search/docs/guides/podcast-management
 https://developers.google.com/search/docs/guides/podcast-overview
