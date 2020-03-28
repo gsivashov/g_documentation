@@ -1,0 +1,336 @@
+Home
+Products
+Search for Developers
+Reference
+Mark up your FAQs with structured data
+Does your site allow users to submit answers to a single
+question? Use QAPage structured
+data instead.
+A Frequently Asked Question (FAQ) page contains a list of questions and answers pertaining to a
+particular topic. Properly marked up FAQ pages may be eligible to have a rich result on
+Search and an Action on the Google Assistant, which can
+help your site reach the right users. Here's an example of an FAQ rich result:
+Structured data is a standardized format for providing information about a page and classifying the page
+content. If you’re new to structured data, you can learn more about
+how structured data works.
+Here's an overview of how to build, test, and release structured data. For a step-by-step guide
+on how to add structured data to a web page, check out the
+structured
+data codelab.
+Add the required properties. For information about where to put
+structured data on the page, watch JSON-LD structured
+data: Where to insert on the page.
+Follow the guidelines.
+Validate your code using the
+Rich Results Test.
+You can also preview how your structured data may look on Google Search.
+Deploy a few pages that include your structured data and use the URL Inspection tool to test how Google sees the page. Be sure that your page is
+accessible to Google and not blocked by a robots.txt file, the noindex tag, or
+login requirements. If the page looks okay, you can
+ask Google to
+recrawl your URLs.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+To keep Google informed of future changes, we recommend that you
+submit a
+sitemap. You can automate this with the
+Search Console Sitemap
+API.
+Feature availability
+FAQ rich results are available in all countries and languages where Google Search
+is available. The feature is available on desktop and mobile devices.
+Examples
+JSON-LD
+Here's an example of FAQPage in JSON-LD:
+<html>
+<head>
+<title>Example Site - Frequently Asked Questions(FAQ)</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [{
+"@type": "Question",
+"name": "What is the return policy?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Most unopened items in new condition and returned within <strong>90 days</strong> will receive a refund or exchange. Some items have a modified return policy noted on the receipt or packing slip. Items that are opened or damaged or do not have a receipt may be denied a refund or exchange. Items purchased online or in-store may be returned to any store.<br /><p>Online purchases may be returned via a major parcel carrier. <a href=http://example.com/returns> Click here </a> to initiate a return.</p>"
+}
+}, {
+"@type": "Question",
+"name": "How long does it take to process a refund?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "We will reimburse you for returned items in the same way you paid for them. For example, any amounts deducted from a gift card will be credited back to a gift card. For returns by mail, once we receive your return, we will process it within 4–5 business days. It may take up to 7 days after we process the return to reflect in your account, depending on your financial institution's processing time."
+}
+}, {
+"@type": "Question",
+"name": "What is the policy for late/non-delivery of items ordered online?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Our local teams work diligently to make sure that your order arrives on time, within our normaldelivery hours of 9AM to 8PM in the recipient's time zone. During
+busy holiday periods like Christmas, Valentine's and Mother's Day, we may extend our delivery hours before 9AM and after 8PM to ensure that all gifts are delivered on time. If for any reason your gift does not arrive on time, our dedicated Customer Service agents will do everything they can to help successfully resolve your issue. <br/> <p><a href=https://example.com/orders/>Click here</a> to complete the form with your order-related question(s).</p>"
+}
+}, {
+"@type": "Question",
+"name": "When will my credit card be charged?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "We'll attempt to securely charge your credit card at the point of purchase online. If there's a problem, you'll be notified on the spot and prompted to use another card. Once we receive verification of sufficient funds, your payment will be completed and transferred securely to us. Your account will be charged in 24 to 48 hours."
+}
+}, {
+"@type": "Question",
+"name": "Will I be charged sales tax for online orders?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text":"Local and State sales tax will be collected if your recipient's mailing address is in: <ul><li>Arizona</li><li>California</li><li>Colorado</li></ul>"}
+}]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head>
+<title>Example Site - Frequently Asked Questions(FAQ)</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [{
+"@type": "Question",
+"name": "What is the return policy?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Most unopened items in new condition and returned within <strong>90 days</strong> will receive a refund or exchange. Some items have a modified return policy noted on the receipt or packing slip. Items that are opened or damaged or do not have a receipt may be denied a refund or exchange. Items purchased online or in-store may be returned to any store.<br /><p>Online purchases may be returned via a major parcel carrier. <a href=http://example.com/returns> Click here </a> to initiate a return.</p>"
+}
+}, {
+"@type": "Question",
+"name": "How long does it take to process a refund?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "We will reimburse you for returned items in the same way you paid for them. For example, any amounts deducted from a gift card will be credited back to a gift card. For returns by mail, once we receive your return, we will process it within 4–5 business days. It may take up to 7 days after we process the return to reflect in your account, depending on your financial institution's processing time."
+}
+}, {
+"@type": "Question",
+"name": "What is the policy for late/non-delivery of items ordered online?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Our local teams work diligently to make sure that your order arrives on time, within our normaldelivery hours of 9AM to 8PM in the recipient's time zone. During
+busy holiday periods like Christmas, Valentine's and Mother's Day, we may extend our delivery hours before 9AM and after 8PM to ensure that all gifts are delivered on time. If for any reason your gift does not arrive on time, our dedicated Customer Service agents will do everything they can to help successfully resolve your issue. <br/> <p><a href=https://example.com/orders/>Click here</a> to complete the form with your order-related question(s).</p>"
+}
+}, {
+"@type": "Question",
+"name": "When will my credit card be charged?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "We'll attempt to securely charge your credit card at the point of purchase online. If there's a problem, you'll be notified on the spot and prompted to use another card. Once we receive verification of sufficient funds, your payment will be completed and transferred securely to us. Your account will be charged in 24 to 48 hours."
+}
+}, {
+"@type": "Question",
+"name": "Will I be charged sales tax for online orders?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text":"Local and State sales tax will be collected if your recipient's mailing address is in: <ul><li>Arizona</li><li>California</li><li>Colorado</li></ul>"}
+}]
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Microdata
+Here's an example of FAQPage in Microdata:
+<html itemscope itemtype="https://schema.org/FAQPage">
+<head>
+<title>Example Site - Frequently Asked Questions(FAQ)</title>
+</head>
+<body>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">What is the return policy?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+Most unopened items in new condition and returned within <strong>90 days</strong> will receive a refund or exchange. Some items have a modified return policy noted on the receipt or packing slip. Items that are opened or damaged or do not have a receipt may be denied a refund or exchange. Items purchased online or in-store may be returned to any store.
+<br /><p>Online purchases may be returned via a major parcel carrier. <a href="http://example.com/returns"> Click here </a> to initiate a return.</p>
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">How long does it take to process a refund?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+We will reimburse you for returned items in the same way you paid for them. For example, any amounts deducted from a gift card will be credited back to a gift card. For returns by mail, once we receive your return, we will process it within 4–5 business days. It may take up to 7 days after we process the return to reflect in your account, depending on your financial institution's processing time.
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">What is the policy for late/non-delivery of items ordered online?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+Our local teams work diligently to make sure that your order arrives on time, within our normal delivery hours of 9AM to 8PM in the recipient's time zone. During
+busy holiday periods like Christmas, Valentine's and Mother's Day, we may extend our delivery hours before 9AM and after 8PM to ensure that all gifts are delivered on time. If for any reason your gift does not arrive on time, our dedicated Customer Service agents will do everything they can to help successfully resolve your issue.
+<br/> <p><a href="https://example.com/orders/">Click here</a> to complete the form with your order-related question(s).</p>
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">When will my credit card be charged?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+We'll attempt to securely charge your credit card at the point of purchase online. If there's a problem, you'll be notified on the spot and prompted to use another card. Once we receive verification of sufficient funds, your payment will be completed and transferred securely to us. Your account will be charged in 24 to 48 hours.
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">Will I be charged sales tax for online orders?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+Local and State sales tax will be collected if your recipient's mailing address is in:
+<ul>
+<li>Arizona</li>
+<li>California</li>
+<li>Colorado</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
+<html itemscope itemtype="https://schema.org/FAQPage">
+<head>
+<title>Example Site - Frequently Asked Questions(FAQ)</title>
+</head>
+<body>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">What is the return policy?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+Most unopened items in new condition and returned within <strong>90 days</strong> will receive a refund or exchange. Some items have a modified return policy noted on the receipt or packing slip. Items that are opened or damaged or do not have a receipt may be denied a refund or exchange. Items purchased online or in-store may be returned to any store.
+<br /><p>Online purchases may be returned via a major parcel carrier. <a href="http://example.com/returns"> Click here </a> to initiate a return.</p>
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">How long does it take to process a refund?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+We will reimburse you for returned items in the same way you paid for them. For example, any amounts deducted from a gift card will be credited back to a gift card. For returns by mail, once we receive your return, we will process it within 4–5 business days. It may take up to 7 days after we process the return to reflect in your account, depending on your financial institution's processing time.
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">What is the policy for late/non-delivery of items ordered online?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+Our local teams work diligently to make sure that your order arrives on time, within our normal delivery hours of 9AM to 8PM in the recipient's time zone. During
+busy holiday periods like Christmas, Valentine's and Mother's Day, we may extend our delivery hours before 9AM and after 8PM to ensure that all gifts are delivered on time. If for any reason your gift does not arrive on time, our dedicated Customer Service agents will do everything they can to help successfully resolve your issue.
+<br/> <p><a href="https://example.com/orders/">Click here</a> to complete the form with your order-related question(s).</p>
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">When will my credit card be charged?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+We'll attempt to securely charge your credit card at the point of purchase online. If there's a problem, you'll be notified on the spot and prompted to use another card. Once we receive verification of sufficient funds, your payment will be completed and transferred securely to us. Your account will be charged in 24 to 48 hours.
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">Will I be charged sales tax for online orders?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+Local and State sales tax will be collected if your recipient's mailing address is in:
+<ul>
+<li>Arizona</li>
+<li>California</li>
+<li>Colorado</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
+Guidelines
+For your FAQ page to be eligible for FAQ rich results, you must follow these guidelines:
+General structured data guidelines
+Webmaster guidelines
+Content guidelines
+Content guidelines
+Only use FAQPage if your page has a list of questions with answers. If your page
+has a single question and users can submit alternative answers, use
+QAPage instead. Here are some examples:
+Valid use cases:
+An FAQ page written by the site itself, with no way for users to submit alternative answers
+A product support page that lists FAQs, with no way for users to submit alternative answers
+Invalid use cases:
+A forum page where users can submit answers to a single question
+A product support page where users can submit answers to a single question
+A product page where users can submit multiple questions and answers on a single page
+Don’t use FAQPage for advertising purposes.
+Make sure each Question includes the entire text of the question and
+make sure each Answer includes the entire text of the answer. The entire
+question text and answer text may be displayed.
+Question and answer content may not be displayed as a rich result if it contains any of the
+following types of content: obscene, profane, sexually explicit, graphically violent,
+promotion of dangerous or illegal activities, or hateful or harassing language.
+All FAQ content must be visible to the user on the source page.
+If you have FAQ content that is repetitive on your site (meaning, the same question and answer appear on multiple pages
+on your site), mark up only one instance of that FAQ for your entire site.
+Structured data type definitions
+You must include the required properties for your content to be eligible for display as a rich
+result. You can also include the recommended properties to add more information to your structured
+data, which could provide a better user experience.
+FAQPage
+The full definition of FAQPage is
+provided on schema.org.
+The FAQPage type indicates that the page is an FAQ with answered questions. There
+must be one FAQPage type definition per page.
+Required properties
+mainEntity
+Question
+An array of Question elements which comprise the list of answered questions
+that this FAQPage is about.
+Question
+The full definition of Question is
+provided on schema.org.
+The Question type defines a single answered question within the FAQ. Every
+Question instance must be contained within the mainEntity property array
+of the schema.org/FAQPage.
+Required properties
+acceptedAnswer
+Answer
+The answer to the question. There must be one answer per question.
+name
+Text
+The full text of the question. For example, "How long does it take to process a refund?".
+Answer
+The full definition of Answer is
+provided on schema.org.
+The Answer type defines the acceptedAnswer to each of the
+Question on this page.
+Required properties
+text
+Text
+The full answer to the question. The answer may contain HTML content such as links and
+lists. Valid HTML tags include: <h1> through <h6>, <br>, <ol>, <ul>, <li>, <a>, <p>, <div>, <b>, <strong>, <i>, and <em>.
+Troubleshooting
+Important: Google does not guarantee that features that consume structured data will
+show up in search results. For a list of common reasons why Google may not
+show your content as a rich result, see the General
+Structured Data Guidelines.
+If you're having trouble implementing FAQ structured data, here are some resources that may help you.
+You might have an error in your structured data. Check the
+list of structured
+data errors.
+Troubleshoot
+missing rich results / drop in total rich results.
+For general questions about crawling and indexing, check the
+Webmaster FAQ.
+Ask a question in the Webmaster
+Office Hours.
+Post a question in the Webmaster
+forum.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-27.
