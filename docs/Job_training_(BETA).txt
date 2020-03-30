@@ -394,7 +394,7 @@ Programs that train for a job but don’t have credits or don’t lead to a degr
 allowed.
 For the small subset of occupations that have programmatic accreditation according to the US DoE, programs must have
 programmatic accreditation (for example, physical therapy assistant).
-Even though the feature is focused on a subset of positions, you can implement markup on all of
+Even though the feature is focused on a subset of programs, you can implement markup on all of
 your programs should this feature or other features use this information in the future.
 Structured data type definitions
 This section describes the structured data types related to the job training experience on Google.
@@ -1112,4 +1112,4 @@ Show example
 }
 }
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-24.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-30.

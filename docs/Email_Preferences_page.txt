@@ -1,0 +1,36 @@
+Email Preferences pageManage your email notificationsUse the email preferences page to control which Search Console messages are emailed to you.
+This preference affects only whether messages are sent to you by email; all your messages are always visible in the message panel, whatever your settings are in this page.
+Open email preferences
+Managing your email preferences
+Manage which types of emails Search Console should send to you. Enable or disable emails of specific types, or disable all email messages.
+The settings here apply to all of your properties; for example, unsubscribing from the "New owner" email will prevent sending of the new owner email for any of your properties. You cannot specify different email settings for different properties.
+Here is more information about key elements in the report:
+The message list
+The message list in this report is all emails that you have previously unsubscribed from at least once by clicking Unsubscribe at the bottom of the email. Once a message has been added to the list, that message remains permanently listed. You can then manage the message subscription status using this report. Message that you have never received, or have never unsubscribed from, will not appear in the list.
+Enable notification by email
+This checkbox specifies whether or not Search Console should email notifications of any kind to you, for all of your properties. Default is "enabled". If unchecked, no emails will be sent to you for any of your properties, though they will be available in the message panel in Search Console.
+Subject
+A generic version of the subject line of the email. The subject shown here might not exactly match the email subject because the email subject is usually customized to show a specific property name, error type, or other information, but the subscription setting applies to all emails of that type for all your properties. So if your email subject is "New owner for example.com", the subject shown here might be "New owner for your property". If you want to reliably identify different variations of the same email, check the message ID (described next); all variations of the same email have the same ID.
+ID
+Every message type has a unique ID. Email subscriptions are managed by message ID, which does not change, rather than by subject, which might change slightly over time or depending on message details. The message ID is shown in the email as Message type: [WNC-XXXXXXX], where XXXXXXX is the message ID.
+Status
+Subscribed or unsubscribed. Subscribed means that you will receive emails to your account email address; unsubscribed means that the messages will be visible only in the Search Console message panel.
+Date modified
+The last time that you changed your subscription status for this message.
+Unsubscribe from an email
+If you unsubscribe from a email, you will no longer receive emails of that message type. However, the message will still appear in the message panel for your property.
+To stop receiving a specific email:
+The first time you wish to unsubscribe from a given email, click the Unsubscribe link at the bottom of the email. You will no longer receive this email type for any of your properties.
+The message will be added permanently to the message list on the email settings page. You can manage future subscribe/unsubscribe requests for that email in the Status column of the message list.
+To stop receiving all Search Console notification emails:
+Uncheck Enable notification by email on the page. Your individual message subscription preferences will be retained, but you will be unsubscribed from all emails. You can change this setting at any time to start receiving emails again.
+Re-subscribe to an email
+Re-subscribe to a specific email:
+Open the Email Preferences page, find the message that you unsubscribed from, and change the Status to Subscribed.
+Re-subscribe to all emails:
+If you turned off notifications for all Search Console emails, you can re-enable email messages by checking Enable notification by email on the page. This will re-enable any blocks for specific emails that you previously had.
+After re-enabling email notification, you can manage subscriptions to specific emails as described above.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+User SettingsEmail Preferences pageSearch Console in Search Results
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
