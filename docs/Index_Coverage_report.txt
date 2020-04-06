@@ -1,5 +1,6 @@
 Index Coverage reportLearn which of your pages have been indexed and any problems encountered when indexing your site.
 INDEX COVERAGE REPORT
+Index coverage status in Search Console - Google Search Console Training
 Understanding the report
 This report is much easier to understand if you have read how Google Search works first.
 This report shows the indexing state of all URLs that Google has visited, or tried to visit, in your property. The summary page shows the results for all URLs in your property grouped by status (error, warning, or valid) and specific reason for that status (such as Submitted URL not found (404)). Click a table row in the summary page to see all URLs with the same status/reason and more details about the issue.

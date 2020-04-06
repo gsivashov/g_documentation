@@ -6,12 +6,12 @@ Inspect a live URL: Test whether a page on your site is able to be indexed.
 Request indexing for a URL: You can request that an URL be crawled (or recrawled) by Google.
 View a rendered version of the page: See a screenshot of how Googlebot sees the page.
 View loaded resources list, JavaScript output, and other information: See a list of resources, page code, and more information by clicking the more information link on the page verdict card.
-Open URL Inspection
+Open URL Inspection Tool
 URL Inspection Tool - Google Search Console Training
 See the current index status of a URL
 See detailed Google Index information about a URL in your property.
 To run the URL Inspection tool to see URL's current index status:
-Open the URL Inspection tool (click the button above, or select URL inspection in the navigation panel of Search Console).
+Open the URL Inspection tool.
 Enter the complete URL to inspect. A few notes:
 The URL must be in the current property. URLs outside the current property cannot be tested. If you own that other property, you must switch properties to test the URL.
 AMP vs non-AMP URLs: You can inspect both AMP and non-AMP URLs. The tool provides information about the corresponding AMP or non-AMP version of the page.
@@ -23,15 +23,22 @@ There is a daily limit of inspection requests for each property that you own.
 Understanding the results: Indexed URL
 Important notes:
 This is not a live test. This tool describes the most recently indexed version of a page, not the live version on the web. The information shown in the tool is used by Google to evaluate Search results. Your page may have changed or become unavailable since Google last saw it. To test the current version of the page as Google would see it, select the Live Test button on the page.
-The "Last crawl" date in the Coverage section shows the date when the information shown here was retrieved (if the page was successfully crawled).
 "URL is on Google" doesn't actually mean that your page is appearing in Search results. Actual appearance in Search results requires that the page and its structured data conform to quality and security guidelines. The URL Inspection tool doesn't take into account manual actions, content removals, or temporarily blocked URLs. To see if your URL is appearing, search for your URL on Google; if your URL is missing but this tool says it was indexed, here's how to find out why.
+The "Last crawl" date in the Coverage section shows the date when the information shown here was retrieved (if the page was successfully crawled).
+Read the presence status at the top of the report to see whether or not the URL can appear in Google Search Results: URL is on Google means that the URL has the ability to appear in Search results, but is not guaranteed to be there. URL is not on Google means that the URL won't appear Search results. Read more details.
+Expand the Coverage section to see more details:
+Discovery: How Google found the URL.
+Crawl: If Google was able to crawl the page, when it was crawled, or any obstacles that it encountered when crawling the URL. If the status is not URL is on Google, the reason why can generally be found here.
+Indexing: The canonical URL for this page chosen by Google and indicated by the page.
+Enhancements: If you have structured data, if the page is an AMP or has an associated AMP, you will see details in the Enhancements section.
+See information about the request, including the HTTP request and response, and the returned HTML, click View crawled page.
 The inspection results include the following expandable sections:
 Presence on Google
 This card describes whether or not the URL can appear in Google Search results. The following values are possible:
 URL is on Google
-What it means: The URL has been indexed, can appear in Google Search results, and no problems were found with any enhancements found in the page (structured data, linked AMP pages, and so on).
+What it means: The URL has been indexed, can appear in Google Search results, and no problems were found with any enhancements found in the page (structured data, linked AMP pages, and so on). "URL is on Google" doesn't actually mean that your page is appearing in Search results. Actual appearance in Search results requires that the page and its structured data conform to quality and security guidelines. The URL Inspection tool doesn't take into account manual actions, content removals, or temporarily blocked URLs. To see if your URL is appearing, search for your URL on Google; if your URL is missing but this tool says it was indexed, here's how to find out why.
 What to do next: Typically nothing, although you can explore what Google knows about your page by navigating into the details of the index coverage or enhancement sections.
-If an URL is temporarily blocked using the Remove URLs tool, the URL Inspection tool will report the URL as "URL is on Google," with Index coverage status "Crawled". This does not mean that your URL is appearing in Search results. To see if your URL is still blocked, visit the Remove URLs tool or search for your URL on Google.
+If a URL is temporarily blocked using the Remove URLs tool, the URL Inspection tool will report the URL as "URL is on Google," with Index coverage status "Crawled". This does not mean that your URL is appearing in Search results. To see if your URL is still blocked, visit the Remove URLs tool or search for your URL on Google.
 URL is on Google, but has issues
 What it means: The URL has been indexed and can appear in Google Search results, but there are some problems that might prevent it from appearing with the enhancements that you applied to the page. This might mean a problem with an associated AMP page, or malformed structured data for a rich result (such as a recipe or job posting) on the page.
 What to do next: Read the warnings or errors information in the report and try to fix the problems described.
@@ -48,8 +55,9 @@ URL is unknown to Google: If the index coverage status "URL is unknown to Goog
 URL is an alt version
 What it means: This URL is one of a set of alternate versions of the same page. Pages in this group include AMP/canonical pairs or desktop version/mobile version page pairs. You can see the indexed URL in the Google-selected canonical value under Index coverage.
 What to do: Generally there is nothing to do, though you might check the Google-selected canonical to make sure it is an expected page.
-Index coverage
+Coverage
 This section describes the index status of the URL and the details of the indexing process for this URL. The following information can be provided, depending on the index coverage status:
+Discovery
 Index coverage status
 A more detailed description of the Presence on Google label, explaining why the URL is or isn't on Google. This is a success, warning, failure, or excluded value. See the list of values and possible fix instructions. See URL is unknown to Google.
 Sitemaps
@@ -80,7 +88,6 @@ The following verdicts are possible:
 Page is not mobile friendly: The page won't work well on a mobile device because of a few issues.
 Page is mobile friendly: The page should probably work well on a mobile device. More details.
 No data available: For some reason we couldn't retrieve the page or test its mobile-friendliness. Please wait a bit and try again.
-You can see a description of the possible errors here.
 To see which other pages on your site are affected by an issue, select the issue row, then select Open Report.
 AMP
 If the page has a linked AMP version, you can see information about it by selecting the row in the report. Use this information to help find and troubleshoot AMP-specific indexing and other issues.
@@ -113,7 +120,7 @@ My rich result isn't here! Not all rich result types are supported by the tool y
 Inspect a live URL
 You can test a live URL in your property to see whether it is capable of being indexed by Google. This will run a test against the live page for information similar to the indexed URL. It is useful when you want to test changes in the page against the currently indexed version of the page.
 To test a live URL for potential indexing errors:
-First you must inspect the indexed URL as described in Inspect an indexed URL. Note: it's fine if the page hasn't been indexed yet, or has failed indexing, but it must be accessible from the internet without any login information.
+Inspect the indexed URL. Note: it's fine if the page hasn't been indexed yet, or has failed indexing, but it must be accessible from the internet without any login information.
 Click Test live URL on the index results page.
 Read understanding the live test results to understand what you're looking at.
 You can toggle between the live test results and the indexed results by selecting Google Index or Live Test on the page.

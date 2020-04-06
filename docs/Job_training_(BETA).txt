@@ -372,8 +372,9 @@ Program eligibility guidelines
 Enriched Search quality guidelines
 Webmaster guidelines
 General structured data guidelines
-Program eligibility
-To be eligible for the program, you must meet the following criteria:
+Eligibility for Inclusion
+To be eligible to appear in Google's listing of job training programs, you must meet the
+following criteria:
 Your web page includes all required structured data properties.
 Eligible programs must lead to occupations that require less than a bachelor's degree.
 This includes certificate programs, associate degrees, and other programs that require
@@ -1112,4 +1113,4 @@ Show example
 }
 }
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-30.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-02.

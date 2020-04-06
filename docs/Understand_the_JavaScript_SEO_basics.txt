@@ -127,6 +127,10 @@ outdated JavaScript or CSS resources. Content fingerprinting avoids this problem
 fingerprint of the content part of the filename, like main.2bb85551.js.
 The fingerprint depends on the content of the file, so updates generate a different filename
 every time. Check out the web.dev guide on long-lived caching strategies to learn more.
+Use structured data
+When using structured data on your pages,
+you can use JavaScript to
+generate the required JSON-LD and inject it into the page. Make sure to test your implementation to avoid issues.
 Follow best practices for web components
 Googlebot supports web components.
 When Googlebot renders a page, it flattens the shadow DOM and light DOM content.
@@ -166,4 +170,4 @@ to only load images when the user is about to see them. To make sure you're impl
 in a search-friendly way, follow
 our lazy-loading guidelines.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-20.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-03.
