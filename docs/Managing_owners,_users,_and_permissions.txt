@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7687615
+
 Managing owners, users, and permissionsYou can be an owner or user of a property. Each of these roles has different rights and capabilities. You can grant permissions to other users only if you are a property owner.
 See and manage the user list on the Users and Permissions page.
 MANAGE USERS AND PERMISSIONS

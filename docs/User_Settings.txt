@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/topic/9420047
+
 User SettingsSettings shown here apply to your account rather than to an individual property.
 Open the user settings page by clicking the
 icon in any property in Search Console.

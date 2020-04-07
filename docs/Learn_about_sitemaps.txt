@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/topic/4581190
+
 Manage your sitemapsLearn about sitemapsNext: Build and submit a sitemapSitemaps in Search Console - Google Search Console Training
 What is a sitemap?
 A sitemap is a file where you provide information about the pages, videos, and other files on your site, and the relationships between them. Search engines like Google read this file to more intelligently crawl your site. A sitemap tells Google which pages and files you think are important in your site, and also provides valuable information about these files: for example, for pages, when the page was last updated, how often the page is changed, and any alternate language versions of a page.

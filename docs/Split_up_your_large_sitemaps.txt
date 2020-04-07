@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/75712
+
 Manage your sitemapsSplit up your large sitemapsNext: Video sitemaps and video sitemap alternativesIf you have many sitemaps, you can use a sitemaps index file as a way to submit them at once. The XML format of a sitemap index file is very similar to the XML format of a sitemap file. The sitemap index file uses the following XML tags:
 sitemapindex - the parent tag surrounds the file.
 sitemap - the parent tag for each sitemap listed in the file (a child of sitemapindex)

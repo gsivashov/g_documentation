@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9063469
+
 Mobile Usability reportThe Mobile Usability report shows which pages in your property have usability problems when viewed on mobile devices.
 The top level view shows all pages with more than a threshold level of mobile usability issues. Click a specific issue to see issue details, including a sample list of pages affected by that issue, information about how to fix it, and a process to notify Google about your fixes.
 OPEN MOBILE USABLITY REPORT

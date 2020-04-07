@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/3219042
+
 Manually add markup for a propertyWhile Markup Helper can show you how to add markup for the most common data properties, it doesn't support all of schema.org's properties. If your page contains data that's beyond the common properties, you can look up the data type on schema.org, use the schema.org information to add markup, and then use the Structured Data Testing Tool to test your markup.
 Manually add microdata markup for a property
 Tag as much data as possible in Markup Helper.

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7489871
+
 No page information in search resultsIf a Google search result says that no information is available for a page, like this:
 It means that the website prevented Google from creating a page description, but didn't actually hide the page from Google.
 If you own this site you can improve this result either by letting Google read the page to create a good description, or by hiding the page entirely from Google Search results. Read below to learn how.

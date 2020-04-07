@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/81749
+
 Ways to Prevent Comment Spam
 Comments are a great way for webmasters to build community and readership. Unfortunately, they're often abused by spammers and nogoodniks, many of whom use scripts or other software to generate and post spam. If you've ever received a comment that looked like an advertisement or a random link to an unrelated site, then you've encountered comment spam.
 This type of spam can be harmful to your site in several ways including:

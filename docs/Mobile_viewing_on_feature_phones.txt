@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/35312
+
 Mobile viewing on feature phonesLooking for transcoding on smartphones? See here.
 Google Web Search on feature phones allows users to search all the content in the Google index for desktop web browsers. Because this content isn't written specifically for feature phones and devices and thus might not display properly, web search results are viewed through our transcoder, which analyzes the original HTML code and converts it to a mobile-ready format. To ensure that the highest quality and most useable web page is displayed on your mobile phone or device, Google may resize, adjust, or convert images, text formatting and/or certain aspects of web page functionality.
 If you do not want Google to transcode your web page on feature phones, you may request that Google redirect the user to an alternate page whenever the user attempts to view the page through the transcoder. You can do so by including the following line in the <head> section of the HTML file for your page:

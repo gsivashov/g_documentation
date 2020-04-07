@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9467408
+
 Duplex on the Web user agentDuplexWeb-Google is the user agent that supports the Duplex on the Web service. This service supports various features and products, such as Google Assistant in Chrome. You can see the user agent token and full user agent strings here.
 Crawl frequency and behavior
 No services that use DuplexWeb-Google will perform any purchases or perform any other significant actions when crawling your site.

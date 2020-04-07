@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/93633
+
 Change page URLs with 301 redirects
 If you need to change the URL of a page as it is shown in search engine results, we recommend that you use a server-side 301 redirect. This is the best way to ensure that users and search engines are directed to the correct page. The 301 status code means that a page has permanently moved to a new location.
 301 redirects are particularly useful in the following circumstances:

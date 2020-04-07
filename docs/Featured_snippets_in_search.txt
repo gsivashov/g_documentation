@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6229325
+
 Featured snippets in searchFeatured snippets are special boxes where the format of regular listings is reversed, showing the descriptive snippet first. Read more about how Google's Featured Snippets work.
 How can I opt out of featured snippets?
 Block both featured and regular search snippets

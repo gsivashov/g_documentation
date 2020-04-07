@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7238431
+
 Best practices for website testing with Google SearchTest variations in your site URLs or contentThis page covers how to ensure that testing variations in page content or page URLs has minimal impact on your Google Search performance. It does not give instructions on how to build or design tests, but you can find more resources about testing at the end of this page.
 Overview of testing
 Website testing is when you try out different versions of your website (or a part of your website) and collect data about how users react to each version. Typically you will use software to compare behavior with two different variations of your pages (parts of a page, entire pages, or entire multi-page flows), and track which version is most effective with your users.

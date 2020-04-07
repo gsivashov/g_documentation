@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9012289
+
 URL Inspection ToolAbout the URL Inspection tool
 The URL Inspection tool provides information about Google's indexed version of a specific page. Information includes AMP errors, structured data errors, and indexing issues.
 Common tasks:
@@ -67,28 +69,28 @@ A page that Google possibly used to discover this URL. The referring page might 
 Last crawl
 The last time this page was crawled by Google, in your local time. All information shown in this tool is derived from this last crawled version.
 Crawl allowed?
-Indicates whether your page allowed Google to crawl (visit) the page or blocked it with a robots.txt rule. If you did not intend to block Google, you should remove the robots.txt block. Note that this is not the same as allowing indexing, which is given by the "Indexing allowed?" value.
+Indicates whether your site allowed Google to crawl (visit) the page or blocked it with a robots.txt rule. If you did not intend to block Google, you should remove the robots.txt block. Note that this is not the same as allowing indexing, which is given by the "Indexing allowed?" value.
 Page fetch
-Whether or not Google could actually get the page from your server. If crawling is not allowed, this field will always show a failure. If crawling is allowed, page fetch might still fail for various reasons. See explanations of fetch failures. Crawl allowed is an indication of whether you want the page to be reachable; page fetch is whether Google could actually reach it, if allowed.
+Whether or not Google could actually get the page from your server. If crawling is not allowed, this field will always show a failure. If crawling is allowed, page fetch might still fail for various reasons. See explanations of fetch failures. "Crawl allowed?" indicates whether you want the page to be reachable; "Page fetch" indicates whether, if allowed, Google could actually reach the page.
 Indexing allowed?
 Whether or not your page explicitly disallowed indexing. If indexing is disallowed, the reason is explained, and the page won't appear in Google Search results. IMPORTANT If your page is blocked by robots.txt (see "Crawl allowed"), then "Indexing allowed" will always be "Yes" because Google can't see and respect the noindex directive. In that case, your page might appear in Search results.
 User-declared canonical
-Your declared canonical URL, if the page explicitly declares one. You can declare a canonical URL in several ways: a <link rel="canonical"> tag, an HTTP header, a sitemap, or a few other methods. If your page is one of a set of similar or duplicate pages, we recommend explicitly declaring the canonical URL. For AMP pages, this should be the non-AMP version (unless it is a self-canonical AMP).
+Your declared canonical URL, if the page explicitly declares one. You can declare a canonical URL in several ways: a <link rel="canonical"> tag, an HTTP header, a sitemap, or a few other methods. If your page is one of a set of similar or duplicate pages, we recommend explicitly declaring the canonical URL. There is no guarantee that Google will choose this URL, but we will take this into consideration. For AMP pages, this should be the non-AMP version (unless it is a self-canonical AMP).
 Google-selected canonical
-The page that Google selected as the canonical (authoritative) URL, when it found similar or duplicate pages on your site. If you declared a canonical URL, Google might select the same URL, but sometimes Google might choose another URL that it considers a better canonical example. You can't guarantee the Google-selected canonical for a URL, but you can suggest one. If the page has no alternate versions, the Google-selected canonical is the inspected URL. If you find an unexpected page here, consider explicitly declaring a canonical version.
-The canonical URL is not always the one shown in Search results: for example, if a page has a desktop canonical and a mobile version, mobile searches will probably show the mobile page URL.
+The page that Google selected as the canonical (authoritative) URL, when it found similar or duplicate pages on your site. Google might select the user-declared canonical, but sometimes Google might choose another URL that it considers a better canonical example. If the page has no alternate versions, the Google-selected canonical is the inspected URL. If you find an unexpected page here, consider explicitly declaring a canonical version.
+The canonical URL is not always the one shown in Search results: for example, if a page has both a desktop canonical and a mobile version, Google will probably show the URL appropriate for your current device.
 Note that this value can be a few hours behind the value in our index.
 If the page is not the canonical URL, you can inspect the Google-selected canonical URL by selecting Inspect (but only if the URL is in a property that you manage).
 Enhancements (AMP, Jobs, and more)
 This section describes any Search enhancements detected by Google on your URL the last time it was indexed. If the URL could not be indexed, or no enhancements were detected, this section will be empty.
 This tool does not yet show all possible enhancements. Here are the enhancements supported by this tool:
 Mobile Usability
-Discover whether your page is easy to use on a mobile device.
+Discover whether your page is easy to use on a mobile device. Not all pages are tested for mobile usability.
 The following verdicts are possible:
-Page is not mobile friendly: The page won't work well on a mobile device because of a few issues.
+Page is not mobile friendly: The page won't work well on a mobile device because of a few issues. See descriptions of the possible errors.
 Page is mobile friendly: The page should probably work well on a mobile device. More details.
 No data available: For some reason we couldn't retrieve the page or test its mobile-friendliness. Please wait a bit and try again.
-To see which other pages on your site are affected by an issue, select the issue row, then select Open Report.
+Click the verdict row to get more details about mobile usability for this URL.
 AMP
 If the page has a linked AMP version, you can see information about it by selecting the row in the report. Use this information to help find and troubleshoot AMP-specific indexing and other issues.
 Details shown here apply to the AMP version referenced by the current page; they do not apply to the current page.
@@ -156,7 +158,7 @@ URL is an alternate version
 What it means: The URL is not considered the canonical version of this page, so it is not indexed, but this is not an error.
 What to do next: Probably nothing. Google has a canonical URL for this page that should be indexed. The current index information will show the canonical URL in Coverage > Google-selected canonical.
 Availability
-This section of the report describes whether the page can be indexed by Google. However, a positive result is no guarantee that it will appear in search results. Appearance in Search results additionally requires that the page and its structured data conform to quality and security guidelines. The URL Inspection tool doesn't take into account manual actions, content removals, or temporarily blocked URLs.
+This section of the report describes whether the page can be indexed by Google. However, a positive result is no guarantee that it will appear in Search results. Appearance in Search results additionally requires that the page and its structured data conform to quality and security guidelines. The URL Inspection tool doesn't take into account manual actions, content removals, or temporarily blocked URLs.
 For an explanation of the various properties, see the property descriptions in the indexed version.
 Differences between indexed test and live test results
 Not all availability values shown in the indexed report are possible in the live report. Here is a list of unsupported states with explanations.

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2753285
+
 Create a page set that contains a single pageThe steps for creating a page set with just one page are different from creating a page set with multiple pages.
 You can create a page set with just one page if, for example, all of your events or products are described on one page.
 Create a page set that contains a single page:

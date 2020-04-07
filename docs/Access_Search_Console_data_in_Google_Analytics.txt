@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/1120006
+
 Access Search Console data in Google AnalyticsIf you associate a Google Analytics property with a site in your Search Console account, you’ll be able to see Search Console data in your Google Analytics reports. Note that you can only associate a website; you cannot associate an app.
 Associate Properties
 You must be an owner of the Google Analytics property to be able to associate it with a website in Search Console.

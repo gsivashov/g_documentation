@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9274005
+
 Google Read Aloud user agentGoogle-Read-Aloud is the user agent for the Google Read Aloud service. This service enables reading web pages using text-to-speech (TTS). This service is activated when an end user has text to speech enabled and visits a page. The Read Aloud service is used by Google Go.
 Crawl frequency and behavior
 Google Read Aloud is triggered by a user request. Google Read Aloud conserves bandwidth by caching page results, so you should not see more than one request every few hours for a given page.

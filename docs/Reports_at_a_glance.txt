@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9133276
+
 Reports at a glanceAn overview of the Search Console reports and toolsHere is a summary of the current Search Console reports, and a few older, but useful reports and tools.
 Report or tool
 Description

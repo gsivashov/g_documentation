@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/96569
+
 Qualify your outbound links to GoogleFor certain links on your site, you might want to tell Google your relationship with the linked page. In order to do that, you should use one of the following rel attribute values in the <a> tag.
 For regular links that you expect Google to follow without any qualifications, you don't need to add a rel attribute. Example: "My favorite horse is the <a href="https://horses.example.com/Palomino">palomino</a>."
 For other links, use one or more of the following values:

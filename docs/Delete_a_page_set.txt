@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2762019
+
 Delete a page setIf you no longer want Data Highlighter to extract data for your pages, or if your site has changed significantly and you need to redo the tagging, delete the page set. Once you delete a page set, you cannot recover it.
 Delete a page set:
 View the page set's Publish page:

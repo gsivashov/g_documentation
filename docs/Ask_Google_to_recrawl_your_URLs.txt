@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6065812
+
 Ask Google to recrawl your URLsIf you’ve recently added or made changes to a page on your site, you can request that Google re-index your page using any of the methods listed here.
 General guidelines
 Crawling can take anywhere from a few days to a few weeks. Be patient and monitor progress using either the Index Status report or the URL Inspection tool.

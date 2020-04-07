@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6352293
+
 Mobile-Friendly Test ToolHaving a mobile-friendly website is a critical part of your online presence. In many countries, smartphone traffic now exceeds desktop traffic. If you haven't made your website mobile-friendly, you should. Search Console's Mobile-Friendly Test Tool is a quick, easy way to test whether a page on your site is mobile-friendly.
 Open the Mobile-Friendly Test Tool
 Using the tool

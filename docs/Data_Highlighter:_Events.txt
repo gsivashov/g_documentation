@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2774099
+
 Data Highlighter: EventsYou can use Data Highlighter to tag data about events, such as a concert or an art festival. Then Google can present your data more attractively — and in new ways — in search results and other products.
 Open Data Highlighter
 For example, Google Search results can display tagged information as an events rich snippet like this:

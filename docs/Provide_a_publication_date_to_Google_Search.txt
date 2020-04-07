@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9253249
+
 Provide a publication date to Google SearchWhen Google can determine the publication and update dates of your page or video, it can expose this information in Search results, if this information is considered to be useful to the user.
 You can provide information to help Google determine the publication and last updated date.
 Google doesn't depend on a single dating factor because all factors can be prone to issues. That's why our systems look at several factors to determine our best estimate of when a page was published or significantly updated.

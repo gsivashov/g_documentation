@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9128668
+
 About Search ConsoleGoogle Search Console is a free service offered by Google that helps you monitor, maintain, and troubleshoot your site's presence in Google Search results. You don't have to sign up for Search Console to be included in Google Search results, but Search Console helps you understand and improve how Google sees your site.
 Search Console offers tools and reports for the following actions:
 Confirm that Google can find and crawl your site.

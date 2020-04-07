@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/100782
+
 Browser compatibilityUsers typically view your website using a browser. Each browser interprets your website code in a slightly different manner, which means that it may appear differently to visitors using different browsers. In general, you should avoid relying on browser specific behavior, such as relying on a browser to correctly detect a content-type or encoding when you did not specify one. In addition, there are some steps you can take to make sure your site doesn't behave in unexpected ways.
 Test your site in as many browsers as possible
 Once you've created your web design, you should review your site's appearance and functionality on multiple browsers to make sure that all your visitors are getting the experience you worked so hard to design. Ideally, you should start testing as early in your site development process as possible. Different browsers - and even different versions of the same browser - can see your site differently. You can use services such as Google Analytics to get a good idea of the most popular browsers used to view your site.

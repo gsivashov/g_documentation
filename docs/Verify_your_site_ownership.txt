@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9008080
+
 Verify your site ownershipWhat is verification?
 Verification is the process of proving that you own the property that you claim to own. We need to confirm ownership because once you are verified for a property, you have access to its Google Search data, and can affect its presence on Google Search. Every Search Console property requires at least one verified owner.
 VERIFY YOUR PROPERTY

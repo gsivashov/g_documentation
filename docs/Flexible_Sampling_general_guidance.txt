@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7532484
+
 Flexible Sampling general guidanceAllow limited free access to your site; help Google crawl paywalled contentIn order to better understand the potential impact of free sampling changes on Google users and publishers’ subscription models, we developed a series of experiments in cooperation with our publishing partners. From these experiments we learned that even minor changes to the current sampling levels could degrade user experience and, as user access is restricted, unintentionally impact article ranking in Google Search.
 There are two types of sampling we advise: metering, which provides users with a quota of free articles to consume, after which paywalls will start appearing; and lead-in, which offers a portion of an article’s content without it being shown in full.
 We encourage publishers to experiment cautiously with different amounts of free sampling. Here is some general guidance for implementing flexible sampling.

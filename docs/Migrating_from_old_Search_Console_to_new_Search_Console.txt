@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9073702
+
 Migrating from old Search Console to new Search ConsoleMigration guide for existing usersIf you have been using old Search Console, this guide will show you the main differences between old and new Search Console. You can find the full list of new reports, and some old favorites, in the Reports at a Glance page.
 General changes
 New Search Console has the following improvements over the old version:

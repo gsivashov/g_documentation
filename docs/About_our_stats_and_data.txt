@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/96568
+
 About our stats and dataWhen does Search Console data appear
 When you add your site to Search Console, it may take some time before diagnostic and other data is available. This is normal; it can take some time for Search Console to gather and process data for your site. In general, if you see a "No data yet" message, check back later. Once Google starts crawling your site more often, you'll notice that Search Console will begin to show more detailed data, and that this data is updated more often.
 If you still don't see any data, it may be for one of these reasons:

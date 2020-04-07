@@ -1,1 +1,3 @@
+https://support.google.com/webmasters/topic/2774098
+
 Data types supported by Data HighlighterData Highlighter: ArticlesData Highlighter: Book ReviewsData Highlighter: EventsData Highlighter: Local BusinessesData Highlighter: MoviesData Highlighter: ProductsData Highlighter: RestaurantsData Highlighter: Software ApplicationsData Highlighter: TV Episodes

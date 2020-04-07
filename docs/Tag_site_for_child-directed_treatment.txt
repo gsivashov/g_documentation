@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/3221080
+
 Tag site for child-directed treatmentIf you think that your website or mobile app is intended specifically for children, please visit the Tag for Child Directed Treatment page to tag a site or service that you would like Google to treat as child-directed in whole or in part for the purposes of the Children’s Online Privacy Protection Act (COPPA). If you have not already added a site to Search Console, you must first add the site and verify ownership.
 Note that marking your site or app as child-directed does not affect its ranking in Google Search results.
 Keep in mind the following:

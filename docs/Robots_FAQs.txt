@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7424835
+
 About robots.txtRobots FAQsGeneral robots questions
 Does my website need a robots.txt file?
 Which method should I use?

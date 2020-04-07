@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6062596
+
 About robots.txtCreate a robots.txt fileNext: Test your robots.txt with the robots.txt Tester
 If you use a site hosting service, such as Wix or Blogger, you might not need to create or edit a robots.txt file.
 Getting started

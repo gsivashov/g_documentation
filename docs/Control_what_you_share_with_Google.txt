@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/93708
+
 Control what you share with GoogleControl what information Google sees on your site and what is shown in Search results.
 Why block content from Google?
 There are a few reasons you might want to hide content from Google:

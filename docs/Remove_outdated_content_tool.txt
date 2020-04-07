@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7041154
+
 Remove outdated content toolRemove snippets and cached content for pages that you don't ownWhat is this tool used for?
 If you see a search result that you do not own, and either
 the result snippet or the cached (stored) result in Search results is different from the current page, OR

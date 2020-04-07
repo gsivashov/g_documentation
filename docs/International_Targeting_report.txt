@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/62399
+
 International Targeting reportUse the International Targeting report to monitor your hreflang errors, or to choose a country that should be prioritized for your search results. This report has the following sections:
 The Language section: Monitor the usage and errors of hreflang tags on your site.
 The Country section: Set a site-wide country target for your entire site, if desired.

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/48620
+
 Change Googlebot crawl rate
 The term crawl rate means how many requests per second Googlebot makes to your site when it is crawling it: for example, 5 requests per second.
 You cannot change how often Google crawls your site, but if you want Google to crawl new or updated content on your site, you can request a recrawl.

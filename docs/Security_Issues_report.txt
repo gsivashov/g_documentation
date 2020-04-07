@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9044101
+
 Security Issues reportIf a Google evaluation determines that your site was hacked, or that it exhibits behavior that could potentially harm a visitor or their computer, the Security Issues report will show Google's findings. Examples of harmful behavior include phishing attacks or installing malware or unwanted software on the user's computer.
 Pages or sites affected by a security issue can appear with a warning label in search results or an interstitial warning page in the browser when a user tries to visit them.
 Open the Security Issues report

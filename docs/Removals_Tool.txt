@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9689846
+
 Removals ToolTemporarily block search results from your site, or manage SafeSearch filteringThe Removals tool enables you to temporarily block pages from Google Search results on sites that you own. For sites that you don't own, use this troubleshooter.
 The tool also allows you to see any URLs on your site that were reported as containing adult content.
 Sections:

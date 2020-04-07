@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9460081
+
 Top Places ListIf your business is mentioned in any "top places" lists online, Google might show a rich result that shows the lists that mention your business. For example, if your restaurant appears in a "Top 10 Chinese restaurants in NYC" list and a "Best restaurants in the city" list on qualified websites, these lists would be shown in your business's search result. This feature is only for businesses with a physical location.
 Here is an example Top Places List search result for a restaurant, showing three top lists, with a link to 31 more lists associated with the restaurant:
 Requirements for the listing site

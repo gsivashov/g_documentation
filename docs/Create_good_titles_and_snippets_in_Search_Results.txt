@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/35624
+
 Create good titles and snippets in Search ResultsGoogle's generation of page titles and descriptions (or "snippets") is completely automated and takes into account both the content of a page as well as references to it that appear on the web. The goal of the snippet and title is to best represent and describe each result and explain how it relates to the user's query.
 We use a number of different sources for this information, including descriptive information in the title and meta tags for each page. We may also use publicly available information, or create rich results based on markup on the page.
 While we can't manually change titles or snippets for individual sites, we're always working to make them as relevant as possible. You can help improve the quality of the title and snippet displayed for your pages by following the general guidelines below.

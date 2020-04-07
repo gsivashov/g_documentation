@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2648487
+
 Disavow backlinksIf you have a manual action against your site for unnatural links to your site, or if you think you're about to get such a manual action (because of paid links or other link schemes that violate our quality guidelines), you should try to remove those links from the other site. If you can't get these links removed, then you should disavow those links to your website.
 Google works very hard to make sure that actions on third-party sites do not negatively affect a website. In some circumstances, incoming links can affect Google’s opinion of a page or site. For example, you or a search engine optimizer (SEO) you’ve hired may have built bad links to your site via paid links or other link schemes that violate our quality guidelines. First and foremost, we recommend that you remove as many spammy or low-quality links from the web as possible.
 This is an advanced feature and should only be used with caution. If used incorrectly, this feature can potentially harm your site’s performance in Google’s search results.

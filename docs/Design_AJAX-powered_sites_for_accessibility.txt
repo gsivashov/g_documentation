@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/81766
+
 Design AJAX-powered sites for accessibilityMany webmasters have discovered the advantages of using AJAX to improve the user experience on their sites, creating dynamic pages that act as powerful web applications. But like Flash, AJAX can make a site difficult for search engines to index if the technology is not implemented carefully. There are two main search engine issues around AJAX: Making sure that search engine bots can see your content, and making sure they can see and follow your navigation.
 While Googlebot is great at understanding the structure of HTML links, it can have difficulty finding its way around sites which use JavaScript for navigation. We're working on doing a better job of understanding JavaScript, but your best bet for creating a site that's crawlable by Google and other search engines is to provide HTML links to your content.
 Design for accessibility

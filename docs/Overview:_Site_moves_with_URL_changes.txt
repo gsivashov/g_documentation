@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6033049
+
 Move a site with URL changesOverview: Site moves with URL changesMake sure Google can index your content under your new URLsNext: 1. Prepare the new siteThis article describes how to change the URLs of existing pages on your site with minimal impact on your Google Search results. Examples of this kind of site move include:
 URL changes from HTTP to HTTPS
 Domain name changes such as example.com to example.net or merging multiple domains or hostnames

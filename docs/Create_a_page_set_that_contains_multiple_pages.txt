@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2753345
+
 Create a page set that contains multiple pagesA page set can contain up to 500,000 pages. If you want to extract data from more pages than that, you'll need to create multiple page sets.
 To create a page set with multiple pages, Data Highlighter takes you through the following process:
 Specifying and tagging a starting page.

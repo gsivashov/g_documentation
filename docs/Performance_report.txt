@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7576553
+
 Performance reportThe Performance report shows important metrics about how your site performs in Google Search results: how often it comes up; average position in search results; click through rate; and any special features (such as rich results) associated with your results. Use this information to improve your site’s search performance, for example:
 See how your search traffic changes over time, where it’s coming from, and what search queries are most likely to show your site.
 Learn which queries are made on smartphones, and use this to improve your mobile targeting.

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/66355
+
 Cloaking
 Cloaking refers to the practice of presenting different content or URLs to human users and search engines. Cloaking is considered a violation of Google’s Webmaster Guidelines because it provides our users with different results than they expected.
 Some examples of cloaking include:

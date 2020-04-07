@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/114016
+
 Google Image best practices
 Google Images is a way to visually discover information on the web. Users can quickly explore information with more context around images with new features, such as image captions, prominent badges, and AMP results.
 By adding more context around images, results can become much more useful, which can lead to higher quality traffic to your site. You can aid in the discovery process by making sure that your images and your site are optimized for Google Images. Follow our guidelines to increase the likelihood that your content will appear in Google Images search results.

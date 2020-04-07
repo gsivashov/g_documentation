@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6080550
+
 Block crawling of parameterized duplicate contentWhen and how to use the URL Parameters toolURL parameters and duplicate content
 If your site uses URL parameters for insignificant page variations (for instance, color=red vs color=green), or if your site uses parameters that can show essentially the same content using different URLs (for example, example.com/shirts?style=polo,long-sleeve and example.com/shirts?style=polo&style=long-sleeve), Google might be crawling your site inefficiently.
 Here is an example of URLs that lead to essentially duplicate content, distinguished only by different parameters:

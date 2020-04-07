@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9112205
+
 Make your links crawlableGoogle can follow links only if they are an <a> tag with an href attribute. Links that use other formats won't be followed by Google's crawlers. Google cannot follow <a> links without an href tag or other tags that perform as links because of script events. Here are examples of links that Google can and can't follow:
 Can follow:
 <a href="https://example.com">

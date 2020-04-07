@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9079920
+
 Why does my search result look wrong?Troubleshoot titles or snippets, missing Job, Event, Recipe, or other result typesGoogle supports many special features in search results. Some are explicitly enabled, such as sitelinks searchboxes or job postings, while others, such as featured snippets, are applied by Google without any actions by the page owner.
 If the appearance or text of your Google search results look different than you expect, here are some troubleshooting tips:
 Title or snippet issues

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/1061943
+
 Overview of Google crawlers (user agents)See which robots Google uses to crawl the web"Crawler" is a generic term for any program (such as a robot or spider) that is used to automatically discover and scan websites by following links from one webpage to another. Google's main crawler is called Googlebot. This table lists information about the common Google crawlers you may see in your referrer logs, and how they should be specified in robots.txt, the robots meta tags, and the X-Robots-Tag HTTP directives.
 The following table shows the crawlers used by various products and services at Google:
 User agent token is used in the User-agent: line in robots.txt to match a crawler type when writing crawl rules for your site. Some crawlers have more than one token, as shown in the table; you need to match only one crawler token for a rule to apply. This list is not complete, but covers most of the crawlers you might see on your website.

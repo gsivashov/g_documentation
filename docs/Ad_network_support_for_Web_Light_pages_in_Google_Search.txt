@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6211355
+
 Ad network support for Web Light pages in Google SearchInformation for ad network providersGoogle shows faster and lighter pages to people searching on slow mobile connections. To do this, we transcode (convert) web pages on the fly into a version optimized for slow networks, so that these pages load faster while saving data. These optimized pages preserve a majority of the relevant content and provide a link for users to view the original page. We call this technology "Web Light."Our experiments show that optimized pages load four times faster than the original page and use 80% fewer bytes. Because these pages load so much faster, we also saw a 50% increase in traffic to these pages.
 Google displays ads on these transcoded pages so that publishers can continue to monetize their traffic. At the outset we support several 3rd party ad networks, including Sovrn, Zedo. We are interested in supporting ads from other networks as well. Read on if you run an ad network and want your ads to be supported on Web Light pages.
 Our approach

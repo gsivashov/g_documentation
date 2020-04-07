@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/93641
+
 Create custom 404 pagesA 404 page is what a user sees when they try to reach a non-existent page on your site (because they've clicked on a broken link, the page has been deleted, or they've mistyped a URL).
 Why create one?
 You can rely on your server to return a standard 404 page, but it might not be attractive, and won't be branded with your website. A custom 404 page can be branded with your site and provide helpful information

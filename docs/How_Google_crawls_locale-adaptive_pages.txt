@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6144055
+
 How Google crawls locale-adaptive pagesIf your site has locale-adaptive pages (that is, your site returns different content based on the perceived country or preferred language of the visitor), Google might not crawl, index, or rank all your content for different locales. This is because the default IP addresses of the Googlebot crawler appear to be based in the USA. In addition, the crawler sends HTTP requests without setting Accept-Language in the request header.
 IMPORTANT: We recommend using separate locale URL configurations and annotating them with rel=alternate hreflang annotations.
 Geo-distributed crawling

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7426684
+
 APIs-Google User AgentAPIs-Google is the user agent used by Google APIs to deliver push notification messages. Application developers can request these notifications to avoid the need for continually polling Google's servers to find out if the resources they are interested in have changed. To make sure nobody abuses this service, Google requires developers to prove that they own the domain before allowing them to register a URL with a domain as the location where they want to receive messages.
 How APIs-Google accesses your site
 APIs-Google sends each push notification using an HTTPS POST request. If the request fails due to an error condition that might be temporary, APIs-Google will resend the notification. If the request still doesn't succeed, it will continue to retry—based on an exponential backoff schedule—up to a maximum of several days.

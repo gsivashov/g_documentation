@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/140528
+
 Email Preferences pageManage your email notificationsUse the email preferences page to control which Search Console messages are emailed to you.
 This preference affects only whether messages are sent to you by email; all your messages are always visible in the message panel, whatever your settings are in this page.
 Open email preferences

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9150868
+
 Image Rights Metadata in Google ImagesPhotographers, photo agencies, and other related industries provide information about their images in image metadata. Google Images exposes IPTC metadata in search results whenever it is available.
 Image rights metadata on mobile device
 Add image rights metadata

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/66359
+
 Avoid creating duplicate contentDuplicate content generally refers to substantive blocks of content within or across domains that either completely match other content or are appreciably similar. Mostly, this is not deceptive in origin. Examples of non-malicious duplicate content could include:
 Discussion forums that can generate both regular and stripped-down pages targeted at mobile devices
 Store items shown or linked via multiple distinct URLs

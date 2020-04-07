@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2753822
+
 Publish or unpublish a page setPublishing a page set instructs Data Highlighter to make the data available to Google. The next time Google crawls the page, the structured data in your page set will display on the structured data page. It might take some time for the data to appear as rich snippets, in the Google Knowledge Graph, or in other Google products. If rich snippets aren't appearing for your site, see possible reasons why.
 Page sets with only one page are automatically published when you create them. You can publish page sets with multiple pages immediately after creating them, or you can wait until you are ready.
 Publish a page set:

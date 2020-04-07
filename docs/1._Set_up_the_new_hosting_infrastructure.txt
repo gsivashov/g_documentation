@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/83105
+
 Move a site with no URL changes1. Set up the new hosting infrastructureNext: 2. Start the site moveThis section covers steps to take before you start the actual site move.
 A. Copy and test your new site
 First, upload a copy of your site to your new hosting provider. Once you do that, verify that it works as expected by thoroughly testing all aspects of how your users interact with your site. Here are a few suggestions:

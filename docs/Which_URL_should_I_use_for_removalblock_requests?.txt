@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/63758
+
 Which URL should I use for removal/block requests?When you file a removal or temporary block request for a web page, don't just copy the page URL from your browser's URL bar (the bar at the top of the browser). That probably won't work. (Why not?)
 Here's how to find the right URL to remove from Google:
 Find a webpage URL

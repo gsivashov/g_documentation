@@ -1,1 +1,3 @@
+https://support.google.com/webmasters/topic/6033102
+
 Move your siteA site move (or site transfer, rename, change, or migration) generally falls into the following two categories:Move a site with no URL changesMove a site with URL changes

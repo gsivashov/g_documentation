@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/70897
+
 How Google Search WorksLearn how Google discovers, crawls, and serves web pagesHow does Google work? Here is a short version and a long version.
 Google gets information from many different sources, including:
 Web pages,

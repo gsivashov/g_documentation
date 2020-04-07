@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9388335
+
 Message panelRead your Search Console messages for the current property in the message panel. All messages sent to you by email are available in the message panel.
 Read messages
 Open the message panel by clicking the bell icon  at the top of Search Console.

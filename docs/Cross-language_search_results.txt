@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9696313
+
 Cross-language search resultsMatch user queries to pages in other languagesGoogle strives to make information accessible and useful to all users. This includes giving users the best results in their own language.
 In cases where Google determines that there aren't enough high-quality and relevant results for a query in the user's language, Google Search results can include results from pages in other languages, with the title and snippet translated to the language of the user. Clicking one of these results sends the user to a live translation of the page by Google Translate. All further interaction with the page is through Google Translate, which will automatically translate any links followed. Google does not host any translated pages.
 With cross-language search, users can now get the best results, regardless of their query language, and publishers can get more traffic and insights from users in fast-growing markets. This helps make more content available in more local languages, which benefits both users and publishers.

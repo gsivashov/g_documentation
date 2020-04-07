@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/3113241
+
 Tagging ratingsIf you tag a rating in Data Highlighter, Google can display the rating as review rich snippets or in other Google products. Data Highlighter understands ratings that are displayed in many formats (words, numbers, or images) as long as the rating specifies or implies all of the following:
 The best possible rating
 The actual rating

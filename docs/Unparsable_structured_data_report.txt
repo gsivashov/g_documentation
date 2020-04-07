@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9166415
+
 Unparsable structured data reportThis report lists structured data found on your site that could not be parsed because of a serious syntax error. The intended type of structured data (Job, Event, and so on) could not be determined because of the parsing error.
 OPEN REPORT
 Using the report

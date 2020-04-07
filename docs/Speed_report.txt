@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9205520
+
 Speed reportFix slow user experiences on your siteThe Speed report shows how fast your pages perform according to real world usage data (sometimes called field data).
 OPEN SPEED REPORT
 Why speed matters

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7281924
+
 I don't recognize this new ownerWhenever a new owner is added to your property, Search Console notifies all existing verified owners of the change. If you don't recognize the new owner, email that person; maybe it's an alternate email address of someone you know.
 If the person doesn't answer, or if you're the only property owner and didn't add anyone else, it's possible that your site has been hacked, and someone is verifying ownership of your Search Console property in order to gain something.
 If you think your property was hacked:

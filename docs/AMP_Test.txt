@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7320015
+
 AMP TestAccelerated mobile pages (AMP) is a standard for creating fast-loading pages that look good on mobile devices. Having a mobile-friendly website is a critical part of your online presence. In many countries, smartphone traffic now exceeds desktop traffic. You can use the AMP Test to check the validity of an AMP page, and to verify that it has the proper configuration to appear in Google Search results. Note: If you want to confirm whether your AMP pages are indexed correctly, we recommend using the URL inspection tool instead of the AMP Test tool.
 OPEN THE AMP TEST
 Run the test

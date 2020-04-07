@@ -26,10 +26,10 @@ def get_content_from_request(response):
 
 def getTextContent(response):
 
-    title = ''.join(response.html.xpath('//h1/text()'))
+    h1 = ''.join(response.html.xpath('//h1/text()'))
     article = get_content_from_request(response)
     if not article:
-        return title, None
+        return h1, None
 
     soup = BeautifulSoup(article, features='lxml')
 
@@ -40,7 +40,7 @@ def getTextContent(response):
     lines = (line.strip() for line in text.splitlines())
     chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
     text = '\n'.join(chunk for chunk in chunks if chunk)
-    return title, text
+    return h1, text
 
 
 def main(params):
@@ -48,15 +48,15 @@ def main(params):
     with open(start_file) as f:
         for link in f:
             url = setSession(link)
-            title, text = getTextContent(url)
+            h1, text = getTextContent(url)
             if not text:
                 logging.info(
                     f'Error with {link.strip()}, no tags found'
                 )
                 continue
-            filename = f'{title.replace(" - Search Console Help","").replace(" &nbsp;|&nbsp; Search for Developers &nbsp;|&nbsp; Google Developers", "").replace("/","").replace(" ","_")}.txt'
+            filename = f'{h1.replace("/","").replace(" ","_")}.txt'
             with open(Path.cwd() / 'docs' / filename, 'w', encoding='utf-8') as txt_file:
-                txt_file.write(text)
+                txt_file.write(f'{link}\n{text}')
 
 
 if __name__ == '__main__':

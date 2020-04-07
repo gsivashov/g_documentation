@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9046777
+
 Google DiscoverOptimize your content for DiscoverGoogle can present a summary of your page as a card shown to users in Discover, which is a scrollable list of topics that users can browse on their mobile devices. Tapping a card will send the user to the page that is the source of the Discover entry.
 Discover shows users a mix of content based on their interactions with Google products or content that they choose to follow directly. And we're not limited to what's published today — if we think that a user would find earlier content interesting, then Discover will show it.
 Discover also features videos, sports scores, entertainment updates (such as a new movie release), stock prices, event information (such as the nominees for a major award ceremony, or the lineup of an upcoming music festival), and more. Discover is a content hub for all of your interests.

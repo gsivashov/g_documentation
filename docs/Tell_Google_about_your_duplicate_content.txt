@@ -1,1 +1,3 @@
+https://support.google.com/webmasters/topic/6080547
+
 Tell Google about your duplicate contentHelp Google understand the URL parameters you use so we can merge what we know about your duplicate content. Consolidate duplicate URLsBlock crawling of parameterized duplicate content

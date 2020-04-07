@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/35308
+
 Prevent images on your page from appearing in search resultsFor quick removal
 Use the Remove URLs tool. You should see results fairly quickly.
 For non-emergency image removal

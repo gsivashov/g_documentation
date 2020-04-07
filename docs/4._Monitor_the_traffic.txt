@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6033088
+
 Move a site with URL changes4. Monitor the trafficMake sure your site move progresses smoothlyUse Search Console to monitor traffic
 Many features of Search Console help you monitor a site move, including:
 Sitemaps: Submit the two sitemaps you saved earlier from the mapping. Initially, the sitemap containing the new URLs would have zero pages indexed, while the sitemap of the old URLs would have many pages indexed. Over time the number of pages indexed from the old URLs sitemap would drop to zero with a corresponding increase of indexing of the new URLs.

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7407437
+
 Enriched Search ResultsIn addition to standard rich results, Google Search supports a more interactive and enhanced class of rich result called enriched search results. Enriched search results often include an immersive popup experience or other advanced interaction feature. For example, here is a Jobs enriched result popup that might appear if a user searched for "jobs in Mountain View":
 Enriched search enables the user to search across the various properties of a structured data item; for instance, a user might search for chicken soup recipes under 200 calories, or recipes that take less than 1 hour of preparation time.
 Implementing enriched search

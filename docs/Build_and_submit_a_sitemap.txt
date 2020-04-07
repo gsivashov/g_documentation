@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/35653
+
 Manage your sitemapsBuild and submit a sitemapNext: Sitemaps reportThis page describes how to build a sitemap and make it available to Google. Learn more about sitemaps here.
 Build and submit a sitemap:
 Decide which pages on your site should be crawled by Google, and determine the canonical version of each page.

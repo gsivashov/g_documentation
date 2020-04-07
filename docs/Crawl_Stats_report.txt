@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/35253
+
 Crawl Stats reportThe Crawl Stats report provides information on Googlebot's activity on your site for the last 90 days. These stats take into account all content types that we download (such as CSS, JavaScript, Flash, and PDF files, and images).
 Open the Crawl Stats report
 Crawl stats are available only for verified websites.

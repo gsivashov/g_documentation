@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2721312
+
 Scraped contentSome webmasters use content taken (“scraped”) from other, more reputable sites on the assumption that increasing the volume of pages on their site is a good long-term strategy regardless of the relevance or uniqueness of that content. Purely scraped content, even from high-quality sources, may not provide any added value to your users without additional useful services or content provided by your site; it may also constitute copyright infringement in some cases. It's worthwhile to take the time to create original content that sets your site apart. This will keep your visitors coming back and will provide more useful results for users searching on Google.
 Some examples of scraping include:
 Sites that copy and republish content from other sites without adding any original content or value

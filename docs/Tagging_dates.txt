@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/3070236
+
 Tagging datesStructured Data Markup Helper understands dates in many formats as long as the dates include a month, day, and year. You can supply any missing data (such as a year) by adding missing data to the page set.
 If your sample content displays dates in one piece (for example, June 4, 2012), it's recommended that you tag dates in one piece. The fewer tags you create, the faster your tagging will be and the more accurate Markup Helper will be.
 Tag dates in one piece:

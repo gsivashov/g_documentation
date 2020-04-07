@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/3070233
+
 Review and download the markup example
 Review the generated markup
 Markup Helper can show schema.org markup in these formats:

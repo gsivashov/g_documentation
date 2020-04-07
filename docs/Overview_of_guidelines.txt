@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9526064
+
 Overview of guidelinesThe guidelines sections provide advice on how to code your site in order to be eligible to appear on Google. These guidelines fall into the following categories:
 Webmaster guidelines: General best practices to help your site appear in Google Search, as well as quality guidelines that, if not followed, can cause your page or site to be omitted from Search.
 General guidelines: Best practices for having your site show up and look its best in Google.

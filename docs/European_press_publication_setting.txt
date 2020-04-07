@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9405176
+
 European press publication settingSpecify whether or not your site is a European press publication as defined by the 2019 Directive on copyright and related rights and implementing legislation in France. This setting affects the display of text snippets and thumbnail images from your property in France which goes into effect in October 2019.
 View or edit your designation
 Effects of this designation

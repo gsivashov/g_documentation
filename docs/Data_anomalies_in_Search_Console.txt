@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6211453
+
 Data anomalies in Search ConsoleWhat's up with my graph?On rare occasions, there might be an event in Search Console that could affect your report data. For example, if we change our data aggregation methods or there is a logging error, you might see a dip or bump in your chart. This page records known issues that might affect your data.
 Product-wide notes
 April 9-25, 2019

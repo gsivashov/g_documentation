@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2692911
+
 About Data HighlighterData Highlighter is a webmaster tool for teaching Google about the pattern of structured data on your website. You simply use Data Highlighter to tag the data fields on your site with a mouse. Then Google can present your data more attractively -- and in new ways -- in search results and in other products such as the Google Knowledge Graph.
 Open Data Highlighter
 For example, if your site contains event listings you can use Data Highlighter to tag data (name, location, date, and so on) for the events on your site. The next time Google crawls your site, the event data will be available for rich snippets on search results pages:

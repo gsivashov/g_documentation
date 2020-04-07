@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7445569
+
 Rich Results TestPut structured data on your page to enable special features in Google Search results, then test it with the Rich Results test.
 This is a beta version of the test. Not all rich result types or error types are supported yet. Results are not guaranteed to be accurate, or to guarantee appearance in search results. See the Supported Types section below for details.
 OPEN THE RICH RESULTS TEST

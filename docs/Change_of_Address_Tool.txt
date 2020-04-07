@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9370220
+
 Change of Address ToolMove your site from one domain to anotherAbout this tool
 Use the Change of Address tool when you move your website from one domain or subdomain to another: for instance, from example.com to example.org or example2.com. This tool tells Google about your change, and helps to migrate your Google Search results from your old site to your new site.
 When not to use this tool

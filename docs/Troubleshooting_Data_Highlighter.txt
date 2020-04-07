@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2692952
+
 Troubleshooting Data HighlighterIf you have problems creating or publishing a page set, look through the troubleshooting information on this page.
 Creating a page set
 After I enter my starting URL and click OK, I get an error.

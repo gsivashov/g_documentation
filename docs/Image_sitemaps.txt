@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/178636
+
 Manage your sitemapsImage sitemapsNext: Create a Google News sitemapFollow Webmaster Guidelines and best practices for publishing images to increase the likelihood that your images can be found in Image Search results. Additionally, you can use Google image extensions for sitemaps to give Google more information about the images available on your pages. Image sitemap information helps Google discover images that we might not otherwise find (such as images your site reaches with JavaScript code), and allows you to indicate images on your site that you want Google to crawl and index.
 You can use a separate sitemap to list images, or you can add image information to an existing sitemap. The following example shows a sitemap entry for the page http://example.com/sample.html, which contains two images.
 <?xml version="1.0" encoding="UTF-8"?>

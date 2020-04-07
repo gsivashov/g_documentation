@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2721435
+
 What is hacking or hacked content?Hacked content is any content placed on your site without your permission as a result of vulnerabilities in your site’s security. In order to protect our users and to maintain the integrity of our search results, Google tries its best to keep hacked content out of our search results. Hacked content gives poor search results to our users and can potentially install malicious content on their machines. We recommend that you keep your site secure, and clean up hacked content when you find it.
 OPEN THE SECURITY ISSUES REPORT
 Some examples of hacking include:

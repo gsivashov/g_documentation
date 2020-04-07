@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2445990
+
 404 (Page Not Found) errorsIn general, 404 errors won’t impact your site’s search performance, and you can safely ignore them if you’re certain that the URLs should not exist on your site. It’s important to make sure that these and other invalid URLs return a proper 404 HTTP response code, and that they are not blocked by the site’s robots.txt file.
 Here's how you should handle 404 errors:
 Decide if it's worth fixing. Many (most?) 404 errors are not worth fixing because 404s don't harm your site's indexing or ranking.

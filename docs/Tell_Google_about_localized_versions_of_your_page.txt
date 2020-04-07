@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/189077
+
 Tell Google about localized versions of your pageUse hreflang or sitemaps for language- or region-specific pagesIf you have multiple versions of a page for different languages or regions, tell Google about these different variations. Doing so will help Google Search point users to the most appropriate version of your page by language or region.
 Note that even without taking action, Google might still find alternate language versions of your page, but it is usually best for you to explicitly indicate your language- or region-specific pages.
 Some example scenarios where indicating alternate pages is recommended:

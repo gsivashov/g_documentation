@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7451491
+
 Search console overview pageThe overview page shows a summary of your performance on Google Search. Visit this page to see a summary of your most important metrics and notifications, including search performance, index coverage, and mobile usability metrics. If your property has enhancements such as AMP pages or search enhancements, you will also see information about those features. Visit this page for a high-level overview of how your property is performing, and any critical issues that need to be addressed.
 OPEN OVERVIEW PAGE
 The Performance chart includes data from both Search and Discover (if you have any data for each). If you do not have any Discover data, the chart will also include preliminary Search data (very recent data).

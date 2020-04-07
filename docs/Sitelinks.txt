@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/47334
+
 SitelinksThe links shown below some of Google's search results, called sitelinks, are meant to help users navigate your site. Our systems analyze the link structure of your site to find shortcuts that will save users time and allow them to quickly find the information they're looking for.
 1: The main search result
 2: Sitelinks

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/3070196
+
 Add missing dataIf your example content is missing data, such as the year for an event, you can specify a value. Structured Data Markup Helper will add HTML markup for the value.
 You can add missing data at any time, and you can change or delete it if needed.
 Add, change, or delete missing data:

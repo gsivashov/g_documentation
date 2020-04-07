@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6340290
+
 AMP on Google Search guidelinesAll of our guidelines for making a site Google-friendly also apply to AMP. This document covers additional guidelines that are specific to AMP on Google Search. To learn more about AMP on Google Search, read our developer guide.
 Your AMP page must follow the AMP HTML specification. If you're just getting started, learn how to create your first AMP HTML page.
 Users must be able to experience the same content and complete the same actions on AMP pages as on the corresponding canonical pages, where possible.

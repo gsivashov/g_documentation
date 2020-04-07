@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2721313
+
 Creating pages with malicious behaviorDistributing content or software on your website that behaves in a way other than what a user expected is a violation of Google Webmaster Guidelines. This includes anything that manipulates content on the page in an unexpected way, downloads or executes files on a user’s computer without their consent, or does not comply with the Google Unwanted Software Policy. Google not only aims to give its users the most relevant search results for their queries, but also to keep them safe on the web.
 Some examples of malicious behavior include:
 Changing or manipulating the location of content on a page, so that when a user thinks they’re clicking on a particular link or button the click is actually registered by a different part of the page

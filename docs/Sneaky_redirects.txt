@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2721217
+
 Sneaky redirectsRedirecting is the act of sending a visitor to a different URL than the one they initially requested. There are many good reasons to redirect one URL to another, such as when moving your site to a new address, or consolidating several pages into one.
 However, some redirects deceive search engines or display content to human users that is different than that made available to crawlers. It's a violation of Google Webmaster Guidelines to redirect a user to a different page with the intent to display content other than what was made available to the search engine crawler. When a redirect is implemented in this way, a search engine might index the original page rather than follow the redirect, while users are taken to the redirect target. Like cloaking, this practice is deceptive because it attempts to display different content to users and to Googlebot, and can take a visitor somewhere other than where they expected to go.
 Some examples of sneaky redirects include:

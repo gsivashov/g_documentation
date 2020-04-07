@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2851971
+
 Tips and tricks for using Data HighlighterHere are some tips for using Data Highlighter:
 When you're creating a tag, take care to accurately highlight all of the text that you want to tag.
 Good: The Punch Brothers

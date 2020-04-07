@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/3110870
+
 Data Highlighter: Software ApplicationsYou can use Data Highlighter to tag data from a description of a software application, such as its name, publisher, reviews, and user ratings. Then Google can present your data more attractively -- and in new ways -- in search results and in other products. (Each Google product applies its own rules when deciding whether and how to display your data.)
 Software application tags
 You can use Data Highlighter to tag any of the data described in the table below. Each tag corresponds to a property in the schema.org/SoftwareApplication schema. The name of each tag is followed by the name of the schema.org property in parentheses.  Required tags are listed in bold.

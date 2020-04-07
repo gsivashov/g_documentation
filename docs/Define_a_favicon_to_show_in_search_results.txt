@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9290858
+
 Define a favicon to show in search resultsIf your site has a favicon, it can be included in Google Search results for your site:
 Implementation
 Here is how to make your site eligible for a favicon in search results:

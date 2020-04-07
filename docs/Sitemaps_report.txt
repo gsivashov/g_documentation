@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7451001
+
 Manage your sitemapsSitemaps reportNext: Split up your large sitemapsUse the Sitemaps report to tell Google about any new sitemaps for your property, to see your sitemap submission history, and to see any errors that Google encountered when parsing your submitted sitemaps.
 OPEN SITEMAPS REPORT
 What is a sitemap? Is this report for me?

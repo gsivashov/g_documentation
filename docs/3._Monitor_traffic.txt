@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6033412
+
 Move a site with no URL changes3. Monitor trafficOnce the site move starts, be ready to address any problemsNext: 4. Shut down old hostingHere are three things you can do to make sure your move is going smoothly:
 Keep an eye on the server logs on both new and old servers.
 As DNS setting propagates and the site traffic moves, you’ll notice a drop in traffic logged on the old servers and a corresponding increase in traffic on the new servers.

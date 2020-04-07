@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/174993
+
 AJAX: Frequently asked questionsThis FAQ answers the most common questions about AJAX crawling.
 When should I use _escaped_fragment_ and when should I use #! in my AJAX URLs?
 Your site should use the #! syntax in all URLs that have adopted the AJAX crawling scheme. Googlebot will not follow hyperlinks in the _escaped_fragment_ format.

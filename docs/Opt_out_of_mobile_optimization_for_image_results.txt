@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6149573
+
 Opt out of mobile optimization for image resultsGoogle is always improving search results so that users from any device get a beautiful and fast search experience. For people on mobile devices, image search results can load slowly when they tap on an image because the browser is trying to retrieve an image with larger dimensions only to then fit it inside the small mobile screen.
 To fix this, Google is improving the image search experience for some mobile users by optimizing those images that users tap to view on their mobile devices.
 How mobile image optimization works

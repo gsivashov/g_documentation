@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/34397
+
 Get your website on GoogleInclusion in Google's search results is free and easy; you don't even need to submit your site to Google. Google is a fully automated search engine that uses software known as "web crawlers" that explore the web on a regular basis to find sites to add to our index. In fact, the vast majority of sites listed in our results aren't manually submitted for inclusion, but found and added automatically when our bots crawl the web.
 Is my site on Google?
 To determine whether your site is currently included in Google's index, do a site: search for your site's URL. For example, a search for "site:wikipedia.org" returns these results.

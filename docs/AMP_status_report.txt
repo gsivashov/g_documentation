@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7450883
+
 AMP status reportThis report helps you fix errors that prevent your AMP pages from appearing in Google Search results with AMP-specific features.
 The top level view shows all AMP pages with issues found by Google on your site, grouped by issue. Click a specific issue to see issue details, including a sample list of pages affected by that issue, information about how to fix it, and a process to notify Google about your fixes.
 To see charts showing the affect of issues and fixes, visit the Status page.

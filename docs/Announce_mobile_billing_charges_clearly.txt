@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9111943
+
 Announce mobile billing charges clearlyIf your site incurs mobile usage charges, you should clearly tell your users before any charges are applied.
 If Google has detected that your site is not sufficiently informing users about mobile charges, Chrome may display a warning before the user loads a page that incurs charges.
 Here are some best practices to ensure that your users are sufficiently informed about any mobile charges that they might incur:

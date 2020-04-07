@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/3035947
+
 Opt out of display on Google Local and other Google propertiesYou can opt out of having content that Google has crawled from your site displayed on various Google properties:
 Google Shopping
 Google Flights

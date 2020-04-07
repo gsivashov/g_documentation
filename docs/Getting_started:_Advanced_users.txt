@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9429907
+
 Getting started: Advanced usersIf you've already mastered the basic tasks of maintaining a website on Google and using Search Console, this page goes into more advanced topics in managing and maintaining a website.
 Getting started
 Even though you're an advanced user, be sure that you've reviewed the SEO Starter Guide; it's a great resource for best practices for your site.

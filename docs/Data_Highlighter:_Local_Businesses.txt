@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/3106959
+
 Data Highlighter: Local BusinessesYou can use Data Highlighter to tag data about your business, such as its name, address, customer reviews, and ratings. Then Google can present your data more attractively -- and in new ways -- in search results and in other products. (Each Google product applies its own rules when deciding whether and how to display your data.)
 Local business tags
 You can use Data Highlighter to tag any of the data described in the table below. Each tag corresponds to a property in the schema.org/LocalBusiness schema. The name of each tag is followed by the name of the schema.org property in parentheses.  Required tags are listed in bold.

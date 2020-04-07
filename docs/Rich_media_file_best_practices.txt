@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/72746
+
 Rich media file best practicesWhat types of files can Google index?Google can index most types of pages and files. Here are a few details about some specific rich media types:
 General best practices
 If you do plan to use rich media on your site, here are some recommendations that can help prevent problems.

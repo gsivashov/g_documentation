@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/63756
+
 Denials for page removal or SafeSearch label requestsHere is a list of reasons why your request might be denied for cache removal, outdated content removal, search result removal, or SafeSearch label.
 Cache removal/Remove outdated content
 Cache removal or outdated content removal requests are submitted using the Remove outdated content tool for websites that you don't own, or the Removals tool for websites that you do own. Here are the various reasons why your request might have been denied:

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9131543
+
 Measure your performance on GoogleLearn how often your site appears on Google and whether people click through to your site.
 Step 1: Is your site on Google?
 If you use a site hosting service such as Squarespace or Wix, you're probably set up for search engines to find you. However, to confirm whether your site is known by Google, search for site:<your_site_URL> on Google. For example, if your site were http://www.wikipedia.org, you'd search for this: site:wikipedia.org.

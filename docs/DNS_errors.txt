@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2598813
+
 DNS errorsWhat is a DNS error?
 A DNS error means that Googlebot can't communicate with the DNS server either because the server is down, or because there’s an issue with the DNS routing to your domain.
 Specific errors you might see include:

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6033411
+
 Move a site with no URL changes2. Start the site moveOnce the new site copy is working, you’re ready to moveNext: 3. Monitor trafficThe move process is as follows.
 A. Remove any temporary blocks to crawling
 While building the new copy of a site, some webmasters use a robots.txt file to disallow all crawling by Googlebot and other crawlers, or use noindex meta tags or HTTP headers to block indexing of content. Be sure to remove any such blocks from the new copy of the site when you’re ready to start the move.

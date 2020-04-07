@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7042828
+
 What are impressions, position, and clicks?This page helps explain impressions, position values, and click data in the Search Analytics report.
 The heuristics described here—such as the visibility requirement for an item in a carousel, or the position numbering—are subject to change.
 What is an impression?

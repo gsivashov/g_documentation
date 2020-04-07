@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/66353
+
 Hidden text and linksHiding text or links in your content to manipulate Google’s search rankings can be seen as deceptive and is a violation of Google’s Webmaster Guidelines. Text (such as excessive keywords) can be hidden in several ways, including:
 Using white text on a white background
 Locating text behind an image

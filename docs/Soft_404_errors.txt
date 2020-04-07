@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/181708
+
 Soft 404 errorsWhat is a soft 404?
 A soft 404 is a URL that returns a page telling the user that the page does not exist and also a 200-level (success) code. In some cases, it might be a page with little or no content--for example, a sparsely populated or empty page.
 Why does it matter?

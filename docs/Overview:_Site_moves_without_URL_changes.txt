@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/topic/6033383
+
 Move a site with no URL changesOverview: Site moves without URL changesMove your site when there are no visible URL changesNext: 1. Set up the new hosting infrastructureThis guide shows how to minimize the impact on your Google Search performance when migrating your site's hosting infrastructure. For example, when switching hosting providers or moving to a content distribution network (CDN). This guide is only for migrations that do not affect the user-visible URL; if you are making visible URL changes, start here instead.
 Move your site
 Review FAQs and basic information about site moves. Know what to expect, and how it might affect your users and rankings.

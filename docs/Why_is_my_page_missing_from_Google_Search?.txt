@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7474347
+
 Why is my page missing from Google Search?Troubleshooting missing pages and sitesHere's how to troubleshoot and fix the most common problems when your page or site is missing from Google Search results.
 Step 1: Verify that your page or site is missing
 It sounds obvious, but first verify that your page or site is actually missing from Google's index. Many people assume that they are not on Google, when in fact their page simply appears very low in Search results.

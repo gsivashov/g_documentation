@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/3105381
+
 Tag an email templateStructured Data Markup Helper can show you how to mark up emails that contain any of the following data types:
 Event Reservations
 Flight Reservations

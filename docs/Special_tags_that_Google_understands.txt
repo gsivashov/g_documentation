@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/79812
+
 Special tags that Google understands
 Google supports both page-level meta-tags as well as inline directives to help control how your site's pages will appear in Search.
 Page-level meta tags are a great way for webmasters to provide search engines with information about their sites. Meta tags can be used to provide information to all sorts of clients, and each system processes only the meta tags they understand and ignores the rest. Meta tags are added to the <head> section of your HTML page and generally look like this:

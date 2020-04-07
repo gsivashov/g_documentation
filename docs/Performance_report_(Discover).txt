@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9216516
+
 Performance report (Discover)The Performance report for Discover shows important metrics about how your site performs in Discover. This report is visible only if your property has reached a minimum threshold of impressions in Discover.
 OPEN THE DISCOVER PERFORMANCE REPORT
 Why can't I see the report?

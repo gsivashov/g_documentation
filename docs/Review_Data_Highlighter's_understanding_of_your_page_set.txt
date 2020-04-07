@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2919560
+
 Review Data Highlighter's understanding of your page setBefore you publish a page set, consider looking through some of the pages and reviewing Data Highlighter's understanding of them. The more tagging errors you find and correct before publishing your page set, the more data that Data Highlighter can make available to Google products.
 Review Data Highlighter's understanding of your page set:
 View the page set's Publish page:

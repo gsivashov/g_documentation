@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9044175
+
 Manual Actions reportSee if your site has any manual actions issued against it and view the site's manual action history.
 If a site has a manual action, some or all of that site will not be shown in Google search results.
 OPEN THE MANUAL ACTIONS REPORT

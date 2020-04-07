@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/35181
+
 Add a website propertyHere is how to add a website property to your Search Console account. Note that you must be able to prove that you own the site (or appropriate section of that site) in order to add it to your Search Console account. You can create a property that includes an entire domain (example.com) or a property that is limited to a single branch (example.com/clothing/).
 Contents:
 Types of website properties

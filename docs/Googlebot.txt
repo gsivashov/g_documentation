@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/182072
+
 GooglebotGooglebot is the generic name for Google's web crawler. Googlebot is the general name for two different types of crawlers: a desktop crawler that simulates a user on desktop, and a mobile crawler that simulates a user on a mobile device.
 Your website will probably be crawled by both Googlebot Desktop and Googlebot Smartphone. You can identify the subtype of Googlebot by looking at the user agent string in the request. However, both crawler types obey the same product token (user agent token) in robots.txt, and so you cannot selectively target either Googlebot mobile or Googlebot desktop using robots.txt.
 If your site has been converted to mobile first on Google, then the majority of Googlebot crawl requests will be made using the mobile crawler, and a minority using the desktop crawler. For sites that haven't yet been converted, the majority of crawls will be made using the desktop crawler. In both cases, the minority crawler crawls only URLs that have already been crawled by the majority crawler.

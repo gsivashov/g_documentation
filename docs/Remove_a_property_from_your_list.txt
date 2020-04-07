@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9357768
+
 Remove a property from your list To remove a property from your property list, open the property settings page of the property to remove and click Remove property. You can add a property back, as described below, but be aware of the following:
 You will no longer receive notifications for the removed property.
 If other verified property owners remain, the only effect is to remove the property from your list; other users will not be affected.

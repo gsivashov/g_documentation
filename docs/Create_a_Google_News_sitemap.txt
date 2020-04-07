@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9606710
+
 Manage your sitemapsCreate a Google News sitemapNews sitemap guidelines
 When you create your News sitemap, follow the requirements below:
 Include URLs for articles published in the last 2 days. You can remove articles after 2 days from the News sitemap, but they remain in the index for the regular 30-day period.

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6347750
+
 Why is my site blocked from Google Search?If Google suspects your site of hosting dangerous or spammy downloads, engaging in practices that are bad or dangerous to the user, or of being hacked, you will see a warning either in Google Search results or in your browser (or both).
 Google Search results might show labels such as "This site may harm your computer" or "This site may be hacked" next to your site.
 Your browser might display an interstitial page when you try to open your page, either from a link in Google Search results or anywhere else.

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6062598
+
 About robots.txtTest your robots.txt with the robots.txt TesterNext: Submit your updated robots.txt to GoogleThe robots.txt Tester tool shows you whether your robots.txt file blocks Google web crawlers from specific URLs on your site. For example, you can use this tool to test whether the Googlebot-Image crawler can crawl the URL of an image you wish to block from Google Image Search.
 Open robots.txt Tester
 You can submit a URL to the robots.txt Tester tool. The tool operates as Googlebot would to check your robots.txt file and verifies that your URL has been blocked properly.

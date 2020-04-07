@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/6073543
+
 Secure your site with HTTPSProtect your site and your usersWhat is HTTPS?
 HTTPS (Hypertext Transfer Protocol Secure) is an internet communication protocol that protects the integrity and confidentiality of data between the user's computer and the site. Users expect a secure and private online experience when using a website. We encourage you to adopt HTTPS in order to protect your users' connections to your website, regardless of the content on the site.
 Data sent using HTTPS is secured via Transport Layer Security protocol (TLS), which provides three key layers of protection:

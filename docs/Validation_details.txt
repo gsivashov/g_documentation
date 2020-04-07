@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9216203
+
 Validation detailsAbout validation
 After you fix all instances of a specific issue on your site, you can ask Google to validate your changes. If all known instances are gone, the issue is marked as fixed in the status table and dropped to the bottom of the table. Search Console tracks the validation state of the issue as a whole, as well as the state of each instance of the issue. When all instances of the issue are gone, the issue is considered fixed. (For actual states recorded, see Issue validation state and Instance validation state.)
 More about issue lifetime...

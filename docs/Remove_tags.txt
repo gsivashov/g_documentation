@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/3106788
+
 Remove tagsIf you want to undo some or all of the tags Structured Data Markup Helper has created, you can clear tags.
 Clear a specific tag
 To view the Tag Data page:

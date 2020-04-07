@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/66358
+
 Irrelevant keywords"Keyword stuffing" refers to the practice of loading a webpage with keywords or numbers in an attempt to manipulate a site's ranking in Google search results. Often these keywords appear in a list or group, or out of context (not as natural prose). Filling pages with keywords or numbers results in a negative user experience, and can harm your site's ranking. Focus on creating useful, information-rich content that uses keywords appropriately and in context.
 Examples of keyword stuffing include:
 Lists of phone numbers without substantial added value

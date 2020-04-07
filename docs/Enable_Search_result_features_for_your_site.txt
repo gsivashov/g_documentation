@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/7358659
+
 Enable Search result features for your site
 Google supports many interesting search appearance elements that can be applied to your page in search results:
 A few of these result types are generated automatically by Google Search, but most of them can be coded for by your site, as we will explain. But first, let's talk about the general categories of Search results.

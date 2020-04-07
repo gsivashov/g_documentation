@@ -1,1 +1,3 @@
+https://support.google.com/webmasters/topic/3068649
+
 Structured Data Markup HelperUse your mouse to highlight the data on a page or in an email, then Google will show you the corresponding structured-data markup.Structured Data Markup HelperTagging datesAdd missing dataRemove tagsTag an email templateManually add markup for a propertyReview and download the markup example

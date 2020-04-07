@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/66736
+
 Link schemesAny links intended to manipulate PageRank or a site's ranking in Google search results may be considered part of a link scheme and a violation of Google’s Webmaster Guidelines. This includes any behavior that manipulates links to your site or outgoing links from your site.
 The following are examples of link schemes which can negatively impact a site's ranking in search results:
 Buying or selling links that pass PageRank. This includes exchanging money for links, or posts that contain links; exchanging goods or services for links; or sending someone a “free” product in exchange for them writing about it and including a link

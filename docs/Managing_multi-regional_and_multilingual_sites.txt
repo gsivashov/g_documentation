@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/182192
+
 Managing multi-regional and multilingual sitesIf your site offers different content to users in different languages, countries, or regions, you can optimize Google Search results for your site.
 Background:
 A multilingual website is any website that offers content in more than one language. For example, a Canadian business with English and French versions of its site. Google Search tries to find pages that match the language of the searcher.

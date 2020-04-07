@@ -1,3 +1,5 @@
+https://developers.google.com/search/docs/data-types/estimated-salary
+
 Home
 Products
 Search for Developers

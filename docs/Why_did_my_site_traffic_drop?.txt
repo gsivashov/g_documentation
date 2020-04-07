@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/9079473
+
 Why did my site traffic drop?Diagnose ranking and impression drops for your siteWhy did your page or site suffer a drop in impressions, clicks, or position on Google Search? Follow this troubleshooting guide (you'll need to be a verified user/owner of the site in Search Console).
 Top reasons for drops
 Here are the most common reasons for drops in impressions, clicks, and position on Google Search:

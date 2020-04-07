@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/topic/6080646
+
 Manage your sitemapsVideo sitemaps and video sitemap alternativesNext: Image sitemapsA video sitemap is a sitemap with additional information about video hosted on your pages. Creating a video sitemap is an excellent way to help Google find and understand the video content on your site, especially content that was recently added or that we might not otherwise discover with our usual crawling mechanisms. Google Video Sitemap is an extension to the Sitemap standard.
 While Google recommends using video sitemaps, we also support mRSS feeds.
 You should follow the video best practices to get the best results in Google Search.

@@ -1,3 +1,5 @@
+https://support.google.com/webmasters/answer/2774358
+
 Data Highlighter: ProductsYou can use Data Highlighter to tag data about a product, such its description and price. Then Google can present your data more attractively -- and in new ways -- in search results and in other products. (Each Google product applies its own rules when deciding whether and how to display your data.)
 For example, Google can display rich snippets for products on a Google search results page:
 Tagging guidelines
