@@ -3,10 +3,13 @@ https://developers.google.com/search/case-studies/stylecraze-case-study
 Home
 Products
 Search for Developers
-Guides
+Case studies
 StyleCraze improved site CTR 1.2x by leveraging How-to structured data
-1.2x CTR improvement
-100% URLs with markup observed a positive uplift on CTR
+check_circle_outline 1.2x
+CTR improvement
+check_circle_outline 100%
+URLs with markup observed a positive uplift on CTR
+check_circle_outline
 Implemented markup in 3 languages (English, Hindi, and Telugu)
 Challenge
 StyleCraze is an online magazine that focuses on the latest updates, tips, and resources in
@@ -35,4 +38,4 @@ Marketing at StyleCraze.
 What’s next for StyleCraze? They plan to implement Howto structured data to all
 how-to articles on their site.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-14.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-08.

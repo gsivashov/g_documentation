@@ -3,9 +3,11 @@ https://developers.google.com/search/case-studies/eventbrite-case-study
 Home
 Products
 Search for Developers
-Guides
+Case studies
 Eventbrite boosts traffic 100% with the events search experience on Google
-100% increase in the typical YOY growth of traffic from Google Search to event listing pages, according to Google Analytics
+check_circle_outline 100%
+increase in the typical YOY growth of traffic from Google Search to event listing pages,
+according to Google Analytics
 Challenge
 Eventbrite is the world's largest event technology platform, powering millions of events in 180+ countries and territories. Their search engine optimization (SEO) team began using structured data on their website in 2015 to boost the online visibility and discoverability of creator's events. This made them perfectly prepared to participate in Google's new search experience for events on mobile when it launched in May 2017. "We had seen some great traction through our SEO efforts," says Allen Jilo, an Eventbrite product manager. "Around the time Google started to leverage the schema.org markup for events, we noticed that events were showing up in search results in a different way. We were interested in working more closely with Google on scaling that."
 Solution
@@ -17,4 +19,4 @@ Multiple ongoing SEO projects can make it difficult to determine exactly what re
 "Within two or three weeks we started seeing a visual difference in our event search results on Google," Jilo says. "The Google Search experience definitely helps drive more eyeballs to event pages. And when those people convert, it translates to incremental ticket sales for our event creators."
 Having implemented event structured data on their primary discovery pages, Eventbrite expects to keep this functionality on any new discovery page types. "We certainly will be looking at adding event structured data on those pages as well," Jilo says. "The Google search experience for events has definitely been a positive step."
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2018-09-04.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-08.

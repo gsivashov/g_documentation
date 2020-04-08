@@ -49,8 +49,8 @@ use Microdata or RDFa syntax.
 "@context": "https://schema.org",
 "@type": "Event",
 "name": "The Adventures of Kira and Morrison",
-"startDate": "2025-07-21T19:00",
-"endDate": "2025-07-21T23:00",
+"startDate": "2025-07-21T19:00-05:00",
+"endDate": "2025-07-21T23:00-05:00",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
 "location": {
@@ -97,8 +97,8 @@ use Microdata or RDFa syntax.
 "@context": "https://schema.org",
 "@type": "Event",
 "name": "The Adventures of Kira and Morrison",
-"startDate": "2025-07-21T19:00",
-"endDate": "2025-07-21T23:00",
+"startDate": "2025-07-21T19:00-05:00",
+"endDate": "2025-07-21T23:00-05:00",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
 "location": {
@@ -147,8 +147,8 @@ Here's an example of an event that's happening online.
 "@context": "https://schema.org",
 "@type": "Event",
 "name": "The Adventures of Kira and Morrison",
-"startDate": "2025-07-21T19:00",
-"endDate": "2025-07-21T23:00",
+"startDate": "2025-07-21T19:00:00-05:00",
+"endDate": "2025-07-21T23:00-05:00",
 "eventStatus": "https://schema.org/EventScheduled",
 "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
 "location": {
@@ -188,8 +188,8 @@ Show me the example
 "@context": "https://schema.org",
 "@type": "Event",
 "name": "The Adventures of Kira and Morrison",
-"startDate": "2025-07-21T19:00",
-"endDate": "2025-07-21T23:00",
+"startDate": "2025-07-21T19:00:00-05:00",
+"endDate": "2025-07-21T23:00-05:00",
 "eventStatus": "https://schema.org/EventScheduled",
 "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
 "location": {
@@ -231,8 +231,8 @@ a physical location.
 "@context": "https://schema.org",
 "@type": "Event",
 "name": "The Adventures of Kira and Morrison",
-"startDate": "2025-07-21T19:00",
-"endDate": "2025-07-21T23:00",
+"startDate": "2025-07-21T19:00-05:00",
+"endDate": "2025-07-21T23:00-05:00",
 "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
 "location": [{
@@ -284,8 +284,8 @@ Show me the example
 "@context": "https://schema.org",
 "@type": "Event",
 "name": "The Adventures of Kira and Morrison",
-"startDate": "2025-07-21T19:00",
-"endDate": "2025-07-21T23:00",
+"startDate": "2025-07-21T19:00-05:00",
+"endDate": "2025-07-21T23:00-05:00",
 "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
 "location": [{
@@ -340,8 +340,8 @@ Here's an example of an event that's been canceled.
 "@context": "https://schema.org",
 "@type": "Event",
 "name": "The Adventures of Kira and Morrison",
-"startDate": "2025-07-21T19:00",
-"endDate": "2025-07-21T23:00",
+"startDate": "2025-07-21T19:00-05:00",
+"endDate": "2025-07-21T23:00-05:00",
 "eventStatus": "https://schema.org/EventCancelled",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "location": {
@@ -389,8 +389,8 @@ Show me the example
 "@context": "https://schema.org",
 "@type": "Event",
 "name": "The Adventures of Kira and Morrison",
-"startDate": "2025-07-21T19:00",
-"endDate": "2025-07-21T23:00",
+"startDate": "2025-07-21T19:00-05:00",
+"endDate": "2025-07-21T23:00-05:00",
 "eventStatus": "https://schema.org/EventCancelled",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "location": {
@@ -439,11 +439,11 @@ Here's an example of an event that's been rescheduled.
 "@context": "https://schema.org",
 "@type": "Event",
 "name": "The Adventures of Kira and Morrison",
-"startDate": "2025-07-21T19:00",
-"endDate": "2025-07-21T23:00",
+"startDate": "2025-07-21T19:00-05:00",
+"endDate": "2025-07-21T23:00-05:00",
 "eventStatus": "https://schema.org/EventRescheduled",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"previousStartDate": "2025-03-21T19:00",
+"previousStartDate": "2025-03-21T19:00-05:00",
 "location": {
 "@type": "Place",
 "name": "Snickerpark Stadium",
@@ -489,11 +489,11 @@ Show me the example
 "@context": "https://schema.org",
 "@type": "Event",
 "name": "The Adventures of Kira and Morrison",
-"startDate": "2025-07-21T19:00",
-"endDate": "2025-07-21T23:00",
+"startDate": "2025-07-21T19:00-05:00",
+"endDate": "2025-07-21T23:00-05:00",
 "eventStatus": "https://schema.org/EventRescheduled",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"previousStartDate": "2025-03-21T19:00",
+"previousStartDate": "2025-03-21T19:00-05:00",
 "location": {
 "@type": "Place",
 "name": "Snickerpark Stadium",
@@ -547,7 +547,7 @@ Here's an example of an event that's been rescheduled and moved online.
 "https://schema.org/EventRescheduled",
 "https://schema.org/EventMovedOnline"
 ],
-"previousStartDate": "2025-03-21T19:00",
+"previousStartDate": "2025-03-21T19:00-05:00",
 "location": {
 "@type": "VirtualLocation",
 "url": "https://operaonline.stream5.com/"
@@ -592,7 +592,7 @@ Show me the example
 "https://schema.org/EventRescheduled",
 "https://schema.org/EventMovedOnline"
 ],
-"previousStartDate": "2025-03-21T19:00",
+"previousStartDate": "2025-03-21T19:00-05:00",
 "location": {
 "@type": "VirtualLocation",
 "url": "https://operaonline.stream5.com/"
@@ -733,26 +733,22 @@ If there are several different performances across different days, each with ind
 add a separate Event element for each performance.
 Date and time guidelines
 When implementing the startDate, endDate, and previousStartDate properties, follow these date and time guidelines.
-If you don't know the start time or the event is a day long event, don't enter fake
-time or 00:00 (00:00 means a midnight start time). Instead, only specify the
-start date.
-Recommended: "startDate": "2025-07-21"
-Not recommended: "startDate": "2019-08-15T00:00:00+00:00"
-Not recommended: "startDate": "2019-07-20T00:00:00"
 How to specify timezones
-Specify the timezone by including the offset to UTC or GMT. If the event starts at 7pm on September 5 in
-New York, the startDate value would be GMT/UTC-5 during standard time
-and GMT/UTC-4 during daylight savings time. During standard time, startDate
+Specify the timezone by including the UTC or GMT time offset. If the event starts at
+7pm on September 5 in New York, the startDate value would be GMT/UTC-5 during
+standard time and GMT/UTC-4 during daylight savings time. During standard time, startDate
 value would be "2019-09-05T19:00:00-05:00" or
-"2019-09-05T19:00:00-04:00" respectively. If no timezone is provided,
-Google uses the timezone of the event's location as specified in location.
+"2019-09-05T19:00:00-04:00" respectively. If no timezone is provided, Google uses
+the timezone of the event's location as specified in location. For online
+events, the timezone is required, since there is no location information that Google can use
+to understand when the event starts.
 Best practices
 Event takes place over a range of dates: If the event takes place
 over the course of multiple days, indicate both the start and end date. Don't
 indicate the time if you don't know the time.
 Recommended
-"startDate": "2019-07-01T10:00:00",
-"endDate": "2019-07-26T17:00:00"
+"startDate": "2019-07-01T10:00:00-05:00",
+"endDate": "2019-07-26T17:00:00-05:00"
 Recommended
 "startDate": "2019-07-01",
 "endDate": "2019-07-26"
@@ -770,6 +766,9 @@ for a day-long event.
 Event start hour isn't known: If you don't know the hour for the
 start time, don't specify a granular hour. For example, you can use
 2019-08-15 as both the startDate and endDate.
+Recommended: "startDate": "2025-07-21"
+Not recommended: "startDate": "2019-08-15T00:00:00+00:00"
+Not recommended: "startDate": "2019-07-20T00:00:00"
 Examples of how Google interprets dates
 Here are some examples of how Google interprets start date and time:
 Structured data
@@ -941,7 +940,8 @@ DateTime
 The start date and start time of the event in
 ISO-8601 format.
 Add both the date and time so users can more easily find events that fit into their
-schedule.
+schedule. For online events, you must specify the timezone by including the UTC or GMT
+time offset.
 Make sure to follow the Date and time
 guidelines.
 Show example
@@ -964,7 +964,8 @@ DateTime
 The end date and end time of the event in
 ISO-8601 format.
 Use the same format as startDate. Add both the
-date and time so users can more easily find events that fit into their schedule.
+date and time so users can more easily find events that fit into their schedule. For
+online events, you must specify the timezone by including the UTC or GMT time offset.
 Make sure to follow the Date and time
 guidelines.
 Show example
@@ -1198,6 +1199,7 @@ you add previousStartDate, you must also add the eventStatus
 property and set the eventStatus to EventRescheduled.
 Make sure to follow the Date and time
 guidelines.
+For online events, you must specify the timezone by including the UTC or GMT time offset.
 For rescheduled events, the startDate property
 must only be used for the newly scheduled start date. In the (rare) case of an event
 that has been postponed and rescheduled multiple times, this field may be repeated.
@@ -1205,9 +1207,9 @@ Show example
 {
 "@context": "https://schema.org",
 "@type": "Event",
-"previousStartDate": "2020-03-21T19:00",
+"previousStartDate": "2020-03-21T19:00-05:00",
 "eventStatus": "https://schema.org/EventRescheduled",
-"startDate": "2020-07-21T19:00"
+"startDate": "2020-07-21T19:00-05:00"
 }
 Troubleshooting
 If your event isn't appearing in the event experience on Google or if you've received a
@@ -1276,4 +1278,4 @@ Not recommended: 2019-07-20T00:00:00
 Not recommended: 2019-08-15T00:00:01+00:00
 Not recommended2019-08-15T00:00:00+00:00
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-24.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-07.

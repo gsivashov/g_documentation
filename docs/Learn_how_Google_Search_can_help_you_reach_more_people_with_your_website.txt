@@ -1,0 +1,54 @@
+https://developers.google.com/search/case-studies/overview
+
+Home
+Products
+Search for Developers
+Case studies
+Learn how Google Search can help you reach more people with your website
+Saramin increased organic Search traffic 2x by investing in SEO
+"We are very happy about the traffic increase, but what’s more exciting is it also accompanied
+improvement in the quality of the traffic. We saw a 93% increase in the number of new sign
+ups and a 9% increase on the conversion. We believe this means Saramin’s optimization work was
+found delightful by our users," said Moon Tae Sung, Saramin’s SEO Manager who led the SEO
+initiative at Saramin.
+Read case study
+StyleCraze improved site CTR 1.2x by leveraging How-to structured data
+StyleCraze saw their click-through-rate (CTR) increase by 20% (from 4.4% to 5.3%) for the
+first URL. They implemented How-to structured data to five other how-to articles to
+understand how this could work for them at scale.
+Read case study
+Monster India listed jobs on Google Search, leading to 94% increase in
+organic traffic on job details pages
+"We tested Jobs on Google Search for Monster India and saw an increase in organic
+traffic as well as job applications. Based on this experience, the integration was
+implemented for Monster Gulf, Monster Philippines, Monster Singapore, Monster Malaysia, and
+the results are great across all regions. The organic traffic to website has almost doubled
+since we have launched this across countries."
+— Anshul Punhani, Chief Marketing Officer, (APAC and Gulf regions), Monster.com
+Read case study
+Jobrapido more than doubled its organic traffic
+In Spain, Nigeria, and South Africa, Jobrapido’s overall organic traffic grew by 115%, and
+they have seen a 270% increase in new user registrations from organic traffic since launch of
+the new job experience on Google Search.
+Read case study
+ZipRecruiter grows conversion rate 4.5x
+“The new Google Search experience with structured data is very valuable for us,
+especially as a tool to help job seekers find jobs on ZipRecruiter.”
+—Misha Silin, Sr. Product Manager at ZipRecruiter
+Read case study
+Eventbrite boosts traffic 100%
+"In the month following implementation of the new search experience, we saw roughly a
+100-percent increase in the typical year-over-year growth of traffic from Google Search to our
+event listing pages, according to Google Analytics." The enriched search experience
+"definitely has been helpful for driving traffic and getting additional ticket sales."
+—Allen Jilo, Product Manager at Eventbrite
+Read case study
+Rakuten increases time on site 1.5x
+Rakuten quickly saw better performance from their structured data in Google Search. Traffic
+to all Rakuten Recipe pages from search engines soared 2.7 times, and the average session
+duration was now 1.5 times longer than before. These improvements help users "match with
+more recipes, and spend more time enjoying and cooking the recipes we have," says Rakuten
+Recipe group manager Yuki Uchida.
+Read case study
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-08.

@@ -3,11 +3,15 @@ https://developers.google.com/search/case-studies/jobrapido-case-study
 Home
 Products
 Search for Developers
-Guides
+Case studies
 Jobrapido more than doubled its organic traffic though the job experience on Google Search
-115% increase in organic traffic
-270% increase of new user registrations from organic traffic since launch of the new job experience on Google Search
-15% lower bounce rate for Google visitors to job pages
+check_circle_outline 115%
+increase in organic traffic
+check_circle_outline 270%
+increase of new user registrations from organic traffic since launch of the new job experience
+on Google Search
+check_circle_outline 15%
+lower bounce rate for Google visitors to job pages
 About Jobrapido
 Jobrapido is one of the global leaders for job search engines with more than 20 million unique job
 postings every month and more than 80 million registered users. Being present in 58 countries,
@@ -29,4 +33,4 @@ rate, which means the quality of the end user journey also increased.
 international traffic”, added Rabbath. “This is just the beginning for us, and we are looking
 forward to the rollout of this search feature in other markets.”
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2018-08-27.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-08.

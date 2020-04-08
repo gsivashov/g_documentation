@@ -3,10 +3,10 @@ https://developers.google.com/search/case-studies/rakuten-case-study
 Home
 Products
 Search for Developers
-Guides
+Case studies
 Rakuten increases time on site 1.5x with the recipe search experience on Google
-2.7X more traffic from search engines
-1.5X increase in session duration
+check_circle_outline 2.7X more traffic from search engines
+check_circle_outline 1.5X increase in session duration
 Challenge
 One of the largest IT companies in Japan, Rakuten provides over 70 services, including e-commerce, FinTech, and loyalty programs. Rakuten Recipe lets home chefs post and share their own recipes and menus on a website, a native app, and the Google Assistant. Launched in 2010, the platform has over 14 million active monthly users who enjoy access to about 1.5 million recipes and menus. "We try to provide a good user experience, as well as the excitement and enjoyment of cooking through learning from others," says Rakuten Recipe group manager Yuki Uchida.
 Rakuten Recipe began using structured data in 2012. Two years later, they expanded the number of available structured data categories to precisely match people with the recipes that would most interest them. They collaborated with Google Search in 2017 to make their structured data even more useful.
@@ -17,4 +17,4 @@ Result
 The IT giant quickly saw better performance from their structured data in Google Search. Traffic to all Rakuten Recipe pages from search engines soared 2.7 times, and the average session duration was now 1.5 times longer than before. These improvements help users "match with more recipes, and spend more time enjoying and cooking the recipes we have," Uchida says.
 Looking ahead, Rakuten is considering expanding their abilities to match users with recipes, not only through search, but through voice guidance as well. The goal, Uchida adds, is "a seamless experience across devices and applications, while still allowing users to experience the enjoyment and motivation of finding and cooking great recipes."
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2018-10-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-08.
