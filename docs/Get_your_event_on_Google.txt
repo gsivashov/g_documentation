@@ -5,7 +5,8 @@ Products
 Search for Developers
 Reference
 Get your event on Google
-On March 17, 2020, we added several optional properties: eventStatus,
+We added several optional properties: organizer,
+eventStatus,
 eventAttendanceMode, and
 previousStartDate. Due to COVID-19, we
 encourage you to add these new properties so people can understand the status of your event
@@ -82,6 +83,11 @@ use Microdata or RDFa syntax.
 "performer": {
 "@type": "PerformingGroup",
 "name": "Kira and Morrison"
+},
+"organizer": {
+"@type": "Organization",
+"name": "Kira and Morrison Music",
+"url": "https://kiraandmorrisonmusic.com"
 }
 }
 </script>
@@ -130,6 +136,11 @@ use Microdata or RDFa syntax.
 "performer": {
 "@type": "PerformingGroup",
 "name": "Kira and Morrison"
+},
+"organizer": {
+"@type": "Organization",
+"name": "Kira and Morrison Music",
+"url": "https://kiraandmorrisonmusic.com"
 }
 }
 </script>
@@ -172,6 +183,11 @@ Here's an example of an event that's happening online.
 "performer": {
 "@type": "PerformingGroup",
 "name": "Kira and Morrison"
+},
+"organizer": {
+"@type": "Organization",
+"name": "Kira and Morrison Music",
+"url": "https://kiraandmorrisonmusic.com"
 }
 }
 </script>
@@ -213,6 +229,11 @@ Show me the example
 "performer": {
 "@type": "PerformingGroup",
 "name": "Kira and Morrison"
+},
+"organizer": {
+"@type": "Organization",
+"name": "Kira and Morrison Music",
+"url": "https://kiraandmorrisonmusic.com"
 }
 }
 </script>
@@ -268,6 +289,11 @@ a physical location.
 "performer": {
 "@type": "PerformingGroup",
 "name": "Kira and Morrison"
+},
+"organizer": {
+"@type": "Organization",
+"name": "Kira and Morrison Music",
+"url": "https://kiraandmorrisonmusic.com"
 }
 }
 </script>
@@ -321,6 +347,11 @@ Show me the example
 "performer": {
 "@type": "PerformingGroup",
 "name": "Kira and Morrison"
+},
+"organizer": {
+"@type": "Organization",
+"name": "Kira and Morrison Music",
+"url": "https://kiraandmorrisonmusic.com"
 }
 }
 </script>
@@ -373,6 +404,11 @@ Here's an example of an event that's been canceled.
 "performer": {
 "@type": "PerformingGroup",
 "name": "Kira and Morrison"
+},
+"organizer": {
+"@type": "Organization",
+"name": "Kira and Morrison Music",
+"url": "https://kiraandmorrisonmusic.com"
 }
 }
 </script>
@@ -422,6 +458,11 @@ Show me the example
 "performer": {
 "@type": "PerformingGroup",
 "name": "Kira and Morrison"
+},
+"organizer": {
+"@type": "Organization",
+"name": "Kira and Morrison Music",
+"url": "https://kiraandmorrisonmusic.com"
 }
 }
 </script>
@@ -473,6 +514,11 @@ Here's an example of an event that's been rescheduled.
 "performer": {
 "@type": "PerformingGroup",
 "name": "Kira and Morrison"
+},
+"organizer": {
+"@type": "Organization",
+"name": "Kira and Morrison Music",
+"url": "https://kiraandmorrisonmusic.com"
 }
 }
 </script>
@@ -523,6 +569,11 @@ Show me the example
 "performer": {
 "@type": "PerformingGroup",
 "name": "Kira and Morrison"
+},
+"organizer": {
+"@type": "Organization",
+"name": "Kira and Morrison Music",
+"url": "https://kiraandmorrisonmusic.com"
 }
 }
 </script>
@@ -569,6 +620,11 @@ Here's an example of an event that's been rescheduled and moved online.
 "performer": {
 "@type": "PerformingGroup",
 "name": "Kira and Morrison"
+},
+"organizer": {
+"@type": "Organization",
+"name": "Kira and Morrison Music",
+"url": "https://kiraandmorrisonmusic.com"
 }
 }
 </script>
@@ -614,6 +670,11 @@ Show me the example
 "performer": {
 "@type": "PerformingGroup",
 "name": "Kira and Morrison"
+},
+"organizer": {
+"@type": "Organization",
+"name": "Kira and Morrison Music",
+"url": "https://kiraandmorrisonmusic.com"
 }
 }
 </script>
@@ -1174,6 +1235,20 @@ a ticket offering admittance to that specific event to any user from the general
 public.
 Be a link that a user could click on the web page that contains the event.
 Be followable by the Googlebot (not blocked by robots.txt).
+organizer
+Organization
+or Person
+The person or organization that is hosting the event. This is especially important for
+online events, where there isn't any venue information. If you include organizer,
+we encourage you to add the following properties:
+organizer.name
+organizer.url
+organizer.name
+Text
+The name of the person or organization that's hosting the event.
+organizer.url
+URL
+The event host's domain URL.
 performer
 Person
 The participants performing at the event, such as artists and comedians. Use a nested
@@ -1278,4 +1353,4 @@ Not recommended: 2019-07-20T00:00:00
 Not recommended: 2019-08-15T00:00:01+00:00
 Not recommended2019-08-15T00:00:00+00:00
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-07.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-14.

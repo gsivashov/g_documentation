@@ -7,8 +7,8 @@ Note: If a photo or information shows up in Google search results, it just means
 How to contact a webmaster
 There are several ways to contact the owner of a site:
 Contact us link: Find a “Contact us” link or an email address for the webmaster. This information is often on the site's homepage.
-Find contact information using Whois: You can perform a Whois ("who is?") search for the site owner using Google. Go to google.com and search for whois www.example.com. The email address to contact the webmaster can often be found under "Registrant Email" or "Administrative Contact."
-Contact the site's hosting company: The Whois search result usually includes information about who hosts the website. If you're unable to reach the webmaster, try contacting the site's hosting company.
+Find contact information using Whois: You can perform a Whois (who is?) search for the site owner using Google. Go to google.com and search for whois www.example.com. The email address to contact the webmaster can often be found under "Registrant Email" or "Administrative Contact."
+Contact the site's hosting company: The Whois search result usually includes information about who hosts the website. If you're unable to reach the webmaster, try to contact the site's hosting company.
 If the webmaster has already made the changes you requested to a site that appears in our search results, you can ask that we remove outdated information by sending a webpage removal request.
 Was this helpful?How can we improve it?YesNoSubmit
 true

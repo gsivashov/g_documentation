@@ -95,13 +95,11 @@ A simple tool to help Google extract data from template pages on your site.
 Suggested use: If your site has many pages with templated data (for example, bus routes or event schedules) and you can't use structured data for some reason, you can use this tool to help Google extract similar data from identically coded pages. You must retrain Google every time you change the design of the page.
 Useful for: Site owners on basic site hosting services [Documentation]
 Messages report
-See messages sent to your properties.
+See messages sent to your properties before May 23, 2019. For later messages, use the new message panel.
 Crawl rate settings
 Lower Google's crawling traffic to your site.
 Suggested use: Use only if Google seems to be overloading your site with crawling requests.
 Useful for: Website owners, Advanced SEOs [Documentation]
-Email preferences
-Specify whether or not Search Console should send informational or alert emails to you about your properties. [Documentation]
 Web tools
 Various other tools that might be useful for your site.
 Was this helpful?How can we improve it?YesNoSubmit
