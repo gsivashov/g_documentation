@@ -1,0 +1,858 @@
+https://developers.google.com/search/docs/data-types/job-posting
+
+Home
+Products
+Search for Developers
+Reference
+Add structured data to job postings
+Due to COVID-19, Google has seen more job
+seeker interest in work-from-home and remote job opportunities. We encourage you to
+mark up your work from home jobs.
+You can improve the job seeking experience by adding job posting structured data to your job
+posting web pages. Adding structured data makes your job postings eligible to appear in a special
+user experience in Google Search results. You can also integrate with Google by
+using a third party job site.
+Note: The actual appearance in search results might be different. Preview the structured data
+in the Rich Results Test for the most up-to-date layout.
+For employers and job content site owners, this feature brings many benefits:
+More interactive results: Your postings can be eligible to be displayed in
+the job search experience on Google, featuring your logo, reviews, ratings, and job details.
+More, motivated applicants: The new user experience enables job seekers to
+filter by various criteria like location or job title, meaning you’re more likely to attract
+applicants who are looking exactly for that job.
+Increased chances of discovery and conversion: Job seekers will have a
+new avenue to interact with your postings and click through to your site.
+Does your site provide salary estimates? Add Estimated salary structured data.
+Does your site provide reviews about other employers? Add Employer Aggregate Rating structured data.
+Region availability
+We are excited to bring the job search experience on Google to more regions around the world. The experience is currently available in the following regions.
+List of region availability
+Asia: Available in the following countries:
+Bangladesh
+Hong Kong
+India
+Indonesia
+Japan
+Kazakhstan
+Kyrgyzstan
+Malaysia
+Pakistan
+Philippines
+Singapore
+South Korea
+Sri Lanka
+Taiwan
+Thailand
+Uzbekistan
+Vietnam
+Europe: Available in the following countries:
+Belarus
+France
+Germany
+Italy
+Russia
+Spain
+Switzerland
+United Kingdom
+Latin America: Available in the entire region
+Middle East and North Africa: Available in the following countries:
+Algeria
+Bahrain
+Egypt
+Iraq
+Jordan
+Kuwait
+Lebanon
+Libya
+Morocco
+Oman
+Palestine
+Qatar
+Saudi Arabia
+Tunisia
+United Arab Emirates
+North America: Available in the entire region
+Sub-Saharan Africa: Available in the entire region
+Examples
+Standard job posting
+Here's an example of an individual job posting using JSON-LD code.
+<html>
+<head>
+<title>Software Engineer</title>
+<script type="application/ld+json">
+{
+"@context" : "https://schema.org/",
+"@type" : "JobPosting",
+"title" : "Software Engineer",
+"description" : "<p>Google aspires to be an organization that reflects the globally diverse audience that our products and technology serve. We believe that in addition to hiring the best talent, a diversity of perspectives, ideas and cultures leads to the creation of better products and services.</p>",
+"identifier": {
+"@type": "PropertyValue",
+"name": "Google",
+"value": "1234567"
+},
+"datePosted" : "2017-01-18",
+"validThrough" : "2017-03-18T00:00",
+"employmentType" : "CONTRACTOR",
+"hiringOrganization" : {
+"@type" : "Organization",
+"name" : "Google",
+"sameAs" : "http://www.google.com",
+"logo" : "http://www.example.com/images/logo.png"
+},
+"jobLocation": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "1600 Amphitheatre Pkwy",
+"addressLocality": ", Mountain View",
+"addressRegion": "CA",
+"postalCode": "94043",
+"addressCountry": "US"
+}
+},
+"baseSalary": {
+"@type": "MonetaryAmount",
+"currency": "USD",
+"value": {
+"@type": "QuantitativeValue",
+"value": 40.00,
+"unitText": "HOUR"
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head>
+<title>Software Engineer</title>
+<script type="application/ld+json">
+{
+"@context" : "https://schema.org/",
+"@type" : "JobPosting",
+"title" : "Software Engineer",
+"description" : "<p>Google aspires to be an organization that reflects the globally diverse audience that our products and technology serve. We believe that in addition to hiring the best talent, a diversity of perspectives, ideas and cultures leads to the creation of better products and services.</p>",
+"identifier": {
+"@type": "PropertyValue",
+"name": "Google",
+"value": "1234567"
+},
+"datePosted" : "2017-01-18",
+"validThrough" : "2017-03-18T00:00",
+"employmentType" : "CONTRACTOR",
+"hiringOrganization" : {
+"@type" : "Organization",
+"name" : "Google",
+"sameAs" : "http://www.google.com",
+"logo" : "http://www.example.com/images/logo.png"
+},
+"jobLocation": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "1600 Amphitheatre Pkwy",
+"addressLocality": ", Mountain View",
+"addressRegion": "CA",
+"postalCode": "94043",
+"addressCountry": "US"
+}
+},
+"baseSalary": {
+"@type": "MonetaryAmount",
+"currency": "USD",
+"value": {
+"@type": "QuantitativeValue",
+"value": 40.00,
+"unitText": "HOUR"
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Work from home job posting
+Here's an example of a Work from home job posting using JSON-LD code.
+<html>
+<head>
+<title>Software Engineer</title>
+<script type="application/ld+json">
+{
+"@context" : "https://schema.org/",
+"@type" : "JobPosting",
+"title" : "Software Engineer",
+"description" : "<p>Google aspires to be an organization that reflects the globally diverse audience that our products and technology serve. We believe that in addition to hiring the best talent, a diversity of perspectives, ideas and cultures leads to the creation of better products and services.</p>",
+"identifier": {
+"@type": "PropertyValue",
+"name": "Google",
+"value": "1234567"
+},
+"datePosted" : "2017-01-18",
+"validThrough" : "2017-03-18T00:00",
+"applicantLocationRequirements": {
+"@type": "Country",
+"name": "USA"
+},
+"jobLocationType": "TELECOMMUTE",
+"employmentType": "FULL_TIME",
+"hiringOrganization" : {
+"@type" : "Organization",
+"name" : "Google",
+"sameAs" : "http://www.google.com",
+"logo" : "http://www.example.com/images/logo.png"
+},
+"baseSalary": {
+"@type": "MonetaryAmount",
+"currency": "USD",
+"value": {
+"@type": "QuantitativeValue",
+"value": 40.00,
+"unitText": "HOUR"
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head>
+<title>Software Engineer</title>
+<script type="application/ld+json">
+{
+"@context" : "https://schema.org/",
+"@type" : "JobPosting",
+"title" : "Software Engineer",
+"description" : "<p>Google aspires to be an organization that reflects the globally diverse audience that our products and technology serve. We believe that in addition to hiring the best talent, a diversity of perspectives, ideas and cultures leads to the creation of better products and services.</p>",
+"identifier": {
+"@type": "PropertyValue",
+"name": "Google",
+"value": "1234567"
+},
+"datePosted" : "2017-01-18",
+"validThrough" : "2017-03-18T00:00",
+"employmentType" : "CONTRACTOR",
+"hiringOrganization" : {
+"@type" : "Organization",
+"name" : "Google",
+"sameAs" : "http://www.google.com",
+"logo" : "http://www.example.com/images/logo.png"
+},
+"jobLocation": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "1600 Amphitheatre Pkwy",
+"addressLocality": ", Mountain View",
+"addressRegion": "CA",
+"postalCode": "94043",
+"addressCountry": "US"
+}
+},
+"baseSalary": {
+"@type": "MonetaryAmount",
+"currency": "USD",
+"value": {
+"@type": "QuantitativeValue",
+"value": 40.00,
+"unitText": "HOUR"
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Build, test, release structured data
+Structured data is a standardized format for providing information about a page and classifying the page
+content. If you’re new to structured data, you can learn more about
+how structured data works.
+Here's an overview of how to build, test, and release structured data. For a step-by-step guide
+on how to add structured data to a web page, check out the
+structured
+data codelab.
+Ensure that Googlebot can crawl your job posting web pages (not protected by a robots.txt file or robots meta tag).
+Ensure that your host load settings allow for
+frequent crawls.
+If you have several copies of the same job posting on your site hosted under different
+URLs, use canonical URLs
+on each copy of the page.
+Add the required and recommended properties. For information about where to put
+structured data on the page, watch JSON-LD structured
+data: Where to insert on the page.
+Follow the guidelines.
+Validate your code using the
+Rich Results Test.
+You can also preview how your structured data may look on Google Search.
+Deploy a few pages that include your structured data and use the URL Inspection tool to test how Google sees the page. Be sure that your page is
+accessible to Google and not blocked by a robots.txt file, the noindex tag, or
+login requirements. If the page looks okay, you can
+ask Google to
+recrawl your URLs.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+Keep Google informed by doing one of the following actions:
+For job posting URLs, we recommend using the Indexing API instead of sitemaps because the Indexing API prompts Googlebot to crawl your page sooner than updating the sitemap and pinging Google. However, we still recommend submitting a sitemap for coverage of your entire site.
+Use the Indexing API to notify Google of a new URL to crawl or that content at a URL has been updated.
+If you're not using the Indexing API, submit a new sitemap to Google by sending a GET
+request to the following URL:
+http://www.google.com/ping?sitemap=location_of_sitemap
+For example:
+http://www.google.com/ping?sitemap=http://www.example.com/sitemap.xml
+We ingest the entire sitemap and recrawl the pages with lastmod times that
+are more recent than the last time those pages were crawled.
+Remove a job posting
+Jobs that are no longer open for applications must be expired in one of
+the following ways. Failure to take timely action on expired jobs may result in a manual action.
+To remove a job posting that is no longer available, follow the steps below:
+Make sure your page is removed by doing one of the following actions:
+Ensure the validThrough property is populated and in the past.
+Remove the page entirely (so that requesting it returns a 404 or 410 status code).
+Remove JobPosting structured data from the page.
+Keep Google informed by doing one of the following actions:
+For job posting URLs, we recommend using the Indexing API instead of sitemaps because the Indexing API prompts Googlebot to crawl your page sooner than removing the URL from the sitemap and pinging Google. However, we still recommend submitting a sitemap for coverage of your entire site.
+Use the Indexing API to request removal of a job posting URL from the Google Search index.
+If you're not using the Indexing API, submit a new sitemap to Google by sending a GET
+request to the following URL:
+http://www.google.com/ping?sitemap=location_of_sitemap
+For example:
+http://www.google.com/ping?sitemap=http://www.example.com/sitemap.xml
+We ingest the entire sitemap and recrawl the pages with lastmod times that
+are more recent than the last time those pages were crawled.
+Mark up work from home jobs
+Given the recent COVID-19 impact on businesses and employment, Google has seen
+more job seeker
+interest in work-from-home and remote job opportunities. To make it easier for job seekers
+to discover these relevant employment options, we encourage you to add structured data to your
+work from home jobs.
+Here's how work from home jobs can appear in Google Search:
+You can also try it out in Google Search:
+search Work from home jobs
+Feature availability: The actual appearance in search results might be
+different, and you may not see work from home jobs appearing in your region right away. To make
+your work from home jobs eligible for display in the feature, mark
+up your work from home jobs in advance.
+There are three properties that help Google understand which jobs
+can be performed from home:
+jobLocationType: Use this property to
+specify that the job is a Work from home job.
+applicantLocationRequirements:
+Use this property to specify geographic location(s) in which employees may be located for
+work from home jobs. At least one country is required.
+jobLocation: Use this property to specify where
+the job can be physically performed. You don't need to use this property if there isn't a
+physical location where a job can be performed (for example, an office or construction
+site).
+Here are some common scenarios in which you should mark up work from home jobs:
+The job can be performed at home, but there are geographical restrictions for
+where the employee can be located. The employee doesn't have to go to a physical
+job location or office. Use applicantLocationRequirements and
+jobLocationType.
+"applicantLocationRequirements": {
+"@type": "Country",
+"name": "USA"
+},
+"jobLocationType": "TELECOMMUTE"
+The job can be performed at a physical work site located in Detroit, MI, or at home in
+the US. Use jobLocation and jobLocationType.
+"jobLocation": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressLocality": "Detroit",
+"addressRegion": "MI",
+"addressCountry": "US"
+}
+},
+"jobLocationType": "TELECOMMUTE"
+The job can be performed at a physical location in Detroit or at home in either
+Michigan or Texas. Use jobLocation, jobLocationType, and applicantLocationRequirements.
+"jobLocation": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "555 Clancy St",
+"addressLocality": "Detroit",
+"addressRegion": "MI",
+"postalCode": "48201",
+"addressCountry": "US"
+}
+},
+"applicantLocationRequirements": [{
+"@type": "State",
+"name": "Michigan, USA"
+},{
+"@type": "State",
+"name": "Texas, USA"
+}],
+"jobLocationType": "TELECOMMUTE"
+Update your company logo
+Google uses the same logo for your job postings as the image shown in your company’s Knowledge
+Graph card. You can suggest
+a change if you prefer a different logo, or else indicate your preferred logo (for both your
+company’s Knowledge Graph card and its job postings)
+using structured
+data.
+Note: In most cases, Google will review your request within a few
+days.
+If you have a third-party job site, you can provide a different logo for a given organization
+than the image shown in the organization's Knowledge Graph card. Google will pick the best logo
+to display in Search results, whether it's the Knowledge Graph logo or the
+hiringOrganization logo. The logo property is only eligible to be shown on your
+job site, and isn't treated as the canonical logo for the organization. For more information,
+see hiringOrganization.
+Monitor performance in Search
+You can understand how users interact with your job posting by using the following Google tools:
+Use the
+Performance Report in Search Console to show
+job listing or detail
+view data for a given job posting rich result. You can automatically pull these results with the
+Search Console API.
+Use our custom
+UTM parameters to track impressions after a user is directed from the job detailed page to your
+site. You can use the parameters with
+Google Analytics
+or other third-party tracking tools:
+utm_campaign=google_jobs_apply
+utm_source=google_jobs_apply
+utm_medium=organic
+If you're experiencing unexpected fluctuations or inconsistencies in your traffic, use the
+troubleshooter to identify and resolve the issues.
+Guidelines
+You must follow these guidelines to be eligible to appear in the Google job search experience.
+Warning: If your site violates one or more of these guidelines, then Google may take manual action against it. Once you have remedied the problem, you can submit your site for reconsideration.
+Technical guidelines
+Content guidelines
+Webmaster guidelines
+General structured data guidelines
+Technical guidelines
+Put structured data on the most detailed leaf page possible. Don't add structured data to
+pages intended to present a list of jobs (for example, search result pages). Instead, apply
+structured data to the most specific page describing a single job with its
+relevant details.
+Add a JobPosting property for each job posting that you want to advertise. The structured
+data should appear on the same page as the job description that job seekers can read in their
+browser.
+Most properties should only occur once in your job posting web page, unless the description
+specifically indicates that it can be added more than once.
+If you choose to use sitemaps to keep Google informed of changes to job posting URLs, follow the general sitemap guidelines. In addition, the following sitemap guidelines apply to job
+posting URLs.
+Make sure Googlebot can access the URLs in the sitemap. Be sure that the URLs you include in the
+sitemap are not behind a firewall or disallowed by your robots.txt file.
+Use as accurate a time as possible for the <lastmod> (sitemap),
+<pubDate> (RSS), or <updated> (Atom) values to indicate
+when the page was added or changed. The value should be the last time that the content at the
+URL changed. It's important that you use accurate times; crawl bandwidth is limited and accurate
+times help us avoid re-crawling pages that haven't changed. In addition, the more Google has to
+crawl your pages, the more load will be placed on your servers.
+Don't include search results pages, list pages, or other dynamic pages in the sitemap.
+The URLs in the sitemap should include
+the canonical page
+for each job posting.
+Content guidelines
+Job postings must be valid. A valid job posting allows a job seeker to
+apply for an available role at a company or agency directly online.
+Valid examples
+Floor manager at a particular department store. Company is valid, and it's a named role.
+Checkout associate for a particular grocery chain. Company is valid, and it’s a general role.
+Clerical job for a placement agency. Although the final company is unspecified, the agency is the hiring party and is described.
+Recruiter ad with an apply flow where the company is unspecified. This is acceptable because
+the role is well-defined and the company does exist, even if it isn't revealed. In this case,
+the hiringOrganization property must be blank.
+A restaurant hiring kitchen staff in a single posting. Though the job titles may include positions such as line
+cooks, dish washers, waiters, the overall role is the same and they’re subject to the same
+hiring process.
+A barista posting that is always hiring. Blanket postings for "always hiring" jobs are acceptable.
+Invalid examples
+Career fair invitations
+Recruiter advertisements without a way to apply
+Resume drops that collect candidate data, but aren’t currently hiring
+Advertisements for your business disguised as job listings, such as broad career pages or
+other offers for services
+Job postings that require payment to interact with them because job seekers can’t apply directly online
+Providing false links that ask job seekers to apply that are substantially different from what job seekers would
+see browsing your website
+Job postings for a job that is no longer hiring for the position (expired jobs)
+Job postings that are seeking employment instead of offering employment
+Job postings that direct users to a list of jobs
+Job postings must fairly represent the hiring organization and job to be performed by the
+applicant.
+Examples of misrepresentation
+Here are some examples of misrepresentation:
+Jobs or content that represent the company in a way that is not accurate, realistic, or
+truthful.
+Jobs listings for fake or non-existent jobs. This includes jobs misrepresenting themselves
+for the purposes of defrauding applicants.
+The title of a job listing and the description of a listing aren't related and
+attempt to trick applicants into viewing or applying for a job.
+False structured data around the company or location that make the job appear close to job seekers.
+Remote location properties for jobs that don't allow for 100% remote work for all applicants.
+Job listings that require registration or login to view the full content of the posting.
+If Google receives a complaint that content in
+a job listing may violate the law (for example, if a trademark or copyright owner reports a job listing that is using their content without permission), we will handle it according to our removal policies.
+Don’t use obscene, profane, or offensive language.
+Structured data type definitions
+This section describes the structured data types related to job postings.
+You must include the required properties for your content to be eligible for display in the job
+experience on Google Search. You can also include the recommended properties to add more
+information about your content, which could provide a better user experience.
+JobPosting
+The full definition of JobPosting is available at
+schema.org/JobPosting.
+Required properties
+datePosted
+Date
+The original date that employer posted the job in
+ISO 8601 format. For
+example, "2017-01-24" or "2017-01-24T19:33:17+00:00".
+"datePosted": "2016-02-18"
+description
+Text
+The full description of the job in HTML format.
+The description should be a complete representation of the job, including
+job responsibilities, qualifications, skills, working hours, education requirements, and
+experience requirements. The description can't be the same as the title.
+Additional guidelines:
+You must format the description in HTML.
+At minimum, add paragraph breaks using <br>, <p>,
+or \n.
+The feature recognizes the following HTML tags: <p>,
+<ul>, and <li>.
+The feature doesn't recognize header and character-level tags, such as
+<h1>, <strong>, and <em>.
+While the tags won't affect the formatting in the feature, you can safely include them on
+the page.
+hiringOrganization
+Organization
+The organization offering the job position. This should be the name of the company (for
+example, "Starbucks, Inc"), and not the specific location that is hiring (for example,
+"Starbucks on Main Street"). For example:
+"hiringOrganization": {
+"@type": "Organization",
+"name": "MagsRUs Wheel Company",
+"sameAs": "http://www.magsruswheelcompany.com"
+}
+Logos on third-party job sites
+If you have a third-party job site, you can provide a different logo for a given
+organization than the image shown in the organization's Knowledge Graph card. To request a
+different logo for a hiring organization, add the
+logo property to the hiringOrganization array. Make sure that you follow the
+logo image guidelines and
+Company logo guidelines. For example:
+"hiringOrganization": {
+"@type": "Organization",
+"name": "MagsRUs Wheel Company",
+"sameAs": "http://www.magsruswheelcompany.com",
+"logo": "http://www.example.com/images/logo.png"
+}
+jobLocation
+Place
+The physical location(s) of the business where the employee will report to work (such as
+an office or worksite), not the location where the job was posted. Include as many properties
+as possible. The more properties you provide, the higher quality the job posting is to our
+users. For example:
+"jobLocation": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "555 Clancy St",
+"addressLocality": "Detroit",
+"addressRegion": "MI",
+"postalCode": "48201",
+"addressCountry": "US"
+}
+}
+Multiple physical locations
+If the job has multiple locations, add multiple jobLocation properties in an array.
+Google will choose the best location to display based on the job seeker's query.
+Remote jobs
+For jobs in which the employee may or must work remotely 100% of the time, you must use
+jobLocationType. The jobLocation
+property isn't required if
+applicantLocationRequirements
+is present.
+title
+Text
+The title of the job (not the title of the posting). For example, "Software Engineer" or
+"Barista". For example:
+"title": "Software Engineer"
+Best practices:
+This property should be the title of the job only.
+Don't include job codes, addresses, dates, salaries, or company names in the title property.
+Not recommended: Apply now for IT job -FRENCH speaker in Bucharest
+Recommended: Market Specialist, French speaker
+Provide concise, readable titles.
+Don't overuse special characters such as "!" and "*". Abusing special characters might
+cause your structured data to be considered as
+Spammy Structured Markup. Numbers and characters such as "/" and "-" are acceptable.
+Not recommended: *** WAREHOUSE HIRING NOW!! ON A BUS ROUTE!! ***
+Recommended: Shipping and Receiving Warehouse Associate
+Don't use name instead of title. The properties title
+and name aren't interchangeable.
+If you're a third party job site, don't attempt to modify the job title to follow the
+guidelines above, as it can make the title unreadable. Instead, provide the title as you
+received it from the employer.
+validThrough
+DateTime
+Note: This is required for job postings that have an expiration date.
+The date when the job posting will expire in
+ISO 8601 format.
+For example, "2017-02-24" or "2017-02-24T19:33:17+00:00".
+For example:
+"validThrough": "2017-03-18T00:00"
+If a job posting never expires, or you do not know when the job will expire, do not
+include this property. If the job is filled before the expiration date occurs, remove the
+job posting.
+Recommended properties
+applicantLocationRequirements
+AdministrativeArea
+The geographic location(s) in which employees may be located for to be eligible for the
+Work from home job. The job
+description must clearly state that the applicant may be located in certain geographical
+location(s). This property is only recommended if applicants may be located in one or more
+geographic locations and the job may or must be 100% remote.
+The following example suggests a job that can be done remotely anywhere within the United
+States:
+"applicantLocationRequirements": {
+"@type": "Country",
+"name": "USA"
+},
+"jobLocationType": "TELECOMMUTE"
+The following example suggests a job can either be done remotely from the country of
+Canada or executed at a physical location in Detroit, MI:
+"jobLocation": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "555 Clancy St",
+"addressLocality": "Detroit",
+"addressRegion": "MI",
+"postalCode": "48201",
+"addressCountry": "US"
+}
+},
+"applicantLocationRequirements": {
+"@type": "Country",
+"name": "Canada"
+},
+"jobLocationType": "TELECOMMUTE"
+baseSalary
+MonetaryAmount
+The actual base salary for the job, as provided by the employer (not an estimate).
+Note: Only employers should provide
+baseSalary. If you're a third party job site, you can provide a
+salary estimate for an occupation type using the Occupation type.
+For the unitText of
+QuantitativeValue, use one of the
+following case-sensitive values:
+"HOUR"
+"DAY"
+"WEEK"
+"MONTH"
+"YEAR"
+For example:
+"baseSalary": {
+"@type": "MonetaryAmount",
+"currency": "USD",
+"value": {
+"@type": "QuantitativeValue",
+"value": 40.00,
+"unitText": "HOUR"
+}
+}
+To specify a salary range, define a minValue and a maxValue, rather
+than a single value. For example:
+"baseSalary": {
+"@type": "MonetaryAmount",
+"currency": "USD",
+"value": {
+"@type": "QuantitativeValue",
+"minValue": 40.00,
+"maxValue": 50.00,
+"unitText": "HOUR"
+}
+}
+employmentType
+Text
+Type of employment. For example:
+"employmentType": "CONTRACTOR"
+Choose one or more of the following case-sensitive values:
+"FULL_TIME"
+"PART_TIME"
+"CONTRACTOR"
+"TEMPORARY"
+"INTERN"
+"VOLUNTEER"
+"PER_DIEM"
+"OTHER"
+You can include more than one employmentType property. For example:
+"employmentType": ["FULL_TIME", "CONTRACTOR"]
+identifier
+PropertyValue
+The hiring organization's unique identifier for the job.
+For example:
+"identifier": {
+"@type": "PropertyValue",
+"name": "MagsRUs Wheel Company",
+"value": "1234567"
+}
+jobLocationType
+Text
+Set this property with the value TELECOMMUTE for jobs in which the employee may
+or must work remotely 100% of the time (from home or another location of their choosing).
+In addition to adding jobLocationType, the job description must clearly state
+that the job is 100% remote. The jobLocationType property is required if the
+job is 100% remote.
+Requirements
+Jobs marked as TELECOMMUTE must be fully remote. Don't mark up jobs that
+allow occasional work-from-home, jobs for which remote work is a negotiable benefit, or
+have other arrangements that are not 100% remote. The "gig economy" nature of a job
+doesn't imply that it is or is not remote.
+You must specify a minimum of one country from which applicants are eligible to work,
+using
+applicantLocationRequirements
+(preferred), or a default to the
+country of a jobLocation (provided there is an option to work at a physical
+location as well). If a remote job doesn't contain
+applicantLocationRequirements, Google shows the job to anyone in the
+country specified in jobLocation.
+The following example shows that the employee can physically report to work at a job
+site located in Tucson, AZ OR can work remotely within the US:
+"jobLocation": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressLocality": "Tucson",
+"addressRegion": "AZ",
+"addressCountry": "US"
+}
+},
+"jobLocationType": "TELECOMMUTE"
+Google continues to support TELECOMMUTE as an
+additionalProperty of jobLocation. While we don't have immediate
+plans to deprecate additionalProperty, we encourage the use of the new schema
+where possible.
+Troubleshooting
+If your job posting isn't appearing in the job search results or if you've received
+a manual action for
+Spammy
+Structured Markup in Search Console, try to resolve the most common issues listed below.
+If you're still experiencing issues, make sure you review our
+guidelines.
+Important: Google does not guarantee that your structured data
+will show up in search results, even if your page is marked up correctly according to the
+Rich Results Test. For a list of
+common reasons why Google may not show your structured data in search results, see
+the General Structured Data Guidelines.
+Structured data is on the wrong page
+error What caused the issue: A job listing page
+(a search results page that contains one or more job postings) has JobPosting
+structured data on the page. JobPosting structured data must only be on a
+job posting page (a page that contains a single job and isn't a search results page). You
+may have received the Search Console message: "Structured data policy violation - A list page
+should not include structured data for individual jobs".
+done Fix the issue
+Remove JobPosting structured data from the listing page. Only place
+JobPosting structured data on pages that are dedicated to a single job posting.
+After you resolve the issue,
+submit your site for
+reconsideration.
+Content doesn't match the structured data
+error What caused the issue: A page includes
+content that doesn't match the structured data on the page. For example, the title of a job on
+the page doesn't match the value listed for the title property. There may also be
+spammy content, like click-baity titles and descriptions, the job seems to be fake, or the
+job posting isn't representative of the actual job. For a full
+list of examples, see the examples in our content guidelines.
+You may have received this Search Console message: "Structured data policy violation -
+Content on pages found to be different than structured data on the page".
+done Fix the issue
+Verify that the structured data aligns with the actual content on the page, is
+representative of the job to be performed, and doesn't mislead users.
+Use the URL Inspection tool
+to make sure that the content is visible on the rendered page (the rendered page is how
+Googlebot sees your page).
+After you resolve the issue,
+submit your site for
+reconsideration.
+Expired jobs are still live
+error What caused the issue: Users can still
+access the page through the jobs experience on Google even though the job has expired. Usually,
+this is because of the following reasons:
+The validThrough property is missing or isn't set to the past.
+The page is still live.
+The job posting's apply option flow directs to an expired job posting page.
+JobPosting structured data is still present on the page even though the job
+has expired.
+You may have received this Search Console message: "Structured data policy violation -
+JobPosting structured data on expired job".
+done Fix the issue
+Remove the expired job posting by doing one of the following:
+Ensure the validThrough property is populated and in the past.
+Remove the page entirely (so that requesting it returns a 404 or 410 status code).
+Remove JobPosting structured data from the page.
+Keep Google informed by using the Indexing API.
+If you're not using the Indexing API, submit a new sitemap to Google by sending a
+GET request to the following URL:
+http://www.google.com/ping?sitemap=location_of_sitemap
+For job posting URLs, we recommend using the Indexing API instead of
+sitemaps because the Indexing API prompts Googlebot to crawl your page sooner than
+removing the URL from the sitemap and pinging Google. However, we still recommend
+submitting a sitemap
+for coverage of your entire site.
+After you resolve the issue,
+submit your site for
+reconsideration.
+Apply option is missing
+error What caused the issue: There's no way
+for the user to apply for the job on the job posting page. You may have received this Search
+Console message: "Structured data policy violation - Can't submit application on job offer page."
+done Fix the issue
+Make sure there's a way for users to apply for the job on the page.
+After you resolve the issue,
+submit your site for
+reconsideration.
+Logo is incorrect
+error What caused the issue: Your site doesn't
+have a Knowledge Graph or the Knowledge Graph shows an incorrect logo for your site. Google
+uses the same logo for your job postings as the image shown in your company’s Knowledge Graph
+card. For more information about how Google selects your logo, see
+Update your company logo.
+done Fix the issue
+There are two ways you can fix the issue:
+Make sure you specify the correct logo with the
+hiringOrganization.logo property. Updating the structured
+data is faster than updating the Knowledge Graph and doesn't require you to be verified for
+your Knowledge Graph.
+Suggest a change to your
+Knowledge Graph. Updating your Knowledge Graph provides more control over how your organization
+appears on Google, but it may take longer to update. If you need to fix a logo issue quickly,
+add the hiringOrganization.logo property.
+Job location is missing or incorrect
+error What caused the issue: Googlebot doesn't
+understand the value(s) provided for the jobLocation, addressLocality,
+or addressRegion properties. Google tries to match the location information to a
+physical location, and the location provided is either missing or incorrect.
+done Fix the issue
+Make sure the structured data includes values for jobLocation,
+addressLocality, or addressRegion (depending on the location, not
+all of the location properties are applicable).
+We recommend that you include as many location properties as possible. The
+more properties you provide, the higher quality the job posting is to users.
+Validate the location fix:
+Open the Rich Results Test.
+Enter the job posting URL in the Fetch URL box.
+Click Validate.
+Click Preview.
+Success: The Rich Results Test displays the correct
+job location in the Google Search Preview Tool.
+Try again: The Rich Results Test displays "false"
+where the job location should be in the Google Search Preview Tool. Make sure the
+location is a real location.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-16.
