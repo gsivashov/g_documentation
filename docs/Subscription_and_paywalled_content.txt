@@ -184,6 +184,21 @@ structured data with multiple paywalled sections.
 }
 ]
 }
+Supported types
+This markup is supported for the
+CreativeWork type
+or one of the following more specific types of CreativeWork:
+Article
+NewsArticle
+Blog
+Comment
+Course
+HowTo
+Message
+Review
+WebPage
+Multiple schema.org types can be used, such as the following:
+"@type": ["CreativeWork","Article","Person"]
 AMP considerations
 Here's a list of considerations to keep in mind if you use AMP pages:
 If you have an AMP page with paywalled content, use
@@ -205,4 +220,4 @@ If you want to prevent Google from showing the cached link for your page, use th
 noarchive robots
 meta tag.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-22.
