@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Guides
+Send feedback
 Understand how structured data works
 Try
 our new Structured Data Codelab. This codelab walks you through adding several types of

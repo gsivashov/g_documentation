@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Guides
+Send feedback
 Mobile-first indexing best practices
 Mobile-first indexing means Google predominantly uses the mobile version of the content for
 indexing and ranking. Historically, the index primarily used the desktop version of a page's content
@@ -239,6 +240,13 @@ done Fix the issue: Make sure that the
 titles
 and meta
 descriptions are equivalent across both versions of your site.
+Missing meta description
+error What caused the issue: A mobile page
+is missing the meta description.
+done Fix the issue: Make sure that the
+titles
+and meta
+descriptions are equivalent across both versions of your site.
 Mobile URL is an error page
 error What caused the issue: The mobile page is an error page.
 done Fix the issue: Make sure error page status
@@ -336,4 +344,4 @@ November 4, 2016
 We are
 experimenting with making the index mobile-first.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-05.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-24.

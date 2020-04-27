@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Case studies
+Send feedback
 StyleCraze improved site CTR 1.2x by leveraging How-to structured data
 check_circle_outline 1.2x
 CTR improvement

@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Overview
 The reference documentation explains the requirements for different search features and
 functionalities. Here are the reference categories:

@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Guides
+Send feedback
 Get started with Search: a developer's guide
 Making your content search-friendly matters because it's how you get more relevant users viewing
 your content. This is called search engine optimization (SEO), which can result in more

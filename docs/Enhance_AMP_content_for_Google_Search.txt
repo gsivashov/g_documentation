@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Guides
+Send feedback
 Enhance AMP content for Google Search
 You can enhance your AMP content for Google Search by creating a basic AMP page, adding structured
 data, monitoring your pages, and practicing with codelabs.

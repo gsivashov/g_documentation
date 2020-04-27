@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Article
 Adding structured data to your news, blog, and sports article page can enhance your appearance in Google Search results. Enhanced features can include placement in the Top stories carousel, host carousel, Visual stories, and rich result features such as headline text and larger-than-thumbnail images. Your page may be eligible for different features depending on how you code your page:
 AMP with structured data: [Recommended] AMP

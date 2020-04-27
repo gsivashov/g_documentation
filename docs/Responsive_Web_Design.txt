@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Guides
+Send feedback
 Responsive Web Design
 Responsive web design is a setup where the server always sends the same
 HTML code to all devices and CSS is used to alter the rendering of the page on

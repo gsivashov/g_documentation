@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Install Client Libraries
 The Indexing API is built on HTTP and JSON, so any standard HTTP client
 can send requests to it and parse the responses.

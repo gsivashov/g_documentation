@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Course
 Mark up your course lists with structured data so prospective students find you through
 Google Search. You can provide details including the course name, who's offering it, and a

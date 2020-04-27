@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Prerequisites for the Indexing API
 Before you can start using the Indexing API, there are a few
 things you need to do, if you haven't done them already:

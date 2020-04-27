@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Subscription and paywalled content
 This page describes how to use schema.org JSON-LD to indicate paywalled content on your site with
 CreativeWork properties. This

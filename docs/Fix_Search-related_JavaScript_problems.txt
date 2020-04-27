@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Guides
+Send feedback
 Fix Search-related JavaScript problems
 This guide helps you identify and fix JavaScript issues that may be blocking your page, or
 specific content on JavaScript powered pages, from showing up in Google Search. While

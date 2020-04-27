@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Social Profile
 Social profile markup for Google knowledge panels is deprecated. We now
 automatically discover social profiles to include in Google knowledge panels. If you’re

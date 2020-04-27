@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Guides
+Send feedback
 Follow the structured data guidelines
 These are the general guidelines that apply to all structured data. These guidelines
 must be followed to enable structured

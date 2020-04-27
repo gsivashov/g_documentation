@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Job training (BETA)
 Looking for other job-related features?
 Does your site provide job postings? Consider adding JobPosting structured data in addition to job training structured data.

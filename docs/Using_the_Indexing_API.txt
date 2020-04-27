@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Using the Indexing API
 Overview
 You can use the Indexing API to tell Google to update or remove pages from the Google index.

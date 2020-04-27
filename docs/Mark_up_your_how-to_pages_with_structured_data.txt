@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Mark up your how-to pages with structured data
 Does your page provide instructions for food or drinks? Add
 Recipe structured data instead of HowTo.

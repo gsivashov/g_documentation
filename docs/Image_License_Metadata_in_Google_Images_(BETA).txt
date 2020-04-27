@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Image License Metadata in Google Images (BETA)
 Note: This feature is in beta and subject to change. We're currently developing this
 feature and you may see changes in requirements, guidelines, and how the feature appears in

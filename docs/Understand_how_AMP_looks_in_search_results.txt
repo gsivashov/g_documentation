@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Guides
+Send feedback
 Understand how AMP looks in search results
 Google Search indexes AMP pages to provide a fast, reliable web experience. When an AMP page
 is available, it can be featured on mobile search as part of rich results and carousels. While

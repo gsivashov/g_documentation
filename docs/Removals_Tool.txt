@@ -6,6 +6,7 @@ Sections:
 Temporarily block URLs
 See outdated content removal requests
 See URLs on your site reported as adult content
+Removals in Search Console - Google Search Console Training
 Temporarily block URLs
 Follow this procedure to temporarily block a URL from appearing in Google Search results.
 When to use this tool

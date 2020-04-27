@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Homepage requirements for Google Podcasts
 Your podcast must have a homepage that clearly describes what the podcast is about.
 If you're just getting started, read through the

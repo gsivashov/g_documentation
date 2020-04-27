@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Guides
+Send feedback
 Introduction to Indexing
 The indexing of your content by Google is determined by system algorithms that
 take into account user demand and quality checks. You can influence the Google

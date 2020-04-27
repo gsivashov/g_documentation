@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Guides
+Send feedback
 Fix lazy-loaded content
 Deferring loading of non-critical or non-visible content, also commonly known as "lazy loading",
 is a common performance and UX best practice. For more information, see the Web Fundamentals

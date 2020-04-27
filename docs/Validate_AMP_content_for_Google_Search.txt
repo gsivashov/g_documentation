@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Guides
+Send feedback
 Validate AMP content for Google Search
 After you've created AMP content, here are
 some ways to validate your AMP content for Google Search:

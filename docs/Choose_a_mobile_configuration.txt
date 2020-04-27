@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Guides
+Send feedback
 Choose a mobile configuration
 Let's make sure that your site shows up in search results. Here you can learn how to
 configure your site for multiple devices and help search engines understand your

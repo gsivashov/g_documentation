@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Get your event on Google
 We added several optional properties: organizer,
 eventStatus,
@@ -1076,7 +1077,8 @@ Here's an example of an event that has parts that are happening online and offli
 "addressRegion": "PA",
 "addressCountry": "US"
 }
-}]
+}
+}
 eventStatus
 EventStatusType
 Warning: When the event status changes,
@@ -1353,4 +1355,4 @@ Not recommended: 2019-07-20T00:00:00
 Not recommended: 2019-08-15T00:00:01+00:00
 Not recommended2019-08-15T00:00:00+00:00
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-14.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-22.

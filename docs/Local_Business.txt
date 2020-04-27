@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Local Business
 When users search for businesses on Google Search or Maps, Search results may
 display a prominent Knowledge Graph card with details about a business that matched

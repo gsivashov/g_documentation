@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Guides
+Send feedback
 Remove AMP Content from Google Search
 This page describes how to remove AMP content from Google Search.
 Key Point: Throughout this page, we

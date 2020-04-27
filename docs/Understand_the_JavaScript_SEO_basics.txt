@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Guides
+Send feedback
 Understand the JavaScript SEO basics
 Do you suspect that JavaScript issues might be blocking your page or some of your content from
 showing up in Google Search? Learn how to fix JavaScript-related problems with our

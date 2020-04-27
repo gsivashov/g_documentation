@@ -4,6 +4,7 @@ Home
 Products
 Search for Developers
 Reference
+Send feedback
 Authorize Requests
 When your application requests private data, the request must be authorized by an authenticated user who has access to that data.
 Every request your application sends to the Indexing API must include an authorization token. The token also identifies your application to Google.

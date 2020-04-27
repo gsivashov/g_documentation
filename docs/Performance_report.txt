@@ -93,7 +93,7 @@ AMP non-rich results - A basic, non-graphical (plain blue link) search result fo
 AMP article - A visually-decorated search result link, such as an image from the AMP page, plus a content summary. The result can be either free-standing in the results page, or embedded in a carousel of similar result types. AMP article rich results are also counted as rich results.
 AMP story - a visual storytelling format built on AMP that enables a user to tap through full screen images and videos.
 Android App - An Android app installation link or Android app page result in a mobile search. To get your Android app indexed and in search results, follow the Firebase Android App indexing guidelines.
-Event - An event rich result. Read about measuring clicks and impressions for Event items.
+Event - An event rich result. Read about measuring clicks and impressions for Event items.
 FAQ rich results - A FAQ page.
 Google Play Instant - A mobile app designed to run in a trial form on a mobile device directly from Search results, without needing to be installed on the phone first.
 How-to rich results - A How-to rich result.
