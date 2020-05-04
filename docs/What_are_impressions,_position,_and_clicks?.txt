@@ -180,7 +180,7 @@ URL: The URL of the original page on the web.
 Media Actions
 A Media Action result enables a user to initiate playback of audio or video content directly from search results. (Podcast results are not counted as media action results.)
 Click: The user clicked to begin playback on a browser or application.
-Impression: The user saw a search result for a transcoded page.
+Impression: The user saw a search result with a media action.
 Position: Standard position rules apply.
 URL: The Action.url value, which is the URL of the page or application opened when the user clicks the result.
 Was this helpful?How can we improve it?YesNoSubmit

@@ -63,6 +63,7 @@ no longer embedding structured data in your pages, or the pages are inaccessible
 Google (perhaps pages are blocked by robots.txt or noindex). Test page
 availability using the
 URL Inspection tool.
+Don't use cached links to debug your pages. Instead, use the URL Inspection Tool because it has the most up-to-date version of your pages.
 You can retest a specific page using the Structured
 Data Testing Tool.
 Fix your code and test it using the Structured
@@ -211,4 +212,4 @@ A page using recipe markup isn't about recipes.
 Relevant guidelines:
 Recipe guidelines.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-06.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-30.

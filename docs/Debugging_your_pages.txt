@@ -13,6 +13,8 @@ continue to show an error for a page that you have fixed
 until the page is crawled again. You can sometimes request an expedited crawl, for instance
 using the URL Inspection
 tool, but in most cases it takes a few days to notice changes in your pages.
+Don't use cached
+links to debug your pages. Instead, use the URL Inspection tool because it has the most up-to-date version of your pages.
 Useful testing tools
 Here are some useful tools to help you debug your pages.
 Verified site owner tools
@@ -109,4 +111,4 @@ Check that your page is not protected by robots.txt or require a login
 Try accessing your page from outside your firewall, on another computer, using Chrome
 in Incognito mode.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-02-03.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-30.

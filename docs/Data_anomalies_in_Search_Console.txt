@@ -2,12 +2,11 @@ https://support.google.com/webmasters/answer/6211453
 
 Data anomalies in Search ConsoleWhat's up with my graph?On rare occasions, there might be an event in Search Console that could affect your report data. For example, if we change our data aggregation methods or there is a logging error, you might see a dip or bump in your chart. This page records known issues that might affect your data.
 Product-wide notes
+April 12, 2020 onward
+AMP, Mobile Usability, Speed, all rich result reports
+These reports have been changed to cover a smaller number of pages, in order to provide better performance in Search Console. Because of this, you might see a decrease in the number of items and pages tracked in these reports. This change does not affect Search results, only the data reporting in Search Console.
 April 9-25, 2019
 Search Console experienced a data outage that ceased on April 26. The outage affected all reports except the Performance report. All missing data from April 9-25 was replaced with the data from April 26, when data began to be available again.
-April 5, 2019
-Because of internal management of our Search index, some pages of your websites might have been dropped from our index for a period of a few days without any action on your part. The matter has been resolved, no further action from your side is needed.
-April 3, 2019
-For most enhancement reports, data is now being collected from more pages than previously reported. Because of this, you might see an increase in issues and affected items/pages on these reports.
 Remove URLs Report
 No issues.
 Performance report (Search Results / Discover)
@@ -26,16 +25,25 @@ Some data for clicks in Google Images from mobile devices was dropped. This chan
 Crawl Status Report (Legacy report)
 No issues.
 Mobile Usability Report
-No issues
+April 12, 2020 onward
+The report has been changed to cover a smaller number of pages, in order to provide better performance in Search Console. Because of this, you might see a decrease in the number of items and pages tracked in the report. This change does not affect Search results, only the data reporting in Search Console.
 Index Coverage Report
 December 15, 2019 onward
 The Index Coverage report can now more accurately report on indexed pages. Because of this, some pages that were Crawled - currently not indexed are now known to be indexed. As a result, you may see a transfer of pages from Excluded to Valid state. This does not reflect any changes in your site, but a more accurate accounting system.
 International Targeting Report
 No issues
 AMP enhancement report
+April 12, 2020 onward
+The report has been changed to cover a smaller number of pages, in order to provide better performance in Search Console. Because of this, you might see a decrease in the number of items and pages tracked in the report. This change does not affect Search results, only the data reporting in Search Console.
 January 23, 2019
 Some users may see elevated error levels of type "Crawl Issue" on their AMP URLs due to a processing error on our side. The issue is now fixed and error counts should return to their actual levels within few days
 Rich result reports
+April 29, 2020 onward
+Event
+A new, optional property "Organizer" was introduced for Event items. Previously valid Event items might be labeled warning if you do not use this new properties, or error if you incorrectly defined it.
+April 12, 2020 onward
+All rich result types
+These reports have been changed to cover a smaller number of pages, in order to provide better performance in Search Console. Because of this, you might see a decrease in the number of items and pages tracked in these reports. This change does not affect Search results, only the data reporting in Search Console.
 March 19, 2020 onward
 Event
 New optional event properties and property values for virtual and canceled events were introduced. If you previously had a valid event, it might show valid with warnings if you do not use these new properties, or error if you incorrectly define these new properties.

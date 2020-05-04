@@ -552,6 +552,11 @@ Show example
 "postalCode": "02143"
 }],
 }
+provider.address.addressCountry
+PostalAddress
+The country code for the physical address where students go to take the program. Use the
+two-letter ISO 3166-1 alpha-2 country code.
+"addressCountry": "US"
 provider.contactPoint
 ContactPoint
 The phone number that a prospective enrollee can call for more information. Set
@@ -1116,4 +1121,4 @@ Show example
 }
 }
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-02.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-27.

@@ -63,8 +63,10 @@ If the page's contents change, submit another update notification, which should 
 recrawl the page.
 You may need more quota than the default. To view your current quota and request more quota, see Quota.
 Remove a URL
-After you delete a page from your servers, notify Google so that we can remove the page from
-our index and so that we don't attempt to crawl the URL again. Before you request removal, you must remove the page from your server and the URL must return a 404 or 410 status code.
+After you delete a page from your servers or add <meta name="robots" content="noindex" /> tag in the
+<head> section of a given page, notify Google so that we can remove the page from
+our index and so that we don't attempt to crawl and index the page again. Before you request removal,
+URL must return a 404 or 410 status code or the page contains <meta name="robots" content="noindex" /> meta tag.
 To request removal from our index, follow the steps below:
 Submit a POST request to the
 following endpoint:
@@ -166,4 +168,4 @@ content-length: 58
 For more information, see
 Sending Batch Requests.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-01-08.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-01.

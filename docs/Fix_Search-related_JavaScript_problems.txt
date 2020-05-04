@@ -31,16 +31,17 @@ general debugging guide to determine the specific
 issue.
 To test how Google crawls and renders a URL, use the
 Mobile-Friendly Test
-or the URL inspection tool in Search
+or the URL Inspection Tool in Search
 Console. You can see loaded resources, JavaScript console output and exceptions, rendered
 DOM, and more information by clicking the more information link on the page verdict card.
+Don't use cached links to debug your pages. Instead, use the URL Inspection Tool because it has the most up-to-date version of your pages.
 Optionally, we also recommend collecting and auditing JavaScript errors encountered by
 users, including Googlebot, on your site to identify potential issues that may affect how
 content is rendered.
 Show example
 Here's an example that shows how to log JavaScript errors that are logged in the
 global onerror handler.
-Some types of JavaScript error, such as a parse error, cannot be logged
+Some types of JavaScript errors, such as a parse error, cannot be logged
 with this method.
 window.addEventListener('error', function(e) {
 var errorText = [
@@ -153,4 +154,4 @@ see errors, post in the
 JavaScript
 Sites in Search Working Group.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-20.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-30.
