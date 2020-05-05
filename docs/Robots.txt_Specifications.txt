@@ -261,9 +261,14 @@ user-agent: e
 user-agent: f
 disallow: /g
 user-agent: h
-There are four distinct groups specified, one for "a" and one for "b" as well as one for both "e"
-and "f". Except for the last group, each group has its own group-member line. The last group is
-empty. Note the optional use of white-space and empty lines to improve readability.
+There are four distinct groups specified:
+One group for "a"
+One group for "b"
+One group for both "e" and "f"
+One group for "h"
+Except for the last group (group "h"), each group has its own group-member line. The last
+group (group "h") is empty. Note the optional use of white-space and empty lines to improve
+readability.
 Order of precedence for user-agents
 Only one group is valid for a particular crawler.
 The crawler must determine the correct group of lines by finding the
@@ -442,4 +447,4 @@ allow: /$
 disallow: /
 Verdict: disallow
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-01-29.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-04.
