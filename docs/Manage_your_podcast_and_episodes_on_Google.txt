@@ -1,0 +1,33 @@
+https://developers.google.com/search/docs/guides/podcast-management
+
+Manage your podcast and episodes on GoogleAs a podcast publisher, here is how to manage your podcast's presence on Google.
+The term "podcast" used here means a show that contains episodes; it does not mean a single episode.
+Manage a podcast
+Add a podcast
+Make new podcasts available on Google as described in Get your podcast on Google.
+Update a podcast
+You can update information about your podcast, such as the name or description, in your RSS feed, and then either wait for Google to recrawl the feed naturally or explicitly request a recrawl of your feed.
+Remove a podcast
+To remove a podcast from Google, use any of the following methods:
+The quickest method is to add one of the following tags to your RSS feed, and then ask Google to recrawl your page. These tags prevent the podcast from appearing in Google Podcasts platforms, but they don't affect the visibility of the host page in Google Search.
+<googleplay:block>yes</googleplay:block>
+<itunes:block>yes</itunes:block>
+Remove your homepage and RSS feed files.
+Use robots.txt to block access to your RSS feed, if you don't want to appear as playable links on Google.
+Manage episodes
+Add or update episodes
+To add, update, or remove an episode from Google Podcasts platforms, update your RSS feed. Google checks known feeds for changes several times a day. For most cases, this is frequent enough that you don't need to do anything else. However, you can explicitly request a recrawl of your feed if there is a need for an immediate update.
+Remove an episode
+To remove an episode from your podcast, use any of the following methods:
+Remove the episode from your RSS feed and either wait for Google to recrawl your podcast or explicitly request a recrawl. This affects Google Podcasts platform that depends on your feed. However, if another feed points to your podcast, it can still appear in podcast shows based on that other feed.
+Use robots.txt rules to block access to specific episodes. This will prevent the episodes from appearing in Google Search, or being played on Google Podcasts platforms, but users with a link to the episode, or users on other non-Google podcast app won't be affected. It may take up to a day for changes in robots.txt rules to be noticed.
+Remove the episode files from the serving host. This is the most secure method to remove an episode from the web. Google does not cache podcast episodes for playback; however, if a user has downloaded an episode, you can no longer control playback of the downloaded file.
+Tell Google to index (or re-index) your feed
+Google checks known feeds for changes several times a day. In most cases, this should be frequent enough that you don't need to do anything else. But if the podcast is new, or if there's a very time-sensitive change, you can explicitly request indexing.
+Monitor feed crawl status
+To see the last time your podcast was crawled by Google:
+Open the Google PubSubHubbub site.
+In the Diagnostics section, enter your feed URL and click Get Info to see the last crawl date and time, the last crawled version of your feed, and more. You can automate the process using the PubSubHubbub API. The last ping time is the last time that you explicitly requested a crawl. The last fetch (successful or not) might be more recent than the last ping time, because Google automatically crawls known feeds regularly.
+true
+HelpGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageTroubleshootingMarket your podcast with Google Podcasts branding
+Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

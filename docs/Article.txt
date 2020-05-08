@@ -17,8 +17,8 @@ results with rich result features.
 By structuring your content according to this guide,
 your content may be automatically turned into an Action on the Google Assistant.
 Examples
-Here's an example of JSON-LD code for an Article object.
-<html>
+Here's an example of JSON-LD code on an AMP page with Article structured data.
+<html amp>
 <head>
 <title>Article headline</title>
 <script type="application/ld+json">
@@ -48,15 +48,14 @@ Here's an example of JSON-LD code for an Article object.
 "@type": "ImageObject",
 "url": "https://google.com/logo.jpg"
 }
-},
-"description": "A most wonderful article"
+}
 }
 </script>
 </head>
 <body>
 </body>
 </html>
-<html>
+<html amp>
 <head>
 <title>Article headline</title>
 <script type="application/ld+json">
@@ -86,8 +85,7 @@ Here's an example of JSON-LD code for an Article object.
 "@type": "ImageObject",
 "url": "https://google.com/logo.jpg"
 }
-},
-"description": "A most wonderful article"
+}
 }
 </script>
 </head>
@@ -110,7 +108,7 @@ If you have duplicate pages for the same content, we recommend placing the
 same structured data on all page duplicates, not just on the canonical page. For more
 information on placement, see the Structured Data
 General Guidelines.
-Test your structured data using the Structured Data Testing Tool.
+Test your structured data using the Rich Results Test.
 Non-AMP page with structured data
 Non-AMP pages can be shown as a rich result in a rich result list, or in a carousel of similar
 non-AMP pages. Rich results can include headlines and images. Although Google can try to extract
@@ -125,7 +123,7 @@ Add a structured data element to your page, describing the
 article on the page.
 Read the guidelines to ensure that
 Google can crawl your page.
-Test your structured data using the Structured Data Testing Tool.
+Test your structured data using the Rich Results Test.
 Google recommends creating an AMP version of your page to provide a better user experience on
 mobile devices. Read more about the benefits
 of AMP on mobile devices.
@@ -214,15 +212,9 @@ The publisher of the article.
 publisher.logo
 ImageObject
 The logo of the publisher. See the AMP logo guidelines for details.
-publisher.logo.height
-Number
-The height of the logo, in pixels.
 publisher.logo.url
 URL
 The URL of the logo.
-publisher.logo.width
-Number
-The width of the logo, in pixels.
 publisher.name
 Text
 The name of the publisher.
@@ -230,9 +222,6 @@ Recommended properties
 dateModified
 DateTime
 The date and time the article was most recently modified, in ISO 8601 format.
-description
-Text
-A short description of the article.
 mainEntityOfPage
 URL
 The canonical URL of the article page. Specify mainEntityOfPage when the
@@ -244,13 +233,13 @@ dateModified
 DateTime
 The date and time the article was most recently modified, in ISO 8601 format.
 Add the dateModified property if you want to provide more accurate date information to Google.
-The Structured Data Testing Tool doesn't show a warning for this property,
+The Rich Results Test doesn't show a warning for this property,
 as it's only recommended if you decide that it's applicable to your site.
 datePublished
 DateTime
 The date and time the article was first published, in ISO 8601 format.
 Add the datePublished if you want to provide more accurate date information to Google.
-The Structured Data Testing Tool doesn't show a warning for this property,
+The Rich Results Test doesn't show a warning for this property,
 as it's only recommended if you decide that it's applicable to your site.
 headline
 Text
@@ -278,4 +267,4 @@ For example:
 ]
 }
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-07.

@@ -93,6 +93,7 @@ Recipe
 Review snippet
 Sitelinks searchbox
 Software app
+Special Announcement
 Video
 Save test history
 Search Console saves your code and test state each time you run the test. To save a version history of your code and tests, bookmark the page URL after running a test. Test history is saved for approximately 90 days. These bookmarks are accessible by anyone.

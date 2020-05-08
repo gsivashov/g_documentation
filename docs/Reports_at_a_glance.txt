@@ -26,9 +26,9 @@ Sitemaps report
 Shows which sitemaps have been submitted for your site, sitemap statistics, and any errors Google encountered when processing your sitemaps.
 Suggested use: Periodically check to see if Google could process your sitemaps, or use for debugging if Google can't seem to find new pages on your site.
 Useful for: SEOs [Documentation]
-Speed report
-Shows how fast your page performs in real-world usage.
-Suggested use: Check how fast your pages load for your users; fix slow loading pages.
+Core Web Vitals report
+Shows how your page performs in real-world usage.
+Suggested use: Check well how your pages perform for your users; fix poorly performing pages.
 Useful for: SEOs, Developers [Documentation]
 Mobile Usability report
 See a mobile usability evaluation for all indexed pages on your site.

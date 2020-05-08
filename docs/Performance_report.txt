@@ -105,6 +105,7 @@ Q&A rich results - A Q&A page rich result.
 Rich results - Any type of rich result defined in structured data listed in the search gallery. This includes all rich-result subtypes such as job listing and AMP article rich results.
 Review snippet - A review snippet rich result.
 Search result link - Any link shown in search results.
+Special Announcement - A SpecialAnnouncements structured data element with information about COVID-19.
 Web Light results - A lightweight, transcoded version of a webpage, optimized for viewing over slow data connections.
 Videos - Videos that appear in either general search results (type Web) or Discover.
 Dimensioning or filtering by search appearance will aggregate data by page rather than by property in the table only; data in the graph will still be grouped by property.

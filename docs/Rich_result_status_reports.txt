@@ -22,6 +22,7 @@ Q&A page
 Recipe
 Review snippet
 Sitelinks searchbox
+Special Announcement
 Video
 Using the report
 Open the appropriate report from the navigation panel in Search Console.

@@ -1,0 +1,228 @@
+https://developers.google.com/search/reference/podcast/rss-feed
+
+Get your podcast on GoogleThis guide shows you how Google exposes podcasts to Google users, and how to get your own podcast on Google.
+Google Podcasts platforms
+Google can expose your podcast to listeners through many different Google Podcasts platforms, including:
+Google Search on all browsers, desktop and mobile (sample Google Search result shown below)
+Google Search App for Android (requires v6.5 or higher of the Google Search App)
+Google Podcasts app
+Google Home
+Content Action for the Google Assistant
+Android Auto
+When Google has indexed your podcast, it can appear in any of these products; users can play your episodes in the browser, on an app, on their Google Home, and more. Google can transcribe and parse the audio content in some languages in order to match listener queries.
+You can see listening data for your show in any of these platforms using Google Podcasts Manager.
+Here's an example of how episodes for your podcast might appear in Google Search results on desktop:
+Podcast episodes can be browsed and played in Google Search, among many other Google Podcasts platforms
+Additional Google Podcasts platforms
+Here are a few additional podcasting platforms on Google with different requirements if you want your audio content to appear there:
+Google Play Music Podcast Portal - Podcasts on Google Play Music. Follow these instructions to participate. (Most steps are the same as described here, but there are a few additional requirements.)
+Google news briefings - Prearranged news playlists based on general topic or provider; available in many locales.
+Google audio news - An on-demand news playlist customized for each user; not available in all areas.
+Steps to getting your podcast on Google
+In order to get your podcast on Google:
+Create an RSS feed that follows Google's guidelines.
+Create a dedicated homepage that references your feed, and follows Google's guidelines. This is not required, but is strongly recommended.
+Get your podcast indexed. If you have a dedicated homepage, you can either wait until Google finds and indexes your homepage and RSS feed naturally, or you can tell Google about your page to ensure crawling; if you have no dedicated homepage, you should manually request indexing of your RSS feed by Google.
+If all goes well, a new feed should be available on Google within a week.
+Do not mix http and https resources
+If your content is served from mixed protocols, your users can have a bad playback experience in Chrome browsers as well as other playback devices. Mixed content is when an HTTP page includes HTTPS resources, or an HTTPS page includes HTTP resources. Bad experiences include popup warnings and blocked playback. Therefore, we recommend that your RSS feed, podcast homepage, and all linked audio resources be served from HTTPS addresses.
+1. Create your RSS feed
+To be eligible to appear in Google Podcasts platforms, you must create an RSS feed describing your podcast. This RSS feed should conform to the RSS 2.0 specification, with additional tags and values as described in this section.
+The feed must be available to Google; that is, it should not require a login, be blocked to Google, or be behind a firewall. Details on availability are given in step 3, Get your podcast indexed.
+If your podcast has multiple feeds, be aware that Google will try to group similar or identical feeds together and serve only one of them. Read more about how Google manages podcasts with multiple feeds.
+Example feed
+Here is an example podcast feed with two episodes, published at https://www.example.com/podcasts/dafnas-zebras/rss/podcast.rss. It uses two extension namespaces, and references an associated homepage with a <link> tag, as described later in Step 2. Create your podcast homepage.
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
+xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<channel>
+<title>Dafna's Zebra Podcast</title>
+<googleplay:author>Dafna</googleplay:author>
+<description>A pet-owner's guide to the popular striped equine.</description>
+<googleplay:image href="https://www.example.com/podcasts/dafnas-zebras/img/dafna-zebra-pod-logo.jpg"/>
+<language>en-us</language>
+<link>https://www.example.com/podcasts/dafnas-zebras/</link>
+<item>
+<title>Top 10 myths about caring for a zebra</title>
+<description>Here are the top 10 misunderstandings about the care, feeding, and breeding of these lovable striped animals.</description>
+<pubDate>Tue, 14 Mar 2017 12:00:00 GMT</pubDate>
+<enclosure url="https://www.example.com/podcasts/dafnas-zebras/audio/toptenmyths.mp3"
+type="audio/mpeg" length="34216300"/>
+<itunes:duration>30:00</itunes:duration>
+<guid isPermaLink="false">dzpodtop10</guid>
+</item>
+<item>
+<title>Keeping those stripes neat and clean</title>
+<description>Keeping your zebra clean is time consuming, but worth the effort.</description>
+<pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
+<enclosure url="https://www.example.com/podcasts/dafnas-zebras/audio/cleanstripes.mp3"
+type="audio/mpeg" length="26004388"/>
+<itunes:duration>22:48</itunes:duration>
+<guid>dzpodclean</guid>
+</item>
+</channel>
+</rss>
+Namespaces
+You will need one or both of the following RSS extensions to define your podcast, depending on which tags you use in your RSS feed. Be sure to include the appropriate RSS extensions in the <rss> tag at the top of your feed. Here is how you would include both extensions in a feed:
+<rss version="2.0"
+xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
+xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+HTTPS is recommended
+Google strongly recommends hosting your RSS feed, homepage, and all audio or other resources at HTTPS URLs.
+If your feed or homepage is hosted at one protocol (HTTPS) but the linked resources are hosted at another protocol (HTTP), Google Chrome will display a click-through warning to users before loading those resources, or possibly not allow them to be loaded at all. This includes episode audio files. Therefore you should be sure that, at minimum, the feed and the homepage, plus all audio file URLs in <enclosure> tags be using the same protocol (ideally HTTPS).
+Podcast-level RSS tags
+To be eligible to appear in Google Podcasts platforms, you must include the following required podcast-level tags, and can optionally include the recommended podcast-level tags, which can provide a better user experience.
+Required podcast tags
+You must define these RSS tags at the podcast level in order to be eligible to appear in Google Search.
+Tag or tag type
+Description
+<item>
+One or more descriptions of individual episodes. You must have at least one <item> element in the feed. For details on markup used to describe episodes, see Episode-level RSS tags.
+<link>
+Fully-qualified URL of the homepage of your podcast. Be sure to test that the homepage is accessible to Google using the Rich Results test tool.
+<title>
+Name of the podcast.
+Owner
+Required if you want to add the podcast to Podcasts Manager; optional otherwise.
+Use one of the following tags to specify the email address of the podcast owner. In order to prove ownership of the feed to Podcasts Manager, the address listed here will receive a verification email. You can specify only one owner.
+<googleplay:owner>
+<itunes:owner>
+<itunes:email></itunes:email>
+</itunes:owner>
+Recommended podcast tags
+These RSS tags are not required, but providing them can provide a better user experience in search, as well as providing more information for users to help find your podcast in Google.
+Tag  or tag type
+Description
+Author
+Text name(s) of the author(s) of this podcast.
+<googleplay:author>
+<itunes:author>
+Category
+The general topic of the podcast to be shown in the Search results. The category must be in English and the "&" character must be defined using the HTML entity &. You can specify a category by using either of the following tags:
+<googleplay:category> - Example: <googleplay:category text="Games & Hobbies"/>
+<itunes:category> - Example: <itunes:category text="Games & Hobbies"/>
+Recommended categories
+We recommend the following categories for your podcast:
+Arts
+Business
+Comedy
+Education
+Games & Hobbies
+Government & Organizations
+Health
+Kids & Family
+Music
+News & Politics
+Religion & Spirituality
+Science & Medicine
+Society & Culture
+Sports & Recreation
+TV & Film
+Technology
+Description
+A plaintext description of the podcast, shown if the user clicks for more information in Google Search results. HTML tags are ignored and the description is truncated to 1,000 characters. If present, the description should generally agree with the content on the podcast homepage, but need not be an exact copy of that text. You can provide a description by using any of the following tags:
+<description>
+<googleplay:description>
+<itunes:summary>
+Explicit content warning
+If present and set to "yes" (case insensitive), this tag indicates that the podcast topic is explicit material. You can instead tag individual episodes with this property for finer-grained control.
+Indicate explicit content by using either of the following tags:
+<googleplay:explicit>yes</googleplay:explicit>
+<itunes:explicit>yes</itunes:explicit>
+Image
+An image to associate with your podcast. It must not be blocked to Googlebot. You can provide an image using any of the following tags:
+<googleplay:image> - Example: <googleplay:image href="https://google.com/google_podcast_cover_art.jpg"/>
+<itunes:image>
+<image>
+<link>...</link>
+<title>...</title>
+<url>...</url>
+</image>
+When using RSS <image> tags, you must include a nested <link> element that points to the podcast homepage, and a nested <title> tag that matches the <title> element in the homepage.
+<language>
+The two-letter language code of the podcast as defined by ISO 639-1.
+Episode-level RSS tags
+To be eligible to appear in Google Podcasts platforms, you must include the required episode-level tags. You can also include the recommended tags to add more information about your content, which could provide a better user experience.
+Required episode tags
+You must define these RSS tags at the episode level in order to be eligible to appear in Google Search.
+Tag
+Description
+<enclosure>
+Fully-qualified URL of the episode audio file. Audio files with the following extensions are supported: aac, m4a, mp3, ogg, wav. Episodes will appear in search results only if the majority of the episodes are supported audio file formats. Ensure that these files are not protected by robots.txt files, and are otherwise available to Googlebot. Example:
+<enclosure url="https://www.example.com/tenmyths.mp3"
+type="audio/mpeg" length="34216300"/>
+<title>
+Title of the podcast episode.
+Recommended episode tags
+These RSS tags are not required, but providing them can provide a better user experience in search, as well as providing more information for users to help find your episode in Google.
+Tag or tag type
+Description
+Description
+A plaintext description of the podcast, which is shown if the user clicks for more information in Search results. HTML tags are ignored and the description is truncated to 1,000 characters. If present, the description should generally agree with the content on the podcast homepage, but need not be an exact copy of that text. You can provide a description by using any of the following tags:
+<description>
+<googleplay:description>
+<itunes:summary>
+Explicit content warning
+If present and set to "yes" (case insensitive), this tag indicates that this episode contains explicit material. This tag can be set to "yes" even if the podcast-level tag is absent or set to "no".
+Indicate explicit content by using either of the following tags:
+<googleplay:explicit>yes</googleplay:explicit>
+<itunes:explicit>yes</itunes:explicit>
+<guid>
+A permanently-assigned, case-sensitive Globally Unique Identifier for a podcast episode. Should be unique and unchanging over time, scoped to this podcast. GUIDs are compared to indicate which episodes are new. Add isPermaLink="false" when the string isn't a valid URL. If you do not specify a <guid> tag, Google will use the file URL in the <enclosure> tag as a GUID.
+Google Podcasts platforms use this tag to uniquely identify an episode. If you change the episode file URL but retain the same GUID, listeners will not see the change. However, Podcasts Manager uses the episode URL to uniquely identify an episode, not the GUID.
+<itunes:duration>
+Duration of the episode, in one of the following formats:
+hours:minutes:seconds
+Example: <itunes:duration>1:10:00</itunes:duration>
+minutes:seconds
+Example: <itunes:duration>10:00</itunes:duration>
+total_seconds
+Example: <itunes:duration>1800</itunes:duration>
+In the first two formats the values for hours, minutes, or seconds cannot exceed two digits each.
+<pubDate>
+Publication date of the episode, in RFC 822 (section 5.1) format. Example: <pubDate>Wednesday, 04 Feb 2015 00:00:00 EST</pubDate>
+2. Create your podcast homepage [Strongly recommended]
+If you provide a homepage for your RSS feed, the page can provide additional information to Google when users search for podcasts like yours.
+In addition, if you associate your RSS feed with a homepage, users searching for your podcast by name can get a description of your podcast as well as a carousel of episodes for your show on Google Search, something like this:
+If you do not provide a linked homepage, or Google can't guess your homepage, your episodes can still appear in Google Search results, but only grouped with episodes from other podcasts on the same topic.
+A homepage can also provide some extra context for Google when a user searches for content.
+Homepage requirements
+The page must be available to Google at the exact URL specified in the RSS feed. Be sure that it's not blocked, or doesn't require any passwords. You can test availability using the Mobile Friendly Test tool, which will report if it can't access the page as Google.
+The page must comply with Google's Webmaster Guidelines.
+Google strongly recommends that the homepage, RSS feed, and all audio and video resources be at https addresses (rather than http).
+The page must have exactly one  <link type="application/rss+xml" rel="alternate"> element in the <head> section, referencing the associated RSS feed. Here is the format of that element:
+<link type="application/rss+xml" rel="alternate"
+title="Title_Value" href="RSS_URL"/>
+Title_Value
+Short, descriptive title of the podcast.
+RSS_URL
+URL of the podcast's RSS feed. The feed must be accessible by Google (not behind a firewall or blocked in any other way).
+Example homepage
+Here is an example of a minimal homepage for the RSS feed example above. It must be located at https://www.example.com/podcasts/dafnas-zebras/, as referenced by the RSS feed example given previously.
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="Podcast"
+href="https://www.example.com/podcasts/dafnas-zebras/rss/podcast.rss"/>
+<title>Dafna's Zebra Podcast</title>
+</head>
+<body>
+<h1>Dafna's Zebra Podcast</h1>
+<p>Most people don't realize that zebras actually make fabulous house pets. They're clean, well behaved, and always well dressed. In this podcast series we talk to zebra lovers and zebra experts to get to the bottom of this amazing striped animal.</p>
+</body>
+</html>
+3. Get your podcast indexed
+Your podcast RSS feed and homepage must be indexed by Google in order to appear in any podcast platform on Google. "Indexed" means that Google has found and processed your feed and page.
+Prerequisites
+Your podcast must have at least one episode in order for it to be indexed.
+Google must be able to reach your RSS feed (and linked homepage, if you have one) in order to be indexed. The feed and page cannot require a password or be behind any other blocking mechanism. The easiest way to test this is to visit both URLs in an incognito browser window.
+Get your podcast indexed
+You can use any of the following methods to get your podcast indexed by Google:
+Verify ownership of a show in Podcasts Manager.
+Use the PubSubHubbub website (or API) to publish your podcast.
+If using the website: Enter your feed URL in the Topic URL field and click Publish.
+Wait for Google to find and crawl the associated homepage through natural means.
+Explicitly request indexing of your homepage using Search Console. When Google finds a web page with a <link type="application/rss+xml" rel="alternate" href=RSS_URL/> tag pointing to your RSS feed, it will crawl the linked feed.
+true
+HelpGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageTroubleshootingMarket your podcast with Google Podcasts branding
+Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

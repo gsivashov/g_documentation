@@ -117,6 +117,7 @@ Q&A page
 Recipe
 Review snippet
 Sitelinks searchbox
+Special Announcement
 Video
 My rich result isn't here! Not all rich result types are supported by the tool yet. Unsupported types might be present and valid on the page, and can appear in Search results, but won't appear in the tool.
 Inspect a live URL

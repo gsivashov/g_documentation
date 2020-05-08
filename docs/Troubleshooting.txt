@@ -1,14 +1,129 @@
 https://developers.google.com/search/docs/guides/podcast-troubleshooting
 
-Home
-Products
-Search for Developers
-Guides
-Send feedback
 Troubleshooting
-If your podcast isn't appearing in Google Search or Google Podcasts, try the following steps. Note that Google doesn't guarantee that every podcast will show up in Google Search or Google Podcasts.
-Make sure your feed is indexed using the link generator tool. If the tool shows that your feed “is not currently indexed by Google Podcasts,” make sure you are following our podcast guidelines. If you have additional questions, visit the Google Webmaster Central Help Forum.
-Register your feed URL with Google
-PubSubHubbub site. This can prompt Google to crawl and ingest your feed faster.
-Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-05-21.
+Contents
+Podcast is not on Google
+Podcast is already claimed
+Podcast is served from another feed
+No podcast-level result in Google Search
+Lost access to your show
+Request access to a show
+Episode is missing from show in Podcasts Manager
+No data for episode
+Episode appears twice in my show
+Sharp drop-off in data for episodes or show
+Slow drop-off in data
+Served feed changed, but can't reverify
+Show isn't associated with your website
+Data discrepancies
+Google chose the wrong RSS feed for your show
+I'm told that I already verified ownership of a feed, but I didn't
+Podcast is not on Google
+If your podcast isn't appearing in Google Search or other Google Podcasts platforms, you will see a notification in Google Podcasts Manager. To fix this, try the following steps. Note that Google doesn't guarantee that every podcast will show up on Google.
+It takes Podcasts Manager about a day after a successful fix to confirm that Google can access your feed again. Additionally, there is a 2-3 day data latency in Podcasts Manager data, so it can take a few days after a successful fix or newly discovered feed to begin to see data for your show.
+1. Check that your feed is indexed
+A feed must be indexed by Google before it can appear on any Google Podcasts platform. Being indexed means that Google has found and stored your RSS feed in the Google index.
+To check whether your feed is indexed by Google:
+Open the Google PubSubHubbub site.
+In the Publisher Diagnostics section, enter your feed URL and click Get Info to see whether or not the feed was indexed. If it was, you will see the last crawl date and time, the last crawled version of your feed, and more.
+If your feed is not indexed:
+If the aggregate statistics show 0 fetch requests, go back to the submission page and register your feed URL in the Publish section on Google PubSubHubbub. Make sure that you are using the proper URL for your feed, and that the URL matches the URL listed in your podcast homepage. Indexing should happen very quickly.
+If the aggregate statistics show errors in the latest fetch request, examine the errors. The error information shown is not comprehensive--it won't show missing Google-required tags--but it will show basic access errors. If there is an access error, see Confirm Google can access your feed and homepage.
+Check the validity of your feed (next step).
+If your feed is indexed, and you don't see any problems listed, it's possible that the podcast is on Google, but it is just ranked very low. Do a search for your podcast's feed URL on Google to confirm that it appears. If it appears, then you might need to do more work to promote the content of your show, or provide content that more users are looking for.
+2. Check the validity of your RSS feed
+Confirm the validity and completeness of your RSS feed:
+Check validity: Use a RSS validator to confirm that your feed is well-formed. Use the URL of your feed, as an added check that the feed is accessible from the internet.
+Check completeness: Confirm that your feed includes all Google-specific required fields for podcasts. Does your feed have at least one episode with the required tags?
+3. Confirm that Google can access your feed and homepage
+Confirm that Google can access your feed. A quick way to do this is to enter the feed URL in the Google Rich Results Test tool; if the results say "Page cannot be reached," read in the report why it could not be reached, and fix the issue described. If you have a linked homepage, test that page as well.
+Common reasons for access issues include a robots.txt rule that blocks Google from crawling the feed, or having the feed behind a login page. Both issues can be tested by the Rich Results Test.
+Verify that your feed URL matches the <link type="application/rss+xml" rel="alternate"> element in your homepage, if you have a homepage.
+Test the URLs specified in both the <link> element in your RSS feed, and the RSS feed link specified in the <link type="application/rss+xml" rel="alternate"> element in your homepage. This ensures that you are testing the URLs that you provide to Google.
+Note that it takes Podcasts Manager about a day to confirm fixes to an inaccessible or broken feeds, so wait a day and confirm that the warning about an inaccessible feed has disappeared from your show in Podcasts Manager.
+Podcast is already claimed
+If you try to verify ownership of a feed, but get a warning that the podcast is already claimed, you should contact the owner listed in the currently verified feed. Visit the feed that you tried to claim* and look for the owner email listed in the <googleplay:owner> or <itunes:owner> tag. Send an email to that owner asking for access to the show in Podcasts Manager.
+* If you asked to claim feed 1 but were directed to claim feed 2, contact the owner of feed 2, not the owner of feed 1.
+Podcast is served from another feed
+If you try to add a feed to a show, but Google Podcasts already serves this podcast from another feed, Podcasts Manager will not allow you to verify the suggested feed. Podcasts Manager will show the URL of the feed that Google currently serves for this podcast, and provides a link to file a request if you think that Google is serving the wrong feed for this show.
+No podcast-level result in Google Search
+A podcast-level search result shows information about your whole podcast, and also includes a carousel of episodes just for your podcast, as shown here (the exact layout may change):
+If your podcast homepage isn't showing up in search results:
+If you use Search Console, and you have verified the property that contains your homepage, use the URL Inspection tool to see if Google has indexed your podcast homepage, and if not, why not.
+If you don't use Search Console, do a search on Google for your homepage URL. If your homepage is not in search results, read more about troubleshooting a missing page in Google Search. If your homepage is in search results, you just might not be ranking highly; here are a few tips on optimizing your page for search engines.
+It can take a few days to find and add your homepage to Google Search. Indexing your RSS feed might happen faster than indexing your homepage.
+Confirm that your RSS feed and homepage reference each other with the correct URLs.
+If your podcast homepage shows up in search, but without any episodes
+If you don't see any episodes listed with your podcast homepage in Google Search results:
+Confirm that your feed is associated with your homepage
+Confirm that your feed lists at least one episode. Use an RSS validator on your served feed.
+Confirm that Google has crawled your feed and website recently enough to notice any changes or fixes you've made.
+If your podcast is in search results, but without any special formatting:
+Confirm that your feed is associated with your homepage.
+Confirm that Google can access the linked homepage. Enter the homepage URL in the Google Rich Results Test tool; if the results say "Page cannot be reached," read why it could not be reached, and fix the issue.
+Confirm that your homepage complies with Google webmaster guidelines. Your homepage, unlike your RSS feed, must comply with those guidelines in order to appear in Search results.
+Google doesn't guarantee special formatting or features for podcast search results. Even if you have done everything properly, in some cases Google Search might decide that a different format is more appropriate for search results for your podcast.
+If your Search results are not up to date (missing episodes):
+Confirm that you are updating the representative feed for your show. If you have multiple feeds associated with your show, Google will choose only one of them to serve; changes made on other feeds will be ignored. If you updated the correct feed, move on to the next step.
+Check your feed crawl status. Perhaps Google hasn't seen your updates yet:
+Open the Google PubSubHubbub site.
+In the Publisher Diagnostics section, enter your feed URL and click Get Info to see the last crawl date and time, the last crawled version of your feed, last error, and more.
+Check the last successful fetch, and see if it is more recent than the last unsuccessful fetch. If the most recent fetch was unsuccessful, look at the last fetch error to see what went wrong.
+Ensure that the contents shown in the last item retrieved match your last changes. If not, either Google hasn't recrawled your feed yet, the feed is unavailable, or there's an error in the syntax of the feed.
+Search Google for your feed URL and your corresponding homepage URL.
+If they don't appear, submit them, and check your feed crawl status as described previously.
+If they both appear, confirm that they point to each other correctly as specified.​
+Lost access to your show
+Here are the possible reasons that you can't access your show any more in Podcasts Manager:
+If you can neither open the show in Podcasts Manager nor see it in your show list, a show Admin has revoked your access to the show. If this is the case, you'll need to contact an Admin or Editor of the show to re-grant you access.
+If you can't open the show, but get rerouted to a "Please verify your feed" page, and you see "Pending verification" next to the show name in the show list, then either:
+You never finished verifying ownership of the feed, and you must do so.
+The served feed has changed and you or someone else has started, but not completed, verifying ownership of the new feed. In this case, anyone trying to access the show will be prompted to complete verification of the newly served feed.
+Request access to a show
+If you don't have access to an existing show, ask a show Admin to grant you access. If you don't know who to ask, contact the owner's email listed in the <googleplay:owner> or <itunes:owner> tag of the feed.
+Episode is missing from a show in Podcasts Manager
+If you've posted an episode to your feed, but you don't see it in Podcasts Manager, remember these requirements to appear in the episodes list:
+The feed must have listening data on a Google Podcasts platform in the last 16 months.
+Google must have seen the episode in your feed while the feed was served as the representative feed.
+It takes 2-3 days for new data to appear in Podcasts Manager. If the episode is new, give it some time for listeners to find it, and for the data to appear in Podcasts Manager.
+If you do not see an episode listed in your show on Podcasts Manager:
+Refresh your browser tab. Podcasts Manager won't refresh the page with new data unless you reload the page. Switching shows in your show list won't load new data either.
+Check the served feed. Google only reads the served feed for your show; any changes to non-served feeds won't be reflected on Google or in Podcasts Manager. Furthermore, data for non-served feeds won't be accrued in Podcasts Manager. Even if you think your show has only one feed, it's possible that Google knows about more. See the served feed for your show, and confirm that this is the feed that you've updated.
+Confirm that Google has seen your updates. Monitor the feed crawl status on your served feed to see if Google has seen your changes. Use the feed crawl diagnostics to confirm that Google could access the feed, and that the feed didn't have any critical errors.
+Confirm that your feed is being served. Open the Google Podcasts app, load your podcast, and see whether the episode appears there.
+Confirm that you have listener data. If no users have listened to your episode on a Google Podcasts platform within the past 16 months, the episode will not be shown on your dashboard. Your hosting service probably shows downloads by client, but not listening data. If it does show listening data, you can confirm whether any listening data occurred in any of the Google Podcasts platforms.
+If an episode was previously present in the show but is now gone:
+The last listening data for the show was more than 16 months ago. Podcasts Manager retains data for only 16 months, and episodes without any listening data in the last 16 months will not appear in the report.
+Episode has no data, but appears in Podcasts Manager
+Remember that an episode must have data in order to appear in Podcasts Manager. If your episode appears in Podcasts Manager but doesn't show any data in the report, you're probably zoomed in to a time period without data. Change your date selection to All time to see where your listening data occurs.
+Episode appears twice in your show
+Podcasts Manager uniquely identifies an episode by the episode URL. If you change the URL of an episode in any way (other than changing the casing), then the new URL will be considered a new episode, with the same name as the old episode (unless you've changed the title as well).
+Sharp drop-off in data for episodes or show
+If you see an abrupt drop-off of data for one or more episodes:
+If the served feed changes and nobody has verified ownership in Podcasts Manager of the new feed, your show will cease to show any data from the new feed. Data loss will be visible 2-3 days after the feed change if the new feed is not verified. show Admins and Editors should see a notification when this occurs; show Readers might not see any notification.
+Another possibility is that the episode is blocked by a <googleplay:block> or <itunes:block> tag. These tags can block an episode from being shown to users in Google Podcasts platforms.
+Another possibility is that the audio file URL is broken; open your served RSS feed and copy the URL into a new browser window to see whether the audio file URL is correct.
+Slow drop-off in data
+If data for an episode simply tails off, it's likely that users have just stopped listening to your episode.
+Served feed changed, but can't reverify
+If the served feed has changed but you can't verify ownership of the feed for some reason, you can file an appeal to change the served feed back.
+Show isn't associated with your website
+If a Google search for your podcast isn't showing your associated website, confirm that your feed and homepage properly point to each other. That is, your served RSS feed should have a <link> tag pointing to the website homepage, like this:
+<link>https://www.example.com/podcasts/dafnas-zebras/</link>
+Make sure that the served feed points to the homepage; check to see which is your served feed.
+And your homepage should have a <link> tag pointing to the RSS feed, like this:
+<link rel="alternate" type="application/rss+xml" title="Podcast"
+href="https://www.example.com/podcasts/dafnas-zebras/rss/podcast.rss"/>
+Data discrepancies
+You might see discrepancies between the data on Google Podcasts Manager and other hosting services. Read more about data discrepancies here.
+Google chose the wrong RSS feed for your show
+You can strongly suggest the preferred RSS feed for your show by linking it to your homepage, and Google usually respects this choice. If this does not work, you can file an appeal to change the served feed.
+I'm told that I already verified ownership of a feed, but I didn't
+If you submit a verification request for a new feed, and Google tells you that you've already verified the feed, here is probably what is happening:
+At the time of your request, Google didn't know about your feed. This is why you were allowed to submit the request without any suggestions from Podcasts Manager.
+Google then crawls the feed and decides that it's part of a known feed group; that is, it's similar enough to another feed that it's essentially a duplicate of that known feed.
+If you are already a verified member of the Podcasts Manager show represented by that feed group, your new feed is a duplicate (non-served) feed for the show, which is already verified, Podcasts Manager tells you that you've already verified this feed.
+If you think that this new feed is not a duplicate of an existing feed, you can request a change in the served feed. However, Google does not provide a way to let you request serving of two feeds that it thinks are duplicates.
+true
+HelpGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageTroubleshootingMarket your podcast with Google Podcasts branding
+Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

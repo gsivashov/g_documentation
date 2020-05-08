@@ -124,6 +124,12 @@ Salary estimate information, such as salary ranges and region-based salary avera
 for job types, displayed in the job search experience on Google.
 Get started
 Jobs
+Podcast
+Enable your podcast to appear in Google Search with a playable link, or in
+other Google Podcasts platforms such as the Google Podcasts app, Google Assistant,
+and more.
+Get started
+Entertainment, News
 Product
 Information about a product, including price, availability, and review ratings.
 Get started
@@ -172,4 +178,4 @@ segments, and live-stream content.
 Get started
 Food and Drink, News, Education and Science, Sports
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-19.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-05.

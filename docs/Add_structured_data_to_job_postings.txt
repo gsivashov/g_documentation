@@ -280,7 +280,7 @@ on each copy of the page.
 Add the required and recommended properties. For information about where to put
 structured data on the page, watch JSON-LD structured
 data: Where to insert on the page.
-Follow the guidelines.
+Follow the technical guidelines and job posting content policies.
 Validate your code using the
 Rich Results Test.
 You can also preview how your structured data may look on Google Search.
@@ -418,13 +418,6 @@ utm_source=google_jobs_apply
 utm_medium=organic
 If you're experiencing unexpected fluctuations or inconsistencies in your traffic, use the
 troubleshooter to identify and resolve the issues.
-Guidelines
-You must follow these guidelines to be eligible to appear in the Google job search experience.
-Warning: If your site violates one or more of these guidelines, then Google may take manual action against it. Once you have remedied the problem, you can submit your site for reconsideration.
-Technical guidelines
-Content guidelines
-Webmaster guidelines
-General structured data guidelines
 Technical guidelines
 Put structured data on the most detailed leaf page possible. Don't add structured data to
 pages intended to present a list of jobs (for example, search result pages). Instead, apply
@@ -449,48 +442,63 @@ Don't include search results pages, list pages, or other dynamic pages in the si
 The URLs in the sitemap should include
 the canonical page
 for each job posting.
-Content guidelines
-Job postings must be valid. A valid job posting allows a job seeker to
-apply for an available role at a company or agency directly online.
-Valid examples
-Floor manager at a particular department store. Company is valid, and it's a named role.
-Checkout associate for a particular grocery chain. Company is valid, and it’s a general role.
-Clerical job for a placement agency. Although the final company is unspecified, the agency is the hiring party and is described.
-Recruiter ad with an apply flow where the company is unspecified. This is acceptable because
-the role is well-defined and the company does exist, even if it isn't revealed. In this case,
-the hiringOrganization property must be blank.
-A restaurant hiring kitchen staff in a single posting. Though the job titles may include positions such as line
-cooks, dish washers, waiters, the overall role is the same and they’re subject to the same
-hiring process.
-A barista posting that is always hiring. Blanket postings for "always hiring" jobs are acceptable.
-Invalid examples
-Career fair invitations
-Recruiter advertisements without a way to apply
-Resume drops that collect candidate data, but aren’t currently hiring
-Advertisements for your business disguised as job listings, such as broad career pages or
-other offers for services
-Job postings that require payment to interact with them because job seekers can’t apply directly online
-Providing false links that ask job seekers to apply that are substantially different from what job seekers would
-see browsing your website
-Job postings for a job that is no longer hiring for the position (expired jobs)
-Job postings that are seeking employment instead of offering employment
-Job postings that direct users to a list of jobs
-Job postings must fairly represent the hiring organization and job to be performed by the
-applicant.
-Examples of misrepresentation
-Here are some examples of misrepresentation:
-Jobs or content that represent the company in a way that is not accurate, realistic, or
+Job posting content policies
+We created the job posting content policies to ensure that our users are connected with jobs
+that are open, relevant, and easy to apply to. The
+general structured data guidelines and
+webmaster
+quality guidelines also apply to job postings. If we find content that violates these
+policies, we’ll respond appropriately, which may include taking
+manual action and removing
+the job posting(s) from the job search experience on Google.
+Irrelevant content
+The JobPosting markup must only be used on pages that contain a single job
+posting. We don't allow the use of JobPosting markup in any other page, including
+pages that do not list any job.
+Incomplete content
+We don’t allow job postings with incomplete job descriptions.
+Misrepresentation
+We don't allow job postings that attempt to impersonate another person or organization, or
+otherwise engage in activities intended to deceive, defraud, or mislead others. This includes
+falsely implying affiliation with, or endorsement by, another individual or organization. This
+also includes using multiple accounts to evade our policies, bypass blocks, or otherwise
+subvert restrictions placed on your account.
+Policy violation examples include:
+Jobs or content that represent the employer in a way that is not accurate, realistic, or
 truthful.
-Jobs listings for fake or non-existent jobs. This includes jobs misrepresenting themselves
-for the purposes of defrauding applicants.
-The title of a job listing and the description of a listing aren't related and
-attempt to trick applicants into viewing or applying for a job.
-False structured data around the company or location that make the job appear close to job seekers.
-Remote location properties for jobs that don't allow for 100% remote work for all applicants.
-Job listings that require registration or login to view the full content of the posting.
-If Google receives a complaint that content in
-a job listing may violate the law (for example, if a trademark or copyright owner reports a job listing that is using their content without permission), we will handle it according to our removal policies.
-Don’t use obscene, profane, or offensive language.
+Jobs posting for fake or non-existent jobs. This includes job postings with the primary
+purpose of collecting information about applicants, rather than seeking to employ these
+applicants.
+Job titles, description, and other details that use keyword stuffing to manipulate search rankings.
+Providing false location data that does not match the actual location of the job.
+Job postings on behalf of an organization or company without authorization.
+Profanity and vulgar language
+We don't allow job postings that contain obscene, profane, or offensive language.
+Advertisements disguised as a job posting
+We don’t allow promotional content disguised as a job posting, such as those posted by a
+third party (for example, affiliate programs).
+Legal removal requests
+If Google receives a complaint that content in a job posting may violate the law,
+the job posting will be handled in accordance with Search policies.
+Expired job postings
+We don't allow expired job postings. Expired job postings should ideally be
+removed from your website. If you prefer to not remove them,
+then you need to ensure the validThrough property is populated and in the past. This helps
+people review only the job postings that are still hiring.
+Jobs without a way to apply
+We don't allow job postings that don't have a way to apply. This includes:
+Job postings that advertise events such as career fair invitations.
+Job postings that require a login to view the job description. Users must be able to see
+the job posting details without the need to login.
+Resume collection
+Publishers may solicit resume collections for open positions only. We may remove solicitations
+that collect candidate data, but are not currently hiring.
+Job requests
+Job postings must describe the open position, include any qualifications needed, and include
+other information that would be relevant to a user looking for a job. We don't allow job
+postings where the job applicant is offering to perform a job.
+Payment required
+We don’t allow job postings that require payment from applicants.
 Structured data type definitions
 This section describes the structured data types related to job postings.
 You must include the required properties for your content to be eligible for display in the job
@@ -503,8 +511,8 @@ Required properties
 datePosted
 Date
 The original date that employer posted the job in
-ISO 8601 format. For
-example, "2017-01-24" or "2017-01-24T19:33:17+00:00".
+ISO 8601 format.
+For example, "2017-01-24" or "2017-01-24T19:33:17+00:00".
 "datePosted": "2016-02-18"
 description
 Text
@@ -534,9 +542,9 @@ example, "Starbucks, Inc"), and not the specific location that is hiring (for ex
 }
 Logos on third-party job sites
 If you have a third-party job site, you can provide a different logo for a given
-organization than the image shown in the organization's Knowledge Graph card. To request a
-different logo for a hiring organization, add the
-logo property to the hiringOrganization array. Make sure that you follow the
+organization than the image shown in the organization's Knowledge Graph card. To
+request a different logo for a hiring organization, add the logo property to the
+hiringOrganization array. Make sure that you follow the
 logo image guidelines and
 Company logo guidelines. For example:
 "hiringOrganization": {
@@ -850,4 +858,4 @@ Try again: The Rich Results Test displays "false"
 where the job location should be in the Google Search Preview Tool. Make sure the
 location is a real location.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-22.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-05.
