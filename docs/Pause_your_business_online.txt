@@ -128,9 +128,8 @@ What if I want to exclude all non-essential products?
 That's fine. Make sure that people can't buy the non-essential products by
 limiting the site functionality.
 Can I ask Google to crawl less while my site is temporarily closed?
-Yes, you can limit crawling with
-Search
-Console, though it's not recommended for most cases. This may have some impact
+Yes, you can reduce the Googlebot
+crawl rate, though it's not recommended for most cases. This may have some impact
 on the freshness of your results in Search. For example, it may take longer for Search
 to reflect that all of your products are currently not available. On the other hand,
 if Googlebot's crawling causes critical server resource issues, this is a valid
@@ -154,4 +153,4 @@ that may be incorrect or incomplete. It's better to still allow that page, and m
 out of stock. That way people can still understand what's going on, even if they can't
 purchase the item. If you remove the product from Search, people don't know why it's gone.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-26.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-11.

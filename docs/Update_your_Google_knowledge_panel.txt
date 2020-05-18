@@ -1,0 +1,56 @@
+https://developers.google.com/search/docs/data-types/social-profile
+
+Update your Google knowledge panelKnowledge panels are automatically generated with information that comes from various sources. Entities (people, places or things that are subjects of knowledge panels) can also contribute, after they have been verified. This article explains how to contribute and provide such feedback.
+How to suggest a change
+To suggest changes to your entity's knowledge panel, follow the steps below:
+Go to Google Search.
+Sign in to the Google Account associated with the entity that you represent.
+Check that your Web and app activity is turned on.
+Search for your entity on Google and find its knowledge panel. Ensure you see your entity’s title at the top of the knowledge panel.
+At the top of the knowledge panel, click Suggest an edit (or Suggest edits on mobile). If you don’t see this option, it is because either:
+You’re not signed-in with the same account used to claim the knowledge panel, or
+Google doesn’t recognize your Google Account as a verified representative of the entity. Follow these steps to get verified.
+Click the information that you want to change. If you have multiple suggestions, submit feedback for each item separately.
+In the response box that opens, write a short description that includes the following:
+Clearly state your suggested change.
+Explain why you believe your suggestion should replace the existing content.
+If applicable, include any publicly accessible URLs that confirm your suggested changes.
+Click Send.
+Further advice on requesting particular types of changes is covered below.
+Specific advice on suggesting changes
+Featured image
+As the entity's representative, if your suggested image is accepted, it takes priority over other images. Your suggested image must be appropriate, represent the topic well, and cannot be an ad. Review Google’s content policy for more details.
+To set a featured image:
+Find your knowledge panel on Google Search.
+Click Suggest a change to provide a direct URL of the image.
+To copy an image's URL, right-click the image and click Copy image address (wording may vary by browser). Do not share the website URL where the image appears.
+If you have Posts on Google, click Update your featured image.
+Image requirements are as follows:
+Format: Your image URL must end in .jpg or .png
+Size: Use an image with a 3:4 aspect ratio that’s at least 1,000 pixels.
+People: If the knowledge panel is for a person, their face should be clearly visible in the image.
+Logos: Use .PNG or .SVG file formats.
+Title
+The title of a knowledge panel is the first text you see that describes the entire panel, typically the name of a person, place, organization or thing. Titles are generated automatically. We only consider changing a title if feedback is accompanied by strong evidence that our automated systems have not made the most representative selection.
+Subtitle
+The subtitle of a knowledge panel is the one-line descriptive text that appears immediately below the title. Subtitles are generated automatically. We only consider changing a subtitle if feedback is accompanied by strong evidence that our automated systems have not made the most representative selection.
+If a subtitle change is made, it will cause a new automatically generated subtitle to appear. For example, our systems might determine that someone could be called an actor, director, or writer. Only one of these can appear as the subtitle. If our systems selected “actor,” and we received feedback supporting that this wasn’t the best representative subtitle, that would be removed. Our systems would then automatically decide whether “director” or “writer” was the next best subtitle and choose one of those.
+We cannot accept or create custom subtitles. For example, someone might submit feedback asking to be described as “actor/director.” We are unable to fulfill such requests at this time. We can only remove a non-representative subtitle and allow our systems to automatically select another one, assuming one is available. If one is not available, no subtitle will appear at all.
+Description
+Descriptions come from various data sources. We cannot edit descriptions. To have these changed, it’s best to contact the data source listed. In turn, that generally causes the description to change within knowledge panels. It also helps ensure that such descriptions used by others across the web are accurate and up-to-date.
+If you have contacted a source but were unable to get a description changed, you can submit feedback explaining your efforts and strong evidence of why the description in your knowledge panel is inaccurate, out-of-date or otherwise non-representative.
+If evidence supports action, the description will be removed. You cannot submit a custom description to replace it. Our systems will look to see if they can form a description from another source. However, it is more likely that the knowledge panel will have no description at all.
+Social profiles
+Eligible entities will be able to suggest the addition of new, or edit existing, social profiles. Profiles cannot be reordered.
+Other items
+Beyond the items above, Google will accept feedback on suggested changes but only act to change or remove in accordance with our policies. For example, we might not make the change you suggest if it contains inappropriate content, or if we can't confirm its accuracy.
+You can provide feedback about “More images” -- the images beyond the featured image in a knowledge panel -- or items in the  “People also search for” section. However, we only act to remove items in these areas if they fail to conform with Google’s policies. We cannot add suggestions or customize these.
+Some stats in knowledge panels are specific to the type of entity (e.g. a movie’s run time, a schedule for a music festival, or a person’s birthday). You can also suggest changes to these stats. Not all available stats will appear in the knowledge panel.
+How Google reviews your suggestions
+After you suggest changes, your suggestions go through a review. Google goes over your suggested changes for accuracy by checking if they’re confirmed by other publicly available information on the web. When prompted, provide supporting documentation in the form of a publicly accessible website URL. All information published in knowledge panel  is subject to Google's policies and user feedback.
+If accepted, your suggested edit will be added to the Knowledge Graph. Your edit helps Google return richer information and more meaningful results to users’ searches. Your submission is governed by Google's Terms of Service and used in accordance with our Privacy Policy.
+After review is complete, we inform you by email if we intend to publish your suggested change.
+If you have any questions, please contact us.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Posts on GoogleUpdate your Google knowledge panel

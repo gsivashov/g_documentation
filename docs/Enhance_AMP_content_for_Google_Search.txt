@@ -49,8 +49,7 @@ search results. AMP pages with structured data can appear in rich results in
 mobile search, like the Top stories carousel or host carousel.
 Implement structured data. For more
 information about AMP-supported structured data, see About AMP on Google Search.
-Verify that your structured data parses correctly by using the Structured Data
-Testing Tool.
+Verify that your structured data parses correctly by using the Rich Results Test.
 Ensure that your logo meets the AMP
 logo guidelines. If your logo is missing or not properly formatted, it will
 either be displayed poorly or not at all in the Top stories carousel.
@@ -93,4 +92,4 @@ Add analytics
 to your AMP pages to track user interactions with built-in Google Analytics
 support.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-10-07.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-13.

@@ -20,13 +20,12 @@ Here is our recommended process for creating new structured data pages:
 Follow the structured data guidelines for your page and
 feature type. For example, if your page is a recipe, be sure to follow the
 guidelines for Recipes.
-Validate your code using the Structured
-Data Testing Tool. Paste your code into the tool and click the validate button.
+Validate your code using the Rich Results Test. Paste your code into the tool and click Test code.
 Tip:
-For some result types, the Structured Data Testing Tool lets you generate a sample view of a
-result from your data. For those types, after you click "validate" on the tool, if
+For some result types, the Rich Results Test lets you generate a sample view of a
+result from your data. For those types, after you click Test code in the tool, if
 the code is valid
-you will see a "Preview" button, which will generate a sample
+you will see a "Preview results" button, which will generate a sample
 search result display based on your data.
 Deploy a few pages using your structured data and use the
 URL Inspection tool to test
@@ -64,10 +63,8 @@ Google (perhaps pages are blocked by robots.txt or noindex). Test page
 availability using the
 URL Inspection tool.
 Don't use cached links to debug your pages. Instead, use the URL Inspection Tool because it has the most up-to-date version of your pages.
-You can retest a specific page using the Structured
-Data Testing Tool.
-Fix your code and test it using the Structured
-Data Testing Tool. Read here to find out how
+You can retest a specific page using the Rich Results Test.
+Fix your code and test it using the Rich Results Test. Read here to find out how
 to test a page hosted on a local server or behind a firewall.
 Roll out your fix and wait for Google to recrawl your page. Remember that this can take a few days.
 Allow time for re-crawling and re-indexing! Remember that it
@@ -212,4 +209,4 @@ A page using recipe markup isn't about recipes.
 Relevant guidelines:
 Recipe guidelines.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-30.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-13.

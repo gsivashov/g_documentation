@@ -28,8 +28,6 @@ Will my pages be transcoded for users doing searches from desktop computers or t
 Pages will be transcoded only for users on mobile phones, not desktops or tablets.
 What browsers are supported?
 Pages are currently transcoded for searches from the Chrome browser and the Android browser (version 2.3+), as well as Google Go.
-How do I provide feedback about these optimized pages?
-Please send feedback to googleweblight@google.com. If you see issues with a particular page, please include the URL.
 Do you cache my transcoded page?
 Pages are generally transcoded when the user requests them, from the current version of the page. Google caches the main content for up to 24 hours. Other resources such as CSS, JS and images could be cached longer.
 Do you transcode just the page linked by search results, or do you transcode the whole site?

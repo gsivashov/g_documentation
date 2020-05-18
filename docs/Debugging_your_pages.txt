@@ -52,8 +52,8 @@ AMP Test Tool
 - Test the validity of a specific AMP URL in real time.
 Mobile-Friendly
 Test Tool - Test the mobile friendliness of a specific URL in real time.
-Structured
-Data Testing Tool - Test the validity of a structured data block in real time. The
+Rich Results Test - Test
+the validity of a structured data block in real time. The
 code can either be pasted into the tool, or hosted on a live page.
 More tools
 See the Google Webmasters Support Center
@@ -62,8 +62,7 @@ Testing locally-hosted or firewalled pages
 Google provides several testing tools to test a single live web page. For example, the
 AMP Test Tool,
 the Mobile-Friendly
-Test Tool, and the Structured
-Data Testing Tool. However, if your page is running on your local machine without a public
+Test Tool, and the Rich Results Test. However, if your page is running on your local machine without a public
 URL, or if it is hosted behind a firewall, you can still test the page by exposing a tunnel to
 your page for the testing tool.
 This can be useful if you want to test a page before making it publicly available on the web,
@@ -111,4 +110,4 @@ Check that your page is not protected by robots.txt or require a login
 Try accessing your page from outside your firewall, on another computer, using Chrome
 in Incognito mode.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-30.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-13.

@@ -6,77 +6,72 @@ Search for Developers
 Guides
 Send feedback
 Understand how structured data works
-Try
-our new Structured Data Codelab. This codelab walks you through adding several types of
-structured data to a simple HTML site, including where to place structured data on a site and
-how to validate it.
 Google Search works hard to understand the content of a page. You can help us by providing explicit
 clues about the meaning of a page to Google by including structured data on the page.
 Structured data is a standardized format for providing information about a page and classifying
 the page content; for example, on a recipe page, what are the ingredients, the cooking
 time and temperature, the calories, and so on.
-Structured data can help Google display your site with interesting search
-appearance elements. Learn more about
-how your content can appear on
-Google.
 Google uses structured data that it finds on the web to understand the content of the page,
 as well as to gather information about the web and the world in general. For example,
-here is a JSON-LD structured data snippet that might appear
-on the contact page of the Unlimited Ball Bearings corporation, describing their contact information:
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "Organization",
-"url": "http://www.example.com",
-"name": "Unlimited Ball Bearings Corp.",
-"contactPoint": {
-"@type": "ContactPoint",
-"telephone": "+1-401-555-1212",
-"contactType": "Customer service"
-}
-}
-</script>
-Google Search also uses structured data to enable special search result features and
-enhancements. For example, a recipe page with valid structured data is eligible to appear in
-a graphical search result, as shown here:
-Search result feature
-Equivalent structured data (trimmed for brevity)
+here is a JSON-LD structured data snippet that might appear on a recipe page, describing the title of the recipe, the author of the recipe, and other details:
 <html>
 <head>
-<title>Grandma's Holiday Pie</title>
+<title>Party Coffee Cake</title>
 <script type="application/ld+json">
 {
 "@context": "https://schema.org/",
 "@type": "Recipe",
-"name": "Grandma's Holiday Apple Pie",
+"name": "Party Coffee Cake",
+"author": {
+"@type": "Person",
+"name": "Mary Stone"
+},
+"datePublished": "2018-03-10",
+"description": "This coffee cake is awesome and perfect for parties.",
+"prepTime": "PT20M"
+}
+</script>
+</head>
+<body>
+<h2>Party coffee cake recipe</h2>
+<p>
+This coffee cake is awesome and perfect for parties.
+</p>
+</body>
+</html>
+Google Search also uses structured data to enable special search result features and
+enhancements. For example, a recipe page with valid structured data is eligible to
+appear in a graphical search result, as shown here:
+Search appearance
+Structured data
+<html>
+<head>
+<title>Apple Pie by Grandma</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "Recipe",
+"name": "Apple Pie by Grandma",
 "author": "Elaine Smith",
 "image": "http://images.edge-generalmills.com/56459281-6fe6-4d9d-984f-385c9488d824.jpg",
 "description": "A classic apple pie.",
 "aggregateRating": {
 "@type": "AggregateRating",
-"ratingValue": "4",
-"reviewCount": "276",
+"ratingValue": "4.8",
+"reviewCount": "7462",
 "bestRating": "5",
 "worstRating": "1"
 },
 "prepTime": "PT30M",
-"totalTime": "PT1H",
+"totalTime": "PT1H30M",
 "recipeYield": "8",
 "nutrition": {
 "@type": "NutritionInformation",
-"servingSize": "1 medium slice",
-"calories": "230 calories",
-"fatContent": "1 g",
-"carbohydrateContent": "43 g"
+"calories": "512 calories"
 },
 "recipeIngredient": [
 "1 box refrigerated pie crusts, softened as directed on box",
-"6 cups thinly sliced, peeled apples (6 medium)",
-"..."
-],
-"recipeInstructions": [
-"1...",
-"2..."
+"6 cups thinly sliced, peeled apples (6 medium)"
 ]
 }
 </script>
@@ -92,23 +87,83 @@ blank or empty pages just to hold structured data; nor should you add structured
 information that is not visible to the user, even if the information is accurate. For more technical
 and quality guidelines, see the Structured data
 general guidelines.
-The Google Structured Data Testing Tool is an easy and useful
+The Rich Results Test is an easy and useful
 tool for validating your structured data, and in some cases, previewing a feature in Google Search.
 Try it out:
 <html>
 <head>
-<title>Contact Us</title>
+<title>Non-alcoholic Pina Colada</title>
 <script type="application/ld+json">
 {
-"@context": "https://schema.org",
-"@type": "Organization",
-"url": "http://www.your-company-site.com",
-"contactPoint": [
-{ "@type": "ContactPoint",
-"telephone": "+1-401-555-1212",
-"contactType": "customer service"
+"@context": "https://schema.org/",
+"@type": "Recipe",
+"name": "Non-alcoholic Pina Colada",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"author": {
+"@type": "Person",
+"name": "Mary Stone"
+},
+"datePublished": "2018-03-10",
+"description": "This non-alcoholic pina colada is everyone's favorite!",
+"recipeCuisine": "American",
+"prepTime": "PT1M",
+"cookTime": "PT2M",
+"totalTime": "PT3M",
+"keywords": "non-alcoholic",
+"recipeYield": "1 serving",
+"recipeCategory": "Drink",
+"nutrition": {
+"@type": "NutritionInformation",
+"calories": "120 calories"
+},
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "5",
+"ratingCount": "18"
+},
+"recipeIngredient": [
+"2 cups of pineapple juice",
+"5/8 cup cream of coconut",
+"ice"
+],
+"recipeInstructions": [
+{
+"@type": "HowToStep",
+"text": "Blend 2 cups of pineapple juice and 5/8 cup cream of coconut until smooth."
+},
+{
+"@type": "HowToStep",
+"text": "Fill a glass with ice."
+},
+{
+"@type": "HowToStep",
+"text": "Pour the pineapple juice and coconut mixture over ice."
 }
-]
+],
+"video": {
+"@type": "VideoObject",
+"name": "How to make a Party Coffee Cake",
+"description": "This is how you make a Party Coffee Cake.",
+"thumbnailUrl": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"contentUrl": "http://www.example.com/video123.mp4",
+"embedUrl": "http://www.example.com/videoplayer?video=123",
+"uploadDate": "2018-02-05T08:00:00+08:00",
+"duration": "PT1M33S",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 2347
+},
+"expires": "2019-02-05T08:00:00+08:00"
+}
 }
 </script>
 </head>
@@ -116,9 +171,10 @@ Try it out:
 </body>
 </html>
 Structured data format
-This documentation describes which properties are required, recommended, or optional for structured data with special meaning to Google Search.
-Most Search structured data uses schema.org
-vocabulary, but you should rely on the documentation on developers.google.com as definitive
+This documentation describes which properties are required, recommended, or optional for
+structured data with special meaning to Google Search. Most Search structured data uses
+schema.org vocabulary, but you should rely
+on the documentation on developers.google.com as definitive
 for Google Search behavior, rather than the schema.org documentation. Attributes or
 objects not described here are not required by Google Search, even if marked as required
 by schema.org.
@@ -126,8 +182,7 @@ As of April 6, 2020, data-vocabulary.org markup will no longer be
 eligible for Google rich result features. To be eligible after April 6, 2020, you
 need to replace data-vocabulary.org markup with schema.org markup. Learn more about
 sunsetting support for data-vocabulary.
-Be sure to test your structured data using the Structured
-Data Testing tool during development, and the
+Be sure to test your structured data using the Rich Results Test during development, and the
 Rich result status reports
 after deployment, to monitor the health of your pages, which might break
 after deployment due to templating or serving issues.
@@ -145,7 +200,7 @@ Google Search supports structured data in the following formats, unless document
 Format
 Description and Placement
 JSON-LD* (Recommended)
-JavaScript notation embedded in a <script> tag in the page head or body. The
+A JavaScript notation embedded in a <script> tag in the page head or body. The
 markup is not interleaved with the user-visible text, which makes nested data items easier
 to express, such as the Country of a PostalAddress of a MusicVenue of an Event.
 Also, Google can read JSON-LD data when it is dynamically injected into the
@@ -167,5 +222,9 @@ as any guidelines specific to your structured data type; otherwise your structur
 data might be ineligible for rich result display in Google Search.
 Building, testing, and releasing your structured data
 See our recommended process for creating new structured data pages.
+Try
+our Structured Data Codelab. This codelab walks you through adding several types of
+structured data to a simple HTML site, including where to place structured data on a site and
+how to validate it.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-03.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-13.

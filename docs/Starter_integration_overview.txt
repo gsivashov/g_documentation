@@ -1,0 +1,31 @@
+https://developers.google.com/search/docs/data-types/place-action
+
+In light of COVID-19, please review the latest announcement regarding the Reserve with Google guidelines for supporting users and merchants during this time. Additionally, since we are operating with a limited support team, it may take longer to connect with us. Thank you for your patience, and we value your partnership.
+Home
+Products
+Booking
+Guides
+Send feedback
+Starter integration overview
+Do you manage a platform that provides appointment and reservation services for
+restaurants and other businesses through a website or mobile app? If so, and
+you'd like to let Google know so that we can consider your business for Reserve
+with Google, fill out the
+Reservations, appointments, online booking interest form.
+Note: This is a pilot project.
+Criteria
+For a merchant to be eligible for this integration, they need to meet the following criteria:
+The business must have a physical location with an address that we can match
+to our Google Maps database.
+Any action_link that you provide must point to merchant-specific pages
+where the user performs an action. Actions include when a user reserves a
+table, schedules a class, or orders food.
+As we review new merchant verticals, we reserve the right to include or exclude
+merchants as we see appropropriate.
+Launch process
+The process to launch your merchants on Reserve with Google is outlined in
+Figure 1.
+Note: Integration typically takes 2–3 weeks with dedicated technical resources.
+Figure 1: High-level starter integration steps
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-07-30.

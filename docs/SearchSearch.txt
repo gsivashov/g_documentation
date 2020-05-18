@@ -17,5 +17,3 @@ Verify that your AMP pages are valid and can be shown with AMP related features 
 Google Search.
 Search Console
 Discover how Google Search sees your site, optimize your Search performance, and debug errors.
-Structured Data Testing Tool
-Test your page's structured data markup for correctness.

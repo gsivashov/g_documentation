@@ -74,6 +74,7 @@ An itemref attribute points to a non-existent identifier.
 Supported rich result types
 This test currently supports only the following rich result types:
 Supported types
+AMP article
 Breadcrumb
 Course
 Dataset

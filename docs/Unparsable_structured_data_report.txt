@@ -7,8 +7,8 @@ All items in this report are structured data errors; there are no warnings or va
 Errors are automatically sorted by severity as determined by most affected pages and other factors.
 The most common cause of a single error affecting multiple pages is an underlying template error.
 Click an error row to see affected pages, error details, and links for debugging tools. See the full descriptions of the error types in the table below.
-Use the Structured Data Testing Tool to fix and test the syntax of your structured data.
-After you have fixed an issue, click Validate Fix in the error details page.
+Use the Rich Results test to fix and test the syntax of your structured data.
+After you have fixed an issue, click Validate Fix in the error details page.
 Note that after you fix a parsing error, you might trigger additional warnings or errors that were hidden because the item could not be parsed at all.
 Sharing the report
 You can share issue details in the coverage or enhancement reports by clicking the Share

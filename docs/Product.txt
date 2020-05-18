@@ -10,15 +10,22 @@ Add markup to your product pages so Google can provide detailed product informat
 rich Search results — including Google Images. Users can see price, availability, and
 review ratings right on Search results.
 Using markup to enable rich product results lets you attract potential buyers while
-they are searching for items to buy on Google or images that include products you sell. Maintain the accuracy and freshness of your
-product information, so your customers find the relevant, current items they're looking for.
-This page explains how to mark up your product information so that Google can display rich
-results. There are two types of pages where you would typically use this markup:
+they are searching for items to buy on Google Search or images that include products you sell. Maintain
+the accuracy and freshness of your product information, so your customers find the relevant,
+current items they're looking for.
+This page explains how to mark up your product information so that Google Search can display rich
+results in Google Search. Product markup also makes your products eligible to display with a
+badge in Google Images, which can encourage more users to click your content.
+This page only explains how to make your products eligible to be shown
+on Google Search results and Google Images. To show your products as unpaid listings on the
+Google Shopping
+tab, you'll need to provide a feed through Google Merchant Center and opt in to surfaces
+across Google. Learn more about the data
+and eligibility requirements.
+There are two types of pages where you would typically use this markup:
 Product page that describes a single product
 Shopping aggregator page that lists a single product, along with information about
 different sellers offering that product
-Product markup enables a badge on the
-image in mobile image search results, which can encourage more users to click your content.
 Try it out
 Single product page
 Here's an example of a single product page that you can copy and paste to your own HTML
@@ -798,4 +805,4 @@ sku
 Text
 Merchant-specific identifier for product.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-02.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-15.
