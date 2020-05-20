@@ -72,26 +72,10 @@ Article)
 Restaurant
 Recipe
 Video
-Visual stories: A visual storytelling format in Google Search results that
-immerses the user in a tap-through full-screen experience. To create an AMP story, add the
-amp-story component, follow the
-AMP
-Project best practices for AMP stories, and add structured data
-for one or more of the following schema types (depending on your content type):
-Article
-NewsArticle (subtype of Article)
-BlogPosting (subtype of Article)
-LiveBlogPosting (subtype of
-BlogPosting)
-DiscussionForumPosting
-(subtype of Article)
-VideoObject
-Restaurant
-Recipe
-Video
-For more
-information about what AMP stories are, see
-AMP stories.
+Web Stories: A visual storytelling format in Google Search results that
+immerses the user in a tap-through full-screen experience. Web Stories can also appear in
+Google Images, Discover, and the Google app. Learn how to enable
+Web Stories on Google Search.
 After users click AMP content
 When users click your AMP content in Google Search, AMP content may be shown in one of two ways:
 Google AMP Viewer: The default way your content is cached and served to
@@ -118,4 +102,4 @@ Currently, signed exchange is only supported in Google Search for rich results a
 results, not carousels. To learn more about setting up signed exchange for AMP pages, visit
 Serve AMP using Signed Exchanges.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-19.

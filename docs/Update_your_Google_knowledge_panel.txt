@@ -5,7 +5,6 @@ How to suggest a change
 To suggest changes to your entity's knowledge panel, follow the steps below:
 Go to Google Search.
 Sign in to the Google Account associated with the entity that you represent.
-Check that your Web and app activity is turned on.
 Search for your entity on Google and find its knowledge panel. Ensure you see your entity’s title at the top of the knowledge panel.
 At the top of the knowledge panel, click Suggest an edit (or Suggest edits on mobile). If you don’t see this option, it is because either:
 You’re not signed-in with the same account used to claim the knowledge panel, or

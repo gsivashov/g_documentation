@@ -109,6 +109,7 @@ Dataset
 Event
 FAQ
 Fact check
+Guided recipe
 How-to
 Job posting
 Logo

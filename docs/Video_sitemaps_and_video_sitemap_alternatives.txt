@@ -144,7 +144,7 @@ tv - TV browsers, such as those available through GoogleTV devices and game con
 Attributes:
 relationship [Required] specifies whether the video is restricted or permitted for the specified platforms. Supported values are allow or deny. If allow, any omitted platforms will be denied; if deny, any omitted platforms will be allowed.
 Example: The following example allows users on web or TV, but not mobile devices:
-<video:platform relationship="allow">web tv</video:restriction>
+<video:platform relationship="allow">web tv</video:platform>
 <video:price>
 Optional
 The price to download or view the video. Omit this tag for free videos. More than one <video:price> element can be listed (for example, in order to specify various currencies, purchasing options, or resolutions).
