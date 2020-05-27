@@ -16,9 +16,7 @@ To test: Run the URL Inspection tool on your URL to see if it has been indexed, 
 Google can't access the page. In this case the page won't be in the index.
 To test: Run the URL Inspection tool on your URL to see if it can be accessed.
 The page structured data is incorrect.
-To test:
-If the rich result type is listed as a supported type here, run the Rich Results test on your URL. (If you want to see Google's indexed version of the page, use the URL Inspection tool.)
-If your rich result type isn't yet supported in the Rich Results test, use the Structured Data Testing Tool instead to test your page. Submit the URL of the live page rather than pasting in your code, because that is a more reliable test.
+To test: Run the Rich Results test on your URL. (If you want to see Google's indexed version of the page, use the URL Inspection tool.)
 The structured data might be violating a policy guideline.
 ​To test: See if you have a manual action against your site. You can read the general Webmaster Guidelines, structured data general guidelines, and the guidelines for your specific structured data type.
 Your rich result might not be supported for your location yet.

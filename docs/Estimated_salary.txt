@@ -289,7 +289,7 @@ This section describes the structured data types related to salary estimates.
 You must include the required properties for your content to be eligible for display in enhanced search results.
 You can also include the recommended properties to add more information about your content,
 which could provide a better user experience.
-You can use Google’s Structured Data Testing Tool to
+You can use Google’s Rich Result Test to
 validate your markup.
 Occupation
 The Occupation type defines information about a job, such as the estimated salary, skills
@@ -527,4 +527,4 @@ Number
 The 90th percentile value. For example, 90% of the salaries for this occupation are at or below
 this value.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-25.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-27.

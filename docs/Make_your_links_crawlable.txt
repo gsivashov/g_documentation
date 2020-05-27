@@ -1,6 +1,8 @@
 https://support.google.com/webmasters/answer/9112205
 
-Make your links crawlableGoogle can follow links only if they are an <a> tag with an href attribute. Links that use other formats won't be followed by Google's crawlers. Google cannot follow <a> links without an href tag or other tags that perform as links because of script events. Here are examples of links that Google can and can't follow:
+Make your links crawlableGoogle can follow your links only if they use proper <a> tags with resolvable URLs:
+Use proper <a> tags
+Google can follow links only if they are an <a> tag with an href attribute. Links that use other formats won't be followed by Google's crawlers. Google cannot follow <a> links without an href tag or other tags that perform as links because of script events. Here are examples of links that Google can and can't follow:
 Can follow:
 <a href="https://example.com">
 <a href="/relative/path/file">
@@ -8,6 +10,16 @@ Can't follow:
 <a routerLink="some/path">
 <span href="https://example.com">
 <a onclick="goto('https://example.com')">
+Link to resolvable URLs
+Ensure that the URL linked to by your <a> tag is an actual web address that Googlebot can send requests to, for example:
+Can resolve:
+https://example.com/stuff
+/products
+/products.php?id=123
+Can't resolve:
+javascript:goTo('products')
+javascript:window.location.href='/products'
+#
 Was this helpful?How can we improve it?YesNoSubmit
 true
 General guidelinesSearch Engine Optimization (SEO) Starter GuideSecure your site with HTTPSKeep a simple URL structureQualify your outbound links to GoogleTag site for child-directed treatmentBrowser compatibilityAvoid creating duplicate contentMake your links crawlableBest practices for website testing with Google Search

@@ -64,7 +64,7 @@ Manage the user experience
 Providing a good user experience should be your site's top goal, and a good user experience is a ranking factor. There are many elements to providing a good user experience; here are a few of them.
 Google recommends that websites use HTTPS, rather than HTTP, to improve user and site security. Sites that use http can be marked as "not secure" in the Chrome browser. Read guidelines on securing your site with HTTPS.
 Ensure that your site works in different browsers and different platforms.
-A fast page usually beats a slow page in user satisfaction. You can use the new Speed report to see your site-wide performance numbers, or PageSpeed Insights to test performance for individual pages. You can learn more about building fast pages on the web.dev site. Also consider using using AMP for fast pages.
+A fast page usually beats a slow page in user satisfaction. You can use the Core Web Vitals report to see your site-wide performance numbers, or PageSpeed Insights to test performance for individual pages. You can learn more about building fast pages on the web.dev site. Also consider using using AMP for fast pages.
 Mobile considerations
 With mobile searches now exceeding desktop searches, it's important that your site be mobile-friendly. Googlebot now uses a mobile crawler as the default crawler for websites. Read about how to make your site mobile friendly.
 You should also read these additional pages about mobile usage on Google, including behavior on feature phones, how Google Discover works on mobile devices, and also guidelines about announcing any mobile billing charges clearly on your site to prevent warnings in Google Chrome.
@@ -82,7 +82,7 @@ Periodically check the Index Coverage report to ensure that your site coverage i
 If you have structured data, the Enhancements section of your overview page should show sparklines (thumbnail charts) of errors, warnings, and valid structured data found on your site. You should fix all structured data errors.
 If you have AMP on your site, verify your site-wide AMP status in the AMP status report.
 Use the Sitemaps report to submit new sitemaps, or monitor Google's success in reading your sitemaps.
-Verify a good user experience by checking your site-wide speed numbers in the Speed report, and your mobile-usability in the Mobile Usability report, especially when changing site templates or making other changes that affect large portions of your site.
+Verify a good user experience by checking your site-wide user performance in the Core Web Vitals report, and your mobile-usability in the Mobile Usability report, especially when changing site templates or making other changes that affect large portions of your site.
 You can find troubleshooting guides here, and you can always reach out to the forum page for help from other users.
 Your main SEO report is the Performance report for web pages. (There is also a Performance report for Discover). This report provides key metrics including impressions and CTR by keyword (query), device, and much more. You can find a lot of information on SEO best practices on the web using this data; just be sure that you don't follow rumors or bad practices. Read the SEO Starter Guide and Webmasters blog, ask questions on the Webmasters forum, attend a community event or online office hours, or use other official sources to get reliable information about best practices for your site.
 Was this helpful?How can we improve it?YesNoSubmit

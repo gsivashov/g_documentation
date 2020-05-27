@@ -7,7 +7,6 @@ Google supports the IPTC metadata format to manage image copyright informatio
 You can either embed metadata directly inside an image, or add it to a separate file (known as a sidecar file). Google recommends embedding the metadata inside the image because it helps prevent the metadata from being lost.
 Whenever possible, try to specify the IPTC fields creator, credit line, and copyright notice to provide proper attribution.
 We recommend using metadata management software to manage your image metadata.
-Image rights metadata on desktop
 Is it okay to remove image metadata?
 Removing image metadata can reduce image file size, which helps webpages load faster. However, you should be careful, since removing metadata may be illegal in certain jurisdictions. Image metadata provide image copyright and licensing information online. Google recommends that, at the very least, you retain critical metadata related to image rights information and identification. For example, whenever possible try to keep the IPTC fields creator, credit line, and copyright notice to provide proper attribution.
 Was this helpful?How can we improve it?YesNoSubmit
