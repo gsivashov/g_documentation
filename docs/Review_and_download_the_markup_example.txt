@@ -1,7 +1,6 @@
 https://support.google.com/webmasters/answer/3070233
 
-Review and download the markup example
-Review the generated markup
+Review and download the markup exampleReview the generated markup
 Markup Helper can show schema.org markup in these formats:
 JSON-LD: Uses a JavaScript object in your HTML page to define data. Google prefers JSON-LD  for web content.  See JSON-LD for more information.
 Microdata: Uses attributes in HTML tags to define data. See About microdata for more information.
@@ -19,7 +18,7 @@ Your browser will download the sample code as a file named markup.html.
 Next steps
 Modify or add markup in the file you downloaded, if necessary.
 Test your markup:
-For web pages, use the Structured Data Testing Tool. Google requires specific fields for each data type: for example, an Event requires a name, a start date, and an address. If your information is incomplete, it might not be used by Google.
+For web pages, use the Rich Results test. Google requires specific fields for each data type: for example, an Event requires a name, a start date, and an address. If your information is incomplete, it might not be used by Google.
 For email, either send an email with markup to your Gmail account, or use the email schema validator.
 Add the markup to your site or email templates.
 After you add markup to your site—and after Google crawls your site—the structured data should appear in a rich result status report, if it is a supported type. This can take a few weeks. If your data is crawled and is complete and correct, it can appear as rich results. If rich results aren't appearing for your site, see possible reasons why.

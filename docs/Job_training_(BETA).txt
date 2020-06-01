@@ -40,7 +40,6 @@ Here's an example of a program that has multiple classes and doesn't provide any
 "@type": "EducationalOccupationalProgram",
 "name": "Associate degree in Computer Science from ACME College",
 "description": "a piece of text about what it might mean to take this program",
-"url": "http://www.acme.edu/CS",
 "identifier": [{
 "@type": "PropertyValue",
 "propertyID": "CIP2010",
@@ -68,6 +67,7 @@ Here's an example of a program that has multiple classes and doesn't provide any
 }
 },
 "timeToComplete": "P2Y",
+"occupationalCategory": ["15-1111", "15-1121", "15-1122", "15-1131"],
 "occupationalCredentialAwarded": {
 "@type": "EducationalOccupationalCredential",
 "credentialCategory": "Associate Degree"
@@ -92,8 +92,8 @@ Here's an example of a program that has multiple classes and doesn't provide any
 "termDuration": "P4M",
 "termsPerYear": "2",
 "maximumEnrollment": "30",
-"educationalProgramMode": "in-person",
-"financialAidEligible": "Federal aid",
+"educationalProgramMode": "IN_PERSON",
+"financialAidEligible": "PUBLIC_AID",
 "offers": [
 {
 "@type": "Offer",
@@ -128,7 +128,6 @@ Here's an example of a program that has multiple classes and doesn't provide any
 "@type": "EducationalOccupationalProgram",
 "name": "Associate degree in Computer Science from ACME College",
 "description": "a piece of text about what it might mean to take this program",
-"url": "http://www.acme.edu/CS",
 "identifier": [{
 "@type": "PropertyValue",
 "propertyID": "CIP2010",
@@ -156,6 +155,7 @@ Here's an example of a program that has multiple classes and doesn't provide any
 }
 },
 "timeToComplete": "P2Y",
+"occupationalCategory": ["15-1111", "15-1121", "15-1122", "15-1131"],
 "occupationalCredentialAwarded": {
 "@type": "EducationalOccupationalCredential",
 "credentialCategory": "Associate Degree"
@@ -180,8 +180,8 @@ Here's an example of a program that has multiple classes and doesn't provide any
 "termDuration": "P4M",
 "termsPerYear": "2",
 "maximumEnrollment": "30",
-"educationalProgramMode": "in-person",
-"financialAidEligible": "Federal aid",
+"educationalProgramMode": "IN_PERSON",
+"financialAidEligible": "PUBLIC_AID",
 "offers": [
 {
 "@type": "Offer",
@@ -215,10 +215,9 @@ Here's an example of a program that provides job training and wages.
 <script type="application/ld+json">
 {
 "@context": "http://schema.org/",
-"@type": "WorkBasedProgram",
+"@type": "EducationalOccupationalProgram",
 "name": "IBEW Apprenticeship",
 "description": "a piece of text about what it might mean to take this program",
-"url": "http://www.acme.edu/CS",
 "provider": {
 "@type": "EducationalOrganization",
 "name": "International Brotherhood of Electrical Workers",
@@ -237,9 +236,10 @@ Here's an example of a program that provides job training and wages.
 }
 },
 "timeToComplete": "P2Y",
+"occupationalCategory": "47-2111",
 "occupationalCredentialAwarded": {
 "@type": "EducationalOccupationalCredential",
-"credentialCategory": "Welding Licence"
+"credentialCategory": "Welding License"
 },
 "programPrerequisites": {
 "@type": "EducationalOccupationalCredential",
@@ -294,10 +294,9 @@ Show me the example
 <script type="application/ld+json">
 {
 "@context": "http://schema.org/",
-"@type": "WorkBasedProgram",
+"@type": "EducationalOccupationalProgram",
 "name": "IBEW Apprenticeship",
 "description": "a piece of text about what it might mean to take this program",
-"url": "http://www.acme.edu/CS",
 "provider": {
 "@type": "EducationalOrganization",
 "name": "International Brotherhood of Electrical Workers",
@@ -316,9 +315,10 @@ Show me the example
 }
 },
 "timeToComplete": "P2Y",
+"occupationalCategory": "47-2111",
 "occupationalCredentialAwarded": {
 "@type": "EducationalOccupationalCredential",
-"credentialCategory": "Welding Licence"
+"credentialCategory": "Welding License"
 },
 "programPrerequisites": {
 "@type": "EducationalOccupationalCredential",
@@ -404,7 +404,7 @@ Structured data type definitions
 This section describes the structured data types related to the job training experience on Google.
 Programs must add one of the following types based on the type of program:
 Does the program cost money or is it free to attend? Add the EducationalOccupationalProgram properties.
-Does the program provide a wage while the sudent attends the program? Add WorkBasedProgram properties.
+Does the program provide a wage while the student attends the program? Add WorkBasedProgram properties.
 Work-based programs can also use Job Posting
 structured data in addition to or in place of
 Work-based structured data.
@@ -413,9 +413,9 @@ EducationalOrganization
 properties. You can add EducationalOrganization to a top-level page on your site,
 or as a provider field for a specific
 program.
-You must include the required properties for your content to be eligible for display in enhanced Search results.
-You can also include the recommended properties to add more information about your content,
-which could provide a better user experience.
+You must include the required properties for your content to be eligible for display in enhanced
+Search results. You can also include the recommended properties to add more information about your
+content, which could provide a better user experience.
 EducationalOccupationalProgram
 The full definition of EducationalOccupationalProgram is available at
 schema.org/EducationalOccupationalProgram.
@@ -429,18 +429,36 @@ ISO-8601 format.
 If the program is offered more than once per calendar year, specify the deadline for each
 date that term applications end. If applications are rolling,
 specify the latest possible date.
-Starting Jan 2020, we changed our documentation to require
-applicationDeadline instead of offers.availabilityEnds.
-While we continue to support offers.availabilityEnds, we require
-applicationDeadline moving forward.
 "applicationDeadline": "2020-04-01T19:30"
-identifier
-PropertyValue
-A property value containing two entries:
+identifier.propertyID
+Text
+The key for a
+PropertyValue entry that
+specifies the type of identifier. Programs are required to specify two types of
+identifiers:
 CIP2010
-The 6 digit CIP code, as published in the 2010 specification from the US Department of Education.
+The 6 digit CIP code, as published in the 2010 specification from the US Department
+of Education.
 ProgramID
-The program identifier, as used by the institution (if applicable).
+A unique program identifier, as used by the institution (if applicable).
+For example:
+"identifier": [
+{
+"@type": "PropertyValue",
+"propertyID": "CIP2010",
+"value": "12.3456"
+},
+{
+"@type": "PropertyValue",
+"propertyID": "ProgramID",
+"value": "CS-101"
+}
+]
+identifier.value
+Text
+The value for a
+PropertyValue entry.
+The value must correspond to the specified propertyID.
 For example:
 "identifier": [
 {
@@ -457,13 +475,20 @@ For example:
 name
 Text
 The name of the program.
+"name": "Certified Nurse Aid Program"
+occupationalCategory
+Text
+The occupation towards which training program attendees will be working. If the program
+trains attendees for multiple occupations, specify multiple values in an array.
+Use the BLS SOC-6 code as published in the
+2010 SOC guide.
 offers
 Offer
 The estimated cost for the program, if applicable. The estimated cost can be the total
 cost of the program or broken down by tuition, fees, and other costs. The cost must be the
 cost for in-state residents without aid.
 Additional guidelines:
-offers.priceSpecification.price must be a number (no other text is accepted).
+Offer.price_specification.price must be a number (no other text is accepted).
 Only include fees that are related to the program. For example: scrubs, estimated cost
 of required textbooks, shopping cart fees.
 Don't include fees that aren't required to complete the program. For example,
@@ -522,13 +547,53 @@ a total cost of $16,200:
 "priceCurrency": "USD"
 }
 ]
+offers.priceSpecification.price
+Number
+The price amount for the specified offer.
+[
+{
+"@type": "Offer",
+"category": "CostPerCredit",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 400,
+"priceCurrency": "USD"
+}, {
+"@type": "Offer",
+"category": "Program Fees",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 200,
+"priceCurrency": "USD"
+}
+]
+offers.priceSpecification.priceCurrency
+Number
+The currency of the price for the specified offer.
+[
+{
+"@type": "Offer",
+"category": "CostPerCredit",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 400,
+"priceCurrency": "USD"
+}, {
+"@type": "Offer",
+"category": "Program Fees",
+"priceSpecification": {
+"@type": "PriceSpecification",
+"price": 200,
+"priceCurrency": "USD"
+}
+]
 provider
-EducationalOrganization or subtypes of EducationalOrganization
+EducationalOrganization
 The educational organization providing the program.
 provider.address
 PostalAddress
 The physical address where students go to take the program. If there are multiple
-locations for this program, list each address as shown in the following example for each
+locations for this program, repeat the address as shown in the example for each
 individual location.
 Show example
 "provider": {
@@ -542,7 +607,8 @@ Show example
 "addressRegion": "MA",
 "addressCountry": "US",
 "postalCode": "02134"
-}, {
+},
+{
 "@type": "PostalAddress",
 "name": "Somerville Campus",
 "streetAddress": "456 Powderhouse Street",
@@ -550,7 +616,8 @@ Show example
 "addressRegion": "MA",
 "addressCountry": "US",
 "postalCode": "02143"
-}],
+}
+]
 }
 provider.address.addressCountry
 PostalAddress
@@ -559,8 +626,7 @@ two-letter ISO 3166-1 alpha-2 country code.
 "addressCountry": "US"
 provider.contactPoint
 ContactPoint
-The phone number that a prospective enrollee can call for more information. Set
-contactType to Admissions.
+The point of contact to which a prospective enrollee can reach out for more information.
 "provider": {
 "@type": "EducationalOrganization",
 "contactPoint": {
@@ -569,6 +635,15 @@ contactType to Admissions.
 "telephone": "+15551234567"
 }
 }
+provider.contactPoint.contactType
+Text
+The type of contact point. It should be set to Admissions for at least one
+contactPoint.
+"contactType": "Admissions"
+provider.contactPoint.telephone
+Text
+The phone number that a prospective enrollee can call for more information.
+"telephone": "+15551234567"
 timeToComplete
 Text
 The time it takes for a full-time student to complete the program in weeks, months, or
@@ -578,13 +653,12 @@ Express as a typical time for a full-time student to complete. For example:
 P2Y
 2 month program
 P2M
+2 month, 2 year
+"P26M" "P2Y2M"
 If you don’t know the duration, we recommend you use the number of credits multiplied by
 the expected full-time student workload. For example: 48 units divided by 12 units
 expected per semester for a full-time student x 4 months per semester = 16 months, or
 less than 1.5 years.
-url
-Text
-The URL to the detailed web page that explains the program.
 Recommended properties
 applicationStartDate
 DateTime
@@ -593,62 +667,62 @@ ISO-8601 format.
 If applications are rolling, specify the property for
 each date that applications for a term begin. If applications are accepted multiple
 times in a year, specify the earliest possible date.
-Starting Jan 2020, we changed our documentation to recommend
-applicationStartDate instead of offers.availabilityStarts.
-While we continue to support offers.availabilityStarts, we recommend
-applicationStartDate moving forward.
 "applicationStartDate": "2020-04-01T19:30"
 dayOfWeek
-Text
-The day of the week when the program is offered.
-Use one of the following values:
-Sat
-Sun
-Mon
-Tues
-Wed
-Thurs
-Fri
+DayOfWeek
+The day of the week when the program is offered. Use one of the following values:
+"Saturday"
+"Sunday"
+"Monday"
+"Tuesday"
+"Wednesday"
+"Thursday"
+"Friday"
 You can include multiple days for the same program.
 Show example
-"dayOfWeek": ["Sat",
-"Sun"]
+"dayOfWeek": ["Saturday", "Sunday"]
+description
+Text
+The description of the program.
+"description": "A training program to empower you to expand your
+skillset."
 endDate
 DateTime
-The date when the term officially ends, where students are no longer required to show
-up for classes or exams in ISO-8601 format.
-If there are multiple end dates, specify the property for each date that the program could end.
+The date when the term officially ends, where students are no longer required to show up
+for classes or exams in
+ISO-8601 format. If
+there are multiple end dates, specify the property for each date that the program could
+end.
 "endDate": "2020-04-01T19:30"
 educationalProgramMode
 Text
-The format in which course content is conveyed, and whether the student can be
-in person or remote. You can specify if the programs is offered in-person, online,
-or hybrid. Don't use online for a program that requires some attendance; only programs
-that are 100% online are considered online courses.
+The format in which course content is conveyed, and whether the student can be in person
+or remote. Use one of the following case-sensitive values:
+"IN_PERSON" - a program that requires the attendees to be physically present on-site.
+"ONLINE" - a program that is 100% online and does not require any physical attendance.
+"HYBRID" - a program that is partially online and partially on-site.
+"educationalProgramMode": "ONLINE"
 financialAidEligible
 Text
-The different types of aid the program is eligible for. For example, federal aid,
-specific state workforce grands (for example, Indiana Next Level Jobs).
+The different types of aid for which the program is eligible.
+Use one or more of the following case-sensitive values:
+"PUBLIC_AID" - Aid offered by the government (for example, Pell grants).
+"PROVIDER_AID" - Aid offered by the school/provider (for example, Stanford financial aid grants)
 Show example
-"financialAidEligible": "Federal Aid",
-"financialAidEligible": "Indiana Next Level Jobs"
+"financialAidEligible": ["PUBLIC_AID", "PROVIDER_AID"]
 maximumEnrollment
 Number
 The maximum capacity of students that can be enrolled in the program per time it is
 offered.
-Starting Jan 2020, we changed our documentation to recommend
-maximumEnrollment instead of offers.inventoryLevel. While we
-continue to support offers.inventoryLevel, we recommend
-maximumEnrollment moving forward.
 "maximumEnrollment": "50"
 numberOfCredits
 Number
-The number of credits required to complete this course.
+The number of credits earned by completing this program.
 "numberOfCredits": "30"
 occupationalCredentialAwarded
 EducationalOccupationalCredential
-The credential provided upon completion of the program. For example: Associate’s
-Degree, Certificate.
+The credential provided upon completion of the program. For example: Associate’s Degree,
+Certificate.
 Show example
 "occupationalCredentialAwarded": {
 "@type": "EducationalOccupationalCredential",
@@ -742,7 +816,8 @@ Show example
 startDate
 DateTime
 The start date of the program, formatted in ISO-8601 format.
-If the program is offered more than once per calendar year, specify the property multiple times.
+If the program is offered more than once per calendar year, specify the property multiple
+times.
 "startDate": "2020-04-01T19:30"
 termDuration
 Text
@@ -752,9 +827,9 @@ For example, a quarter could be 3 months (P3M), a semester could be 4 months (P4
 "termDuration": "P4M"
 termsPerYear
 Number
-The number of times that terms of study are offered per year. Semesters and quarters
-are common units for term. For example, if the student can only take two semesters for
-the program in one year, then termsPerYear must be 2.
+The number of times that terms of study are offered per year. Semesters and quarters are
+common units for term. For example, if the student can only take two semesters for the
+program in one year, then termsPerYear must be 2.
 "termsPerYear": "2"
 timeOfDay
 Text
@@ -773,12 +848,17 @@ schema.org/WorkBasedProgram.
 The following properties are required for work-based programs. If the program is available at a
 cost, add the EducationalOccupationalProgram properties instead.
 Required properties
-description
-Text
-The description of the program.
 name
 Text
 The name of the program.
+"name": "Electrical Apprenticeship"
+occupationalCategory
+Text
+The occupation towards which training program attendees will be working. If the program
+trains attendees for multiple occupations, specify multiple values in an array.
+Use the BLS SOC-6 code as published in the
+2010 SOC guide.
+"occupationalCategory" : ["47-2111", "49-9021"]
 provider
 EducationalOrganization
 The educational organization providing the program.
@@ -811,19 +891,14 @@ Show example
 }
 ]
 }
-url
-Text
-The URL to the detailed web page that explains the program.
 Recommended properties
 applicationDeadline
 DateTime
-The date at which the program will stop accepting applications. If the program is
-offered more than once per calendar year, specify the application deadline for each term
-. If applications are rolling, specify the latest possible date.
-Starting Jan 2020, we changed our documentation to recommend
-applicationDeadline instead of offers.availabilityEnds.
-While we continue to support offers.availabilityEnds, we recommend
-applicationDeadline moving forward.
+The date at which the program will stop accepting applications in
+ISO-8601 format.
+If the program is offered more than once per calendar year, specify the deadline for each
+date that term applications end. If applications are rolling,
+specify the latest possible date.
 "applicationDeadline": "2020-04-01T19:30"
 applicationStartDate
 DateTime
@@ -832,11 +907,12 @@ ISO-8601 format.
 If applications are rolling, specify the property for
 each date that applications for a term begin. If applications are accepted multiple
 times in a year, specify the earliest possible date.
-Starting Jan 2020, we changed our documentation to recommend
-applicationStartDate instead of offers.availabilityStarts.
-While we continue to support offers.availabilityStarts, we recommend
-applicationStartDate moving forward.
 "applicationStartDate": "2020-04-01T19:30"
+description
+Text
+The description of the program.
+"description": "A training program to empower you to expand your
+skillset."
 endDate
 DateTime
 The date when the term officially ends, where students are no longer required to show
@@ -847,15 +923,16 @@ maximumEnrollment
 Number
 The maximum capacity of students that can be enrolled in the program per time it is
 offered.
-Starting Jan 2020, we changed our documentation to recommend
-maximumEnrollment instead of offers.inventoryLevel. While we
-continue to support offers.inventoryLevel, we recommend
-maximumEnrollment moving forward.
 "maximumEnrollment": "50"
 occupationalCredentialAwarded
 EducationalOccupationalCredential
-The credential provided upon completion of the program. For example: Associate’s
-Degree, Certificate.
+The credential provided upon completion of the program. For example: Associate’s Degree,
+Certificate.
+Show example
+"occupationalCredentialAwarded": {
+"@type": "EducationalOccupationalCredential",
+"credentialCategory": "Associate Degree"
+}
 offers
 Offer
 The estimated cost for the program, if applicable. The estimated cost can be the total
@@ -997,10 +1074,6 @@ Example of additional costs associated with the course
 "priceCurrency": "USD"
 }
 ]
-occupationalCategory
-Text
-The BLS soc-6 code as published in the
-2010 SOC guide.
 programPrerequisites
 EducationalOccupationalCredential
 The prerequisites for attending the program.
@@ -1012,8 +1085,8 @@ Show example
 }
 salaryUponCompletion
 MonetaryAmountDistribution
-The actual or estimated hourly wage the trainee will earn upon successful completion
-of the training. Specify the duration as P1H.
+The actual or estimated hourly wage the trainee will earn upon successful completion of
+the training. Specify the duration as P1H.
 "salaryUponCompletion": {
 "@type": "MonetaryAmountDistribution",
 "currency": "USD",
@@ -1023,7 +1096,8 @@ of the training. Specify the duration as P1H.
 startDate
 DateTime
 The start date of the program, formatted in ISO-8601 format.
-If the program is offered more than once per calendar year, specify the property multiple times.
+If the program is offered more than once per calendar year, specify the property multiple
+times.
 "startDate": "2020-04-01T19:30"
 timeToComplete
 Text
@@ -1042,8 +1116,8 @@ expected per semester for a full-time student x 4 months per semester = 16 month
 less than 1.5 years.
 trainingSalary
 MonetaryAmountDistribution
-The hourly wage the trainee will earn on the first day of the program. Specify the duration as
-P1H.
+The hourly wage the trainee will earn on the first day of the program. Specify the
+duration as P1H.
 "trainingSalary": {
 "@type": "MonetaryAmountDistribution",
 "currency": "USD",
@@ -1103,6 +1177,22 @@ The national or regional accreditation granted to the institution, based on US D
 "name": "Accrediting Commission of Career Schools and Colleges"
 }
 }
+hasCredential.credentialCategory
+Text
+The category of the credential.
+"credentialCategory": "Accreditation"
+hasCredential.recognizedBy
+Organization
+The organization that acknowledges the validity, value, or utility of a credential.
+"recognizedBy": {
+"@type": "Organization",
+"name": "Accrediting Commission of Career Schools and Colleges"
+}
+}
+hasCredential.recognizedBy.name
+Organization
+The name of the recognizing organization.
+"name": "Accrediting Commission of Career Schools and Colleges"
 subOrganization
 EducationalOrganization
 Any secondary campuses included within the organization.
@@ -1120,5 +1210,28 @@ Show example
 "postalCode": "01002"
 }
 }
+subOrganization.address
+PostalAddress
+The address of the secondary campus. This should be specified if there are multiple campuses.
+Show example
+"subOrganization": {
+"@type": "EducationalOrganization",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "123 Elm Street",
+"addressLocality": "Amherst",
+"addressRegion": "MA",
+"addressCountry": "US",
+"postalCode": "01002"
+}
+}
+subOrganization.name
+Text
+The name of the secondary campus. This should be specified if there are multiple campuses.
+Show example
+"subOrganization": {
+"@type": "EducationalOrganization",
+"name": "ACME Community College - Berkshires Campus",
+}
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-14.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-27.

@@ -106,8 +106,8 @@ Review snippet - A review snippet rich result.
 Special Announcement - A SpecialAnnouncements structured data element with information about COVID-19.
 Web Light results - A lightweight, transcoded version of a webpage, optimized for viewing over slow data connections.
 Videos - Videos that appear in either general search results (type Web) or Discover.
-Google Play Instant - A mobile app designed to run in a trial form on a mobile device directly from Search results, without needing to be installed on the phone first.
-Search result link - Any link shown in search results.
+Google Play Instant - [Deprecated; new data is no longer collected for this type] A mobile app designed to run in a trial form on a mobile device directly from Search results, without needing to be installed on the phone first.
+Search result link - [Deprecated; new data is no longer collected for this type] Any link shown in search results.
 Dimensioning or filtering by search appearance will aggregate data by page rather than by property in the table only; data in the graph will still be grouped by property.
 The filter feature list shows filter options only for types for which you have impressions; for example, if you have no AMP results, you will not see AMP in the filter list.
 The same page can have multiple search appearance features in a single session, but only one impression is counted for each feature type. For example, a page can have both a rich result and a search result link in one query.

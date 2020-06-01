@@ -35,7 +35,7 @@ directive applies to all crawlers. To address a specific crawler, replace the ro
 value of the name attribute with the name of the crawler that you are addressing.
 Specific crawlers are also known as user-agents (a crawler uses its user-agent to request a page.)
 Google's standard web crawler has the user-agent name Googlebot. To prevent only
-Googlebot from crawling your page, update the tag as follows:
+Googlebot from indexing your page, update the tag as follows:
 <meta name="googlebot" content="noindex" />
 This tag now instructs Google specifically not to show this page in its search results. Both the
 name and the content attributes are non-case sensitive.
@@ -259,4 +259,4 @@ indexing or serving directives will not be found and will therefore be ignored. 
 serving directives must be followed, the URLs containing those directives cannot be disallowed from
 crawling.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-02-10.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-29.

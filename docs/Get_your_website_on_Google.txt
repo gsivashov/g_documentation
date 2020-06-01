@@ -2,17 +2,14 @@ https://support.google.com/webmasters/answer/34397
 
 Get your website on GoogleInclusion in Google's search results is free and easy; you don't even need to submit your site to Google. Google is a fully automated search engine that uses software known as "web crawlers" that explore the web on a regular basis to find sites to add to our index. In fact, the vast majority of sites listed in our results aren't manually submitted for inclusion, but found and added automatically when our bots crawl the web.
 Is my site on Google?
-To determine whether your site is currently included in Google's index, do a site: search for your site's URL. For example, a search for "site:wikipedia.org" returns these results.
+To determine whether your site is currently included in Google's index, do a quick site: search on Google, passing in your site's homepage URL for your site's URL. For example, a search for the string "site:wikipedia.org" returns these results, which confirms that they are on Google.
 My site isn't on Google!
-Although Google crawls billions of pages, it's inevitable that some sites will be missed. When our spiders miss a site, it's frequently for one of the following reasons:
+Although Google crawls billions of pages, it's inevitable that some sites will be missed. When our crawlers miss a site, it's frequently for one of the following reasons:
 The site isn't well connected from other sites on the web.
 You've just launched a new site and Google hasn't had time to crawl it yet.
 The design of the site makes it difficult for Google to crawl its content effectively.
 Google received an error when trying to crawl your site.
-How do I get my site or mobile app on Google?
-We offer guidelines for building a crawler-friendly website. While there's no guarantee that our site crawler will find a particular site, following these guidelines should make your site appear in our search results.
-Google Search Console provides tools to help you submit your content to Google and monitor how you're doing in Google Search. If you want, Search Console can even send you alerts on critical issues that Google encounters with your site or mobile app.
-SIGN UP FOR SEARCH CONSOLE
+Follow the basic checklist below to make sure that you're fulfilling at least the minimum site guidelines for appearing on Google.
 If you want to add business information, map information, or other specialized information to Google, see Get your content on Google.
 Basic checklist for appearing in Google Search results
 Download a printable version of this checklist here.
