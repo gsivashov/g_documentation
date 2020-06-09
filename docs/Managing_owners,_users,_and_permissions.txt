@@ -8,15 +8,16 @@ Each user for a Search Console property is assigned one of the following permiss
 Owner: Owners have full control over properties in Search Console. They can add and remove other users, configure settings, view all data, and use all tools.
 There are two types of owners, verified and delegated, although both are reported as simply "Owner" in the settings page. A property must have at least one verified owner, or no users will have access to the property.
 Verified owner: Performed some action to verify ownership of the property (for example, posting a special verification file on the website), or Google could deduce ownership (for example, the Blogger account and Search Console account are the same Google account).
-Delegated owner: Was granted ownership rights by a verified owner, but has never verified ownership. Can add users or other delegated owners. If the verified owner that granted owner rights becomes unverified, the delegated owner also loses access to the property. A delegated owner will be shown as an owner without any verification methods shown in their settings page.
+Delegated owner: Was granted ownership rights by a verified owner, but has never verified ownership. Can add users or other delegated owners. A delegated owner is shown as an owner without any verification methods in the settings page. If all verified owners lose verification, then all other users, including delegated owners, will lose access to the property.
 Full user: Has view rights to all data and can take some actions.
 Restricted user: Has simple view rights on most data.
+Associate: Associates are people or accounts that can take certain actions on behalf of your site, or access certain data. Unlike site owners and users, associates can't open or view your Search Console account or data directly but they are authorized to perform other tasks. The actions and permissions vary depending on the type of association (for example, Chrome Web store or YouTube channel).
 Permission details
 Feature
 Owner
 Full user
 Restricted user
-Property settings (geotargeting, preferred domain, crawl rate)
+Property settings (geotargeting, crawl rate)
 View only
 URL Parameters
 View only
@@ -24,8 +25,8 @@ Change of Address
 View only
 View only
 User administration
-See below
-See below
+Details
+Details
 Index Coverage
 View only
 Blocked URLs
@@ -50,53 +51,53 @@ We lost our site owner!
 If the verified owner of your site leaves, or you're not sure who the verified owner is, verify another site owner. The new owner will be able to see the list of all owners and users verified to that site, as well as the verification methods for each owner. You can then optionally unverify previous owners by removing their verification token (for example, removing the HTML tag from the site, for HTML-tag-verified owners). See Add or remove owners for more information.
 Add or remove users
 A property can have a maximum of 100 users with edit or view-only permissions.
-To add a new user:
+To add a new user
 Choose a property in Search Console.
 Click the Settings icon  in the navigation pane.
 Click Users & permissions.
 Click Add user and select the permissions to grant the user. Type the Google Account name (email) of the new user. (One must have a Google Account to be granted access to a Search Console property.)
 Choose the permission level to grant the user.
-The new owner must add the property to their property list in order to access it.
-To delete a user:
+The new user must add the property to their property list in order to access it.
+To delete a user
 Choose a property in Search Console.
 Click the Settings icon  in the navigation pane.
 Click Users & permissions.
-Select the  menu next to the user to delete and click Remove user. The change should take effect very quickly.
+Select the  menu next to the user to delete and click Remove access. The change should take effect very quickly.
 Add or remove owners
+Verified owners
+A verified owner has verified themselves through some sort of verification token (HTML page or tag, DNS record, or some other method).
+If all verified owners are removed, then all users and delegated owners will lose access to the property, after a grace period. Data for the property will continue to be collected, but nobody will have access to it until someone verifies ownership of the property.
+To add yourself as a verified owner
+Follow the verification flow.
+You can't add someone else as verified owner, because they need to create a token associated with their personal Google account. If they follow the verification flow and give you the token (for instance, an HTML file for HTML file verification), you can upload the token for them to verify their ownership.
+To delete a verified owner
+To remove a verified owner from a property, you must delete all tokens used to verify their ownership of the property. For example, the HTML verification file for HTML file upload, or the Google Analytics tracking code for the Analytics code verification method.
+Open the Users and Permissions page.
+Next to the owner that you want to remove, select Manage property owners.
+Follow the flow to unverify the given owner immediately. The owner's verification token must be gone, or else the unverify request will fail.
 Delegated owners
 A delegated owner is granted owner status by a verified owner without going through the verification flow.
-To add another user as an owner, or upgrade someone's status from user to owner:
-Open the property owners management page.
-Choose a property.
-Click Add an owner.
+To add another user as an owner, or upgrade someone's status from user to owner
+Note that you must be a verified owner to add a new owner.
+Open the Users and Permissions page for your property.
+Click Add user.
 Specify the user information.
-Tell the new owner to add the property to their property list.
 To remove ownership from a delegated owner
-Open the property owners management page.
-Choose the property.
-Click Unverify next to the owner to remove.
+Open the Users and Permissions page for your property.
+Next to the owner that you want to remove, open the more menu
+Select Manage property owners
+Next to the user name on the table, click Unverify.
 To downgrade a delegated owner to a user
-Remove ownership as described above.
-Add the user as described in Add or remove users with the new permission level.
-Verified owners
-To add yourself as a verified owner:
-Follow the verification flow. Note that you can't add another user as a verified owner.
-To delete a verified owner:
-To remove a verified owner from a property, you must delete all tokens used to verify their ownership of the property. For example, the HTML verification file for HTML file upload, or the Google Analytics tracking code for the Analytics code verification method.
-Open the property owners management page.
-Choose the property.
-Click Unverify next to the owner to remove.
+Remove ownership from the delegated owner (described above).
+Add a user with the desired permission (full or restricted).
 Change permissions for an existing user
 You must be a verified owner to be able to change permissions of another user.
 You can change permissions for any non-verified owner.
 If you want to upgrade a user to an owner, or downgrade them from an owner to a user, see Add or remove owners.
 To change user permissions:
-Choose a property in Search Console.
-Click the Settings icon  in the navigation pane.
-Click Users & permissions.
-Change the permission using the dropdown next to the user. If the dropdown is not selectable, either you are not a verified owner, or the chosen user is a verified owner.
+Open the Users and Permissions page for your property.
+Next to the user that you want to modify, select a different permission level.
 The change should take effect very quickly.
-If all verified owners are removed, then all users and delegated owners will lose access to the property, after a grace period. Data for the property will continue to be collected, but nobody will have access to it until someone verifies ownership of the property.
 Was this helpful?How can we improve it?YesNoSubmit
 true
 Get your site on Search ConsoleAdd a website propertyRemove a property from your listVerify your site ownershipManaging owners, users, and permissionsI don't recognize this new owner

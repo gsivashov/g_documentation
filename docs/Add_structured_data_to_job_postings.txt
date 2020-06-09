@@ -25,55 +25,44 @@ Increased chances of discovery and conversion: Job seekers will have a
 new avenue to interact with your postings and click through to your site.
 Does your site provide salary estimates? Add Estimated salary structured data.
 Does your site provide reviews about other employers? Add Employer Aggregate Rating structured data.
-Region availability
-We are excited to bring the job search experience on Google to more regions around the world. The experience is currently available in the following regions.
-List of region availability
-Asia: Available in the following countries:
-Bangladesh
-Hong Kong
-India
-Indonesia
-Japan
-Kazakhstan
-Kyrgyzstan
-Malaysia
-Pakistan
-Philippines
-Singapore
-South Korea
-Sri Lanka
-Taiwan
-Thailand
-Uzbekistan
-Vietnam
-Europe: Available in the following countries:
-Belarus
-France
-Germany
-Italy
-Russia
-Spain
-Switzerland
-United Kingdom
-Latin America: Available in the entire region
-Middle East and North Africa: Available in the following countries:
-Algeria
-Bahrain
-Egypt
-Iraq
-Jordan
-Kuwait
-Lebanon
-Libya
-Morocco
-Oman
-Palestine
-Qatar
-Saudi Arabia
-Tunisia
-United Arab Emirates
-North America: Available in the entire region
-Sub-Saharan Africa: Available in the entire region
+How to add structured data
+Structured data is a standardized format for providing information about a page and classifying the page
+content. If you’re new to structured data, you can learn more about
+how structured data works.
+Here's an overview of how to build, test, and release structured data. For a step-by-step guide
+on how to add structured data to a web page, check out the
+structured
+data codelab.
+Ensure that Googlebot can crawl your job posting web pages (not protected by a robots.txt file or robots meta tag).
+Ensure that your host load settings allow for
+frequent crawls.
+If you have several copies of the same job posting on your site hosted under different
+URLs, use canonical URLs
+on each copy of the page.
+Add the required and recommended properties. For information about where to put
+structured data on the page, watch JSON-LD structured
+data: Where to insert on the page.
+Follow the technical guidelines and job posting content policies.
+Validate your code using the
+Rich Results Test.
+You can also preview how your structured data may look on Google Search.
+Deploy a few pages that include your structured data and use the URL Inspection tool to test how Google sees the page. Be sure that your page is
+accessible to Google and not blocked by a robots.txt file, the noindex tag, or
+login requirements. If the page looks okay, you can
+ask Google to
+recrawl your URLs.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+Keep Google informed by doing one of the following actions:
+For job posting URLs, we recommend using the Indexing API instead of sitemaps because the Indexing API prompts Googlebot to crawl your page sooner than updating the sitemap and pinging Google. However, we still recommend submitting a sitemap for coverage of your entire site.
+Use the Indexing API to notify Google of a new URL to crawl or that content at a URL has been updated.
+If you're not using the Indexing API, submit a new sitemap to Google by sending a GET
+request to the following URL:
+http://www.google.com/ping?sitemap=location_of_sitemap
+For example:
+http://www.google.com/ping?sitemap=http://www.example.com/sitemap.xml
+We ingest the entire sitemap and recrawl the pages with lastmod times that
+are more recent than the last time those pages were crawled.
 Examples
 Standard job posting
 Here's an example of an individual job posting using JSON-LD code.
@@ -263,44 +252,6 @@ Here's an example of a Work from home job posting using JSON-LD code.
 <body>
 </body>
 </html>
-Build, test, release structured data
-Structured data is a standardized format for providing information about a page and classifying the page
-content. If you’re new to structured data, you can learn more about
-how structured data works.
-Here's an overview of how to build, test, and release structured data. For a step-by-step guide
-on how to add structured data to a web page, check out the
-structured
-data codelab.
-Ensure that Googlebot can crawl your job posting web pages (not protected by a robots.txt file or robots meta tag).
-Ensure that your host load settings allow for
-frequent crawls.
-If you have several copies of the same job posting on your site hosted under different
-URLs, use canonical URLs
-on each copy of the page.
-Add the required and recommended properties. For information about where to put
-structured data on the page, watch JSON-LD structured
-data: Where to insert on the page.
-Follow the technical guidelines and job posting content policies.
-Validate your code using the
-Rich Results Test.
-You can also preview how your structured data may look on Google Search.
-Deploy a few pages that include your structured data and use the URL Inspection tool to test how Google sees the page. Be sure that your page is
-accessible to Google and not blocked by a robots.txt file, the noindex tag, or
-login requirements. If the page looks okay, you can
-ask Google to
-recrawl your URLs.
-Note: Allow time for re-crawling and re-indexing. Remember that it
-may take several days after publishing a page for Google to find and crawl it.
-Keep Google informed by doing one of the following actions:
-For job posting URLs, we recommend using the Indexing API instead of sitemaps because the Indexing API prompts Googlebot to crawl your page sooner than updating the sitemap and pinging Google. However, we still recommend submitting a sitemap for coverage of your entire site.
-Use the Indexing API to notify Google of a new URL to crawl or that content at a URL has been updated.
-If you're not using the Indexing API, submit a new sitemap to Google by sending a GET
-request to the following URL:
-http://www.google.com/ping?sitemap=location_of_sitemap
-For example:
-http://www.google.com/ping?sitemap=http://www.example.com/sitemap.xml
-We ingest the entire sitemap and recrawl the pages with lastmod times that
-are more recent than the last time those pages were crawled.
 Remove a job posting
 Jobs that are no longer open for applications must be expired in one of
 the following ways. Failure to take timely action on expired jobs may result in a manual action.
@@ -741,17 +692,30 @@ additionalProperty of jobLocation. While we don't have immediate
 plans to deprecate additionalProperty, we encourage the use of the new schema
 where possible.
 Troubleshooting
+Important: Google does not guarantee that features that consume structured data will
+show up in search results. For a list of common reasons why Google may not
+show your content in a rich result, see the General
+Structured Data Guidelines.
+If you're having trouble implementing structured data, here are some resources that may help you.
+You might have an error in your structured data. Check the
+list of structured
+data errors.
+Troubleshoot
+missing rich results / drop in total rich results.
+For general questions about crawling and indexing, check the
+Webmaster FAQ.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+Ask a question in the Webmaster
+Office Hours.
+Post a question in the Webmaster
+forum.
 If your job posting isn't appearing in the job search results or if you've received
 a manual action for
 Spammy
 Structured Markup in Search Console, try to resolve the most common issues listed below.
 If you're still experiencing issues, make sure you review our
 guidelines.
-Important: Google does not guarantee that your structured data
-will show up in search results, even if your page is marked up correctly according to the
-Rich Results Test. For a list of
-common reasons why Google may not show your structured data in search results, see
-the General Structured Data Guidelines.
 Structured data is on the wrong page
 error What caused the issue: A job listing page
 (a search results page that contains one or more job postings) has JobPosting
@@ -857,5 +821,54 @@ job location in the Google Search Preview Tool.
 Try again: The Rich Results Test displays "false"
 where the job location should be in the Google Search Preview Tool. Make sure the
 location is a real location.
+Region availability
+We are excited to bring the job search experience on Google to more regions around the world. The experience is currently available in the following regions.
+List of region availability
+Asia: Available in the following countries:
+Bangladesh
+Hong Kong
+India
+Indonesia
+Japan
+Kazakhstan
+Kyrgyzstan
+Malaysia
+Pakistan
+Philippines
+Singapore
+South Korea
+Sri Lanka
+Taiwan
+Thailand
+Uzbekistan
+Vietnam
+Europe: Available in the following countries:
+Belarus
+France
+Germany
+Italy
+Russia
+Spain
+Switzerland
+United Kingdom
+Latin America: Available in the entire region
+Middle East and North Africa: Available in the following countries:
+Algeria
+Bahrain
+Egypt
+Iraq
+Jordan
+Kuwait
+Lebanon
+Libya
+Morocco
+Oman
+Palestine
+Qatar
+Saudi Arabia
+Tunisia
+United Arab Emirates
+North America: Available in the entire region
+Sub-Saharan Africa: Available in the entire region
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-05.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.

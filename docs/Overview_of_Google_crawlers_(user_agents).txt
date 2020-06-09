@@ -74,6 +74,10 @@ Google Favicon
 Google Favicon
 For user-initiated requests, ignores robots.txt rules
 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/49.0.2623.75 Safari/537.36 Google Favicon
+Web Light
+googleweblight
+Does not respect robots.txt rules - here's why
+Mozilla/5.0 (Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko; googleweblight) Chrome/38.0.1025.166 Mobile Safari/535.19
 ‡ Chrome/W.X.Y.Z in user agents
 Wherever you see the string Chrome/W.X.Y.Z in the user agent strings in the table, W.X.Y.Z is actually a placeholder that represents the version of the Chrome browser used by that user agent: for example, 41.0.2272.96. This version number will increase over time to match the latest Chromium release version used by Googlebot.
 If you are searching your logs or filtering your server for a user agent with this pattern, you probably should use wildcards for the version number rather than specifying an exact version number.

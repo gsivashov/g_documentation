@@ -63,14 +63,17 @@ type="audio/mpeg" length="26004388"/>
 </item>
 </channel>
 </rss>
+Feed requirements and recommendations
+Include all the required podcast-level and episode-level tags. Feeds without all the required tags might not be indexed by Google.
+The feed and episodes should not require any authentication. You can check by visiting your feed in an incognito window.
+Provide the same values for similar purpose tags. For example, if your feed has both <googleplay:author> and
+<itunes:author> tags to define the feed owner's email, be sure that the same email address is used in both tags. If you use similar tags with different values, we can't guarantee which tag value we will use.
+Use either HTTP or HTTPS, but not both. The RSS feed and all episodes should be located either on HTTP or HTTPS. Google strongly recommends using HTTPS. If your feed or homepage is hosted at one protocol (HTTPS) but the linked resources are hosted at another protocol (HTTP), Google Chrome will display a click-through warning to users before loading those resources, or possibly not allow them to be loaded at all. This includes episode audio files. Therefore you should be sure that, at minimum, the feed and the homepage, plus all audio file URLs in <enclosure> tags be using the same protocol (ideally HTTPS).
 Namespaces
 You will need one or both of the following RSS extensions to define your podcast, depending on which tags you use in your RSS feed. Be sure to include the appropriate RSS extensions in the <rss> tag at the top of your feed. Here is how you would include both extensions in a feed:
 <rss version="2.0"
 xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
 xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
-HTTPS is recommended
-Google strongly recommends hosting your RSS feed, homepage, and all audio or other resources at HTTPS URLs.
-If your feed or homepage is hosted at one protocol (HTTPS) but the linked resources are hosted at another protocol (HTTP), Google Chrome will display a click-through warning to users before loading those resources, or possibly not allow them to be loaded at all. This includes episode audio files. Therefore you should be sure that, at minimum, the feed and the homepage, plus all audio file URLs in <enclosure> tags be using the same protocol (ideally HTTPS).
 Podcast-level RSS tags
 To be eligible to appear in Google Podcasts platforms, you must include the following required podcast-level tags, and can optionally include the recommended podcast-level tags, which can provide a better user experience.
 Required podcast tags
@@ -78,7 +81,7 @@ You must define these RSS tags at the podcast level in order to be eligible to a
 Tag or tag type
 Description
 <item>
-One or more descriptions of individual episodes. You must have at least one <item> element in the feed. For details on markup used to describe episodes, see Episode-level RSS tags.
+Defines an episode. You must have at least one <item> element in the feed. For details on markup used to describe episodes, see Episode-level RSS tags.
 <link>
 Fully-qualified URL of the homepage of your podcast. Be sure to test that the homepage is accessible to Google using the Rich Results test tool.
 <title>
@@ -86,9 +89,9 @@ Name of the podcast.
 Owner
 Required if you want to add the podcast to Podcasts Manager; optional otherwise.
 Use one of the following tags to specify the email address of the podcast owner. In order to prove ownership of the feed to Podcasts Manager, the address listed here will receive a verification email. You can specify only one owner.
-<googleplay:owner>
+<googleplay:owner>jaime@example.com</googleplay:owner>
 <itunes:owner>
-<itunes:email></itunes:email>
+<itunes:email>jaime@example.com</itunes:email>
 </itunes:owner>
 Recommended podcast tags
 These RSS tags are not required, but providing them can provide a better user experience in search, as well as providing more information for users to help find your podcast in Google.
@@ -223,6 +226,7 @@ Use the PubSubHubbub website (or API) to publish your podcast.
 If using the website: Enter your feed URL in the Topic URL field and click Publish.
 Wait for Google to find and crawl the associated homepage through natural means.
 Explicitly request indexing of your homepage using Search Console. When Google finds a web page with a <link type="application/rss+xml" rel="alternate" href=RSS_URL/> tag pointing to your RSS feed, it will crawl the linked feed.
+Was this helpful?How can we improve it?YesNoSubmit
 true
 HelpGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageTroubleshootingMarket your podcast with Google Podcasts branding
 Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

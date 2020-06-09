@@ -36,6 +36,56 @@ Google about your events without editing the HTML of your site.
 If you're comfortable editing your HTML, use
 structured data to directly integrate with Google. You’ll need to edit the HTML of the
 event pages.
+How to add structured data
+Structured data is a standardized format for providing information about a page and classifying the page
+content. If you’re new to structured data, you can learn more about
+how structured data works.
+Here's an overview of how to build, test, and release structured data. For a step-by-step guide
+on how to add structured data to a web page, check out the
+structured
+data codelab.
+Ensure that Googlebot can crawl your event pages (meaning, your pages aren't protected by
+a robots.txt file or robots meta tag).
+Ensure that your server can handle
+increased crawl rate.
+Make sure you follow our guidelines.
+If you have several copies of the same event posting on your site hosted under different
+URLs, use canonical URLs
+on each copy of the page.
+Add structured data to your event pages. Currently, the event
+experience on Google only supports pages that focus on a single event. We recommend
+focusing on adding markup to your event posting pages instead of pages that list schedules
+or multiple events.
+If you’re just getting started, learn more about
+how structured data works. You can
+also try the
+structured
+data codelab, which walks you through how to add structured data to your website.
+Test and preview your structured data.
+Check the index status of your URLs and request for your URL to be
+crawled with the
+URL inspection tool in
+Search Console. To confirm if crawlers are able to access structured data on your page, use
+the Live Test feature.
+Keep Google informed of new event pages or
+changes to existing event pages.
+We recommend that you
+make your sitemap available
+automatically through your server. This is the best way to make sure that your new
+and updated content is highlighted to search engines as quickly as possible. Most content
+management systems (CMS) can take care of this for you.
+Monitor performance in Search
+To understand how users interact with your event postings, use the following Google tools:
+Use the Performance
+Report in Search Console to
+showevent listing or
+detail view data for a given event posting in Search results. You can automatically
+pull these results with the
+Search
+Console API.
+Use the Rich result status
+report in Search Console to understand what Google could or could not read from your
+site, and troubleshoot rich result errors.
 Examples
 The actual appearance in search results might be different. Preview the
 structured data in the Rich Results Test for the most up-to-date layout.
@@ -196,7 +246,6 @@ Here's an example of an event that's happening online.
 <body>
 </body>
 </html>
-Show me the example
 <html>
 <head>
 <title>The Adventures of Kira and Morrison</title>
@@ -302,7 +351,6 @@ a physical location.
 <body>
 </body>
 </html>
-Show me the example
 <html>
 <head>
 <title>The Adventures of Kira and Morrison</title>
@@ -417,7 +465,6 @@ Here's an example of an event that's been canceled.
 <body>
 </body>
 </html>
-Show me the example
 <html>
 <head>
 <title>The Adventures of Kira and Morrison</title>
@@ -527,7 +574,6 @@ Here's an example of an event that's been rescheduled.
 <body>
 </body>
 </html>
-Show me the example
 <html>
 <head>
 <title>The Adventures of Kira and Morrison</title>
@@ -633,7 +679,6 @@ Here's an example of an event that's been rescheduled and moved online.
 <body>
 </body>
 </html>
-Show me the example
 <html>
 <head>
 <title>The Adventures of Kira and Morrison</title>
@@ -718,50 +763,6 @@ United Kingdom
 English
 United States
 English
-Integrate with the event experience on Google
-Here's an overview of how to integrate with the event experience on Google:
-Ensure that Googlebot can crawl your event pages (meaning, your pages aren't protected by
-a robots.txt file or robots meta tag).
-Ensure that your server can handle
-increased crawl rate.
-Make sure you follow our guidelines.
-If you have several copies of the same event posting on your site hosted under different
-URLs, use canonical URLs
-on each copy of the page.
-Add structured data to your event pages. Currently, the event
-experience on Google only supports pages that focus on a single event. We recommend
-focusing on adding markup to your event posting pages instead of pages that list schedules
-or multiple events.
-If you’re just getting started, learn more about
-how structured data works. You can
-also try the
-structured
-data codelab, which walks you through how to add structured data to your website.
-Test and preview your structured data.
-Check the index status of your URLs and request for your URL to be
-crawled with the
-URL inspection tool in
-Search Console. To confirm if crawlers are able to access structured data on your page, use
-the Live Test feature.
-Keep Google informed of new event pages or
-changes to existing event pages.
-We recommend that you
-make your sitemap available
-automatically through your server. This is the best way to make sure that your new
-and updated content is highlighted to search engines as quickly as possible. Most content
-management systems (CMS) can take care of this for you.
-Monitor performance in Search
-To understand how users interact with your event postings, use the following Google tools:
-Use the Performance
-Report in Search Console to
-showevent listing or
-detail view data for a given event posting in Search results. You can automatically
-pull these results with the
-Search
-Console API.
-Use the Rich result status
-report in Search Console to understand what Google could or could not read from your
-site, and troubleshoot rich result errors.
 Guidelines
 You must follow these guidelines to be eligible to appear in the event search experience on
 Google.
@@ -1289,6 +1290,24 @@ Show example
 "startDate": "2020-07-21T19:00-05:00"
 }
 Troubleshooting
+Important: Google does not guarantee that features that consume structured data will
+show up in search results. For a list of common reasons why Google may not
+show your content in a rich result, see the General
+Structured Data Guidelines.
+If you're having trouble implementing structured data, here are some resources that may help you.
+You might have an error in your structured data. Check the
+list of structured
+data errors.
+Troubleshoot
+missing rich results / drop in total rich results.
+For general questions about crawling and indexing, check the
+Webmaster FAQ.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+Ask a question in the Webmaster
+Office Hours.
+Post a question in the Webmaster
+forum.
 If your event isn't appearing in the event experience on Google or if you've received a
 manual action for
 Spammy
@@ -1355,4 +1374,4 @@ Not recommended: 2019-07-20T00:00:00
 Not recommended: 2019-08-15T00:00:01+00:00
 Not recommended2019-08-15T00:00:00+00:00
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-22.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.

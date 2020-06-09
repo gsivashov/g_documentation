@@ -73,7 +73,7 @@ Google hasn't crawled the pages yet. It can take some time for Google to crawl n
 Google can't access the page. Use the URL Inspection tool to see whether Google can access the page.
 The structured data might be so invalid that Google doesn't recognize it as a rich result. Use the Rich Results Test Tool to check your page (check the URL of the live page rather than pasting your structured data code). If structured data is found but it could not be parsed at all, it should appear in the Unparsable structured data report.
 Your rich result might not be supported for your location yet. Check the documentation to see if your rich result type is supported for your location.
-Use the Structured Data Testing Tool on your page to see if Google can access your page and see the rich result code, and to confirm the validity of the rich result code.
+Use the Rich Results test on your page to see if Google can access your page and see the rich result code, and to confirm the validity of the rich result code.
 Use the URL Inspection tool to see if the page is indexed, and if it is accessible by Google. Test the live version of the page as well to confirm that Google can access it.
 List of structured data errors
 Here is a list of the most common errors shown in this report:

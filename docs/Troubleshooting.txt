@@ -124,6 +124,7 @@ At the time of your request, Google didn't know about your feed. This is why you
 Google then crawls the feed and decides that it's part of a known feed group; that is, it's similar enough to another feed that it's essentially a duplicate of that known feed.
 If you are already a verified member of the Podcasts Manager show represented by that feed group, your new feed is a duplicate (non-served) feed for the show, which is already verified, Podcasts Manager tells you that you've already verified this feed.
 If you think that this new feed is not a duplicate of an existing feed, you can request a change in the served feed. However, Google does not provide a way to let you request serving of two feeds that it thinks are duplicates.
+Was this helpful?How can we improve it?YesNoSubmit
 true
 HelpGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageTroubleshootingMarket your podcast with Google Podcasts branding
 Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

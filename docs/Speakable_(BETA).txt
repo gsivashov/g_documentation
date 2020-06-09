@@ -132,6 +132,24 @@ Addresses content using xPaths (assuming an XML view of the content). Use either
 cssSelector or xPath; don't use both. For example:
 /html/head/title
 Troubleshooting
+Important: Google does not guarantee that features that consume structured data will
+show up in search results. For a list of common reasons why Google may not
+show your content in a rich result, see the General
+Structured Data Guidelines.
+If you're having trouble implementing structured data, here are some resources that may help you.
+You might have an error in your structured data. Check the
+list of structured
+data errors.
+Troubleshoot
+missing rich results / drop in total rich results.
+For general questions about crawling and indexing, check the
+Webmaster FAQ.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+Ask a question in the Webmaster
+Office Hours.
+Post a question in the Webmaster
+forum.
 Can't trigger content
 error Problem: You can't trigger your content
 through the Google Assistant using TTS audio.
@@ -159,4 +177,4 @@ your own custom applications. For example, allowing users to interact with the a
 Google Assistant. For more information, see the Actions on Google developer
 guide.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.

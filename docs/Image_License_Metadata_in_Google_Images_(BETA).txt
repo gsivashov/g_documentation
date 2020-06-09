@@ -211,7 +211,6 @@ JSON-LD
 <p><a href="https://example.com/how-to-use-my-images">How to use my images</a></p>
 </body>
 </html>
-Show me the example
 <html>
 <head>
 <title>Photos of black labradors</title>
@@ -264,7 +263,6 @@ RDFa
 </div>
 </body>
 </html>
-Show me the example
 <html>
 <head>
 <title>Photos of black labradors</title>
@@ -306,7 +304,6 @@ Microdata
 </div>
 </body>
 </html>
-Show me the example
 <html>
 <head>
 <title>Photos of black labradors</title>
@@ -386,4 +383,4 @@ Post a question in the Webmaster
 forum. For help with IPTC photo metadata, you can
 post in their forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-12.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.

@@ -14,7 +14,7 @@ Please note that using a low max-snippet setting does not guarantee that feature
 How can I mark my page as a featured snippet?
 You can't. Google systems determine whether a page would make a good featured snippet for a user's search request, and if so, elevates it.
 What happens when a user clicks a featured snippet?
-Clicking a featured snippet takes the user directly to the featured snippet text on the source web page. This happens automatically. There's no markup needed by webmasters to enable it. If a browser doesn't support the underlying technology needed, or if our systems can't confidently determine exactly where within a page to direct a click, clicking a featured snippet will take a user to the top of the source web page.
+Clicking a featured snippet takes the user directly to the featured snippet text on the source web page. This happens automatically. There's no markup needed by webmasters to enable a featured snippet. If a browser doesn't support the underlying technology needed, or if our systems can't confidently determine exactly where within a page to direct a click, clicking a featured snippet will take a user to the top of the source web page.
 Was this helpful?How can we improve it?YesNoSubmit
 true
 Search AppearanceCreate good titles and snippets in Search ResultsEnable Search result features for your siteTools for adding structured data (for beginners)Enriched Search ResultsProvide a publication date to Google SearchDefine a favicon to show in search resultsFlexible Sampling general guidanceTop Places ListFeatured snippets and your website

@@ -101,6 +101,8 @@ Job listing - A job posting result that shows a summarized view of a job. Read a
 Media Actions - Actions for music, television, and movie structured data, such as listen or watch.
 Product results - Items marked up with Product schema.org markup, or identified as a product result by some other mechanism.
 Q&A rich results - A Q&A page rich result.
+Recipe rich result - A Recipe rich result that appeared outside of a collection in search results.
+Recipe gallery - A Recipe rich result that appeared in a collection of Recipe rich results.
 Rich results - Any type of rich result defined in structured data listed in the search gallery. This includes all rich-result subtypes such as job listing and AMP article rich results.
 Review snippet - A review snippet rich result.
 Special Announcement - A SpecialAnnouncements structured data element with information about COVID-19.

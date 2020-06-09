@@ -72,17 +72,6 @@ find out how to test a page
 hosted on a local server or behind a firewall.
 To monitor errors, verify your site ownership in Search Console. If Search Console notices
 any dramatic changes in error rates, you might be notified by email about the change.
-After Google has indexed the page, look for errors and properly processed data in the appropriate
-Rich Result report in
-Search Console.
-Ideally you should see an increase of rich results or structured data types
-and no increase in error rates.
-If you see your structured data being crawled without errors, update your sitemap to have Google crawl
-those pages regularly.
-If you find problems in your structured data, fix it, retest on URL Inspection, and request another
-index until everything looks good in the reports. Then deploy the rest of your pages.
-Monitor your error rates periodically using the
-Rich Result report, especially after releasing new templates or updating your code.
 Guidelines
 You must follow these guidelines to be eligible to appear in the Google job search experience.
 Warning: If your site violates one or more of these guidelines, then Google may take manual action against it. Once you have remedied the problem, you can submit your site for reconsideration.
@@ -111,7 +100,7 @@ The highest value allowed in this rating system. This property is only required 
 rating system is not a 5-point scale. If bestRating is omitted, 5 is assumed.
 itemReviewed
 Organization
-The organization that is being rated. The itemReviewed property must point to a schema.org/Organizaton that represents the company being rated.
+The organization that is being rated. The itemReviewed property must point to a schema.org/Organization that represents the company being rated.
 For example:
 {
 "@context" : "https://schema.org/",
@@ -134,5 +123,24 @@ Number
 The lowest value allowed in this rating system. This property is only required if the
 rating system is not a 5-point scale. If worstRating is omitted, 1 is
 assumed.
+Troubleshooting
+Important: Google does not guarantee that features that consume structured data will
+show up in search results. For a list of common reasons why Google may not
+show your content in a rich result, see the General
+Structured Data Guidelines.
+If you're having trouble implementing structured data, here are some resources that may help you.
+You might have an error in your structured data. Check the
+list of structured
+data errors.
+Troubleshoot
+missing rich results / drop in total rich results.
+For general questions about crawling and indexing, check the
+Webmaster FAQ.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+Ask a question in the Webmaster
+Office Hours.
+Post a question in the Webmaster
+forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.

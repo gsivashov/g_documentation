@@ -28,6 +28,32 @@ QuantitativeValueDistribution
 (extension of QuantitativeValue)
 MonetaryAmountDistribution (extension
 of QuantitativeValueDistribution)
+How to add structured data
+Structured data is a standardized format for providing information about a page and classifying the page
+content. If you’re new to structured data, you can learn more about
+how structured data works.
+Here's an overview of how to build, test, and release structured data. For a step-by-step guide
+on how to add structured data to a web page, check out the
+structured
+data codelab.
+Add the required properties. For information about where to put
+structured data on the page, watch JSON-LD structured
+data: Where to insert on the page.
+Follow the guidelines.
+Validate your code using the
+Rich Results Test.
+Deploy a few pages that include your structured data and use the URL Inspection tool to test how Google sees the page. Be sure that your page is
+accessible to Google and not blocked by a robots.txt file, the noindex tag, or
+login requirements. If the page looks okay, you can
+ask Google to
+recrawl your URLs.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+To keep Google informed of future changes, we recommend that you
+submit a
+sitemap. You can automate this with the
+Search Console Sitemap
+API.
 Examples
 The following JSON-LD example shows a simple Occupation with salary estimate data:
 <html>
@@ -177,7 +203,6 @@ OccupationAggregationByEmployer with salary estimate data:
 <body>
 </body>
 </html>
-Show me the example
 <html>
 <head>
 <title>App/Web App Developer</title>
@@ -526,5 +551,24 @@ percentile90
 Number
 The 90th percentile value. For example, 90% of the salaries for this occupation are at or below
 this value.
+Troubleshooting
+Important: Google does not guarantee that features that consume structured data will
+show up in search results. For a list of common reasons why Google may not
+show your content in a rich result, see the General
+Structured Data Guidelines.
+If you're having trouble implementing structured data, here are some resources that may help you.
+You might have an error in your structured data. Check the
+list of structured
+data errors.
+Troubleshoot
+missing rich results / drop in total rich results.
+For general questions about crawling and indexing, check the
+Webmaster FAQ.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+Ask a question in the Webmaster
+Office Hours.
+Post a question in the Webmaster
+forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-27.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.

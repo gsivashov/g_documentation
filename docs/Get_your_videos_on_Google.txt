@@ -46,6 +46,62 @@ pages by adding ItemList structured data.
 This feature is currently limited to a small set of providers. Google
 Search may automatically show a host carousel for your site without you having to add
 ItemList structured data.
+How to add structured data
+Structured data is a standardized format for providing information about a page and classifying the page
+content. If you’re new to structured data, you can learn more about
+how structured data works.
+Here's an overview of how to build, test, and release structured data. For a step-by-step guide
+on how to add structured data to a web page, check out the
+structured
+data codelab.
+Add the required properties. For information about where to put
+structured data on the page, watch JSON-LD structured
+data: Where to insert on the page.
+Follow the guidelines.
+Validate your code using the
+Rich Results Test.
+Deploy a few pages that include your structured data and use the URL Inspection tool to test how Google sees the page. Be sure that your page is
+accessible to Google and not blocked by a robots.txt file, the noindex tag, or
+login requirements. If the page looks okay, you can
+ask Google to
+recrawl your URLs.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+To keep Google informed of future changes, we recommend that you
+submit a
+sitemap. You can automate this with the
+Search Console Sitemap
+API.
+Monitor performance in Search
+After Google has indexed the page, look for errors and properly processed data using the applicable
+Rich result status reports.
+Ideally you should see an increase of rich results or structured data types
+and no increase in error rates.
+If you see your structured data being crawled without errors, update your sitemap to have Google crawl
+those pages regularly.
+If you find problems in your structured data, fix it, retest on URL Inspection, and request another
+index until everything looks good in the reports. Then deploy the rest of your pages.
+Monitor your error rates periodically using the
+Rich result
+status report, especially after releasing new templates or updating your code. Here are
+some common reasons for errors:
+If you see an increase in errors, perhaps you rolled out a new template that
+doesn't work, or your site interacts with the existing template in a new and bad way.
+If you see a total decrease in structured data, check whether the sudden decrease
+in indexed structured data is matched by an increase in errors. If not, perhaps you are
+no longer embedding structured data in your pages, or the pages are inaccessible to
+Google (perhaps pages are blocked by robots.txt or noindex). Test page
+availability using the
+URL Inspection tool.
+Don't use cached links to debug your pages. Instead, use the
+URL
+Inspection Tool because it has the most up-to-date version of your pages.
+You can retest a specific page using the Rich Results Test
+Use the Performance
+Report in Search Console to see how your page appears as a rich result in Search. You can automatically
+pull these results with the
+Search
+Console API.
 Examples
 Standard video rich result
 Here's an example of a single VideoObject.
@@ -149,7 +205,6 @@ Here's an example of VideoObject and BroadcastEvent in JSON-LD code.
 <body>
 </body>
 </html>
-Show me the example
 <html>
 <head>
 <title>Bald Eagle at the Park - Livestream</title>
@@ -252,7 +307,6 @@ JSON-LD
 <body>
 </body>
 </html>
-Show me the example
 <html>
 <head>
 <title>Introducing the self-driving bicycle in the Netherlands</title>
@@ -376,7 +430,6 @@ title="Tie a Tie">
 </span>
 </div>
 </div>
-Show me the example
 <div>
 <div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
 <!-- Thumbnail -->
@@ -480,7 +533,6 @@ register your interest in our form.
 <body>
 </body>
 </html>
-Show me the example
 <html>
 <head>
 <title>Cat jumps over the fence</title>
@@ -516,7 +568,7 @@ Show me the example
 </html>
 AMP page with a video
 Here's an example of a VideoObject on an AMP page.
-<html>
+<html amp>
 <head>
 <title>Introducing the self-driving bicycle in the Netherlands</title>
 <script type="application/ld+json">
@@ -551,8 +603,7 @@ Here's an example of a VideoObject on an AMP page.
 <body>
 </body>
 </html>
-Show me the example
-<html>
+<html amp>
 <head>
 <title>Introducing the self-driving bicycle in the Netherlands</title>
 <script type="application/ld+json">
@@ -587,45 +638,6 @@ Show me the example
 <body>
 </body>
 </html>
-Enhance your videos on Google
-Here's an overview of how to enhance your videos on Google:
-Ensure that Googlebot can crawl your video pages (meaning, your pages aren't protected by
-a robots.txt file or robots meta tag).
-Make sure you follow our guidelines.
-If you have several copies of the same video on your site hosted under different URLs,
-use canonical URLs on
-each copy of the page.
-Add structured data to your video pages.
-If you’re just getting started, learn more about
-how structured data works. You
-can also try the structured data codelab, which walks you through how to add structured data to
-your website.
-Test and preview your structured data.
-Check the index status of your URLs and request for your URL to be
-crawled with the
-URL inspection tool in
-Search Console. To confirm if crawlers are able to access structured data on your page, use
-the Live Test feature.
-Keep Google informed of new video pages or
-changes to existing video pages.
-Review the guidelines for
-video sitemaps.
-If you're implementing BroadcastEvent, use the
-Indexing API to make sure Google crawls
-your livestream video at the right time.
-Monitor performance in Search
-To understand how users interact with your videos, use the following Google tools:
-Use the Performance
-Report in Search Console to see how your videos appear in either general Search results
-or Discover. You can automatically pull these results with the
-Search
-Console API.
-Use the Rich result status
-report in Search Console to understand what Google could or could not read from your
-site, and troubleshoot rich result errors.
-If you're experiencing unexpected fluctuations or inconsistencies in your traffic, use the
-troubleshooter to
-identify and resolve the issues.
 Guidelines
 To help Google better understand your video, make sure you follow the guidelines:
 Warning: If Google detects that some of the markup on your pages
@@ -895,5 +907,24 @@ endOffset
 Number
 The end time of the clip expressed as the number of seconds from the
 beginning of the work.
+Troubleshooting
+Important: Google does not guarantee that features that consume structured data will
+show up in search results. For a list of common reasons why Google may not
+show your content in a rich result, see the General
+Structured Data Guidelines.
+If you're having trouble implementing structured data, here are some resources that may help you.
+You might have an error in your structured data. Check the
+list of structured
+data errors.
+Troubleshoot
+missing rich results / drop in total rich results.
+For general questions about crawling and indexing, check the
+Webmaster FAQ.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+Ask a question in the Webmaster
+Office Hours.
+Post a question in the Webmaster
+forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.

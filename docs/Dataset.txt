@@ -22,6 +22,62 @@ special tool for processing
 Images capturing data
 Files relating to machine learning, such as trained parameters or neural network structure definitions
 Anything that looks like a dataset to you
+How to add structured data
+Structured data is a standardized format for providing information about a page and classifying the page
+content. If you’re new to structured data, you can learn more about
+how structured data works.
+Here's an overview of how to build, test, and release structured data. For a step-by-step guide
+on how to add structured data to a web page, check out the
+structured
+data codelab.
+Add the required properties. For information about where to put
+structured data on the page, watch JSON-LD structured
+data: Where to insert on the page.
+Follow the guidelines.
+Validate your code using the
+Rich Results Test.
+Deploy a few pages that include your structured data and use the URL Inspection tool to test how Google sees the page. Be sure that your page is
+accessible to Google and not blocked by a robots.txt file, the noindex tag, or
+login requirements. If the page looks okay, you can
+ask Google to
+recrawl your URLs.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+To keep Google informed of future changes, we recommend that you
+submit a
+sitemap. You can automate this with the
+Search Console Sitemap
+API.
+Monitor performance in Search
+After Google has indexed the page, look for errors and properly processed data using the applicable
+Rich result status reports.
+Ideally you should see an increase of rich results or structured data types
+and no increase in error rates.
+If you see your structured data being crawled without errors, update your sitemap to have Google crawl
+those pages regularly.
+If you find problems in your structured data, fix it, retest on URL Inspection, and request another
+index until everything looks good in the reports. Then deploy the rest of your pages.
+Monitor your error rates periodically using the
+Rich result
+status report, especially after releasing new templates or updating your code. Here are
+some common reasons for errors:
+If you see an increase in errors, perhaps you rolled out a new template that
+doesn't work, or your site interacts with the existing template in a new and bad way.
+If you see a total decrease in structured data, check whether the sudden decrease
+in indexed structured data is matched by an increase in errors. If not, perhaps you are
+no longer embedding structured data in your pages, or the pages are inaccessible to
+Google (perhaps pages are blocked by robots.txt or noindex). Test page
+availability using the
+URL Inspection tool.
+Don't use cached links to debug your pages. Instead, use the
+URL
+Inspection Tool because it has the most up-to-date version of your pages.
+You can retest a specific page using the Rich Results Test
+Use the Performance
+Report in Search Console to see how your page appears as a rich result in Search. You can automatically
+pull these results with the
+Search
+Console API.
 Our approach to dataset discovery
 We can understand structured data in Web pages about datasets, using either schema.org Dataset markup, or equivalent
 structures represented in W3C's
@@ -720,16 +776,24 @@ Show me the example
 <body>
 </body>
 </html>
-Help and tools
-Google's Structured Data Markup Helper has support for Dataset markup.
-Use the Rich result status report
-in Search Console to see how your dataset performs in Google Search results. You can
-automatically pull these results with the
-Search Console API.
-The Google Webmaster Central Help Forum for Structured Data
-provides a community forum where you can ask (and answer) questions about structured data
-(including Datasets) and review our
-Frequently
-Asked Questions about Datasets.
+Troubleshooting
+Important: Google does not guarantee that features that consume structured data will
+show up in search results. For a list of common reasons why Google may not
+show your content in a rich result, see the General
+Structured Data Guidelines.
+If you're having trouble implementing structured data, here are some resources that may help you.
+You might have an error in your structured data. Check the
+list of structured
+data errors.
+Troubleshoot
+missing rich results / drop in total rich results.
+For general questions about crawling and indexing, check the
+Webmaster FAQ.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+Ask a question in the Webmaster
+Office Hours.
+Post a question in the Webmaster
+forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-03-13.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.

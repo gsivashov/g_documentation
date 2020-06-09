@@ -14,7 +14,8 @@ Some pages are currently not transcoded, including video sites, pages that requi
 Compare load times
 You can see a side-by-side load comparison between a Web Light page and a non-transcoded page (this test takes a few minutes).
 Opting out of Web Light
-If you do not want your pages to be transcoded, set the HTTP header "Cache-Control: no-transform" in your page response. If Googlebot sees this header, your page will not be transcoded.
+If you do not want your pages to be transcoded, set the HTTP header "Cache-Control: no-transform" in your page response. If Google sees this header, your original page will be shown to the user instead of the transcoded page.
+Note: The Web Light user agent will still visit your page to check for the presence of the no-transform header whenever a user clicks your page in search under appropriate conditions, so you will still see some Web Light traffic. However, we will not transcode the page, so you can safely ignore these requests. We are working to minimize the number of visits for HTTP header checks.
 FAQ
 General
 When will a user see these Web Light pages?
@@ -51,6 +52,8 @@ Due to technical limitations, some pages cannot be currently transcoded. These p
 Sites that require cookies (e.g. personalized site or sites that require you to login before using them)
 Sites that use a significant amount of data (e.g. video sites)
 Other sites that are technically difficult to transcode.
+The Google Web Light user agent ignores robots.txt rules
+The Web Light user agent is used only for explicit browse requests of a human visitor, and so it can ignore robots.txt rules, which are used to block automated crawling requests.
 Was this helpful?How can we improve it?YesNoSubmit
 true
 MobileMobile viewing on feature phonesWeb Light: Faster and lighter mobile pages from searchAd network support for Web Light pages in Google SearchGoogle DiscoverResources for developing mobile-friendly pagesAnnounce mobile billing charges clearlyAssociate your Android app with a website
