@@ -89,34 +89,41 @@ Impression: Standard impression rules apply..
 Position: Standard position rules apply.
 URL: The URL of the page containing the rich card structured markup.
 List/Details rich results
-Some rich result types have two search result views: a list view and a details view. The initial search result is a list containing the top results, with minimal information about each. The user can either expand the list to show more list items, or click a specific result in the list to open a details view with more information about the selected item.
-In desktop results, expanding the list automatically opens the details view of first item in the list. This is counts as an impression, but not a click, on the first list item.
-Here is an mobile device example showing the initial short list view and a details view for a specific job posting.
-List/detail result types
-You can filter the Performance report to show List view or Details view data for a given rich result type (for example, Job listing, Job details, Event listing, Event details).
-The following rich result types are shown as list/detail items in search results:
+Some rich result types have a two-stage search result: the initial search result is a short list containing the top results, with minimal information and a link to a detailed view of each item (list view); clicking a list item opens a detailed view of the selected item (details view), which contains links to one or more providers for that item.
+The list view supports the following actions:
+Click to expand the list:
+In mobile results, this expands to a full list of list view items.
+In desktop results, this expands the list, and also opens the details view of the first item in the list.
+Click a specific result in the short list:
+In mobile results, this opens only the detail view of the clicked item.
+In desktop results, this expands the list and also shows the detail view for the clicked item.
+See the sections below to learn how clicks, impressions, and position are calculated for each view.
+Here is a mobile result showing the initial list view and a details view for a specific job posting.
+The following rich result types are shown as list/details items in search results:
 Job posting
 Event
-List view data
-Click: Clicking an item in list view counts as a click for the provider shown in the list item.
+Filter the Performance report to show list view or details view data for a given rich result type (for example, Job listing/Job details, Event listing/Event details).
+List view metrics
+If a list view item has multiple providers, only the first provider is shown. For example, if a job is available through 3 different agencies, only the first agency in the provider list is shown (and gets an impression) in list view.
+Click: Clicking an item in list view (in the short or full list) counts as a click for the provider shown in the list item. Expanding the short list on desktop automatically opens the details view for the first item, but does not count as a click on the first list item.
 Impression: An impression is counted when a list item is visible in the short list view, and also when the list view is expanded, whether or not the item is actually scrolled into view. Therefore, if an item is visible in the short view and the user then clicks to expand the list, two impressions are counted. If the item were not visible in the short view, and the user clicks to expand the list, only one impression is counted.
-Position: When a list item is viewed in the short list view, all visible items are assigned a single position (the position of the list view container). When the list is expanded and scrollable, each item is assigned its position within the list, where the top item is 1, the second item is 2, and so on. Therefore, if an item is in position 2 in the short list and the user clicks to expand the list, the listing item's position is calculated like this:
+Position: All visible list items in the short view are assigned a single position: the position of the list view container. In the expanded list, each list item is assigned its position within the list, where the top item is 1, the second item is 2, and so on. Therefore, if an item is in position 2 in the short list and the user clicks to expand the list, the listing item's position is calculated like this:
 (List container position (usually 1) + position within the list (2)) / 2 = 1.5.
-URL: The URL of the provider shown. Only one provider is shown in list view for each list item.
-Details view data
-Click: Clicking a details item counts as a click for the provider selected in the details view. The details view can show multiple providers, but the user must choose only one.
-Impression: All providers shown in the details view get an impression, no matter how the user got to the details view. A details view can be opened in the following ways:
+URL: In list view, only one provider is shown for each list item. This is the URL credited with the click, impression, and position.
+Details view metrics
+Click: Clicking a provider in the details view counts as a click only for the selected provider. Details view can show multiple providers, but the user must choose only one.
+Impression: All providers listed in the details view get an impression, no matter how the user got to the details view. A details view can be opened in the following ways:
 By clicking a list item
 Following a direct link to a details view (for example, someone shares the link with them). This can cause your impressions to be higher than your clicks.
-Position: The position in the provider list shown in details view.
-URL: The URL of the selected provider.
+Position: The position of the provider in the list of providers for this item.
+URL: The URL of the provider.
 Why are my details impressions higher than my list clicks? There are a few reasons this can happen:
 If you share a direct link to a details pane with a friend and they open it, there will be one impression for the details view and zero clicks or impressions for the listing view.
 On desktop, expanding the list view automatically shows the the details view for the first list item, which counts as a details impression without a click for its corresponding list item.
 When a list item is clicked, only a single provider gets the click. However, in the resulting details view, all providers that posted details will get an impression.
 Examples
 Here are some example scenarios, for a job posting rich result:
-Example 1: Job listing visible in short list view in position 2.
+Example 1: Job listing visible in short list view (position 2).
 Actions: User clicks to expand the list, clicks on the job listing to see details, then clicks the job details view to visit the provider page.
 Job listing:
 Impressions: 2 (1 from minimized list, 1 from expanded list)
@@ -126,26 +133,44 @@ Job details:
 Impressions: 1
 Clicks: 1
 Position: 2
-Example 2: Job listing not visible in minimized list (position 5).
+Example 2: Job listing not visible in minimized list (position 5).
 Actions: User clicks to expand the list, clicks the job listing to see details, does not click to visit page.
 Job listing:
-Impressions: 2 (1 from minimized list, 1 from expanded list)
+Impressions: 1 (0 from minimized list, 1 from expanded list)
 Clicks: 1 (to open job details)
 Position: 5 (position in the expanded list)
 Job details:
 Impressions: 1
 Clicks: 0
 Position: 1
-Example 3: A job listing not visible in minimized list (position 10)
-Actions: user clicks to expand list, does not scroll down to see job listing.
+Example 3: Job listing not visible in minimized list (position 10)
+Actions: User clicks to expand the list, but does not scroll down to see job listing.
 Job listing:
-Impressions: 1
+Impressions: 1 (0 from minimized list, 1 from expanded list)
 Clicks: 0
 Position: 10 for the expanded list, even though not scrolled into view
 Job details:
 Impressions: 0
 Clicks: 0
 Position: none
+Example 4: Job listing in position 1 on desktop
+Actions: User clicks to expand the list, which automatically opens the first item, which has 2 providers: X first, and Y second. User then clicks provider X in the expanded item.
+Provider X
+Job listing:
+Impressions: 1
+Clicks: 0 (Auto-expand in desktop does not count as a click on the job listing.)
+Position: 1
+Job details:
+Impressions: 1
+Clicks: 1
+Position: 1
+Provider Y
+Job listing:
+Impressions/Clicks/Position: 0
+Job details:
+Impressions: 1
+Clicks: 0
+Position: 2
 App install link
 When a user searches on a mobile device, if the result includes an app page for an app that isn't on the device, the user may see a link to install the app on the device (and results that point to pages in the app will be omitted from results).
 Click: Clicking the link to the install location counts as a click. This does not guarantee that the user actually completed installation of the app.

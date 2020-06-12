@@ -83,8 +83,8 @@ AMP impression/click/position drop
 AMP ranking and CTR drops can occur if you are not getting a rich result for your AMP results. Confirm that your AMP pages are being indexed, and that they are eligible for rich results.
 For a site-wide perspective, open the AMP report for your site, and look for an increase in errors, which are non-indexable pages.
 Drill down to a few URLs and debug the problems.
-If you have included structured data on your AMP pages to enable them to be shown as a rich result, test your pages using the Structured Data Testing Tool. Enter the URL of your live page rather than copying your page code into the tool.
-To test an individual page, run the URL inspection tool on your AMP URL, and test the page using the Structured Data Testing Tool.
+If you have included structured data on your AMP pages to enable them to be shown as a rich result, test your pages using the Rich Results test. Enter the URL of your live page rather than copying your page code into the tool.
+To test an individual page, run the URL inspection tool on your AMP URL, and test the page using the Rich Results test.
 Was this helpful?How can we improve it?YesNoSubmit
 true
 Troubleshooting resultsWhy did my site traffic drop?Why is my page missing from Google Search?Why is my site blocked from Google Search?Why does my search result look wrong?

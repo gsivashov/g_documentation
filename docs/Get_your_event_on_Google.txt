@@ -638,8 +638,8 @@ Here's an example of an event that's been rescheduled and moved online.
 "@context": "https://schema.org",
 "@type": "Event",
 "name": "The Adventures of Kira and Morrison",
-"startDate": "2025-07-21T19:00",
-"endDate": "2025-07-21T23:00",
+"startDate": "2025-07-21T19:00-05:00",
+"endDate": "2025-07-21T23:00-05:00",
 "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
 "eventStatus": [
 "https://schema.org/EventRescheduled",
@@ -662,7 +662,7 @@ Here's an example of an event that's been rescheduled and moved online.
 "price": "30",
 "priceCurrency": "USD",
 "availability": "https://schema.org/InStock",
-"validFrom": "2024-05-21T12:00"
+"validFrom": "2024-05-21T12:00-05:00"
 },
 "performer": {
 "@type": "PerformingGroup",
@@ -687,8 +687,8 @@ Here's an example of an event that's been rescheduled and moved online.
 "@context": "https://schema.org",
 "@type": "Event",
 "name": "The Adventures of Kira and Morrison",
-"startDate": "2025-07-21T19:00",
-"endDate": "2025-07-21T23:00",
+"startDate": "2025-07-21T19:00-05:00",
+"endDate": "2025-07-21T23:00-05:00",
 "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
 "eventStatus": [
 "https://schema.org/EventRescheduled",
@@ -711,7 +711,7 @@ Here's an example of an event that's been rescheduled and moved online.
 "price": "30",
 "priceCurrency": "USD",
 "availability": "https://schema.org/InStock",
-"validFrom": "2024-05-21T12:00"
+"validFrom": "2024-05-21T12:00-05:00"
 },
 "performer": {
 "@type": "PerformingGroup",
@@ -1374,4 +1374,4 @@ Not recommended: 2019-07-20T00:00:00
 Not recommended: 2019-08-15T00:00:01+00:00
 Not recommended2019-08-15T00:00:00+00:00
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-09.

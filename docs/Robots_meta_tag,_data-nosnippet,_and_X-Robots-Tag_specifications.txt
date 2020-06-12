@@ -102,6 +102,8 @@ directive is the default value and has no effect if explicitly
 listed.
 noindex
 Do not show this page in search results.
+To remove information from Google, follow our
+step-by-step guide.
 nofollow
 Do not follow the links on this page.
 none
@@ -259,4 +261,4 @@ indexing or serving directives will not be found and will therefore be ignored. 
 serving directives must be followed, the URLs containing those directives cannot be disallowed from
 crawling.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-29.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-11.

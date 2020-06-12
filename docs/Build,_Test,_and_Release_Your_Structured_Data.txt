@@ -29,8 +29,8 @@ you will see a "Preview results" button, which will generate a sample
 search result display based on your data.
 Deploy a few pages using your structured data and use the
 URL Inspection tool to test
-how Google sees the page.
-Be sure that your page is accessible to Google and not blocked by
+how Google sees the page. If you have both a mobile and desktop version of your pages, add
+structured data to both. Be sure that your page is accessible to Google and not blocked by
 robots, noindex, or login requirements. If the page looks okay, use that tool to request an
 index of the page. Read here to find out how
 to test a page hosted on a local server or behind a firewall.
@@ -209,4 +209,4 @@ A page using recipe markup isn't about recipes.
 Relevant guidelines:
 Recipe guidelines.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-13.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-09.

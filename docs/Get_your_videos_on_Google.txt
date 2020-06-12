@@ -377,7 +377,7 @@ itemprop="thumbnailUrl">
 </a>
 <!-- URL, name, and description -->
 <h1>
-<a itemprop="url" href="https://example.com/videos/self-driving-bicycle"
+<a itemprop="contentUrl" href="https://example.com/videos/self-driving-bicycle"
 title="Introducing the self-driving bicycle in the Netherlands">
 <span itemprop="name">Introducing the self-driving bicycle in the Netherlands</span>
 </a>
@@ -412,7 +412,7 @@ itemprop="thumbnailUrl">
 </a>
 <!-- URL, name, and description -->
 <h1>
-<a itemprop="url" href="https://example.com/videos/how-to-tie-a-tie"
+<a itemprop="contentUrl" href="https://example.com/videos/how-to-tie-a-tie"
 title="Tie a Tie">
 <span itemprop="name">Tie a Tie</span>
 </a>
@@ -442,7 +442,7 @@ itemprop="thumbnailUrl">
 </a>
 <!-- URL, name, and description -->
 <h1>
-<a itemprop="url" href="https://example.com/videos/self-driving-bicycle"
+<a itemprop="contentUrl" href="https://example.com/videos/self-driving-bicycle"
 title="Introducing the self-driving bicycle in the Netherlands">
 <span itemprop="name">Introducing the self-driving bicycle in the Netherlands</span>
 </a>
@@ -477,7 +477,7 @@ itemprop="thumbnailUrl">
 </a>
 <!-- URL, name, and description -->
 <h1>
-<a itemprop="url" href="https://example.com/videos/how-to-tie-a-tie"
+<a itemprop="contentUrl" href="https://example.com/videos/how-to-tie-a-tie"
 title="Tie a Tie">
 <span itemprop="name">Tie a Tie</span>
 </a>
@@ -927,4 +927,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-10.

@@ -98,11 +98,20 @@ Here's an example of structured data on the page that hosts this fact check:
 "appearance": {
 "@type": "OpinionNewsArticle",
 "url": "http://skeptical.example.net/news/a122121",
-"name": "Square Earth - Flat earthers for the Internet age",
+"headline": "Square Earth - Flat earthers for the Internet age",
 "datePublished": "2016-06-22",
 "author": {
 "@type": "Person",
 "name": "T. Tellar"
+},
+"image": "https://example.com/photos/1x1/photo.jpg",
+"publisher": {
+"@type": "Organization",
+"name": "Skeptical News",
+"logo": {
+"@type": "ImageObject",
+"url": "https://example.com/logo.jpg"
+}
 }
 }
 },
@@ -144,11 +153,20 @@ Here's an example of structured data on the page that hosts this fact check:
 "appearance": {
 "@type": "OpinionNewsArticle",
 "url": "http://skeptical.example.net/news/a122121",
-"name": "Square Earth - Flat earthers for the Internet age",
+"headline": "Square Earth - Flat earthers for the Internet age",
 "datePublished": "2016-06-22",
 "author": {
 "@type": "Person",
 "name": "T. Tellar"
+},
+"image": "https://example.com/photos/1x1/photo.jpg",
+"publisher": {
+"@type": "Organization",
+"name": "Skeptical News",
+"logo": {
+"@type": "ImageObject",
+"url": "https://example.com/logo.jpg"
+}
 }
 }
 },
@@ -418,4 +436,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-09.

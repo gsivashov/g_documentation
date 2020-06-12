@@ -38,7 +38,7 @@ Avoid complicated logic or scripting to show or hide videos. Google might not fi
 Provide a good user experience on your video hosting pages.
 Provide structured data, a video sitemap, or both, describing your video. Structured data is best when Google already knows about the page; a sitemap is good for helping Google find new content or learn about new or changed content. Some sites use both: on-page structured data for all videos plus a video sitemap to tell Google about any new, time-sensitive, or hard-to-find videos.
 Test your structured data or sitemaps:
-To test your video structured data, use the Structured Data Testing Tool.
+To test your video structured data, use the Rich Results test.
 To test or submit sitemaps or feeds, first add and verify your site in Search Console. Make sure that you have verified both the site that contains the sitemap or feed and all of the sites referenced in the sitemap or feed. Test or submit your sitemap in the Search Console Sitemaps tool.
 Provide unique descriptive data for each video in your structured data or sitemap.
 Tell Google about any updates to your content.
@@ -164,7 +164,7 @@ Bob shows you how to get perfectly done steaks every time
 <video:player_loc>
 http://www.example.com/videoplayer?video=123
 </video:player_loc>
-<video:platform relationship="allow">web mobile</video:restriction>
+<video:platform relationship="allow">web mobile</video:platform>
 </video:video>
 </url>
 Restrict by platform using structured data or mRSS

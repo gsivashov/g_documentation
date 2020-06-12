@@ -164,6 +164,8 @@ Article objects
 Article objects must be based on one of the following
 schema.org types: Article,
 NewsArticle, BlogPosting.
+Note: AMP and non-AMP pages have different property requirements and
+recommendations.
 AMP
 The following properties apply to AMP pages.
 Required properties
@@ -286,4 +288,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-11.
