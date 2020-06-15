@@ -228,5 +228,5 @@ Wait for Google to find and crawl the associated homepage through natural means.
 Explicitly request indexing of your homepage using Search Console. When Google finds a web page with a <link type="application/rss+xml" rel="alternate" href=RSS_URL/> tag pointing to your RSS feed, it will crawl the linked feed.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageTroubleshootingMarket your podcast with Google Podcasts branding
+HelpGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageMarket your podcast with Google Podcasts brandingTroubleshooting
 Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

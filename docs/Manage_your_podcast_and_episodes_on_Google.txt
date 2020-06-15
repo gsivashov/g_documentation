@@ -30,5 +30,5 @@ Open the Google PubSubHubbub site.
 In the Diagnostics section, enter your feed URL and click Get Info to see the last crawl date and time, the last crawled version of your feed, and more. You can automate the process using the PubSubHubbub API. The last ping time is the last time that you explicitly requested a crawl. The last fetch (successful or not) might be more recent than the last ping time, because Google automatically crawls known feeds regularly.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageTroubleshootingMarket your podcast with Google Podcasts branding
+HelpGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageMarket your podcast with Google Podcasts brandingTroubleshooting
 Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.
