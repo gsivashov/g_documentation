@@ -48,36 +48,6 @@ submit a
 sitemap. You can automate this with the
 Search Console Sitemap
 API.
-Monitor performance in Search
-After Google has indexed the page, look for errors and properly processed data using the applicable
-Rich result status reports.
-Ideally you should see an increase of rich results or structured data types
-and no increase in error rates.
-If you see your structured data being crawled without errors, update your sitemap to have Google crawl
-those pages regularly.
-If you find problems in your structured data, fix it, retest on URL Inspection, and request another
-index until everything looks good in the reports. Then deploy the rest of your pages.
-Monitor your error rates periodically using the
-Rich result
-status report, especially after releasing new templates or updating your code. Here are
-some common reasons for errors:
-If you see an increase in errors, perhaps you rolled out a new template that
-doesn't work, or your site interacts with the existing template in a new and bad way.
-If you see a total decrease in structured data, check whether the sudden decrease
-in indexed structured data is matched by an increase in errors. If not, perhaps you are
-no longer embedding structured data in your pages, or the pages are inaccessible to
-Google (perhaps pages are blocked by robots.txt or noindex). Test page
-availability using the
-URL Inspection tool.
-Don't use cached links to debug your pages. Instead, use the
-URL
-Inspection Tool because it has the most up-to-date version of your pages.
-You can retest a specific page using the Rich Results Test
-Use the Performance
-Report in Search Console to see how your page appears as a rich result in Search. You can automatically
-pull these results with the
-Search
-Console API.
 Our approach to dataset discovery
 We can understand structured data in Web pages about datasets, using either schema.org Dataset markup, or equivalent
 structures represented in W3C's
@@ -776,6 +746,35 @@ Show me the example
 <body>
 </body>
 </html>
+Monitor rich results with Search Console
+Search Console is a tool that helps you monitor how your pages perform in Google Search.
+You don't have to sign up for Search Console to be included in Google Search results,
+but it can help you understand and improve how Google sees your site. We
+recommend checking Search Console in the following cases:
+After deploying structured data for the first time
+After releasing new templates or updating your code
+Analyzing traffic periodically
+After deploying structured data for the first time
+After Google has indexed the page, look for issues using the relevant
+Rich result status report.
+Ideally you should see an increase of rich results valid pages and no increase in errors or warnings. If you find issues
+in your structured data:
+Fix the errors.
+Inspect a live URL to check if the issue persists.
+Request validation using the status report.
+After releasing new templates or updating your code
+When you make significant changes to your website, monitor for increases in structured data errors and warnings.
+If you see an increase in errors, perhaps you rolled out a new template that doesn't work, or your site interacts with the existing
+template in a new and bad way.
+If you see a decrease in valid items (not matched by an increase in errors), perhaps you are
+no longer embedding structured data in your pages. Use the
+URL Inspection tool to learn what is causing the issue.
+Analyzing traffic periodically
+Analyze your Google Search traffic using the Performance Report.
+The data will show you how often your page appears as a rich result in Search, how often users click on it and what is
+the average position you appear on search results. You can also automatically pull these
+results with the Search
+Console API.
 Troubleshooting
 Important: Google does not guarantee that features that consume structured data will
 show up in search results. For a list of common reasons why Google may not
@@ -796,4 +795,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-19.

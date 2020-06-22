@@ -56,22 +56,32 @@ Here's an example for EmployerAggregateRating using JSON-LD code.
 <body>
 </body>
 </html>
-Add aggregate ratings
-Ensure that Googlebot can crawl your web pages that post employer aggregate ratings (not protected by a robots.txt file or robots meta tag).
-Follow our guidelines.
-Add EmployerAggregateRating structured data to your web page.
-Validate your code using the Structured
-Data Testing Tool. Paste your code into the tool and click the validate button.
-Deploy a few pages using your structured data and use the
-URL Inspection tool to test
-how Google sees the page.
-Be sure that your page is accessible to Google and not blocked by
-robots, noindex, or login requirements. If the page looks okay, use that tool to request an
-index of the page. Read here to
-find out how to test a page
-hosted on a local server or behind a firewall.
-To monitor errors, verify your site ownership in Search Console. If Search Console notices
-any dramatic changes in error rates, you might be notified by email about the change.
+How to add structured data
+Structured data is a standardized format for providing information about a page and classifying the page
+content. If you’re new to structured data, you can learn more about
+how structured data works.
+Here's an overview of how to build, test, and release structured data. For a step-by-step guide
+on how to add structured data to a web page, check out the
+structured
+data codelab.
+Add the required properties. For information about where to put
+structured data on the page, watch JSON-LD structured
+data: Where to insert on the page.
+Follow the guidelines.
+Validate your code using the
+Rich Results Test.
+Deploy a few pages that include your structured data and use the URL Inspection tool to test how Google sees the page. Be sure that your page is
+accessible to Google and not blocked by a robots.txt file, the noindex tag, or
+login requirements. If the page looks okay, you can
+ask Google to
+recrawl your URLs.
+Note: Allow time for re-crawling and re-indexing. Remember that it
+may take several days after publishing a page for Google to find and crawl it.
+To keep Google informed of future changes, we recommend that you
+submit a
+sitemap. You can automate this with the
+Search Console Sitemap
+API.
 Guidelines
 You must follow these guidelines to be eligible to appear in the Google job search experience.
 Warning: If your site violates one or more of these guidelines, then Google may take manual action against it. Once you have remedied the problem, you can submit your site for reconsideration.
@@ -143,4 +153,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-19.

@@ -16,6 +16,7 @@ Load content when it's visible in the viewport
 To ensure that Googlebot sees all content on your page, make sure that your lazy
 loading implementation loads all relevant content whenever it is visible in the
 viewport. Here are a few examples on how you can do this:
+Native lazy-loading for images and iframes.
 IntersectionObserver API and a polyfill
 A JavaScript library that supports loading data when it enters the viewport.
 Make sure to test your implementation.
@@ -47,4 +48,4 @@ URL inspection tool
 in Search Console to see if all images were loaded. Check the screenshot and the rendered HTML
 to make sure your images are loaded.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-01-06.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-16.

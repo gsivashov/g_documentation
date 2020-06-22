@@ -1,15 +1,29 @@
 https://support.google.com/webmasters/answer/7687465
 
-Property Settings pageThe Property Settings page enables you to view your settings for the current property. Click the appropriate item on the page to view or manage that setting.
-Setting
+Property Settings pageThe Property Settings page enables you to view your settings for the current property. Click an item on the settings page to view or manage that setting.
+Setting or value
 Description
 Ownership verification
-Manage your verification of this property.
+Manage the verification method used for this property.
 Users and permissions
 See and manage the list of users for the current property. (Management rights apply only to property owners.)
 Removing a property
 Remove a property from your list, with the option of adding it back later (in most cases).
-Open Site Settings page
+Change of address
+Use this when moving all pages on your site to a new domain (for example, moving from example.com to anotherexample.com)
+European press publication designation
+Manage your site's status as a European press publication.
+International targeting report
+Choose which country should be prioritized when showing your search results.
+Limit the Google crawl rate
+If your site is being overwhelmed by Google crawl requests, you can limit the request rate.
+Indexing crawler
+Which is the primary crawler used for this site: mobile or desktop.
+Date property added
+Shows the most recent time that you added the property to your property list.
+Remove property
+Click the Remove property button to remove a property from your property list.
+Open Property Settings page
 Was this helpful?How can we improve it?YesNoSubmit
 true
 Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingGoogle Assistant in ChromeInternational Targeting reportChange Googlebot crawl rate

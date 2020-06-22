@@ -523,12 +523,7 @@ schema.org/QuantitativeValueDistribution.
 Required properties
 duration
 Duration
-The frequency of the specified value. Typical values for unitText are:
-"DAY"
-"HOUR"
-"MONTH"
-"WEEK"
-"YEAR"
+The period of time that it takes to earn the estimated salary in ISO 8601 date format. For example, if the estimated salary is earned over the course of one year, use P1Y for duration.
 Starting March 24, 2020, we updated the documentation to require duration instead of unitText. While we continue to support unitText, we require duration moving forward. We recommend that you switch over to using duration, if possible.
 Recommended properties
 median
@@ -571,4 +566,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-19.

@@ -1,29 +1,31 @@
 https://developers.google.com/search/reference/podcast/rss-feed
 
 Get your podcast on GoogleThis guide shows you how Google exposes podcasts to Google users, and how to get your own podcast on Google.
-Google Podcasts platforms
+Where will Google show my podcast?
 Google can expose your podcast to listeners through many different Google Podcasts platforms, including:
-Google Search on all browsers, desktop and mobile (sample Google Search result shown below)
+Google Search on all browsers, desktop and mobile. Users can play your episodes in the browser (sample Google Search result shown below).
 Google Search App for Android (requires v6.5 or higher of the Google Search App)
-Google Podcasts app
-Google Home
+Google Podcasts app for mobile devices
+Google Home speaker system
 Content Action for the Google Assistant
-Android Auto
-When Google has indexed your podcast, it can appear in any of these products; users can play your episodes in the browser, on an app, on their Google Home, and more. Google can transcribe and parse the audio content in some languages in order to match listener queries.
-You can see listening data for your show in any of these platforms using Google Podcasts Manager.
+Android Auto in your car
+When you've followed the steps below correctly, your podcast can appear in any of the products listed above. In some languages, Google can understand the audio content and match listener queries in languages other than the podcast language.
 Here's an example of how episodes for your podcast might appear in Google Search results on desktop:
 Podcast episodes can be browsed and played in Google Search, among many other Google Podcasts platforms
-Additional Google Podcasts platforms
-Here are a few additional podcasting platforms on Google with different requirements if you want your audio content to appear there:
-Google Play Music Podcast Portal - Podcasts on Google Play Music. Follow these instructions to participate. (Most steps are the same as described here, but there are a few additional requirements.)
+Additional Google podcast platforms
+There are a few additional podcasting platforms on Google with different requirements. if you want your audio content to appear on any of the following platforms, you must follow the linked instructions.
 Google news briefings - Prearranged news playlists based on general topic or provider; available in many locales.
-Google audio news - An on-demand news playlist customized for each user; not available in all areas.
+Your News Update - An on-demand news playlist customized for each user; not available in all areas.
 Steps to getting your podcast on Google
 In order to get your podcast on Google:
+Follow the prerequisites listed below
 Create an RSS feed that follows Google's guidelines.
 Create a dedicated homepage that references your feed, and follows Google's guidelines. This is not required, but is strongly recommended.
 Get your podcast indexed. If you have a dedicated homepage, you can either wait until Google finds and indexes your homepage and RSS feed naturally, or you can tell Google about your page to ensure crawling; if you have no dedicated homepage, you should manually request indexing of your RSS feed by Google.
 If all goes well, a new feed should be available on Google within a week.
+0. Prerequisites
+In order to get your podcast to appear in Google, you'll need to understand how RSS works, and how to create an RSS feed for your podcast. If you don't understand RSS, you can either learn about it yourself or find a web developer who can create the feed for you.
+For an optimal experience, you'll also need to understand some basic HTML coding, and be able to modify the HTML code of your podcast's homepage.
 Do not mix http and https resources
 If your content is served from mixed protocols, your users can have a bad playback experience in Chrome browsers as well as other playback devices. Mixed content is when an HTTP page includes HTTPS resources, or an HTTPS page includes HTTP resources. Bad experiences include popup warnings and blocked playback. Therefore, we recommend that your RSS feed, podcast homepage, and all linked audio resources be served from HTTPS addresses.
 1. Create your RSS feed

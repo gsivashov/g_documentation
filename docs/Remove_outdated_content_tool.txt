@@ -1,30 +1,33 @@
 https://support.google.com/webmasters/answer/7041154
 
-Remove outdated content toolRemove snippets and cached content for pages that you don't ownWhat is this tool used for?
-If you see a search result that you do not own, and either
-the result snippet or the cached (stored) result in Search results is different from the current page, OR
-the page no longer exists, then
-You can request that Google drop the outdated cache and snippet from search results, as described in "How do I use the tool".
-What is this tool not used for?
-Do not use this tool if you think the information on the page is wrong, bad, illegal, etc. If you think the current information is bad, wrong, dangerous, personal, or harmful, see here.
-If you are a verified owner of the page in Search Console, use this tool instead.
-If you want to permanently remove a search result for a URL that is publicly accessible. See here for more about removing information from Google and the web.
-How do I use the tool?
-Read "What is this tool used for" and "What is this tool not used for" above.
+Remove outdated content toolRemove snippets and cached content for pages that you don't ownUse this tool to have Google update search results for pages that no longer exist, or have significant changes on them (removal of specific content).
+If your request is approved:
+Google will remove the snippet and cached copy from Search results.
+If the page is no longer available, it will no longer appear in Search results.
+If the page is still available but changed, it will remove the snippet and cached copy from Search results, but both will be refreshed the next time Google's crawler visits the page. Until that time, the page can still appear in Search results.
+What this tool is used for
+Use this tool only if:
+You see a search result that you do not own, and
+The page no longer exists OR the result snippet or the cached (stored) result in Search results is significantly different from the current page.
+What this tool is not used for
+Do not use this tool if:
+... you think the information on the page is wrong, bad, illegal, etc. If you think the current information is bad, wrong, dangerous, personal, or harmful, see here.
+... you are a verified owner of the page in Search Console. If you are a verified owner, use this tool instead.
+... you want to permanently remove a search result for a URL that is publicly accessible. See here for more about removing information from Google and the web.
+... you just want Google to recrawl a page. If a page has not been removed or had significant changes (removal of important images or critical information), then this request will fail. Here's how to ask Google for a simple recrawl.
+Request update in Search
+Understand what the tool is used for and what the tool is not used for above. (Hint: it will not remove a page or image that still exists and has not changed.)
 Open the Remove Outdated Content tool
-Enter the URL of the search result to clear. Learn how to get this URL.
-Click Request Removal. You will see a list of your requested removals at the bottom of the page.
-Periodically check back to see if your removal was granted. If granted, see the next section. If denied, there will be an explanation why.
-What will a successful request do?
-If your request is successful:
-Google will remove the snippet and cached copy from search results.
-If the page is no longer available, it will remove the search result entirely.
-If the page is still available, it will remove the currently cached version and snippet from search results. The page can still appear in search results, but without a snippet or cached version. The cached version and snippet will be refreshed in search results the next time Google's crawler visits the page.
+Enter the URL of the search result to verify.
+If you are reporting an image that has changed or been removed, you will need both the image URL and the URL of the containing page.
+If you are reporting a page that has been changed or removed, simply use the page URL. Learn how to get this URL.
+Click Submit. If the page or image are no longer at the specified URL, you will see a list of your requested removals at the bottom of the page. If the page or image still exist at the URL, you will be asked for additional information.
+Periodically check back to see if your removal was granted. If denied, there will be an explanation why.
 Why was my request denied?
 Please see this help topic for explanations why a snippet or cache removal request might be denied.
 What is a snippet and a cached copy?
-A snippet is a computer-generated summary of the page. Learn more.
-When Googlebot (Google's crawler) crawls a page, it makes a copy of the page that can be viewed in search result. This stored copy of the page is called a cached copy, cached version, or sometimes simply "cache".
+Snippet: A computer-generated summary of the page. Learn more.
+Cached copy: When Googlebot (Google's crawler) crawls a page, it makes a copy of the page that can be viewed in Search results. This stored copy of the page is called a cached copy or cached version.
 Was this helpful?How can we improve it?YesNoSubmit
 true
 Removing informationRemove information from GoogleGet my personal information off GoogleRemove outdated content tool

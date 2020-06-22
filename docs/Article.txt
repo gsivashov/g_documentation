@@ -239,9 +239,12 @@ The Rich Results Test doesn't show a warning for this property,
 as it's only recommended if you decide that it's applicable to your site.
 datePublished
 DateTime
-The date and time the article was first published, in ISO 8601 format.
-Add the datePublished if you want to provide more accurate date information to Google.
-The Rich Results Test doesn't show a warning for this property,
+The date and time the article was first published, in
+ISO 8601 format.
+Add the datePublished property if you want to provide more
+accurate date information to Google. The
+Rich Results Test doesn't show a
+warning for this property,
 as it's only recommended if you decide that it's applicable to your site.
 headline
 Text
@@ -288,4 +291,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-11.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-15.
