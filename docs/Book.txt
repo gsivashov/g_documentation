@@ -13,32 +13,6 @@ To ensure robust
 coverage and better serve our users, this feature is currently limited to
 book providers that have broad book availability. If you would like to participate, register your
 interest in our form. Indicating interest in this feature does not guarantee participation.
-How to add structured data
-Structured data is a standardized format for providing information about a page and classifying the page
-content. If you’re new to structured data, you can learn more about
-how structured data works.
-Here's an overview of how to build, test, and release structured data. For a step-by-step guide
-on how to add structured data to a web page, check out the
-structured
-data codelab.
-Add the required properties. For information about where to put
-structured data on the page, watch JSON-LD structured
-data: Where to insert on the page.
-Follow the guidelines.
-Validate your code using the
-Rich Results Test.
-Deploy a few pages that include your structured data and use the URL Inspection tool to test how Google sees the page. Be sure that your page is
-accessible to Google and not blocked by a robots.txt file, the noindex tag, or
-login requirements. If the page looks okay, you can
-ask Google to
-recrawl your URLs.
-Note: Allow time for re-crawling and re-indexing. Remember that it
-may take several days after publishing a page for Google to find and crawl it.
-To keep Google informed of future changes, we recommend that you
-submit a
-sitemap. You can automate this with the
-Search Console Sitemap
-API.
 Examples
 The user’s query can indicate an intent to find a book, such as
 a book title, like The Catcher in the Rye, or the books of J.D. Salinger.
@@ -48,82 +22,6 @@ Graph card for the book. Read more about managing your Knowledge Graph data. Rea
 options for acquiring the book. Through links you provide, read actions
 send users directly from the Knowledge Graph card to a book page on your
 site or app.
-<html>
-<head>
-<title>The Catcher in the Rye</title>
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"Book",
-"name" : "The Catcher in the Rye",
-"author": {
-"@type":"Person",
-"name":"J.D. Salinger"
-},
-"url" : "http://www.barnesandnoble.com/store/info/offer/JDSalinger",
-"workExample" : [{
-"@type": "Book",
-"isbn": "031676948",
-"bookEdition": "2nd Edition",
-"bookFormat": "https://schema.org/Hardcover",
-"potentialAction":{
-"@type":"ReadAction",
-"target":
-{
-"@type":"EntryPoint",
-"urlTemplate":"http://www.barnesandnoble.com/store/info/offer/0316769487?purchase=true",
-"actionPlatform":[
-"http://schema.org/DesktopWebPlatform",
-"http://schema.org/IOSPlatform",
-"http://schema.org/AndroidPlatform"
-]
-},
-"expectsAcceptanceOf":{
-"@type":"Offer",
-"Price":6.99,
-"priceCurrency":"USD",
-"eligibleRegion" : {
-"@type":"Country",
-"name":"US"
-},
-"availability": "https://schema.org/InStock"
-}
-}
-},{
-"@type": "Book",
-"isbn": "031676947",
-"bookEdition": "1st Edition",
-"bookFormat": "https://schema.org/EBook",
-"potentialAction":{
-"@type":"ReadAction",
-"target":
-{
-"@type":"EntryPoint",
-"urlTemplate":"http://www.barnesandnoble.com/store/info/offer/031676947?purchase=true",
-"actionPlatform":[
-"http://schema.org/DesktopWebPlatform",
-"http://schema.org/IOSPlatform",
-"http://schema.org/AndroidPlatform"
-]
-},
-"expectsAcceptanceOf":{
-"@type":"Offer",
-"Price":1.99,
-"priceCurrency":"USD",
-"eligibleRegion" : {
-"@type":"Country",
-"name":"UK"
-},
-"availability": "https://schema.org/InStock"
-}
-}
-}]
-}
-</script>
-</head>
-<body>
-</body>
-</html>
 <html>
 <head>
 <title>The Catcher in the Rye</title>
@@ -266,8 +164,8 @@ Text
 The platform(s) on which the link works. One or more of the following:
 http://schema.org/DesktopWebPlatform: Works on desktop web browsers.
 http://schema.org/MobileWebPlatform: Works on mobile web browsers.
-http://schema.org/AndroidPlatform: Works on Android native app.
-http://schema.org/IOSPlatform: Works on iOS native app.
+http://schema.org/AndroidPlatform: Works on Android devices.
+http://schema.org/IOSPlatform: Works on iOS devices.
 This property can be omitted for deep links with a custom
 Android scheme.
 urlTemplate
@@ -387,4 +285,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-02.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-23.

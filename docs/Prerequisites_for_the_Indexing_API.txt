@@ -61,7 +61,7 @@ service account email address in two places:
 The client_email field in the JSON private key that you downloaded when
 you created your project.
 The Service account ID column of the Service Accounts view in
-the Developer Console.
+the Developers Console.
 The email address has a format similar to the following:
 my-service-account@project-name.google.com.iam.gserviceaccount.com
 For example, "my-service-account@test-project-42.google.com.iam.gserviceaccount.com".
@@ -173,4 +173,4 @@ In addition to showing how to obtain a token, these examples show where you can 
 the request message. For information about the types of calls you can make, and the structure of the
 message bodies for those calls, see Using the API.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-01-31.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-22.

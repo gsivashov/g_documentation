@@ -22,5 +22,5 @@ Note that while Google can index the content of Flash files, other search engine
 You could also consider using sIFR (Scalable Inman Flash Replacement). sIFR (an open-source project) lets webmasters replace text elements with Flash equivalents. Using this technique, content and navigation is displayed by an embedded Flash object but, because the content is contained in the HTML source, it can be read by non-Flash users (including search engines).
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Images and videoGoogle Image best practicesVideo best practicesRich media file best practicesImage Rights Metadata in Google Images
+Images and videoGoogle Image best practicesImage sitemapsImage Rights Metadata in Google ImagesVideo best practicesVideo sitemaps and video sitemap alternativesRich media file best practices
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

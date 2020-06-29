@@ -278,5 +278,5 @@ Small, hidden, or difficult to find videos
 Make sure that your videos are visible and easy to find on your video pages. Google suggests using a standalone page for each video with a descriptive title or description unique to each individual video. Videos should be prominent on the page and should not be hidden or difficult to find.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Images and videoGoogle Image best practicesVideo best practicesRich media file best practicesImage Rights Metadata in Google Images
+Images and videoGoogle Image best practicesImage sitemapsImage Rights Metadata in Google ImagesVideo best practicesVideo sitemaps and video sitemap alternativesRich media file best practices
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -142,7 +142,7 @@ content in the form of in-page structured data (such as AMP and canonical versio
 article) or has a license agreement with Google, this
 setting will not interrupt those more specific permitted uses.
 Publishers who do not want Google to use larger thumbnail images when their AMP pages and
-canonical version of an article are shown in search or Discover should specify a
+canonical version of an article are shown in Search or Discover should specify a
 max-image-preview value of standard or none.
 Example:
 <meta name="robots" content="max-image-preview:standard">
@@ -261,4 +261,4 @@ indexing or serving directives will not be found and will therefore be ignored. 
 serving directives must be followed, the URLs containing those directives cannot be disallowed from
 crawling.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-11.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-24.

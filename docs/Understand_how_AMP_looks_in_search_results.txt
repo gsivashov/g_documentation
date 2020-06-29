@@ -6,9 +6,10 @@ Search for Developers
 Guides
 Send feedback
 Understand how AMP looks in search results
-Google Search indexes AMP pages to provide a fast, reliable web experience. When an AMP page
-is available, it can be featured on mobile search as part of rich results and carousels. While
-AMP itself isn't a ranking factor, speed
+Google Search indexes AMP pages to provide a
+fast, reliable web experience. When an AMP page is available, it can be featured on mobile
+search as part of rich results and carousels. While AMP itself isn't a ranking factor,
+speed
 is a ranking factor for Google Search. Google Search applies the same standard to all
 pages, regardless of the technology used to build the page. For more information on the
 benefits of using AMP, see the
@@ -102,4 +103,4 @@ Currently, signed exchange is only supported in Google Search for rich results a
 results, not carousels. To learn more about setting up signed exchange for AMP pages, visit
 Serve AMP using Signed Exchanges.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-19.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-22.

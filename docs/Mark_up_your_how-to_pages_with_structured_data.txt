@@ -1984,9 +1984,9 @@ After deploying structured data for the first time
 After releasing new templates or updating your code
 Analyzing traffic periodically
 After deploying structured data for the first time
-After Google has indexed the page, look for issues using the relevant
+After Google has indexed your pages, look for issues using the relevant
 Rich result status report.
-Ideally you should see an increase of rich results valid pages and no increase in errors or warnings. If you find issues
+Ideally you should see an increase of valid pages, and no increase in errors or warnings. If you find issues
 in your structured data:
 Fix the errors.
 Inspect a live URL to check if the issue persists.
@@ -2024,4 +2024,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-19.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-29.

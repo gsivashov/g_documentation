@@ -579,7 +579,7 @@ The physical location of the business. Include as many properties as possible. T
 properties you provide, the higher quality the result is to users. For example:
 "address": {
 "@type": "PostalAddress",
-"streetAddress": "148 W 51st St",
+"streetAddress": "148 W 51st St Suit 42 Unit 7",
 "addressLocality": "New York",
 "addressRegion": "NY",
 "postalCode": "10019",
@@ -739,4 +739,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-24.

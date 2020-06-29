@@ -33,10 +33,10 @@ the page is nearly the same – keep the markup @media only screen and
 (max-width: 600px) {...} and forego the Vary HTTP header if it's included
 specifically for Google. If you're using responsive images, include the
 <picture> element.
-I have both a mobile website and a native app. Any advice?
-Build your mobile website and native apps with "deep linking
+I have both a mobile website and an app. Any advice?
+Build your mobile website and apps with "deep linking
 capability" or URIs that provide pointers to specific areas of content. Deep links and URIs
 provide more acquisition possibilities for your business through Search or
 social sharing.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-06-17.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-22.

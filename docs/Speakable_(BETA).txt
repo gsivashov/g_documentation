@@ -47,30 +47,6 @@ xPath content-locator value:
 <body>
 </body>
 </html>
-<html>
-<head>
-<title>Speakable markup example</title>
-<meta name="description" content="This page is all about the quick brown fox" />
-<script type="application/ld+json">
-{
-"@context": "https://schema.org/",
-"@type": "WebPage",
-"name": "Quick Brown Fox",
-"speakable":
-{
-"@type": "SpeakableSpecification",
-"xpath": [
-"/html/head/title",
-"/html/head/meta[@name='description']/@content"
-]
-},
-"url": "http://www.quickbrownfox_example.com/quick-brown-fox"
-}
-</script>
-</head>
-<body>
-</body>
-</html>
 Country and language availability
 The speakable property works for users in the U.S. that have Google Home devices
 set to English, and publishers that publish content in English. We hope to launch in other
@@ -81,7 +57,6 @@ For your news content to be eligible as answers to topical news queries, follow 
 Make sure that you follow our guidelines.
 Add speakable structured data
 to your web page.
-Test and validate your structured data.
 Submit your content to begin the onboarding process. After you submit your content, the
 review can take up to five business days. Once complete, Google sends you a notification to
 let you know whether your content is eligible or not.
@@ -177,4 +152,4 @@ your own custom applications. For example, allowing users to interact with the a
 Google Assistant. For more information, see the Actions on Google developer
 guide.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-23.

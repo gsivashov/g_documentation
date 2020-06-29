@@ -92,14 +92,14 @@ to serve the same content to users, whatever the device they use.
 Avoid interstitials
 Many websites show interstitials or overlays that partially or
 completely cover the contents of the page the user is visiting. These
-interstitials, commonly seen on mobile devices promoting a website's native
-app, mailing list sign-up forms, or advertisements, can make for a bad user
+interstitials, commonly seen on mobile devices promoting a website's app, mailing
+list sign-up forms, or advertisements, can make for a bad user
 experience. In extreme cases, the interstitial is designed to make it very
 difficult for the user to dismiss it and view the real content of the page.
 Since screen real-estate on mobile devices is limited, any interstitial
 negatively impacts the user's experience.
 App Download Interstitials
-Many webmasters promote their business' native apps to their mobile website
+Many webmasters promote their business' apps to their mobile website
 visitors. If not done with care, this can cause indexing issues, and disrupt
 the visitor's usage of the site.
 The interstitial is blocking the user from completing tasks.
@@ -107,7 +107,7 @@ A banner lets users complete tasks while presenting the app.
 Recommended actions:
 Use a simple banner to promote your app inline with the page's content. This banner can be implemented using:
 A browser-supported banner such as Smart App Banners for Safari or
-Native App Banners for Chrome.
+in-app install experience for Chrome.
 An HTML banner or image, similar to a typical small advertisement, that
 links to the correct app store for download.
 Irrelevant Cross Links
@@ -154,4 +154,4 @@ also tapping a neighboring element. To fix these errors, make sure to
 size and space buttons and navigational links suitably for your mobile
 visitors. Read more in Size Tap Targets Appropriately.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-01-06.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-23.

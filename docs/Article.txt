@@ -142,6 +142,10 @@ For multi-part content, make sure that the rel=canonical points at either
 each individual page or a "view-all" page (and not to page 1 of a multi-part series). Learn
 more about canonicalization.
 AMP logo guidelines
+Note: These logo guidelines apply to the Article structured
+data placed on individual AMP pages. For guidelines about the Logo markup that
+apply to the actual logo of a site, see the
+Logo markup documentation.
 The following guidelines apply to logos for all AMP pages, including AMP stories.
 The file must be a raster file, such as .jpg, .png, or .gif. Don't use vector files, such as .svg or .eps.
 Don't use animation.
@@ -291,4 +295,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-15.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-24.

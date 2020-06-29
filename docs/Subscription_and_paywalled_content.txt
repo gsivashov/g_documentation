@@ -64,53 +64,6 @@ Paywalled Content
 </div>
 </body>
 </html>
-<html>
-<head>
-<title>Article headline</title>
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "NewsArticle",
-"mainEntityOfPage": {
-"@type": "WebPage",
-"@id": "https://example.org/article"
-},
-"headline": "Article headline",
-"image": "https://example.org/thumbnail1.jpg",
-"datePublished": "2025-02-05T08:00:00+08:00",
-"dateModified": "2025-02-05T09:20:00+08:00",
-"author": {
-"@type": "Person",
-"name": "John Doe"
-},
-"publisher": {
-"name": "The Exemplary Times",
-"@type": "Organization",
-"logo": {
-"@type": "ImageObject",
-"url": "https://example.org/logo.jpg"
-}
-},
-"description": "A most wonderful article",
-"isAccessibleForFree": "False",
-"hasPart":
-{
-"@type": "WebPageElement",
-"isAccessibleForFree": "False",
-"cssSelector" : ".paywall"
-}
-}
-</script>
-</head>
-<body>
-<div class="non-paywall">
-Non-Paywalled Content
-</div>
-<div class="paywall">
-Paywalled Content
-</div>
-</body>
-</html>
 Guidelines
 You must follow the general structured data guidelines and
 technical guidelines for your
@@ -240,4 +193,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-23.
