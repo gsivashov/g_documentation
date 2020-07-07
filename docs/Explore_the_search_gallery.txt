@@ -37,11 +37,8 @@ Navigation that indicates the page's position in the site hierarchy.
 Get started
 Generic
 Carousel
-Rich results that display in a sequential list or gallery. Most often, the
-carousel features articles from a single site (known as a host carousel). The
-carousel can also feature a variety of publishers, like Top stories. This feature
-works best when used in combination with one of the following features:
-Article,
+Rich results that display in a sequential list or gallery from a single site. This
+feature must be combined with one of the following features:
 Recipe,
 Course,
 Restaurant,
@@ -178,4 +175,4 @@ segments, and live-stream content.
 Get started
 Food and Drink, News, Education and Science, Sports
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-05.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-30.

@@ -129,15 +129,20 @@ mobile devices. Read more about the benefits
 of AMP on mobile devices.
 Guidelines
 You must follow these guidelines to enable structured data to be eligible for inclusion in Google Search results.
-Warning: If your site violates one or more of these guidelines, then Google may take manual action against it. Once you have remedied the problem, you can submit your site for reconsideration.
+Warning: If your site violates one or more of these guidelines,
+then Google may take
+manual action against it.
+Once you have remedied the problem, you can submit your site for
+reconsideration.
 Webmaster guidelines
 General structured data guidelines
 Technical guidelines
 AMP logo guidelines (if applicable)
 AMP story metadata requirements (if applicable)
 Technical guidelines
-If you offer subscription-based access to your website content, or if users must register for access,
-you should add structured data for subscription and paywalled content.
+If you offer subscription-based access to your website content, or if users must register
+for access, you should add structured data for
+subscription and paywalled content.
 For multi-part content, make sure that the rel=canonical points at either
 each individual page or a "view-all" page (and not to page 1 of a multi-part series). Learn
 more about canonicalization.
@@ -147,20 +152,19 @@ data placed on individual AMP pages. For guidelines about the Logo markup that
 apply to the actual logo of a site, see the
 Logo markup documentation.
 The following guidelines apply to logos for all AMP pages, including AMP stories.
-The file must be a raster file, such as .jpg, .png, or .gif. Don't use vector files, such as .svg or .eps.
+The file format must be supported by Google Images.
 Don't use animation.
 The graphic part of the logo should be legible on the background color.
 The following guidelines apply to logos used for general AMP pages, not AMP stories. There are different logo requirements for AMP stories.
 The logo must be a rectangle, not a square.
-The logo should fit in a 60x600px rectangle, and either be exactly 60px high (preferred), or exactly 600px wide.
-For example, 450x45px would not be acceptable, even though it
-fits within the 600x60px rectangle.
+The logo should fit in a 60x600px rectangle, and either be exactly 60px high (preferred),
+or exactly 600px wide. For example, 450x45px would not be acceptable, even though it fits
+within the 600x60px rectangle.
 Publishers should use only one logo per brand that is consistent across general AMP pages.
 Use full wordmark or full logo; not an icon.
 The text in word-based logos should be at most 48px tall and centered vertically within
 the 60px image height. Add additional space to pad the height to 60px.
-Logos with a solid background should include 6px minimum padding around the
-graphic.
+Logos with a solid background should include 6px minimum padding around the graphic.
 Structured data type definitions
 The following section describes the property requirements for Article
 structured data. You must include the required properties for your content to be eligible for display as a rich result. You can also include the recommended properties to add more information about your content, which could provide a better user experience.
@@ -295,4 +299,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-24.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-02.

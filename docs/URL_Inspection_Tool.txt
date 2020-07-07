@@ -190,7 +190,8 @@ View the rendered page
 You can view a screenshot of the rendered page as Googlebot sees it. This is useful for confirming that all elements of the page are present and appear as you intend. Differences might be the result of resources that are blocked to Googlebot.
 Screenshots are available only for the live URL test; screenshots are not available for the indexed URL. The page must be reachable to generate a screenshot. If your page is behind a firewall, you can expose it to the URL Inspection tool using a tunnel.
 To view the rendered page:
-Run a live test on a URL.
+Inspect the homepage of your site.
+Click Test live URL on the index results page.
 Click View tested page on the page verdict card to open additional information panels. If this option is not available it is typically because the page cannot be reached for the live test.
 Navigate to the Screenshot tab.
 Request (re)indexing

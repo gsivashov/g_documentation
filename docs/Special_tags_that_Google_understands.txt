@@ -26,7 +26,7 @@ follow - Follow any links in the page as part of crawling.
 noindex - Prevents the page from being indexed.
 nofollow - Don't follow links from this page as part of crawling.
 nosnippet - Don't show a text snippet or video preview from being shown in the search results. For video, a static image will be shown instead, if possible. Example: <meta name="robots" content="nosnippet">
-max-snippet:[number] - Limit the text snippet length for this page to [number] characters; specify 0 for no snippet or -1 to allow any snippet length.
+max-snippet:[number] - Limit the text snippet length for this page to [number] characters; specify 0 for no snippet or -1 to allow Google to chose the snippet length that it believes is most effective to help users discover your content and direct users to your site.
 max-image-preview:[size] - Limit the size of any image associated with this page. [size] can be "none", "standard", or "large".
 max-video-preview:[number] - Limit any video preview associated with this page to [number] seconds; specify 0 to allow only a still image or -1 to allow any preview length
 noarchive - Don't show a Cached link for a page in search results.

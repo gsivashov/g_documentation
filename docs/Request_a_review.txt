@@ -1,6 +1,6 @@
 https://support.google.com/webmasters/answer/168328
 
-Join us for web.dev LIVE, a digital event from June 30th to July 2nd to learn modern web techniques. More at web.dev/live
+web.dev LIVE has kicked off! Join us now for our digital event from June 30th to July 2nd at web.dev/live
 Home
 Products
 Web

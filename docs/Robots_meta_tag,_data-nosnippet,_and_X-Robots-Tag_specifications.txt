@@ -125,7 +125,8 @@ with Google, this setting does not interrupt those more specific permitted uses.
 is ignored if no parseable [number] is specified.
 Special values:
 0: No snippet is to be shown. Equivalent to nosnippet.
--1: There is no snippet length limit.
+-1: Google will chose the snippet length that it believes is most effective
+to help users discover your content and direct users to your site.
 Example:
 <meta name="robots" content="max-snippet:20">
 max-image-preview:[setting]
@@ -261,4 +262,4 @@ indexing or serving directives will not be found and will therefore be ignored. 
 serving directives must be followed, the URLs containing those directives cannot be disallowed from
 crawling.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-24.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-03.
