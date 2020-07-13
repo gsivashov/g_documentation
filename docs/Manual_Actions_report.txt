@@ -3,6 +3,7 @@ https://support.google.com/webmasters/answer/9044175
 Manual Actions reportSee if your site has any manual actions issued against it and view the site's manual action history.
 If a site has a manual action, some or all of that site will not be shown in Google search results.
 OPEN THE MANUAL ACTIONS REPORT
+Manual Actions report in Search Console - Google Search Console Training
 What is a manual action?
 Google issues a manual action against a site when a human reviewer at Google has determined that pages on the site are not compliant with Google's webmaster quality guidelines. Most manual actions address attempts to manipulate our search index. Most issues reported here will result in pages or sites being ranked lower or omitted from search results without any visual indication to the user.
 If your site is affected by a manual action, we will notify you in the Manual Actions report and in the Search Console message center.
@@ -121,7 +122,7 @@ Matt Cutts and Alex explain the "Unnatural links to your site" manual action
 Recommended actions
 First, review Google’s Webmaster Guidelines on linking.
 Next, follow the steps below to identify and correct the violation(s):
-Download a list of links to your site from Search Console. You can download your links arranged either by hostname (Links to Your Site > Who links the most > Download more sample links) or in chronological order (Links to Your Site > Who links the most > Download latest links).
+Download a list of links to your site from Search Console. You can download your links arranged either by hostname (Top linking sites > Export) or in chronological order (Links report > Export external links > Latest links).
 Check this list for any links that violate our guidelines on linking. If the list is large, start by looking at the sites that link to you the most, or links that were created recently (in the last few months).
 For any links that violate our guidelines, contact the webmaster of that site and ask that they either remove the links or prevent them from passing PageRank, such as by adding a rel=”nofollow” or a more specific attribute.
 Use the Disavow links tool in Search Console to disavow any links that you could not get removed. We often see the Disavow links tool used incorrectly so keep the following things in mind when using the tool:

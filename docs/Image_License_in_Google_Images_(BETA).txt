@@ -366,9 +366,12 @@ rights information. For example, it could be the terms and conditions that you h
 your website. Where applicable, it could also be a Creative Commons License (for example,
 BY-NC 4.0).
 Recommended properties
-Licensor URL (of a Licensor)
-A URL to a page where the user can find information on how to license that image. Here
-are some examples:
+Licensor URL
+A URL to a page where the user can find information on how to license that image. The
+Licensor URL must
+be a property of a Licensor object,
+not a property of the image object.
+Here are some examples:
 A check-out page for that image where the user can select specific resolutions
 A general page that explains how to contact you
 Troubleshooting
@@ -391,4 +394,4 @@ Post a question in the Webmaster
 forum. For help with IPTC photo metadata, you can
 post in their forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-19.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-08 UTC.

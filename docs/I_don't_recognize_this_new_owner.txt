@@ -13,5 +13,5 @@ In the list of verified owners, find the unknown owner and select Remove access 
 Remember that as long as you have write ability on the property itself, a hacker can't permanently remove your ownership of the property in Search Console; if they remove your verification token, you can always add it back.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Get your site on Search ConsoleAdd a website propertyRemove a property from your listVerify your site ownershipManaging owners, users, and permissionsI don't recognize this new owner
+Get your site on Search ConsoleAdd a website propertyRemove a propertyVerify your site ownershipManaging owners, users, and permissionsI don't recognize this new owner
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

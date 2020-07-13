@@ -68,4 +68,4 @@ normal desktop webpages coded using standard HTML. This includes browsers that
 render only cHTML (iMode), WML, and XHTML-MP.
 Note: Our recommendations are geared toward smartphones, but we encourage multimedia and feature phones site owners to follow the same advice where they feel appropriate.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-10-09.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-10-09 UTC.

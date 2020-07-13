@@ -9,5 +9,5 @@ Make sure that the fee structure is clearly understandable. Include information
 If your site or pages are triggering warnings in Chrome, check out your Security Issues report in Search Console for more information and example pages. After you have fixed the issue on your site, visit the report to request a review of your fixes. A successful review should halt the warnings.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-MobileMobile viewing on feature phonesWeb Light: Faster and lighter mobile pages from searchAd network support for Web Light pages in Google SearchGoogle DiscoverResources for developing mobile-friendly pagesAnnounce mobile billing charges clearlyAssociate your Android app with a website
+MobileMobile viewing on feature phonesWeb Light: Faster and lighter mobile pages from searchAd network support for Web Light pages in Google SearchGoogle Discover and your websiteResources for developing mobile-friendly pagesAnnounce mobile billing charges clearlyAssociate your Android app with a website
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

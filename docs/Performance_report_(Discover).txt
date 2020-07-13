@@ -40,53 +40,6 @@ To remove a filter:
 Click the X next to an existing filter. You cannot remove the date filter.
 To modify a filter:
 Click the filter and reset the values.
-Regular expression filter
-If you choose the Custom (regex) filter, you can filter by a regular expression (a wildcard match) for the selected item. You can use regular expression filters for page URLs. The RE2 syntax is used.
-The default matching is "partial match", which means that your regular expression can match anywhere in the target string unless you use ^ or $ to require matching from the start or end of the string, respectively.
-Default matching is case-sensitive. You can specify "(?i)" at the beginning of your regular expression string for case-insensitive matches. Example: (?i)https
-Invalid regular expression syntax will return no matches.
-Regular expression matching is tricky; try out your expression on a live testing tool, or read the full RE2 syntax guide
-Common regular expressions
-Here are a few basic regular expressions:
-Wildcard
-Description
-.
-Matches any single character.
-"m.n" matches "men" and "man" but not "meen"
-[characters]
-Matches any single item inside [ ].
-"c[aie]t" matches "cat", "cit", and "cet"
-"i[o0-9]n" matches "ion" and "i7n" but not "ian"
-*
-Matches the preceding letter or pattern zero or more times:
-"fo*d" matches "fd", "fod", "food", and "foooooooood"
-"https*://example" matches http://example" and "https://example"
-+
-Matches the preceding letter or pattern 1 or more times
-"fo+d" matches "fod", "food", "foooooooood" but not "fd"
-|
-OR operator, matches either the expression before or after the | operator.
-"New York|San Francisco" matches both "I love New York" and "I love San Francisco"
-\d
-One digit 0-9
-"\d\d\d abc" matches "123 abc"
-\D
-Any non-digit (for example, any letter, or characters such as + or , or ?)
-"\D\D\D 123" matches "aaa 123" but not "123 123"
-\s
-Any whitespace (tab, space)
-"1\s2\s3" matches "1 2 3"
-\S
-Any non-whitespace.
-(\S)+ matches "fire" "and" "ice" in the string "fire and ice", but none of the spaces, and not the whole string.
-(?i)
-At the start of your expression, allows case-insensitive matching.
-"(?i)HTTPS" matches "https", "Https", and "HTTPS"
-"https" matches "https" but not "HTTPS"
-^
-At the start of your expression, limits matches to the start of the target string.
-"^example" matches "example" but not "an example"
-"example" matches both "example" and "an example"
 Comparing data
 You can compare data between two values in any one grouping dimension, whether or not it is the currently selected grouping. For example, when grouped by Country you can compare clicks between this week and last week, or between clicks from USA and France. When comparing values for a single metric, the results table will display a Difference column to compare values in each row.
 To compare data:

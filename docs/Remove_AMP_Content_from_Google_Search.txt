@@ -88,4 +88,4 @@ To disable AMP, check your CMS provider's help page or contact your CMS provider
 hosted on a CMS domain, the CMS can redirect users to the canonical non-AMP page after AMP
 is disabled. If the redirect doesn't occur, contact your CMS provider for assistance.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-02-04.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-02-04 UTC.

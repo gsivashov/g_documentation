@@ -124,7 +124,7 @@ To make it easier for you to send batch requests, Google's API Client Libraries 
 functionality. For more information about batching with the client libraries, see the following
 language-specific pages:
 Java
-Batch Python
+Python
 JavaScript
 PHP
 .NET
@@ -168,4 +168,4 @@ content-length: 58
 For more information, see
 Sending Batch Requests.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-05-01.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-08 UTC.

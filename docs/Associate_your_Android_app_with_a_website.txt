@@ -10,5 +10,5 @@ Opting out of these benefits
 You can opt your app out of these benefits while remaining associated with a website using a noindex.xml file in your app.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-MobileMobile viewing on feature phonesWeb Light: Faster and lighter mobile pages from searchAd network support for Web Light pages in Google SearchGoogle DiscoverResources for developing mobile-friendly pagesAnnounce mobile billing charges clearlyAssociate your Android app with a website
+MobileMobile viewing on feature phonesWeb Light: Faster and lighter mobile pages from searchAd network support for Web Light pages in Google SearchGoogle Discover and your websiteResources for developing mobile-friendly pagesAnnounce mobile billing charges clearlyAssociate your Android app with a website
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -1,6 +1,6 @@
 https://support.google.com/webmasters/answer/2739618
 
-web.dev LIVE has kicked off! Join us now for our digital event from June 30th to July 2nd at web.dev/live
+web.dev LIVE is now over! Head to web.dev/live to watch all the sessions, see top Q&A, and more.
 Home
 Products
 Web
@@ -148,4 +148,4 @@ Quarantine your site
 Next
 Overview
 arrow_forward
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-02-12.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2019-02-12 UTC.
