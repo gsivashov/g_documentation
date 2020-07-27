@@ -19,7 +19,7 @@ Jobs on Google Search
 Monster India’s search engine optimization (SEO) team began
 using structured data in April 2018 with
 the goal to improve their applicant and resume database. The team launched
-Job Posting structured data
+JobPosting structured data
 with a pilot that was later scaled to markup all their jobs in India after realizing initial
 positive performance in Jobs on Google Search.
 Results
@@ -35,4 +35,4 @@ regions. The organic traffic to website has almost doubled since we have launche
 countries."
 — Anshul Punhani, Chief Marketing Officer, (APAC and Gulf regions), Monster.com
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-04-08 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.

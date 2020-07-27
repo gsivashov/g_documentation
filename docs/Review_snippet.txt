@@ -35,7 +35,7 @@ Organization
 Does your site provide reviews from critics?
 Use critic review structured data.
 Does your site provide reviews about other employers? Use
-Employer Aggregate Rating structured
+EmployerAggregateRating structured
 data.
 Does your site review claims made by others? Use
 Fact check structured data.
@@ -66,7 +66,7 @@ sitemap. You can automate this with the
 Search Console Sitemap
 API.
 Examples
-There are several ways you can add review structured data to a page:
+There are several ways you can add Review structured data to a page:
 Add a simple review.
 Nest a review into another schema.org type using its
 review property.
@@ -1031,4 +1031,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-29 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.

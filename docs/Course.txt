@@ -86,7 +86,7 @@ Carousel guidelines
 Webmaster guidelines
 General structured data guidelines
 Content guidelines
-Only use course markup for educational content that fits the following definition of a course:
+Only use Course markup for educational content that fits the following definition of a course:
 A series or unit of curriculum that contains lectures, lessons, or modules in a particular
 subject and/or topic.
 A course must have an explicit educational outcome of knowledge and/or
@@ -155,4 +155,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-04 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.

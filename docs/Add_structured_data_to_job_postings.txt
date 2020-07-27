@@ -9,7 +9,7 @@ Add structured data to job postings
 Due to COVID-19, Google has seen more job
 seeker interest in work-from-home and remote job opportunities. We encourage you to
 mark up your work from home jobs.
-You can improve the job seeking experience by adding job posting structured data to your job
+You can improve the job seeking experience by adding JobPosting structured data to your job
 posting web pages. Adding structured data makes your job postings eligible to appear in a special
 user experience in Google Search results. You can also integrate with Google by
 using a third party job site.
@@ -24,7 +24,7 @@ applicants who are looking exactly for that job.
 Increased chances of discovery and conversion: Job seekers will have a
 new avenue to interact with your postings and click through to your site.
 Does your site provide salary estimates? Add Estimated salary structured data.
-Does your site provide reviews about other employers? Add Employer Aggregate Rating structured data.
+Does your site provide reviews about other employers? Add EmployerAggregateRating structured data.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
 content. If you’re new to structured data, you can learn more about
@@ -871,4 +871,4 @@ United Arab Emirates
 North America: Available in the entire region
 Sub-Saharan Africa: Available in the entire region
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-01 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.

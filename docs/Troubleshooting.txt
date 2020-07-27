@@ -126,5 +126,5 @@ If you are already a verified member of the Podcasts Manager show represented by
 If you think that this new feed is not a duplicate of an existing feed, you can request a change in the served feed. However, Google does not provide a way to let you request serving of two feeds that it thinks are duplicates.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageMarket your podcast with Google Podcasts brandingTroubleshooting
+HelpAbout podcasts on GoogleGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageMarket your podcast with Google Podcasts brandingTroubleshooting
 Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

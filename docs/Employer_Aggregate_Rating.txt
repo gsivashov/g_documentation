@@ -9,7 +9,7 @@ Employer Aggregate Rating
 Does your site provide salary estimates? Consider adding Estimated salary structured data.
 Does your site provide job postings? Consider adding JobPosting structured data.
 If your site publishes user-generated ratings about hiring organizations, you should add EmployerAggregateRating structured data to your site. EmployerAggregateRating is an evaluation of a hiring organization compiled from many users. Adding EmployerAggregateRating can provide job seekers with ratings about a hiring organization to help them choose a job. It also offers prominent brand placement in the enriched job search experience on Google.
-During the beta phase, we recommended adding review snippet structured data for your page to be eligible for the jobs enriched search results. If you currently have review snippet structured data on your site, we recommend that you transition from review snippet structured data to Employer Aggregate Rating structured data soon.
+During the beta phase, we recommended adding review snippet structured data for your page to be eligible for the jobs enriched search results. If you currently have review snippet structured data on your site, we recommend that you transition from review snippet structured data to EmployerAggregateRating structured data soon.
 Example
 Here's an example for EmployerAggregateRating using JSON-LD code.
 <html>
@@ -123,11 +123,20 @@ For example:
 }
 ratingCount
 Number
-The total number of ratings of the organization on your site.
+The total number of ratings of the organization on your site. At least one of ratingCount or reviewCount is required.
 ratingValue
+Number or
+Text
+A numerical quality rating for the item, either a number, fraction, or percentage.
+(for example, "4", "60%", or "6 / 10").
+If the scale is not implicit (for example, "4")
+a 1 to 5 scale is assumed.
+If another scale is intended, use bestRating
+and worstRating.
+reviewCount
 Number
-A numerical quality rating for the organization. The numerical quality rating must be an
-aggregate score that is accurately derived from the provided ratings.
+Specifies the number of people who provided a review with or without an accompanying
+rating. At least one of ratingCount or reviewCount is required.
 worstRating
 Number
 The lowest value allowed in this rating system. This property is only required if the
@@ -153,4 +162,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-19 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-20 UTC.

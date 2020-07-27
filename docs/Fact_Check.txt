@@ -194,10 +194,10 @@ If your website aggregates fact-check articles, ensure that all articles match t
 criteria and that you provide an open and publicly available list of all fact-check websites
 you aggregate.
 Posting multiple fact checks on a page
-Multiple ClaimReview
-elements on a single page don't need to be about the same claim, but they should all be
-relevant to the main topic of the page. Most sites implement multiple fact checks per page
-in one of two ways:
+At this time, Google Search is still exploring ways to surface multiple fact
+checks. You may not see a rich result that features multiple fact checks in Google Search right away.
+If you decide to specify multiple ClaimReview items on a single
+page, make sure they are all relevant to the main topic of the page. Use one of the following methods:
 Create a summary page with multiple summarized fact checks, each with its own ClaimReview
 element. Post the full-text version of each fact check on its own page.
 Each ClaimReview element on the summary page points to the full-page version
@@ -205,8 +205,6 @@ rather than to the summary page.
 OR
 Create a single page with multiple full-length reviews, each with an HTML anchor. Each
 ClaimReview element points to that summary_page.html#anchor.
-If a page hosts multiple ClaimReview elements, Google Search may display all
-items in a carousel. The carousel only displays on mobile devices. For example:
 Structured data type definitions
 The following structured data types are required to implement fact checks:
 ClaimReview
@@ -435,4 +433,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-29 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-23 UTC.

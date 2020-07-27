@@ -67,7 +67,7 @@ or cruel acts, targeted hatred, or dangerous activities.
 Don't mark up content that engages in illegal activities or promotes goods, services,
 or information that facilitates serious and immediate harm to others. Marking up content that
 provides information about such content for educational purposes is permitted.
-Content in job posting structured data must also follow the additional job posting content policies.
+Content in JobPosting structured data must also follow the additional job posting content policies.
 Relevance
 Your structured data should be a true representation of the page content. Here
 are some examples of irrelevant data:
@@ -118,6 +118,9 @@ they are linked together (for example, a recipe and a video), use @id in both
 the recipe and the video items to specify that the video is about the recipe on the
 page. If you didn't link the items together, Google Search may not know that it can show the
 video as a Recipe rich result.
+Note: These examples are trimmed for brevity, and they don't
+include all the required and recommended properties for the features. For a full example, refer to the
+specific structured data type documentation.
 Nesting
 Here's an example of nested structured data, where Recipe is the main item, and aggregateRating and video are nested in the Recipe.
 <html>
@@ -182,9 +185,6 @@ Here's an example of individual items of structured data. There are two, distinc
 <body>
 </body>
 </html>
-Note: These examples are trimmed for brevity, and they don't
-include all the required and recommended properties for the features. For a full example, refer to the
-specific structured data type documentation.
 Additional tips
 To make sure that Google Search understands what the main purpose of the page is, include
 the main type of structured data that reflects the main focus of the page. For example, if a
@@ -201,4 +201,4 @@ that you include all of the reviews that are visible to people on the page. If a
 mark up all of the reviews on a page, this would be misleading for people who expect to see
 all of those reviews, based on the appearance of the page in Search results.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-08 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-15 UTC.

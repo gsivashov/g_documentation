@@ -62,7 +62,7 @@ Dataset
 Large data sets that appear in Google Dataset Search.
 Get started
 Education and Science
-Employer Aggregate Rating
+EmployerAggregateRating
 An evaluation of a hiring organization compiled from many users that's displayed in
 the job search experience on Google.
 Get started
@@ -86,12 +86,12 @@ A How-to walks users through a set of steps to successfully complete a task,
 featuring video, images, and text.
 Get started
 Education and Science, Organizations
-Image License Metadata (beta)
+Image License (beta)
 In Google Images, the Licensable badge tells people that license information is
 available for the image, and provides a link to the license in the Image
 Viewer, which offers more detail on how someone can use the image.
 Get started
-Job Posting
+JobPosting
 An interactive rich result that allows job seekers to find a job. The job search
 experience on Google can feature your logo, reviews, ratings, and job details.
 Get started
@@ -150,7 +150,7 @@ Software App,
 and Local business.
 Get started
 Organizations, Ecommerce, Food and Drink, Entertainment
-Sitelinks Searchbox
+Sitelinks Search box
 A search box that is scoped to your website when it appears as a search result.
 Get started
 Software App (beta)
@@ -175,4 +175,4 @@ segments, and live-stream content.
 Get started
 Food and Drink, News, Education and Science, Sports
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-30 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.

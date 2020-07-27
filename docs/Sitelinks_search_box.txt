@@ -17,7 +17,7 @@ will be shown in search results. Additionally, using the sitelinks search box ma
 make it more likely that a sitelinks search box will be shown. For a list of common reasons why Google may not
 show structured data in search results, review the General
 Structured Data Guidelines.
-How to implement sitelinks searchbox
+How to implement sitelinks search box
 Here are the steps to make your site eligible to display with a search box in Google Search results:
 Install a working search engine on your web site or Android app.
 Sitelinks search queries send the user to the search results page for your site or app, so
@@ -182,7 +182,7 @@ reconsideration.
 Webmaster guidelines
 General structured data guidelines
 Prevent a sitelinks search box from appearing
-Google Search can choose to add a sitelinks searchbox to your site even if it does not include
+Google Search can choose to add a sitelinks search box to your site even if it does not include
 the structured data described here. However, you can prevent this behavior by add the
 following meta tag to your homepage:
 <meta name="google" content="nositelinkssearchbox" />
@@ -298,4 +298,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-29 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.

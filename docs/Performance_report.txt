@@ -71,6 +71,7 @@ Which search tab contained the link seen by the user:
 Web: Results that appear in the All tab. Image and video results shown in the All tab in search results are also counted for type Web.
 Image: Results that appear in the Image search results tab.
 Video: Results that appear in the Videos search results tab.
+News: Results that show in the News search results tab.
 Grouping is not supported for search type because the results page layout is very different for different search types. For example, position 30 in image search results might be on the first result page, but position 30 in web search would be on page three.
 Data is stored separately by search type
 For a given URL, all click, impression, and position data is stored separately for each search type. So, for instance, an image can appear in both web results and image results, but the click, impression, and position data for that image are recorded separately for web searches and image searches.

@@ -11,7 +11,7 @@ feature and you may see changes in requirements or guidelines.
 The speakable schema.org property
 identifies sections within an article or webpage that are best suited for audio playback using
 text-to-speech (TTS). Adding markup allows search engines and other applications to identify content
-to read aloud on Google Assistant-enabled devices using TTS. Webpages with speakable
+to read aloud on Google Assistant-enabled devices using TTS. Web pages with speakable
 structured data can use the Google Assistant to distribute the content through new channels and
 reach a wider base of users.
 The Google Assistant uses speakable structured data to answer topical news queries
@@ -152,4 +152,4 @@ your own custom applications. For example, allowing users to interact with the a
 Google Assistant. For more information, see the Actions on Google developer
 guide.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-23 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.

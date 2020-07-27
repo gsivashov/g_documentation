@@ -9,13 +9,13 @@ Q&A
 Does your site publish FAQ content, with no way for users to submit
 alternative answers? Use
 FAQ structured data instead.
-Q&A Pages are web pages that contain data in a question and answer format, which is one question
+Q&A pages are web pages that contain data in a question and answer format, which is one question
 followed by its answers. For content that represents a question and its
 answers, you can mark up your data with the
 schema.org QAPage, Question, and Answer types.
 Properly marked up pages are eligible to have a rich result displayed on the search results
 page. This rich treatment helps your site reach the right users on Search.
-Here's an example of a result you might see for the user query “How do I remove a cable that is
+Here's an example of a result you might see for the user query "How do I remove a cable that is
 stuck in a USB port?" if the page has been marked up to answer that question:
 In addition to enabling your content for the rich result treatment shown above, marking up
 your Q&A page helps Google generate a better
@@ -452,4 +452,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-29 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.

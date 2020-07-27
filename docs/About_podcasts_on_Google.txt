@@ -1,0 +1,27 @@
+https://developers.google.com/search/reference/podcast/rss-feed
+
+About podcasts on GoogleThis guide shows you how Google exposes podcasts to Google users, and how to get your own podcast on Google.
+Where will Google show my podcast?
+Google can expose your podcast to listeners through many different Google Podcasts platforms, including:
+Google Search on all browsers, desktop and mobile. Users can play your episodes in the browser (sample Google Search result shown below).
+Google Search App for Android (requires v6.5 or higher of the Google Search App)
+Google Podcasts app for mobile devices
+Google Home speaker system
+Content Action for the Google Assistant
+Android Auto in your car
+When you've followed the steps below correctly, your podcast can appear in any of the products listed above. In some languages, Google can understand the audio content and match listener queries in languages other than the podcast language.
+Here's an example of how episodes for your podcast might appear in Google Search results on desktop:
+Podcast episodes can be browsed and played in Google Search, among many other Google Podcasts platforms
+Additional Google podcast platforms
+There are a few additional podcasting platforms on Google with different requirements. If you want your audio content to appear on any of the following platforms, you must follow the linked instructions.
+Google news briefings - Prearranged news playlists based on general topic or provider; available in many locales.
+Your News Update - An on-demand news playlist customized for each user; not available in all areas.
+Next steps
+Ready to get your podcast on Google?
+Choose your path
+I manage my RSS files directly
+I use a podcast hosting provider
+Was this helpful?How can we improve it?YesNoSubmit
+true
+HelpAbout podcasts on GoogleGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageMarket your podcast with Google Podcasts brandingTroubleshooting
+Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

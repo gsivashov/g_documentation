@@ -668,11 +668,11 @@ Microdata
 Guidelines
 Product rich results provide users with information about a specific
 product, such as its price, availability, and reviewer ratings.
-The following guidelines apply to product markup:
+The following guidelines apply to Product markup:
 Use markup for a specific product, not a category or list of products.
-For example, "shoes in our shop" is not a specific product.
-See also our
-structured data guidelines for multiple entities on the same page.
+For example, "shoes in our shop" is not a specific product. Currently, product rich results
+only support pages that focus on a single product. We recommend focusing on adding markup to
+product pages instead of pages that list products or a category of products.
 Adult-related products are not supported.
 If you add a review for the product, the reviewer’s name must be a valid name for a Person or
 Team.
@@ -695,26 +695,6 @@ schema.org/Product. When you mark up
 your content for product information, use the following properties of the
 schema.org Product type:
 Required properties
-image
-Repeated ImageObject or
-URL
-The URL of a product photo. Pictures clearly showing the product (for example, against
-a white background) are preferred. This property is required for Google Images and
-recommended for Google Search.
-Additional image guidelines:
-Every page must contain at least one image (whether or not you include markup). Google will pick
-the best image to display in Search results based on the aspect ratio and resolution.
-Image URLs must be crawlable and indexable.
-Images must represent the marked up content.
-Images must be in .jpg, .png, or. gif format.
-For best results, provide multiple high-resolution images (minimum of 50K pixels when multiplying width and
-height) with the following aspect ratios: 16x9, 4x3, and 1x1.
-For example:
-"image": [
-"https://example.com/photos/1x1/photo.jpg",
-"https://example.com/photos/4x3/photo.jpg",
-"https://example.com/photos/16x9/photo.jpg"
-]
 name
 Text
 The name of the product.
@@ -740,79 +720,34 @@ Note: If you set the type to anything other than Brand or Organization, we will 
 description
 Text
 The product description.
-offers
-Offer
-An offer to sell the product. Include either a nested Offer or
-AggregateOffer.
-Show me Offer properties
-The full definition of Offer is available at
-schema.org/Offer. When marking up
-offers within a product, use the following properties of the schema.org
-Offer type:
-Required properties
-availability
-ItemAvailability
-The possible product availability options. Use one of the following values and express
-it with a URL link in the markup. Google also understands their short names (for
-example InStock or OutOfStock), without the full URL scope.
-https://schema.org/Discontinued
-https://schema.org/InStock
-https://schema.org/InStoreOnly
-https://schema.org/LimitedAvailability
-https://schema.org/OnlineOnly
-https://schema.org/OutOfStock
-https://schema.org/PreOrder
-https://schema.org/PreSale
-https://schema.org/SoldOut
-For Google Images: This property required for your product to be eligible for the
-Related Items feature in Google Images.
-price
-Number
-The offer price of a product. Follow
-schema.org usage guidelines.
-For Google Images: This property required for your product to be eligible for the rich image viewer and the Related Items feature in Google Images.
-priceCurrency
-Text
-The currency used to describe the product price, in three-letter
-ISO 4217 format.
-For Google Images: This property required for your product to be eligible for the rich
-image viewer and the Related Items feature in Google Images.
-Recommended properties
-itemOffered
-Thing
-The item being sold. Typically, this includes a nested product, but it can also contain
-other item types or free text.
-priceValidUntil
-Date
-The date (in ISO 8601
-date format) after which the price will no longer be available. Your product snippet
-may not display if the priceValidUntil property indicates a past date.
-url
+image
+Repeated ImageObject or
 URL
-A URL to the product web page (that includes the Offer).
-Show me AggregateOffer properties
-The full definition of AggregateOffer is available at
-schema.org/AggregateOffer. An
-AggregateOffer is a kind of Offer representing an aggregation of
-other offers. When marking up aggregate offers within a product, use the following properties
-of the schema.org AggregateOffer type:
-Required properties
-lowPrice
-Number
-The lowest price of all offers available. Use a floating point number.
-priceCurrency
-Text
-The currency used to describe the product price, in three-letter
-ISO 4217 format.
-For Google Images: This property required for your product to be eligible for the
-rich image viewer and the Related Items feature in Google Images.
-Recommended properties
-highPrice
-Number
-The highest price of all offers available. Use a floating point number.
-offerCount
-Number
-The number of offers for the product.
+The URL of a product photo. Pictures clearly showing the product (for example, against
+a white background) are preferred.
+For Google Images: This property is required for your product to
+be eligible for the rich image viewer and the Related Items feature in Google Images.
+Additional image guidelines:
+Every page must contain at least one image (whether or not you include markup). Google will pick
+the best image to display in Search results based on the aspect ratio and resolution.
+Image URLs must be crawlable and indexable.
+Images must represent the marked up content.
+Images must be in .jpg, .png, or. gif format.
+For best results, provide multiple high-resolution images (minimum of 50K pixels when multiplying width and
+height) with the following aspect ratios: 16x9, 4x3, and 1x1.
+For example:
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+]
+offers
+Offer or AggregateOffer
+An nested Offer or
+AggregateOffer to sell the product. Include the required and
+recommended properties for either Offer
+or AggregateOffer (whichever
+is applicable to your content).
 review
 Review
 A nested Review of the product. Follow the
@@ -827,6 +762,75 @@ schema.org/Product.
 sku
 Text
 Merchant-specific identifier for product.
+Offer
+The full definition of Offer is available at
+schema.org/Offer. When marking up
+offers within a product, use the following properties of the schema.org
+Offer type:
+Required properties
+price
+Number
+The offer price of a product. Follow
+schema.org usage guidelines.
+For Google Images: This property is required for your product to be eligible for the rich image viewer and the Related Items feature in Google Images.
+Recommended properties
+availability
+ItemAvailability
+The possible product availability options. Use one of the following values and express
+it with a URL link in the markup. Google also understands their short names (for
+example InStock or OutOfStock), without the full URL scope.
+https://schema.org/Discontinued
+https://schema.org/InStock
+https://schema.org/InStoreOnly
+https://schema.org/LimitedAvailability
+https://schema.org/OnlineOnly
+https://schema.org/OutOfStock
+https://schema.org/PreOrder
+https://schema.org/PreSale
+https://schema.org/SoldOut
+For Google Images: This property is required for your product to be eligible for the
+Related Items feature in Google Images.
+itemOffered
+Thing
+The item being sold. Typically, this includes a nested product, but it can also contain
+other item types or free text.
+priceCurrency
+Text
+The currency used to describe the product price, in three-letter
+ISO 4217 format.
+For Google Images: This property is required for your product to be eligible for the rich
+image viewer and the Related Items feature in Google Images.
+priceValidUntil
+Date
+The date (in ISO 8601
+date format) after which the price will no longer be available. Your product snippet
+may not display if the priceValidUntil property indicates a past date.
+url
+URL
+A URL to the product web page (that includes the Offer).
+AggregateOffer
+The full definition of AggregateOffer is available at
+schema.org/AggregateOffer. An
+AggregateOffer is a kind of Offer representing an aggregation of
+other offers. When marking up aggregate offers within a product, use the following properties
+of the schema.org AggregateOffer type:
+Required properties
+lowPrice
+Number
+The lowest price of all offers available. Use a floating point number.
+priceCurrency
+Text
+The currency used to describe the product price, in three-letter
+ISO 4217 format.
+For Google Images: This property is required for your product to be eligible for the
+rich image viewer and the Related Items feature in Google Images.
+Recommended properties
+highPrice
+Number
+The highest price of all offers available. Use a floating point number.
+offerCount
+Number
+The number of offers for the product.
 Monitor rich results with Search Console
 Search Console is a tool that helps you monitor how your pages perform in Google Search.
 You don't have to sign up for Search Console to be included in Google Search results,
@@ -876,4 +880,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-29 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-21 UTC.

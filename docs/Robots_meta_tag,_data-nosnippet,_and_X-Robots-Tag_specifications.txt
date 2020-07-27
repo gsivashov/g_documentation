@@ -109,24 +109,28 @@ Do not follow the links on this page.
 none
 Equivalent to noindex, nofollow.
 noarchive
-Do not show a cached link in search results.
+Do not show a cached link
+in search results.
 nosnippet
 Do not show a text snippet or video preview in the search results for this page. A static
 image thumbnail (if available) may still be visible, when it results in a better user-experience.
 This applies to all forms of search results (at Google: web search, Google Images, Discover).
 max-snippet:[number]
-Use a maximum of [number] characters as a textual snippet for this search
-result. (Note that a URL may appear as multiple search results within a search results page.)
-This does not affect image or video previews. This applies to all forms of search results (such
-as Google web search, Google Images, Discover, Assistant). However, this limit does not apply in
-cases where a publisher has separately granted permission for use of content. For instance, if the
-publisher supplies content in the form of in-page structured data or has a license agreement
-with Google, this setting does not interrupt those more specific permitted uses. This directive
-is ignored if no parseable [number] is specified.
+Use a maximum of [number] characters as a textual snippet
+for this search result. (Note that a URL may appear as multiple search results within a
+search results page.) This does not affect image or video previews. This applies to all
+forms of search results (such as Google web search, Google Images, Discover, Assistant).
+However, this limit does not apply in cases where a publisher has separately granted
+permission for use of content. For instance, if the publisher supplies content in the
+form of in-page structured data or has a license agreement with Google, this setting
+does not interrupt those more specific permitted uses. This directive is ignored if no
+parseable [number] is specified.
 Special values:
-0: No snippet is to be shown. Equivalent to nosnippet.
--1: Google will chose the snippet length that it believes is most effective
-to help users discover your content and direct users to your site.
+0: No snippet is to be shown. Equivalent to
+nosnippet.
+-1: Google will chose the snippet length that it
+believes is most effective to help users discover your content and direct users to
+your site.
 Example:
 <meta name="robots" content="max-snippet:20">
 max-image-preview:[setting]
@@ -144,16 +148,19 @@ article) or has a license agreement with Google, this
 setting will not interrupt those more specific permitted uses.
 Publishers who do not want Google to use larger thumbnail images when their AMP pages and
 canonical version of an article are shown in Search or Discover should specify a
-max-image-preview value of standard or none.
+max-image-preview value of standard
+or none.
 Example:
 <meta name="robots" content="max-image-preview:standard">
 max-video-preview:[number]
-Use a maximum of [number] seconds as a video snippet for videos on this page in search results.
+Use a maximum of [number] seconds as a video snippet for
+videos on this page in search results.
 Other supported values:
 0: At most, a static image may be used, in accordance to the max-image-preview setting.
 -1: There is no limit.
 This applies to all forms of search results (at Google: web search, Google Images,
-Google Videos, Discover, Assistant). This directive is ignored if no parseable [number] is specified.
+Google Videos, Discover, Assistant). This directive is ignored if no parseable
+[number] is specified.
 Example:
 <meta name="robots" content="max-video-preview:-1">
 notranslate
@@ -161,15 +168,15 @@ Do not offer translation of this page in search results.
 noimageindex
 Do not index images on this page.
 unavailable_after: [date/time]
-Do not show this page in search results after the specified date/time. The date/time must be
-specified in a widely adopted format including, but not limited to
+Do not show this page in search results after the specified date/time. The date/time
+must be specified in a widely adopted format including, but not limited to
 RFC 822,
 RFC 850, and
 ISO 8601.
-The directive is ignored if no valid [date/time] is specified. By default
-there is no expiration date for content.
+The directive is ignored if no valid [date/time] is
+specified. By default there is no expiration date for content.
 Example:
-<meta name="robots" content="unavailable_after: Sunday, 01-Sep-24 01:00:00 PDT">
+<meta name="robots" content="unavailable_after: 2020-09-21">
 Handling combined indexing and serving directives
 You can create a multi-directive instruction by combining robots meta tag
 directives with commas. Here is an example of a robots meta tag that
@@ -262,4 +269,4 @@ indexing or serving directives will not be found and will therefore be ignored. 
 serving directives must be followed, the URLs containing those directives cannot be disallowed from
 crawling.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-03 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-18 UTC.

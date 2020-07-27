@@ -355,7 +355,12 @@ When using the JSON-LD format, denote new lines with \n (two characters: backsla
 letter "n").
 name
 Text
-A descriptive name of a dataset. For example, "Snow depth in Northern Hemisphere".
+A descriptive name of a dataset. For example, "Snow depth in the Northern Hemisphere".
+Guidelines
+Use unique names for distinct datasets whenever possible.
+Recommended:
+"Snow depth in the Northern Hemisphere" and "Snow depth in the Southern Hemisphere" for two different datasets.
+Not recommended: "Snow depth" and "Snow depth" for two different datasets.
 Recommended properties
 alternateName
 Text
@@ -451,7 +456,7 @@ keywords
 Text
 Keywords summarizing the dataset.
 license
-URL, CreativeWork
+URL or CreativeWork
 A license under which the dataset is distributed. For example:
 "license" : "https://creativecommons.org/publicdomain/zero/1.0/"
 "license" : {
@@ -465,12 +470,18 @@ Recommended
 "license" : "https://creativecommons.org/licenses/by/4.0"
 Not recommended
 "license" : "https://creativecommons.org/licenses/by"
+measurementTechnique
+Text or URL
+The technique, technology, or methodology used in a dataset, which can correspond to the variable(s) described in variableMeasured.
+The measurementTechnique
+property is proposed and pending standardization at schema.org. We encourage publishers to
+share any feedback on this property with the schema.org community.
 sameAs
 URL
 URL of a reference Web page that unambiguously indicates the dataset's identity, usually in a
 different repository.
 spatialCoverage
-Text, Place
+Text or Place
 You can provide a single point that describes the spatial aspect of the dataset. Only
 include this property if the dataset has a spatial dimension. For example,
 a single point where all the measurements were collected, or the coordinates of a bounding
@@ -511,13 +522,13 @@ Time period
 Open-ended time period
 "temporalCoverage" : "2013-12-19/.."
 variableMeasured
-Text, PropertyValue
+Text or PropertyValue
 The variable that this dataset measures. For example, temperature or pressure.
 The variableMeasured
 property is proposed and pending standardization at schema.org. We encourage publishers to
 share any feedback on this property with the schema.org community.
 version
-Text, Number
+Text or Number
 The version number for the dataset.
 url
 URL
@@ -552,8 +563,7 @@ DataDownload
 The description of the location for download of the dataset and the file format for
 download.
 distribution.encodingFormat
-Text,
-URL
+Text or URL
 The file format of the distribution.
 Tabular datasets
 Beta: This approach is currently in beta and therefore subject to change.
@@ -795,4 +805,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-29 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-21 UTC.

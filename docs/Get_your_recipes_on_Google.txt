@@ -518,8 +518,8 @@ for the Assistant.
 If you violate these policies, your recipe might not show up as a rich result,
 but your content will still appear in Search results. Read about
 Spammy Structured Markup.
-The following guidelines apply to recipe structured data.
-Use recipe structured data for content about preparing a particular dish. For example,
+The following guidelines apply to Recipe structured data.
+Use Recipe structured data for content about preparing a particular dish. For example,
 "facial scrub" or "party ideas" are not valid names for a dish.
 To enable your recipes to appear in a
 carousel or grid, you must follow these
@@ -568,7 +568,7 @@ Recommended properties
 aggregateRating
 AggregateRating
 Annotation for the average review score assigned to the item. Follow the Review snippet guidelines and list of required and recommended AggregateRating properties.
-If the recipe structured data contains a single review, the reviewer’s name must be a valid
+If the Recipe structured data contains a single review, the reviewer’s name must be a valid
 person or organization. For example, "50% off ingredients" is not a valid name for a
 reviewer.
 author
@@ -1058,4 +1058,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-06-29 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.
