@@ -28,7 +28,7 @@ Page: The page that served as the source of the information shown to the user. 
 Country: The country where the content was viewed or clicked.
 Discover appearance: The type of page linked to by the result. One of the following values:
 AMP article: Any AMP page, including AMP story results.
-AMP story: A subset of AMP articles that are optimized for visual content rather than textual content.
+Web Story: A subset of AMP articles that are optimized for visual content rather than textual content.
 Preliminary data in the report
 The newest data in the Search Performance report is sometimes preliminary – this means that the data might change slightly before it is confirmed. Preliminary data is usually less than three days old; at some point, all preliminary data is confirmed. Preliminary data is indicated when you hover over it in the chart.
 Preliminary data is included in both the chart and the tables for Discover performance, as well as the Performance chart in the Search Console Overview page.

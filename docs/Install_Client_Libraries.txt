@@ -25,13 +25,7 @@ Browse the JavaDoc reference for the Indexing API.
 Read the Developer's Guide for the Google API Client Library for Java.
 Interact with this API in your browser using the APIs Explorer for the Indexing API.
 Add Library to Your Project
-Select your build environment (Maven or Gradle) from the following tabs, or download a zip file containing all of the jars you need:
-Download
-Download the Indexing API v3 Client Library for Java.
-See the indexing/readme.html file for details on:
-What the zip file contains.
-Which dependent jars are needed for each application type (web, installed, or Android application).
-The libs folder contains all the of the globally applicable dependencies you might need across all application types.
+Select your build environment (Maven or Gradle) from the following tabs:
 Maven
 Add the following to your pom.xml file:
 See all versions available on the Maven Central Repository.
@@ -109,4 +103,4 @@ Description
 APIs Explorer
 An interactive tool that lets you easily try out Google APIs right from your browser.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-20 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-31 UTC.

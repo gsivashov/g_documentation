@@ -27,15 +27,15 @@ Important notes:
 This is not a live test. This tool describes the most recently indexed version of a page, not the live version on the web. The information shown in the tool is used by Google to evaluate Search results. Your page may have changed or become unavailable since Google last saw it. To test the current version of the page as Google would see it, select the Live Test button on the page.
 "URL is on Google" doesn't actually mean that your page is appearing in Search results. Actual appearance in Search results requires that the page and its structured data conform to quality and security guidelines. The URL Inspection tool doesn't take into account manual actions, content removals, or temporarily blocked URLs. To see if your URL is appearing, search for your URL on Google; if your URL is missing but this tool says it was indexed, here's how to find out why.
 The "Last crawl" date in the Coverage section shows the date when the information shown here was retrieved (if the page was successfully crawled).
-Read the presence status at the top of the report to see whether or not the URL can appear in Google Search Results: URL is on Google means that the URL has the ability to appear in Search results, but is not guaranteed to be there. URL is not on Google means that the URL won't appear Search results. Read more details.
+Read the presence status at the top of the report to see whether or not the URL can appear in Google Search Results: URL is on Google means that the URL has the ability to appear in Search results, but is not guaranteed to be there. URL is not on Google means that the URL won't appear Search results.
 Expand the Coverage section to see more details:
 Discovery: How Google found the URL.
 Crawl: If Google was able to crawl the page, when it was crawled, or any obstacles that it encountered when crawling the URL. If the status is not URL is on Google, the reason why can generally be found here.
 Indexing: The canonical URL for this page chosen by Google and indicated by the page.
 Enhancements: If you have structured data, if the page is an AMP or has an associated AMP, you will see details in the Enhancements section.
-See information about the request, including the HTTP request and response, and the returned HTML, click View crawled page.
+To see information about the request, including the HTTP request and response, and the returned HTML, click View crawled page. If this link is disabled, it is because there was a problem fetching the page; hover over the disabled button to see the reason.
 The inspection results include the following expandable sections:
-Presence on Google
+Presence on Google (page verdict card)
 This card describes whether or not the URL can appear in Google Search results. The following values are possible:
 URL is on Google
 What it means: The URL has been indexed, can appear in Google Search results, and no problems were found with any enhancements found in the page (structured data, linked AMP pages, and so on). "URL is on Google" doesn't actually mean that your page is appearing in Search results. Actual appearance in Search results requires that the page and its structured data conform to quality and security guidelines. The URL Inspection tool doesn't take into account manual actions, content removals, or temporarily blocked URLs. To see if your URL is appearing, search for your URL on Google; if your URL is missing but this tool says it was indexed, here's how to find out why.
@@ -48,14 +48,14 @@ URL is not on Google: Indexing errors
 What it means: There was at least one critical error that prevented the URL from being indexed, and it cannot appear in Google Search until those issues are fixed.
 What to do next: Expand the Index coverage section to see details about the indexing attempt. See the list of index coverage errors and possible fix steps.
 URL is not on Google
-What it means: This URL won't appear in Google Search results, but we think that was your intention. Most common reasons include a password-protected page, a noindex directive, or that this is an alternate version of a canonical page (alternate version pages are not indexed).
+What it means: This URL won't appear in Google Search results, but we think that was your intention. Common reasons include that the page is password-protected or robots.txt protected, or blocked by a noindex directive.
 What to do next: Read the details in the Index coverage section to learn more about the reason. A few possible reasons:
 If the "User-declared canonical" and "Google-selected canonical" values are different, this means that this URL is one of a set of similar pages, and Google has chosen to index another version of the same page. There's probably no need to do anything here, though you might consider removing your explicit canonical tag, or considering why you need another page as canonical.
 If there is a noindex or robots.txt blockage that you didn't expect (see the Index coverage details section below), you must remove that blockage to allow Google to access your site.
 For other index coverage reasons, read the list of values and possible fix instructions.
 URL is unknown to Google: If the index coverage status "URL is unknown to Google" appears, it means that Google hasn't indexed the URL either because it hasn't seen the URL before, or because it has found it as a properly marked alternate page, but it can't be crawled. To fix, run a live inspection, fix any issues you might see, and submit the page for indexing. (Hint: if this is a properly marked but uncrawlable alternate page, if you inspect the canonical page you will see this page listed, with a crawl error.
-URL is an alt version
-What it means: This URL is one of a set of alternate versions of the same page. Pages in this group include AMP/canonical pairs or desktop version/mobile version page pairs. You can see the indexed URL in the Google-selected canonical value under Index coverage.
+URL is an alternate version
+What it means: This URL is one of a set of alternate versions of the same page. This might mean that the URL you submitted is the desktop URL for a site that is mobile-first, or that you have submitted the URL of an AMP page that has a canonical non-AMP version. The Crawled as value in the report shows which crawler type (mobile or desktop) considers this to be an alternate version. You can see the indexed URL as the Google-selected canonical value under Index coverage.
 What to do: Generally there is nothing to do, though you might check the Google-selected canonical to make sure it is an expected page.
 Coverage
 This section describes the index status of the URL and the details of the indexing process for this URL. The following information can be provided, depending on the index coverage status:
@@ -97,10 +97,10 @@ Details shown here apply to the AMP version referenced by the current page; they
 In addition to standard AMP errors, you might see these Google-specific AMP errors.
 To see other pages on your site affected by a specific issue, select the issue description row, then select Open Report.
 An URL page inspected with URL Inspection tool as an AMP can have the following possible statuses:
-Linked AMP version is valid: The AMP is valid and indexed.
-Linked AMP version is invalid: The AMP has an error that will prevent it from being indexed.
-Linked AMP version isn't indexed (indexed version) or Linked AMP version cannot be indexed (live inspection): The page is blocked from indexing, typically because of a robots.txt rule or a noindex directive.
-Linked AMP version is valid with warnings: AMP can be indexed, but there are some issues that might prevent it from getting full features, or it uses tags or attributes that are deprecated, and might become invalid in the future.
+AMP page is valid / Web Story is valid: The AMP is valid and indexed.
+AMP page is invalid / Web Story is invalid: The AMP has an error that will prevent it from being indexed.
+AMP page isn't indexed / Web Story isn't indexed (indexed version) or AMP page cannot be indexed / Web Story cannot be indexed (live inspection): The page is blocked from indexing, typically because of a robots.txt rule or a noindex directive.
+AMP page is valid with warnings / Web Story is valid with warnings: AMP can be indexed, but there are some issues that might prevent it from getting full features, or it uses tags or attributes that are deprecated, and might become invalid in the future.
 Not an AMP page: The page inspected was not an AMP page.
 Various rich result types
 You can see information about any rich result types (structured data) found on the page. Information includes the number of valid items found on the URL, descriptions of each item, and details about any warnings or errors found. The following rich result types are supported:
@@ -111,6 +111,7 @@ FAQ
 Fact check
 Guided recipe
 How-to
+Image License
 Job posting
 Logo
 Product
@@ -145,7 +146,7 @@ The page cannot be a duplicate of another indexed page; it must either be unique
 The page quality must be high enough to warrant indexing.
 The inspection results include the following expandable sections:
 Potentially available on Google?
-The top card gives a general evaluation of whether or not the live URL has the ability to be indexed. A positive result is not a guarantee that it will appear in Search results. Search results requires that the page and its structured data conform to quality and security guidelines. The URL Inspection tool doesn't take into account manual actions, content removals, or temporarily blocked URLs.
+The top card gives a general evaluation of whether or not the live URL can be indexed. A positive result is not a guarantee that it will appear in Search results. Search results requires that the page and its structured data conform to quality and security guidelines. The URL Inspection tool doesn't take into account manual actions, content removals, or temporarily blocked URLs.
 The following values are possible:
 URL is available to Google
 What it means: The URL isn't blocked and doesn't have any detectable errors to prevent full indexing. If Google indexes the URL it can appear in Google Search results, provided that it conforms to quality and security guidelines, and is not subject to manual actions, content removals, or temporarily blocked URLs.

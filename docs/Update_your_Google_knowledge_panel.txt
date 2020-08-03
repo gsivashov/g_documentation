@@ -9,7 +9,7 @@ Check that your Web and app activity is turned on.
 Search for your entity on Google and find its knowledge panel. Ensure you see your entity’s title at the top of the knowledge panel.
 At the top of the knowledge panel, click Suggest an edit (or Suggest edits on mobile). If you don’t see this option, it is because either:
 You’re not signed-in with the same account used to claim the knowledge panel, or
-Google doesn’t recognize your Google Account as a verified representative of the entity. Follow these steps to get verified.
+Google doesn’t recognize your Google Account as a verified representative of the entity. Follow these steps to get verified, or visit https://www.google.com/search/contributions/manage from a verified account to add additional users to the account.
 Click the information that you want to change. If you have multiple suggestions, submit feedback for each item separately.
 In the response box that opens, write a short description that includes the following:
 Clearly state your suggested change.

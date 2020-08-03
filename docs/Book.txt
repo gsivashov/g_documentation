@@ -219,7 +219,7 @@ DataFeed at the root level. All
 Book and
 Library entities must be listed under the
 dataFeedElement field of the DataFeed entity.
-Required properties and definitions
+Required properties
 @context
 Text
 Set to http://schema.org.
@@ -315,7 +315,7 @@ This Book entity is the top level entity type. It represents a work.
 Key Point: Read the
 Works and editions guidelines to understand the difference
 between the two Book entities in your implementation.
-Required properties and definitions
+Required properties
 @context
 Text
 Set to http://schema.org.
@@ -356,7 +356,7 @@ workExample.target.urlTemplate.
 workExample
 Book (Edition)
 The edition(s) of the work.
-Recommended properties and definitions
+Recommended properties
 sameAs
 URL
 The URL of a reference web page that unambiguously indicates the work's identity. For
@@ -367,7 +367,7 @@ edition of a work.
 Key Point: Read the
 Works and editions guidelines to understand the difference
 between the two Book entities in your implementation.
-Required properties and definitions
+Required properties
 @id
 Text
 A globally unique ID for the book in URL format. It must be unique to your
@@ -400,7 +400,7 @@ BorrowAction
 The Action to be triggered for users to purchase or download the book. For more
 details, refer to ReadAction or
 BorrowAction.
-Recommended properties and definitions
+Recommended properties
 author
 Person or
 Organization
@@ -481,14 +481,14 @@ Example Book (Edition) with multiple workExample properties:
 Person or Organization (author)
 The author property of the book uses the
 Person or Organization entity.
-Required properties and definitions
+Required properties
 @type
 Text
 Set to Person or Organization.
 name
 Text
 The name of the person or organization.
-Recommended properties and definitions
+Recommended properties
 sameAs
 URL
 The URL of a reference web page that unambiguously indicates the person or
@@ -513,7 +513,7 @@ Example with multiple author properties:
 PropertyValue (identifier)
 The identifier property of the Edition uses the PropertyValue
 entity.
-Required properties and definitions
+Required properties
 @type
 Text
 Set to PropertyValue.
@@ -752,7 +752,7 @@ The potentialAction property uses the ReadAction entity.
 ReadAction defines your deep links to access the book, the retailer that stocks
 the book, and the criteria that the users must meet. Criteria might include membership status,
 login status, location, or anything else required to access the book.
-Required properties and definitions
+Required properties
 @type
 Text
 Set to ReadAction.
@@ -808,7 +808,7 @@ This property can be repeated.
 target.urlTemplate
 URL
 The link that people use to initiate playback of your content.
-Recommended properties and definitions
+Recommended properties
 expectsAcceptanceOf.availabilityEnds
 DateTime
 The end time of the availability window. This can be used to control the exact time
@@ -906,7 +906,7 @@ The potentialAction property uses the BorrowAction entity.
 BorrowAction defines your deep links to access the book, the library that stocks
 the book, and the criteria that the users must meet. Criteria might include membership status,
 login status, location, or anything else required to access the book.
-Required properties and definitions
+Required properties
 @type
 Text
 Set to BorrowAction.
@@ -1014,7 +1014,7 @@ guidelines to understand the difference between the top level
 Library entity, the LibrarySystem entity, and
 the lower level Library entity in your
 implementation.
-Required properties and definitions
+Required properties
 @context
 Text
 Set to http://schema.org.
@@ -1073,7 +1073,7 @@ guidelines to understand the difference between the top level
 Library entity, the LibrarySystem entity, and
 the lower level Library entity in your
 implementation.
-Required properties and definitions
+Required properties
 @id
 URL
 A globally unique ID for the library branch in URL
@@ -1185,4 +1185,4 @@ Example LibrarySystem feed JSON file
 ]
 }
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-22 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-28 UTC.

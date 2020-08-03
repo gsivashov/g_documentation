@@ -374,6 +374,35 @@ not a property of the image object.
 Here are some examples:
 A check-out page for that image where the user can select specific resolutions
 A general page that explains how to contact you
+Monitor rich results with Search Console
+Search Console is a tool that helps you monitor how your pages perform in Google Search.
+You don't have to sign up for Search Console to be included in Google Search results,
+but it can help you understand and improve how Google sees your site. We
+recommend checking Search Console in the following cases:
+After deploying structured data for the first time
+After releasing new templates or updating your code
+Analyzing traffic periodically
+After deploying structured data for the first time
+After Google has indexed your pages, look for issues using the relevant
+Rich result status report.
+Ideally you should see an increase of valid pages, and no increase in errors or warnings. If you find issues
+in your structured data:
+Fix the errors.
+Inspect a live URL to check if the issue persists.
+Request validation using the status report.
+After releasing new templates or updating your code
+When you make significant changes to your website, monitor for increases in structured data errors and warnings.
+If you see an increase in errors, perhaps you rolled out a new template that doesn't work, or your site interacts with the existing
+template in a new and bad way.
+If you see a decrease in valid items (not matched by an increase in errors), perhaps you are
+no longer embedding structured data in your pages. Use the
+URL Inspection tool to learn what is causing the issue.
+Analyzing traffic periodically
+Analyze your Google Search traffic using the Performance Report.
+The data will show you how often your page appears as a rich result in Search, how often users click on it and what is
+the average position you appear on search results. You can also automatically pull these
+results with the Search
+Console API.
 Troubleshooting
 Important: Google does not guarantee that structured data or IPTC
 photo metadata will show up in search results. For a list of common reasons why Google may not
@@ -394,4 +423,4 @@ Post a question in the Webmaster
 forum. For help with IPTC photo metadata, you can
 post in their forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-29 UTC.
