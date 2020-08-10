@@ -461,11 +461,13 @@ applicationDeadline
 DateTime
 The date at which the program will stop accepting applications in
 ISO-8601 format.
-If the program is offered more than once per calendar year, specify the
-applicationDeadline property for each time that the program
-stops accepting applications). If applications are rolling,
-specify the latest possible date.
+If applications are rolling, specify the latest possible date the program will accept an application.
 "applicationDeadline": "2020-04-01T19:30"
+If the program is offered more than once per calendar year, specify multiple dates in a list.
+"applicationDeadline": [
+"2020-04-01T19:30",
+"2020-08-01T19:30"
+]
 identifier.propertyID
 Text
 The key for a
@@ -1288,4 +1290,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-15 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-08-03 UTC.

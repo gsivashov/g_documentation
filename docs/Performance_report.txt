@@ -101,7 +101,6 @@ FAQ rich results - A FAQ page.
 How-to rich results - A How-to rich result.
 Job details - A job posting result that shows an expanded description of a job. Read about measuring clicks and impressions for jobs.
 Job listing - A job posting result that shows a summarized view of a job. Read about measuring clicks and impressions for jobs.
-Media Actions - Actions for music, television, and movie structured data, such as listen or watch.
 Product results - Items marked up with Product schema.org markup, or identified as a product result by some other mechanism.
 Q&A rich results - A Q&A page rich result.
 Recipe rich result - A Recipe rich result that appeared outside of a collection in search results.

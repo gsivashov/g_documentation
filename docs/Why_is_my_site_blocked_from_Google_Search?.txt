@@ -97,7 +97,6 @@ If your site is not in Search Console
 Consider enrolling your site in Search Console; it makes things much easier!
 Pages omitted for legal reasons, policy violations, or low-quality/spammy pages, Google recrawls your pages periodically and will notice any changes that you make automatically.
 For phishing reconsideration, request a review here.
-For all other issues, including malware or spam, you can file a request at stopbadware.org. It will take a few days after they have reviewed and cleared your page for Google to update their listings.
 There is often a slight delay in updates to the warning system. This is because it can take a few days for updates to travel between the Google Safe Browsing database, the Chrome browser, and Search Console's Security or Manual Actions reports. This means that errors are no longer reported for your site in the transparency report, but your browser still shows a warning page for your site. Wait for a day to see if you still see a warning page for a site not listed as dangerous by the transparency report.
 4. Verify the results
 Note that it can take several days for your fix to be verified and any labeling to be removed. Additionally, being flagged may affect your search ranking for a while, so you might not see results on the first page.

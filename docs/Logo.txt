@@ -83,7 +83,7 @@ URL of a logo that is representative of the organization.
 Additional image guidelines:
 The image must be 112x112px, at minimum.
 The image URL must be crawlable and indexable.
-The image must be in .jpg, .png, .gif, .svg, or .webp format.
+The image file format must be supported by Google Images.
 url
 URL
 The URL of the website associated with the logo.
@@ -107,4 +107,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-08-06 UTC.

@@ -67,7 +67,7 @@ entity:
 workExample is a property of Work and specifies one and only
 one instance of a Book (Edition).
 There must be at least one workExample for each Work.
-Book (Edition) is the “lower level” Book
+Book (Edition) is the "lower level" Book
 entity.
 It helps to remember that there can be multiple editions of a work. We recommend that you
 group these editions together as much as possible. This helps Google systems leverage all of
@@ -340,8 +340,8 @@ number of editors.
 Conversely, if a book's author is an organization, define the author accordinly as
 defined in
 schema.org/Organization.
-For example, Fundamentals of fire fighting skills's author might be the
-organization
+For example, the author for a book titled "Fundamentals of fire fighting skills" might
+be the organization
 National Fire Protection Association.
 name
 Text
@@ -395,9 +395,8 @@ The ISBN-13 of the edition. If you have ISBN-10, convert it into ISBN-13. If the
 no ISBN for the edition, use the ISBN of the print book instead. For example, if the
 ebook edition doesn't have an ISBN, use the ISBN for the associated print edition.
 potentialAction
-ReadAction or
-BorrowAction
-The Action to be triggered for users to purchase or download the book. For more
+ReadAction or BorrowAction
+The action to be triggered for users to purchase or download the book. For more
 details, refer to ReadAction or
 BorrowAction.
 Recommended properties
@@ -1185,4 +1184,4 @@ Example LibrarySystem feed JSON file
 ]
 }
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-28 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-08-10 UTC.

@@ -203,7 +203,7 @@ Every page must contain at least one image (whether or not you include markup). 
 the best image to display in Search results based on the aspect ratio and resolution.
 Image URLs must be crawlable and indexable.
 Images must represent the marked up content.
-Images must be in .jpg, .png, or .gif format.
+The file format must be supported by Google Images.
 For best results, provide multiple high-resolution images (minimum of 800,000 pixels when multiplying width and
 height) with the following aspect ratios: 16x9, 4x3, and 1x1.
 For example:
@@ -262,13 +262,13 @@ Repeated ImageObject or URL
 The URL to an image that is representative of the article. Only a marked-up image that directly
 belongs to the article should be specified. Images should be at least 696 pixels wide.
 Additional image guidelines:
-Every page must contain at least one image (whether or not you include markup). Google will pick
-the best image to display in Search results based on the aspect ratio and resolution.
+Every page must contain at least one image (whether or not you include markup). Google will
+pick the best image to display in Search results based on the aspect ratio and resolution.
 Image URLs must be crawlable and indexable.
 Images must represent the marked up content.
-Images must be in .jpg, .png, or. gif format.
-For best results, provide multiple high-resolution images (minimum of 300,000 pixels when multiplying width and
-height) with the following aspect ratios: 16x9, 4x3, and 1x1.
+Images must be in a file format that's supported by Google Images.
+For best results, provide multiple high-resolution images (minimum of 300,000 pixels when
+multiplying width and height) with the following aspect ratios: 16x9, 4x3, and 1x1.
 For example:
 {
 "@context": "https://schema.org",
@@ -299,4 +299,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-08-06 UTC.
