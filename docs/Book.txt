@@ -205,10 +205,9 @@ catalog changes. Be aware of the following conditions and tips:
 Google Search doesn't support real-time updates.
 Google Search fetches your feed once a day and runs the ingestion once a day. If there
 are no major issues that block the release, the ingestion usually takes two days.
-If there's a foreseeable change in an edition's available times to be served, or if
-there are stale entities, which always must be removed, use
-availabilityStarts and availabilityEnds to adjust the exact
-times.
+If there's a foreseeable change in an edition's availability, use
+availabilityStarts and availabilityEnds
+to set the exact dates. If the entity is no longer available, remove the entity completely
 Structured data type definitions
 You must include the required properties listed here for your content to be eligible for
 display in structured search results. You can also include the recommended properties to add
@@ -379,7 +378,7 @@ Text
 Set to Book.
 bookFormat
 Enum
-The binding format of the edition. The value of this must be one of the
+The format of the edition. The value of this must be one of the
 following:
 http://schema.org/AudiobookFormat
 http://schema.org/EBook
@@ -387,12 +386,13 @@ http://schema.org/Hardcover
 http://schema.org/Paperback
 inLanguage
 Text
-The main language of the content in the edition. To indicate the variation, append
-the code with ISO 639-1 alpha-2.
+The main language of the content in the edition. Use one of the two-letter codes
+from the list
+of ISO 639-1 alpha-2 codes.
 isbn
 Text
 The ISBN-13 of the edition. If you have ISBN-10, convert it into ISBN-13. If there's
-no ISBN for the edition, use the ISBN of the print book instead. For example, if the
+no ISBN for the ebook or audiobook, use the ISBN of the print book instead. For example, if the
 ebook edition doesn't have an ISBN, use the ISBN for the associated print edition.
 potentialAction
 ReadAction or BorrowAction
@@ -1184,4 +1184,4 @@ Example LibrarySystem feed JSON file
 ]
 }
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-08-10 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-08-13 UTC.

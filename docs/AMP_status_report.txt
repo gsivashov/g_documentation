@@ -5,11 +5,12 @@ The top level view shows all AMP pages with issues found by Google on your site
 To see charts showing the affect of issues and fixes, visit the Status page.
 Why is this a sample list? We show as many pages affected by errors as we can. However we have a hard limit of 1,000 urls that we can show in our table. Also, it's possible that there are additional pages that we didn't detect or count for some reason.
 OPEN AMP REPORT
+AMP status report in Search Console - Google Search Console Training
 What to look for
 Ideally you should see this on the report:
 Zero AMP errors on your site (warnings are considered recommendations, not errors; see Understanding warnings below). If not, see Prioritize and fix issues.
 The total count of AMP pages on the report (valid + warning + error pages) should equal the number of AMP pages on your site. If not, see Missing AMP pages.
-AMP errors
+List of AMP issues
 In addition to standard AMP-specific errors, the report can expose the following additional issues (errors and warnings).
 Google-specific AMP issues
 Issue
@@ -40,6 +41,169 @@ Canonical points to invalid URL
 A canonical page references an AMP version using an invalidly formatted URL. Learn how to properly reference an AMP version.
 amp-story canonical error
 A page incorrectly references an amp-story page as its AMP version. This is not allowed because an amp-story page is, by definition, self-canonical: it must point to itself with a <rel="canonical"> tag, and cannot serve as an AMP version of another page.
+Signed exchange issues
+Both the AMP status report and the URL inspection report can show issues for AMPs that use the signed exchange protocol.
+To see signed exchange details about an issue
+You can find information about the signed exchange associated with an AMP in multiple places:
+In the URL Inspection tool, click the issue under AMP version details.
+In the AMP Status report, click a URL in the issue details table.
+To see if your AMP uses signed exchange
+To see whether or not Google has detected any signed exchange headers or payloads for your AMP:
+Inspect the AMP URL (either use the URL Inspection tool to inspect a specific URL, or in the AMP Status report, click the inspect icon next to the URL in the issue details table).
+Click View crawled page in the results page to open a side panel containing more information.
+Click the More Info tab.
+Below the Signed exchange label you will see a status that indicates whether Google detected any signed exchange components for that AMP.
+List of signed exchange issues
+The following issues can occur when your AMP uses the signed exchange protocol.
+The signed exchange is invalid
+The signed exchange payload has a parse error
+The header 'header_name' for the signed exchange payload has an invalid value
+The mandatory header 'header_name' for the signed exchange payload is missing
+The signature header for the signed exchange cannot be parsed
+The parameter 'parameter_name' in the signed exchange signature header is invalid
+The dates for the signed exchange are invalid
+The certificate chain referenced by the signed exchange 'cert-url' cannot be parsed
+The certificate chain referenced by 'cert-url' is invalid for the signed exchange
+The signed exchange cannot be parsed
+The URL for the inner payload does not match the request URL for the signed exchange
+The header 'header_name' for the signed exchange HTTP response has an invalid value
+The signed exchange is invalid
+The HTTP response was a signed exchange that did not meet the Google AMP Cache requirements. As a result, the page will be presented to users without any information from the signature.
+Impact to your site:
+The page will be presented in an AMP viewer with a Google URL, rather than its original URL.
+Next steps:
+Addressing this error is optional; pages with this error will still display properly inside an AMP viewer. If you wish for this page to be presented with its signed URL, then continue reading.
+This error could occur for several reasons, including:
+It contains a header that is disallowed either by the signed exchanges specification or by the Google AMP Cache.
+Its validity-url is not same-origin with its fallbackUrl, per the signed exchanges specification.
+Its signed response headers are not canonically encoded.
+If you are using a signed exchange service provider, consult them for assistance.
+If you are using AMP Packager:
+Verify that you are running the latest release of AMP Packager.
+If so, please file a bug.
+The signed exchange payload has a parse error
+The HTTP response was a signed exchange whose “payload” (body) did not meet the Google AMP Cache requirements. As a result, the page will be presented to users without any information from the signature.
+Impact to your site:
+The page will be presented in an AMP viewer with a Google URL, rather than its original URL.
+Next steps:
+Addressing this error is optional; pages with this error will still display properly inside an AMP viewer. If you wish for this page to be presented with its signed URL, then continue reading.
+Try the following steps to find and fix the error:
+Verify that the HTML does not contain an invalid UTF-8 encoding. For the erroring $URL, run curl $URL | iconv -f UTF-8 -t UTF-8 >/dev/null, and check for any error messages such as “illegal input sequence”. If it does, please ensure the document is properly UTF-8 encoded. Two common sources of multibyte characters are non-English text and spaces.
+Verify that the HTML does not contain a U+0000 NULL or a Unicode character that causes an HTML parse error.
+Verify that the HTML is unchanged after calling transform -config NONE. There are two common reasons for it to change:
+It was serialized using a printer other than the one bundled with AMP Packager. If you are using another signed exchange generator, ensure that it is using AMP Packager’s transformer library.
+The HTML causes a parse error that is handled by modifying the parse tree. Often, these are caused by omitted or misplaced end tags. Examples of this include the adoption agency algorithm and “form” end tag handling. Diagnosing these errors is difficult; an HTML markup validator may help find the cause.
+If you have ruled out all of the above:
+If you are using a signed exchange service provider, consult them for assistance.
+If you are using AMP Packager:
+Verify that you are running the latest release of AMP Packager.
+If so, there may be a bug in AMP Packager; please file a bug.
+The header 'header_name' for the signed exchange payload has an invalid value
+The HTTP response was a signed exchange that contained a signed response header that didn’t meet one of the Google AMP Cache requirements. As a result, the page will be presented to users without any information from the signature.
+Impact to your site:
+The page will be presented in an AMP viewer with a Google URL, rather than its original URL.
+Next steps:
+Addressing this error is optional; pages with this error will still display properly inside an AMP viewer. If you wish for this page to be presented with its signed URL, then continue reading.
+If you are using a signed exchange service provider, consult them for assistance.
+If you are using AMP Packager:
+Verify that you are running the latest release of AMP Packager.
+If so, please file a bug.
+The mandatory header 'header_name' for the signed exchange payload is missing
+The HTTP response was a signed exchange that was missing the given header, required either by the signed exchanges specification or the Google AMP Cache requirements. As a result, the page will be presented to users without any information from the signature.
+Impact to your site:
+The page will be presented in an AMP viewer with a Google URL, rather than its original URL.
+Next steps:
+Addressing this error is optional; pages with this error will still display properly inside an AMP viewer. If you wish for this page to be presented with its signed URL, then continue reading.
+If you are using a signed exchange service provider, consult them for assistance.
+If you are using AMP Packager:
+Verify that you are running the latest release of AMP Packager.
+If so, please file a bug.
+The signature header for the signed exchange cannot be parsed
+The HTTP response was a signed exchange that contained a signature header that was not well-formed according to the signed exchanges specification. As a result, the page will be presented to users without any information from the signature.
+Impact to your site:
+The page will be presented in an AMP viewer with a Google URL, rather than its original URL.
+Next steps:
+Addressing this error is optional; pages with this error will still display properly inside an AMP viewer. If you wish for this page to be presented with its signed URL, then continue reading.
+If you are using a signed exchange service provider, consult them for assistance.
+If you are using AMP Packager:
+Verify that you are running the latest release of AMP Packager.
+If so, please file a bug.
+The parameter 'parameter_name' in the signed exchange signature header is invalid
+The HTTP response was a signed exchange whose signature header had an incorrect value for the given parameter, as required by the signed exchanges specification. As a result, the page will be presented to users without any information from the signature.
+Impact to your site:
+The page will be presented in an AMP viewer with a Google URL, rather than its original URL.
+Next steps:
+Addressing this error is optional; pages with this error will still display properly inside an AMP viewer. If you wish for this page to be presented with its signed URL, then continue reading.
+If you are using a signed exchange service provider, consult them for assistance.
+If you are using AMP Packager:
+Verify that you are running the latest release of AMP Packager.
+If so, please file a bug.
+The dates for the signed exchange are invalid
+The HTTP response was a signed exchange whose signature header had an incorrect value for the date or expires parameter, as required by the signed exchanges specification or the Google AMP Cache requirements. (In particular, the signature must be valid at the time it is fetched, and at least 4 days in the future.) As a result, the page will be presented to users without any information from the signature
+Impact to your site:
+The page will be presented in an AMP viewer with a Google URL, rather than its original URL.
+Next steps:
+Addressing this error is optional; pages with this error will still display properly inside an AMP viewer. If you wish for this page to be presented with its signed URL, then continue reading.
+If you are using a signed exchange service provider, consult them for assistance.
+If you are using AMP Packager, this could happen for several reasons:
+Verify that your front-end reverse-proxy is not caching signed exchange responses for too long. Make multiple requests for the page with curl -H 'Accept: application/signed-exchange;v=b3' -H 'AMP-Cache-Transform: any' and search for "date=" in each response; verify that the subsequent number is different each time.
+Verify that you are running the latest release of AMP Packager.
+If you have ruled out all of the above, there may be a bug in AMP Packager; please file a bug.
+The certificate chain referenced by the signed exchange 'cert-url' cannot be parsed
+The HTTP response was a signed exchange whose cert-url was not well-formed per the signed exchanges specification. As a result, the page will be presented to users without any information from the signature.
+Impact to your site:
+The page will be presented in an AMP viewer with a Google URL, rather than its original URL.
+Next steps:
+Addressing this error is optional; pages with this error will still display properly inside an AMP viewer. If you wish for this page to be presented with its signed URL, then continue reading.
+If you are using a signed exchange service provider, consult them for assistance.
+If you are using AMP Packager:
+Verify that you are running the latest release of AMP Packager.
+If so, please file a bug.
+The certificate chain referenced by 'cert-url' is invalid for the signed exchange
+The HTTP response was a signed exchange whose cert-url was invalid according to the signed exchanges specification. As a result, the page will be presented to users without any information from the signature.
+Impact to your site:
+The page will be presented in an AMP viewer with a Google URL, rather than its original URL.
+Next steps:
+Addressing this error is optional; pages with this error will still display properly inside an AMP viewer. If you wish for this page to be presented with its signed URL, then continue reading.
+If you are using a signed exchange service provider, consult them for assistance.
+If you are using AMP Packager, this error could occur for several reasons. Some things to check:
+Verify that your CertFile does not contain a full list of the leaf certificate plus intermediates.
+Verify that AMP Packager was not launched with the -development or -invalidcert flag. In production mode, AMP Packager will verify several aspects of the certificate.
+Verify that your frontend reverse-proxy is not caching /amppkg/cert/ URLs for longer than is set by their max-age.
+Verify that your frontend reverse-proxy is not modifying cache headers; this could cause an upstream proxy to cache these certificate chains for too long. To test, determine the corresponding /amppkg/cert/ URL on your internal packager domain, fetch it including response headers (for instance, with curl -i), and compare the response headers to those returned by the frontend server.
+Verify that your certificate contains an SCT, for instance using the openssl x509 tool. If it does not, please consult your certificate authority.
+Verify that you are running the latest release of AMP Packager.
+If you have ruled out all of the above, there may be a bug in AMP Packager; please file a bug.
+The signed exchange cannot be parsed
+The HTTP response had a content-type of application/signed-exchange;v=b3, but the response body could not be extracted. This could be because it failed to meet the high-level requirements of that type, or because its payload was improperly Merkle-encoded.
+Impact to your site:
+If the page has a corresponding non-AMP page, Google Search will index that instead. Otherwise, the page might not appear in Google Search at all.
+Next steps:
+If you are using a signed exchange service provider, consult them for assistance.
+If you are using AMP Packager, this could happen for several reasons:
+Verify that your front-end reverse-proxy is not altering the responses from the packager. For the erroring URL, determine the corresponding /priv/doc URL on your internal packager domain, and test it using dump-signedexchange. If the internal packager response is a valid signed exchange but the external front-end response is not, then there is likely a configuration error in the front end.
+Verify that you are running the latest release of AMP Packager.
+If you have ruled out all of the above, there may be a bug in AMP Packager; please file a bug.
+The URL for the inner payload does not match the request URL for the signed exchange
+The HTTP response was a signed exchange whose fallbackUrl did not match the request URL; they must be byte-for-byte equal. As a result, Google Search will not trust that the response is representative of the request URL.
+Impact to your site:
+If the page has a corresponding non-AMP page, Google Search will index that instead. Otherwise, the page might not appear in Google Search at all.
+Next steps:
+If you are using a signed exchange service provider, consult them for assistance. Possible workarounds include changing the page’s URL to avoid bugs in common URL parsers. For instance, try eliminating percent-encoded or reserved characters, or unusual query string encodings such as a ? with no parameters.
+If you are using AMP Packager, this could happen for several reasons:
+Verify that your front-end reverse-proxy is rewriting URLs correctly. Issues are especially likely on URLs with percent-encoded or reserved characters. For instance, nginx has issues with its rewrite directive and the pathless form of its proxy_pass directive. To test this, send some test requests to your front end, and compare these to the URLs that AMP Packager logs to its stdout.
+Verify that you are running the latest release of AMP Packager.
+If you have ruled out all of the above, there may be a bug in AMP Packager; please file a bug.
+The header 'header_name' for the signed exchange HTTP response has an invalid value
+The HTTP response had a content-type of application/signed-exchange, but the response headers were invalid in some other way. For instance, the content-type may be lacking a v=b3 parameter. As a result, the format is unknown to Google and hence the response body cannot be extracted.
+Impact to your site:
+If the page has a corresponding non-AMP page, Google Search will index that instead. Otherwise, the page might not appear in Google Search at all.
+Next steps:
+If you are using a signed exchange service provider, consult them for assistance.
+If you are using AMP Packager, this could happen for several reasons:
+Verify that your front-end reverse-proxy is not altering the content-type headers. For the erroring URL, determine the corresponding /priv/doc URL on your internal packager domain, and fetch it including response headers (for instance, with curl -i). If the headers differ between the internal packager response and the external frontend response, this may be the source of the error. If the difference is in a header other than content-type, please file a bug against this help doc to update the list of requirements.
+Verify that you are running the latest release of AMP Packager.
+If you have ruled out all of the above, there may be a bug in AMP Packager; please file a bug.
 Prioritize and fix issues
 On the summary AMP page, filter out the warnings and focus on the errors first. By default, issues are sorted by a combination of severity, validation state, and number of affected pages; we recommend that you address them in this default order. Fix errors caused by a common cause first (such as a bad template), then fix errors that are unique to each page.
 See if any increase in the total error count is caused mostly by a single error: look for a corresponding spike in a single issue in the table.
@@ -49,7 +213,7 @@ The details page includes a sample of affected URLs. The list is not always comp
 If it is a syntax error, click Learn more to get official documentation about the proper syntax.
 Click the inspect icon to run a validity test against an affected page. This test will pinpoint all errors (not just the current issue) and provide a code explorer highlighting the errors and providing more information. It is possible that an error has been fixed in the live page but is still listed as an error because it has not yet been recrawled; if so, request validation after you have fixed all instances of this issue.
 Fix all instances of the issue on your site, test your fix, and ensure that your fixes are live on the web.
-Return to the issue details page and click the "Validate & Update Google" button to begin the validation process. This process is not immediate. See About validation to understand the validation process.
+Return to the issue details page and click the Validate Fix button to begin the validation process. This process is not immediate. See About validation to understand the validation process.
 Continue fixing errors.
 When all errors have been fixed, remove the filter for warnings, and consider fixing the warnings. Some warnings are about missing optional structured data markup, which can enable new search features for pages with relevant content.
 Sharing the report

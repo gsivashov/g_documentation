@@ -478,8 +478,7 @@ property is proposed and pending standardization at schema.org. We encourage pub
 share any feedback on this property with the schema.org community.
 sameAs
 URL
-URL of a reference Web page that unambiguously indicates the dataset's identity, usually in a
-different repository.
+The URL of a reference web page that unambiguously indicates the dataset's identity.
 spatialCoverage
 Text or Place
 You can provide a single point that describes the spatial aspect of the dataset. Only
@@ -805,4 +804,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-21 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-08-13 UTC.

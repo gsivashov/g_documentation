@@ -91,7 +91,7 @@ None
 Property sets are no longer supported in Search Console after March, 2019.
 Messages
 Message panel
-For messages dating from May 23, 2019 onward, you can read your messages in the message panel. You can find older messages in the old message list page.
+Read your messages in the message panel.
 Other tools and reports
 A few reports and tools exist in legacy state; you can find them on the Reports at a Glance page.
 New ways to perform old tasks

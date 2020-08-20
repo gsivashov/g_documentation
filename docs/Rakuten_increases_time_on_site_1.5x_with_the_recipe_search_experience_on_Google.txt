@@ -9,13 +9,36 @@ Rakuten increases time on site 1.5x with the recipe search experience on Google
 check_circle_outline 2.7X more traffic from search engines
 check_circle_outline 1.5X increase in session duration
 Challenge
-One of the largest IT companies in Japan, Rakuten provides over 70 services, including e-commerce, FinTech, and loyalty programs. Rakuten Recipe lets home chefs post and share their own recipes and menus on a website, an app, and the Google Assistant. Launched in 2010, the platform has over 14 million active monthly users who enjoy access to about 1.5 million recipes and menus. "We try to provide a good user experience, as well as the excitement and enjoyment of cooking through learning from others," says Rakuten Recipe group manager Yuki Uchida.
-Rakuten Recipe began using Recipe structured data in 2012. Two years later, they expanded the number of available structured data categories to precisely match people with the recipes that would most interest them. They collaborated with Google Search in 2017 to make their structured data even more useful.
+One of the largest IT companies in Japan,
+Rakuten provides over 70 services, including
+e-commerce, FinTech, and loyalty programs. Rakuten Recipe lets home chefs post and share their own
+recipes and menus on a website or an app. Launched in 2010, the platform has over 15 million
+active monthly users who enjoy access to about 1.9 million recipes and menus. "We try to provide a
+good user experience, as well as the excitement and enjoyment of cooking through learning from
+others," says Rakuten Recipe manager Yuki Uchida.
+Rakuten Recipe began using
+Recipe structured data in 2012. Two years later, they expanded the
+number of available structured data categories to precisely match people with the recipes that
+would most interest them. They collaborated with Google Search in 2017 to make their structured
+data even more useful.
 Solution
-One way Rakuten checked the efficiency of their new search experience was by using Search Console. The company easily implemented the structured data through their content management system (CMS) within two weeks. Rakuten was already using Accelerated Mobile Pages (AMP) when they started using the report, which helps fix errors in any rich result. The report also shows where you can provide more information to take fuller advantage of Google's rich result platform. "We elected to have all of the recipes we have available the same day as the Rich Cards report was released—full on at the first release," Uchida says.
-The Structured Data Testing Tool also helped them to validate their code and eliminate any errors in the markup data. "The Structured Data Testing Tool is a very useful product for us, especially if there are SD-markup-related errors on our AMP pages," Uchida explains. "It will automatically send us an email if there's a problem."
+One way Rakuten checked the efficiency of their new search experience was by using
+Search Console. The company easily
+implemented the structured data through their content management system (CMS) within two weeks.
+Rakuten was already using Accelerated Mobile Pages (AMP)
+when they started using the report, which helps fix errors in any rich result. The report also
+shows where you can provide more information to take fuller advantage of Google's rich result
+platform. "We elected to have all of the recipes we have available the same day as the Rich Cards
+report was released—full on at the first release," Uchida says.
+The Structured Data Testing Tool
+also helped them to validate their code and eliminate any errors in the markup data.
+"The Structured Data Testing Tool is a very useful product for us, especially if there are
+SD-markup-related errors on our AMP pages," Uchida explains. "It will automatically send us an
+email if there's a problem."
 Result
-The IT giant quickly saw better performance from their structured data in Google Search. Traffic to all Rakuten Recipe pages from search engines soared 2.7 times, and the average session duration was now 1.5 times longer than before. These improvements help users "match with more recipes, and spend more time enjoying and cooking the recipes we have," Uchida says.
-Looking ahead, Rakuten is considering expanding their abilities to match users with recipes, not only through search, but through voice guidance as well. The goal, Uchida adds, is "a seamless experience across devices and applications, while still allowing users to experience the enjoyment and motivation of finding and cooking great recipes."
+The IT giant quickly saw better performance from their structured data in Google Search. Traffic
+to all Rakuten Recipe pages from search engines soared 2.7 times, and the average session duration
+was now 1.5 times longer than before. These improvements help users "match with more recipes, and
+spend more time enjoying and cooking the recipes we have," Uchida says.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-08-13 UTC.

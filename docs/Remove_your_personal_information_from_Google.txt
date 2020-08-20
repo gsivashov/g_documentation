@@ -10,7 +10,7 @@ Contact the site's hosting company: The Whois search result usually includes inf
 If the website owner has removed the information, it will eventually be removed from Google Search as part of our regular updating process. To speed up the process of removing it from Google Search, use the Outdated Content Removal tool.
 Personal information that Google will remove
 If you are unable to have a website remove material, Google may remove personal information that creates significant risks of identity theft, financial fraud, or other specific harms. Here is more advice about common removal requests:
-Remove unwanted & explicit personal images from Google
+Remove non-consensual explicit or intimate personal images from Google
 Remove involuntary fake pornography from Google
 Remove content about me on sites with exploitative removal practices from Google
 Remove select financial, medical and national ID information from Google
@@ -20,4 +20,4 @@ Other information that Google will remove
 Google also removes content for specific legal reasons, such as DMCA copyright violation reports and child sexual abuse imagery. To request a removal for a legal reason, use the legal troubleshooter form.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpRemove your personal information from GoogleProblems with Google SearchReport a problem with Google Search
+HelpRemove your personal information from GoogleProblems with Google Search

@@ -11,6 +11,8 @@ Optionally choose a user agent
 You can choose which user agent to use when testing your page: that is, test your page with a smartphone or a desktop computer. Choose a user agent from the list below the URL or code entry textbox.
 The default user agent is smartphone, because of Google's mobile-first initiative, which reflects the increased use of mobile devices to access web pages. If your site is mobile-first, we recommend using the smartphone user agent for your testing, unless you have specific reasons to use the desktop user agent. For all sites, we recommend using the mobile user agent because this is how the majority of users browse the web today.
 You can see if your site is mobile-first on your property's settings page.
+Supported structured data formats
+The Rich Results test supports structured data in JSON-LD, RDFa, and Microdata
 Review the results
 The test shows which rich result types were found on the page, as well as any errors or suggestions for your structured data.
 If there are errors or warnings, expand the individual item to see details, and click the description to open the code explorer in the corresponding location. The explorer uses the rendered source code.

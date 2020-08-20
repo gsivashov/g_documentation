@@ -6,14 +6,17 @@ Search for Developers
 Reference
 Send feedback
 Article
-Adding structured data to your news, blog, and sports article page can enhance your appearance in Google Search results. Enhanced features can include placement in the Top stories carousel, host carousel, Visual stories, and rich result features such as headline text and larger-than-thumbnail images. Your page may be eligible for different features depending on how you code your page:
-AMP with structured data: [Recommended] AMP
+Adding Article structured data to your news, blog, and sports
+article page can enhance your appearance in Google Search results. Your page may be eligible
+for different features depending on how you code your page:
+AMP with structured data: AMP
 pages with structured data can appear in the Top stories carousel, host carousel of rich
 results, Visual stories, and rich results in mobile Search results. These results can include
 images, page logos, and other interesting search result features.
 Non-AMP web page with structured data: Non-AMP
-article pages that include structured data can increase the likelihood of appearing in search
-results with rich result features.
+pages that include Article structured data can help Google
+understand more about the web page and show better headline text, images, and date published
+for the article in Article rich results.
 By structuring your content according to this guide,
 your content may be automatically turned into an Action on the Google Assistant.
 Examples
@@ -92,6 +95,50 @@ Here's an example of JSON-LD code on an AMP page with Article structured data.
 <body>
 </body>
 </html>
+Here's an example of a non-AMP page with Article structured data.
+Non-AMP pages have different recommendations than AMP pages.
+<html>
+<head>
+<title>Article headline</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "NewsArticle",
+"headline": "Article headline",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"datePublished": "2015-02-05T08:00:00+08:00",
+"dateModified": "2015-02-05T09:20:00+08:00"
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head>
+<title>Article headline</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "NewsArticle",
+"headline": "Article headline",
+"image": [
+"https://example.com/photos/1x1/photo.jpg",
+"https://example.com/photos/4x3/photo.jpg",
+"https://example.com/photos/16x9/photo.jpg"
+],
+"datePublished": "2015-02-05T08:00:00+08:00",
+"dateModified": "2015-02-05T09:20:00+08:00"
+}
+</script>
+</head>
+<body>
+</body>
+</html>
 Implementation
 AMP with structured data
 AMP pages that have structured data can appear in a carousel of stories in search results.
@@ -110,23 +157,14 @@ information on placement, see the Structured Data
 General Guidelines.
 Test your structured data using the Rich Results Test.
 Non-AMP page with structured data
-Non-AMP pages can be shown as a rich result in a rich result list, or in a carousel of similar
-non-AMP pages. Rich results can include headlines and images. Although Google can try to extract
-enough information from your page automatically to qualify for these features, if you include
-structured data on the page it can help Google better understand your page content and increase
-the likelihood of a rich or carousel result.
-Non-AMP search results can include a headline and an image, as shown here:
-Two non-carousel results for non-AMP web pages.
-Carousel results for non-AMP web pages
+When you add Article structured data to a non-AMP page, you can
+better suggest the right headline, date published, and image that Google should show in Search results.
 To add structured data to your non-AMP article page:
 Add a structured data element to your page, describing the
 article on the page.
 Read the guidelines to ensure that
 Google can crawl your page.
 Test your structured data using the Rich Results Test.
-Google recommends creating an AMP version of your page to provide a better user experience on
-mobile devices. Read more about the benefits
-of AMP on mobile devices.
 Guidelines
 You must follow these guidelines to enable structured data to be eligible for inclusion in Google Search results.
 Warning: If your site violates one or more of these guidelines,
@@ -141,7 +179,7 @@ AMP logo guidelines (if applicable)
 AMP story metadata requirements (if applicable)
 Technical guidelines
 If you offer subscription-based access to your website content, or if users must register
-for access, you should add structured data for
+for access, consider adding structured data for
 subscription and paywalled content.
 For multi-part content, make sure that the rel=canonical points at either
 each individual page or a "view-all" page (and not to page 1 of a multi-part series). Learn
@@ -167,13 +205,17 @@ the 60px image height. Add additional space to pad the height to 60px.
 Logos with a solid background should include 6px minimum padding around the graphic.
 Structured data type definitions
 The following section describes the property requirements for Article
-structured data. You must include the required properties for your content to be eligible for display as a rich result. You can also include the recommended properties to add more information about your content, which could provide a better user experience.
+structured data. AMP and non-AMP pages have different property requirements and
+recommendations:
+For AMP pages: You must include the required properties for your content
+to be eligible for display as a rich result. You can also include the recommended properties
+to add more information about your content, which could provide a better user experience.
+For non-AMP pages: To help Google understand your page better, include
+the recommended properties for non-AMP pages.
 Article objects
 Article objects must be based on one of the following
 schema.org types: Article,
 NewsArticle, BlogPosting.
-Note: AMP and non-AMP pages have different property requirements and
-recommendations.
 AMP
 The following properties apply to AMP pages.
 Required properties
@@ -299,4 +341,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-08-06 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-08-10 UTC.

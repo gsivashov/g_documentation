@@ -213,11 +213,13 @@ Reported post for abuse Unable to send report.
 Google user
 This reply is no longer available.
 Badges Some community members might have badges that indicate their identity or level of participation in a community.
-Google Employee — Googler guides and community managers
-Community Specialist — Google partners who share their expertise
-Platinum Product Expert — Seasoned members who contribute beyond providing help through mentoring, creating content, and more
-Gold Product Expert — Trusted members who are knowledgeable and active contributors
-Silver Product Expert — New members who are developing their product knowledge
+Google Employee — Google product team members and community managers
+Community Specialist — Google partners who help ensure the quality of community content
+Diamond Product Expert — Community members with product mastery who help other Google users and Product Experts
+Platinum Product Expert — Community members with advanced product knowledge who help other Google users and Product Experts
+Gold Product Expert — Community members with in-depth product knowledge who help other Google users by answering questions
+Silver Product Expert — Community members with intermediate product knowledge who help other Google users by answering questions
+Product Expert Alumni — Former Product Experts who are no longer members of the program
 Community content may not be verified or up-to-date.
 Done
 /webmasters/threads //accounts.google.com/ServiceLogin You'll receive email notifications for new posts at

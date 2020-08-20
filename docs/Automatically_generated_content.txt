@@ -1,7 +1,7 @@
 https://support.google.com/webmasters/answer/2721306
 
 Automatically generated contentAutomatically generated—or “auto-generated”—content is content that’s been generated programmatically.  In cases where it is intended to manipulate search rankings and not help users, Google may take actions on such content. These include, but are not limited to:
-Text that make no sense to the reader but which may contain search keywords.
+Text that makes no sense to the reader but which may contain search keywords.
 Text translated by an automated tool without human review or curation before publishing
 Text generated through automated processes, such as Markov chains
 Text generated using automated synonymizing or obfuscation techniques

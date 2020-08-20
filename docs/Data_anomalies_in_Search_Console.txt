@@ -36,6 +36,8 @@ The Index Coverage report can now more accurately report on indexed pages. Becau
 International Targeting Report
 No issues
 AMP enhancement report
+August 18, 2020 onward
+The report has been updated to include Signed Exchange related issues.  This change does not affect Search results, only the data reporting in Search Console. Read more.
 April 12, 2020 onward
 The report has been changed to cover a smaller number of pages, in order to provide better performance in Search Console. Because of this, you might see a decrease in the number of items and pages tracked in the report. This change does not affect Search results, only the data reporting in Search Console.
 January 23, 2019
