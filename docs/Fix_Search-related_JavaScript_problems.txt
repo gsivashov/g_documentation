@@ -138,6 +138,10 @@ use WebGL to render photo effects in the browser, feature
 detection shows that Googlebot doesn't support WebGL. To fix this, you could skip the
 photo effect or decide to use server-side rendering to prerender the photo effects, which makes
 your content accessible to everyone, including Googlebot.
+Make sure your content works with HTTP connections.
+Tell me more: Googlebot uses HTTP requests to retrieve content from your server. It does not support other types of connections, such as
+web sockets or Web RTC connections.
+To avoid problems with such connections, make sure to provide an HTTP fallback to retrieve content and use robust error handling and feature detection.
 Make sure your web components render as expected.
 Use the Mobile-Friendly Test or the URL Inspection Tool to check if the rendered HTML has all content you expect.
 Tell me more:
@@ -154,4 +158,4 @@ see errors, post in the
 JavaScript
 Sites in Search Working Group.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-08-21 UTC.
