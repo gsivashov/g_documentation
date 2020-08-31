@@ -614,7 +614,7 @@ Text
 The region associated with your recipe. For example, "French", Mediterranean", or "American".
 recipeIngredient
 Text
-This property required for Guided Recipes.
+This property is required for Guided Recipes.
 An ingredient used in the recipe.
 For example:
 "recipeIngredient": [
@@ -632,7 +632,7 @@ Include only the ingredient text that is necessary for making the recipe.
 Don't include unnecessary information, such as a definition of the ingredient.
 recipeInstructions
 HowToStep, HowToSection, or Text
-This property required for Guided Recipes.
+This property is required for Guided Recipes.
 The steps to make the dish.
 There are several options for setting the value of recipeInstructions. We recommend using HowToStep. HowToSection can also be used to group HowToSteps when the recipe has sections.
 HowToStep: Specify this recipe’s steps with HowToStep.
@@ -710,11 +710,11 @@ Recommended
 "text": "Heat oven to 425°F."
 }]
 recipeYield
-Text
+Text or Integer
+For Guided Recipes, the type must be Integer.
 The quantity produced by the recipe. Specify the number of servings
 produced from this recipe with just a number. If you wish to use a different unit (for
-example, number of items), you may include additional yields.
-This is required if you
+example, number of items), you may include additional yields. This is required if you
 specify any nutritional information per serving (such as nutrition.calories).
 Example
 "recipeYield": [
@@ -1058,4 +1058,5 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-08-06 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-08-28 UTC.

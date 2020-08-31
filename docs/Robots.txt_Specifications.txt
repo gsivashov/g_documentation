@@ -270,17 +270,16 @@ Except for the last group (group "h"), each group has its own group-member line.
 group (group "h") is empty. Note the optional use of white-space and empty lines to improve
 readability.
 Order of precedence for user-agents
-Only one group is valid for a particular crawler.
-The crawler must determine the correct group of lines by finding the
-group with the most specific user-agent that still matches. All other
-groups are ignored by the crawler. The user-agent is
-case-sensitive. All non-matching text is ignored (for example, both
-googlebot/1.2 and googlebot* are
-equivalent to googlebot). The
-order of the groups within the robots.txt file is irrelevant.
-If there's more than one group for a specific user-agent, all the rules from the groups
-applicable to a specific user-agent are combined.
-Example
+Only one group is valid for a particular crawler. The crawler must determine the correct group
+of lines by finding the group with the most specific user-agent that still matches. All other
+groups are ignored by the crawler. The user-agent is case-sensitive. All non-matching text is
+ignored (for example, both googlebot/1.2 and
+googlebot* are equivalent to googlebot).
+The order of the groups within the robots.txt file is irrelevant.
+If there's more than one group declared for a specific user-agent, all the rules from the groups
+applicable to the specific user-agent are combined into a single group.
+Examples
+Example 1
 Assuming the following robots.txt file:
 user-agent: googlebot-news
 (group 1)
@@ -296,8 +295,9 @@ are ignored.
 Googlebot (web)
 The group followed is group 3.
 Googlebot Images
-The group followed is group 3. There is no specific googlebot-images
-group, so the more generic group is followed.
+The group followed is group 3. There is no specific
+googlebot-images group, so the more generic group is
+followed.
 Googlebot News (when crawling images)
 >The group followed is group 1. These images are crawled for and by Googlebot News,
 therefore only the Googlebot News group is followed.
@@ -306,6 +306,20 @@ The group followed is group 2.
 Otherbot (News)
 The group followed is group 2. Even if there is an entry for a related crawler, it
 is only valid if it is specifically matching.
+Example 2
+Assuming the following robots.txt file:
+user-agent: googlebot-news
+disallow: /fish
+user-agent: *
+disallow: /carrots
+user-agent: googlebot-news
+disallow: /shrimp
+This is how the crawlers would merge groups relevant to a specific user-agent:
+user-agent: googlebot-news
+disallow: /fish
+disallow: /shrimp
+user-agent: *
+disallow: /carrots
 Also see Google's crawlers and
 user-agent strings.
 Group-member rules
@@ -453,4 +467,5 @@ robots.txt Tester in Search Console.
 Google's open source
 robots.txt library, which is also used in Google Search.
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-07-14 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-08-27 UTC.

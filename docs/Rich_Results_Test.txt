@@ -76,9 +76,11 @@ Supported rich result types
 This test currently supports the following rich result types:
 Supported types
 AMP article
+Article
 Breadcrumb
 Carousel
 Course
+Critic Review
 Dataset
 Employer rating
 Estimated salary

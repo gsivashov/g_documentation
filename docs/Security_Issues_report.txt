@@ -14,6 +14,8 @@ If you have security issues, you'll see a count of all security issues on your 
 If your site has no security issues, you'll see a green check mark and an appropriate message.
 But I just bought this site!
 If you recently bought a site that had pre-existing security issues, fix the issues listed in the Security Issues report, then let us know in your reconsideration request that you recently acquired the site and that it now adheres to the Google Webmaster Guidelines.
+I can't reproduce the issue
+Google SafeBrowsing displays warnings to users based on the browsing context. Therefore you may or may not be able to reproduce the warnings. However, you should rely on the Security Issues report as the source of truth to verify whether any security issues exist for your site, or if they have been fixed.
 Which pages are affected?
 Expand an issue description to see a list of sample affected URLs. This list is not necessarily complete, but just a sample of pages on your site affected by the selected issue. Occasionally you might have a security issue with no example URLs; this does not mean that no pages are affected, only that we could not generate samples for some reason.
 The issue details show the date that the issue was first detected on your site, as well as a brief description and a link to learn more about the issue.

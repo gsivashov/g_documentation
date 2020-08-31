@@ -81,6 +81,11 @@ A Frequently Asked Question (FAQ) page contains a list of questions and answers
 pertaining to a particular topic.
 Get started
 Ecommerce, Organizations
+Home Activities
+An interactive rich result where people can discover online activities that they
+can do from home.
+Get started
+Education and Science, Organizations
 How-to
 A How-to walks users through a set of steps to successfully complete a task,
 featuring video, images, and text.
@@ -175,4 +180,5 @@ segments, and live-stream content.
 Get started
 Food and Drink, News, Education and Science, Sports
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-08-10 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-08-26 UTC.

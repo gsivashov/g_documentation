@@ -22,6 +22,16 @@ Increased chances of discovery and conversion: People have a new way to
 interact with your event posting and click through to your site. Learn how
 Eventbrite saw a 100% increase in
 the typical year-over-year growth of traffic from Google Search.
+Based on how you mark up your content, your events may also be eligible for the following event
+enhancements:
+Event enhancements
+Home activities: Help people find activities to do at home. When people search for
+activities to do at home, videos and online events appear in an immersive rich result. By
+adding Event structured data, your online events may already be
+eligible for this rich result, with no additional steps needed.
+For more information
+about feature availability, guidelines, and examples, see
+Home activities.
 There are three options to make your events eligible to appear on Google:
 If you use a third-party website to post events (for example, you post
 events on ticketing websites or social platforms), check to see if your event publisher is
@@ -1391,4 +1401,5 @@ Not recommended: 2019-07-20T00:00:00
 Not recommended: 2019-08-15T00:00:01+00:00
 Not recommended2019-08-15T00:00:00+00:00
 Send feedback
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2020-08-06 UTC.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-08-26 UTC.

@@ -43,6 +43,9 @@ The report has been changed to cover a smaller number of pages, in order to prov
 January 23, 2019
 Some users may see elevated error levels of type "Crawl Issue" on their AMP URLs due to a processing error on our side. The issue is now fixed and error counts should return to their actual levels within few days
 Rich result reports
+August 26, 2020
+Dataset
+Search Console began marking as "warning" any Dataset object that is missing the recommended property creator. Therefore you may see an increase in warnings for Dataset instances on your website.
 July 1, 2020 onward
 Video
 Search Console began marking as "warning" any Video object that is missing both embedUrl and contentUrl properties. This is not a change in requirements or behavior, but an improvement in our reporting system to better reflect the actual indexing behavior. Video objects that are missing both embedUrl and contentUrl properties can still appear as rich results but additional content based features of videos such as animated previews and key moments may not work. Therefore you might see an increase in warnings in Video items on your site. To fix this issue, define either of these two properties in your Video object. (Note that this does not affect Video items embedded within other types, such as Video within Recipe.)
