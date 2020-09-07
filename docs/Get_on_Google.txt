@@ -19,8 +19,7 @@ Google News – Share timely reporting on matters that are important or interest
 Scholar – Include scholarly works in Google's academic index.
 Google News – Appear in Google News search results, or provide digital editions for subscription.
 Local information
-Map Content Partners Program – Simplify navigation of your community by improving and enriching our base map.
-Geo Data Upload – If you're an aggregator of local content, publish it through Google.
+Geo Data Upload – If you are an authoritative or official source of regional data, publish it through Google.
 Photo Sphere – Photograph and share the world with 360° pictures.
 Street View – Provide a panoramic virtual tour of your property.
 Transit Partner Program – Encourage use of public transit by making it easy to locate routes, schedules and fares.

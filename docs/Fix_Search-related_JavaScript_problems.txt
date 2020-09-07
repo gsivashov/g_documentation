@@ -34,7 +34,9 @@ Mobile-Friendly Test
 or the URL Inspection Tool in Search
 Console. You can see loaded resources, JavaScript console output and exceptions, rendered
 DOM, and more information by clicking the more information link on the page verdict card.
-Don't use cached links to debug your pages. Instead, use the URL Inspection Tool because it has the most up-to-date version of your pages.
+Don't use cached links
+to debug your pages. Instead, use the URL Inspection Tool
+because it has the most up-to-date version of your pages.
 Optionally, we also recommend collecting and auditing JavaScript errors encountered by
 users, including Googlebot, on your site to identify potential issues that may affect how
 content is rendered.
@@ -103,7 +105,9 @@ metaRobots.content = 'noindex';
 document.head.appendChild(metaRobots);
 }
 });
-Tell me more: When an SPA is using client-side JavaScript to handle errors they often report an HTTP status code 200 instead of the appropriate status code.
+Tell me more: When an SPA is using client-side JavaScript to
+handle errors they often report an HTTP status code 200 instead of the
+appropriate status code.
 This can lead to error pages being indexed and possibly shown in search results.
 Expect Googlebot to decline
 user permission requests.
@@ -112,14 +116,18 @@ Googlebot, or for all users. For example, if you make the Camera API required,
 Googlebot can't provide a camera to you. Instead, you should provide a way for users to access your
 content without being forced to allow camera access.
 Don't use fragment URLs to load different content.
-Tell me more: A SPA may use fragment URLs (for example https://example.com/#/products) for loading different views.
-The AJAX-crawling scheme has been deprecated since 2015, so you can't rely on fragment URLs to work with Googlebot.
-We recommend using the History API to load different content based on the URL in an SPA.
+Tell me more: A SPA may use fragment URLs
+(for example https://example.com/#/products) for loading different views.
+The AJAX-crawling scheme has been deprecated
+since 2015, so you can't rely on fragment URLs to work with Googlebot.
+We recommend using the
+History API
+to load different content based on the URL in an SPA.
 Don't rely on data persistence to serve content.
-Tell me more: WRS loads each URL (refer to Introduction
-to Indexing for an overview of how Google discovers content), following
-server and client redirects, same as a regular browser. However, WRS does not
-retain state across page loads:
+Tell me more: WRS loads each URL (refer to
+Introduction to Indexing for an overview
+of how Google discovers content), following server and client redirects, same as a regular
+browser. However, WRS does not retain state across page loads:
 Local Storage and Session Storage data are cleared across page loads.
 HTTP Cookies are cleared across page loads.
 Use content fingerprinting to avoid caching issues with Googlebot.
@@ -128,9 +136,12 @@ network requests and resource usage. WRS may ignore caching headers. This may le
 outdated JavaScript or CSS resources. Content fingerprinting avoids this problem by making a
 fingerprint of the content part of the filename, like main.2bb85551.js.
 The fingerprint depends on the content of the file, so updates generate a different filename
-every time. Check out the web.dev guide on long-lived caching strategies to learn more.
+every time. Check out the
+web.dev guide on long-lived caching strategies
+to learn more.
 Ensure that your application uses
-feature detection for all critical APIs that it needs and provide a fallback
+feature detection
+for all critical APIs that it needs and provide a fallback
 behavior or polyfill where applicable.
 Tell me more: Some web features may not yet be adopted by
 all user agents and some may intentionally disable certain features. For example, if you
@@ -139,15 +150,25 @@ detection shows that Googlebot doesn't support WebGL. To fix this, you could ski
 photo effect or decide to use server-side rendering to prerender the photo effects, which makes
 your content accessible to everyone, including Googlebot.
 Make sure your content works with HTTP connections.
-Tell me more: Googlebot uses HTTP requests to retrieve content from your server. It does not support other types of connections, such as
-web sockets or Web RTC connections.
-To avoid problems with such connections, make sure to provide an HTTP fallback to retrieve content and use robust error handling and feature detection.
+Tell me more: Googlebot uses HTTP requests to retrieve
+content from your server. It does not support other types of connections, such as
+WebSockets
+or
+WebRTC
+connections.
+To avoid problems with such connections, make sure to provide an HTTP fallback to retrieve
+content and use robust error handling and feature detection.
 Make sure your web components render as expected.
-Use the Mobile-Friendly Test or the URL Inspection Tool to check if the rendered HTML has all content you expect.
+Use the Mobile-Friendly Test or the
+URL Inspection Tool to
+check if the rendered HTML has all content you expect.
 Tell me more:
 WRS flattens the light DOM and shadow DOM.
-If the web components you use aren't using <slot> mechanism for light DOM content,
-consult the documentation of the web component for further information or use another web component instead.
+If the web components you use aren't using
+<slot> mechanism
+for light DOM content,
+consult the documentation of the web component for further information or use another web
+component instead.
 For more information, see best practices for web components.
 After you fix the items in this checklist, test your page with the
 Mobile-Friendly Test or the
@@ -159,4 +180,4 @@ JavaScript
 Sites in Search Working Group.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-08-21 UTC.
+Last updated 2020-08-31 UTC.

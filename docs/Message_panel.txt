@@ -1,15 +1,18 @@
 https://support.google.com/webmasters/answer/9388335
 
-Message panelRead your Search Console messages for the current property in the message panel. All messages sent to you by email are available in the message panel.
+Message panelRead your Search Console messages for the current property in the message panel. All property-level messages sent to your by email are available in the message panel.
 Read messages
 Open the message panel by clicking the bell icon  at the top of Search Console.
 If a number is shown on top of the message icon, it indicates the number of unread messages. A number will only be shown when a new message arrives, and will disappear after you open the panel.
 Click a message in the panel to view it.
+Types of messages and where you can read them
+Search Console sends the following two types of messages to property users and owners:
+Property messages are emailed to all appropriate users for a property (for example, a warning about a new indexing issue). The message panel contains all property messages sent in the past year, whether or not you had access to the property in Search Console during that time.
+User messages are emailed only to a specific user (for example, if your permission level changes). You can also see your user messages in the user message report.
 Message history and visibility
 Messages are stored in a property's message history only when the property has a verified owner. The message history includes all messages sent to the property during this time, even if you did not yet have any permissions on this property.
 A message is only visible to you if you have the proper permission level for that message.
-Reading older messages
-The message panel shows messages only from May 23, 2019 onward. Messages sent before that date can be viewed only in your personal email or in the legacy message list.
+Messages are retained for only one year by Search Console. If you want to retain a message longer than that, either save the email you received, or copy the message from Search Console into a document that you can store yourself.
 Mark as read/unread
 Reading a message in the message page will mark it as read. You can change the read/unread status for single messages or multiple messages as described here:
 Single messages

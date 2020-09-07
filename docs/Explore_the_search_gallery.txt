@@ -91,7 +91,7 @@ A How-to walks users through a set of steps to successfully complete a task,
 featuring video, images, and text.
 Get started
 Education and Science, Organizations
-Image License (beta)
+Image License
 In Google Images, the Licensable badge tells people that license information is
 available for the image, and provides a link to the license in the Image
 Viewer, which offers more detail on how someone can use the image.
@@ -181,4 +181,4 @@ Get started
 Food and Drink, News, Education and Science, Sports
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-08-26 UTC.
+Last updated 2020-08-31 UTC.
