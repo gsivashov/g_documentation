@@ -33,7 +33,7 @@ To test how Google crawls and renders a URL, use the
 Mobile-Friendly Test
 or the URL Inspection Tool in Search
 Console. You can see loaded resources, JavaScript console output and exceptions, rendered
-DOM, and more information by clicking the more information link on the page verdict card.
+DOM, and more information.
 Don't use cached links
 to debug your pages. Instead, use the URL Inspection Tool
 because it has the most up-to-date version of your pages.
@@ -180,4 +180,4 @@ JavaScript
 Sites in Search Working Group.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-08-31 UTC.
+Last updated 2020-09-09 UTC.

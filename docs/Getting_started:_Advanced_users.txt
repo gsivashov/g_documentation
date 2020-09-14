@@ -31,6 +31,7 @@ AJAX-based sites: If you use AJAX for your site, read up on how Google crawls AJ
 JavaScript usage: See Google's recommendations for JavaScript on websites.
 Multi-page articles: If you have an article broken into several pages, be sure that there are prominent next and previous links for users to click (and that these are crawlable links). That's all you need for the page set to be crawled by Google.
 Infinite scroll pages: Google can have trouble scrolling through infinite scroll pages; you should provide a paginated version if you want the page to be crawled. Learn more about search-friendly infinite scroll pages.
+Block access to URLs that change state, such as posting comments, creating accounts, adding items to a cart, and so on. Use robots.txt to block these URLs.
 See the list of which file types are indexable by Google. If your file type is not natively crawlable, be sure that it is linked by text that describes it, or (video, image, or podcast feed) provide metadata in a sitemap.
 In the unlikely situation that Google seems to be crawling your site too much, you can turn down the crawl rate for your site. However, this should be a rare occurrence.
 If your site is still http, we recommend migrating to https, for your users' security, as well as your own.
@@ -57,7 +58,7 @@ Be sure to prevent comment spam in your site.
 If you want to provide a limited number of free views to visitors, read about flexible sampling to learn some best practices about providing limited free access to your content.
 See how to indicate subscription and paywalled content on your site to Google while still enabling crawling.
 See how to use meta tags to limit text or image use when generating search result snippets.
-Consider using AMP or AMP stories for fast-loading content.
+Consider using AMP or Web Stories for fast-loading content.
 Other sites (businesses, books/apps,/scholarly works): See other Google services where you can post your information.
 See if Google supports a search feature specific for your content type. Google supports specialized search features for recipes, events, job posting sites, and more.
 Manage the user experience

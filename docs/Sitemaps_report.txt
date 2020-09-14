@@ -155,8 +155,7 @@ The root element of your sitemap doesn't contain the correct namespace, or the n
 Be sure that you are using the correct namespace for your file type. For example:
 A sitemap file: xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 A video sitemap file: xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
-A sitemap index file:
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+A sitemap index file: <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 Other sitemap types...
 Leading whitespace
 Your sitemap begins with leading whitespace, rather than a namespace declaration. XML files should begin with the XML declaration that specifies the version of XML being used.
@@ -168,8 +167,7 @@ The video thumbnail image specified in your sitemap is too large. Resize your vi
 Thumbnail too small
 A video thumbnail image specified in your sitemap is too small. Resize your video thumbnail image to 160 x 120 px. Update your sitemap if necessary. More information about adding video information to a sitemap.
 Video location and play page location are the same
-In a video sitemap, the video content URL and the player URL cannot be the same. If you provide
-both <video:player_loc> and <video:content_loc>, the URLs must be different. More information about adding video information to a sitemap.
+In a video sitemap, the video content URL and the player URL cannot be the same. If you provide both <video:player_loc> and <video:content_loc>, the URLs must be different. More information about adding video information to a sitemap.
 Video location URL appears to be a play page URL
 In a video sitemap, the <video:content_loc> URL points to the page hosting the player. More information about adding video information to a sitemap.
 Sitemap contains urls which are blocked by robots.txt
