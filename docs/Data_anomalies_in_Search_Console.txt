@@ -31,6 +31,8 @@ Mobile Usability Report
 April 12, 2020 onward
 The report has been changed to cover a smaller number of pages, in order to provide better performance in Search Console. Because of this, you might see a decrease in the number of items and pages tracked in the report. This change does not affect Search results, only the data reporting in Search Console.
 Index Coverage Report
+Sept 1, 2020 ongoing
+An internal systems error caused a delay in processing index coverage information. No data has been lost, and the report will show accurate data after processing is complete.
 December 15, 2019 onward
 The Index Coverage report can now more accurately report on indexed pages. Because of this, some pages that were Crawled - currently not indexed are now known to be indexed. As a result, you may see a transfer of pages from Excluded to Valid state. This does not reflect any changes in your site, but a more accurate accounting system.
 International Targeting Report

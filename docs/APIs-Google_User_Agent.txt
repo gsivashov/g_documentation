@@ -18,5 +18,5 @@ Verifying the caller
 If you suspect that you are receiving spoofed requests, you can verify that a bot accessing your server really is calling from google.com. Search your logs for any IP addresses identifying themselves as the APIs-Google user agent; a reverse DNS lookup should be a googlebot.com or google.com domain.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Google crawlersOverview of Google crawlers (user agents)GooglebotGoogle Read Aloud user agentAPIs-Google User AgentFeedfetcherDuplex on the Web user agentVerifying Googlebot
+Google crawlersOverview of Google crawlers (user agents)GooglebotGoogle Read Aloud user agentAPIs-Google User AgentFeedfetcherDuplex on the web user agentVerifying Googlebot
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

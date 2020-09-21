@@ -104,10 +104,6 @@ include the required properties for your content to be eligible for display in e
 The full definition of EmployerAggregateRating is avalailable at
 schema.org/EmployerAggregateRating.
 Required properties
-bestRating
-Number
-The highest value allowed in this rating system. This property is only required if the
-rating system is not a 5-point scale. If bestRating is omitted, 5 is assumed.
 itemReviewed
 Organization
 The organization that is being rated. The itemReviewed property must point to a schema.org/Organization that represents the company being rated.
@@ -127,21 +123,26 @@ The total number of ratings of the organization on your site. At least one of ra
 ratingValue
 Number or
 Text
-A numerical quality rating for the item, either a number, fraction, or percentage.
-(for example, "4", "60%", or "6 / 10").
-If the scale is not implicit (for example, "4")
-a 1 to 5 scale is assumed.
-If another scale is intended, use bestRating
+A numerical quality rating for the item, either a number, fraction, or percentage (for example, "4", "60%", or "6 / 10").
+Google understands the scale for fractions and percentages, since the scale is
+implied in the fraction itself or the percentage. The default scale for numbers is a
+5-point scale, where 1 is the lowest value and 5 is the highest value.
+If another scale is
+intended, use bestRating
 and worstRating.
 reviewCount
 Number
 Specifies the number of people who provided a review with or without an accompanying
 rating. At least one of ratingCount or reviewCount is required.
+Recommended properties
+bestRating
+Number
+The highest value allowed in this rating system. If bestRating
+is omitted, 5 is assumed.
 worstRating
 Number
-The lowest value allowed in this rating system. This property is only required if the
-rating system is not a 5-point scale. If worstRating is omitted, 1 is
-assumed.
+The lowest value allowed in this rating system. If worstRating
+is omitted, 1 is assumed.
 Troubleshooting
 Important: Google does not guarantee that features that consume structured data will
 show up in search results. For a list of common reasons why Google may not
@@ -163,4 +164,4 @@ Post a question in the Webmaster
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-20 UTC.
+Last updated 2020-09-15 UTC.

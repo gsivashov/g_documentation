@@ -61,11 +61,11 @@ FeedFetcher-Google; (+http://www.google.com/feedfetcher.html)
 Google Read Aloud
 Google-Read-Aloud
 Does not respect robots.txt rules - here's why
-Current agent:
-Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36 (compatible; Google-Read-Aloud; +https://support.google.com/webmasters/answer/1061943)
-Former agent (deprecated):
-google-speakr
-Duplex on the Web
+Current agents:
+Desktop agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36 (compatible; Google-Read-Aloud;  +https://support.google.com/webmasters/answer/1061943)
+Mobile agent: Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36 (compatible; Google-Read-Aloud; +https://support.google.com/webmasters/answer/1061943)
+Former agent (deprecated): google-speakr
+Duplex on the web
 DuplexWeb-Google
 May ignore the * user-agent wildcard - here's why
 Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012; DuplexWeb-Google/1.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Mobile Safari/537.36
@@ -99,5 +99,5 @@ Some pages use multiple robots meta tags to specify directives for different cra
 In this case, Google will use the sum of the negative directives, and Googlebot will follow both the noindex and nofollow directives. More detailed information about controlling how Google crawls and indexes your site.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Google crawlersOverview of Google crawlers (user agents)GooglebotGoogle Read Aloud user agentAPIs-Google User AgentFeedfetcherDuplex on the Web user agentVerifying Googlebot
+Google crawlersOverview of Google crawlers (user agents)GooglebotGoogle Read Aloud user agentAPIs-Google User AgentFeedfetcherDuplex on the web user agentVerifying Googlebot
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

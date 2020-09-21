@@ -15,5 +15,5 @@ If your crawl rate is described as "calculated as optimal," the only way to redu
 Otherwise, select the option you want and then limit the crawl rate as desired. The new crawl rate will be valid for 90 days.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingGoogle Assistant in ChromeInternational Targeting reportChange Googlebot crawl rate
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webInternational Targeting reportChange Googlebot crawl rate
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

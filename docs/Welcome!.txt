@@ -18,7 +18,8 @@ If you used content management software like Wordpress to build your website,
 check out our guide to customizing your website software.
 If you're technical enough to do it yourself, check out our Mobile SEO Guide.
 Why make a website mobile-friendly?
-If not mobile-friendly, a site can be difficult to view and use on a mobile device. A non-mobile-friendly site requires users to pinch or
+If not mobile-friendly, a site can be difficult to view and use on a
+mobile device. A non-mobile-friendly site requires users to pinch or
 zoom in order to read the content. Users find this a frustrating experience and
 are likely to abandon the site. Alternatively, the mobile-friendly version is
 readable and immediately usable.
@@ -26,7 +27,9 @@ In the USA, 94% of people with smartphones search for local information on their
 Interestingly, 77% of mobile searches occur at home or at work, places where desktop computers are likely to be present.
 Mobile is critical to your business – whether
 you're blogging about your favorite sports team, working on the website for
-your community theater, or selling products to potential clients. Make sure that visitors can have a good experience on your site when they're visiting from their mobile devices.
+your community theater, or selling products to potential clients. Make sure that
+visitors can have a good experience on your site when they're visiting from
+their mobile devices.
 How do I start?
 The work involved in making a mobile-friendly site depends on your developer
 resources, business model, and expertise. For an example of how a desktop site
@@ -68,4 +71,4 @@ recommend: The Mobile Playbook, Think with Google for the
 Mobile Platform, and Google's Multi-Screen Success Stories.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-06-11 UTC.
+Last updated 2020-09-14 UTC.

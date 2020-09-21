@@ -157,29 +157,38 @@ Here's an example of structured data on the page that hosts this fact check:
 <body>
 </body>
 </html>
-Guidelines
-In addition to general guidelines
-that apply to all structured data markup, these additional guidelines apply to fact checks:
-To be eligible for fact check search results, your site must have several pages marked
-with ClaimReview structured data.
-Fact checks associated with news articles can be shown in either News results or the
-combined search results view; all other fact checks can appear only in combined search results view.
-Fact checks of a news claim must meet the
-News Publisher criteria for fact checks.
-Fact checks are not guaranteed to be shown:
-inclusion of fact check elements in Google Search results is determined programmatically.
-Fact check elements are scored based on a programmatic ranking of the site. Sites are
-evaluated in a process similar to page ranking: if the site
-ranking is high enough, the fact check element can be displayed in search results along with
-your page.
-The entire process is conducted programmatically; human intervention only occurs when user
-feedback is filed as violating the
-Google News Publisher criteria for fact checks,
-general
-guidelines for structured data, or when the publisher (whether or not a news site) does not
-meet standards for accountability and transparency, readability or site misrepresentation as
-articulated in our
-Google News General Guidelines.
+Eligibility guidelines
+Google doesn't guarantee that fact checks will be shown in search results, even if your page is
+marked up correctly according to the Rich Result Test. Using structured data enables a feature to be present,
+it does not guarantee that it will be present. The Google algorithm programmatically
+determines the eligibility for fact check rich results, depending on many variables, including
+the following guidlelines.
+For your fact check content to be eligible to display as a fact check rich result on Google
+Search, you must meet the following guidelines:
+Your site must have several pages marked with ClaimReview
+structured data.
+You must follow all the structured data
+guidelines and webmaster
+guidelines.
+There must not be any mismatch between the structured data and page content (for example, if the
+structured data indicated that the claim is true, but the content on the page said the
+claim was false). Instead, make sure that both the content and structured data match (for
+example, both indicate that the claim is true).
+You must meet the standards for accountability, transparency, readability, and site
+misrepresentation, as articulated in our
+Google
+News General Guidelines.
+You must have a corrections policy or have a mechanism for users to report errors.
+Websites for political entities (such as campaigns, parties, or elected officials) aren't
+eligible for this feature.
+Your readers can easily identify the claims and checks in the body of the article. Your
+readers are able to understand what was checked and what conclusions were reached.
+You must clearly attribute the specific claim that you're assessing to a distinct
+second-party origin, whether it's a website, public statement, social media, or other
+traceable source.
+Your fact check analysis must be traceable and transparent about sources and methods, with
+citations and references to primary sources.
+Technical guidelines
 A single page can host multiple ClaimReview elements, each for a separate claim.
 If different reviewers on the page check the same fact, you can include a
 separate ClaimReview element for each reviewer's analysis. For more
@@ -434,4 +443,4 @@ Post a question in the Webmaster
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-23 UTC.
+Last updated 2020-09-18 UTC.

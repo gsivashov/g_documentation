@@ -887,11 +887,12 @@ subtype is AggregateRating.
 reviewRating.ratingValue
 Number or
 Text
-A numerical quality rating for the item, either a number, fraction, or percentage.
-(for example, "4", "60%", or "6 / 10").
-If the scale is not implicit (for example, "4")
-a 1 to 5 scale is assumed.
-If another scale is intended, use bestRating
+A numerical quality rating for the item, either a number, fraction, or percentage (for example, "4", "60%", or "6 / 10").
+Google understands the scale for fractions and percentages, since the scale is
+implied in the fraction itself or the percentage. The default scale for numbers is a
+5-point scale, where 1 is the lowest value and 5 is the highest value.
+If another scale is
+intended, use bestRating
 and worstRating.
 Recommended properties
 datePublished
@@ -901,14 +902,12 @@ ISO 8601 date
 format.
 reviewRating.bestRating
 Number
-The highest value allowed in this rating system. The
-bestRating property is only required if the rating system is
-not on a 5-point scale. If bestRating is omitted, 5 is assumed.
+The highest value allowed in this rating system. If bestRating
+is omitted, 5 is assumed.
 reviewRating.worstRating
 Number
-The lowest value allowed in this rating system. The worstRating property
-is only required if the rating system is not on a 5-point scale. If
-worstRating is omitted, 1 is assumed.
+The lowest value allowed in this rating system. If worstRating
+is omitted, 1 is assumed.
 AggregateRating
 The full definition of AggregateRating is available at
 schema.org/AggregateRating.
@@ -965,23 +964,22 @@ rating. At least one of ratingCount or reviewCount is required.
 ratingValue
 Number or
 Text
-A numerical quality rating for the item, either a number, fraction, or percentage.
-(for example, "4", "60%", or "6 / 10").
-If the scale is not implicit (for example, "4")
-a 1 to 5 scale is assumed.
-If another scale is intended, use bestRating
+A numerical quality rating for the item, either a number, fraction, or percentage (for example, "4", "60%", or "6 / 10").
+Google understands the scale for fractions and percentages, since the scale is
+implied in the fraction itself or the percentage. The default scale for numbers is a
+5-point scale, where 1 is the lowest value and 5 is the highest value.
+If another scale is
+intended, use bestRating
 and worstRating.
 Recommended properties
 bestRating
 Number
-The highest value allowed in this rating system. The bestRating property is
-only required if the rating system is not a 5-point scale. If bestRating is
-omitted, 5 is assumed.
+The highest value allowed in this rating system. If bestRating
+is omitted, 5 is assumed.
 worstRating
 Number
-The lowest value allowed in this rating system. The worstRating property is
-only required if the rating system is not a 5-point scale. If worstRating is
-omitted, 1 is assumed.
+The lowest value allowed in this rating system. If worstRating
+is omitted, 1 is assumed.
 Monitor rich results with Search Console
 Search Console is a tool that helps you monitor how your pages perform in Google Search.
 You don't have to sign up for Search Console to be included in Google Search results,
@@ -1032,4 +1030,4 @@ Post a question in the Webmaster
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-09-15 UTC.

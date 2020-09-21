@@ -1,0 +1,50 @@
+https://support.google.com/webmasters/answer/9353008
+
+Duplex on the webDuplex on the web automates certain user tasks, such as buying movie tickets, for your site visitors. This page describes how to enable or disable Duplex on the web for your website.
+Overview
+Duplex on the web operates in two stages.
+Training: Duplex on the web trains periodically against your site to perform certain actions. To control how Duplex on the web crawls and analyzes your site, see Duplex on the web user agent.
+Serving: Serving is controlled by a setting in Search Console. If Duplex on the web is enabled for your site in Search Console, Duplex on the web can offer to perform supported actions for site visitors, such as purchasing movie tickets. Duplex on the web is enabled by default for all sites that fulfill the requirements described on this page. If this setting is disabled in Search Console, Duplex on the web will not be able to perform supported actions on your site.
+If serving is enabled but training is disabled, Duplex on the web might work poorly or not at all on your site for supported actions.
+Requirements and rules
+The following rules apply to the Duplex on the web setting in Search Console:
+You must be a property owner to see or change the settings for Duplex on the web.
+Enabling Duplex on the web for your site can take a few hours or days. Disabling it takes place immediately.
+Property owners will be notified when the property settings change.
+Duplex on the web settings are visible and configurable only in a Domain property. URL-prefix properties cannot see or modify these settings.
+Duplex on the web settings are inherited from the topmost containing property, and can be modified only in that topmost property. Child properties have read-only access to the settings. For example, in the properties m.example.com , m.support.example.com, and example.com, the setting can be viewed in all properties, but changed only in the topmost property example.com.
+Duplex on the web currently works only for users in the US and the UK.
+Enable Duplex on the web for your site
+To enable Duplex on the web supported actions for your site:
+Read the Requirements and Rules.
+Follow the General guidelines for all actions.
+Follow the specific guidelines for the features that you want to support on your site.
+Open the Duplex on the web settings page for your property and click Enable (if not already selected). Enabling this setting takes a few hours or days.These rules apply when changing this setting.
+Optional: If your site is password-protected, we recommend providing a name and password in the Testing credentials section in your Search Console settings page. This enables Duplex on the web access to train against your site.
+Google will notify you when your request to enable serving has been processed and the Duplex on the web has begun training against your site.
+Disable Duplex on the web on your site
+To disable serving (allowing Duplex on the web to perform actions on your site), click Disable in the Duplex on the web settings page. Disabling should be effective within a few minutes. You can enable it again later, but enabling can take a few days. Note that Duplex on the web will continue training against your site unless you explicitly disable training as described in the next bullet.
+To disable training by Duplex on the web, add one of these robots.txt rules to your site. The robots.txt rules take effect at the next training attempt. Note that Duplex on the web might continue to work on your site (although sub-optimally) when users visit, unless you specifically disable serving, as described in the previous bullet.
+Supported actions for Duplex on the web
+Duplex on the web can perform different actions on your site. The following list shows what actions are supported, and the requirements for that action.
+General guidelines for all actions
+Sites should follow these guidelines to enable any Duplex on the web actions, in addition to any additional guidelines for a specific action:
+Enable training:
+You must either allow anonymous access to your site, or provide a name and password to Duplex on the web using the Search Console setting for your site.
+Do not block crawling by the Duplex on the web user agent.
+Follow HTML standards and best practices on your site.
+Specific guidelines
+Ticket purchases (movie theaters only)
+Enable Google Assistant to purchase movie theater tickets for users on your website.
+Requirements
+The following additional requirements apply, in addition to the other requirements for enabling Duplex on the web:
+You will be contacted when your site becomes eligible for this feature.
+This action is supported in the US and UK only: both the theater and the user (based on query location) must be in the US or UK.
+The search language must be in English.
+You must not show paid ads in the movie ticket checkout flow on your website.
+You must offer credit card payment in the movie ticket checkout flow on your website. Other payment services are not yet supported.
+You can test whether the movie ticket checkout flow is enabled for your site by doing a Google search for movies being screened by your theater, clicking links for showtimes, and confirming whether your theater is listed as one of the ticket suppliers.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webInternational Targeting reportChange Googlebot crawl rate
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

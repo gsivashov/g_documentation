@@ -10,5 +10,5 @@ What is the google-speakr agent?
 google-speakr is an older version of the user agent that is now deprecated. Its new name is Google-Read-Aloud.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Google crawlersOverview of Google crawlers (user agents)GooglebotGoogle Read Aloud user agentAPIs-Google User AgentFeedfetcherDuplex on the Web user agentVerifying Googlebot
+Google crawlersOverview of Google crawlers (user agents)GooglebotGoogle Read Aloud user agentAPIs-Google User AgentFeedfetcherDuplex on the web user agentVerifying Googlebot
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

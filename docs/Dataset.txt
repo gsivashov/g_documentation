@@ -48,6 +48,8 @@ submit a
 sitemap. You can automate this with the
 Search Console Sitemap
 API.
+Deleting a dataset from Dataset Search results
+If you don't want a dataset to show up in Dataset Search results, use the robots meta tag to control how your dataset is indexed. Keep in mind that it might take some time (days or weeks, depending on the crawl schedule) for the changes to be reflected on Dataset Search.
 Our approach to dataset discovery
 We can understand structured data in Web pages about datasets, using either schema.org Dataset markup, or equivalent
 structures represented in W3C's
@@ -803,6 +805,16 @@ Ask a question in the Webmaster
 Office Hours.
 Post a question in the Webmaster
 forum.
+Specific dataset isn't showing up in Dataset Search results
+error What caused the issue: Your site doesn't have structured data on the page that describes the datasets or the page hasn't been crawled yet.
+done Fix the issue
+Copy the link for the page that you expect to see in Dataset Search results, and put it into the Rich Results Test. If the message "Page not eligible for rich results known by this test" or "Not all markup is eligible for rich results" appears, this means there's no Dataset markup on the page or it's incorrect. You can fix it by referring to the How to add structured data section.
+If there is markup on the page, it may not have been crawled yet. You can check the crawl status with Search Console.
+Company logo is missing or not appearing correctly by results
+error What caused the issue: Your page may be missing schema.org markup for organization logos or your business isn't established with Google.
+done Fix the issue
+Add logo structured data to your page.
+Establish your business details with Google.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-08-13 UTC.
+Last updated 2020-09-16 UTC.

@@ -36,5 +36,5 @@ My Feedfetcher question isn't answered here. Where can I get more help?
 If you're still having trouble, try posting your question in the Search Console forum.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Google crawlersOverview of Google crawlers (user agents)GooglebotGoogle Read Aloud user agentAPIs-Google User AgentFeedfetcherDuplex on the Web user agentVerifying Googlebot
+Google crawlersOverview of Google crawlers (user agents)GooglebotGoogle Read Aloud user agentAPIs-Google User AgentFeedfetcherDuplex on the web user agentVerifying Googlebot
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

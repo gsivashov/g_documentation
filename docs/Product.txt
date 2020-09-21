@@ -101,11 +101,7 @@ JSON-LD
 "price": "119.99",
 "priceValidUntil": "2020-11-20",
 "itemCondition": "https://schema.org/UsedCondition",
-"availability": "https://schema.org/InStock",
-"seller": {
-"@type": "Organization",
-"name": "Executive Objects"
-}
+"availability": "https://schema.org/InStock"
 }
 }
 </script>
@@ -157,11 +153,7 @@ JSON-LD
 "price": "119.99",
 "priceValidUntil": "2020-11-20",
 "itemCondition": "https://schema.org/UsedCondition",
-"availability": "https://schema.org/InStock",
-"seller": {
-"@type": "Organization",
-"name": "Executive Objects"
-}
+"availability": "https://schema.org/InStock"
 }
 }
 </script>
@@ -211,11 +203,6 @@ RDFa
 <div typeof="schema:Offer">
 <div property="schema:price" content="119.99"></div>
 <div property="schema:availability" content="https://schema.org/InStock"></div>
-<div rel="schema:seller">
-<div typeof="schema:Organization">
-<div property="schema:name" content="Executive Objects"></div>
-</div>
-</div>
 <div property="schema:priceCurrency" content="USD"></div>
 <div property="schema:priceValidUntil" datatype="xsd:date" content="2020-11-20"></div>
 <div rel="schema:url" resource="https://example.com/anvil"></div>
@@ -268,11 +255,6 @@ RDFa
 <div typeof="schema:Offer">
 <div property="schema:price" content="119.99"></div>
 <div property="schema:availability" content="https://schema.org/InStock"></div>
-<div rel="schema:seller">
-<div typeof="schema:Organization">
-<div property="schema:name" content="Executive Objects"></div>
-</div>
-</div>
 <div property="schema:priceCurrency" content="USD"></div>
 <div property="schema:priceValidUntil" datatype="xsd:date" content="2020-11-20"></div>
 <div rel="schema:url" resource="https://example.com/anvil"></div>
@@ -305,9 +287,6 @@ Microdata
 <meta itemprop="itemCondition" content="https://schema.org/UsedCondition" />
 <meta itemprop="price" content="119.99" />
 <meta itemprop="priceValidUntil" content="2020-11-20" />
-<div itemprop="seller" itemtype="http://schema.org/Organization" itemscope>
-<meta itemprop="name" content="Executive Objects" />
-</div>
 </div>
 <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
 <meta itemprop="reviewCount" content="89" />
@@ -350,9 +329,6 @@ Microdata
 <meta itemprop="itemCondition" content="https://schema.org/UsedCondition" />
 <meta itemprop="price" content="119.99" />
 <meta itemprop="priceValidUntil" content="2020-11-20" />
-<div itemprop="seller" itemtype="http://schema.org/Organization" itemscope>
-<meta itemprop="name" content="Executive Objects" />
-</div>
 </div>
 <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
 <meta itemprop="reviewCount" content="89" />
@@ -881,4 +857,4 @@ Post a question in the Webmaster
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-08-06 UTC.
+Last updated 2020-09-15 UTC.
