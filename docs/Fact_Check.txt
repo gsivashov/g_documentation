@@ -184,7 +184,7 @@ eligible for this feature.
 Your readers can easily identify the claims and checks in the body of the article. Your
 readers are able to understand what was checked and what conclusions were reached.
 You must clearly attribute the specific claim that you're assessing to a distinct
-second-party origin, whether it's a website, public statement, social media, or other
+origin (separate from your website), whether it's another website, public statement, social media, or other
 traceable source.
 Your fact check analysis must be traceable and transparent about sources and methods, with
 citations and references to primary sources.
@@ -443,4 +443,4 @@ Post a question in the Webmaster
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-09-18 UTC.
+Last updated 2020-09-25 UTC.

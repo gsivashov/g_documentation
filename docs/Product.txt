@@ -26,6 +26,19 @@ There are two types of pages where you would typically use this markup:
 Product page that describes a single product
 Shopping aggregator page that lists a single product, along with information about
 different sellers offering that product
+Based on how you mark up your content, your products may also be eligible for the following
+enhancements:
+Product enhancements
+Shipping details: Help people see shipping costs and estimated delivery timeframes based on their location and your company’s shipping policies. Shipping details can appear in the Overview and Stores tabs for a specific product result. This enhancement is only available in the US, in English, and on mobile devices.
+To be eligible for this enhancement, add OfferShippingDetails
+structured data. For more examples on how to model free shipping, multiple services, and
+regions you don't ship to, review the Shipping
+details best practices.
+Note: This approach will only make your shipping data eligible
+to be shown on certain Google Search results. To also show your shipping data in unpaid
+listings on the Google Shopping tab and other result types, you’ll need to configure
+shipping settings in Merchant Center. Learn
+more about shipping settings.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
 content. If you’re new to structured data, you can learn more about
@@ -54,8 +67,7 @@ Search Console Sitemap
 API.
 Try it out
 Single product page
-Here's an example of a single product page that you can copy and paste to your own HTML
-page.
+Here's an example of a single product page.
 JSON-LD
 <html>
 <head>
@@ -351,9 +363,528 @@ Microdata
 </div>
 </body>
 </html>
+Single product with shipping details
+Here's an example of a single product page with shipping details. This example would
+result in a shipping rate of $3.49 for all users that live in
+zip codes between 98100 and 98199. For more examples, review the
+Shipping details best practices.
+JSON-LD
+<html>
+<head>
+<title>Nice trinket</title>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "Product",
+"sku": "trinket-12345",
+"gtin14": "12345678901234",
+"image": [
+"https://example.com/photos/16x9/trinket.jpg",
+"https://example.com/photos/4x3/trinket.jpg",
+"https://example.com/photos/1x1/trinket.jpg"
+],
+"name": "Nice trinket",
+"description": "Trinket with clean lines",
+"brand": {
+"@type": "Brand",
+"name": "MyBrand"
+},
+"offers": {
+"@type": "Offer",
+"url": "http://www.example.com/trinket_offer",
+"itemCondition": "http://schema.org/NewCondition",
+"availability": "http://schema.org/InStock",
+"price": "39.99",
+"priceCurrency": "USD",
+"priceValidUntil": "2020-11-20",
+"shippingDetails": {
+"@type": "OfferShippingDetails",
+"shippingRate": {
+"@type": "MonetaryAmount",
+"value": "3.49",
+"currency": "USD"
+},
+"shippingDestination": {
+"@type": "DefinedRegion",
+"addressCountry": "US",
+"postalCodeRange": {
+"postalCodeBegin": "98100",
+"postalCodeEnd": "98199"
+}
+},
+"deliveryTime": {
+"@type": "ShippingDeliveryTime",
+"handlingTime": {
+"@type": "QuantitativeValue",
+"minValue": "0",
+"maxValue": "1"
+},
+"transitTime": {
+"@type": "QuantitativeValue",
+"minValue": "1",
+"maxValue": "5"
+},
+"cutOffTime": "19:30-08:00",
+"businessDays": {
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": [ "https://schema.org/Monday", "https://schema.org/Tuesday", "https://schema.org/Wednesday", "https://schema.org/Thursday" ]
+}
+}
+}
+},
+"review": {
+"@type": "Review",
+"reviewRating": {
+"@type": "Rating",
+"ratingValue": "4",
+"bestRating": "5"
+},
+"author": {
+"@type": "Person",
+"name": "Fred Benson"
+}
+},
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.4",
+"reviewCount": "89"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head>
+<title>Nice trinket</title>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "Product",
+"sku": "trinket-12345",
+"gtin14": "12345678901234",
+"image": [
+"https://example.com/photos/16x9/trinket.jpg",
+"https://example.com/photos/4x3/trinket.jpg",
+"https://example.com/photos/1x1/trinket.jpg"
+],
+"name": "Nice trinket",
+"description": "Trinket with clean lines",
+"brand": {
+"@type": "Brand",
+"name": "MyBrand"
+},
+"offers": {
+"@type": "Offer",
+"url": "http://www.example.com/trinket_offer",
+"itemCondition": "http://schema.org/NewCondition",
+"availability": "http://schema.org/InStock",
+"price": "39.99",
+"priceCurrency": "USD",
+"priceValidUntil": "2020-11-20",
+"shippingDetails": {
+"@type": "OfferShippingDetails",
+"shippingRate": {
+"@type": "MonetaryAmount",
+"value": "3.49",
+"currency": "USD"
+},
+"shippingDestination": {
+"@type": "DefinedRegion",
+"addressCountry": "US",
+"postalCodeRange": {
+"postalCodeBegin": "98100",
+"postalCodeEnd": "98199"
+}
+},
+"deliveryTime": {
+"@type": "ShippingDeliveryTime",
+"handlingTime": {
+"@type": "QuantitativeValue",
+"minValue": "0",
+"maxValue": "1"
+},
+"transitTime": {
+"@type": "QuantitativeValue",
+"minValue": "1",
+"maxValue": "5"
+},
+"cutOffTime": "19:30-08:00",
+"businessDays": {
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": [ "https://schema.org/Monday", "https://schema.org/Tuesday", "https://schema.org/Wednesday", "https://schema.org/Thursday" ]
+}
+}
+}
+},
+"review": {
+"@type": "Review",
+"reviewRating": {
+"@type": "Rating",
+"ratingValue": "4",
+"bestRating": "5"
+},
+"author": {
+"@type": "Person",
+"name": "Fred Benson"
+}
+},
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.4",
+"reviewCount": "89"
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+RDFa
+<html>
+<head>
+<title>Nice trinket</title>
+</head>
+<body>
+<div typeof="schema:Product">
+<div property="schema:sku" content="trinket-12345"></div>
+<div property="schema:gtin14" content="12345678901234"></div>
+<div property="schema:name" content="Nice trinket"></div>
+<div rel="schema:image" resource="https://example.com/photos/16x9/trinket.jpg"></div>
+<div rel="schema:image" resource="https://example.com/photos/4x3/trinket.jpg"></div>
+<div rel="schema:image" resource="https://example.com/photos/1x1/trinket.jpg"></div>
+<div property="schema:description" content="Trinket with clean lines"></div>
+<div rel="schema:brand">
+<div typeof="schema:Brand">
+<div property="schema:name" content="MyBrand"></div>
+</div>
+</div>
+<div rel="schema:offers">
+<div typeof="schema:Offer">
+<div rel="schema:url" resource="https://example.com/trinket_offer"></div>
+<div property="schema:itemCondition" content="https://schema.org/NewCondition"></div>
+<div property="schema:availability" content="https://schema.org/InStock"></div>
+<div property="schema:price" content="39.99"></div>
+<div property="schema:priceCurrency" content="USD"></div>
+<div property="schema:priceValidUntil" datatype="xsd:date" content="2020-11-20"></div>
+<div rel="schema:shippingDetails">
+<div typeof="schema:OfferShippingDetails">
+<div rel="schema:shippingRate">
+<div typeof="schema:MonetaryAmount">
+<div property="schema:value" content="3.49"></div>
+<div property="schema:currency" content="USD"></div>
+</div>
+</div>
+<div rel="schema:shippingDestination">
+<div typeof="schema:DefinedRegion">
+<div property="schema:addressCountry" content="US"></div>
+<div rel="schema:postalCodeRange">
+<div typeof="schema:PostalCodeRangeSpecification">
+<div property="schema:postalCodeBegin" content="98100"></div>
+<div property="schema:postalCodeEnd" content="98199"></div>
+</div>
+</div>
+</div>
+</div>
+<div rel="schema:deliveryTime">
+<div typeof="schema:ShippingDeliveryTime">
+<div rel="schema:handlingTime">
+<div typeof="schema:QuantitativeValue">
+<div property="schema:minValue" content="0"></div>
+<div property="schema:maxValue" content="1"></div>
+</div>
+</div>
+<div rel="schema:transitTime">
+<div typeof="schema:QuantitativeValue">
+<div property="schema:minValue" content="1"></div>
+<div property="schema:maxValue" content="5"></div>
+</div>
+</div>
+<div property="schema:cutOffTime" content="19:30-08:00"></div>
+<div rel="schema:businessDays">
+<div typeof="schema:OpeningHoursSpecification">
+<div property="schema:dayOfWeek" content="https://schema.org/Monday"></div>
+<div property="schema:dayOfWeek" content="https://schema.org/Tuesday"></div>
+<div property="schema:dayOfWeek" content="https://schema.org/Wednesday"></div>
+<div property="schema:dayOfWeek" content="https://schema.org/Thursday"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div rel="schema:review">
+<div typeof="schema:Review">
+<div rel="schema:reviewRating">
+<div typeof="schema:Rating">
+<div property="schema:ratingValue" content="4"></div>
+<div property="schema:bestRating" content="5"></div>
+</div>
+</div>
+<div rel="schema:author">
+<div typeof="schema:Person">
+<div property="schema:name" content="Fred Benson"></div>
+</div>
+</div>
+</div>
+</div>
+<div rel="schema:aggregateRating">
+<div typeof="schema:AggregateRating">
+<div property="schema:reviewCount" content="89"></div>
+<div property="schema:ratingValue" content="4.4"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
+<html>
+<head>
+<title>Nice trinket</title>
+</head>
+<body>
+<div typeof="schema:Product">
+<div property="schema:sku" content="trinket-12345"></div>
+<div property="schema:gtin14" content="12345678901234"></div>
+<div property="schema:name" content="Nice trinket"></div>
+<div rel="schema:image" resource="https://example.com/photos/16x9/trinket.jpg"></div>
+<div rel="schema:image" resource="https://example.com/photos/4x3/trinket.jpg"></div>
+<div rel="schema:image" resource="https://example.com/photos/1x1/trinket.jpg"></div>
+<div property="schema:description" content="Trinket with clean lines"></div>
+<div rel="schema:brand">
+<div typeof="schema:Brand">
+<div property="schema:name" content="MyBrand"></div>
+</div>
+</div>
+<div rel="schema:offers">
+<div typeof="schema:Offer">
+<div rel="schema:url" resource="https://example.com/trinket_offer"></div>
+<div property="schema:itemCondition" content="https://schema.org/NewCondition"></div>
+<div property="schema:availability" content="https://schema.org/InStock"></div>
+<div property="schema:price" content="39.99"></div>
+<div property="schema:priceCurrency" content="USD"></div>
+<div property="schema:priceValidUntil" datatype="xsd:date" content="2020-11-20"></div>
+<div rel="schema:shippingDetails">
+<div typeof="schema:OfferShippingDetails">
+<div rel="schema:shippingRate">
+<div typeof="schema:MonetaryAmount">
+<div property="schema:value" content="3.49"></div>
+<div property="schema:currency" content="USD"></div>
+</div>
+</div>
+<div rel="schema:shippingDestination">
+<div typeof="schema:DefinedRegion">
+<div property="schema:addressCountry" content="US"></div>
+<div rel="schema:postalCodeRange">
+<div typeof="schema:PostalCodeRangeSpecification">
+<div property="schema:postalCodeBegin" content="98100"></div>
+<div property="schema:postalCodeEnd" content="98199"></div>
+</div>
+</div>
+</div>
+</div>
+<div rel="schema:deliveryTime">
+<div typeof="schema:ShippingDeliveryTime">
+<div rel="schema:handlingTime">
+<div typeof="schema:QuantitativeValue">
+<div property="schema:minValue" content="0"></div>
+<div property="schema:maxValue" content="1"></div>
+</div>
+</div>
+<div rel="schema:transitTime">
+<div typeof="schema:QuantitativeValue">
+<div property="schema:minValue" content="1"></div>
+<div property="schema:maxValue" content="5"></div>
+</div>
+</div>
+<div property="schema:cutOffTime" content="19:30-08:00"></div>
+<div rel="schema:businessDays">
+<div typeof="schema:OpeningHoursSpecification">
+<div property="schema:dayOfWeek" content="https://schema.org/Monday"></div>
+<div property="schema:dayOfWeek" content="https://schema.org/Tuesday"></div>
+<div property="schema:dayOfWeek" content="https://schema.org/Wednesday"></div>
+<div property="schema:dayOfWeek" content="https://schema.org/Thursday"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div rel="schema:review">
+<div typeof="schema:Review">
+<div rel="schema:reviewRating">
+<div typeof="schema:Rating">
+<div property="schema:ratingValue" content="4"></div>
+<div property="schema:bestRating" content="5"></div>
+</div>
+</div>
+<div rel="schema:author">
+<div typeof="schema:Person">
+<div property="schema:name" content="Fred Benson"></div>
+</div>
+</div>
+</div>
+</div>
+<div rel="schema:aggregateRating">
+<div typeof="schema:AggregateRating">
+<div property="schema:reviewCount" content="89"></div>
+<div property="schema:ratingValue" content="4.4"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
+Microdata
+<html>
+<head>
+<title>Nice trinket</title>
+</head>
+<body>
+<div>
+<div itemtype="http://schema.org/Product" itemscope>
+<meta itemprop="sku" content="trinket-12345" />
+<meta itemprop="gtin14" content="12345678901234" />
+<meta itemprop="name" content="Nice trinket" />
+<link itemprop="image" href="https://example.com/photos/16x9/trinket.jpg" />
+<link itemprop="image" href="https://example.com/photos/4x3/trinket.jpg" />
+<link itemprop="image" href="https://example.com/photos/1x1/trinket.jpg" />
+<meta itemprop="description" content="Trinket with clean lines" />
+<div itemprop="brand" itemtype="http://schema.org/Brand" itemscope>
+<meta itemprop="name" content="MyBrand" />
+</div>
+<div itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
+<link itemprop="url" href="http://www.example.com/trinket_offer" />
+<meta itemprop="itemCondition" content="https://schema.org/NewCondition" />
+<meta itemprop="availability" content="https://schema.org/InStock" />
+<meta itemprop="price" content="39.99" />
+<meta itemprop="priceCurrency" content="USD" />
+<meta itemprop="priceValidUntil" content="2020-11-20" />
+<div itemprop="shippingDetails" itemtype="http://schema.org/OfferShippingDetails" itemscope>
+<div itemprop="shippingRate" itemtype="http://schema.org/MonetaryAmount" itemscope>
+<meta itemprop="value" content="3.49" />
+<meta itemprop="currency" content="USD" />
+</div>
+<div itemprop="shippingDestination" itemtype="http://schema.org/DefinedRegion" itemscope>
+<meta itemprop="addressCountry" content="US" />
+<div itemprop="postalCodeRange" itemtype="http://schema.org/PostalCodeRangeSpecification" itemscope>
+<meta itemprop="postalCodeBegin" content="98100" />
+<meta itemprop="postalCodeEnd" content="98199" />
+</div>
+</div>
+<div itemprop="deliveryTime" itemtype="http://schema.org/ShippingDeliveryTime" itemscope>
+<div itemprop="handlingTime" itemtype="http://schema.org/QuantitativeValue" itemscope>
+<meta itemprop="minValue" content="0" />
+<meta itemprop="maxValue" content="1" />
+</div>
+<div itemprop="transitTime" itemtype="http://schema.org/QuantitativeValue" itemscope>
+<meta itemprop="minValue" content="1" />
+<meta itemprop="maxValue" content="5" />
+</div>
+<meta itemprop="cutOffTime" content="19:30-08:00" />
+<div itemprop="businessDays" itemtype="http://schema.org/OpeningHoursSpecification" itemscope>
+<meta itemprop="dayOfWeek" content="https://schema.org/Monday" />
+<meta itemprop="dayOfWeek" content="https://schema.org/Tuesday" />
+<meta itemprop="dayOfWeek" content="https://schema.org/Wednesday" />
+<meta itemprop="dayOfWeek" content="https://schema.org/Thursday" />
+</div>
+</div>
+</div>
+</div>
+<div itemprop="review" itemtype="http://schema.org/Review" itemscope>
+<div itemprop="author" itemtype="http://schema.org/Person" itemscope>
+<meta itemprop="name" content="Fred Benson" />
+</div>
+<div itemprop="reviewRating" itemtype="http://schema.org/Rating" itemscope>
+<meta itemprop="ratingValue" content="4" />
+<meta itemprop="bestRating" content="5" />
+</div>
+</div>
+<div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+<meta itemprop="reviewCount" content="89" />
+<meta itemprop="ratingValue" content="4.4" />
+</div>
+</div>
+</div>
+</body>
+</html>
+<html>
+<head>
+<title>Nice trinket</title>
+</head>
+<body>
+<div>
+<div itemtype="http://schema.org/Product" itemscope>
+<meta itemprop="sku" content="trinket-12345" />
+<meta itemprop="gtin14" content="12345678901234" />
+<meta itemprop="name" content="Nice trinket" />
+<link itemprop="image" href="https://example.com/photos/16x9/trinket.jpg" />
+<link itemprop="image" href="https://example.com/photos/4x3/trinket.jpg" />
+<link itemprop="image" href="https://example.com/photos/1x1/trinket.jpg" />
+<meta itemprop="description" content="Trinket with clean lines" />
+<div itemprop="brand" itemtype="http://schema.org/Brand" itemscope>
+<meta itemprop="name" content="MyBrand" />
+</div>
+<div itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
+<link itemprop="url" href="http://www.example.com/trinket_offer" />
+<meta itemprop="itemCondition" content="https://schema.org/NewCondition" />
+<meta itemprop="availability" content="https://schema.org/InStock" />
+<meta itemprop="price" content="39.99" />
+<meta itemprop="priceCurrency" content="USD" />
+<meta itemprop="priceValidUntil" content="2020-11-20" />
+<div itemprop="shippingDetails" itemtype="http://schema.org/OfferShippingDetails" itemscope>
+<div itemprop="shippingRate" itemtype="http://schema.org/MonetaryAmount" itemscope>
+<meta itemprop="value" content="3.49" />
+<meta itemprop="currency" content="USD" />
+</div>
+<div itemprop="shippingDestination" itemtype="http://schema.org/DefinedRegion" itemscope>
+<meta itemprop="addressCountry" content="US" />
+<div itemprop="postalCodeRange" itemtype="http://schema.org/PostalCodeRangeSpecification" itemscope>
+<meta itemprop="postalCodeBegin" content="98100" />
+<meta itemprop="postalCodeEnd" content="98199" />
+</div>
+</div>
+<div itemprop="deliveryTime" itemtype="http://schema.org/ShippingDeliveryTime" itemscope>
+<div itemprop="handlingTime" itemtype="http://schema.org/QuantitativeValue" itemscope>
+<meta itemprop="minValue" content="0" />
+<meta itemprop="maxValue" content="1" />
+</div>
+<div itemprop="transitTime" itemtype="http://schema.org/QuantitativeValue" itemscope>
+<meta itemprop="minValue" content="1" />
+<meta itemprop="maxValue" content="5" />
+</div>
+<meta itemprop="cutOffTime" content="19:30-08:00" />
+<div itemprop="businessDays" itemtype="http://schema.org/OpeningHoursSpecification" itemscope>
+<meta itemprop="dayOfWeek" content="https://schema.org/Monday" />
+<meta itemprop="dayOfWeek" content="https://schema.org/Tuesday" />
+<meta itemprop="dayOfWeek" content="https://schema.org/Wednesday" />
+<meta itemprop="dayOfWeek" content="https://schema.org/Thursday" />
+</div>
+</div>
+</div>
+</div>
+<div itemprop="review" itemtype="http://schema.org/Review" itemscope>
+<div itemprop="author" itemtype="http://schema.org/Person" itemscope>
+<meta itemprop="name" content="Fred Benson" />
+</div>
+<div itemprop="reviewRating" itemtype="http://schema.org/Rating" itemscope>
+<meta itemprop="ratingValue" content="4" />
+<meta itemprop="bestRating" content="5" />
+</div>
+</div>
+<div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+<meta itemprop="reviewCount" content="89" />
+<meta itemprop="ratingValue" content="4.4" />
+</div>
+</div>
+</div>
+</body>
+</html>
 Shopping aggregator page
-Here's an example of a shopping aggregator page that you can copy and paste to your own HTML
-page.
+Here's an example of a shopping aggregator page.
 JSON-LD
 <html>
 <head>
@@ -661,6 +1192,47 @@ properties.
 To show your product information in the Related Items feature: Include the
 name, image, price, priceCurrency, and
 availability properties.
+Shipping details best practices
+Modeling free shipping
+If you offer free shipping for specific products, set the shippingRate
+to zero for all regions where you ship those products on your product pages. For example, if
+you offer free shipping to the state of New York, you could implement the following for your
+products that ship to New York:
+"shippingDetails": {
+"@type": "OfferShippingDetails",
+"shippingRate": {
+"@type": "MonetaryAmount",
+"value": "0",
+"currency": "USD"
+},
+"shippingDestination": [{
+"@type": "DefinedRegion",
+"addressCountry": "US",
+"addressRegion": ["NY"]
+}]
+}
+Indicating regions that you don't ship to
+To set regions where you don't ship your products to, add the doesNotShip
+property. This property supersedes your other shipping settings. For example, if you ship
+products to the US, but don't ship products to Alaska or Hawaii, you could implement the
+following for your products that don't ship to those states:
+"shippingDetails": {
+"@type": "OfferShippingDetails",
+"doesNotShip": true,
+"shippingDestination": {
+"@type": "DefinedRegion",
+"addressCountry": "US",
+"addressRegion": ["AK", "HI"]
+}
+}
+Indicating multiple shipping services for the same delivery region
+Sometimes merchants might have multiple options for users to select when shipping a product to
+a destination (for example, Express Overnight, Rushed 2-day, and Standard). You can model each
+of these by using multiple shippingDetails properties, each with
+different combinations of the shippingRate and
+deliveryTime properties.
+If you have multiple shippingRate properties for the same delivery
+destination, Google will display data based on your cheapest shipping option.
 Structured data type definitions
 You must include the required properties for your content to be eligible for display as a rich result.
 You can also include the recommended properties to add more information about your content,
@@ -781,9 +1353,152 @@ Date
 The date (in ISO 8601
 date format) after which the price will no longer be available. Your product snippet
 may not display if the priceValidUntil property indicates a past date.
+shippingDetails
+OfferShippingDetails
+Nested information about the shipping policies and options associated with an
+Offer. If you decide to add shippingDetails, add
+the required and recommended
+OfferShippingDetails properties.
 url
 URL
 A URL to the product web page (that includes the Offer).
+OfferShippingDetails
+OfferShippingDetails enables people to see shipping costs and
+estimated delivery timeframes based on their location and your company’s shipping policies.
+To make your products eligible for the shipping details
+enhancement, add the following OfferShippingDetails
+properties to your product pages in addition to Product
+structured data. While OfferShippingDetails isn't required, you
+must add the following properties if you want your shipping details to be eligible for
+the shipping details enhancement.
+The full definition of OfferShippingDetails is available at
+schema.org/OfferShippingDetails.
+Required properties
+shippingDestination
+DefinedRegion
+Indicates shipping destinations. Specify
+the shippingDestination.addressCountry. If applicable, specify either shippingDestination.addressRegion or postal code information.
+shippingDestination.addressCountry
+Text
+The 2-digit country code, in ISO 3166-1
+format.
+Recommended properties
+deliveryTime
+ShippingDeliveryTime
+The total delay between the receipt of the order and the goods reaching the final
+customer. Nest the following properties:
+deliveryTime.businessDays
+deliveryTime.cutOffTime
+deliveryTime.handlingTime
+deliveryTime.transitTime
+deliveryTime.businessDays
+OpeningHoursSpecification
+The days that orders are processed. Specify the specific days with the
+deliveryTime.businessDays.dayOfWeek property.
+deliveryTime.businessDays.dayOfWeek
+DayOfWeek
+The days that orders are processed. For orders that are received outside of business days,
+processing starts on the next business day. The non-business days in between are added
+to the handling time.
+Use the following enumerations:
+https://schema.org/Monday
+https://schema.org/Tuesday
+https://schema.org/Wednesday
+https://schema.org/Thursday
+https://schema.org/Friday
+https://schema.org/Saturday
+https://schema.org/Sunday
+deliveryTime.cutOffTime
+DateTime
+The time after which new orders are no longer processed on that same day, in
+ISO 8601 format. One
+day gets added to the handling time.
+deliveryTime.handlingTime
+QuantitativeValue
+The typical delay between the receipt of the order and the goods either leaving the
+warehouse or being prepared for pickup, in case the delivery method is on site pickup. Specify
+the deliveryTime.handlingTime.minValue and deliveryTime.handlingTime.maxValue properties.
+deliveryTime.handlingTime.minValue
+Number
+The minimum number of days that a product is in transit between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup.
+The value must be a non-negative, whole number.
+deliveryTime.handlingTime.maxValue
+Number
+The maximum number of days that a product is in transit between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup.
+The value must be a non-negative, whole number.
+deliveryTime.transitTime
+QuantitativeValue
+The typical delay the order has been sent for delivery and the goods reach the final customer.
+deliveryTime.transitTime.maxValue
+Number
+The maximum number of days that a product is in transit between being sent out for delivery and reception by the final customer.
+The value must be a non-negative, whole number.
+deliveryTime.transitTime.minValue
+Number
+The minimum number of days that a product is in transit between being sent out for delivery and reception by the final customer.
+The value must be a non-negative, whole number.
+doesNotShip
+Boolean
+Indicates when shipping to a particular shippingDestination
+is not available. To specify that shipping of the item isn't available for the
+shippingDestination, set to True.
+If you set this value to True, then only the
+shippingDestination property is required.
+Either shippingDestination.addressRegion or a postal code
+A region or postal code information, if applicable. Don't provide both a region and postal
+code information.
+If you include shippingDestination.addressRegion, the region
+must be a 2- or 3-digit ISO 3166-2 subdivision code, without country prefix. Currently,
+Google Search only supports the US. Examples: "NY", "NSW", or "03".
+If you include a postal code, it must be one of these properties:
+shippingDestination.postalCode
+Text
+The postal code. For example, 94043.
+shippingDestination.postalCodePrefix
+Text
+A defined range of postal codes indicated by a common textual prefix. Use this
+property for non-numeric systems, such as the UK.
+shippingDestination.postalCodeRange
+postalCodeRange
+A defined range of postal codes.
+shippingRate
+MonetaryAmount
+Information about the cost of shipping to the specified destination. Specify the shippingRate.currency and shippingRate.value properties.
+You can only specify one
+shippingRate per OfferShippingDetails
+property. To model multiple rates for your product, specify multiple
+OfferShippingDetail properties.
+shippingRate.currency
+Text
+The currency of the shipping cost, in 3-letter
+ISO 4217 format.
+The currency must be the same as the currency specified in the
+offer.priceCurrency property.
+shippingRate.value
+Number
+The cost of shipping to the shippingDestination. Don't
+include currency symbols, thousands separators, or spaces.
+To specify free shipping, set the value to 0.
+The following properties are in beta (and not required), and aren't currently surfaced as
+shipping details in product rich results. However, providing this information helps Google
+understand the relationship between a product and other related shipping pages on your site.
+Google may use this information to develop other rich results.
+Beta: recommended properties
+shippingSettingsLink
+URL
+The URL to a page on your site that outlines your company’s shipping policies. This page
+must contain one or more policies that are applicable to this product.
+Alternative approach to configuring shipping settings with Google
+Retailer shipping policies can get complicated and may change frequently. If you're having
+trouble modeling and keeping your shipping details up-to-date with markup, consider
+configuring
+your shipping settings in Google Merchant Center.
+Note: If you choose to use both shipping markup and shipping settings
+in Merchant Center, Google will only use the shipping settings in Merchant Center for any
+products submitted in your Merchant Center product feeds. This only applies to products that
+were submitted in your Merchant Center product feeds. Shipping markup only applies to products
+that you marked up on your site; it doesn't apply to products in your Merchant Center
+product feeds.
 AggregateOffer
 The full definition of AggregateOffer is available at
 schema.org/AggregateOffer. An
@@ -857,4 +1572,4 @@ Post a question in the Webmaster
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-09-15 UTC.
+Last updated 2020-09-24 UTC.

@@ -420,7 +420,7 @@ Watch hundreds of helpful videos created for the webmaster community and get you
 How Search Works61
 See what happens behind the scenes as you search for something in Google Search. You’ll learn some really cool facts!
 Get Your Business Online62
-Register a free website if you have a small business in the US. GYBO is a partnership between Google and Homestead to help small businesses register a free website for one year.
+Register a free website if you have a small business. GYBO is a partnership between Google and Homestead to help small businesses register a free website for one year.
 Appendix: Link URLs used in this paper
 The following URLs are referenced in this paper:
 https://g.co/WebmasterHelpForum
