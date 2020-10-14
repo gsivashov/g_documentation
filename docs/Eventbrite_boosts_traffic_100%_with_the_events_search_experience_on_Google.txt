@@ -4,7 +4,41 @@ Home
 Products
 Search for Developers
 Case studies
-Send feedback
+[{
+"type": "thumb-down",
+"id": "missingTheInformationINeed",
+"label":"Missing the information I need"
+},{
+"type": "thumb-down",
+"id": "tooComplicatedTooManySteps",
+"label":"Too complicated / too many steps"
+},{
+"type": "thumb-down",
+"id": "outOfDate",
+"label":"Out of date"
+},{
+"type": "thumb-down",
+"id": "samplesCodeIssue",
+"label":"Samples/Code issue"
+},{
+"type": "thumb-down",
+"id": "otherDown",
+"label":"Other"
+}]
+[{
+"type": "thumb-up",
+"id": "easyToUnderstand",
+"label":"Easy to understand"
+},{
+"type": "thumb-up",
+"id": "solvedMyProblem",
+"label":"Solved my problem"
+},{
+"type": "thumb-up",
+"id": "otherUp",
+"label":"Other"
+}]
+Need to tell us more?
 Eventbrite boosts traffic 100% with the events search experience on Google
 check_circle_outline 100%
 increase in the typical YOY growth of traffic from Google Search to event listing pages,
@@ -19,6 +53,40 @@ Result
 Multiple ongoing SEO projects can make it difficult to determine exactly what results in increased traffic, conversions, or sales. But Eventbrite believes the Google Event search experience has been effective. Jilo carefully delineates the results: "In the month following implementation of the new search experience, we saw roughly a 100-percent increase in the typical year-over-year growth of traffic from Google Search to our event listing pages, according to Google Analytics." The enriched search experience "definitely has been helpful for driving traffic and getting additional ticket sales."
 "Within two or three weeks we started seeing a visual difference in our event search results on Google," Jilo says. "The Google Search experience definitely helps drive more eyeballs to event pages. And when those people convert, it translates to incremental ticket sales for our event creators."
 Having implemented Event structured data on their primary discovery pages, Eventbrite expects to keep this functionality on any new discovery page types. "We certainly will be looking at adding Event structured data on those pages as well," Jilo says. "The Google search experience for events has definitely been a positive step."
-Send feedback
+[{
+"type": "thumb-down",
+"id": "missingTheInformationINeed",
+"label":"Missing the information I need"
+},{
+"type": "thumb-down",
+"id": "tooComplicatedTooManySteps",
+"label":"Too complicated / too many steps"
+},{
+"type": "thumb-down",
+"id": "outOfDate",
+"label":"Out of date"
+},{
+"type": "thumb-down",
+"id": "samplesCodeIssue",
+"label":"Samples/Code issue"
+},{
+"type": "thumb-down",
+"id": "otherDown",
+"label":"Other"
+}]
+[{
+"type": "thumb-up",
+"id": "easyToUnderstand",
+"label":"Easy to understand"
+},{
+"type": "thumb-up",
+"id": "solvedMyProblem",
+"label":"Solved my problem"
+},{
+"type": "thumb-up",
+"id": "otherUp",
+"label":"Other"
+}]
+Need to tell us more?
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-07-14 UTC.

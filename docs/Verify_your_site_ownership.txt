@@ -58,18 +58,40 @@ We found the verification meta tag, but the contents were incorrect. To avoid er
 More common verification problems are listed below.
 DNS record
 DNS record for site ownership verification - Google Search Console Training
-You can verify ownership of a property at the domain level by adding a DNS record in your domain name provider.
-To use this method, you must sign in to your domain name provider (for example, GoDaddy.com or networksolutions.com) and add a new TXT record. Google will verify that your personal record is present and assigned to your domain. Each DNS record associates a specific user with a specific domain.
-To verify using a DNS record:
-Get your TXT record: When asked to verify your property, choose the Domain verification method (or create a Domain property) and you will be given a string value to use in the next step.
-Add the TXT record to your domain provider: Add your TXT record from step 1 to your domain provider's records:
+You can verify ownership of a property at the domain level by adding a DNS record in your domain name provider. Search Console supports both the TXT DNS format and CNAME format for DNS verification.
+To use this method, you must sign in to your domain name provider (for example, GoDaddy.com or networksolutions.com) and add a DNS record as described below. Google will verify that your personal record is present and assigned to your domain. Each DNS record associates a specific user with a specific domain.
+Which record type to use?
+Use a CNAME record if you are verifying a domain or subdomain-level property that is itself defined using a CNAME record (for example, example.com or en.example.com).
+Use a TXT record for all other cases.
+CNAME record instructions
+Use a CNAME record if you are verifying a domain or subdomain-level property that is itself defined using a CNAME record (for example: example.com or en.example.com).
+Get your Google-generated DNS record
+When asked to verify your property, choose the Domain verification method (or create a Domain property) and you will be given a string value to use in the next step.
+Generate a DNS record
+Open Webmaster Central.
+Enter your bare property URL (that is, example.com, not http://example.com) and click Continue.
+Select Alternate methods > Domain name provider.
+Choose your provider from the list, or select Other.
+Click Add a CNAME record to generate a CNAME record to use.
+Add the DNS record to your domain provider
 Find the G Suite documentation for your provider
-Ignore G Suite's step 1 (Get your unique verification record): you already got your TXT record in step 1 above.
-Follow Step 2 (Sign in to your domain host)
-Follow Step 3 (Add the verification record to your provider's DNS records)
-Ignore G Suite's step 4 (the verification step): that will come next.
+Ignore G Suite step 1 (Get your unique verification record) because you already generated your CNAME record in step 2 above.
+Follow G Suite Step 2 (Sign in to your domain host)
+Follow G Suite Step 3 (Add the verification record to your provider's DNS records)
+Ignore G Suite step 4 (the verification step): that will come next.
 Verify your property in Search Console: Open your unverified property in Search Console (or switch to your unverified property using the property selector). When prompted, click Verify. Successful attempts should be verified immediately; if you have an error, see the list of potential errors below. Note: DNS changes may take some time to verify; if we don't find your record immediately, wait a day and try step 3 again
-Important: To stay verified, don't remove the DNS record, even after verification succeeds.
+TXT record instructions
+Get your Google-generated DNS record
+When asked to verify your property, choose the Domain verification method (or create a Domain property) and you will be given a TXT record as a string value to use in the next step.
+Add the DNS record to your domain provider
+Add your TXT record from step 1 to your domain provider's records  by following these steps:
+Find the G Suite documentation for your provider
+Ignore G Suite step 1 (Get your unique verification record) because you already generated your TXT record in step 1 above.
+Follow G Suite Step 2 (Sign in to your domain host).
+Follow G Suite Step 3 (Add the verification record to your provider's DNS records).
+Ignore G Suite step 4 (the verification step): Search Console has its own verification step, described next.
+Verify your property in Search Console: Open your unverified property in Search Console (or switch to your unverified property using the property selector). When prompted, click Verify. Successful attempts should be verified immediately; if you have an error, see the list of potential errors below. Note: DNS changes may take some time to verify; if we don't find your record immediately, wait a day and try step 3 again
+Important: To stay verified, don't remove the DNS record from your provider, even after verification succeeds.
 Potential errors:
 The following verification errors can occur with DNS record verification:
 Your verification DNS TXT record was not found

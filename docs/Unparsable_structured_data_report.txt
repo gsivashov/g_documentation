@@ -15,9 +15,11 @@ You can share issue details in the coverage or enhancement reports by clicking t
 button on the page. This link grants access only to the current issue details page, plus any validation history pages for this issue, to anyone with the link. It does not grant access to other pages for your resource, or enable the shared user to perform any actions on your property or account. You can revoke the link at any time by disabling sharing for this page.
 Exporting report data
 Many reports provide an export button
-to export the report data. Both chart and table data are exported.
+to export the report data. Both chart and table data are exported. Values shown as either ~ or - in the report (not available/not a number) will be zeros in the downloaded data.
 Error types
-The following error types are exposed by this report:
+The following error types are exposed by this report.
+Open structured data documentation
+Test your code with the Rich Results test
 Error type
 Description
 Invalid JSON document

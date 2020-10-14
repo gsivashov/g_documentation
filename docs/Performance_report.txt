@@ -14,7 +14,7 @@ Optionally Filter your data by adding or changing filters.
 Optionally Compare dimension groups: for example, compare results from Brazil and China, or image data vs web data.
 Exporting report data
 Many reports provide an export button
-to export the report data. Both chart and table data are exported.
+to export the report data. Both chart and table data are exported. Values shown as either ~ or - in the report (not available/not a number) will be zeros in the downloaded data.
 Reading the chart
 Depending on which tabs you select, the chart shows total clicks, total impressions, average CTR (click through rate), and average position for your property. Data on the chart is aggregated by property. See Metrics for explanations of these metric types and how they are calculated. The newest data can be preliminary; preliminary data is indicated when you hover or select it on the graph.
 The chart data is always aggregated by property unless you filter by page or search appearance.

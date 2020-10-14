@@ -98,7 +98,7 @@ Uses for this report
 Clean up the traffic flow within your site by confirming that users can get from page A to page B with the fewest clicks.
 Exporting report data
 Many reports provide an export button
-to export the report data. Both chart and table data are exported.
+to export the report data. Both chart and table data are exported. Values shown as either ~ or - in the report (not available/not a number) will be zeros in the downloaded data.
 You can export your link data as a CSV file or a Google Sheet.
 Landing page
 Export up to 100,000 rows of data using the Export button. The following data slices are available:

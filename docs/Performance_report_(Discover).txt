@@ -13,7 +13,7 @@ Optionally filter your data by date, dimension, and so on.
 Optionally compare dimension groups: for example, you can compare impressions from Brazil and China.
 Exporting report data
 Many reports provide an export button
-to export the report data. Both chart and table data are exported.
+to export the report data. Both chart and table data are exported. Values shown as either ~ or - in the report (not available/not a number) will be zeros in the downloaded data.
 Reading the chart
 Choose which metrics to show in the chart by selecting or deselecting metrics at the top of the chart. All data is aggregated by page.
 The totals for each metric are shown on the chart. The individual day totals might be less than the total shown in the chart because very small values for one or more dimensions on a specific date are omitted from the chart to protect user privacy, but are counted in the chart totals.
