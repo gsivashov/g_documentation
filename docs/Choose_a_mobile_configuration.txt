@@ -4,7 +4,41 @@ Home
 Products
 Search for Developers
 Guides
-Send feedback
+[{
+"type": "thumb-down",
+"id": "missingTheInformationINeed",
+"label":"Missing the information I need"
+},{
+"type": "thumb-down",
+"id": "tooComplicatedTooManySteps",
+"label":"Too complicated / too many steps"
+},{
+"type": "thumb-down",
+"id": "outOfDate",
+"label":"Out of date"
+},{
+"type": "thumb-down",
+"id": "samplesCodeIssue",
+"label":"Samples/Code issue"
+},{
+"type": "thumb-down",
+"id": "otherDown",
+"label":"Other"
+}]
+[{
+"type": "thumb-up",
+"id": "easyToUnderstand",
+"label":"Easy to understand"
+},{
+"type": "thumb-up",
+"id": "solvedMyProblem",
+"label":"Solved my problem"
+},{
+"type": "thumb-up",
+"id": "otherUp",
+"label":"Other"
+}]
+Need to tell us more?
 Choose a mobile configuration
 Let's make sure that your site shows up in search results. Here you can learn how to
 configure your site for multiple devices and help search engines understand your
@@ -67,6 +101,40 @@ Feature phones: On these phones, browsers lack the capability to render
 normal desktop webpages coded using standard HTML. This includes browsers that
 render only cHTML (iMode), WML, and XHTML-MP.
 Note: Our recommendations are geared toward smartphones, but we encourage multimedia and feature phones site owners to follow the same advice where they feel appropriate.
-Send feedback
+[{
+"type": "thumb-down",
+"id": "missingTheInformationINeed",
+"label":"Missing the information I need"
+},{
+"type": "thumb-down",
+"id": "tooComplicatedTooManySteps",
+"label":"Too complicated / too many steps"
+},{
+"type": "thumb-down",
+"id": "outOfDate",
+"label":"Out of date"
+},{
+"type": "thumb-down",
+"id": "samplesCodeIssue",
+"label":"Samples/Code issue"
+},{
+"type": "thumb-down",
+"id": "otherDown",
+"label":"Other"
+}]
+[{
+"type": "thumb-up",
+"id": "easyToUnderstand",
+"label":"Easy to understand"
+},{
+"type": "thumb-up",
+"id": "solvedMyProblem",
+"label":"Solved my problem"
+},{
+"type": "thumb-up",
+"id": "otherUp",
+"label":"Other"
+}]
+Need to tell us more?
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2019-10-09 UTC.

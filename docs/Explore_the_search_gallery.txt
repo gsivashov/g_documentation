@@ -4,7 +4,41 @@ Home
 Products
 Search for Developers
 Guides
-Send feedback
+[{
+"type": "thumb-down",
+"id": "missingTheInformationINeed",
+"label":"Missing the information I need"
+},{
+"type": "thumb-down",
+"id": "tooComplicatedTooManySteps",
+"label":"Too complicated / too many steps"
+},{
+"type": "thumb-down",
+"id": "outOfDate",
+"label":"Out of date"
+},{
+"type": "thumb-down",
+"id": "samplesCodeIssue",
+"label":"Samples/Code issue"
+},{
+"type": "thumb-down",
+"id": "otherDown",
+"label":"Other"
+}]
+[{
+"type": "thumb-up",
+"id": "easyToUnderstand",
+"label":"Easy to understand"
+},{
+"type": "thumb-up",
+"id": "solvedMyProblem",
+"label":"Solved my problem"
+},{
+"type": "thumb-up",
+"id": "otherUp",
+"label":"Other"
+}]
+Need to tell us more?
 Explore the search gallery
 Google uses structured data to understand the content on the page. You can help us by
 providing specific information about your site, which can help your site display in richer
@@ -179,6 +213,40 @@ Video information in search results, with the option to play the video, specify 
 segments, and live-stream content.
 Get started
 Food and Drink, News, Education and Science, Sports
-Send feedback
+[{
+"type": "thumb-down",
+"id": "missingTheInformationINeed",
+"label":"Missing the information I need"
+},{
+"type": "thumb-down",
+"id": "tooComplicatedTooManySteps",
+"label":"Too complicated / too many steps"
+},{
+"type": "thumb-down",
+"id": "outOfDate",
+"label":"Out of date"
+},{
+"type": "thumb-down",
+"id": "samplesCodeIssue",
+"label":"Samples/Code issue"
+},{
+"type": "thumb-down",
+"id": "otherDown",
+"label":"Other"
+}]
+[{
+"type": "thumb-up",
+"id": "easyToUnderstand",
+"label":"Easy to understand"
+},{
+"type": "thumb-up",
+"id": "solvedMyProblem",
+"label":"Solved my problem"
+},{
+"type": "thumb-up",
+"id": "otherUp",
+"label":"Other"
+}]
+Need to tell us more?
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-08-31 UTC.

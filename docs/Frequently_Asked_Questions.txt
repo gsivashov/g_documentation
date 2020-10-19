@@ -4,7 +4,41 @@ Home
 Products
 Search for Developers
 Guides
-Send feedback
+[{
+"type": "thumb-down",
+"id": "missingTheInformationINeed",
+"label":"Missing the information I need"
+},{
+"type": "thumb-down",
+"id": "tooComplicatedTooManySteps",
+"label":"Too complicated / too many steps"
+},{
+"type": "thumb-down",
+"id": "outOfDate",
+"label":"Out of date"
+},{
+"type": "thumb-down",
+"id": "samplesCodeIssue",
+"label":"Samples/Code issue"
+},{
+"type": "thumb-down",
+"id": "otherDown",
+"label":"Other"
+}]
+[{
+"type": "thumb-up",
+"id": "easyToUnderstand",
+"label":"Easy to understand"
+},{
+"type": "thumb-up",
+"id": "solvedMyProblem",
+"label":"Solved my problem"
+},{
+"type": "thumb-up",
+"id": "otherUp",
+"label":"Other"
+}]
+Need to tell us more?
 Frequently Asked Questions
 What's the difference between the PageSpeed Insights UX Score and the Mobile-Friendly Test results?
 The Mobile-Friendly Test uses Googlebot to fetch the page. PageSpeed
@@ -38,6 +72,40 @@ Build your mobile website and apps with "deep linking
 capability" or URIs that provide pointers to specific areas of content. Deep links and URIs
 provide more acquisition possibilities for your business through Search or
 social sharing.
-Send feedback
+[{
+"type": "thumb-down",
+"id": "missingTheInformationINeed",
+"label":"Missing the information I need"
+},{
+"type": "thumb-down",
+"id": "tooComplicatedTooManySteps",
+"label":"Too complicated / too many steps"
+},{
+"type": "thumb-down",
+"id": "outOfDate",
+"label":"Out of date"
+},{
+"type": "thumb-down",
+"id": "samplesCodeIssue",
+"label":"Samples/Code issue"
+},{
+"type": "thumb-down",
+"id": "otherDown",
+"label":"Other"
+}]
+[{
+"type": "thumb-up",
+"id": "easyToUnderstand",
+"label":"Easy to understand"
+},{
+"type": "thumb-up",
+"id": "solvedMyProblem",
+"label":"Solved my problem"
+},{
+"type": "thumb-up",
+"id": "otherUp",
+"label":"Other"
+}]
+Need to tell us more?
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-07-14 UTC.

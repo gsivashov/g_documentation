@@ -4,7 +4,41 @@ Home
 Products
 Search for Developers
 Reference
-Send feedback
+[{
+"type": "thumb-down",
+"id": "missingTheInformationINeed",
+"label":"Missing the information I need"
+},{
+"type": "thumb-down",
+"id": "tooComplicatedTooManySteps",
+"label":"Too complicated / too many steps"
+},{
+"type": "thumb-down",
+"id": "outOfDate",
+"label":"Out of date"
+},{
+"type": "thumb-down",
+"id": "samplesCodeIssue",
+"label":"Samples/Code issue"
+},{
+"type": "thumb-down",
+"id": "otherDown",
+"label":"Other"
+}]
+[{
+"type": "thumb-up",
+"id": "easyToUnderstand",
+"label":"Easy to understand"
+},{
+"type": "thumb-up",
+"id": "solvedMyProblem",
+"label":"Solved my problem"
+},{
+"type": "thumb-up",
+"id": "otherUp",
+"label":"Other"
+}]
+Need to tell us more?
 Breadcrumb
 A breadcrumb trail on a page indicates the page's position in the site hierarchy, and it may
 help users understand and explore a site effectively. A user can navigate all the way up in
@@ -677,6 +711,40 @@ Ask a question in the Webmaster
 Office Hours.
 Post a question in the Webmaster
 forum.
-Send feedback
+[{
+"type": "thumb-down",
+"id": "missingTheInformationINeed",
+"label":"Missing the information I need"
+},{
+"type": "thumb-down",
+"id": "tooComplicatedTooManySteps",
+"label":"Too complicated / too many steps"
+},{
+"type": "thumb-down",
+"id": "outOfDate",
+"label":"Out of date"
+},{
+"type": "thumb-down",
+"id": "samplesCodeIssue",
+"label":"Samples/Code issue"
+},{
+"type": "thumb-down",
+"id": "otherDown",
+"label":"Other"
+}]
+[{
+"type": "thumb-up",
+"id": "easyToUnderstand",
+"label":"Easy to understand"
+},{
+"type": "thumb-up",
+"id": "solvedMyProblem",
+"label":"Solved my problem"
+},{
+"type": "thumb-up",
+"id": "otherUp",
+"label":"Other"
+}]
+Need to tell us more?
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-08-11 UTC.

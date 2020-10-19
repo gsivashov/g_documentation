@@ -1,6 +1,6 @@
 https://support.google.com/webmasters/answer/9205520
 
-Core Web Vitals reportFix poor user experiences on your siteThe Core Web Vitals report shows how your pages perform based on real world usage data (sometimes called field data).
+Core Web Vitals reportFix poor user experiences on your siteThe Core Web Vitals report shows how your pages perform based on real world usage data (sometimes called field data). You can read more about this initiative on the Google Webmaster blog.
 OPEN REPORT
 Why page performance matters
 Longer page load times have a severe effect on bounce rates. For example:

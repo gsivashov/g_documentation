@@ -196,6 +196,7 @@ Click Test live URL on the index results page.
 Click View tested page on the page verdict card to open additional information panels. If this option is not available it is typically because the page cannot be reached for the live test.
 Navigate to the Screenshot tab.
 Request (re)indexing
+(October 14, 2020) Request Indexing is temporarily unavailable. We are making some technical updates, and it should be available again soon.
 You can request that an inspected URL be indexed by Google. Indexing can take up to a week or two; you can check the progress using this tool.
 To request indexing for a URL:
 Inspect the page URL.

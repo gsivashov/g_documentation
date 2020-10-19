@@ -4,7 +4,41 @@ Home
 Products
 Search for Developers
 Guides
-Send feedback
+[{
+"type": "thumb-down",
+"id": "missingTheInformationINeed",
+"label":"Missing the information I need"
+},{
+"type": "thumb-down",
+"id": "tooComplicatedTooManySteps",
+"label":"Too complicated / too many steps"
+},{
+"type": "thumb-down",
+"id": "outOfDate",
+"label":"Out of date"
+},{
+"type": "thumb-down",
+"id": "samplesCodeIssue",
+"label":"Samples/Code issue"
+},{
+"type": "thumb-down",
+"id": "otherDown",
+"label":"Other"
+}]
+[{
+"type": "thumb-up",
+"id": "easyToUnderstand",
+"label":"Easy to understand"
+},{
+"type": "thumb-up",
+"id": "solvedMyProblem",
+"label":"Solved my problem"
+},{
+"type": "thumb-up",
+"id": "otherUp",
+"label":"Other"
+}]
+Need to tell us more?
 Pause your business online
 If you're unable to fulfill orders or many of your products out of stock, you may be considering
 temporarily closing your online business. If the situation is temporary, meaning you expect to
@@ -153,6 +187,40 @@ products on Search, and there might still be third-party information for the pro
 that may be incorrect or incomplete. It's better to still allow that page, and mark it
 out of stock. That way people can still understand what's going on, even if they can't
 purchase the item. If you remove the product from Search, people don't know why it's gone.
-Send feedback
+[{
+"type": "thumb-down",
+"id": "missingTheInformationINeed",
+"label":"Missing the information I need"
+},{
+"type": "thumb-down",
+"id": "tooComplicatedTooManySteps",
+"label":"Too complicated / too many steps"
+},{
+"type": "thumb-down",
+"id": "outOfDate",
+"label":"Out of date"
+},{
+"type": "thumb-down",
+"id": "samplesCodeIssue",
+"label":"Samples/Code issue"
+},{
+"type": "thumb-down",
+"id": "otherDown",
+"label":"Other"
+}]
+[{
+"type": "thumb-up",
+"id": "easyToUnderstand",
+"label":"Easy to understand"
+},{
+"type": "thumb-up",
+"id": "solvedMyProblem",
+"label":"Solved my problem"
+},{
+"type": "thumb-up",
+"id": "otherUp",
+"label":"Other"
+}]
+Need to tell us more?
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-07-14 UTC.

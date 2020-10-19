@@ -9,8 +9,15 @@ April 9-25, 2019
 Search Console experienced a data outage that ceased on April 26. The outage affected all reports except the Performance report. All missing data from April 9-25 was replaced with the data from April 26, when data began to be available again.
 Remove URLs Report
 No issues.
-Performance report (Search Results / Discover)
+URL Inspection tool
 2020
+October 14, ongoing
+The "Request Indexing" feature of the URL Inspection Tool has been disabled in order to make some technical updates. We expect it to be re-enabled in the coming weeks. In the meanwhile, Google continues to find and index content through our regular methods, as covered here.
+Performance reports (Search Results / Discover)
+October 6, ongoing (Discover)
+Following the launch of the Stories carousel feature on Discover, you might see a significant increase in Web Story stats on Discover reporting for your site.
+September 25-28 (Discover)
+Web Stories were shown less often to Discover users during this period, so you will see a drop in impressions and clicks for this type in the Performance report for Discover.
 May 12-15 (Discover)
 Due to internal logging issues, you might see a significant drop in Discover reporting for your site. Please note that this did not reflect any user-facing changes for your site, only the data reporting in Search Console.
 2019

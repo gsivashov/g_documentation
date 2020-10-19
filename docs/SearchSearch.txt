@@ -4,7 +4,6 @@ Home
 Products
 Search for Developers
 Tools
-Send feedback
 Debug with our tools
 Mobile-Friendly Test
 See if your page is mobile-friendly and get instant recommendations.
