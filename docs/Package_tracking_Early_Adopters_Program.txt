@@ -52,7 +52,7 @@ To be considered for participation in the package tracking early adopters progra
 the following requirements:
 You must be a package delivery company or the sole authorized provider of packing tracking
 information for a package delivery company.
-Google Package Tracking makes real-time calls to a RESTful JSON or XML API to retrieve package
+Google Package Tracking makes real-time calls (POST requests only) to a RESTful JSON API to retrieve package
 tracking information. If you have an existing API that can return this information, we can work with
 you to re-use it. Your API must meet the availability and
 responsiveness requirement and provide the required content.
@@ -132,4 +132,4 @@ Fill out the form.
 }]
 Need to tell us more?
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-10-22 UTC.
