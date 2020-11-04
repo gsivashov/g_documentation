@@ -134,11 +134,11 @@ Passed: All URLs are in Passed state. You must have clicked Validate fix to ge
 N/A: Google found that the issue was fixed on all URLs, even though you never started a validation attempt.
 Failed: One or more URLs are in Failed state after a validation attempt.
 URL validation status
-This is the validation status of each URL in the validation progress page. Pending/Fixed/Still Affected are visible during an active validation period; Still Affected is the only status visible once the period has ended (fixed items are removed from the list after the period has ended).
+This is the validation status of each URL in the validation progress page. Pending/Passed/Failed are visible during an active validation period; Failed is the only status visible once the period has ended (fixed items are removed from the list after the period has ended).
 Pending: Google is awaiting enough data to determine whether or not this URL is still affected.
-Fixed: The URL seems not to be affected by this issue any more.
-Still Affected: The URL is still affected by the listed issue.
-The Fixed and Still Affected URL statuses can be reached only during a validation tracking period. If the issue appeared and then vanished for a URL outside of a validation request, the URL would simply vanish from the list without a status.
+Passed: The URL seems not to be affected by this issue any more.
+Failed: The URL is still affected by the listed issue.
+The Passed and Failed URL statuses can be reached only during a validation tracking period. If the issue appeared and then vanished for a URL outside of a validation request, the URL would simply vanish from the list without a status.
 Any URLs that have been removed from the web and have no data in the last 28 days will no longer appear in the validation history or the report.
 Was this helpful?How can we improve it?YesNoSubmit
 true

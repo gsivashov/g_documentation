@@ -4,41 +4,6 @@ Home
 Products
 Search for Developers
 Case studies
-[{
-"type": "thumb-down",
-"id": "missingTheInformationINeed",
-"label":"Missing the information I need"
-},{
-"type": "thumb-down",
-"id": "tooComplicatedTooManySteps",
-"label":"Too complicated / too many steps"
-},{
-"type": "thumb-down",
-"id": "outOfDate",
-"label":"Out of date"
-},{
-"type": "thumb-down",
-"id": "samplesCodeIssue",
-"label":"Samples/Code issue"
-},{
-"type": "thumb-down",
-"id": "otherDown",
-"label":"Other"
-}]
-[{
-"type": "thumb-up",
-"id": "easyToUnderstand",
-"label":"Easy to understand"
-},{
-"type": "thumb-up",
-"id": "solvedMyProblem",
-"label":"Solved my problem"
-},{
-"type": "thumb-up",
-"id": "otherUp",
-"label":"Other"
-}]
-Need to tell us more?
 Jobrapido more than doubled its organic traffic though the job experience on Google Search
 check_circle_outline 115%
 increase in organic traffic
@@ -67,40 +32,5 @@ rate, which means the quality of the end user journey also increased.
 “Integrating with the jobs experience on Google Search is a great way for us to easily increase
 international traffic”, added Rabbath. “This is just the beginning for us, and we are looking
 forward to the rollout of this search feature in other markets.”
-[{
-"type": "thumb-down",
-"id": "missingTheInformationINeed",
-"label":"Missing the information I need"
-},{
-"type": "thumb-down",
-"id": "tooComplicatedTooManySteps",
-"label":"Too complicated / too many steps"
-},{
-"type": "thumb-down",
-"id": "outOfDate",
-"label":"Out of date"
-},{
-"type": "thumb-down",
-"id": "samplesCodeIssue",
-"label":"Samples/Code issue"
-},{
-"type": "thumb-down",
-"id": "otherDown",
-"label":"Other"
-}]
-[{
-"type": "thumb-up",
-"id": "easyToUnderstand",
-"label":"Easy to understand"
-},{
-"type": "thumb-up",
-"id": "solvedMyProblem",
-"label":"Solved my problem"
-},{
-"type": "thumb-up",
-"id": "otherUp",
-"label":"Other"
-}]
-Need to tell us more?
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-04-08 UTC.

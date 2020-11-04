@@ -22,6 +22,8 @@ Check your page title and description
 Google Images automatically generates a title and snippet to best explain each result and how it relates to the user query. This helps users decide whether or not to click on a result.
 We use a number of different sources for this information, including descriptive information in the title, and meta tags for each page.
 You can help us improve the quality of the title and snippet displayed for your pages by following Google's title and snippet guidelines.
+Remove private information properly
+Be sure that you've removed private or irrelevant information from the image before publishing. For example, some information can unintentionally be included in file metadata, or black redaction rectangles over portions of an image might be removable under certain circumstances. See our guidelines on how to redact information properly from images before publishing them on the web.
 Add structured data
 If you include structured data, Google Images can display your images as rich results, including a prominent badge, which give users relevant information about your page and can drive better targeted traffic to your site. Google Images supports structured data for the following types:
 Product

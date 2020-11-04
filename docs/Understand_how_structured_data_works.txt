@@ -4,41 +4,6 @@ Home
 Products
 Search for Developers
 Guides
-[{
-"type": "thumb-down",
-"id": "missingTheInformationINeed",
-"label":"Missing the information I need"
-},{
-"type": "thumb-down",
-"id": "tooComplicatedTooManySteps",
-"label":"Too complicated / too many steps"
-},{
-"type": "thumb-down",
-"id": "outOfDate",
-"label":"Out of date"
-},{
-"type": "thumb-down",
-"id": "samplesCodeIssue",
-"label":"Samples/Code issue"
-},{
-"type": "thumb-down",
-"id": "otherDown",
-"label":"Other"
-}]
-[{
-"type": "thumb-up",
-"id": "easyToUnderstand",
-"label":"Easy to understand"
-},{
-"type": "thumb-up",
-"id": "solvedMyProblem",
-"label":"Solved my problem"
-},{
-"type": "thumb-up",
-"id": "otherUp",
-"label":"Other"
-}]
-Need to tell us more?
 Understand how structured data works
 Google Search works hard to understand the content of a page. You can help us by providing explicit
 clues about the meaning of a page to Google by including structured data on the page.
@@ -212,8 +177,8 @@ on the documentation on developers.google.com as definitive
 for Google Search behavior, rather than the schema.org documentation. Attributes or
 objects not described here are not required by Google Search, even if marked as required
 by schema.org.
-As of April 6, 2020, data-vocabulary.org markup will no longer be
-eligible for Google rich result features. To be eligible after April 6, 2020, you
+As of January 29, 2021, data-vocabulary.org markup will no longer be
+eligible for Google rich result features. To be eligible after January 29, 2021, you
 need to replace data-vocabulary.org markup with schema.org markup. Learn more about
 sunsetting support for data-vocabulary.
 Be sure to test your structured data using the Rich Results Test during development, and the
@@ -260,40 +225,5 @@ Try
 our Structured Data Codelab. This codelab walks you through adding several types of
 structured data to a simple HTML site, including where to place structured data on a site and
 how to validate it.
-[{
-"type": "thumb-down",
-"id": "missingTheInformationINeed",
-"label":"Missing the information I need"
-},{
-"type": "thumb-down",
-"id": "tooComplicatedTooManySteps",
-"label":"Too complicated / too many steps"
-},{
-"type": "thumb-down",
-"id": "outOfDate",
-"label":"Out of date"
-},{
-"type": "thumb-down",
-"id": "samplesCodeIssue",
-"label":"Samples/Code issue"
-},{
-"type": "thumb-down",
-"id": "otherDown",
-"label":"Other"
-}]
-[{
-"type": "thumb-up",
-"id": "easyToUnderstand",
-"label":"Easy to understand"
-},{
-"type": "thumb-up",
-"id": "solvedMyProblem",
-"label":"Solved my problem"
-},{
-"type": "thumb-up",
-"id": "otherUp",
-"label":"Other"
-}]
-Need to tell us more?
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-10-30 UTC.

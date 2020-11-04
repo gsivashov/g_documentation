@@ -4,41 +4,6 @@ Home
 Products
 Search for Developers
 Reference
-[{
-"type": "thumb-down",
-"id": "missingTheInformationINeed",
-"label":"Missing the information I need"
-},{
-"type": "thumb-down",
-"id": "tooComplicatedTooManySteps",
-"label":"Too complicated / too many steps"
-},{
-"type": "thumb-down",
-"id": "outOfDate",
-"label":"Out of date"
-},{
-"type": "thumb-down",
-"id": "samplesCodeIssue",
-"label":"Samples/Code issue"
-},{
-"type": "thumb-down",
-"id": "otherDown",
-"label":"Other"
-}]
-[{
-"type": "thumb-up",
-"id": "easyToUnderstand",
-"label":"Easy to understand"
-},{
-"type": "thumb-up",
-"id": "solvedMyProblem",
-"label":"Solved my problem"
-},{
-"type": "thumb-up",
-"id": "otherUp",
-"label":"Other"
-}]
-Need to tell us more?
 Add structured data to job postings
 Due to COVID-19, Google has seen more job
 seeker interest in work-from-home and remote job opportunities. We encourage you to
@@ -529,7 +494,8 @@ Logos on third-party job sites
 If you have a third-party job site, you can provide a different logo for a given
 organization than the image shown in the organization's Knowledge Graph card. To
 request a different logo for a hiring organization, add the logo property to the
-hiringOrganization array. Make sure that you follow the
+hiringOrganization array. For JobPosting structured data, the image width and height ratio must be between 0.75 and 2.5.
+Make sure that you follow the
 logo image guidelines and
 Company logo guidelines. For example:
 "hiringOrganization": {
@@ -827,8 +793,9 @@ Update your company logo.
 done Fix the issue
 There are two ways you can fix the issue:
 Make sure you specify the correct logo with the
-hiringOrganization.logo property. Updating the structured
-data is faster than updating the Knowledge Graph and doesn't require you to be verified for
+hiringOrganization.logo property.
+Make sure that the image width and height ratio is between 0.75 and 2.5.
+Updating the structured data is faster than updating the Knowledge Graph and doesn't require you to be verified for
 your Knowledge Graph.
 Suggest a change to your
 Knowledge Graph. Updating your Knowledge Graph provides more control over how your organization
@@ -904,40 +871,5 @@ Tunisia
 United Arab Emirates
 North America: Available in the entire region
 Sub-Saharan Africa: Available in the entire region
-[{
-"type": "thumb-down",
-"id": "missingTheInformationINeed",
-"label":"Missing the information I need"
-},{
-"type": "thumb-down",
-"id": "tooComplicatedTooManySteps",
-"label":"Too complicated / too many steps"
-},{
-"type": "thumb-down",
-"id": "outOfDate",
-"label":"Out of date"
-},{
-"type": "thumb-down",
-"id": "samplesCodeIssue",
-"label":"Samples/Code issue"
-},{
-"type": "thumb-down",
-"id": "otherDown",
-"label":"Other"
-}]
-[{
-"type": "thumb-up",
-"id": "easyToUnderstand",
-"label":"Easy to understand"
-},{
-"type": "thumb-up",
-"id": "solvedMyProblem",
-"label":"Solved my problem"
-},{
-"type": "thumb-up",
-"id": "otherUp",
-"label":"Other"
-}]
-Need to tell us more?
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-10-29 UTC.

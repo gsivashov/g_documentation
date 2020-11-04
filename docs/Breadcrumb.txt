@@ -4,51 +4,15 @@ Home
 Products
 Search for Developers
 Reference
-[{
-"type": "thumb-down",
-"id": "missingTheInformationINeed",
-"label":"Missing the information I need"
-},{
-"type": "thumb-down",
-"id": "tooComplicatedTooManySteps",
-"label":"Too complicated / too many steps"
-},{
-"type": "thumb-down",
-"id": "outOfDate",
-"label":"Out of date"
-},{
-"type": "thumb-down",
-"id": "samplesCodeIssue",
-"label":"Samples/Code issue"
-},{
-"type": "thumb-down",
-"id": "otherDown",
-"label":"Other"
-}]
-[{
-"type": "thumb-up",
-"id": "easyToUnderstand",
-"label":"Easy to understand"
-},{
-"type": "thumb-up",
-"id": "solvedMyProblem",
-"label":"Solved my problem"
-},{
-"type": "thumb-up",
-"id": "otherUp",
-"label":"Other"
-}]
-Need to tell us more?
 Breadcrumb
 A breadcrumb trail on a page indicates the page's position in the site hierarchy, and it may
 help users understand and explore a site effectively. A user can navigate all the way up in
 the site hierarchy, one level at a time, by starting from the last breadcrumb in the
 breadcrumb trail.
-As of April 6, 2020, data-vocabulary.org markup will no longer be
-eligible for the breadcrumb feature in Google Search. To be eligible after April 6, 2020, you
+As of January 29, 2021, data-vocabulary.org markup will no longer be
+eligible for Google rich result features. To be eligible after January 29, 2021, you
 need to replace data-vocabulary.org markup with schema.org markup. Learn more about
-sunsetting support
-for data-vocabulary.
+sunsetting support for data-vocabulary.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
 content. If you’re new to structured data, you can learn more about
@@ -711,40 +675,5 @@ Ask a question in the Webmaster
 Office Hours.
 Post a question in the Webmaster
 forum.
-[{
-"type": "thumb-down",
-"id": "missingTheInformationINeed",
-"label":"Missing the information I need"
-},{
-"type": "thumb-down",
-"id": "tooComplicatedTooManySteps",
-"label":"Too complicated / too many steps"
-},{
-"type": "thumb-down",
-"id": "outOfDate",
-"label":"Out of date"
-},{
-"type": "thumb-down",
-"id": "samplesCodeIssue",
-"label":"Samples/Code issue"
-},{
-"type": "thumb-down",
-"id": "otherDown",
-"label":"Other"
-}]
-[{
-"type": "thumb-up",
-"id": "easyToUnderstand",
-"label":"Easy to understand"
-},{
-"type": "thumb-up",
-"id": "solvedMyProblem",
-"label":"Solved my problem"
-},{
-"type": "thumb-up",
-"id": "otherUp",
-"label":"Other"
-}]
-Need to tell us more?
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-08-11 UTC.
+Last updated 2020-10-30 UTC.

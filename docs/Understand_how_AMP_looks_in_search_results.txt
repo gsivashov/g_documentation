@@ -4,41 +4,6 @@ Home
 Products
 Search for Developers
 Guides
-[{
-"type": "thumb-down",
-"id": "missingTheInformationINeed",
-"label":"Missing the information I need"
-},{
-"type": "thumb-down",
-"id": "tooComplicatedTooManySteps",
-"label":"Too complicated / too many steps"
-},{
-"type": "thumb-down",
-"id": "outOfDate",
-"label":"Out of date"
-},{
-"type": "thumb-down",
-"id": "samplesCodeIssue",
-"label":"Samples/Code issue"
-},{
-"type": "thumb-down",
-"id": "otherDown",
-"label":"Other"
-}]
-[{
-"type": "thumb-up",
-"id": "easyToUnderstand",
-"label":"Easy to understand"
-},{
-"type": "thumb-up",
-"id": "solvedMyProblem",
-"label":"Solved my problem"
-},{
-"type": "thumb-up",
-"id": "otherUp",
-"label":"Other"
-}]
-Need to tell us more?
 Understand how AMP looks in search results
 Google Search indexes AMP pages to provide a
 fast, reliable web experience. When an AMP page is available, it can be featured on mobile
@@ -136,40 +101,5 @@ you must publish AMP content as a signed exchange in addition to the regular AMP
 Currently, signed exchange is only supported in Google Search for rich results and basic
 results, not carousels. To learn more about setting up signed exchange for AMP pages, visit
 Serve AMP using Signed Exchanges.
-[{
-"type": "thumb-down",
-"id": "missingTheInformationINeed",
-"label":"Missing the information I need"
-},{
-"type": "thumb-down",
-"id": "tooComplicatedTooManySteps",
-"label":"Too complicated / too many steps"
-},{
-"type": "thumb-down",
-"id": "outOfDate",
-"label":"Out of date"
-},{
-"type": "thumb-down",
-"id": "samplesCodeIssue",
-"label":"Samples/Code issue"
-},{
-"type": "thumb-down",
-"id": "otherDown",
-"label":"Other"
-}]
-[{
-"type": "thumb-up",
-"id": "easyToUnderstand",
-"label":"Easy to understand"
-},{
-"type": "thumb-up",
-"id": "solvedMyProblem",
-"label":"Solved my problem"
-},{
-"type": "thumb-up",
-"id": "otherUp",
-"label":"Other"
-}]
-Need to tell us more?
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-07-14 UTC.

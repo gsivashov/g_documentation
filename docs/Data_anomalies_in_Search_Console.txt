@@ -14,6 +14,8 @@ URL Inspection tool
 October 14, ongoing
 The "Request Indexing" feature of the URL Inspection Tool has been disabled in order to make some technical updates. We expect it to be re-enabled in the coming weeks. In the meanwhile, Google continues to find and index content through our regular methods, as covered here.
 Performance reports (Search Results / Discover)
+October 28 (Discover)
+A previous issue in which some Discover data were mis-classified as video in the Performance report has been fixed. Because of this, you may see a drop in your Discover report's video appearance statistics. This mis-classification did not affect Discover results for users, only the data reporting.
 October 6, ongoing (Discover)
 Following the launch of the Stories carousel feature on Discover, you might see a significant increase in Web Story stats on Discover reporting for your site.
 September 25-28 (Discover)
