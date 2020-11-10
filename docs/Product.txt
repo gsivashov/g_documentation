@@ -1408,7 +1408,7 @@ https://schema.org/Friday
 https://schema.org/Saturday
 https://schema.org/Sunday
 deliveryTime.cutOffTime
-DateTime
+Time
 The time after which new orders are no longer processed on that same day, in
 ISO 8601 format. One
 day gets added to the handling time.
@@ -1458,7 +1458,7 @@ Text
 A defined range of postal codes indicated by a common textual prefix. Use this
 property for non-numeric systems, such as the UK.
 shippingDestination.postalCodeRange
-postalCodeRange
+PostalCodeRangeSpecification
 A defined range of postal codes.
 shippingRate
 MonetaryAmount
@@ -1570,4 +1570,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-09-24 UTC.
+Last updated 2020-11-04 UTC.
