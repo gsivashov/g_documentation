@@ -1,6 +1,11 @@
 https://support.google.com/webmasters/answer/178636
 
-Image sitemapsAdd images to an existing sitemap, or create a separate sitemap just for your images. Adding images to a sitemap helps Google discover images that we might not otherwise find (such as images your site reaches with JavaScript code).
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Image sitemaps
+Add images to an existing sitemap, or create a separate sitemap just for your images. Adding images to a sitemap helps Google discover images that we might not otherwise find (such as images your site reaches with JavaScript code).
 Best practices
 Follow best practices for publishing images and the Webmaster Guidelines.
 You can add image metadata, such as contact information and licensing information, which will appear in image search results.
@@ -48,7 +53,5 @@ The title of the image.
 <image:license>
 Optional
 A URL to the license of the image. You can use image metadata instead, if you like.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Images and videoGoogle Image best practicesImage sitemapsImage Rights Metadata in Google ImagesVideo best practicesVideo sitemaps and video sitemap alternativesRich media file best practices
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

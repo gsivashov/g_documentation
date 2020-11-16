@@ -1,13 +1,18 @@
 https://support.google.com/webmasters/topic/6080646
 
-Manage your sitemapsVideo sitemaps and video sitemap alternativesNext: Image sitemapsA video sitemap is a sitemap with additional information about video hosted on your pages. Creating a video sitemap is an excellent way to help Google find and understand the video content on your site, especially content that was recently added or that we might not otherwise discover with our usual crawling mechanisms. Google Video Sitemap is an extension to the Sitemap standard.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Video sitemaps and video sitemap alternatives
+A video sitemap is a sitemap with additional information about video hosted on your pages. Creating a video sitemap is an excellent way to help Google find and understand the video content on your site, especially content that was recently added or that we might not otherwise discover with our usual crawling mechanisms. Google Video Sitemap is an extension to the Sitemap standard.
 While Google recommends using video sitemaps, we also support mRSS feeds.
 You should follow the video best practices to get the best results in Google Search.
 Guidelines for video sitemaps
 Here are basic guidelines for video sitemaps:
 You can create a separate sitemap just for video, or you can embed a video sitemap within an existing sitemap, whichever is more convenient for you.
 You can host multiple videos in one web page.
-Each sitemap entry is the URL of a page that hosts one or more videos. The structure of each sitemap entry is as follows:
+Each sitemap entry is the URL of a page that hosts one or more videos. The structure of each sitemap entry is as follows:
 <url>
 <loc>https://example.com/mypage</loc>
 <!-- URL of host page -->
@@ -16,14 +21,14 @@ Each sitemap entry is the URL of a page that hosts one or more videos. The struc
 </url>
 Don't list videos that are unrelated to the host page. For example, if the video is a small addendum to the page, or unrelated to the main text content.
 Each entry in a video sitemap includes a set of required, recommended, or optional values that you supply. Recommended and optional values provide useful metadata that can enhance your video results and improve Google's ability to include your video in search results. See the table below for a list of sitemap elements.
-Google might use text on the video landing page rather than the text you supply in your sitemap, if the page text is deemed more useful than the information in the sitemap.
+Google might use text on the video landing page rather than the text you supply in your sitemap, if the page text is deemed more useful than the information in the sitemap.
 Google can't guarantee when or if your videos will be indexed, as Google relies on complex indexing algorithms.
-If Google cannot discover video content at the URL you provide, the sitemap entry will be ignored.
-Each sitemap file that you provide must have no more than 50,000 URL elements. If you have more than 50,000 videos, you can submit multiple sitemaps and a sitemap index file. You cannot nest sitemap index files. Keep in mind that if you are adding optional tags, you may hit the 50MB uncompressed limit before you hit the 50,000 video limit.
-Google must be able to access the source file or player (that is, the file or player cannot be blocked by robots.txt, require a login, or be otherwise inaccessible to Googlebot). Metafiles that require a download of the source via streaming protocols are not supported.
+If Google cannot discover video content at the URL you provide, the sitemap entry will be ignored.
+Each sitemap file that you provide must have no more than 50,000 URL elements. If you have more than 50,000 videos, you can submit multiple sitemaps and a sitemap index file. You cannot nest sitemap index files. Keep in mind that if you are adding optional tags, you may hit the 50MB uncompressed limit before you hit the 50,000 video limit.
+Google must be able to access the source file or player (that is, the file or player cannot be blocked by robots.txt, require a login, or be otherwise inaccessible to Googlebot). Metafiles that require a download of the source via streaming protocols are not supported.
 All files must be accessible to Googlebot. If you want to prevent spammers from accessing your video content at the <player_loc> or <content_loc> URLs, verify that any bots accessing your server are really Googlebot.
 Make sure that your robots.txt file isn't blocking any of the items (including the host page URL, the video URL, and the thumbnail URL) included in each sitemap entry. More information about robots.txt.
-Google verifies that the information you provide for each video matches what is on the site. If not, your video might not be indexed.
+Google verifies that the information you provide for each video matches what is on the site. If not, your video might not be indexed.
 You can specify pages from different sites in one sitemap. All sites, including the one containing your sitemap, must be verified in Search Console. More information about managing sitemaps for multiple sites.
 Example sitemap
 Here is a sample video sitemap with one page hosting one video. This example includes all of the tags that Google uses.
@@ -69,11 +74,11 @@ Required
 Parent tag for a single host page on your site. Defined by the basic sitemaps format.
 <loc>
 Required
-Specifies the host page where one or more videos are hosted. When a user clicks on a video result in Google Search, they will be sent to this page. This URL must be a unique within the sitemap. Defined by the basic Sitemaps format.
-For multiple videos on a single page, create a single <loc> tag for the page, with a child <video> element for each video on that page.
+Specifies the host page where one or more videos are hosted. When a user clicks on a video result in Google Search, they will be sent to this page. This URL must be a unique within the sitemap. Defined by the basic Sitemaps format.
+For multiple videos on a single page, create a single <loc> tag for the page, with a child <video> element for each video on that page.
 <video:video>
 Required
-Parent element for all information about a single video on the page specified by <loc>.
+Parent element for all information about a single video on the page specified by <loc>.
 <video:thumbnail_loc>
 Required
 A URL pointing to the video thumbnail image file. See thumbnail requirements.
@@ -89,23 +94,23 @@ video:content_loc
 or
 video:player_loc
 A URL pointing to the actual video media file. Should be one of the supported formats.
-HTML is not a supported format. Flash is allowed, but no longer supported on most mobile platforms, and so may be indexed less well.
-Must not be the same as the <loc> URL.
-This is the equivalent of VideoObject.contentUrl in structured data.
+HTML is not a supported format. Flash is allowed, but no longer supported on most mobile platforms, and so may be indexed less well.
+Must not be the same as the <loc> URL.
+This is the equivalent of VideoObject.contentUrl in structured data.
 Best practice: If you want to restrict access to your content but still have it crawled, ensure that Googlebot can access your content by using a reverse DNS lookup.
 <video:player_loc>
 Required: either
 video:content_loc
 or
 video:player_loc
-A URL pointing to a player for a specific video. Usually this is the information in the src element of an <embed> tag. Must not be the same as the <loc> URL. For YouTube video, this value is used rather than video:content_loc. This is the equivalent of VideoObject.embedUrl in structured data.
-Must not be the same as the <loc> URL.
+A URL pointing to a player for a specific video. Usually this is the information in the src element of an <embed> tag. Must not be the same as the <loc> URL. For YouTube video, this value is used rather than video:content_loc. This is the equivalent of VideoObject.embedUrl in structured data.
+Must not be the same as the <loc> URL.
 Attributes:
 allow_embed [Optional] Whether Google can embed the video in search results. Allowed values are yes or no.
 Best practice: If you want to restrict access to your content but still have it crawled, ensure that Googlebot can access your content by using a reverse DNS lookup.
 <video:duration>
 Recommended
-The duration of the video, in seconds. Value must be from 1 to 28800 (8 hours) inclusive.
+The duration of the video, in seconds. Value must be from 1 to 28800 (8 hours) inclusive.
 <video:expiration_date>
 Recommended when applicable
 The date after which the video will no longer be available, in W3C format. Omit this tag if your video does not expire. If present, Google Search will not show your video after this date.
@@ -113,14 +118,14 @@ Supported values are complete date (YYYY-MM-DD), or complete date plus hours, mi
 Example: 2012-07-16T19:20:30+08:00.
 <video:rating>
 Optional
-The rating of the video. Supported values are float numbers in the range 0.0 (low) to 5.0 (high), inclusive.
+The rating of the video. Supported values are float numbers in the range 0.0 (low) to 5.0 (high), inclusive.
 <video:view_count>
 Optional
 The number of times the video has been viewed.
 <video:publication_date>
 Optional
 The date the video was first published, in W3C format. Supported values are complete date (YYYY-MM-DD) or complete date plus hours, minutes and seconds, and timezone (YYYY-MM-DDThh:mm:ss+TZD).
-Example: 2007-07-16T19:20:30+08:00
+Example: 2007-07-16T19:20:30+08:00
 <video:family_friendly>
 Optional
 yes (or omitted) if the video can be available with SafeSearch on.
@@ -128,30 +133,30 @@ no if the video should be available only with SafeSearch off.
 <video:restriction>
 Optional
 Whether to show or hide your video in search results from specific countries.
-Specify a space-delimited list of country codes in ISO 3166 format. Only one <video:restriction> tag can be used for each video. If there is no <video:restriction> tag, Google assumes that the video can be played in all locations. Note that this tag affects only search results; it does not prevent a user from finding or playing your video in a restricted location though other means. Learn more about applying country restrictions.
+Specify a space-delimited list of country codes in ISO 3166 format. Only one <video:restriction> tag can be used for each video. If there is no <video:restriction> tag, Google assumes that the video can be played in all locations. Note that this tag affects only search results; it does not prevent a user from finding or playing your video in a restricted location though other means. Learn more about applying country restrictions.
 Attributes:
-relationship [Required] Whether the video is allowed or denied in search results in the specified countries. Supported values are allow or deny. If allow, listed countries are allowed, unlisted countries are denied; if deny, listed countries are denied, unlisted countries are allowed.
-Example: This example allows the video search result to be shown only in Canada and Mexico:
+relationship [Required] Whether the video is allowed or denied in search results in the specified countries. Supported values are allow or deny. If allow, listed countries are allowed, unlisted countries are denied; if deny, listed countries are denied, unlisted countries are allowed.
+Example: This example allows the video search result to be shown only in Canada and Mexico:
 <video:restriction relationship="allow">CA MX</video:restriction>
 <video:platform>
 Optional
-Whether to show or hide your video in search results on  specified platform types. This is a list of space-delimited platform types. Note that this only affects search results on the specified device types; it does not prevent a user from playing your video on a restricted platform.
-Only one <video:platform> tag can appear for each video. If there is no <video:platform> tag, Google assumes that the video can be played on all platforms. Learn more about applying platform restrictions.
+Whether to show or hide your video in search results on specified platform types. This is a list of space-delimited platform types. Note that this only affects search results on the specified device types; it does not prevent a user from playing your video on a restricted platform.
+Only one <video:platform> tag can appear for each video. If there is no <video:platform> tag, Google assumes that the video can be played on all platforms. Learn more about applying platform restrictions.
 Supported values:
-web - Traditional computer browsers on desktops and laptops.
-mobile - Mobile browsers, such as those on cellular phones or tablets.
-tv - TV browsers, such as those available through GoogleTV devices and game consoles.
+web - Traditional computer browsers on desktops and laptops.
+mobile - Mobile browsers, such as those on cellular phones or tablets.
+tv - TV browsers, such as those available through GoogleTV devices and game consoles.
 Attributes:
-relationship [Required] specifies whether the video is restricted or permitted for the specified platforms. Supported values are allow or deny. If allow, any omitted platforms will be denied; if deny, any omitted platforms will be allowed.
+relationship [Required] specifies whether the video is restricted or permitted for the specified platforms. Supported values are allow or deny. If allow, any omitted platforms will be denied; if deny, any omitted platforms will be allowed.
 Example: The following example allows users on web or TV, but not mobile devices:
 <video:platform relationship="allow">web tv</video:platform>
 <video:price>
 Optional
-The price to download or view the video. Omit this tag for free videos. More than one <video:price> element can be listed (for example, in order to specify various currencies, purchasing options, or resolutions).
+The price to download or view the video. Omit this tag for free videos. More than one <video:price> element can be listed (for example, in order to specify various currencies, purchasing options, or resolutions).
 Attributes:
-currency [Required] Specifies the currency in ISO 4217 format.
-type [Optional] Specifies the purchase option. Supported values are rent and own. If this is not specified, the default value is own.
-resolution [Optional] Specifies the resolution of the purchased version. Supported values are hd and sd.
+currency [Required] Specifies the currency in ISO 4217 format.
+type [Optional] Specifies the purchase option. Supported values are rent and own. If this is not specified, the default value is own.
+resolution [Optional] Specifies the resolution of the purchased version. Supported values are hd and sd.
 <video:requires_subscription>
 Optional
 Indicates whether a subscription (either paid or free) is required to view the video. Allowed values are yes or no.
@@ -173,7 +178,7 @@ A short description of the broad category that the video belongs to. This is a s
 Not used
 Currently not used.
 Sitemap alternative
-While Google recommends using video sitemaps and schema.org's VideoObject to mark up your videos, we also support mRSS feeds.
+While Google recommends using video sitemaps and schema.org's VideoObject to mark up your videos, we also support mRSS feeds.
 mRSS
 Google supports mRSS, an RSS module that supplements the element capabilities of RSS 2.0. mRSS feeds are very similar to video sitemaps and can be tested, submitted, and updated just like sitemaps.
 Each mRSS feed must be under 50MB in size when uncompressed, and can contain no more than 50,000 video items. If your uncompressed file is larger than 50MB, or you have more than 50,000 videos, you can submit multiple mRSS feeds and a sitemap index file. Sitemap indexes can contain mRSS feeds.
@@ -214,7 +219,7 @@ Attributes:
 medium [Required] Type of content. This should be set to video.
 url [Required] The direct URL to the raw video content. If this is not specified, you must specify the <media:player> tag.
 duration [Optional but recommended] Length of the video in seconds.
-For all of the other optional attributes and child fields of the <media:content> tag, see the mRSS specification.
+For all of the other optional attributes and child fields of the <media:content> tag, see the mRSS specification.
 <media:player>
 Depends
 You must specify at least one of <media:player> or the url attribute in <media:content>.
@@ -239,19 +244,16 @@ scheme=W3C-DTF
 <dcterms:valid>
 <media:restriction>
 Optional
-A space-delimited list of countries where the video may or may not be played. Allowed values are country codes in ISO 3166 format. If there is no <media:restriction> tag, Google assumes that the video can be played in all territories.
+A space-delimited list of countries where the video may or may not be played. Allowed values are country codes in ISO 3166 format. If there is no <media:restriction> tag, Google assumes that the video can be played in all territories.
 The required attribute type should be set to country. Only country restrictions are supported.
 The required attribute relationship specifies whether the video is restricted or permitted for the specified countries. Allowed values are allow or deny.
 Learn more about using country restrictions.
 <media:price>
 Optional
-The price to download or view the video. Do not use this tag for free videos. More than one <media:price> element can be listed (for example, in order to specify various currencies or purchasing options).
+The price to download or view the video. Do not use this tag for free videos. More than one <media:price> element can be listed (for example, in order to specify various currencies or purchasing options).
 Attributes:
-currency [Required] The currency in ISO 4217 format.
+currency [Required] The currency in ISO 4217 format.
 type [Required] The purchase option. Allowed values are rent, purchase, package, and subscription.
-The full mRSS specification contains many more optional tags, best practices, and examples. Once you have an mRSS feed, you can test and submit it just like a video sitemap.
-Next: Image sitemaps
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Manage your sitemapsLearn about sitemapsBuild and submit a sitemapSitemaps reportSplit up your large sitemapsSitemap extensionsVideo sitemaps and video sitemap alternativesImage sitemapsCreate a Google News sitemap
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+The full mRSS specification contains many more optional tags, best practices, and examples. Once you have an mRSS feed, you can test and submit it just like any other sitemap.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-12 UTC.

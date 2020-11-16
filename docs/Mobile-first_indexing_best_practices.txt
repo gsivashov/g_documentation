@@ -1,9 +1,9 @@
 https://developers.google.com/search/mobile-sites/mobile-first-indexing
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Mobile-first indexing best practices
 Mobile-first indexing means Google predominantly uses the mobile version of the content for
 indexing and ranking. Historically, the index primarily used the desktop version of a page's content
@@ -343,4 +343,4 @@ November 4, 2016
 We are
 experimenting with making the index mobile-first.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-11-11 UTC.

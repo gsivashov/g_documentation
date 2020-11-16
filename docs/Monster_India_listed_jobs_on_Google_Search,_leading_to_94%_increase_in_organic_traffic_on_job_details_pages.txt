@@ -1,8 +1,7 @@
 https://developers.google.com/search/case-studies/monster-india-case-study
 
 Home
-Products
-Search for Developers
+Google Search Central
 Case studies
 Monster India listed jobs on Google Search, leading to 94% increase in organic traffic on job details pages
 check_circle_outline 94%

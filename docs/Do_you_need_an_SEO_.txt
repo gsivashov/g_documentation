@@ -1,8 +1,12 @@
 https://support.google.com/webmasters/answer/35291
 
-Beginning usersDo you need an SEO?Check out our SEO Starter Guide
+Home
+Google Search Central
+Documentation
+Beginner SEO
+Do you need an SEO?
+Check out our SEO Starter Guide
 If you're in a hurry, here's the one-page version.
-How to hire an SEO
 What is an SEO?
 SEO is an acronym for "search engine optimization" or "search engine optimizer." Deciding to hire an SEO is a big decision that can potentially improve your site and save time, but you can also risk damage to your site and reputation. Make sure to research the potential advantages as well as the damage that an irresponsible SEO can do to your site. Many SEOs and other agencies and consultants provide useful services for website owners, including:
 Review of your site content or structure
@@ -83,7 +87,5 @@ Guarantees ranking, but only on obscure, long keyword phrases you would get anyw
 Operates with multiple aliases or falsified WHOIS info
 Gets traffic from "fake" search engines, spyware, or scumware
 Has had domains removed from Google's index or is not itself listed in Google
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Beginning usersGetting started, for beginnersAdd a website propertyUsing Search Console with your websiteHow Google Search WorksSearch Engine Optimization (SEO) Starter GuideDo you need an SEO?
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-12 UTC.

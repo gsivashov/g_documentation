@@ -1,9 +1,9 @@
 https://developers.google.com/search/mobile-sites/faq
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Frequently Asked Questions
 What's the difference between the PageSpeed Insights UX Score and the Mobile-Friendly Test results?
 The Mobile-Friendly Test uses Googlebot to fetch the page. PageSpeed

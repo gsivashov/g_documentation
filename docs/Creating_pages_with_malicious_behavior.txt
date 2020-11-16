@@ -1,13 +1,16 @@
 https://support.google.com/webmasters/answer/2721313
 
-Creating pages with malicious behaviorDistributing content or software on your website that behaves in a way other than what a user expected is a violation of Google Webmaster Guidelines. This includes anything that manipulates content on the page in an unexpected way, downloads or executes files on a user’s computer without their consent, or does not comply with the Google Unwanted Software Policy. Google not only aims to give its users the most relevant search results for their queries, but also to keep them safe on the web.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Creating pages with malicious behavior
+Distributing content or software on your website that behaves in a way other than what a user expected is a violation of Google Webmaster Guidelines. This includes anything that manipulates content on the page in an unexpected way, downloads or executes files on a user’s computer without their consent, or does not comply with the Google Unwanted Software Policy. Google not only aims to give its users the most relevant search results for their queries, but also to keep them safe on the web.
 Some examples of malicious behavior include:
 Changing or manipulating the location of content on a page, so that when a user thinks they’re clicking on a particular link or button the click is actually registered by a different part of the page
 Injecting new ads or pop-ups on pages, or swapping out existing ads on a webpage with different ads; or promoting or installing software that does so
 Including unwanted files in a download that a user requested
 Installing malware, trojans, spyware, ads or viruses on a user’s computer
 Changing a user’s browser homepage or search preferences without the user’s informed consent
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Quality guidelinesAutomatically generated contentSneaky redirectsLink schemesCloakingHidden text and linksDoorway pagesScraped contentAffiliate programsIrrelevant keywordsCreating pages with malicious behaviorUser-generated spamWays to Prevent Comment SpamReport spam, paid links, or malware
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

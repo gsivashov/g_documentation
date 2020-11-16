@@ -1,9 +1,9 @@
 https://developers.google.com/search/mobile-sites
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Welcome!
 Mobile is changing the world. Today, everyone has smartphones with them, constantly
 communicating and looking for information. In many countries, the number of

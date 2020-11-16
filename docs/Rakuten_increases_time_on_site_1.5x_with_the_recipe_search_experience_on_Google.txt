@@ -1,8 +1,7 @@
 https://developers.google.com/search/case-studies/rakuten-case-study
 
 Home
-Products
-Search for Developers
+Google Search Central
 Case studies
 Rakuten increases time on site 1.5x with the recipe search experience on Google
 check_circle_outline 2.7X more traffic from search engines

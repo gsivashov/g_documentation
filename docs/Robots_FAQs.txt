@@ -1,6 +1,11 @@
 https://support.google.com/webmasters/answer/7424835
 
-About robots.txtRobots FAQsGeneral robots questions
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Robots FAQs
+General robots questions
 Does my website need a robots.txt file?
 Which method should I use?
 Can I use these methods to remove someone else's site?
@@ -27,7 +32,7 @@ How does the nofollow robots meta tag compare to the rel="nofollow" link attribu
 X-Robots-Tag HTTP header questions
 How can I check the X-Robots-Tag for a URL?
 Have we missed an FAQ? Feel free to post in our Webmaster Help Forum for more help!
-General robots questions
+General robots questions
 Does my website need a robots.txt file?
 No. When Googlebot visits a website, we first ask for permission to crawl by attempting to retrieve the robots.txt file. A website without a robots.txt file, robots meta tags or X-Robots-Tag HTTP headers will generally be crawled and indexed normally.
 Which method should I use?
@@ -77,7 +82,5 @@ The nofollow robots meta tag applies to all links on a page. The rel="nofollow" 
 X-Robots-Tag HTTP header questions
 How can I check the X-Robots-Tag for a URL?
 A simple way to view the server headers is to use a web-based server header checker or to use the "Fetch as Googlebot" feature in Google Search Console.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-About robots.txtIntroduction to robots.txtCreate a robots.txt fileTest your robots.txt with the robots.txt TesterSubmit your updated robots.txt to GoogleRobots FAQs
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

@@ -1,0 +1,34 @@
+https://developers.google.com/search/tools
+
+Home
+Google Search Central
+Help
+Get support for your site from Google Search
+Have questions about Search Console, search rankings, security issues, or content on your site? Take a look at our support resources.
+bookmark
+Google webmaster guidelines for your website
+If your website isn't performing well on Google Search, make sure that it's following our quality guidelines.
+bookmark
+Search Console Help Center
+Learn how to use Search Console to monitor your performance on Google Search, and see if Google can index your website.
+bookmark
+Google SEO Starter Guide
+Learn what search engine optimization (SEO) is, how to improve your performance in Google Search, and more.
+bookmark
+Google Search Central on YouTube
+Watch official Google Search YouTube videos and learn how to improve your site's appearance on Google Search.
+Check our help community for related posts
+There might already be an answer to your question. Available in many languages, the Google Search Central Help Community covers topics related to crawling, indexing, ranking, structured data, Search Console, and more.
+Browse the help community
+Can't find an answer? Post your question
+Already looked at Google resources and existing posts in the help community? Post your
+question in the Google Search Central Help Community, and get answers from
+our Product Experts and other experienced web professionals.
+Ask now
+More ways to get in touch
+Join a live SEO office hours session
+Chat with a real person on the Google Search Central team about your website issues or Google Search questions.
+Follow us on Twitter
+The Google Search Central Twitter is the best place to get the latest updates on bugs and announcements.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

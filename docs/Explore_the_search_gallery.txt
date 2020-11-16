@@ -1,9 +1,9 @@
 https://developers.google.com/search/docs/guides/search-gallery
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Explore the search gallery
 Google uses structured data to understand the content on the page. You can help us by
 providing specific information about your site, which can help your site display in richer
@@ -179,4 +179,4 @@ segments, and live-stream content.
 Get started
 Food and Drink, News, Education and Science, Sports
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-08-31 UTC.
+Last updated 2020-11-11 UTC.

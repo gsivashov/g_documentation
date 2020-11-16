@@ -1,7 +1,11 @@
 https://support.google.com/webmasters/answer/6332384
 
+Home
+Google Search Central
+Documentation
+Advanced SEO
 Remove information from Google
-“Get something off Google” means different things to different people. We’re going to explain how to request information removal, but please read the information below carefully.
+“Get something off Google” means different things to different people. We’re going to explain how to request information removal, but please read the information below carefully.
 Step 1: Understand the problem
 You must answer the following two questions before you can try to remove your information:
 Remove information from Google or from the web?
@@ -75,6 +79,7 @@ See More information for more options.
 Please remember that Google doesn’t own the web; we just help you find stuff on it. If you don’t like something on a website that Google doesn’t own, we really can’t make the website owner remove it, we can only remove it from Google Search results (if appropriate). Sorry!
 However, if you think there is a legal or Google Policy violation, see More Information below.
 More information
+More information
 I object to something that I’ve found on Google Search. Can I have it taken down?
 Remember that the Internet is a big place, and you might not like or agree with everything that you see. Google's goal is to identify what information from the web is relevant to users' queries, not to determine whether that material is in some sense wrongful.
 However, if you think it really is a problem, here are some options:
@@ -87,9 +92,7 @@ Learn how to update a Google knowledge panel. Keep in mind that information in 
 How do I get a video or post off YouTube, Google+, Blogger, or other Google properties?
 See Get information off the web.
 Why can't I use robots.txt to block my file?
-If you use a robots.txt file on your website, you can tell Google not crawl a page. However, if Google finds a link to your page on another site, with descriptive text, we might generate a search result from that. If you have included a “noindex” tag on the page, Google won’t see it, because Google must crawl (fetch) the page in order to see that tag, but Google won’t fetch your page if there’s a robots.txt file blocking it! Therefore, you should let Google crawl the page and see the “noindex” tag or header. It sounds counterintuitive, but you need to let Google try to fetch the page and fail (because of password protection) or see the “noindex” tag  to ensure it’s omitted from search results.
+If you use a robots.txt file on your website, you can tell Google not crawl a page. However, if Google finds a link to your page on another site, with descriptive text, we might generate a search result from that. If you have included a noindex tag on the page, Google won’t see it, because Google must crawl (fetch) the page in order to see that tag, but Google won’t fetch your page if there’s a robots.txt file blocking it! Therefore, you should let Google crawl the page and see the noindex tag or header. It sounds counterintuitive, but you need to let Google try to fetch the page and fail (because of password protection) or see the noindex tag  to ensure it’s omitted from search results.
 This does not apply to images; for images, robots.txt is the correct way to block images from search results.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Removing informationRemove information from GoogleGet my personal information off GoogleRemove outdated content tool
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

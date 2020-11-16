@@ -1,38 +1,41 @@
 https://support.google.com/webmasters/answer/114016
 
+Home
+Google Search Central
+Documentation
+Advanced SEO
 Google Image best practices
 Google Images is a way to visually discover information on the web. Users can quickly explore information with more context around images with new features, such as image captions, prominent badges, and AMP results.
 By adding more context around images, results can become much more useful, which can lead to higher quality traffic to your site. You can aid in the discovery process by making sure that your images and your site are optimized for Google Images. Follow our guidelines to increase the likelihood that your content will appear in Google Images search results.
 Opt out of image search inline linking
-If you choose, you can prevent the full-sized image from appearing in Google's image search results page by opting out of inline linking in Google image search results.
+If you choose, you can prevent the full-sized image from appearing in Google's image search results page by opting out of inline linking in Google image search results.
 To opt out of inline linking:
-When your image is requested, examine the HTTP referrer header in the request.
+When your image is requested, examine the HTTP referrer header in the request.
 If the request is coming from a Google domain, reply with HTTP 200 or 204 and no content.
 Google will still crawl your page and see the image, but will display a thumbnail image generated at crawl time in search results. This opt-out is possible at any time, and does not require re-processing of a website’s images. This behavior is not considered image cloaking and will not result in manual actions.
 You can also prevent the image from appearing in search results entirely.
 Create a great user experience
 To boost your content's visibility in Google Images, focus on the user by providing a great user experience: make pages primarily for users, not for search engines. Here are some tips:
 Provide good context: Make sure that your visual content is relevant to the topic of the page. We suggest that you display images only where they add original value to the page. We particularly discourage pages where neither the images or the text are original content.
-Optimize placement: Whenever possible, place images near relevant text. When it makes sense, consider placing the most important image near the top of the page.
+Optimize placement: Whenever possible, place images near relevant text. When it makes sense, consider placing the most important image near the top of the page.
 Don’t embed important text inside images: Avoid embedding text in images, especially important text elements like page headings and menu items, because not all users can access them (and page translation tools won't work on images). To ensure maximum accessibility of your content, keep text in HTML, provide alt text for images.
-Create informative and high quality sites: Good content on your webpage is just as important as visual content for Google Images - it provides context and makes the result more actionable. Page content may be used to generate a text snippet for the image, and Google considers the page content quality when ranking images.
+Create informative and high quality sites: Good content on your webpage is just as important as visual content for Google Images - it provides context and makes the result more actionable. Page content may be used to generate a text snippet for the image, and Google considers the page content quality when ranking images.
 Create device-friendly sites: Users search on Google Images more from mobile than on desktop. For this reason, it is important that you design your site for all device types and sizes. Use the mobile friendly testing tool to test how well your pages work on mobile devices, and get feedback on what needs to be fixed.
-Create good URL structure for your images: Google uses the URL path as well as the file name to help it understand your images. Consider organizing your image content so that URLs are constructed logically.
+Create good URL structure for your images: Google uses the URL path as well as the file name to help it understand your images. Consider organizing your image content so that URLs are constructed logically.
 Check your page title and description
 Google Images automatically generates a title and snippet to best explain each result and how it relates to the user query. This helps users decide whether or not to click on a result.
 We use a number of different sources for this information, including descriptive information in the title, and meta tags for each page.
 You can help us improve the quality of the title and snippet displayed for your pages by following Google's title and snippet guidelines.
-Remove private information properly
-Be sure that you've removed private or irrelevant information from the image before publishing. For example, some information can unintentionally be included in file metadata, or black redaction rectangles over portions of an image might be removable under certain circumstances. See our guidelines on how to redact information properly from images before publishing them on the web.
 Add structured data
-If you include structured data, Google Images can display your images as rich results, including a prominent badge, which give users relevant information about your page and can drive better targeted traffic to your site. Google Images supports structured data for the following types:
+If you include structured data, Google Images can display your images as rich results, including a prominent badge, which give users relevant information about your page and can drive better targeted traffic to your site. Google Images supports structured data for the following types:
 Product
 Video
 Recipe
-Follow the general structured data guidelines as well as any guidelines specific to your structured data type; otherwise your structured data might be ineligible for rich result display in Google Images. In each of these structured data types, the image attribute is a required field to be eligible for badge and rich result in Google Images.
+Follow the general structured data guidelines as well as any guidelines specific to your structured data type; otherwise your structured data might be ineligible for rich result display in Google Images. In each of these structured data types, the image attribute is a required field to be eligible for badge and rich result in Google Images.
 Optimize for speed
 Images are often the largest contributor to overall page size, which can make pages slow and expensive to load. Make sure to apply the latest image optimization and responsive image techniques to provide a high quality and fast user experience.
-On Google Images, the AMP logo  helps users identify pages that load quickly and smoothly. Consider turning your image host page into an AMP to decrease page load time (where the target page is the page the user lands after clicking on a result in Google Images).
+On Google Images, the AMP logo
+helps users identify pages that load quickly and smoothly. Consider turning your image host page into an AMP to decrease page load time (where the target page is the page the user lands after clicking on a result in Google Images).
 Analyze your site speed with PageSpeed Insights and visit our Web Fundamentals page to learn about best practices and techniques to improve website performance.
 Add good quality photos
 High-quality photos appeal to users more than blurry, unclear images. Also, sharp images are more appealing to users in the result thumbnail and increase the likelihood of getting traffic from users.
@@ -43,10 +46,11 @@ Use descriptive alt text
 Alt text (text that describes an image) improves accessibility for people who can't see images on web pages, including users who use screen readers or have low-bandwidth connections.
 Google uses alt text along with computer vision algorithms and the contents of the page to understand the subject matter of the image. Also, alt text in images is useful as anchor text if you decide to use an image as a link.
 When choosing alt text, focus on creating useful, information-rich content that uses keywords appropriately and is in context of the content of the page. Avoid filling alt attributes with keywords (keyword stuffing) as it results in a negative user experience and may cause your site to be seen as spam.
-Bad (missing alt text): <img src="puppy.jpg"/>
-Bad (keyword stuffing): <img src="puppy.jpg" alt="puppy dog baby dog pup pups puppies doggies pups litter puppies dog retriever  labrador wolfhound setter pointer puppy jack russell terrier puppies dog food cheap dogfood puppy food"/>
-Better: <img src="puppy.jpg" alt="puppy"/>
-Best: <img src="puppy.jpg" alt="Dalmatian puppy playing fetch"/>
+Bad (missing alt text): <img src="puppy.jpg"/>
+Bad (keyword stuffing): <img src="puppy.jpg" alt="puppy dog baby dog pup pups puppies doggies pups litter puppies dog retriever
+labrador wolfhound setter pointer puppy jack russell terrier puppies dog food cheap dogfood puppy food"/>
+Better: <img src="puppy.jpg" alt="puppy"/>
+Best: <img src="puppy.jpg" alt="Dalmatian puppy playing fetch"/>
 We recommend testing your content by auditing for accessibility and using a slow network connection emulator.
 Help us discover all your images
 Use semantic markup for images
@@ -55,7 +59,7 @@ Good: <img src="puppy.jpg" alt="A golden retriever puppy" />
 Bad: <div style="background-image:url(puppy.jpg)">A golden retriever puppy</div>
 Use an image sitemap
 Images are an important source of information about the content on your site. You can give Google additional details about your images, and provide the URL of images we might not have otherwise discover by adding information to an image sitemap.
-Image sitemaps can contain URLs from other domains, unlike regular sitemaps, which enforce cross-domain restrictions. This allows you to use CDNs (content delivery networks) to host images. We encourage you to verify the CDN’s domain name in Search Console so that we can inform you of any crawl errors that we may find.
+Image sitemaps can contain URLs from other domains, unlike regular sitemaps, which enforce cross-domain restrictions. This allows you to use CDNs (content delivery networks) to host images. We encourage you to verify the CDN’s domain name in Search Console so that we can inform you of any crawl errors that we may find.
 Supported image formats
 Google Images supports images in the following formats: BMP, GIF, JPEG, PNG, WebP, and SVG.
 You can also inline images as Data URIs. Data URIs provide a way to include a file, such as an image, inline by setting the src of an img element as a Base64 encoded string using the following format:
@@ -65,7 +69,7 @@ Responsive images
 Designing responsive web pages leads to better user experience, since users use them across a plethora of device types. Refer to our Web Fundamentals on Images to learn about the best practices for handling images on your website.
 Webpages use <img srcset> attribute or <picture> element to specify responsive images. However, some browsers and crawlers do not understand these attributes. We recommend that you always specify a fallback URL via the img src attribute.
 The srcset attribute allows specifying different versions of the same image, specifically for different screen sizes.
-Example: <img srcset>
+Example: <img srcset>
 <img srcset="example-320w.jpg 320w,
 example-480w.jpg 480w,
 example-800w.jpg 800w"
@@ -74,17 +78,17 @@ sizes="(max-width: 320px) 280px,
 800px"
 src="example-800w.jpg" alt="responsive web!">
 The <picture> element is a container that is used to group different <source> versions of the same image. It offers a fallback approach so the browser can choose the right image depending on device capabilities, like pixel density and screen size. The picture element also comes in handy for using new image formats with built-in graceful degradation for clients that may not yet support the new formats.
-We recommend that you always provide an img element as a fallback with a src attribute when using the picture tag using the following format:
-Example: <picture>
+We recommend that you always provide an img element as a fallback with a src attribute when using the picture tag using the following format:
+Example: <picture>
 <picture>
 <source type="image/svg+xml" srcset="pyramid.svg">
 <source type="image/webp" srcset="pyramid.webp">
 <img src="pyramid.png" alt="large PNG image...">
 </picture>
 Optimize for SafeSearch
-SafeSearch is a setting in your account that specifies whether to show or block explicit images, videos, and websites in Google Search results. You should help Google understand the nature of your images in order to apply SafeSearch settings to your images if appropriate.
+SafeSearch is a setting in your account that specifies whether to show or block explicit images, videos, and websites in Google Search results. You should help Google understand the nature of your images in order to apply SafeSearch settings to your images if appropriate.
 Group adult-only images in a common URL location
-If your site contains adult images, we strongly recommend grouping the images separately from other images on your website. For example: http//www.example.com/adult/image.jpg.
+If your site contains adult images, we strongly recommend grouping the images separately from other images on your website. For example: http//www.example.com/adult/image.jpg.
 Add metadata to adult pages
 Our algorithms use a variety of signals to decide whether an image or a whole page should be filtered from the results when the user’s SafeSearch filter is turned on. In the case of images, some of these signals are generated using machine learning, but the SafeSearch algorithms also look at simpler things such as where the image was used previously and the context in which the image was used.
 One of the strongest signals is self-marked adult pages. If you publish adult content, we recommend that you add one of the following meta tags to your pages:
@@ -93,7 +97,5 @@ One of the strongest signals is self-marked adult pages. If you publish adult co
 Many users prefer not to have adult content included in their search results (especially if kids use the same device). When you provide one of these meta tags, it helps to provide a better user experience because users don't see results which they don't want to or expect to see.
 And finally...
 Please read our SEO Starter Guide which contains lots of useful information to rank better, and if you have more questions please post them in the Webmaster Help Forum.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Images and videoGoogle Image best practicesImage sitemapsImage Rights Metadata in Google ImagesVideo best practicesVideo sitemaps and video sitemap alternativesRich media file best practices
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

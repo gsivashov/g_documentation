@@ -1,78 +1,76 @@
 https://support.google.com/webmasters/answer/156442
 
-Video best practicesGet your videos found by Google SearchOf the billions of Google searches done every day, many are looking for video content. Following the best practices listed here (as well as our usual Webmaster Guidelines) can increase the likelihood that your videos will be returned in search results.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Video best practices
+Of the billions of Google searches done every day, many are looking for video content. Following the best practices listed here (as well as our usual Webmaster Guidelines) can increase the likelihood that your videos will be returned in search results.
 Video results in Google Search appear both in combined Search results and in Video Search results. When a user clicks the video result they will be taken to your page, where they can watch your video.
-Contents
 How Google crawls a video
-About Video Search results
-Best practices
-Which URL is which
-Block a video from Google Search results
-Common video indexing mistakes
-How Google crawls a video
-In order to expose a video in search results, Google must understand something about the video. Google can extract information about a video in the following ways:
-Google can crawl the video (if in a supported video encoding) and extract a thumbnail and preview. Google can also extract some limited meaning from the audio and video of the file.
+In order to expose a video in search results, Google must understand something about the video. Google can extract information about a video in the following ways:
+Google can crawl the video (if in a supported video encoding) and extract a thumbnail and preview. Google can also extract some limited meaning from the audio and video of the file.
 Google can extract information from the page hosting the video, including the page text and meta tags.
-Google can use structured data (VideoObject) or video sitemap associated with the video.
-YouTube content: YouTube videos are always crawlable. However it is still helpful if you provide a video sitemap or structured data to help Google find the embedded YouTube video on your page. Sitemaps and structured data also help you provide us additional information about the video.
+Google can use structured data (VideoObject) or video sitemap associated with the video.
+YouTube content: YouTube videos are always crawlable. However it is still helpful if you provide a video sitemap or structured data to help Google find the embedded YouTube video on your page. Sitemaps and structured data also help you provide us additional information about the video.
 About Video Search results
 How, or if, your video shows up on search depends on how much information you provide to Google. Google requires two pieces of information to expose your video in search results: a thumbnail image and a link to the actual video file. However, the more information you provide, the better your search result experience.
 Here are the two basic levels of video search appearance:
-Basic appearance: If you provide the absolute minimum information to Google, your video can appear in combined search results and video search results with a thumbnail image and a link. You will not get any enhanced features such as video preview or content parsing. Absolute minimum information is a thumbnail image and a link to a video file.
+Basic appearance: If you provide the absolute minimum information to Google, your video can appear in combined search results and video search results with a thumbnail image and a link. You will not get any enhanced features such as video preview or content parsing. Absolute minimum information is a thumbnail image and a link to a video file.
 Example basic video result
-Enhanced appearance: If you provide more information, Google can provide more features for your video, such as video preview, video length, video date and provider information, the ability to restrict search results based on the user's country or search device, and more.
+Enhanced appearance: If you provide more information, Google can provide more features for your video, such as video preview, video length, video date and provider information, the ability to restrict search results based on the user's country or search device, and more.
 Example enhanced desktop video result
 Example enhanced mobile video result
 Best practices
-Minimum requirements for a video search result:
+Minimum requirements for a video search result:
 If you want your video to be eligible for search results:
-Google must be able to find the video. Videos are identified in the page by the presence of an HTML tag, for example: <video>, <embed>, or <object>. Ensure that the page doesn't require complex user actions or specific URL fragments to load, or Google might not find it. Tip: Although we can find videos embedded in a page through natural crawling, you can help us find your videos by posting a video sitemap.
+Google must be able to find the video. Videos are identified in the page by the presence of an HTML tag, for example: <video>, <embed>, or <object>. Ensure that the page doesn't require complex user actions or specific URL fragments to load, or Google might not find it. Tip: Although we can find videos embedded in a page through natural crawling, you can help us find your videos by posting a video sitemap.
 You must provide a high-quality thumbnail image for the video.
-Make sure that each video lives in a publicly available page where users can watch the video. The page should not be require a login by the user. The page should also not be blocked by robots.txt or noindex (it must be accessible by Google).
-The video content should apply specifically to the content of its host page. For example, if you have a recipe page for peach pie, don't embed a video about pastries in general.
+Make sure that each video lives in a publicly available page where users can watch the video. The page should not be require a login by the user. The page should also not be blocked by robots.txt or noindex (it must be accessible by Google).
+The video content should apply specifically to the content of its host page. For example, if you have a recipe page for peach pie, don't embed a video about pastries in general.
 Ensure that any information you provide in a video sitemap or video markup is consistent with the actual video content.
 For best results:
 If you take these extra steps, Google can provide better search results for your video:
 Ensure that Google can crawl your video file. If Google can crawl it, we can generate a thumbnail image for you and provide other features.
 Avoid complicated logic or scripting to show or hide videos. Google might not find all your videos if we depend on complex user interactions of conditional resource loading.
 Provide a good user experience on your video hosting pages.
-Provide structured data, a video sitemap, or both, describing your video. Structured data is best when Google already knows about the page; a sitemap is good for helping Google find new content or learn about new or changed content. Some sites use both: on-page structured data for all videos plus a video sitemap to tell Google about any new, time-sensitive, or hard-to-find videos.
+Provide structured data, a video sitemap, or both, describing your video. Structured data is best when Google already knows about the page; a sitemap is good for helping Google find new content or learn about new or changed content. Some sites use both: on-page structured data for all videos plus a video sitemap to tell Google about any new, time-sensitive, or hard-to-find videos.
 Test your structured data or sitemaps:
 To test your video structured data, use the Rich Results test.
-To test or submit sitemaps or feeds, first add and verify your site in Search Console. Make sure that you have verified both the site that contains the sitemap or feed and all of the sites referenced in the sitemap or feed. Test or submit your sitemap in the Search Console Sitemaps tool.
+To test or submit sitemaps or feeds, first add and verify your site in Search Console. Make sure that you have verified both the site that contains the sitemap or feed and all of the sites referenced in the sitemap or feed. Test or submit your sitemap in the Search Console Sitemaps tool.
 Provide unique descriptive data for each video in your structured data or sitemap.
 Tell Google about any updates to your content.
 Handle removed videos appropriately.
 Add and verify your site in Google Search Console. Search Console shows you any problems that Google encounters when crawling your site. If you are using sitemaps, submit them either through Search Console, or by listing them in the robots.txt file.
-Read about common video indexing mistakes.
+Read about common video indexing mistakes.
 If you have a live video, you can tag it as live streaming in search results.
 Provide a high-quality thumbnail for your video
 To be eligible to appear in Google Video Search results, a video must have a thumbnail image that can be shown in search results.
 You can provide (or enable) a thumbnail in several ways:
-If using the <video> HTML tag, specify the poster attribute.
-In a video sitemap, specify <video:thumbnail_loc>
-In structured data, specify VideoObject.thumbnailUrl
-Provide a video in a crawlable format and we can generate a thumbnail for you.
-Preferred formats: JPG, PNG
+If using the <video> HTML tag, specify the poster attribute.
+In a video sitemap, specify <video:thumbnail_loc>
+In structured data, specify VideoObject.thumbnailUrl
+Provide a video in a crawlable format and we can generate a thumbnail for you.
+Preferred formats: JPG, PNG
 Size: From 160x90 to 1920x1080 pixels
 Location: The preview thumbnail must be accessible by Googlebot (that is, not blocked by robots.txt or a login requirement).
 Make your video crawlable
 If Google can crawl your video, we can generate a thumbnail image for you, enable video preview, and provide other features.
 To make your video crawlable:
-The video must be in a supported format.
+The video must be in a supported format.
 The video host page and streaming file bytes must not be blocked to Google. (Blocked means that the page or file are paywall-protected, login required, noindex or robots.txt blocked.)
-The video host page and the server streaming the actual video must have the bandwidth to be crawled. So if your landing page at example.com/puppies.html has an embedded puppies video served by somestreamingservice.com, both example.com and somestreamingservice.com must be unblocked and have available server load.
+The video host page and the server streaming the actual video must have the bandwidth to be crawled. So if your landing page at example.com/puppies.html has an embedded puppies video served by somestreamingservice.com, both example.com and somestreamingservice.com must be unblocked and have available server load.
 Supported video encodings
 Google can crawl the following video file types: .3g2, .3gp2, .3gp, .3gpp, .asf, .avi, .divx, .f4v, .flv, .m2v,, .m3u8, .m4v, .mkv, .mov, .mp4, .mpe, .mpeg, .mpg, .ogv, .qvt, .ram, .rm, .vob, .webm, .wmv, .xap
 Flash is no longer supported in most mobile web browsers, and is planned to be deprecated by Adobe in 2020. If your video is in Flash format, consider transcoding it to another format supported by mobile browsers.
 Describe your video using structured data or a video sitemap
 You can provide additional information about your video to Google using structured data, a video sitemap, or both. Providing this extra information can enable more features in search results and help us understand and rank your video better.
-Both techniques can expose the same information to Google, but a video sitemap can be useful for helping Google find new content or updated content more quickly, while structured data might be more familiar to some people than sitemaps, and be more consistent with their website's use of structured data to enable rich results. You can use both techniques for your website, but if you do, be sure that your data is consistent in both places.
+Both techniques can expose the same information to Google, but a video sitemap can be useful for helping Google find new content or updated content more quickly, while structured data might be more familiar to some people than sitemaps, and be more consistent with their website's use of structured data to enable rich results. You can use both techniques for your website, but if you do, be sure that your data is consistent in both places.
 Structured data
 Add structured data describing your video on the hosting page. Structured data is information that you provide according to a well-defined format using either tags or JSON. When Google crawls the page, it can read and understand that format to extract information about your video.
 There are several formats that you can use, but Google strongly recommends using schema.org's VideoObject syntax in JSON-LD format.
 Schema.org VideoObject (Recommended)
-Embed code for VideoObject on the page. The VideoObject is associated with the embedded video that has a matching source URL.
+Embed code for VideoObject on the page. The VideoObject is associated with the embedded video that has a matching source URL.
 Learn how to embed a VideoObject description in your page for each video.
 VideoObject JSON-LD example
 <html>
@@ -100,21 +98,20 @@ poster="https://example.com/imgs/schnitzel-small.jpg"/>
 </body>
 </html>
 Simple VideoObject or TV/Movie rich result?
-If you are simply describing a television show or movie with information such as reviews or cast information, or if your video requires complex actions such as purchase or rental, you should implement the TV or Movie structured data type on your website. Using TV or Movie structured data enables a rich result in Search that can include ratings, reviews, and actor information, as well as links to free or paid streaming services. Rich results are shown in the combined search results pane only.
+If you are simply describing a television show or movie with information such as reviews or cast information, or if your video requires complex actions such as purchase or rental, you should implement the TV or Movie structured data type on your website. Using TV or Movie structured data enables a rich result in Search that can include ratings, reviews, and actor information, as well as links to free or paid streaming services. Rich results are shown in the combined search results pane only.
 Open Graph Protocol
-As an alternative to the schema.org VideoObject syntax, Google can also process some Open Graph Protocol metadata. The tags should describe the primary and most prominent video on the page.
+As an alternative to the schema.org VideoObject syntax, Google can also process some Open Graph Protocol metadata. The tags should describe the primary and most prominent video on the page.
 Video sitemap
-A video sitemap is an XML sitemap that Google uses to find videos on your site, and can also provide information about a video to Google. A video sitemap entry can describe a video the same way as a VideoObject structured data element. The advantage of using a video sitemap is that it also helps Google find new or updated videos, and that it can describe many videos in one file rather than requiring Google to crawl each page and discover changes individually.
+A video sitemap is an XML sitemap that Google uses to find videos on your site, and can also provide information about a video to Google. A video sitemap entry can describe a video the same way as a VideoObject structured data element. The advantage of using a video sitemap is that it also helps Google find new or updated videos, and that it can describe many videos in one file rather than requiring Google to crawl each page and discover changes individually.
 Learn how to create a video sitemap.
 Updating your content
-Notifying Google of Video Updates
-You can tell Google when a video has changed, depending on how you helped us find or read your content. If you simply swap out the video URL or source file with no other changes, Google might not notice the change.
+You can tell Google when a video has changed, depending on how you helped us find or read your content. If you simply swap out the video URL or source file with no other changes, Google might not notice the change.
 Structured data: When your on-page video structured data changes, Google will see the change the next time it crawls the page. You can notify Google of a changed page by using a normal sitemap or a video sitemap.
-Video sitemaps and mRSS: When you post a video sitemap, Google will periodically recrawl it and update search results with any changed video data. You can also resubmit a sitemap or notify Google of a changed sitemap to request an immediate recrawl. Find out more about submitting sitemaps and using HTTP requests to update sitemaps.
-Removing a video
+Video sitemaps and mRSS: When you post a video sitemap, Google will periodically recrawl it and update search results with any changed video data. You can also resubmit a sitemap or notify Google of a changed sitemap to request an immediate recrawl. Find out more about submitting sitemaps and using HTTP requests to update sitemaps.
+Removing a video
 We recommend the following options to remove a video from your site:
 Return an 404 (Not found) HTTP status code for any landing page that contains a removed or expired video. In addition to the 404 response code, you can still return the HTML of the page to make the change transparent to most users.
-Indicate an expiration dates in your schema.org structured data, video sitemap (use the <video:expiration_date> element), or mRSS feed (<dcterms:valid> tag). Here is an example of a video sitemap with a video that expired in November 2009:
+Indicate an expiration dates in your schema.org structured data, video sitemap (use the <video:expiration_date> element), or mRSS feed (<dcterms:valid> tag). Here is an example of a video sitemap with a video that expired in November 2009:
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url>
@@ -144,8 +141,7 @@ In addition to having great video, you should think about the design of the HTML
 Create a standalone landing page for each video, where you can gather all its related information. If you do this, be sure to provide unique information—such as descriptive titles and captions—on each page.
 Make it as easy as possible for users to find and play the videos on each landing page. The presence of a prominent, embedded video player using widely supported video formats can make your videos more attractive to users and easier for Google to index.
 Restrict users by platform
-You can restrict search results for your video based on the searcher's platform. Platforms include computer browsers, mobile device browsers, and television browsers.
-Video Platform Restrictions
+You can restrict search results for your video based on the searcher's platform. Platforms include computer browsers, mobile device browsers, and television browsers.
 Restrict by platform using a video sitemap
 If your video does not have any platform restrictions, you should omit the platform restriction tag.
 In video sitemaps, the <video:platform> tag can be used to allow or prevent the video from appearing in search results from specified devices. Only one <video:platform> tag is allowed per video entry. The tag has a required relationship attribute that specifies whether the platforms listed are excluded or required.
@@ -170,11 +166,10 @@ http://www.example.com/videoplayer?video=123
 Restrict by platform using structured data or mRSS
 There is no platform restriction tag for VideoObject or mRSS feeds.
 Restrict users by country
-You can restrict search results for your video based on the searcher's location. If your video does not have any country restrictions, you should omit the country restriction tags.
-Video Country Restrictions
+You can restrict search results for your video based on the searcher's location. If your video does not have any country restrictions, you should omit the country restriction tags.
 Restrict by country using a video sitemap
-In a video sitemap, the <video:restriction> tag can be used to allow or deny the video from appearing in specific countries. Only one <video:restriction> tag is allowed per video entry.
-The <video:restriction> tag should contain one or more space-delimited ISO 3166 country codes. The required relationship attribute specifies the type of restriction.
+In a video sitemap, the <video:restriction> tag can be used to allow or deny the video from appearing in specific countries. Only one <video:restriction> tag is allowed per video entry.
+The <video:restriction> tag should contain one or more space-delimited ISO 3166 country codes. The required relationship attribute specifies the type of restriction.
 relationship="allow" - The video will appear only for the specified countries. If no countries are specified, the video will not appear anywhere.
 relationship="deny" - The video will appear everywhere except for the specified countries. If no countries are specified, the video will appear everywhere.
 In this video sitemap example, the video will appear only in Canada and Mexico.
@@ -195,7 +190,7 @@ http://www.example.com/player?video=123
 </video:video>
 </url>
 Restrict by country using structured data
-If you use VideoObject structured data to describe a video, set the VideoObject.regionsAllowed property to specify which regions can get the video search result. If you omit this property, all regions can see the video in search results.
+If you use VideoObject structured data to describe a video, set the VideoObject.regionsAllowed property to specify which regions can get the video search result. If you omit this property, all regions can see the video in search results.
 Restrict by country using mRSS
 Videos in mRSS feeds can specify country restrictions can by using the media:restriction tag with the required type attribute set to country. media:restriction also requires a relationship attribute set to allow or deny and accepts a space-delimited list of ISO 3166 country codes.
 In this example mRSS entry, this video will appear everywhere except for the United States and Canada.
@@ -249,14 +244,13 @@ When including structured data, a video sitemap, or a sitemap alternate, you sho
 Block a video from Google Search results
 If you want to hide a video from Google Search results, there are a few methods to do so:
 Put up some kind of login screen for the host page and video file.
-Add a country restriction in a video sitemap for the video, and specify an empty allow list:
+Add a country restriction in a video sitemap for the video, and specify an empty allow list:
 <video:restriction relationship="allow"></video:restriction>
-Use robots.txt to block the source video and/or the host page. If the video and host page are the same site, block the source file URL (the contentUrl address) and the host page URL. If the video is hosted on a different CDN, just block the host/player page.
-Return a noindex HTTP response for the host page and the file (if the file exists on your page).
+Use robots.txt to block the source video and/or the host page. If the video and host page are the same site, block the source file URL (the contentUrl address) and the host page URL. If the video is hosted on a different CDN, just block the host/player page.
+Return a noindex HTTP response for the host page and the file (if the file exists on your page).
 Note that none of these methods prevent another page from linking to your video or page.
 Common video indexing mistakes
-These are some of the most common video indexing mistakes we have seen and how we suggest you resolve them to increase the likelihood that your videos will be shown in search results. You should also take a look at our Webmaster Guidelines.
-Common Video Indexing Pitfalls
+These are some of the most common video indexing mistakes we have seen and how we suggest you resolve them to increase the likelihood that your videos will be shown in search results. You should also take a look at our Webmaster Guidelines.
 Blocking resources with robots.txt
 A common practice is to use robots.txt to prevent search engines from crawling JavaScript, video, and image files. In order for Google to index a video, we must be able to see the thumbnail specified in your structured data or sitemap, the page the video is on, the video itself, and any JavaScript or other resources needed to load the video. Make sure that your robots.txt rules do not block any of these video-related resources.
 If you are using video sitemaps or mRSS, make sure that Google can access any sitemap or mRSS feed that you submit. If these are blocked by robots.txt, we will not be able to read them.
@@ -269,14 +263,12 @@ Setting an expiration date in the past
 When Google sees a video with an expiration date in the past, we will not include the video in any search results. This includes expiration dates from sitemaps, on-page structured data, and the meta expiration tag in the site header. Make sure that your expiration dates are correct for each video. While this is useful if your video is no longer available after the expiration date, it's easy to accidentally setting the date to the past for an available video. If a video does not expire, do not include any expiration information.
 Listing removed videos
 When an embedded video has been removed from a page, some sites use a Flash player to tell users that the video is no longer available. This can be problematic for search engines, and therefore, we recommend the following options:
-Return a 404 (Not found) HTTP status code for any landing page that contains a removed or expired video. In addition to the 404 response code, you can still return the HTML of the page to make this transparent to most users.
-Indicate expiration dates in on-page structured data, video sitemaps (use the <video:expiration_date> element), or mRSS feed (<dcterms:valid> tag) submitted to Google.
+Return a 404 (Not found) HTTP status code for any landing page that contains a removed or expired video. In addition to the 404 response code, you can still return the HTML of the page to make this transparent to most users.
+Indicate expiration dates in on-page structured data, video sitemaps (use the <video:expiration_date> element), or mRSS feed (<dcterms:valid> tag) submitted to Google.
 Complex JavaScript and URL fragments
 When designing your site, it's important to configure your video pages without any overly complex JavaScript. If you are using overly complicated JavaScript to embed video objects from within JavaScript under only certain circumstances, then it's also possible that we will not correctly index your videos. URLs for content or landing-pages that require 'hash marks' or fragment identifiers are not supported. Also, using Flash on the page can prevent efficient indexing. For best results, show your video title and description in plain HTML markup rather than using Flash.
-If you are using on-page structured data, the structured data should be present without running Flash or other embedded players.
+If you are using on-page structured data, the structured data should be present without running Flash or other embedded players.
 Small, hidden, or difficult to find videos
 Make sure that your videos are visible and easy to find on your video pages. Google suggests using a standalone page for each video with a descriptive title or description unique to each individual video. Videos should be prominent on the page and should not be hidden or difficult to find.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Images and videoGoogle Image best practicesImage sitemapsImage Rights Metadata in Google ImagesVideo best practicesVideo sitemaps and video sitemap alternativesRich media file best practices
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

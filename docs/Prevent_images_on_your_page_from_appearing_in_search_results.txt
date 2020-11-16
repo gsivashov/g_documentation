@@ -1,6 +1,11 @@
 https://support.google.com/webmasters/answer/35308
 
-Prevent images on your page from appearing in search resultsFor quick removal
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Prevent images on your page from appearing in search results
+For quick removal
 Use the Remove URLs tool. You should see results fairly quickly.
 For non-emergency image removal
 To prevent images from your site appearing in Google's search results, add a robots.txt file to the root of the server that blocks the image. It takes longer to remove an image from search results than the Remove URLs tool, but is an Internet standard that applies to all search engines, and you have more flexible control through the use of wildcards or subpath blocking.
@@ -17,7 +22,5 @@ Disallow: /*.gif$
 By specifying Googlebot-Image as the User-agent, the images will be excluded from Google Image Search. It will also prevent cropping of the image for display within Mobile Image Search, as the image will be completely removed from Google's Image index. If you would like to exclude the images from all Google searches (including Google web search and Google Images), specify User-agent Googlebot.
 How do I remove images from properties that I don't own?
 See the Google Search help documentation on how to remove an image from search results.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Block access to your contentControl what you share with GoogleBlock search indexing with 'noindex'About robots.txtOpt out of display on Google Local and other Google propertiesPrevent images on your page from appearing in search results
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-12 UTC.

@@ -1,26 +1,29 @@
 https://support.google.com/webmasters/answer/9253249
 
-Provide a publication date to Google SearchWhen Google can determine the publication and update dates of your page or video, it can expose this information in Search results, if this information is considered to be useful to the user.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Provide a publication date to Google Search
+When Google can determine the publication and update dates of your page or video, it can expose this information in Search results, if this information is considered to be useful to the user.
 You can provide information to help Google determine the publication and last updated date.
 Google doesn't depend on a single dating factor because all factors can be prone to issues. That's why our systems look at several factors to determine our best estimate of when a page was published or significantly updated.
 How to provide date information to Google
 Here is how you can provide date information to Google:
 You can provide a publication date and/or a last updated date.
-We recommend providing dates in both user-visible format on the page, and also in structured data.
-For a user-visible date: Show the page date prominently on the page itself. Label your dates appropriately. Here are examples of publication and update dates with date and optional time and timezone. (The exact wording shown here is not required.)
+We recommend providing dates in both user-visible format on the page, and also in structured data.
+For a user-visible date: Show the page date prominently on the page itself. Label your dates appropriately. Here are examples of publication and update dates with date and optional time and timezone. (The exact wording shown here is not required.)
 Posted Feb 4, 2019
 Published February 4, 2019
 Last updated: Feb 14, 2018
 Updated Feb 14, 2019 8pm ET
-For structured data: Your page should implement a subtype of CreativeWork (such as Article, BlogPosting, or VideoObject), and specify the datePublished and/or dateModified fields (see guidelines for AMP and non-AMP pages). Be sure to follow Google's structured data guidelines to help our crawlers understand your article dates.
-The date is required; the time is not: The time portion is optional in both user-visible and structured data dates.
-If specifying a time, specify the correct time zone. If you choose to specify a time, be sure to provide the correct timezone, taking into account daylight saving time as appropriate.
-Make your dates and times consistent. Ensure that the date (and optional time and time zone) match between the equivalent user-visible and structured values. Time and time zone are optional in user-visible data even if provided in structured data.
-Don't specify future dates, or the date of the action described on the page. The dates should describe the publication or update date of the page, not the stories or events described therein. You can add Event markup to the page to describe the activities listed on the page, if you like.
+For structured data: Your page should implement a subtype of CreativeWork (such as Article, BlogPosting, or VideoObject), and specify the datePublished and/or dateModified fields (see guidelines for AMP and non-AMP pages). Be sure to follow Google's structured data guidelines to help our crawlers understand your article dates.
+The date is required; the time is not: The time portion is optional in both user-visible and structured data dates.
+If specifying a time, specify the correct time zone. If you choose to specify a time, be sure to provide the correct timezone, taking into account daylight saving time as appropriate.
+Make your dates and times consistent. Ensure that the date (and optional time and time zone) match between the equivalent user-visible and structured values. Time and time zone are optional in user-visible data even if provided in structured data.
+Don't specify future dates, or the date of the action described on the page. The dates should describe the publication or update date of the page, not the stories or events described therein. You can add Event markup to the page to describe the activities listed on the page, if you like.
 ​Minimize the presence of other dates on the page: If you've followed the best practices above and find incorrect dates are being selected, consider removing some or all other dates that appear on the page.
 If your page is intended to show up in Google News search, you should follow these additional guidelines.
-While Google doesn't guarantee that a date, whether visible or in structured data, will be shown in search results, following these guidelines does help our algorithms find and process the information.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Search AppearanceCreate good titles and snippets in Search ResultsEnable Search result features for your siteTools for adding structured data (for beginners)Enriched Search ResultsProvide a publication date to Google SearchDefine a favicon to show in search resultsFlexible Sampling general guidanceTop Places ListFeatured snippets and your website
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+While Google doesn't guarantee that a date, whether visible or in structured data, will be shown in search results, following these guidelines does help our algorithms find and process the information.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-12 UTC.

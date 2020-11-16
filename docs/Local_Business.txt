@@ -1,9 +1,9 @@
 https://developers.google.com/search/docs/data-types/local-business
 
 Home
-Products
-Search for Developers
-Reference
+Google Search Central
+Documentation
+Advanced SEO
 Local Business
 When users search for businesses on Google Search or Maps, Search results may
 display a prominent Knowledge Graph card with details about a business that matched
@@ -738,4 +738,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-08-06 UTC.
+Last updated 2020-11-12 UTC.

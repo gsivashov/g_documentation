@@ -1,9 +1,9 @@
 https://developers.google.com/search/docs/guides/dynamic-rendering
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Implement dynamic rendering
 This page explains how to provide crawlers with a non-JavaScript version of a page.
 For more information on how to serve different versions of your page for different user agents (mobile, tablet, or desktop),
@@ -159,4 +159,4 @@ user agent for the Structured Data Testing Tool to test the pre-rendered content
 Make sure JSON-LD script tags are included in the dynamically rendered HTML of your
 content. Consult the documentation of your rendering solution for more information.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-11-11 UTC.

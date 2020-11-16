@@ -1,13 +1,17 @@
 https://support.google.com/webmasters/topic/4581190
 
-Manage your sitemapsLearn about sitemapsNext: Build and submit a sitemapSitemaps in Search Console - Google Search Console Training
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Learn about sitemaps
 What is a sitemap?
 A sitemap is a file where you provide information about the pages, videos, and other files on your site, and the relationships between them. Search engines like Google read this file to more intelligently crawl your site. A sitemap tells Google which pages and files you think are important in your site, and also provides valuable information about these files: for example, for pages, when the page was last updated, how often the page is changed, and any alternate language versions of a page.
 You can use a sitemap to provide information about specific types of content on your pages, including video and image content. For example:
 A sitemap video entry can specify the video running time, category, and age-appropriateness rating.
 A sitemap image entry can include the image subject matter, type, and license.
 Do I need a sitemap?
-If your site’s pages are properly linked, Google can usually discover most of your site. Even so, a sitemap can improve the crawling of larger or more complex sites, or more specialized files.
+If your site’s pages are properly linked, Google can usually discover most of your site. Even so, a sitemap can improve the crawling of larger or more complex sites, or more specialized files.
 Using a sitemap doesn't guarantee that all the items in your sitemap will be crawled and indexed, as Google processes rely on complex algorithms to schedule crawling. However, in most cases, your site will benefit from having a sitemap, and you'll never be penalized for having one.
 You might need a sitemap if:
 Your site is really large. As a result, it’s more likely Google web crawlers might overlook crawling some of your new or recently updated pages.
@@ -19,8 +23,5 @@ Your site is "small". By small, we mean about 500 pages or less on your site. (O
 You're on a simple site hosting service like Blogger or Wix. If your site is on a service that helps you set up a site quickly with pre-formatted pages and navigation elements, your service might create a sitemap for your automatically, and you don't need to do anything. Search your service's documentation for the word "sitemap" to see if a sitemap is generated automatically, or if they recommend creating your own (and if so, how to submit a sitemap on your hosting service).
 Your site is comprehensively linked internally. This means that Google can find all the important pages on your site by following links starting from the homepage.
 You don't have many media files (video, image) or news pages that you need to appear in the index. Sitemaps can help Google find and understand video and image files, or news articles, on your site, if you want them to appear in Google Search results. If you don't need these results to appear in Image, Video, or News results, you might not need a sitemap.
-Next: Build and submit a sitemap
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Manage your sitemapsLearn about sitemapsBuild and submit a sitemapSitemaps reportSplit up your large sitemapsSitemap extensionsVideo sitemaps and video sitemap alternativesImage sitemapsCreate a Google News sitemap
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

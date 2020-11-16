@@ -1,6 +1,11 @@
 https://support.google.com/webmasters/answer/66359
 
-Avoid creating duplicate contentDuplicate content generally refers to substantive blocks of content within or across domains that either completely match other content or are appreciably similar. Mostly, this is not deceptive in origin. Examples of non-malicious duplicate content could include:
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Avoid creating duplicate content
+Duplicate content generally refers to substantive blocks of content within or across domains that either completely match other content or are appreciably similar. Mostly, this is not deceptive in origin. Examples of non-malicious duplicate content could include:
 Discussion forums that can generate both regular and stripped-down pages targeted at mobile devices
 Store items shown or linked via multiple distinct URLs
 Printer-only versions of web pages
@@ -20,7 +25,5 @@ Google does not recommend blocking crawler access to duplicate content on your w
 Duplicate content on a site is not grounds for action on that site unless it appears that the intent of the duplicate content is to be deceptive and manipulate search engine results. If your site suffers from duplicate content issues, and you don't follow the advice listed above, we do a good job of choosing a version of the content to show in our search results.
 However, if our review indicated that you engaged in deceptive practices and your site has been removed from our search results, review your site carefully. If your site has been removed from our search results, review our Webmaster Guidelines for more information. Once you've made your changes and are confident that your site no longer violates our guidelines, submit your site for reconsideration.
 In rare situations, our algorithm may select a URL from an external site that is hosting your content without your permission. If you believe that another site is duplicating your content in violation of copyright law, you may contact the site’s host to request removal. In addition, you can request that Google remove the infringing page from our search results by filing a request under the Digital Millennium Copyright Act.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-General guidelinesSearch Engine Optimization (SEO) Starter GuideSecure your site with HTTPSKeep a simple URL structureQualify your outbound links to GoogleTag site for child-directed treatmentBrowser compatibilityAvoid creating duplicate contentMake your links crawlableBest practices for website testing with Google Search
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-12 UTC.

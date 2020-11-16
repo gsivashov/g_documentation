@@ -1,8 +1,13 @@
-https://support.google.com/webmasters/answer/1061943
+https://support.google.com/webmasters/topic/9426101
 
-Overview of Google crawlers (user agents)See which robots Google uses to crawl the web"Crawler" is a generic term for any program (such as a robot or spider) that is used to automatically discover and scan websites by following links from one webpage to another. Google's main crawler is called Googlebot. This table lists information about the common Google crawlers you may see in your referrer logs, and how they should be specified in robots.txt, the robots meta tags, and the X-Robots-Tag HTTP directives.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Overview of Google crawlers (user agents)
+"Crawler" is a generic term for any program (such as a robot or spider) that is used to automatically discover and scan websites by following links from one webpage to another. Google's main crawler is called Googlebot. This table lists information about the common Google crawlers you may see in your referrer logs, and how they should be specified in robots.txt, the robots meta tags, and the X-Robots-Tag HTTP directives.
 The following table shows the crawlers used by various products and services at Google:
-User agent token is used in the User-agent: line in robots.txt to match a crawler type when writing crawl rules for your site. Some crawlers have more than one token, as shown in the table; you need to match only one crawler token for a rule to apply. This list is not complete, but covers most of the crawlers you might see on your website.
+User agent token is used in the User-agent: line in robots.txt to match a crawler type when writing crawl rules for your site. Some crawlers have more than one token, as shown in the table; you need to match only one crawler token for a rule to apply. This list is not complete, but covers most of the crawlers you might see on your website.
 Full user agent string is a full description of the crawler, and appears in the request and your web logs.
 These values can be spoofed. If you need to verify that the visitor is Googlebot, you should use reverse DNS lookup.
 Crawler
@@ -38,13 +43,13 @@ Googlebot Video
 Googlebot-Video
 Googlebot
 Googlebot-Video/1.0
-Googlebot (Desktop)
+Googlebot (Desktop)
 Googlebot
 Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
-Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/W.X.Y.Z‡ Safari/537.36
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/W.X.Y.Z‡ Safari/537.36
 or (rarely used):
 Googlebot/2.1 (+http://www.google.com/bot.html)
-Googlebot (Smartphone)
+Googlebot (Smartphone)
 Googlebot
 Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/W.X.Y.Z‡ Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 Mobile AdSense
@@ -56,15 +61,15 @@ AdsBot-Google-Mobile-Apps
 AdsBot-Google-Mobile-Apps
 Feedfetcher
 FeedFetcher-Google
-Does not respect robots.txt rules - here's why
+Does not respect robots.txt rules - here's why
 FeedFetcher-Google; (+http://www.google.com/feedfetcher.html)
 Google Read Aloud
 Google-Read-Aloud
 Does not respect robots.txt rules - here's why
 Current agents:
-Desktop agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36 (compatible; Google-Read-Aloud;  +https://support.google.com/webmasters/answer/1061943)
-Mobile agent: Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36 (compatible; Google-Read-Aloud; +https://support.google.com/webmasters/answer/1061943)
-Former agent (deprecated): google-speakr
+Desktop agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36 (compatible; Google-Read-Aloud; +https://developers.google.com/search/docs/advanced/crawling/overview-google-crawlers)
+Mobile agent: Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36 (compatible; Google-Read-Aloud; +https://developers.google.com/search/docs/advanced/crawling/overview-google-crawlers)
+Former agent (deprecated): google-speakr
 Duplex on the web
 DuplexWeb-Google
 May ignore the * user-agent wildcard - here's why
@@ -73,7 +78,7 @@ Google Favicon
 (Retrieves favicons for various services)
 Google Favicon
 For user-initiated requests, ignores robots.txt rules
-Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/49.0.2623.75 Safari/537.36 Google Favicon
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon
 Web Light
 googleweblight
 Does not respect robots.txt rules - here's why
@@ -97,7 +102,5 @@ User agents in robots meta tags
 Some pages use multiple robots meta tags to specify directives for different crawlers, like this:
 <meta name="robots" content="nofollow"><meta name="googlebot" content="noindex">
 In this case, Google will use the sum of the negative directives, and Googlebot will follow both the noindex and nofollow directives. More detailed information about controlling how Google crawls and indexes your site.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Google crawlersOverview of Google crawlers (user agents)GooglebotGoogle Read Aloud user agentAPIs-Google User AgentFeedfetcherDuplex on the web user agentVerifying Googlebot
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-12 UTC.

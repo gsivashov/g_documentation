@@ -1,5 +1,9 @@
 https://support.google.com/webmasters/answer/81749
 
+Home
+Google Search Central
+Documentation
+Advanced SEO
 Ways to Prevent Comment Spam
 Comments are a great way for webmasters to build community and readership. Unfortunately, they're often abused by spammers and nogoodniks, many of whom use scripts or other software to generate and post spam. If you've ever received a comment that looked like an advertisement or a random link to an unrelated site, then you've encountered comment spam.
 This type of spam can be harmful to your site in several ways including:
@@ -19,7 +23,7 @@ Many commenting systems require users to prove they're a real live human, not a 
 Google's free reCAPTCHA's service is easy to implement on your site. In addition, data collected from the service is used to improve the process of scanning text, such as from books, newspapers, or maps. By using reCAPTCHA, you're not only protecting your site from spammers; you're helping to digitize the world's books. You can sign up here if you’d like to implement reCAPTCHA for free on your own site. reCAPTCHA Plugins are available for popular applications and programming environments such as WordPress and PHP.
 You can also look into external tools that can help you combat comment spam. For example, your content management system might have useful tools available to install. There are also a number of free tools like Project Honeypot that can help prevent and fight user-generated spam on your site. Visit their websites for instructions on how to implement their tools.
 Use "nofollow" or more specific attributes
-Together with Yahoo! and MSN, Google introduced the "nofollow" HTML microformat several years ago, and the attribute has been widely adopted. Any link with the rel="nofollow" or more specific attributes such as rel="sponsored", will generally not be used to calculate PageRank or determine the relevancy of your pages for a user query. For example, if a spammer includes a link in your comments like this:
+Together with Yahoo! and MSN, Google introduced the "nofollow" HTML microformat several years ago, and the attribute has been widely adopted. Any link with the rel="nofollow" or more specific attributes such as rel="sponsored", will generally not be used to calculate PageRank or determine the relevancy of your pages for a user query. For example, if a spammer includes a link in your comments like this:
 <a href="http://www.example.com/">This is a nice site!</a>
 it will get converted to:
 <a href="http://www.example.com/" rel="nofollow">This is a nice site! </a>
@@ -41,7 +45,5 @@ Use a blacklist to prevent repetitive spamming attempts
 Once you find a single spammy profile, make it simple to remove any others. For example, if you see several spammy profiles coming from the same IP address, you can add that IP address to a permanent ban list.
 Monitor your site for spammy content
 One of the best tools for this is Google Alerts. Set up a site: query using commercial or adult keywords that you wouldn't expect to see on your site. Google Alerts is also a great tool to help detect hacked pages.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Quality guidelinesAutomatically generated contentSneaky redirectsLink schemesCloakingHidden text and linksDoorway pagesScraped contentAffiliate programsIrrelevant keywordsCreating pages with malicious behaviorUser-generated spamWays to Prevent Comment SpamReport spam, paid links, or malware
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

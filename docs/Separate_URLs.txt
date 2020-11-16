@@ -1,9 +1,9 @@
 https://developers.google.com/search/mobile-sites/mobile-seo/separate-urls
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Separate URLs
 Google doesn't recommend Separate URLs as a site setup
 because it's difficult to implement and maintain. Consider

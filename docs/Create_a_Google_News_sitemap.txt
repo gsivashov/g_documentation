@@ -1,6 +1,11 @@
 https://support.google.com/webmasters/answer/9606710
 
-Manage your sitemapsCreate a Google News sitemapNews sitemap guidelines
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Create a Google News sitemap
+News sitemap guidelines
 When you create your News sitemap, follow the requirements below:
 Include URLs for articles published in the last 2 days. You can remove articles after 2 days from the News sitemap, but they remain in the index for the regular 30-day period.
 Update your News sitemap with new articles as they're published. Google News crawls News sitemaps as often as it crawls the rest of your site.
@@ -50,7 +55,5 @@ Complete date plus hours, minutes, seconds, and a decimal fraction of a second: 
 Yes
 The title of the news article.
 Tip: The title can be shortened for space reasons when shown on Google News. Include the title of the article as it appears on your site. Do not include author name, publication name, or publication date in the title tag.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Manage your sitemapsLearn about sitemapsBuild and submit a sitemapSitemaps reportSplit up your large sitemapsSitemap extensionsVideo sitemaps and video sitemap alternativesImage sitemapsCreate a Google News sitemap
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

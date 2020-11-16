@@ -1,9 +1,9 @@
 https://developers.google.com/search/docs/guides/validate-amp
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Validate AMP content for Google Search
 After you've created AMP content, here are
 some ways to validate your AMP content for Google Search:
@@ -47,4 +47,4 @@ How
 do I fix validation errors?
 Debug AMP Cache issues
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-11-12 UTC.

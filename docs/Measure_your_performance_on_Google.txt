@@ -1,6 +1,11 @@
 https://support.google.com/webmasters/answer/9131543
 
-Measure your performance on GoogleLearn how often your site appears on Google and whether people click through to your site.
+Home
+Google Search Central
+Documentation
+Quickstart
+Measure your performance on Google
+Learn how often your site appears on Google and whether people click through to your site.
 Step 1: Is your site on Google?
 If you use a site hosting service such as Squarespace or Wix, you're probably set up for search engines to find you. However, to confirm whether your site is known by Google, search for site:<your_site_URL> on Google. For example, if your site were http://www.wikipedia.org, you'd search for this: site:wikipedia.org.
 If no pages from your site appear in the search results, here are the most common reasons why:
@@ -16,7 +21,5 @@ Impressions: How many times your site has been seen by someone searching on Goog
 Clicks: How many times someone has clicked a link to your site in search results.
 Average position: The average position of your site in search results (where position 1 is the top position).
 Click through the chart in search results to see more information, including what terms people were searching for when your site came up.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Basic usersHow search works (for beginners)Optimize your site for search enginesMeasure your performance on GoogleWhy did I get an email from Search Console?
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

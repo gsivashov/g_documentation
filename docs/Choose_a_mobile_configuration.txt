@@ -1,9 +1,9 @@
 https://developers.google.com/search/mobile-sites/mobile-seo
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Choose a mobile configuration
 Let's make sure that your site shows up in search results. Here you can learn how to
 configure your site for multiple devices and help search engines understand your

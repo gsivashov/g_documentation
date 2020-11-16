@@ -1,9 +1,7 @@
 https://developers.google.com/search/docs/guides/prototype
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
 Build, Test, and Release Your Structured Data
 Google recommends becoming a
 verified site owner

@@ -1,9 +1,9 @@
 https://developers.google.com/search/mobile-sites/mobile-seo/dynamic-serving
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Dynamic serving
 This page explains how to serve different versions of your page for different user agents (mobile, tablet, or desktop). For more information on how to provide crawlers with a non-JavaScript version of a page see our guide on dynamic rendering.
 Dynamic serving is a setup where the server responds with different HTML (and

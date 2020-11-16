@@ -1,9 +1,9 @@
 https://developers.google.com/search/docs/guides/mobile-recharge
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Mobile Recharge Early Adopters Program
 Mobile Recharge on Search enables people to easily search for and compare offers and discounts
 for prepaid mobile recharge plans on their Android device. People can also use the mobile wallet

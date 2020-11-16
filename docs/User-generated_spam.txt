@@ -1,13 +1,16 @@
 https://support.google.com/webmasters/answer/2721437
 
-User-generated spamGoogle’s Webmaster Guidelines outline best practices for website owners, and the use of techniques that violate our guidelines may cause us to take action on a site. However, not all violations of our Webmaster Guidelines are related to content created intentionally by a site’s owner. Sometimes, spam can be generated on a good site by malicious visitors or users. This spam is usually generated on sites that allow users to create new pages or otherwise add content to the site.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+User-generated spam
+Google’s Webmaster Guidelines outline best practices for website owners, and the use of techniques that violate our guidelines may cause us to take action on a site. However, not all violations of our Webmaster Guidelines are related to content created intentionally by a site’s owner. Sometimes, spam can be generated on a good site by malicious visitors or users. This spam is usually generated on sites that allow users to create new pages or otherwise add content to the site.
 If you receive a warning from Google about this type of spam, the good news is that we generally believe your site is of sufficient quality that we didn’t see a need to take manual action on the whole site. However, if your site has too much user-generated spam on it, that can affect our assessment of the site, which may eventually result in us taking manual action on the whole site.
 Some examples of spammy user-generated content include:
 Spammy accounts on free hosts
 Spammy posts on forum threads
 Comment spam on blogs
 Since spammy user-generated content can pollute Google search results, we recommend you actively monitor and remove this type of spam from your site. Here are several tips on how to prevent abuse of your site’s public areas.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Quality guidelinesAutomatically generated contentSneaky redirectsLink schemesCloakingHidden text and linksDoorway pagesScraped contentAffiliate programsIrrelevant keywordsCreating pages with malicious behaviorUser-generated spamWays to Prevent Comment SpamReport spam, paid links, or malware
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

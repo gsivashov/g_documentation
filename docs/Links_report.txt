@@ -112,5 +112,5 @@ Known issues and differences with the old report
 Data in this report is more accurate than the old Links to your site report. As a result, the values in the new report may be lower, but this does not indicate a drop in links, but rather a more accurate and secure way of reporting them.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemovals ToolRich Results Tools and ReportsSecurity Issues reportSettingsSitemaps reportCore Web Vitals reportURL Inspection Tool
+All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemovals ToolRich Results Tools and ReportsSecurity Issues reportSettingsSitemaps reportCore Web Vitals reportURL Inspection ToolBlock crawling of parameterized duplicate content
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

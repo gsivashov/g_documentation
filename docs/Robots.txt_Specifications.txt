@@ -1,9 +1,9 @@
 https://developers.google.com/search/reference/robots_txt
 
 Home
-Products
-Search for Developers
-Reference
+Google Search Central
+Documentation
+Advanced SEO
 Robots.txt Specifications
 Abstract
 This document details how Google handles the robots.txt file that allows
@@ -466,4 +466,4 @@ robots.txt Tester in Search Console.
 Google's open source
 robots.txt library, which is also used in Google Search.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-08-27 UTC.
+Last updated 2020-11-11 UTC.

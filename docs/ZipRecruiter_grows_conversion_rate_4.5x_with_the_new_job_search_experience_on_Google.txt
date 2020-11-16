@@ -1,8 +1,7 @@
 https://developers.google.com/search/case-studies/ziprecruiter-case-study
 
 Home
-Products
-Search for Developers
+Google Search Central
 Case studies
 ZipRecruiter grows conversion rate 4.5x with the new job search experience on Google
 check_circle_outline 3X

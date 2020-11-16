@@ -1,22 +1,25 @@
 https://support.google.com/webmasters/answer/7426684
 
-APIs-Google User AgentAPIs-Google is the user agent used by Google APIs to deliver push notification messages. Application developers can request these notifications to avoid the need for continually polling Google's servers to find out if the resources they are interested in have changed. To make sure nobody abuses this service, Google requires developers to prove that they own the domain before allowing them to register a URL with a domain as the location where they want to receive messages.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+APIs-Google User Agent
+APIs-Google is the user agent used by Google APIs to deliver push notification messages. Application developers can request these notifications to avoid the need for continually polling Google's servers to find out if the resources they are interested in have changed. To make sure nobody abuses this service, Google requires developers to prove that they own the domain before allowing them to register a URL with a domain as the location where they want to receive messages.
 How APIs-Google accesses your site
-APIs-Google sends each push notification using an HTTPS POST request. If the request fails due to an error condition that might be temporary, APIs-Google will resend the notification. If the request still doesn't succeed, it will continue to retry—based on an exponential backoff schedule—up to a maximum of several days.
+APIs-Google sends each push notification using an HTTPS POST request. If the request fails due to an error condition that might be temporary, APIs-Google will resend the notification. If the request still doesn't succeed, it will continue to retry—based on an exponential backoff schedule—up to a maximum of several days.
 The rate at which APIs-Google accesses your site varies by how many push notification requests were created for servers on your site, by how fast the monitored resources are getting updated, and by the number of retries occurring. As a result, the APIs-Google traffic patterns can be consistent in some scenarios, but in other scenarios the traffic can be sporadic or spiky.
 Enabling your site for APIs-Google
 APIs-Google uses HTTPS to deliver push notifications, so it requires your site to have a valid SSL certificate. Invalid certificates include the following:
 Self-signed certificates.
 Certificates signed by an untrusted source.
 Certificates that have been revoked.
-Avoid unnecessary retry requests by ensuring that your application is well-designed and responds promptly to notification messages (within seconds).
+Avoid unnecessary retry requests by ensuring that your application is well-designed and responds promptly to notification messages (within seconds).
 Prevent APIs-Google from calling your site
 APIs-Google does not crawl the web randomly; you must register to receive push notifications for an API in order to be called. Therefore you can do one of two things to prevent APIs-Google from calling your site:
-Unregister for notifications. If you administer a domain that has subdomains or URL subspaces that are owned or administered separately, one of the subdomain owners may have set up an application that uses push notifications. If you want to block APIs-Google, contact anyone who might have set up an application like this and ask them to disable it.
-Use robots.txt. The user-agent to specify in the robots.txt file is APIs-Google - APIs-Google does not follow Googlebot directives. There may be a small delay before APIs-Google discovers your robots.txt file change. If APIs-Google continues to send messages to your site several days after you've blocked it in robots.txt, check that the robots.txt is in the correct location.
+Unregister for notifications. If you administer a domain that has subdomains or URL subspaces that are owned or administered separately, one of the subdomain owners may have set up an application that uses push notifications. If you want to block APIs-Google, contact anyone who might have set up an application like this and ask them to disable it.
+Use robots.txt. The user-agent to specify in the robots.txt file is APIs-Google - APIs-Google does not follow Googlebot directives. There may be a small delay before APIs-Google discovers your robots.txt file change. If APIs-Google continues to send messages to your site several days after you've blocked it in robots.txt, check that the robots.txt is in the correct location.
 Verifying the caller
-If you suspect that you are receiving spoofed requests, you can verify that a bot accessing your server really is calling from google.com. Search your logs for any IP addresses identifying themselves as the APIs-Google user agent; a reverse DNS lookup should be a googlebot.com or google.com domain.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Google crawlersOverview of Google crawlers (user agents)GooglebotGoogle Read Aloud user agentAPIs-Google User AgentFeedfetcherDuplex on the web user agentVerifying Googlebot
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+If you suspect that you are receiving spoofed requests, you can verify that a bot accessing your server really is calling from google.com. Search your logs for any IP addresses identifying themselves as the APIs-Google user agent; a reverse DNS lookup should be a googlebot.com or google.com domain.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

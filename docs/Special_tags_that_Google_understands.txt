@@ -1,5 +1,9 @@
 https://support.google.com/webmasters/answer/79812
 
+Home
+Google Search Central
+Documentation
+Advanced SEO
 Special tags that Google understands
 Google supports both page-level meta-tags as well as inline directives to help control how your site's pages will appear in Search.
 Page-level meta tags are a great way for webmasters to provide search engines with information about their sites. Meta tags can be used to provide information to all sorts of clients, and each system processes only the meta tags they understand and ignores the rest. Meta tags are added to the <head> section of your HTML page and generally look like this:
@@ -18,21 +22,21 @@ Use this tag to provide a short description of the page. In some situations this
 <meta name="robots" content="..., ..." />
 <meta name="googlebot" content="..., ..." />
 These meta tags control the behavior of search engine crawling and indexing.
-The <meta name="robots"> tag applies to all search engines, while the <meta name="googlebot"> tag is specific to Google.
-In the case of conflicting robots (or googlebot) meta tags, the more restrictive tag applies. For example, if a page has both max-snippet:50 and nosnippet tags, the nosnippet tag will apply.
-The default values are "index, follow" and do not need to be specified. We understand the following values (when specifying multiple values, separate them with a comma):
+The <meta name="robots"> tag applies to all search engines, while the <meta name="googlebot"> tag is specific to Google.
+In the case of conflicting robots (or googlebot) meta tags, the more restrictive tag applies. For example, if a page has both max-snippet:50 and nosnippet tags, the nosnippet tag will apply.
+The default values are "index, follow" and do not need to be specified. We understand the following values (when specifying multiple values, separate them with a comma):
 index - Allow the page to be indexed.
 follow - Follow any links in the page as part of crawling.
-noindex - Prevents the page from being indexed.
-nofollow - Don't follow links from this page as part of crawling.
-nosnippet - Don't show a text snippet or video preview from being shown in the search results. For video, a static image will be shown instead, if possible. Example: <meta name="robots" content="nosnippet">
-max-snippet:[number] - Limit the text snippet length for this page to [number] characters; specify 0 for no snippet or -1 to allow Google to chose the snippet length that it believes is most effective to help users discover your content and direct users to your site.
-max-image-preview:[size] - Limit the size of any image associated with this page. [size] can be "none", "standard", or "large".
+noindex - Prevents the page from being indexed.
+nofollow - Don't follow links from this page as part of crawling.
+nosnippet - Don't show a text snippet or video preview from being shown in the search results. For video, a static image will be shown instead, if possible. Example: <meta name="robots" content="nosnippet">
+max-snippet:[number] - Limit the text snippet length for this page to [number] characters; specify 0 for no snippet or -1 to allow Google to chose the snippet length that it believes is most effective to help users discover your content and direct users to your site.
+max-image-preview:[size] - Limit the size of any image associated with this page. [size] can be "none", "standard", or "large".
 max-video-preview:[number] - Limit any video preview associated with this page to [number] seconds; specify 0 to allow only a still image or -1 to allow any preview length
-noarchive - Don't show a Cached link for a page in search results.
-unavailable_after:[date] - Lets you specify the exact time and date you want to stop crawling and indexing of this page.
-noimageindex - Don't show the page as the referring page for an image in Google Image search results. This has the effect of preventing all images on this page from being indexed in this page; if the image appears in another page, it might be crawled and indexed according to the permissions on that page. Note that this is not yet an internet standard; the standard way to block images is to use a robots.txt rule.
-none - Equivalent to noindex, nofollow.
+noarchive - Don't show a Cached link for a page in search results.
+unavailable_after:[date] - Lets you specify the exact time and date you want to stop crawling and indexing of this page.
+noimageindex - Don't show the page as the referring page for an image in Google Image search results. This has the effect of preventing all images on this page from being indexed in this page; if the image appears in another page, it might be crawled and indexed according to the permissions on that page. Note that this is not yet an internet standard; the standard way to block images is to use a robots.txt rule.
+none - Equivalent to noindex, nofollow.
 all - [Default] Equivalent to "index, follow".
 You can also specify this information in the header of your pages using the "X-Robots-Tag" HTTP header directive. This is particularly useful if you wish to limit indexing of non-HTML files like graphics or other kinds of documents. More information about robots meta tags
 <meta name="google" content="nositelinkssearchbox" />
@@ -61,7 +65,5 @@ Inline directives
 Independently of page-level meta-tags, you can designate parts of an HTML page not to be used in snippets. This can be done with the data-nosnippet HTML attribute on span, div, or section HTML elements. For example:
 <p>This text can be included in a snippet <span data-nosnippet>and this part would not be shown</span>.</p>
 To ensure machine readability, the section must be valid HTML and all tags closed accordingly. More information.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Crawling and indexingOverview of crawling and indexing topicsManage your sitemapsBlock access to your contentRemove information from GoogleTell Google about your duplicate contentAsk Google to recrawl your URLsMake sure Googlebot is not blockedCreate custom 404 pagesTransfer, move, or migrate your siteInternational and multilingual sitesSpecial tags that Google understandsGoogle crawlersCrawl Stats reportChange Googlebot crawl rate
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

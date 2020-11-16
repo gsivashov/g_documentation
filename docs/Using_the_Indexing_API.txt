@@ -1,9 +1,8 @@
 https://developers.google.com/search/apis/indexing-api/v3/using-api
 
 Home
-Products
-Search for Developers
-Reference
+Google Search Central
+Indexing API
 Using the Indexing API
 Overview
 You can use the Indexing API to tell Google to update or remove pages from the Google index.
@@ -168,4 +167,4 @@ content-length: 58
 For more information, see
 Sending Batch Requests.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-08-10 UTC.
+Last updated 2020-11-12 UTC.

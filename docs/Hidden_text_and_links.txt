@@ -1,6 +1,11 @@
 https://support.google.com/webmasters/answer/66353
 
-Hidden text and linksHiding text or links in your content to manipulate Google’s search rankings can be seen as deceptive and is a violation of Google’s Webmaster Guidelines. Text (such as excessive keywords) can be hidden in several ways, including:
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Hidden text and links
+Hiding text or links in your content to manipulate Google’s search rankings can be seen as deceptive and is a violation of Google’s Webmaster Guidelines. Text (such as excessive keywords) can be hidden in several ways, including:
 Using white text on a white background
 Locating text behind an image
 Using CSS to position text off-screen
@@ -11,7 +16,5 @@ However, not all hidden text is considered deceptive. For example, if your site 
 Images: Use the alt attribute to provide descriptive text. In addition, we recommend using a human-readable caption and descriptive text around the image. See this article for more advice on publishing images.
 JavaScript: Place the same content from the JavaScript in a <noscript> tag. If you use this method, ensure the contents are exactly the same as what’s contained in the JavaScript, and that this content is shown to visitors who do not have JavaScript enabled in their browser.
 Videos: Include descriptive text about the video in HTML. You might also consider providing transcripts. See this article for more advice on publishing videos.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Quality guidelinesAutomatically generated contentSneaky redirectsLink schemesCloakingHidden text and linksDoorway pagesScraped contentAffiliate programsIrrelevant keywordsCreating pages with malicious behaviorUser-generated spamWays to Prevent Comment SpamReport spam, paid links, or malware
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

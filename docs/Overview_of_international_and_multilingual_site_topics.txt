@@ -1,0 +1,19 @@
+https://support.google.com/webmasters/topic/2370587
+
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Overview of international and multilingual site topics
+If your site contains content in different languages, or with different content for different locations, here's how to help Google understand your site.
+Topics
+Managing multi-regional and multilingual sites
+If your site offers different content to users in different languages, countries, or regions, you can optimize Google Search results for your site.
+Tell Google about localized versions of your page
+If you have multiple versions of a page for different languages or regions, tell Google about these different variations. Doing so will help Google Search point users to the most appropriate version of your page by language or region.
+How Google crawls locale-adaptive pages
+If your site has locale-adaptive pages (that is, your site returns different content based on the perceived country or preferred language of the visitor), Google might not crawl, index, or rank all your content for different locales.
+Cross-language search results
+Learn how Google Search results can include results from pages in other languages, with the title and snippet translated to the language of the user.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-10-30 UTC.

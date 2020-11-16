@@ -1,9 +1,9 @@
 https://developers.google.com/search/mobile-sites/mobile-seo/other-devices
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Mobile SEO for other devices
 Tablets
 When thinking about how to configure your website for mobile users, it's common

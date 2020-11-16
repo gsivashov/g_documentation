@@ -1,9 +1,9 @@
 https://developers.google.com/search/docs/data-types/book
 
 Home
-Products
-Search for Developers
-Reference
+Google Search Central
+Documentation
+Advanced SEO
 Book
 Book actions make Google Search an entry point to discover books and authors. This enables
 Search users to quickly buy or borrow the books that they find directly from Search results.
@@ -1183,4 +1183,4 @@ Example LibrarySystem feed JSON file
 ]
 }
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-10-30 UTC.
+Last updated 2020-11-11 UTC.

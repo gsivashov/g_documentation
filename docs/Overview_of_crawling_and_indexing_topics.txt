@@ -1,6 +1,11 @@
-https://support.google.com/webmasters/answer/9611089
+https://support.google.com/webmasters/topic/9427949
 
-Overview of crawling and indexing topicsThe topics in this section describe how you can control Google's ability to find and parse your content in order to show it in Search and other Google properties, as well as how to prevent Google from crawling specific content on your site.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Overview of crawling and indexing topics
+The topics in this section describe how you can control Google's ability to find and parse your content in order to show it in Search and other Google properties, as well as how to prevent Google from crawling specific content on your site.
 Here's a brief description of each page. Read the full story here.
 Topic
 Description
@@ -20,8 +25,6 @@ Create custom 404 pages
 How to properly create a custom 404 page that works for users as well as Googlebot.
 Transfer, move, or migrate your site
 If you're moving your site from one domain to another, here's how to minimize any disruption in search results.
-International and multilingual sites
-If your site contains content in different languages, or with different content for different locations, here's how to help Google understand your site.
 Special tags that Google understands
 Google supports several tag extensions that govern search appearance and behavior.
 Google crawlers
@@ -30,7 +33,5 @@ Crawl Stats report
 The Crawl Stats report shows information about when and how much Google crawled your site.
 Change Googlebot crawl rate
 In the unlikely chance that Google is making too many crawl requests to your site, you can tell us to slow down our requests.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Crawling and indexingOverview of crawling and indexing topicsManage your sitemapsBlock access to your contentRemove information from GoogleTell Google about your duplicate contentAsk Google to recrawl your URLsMake sure Googlebot is not blockedCreate custom 404 pagesTransfer, move, or migrate your siteInternational and multilingual sitesSpecial tags that Google understandsGoogle crawlersCrawl Stats reportChange Googlebot crawl rate
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-12 UTC.

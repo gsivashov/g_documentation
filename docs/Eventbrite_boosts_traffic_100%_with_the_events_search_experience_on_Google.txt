@@ -1,8 +1,7 @@
 https://developers.google.com/search/case-studies/eventbrite-case-study
 
 Home
-Products
-Search for Developers
+Google Search Central
 Case studies
 Eventbrite boosts traffic 100% with the events search experience on Google
 check_circle_outline 100%
@@ -19,4 +18,4 @@ Multiple ongoing SEO projects can make it difficult to determine exactly what re
 "Within two or three weeks we started seeing a visual difference in our event search results on Google," Jilo says. "The Google Search experience definitely helps drive more eyeballs to event pages. And when those people convert, it translates to incremental ticket sales for our event creators."
 Having implemented Event structured data on their primary discovery pages, Eventbrite expects to keep this functionality on any new discovery page types. "We certainly will be looking at adding Event structured data on those pages as well," Jilo says. "The Google search experience for events has definitely been a positive step."
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-11-11 UTC.

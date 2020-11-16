@@ -1,12 +1,15 @@
 https://support.google.com/webmasters/answer/2721217
 
-Sneaky redirectsRedirecting is the act of sending a visitor to a different URL than the one they initially requested. There are many good reasons to redirect one URL to another, such as when moving your site to a new address, or consolidating several pages into one.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Sneaky redirects
+Redirecting is the act of sending a visitor to a different URL than the one they initially requested. There are many good reasons to redirect one URL to another, such as when moving your site to a new address, or consolidating several pages into one.
 However, some redirects deceive search engines or display content to human users that is different than that made available to crawlers. It's a violation of Google Webmaster Guidelines to redirect a user to a different page with the intent to display content other than what was made available to the search engine crawler. When a redirect is implemented in this way, a search engine might index the original page rather than follow the redirect, while users are taken to the redirect target. Like cloaking, this practice is deceptive because it attempts to display different content to users and to Googlebot, and can take a visitor somewhere other than where they expected to go.
 Some examples of sneaky redirects include:
 Search engines shown one type of content while users are redirected to something significantly different.
 Desktop users receive a normal page, while mobile users are redirected to a completely different spam domain.
 Using JavaScript to redirect users can be a legitimate practice. For example, if you redirect users to an internal page once they’re logged in, you can use JavaScript to do so. When examining JavaScript or other redirect methods to ensure your site adheres to our guidelines, consider the intent. Keep in mind that 301 redirects are best when moving your site, but you could use a JavaScript redirect for this purpose if you don’t have access to your website’s server.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Quality guidelinesAutomatically generated contentSneaky redirectsLink schemesCloakingHidden text and linksDoorway pagesScraped contentAffiliate programsIrrelevant keywordsCreating pages with malicious behaviorUser-generated spamWays to Prevent Comment SpamReport spam, paid links, or malware
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

@@ -1,0 +1,356 @@
+https://support.google.com/webmasters/answer/6033088
+
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Move a site with URL changes
+This article describes how to change the URLs of existing pages on your site with minimal impact on your Google Search results. Examples of this kind of site move include:
+URL changes from HTTP to HTTPS
+Domain name changes such as example.com to example.net or
+merging multiple domains or hostnames
+URL paths changes: example.com/page.php?id=1 to example.com/widget,
+or example.com/page.html to example.com/page.htm
+Not changing the URLs? If you are making site changes
+without visible URL changes, start here instead.
+Overview
+Review basic
+information about site moves. Know what to expect, and how it might affect
+your users and rankings. If moving from HTTP to HTTPS, review the
+best practices for HTTPS.
+Prepare the new site and test it thoroughly.
+Prepare a URL mapping from the current URLs to
+their corresponding new format.
+Start the site move by configuring the server to
+redirect from the old URLs to the new ones.
+Monitor the traffic on both the old and new URLs.
+FAQs for all site moves with URL changes
+Should I move everything together, or is it fine to move in sections?
+Moving in sections is fine.
+How can I test how many pages were indexed?
+Verify data for each property separately in Search Console. Use the
+Index Status
+report for a broad look. Use the
+Sitemaps
+report to view how many URLs submitted in a sitemap have been indexed.
+How long will it take for Google to recognize my URL changes?
+There are no fixed crawl frequencies; it depends on the size of your site, and the speed of
+crawling that's possible. The move takes place on a per-URL basis.
+Do I lose credit for links when I redirect to new URLs?
+No, 301 or 302 redirects do not cause a loss in PageRank.
+Migrating from HTTP to HTTPS
+Review the best
+practices for HTTPS.
+Be sure to add the HTTPS property to Search Console. Search Console
+treats HTTP and HTTPS separately; data for these properties is not shared in Search Console.
+So if you have pages in both protocols, you must have a separate Search Console property for
+each one.
+Here are additional FAQs for migrating pages from HTTP to HTTPS:
+HTTP to HTTPS migration FAQs
+Will this HTTPS migration affect my ranking?
+As with all migrations, you may experience some ranking fluctuation during a migration.
+However, you should also review the
+best
+practices information for HTTPS pages to avoid HTTPS-specific pitfalls.
+HTTPS sites receive a small ranking boost, but don't expect a visible change. Google
+uses HTTPS as a positive ranking signal. This signal is one amongst many others, and
+currently carries less weight than high-quality site content; you should not expect
+a major SEO advantage for moving to HTTPS in the short term. In the longer term, Google
+may increase the strength of the HTTPS boost.
+Is it okay to move just some pages to HTTPS?
+Yes, that's okay. Start with a part, test it, then move more at your own pace.
+If you are migrating from HTTP to HTTPS in pieces, and you want to avoid early indexing of the staged URLs, we recommend using rel=canonical rather than redirects. If you use redirects, you won't be able to test the redirected pages.
+Which certificate do I need?
+For Google Search, any modern certificate that's accepted by modern browsers is acceptable.
+Will I see search keywords for my HTTPS site?
+This won't change with HTTPS; you can still see search queries in Search Console.
+We reference our HTTP sitemaps in robots.txt. Should we update the robots.txt to include our new HTTPS sitemaps?
+We recommend separate robots.txt files for HTTP and HTTPS, pointing to separate sitemap files for HTTP and HTTPS. We also recommend listing a specific URL in only one sitemap file.
+Which sitemap should map the section in the HTTPS trial?
+You can create a separate sitemap just for the updated section of your site. This will enable you to track indexing of the trial section more precisely. Be sure not to duplicate these URLs in any other sitemaps, though.
+What URLs should our sitemaps list if we have redirects (from HTTP to HTTPS or the reverse)?
+List all HTTP URLs in your HTTP sitemap, and all HTTPS URLs in your HTTPS sitemap, regardless of redirects when the user visits the page. Having pages listed in your sitemap regardless of redirects will help search engines discover the new URLs faster.
+Are there any other specific things we need to add to the robots.txt for the HTTPS version?
+No.
+Should we support HSTS?
+HSTS increases security, but adds complexity to your rollback strategy. See HTTPS best practices
+for more information.
+We use a single Google News sitemap for our entire site. What do we do if we're migrating our site piece by piece?
+If you want to use a Google News sitemap for the new HTTPS section, you will have to contact the News team to let them know about the protocol change, and then in your HTTPS property in Search Console you can submit a new Google News sitemap as you migrate each section of your site to HTTPS.
+Are there any specific recommendations for Google News Publisher Center with HTTPS migration?
+Google News Publisher Center handles the HTTP to HTTPS moves transparently. In general you don't have to do anything from Google News perspective, unless you're also making use of News sitemaps. In that case, contact the News team and let them know about the change. You can also let the team know about changing sections, for example in case you're moving to HTTPS, you can specify that you're moving http://example.com/section to https://example.com/section.
+Prepare the new site
+The details of site preparation vary for each site move, but typically you’ll do one or more of the following:
+Set up a new content management system (CMS) and add content to it.
+Transfer images and downloads (such as PDF documents) that you currently host.
+These might already be getting traffic from Google Search or links, and it’s useful to tell users and Googlebot about their new location.
+For a move to HTTPS, get and configure the required TLS certificates on your server.
+Set up a robots.txt for your new site
+The robots.txt file for a site controls which areas Googlebot can crawl. Make sure the
+directives in the new site’s robots.txt file correctly reflect the parts you want blocked
+from crawling.
+Note that some site owners block all crawling while in development. If you follow this
+strategy, make sure you prepare what the robots.txt file should look like once the site move
+starts. Likewise, if you use noindex directives during development, prepare a
+list of URLs from which you’ll remove the noindex directives when you start the
+site move.
+Provide errors for deleted or merged content
+For content on the old site that will not be transferred to the new site, make sure those
+orphaned URLs correctly return an HTTP 404 or 410 error response code. You can return the
+error response code at the old URL in the configuration panel for your new site, or you
+can create a redirect for a new URL and have that return the HTTP error code.
+Avoid irrelevant redirects
+Don’t redirect many old URLs to one irrelevant destination, such as the home page of the
+new site. This can confuse users and might be treated as a
+soft 404
+error. However, if you have consolidated content previously hosted on multiple pages
+to a new single page, it is acceptable to redirect the older URLs to that new, consolidated page.
+Ensure correct Search Console settings
+A successful site move depends on correct—and up to date—Search Console settings.
+If you haven’t already, verify
+that you own both the old and new sites in Search Console. Be sure to verify all
+variants of both the old and new sites. For example, you should verify
+www.example.com and example.com, and include both the HTTPS and
+HTTP site variants if you use HTTPS URLs. Do this for both old and new sites.
+Review the Search Console verification
+Make sure your Search Console verification will continue to work after the site move. If
+you're using a different method of verification, keep in mind that verification tokens may
+be different when the URL changes.
+If you’re using the HTML
+file method to verify ownership of your site in Search Console, make sure you don’t
+forget to include your current verification file in your new copy of the site.
+Likewise, if you verify ownership with an include file that references meta tag or
+Google
+Analytics to verify ownership, ensure the new CMS copy includes these as well.
+Review any configured settings in
+Search Console
+If you had changed some of the configuration settings in Search Console for your old site,
+make sure the new site’s settings are updated to reflect those changes as well. For example:
+URL
+parameters: If you’ve configured URL parameters to control the crawling or indexing of
+your old URLs, make sure the settings are also applied to the new site if needed.
+Geotargeting:
+Your old site might have explicit geotargeting, such as a geotargetable domain or a
+country-coded top-level domain (such as .co.uk). Apply the same setting to
+the new site if you want to continue targeting for the same region. However, if your site
+move is meant to help your business expand globally and you do not wish your site to be
+associated with any country or region, select Unlisted in the drop-down
+list of the Site Settings page.
+Crawl rate:
+We recommend not limiting Googlebot’s crawl rate in Search Console for both old and
+new URLs.
+We advise you don’t configure a crawl rate setting, either. Only do this
+if you know that your site cannot handle Googlebot’s volume of crawling. If you have
+already limited Googlebot’s crawl rate for your old site, consider removing it. Google has
+algorithms that automatically detect that a site move has been implemented and we alter
+Googlebot’s crawling behavior so that our indexing quickly reflects the site move.
+Disavowed
+backlinks: If you’ve uploaded a file to disavow links on your old site, we recommend
+that you re-upload it again using the Search Console account of the new site.
+Clean up your recently purchased
+domain
+If your new site is for a recently purchased domain, you'll want to make sure it's clean of
+any outstanding issues from the previous owner. Check the following settings:
+Manual
+action for previous spam. For sites that don't comply with our
+Webmaster
+Guidelines, Google is willing to take manual action, such as demoting them or even
+removing them from our search results altogether. Check the Manual Actions page in Search
+Console to see if any manual actions have been applied to the new site, and address any
+problems listed there before filing a
+reconsideration
+request.
+Removed
+URLs. Make sure that there aren’t any URL removals left over from the previous owner,
+especially a site-wide URL removal. Also, before submitting URL removal requests for your
+content, make sure that you understand
+when not to use the URL removals tool.
+Use web analytics
+During a site move, it’s important to analyze usage on both the old and new sites. Web
+analytics software can help with this. Typically, web analytics configuration consists of a
+piece of JavaScript embedded in your pages. The details for tracking different sites varies
+depending on your analytics software and its logging, processing, or filtering settings.
+Check with your analytics software provider for help. Additionally, if you have been planning
+to make any configuration changes to your analytics software, now is a good time. If you use
+Google Analytics, consider creating a new profile for your new site if you want clean
+separation in your content reports.
+Ensure that your server has enough computing resources
+After a migration, Google will crawl your new site more heavily than usual. This is because
+your site redirects traffic from the old to the new site, and any crawls of the old site will
+be redirected to the new site, in addition to any other crawling. Ensure that your new site
+has sufficient capacity to handle the increased traffic from Google.
+Update Data Highlighter
+If you used Data
+Highlighter to map your old pages, be sure to redo the mapping for your new site.
+Update app links
+As soon as your HTTPS pages are ready, update any app links intended to open your web pages
+in an app when displayed in Google Search results. Update these links to point to the new
+HTTPS URLs. Redirects won't work for these links; mobile browser clicks will open the page
+in the browser instead of the app unless you update your app link handling.
+It's important to map your old site's URLs to the URLs for the new site. This section
+describes a number of general approaches you can take to correctly assess the URLs on
+your two sites and facilitate mapping. The exact details of how you generate this
+mapping will vary depending on your current website infrastructure and the details of the
+site move.
+Prepare URL mapping
+It's important to map your old site's URLs to the URLs for the new site. This section
+describes a number of general approaches you can take to correctly assess the URLs on
+your two sites and facilitate mapping. The exact details of how you generate this
+mapping will vary depending on your current website infrastructure and the details of the
+site move.
+1. Determine your current URLs
+In the simplest of site moves, you may not need to generate a list of your current URLs. For
+example, you could use a wildcard server-side redirect if you’re changing just your site’s host
+(for example, moving from example.com to example.net).
+In more complex site moves, you will need to generate a list of old URLs and map them to
+their new destinations. How you get a listing of old URLs depends on your current website’s
+configuration, but here are some handy tips:
+Start with your important URLs. To find them:
+Look in your sitemaps
+because it's likely your most important URLs have been submitted in Search Console that way
+Check your server logs or analytics software for the URLs that get the most traffic
+Check the Links
+to your site feature in Search Console for pages that have internal and external links
+Use your content management system, which can typically provide an easy way to get
+a listing of all URLs that host content.
+Check your server logs for URLs that were visited at least once recently. Pick a
+time period that makes sense for your site, keeping in mind seasonal variation of traffic.
+Include images and videos—Make sure that you include URLs of embedded content in
+your site move plans: videos, images, JavaScript, and CSS files. These URLs need to be moved
+in the same way as all other content on your website.
+2. Create a mapping of old to new URLs
+Once you have the listing of old URLs, decide where each one should redirect to. How you
+store this mapping depends on your servers and the site move. You might use a database, or
+configure some URL rewriting rules on your system for common redirect patterns.
+3. Update all URL details
+Once you have your URL mapping defined, you'll want to do three things to get the final URL
+mappings ready for the move.
+Update annotations in the HTML or sitemaps entry for each page:
+Each destination URL should have a self-referencing
+rel="canonical" <link> tag.
+If the site you moved has multilingual or multinational pages annotated using
+rel-alternate-hreflang annotations, be sure to update the annotations to use the new URLs.
+If the site you moved has a mobile counterpart, make sure you update the
+rel-alternate-media annotations.
+Learn more in our smartphone websites guidelines.
+Update internal links.
+Change the internal links on the new site from the old URLs to the new URLs. You can use
+the mapping generated earlier to help find and update the links as needed.
+Create and save sitemap and link lists.
+Save the following lists for your final move:
+A sitemap file containing the new URLs in the mapping
+A sitemap file containing the old URLs in the mapping
+A list of sites linking to your current content
+Learn more about sitemaps.
+4. Prepare for 301 redirects
+Once you have a mapping and your new site is ready, the next step is to set up
+HTTP 301
+redirects on your server from the old URLs to the new URLs as you indicated in your mapping.
+Keep in mind the following:
+Use HTTP 301 redirects. Although Googlebot supports several kinds of redirects, we
+recommend you use HTTP 301 redirects if possible.
+Avoid chaining redirects. While Googlebot and browsers can follow a "chain" of
+multiple redirects (for example, Page 1 > Page 2 > Page 3), we advise redirecting to
+the final destination. If this is not possible, keep the number of redirects in the chain
+low, ideally no more than 3 and fewer than 5. Chaining redirects adds latency for users,
+and not all browsers support long redirect chains.
+Test the redirects. You can use URL Inspection Tool for testing individual URLs or command line tools or scripts to test large numbers or URLs.
+Start the site move
+Once the URL mapping is accurate and the redirects work, you're ready to move.
+Decide how you will move your site — all at once, or in sections:
+Small or medium sites: We recommend moving all URLs on your site
+simultaneously instead of moving one section at a time. This helps users interact with
+the site better in its new form, and helps our algorithms detect the site move and
+update our index faster.
+Large sites: You can choose to move larger sites one section at a
+time. This can make it easier to monitor, detect, and fix problems faster.
+Update your robots.txt files:
+On the old site, remove all robots.txt directives.
+This allows Googlebot to discover all redirects to the new site and update our index.
+On the new site, make sure the robots.txt file
+allows all crawling. This includes crawling of images, CSS, JavaScript, and other page
+assets, apart from the URLs you are certain you do not want crawled.
+[Non-HTTP to HTTPS moves only] Submit a
+Change of Address in Search Console for the old site. Don't submit a
+change of address if you are only moving your site from HTTP to HTTPS.
+Configure the old website to redirect users and Googlebot to the new site based on the URL mapping.
+On the old site, submit the two sitemaps you prepared previously
+containing the old and new URLs.This helps our crawlers discover the redirects from the old
+URLs to the new URLs, and facilitates the site move.
+Keep the redirects for as long as possible, and consider keeping them
+indefinitely. However, redirects are slow for users, so try to update your own links and
+any high-volume links from other websites to point to the new URLs.
+The time it takes Googlebot and our systems to discover and process all URLs in the site
+move depends on how fast your servers are and how many URLs are involved. As a general rule,
+a medium-sized website can take a few weeks for most pages to move, and larger sites take
+longer. The speed at which Googlebot and our systems discover and process moved URLs depends
+on the number of URLs and the server speed.
+Note that the visibility of your content in web search may fluctuate
+temporarily during the move. This is normal and a site’s rankings will settle down over time.
+Update incoming links
+Immediately after the site move is started, try to update as many incoming links as possible
+to improve the user experience and reduce your server load. These include:
+External links: Try to contact the sites in the saved list of sites linking to your current
+content, asking them to update their links to your new site. Consider prioritizing your
+efforts by the number of inbound visits for each link.
+Profile links such as from Facebook, Twitter, and LinkedIn.
+Ad campaigns to point to the new landing pages.
+Use Search Console to monitor traffic
+Many features of Search Console help you monitor a site move, including:
+Sitemaps:
+Submit the two sitemaps you saved earlier from the mapping. Initially, the sitemap
+containing the new URLs would have zero pages indexed, while the sitemap of the old URLs
+would have many pages indexed. Over time the number of pages indexed from the old URLs
+sitemap would drop to zero with a corresponding increase of indexing of the new URLs.
+Index Coverage
+report: The graphs would reflect the site move, showing a drop in indexed URL counts on
+the old site and an increase of indexing on the new site. Check regularly for any
+unexpected crawl errors.
+Search
+queries: As more pages of the new site get indexed and start ranking, the search queries
+reports would start showing the URLs on the new site getting search impressions and clicks.
+Use other tools to monitor traffic
+Keep an eye on your server access and error logs. In particular, check for crawling by
+Googlebot, any URLs that unexpectedly return HTTP error status codes, and normal user traffic.
+If you installed any web analytics software on your site, or if your CMS provides analytics,
+it's also recommended that you review traffic this way so that you can see the progress of
+traffic from your old to new site. In particular, Google Analytics offers real-time reporting,
+and this is a handy feature to use during the initial site move phase. You should expect to
+see traffic drop on the old site and rise on the new site.
+Troubleshooting your site move
+Here are some common mistakes when migrating a site with URL changes (including HTTP to
+HTTPS). These mistakes can prevent your new site from being indexed completely.
+Common mistakes
+noindex or robots.txt blocks
+Don't forget to remove any noindex or robots.txt blocks that were only
+needed for the migration.
+It's fine if you don't have a robots.txt file on your site, but be sure to return a
+proper 404 quickly if the robots.txt file is requested but not provided.
+To test:
+Examine your robots.txt file in your HTTPS site and see if anything needs to be
+changed.
+Use the URL inspection
+tool for any pages that seem to be missing from Google in the new site.
+Incorrect redirects
+Check your redirects from the old site to the new one. We frequently see people
+directing to the wrong (non-existent) URLs on the new site.
+Other crawl errors
+Examine the Index
+Coverage report for a spike in other errors on your new site during migration events.
+Insufficient capacity
+After a migration, Google will crawl your new site more heavily than usual. This is
+because your site redirects traffic from the old to the new site, and any crawls of the
+old site will be redirected to the new site, in addition to any other crawling. Ensure that
+your site has sufficient capacity to handle the increased traffic from Google.
+Not updating app links
+If you open your web pages within your app, update the app links to the new URLs
+before you implement your old to new page redirects. Otherwise Google won't suggest using
+the app to open the new URLs in search results, but will direct users to the website in the
+browser instead.
+Not updating sitemaps
+Be sure that your sitemaps are all updated with the new URLs.
+Not updating Data Highlighter
+If you used Data
+Highlighter to map your old pages, you will need to redo your mappings for your new site.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

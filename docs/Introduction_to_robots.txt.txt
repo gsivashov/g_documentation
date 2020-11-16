@@ -1,47 +1,48 @@
 https://support.google.com/webmasters/topic/6061961
 
-About robots.txtIntroduction to robots.txtThe basics of robots.txt files: what they are and how to use themNext: Create a robots.txt fileWhat is a robots.txt file?
-A robots.txt file tells search engine crawlers which pages or files the crawler can or can't request from your site. This is used mainly to avoid overloading your site with requests; it is not a mechanism for keeping a web page out of Google. To keep a web page out of Google, you should use noindex directives, or password-protect your page.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Introduction to robots.txt
+What is a robots.txt file?
+A robots.txt file tells search engine crawlers which pages or files the crawler can or
+can't request from your site. This is used mainly to avoid overloading your site with
+requests; it is not a mechanism for keeping a web page out of Google.
+To keep a web page out of Google, you should use
+noindex directives,
+or password-protect your page.
 What is robots.txt used for?
-robots.txt is used primarily to manage crawler traffic to your site, and usually to keep a page off Google, depending on the file type:
+robots.txt is used primarily to manage crawler traffic to your site, and usually to keep a page off Google, depending on the file type:
 Page Type
 Traffic management
 Hide from Google
 Description
 Web page
-✔
-✗
 For web pages (HTML, PDF, or other non-media formats that Google can read), robots.txt can be used to manage crawling traffic if you think your server will be overwhelmed by requests from Google's crawler, or to avoid crawling unimportant or similar pages on your site.
-You should not use robots.txt as a means to hide your web pages from Google Search results. This is because, if other pages point to your page with descriptive text, your page could still be indexed without visiting the page. If you want to block your page from search results, use another method such as password protection or a noindex directive.
-If your web page is blocked with a robots.txt file, it can still appear in search results, but the search result will not have a description and look something like this. Image files, video files, PDFs, and other non-HTML files will be excluded. If you see this search result for your page and want to fix it, remove the robots.txt entry blocking the page. If you want to hide the page completely from search, use another method.
+You should not use robots.txt as a means to hide your web pages from Google Search results. This is because, if other pages point to your page with descriptive text, your page could still be indexed without visiting the page. If you want to block your page from search results, use another method such as password protection or a noindex directive.
+If your web page is blocked with a robots.txt file, it can still appear in search results, but the search result will not have a description and look something like this. Image files, video files, PDFs, and other non-HTML files will be excluded. If you see this search result for your page and want to fix it, remove the robots.txt entry blocking the page. If you want to hide the page completely from search, use another method.
 Media file
-✔
-✔
-Use robots.txt to manage crawl traffic, and also to prevent image, video, and audio files from appearing in Google search results. (Note that this won't prevent other pages or users from linking to your image/video/audio file.)
+Use robots.txt to manage crawl traffic, and also to prevent image, video, and audio files from appearing in Google search results. (Note that this won't prevent other pages or users from linking to your image/video/audio file.)
 Read more about preventing images from appearing on Google.
 Read more about preventing video files from appearing on Google.
 Resource file
-✔
-✔
-You can use robots.txt to block resource files such as unimportant image, script, or style files, if you think that pages loaded without these resources will not be significantly affected by the loss. However, if the absence of these resources make the page harder for Google's crawler to understand the page, you should not block them, or else Google won't do a good job of analyzing pages that depend on those resources.
+You can use robots.txt to block resource files such as unimportant image, script, or style files, if you think that pages loaded without these resources will not be significantly affected by the loss. However, if the absence of these resources make the page harder for Google's crawler to understand the page, you should not block them, or else Google won't do a good job of analyzing pages that depend on those resources.
 I use a site hosting service
-If you use a website hosting service, such as Wix, Drupal, or Blogger, you might not need to (or be able to) edit your robots.txt file directly. Instead, your provider might expose a search settings page or some other mechanism to tell search engines whether or not to crawl your page.
+If you use a website hosting service, such as Wix, Drupal, or Blogger, you might not need to (or be able to) edit your robots.txt file directly. Instead, your provider might expose a search settings page or some other mechanism to tell search engines whether or not to crawl your page.
 To see if your page has been crawled by Google, search for the page URL in Google.
 If you want to hide (or unhide) your page from search engines, add (or remove) any page login requirements that might exist, and search for instructions about modifying your page visibility in search engines on your hosting service, for example: wix hide page from search engines
 Understand the limitations of robots.txt
-Before you create or edit robots.txt, you should know the limits of this URL blocking method. At times, you might want to consider other mechanisms to ensure your URLs are not findable on the web.
+Before you create or edit robots.txt, you should know the limits of this URL blocking method. At times, you might want to consider other mechanisms to ensure your URLs are not findable on the web.
 Robots.txt directives may not be supported by all search engines
 The instructions in robots.txt files cannot enforce crawler behavior to your site, it's up to the crawler to obey them. While Googlebot and other respectable web crawlers obey the instructions in a robots.txt file, other crawlers might not. Therefore, if you want to keep information secure from web crawlers, it’s better to use other blocking methods, such as password-protecting private files on your server.
 Different crawlers interpret syntax differently
 Although respectable web crawlers follow the directives in a robots.txt file, each crawler might interpret the directives differently. You should know the proper syntax for addressing different web crawlers as some might not understand certain instructions.
-A robotted page can still be indexed if linked to from from other sites
-While Google won't crawl or index the content blocked by robots.txt, we might still find and index a disallowed URL if it is linked from other places on the web. As a result, the URL address and, potentially, other publicly available information such as anchor text in links to the page can still appear in Google search results. To properly prevent your URL from appearing in Google Search results, you should password-protect the files on your server or use the noindex meta tag or response header (or remove the page entirely).
+A robotted page can still be indexed if linked to from other sites
+While Google won't crawl or index the content blocked by robots.txt, we might still find and index a disallowed URL if it is linked from other places on the web. As a result, the URL address and, potentially, other publicly available information such as anchor text in links to the page can still appear in Google search results. To properly prevent your URL from appearing in Google Search results, you should password-protect the files on your server or use the noindex meta tag or response header (or remove the page entirely).
 Note: Combining multiple crawling and indexing directives might cause some directives to counteract other directives. Learn how to configure these directives properly by reading the Combining crawling with indexing / serving directives section of the Google Developers documentation.
 Testing a page for robots.txt blocks
 You can test if a page or resource is blocked by a robots.txt rule.
 To test for noindex directives, use the URL Inspection tool.
-Next: Create a robots.txt file
-Was this helpful?How can we improve it?YesNoSubmit
-true
-About robots.txtIntroduction to robots.txtCreate a robots.txt fileTest your robots.txt with the robots.txt TesterSubmit your updated robots.txt to GoogleRobots FAQs
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-13 UTC.

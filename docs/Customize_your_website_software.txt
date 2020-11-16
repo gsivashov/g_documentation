@@ -1,9 +1,9 @@
 https://developers.google.com/search/mobile-sites/website-software
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Customize your website software
 There are many ways to manage your website’s content. Some site owners completely build their
 own website from scratch. Others may use an existing software package from a company like

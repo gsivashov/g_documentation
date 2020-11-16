@@ -1,9 +1,12 @@
 https://support.google.com/webmasters/answer/7104997
 
-Google Safe Browsing Repeat Offenders PolicyGoogle Safe Browsing helps protect users by showing warnings on dangerous sites or dangerous download files. Safe Browsing also notifies webmasters when their websites are compromised by malicious actors and helps them diagnose and resolve the problem so that their visitors stay safer.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Google Safe Browsing Repeat Offenders Policy
+Google Safe Browsing helps protect users by showing warnings on dangerous sites or dangerous download files. Safe Browsing also notifies webmasters when their websites are compromised by malicious actors and helps them diagnose and resolve the problem so that their visitors stay safer.
 Sites that repeatedly switch between compliant and noncompliant behavior within a short window of time will be classified as Repeat Offenders.
 When a site is established as a Repeat Offender, the webmaster will be notified via email to their registered Search Console email address. Once Safe Browsing has designated a site as a Repeat Offender, the webmaster will be unable to request additional reviews via the Search Console. Repeat Offender status persists for 30 days, after which the webmaster will be able to request a review.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Security, malware, and manual actionsWhat is hacking or hacked content?Malware and unwanted softwarePreventing malware infectionSecurity Issues reportSocial Engineering (Phishing and Deceptive Sites)Manual Actions reportGoogle Safe Browsing Repeat Offenders PolicyVerifying Googlebot
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

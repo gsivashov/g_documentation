@@ -1,12 +1,17 @@
 https://support.google.com/webmasters/answer/6073543
 
-Secure your site with HTTPSProtect your site and your usersWhat is HTTPS?
-HTTPS (Hypertext Transfer Protocol Secure) is an internet communication protocol that protects the integrity and confidentiality of data between the user's computer and the site. Users expect a secure and private online experience when using a website. We encourage you to adopt HTTPS in order to protect your users' connections to your website, regardless of the content on the site.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Secure your site with HTTPS
+What is HTTPS?
+HTTPS (Hypertext Transfer Protocol Secure) is an internet communication protocol that protects the integrity and confidentiality of data between the user's computer and the site. Users expect a secure and private online experience when using a website. We encourage you to adopt HTTPS in order to protect your users' connections to your website, regardless of the content on the site.
 Data sent using HTTPS is secured via Transport Layer Security protocol (TLS), which provides three key layers of protection:
 Encryption—encrypting the exchanged data to keep it secure from eavesdroppers. That means that while the user is browsing a website, nobody can "listen" to their conversations, track their activities across multiple pages, or steal their information.
 Data integrity—data cannot be modified or corrupted during transfer, intentionally or otherwise, without being detected.
 Authentication—proves that your users communicate with the intended website. It protects against man-in-the-middle attacks and builds user trust, which translates into other business benefits.
-Best practices when implementing HTTPS
+Best practices when implementing HTTPS
 Use robust security certificates
 You must obtain a security certificate as a part of enabling HTTPS for your site. The certificate is issued by a certificate authority (CA), which takes steps to verify that your web address actually belongs to your organization, thus protecting your customers from man-in-the-middle attacks. When setting up your certificate, ensure a high level of security by choosing a 2048-bit key. If you already have a certificate with a weaker key (1024-bit), upgrade it to 2048 bits. When choosing your site certificate, keep in mind the following:
 Get your certificate from a reliable CA that offers technical support.
@@ -18,16 +23,16 @@ Use server-side 301 redirects
 Redirect your users and search engines to the HTTPS page or resource with server-side 301 HTTP redirects.
 Verify that your HTTPS pages can be crawled and indexed by Google
 Do not block your HTTPS pages by robots.txt files.
-Do not include meta noindex tags in your HTTPS pages.
-Use the URL Inspection tool to test whether Googlebot can access your pages.
+Do not include meta noindex tags in your HTTPS pages.
+Use the URL Inspection tool to test whether Googlebot can access your pages.
 Support HSTS
-We recommend that HTTPS sites support HSTS (HTTP Strict Transport Security). HSTS tells the browser to request HTTPS pages automatically, even if the user enters http in the browser location bar. It also tells Google to serve secure URLs in the search results. All this minimizes the risk of serving unsecured content to your users.
-To support HSTS, use a web server that supports it and enable the functionality.
+We recommend that HTTPS sites support HSTS (HTTP Strict Transport Security). HSTS tells the browser to request HTTPS pages automatically, even if the user enters http in the browser location bar. It also tells Google to serve secure URLs in the search results. All this minimizes the risk of serving unsecured content to your users.
+To support HSTS, use a web server that supports it and enable the functionality.
 Although it is more secure, HSTS adds complexity to your rollback strategy. We recommend enabling HSTS this way:
 Roll out your HTTPS pages without HSTS first.
-Start sending HSTS headers with a short max-age. Monitor your traffic both from users and other clients, and also dependents' performance, such as ads.
+Start sending HSTS headers with a short max-age. Monitor your traffic both from users and other clients, and also dependents' performance, such as ads.
 Slowly increase the HSTS max-age.
-If HSTS doesn't affect your users and search engines negatively, you can, if you wish, ask your site to be added to the HSTS preload list used by most major browsers.
+If HSTS doesn't affect your users and search engines negatively, you can, if you wish, ask your site to be added to the HSTS preload list used by most major browsers.
 Consider using HSTS preloading
 If you enable HSTS, you can optionally support HSTS preloading for extra security and improved performance. To enable preloading, you must visit hstspreload.org and follow the submission requirements for your site.
 Avoid these common pitfalls
@@ -47,7 +52,7 @@ Allow indexing of your pages by search engines where possible. Avoid the noindex
 Old protocol versions
 Old protocol versions are vulnerable; make sure you have the latest and newest versions of TLS libraries and implement the newest protocol versions.
 Mixed security elements
-Embed only HTTPS content on HTTPS pages.
+Embed only HTTPS content on HTTPS pages.
 Different content on HTTP and HTTPS
 Make sure the content on your HTTP site and your HTTPS is the same.
 HTTP status code errors on HTTPS
@@ -55,14 +60,12 @@ Check that your website returns the correct HTTP status code. For instance 200 O
 More tips
 See the HTTPS migration FAQs for more tips about using HTTPS pages on your site.
 Migrating from HTTP to HTTPS
-If you migrate your site from HTTP to HTTPS, Google treats this simply as a site move with URL changes. This can temporarily affect some of your traffic numbers. See the site move overview page to learn more.
-Add the new HTTPS property to Search Console: Search Console treats HTTP and HTTPS separately: data is not shared between properties in Search Console.
+If you migrate your site from HTTP to HTTPS, Google treats this simply as a site move with URL changes. This can temporarily affect some of your traffic numbers. See the site move overview page to learn more.
+Add the new HTTPS property to Search Console: Search Console treats HTTP and HTTPS separately: data is not shared between properties in Search Console.
 See the troubleshooting page for sitemap moves to troubleshooting problems with your migration.
 More information
 More details on implementing TLS on your site:
 Qualys SSL/TLS best practices
 SSL/TLS Mozilla wiki
-Was this helpful?How can we improve it?YesNoSubmit
-true
-General guidelinesSearch Engine Optimization (SEO) Starter GuideSecure your site with HTTPSKeep a simple URL structureQualify your outbound links to GoogleTag site for child-directed treatmentBrowser compatibilityAvoid creating duplicate contentMake your links crawlableBest practices for website testing with Google Search
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

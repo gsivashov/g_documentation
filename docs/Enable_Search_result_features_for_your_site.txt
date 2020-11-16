@@ -1,5 +1,9 @@
 https://support.google.com/webmasters/answer/7358659
 
+Home
+Google Search Central
+Documentation
+Advanced SEO
 Enable Search result features for your site
 Google supports many interesting search appearance elements that can be applied to your page in search results:
 A few of these result types are generated automatically by Google Search, but most of them can be coded for by your site, as we will explain. But first, let's talk about the general categories of Search results.
@@ -51,7 +55,7 @@ Book, Review
 Education
 Course, Carousel, Dataset
 Entertainment/media/news
-Carousel, Event, Fact check, Livestream, movie, Review, Subscription and paywalled content, Video (and Video Livestream), Podcast, (see also Video best practices)
+Carousel, Event, Fact check, Livestream, movie, Review, Subscription and paywalled content, Video (and Video Livestream), Podcast, (see also Video best practices)
 Business
 Business or corporate identity information, Local business (for a business with a physical store), Top places list
 Events
@@ -73,7 +77,7 @@ See AMP and Mobile-friendly best practices to learn about practices and features
 Q&A tags let you indicate questions and answers on your page.
 Provide search-friendly limited free access to your site by using the Subscription and paywalled content tags.
 Business or corporate identity information
-Google offers a variety of ways to help you provide key business details so that they show up for users in Search results. Corporate identity information provides a way for businesses to indicate preferred site name and logo, as well as other company information to Google.
+Google offers a variety of ways to help you provide key business details so that they show up for users in Search results. Corporate identity information provides a way for businesses to indicate preferred site name and logo, as well as other company information to Google.
 You can claim ownership or manage your knowledge panel data for a business or individual as well.
 Businesses with physical stores might also want to include physical store information. Additionally, you can register a physical business with Google My Business to enable your local business information to show up in Google Maps and in knowledge panel cards. Note: Google My Business information is considered authoritative.
 See Get Your Content on Google to learn other ways to register your business information with various Google products.
@@ -97,7 +101,5 @@ You probably want to compare performance of your pages with search features with
 Take some pages on your site that are not using any structured data, and have several months of data in Search Console. Be sure to choose pages that won't be affected by the time of year or timeliness of the page content; use pages that won't change much, but are still popular enough to be read often enough to generate meaningful data.
 Add structured data or other features to your pages. Confirm that your page code is valid, and that Google has found your features using the URL Inspection tool on your page.
 Record the performance for a few months in the Performance report, filter by URL to compare performance of your page.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Search AppearanceCreate good titles and snippets in Search ResultsEnable Search result features for your siteTools for adding structured data (for beginners)Enriched Search ResultsProvide a publication date to Google SearchDefine a favicon to show in search resultsFlexible Sampling general guidanceTop Places ListFeatured snippets and your website
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-12 UTC.

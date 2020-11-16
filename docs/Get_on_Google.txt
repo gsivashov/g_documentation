@@ -1,14 +1,18 @@
 https://support.google.com/webmasters/answer/6259634
 
-Get on GoogleDo you have content that you want on Google? Here are a few ways to submit it to us.
-Setting goals for your website (and why it matters) | Search for Beginners Ep 2
+Home
+Google Search Central
+Documentation
+Quickstart
+Get on Google
+Do you have content that you want on Google? Here are a few ways to submit it to us.
 What content do you have?
 A website
 Google doesn't require you to take any special steps to appear in search results, but you can help us find new or changed pages faster by letting us know when you make changes.
 Search Console – Submit a Sitemap of your website to Google.
 Structured data – Label your structured content to help users find pages relevant to their search.
 A business or person
-Google for Retail – Promote your products on Google Shopping, Google Offers, and other properties; submit your product catalogs digitally to Google Search.
+Google for Retail – Promote your products on Google Shopping, Google Offers, and other properties; submit your product catalogs digitally to Google Search.
 Google for Small Business - See what resources Google offers to help your small business thrive.
 Google My Business – Get your business on Google Maps.
 Street View – Invite customers on a virtual tour of your business.
@@ -17,16 +21,14 @@ Digital content
 Google Books and eBooks – Promote your books online and sell your titles through our eBook store.
 Google News – Share timely reporting on matters that are important or interesting to our audience.
 Scholar – Include scholarly works in Google's academic index.
-Google News – Appear in Google News search results, or provide digital editions for subscription.
+Google News – Appear in Google News search results, or provide digital editions for subscription.
 Local information
 Geo Data Upload – If you are an authoritative or official source of regional data, publish it through Google.
 Photo Sphere – Photograph and share the world with 360° pictures.
 Street View – Provide a panoramic virtual tour of your property.
 Transit Partner Program – Encourage use of public transit by making it easy to locate routes, schedules and fares.
 Media
-Video on Google Search – Make your videos findable and crawlable by Google Search.
+Video on Google Search – Make your videos findable and crawlable by Google Search.
 YouTube – Upload, distribute, and monetize your videos.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-HelpAbout Search ConsoleGet started with Search ConsoleGet on Google
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-12 UTC.

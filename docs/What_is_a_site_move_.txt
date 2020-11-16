@@ -1,28 +1,60 @@
-https://support.google.com/webmasters/answer/34437
+https://support.google.com/webmasters/topic/6033102
 
-What is a site move?Transfer, change, or migrate your siteAs a site owner or webmaster, it is possible that at some point you'll want to move your site to a different URL or different infrastructure. This section covers the different scenarios of site moves and gives you tips about how to prepare, implement, and monitor the move.
-In this documentation, a site redesign is not considered a site move, even if it involves adding extra URLs. A redesign is changing the layout of existing pages, or adding pages of new content. A move is moving existing pages in one of the following ways:
-Site move without URL changes
-The underlying infrastructure serving the website is changed, but there are no visible changes to the URL. For example, if you move www.example.com to a different hosting provider while keeping www.example.com as the same root URL for your site.
-Site move with URL changes
+Home
+Google Search Central
+Documentation
+Advanced SEO
+What is a site move?
+As a site owner, it is possible that at some point you'll want to move your site to a different
+URL or different infrastructure. This page covers the different scenarios of site moves and
+gives you tips about how to prepare, implement, and monitor the move.
+In this documentation, a site redesign is not considered a site move,
+even if it involves adding extra URLs. A redesign is changing the layout of existing
+pages, or adding pages of new content. A move is moving existing pages in one of the following
+ways:
+Site move
+without URL changes
+The underlying infrastructure serving the website is changed, but there are no visible changes
+to the URL. For example, if you move www.example.com to a different hosting provider
+while keeping www.example.com as the same root URL for your site.
+Site move
+with URL changes
 The page URLs change. For example:
-The protocol changes — http://www.example.com to https://www.example.com
-The domain name changes — example.com to example.net
-The URL paths change — example.com/page.php?id=1 to example.com/widget
-To change how your site serves mobile versus desktop users, see the mobile-friendly site design guide.
+Protocol changes — http://www.example.com to
+https://www.example.com
+Domain name changes — example.com to
+example.net
+URL path changes — example.com/page.php?id=1 to
+example.com/widget
+To change how your site serves mobile versus desktop users, see the
+mobile-friendly site design guide.
 Recommendations for all site moves
-Split your move into smaller steps.
-We recommend initially moving just a piece of the site to test any effects on traffic and search indexing. After that you can move the rest of your site all at once or in chunks. When choosing the initial test section of the site, pick a section that changes less frequently and isn't significantly affected by frequent or unpredictable events. Also keep in mind that while moving just one section is a great way to test your move, it's not necessarily representative of a whole site move when it comes to search. The more pages that you move, the more likely you'll encounter additional problems to solve. Careful planning can minimize problems.
-Time your move to coincide with lower traffic, if possible
-If your traffic is seasonal or dips on certain weekdays, it makes sense to move your site during traffic lulls. This lowers the impact of anything that breaks, and also dedicates more of your server’s power to helping Googlebot update our index.
+Split your move into smaller steps, if that makes sense for your site.
+We recommend initially moving just a piece of the site to test any effects on traffic and
+search indexing. After that you can move the rest of your site all at once or in chunks.
+When choosing the initial test section of the site, pick a section that changes less
+frequently and isn't significantly affected by frequent or unpredictable events. Also keep
+in mind that while moving just one section is a great way to test your move, it's not
+necessarily representative of a whole site move when it comes to search. The more pages
+that you move, the more likely you'll encounter additional problems to solve. Careful
+planning can minimize problems.
+Time your move to coincide with lower traffic, if possible.
+If your traffic is seasonal or dips on certain weekdays, it makes sense to move your site
+during the recurring traffic dips. This lowers the impact of anything that breaks, and also dedicates
+more of your server’s power to helping Googlebot update our index.
 Expect temporary fluctuation in site ranking during the move.
-With any significant change to a site, you may experience ranking fluctuations while Google recrawls and reindexes your site. As a general rule, a medium-sized website can take a few weeks for most pages to move in our index; larger sites can take longer. The speed at which Googlebot and our systems discover and process moved URLs largely depends on the number of URLs and your server speed. Submitting a sitemap can help make the discovery process quicker, and it's fine to move your site in sections.
-Ask questions on Google Webmaster Central.
-There is plenty of good advice on Google Webmasters and specific cases answered in our user forums. If you can’t find an answer, you can ask a live question to one of our Webmaster Trends Analysts during our Webmaster Central office hours.
-If it involves a URL change, you might consider an A/B test or trial run.
+With any significant change to a site, you may experience ranking fluctuations while
+Google recrawls and reindexes your site. As a general rule, a medium-sized website can
+take a few weeks for most pages to move in our index; larger sites can take longer. The
+speed at which Googlebot and our systems discover and process moved URLs largely depends on
+the number of URLs and your server speed. Submitting a sitemap can help make the discovery
+process quicker, and it's fine to move your site in sections.
+Ask questions on Google Search Central.
+There is plenty of good advice on our help page and
+specific cases answered in our user
+forums. If you can’t find an answer, you can ask a live question to one of our Google Search
+specialists during our SEO office hours.
+If it involves a URL change, you might consider an A/B test or trial run.
 Plan for a few weeks to allow for crawling and indexing to pick up changes, plus time to monitor traffic.
-Move your site
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Transfer, move, or migrate your siteChange page URLs with 301 redirectsWhat is a site move?Move your site
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

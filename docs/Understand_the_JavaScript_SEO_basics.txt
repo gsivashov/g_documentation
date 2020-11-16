@@ -1,9 +1,9 @@
 https://developers.google.com/search/docs/guides/javascript-seo-basics
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Understand the JavaScript SEO basics
 Do you suspect that JavaScript issues might be blocking your page or some of your content from
 showing up in Google Search? Learn how to fix JavaScript-related problems with our
@@ -251,4 +251,4 @@ to only load images when the user is about to see them. To make sure you're impl
 in a search-friendly way, follow
 our lazy-loading guidelines.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-09-14 UTC.
+Last updated 2020-11-11 UTC.

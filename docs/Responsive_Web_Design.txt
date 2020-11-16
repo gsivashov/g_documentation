@@ -1,9 +1,9 @@
 https://developers.google.com/search/mobile-sites/mobile-seo/responsive-design
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Responsive Web Design
 Responsive web design is a setup where the server always sends the same
 HTML code to all devices and CSS is used to alter the rendering of the page on

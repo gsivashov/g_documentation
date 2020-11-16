@@ -1,8 +1,7 @@
 https://developers.google.com/search/case-studies/stylecraze-case-study
 
 Home
-Products
-Search for Developers
+Google Search Central
 Case studies
 StyleCraze improved site CTR 1.2x by leveraging How-to structured data
 check_circle_outline 1.2x

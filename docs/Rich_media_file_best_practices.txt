@@ -1,10 +1,15 @@
 https://support.google.com/webmasters/answer/72746
 
-Rich media file best practicesWhat types of files can Google index?Google can index most types of pages and files. Here are a few details about some specific rich media types:
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Rich media file best practices
+Google can index most types of pages and files. Here are a few details about some specific rich media types:
 General best practices
 If you do plan to use rich media on your site, here are some recommendations that can help prevent problems.
 Try to use rich media only where it is needed. We recommend that you use HTML for content and navigation.
-Provide text versions of pages. If you use a non-HTML splash screen on the home page, make sure to include a regular HTML link on that front page to a text-based page where a user (or Googlebot) can navigate throughout your site without the need for rich media.
+Provide text versions of pages. If you use a non-HTML splash screen on the home page, make sure to include a regular HTML link on that front page to a text-based page where a user (or Googlebot) can navigate throughout your site without the need for rich media.
 In general, search engines are text based. This means that in order to be crawled and indexed, your content needs to be in text format. (Google can now index text content contained in Flash files, but other search engines may not.)
 This doesn't mean that you can't include rich media content such as Flash, Silverlight, or videos on your site; it just means that any content you embed in these files should also be available in text format or it might not be accessible to all search engines. The examples below focus on the most common types of non-text content, but the guidelines are similar for any other types: Provide text equivalents for all non-text files. (Also note that Flash no longer works on most mobile browsers.)
 This will not only increase Googlebot's ability to successfully crawl and index your content; it will also make your content more accessible. Many people, for example users with visual impairments, who use screen readers, or have low bandwidth connections, cannot see images on web pages, and providing text equivalents widens your audience.
@@ -20,7 +25,5 @@ When a SWF file loads content from some other file—whether it's text, HTML, XM
 We're continually working to improve our indexing of Flash files, but there are some limitations. For example, we're currently unable to index the bidirectional language content (for example, Hebrew or Arabic) in Flash files.
 Note that while Google can index the content of Flash files, other search engines may not be able to. Therefore, we recommend that you use rich-media technologies like Flash primarily for decorative purposes, and instead use HTML for content and navigation. This makes your site more crawler-friendly, and also makes it accessible to a larger audience including, for example, readers with visual impairments that require the use of screen readers, users of old or non-standard browsers, and users with limited or low-bandwidth connections such as a cellphone or mobile device. An added bonus? Using HTML for navigation will allow users to bookmark content and send direct links in email.
 You could also consider using sIFR (Scalable Inman Flash Replacement). sIFR (an open-source project) lets webmasters replace text elements with Flash equivalents. Using this technique, content and navigation is displayed by an embedded Flash object but, because the content is contained in the HTML source, it can be read by non-Flash users (including search engines).
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Images and videoGoogle Image best practicesImage sitemapsImage Rights Metadata in Google ImagesVideo best practicesVideo sitemaps and video sitemap alternativesRich media file best practices
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

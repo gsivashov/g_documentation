@@ -1,9 +1,14 @@
 https://support.google.com/webmasters/answer/9046777
 
-Google Discover and your websiteGoogle Discover shows users content related to their interests, based on their Web & App Activity.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Google Discover and your website
+Google Discover shows users content related to their interests, based on their Web & App Activity.
 How Discover is different from Search
 With Search, users enter a search term to find helpful information related to their query, but Discover takes a different approach. Instead of showing results in response to a query, Discover surfaces content primarily based on what Google's automated systems believe to be a good match with a user's interests. The content in Discover changes regularly based on newly published web content or evolving user interests.
-Given the serendipitous nature of Discover, traffic from Discover is less predictable or dependable when compared to Search, and should be considered supplemental to your Search traffic. This means that you might create and optimize content to fulfill specific search needs for search engine traffic, but there is no way to create content that explicitly targets Discover's interest matching.
+Given the serendipitous nature of Discover, traffic from Discover is less predictable or dependable when compared to Search, and should be considered supplemental to your Search traffic. This means that you might create and optimize content to fulfill specific search needs for search engine traffic, but there is no way to create content that explicitly targets Discover's interest matching.
 How content appears in Discover
 Content is automatically eligible to appear in Discover if it is indexed by Google and meets Discover’s content policies. No special tags or structured data are required. Please note that being eligible to appear in Discover is not a guarantee of appearing.
 To increase the likelihood of success, ensure that you are posting outstanding and engaging content that you think users would find interesting. Especially consider the following:
@@ -16,7 +21,5 @@ Including compelling, high-quality images in your content, especially large imag
 Our automated systems surface content in Discover from sites that have many individual pages that demonstrate expertise, authoritativeness and trustworthiness (E-A-T). Those looking to improve E-A-T can consider some of the same questions we encourage site owners to consider for Search. While Search and Discover are different, the overall principles for E-A-T as it applies to content within them are similar.
 Monitor your performance on Discover
 If you have content on Discover, you can monitor your performance using the Performance Report for Discover. This report shows impressions, clicks, and CTR for any of your content that has appeared in on Discover in the last 16 months, as long as your data reaches a minimum threshold of impressions.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-MobileMobile viewing on feature phonesWeb Light: Faster and lighter mobile pages from searchAd network support for Web Light pages in Google SearchGoogle Discover and your websiteResources for developing mobile-friendly pagesAnnounce mobile billing charges clearlyAssociate your Android app with a website
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-12 UTC.

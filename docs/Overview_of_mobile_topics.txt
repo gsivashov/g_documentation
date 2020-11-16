@@ -1,0 +1,22 @@
+https://support.google.com/webmasters/topic/2370586
+
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Overview of mobile topics
+The following topics describe how you can optimize your site for mobile devices.
+Topics
+Mobile-friendliness
+Learn why mobile-friendliness is important and how to make your website mobile-friendly.
+Mobile viewing on feature phones
+To ensure that the highest quality and most useable web page is displayed on a user's mobile phone or device, Google may resize, adjust, or convert images, text formatting and/or certain aspects of web page functionality. If you don't want Google to transcode your web page on feature phones, you may request that Google redirect the user to an alternate page.
+Web Light: Faster and lighter mobile pages from search
+Web Light pages preserve a majority of the relevant content and provide a link for users
+to view the original page.
+Ad network support for Web Light pages in Google Search
+If you're an ad network and interested in being included in Web Light pages, learn how you can participate.
+Google Discover and your website
+Learn how Google Discover is different from Google Search, how content appears on Discover, and how to monitor your perforamnce.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-12 UTC.

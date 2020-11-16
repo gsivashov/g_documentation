@@ -1,10 +1,15 @@
 https://support.google.com/webmasters/answer/80553
 
-Verifying GooglebotYou can verify if a web crawler accessing your server really is Googlebot (or another Google user-agent). This is useful if you're concerned that spammers or other troublemakers are accessing your site while claiming to be Googlebot. Google doesn't post a public list of IP addresses for webmasters to whitelist. This is because these IP address ranges can change, causing problems for any webmasters who have hard-coded them, so you must run a DNS lookup as described next.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Verifying Googlebot
+You can verify if a web crawler accessing your server really is Googlebot (or another Google user-agent). This is useful if you're concerned that spammers or other troublemakers are accessing your site while claiming to be Googlebot. Google doesn't post a public list of IP addresses for webmasters to whitelist. This is because these IP address ranges can change, causing problems for any webmasters who have hard-coded them, so you must run a DNS lookup as described next.
 To verify Googlebot as the caller:
 Run a reverse DNS lookup on the accessing IP address from your logs, using the host command.
-Verify that the domain name is in either googlebot.com or google.com
-Run a forward DNS lookup on the domain name retrieved in step 1 using the host command on the retrieved domain name. Verify that it is the same as the original accessing IP address from your logs.
+Verify that the domain name is in either googlebot.com or google.com
+Run a forward DNS lookup on the domain name retrieved in step 1 using the host command on the retrieved domain name. Verify that it is the same as the original accessing IP address from your logs.
 Example 1:
 > host 66.249.66.1
 1.66.249.66.in-addr.arpa domain name pointer crawl-66-249-66-1.googlebot.com.
@@ -15,7 +20,5 @@ Example 2:
 77.90.249.66.in-addr.arpa domain name pointer rate-limited-proxy-66-249-90-77.google.com.
 > host rate-limited-proxy-66-249-90-77.google.com
 rate-limited-proxy-66-249-90-77.google.com has address 66.249.90.77
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Security, malware, and manual actionsWhat is hacking or hacked content?Malware and unwanted softwarePreventing malware infectionSecurity Issues reportSocial Engineering (Phishing and Deceptive Sites)Manual Actions reportGoogle Safe Browsing Repeat Offenders PolicyVerifying Googlebot
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

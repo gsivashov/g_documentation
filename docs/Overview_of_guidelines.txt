@@ -1,11 +1,55 @@
-https://support.google.com/webmasters/answer/9526064
+https://support.google.com/webmasters/topic/9460495
 
-Overview of guidelinesThe guidelines sections provide advice on how to code your site in order to be eligible to appear on Google. These guidelines fall into the following categories:
-Webmaster guidelines: General best practices to help your site appear in Google Search, as well as quality guidelines that, if not followed, can cause your page or site to be omitted from Search.
-General guidelines: Best practices for having your site show up and look its best in Google.
-Content-specific guidelines: Additional tips for specific content types on your site, including images, video, AMP, AJAX, and mobile-friendly sites. For more information about general best practices, or how to enable specific features for your site, see the Search Appearance topic.
-Quality guidelines: These describe specific prohibited techniques that can get your page or site omitted from Search results. Engaging in these techniques can incur a manual action for your site.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-GuidelinesOverview of guidelinesWebmaster GuidelinesGeneral guidelinesContent-specific guidelinesQuality guidelines
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Overview of guidelines
+The guidelines provide advice on how to code your site in order to be eligible to appear
+on Google. These guidelines fall into the following categories:
+Webmaster guidelines
+The Webmaster guidelines are
+general best practices to help your site appear in Google Search, as well as quality guidelines
+that, if not followed, can cause your page or site to be omitted from Search.
+General guidelines
+The following general guidelines are best practices for having your site show up and look its best in Google.
+Keep a simple URL structure
+Qualify your outbound links to Google
+Tag site for child-directed treatment
+Browser compatibility
+Avoid creating duplicate content
+Make your links crawlable
+Make sure Googlebot is not blocked
+Best practices for website testing with Google Search
+Content-specific guidelines
+The following guidelines are additional tips for specific content types on your site,
+including images, video, AMP, AJAX, and mobile-friendly sites. For more information about
+general best practices, or how to enable specific features for your site, see the
+Search Appearance topic.
+Google Image best practices
+Video best practices
+Rich media file best practices
+AMP on Google Search guidelines
+Best practices for education sites in Google Search
+COVID-19 resources for sites from Google Search
+Design AJAX-powered sites for accessibility
+Quality guidelines
+The following guidelines describe specific prohibited techniques that can get your page or
+site omitted from Search results. Engaging in these techniques can incur a
+manual
+action for your site.
+Automatically generated content
+Sneaky redirects
+Link schemes
+Cloaking
+Hidden text and links
+Doorway pages
+Scraped content
+Affiliate programs
+Irrelevant keywords
+Creating pages with malicious behavior
+User-generated spam
+Ways to Prevent Comment Spam
+Report spam, paid links, or malware
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-12 UTC.

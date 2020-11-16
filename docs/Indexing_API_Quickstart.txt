@@ -1,9 +1,8 @@
 https://developers.google.com/search/apis/indexing-api/v3/quickstart
 
 Home
-Products
-Search for Developers
-Reference
+Google Search Central
+Indexing API
 Indexing API Quickstart
 The Indexing API allows any site owner to directly notify Google when pages are added or
 removed. This allows Google to schedule pages for a fresh crawl, which can lead to higher quality
@@ -26,4 +25,4 @@ Complete the prerequisites by enabling the Indexing API, creating a new service 
 Send requests to notify Google of new, updated, or deleted web pages.
 You may need more quota than the default. To view your current quota and request more quota, see Quota.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-11-12 UTC.

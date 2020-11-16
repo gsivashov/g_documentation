@@ -1,8 +1,7 @@
 https://developers.google.com/search/case-studies/overview
 
 Home
-Products
-Search for Developers
+Google Search Central
 Case studies
 Learn how Google Search can help you reach more people with your website
 Saramin increased organic Search traffic 2x by investing in SEO
@@ -51,4 +50,4 @@ more recipes, and spend more time enjoying and cooking the recipes we have," say
 Recipe group manager Yuki Uchida.
 Read case study
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-04-08 UTC.
+Last updated 2020-11-11 UTC.

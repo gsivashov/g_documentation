@@ -1,15 +1,19 @@
 https://support.google.com/webmasters/answer/35653
 
-Manage your sitemapsBuild and submit a sitemapNext: Sitemaps reportThis page describes how to build a sitemap and make it available to Google. Learn more about sitemaps here.
-Build and submit a sitemap:
-Decide which pages on your site should be crawled by Google, and determine the canonical version of each page.
-Decide which sitemap format you want to use. You can create your sitemap manually or choose from a number of third-party tools to generate your sitemap for you.
-Make your sitemap available to Google by adding it to your robots.txt file or directly submitting it to Search Console.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Build and submit a sitemap
+This page describes how to build a sitemap and make it available to Google. Learn more about sitemaps here.
+Decide which pages on your site should be crawled by Google, and determine the canonical version of each page.
+Decide which sitemap format you want to use. You can create your sitemap manually or choose from a number of third-party tools to generate your sitemap for you.
+Make your sitemap available to Google by adding it to your robots.txt file or directly submitting it to Search Console.
 Sitemap formats
-Google supports several sitemap formats, described here. Google expects the standard sitemap protocol in all formats. Google does not currently consume the <priority> attribute in sitemaps.
-All formats limit a single sitemap to 50MB (uncompressed) and 50,000 URLs. If you have a larger file or more URLs, you will have to break your list into multiple sitemaps. You can optionally create a sitemap index file (a file that points to a list of sitemaps) and submit that single index file to Google. You can submit multiple sitemaps and/or sitemap index files to Google.
+Google supports several sitemap formats, described here. Google expects the standard sitemap protocol in all formats. Google does not currently consume the <priority> attribute in sitemaps.
+All formats limit a single sitemap to 50MB (uncompressed) and 50,000 URLs. If you have a larger file or more URLs, you will have to break your list into multiple sitemaps. You can optionally create a sitemap index file (a file that points to a list of sitemaps) and submit that single index file to Google. You can submit multiple sitemaps and/or sitemap index files to Google.
 XML
-Here is a very basic XML sitemap that includes the location of a single URL:
+Here is a very basic XML sitemap that includes the location of a single URL:
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
@@ -22,36 +26,38 @@ You can see examples of sitemaps that specify alternate language pages and sitem
 RSS, mRSS, and Atom 1.0
 If you have a blog with an RSS or Atom feed, you can submit the feed's URL as a sitemap. Most blog software is able to create a feed for you, but recognize that this feed only provides information on recent URLs.
 Google accepts RSS 2.0 and Atom 1.0 feeds.
-You can use an mRSS (media RSS) feed to provide Google details about video content on your site.
+You can use an mRSS (media RSS) feed to provide Google details about video content on your site.
 Text
-If your sitemap includes only web page URLs, you can provide Google with a simple text file that contains one URL per line. For example:
+If your sitemap includes only web page URLs, you can provide Google with a simple text file that contains one URL per line. For example:
 http://www.example.com/file1.html
 http://www.example.com/file2.html
 Guidelines for text file sitemaps:
-Encode your file using UTF-8 encoding.
+Encode your file using UTF-8 encoding.
 Your text file should contain nothing but the list of URLs.
 You can name the text file anything you wish, provided it has a .txt extension (for instance, sitemap.txt).
 Google sites
-If you've created and verified a site using Google Sites, Sites will automatically generate a sitemap for you. You cannot modify the sitemap, but you can submit it to Google  if you want to read the sitemap report data. Note that your sitemap might not be displayed properly if you have more than 1,000 pages in a single sub-directory.
-If your site is hosted at Google Sites, your sitemap URL is http://sites.google.com/site/yoursitename/system/feeds/sitemap
-If you created your site using Google Apps, your sitemap URL is http://sites.google.com/yourdomain/yoursitename/system/feeds/sitemap
+If you've created and verified a site using Google Sites, Sites will automatically generate a sitemap for you. You cannot modify the sitemap, but you can submit it to Google if you want to read the sitemap report data. Note that your sitemap might not be displayed properly if you have more than 1,000 pages in a single sub-directory.
+If your site is hosted at Google Sites, your sitemap URL is http://sites.google.com/site/yoursitename/system/feeds/sitemap
+If you created your site using Google Apps, your sitemap URL is http://sites.google.com/yourdomain/yoursitename/system/feeds/sitemap
 Sitemap extensions for additional media types
-Google supports extended sitemap syntax for the following media types. Use these extensions to describe video files, images, and other hard-to-parse content on your site to improve indexing.
+Google supports extended sitemap syntax for the following media types. Use these extensions to describe video files, images, and other hard-to-parse content on your site to improve indexing.
 Video
 Images
 News
 General sitemap guidelines
-Use consistent, fully-qualified URLs. Google will crawl your URLs exactly as listed. For instance, if your site is at https://www.example.com/, don't specify a URL as https://example.com/ (missing www) or ./mypage.html (a relative URL).
+Use consistent, fully-qualified URLs. Google will crawl your URLs exactly as listed. For instance, if your site is at https://www.example.com/, don't specify a URL as https://example.com/ (missing www) or ./mypage.html (a relative URL).
 A sitemap can be posted anywhere on your site, but a sitemap affects only descendants of the parent directory. Therefore, a sitemap posted at the site root can affect all files on the site, which is where we recommend posting your sitemaps.
-Don't include session IDs from URLs in your sitemap to reduce duplicate crawling of those URLs.
-Tell Google about alternate language versions of a URL using hreflang annotations.
-Sitemap files must be UTF-8 encoded, and URLs escaped appropriately.
-Break up large sitemaps into smaller sitemaps: maximum sitemap size is 50,000 URLs/50MB uncompressed. Use a sitemap index file to list all the individual sitemaps and submit this single file to Google rather than submitting individual sitemaps.
-List only canonical URLs in your sitemaps. If you have two versions of a page, list only the (Google-selected) canonical in the sitemap. If you have two versions of your site (for example, www and non-www), decide which is your preferred site, and put the sitemap there, and add rel=canonical or redirects on the other site.
-If you have different URLs for mobile and desktop versions of a page, we recommend pointing to only one version in a sitemap. However, if you feel the need to point to both URLs,  annotate your URLs to indicate the desktop and mobile versions.
+Don't include session IDs from URLs in your sitemap to reduce duplicate crawling of those URLs.
+Tell Google about alternate language versions of a URL using hreflang annotations.
+Sitemap files must be UTF-8 encoded, and URLs escaped appropriately.
+Break up large sitemaps into smaller sitemaps: maximum sitemap size is 50,000 URLs/50MB uncompressed. Use a sitemap index file to list all the individual sitemaps and submit this single file to Google rather than submitting individual sitemaps.
+List only canonical URLs in your sitemaps. If you have two versions of a page, list only the (Google-selected) canonical in the sitemap. If you have two versions of your site (for example, www and non-www), decide which is your preferred site, and put the sitemap there, and add rel=canonical or redirects on the other site.
+If you have different URLs for mobile and desktop versions of a page, we recommend pointing to only one version in a sitemap. However, if you feel the need to point to both URLs,
+annotate your URLs to indicate the desktop and mobile versions.
 Use sitemap extensions for pointing to additional media types such as video, images, and news.
-If you have alternate pages for different languages or regions, you can use hreflang in either a sitemap or html tags to indicate the alternate URLs.
-Non-alphanumeric and non-latin characters. We require your sitemap file to be UTF-8 encoded (you can generally do this when you save the file). As with all XML files, any data values (including URLs) must use entity escape codes for the characters listed in the table below.  A sitemap can contain only ASCII characters; it can't contain upper ASCII characters or certain control codes or special characters such as * and {}. If your sitemap URL contains these characters, you'll receive an error when you try to add it.
+If you have alternate pages for different languages or regions, you can use hreflang in either a sitemap or html tags to indicate the alternate URLs.
+Non-alphanumeric and non-latin characters. We require your sitemap file to be UTF-8 encoded (you can generally do this when you save the file). As with all XML files, any data values (including URLs) must use entity escape codes for the characters listed in the table below.
+A sitemap can contain only ASCII characters; it can't contain upper ASCII characters or certain control codes or special characters such as * and {}. If your sitemap URL contains these characters, you'll receive an error when you try to add it.
 Character
 Escape Code
 Ampersand
@@ -78,15 +84,15 @@ Here is that same URL, UTF-8 encoded (for hosting on a server that uses that enc
 http://www.example.com/%C3%BCmlat.html&q=name
 Here is that same URL, entity escaped:
 http://www.example.com/%C3%BCmlat.html&q=name
-Remember that sitemaps are a recommendation to Google about which pages you think are important; Google does not pledge to crawl every URL in a sitemap.
-Google ignores <priority> and <changefreq> values, so don't bother adding them.
-Google reads the <lastmod> value, but if you misrepresent this value, we will stop reading it.
+Remember that sitemaps are a recommendation to Google about which pages you think are important; Google does not pledge to crawl every URL in a sitemap.
+Google ignores <priority> and <changefreq> values, so don't bother adding them.
+Google reads the <lastmod> value, but if you misrepresent this value, we will stop reading it.
 Position of a URL in a sitemap is not important; Google does not crawl URLs in the order in which they appear in your sitemap.
 Make your sitemap available to Google (Submit your sitemap to Google)
 Google doesn't check a sitemap every time a site is crawled; a sitemap is checked only the first time that we notice it, and thereafter only when you ping us to let us know that it's changed. You should alert Google about a sitemap only when it's new or updated; do not submit or ping unchanged sitemaps multiple times.
 There are a few different ways to make your sitemap available to Google:
 Submit it to Google using the Search Console Sitemaps tool
-Insert the following line anywhere in your robots.txt file, specifying the path to your sitemap:
+Insert the following line anywhere in your robots.txt file, specifying the path to your sitemap:
 Sitemap: http://example.com/sitemap_location.xml
 Use the "ping" functionality to ask us to crawl your sitemap. Send an HTTP GET request like this:
 http://www.google.com/ping?sitemap=<complete_url_of_sitemap>
@@ -94,8 +100,5 @@ for example:
 http://www.google.com/ping?sitemap=https://example.com/sitemap.xml
 Troubleshooting sitemaps
 See the sitemaps troubleshooting guide.
-Next: Sitemaps report
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Manage your sitemapsLearn about sitemapsBuild and submit a sitemapSitemaps reportSplit up your large sitemapsSitemap extensionsVideo sitemaps and video sitemap alternativesImage sitemapsCreate a Google News sitemap
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

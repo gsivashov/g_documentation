@@ -1,0 +1,57 @@
+https://support.google.com/webmasters/answer/1050724
+
+Home
+Google Search Central
+Help
+Google Search crawling and indexing FAQ
+This article brings together answers to the questions about crawling and indexing that we at Google hear most often.
+How do I get my site into Google?
+Crawling and indexing are processes which can take some time and which rely on many factors. In general, we cannot make predictions or guarantees about when or if your URLs will be crawled or indexed. When looking at a site's indexing in Search Console, make sure that you have both the "www" and the "non-www" versions (like "www.example.com" and "example.com") verified. Keep in mind that while a sitemap file can help us learn about your site, it does not guarantee indexing or increase your site's ranking.
+See guides about these processes
+How Google Search works: Explains how crawling, indexing, and ranking works.
+Why is my page missing from Google Search?: Explains common questions and issues.
+Google's Webmaster Guidelines: Provide technical, content and quality guidelines for webmasters.
+Google-friendly sites: Provides some information about how to create a website so that it can easily be crawled and indexed.
+Adding a site to Google: For specific advice and additional tips.
+Index Coverage report: Learn which of your pages have been indexed and any problems encountered when indexing your site.
+In general, the most common reason that a site is not indexed is because it's just too new; be patient and ask Google to crawl and index it.
+More common reasons why
+Here are the other common reasons why a website or parts of a website might not be indexed yet:
+A website might not be well connected through multiple links from other sites on the web.
+The design of the website might make crawling and indexing difficult. Maybe the site itself is even explicitly blocking crawling or indexing?
+Perhaps it was temporarily unavailable when we attempted to crawl? You might find crawl errors in Search Console in this case.
+Verify that the website complies with our Webmaster Guidelines and hasn't been hacked or otherwise modified by a third party.
+In very rare cases, it might be that content previously hosted on a domain name is causing issues. In this case, you may wish to submit a reconsideration request detailing the change of content and ownership.
+If the website recently moved to a different address, make sure that you follow our guidelines for moving a site.
+It's possible that a previous owner or someone else with access to the website requested removal through Search Console. You can cancel these requests by using the Removals Tool.
+I have the same content available on two domains. How do I tell Google that the two domains are the same site?
+Use a 301 redirect to direct traffic from the alternative domain (example2.org) to your preferred domain (example.com). This tells Google to always look for your content in one location, and is the best way to ensure that Google (and other search engines) can crawl and index your site correctly. Ranking signals (such as PageRank or incoming links) will be passed appropriately across 301 redirects. If you're changing domains, read about the best practices for making the move.
+Do I have duplicate content? Am I being penalized for it? What should I do about it?
+Generally, duplicate content does not lead to manual actions taken against your site. For more information, read our article on Demystifying the "duplicate content penalty". If you're still concerned or want to know more, read these articles:
+Dealing with duplicate content
+Duplicate content caused by URL parameters
+Duplicate content caused by scrapers
+Reunifying duplicate content on your website
+Duplicate content and multiple site issues
+Define a canonical page for similar or duplicate pages
+Handling cross-domain duplication
+Is it better to use subfolders or subdomains?
+You should choose whatever is easiest for you to organize and manage. From an indexing and ranking perspective, Google doesn't have a preference.
+Does validating my site's code (with a tool such as the W3C validator) help my site's ranking in Google?
+No, at least not directly. However, cleaning up your HTML makes your site render better in a variety of browsers and more accessible.
+I'm using a hosting service for my site that uses frames, "masked redirects", or "masked forwarding". Will this affect my site's crawling, indexing, or ranking?
+We recommend always hosting your content directly using your domain name. Using a forwarding service that uses frames will generally make crawling, indexing, and ranking of your content using your domain name impossible.
+I changed some text on my pages. Why isn't it updated in search results?
+Crawling and indexing of pages within a website can take some time. While there's no way to force an update, here are some tips that may help to speed this process up:
+Ask Google to recrawl your URLs.
+If you are using a Sitemap file, make sure to update the last modification date.
+If your site's content is indexed with multiple URLs, resolving the duplicate content issue within your site will generally allow crawlers to find updated content quicker.
+My website uses pages made with PHP, ASP, CGI, JSP, CFM, etc. Will these still get indexed?
+Yes! Provided these technologies serve pages that are visible in a browser, without special plugins installed or enabled, Googlebot will generally be able to crawl, index, and rank them without problems. We have no preference; they're all equivalent in terms of crawling, indexing, and ranking, as long as we can crawl them.
+I recently purchased a domain that was previously associated with a spammy website. What can I do to make sure that spammy history doesn't affect my site now?
+Verify your site in Search Console, then check to see if there's a manual action in the Manual Actions report.
+Can't find the answer?
+If you can't find the answer to your question on this page, check out Google's help resources for site owners.
+We also provide official Google Search Central help communities in the following languages: English • Deutsch • Español • Français • Italiano • Nederlands • Polski • Português • Türkçe • Русский • العربية • 中文（简体） • 日本語 • 한국어
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

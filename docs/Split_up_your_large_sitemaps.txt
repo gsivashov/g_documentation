@@ -1,6 +1,11 @@
 https://support.google.com/webmasters/answer/75712
 
-Manage your sitemapsSplit up your large sitemapsNext: Video sitemaps and video sitemap alternativesIf you have many sitemaps, you can use a sitemaps index file as a way to submit them at once. The XML format of a sitemap index file is very similar to the XML format of a sitemap file. The sitemap index file uses the following XML tags:
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Split up your large sitemaps
+If you have many sitemaps, you can use a sitemaps index file as a way to submit them at once. The XML format of a sitemap index file is very similar to the XML format of a sitemap file. The sitemap index file uses the following XML tags:
 sitemapindex - the parent tag surrounds the file.
 sitemap - the parent tag for each sitemap listed in the file (a child of sitemapindex)
 loc - the location of the sitemap (a child of sitemap)
@@ -35,8 +40,5 @@ To host cross-site sitemaps in a single location, follow the steps below:
 Make sure that you have verified ownership of all the sites.
 Create a sitemap that includes URLs from all the sites that you want to cover. You can create a single sitemap that includes URLs from all sites or you can create one or more separate sitemaps for each site.
 Using Google Search Console, submit your sitemap(s).
-Next: Video sitemaps and video sitemap alternatives
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Manage your sitemapsLearn about sitemapsBuild and submit a sitemapSitemaps reportSplit up your large sitemapsSitemap extensionsVideo sitemaps and video sitemap alternativesImage sitemapsCreate a Google News sitemap
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

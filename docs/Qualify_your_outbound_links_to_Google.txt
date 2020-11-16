@@ -1,6 +1,11 @@
 https://support.google.com/webmasters/answer/96569
 
-Qualify your outbound links to GoogleFor certain links on your site, you might want to tell Google your relationship with the linked page. In order to do that, you should use one of the following rel attribute values in the <a> tag.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Qualify your outbound links to Google
+For certain links on your site, you might want to tell Google your relationship with the linked page. In order to do that, you should use one of the following rel attribute values in the <a> tag.
 For regular links that you expect Google to follow without any qualifications, you don't need to add a rel attribute. Example: "My favorite horse is the <a href="https://horses.example.com/Palomino">palomino</a>."
 For other links, use one or more of the following values:
 rel Value
@@ -16,11 +21,9 @@ Use the nofollow value when other values don't apply, and you'd rather Google no
 Multiple values
 You may specify multiple rel values as a space- or comma-separated list. Examples:
 I love <a href="https://cheese.example.com/Appenzeller_cheese" rel="ugc nofollow">Appenzeller</a> cheese.
-I hate <a href="https://cheese.example.com//blue_cheese" rel="ugc,nofollow">Blue</a> cheese.
+I hate <a href="https://cheese.example.com//blue_cheese" rel="ugc,nofollow">Blue</a> cheese.
 Links marked with these rel attributes will generally not be followed. Remember that the linked pages may be found through other means, such as sitemaps or links from other sites, and thus they may still be crawled. These rel attributes are used only in <a> tags (because Google can follow only links pointed to by an <a> tag), except nofollow, which is also available as robots meta tag.
 If you need to prevent Google from following a link to a page on your own site, use the robots.txt Disallow rule.
 To prevent Google from indexing a page, allow crawling and use the noindex robots rule.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-General guidelinesSearch Engine Optimization (SEO) Starter GuideSecure your site with HTTPSKeep a simple URL structureQualify your outbound links to GoogleTag site for child-directed treatmentBrowser compatibilityAvoid creating duplicate contentMake your links crawlableBest practices for website testing with Google Search
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

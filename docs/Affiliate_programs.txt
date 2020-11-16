@@ -1,6 +1,11 @@
 https://support.google.com/webmasters/answer/76465
 
-Affiliate programsOur Webmaster Guidelines advise you to create websites with original content that adds value for users. This is particularly important for sites that participate in affiliate programs. Typically, affiliate websites feature product descriptions that appear on sites across that affiliate network. As a result, sites featuring mostly content from affiliate networks can suffer in Google's search rankings, because they do not have enough added value content that differentiates them from other sites on the web. Added value means additional meaningful content or features, such as additional information about price, purchasing location, or product category.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Affiliate programs
+Our Webmaster Guidelines advise you to create websites with original content that adds value for users. This is particularly important for sites that participate in affiliate programs. Typically, affiliate websites feature product descriptions that appear on sites across that affiliate network. As a result, sites featuring mostly content from affiliate networks can suffer in Google's search rankings, because they do not have enough added value content that differentiates them from other sites on the web. Added value means additional meaningful content or features, such as additional information about price, purchasing location, or product category.
 Google believes that pure, or "thin," affiliate websites do not provide additional value for web users, especially (but not only) if they are part of a program that distributes its content across a network of affiliates. These sites often appear to be cookie-cutter sites or templates the same or similar content replicated within the same site, or across multiple domains or languages. Because a search results page could return several of these sites, all with the same content, thin affiliates create a frustrating user experience.
 Exampes of thin affiliates:
 Pages with product affiliate links on which the product descriptions and reviews are copied directly from the original merchant without any original content or added value.
@@ -12,7 +17,5 @@ When selecting an affiliate program, choose a product category appropriate for y
 Use your website to build community among your users. This will help build a loyal readership, and can also create a source of information on the subject you are writing about. For example, discussion forums, user reviews, and blogs all offer unique content and provide value to users.
 Keep your content updated and relevant. Fresh, on-topic information increases the likelihood that your content will be crawled by Googlebot and clicked on by users.
 Pure affiliate sites consisting of content that appears in many other places on the web are highly unlikely to perform well in Google search results and may be negatively perceived by search engines. Unique, relevant content provides value to users and distinguishes your site from other affiliates, making it more likely to rank well in Google search results.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Quality guidelinesAutomatically generated contentSneaky redirectsLink schemesCloakingHidden text and linksDoorway pagesScraped contentAffiliate programsIrrelevant keywordsCreating pages with malicious behaviorUser-generated spamWays to Prevent Comment SpamReport spam, paid links, or malware
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

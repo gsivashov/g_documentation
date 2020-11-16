@@ -1,8 +1,8 @@
 https://developers.google.com/search/apis/indexing-api/v3/reference/indexing/rpc/google.indexing.v3
 
 Home
-Products
-Search for Developers
+Google Search Central
+Indexing API
 Reference
 Package google.indexing.v3
 Index
@@ -79,4 +79,4 @@ The given URL (Web document) has been updated.
 URL_DELETED
 The given URL (Web document) has been deleted.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-11-11 UTC.

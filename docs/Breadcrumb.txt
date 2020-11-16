@@ -1,9 +1,9 @@
 https://developers.google.com/search/docs/data-types/breadcrumb
 
 Home
-Products
-Search for Developers
-Reference
+Google Search Central
+Documentation
+Advanced SEO
 Breadcrumb
 A breadcrumb trail on a page indicates the page's position in the site hierarchy, and it may
 help users understand and explore a site effectively. A user can navigate all the way up in
@@ -676,4 +676,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-10-30 UTC.
+Last updated 2020-11-12 UTC.

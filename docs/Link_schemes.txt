@@ -1,6 +1,11 @@
 https://support.google.com/webmasters/answer/66736
 
-Link schemesAny links intended to manipulate PageRank or a site's ranking in Google search results may be considered part of a link scheme and a violation of Google’s Webmaster Guidelines. This includes any behavior that manipulates links to your site or outgoing links from your site.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Link schemes
+Any links intended to manipulate PageRank or a site's ranking in Google search results may be considered part of a link scheme and a violation of Google’s Webmaster Guidelines. This includes any behavior that manipulates links to your site or outgoing links from your site.
 The following are examples of link schemes which can negatively impact a site's ranking in search results:
 Buying or selling links that pass PageRank. This includes exchanging money for links, or posts that contain links; exchanging goods or services for links; or sending someone a “free” product in exchange for them writing about it and including a link
 Excessive link exchanges ("Link to me and I'll link to you") or partner pages exclusively for the sake of cross-linking
@@ -22,11 +27,9 @@ Thanks, that’s great info!
 - Paul
 paul’s pizza san diego pizza best pizza san diego
 Note that PPC (pay-per-click) advertising links that don’t pass PageRank to the buyer of the ad do not violate our guidelines. You can prevent PageRank from passing in several ways, such as:
-Indicating the link is sponsored adding a qualifying attribute to the <a> tag
+Indicating the link is sponsored adding a qualifying attribute to the <a> tag
 Redirecting the links to an intermediate page that is blocked from search engines with a robots.txt file
 The best way to get other sites to create high-quality, relevant links to yours is to create unique, relevant content that can naturally gain popularity in the Internet community. Creating good content pays off: Links are usually editorial votes given by choice, and the more useful content you have, the greater the chances someone else will find that content valuable to their readers and link to it.
 If you see a site that is participating in link schemes intended to manipulate PageRank, let us know. We'll use your information to improve our algorithmic detection of such links.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Quality guidelinesAutomatically generated contentSneaky redirectsLink schemesCloakingHidden text and linksDoorway pagesScraped contentAffiliate programsIrrelevant keywordsCreating pages with malicious behaviorUser-generated spamWays to Prevent Comment SpamReport spam, paid links, or malware
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

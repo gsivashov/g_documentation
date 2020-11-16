@@ -1,12 +1,16 @@
 https://support.google.com/webmasters/answer/9476993
 
-European press publisher FAQGoogle helps people find relevant and diverse content, and helps publishers reach readers. Google analyzes hundreds of billions of web pages and presents relevant search results to our users, who are then able to access the information they seek on sites like yours.
-In order to help people understand why Google has selected the search results it displays, Google presents short previews of the content from the linked web pages -- most commonly, short text extracts, or snippets, and thumbnail images. Experiments have shown that these previews help people quickly find the site that has the content they are looking for. However, in the wake of new copyright law in France, Google will change the way it presents search results for European press publications to people in that country. Specifically, Google will no longer present snippets and thumbnail images in France for these publications unless publishers displaying content in France have specified how much of this content they want to show  in search results.
+Home
+Google Search Central
+Help
+European press publisher FAQ
+Google helps people find relevant and diverse content, and helps publishers reach readers. Google analyzes hundreds of billions of web pages and presents relevant search results to our users, who are then able to access the information they seek on sites like yours.
+In order to help people understand why Google has selected the search results it displays, Google presents short previews of the content from the linked web pages -- most commonly, short text extracts, or snippets, and thumbnail images. Experiments have shown that these previews help people quickly find the site that has the content they are looking for. However, in the wake of new copyright law in France, Google will change the way it presents search results for European press publications to people in that country. Specifically, Google will no longer present snippets and thumbnail images in France for these publications unless publishers displaying content in France have specified how much of this content they want to show in search results.
 This article brings together questions about these new limitations, specifically for publishers of these websites.
 Q: Which publishers are affected by the new copyright law?
 A: We had to make an initial assessment without any specific guidelines to follow as the law does not list which publications are affected. So, we have included any European journalistic operation that's currently part of Google News. We didn't include sites that are not primarily journalistic operations, such as but not limited to academic journals, personal blogs or content from sports teams. Any publication that wasn't initially included can easily self-include themselves; any publication that wishes to opt-out can also use self-serve tools to do that using Google Search Console. Similarly, a publisher can remove its property from the list if it feels that the publication has been included in error.
 Q: Is my website affected?
-A: Google provides information about the status of your website as an affected European press publication in Google Search Console, with a special setting that shows the current status.
+A: Google provides information about the status of your website as an affected European press publication in Google Search Console, with a special setting that shows the current status.
 Q: My website is incorrectly designated. How can I let you know?
 A: Google provides information about the status of your website as an affected European press publication in Google Search Console, with a special setting that shows the current status. Verified owners in Search Console are able to change the site's status. Find out more about verifying ownership. If you are unsure who has verified ownership of your website, you must verify the website first (there can be multiple owners), and then review the list of verified owners in Search Console. Other verified owners will be notified of changes in this setting.
 Q: My site was incorrectly set, I changed it. How long until this is reflected in Search?
@@ -34,7 +38,8 @@ Q: Does content in "data-nosnippet" blocks still get indexed?
 A: Yes. Using any of the methods to prevent text from being shown in a snippet won't prevent that content from being indexed. These methods only limit what's being shown in the search results snippet.
 Q: I prefer you not show my pages at all, how can I do that?
 A: You can block individual pages from being shown in search by using the "noindex" robots meta tag. This meta tag would prevent the whole page from being shown in search, once it has been processed. Please note that in order for this meta tag to be seen, the page must not be disallowed from crawling through the robots.txt file.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-HelpRemoving informationTroubleshooting resultsWhat is hacking or hacked content?Webmaster FAQEuropean press publisher FAQMore support resources
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Can't find the answer?
+If you can't find the answer to your question on this page, check out Google's help resources for site owners.
+We also provide official Google Search Central help communities in the following languages: English • Deutsch • Español • Français • Italiano • Nederlands • Polski • Português • Türkçe • Русский • العربية • 中文（简体） • 日本語 • 한국어
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

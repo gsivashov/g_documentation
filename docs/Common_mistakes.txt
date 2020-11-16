@@ -1,9 +1,9 @@
 https://developers.google.com/search/mobile-sites/mobile-seo/common-mistakes
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Common mistakes
 This page describes some of the most common mistakes that webmasters make when
 designing for mobile.

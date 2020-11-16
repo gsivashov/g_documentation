@@ -1,9 +1,9 @@
 https://developers.google.com/search/docs/guides/about-amp
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Understand how AMP looks in search results
 Google Search indexes AMP pages to provide a
 fast, reliable web experience. When an AMP page is available, it can be featured on mobile
@@ -102,4 +102,4 @@ Currently, signed exchange is only supported in Google Search for rich results a
 results, not carousels. To learn more about setting up signed exchange for AMP pages, visit
 Serve AMP using Signed Exchanges.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-11-11 UTC.

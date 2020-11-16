@@ -1,9 +1,9 @@
 https://developers.google.com/search/docs/guides/remove-amp
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Remove AMP Content from Google Search
 This page describes how to remove AMP content from Google Search.
 Key Point: Throughout this page, we

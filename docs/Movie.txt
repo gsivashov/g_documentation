@@ -1,9 +1,9 @@
 https://developers.google.com/search/docs/data-types/movie
 
 Home
-Products
-Search for Developers
-Reference
+Google Search Central
+Documentation
+Advanced SEO
 Movie
 Do you want to claim a specific movie in the knowledge panel? Get verified on Google.
 Do you want to enable a watch button? Get started with Media
@@ -375,4 +375,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-11-12 UTC.

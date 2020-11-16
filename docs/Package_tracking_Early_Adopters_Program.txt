@@ -1,9 +1,9 @@
 https://developers.google.com/search/docs/guides/package-tracking
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Package tracking Early Adopters Program
 Package tracking is a feature that displays package tracking related information on Google. When
 people come to Search looking to track a package shipped with your company, they'll be able to

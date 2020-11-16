@@ -1,9 +1,9 @@
 https://developers.google.com/search/docs/data-types/article
 
 Home
-Products
-Search for Developers
-Reference
+Google Search Central
+Documentation
+Advanced SEO
 Article
 Adding Article structured data to your news, blog, and sports
 article page can enhance your appearance in Google Search results. Your page may be eligible
@@ -340,4 +340,4 @@ Office Hours.
 Post a question in the Webmaster
 forum.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-08-10 UTC.
+Last updated 2020-11-12 UTC.

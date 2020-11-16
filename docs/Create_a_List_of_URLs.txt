@@ -1,9 +1,9 @@
 https://developers.google.com/search/docs/guides/create-URLs
 
 Home
-Products
-Search for Developers
-Guides
+Google Search Central
+Documentation
+Advanced SEO
 Create a List of URLs
 In order for our systems to find your content, we need their URLs. As stated in
 Introduction to Indexing, our systems can crawl
@@ -87,4 +87,4 @@ See the complete list of sitemap guidelines under
 Build and
 Submit a Sitemap in the Search Console Help Center.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-11-11 UTC.

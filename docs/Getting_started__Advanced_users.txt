@@ -1,15 +1,20 @@
 https://support.google.com/webmasters/answer/9429907
 
-Getting started: Advanced usersIf you've already mastered the basic tasks of maintaining a website on Google and using Search Console, this page goes into more advanced topics in managing and maintaining a website.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Getting started: Advanced users
+If you've already mastered the basic tasks of maintaining a website on Google and using Search Console, this page goes into more advanced topics in managing and maintaining a website.
 Getting started
 Even though you're an advanced user, be sure that you've reviewed the SEO Starter Guide; it's a great resource for best practices for your site.
 Control how Google crawls and indexes your site
 Read the long version of How Google Search Works; if you don't understand the crawl/index/serving pipeline well, it will be difficult to debug issues or anticipate Search behavior on your site.
 Be sure that you understand what canonical pages are, and how they affect crawling and indexing of your site. Also understand how to remove or handle duplicate content on your site, when it is merited.
-Be sure that any resources (images, CSS files, and so on) or pages that Google is meant to crawl are accessible to Google; that is, they are not blocked by any robots.txt rules and are accessible to an anonymous user. Inaccessible pages will not appear in the Index Coverage report, and the URL Inspection tool will show them as not crawled. Blocked resources are shown only at the individual URL level, in the URL Inspection tool. If important resources on a page are blocked, this can prevent Google from crawling your page properly. Use the URL Inspection tool to render the live page to verify whether Google sees the page as you expect.
+Be sure that any resources (images, CSS files, and so on) or pages that Google is meant to crawl are accessible to Google; that is, they are not blocked by any robots.txt rules and are accessible to an anonymous user. Inaccessible pages will not appear in the Index Coverage report, and the URL Inspection tool will show them as not crawled. Blocked resources are shown only at the individual URL level, in the URL Inspection tool. If important resources on a page are blocked, this can prevent Google from crawling your page properly. Use the URL Inspection tool to render the live page to verify whether Google sees the page as you expect.
 Use robots.txt rules to prevent crawling, and sitemaps to encourage crawling. Block crawling of duplicate content on your site, or unimportant resources (such as small, frequently used graphics such as icons or logos) that might overload your server with requests. Don't use robots.txt as a mechanism to prevent indexing; use noindex or login requirements for that. Read more about blocking access to your content.
 Sitemaps
-Sitemaps are a very important way to tell Google which pages are important to your site, and also provide additional information (such as update frequency), and are very important for crawling non-textual content (such as images or video). Although Google won't limit crawling to pages listed in your sitemaps, it will prioritize crawling these pages. This is especially important for sites with rapidly changing content, or with pages that might not be discovered through links. Using sitemaps helps Google discover and prioritize which pages to crawl on your site. Read all about sitemaps here.
+Sitemaps are a very important way to tell Google which pages are important to your site, and also provide additional information (such as update frequency), and are very important for crawling non-textual content (such as images or video). Although Google won't limit crawling to pages listed in your sitemaps, it will prioritize crawling these pages. This is especially important for sites with rapidly changing content, or with pages that might not be discovered through links. Using sitemaps helps Google discover and prioritize which pages to crawl on your site. Read all about sitemaps here.
 Internationalized or multi-lingual sites
 If your site includes multiple languages, or is targeted at users in specific locales:
 Read about multi-regional and multi-lingual sites for high-level advice on how to manage sites that have localized content for different languages or regions.
@@ -18,75 +23,73 @@ If your site adapts the content of its pages based on the locale of the request,
 If your site has a generic top-level domain (.com, .org) rather than a locale-specific top-level domain (.ch, .in), you can tell Google which locations to target with your search results.
 Migrating a page or a site
 On the occasion that you might need to move a single URL or even a whole site, follow these guidelines:
-Migrating a single URL
+Migrating a single URL
 If you move a page permanently to another location, don't forget to implement 301 redirects for your page. If the move is only temporary for some reason, return 302 instead to indicate to Google that they should continue to crawl your page.
-When a user requests a page that has been removed, you can create a custom 404 page to provide a better experience. Just be sure that when a user requests a page that is no longer there, you return a true 404 error, not a soft 404.
-Migrating a site
+When a user requests a page that has been removed, you can create a custom 404 page to provide a better experience. Just be sure that when a user requests a page that is no longer there, you return a true 404 error, not a soft 404.
+Migrating a site
 If you're migrating an entire site, implement all the 301 and sitemap changes you need, then tell Google about the move so that we can start crawling the new site and forwarding your signals to the new site. Learn how to migrate your site.
 Best practices
-Make your links crawlable. Google can follow links only if they are an <a> tag with an href attribute. Links that use other formats won't be followed by Google's crawlers. Google cannot follow <a> links without an href tag or other tags that perform as links because of scripted click events.
+Make your links crawlable. Google can follow links only if they are an <a> tag with an href attribute. Links that use other formats won't be followed by Google's crawlers. Google cannot follow <a> links without an href tag or other tags that perform as links because of scripted click events.
 Use rel=nofollow for paid links, links that require login, or untrusted content (such as user-submitted content) to avoid passing your quality signals on to them, or having their bad quality reflect on you.
 Managing your crawl budget: If your site is particularly large (hundreds of millions of pages that change periodically, or perhaps tens of millions of pages that change frequently), Google might not be able to crawl your entire site as often as you'd like, so you might need to point Google to the most important pages on your site. The best mechanism for doing so at present is to list your most recently updated or most important pages in your sitemaps, and (possibly temporarily) hiding your less important pages using robots.txt rules.
 AJAX-based sites: If you use AJAX for your site, read up on how Google crawls AJAX pages.
 JavaScript usage: See Google's recommendations for JavaScript on websites.
 Multi-page articles: If you have an article broken into several pages, be sure that there are prominent next and previous links for users to click (and that these are crawlable links). That's all you need for the page set to be crawled by Google.
-Infinite scroll pages: Google can have trouble scrolling through infinite scroll pages; you should provide a paginated version if you want the page to be crawled. Learn more about search-friendly infinite scroll pages.
+Infinite scroll pages: Google can have trouble scrolling through infinite scroll pages; you should provide a paginated version if you want the page to be crawled. Learn more about search-friendly infinite scroll pages.
 Block access to URLs that change state, such as posting comments, creating accounts, adding items to a cart, and so on. Use robots.txt to block these URLs.
 See the list of which file types are indexable by Google. If your file type is not natively crawlable, be sure that it is linked by text that describes it, or (video, image, or podcast feed) provide metadata in a sitemap.
-In the unlikely situation that Google seems to be crawling your site too much, you can turn down the crawl rate for your site. However, this should be a rare occurrence.
+In the unlikely situation that Google seems to be crawling your site too much, you can turn down the crawl rate for your site. However, this should be a rare occurrence.
 If your site is still http, we recommend migrating to https, for your users' security, as well as your own.
 Help Google understand your site
 Put key information in text, not graphics, on the site. Although Google can parse and index many file types, text is still the safest bet to help us understand the content of the page. If you use non-text content, or if you want to provide additional guidance about the content of the site, add structured data to your pages to help us understand your content (and in some cases, provide special search features such as rich results).
-If you feel comfortable with HTML and basic coding, you can add structured data by hand following the developer guidelines. If you want a little help, you can use the WYSIWYG Structured Data Markup helper to help you generate basic structured data for you.
-If you don't have the ability to add structured data to your pages, you might use the Data Highlighter tool, which lets you highlight portions of a page and tell Google what each section represents (an event, a date, a price, and so on). This is simple, but it can break if you change the layout of your page.
+If you feel comfortable with HTML and basic coding, you can add structured data by hand following the developer guidelines. If you want a little help, you can use the WYSIWYG Structured Data Markup helper to help you generate basic structured data for you.
+If you don't have the ability to add structured data to your pages, you might use the Data Highlighter tool, which lets you highlight portions of a page and tell Google what each section represents (an event, a date, a price, and so on). This is simple, but it can break if you change the layout of your page.
 Read more about helping Google understand your site content.
 Follow our guidelines
 Important: Be sure to follow our Webmaster Guidelines. Some of these are recommendations and best practices; others can lead to a site being removed from the Google Index if you do not follow them.
 Content-specific guidelines
 If you have specific types of content on your site, here are some recommendations for getting them on Google in the best way:
-Video: Be sure to follow our video best practices to enable Google to find, crawl, and show results for videos hosted on your site.
+Video: Be sure to follow our video best practices to enable Google to find, crawl, and show results for videos hosted on your site.
 Podcasting: You can expose podcasts to Google by following these guidelines. Google finds podcast RSS feeds if exposed in structured data as described in those guidelines, or if you follow the home page requirements on your podcast's home page. Google detects and recrawls updated RSS feeds.
-Images: Follow our image best practices to get your images to appear in Search. You can show additional information about your image in Image search by providing image rights metadata on the image host page. To block an image from being indexed, use a robots.txt Disallow rule.
+Images: Follow our image best practices to get your images to appear in Search. You can show additional information about your image in Image search by providing image rights metadata on the image host page. To block an image from being indexed, use a robots.txt Disallow rule.
 Google automatically optimizes image sizes for users on slow networks; if, for some reason, you do not want this, you can opt out of mobile optimization for image results.
 For children: If your content is specifically for children, tag your pages or site as child-directed in order to comply with the Children's Online Privacy Protection Act (COPPA).
 Adult sites: If your site (or specific pages) contain adult-only content, you might consider tagging it as adult content, which will filter it in SafeSearch results.
-Bloggers: If your site is a blog, here are some tips for creating a useful blog and helping Google crawl it.
-News: If you run a news site, here are some important considerations:
+Bloggers: If your site is a blog, here are some tips for creating a useful blog and helping Google crawl it.
+News: If you run a news site, here are some important considerations:
 If you have news content, be sure to read the Google Publisher Center help documentation.
-In addition, create a News sitemap to help Google discover content more quickly.
+In addition, create a News sitemap to help Google discover content more quickly.
 Be sure to prevent comment spam in your site.
 If you want to provide a limited number of free views to visitors, read about flexible sampling to learn some best practices about providing limited free access to your content.
 See how to indicate subscription and paywalled content on your site to Google while still enabling crawling.
-See how to use meta tags to limit text or image use when generating search result snippets.
-Consider using AMP or Web Stories for fast-loading content.
+See how to use meta tags to limit text or image use when generating search result snippets.
+Consider using AMP or Web Stories for fast-loading content.
 Other sites (businesses, books/apps,/scholarly works): See other Google services where you can post your information.
-See if Google supports a search feature specific for your content type. Google supports specialized search features for recipes, events, job posting sites, and more.
+See if Google supports a search feature specific for your content type. Google supports specialized search features for recipes, events, job posting sites, and more.
 Manage the user experience
-Providing a good user experience should be your site's top goal, and a good user experience is a ranking factor. There are many elements to providing a good user experience; here are a few of them.
+Providing a good user experience should be your site's top goal, and a good user experience is a ranking factor. There are many elements to providing a good user experience; here are a few of them.
 Google recommends that websites use HTTPS, rather than HTTP, to improve user and site security. Sites that use http can be marked as "not secure" in the Chrome browser. Read guidelines on securing your site with HTTPS.
 Ensure that your site works in different browsers and different platforms.
-A fast page usually beats a slow page in user satisfaction. You can use the Core Web Vitals report to see your site-wide performance numbers, or PageSpeed Insights to test performance for individual pages. You can learn more about building fast pages on the web.dev site. Also consider using using AMP for fast pages.
+A fast page usually beats a slow page in user satisfaction. You can use the Core Web Vitals report to see your site-wide performance numbers, or PageSpeed Insights to test performance for individual pages. You can learn more about building fast pages on the web.dev site. Also consider using using AMP for fast pages.
 Mobile considerations
 With mobile searches now exceeding desktop searches, it's important that your site be mobile-friendly. Googlebot now uses a mobile crawler as the default crawler for websites. Read about how to make your site mobile friendly.
-You should also read these additional pages about mobile usage on Google, including behavior on feature phones, how Google Discover works on mobile devices, and also guidelines about announcing any mobile billing charges clearly on your site to prevent warnings in Google Chrome.
+You should also read these additional pages about mobile usage on Google, including behavior on feature phones, how Google Discover works on mobile devices, and also guidelines about announcing any mobile billing charges clearly on your site to prevent warnings in Google Chrome.
 Paywalls and controlling access
-If you want to provide a limited number of free views to visitors, read about flexible sampling to learn some best practices about providing limited free access to your content or enabling Google to crawl paywalled content.
+If you want to provide a limited number of free views to visitors, read about flexible sampling to learn some best practices about providing limited free access to your content or enabling Google to crawl paywalled content.
 Control your search appearance
-Decorating your search results or providing specialized search features: Google provides many kinds of search result features and experiences in Google Search, including review stars, embedded site search boxes, and special result types for specific types of information such as events or recipes. See which ones are appropriate for your site and consider implementing them. You can provide a favicon to show in search results for your site. You can also provide an article date to appear in search results.
-Be sure to read the article on how to help Google provide good titles and snippets. You can also restrict the snippet length, or omit it entirely if you wish. See how to use meta tags to limit text or image use when generating search result snippets.
+Decorating your search results or providing specialized search features: Google provides many kinds of search result features and experiences in Google Search, including review stars, embedded site search boxes, and special result types for specific types of information such as events or recipes. See which ones are appropriate for your site and consider implementing them. You can provide a favicon to show in search results for your site. You can also provide an article date to appear in search results.
+Be sure to read the article on how to help Google provide good titles and snippets. You can also restrict the snippet length, or omit it entirely if you wish. See how to use meta tags to limit text or image use when generating search result snippets.
 If you are a European press publisher, you should tell Search Console.
 Using Search Console
-We recommend using Domain properties when possible; verification is a little more complex, but a domain property covers all protocol variations (http/https) and all subdomains, making it easier to manage multiple variations. If you need to see subdivisions of your Domain site data, you can create additional child Domain or URL prefix properties.
-Read the summary of tools and reports that Search Console offers to get a general idea of all the tools and reports at your disposal.
+We recommend using Domain properties when possible; verification is a little more complex, but a domain property covers all protocol variations (http/https) and all subdomains, making it easier to manage multiple variations. If you need to see subdivisions of your Domain site data, you can create additional child Domain or URL prefix properties.
+Read the summary of tools and reports that Search Console offers to get a general idea of all the tools and reports at your disposal.
 When new errors or events appear on your site you should get a message from Search Console; read the email to understand the issue, and follow the debugging advice given.
 Periodically check the Index Coverage report to ensure that your site coverage increases as your site size increases. You should not expect every page on your site to be indexed, especially if you have a large site with duplicate pages, but make sure that all your key pages are indexed. If significant portions of you site are not indexed, and they are important, you can debug them with the URL inspection tool.
 If you have structured data, the Enhancements section of your overview page should show sparklines (thumbnail charts) of errors, warnings, and valid structured data found on your site. You should fix all structured data errors.
 If you have AMP on your site, verify your site-wide AMP status in the AMP status report.
 Use the Sitemaps report to submit new sitemaps, or monitor Google's success in reading your sitemaps.
-Verify a good user experience by checking your site-wide user performance in the Core Web Vitals report, and your mobile-usability in the Mobile Usability report, especially when changing site templates or making other changes that affect large portions of your site.
-You can find troubleshooting guides here, and you can always reach out to the forum page for help from other users.
-Your main SEO report is the Performance report for web pages. (There is also a Performance report for Discover). This report provides key metrics including impressions and CTR by keyword (query), device, and much more. You can find a lot of information on SEO best practices on the web using this data; just be sure that you don't follow rumors or bad practices. Read the SEO Starter Guide and Webmasters blog, ask questions on the Webmasters forum, attend a community event or online office hours, or use other official sources to get reliable information about best practices for your site.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-HelpGetting started: Advanced usersImportant conceptsGuidelinesCrawling and indexingSecurity, malware, and manual actionsSearch Appearance
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Verify a good user experience by checking your site-wide user performance in the Core Web Vitals report, and your mobile-usability in the Mobile Usability report, especially when changing site templates or making other changes that affect large portions of your site.
+You can find troubleshooting guides here, and you can always reach out to the forum page for help from other users.
+Your main SEO report is the Performance report for web pages. (There is also a Performance report for Discover). This report provides key metrics including impressions and CTR by keyword (query), device, and much more. You can find a lot of information on SEO best practices on the web using this data; just be sure that you don't follow rumors or bad practices. Read the SEO Starter Guide and Webmasters blog, ask questions on the Webmasters forum, attend a community event or online office hours, or use other official sources to get reliable information about best practices for your site.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-12 UTC.

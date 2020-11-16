@@ -1,38 +1,43 @@
 https://support.google.com/webmasters/answer/6211428
 
-Web Light: Faster and lighter mobile pages from searchInformation for website ownersGoogle shows faster, lighter pages to people searching on slow mobile clients. To do this, we transcode (convert) web pages on the fly into a version optimized for slow clients, so that these pages load faster while saving data. This technology is called Web Light. Web Light pages preserve a majority of the relevant content and provide a link for users to view the original page. Our experiments show that optimized pages load four times faster than the original page and use 80% fewer bytes. Because these pages load so much faster, we also saw a 50% increase in traffic to these pages.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Web Light: Faster and lighter mobile pages from search
+Google shows faster, lighter pages to people searching on slow mobile clients. To do this, we transcode (convert) web pages on the fly into a version optimized for slow clients, so that these pages load faster while saving data. This technology is called Web Light. Web Light pages preserve a majority of the relevant content and provide a link for users to view the original page. Our experiments show that optimized pages load four times faster than the original page and use 80% fewer bytes. Because these pages load so much faster, we also saw a 50% increase in traffic to these pages.
 Here's an example of a web page being loaded with and without transcoding:
 See the Web Light version of a web page
 You can preview a Web Light version of a non-AMP webpage on your mobile device or desktop as described here:
 If you have a Google account:
 View the transcoded page
 Otherwise:
-On your mobile device, browse to the link http://googleweblight.com/i?u=[your_website_URL] where the url is fully qualified (http://www.example.com).
+On your mobile device, browse to the link http://googleweblight.com/i?u=[your_website_URL] where the url is fully qualified (http://www.example.com).
 OR
-On your desktop, open the Chrome device mode emulator with the link http://googleweblight.com/i?u=[your_website_URL] where the url is fully qualified (http://www.example.com)
-Some pages are currently not transcoded, including video sites, pages that require cookies (such as personalized sites), and other websites that are technically challenging to transcode. In these cases, you will see a "not transcoded" notification if you request the transcoded page using one of the tools listed above.
+On your desktop, open the Chrome device mode emulator with the link http://googleweblight.com/i?u=[your_website_URL] where the url is fully qualified (http://www.example.com)
+Some pages are currently not transcoded, including video sites, pages that require cookies (such as personalized sites), and other websites that are technically challenging to transcode. In these cases, you will see a "not transcoded" notification if you request the transcoded page using one of the tools listed above.
 Compare load times
-You can see a side-by-side load comparison between a Web Light page and a non-transcoded page (this test takes a few minutes).
+You can see a side-by-side load comparison between a Web Light page and a non-transcoded page (this test takes a few minutes).
 Opting out of Web Light
 If you do not want your pages to be transcoded, set the HTTP header "Cache-Control: no-transform" in your page response. If Google sees this header, your original page will be shown to the user instead of the transcoded page.
-Note: The Web Light user agent will still visit your page to check for the presence of the no-transform header whenever a user clicks your page in search under appropriate conditions, so you will still see some Web Light traffic. However, we will not transcode the page, so you can safely ignore these requests. We are working to minimize the number of visits for HTTP header checks.
+Note: The Web Light user agent will still visit your page to check for the presence of the no-transform header whenever a user clicks your page in search under appropriate conditions, so you will still see some Web Light traffic. However, we will not transcode the page, so you can safely ignore these requests. We are working to minimize the number of visits for HTTP header checks.
 FAQ
 General
 When will a user see these Web Light pages?
 Users will see these pages only if Google has detected that they are on a slow clients.
 Will Google Analytics work on my page?
-Yes. Note that we support only page view statistics to keep the pages small and fast-loading: for example, event tracking is not reported. Also we currently support only Universal Analytics (the analytics.js JavaScript library).
-Metrics for the transcoded version of a page are shown in Analytics with googleweblight.com appended to the page's host name. So, if you have a page at example.com/mypage, metrics for the unencoded page are shown as example.com/mypage, and metrics for the transcoded page are shown as example.com.googleweblight.com/mypage.
+Yes. Note that we support only page view statistics to keep the pages small and fast-loading: for example, event tracking is not reported. Also we currently support only Universal Analytics (the analytics.js JavaScript library).
+Metrics for the transcoded version of a page are shown in Analytics with googleweblight.com appended to the page's host name. So, if you have a page at example.com/mypage, metrics for the unencoded page are shown as example.com/mypage, and metrics for the transcoded page are shown as example.com.googleweblight.com/mypage.
 Will my pages be transcoded for users on faster clients?
 Pages will not be transcoded if the user is using a fast client.
 Will my pages be transcoded for users doing searches from desktop computers or tablets?
-Pages will be transcoded only for users on mobile phones, not desktops or tablets.
+Pages will be transcoded only for users on mobile phones, not desktops or tablets.
 What browsers are supported?
 Pages are currently transcoded for searches from the Chrome browser and the Android browser (version 2.3+), as well as Google Go.
 Do you cache my transcoded page?
 Pages are generally transcoded when the user requests them, from the current version of the page. Google caches the main content for up to 24 hours. Other resources such as CSS, JS and images could be cached longer.
 Do you transcode just the page linked by search results, or do you transcode the whole site?
-We transcode the page and any pages that the user clicks to from within that page, unless the page is non-transcodable or opted out from transcoding.
+We transcode the page and any pages that the user clicks to from within that page, unless the page is non-transcodable or opted out from transcoding.
 Ads and Revenue
 How will this affect my ad revenue?
 We currently support ads from several networks and are working to include more. Our experiments show that transcoded sites get 50% more traffic than non-transcoded sites and we expect that this will help monetize your site.
@@ -46,15 +51,13 @@ I'm an ad network and my network is not supported. How can I get added?
 We're interested in supporting your network. Please check our page for ad networks.
 Opt-out
 What happens if I opt out of Web Light?
-If you opt out, Google will not transcode your page for users on slow devices. Please note that traffic to your site from search users on slow devices may decrease, as they would need to spend more time loading your pages.
+If you opt out, Google will not transcode your page for users on slow devices. Please note that traffic to your site from search users on slow devices may decrease, as they would need to spend more time loading your pages.
 I didn't opt out, why is my page not transcoded?
 Due to technical limitations, some pages cannot be currently transcoded. These pages will also be labeled as non-transcoded in search results. This includes:
 Sites that require cookies (e.g. personalized site or sites that require you to login before using them)
 Sites that use a significant amount of data (e.g. video sites)
 Other sites that are technically difficult to transcode.
-The Google Web Light user agent ignores robots.txt rules
-The Web Light user agent is used only for explicit browse requests of a human visitor, and so it can ignore robots.txt rules, which are used to block automated crawling requests.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-MobileMobile viewing on feature phonesWeb Light: Faster and lighter mobile pages from searchAd network support for Web Light pages in Google SearchGoogle Discover and your websiteResources for developing mobile-friendly pagesAnnounce mobile billing charges clearlyAssociate your Android app with a website
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+The Google Web Light user agent ignores robots.txt rules
+The Web Light user agent is used only for explicit browse requests of a human visitor, and so it can ignore robots.txt rules, which are used to block automated crawling requests.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

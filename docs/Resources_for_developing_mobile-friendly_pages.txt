@@ -1,15 +1,20 @@
 https://support.google.com/webmasters/answer/72462
 
-Resources for developing mobile-friendly pagesUsers now browse websites from a mobile site as often (or more often) from a mobile device as from a desktop computer. You should design your website to be viewed by mobile devices.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Resources for developing mobile-friendly pages
+Users now browse websites from a mobile site as often (or more often) from a mobile device as from a desktop computer. You should design your website to be viewed by mobile devices.
 Mobile devices generally fall into two classes: smartphones and feature phones. Smartphones are essentially mini desktop computers with small screens, and include Android and iPhone devices (we include tablet devices in this classification for design purposes). Feature phones are less capable devices, and are handled differently by Google than smartphones.
 For both types of devices:
 The Google search results page is designed for the type of phone making the request (feature or smart phone).
 You can use App Indexing Search Preview to see what the page looks like on that phone type.
 You can block a user agent specific to the mobile device type (smart or feature) in your robots.txt file.
-PageSpeed insights can analyze a page and provide tips for making the page load faster.
+PageSpeed insights can analyze a page and provide tips for making the page load faster.
 Learn more about developing mobile-friendly sites.
 Resources and information for smartphone site developers
-In selected countries, when Google detects a slow connection, Google will automatically transcode pages linked to by search results. You can see what the page would look like using the Low Bandwidth Transcoder testing tool. Learn more.
+In selected countries, when Google detects a slow connection, Google will automatically transcode pages linked to by search results. You can see what the page would look like using the Low Bandwidth Transcoder testing tool. Learn more.
 The mobile-friendly test describes issues that can affect your page when accessed on a smartphone.
 The Search Console mobile usability report describes issues that can affect your page when accessed on a smartphone.
 Images in SERP are resized on slow connections in specific countries, unless the page owner specifically opts out.
@@ -32,7 +37,5 @@ Mobile-readiness checker (.mobi)
 Feature phone emulators
 i-mode emulator (DoCoMo)
 User-Agent Switcher (Firefox plug-in)
-Was this helpful?How can we improve it?YesNoSubmit
-true
-MobileMobile viewing on feature phonesWeb Light: Faster and lighter mobile pages from searchAd network support for Web Light pages in Google SearchGoogle Discover and your websiteResources for developing mobile-friendly pagesAnnounce mobile billing charges clearlyAssociate your Android app with a website
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

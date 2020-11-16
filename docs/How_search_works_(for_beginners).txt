@@ -1,14 +1,16 @@
 https://support.google.com/webmasters/answer/9128586
 
-How search works (for beginners)Inclusion in Google's search results is free and easy; you don't even need to submit your site to Google.
+Home
+Google Search Central
+Documentation
+Quickstart
+How Search Works (for beginners)
+Inclusion in Google's search results is free and easy; you don't even need to submit your site to Google.
 Google is a fully-automated search engine that uses software known as "web crawlers" that explore the web on a regular basis to find sites to add to our index. In fact, the vast majority of sites listed in our results aren't manually submitted for inclusion, but are found and added automatically when our web crawlers crawl the web.
 Google search works in essentially three stages:
 Crawling: Google searches the web with automated programs called crawlers, looking for pages that are new or updated. Google stores those page addresses (or page URLs) in a big list to look at later. We find pages by many different methods, but the main method is following links from pages that we already know about.
 Indexing: Google visits the pages that it has learned about by crawling, and tries to analyze what each page is about. Google analyzes the content, images, and video files in the page, trying to understand what the page is about. This information is stored in the Google index, a huge database that is stored on many, many (many!) computers.
 Serving search results: When a user performs a Google search, Google tries to determine the highest quality results. The "best" results have many factors, including things such as the user's location, language, device (desktop or phone), and previous queries. For example, searching for "bicycle repair shops" would show different answers to a user in Paris than it would to a user in Hong Kong. Google doesn't accept payment to rank pages higher, and ranking is done algorithmically.
 If you're interested, here's a little bit more about how search works.
-NEXT: OPTIMIZE FOR SEARCH ENGINES
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Basic usersHow search works (for beginners)Optimize your site for search enginesMeasure your performance on GoogleWhy did I get an email from Search Console?
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-11 UTC.

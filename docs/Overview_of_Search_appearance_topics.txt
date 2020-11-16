@@ -1,0 +1,68 @@
+https://support.google.com/webmasters/topic/9456381
+
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Overview of Search appearance topics
+The topics in this section describe how you can change how your website appears in Search and
+other Google properties.
+Create good titles and snippets in Search Results
+Enable Search result features for your site
+Featured snippets and your website
+Provide a publication date to Google Search
+Define a favicon to show in search results
+Image Rights Metadata in Google Images
+Enable Web Stories on Google
+Enriched Search Results
+Flexible Sampling general guidance
+Enable Google Podcasts in Search results
+Top Places List
+Using structured data
+Google uses structured data to understand the content on the page. You can help us by providing
+specific information about your site, which can help your site display in richer features in
+search results.
+Explore the search gallery
+Understand how structured data works
+General structured data appearance
+Generate structured data with JavaScript
+Features that use structured data
+Here's a list of the features that use structured data:
+Article
+Book
+Breadcrumb
+Carousel
+Course
+COVID-19 announcements
+Critic review
+Dataset
+Employer Aggregate Rating
+Estimated salary
+Event
+Fact Check
+FAQ
+Home Activities
+How-to
+Image License
+Job Posting
+Job Training
+Local Business
+Logo
+Movie
+Product
+Q&A
+Recipe
+Review snippet
+Sitelinks search box
+Software App
+Speakable
+Subscription and paywalled content
+Video
+Early Adopters Program
+To ensure the best experience for users, Google pilots some features with a limited number of
+organizations. Here are the features that are currently in the Early Adopters Program:
+3D and AR
+Package tracking
+Mobile Recharge
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-11-12 UTC.
