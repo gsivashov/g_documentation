@@ -1,6 +1,6 @@
 https://support.google.com/webmasters/answer/7451001
 
-Manage your sitemapsSitemaps reportNext: Split up your large sitemapsUse the Sitemaps report to tell Google about any new sitemaps for your property, to see your sitemap submission history, and to see any errors that Google encountered when parsing your submitted sitemaps.
+Sitemaps reportUse the Sitemaps report to tell Google about any new sitemaps for your property, to see your sitemap submission history, and to see any errors that Google encountered when parsing your submitted sitemaps.
 OPEN SITEMAPS REPORT
 What is a sitemap? Do I need this report?
 A sitemap is a file on your site that tells Google which pages on your site we should know about.
@@ -172,8 +172,7 @@ Video location URL appears to be a play page URL
 In a video sitemap, the <video:content_loc> URL points to the page hosting the player. More information about adding video information to a sitemap.
 Sitemap contains urls which are blocked by robots.txt
 Google cannot access your sitemap, or can't access all the content listed in your sitemap, because it is blocked by a robots.txt file. Use the URL Inspection tool to confirm which file is being blocked, and modify your robots.txt file to allow Googlebot to access it.
-Next: Split up your large sitemaps
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Manage your sitemapsLearn about sitemapsBuild and submit a sitemapSitemaps reportSplit up your large sitemapsSitemap extensionsVideo sitemaps and video sitemap alternativesImage sitemapsCreate a Google News sitemap
+All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemovals ToolRich Results Tools and ReportsSecurity Issues reportSitemaps reportCore Web Vitals reportURL Inspection ToolBlock crawling of parameterized duplicate content
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

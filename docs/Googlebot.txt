@@ -13,7 +13,7 @@ Your website will probably be crawled by both Googlebot Desktop and Googlebot Sm
 can identify the subtype of Googlebot by looking at the
 user agent string
 in the request. However, both crawler types obey the same product token (user agent token) in
-robots.txt, and so you cannot selectively target either Googlebot mobile or Googlebot desktop
+robots.txt, and so you cannot selectively target either Googlebot smartphone or Googlebot desktop
 using robots.txt.
 If your site has been converted to
 mobile first
@@ -66,4 +66,4 @@ but some nogoodniks and spammers do not. Google actively fights spammers; if you
 pages or sites in Google Search results, you can
 report spam to Google.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-11-19 UTC.

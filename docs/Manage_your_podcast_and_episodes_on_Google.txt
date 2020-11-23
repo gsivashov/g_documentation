@@ -1,49 +1,56 @@
 https://developers.google.com/search/docs/guides/podcast-management
 
-Manage your podcast and episodes on GoogleIf you are a podcast publisher, here is how to manage your podcast's presence on Google after you've added it.
-Note that the term "podcast" as used here means a show that contains one or more episodes, not a single episode in a show.
+Manage your podcast and episodes on GoogleIf you are a podcast publisher, here is how to manage your podcast's presence on Google Podcasts after Google Podcasts has found your show.
 Managing podcasts
-If your podcast's RSS becomes unavailable after it has been crawled by Google, Google Podcasts will continue to serve the last crawled RSS version for a few weeks, then stop serving it if your RSS has not reappeared.
 Add a podcast
-Make new podcasts available on Google as described in Get your podcast on Google.
+See if your podcast is already on Google:
+Open Google Podcasts.
+Search for your podcast.
+If your podcast is not available, add it as described in Get your podcast on Google.
 Update a podcast
-You can update information about your podcast, such as the name or description, in your RSS feed. Google should find your updates automatically within a day. If you notice that Google hasn't implemented your changes in a day or so, read the troubleshooting guide.
-If you move the location of your RSS feed -- for example, to another hosting service -- implement a permanent redirect (301) from your old podcast feed URL to your new podcast feed URL, and in the new feed, add the tag <itunes:new-feed-url>, and specify the URL of the new feed. For example, if your new feed is at https://example.com/new_feed_url.xml, you would add a redirect from the old feed to the new feed, and add the following tag to your new feed:
-<itunes:new-feed-url>https://example.com/newfeedurl.xml<itunes:new-feed-url>
-Note that moving a feed will trigger a new verification flow for your show.
+You can update information about your podcast, such as the name or description, in your RSS feed
+If you move the location of your RSS feed, for example, to another hosting service, see Move your show's feed to a new URL
+Google checks known feeds for changes several times a day. In most cases, this is frequent enough that you don't need to do anything else. However, you can explicitly request a recrawl of your feed if you need an update within 30 minutes. If you notice that Google hasn't implemented your changes in 3-5 days, read the troubleshooting guide.
 Remove a podcast
-To remove a podcast from Google Podcasts platforms quickly:
-Add one of the following tags to your RSS feed. These tags prevent the podcast from appearing in Google Podcasts platforms, but they don't affect the visibility of the host page in Google Search.
+To remove a podcast from Google Podcasts platforms quickly (3-5 days):
+Add one of the following tags to your RSS feed as a direct child of the <channel> element:
 <googleplay:block>yes</googleplay:block>
 <itunes:block>yes</itunes:block>
 Ask Google to recrawl your feed.
-Alternatively, simply removing or password-protecting your RSS feed, or using robots.txt or noindex to block access to your RSS feed will remove your podcast from Google Podcasts platforms. However, these methods can take several weeks to take effect.
+Alternatively, you can remove or password-protect your RSS feed, use robots.txt, or noindex to block access to your RSS feed. However, these methods can take 3-4 weeks to take effect.
 Move your show's feed to a new URL (change podcasting hosts)
 If you move your podcast feed to a new URL, you should tell Google about the new location:
 Move your feed:
 If you are using a podcast hosting service
 Search for information about how to move from another hosting provider. Your provider should provide a mechanism for telling people about your feed move. If your podcasting service doesn't support migrating your feed to a new location, then create your new feed and contact Podcasts Manager support with your old and new feed URLs.
-If you are managing your RSS feed directly
-Take the following steps:
-Post your feed in the new location, and add the following tag, where new_feed_URL is the new URL of the feed (it should be the URL of the feed that contains the tag).:
+If you are managing your RSS feed directly:
+Post your feed in the new location, and add the following tag, where new_feed_URL is the new URL of the feed (that is, it points to itself).:
 <itunes:new-feed-url>new_feed_URL</itunes:new-feed-url>
 Create a 301 (permanent) redirect from your old feed URL to your new feed URL.
-Tell Google about the move:
-Visit PubSubHubbub.
-Enter the new feed URL in Publish > Topic URL
-Click Publish
+Ask Google to recrawl your feed.
 Re-verify ownership in Podcasts Manager. If you are using Podcasts Manager, you will need to re-verify your feed ownership. Visit your show in Podcasts Manager to see when Google has noticed the change and requires re-verification.
 Managing episodes
 Add or update an episode
-To add, update, or remove an episode from Google Podcasts platforms, update your RSS feed. Google checks known feeds for changes several times a day. In most cases, this is frequent enough that you don't need to do anything else. However, you can explicitly request a recrawl of your feed if you need an immediate update.
+To add, update, or remove an episode from Google Podcasts platforms, update your RSS feed. Google checks known feeds for changes several times a day. In most cases, this is frequent enough that you don't need to do anything else. However, you can explicitly request a recrawl of your feed if you need an update within 30 minutes.
 Remove an episode
-To remove an episode from your shown on Google Podcasts platforms, use any of the following methods:
-Add one of the following tags to your RSS feed. These tags prevent the podcast from appearing in Google Podcasts platforms, but they don't affect the visibility of the host page in Google Search. Removal from Google Podcasts platforms should occur in about a day.
+To remove an episode from your shown on Google Podcasts platforms,
+Use either of the following methods:
+Add one of the following tags to your RSS feed as a child of the <item> to block. These tags prevent the podcast from appearing in Google Podcasts platforms, but they don't affect the visibility of the host page in Google Search. Removal from Google Podcasts platforms should occur in 3-5 days.
 <googleplay:block>yes</googleplay:block>
 <itunes:block>yes</itunes:block>
-Remove the episode from your RSS feed.
-Remove the episode files from the serving host.
-Make sure that you update the served feed. Changes made to other feeds will not affect results on Google Podcasts surfaces. However, if you have multiple playlists, Google can change the served feed, so if you do not want an episode ever served again, you should modify all your feeds.
+Remove the episode from your RSS feed. Removal from Google Podcasts platforms should occur in 3-4 weeks.
+Ask Google to recrawl your feed.
+Update all your feeds when making changes. Only the served feed is used by Google but Google can change the served feed without notice.
+Help Google find your show
+Many listeners use Google Search to find podcasts. Here is a summary of the most important practices to help listeners find your show on Google, once your podcast is available on Google:
+Follow Search best practices for your webpage.
+In your RSS file, include detailed show and episode metadata: The show description and episode descriptions help us deliver more accurate search results and provide users with more context on the contents of an episode. Of course, follow general best practices for adding useful and relevant descriptions.
+Make sure your that podcast's webpage and RSS data match: If you have a web page for your podcast, make sure the following data match the data in the RSS:
+The title of the podcast show's webpage and the title of the RSS feed match.
+The HEAD element of the podcasts show's webpage contains a ‘link rel' element that points to the RSS feed, and that the RSS feed in turn contains a <channel><link> element whose value matches the URL of the show's webpage More details here.
+Include cover art: We recently changed our guidelines to make cover art images in  your podcast feed required, rather than optional. More details are here.
+Allow Googlebot to access your audio files: We recommend making sure that your audio files, the actual mp3s within your RSS feed, are able to be crawled and accessible to Googlebot. While this is recommended and not required, if we can crawl your audio files, it allows our technology to use these files to understand the entirety of the podcast. This allows us to surface this podcast to users for a broader range of topics, as we understand the full context of the episode, and aren't limited to the description. More details are here.
+Follow general Search best practices: Our podcast algorithms are very much rooted in the same principles of Search, so familiarizing yourself with How Search Works can provide you with valuable insights.
 Google checks known feeds several times a day for any updates. You can check when Google last read your feed
 Was this helpful?How can we improve it?YesNoSubmit
 true

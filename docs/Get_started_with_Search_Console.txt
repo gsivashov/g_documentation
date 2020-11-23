@@ -26,4 +26,4 @@ To inspect a single page, either drill down into a single URL from the appropria
 Read the developer documentation for Search to learn about structured data, AMP in search, mobile best practices, API access to Search Console's tools and reports, and more.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpAbout Search ConsoleGet started with Search ConsoleGet on Google
+HelpAbout Search ConsoleGet started with Search ConsoleAdd a website propertyUsing Search Console with your websiteImportant concepts

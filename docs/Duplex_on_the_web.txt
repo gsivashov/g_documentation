@@ -46,5 +46,5 @@ You must offer credit card payment in the movie ticket checkout flow on your web
 You can test whether the movie ticket checkout flow is enabled for your site by doing a Google search for movies being screened by your theater, clicking links for showtimes, and confirming whether your theater is listed as one of the ticket suppliers.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webInternational Targeting reportChange Googlebot crawl rate
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rate
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

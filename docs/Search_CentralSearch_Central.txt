@@ -6,7 +6,7 @@ Help
 Get support for your site from Google Search
 Have questions about Search Console, search rankings, security issues, or content on your site? Take a look at our support resources.
 bookmark
-Google webmaster guidelines for your website
+Google webmaster guidelines
 If your website isn't performing well on Google Search, make sure that it's following our quality guidelines.
 bookmark
 Search Console Help Center
@@ -31,4 +31,4 @@ Chat with a real person on the Google Search Central team about your website iss
 Follow us on Twitter
 The Google Search Central Twitter is the best place to get the latest updates on bugs and announcements.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-11-19 UTC.

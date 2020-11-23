@@ -56,7 +56,7 @@ If you're using a web editor or a WYSIWYG editor to edit your page, make sure yo
 Your meta tag is incorrect.
 We found the verification meta tag, but the contents were incorrect. To avoid errors, copy and paste the meta tag provided on the Verification page of Search Console.
 More common verification problems are listed below.
-DNS record
+Domain name provider
 DNS record for site ownership verification - Google Search Console Training
 You can verify ownership of a property at the domain level by adding a DNS record in your domain name provider. Search Console supports both the TXT DNS format and CNAME format for DNS verification.
 To use this method, you must sign in to your domain name provider (for example, GoDaddy.com or networksolutions.com) and add a DNS record as described below. Google will verify that your personal record is present and assigned to your domain. Each DNS record associates a specific user with a specific domain.
@@ -66,7 +66,7 @@ Use a TXT record for all other cases.
 CNAME record instructions
 Use a CNAME record if you are verifying a domain or subdomain-level property that is itself defined using a CNAME record (for example: example.com or en.example.com).
 Get your Google-generated DNS record
-When asked to verify your property, choose the Domain verification method (or create a Domain property) and you will be given a string value to use in the next step.
+When asked to verify your property, choose the Domain name provider method (or create a Domain property) and you will be given a string value to use in the next step.
 Generate a DNS record
 Open Webmaster Central.
 Enter your bare property URL (that is, example.com, not http://example.com) and click Continue.
@@ -82,7 +82,7 @@ Ignore G Suite step 4 (the verification step): that will come next.
 Verify your property in Search Console: Open your unverified property in Search Console (or switch to your unverified property using the property selector). When prompted, click Verify. Successful attempts should be verified immediately; if you have an error, see the list of potential errors below. Note: DNS changes may take some time to verify; if we don't find your record immediately, wait a day and try step 3 again
 TXT record instructions
 Get your Google-generated DNS record
-When asked to verify your property, choose the Domain verification method (or create a Domain property) and you will be given a TXT record as a string value to use in the next step.
+When asked to verify your property, choose the Domain name provider method (or create a Domain property) and you will be given a TXT record as a string value to use in the next step.
 Add the DNS record to your domain provider
 Add your TXT record from step 1 to your domain provider's records  by following these steps:
 Find the G Suite documentation for your provider
@@ -101,11 +101,12 @@ No verification records on your DNS provider matched the value given to you by S
 More common verification problems are listed below.
 Google Analytics tracking code
 Google Analytics for site ownership verification - Google Search Console Training
-If you use Google Analytics to track your site's traffic, you can verify your site using the Google Analytics tracking code associated with the site. To do this, you must have "edit" permission for the web property whose tracking code is used by that page. Also, your tracking code must use either the analytics.js or gtag.js snippet.
+If you use Google Analytics to track your site's traffic, you can verify your site using the Google Analytics tracking code associated with the property. To do this, you must have "edit" rights for the item whose tracking code is used by that page. Also, your tracking code must use either the analytics.js or gtag.js snippet.
+In Google Analytics 4, the verification code is associated with a stream, and you must have edit rights on the Google Analytics property. For earlier versions of Google Analytics, the verification code is associated with a Google Analytics Web Property, and you must have edit permissions on that Web Property.
 To verify ownership using Google Analytics:
 Choose Google Analytics in the verification details page for your site, and follow the instructions shown.
 Put the tracking code in the <head> section, not the <body> section, of your page. If you do not, verification will fail.
-Use the code exactly as provided; do no modify it. If you modify it, verification will fail.
+Use the code exactly as provided; do not modify it. If you modify it, verification will fail.
 Other administrators of your Google Analytics account will be granted access to your site's data in Search Console.
 The Google Analytics tracking code is used only to verify site ownership. No Google Analytics data will be accessed.
 The user agent that performs Google Analytics verification has the user agent token Google-Site-Verification and the full user agent string Mozilla/5.0 (compatible; Google-Site-Verification/1.0)

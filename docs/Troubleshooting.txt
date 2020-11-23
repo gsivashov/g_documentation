@@ -2,12 +2,18 @@ https://developers.google.com/search/docs/guides/podcast-troubleshooting
 
 Troubleshooting
 Contents
+Problems with Google podcasting
 Podcast is not on Google
 Episode is not on Google
-Podcast is already claimed
 Podcast is served from another feed
 No podcast-level result in Google Search
 Google isn't noticing your feed updates
+Show isn't associated with your website
+Google chose the wrong RSS feed for your show
+Playback fails, opens a new tab, or downloads the audio file
+Request recrawl
+Problems with Google Podcasts Manager
+Podcast is already claimed
 Lost access to your show
 Request access to a show
 Episode is missing from show in Podcasts Manager
@@ -16,12 +22,8 @@ Episode appears twice in my show
 Sharp drop-off in data for episodes or show
 Slow drop-off in data
 Served feed changed, but can't reverify
-Show isn't associated with your website
 Data discrepancies
-Google chose the wrong RSS feed for your show
 I'm told that I already verified ownership of a feed, but I didn't
-Playback fails, opens a new tab, or downloads the audio file
-Request recrawl
 Podcast is not on Google
 If your podcast isn't appearing in Google Search or other Google Podcasts platforms, you will see a notification in Google Podcasts Manager for your show. To fix this, try the following steps. Note that Google doesn't guarantee that every podcast will show up on Google.
 It takes Podcasts Manager about a day after a successful fix to confirm that Google can access your feed again. Additionally, there is a 2-3 day data latency in Podcasts Manager data, so it can take a few days after a successful fix or newly discovered feed to begin to see data for your show.
@@ -91,19 +93,13 @@ The served feed has changed and you or someone else has started, but not complet
 Request access to a show
 If you don't have access to an existing show, ask a show Admin to grant you access. If you don't know who to ask, contact the owner's email listed in the <googleplay:owner> or <itunes:owner> tag of the feed.
 Episode is missing from a show in Podcasts Manager
-If you've posted an episode to your feed, but you don't see it in Podcasts Manager, remember these requirements to appear in the episodes list:
-The feed must have listening data on a Google Podcasts platform in the last 16 months.
-Google must have seen the episode in your feed while the feed was served as the representative feed.
-It takes 2-3 days for new data to appear in Podcasts Manager. If the episode is new, give it some time for listeners to find it, and for the data to appear in Podcasts Manager.
-If you do not see an episode listed in your show on Podcasts Manager:
-Change the selected time period. Remember that only episodes that have listening data within the selected time period are shown in the episode list. Choose All Time for the selected time period to zoom out to include all data for all episodes.
+If you've posted an episode to your feed, but you don't see it in Podcasts Manager, remember these requirements to appear in the episodes list. If your episode fulfils these requirements and you still don't see it listed in your show on Podcasts Manager:
+Change the selected time period. Remember that only episodes that were published before or within the selected time period are shown in the episode list. Choose All Time for the selected time period to zoom out to include all data for all episodes.
 Make sure that the episode appears in the served feed for your show. Changes made to any other feeds, including new episodes added, will not be reflected on Google Podcasts platforms.
 Refresh your browser tab. Podcasts Manager won't refresh the page with new data unless you reload the page. Switching shows in your show list won't load new data either.
 Confirm that Google has seen your updates. Monitor the feed crawl status on your served feed to see if Google has seen your changes. Use the feed crawl diagnostics to confirm that Google could access the feed, and that the feed didn't have any critical errors.
 Confirm that your feed is being served. Open the Google Podcasts app, load your podcast, and see whether the episode appears there.
-Confirm that you have listener data. If no users have listened to your episode on a Google Podcasts platform within the past 16 months, the episode will not be shown on your dashboard. Your hosting service probably shows downloads by client, but not listening data. If it does show listening data, you can confirm whether any listening data occurred in any of the Google Podcasts platforms.
-If an episode was previously present in the show but is now gone:
-The last listening data for the show was more than 16 months ago. Podcasts Manager retains data for only 16 months, and episodes without any listening data in the last 16 months will not appear in the report.
+If an episode was previously present in the show but is now no longer served, remember that Podcasts Manager retains data for only 16 months. Episodes that are no longer served will not be shown in the report 16 months after the last recorded listening data.
 Episode has no data, but appears in Podcasts Manager
 Remember that an episode must have data in order to appear in Podcasts Manager. If your episode appears in Podcasts Manager but doesn't show any data in the report, you're probably zoomed in to a time period without data. Change your date selection to All time to see where your listening data occurs.
 Episode appears twice in your show

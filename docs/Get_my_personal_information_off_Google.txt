@@ -49,5 +49,5 @@ Perform regular spot checks for information using the site: search operator for 
 Ensure that anyone working on users' personal data is made aware of how to prevent search engine discovery of that data on the site, and how to prevent anonymous access to user data.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Removing informationRemove information from GoogleGet my personal information off GoogleRemove outdated content tool
+Removing informationGet my personal information off GoogleRemove Outdated Content tool
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

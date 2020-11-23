@@ -242,5 +242,5 @@ Some issues have long names that are not easy to understand.
 If your site has a very large number of issues (whether or not there are active instances), the report will show only the first 200 issues, sorted by importance.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Rich Results Tools and ReportsRich result status reportsRich Results TestUnparsable structured data report
+Rich Results Tools and ReportsRich result status reportsRich Results TestTools for adding structured data (for beginners)Unparsable structured data report
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

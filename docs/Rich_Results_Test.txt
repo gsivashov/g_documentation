@@ -118,5 +118,5 @@ Structured data gallery shows the search result features supported by Google S
 Overview of structured data on Google for web page developers to enable these features.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Rich Results Tools and ReportsRich result status reportsRich Results TestUnparsable structured data report
+Rich Results Tools and ReportsRich result status reportsRich Results TestTools for adding structured data (for beginners)Unparsable structured data report
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

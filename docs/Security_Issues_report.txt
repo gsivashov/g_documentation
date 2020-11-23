@@ -209,5 +209,5 @@ The Manual Actions report lists issues with a page or site that are mostly att
 The Security Issues report lists indications that your site was hacked, or behavior on your site that could potentially harm a visitor or their computer: for example, phishing attacks or installing malware or unwanted software on the user's computer. These pages can appear with a warning label in search results, or a browser can display an interstitial warning page when a user tries to visit them.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Security, malware, and manual actionsWhat is hacking or hacked content?Malware and unwanted softwarePreventing malware infectionSecurity Issues reportSocial Engineering (Phishing and Deceptive Sites)Manual Actions reportGoogle Safe Browsing Repeat Offenders PolicyVerifying Googlebot
+All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemovals ToolRich Results Tools and ReportsSecurity Issues reportSitemaps reportCore Web Vitals reportURL Inspection ToolBlock crawling of parameterized duplicate content
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

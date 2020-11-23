@@ -73,5 +73,5 @@ If your website has a logical hierarchy or structure, Google might display a set
 OPEN YOUR DASHBOARD
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpReports at a glanceAll reports and toolsUsing Search Console with your websiteGet your site on Search ConsoleMigrating from old Search Console to new Search Console
+HelpReports at a glanceAll reports and toolsUsing Search Console with your websiteSettingsGet your site on Search ConsoleMigrating from old Search Console to new Search Console
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

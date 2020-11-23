@@ -12,7 +12,7 @@ Learn the different methods to controlling what information Google sees on your 
 Block search indexing with noindex
 Prevent a page from appearing in Google Search by including a noindex
 meta tag in the page's HTML code, or by returning a noindex header
-in the HTTP request.
+in the HTTP response.
 About robots.txt
 A robots.txt file tells search engine crawlers which pages or files the crawler can or
 can't request from your site.
@@ -23,4 +23,4 @@ of display on Google Local and other Google properties with Search Console
 Use Search Console to opt out of various Google properties, like Google Shopping,
 Google Flights, Google Hotels, and Google Local.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-10-30 UTC.
+Last updated 2020-11-16 UTC.
