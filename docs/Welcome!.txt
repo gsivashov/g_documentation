@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Welcome!
 Mobile is changing the world. Today, everyone has smartphones with them, constantly
 communicating and looking for information. In many countries, the number of
@@ -65,5 +66,6 @@ If you want more information on the mobile website implementation process,
 check out our docs on Mobile SEO.
 If you're ready to build a mobile-friendly site, choose responsive web design.
 View our docs on Mobile SEO or go straight to Web Fundamentals.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-09-22 UTC.

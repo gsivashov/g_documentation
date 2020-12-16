@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Beginner SEO
+Send feedback
 Getting started for beginners
 If you're interested in improving your site's appearance on Google Search, and you're willing to put in a little time learning about search engine optimization (SEO) and Search Console, here is your getting started guide. You don't need to understand HTML or coding, but you do need to spend some time thinking about how your site is organized and written, and be willing to make some changes to your site. The good news is that a little effort can go a long way in improving your search results.
 Sign up for Search Console. It's free, there are no upgrades or paid services, and you'll get alerts when Google sees unusual activity on your site, such as crawling problems or indications of hacking.
@@ -13,5 +14,6 @@ Learn the basics of how Google Search works. You'll understand a lot more of the
 Read our SEO starter guide. This is an introduction to best practices for your website to ensure that Google is able to find, understand, and present your site properly in search results. It contains a lot of information, but you can take your time working through it.
 Decide whether you want to hire an SEO expert. Many small website owners do all their own search engine optimization; in fact, if you read our documentation carefully, you can become an SEO expert yourself! But some small sites (and nearly all large sites) hire a professional SEO expert to help improve their presence on Google. Read this guide if you're thinking about hiring a professional SEO.
 If, after learning the basics, you decide that you want to learn more advanced topics in SEO or Search Console, you can continue with the SEO track.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-08 UTC.

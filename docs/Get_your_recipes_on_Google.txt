@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Get your recipes on Google
 Does your page provide instructions for something other than
 food or drinks? Add HowTo structured data
@@ -26,7 +27,7 @@ Recipe host carousel: Enable users to explore your recipe gallery
 pages by adding ItemList structured data.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
-content. If you’re new to structured data, you can learn more about
+content. If you're new to structured data, you can learn more about
 how structured data works.
 Here's an overview of how to build, test, and release structured data. For a step-by-step guide
 on how to add structured data to a web page, check out the
@@ -567,7 +568,7 @@ Recommended properties
 aggregateRating
 AggregateRating
 Annotation for the average review score assigned to the item. Follow the Review snippet guidelines and list of required and recommended AggregateRating properties.
-If the Recipe structured data contains a single review, the reviewer’s name must be a valid
+If the Recipe structured data contains a single review, the reviewer's name must be a valid
 person or organization. For example, "50% off ingredients" is not a valid name for a
 reviewer.
 author
@@ -634,7 +635,7 @@ HowToStep, HowToSection, or Text
 This property is required for Guided Recipes.
 The steps to make the dish.
 There are several options for setting the value of recipeInstructions. We recommend using HowToStep. HowToSection can also be used to group HowToSteps when the recipe has sections.
-HowToStep: Specify this recipe’s steps with HowToStep.
+HowToStep: Specify this recipe's steps with HowToStep.
 HowToStep example
 "recipeInstructions": [
 {
@@ -859,7 +860,7 @@ HowToStep
 A list of detailed steps for the section, and/or sub-sections. For example, a pizza recipe may have
 one section of steps for making the crust, one for preparing the
 toppings, and one for combining and baking. If a recipe has sections,
-but they aren’t defined with HowToSections, the Assistant may
+but they aren't defined with HowToSections, the Assistant may
 mistakenly present the section name as just another step (for example, a
 "Make the crust" step followed by a "Combine the flour and yeast"
 step).
@@ -1049,12 +1050,12 @@ data errors.
 Troubleshoot
 missing rich results / drop in total rich results.
 For general questions about crawling and indexing, check the
-Webmaster FAQ.
+Google Search crawling and indexing FAQ.
 Note: Allow time for re-crawling and re-indexing. Remember that it
 may take several days after publishing a page for Google to find and crawl it.
-Ask a question in the Webmaster
-Office Hours.
-Post a question in the Webmaster
+Ask a question in the Google Search Central office hours.
+Post a question in the Google Search Central
 forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

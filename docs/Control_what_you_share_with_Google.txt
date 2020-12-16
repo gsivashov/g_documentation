@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Control what you share with Google
 Control what information Google sees on your site and what is shown in Search results.
 Why block content from Google?
@@ -41,5 +42,6 @@ nosnippet Meta tag
 Append a <meta name="nosnippet"> tag to your page to prevent a snippet from appearing in search. However, note that this can generate a confusing message in search results ("no snippet available")
 Remove existing content from Google
 If the content already exists on Google, and you want to remove it, you might need to take additional steps.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-11 UTC.

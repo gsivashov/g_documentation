@@ -3,6 +3,7 @@ https://developers.google.com/search/case-studies/rakuten-case-study
 Home
 Google Search Central
 Case studies
+Send feedback
 Rakuten increases time on site 1.5x with the recipe search experience on Google
 check_circle_outline 2.7X more traffic from search engines
 check_circle_outline 1.5X increase in session duration
@@ -38,5 +39,6 @@ The IT giant quickly saw better performance from their structured data in Google
 to all Rakuten Recipe pages from search engines soared 2.7 times, and the average session duration
 was now 1.5 times longer than before. These improvements help users "match with more recipes, and
 spend more time enjoying and cooking the recipes we have," Uchida says.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-08-13 UTC.

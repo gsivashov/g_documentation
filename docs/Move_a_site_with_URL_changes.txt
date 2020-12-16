@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Move a site with URL changes
 This article describes how to change the URLs of existing pages on your site with minimal impact on your Google Search results. Examples of this kind of site move include:
 URL changes from HTTP to HTTPS
@@ -80,19 +81,19 @@ If you want to use a Google News sitemap for the new HTTPS section, you will hav
 Are there any specific recommendations for Google News Publisher Center with HTTPS migration?
 Google News Publisher Center handles the HTTP to HTTPS moves transparently. In general you don't have to do anything from Google News perspective, unless you're also making use of News sitemaps. In that case, contact the News team and let them know about the change. You can also let the team know about changing sections, for example in case you're moving to HTTPS, you can specify that you're moving http://example.com/section to https://example.com/section.
 Prepare the new site
-The details of site preparation vary for each site move, but typically you’ll do one or more of the following:
+The details of site preparation vary for each site move, but typically you'll do one or more of the following:
 Set up a new content management system (CMS) and add content to it.
 Transfer images and downloads (such as PDF documents) that you currently host.
-These might already be getting traffic from Google Search or links, and it’s useful to tell users and Googlebot about their new location.
+These might already be getting traffic from Google Search or links, and it's useful to tell users and Googlebot about their new location.
 For a move to HTTPS, get and configure the required TLS certificates on your server.
 Set up a robots.txt for your new site
 The robots.txt file for a site controls which areas Googlebot can crawl. Make sure the
-directives in the new site’s robots.txt file correctly reflect the parts you want blocked
+directives in the new site's robots.txt file correctly reflect the parts you want blocked
 from crawling.
 Note that some site owners block all crawling while in development. If you follow this
 strategy, make sure you prepare what the robots.txt file should look like once the site move
 starts. Likewise, if you use noindex directives during development, prepare a
-list of URLs from which you’ll remove the noindex directives when you start the
+list of URLs from which you'll remove the noindex directives when you start the
 site move.
 Provide errors for deleted or merged content
 For content on the old site that will not be transferred to the new site, make sure those
@@ -100,14 +101,14 @@ orphaned URLs correctly return an HTTP 404 or 410 error response code. You can r
 error response code at the old URL in the configuration panel for your new site, or you
 can create a redirect for a new URL and have that return the HTTP error code.
 Avoid irrelevant redirects
-Don’t redirect many old URLs to one irrelevant destination, such as the home page of the
+Don't redirect many old URLs to one irrelevant destination, such as the home page of the
 new site. This can confuse users and might be treated as a
 soft 404
 error. However, if you have consolidated content previously hosted on multiple pages
 to a new single page, it is acceptable to redirect the older URLs to that new, consolidated page.
 Ensure correct Search Console settings
 A successful site move depends on correct—and up to date—Search Console settings.
-If you haven’t already, verify
+If you haven't already, verify
 that you own both the old and new sites in Search Console. Be sure to verify all
 variants of both the old and new sites. For example, you should verify
 www.example.com and example.com, and include both the HTTPS and
@@ -116,8 +117,8 @@ Review the Search Console verification
 Make sure your Search Console verification will continue to work after the site move. If
 you're using a different method of verification, keep in mind that verification tokens may
 be different when the URL changes.
-If you’re using the HTML
-file method to verify ownership of your site in Search Console, make sure you don’t
+If you're using the HTML
+file method to verify ownership of your site in Search Console, make sure you don't
 forget to include your current verification file in your new copy of the site.
 Likewise, if you verify ownership with an include file that references meta tag or
 Google
@@ -125,9 +126,9 @@ Analytics to verify ownership, ensure the new CMS copy includes these as well.
 Review any configured settings in
 Search Console
 If you had changed some of the configuration settings in Search Console for your old site,
-make sure the new site’s settings are updated to reflect those changes as well. For example:
+make sure the new site's settings are updated to reflect those changes as well. For example:
 URL
-parameters: If you’ve configured URL parameters to control the crawling or indexing of
+parameters: If you've configured URL parameters to control the crawling or indexing of
 your old URLs, make sure the settings are also applied to the new site if needed.
 Geotargeting:
 Your old site might have explicit geotargeting, such as a geotargetable domain or a
@@ -137,15 +138,15 @@ move is meant to help your business expand globally and you do not wish your sit
 associated with any country or region, select Unlisted in the drop-down
 list of the Site Settings page.
 Crawl rate:
-We recommend not limiting Googlebot’s crawl rate in Search Console for both old and
+We recommend not limiting Googlebot's crawl rate in Search Console for both old and
 new URLs.
-We advise you don’t configure a crawl rate setting, either. Only do this
-if you know that your site cannot handle Googlebot’s volume of crawling. If you have
-already limited Googlebot’s crawl rate for your old site, consider removing it. Google has
+We advise you don't configure a crawl rate setting, either. Only do this
+if you know that your site cannot handle Googlebot's volume of crawling. If you have
+already limited Googlebot's crawl rate for your old site, consider removing it. Google has
 algorithms that automatically detect that a site move has been implemented and we alter
-Googlebot’s crawling behavior so that our indexing quickly reflects the site move.
+Googlebot's crawling behavior so that our indexing quickly reflects the site move.
 Disavowed
-backlinks: If you’ve uploaded a file to disavow links on your old site, we recommend
+backlinks: If you've uploaded a file to disavow links on your old site, we recommend
 that you re-upload it again using the Search Console account of the new site.
 Clean up your recently purchased
 domain
@@ -161,12 +162,12 @@ problems listed there before filing a
 reconsideration
 request.
 Removed
-URLs. Make sure that there aren’t any URL removals left over from the previous owner,
+URLs. Make sure that there aren't any URL removals left over from the previous owner,
 especially a site-wide URL removal. Also, before submitting URL removal requests for your
 content, make sure that you understand
 when not to use the URL removals tool.
 Use web analytics
-During a site move, it’s important to analyze usage on both the old and new sites. Web
+During a site move, it's important to analyze usage on both the old and new sites. Web
 analytics software can help with this. Typically, web analytics configuration consists of a
 piece of JavaScript embedded in your pages. The details for tracking different sites varies
 depending on your analytics software and its logging, processing, or filtering settings.
@@ -200,10 +201,10 @@ mapping will vary depending on your current website infrastructure and the detai
 site move.
 1. Determine your current URLs
 In the simplest of site moves, you may not need to generate a list of your current URLs. For
-example, you could use a wildcard server-side redirect if you’re changing just your site’s host
+example, you could use a wildcard server-side redirect if you're changing just your site's host
 (for example, moving from example.com to example.net).
 In more complex site moves, you will need to generate a list of old URLs and map them to
-their new destinations. How you get a listing of old URLs depends on your current website’s
+their new destinations. How you get a listing of old URLs depends on your current website's
 configuration, but here are some handy tips:
 Start with your important URLs. To find them:
 Look in your sitemaps
@@ -270,9 +271,9 @@ This allows Googlebot to discover all redirects to the new site and update our i
 On the new site, make sure the robots.txt file
 allows all crawling. This includes crawling of images, CSS, JavaScript, and other page
 assets, apart from the URLs you are certain you do not want crawled.
-[Non-HTTP to HTTPS moves only] Submit a
-Change of Address in Search Console for the old site. Don't submit a
-change of address if you are only moving your site from HTTP to HTTPS.
+Submit a Change of Address in Search Console for the old site.
+If you're moving your site from HTTP to HTTPS, you don't need to use the
+Change of Address tool.
 Configure the old website to redirect users and Googlebot to the new site based on the URL mapping.
 On the old site, submit the two sitemaps you prepared previously
 containing the old and new URLs.This helps our crawlers discover the redirects from the old
@@ -286,7 +287,7 @@ a medium-sized website can take a few weeks for most pages to move, and larger s
 longer. The speed at which Googlebot and our systems discover and process moved URLs depends
 on the number of URLs and the server speed.
 Note that the visibility of your content in web search may fluctuate
-temporarily during the move. This is normal and a site’s rankings will settle down over time.
+temporarily during the move. This is normal and a site's rankings will settle down over time.
 Update incoming links
 Immediately after the site move is started, try to update as many incoming links as possible
 to improve the user experience and reduce your server load. These include:
@@ -352,5 +353,6 @@ Be sure that your sitemaps are all updated with the new URLs.
 Not updating Data Highlighter
 If you used Data
 Highlighter to map your old pages, you will need to redo your mappings for your new site.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

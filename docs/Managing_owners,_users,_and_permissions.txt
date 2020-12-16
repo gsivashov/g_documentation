@@ -83,5 +83,5 @@ Next to the user that you want to modify, select a different permission level.
 The change should take effect very quickly.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Get your site on Search ConsoleAdd a website propertyRemove a propertyVerify your site ownershipManaging owners, users, and permissionsI don't recognize this new owner
+Managing properties and users on Search ConsoleAdd a website propertyRemove a propertyVerify your site ownershipManaging owners, users, and permissionsProperty and user settingsI don't recognize this new owner
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

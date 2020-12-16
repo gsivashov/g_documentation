@@ -43,16 +43,16 @@ Ask Google to recrawl your feed.
 Update all your feeds when making changes. Only the served feed is used by Google but Google can change the served feed without notice.
 Help Google find your show
 Many listeners use Google Search to find podcasts. Here is a summary of the most important practices to help listeners find your show on Google, once your podcast is available on Google:
-Follow Search best practices for your webpage.
 In your RSS file, include detailed show and episode metadata: The show description and episode descriptions help us deliver more accurate search results and provide users with more context on the contents of an episode. Of course, follow general best practices for adding useful and relevant descriptions.
-Make sure your that podcast's webpage and RSS data match: If you have a web page for your podcast, make sure the following data match the data in the RSS:
-The title of the podcast show's webpage and the title of the RSS feed match.
-The HEAD element of the podcasts show's webpage contains a ‘link rel' element that points to the RSS feed, and that the RSS feed in turn contains a <channel><link> element whose value matches the URL of the show's webpage More details here.
-Include cover art: We recently changed our guidelines to make cover art images in  your podcast feed required, rather than optional. More details are here.
+If you have a web page for your podcast (highly recommended):
+Follow Search best practices for your webpage.
+Make sure that the title of the show's homepage and the title of the RSS feed match.
+The homepage and RSS feed point to each other. More details here.
+Include cover art: We recently changed our guidelines to make cover art images in your podcast feed required, rather than optional. More details are here.
 Allow Googlebot to access your audio files: We recommend making sure that your audio files, the actual mp3s within your RSS feed, are able to be crawled and accessible to Googlebot. While this is recommended and not required, if we can crawl your audio files, it allows our technology to use these files to understand the entirety of the podcast. This allows us to surface this podcast to users for a broader range of topics, as we understand the full context of the episode, and aren't limited to the description. More details are here.
-Follow general Search best practices: Our podcast algorithms are very much rooted in the same principles of Search, so familiarizing yourself with How Search Works can provide you with valuable insights.
+Our podcast search algorithms are based on the same principles as web search, so familiarizing yourself with How Search Works can provide you with valuable insights about optimizing your podcast titles and descriptions.
 Google checks known feeds several times a day for any updates. You can check when Google last read your feed
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpAbout podcasts on GoogleGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageMarket your podcast with Google Podcasts brandingTroubleshooting
+HelpAbout podcasts on GoogleGet your podcast on GoogleManage your podcast and episodes on GoogleMarket your podcast with Google Podcasts brandingMonitor your podcast usageTroubleshooting
 Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

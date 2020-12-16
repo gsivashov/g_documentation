@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 APIs-Google User Agent
 APIs-Google is the user agent used by Google APIs to deliver push notification messages. Application developers can request these notifications to avoid the need for continually polling Google's servers to find out if the resources they are interested in have changed. To make sure nobody abuses this service, Google requires developers to prove that they own the domain before allowing them to register a URL with a domain as the location where they want to receive messages.
 How APIs-Google accesses your site
@@ -21,5 +22,6 @@ Unregister for notifications. If you administer a domain that has subdomains or 
 Use robots.txt. The user-agent to specify in the robots.txt file is APIs-Google - APIs-Google does not follow Googlebot directives. There may be a small delay before APIs-Google discovers your robots.txt file change. If APIs-Google continues to send messages to your site several days after you've blocked it in robots.txt, check that the robots.txt is in the correct location.
 Verifying the caller
 If you suspect that you are receiving spoofed requests, you can verify that a bot accessing your server really is calling from google.com. Search your logs for any IP addresses identifying themselves as the APIs-Google user agent; a reverse DNS lookup should be a googlebot.com or google.com domain.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-03 UTC.

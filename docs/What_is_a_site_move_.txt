@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 What is a site move?
 As a site owner, it is possible that at some point you'll want to move your site to a different
 URL or different infrastructure. This page covers the different scenarios of site moves and
@@ -41,7 +42,7 @@ planning can minimize problems.
 Time your move to coincide with lower traffic, if possible.
 If your traffic is seasonal or dips on certain weekdays, it makes sense to move your site
 during the recurring traffic dips. This lowers the impact of anything that breaks, and also dedicates
-more of your server’s power to helping Googlebot update our index.
+more of your server's power to helping Googlebot update our index.
 Expect temporary fluctuation in site ranking during the move.
 With any significant change to a site, you may experience ranking fluctuations while
 Google recrawls and reindexes your site. As a general rule, a medium-sized website can
@@ -52,9 +53,10 @@ process quicker, and it's fine to move your site in sections.
 Ask questions on Google Search Central.
 There is plenty of good advice on our help page and
 specific cases answered in our user
-forums. If you can’t find an answer, you can ask a live question to one of our Google Search
+forums. If you can't find an answer, you can ask a live question to one of our Google Search
 specialists during our SEO office hours.
 If it involves a URL change, you might consider an A/B test or trial run.
 Plan for a few weeks to allow for crawling and indexing to pick up changes, plus time to monitor traffic.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Subscription and paywalled content
 This page describes how to use schema.org JSON-LD to indicate paywalled content on your site with
 CreativeWork properties. This
@@ -184,12 +185,12 @@ data errors.
 Troubleshoot
 missing rich results / drop in total rich results.
 For general questions about crawling and indexing, check the
-Webmaster FAQ.
+Google Search crawling and indexing FAQ.
 Note: Allow time for re-crawling and re-indexing. Remember that it
 may take several days after publishing a page for Google to find and crawl it.
-Ask a question in the Webmaster
-Office Hours.
-Post a question in the Webmaster
+Ask a question in the Google Search Central office hours.
+Post a question in the Google Search Central
 forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-03 UTC.

@@ -4,10 +4,11 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Explore the search gallery
 Google uses structured data to understand the content on the page. You can help us by
 providing specific information about your site, which can help your site display in richer
-features in search results. If you’re just getting started, visit
+features in search results. If you're just getting started, visit
 Understand how structured data works.
 Choose a category that describes your website
 Filter by...
@@ -178,5 +179,6 @@ Video information in search results, with the option to play the video, specify 
 segments, and live-stream content.
 Get started
 Food and Drink, News, Education and Science, Sports
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

@@ -5,7 +5,7 @@ Use the Change of Address tool when you move your website from one domain or s
 When not to use this tool
 Don't use the Change of Address tool for the following moves:
 Changing address from http to https. For an http to https move, follow the guidelines for site move with URL changes, but don't use this tool; Google will figure out your changes for you.
-Moving some pages from one location to another within your site: For example, from example.com/oldpath/... to example.com/newpath/...). In this case, just add redirects, and update your sitemaps as appropriate.
+Moving some pages from one location to another within your site: For example, from example.com/oldpath/... to example.com/newpath/...). In this case, just add redirects, and update your sitemaps as appropriate. However, you can use the tool to migrate your site from one domain to a path within another domain. For instance, from example.com to example3.com/new/location/.
 Moving between www and non-www in the same domain: For example, www.example.com to example.com. In this case, use canonical tagging and/or redirects without using the change of address tool.
 Moving a site without any user-visible URL changes (that is, when your site URL remains the same but you are changing hosting providers or CDNs). For this, read Move a site with no URL changes.
 Best practices in a site move
@@ -48,5 +48,5 @@ Add 301 redirects from the new site to the old site.
 Open the Change of address tool in the old site and click Cancel Move. Repeat for every old site that you no longer want to move.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rate
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats report
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

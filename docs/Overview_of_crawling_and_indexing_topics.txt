@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Overview of crawling and indexing topics
 The topics in this section describe how you can control Google's ability to find and parse your content in order to show it in Search and other Google properties, as well as how to prevent Google from crawling specific content on your site.
 Here's a brief description of each page. Read the full story here.
@@ -33,5 +34,6 @@ Crawl Stats report
 The Crawl Stats report shows information about when and how much Google crawled your site.
 Change Googlebot crawl rate
 In the unlikely chance that Google is making too many crawl requests to your site, you can tell us to slow down our requests.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-03 UTC.

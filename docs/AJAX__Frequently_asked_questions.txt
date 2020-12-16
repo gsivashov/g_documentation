@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 AJAX: Frequently asked questions
 When should I use _escaped_fragment_ and when should I use #! in my AJAX URLs?
 Your site should use the #! syntax in all URLs that have adopted the AJAX crawling scheme. Googlebot will not follow hyperlinks in the _escaped_fragment_ format.
@@ -34,7 +35,7 @@ What about existing uses of #! in hash fragments?
 Disallow: /*_escaped_fragment_
 Please note that this means that if your application contains only this URL: www.example.com/index.html#!mystate, then this URL will not be crawled. If your application additionally contains the bare URL www.example.com/ajax.html, this URL will be crawled.
 What about accessibility?
-One side-effect of the current practice to provide static content to search engines is that webmasters have made their applications more accessible to users with disabilities. This new agreement takes accessibility to a new level: without manual intervention, webmasters can use a headless browser to create HTML snapshots, which contain all the relevant content and are usable by screen readers. This means that it is now easier to keep the static content up-to-date, as less manual work is required. In other words, webmasters now have an even greater incentive to make their applications accessible to those with disabilities.
+One side-effect of the current practice to provide static content to search engines is that website owners have made their applications more accessible to users with disabilities. This new agreement takes accessibility to a new level: without manual intervention, website owners can use a headless browser to create HTML snapshots, which contain all the relevant content and are usable by screen readers. This means that it is now easier to keep the static content up-to-date, as less manual work is required. In other words, website owners now have an even greater incentive to make their applications accessible to those with disabilities.
 How should I use rel="canonical"?
 Use <link rel="canonical" href="http://example.com/ajax.html#!foo=123" /> (don't use <link rel="canonical" href="http://example.com/ajax.html?_escaped_fragment_=foo=123" />.
 Which URL should I include in my Sitemap?
@@ -46,5 +47,6 @@ If "doesn't work" means that HtmlUnit does not return the snapshot you were expe
 Use NicelyResynchronizingAJAXController. This will cause HtmlUnit to wait for any outstanding XHR calls.
 Bump up the wait time for waitForBackgroundJavaScript and/or waitForBackgroundJavaScriptStartingBefore.
 This will very likely fix your problem. If it doesn't, you can also try the FAQ for HtmlUnit here: http://htmlunit.sourceforge.net/faq.html. HtmlUnit also has a user forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-03 UTC.

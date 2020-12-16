@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Rich media file best practices
 Google can index most types of pages and files. Here are a few details about some specific rich media types:
 General best practices
@@ -24,6 +25,7 @@ We'll crawl and index this content in the same way that we crawl and index other
 When a SWF file loads content from some other file—whether it's text, HTML, XML, another SWF, etc.—Google can index this external content too, and associate it with the parent SWF file and any documents that embed it.
 We're continually working to improve our indexing of Flash files, but there are some limitations. For example, we're currently unable to index the bidirectional language content (for example, Hebrew or Arabic) in Flash files.
 Note that while Google can index the content of Flash files, other search engines may not be able to. Therefore, we recommend that you use rich-media technologies like Flash primarily for decorative purposes, and instead use HTML for content and navigation. This makes your site more crawler-friendly, and also makes it accessible to a larger audience including, for example, readers with visual impairments that require the use of screen readers, users of old or non-standard browsers, and users with limited or low-bandwidth connections such as a cellphone or mobile device. An added bonus? Using HTML for navigation will allow users to bookmark content and send direct links in email.
-You could also consider using sIFR (Scalable Inman Flash Replacement). sIFR (an open-source project) lets webmasters replace text elements with Flash equivalents. Using this technique, content and navigation is displayed by an embedded Flash object but, because the content is contained in the HTML source, it can be read by non-Flash users (including search engines).
+You could also consider using sIFR (Scalable Inman Flash Replacement). sIFR (an open-source project) lets website owners replace text elements with Flash equivalents. Using this technique, content and navigation is displayed by an embedded Flash object but, because the content is contained in the HTML source, it can be read by non-Flash users (including search engines).
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-03 UTC.

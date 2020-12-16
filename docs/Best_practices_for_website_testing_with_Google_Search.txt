@@ -4,29 +4,82 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Best practices for website testing with Google Search
-This page covers how to ensure that testing variations in page content or page URLs has minimal impact on your Google Search performance. It does not give instructions on how to build or design tests, but you can find more resources about testing at the end of this page.
+This page covers how to ensure that testing variations in page content or page URLs has
+minimal impact on your Google Search performance. It does not give instructions on how to
+build or design tests, but you can find more resources about testing at the end of this page.
 Overview of testing
-Website testing is when you try out different versions of your website (or a part of your website) and collect data about how users react to each version. Typically you will use software to compare behavior with two different variations of your pages (parts of a page, entire pages, or entire multi-page flows), and track which version is most effective with your users.
-A/B testing is when you run a test by creating multiple versions of a page, each with its own URL. When users try to access the original URL, you redirect some of them to each of the variation URLs and then compare users’ behavior to see which page is most effective.
-Multivariate testing is when you use software to change different parts of your website on the fly. You can test changes to multiple parts of a page—say, the heading, a photo, and the ‘Add to Cart’ button—and the software will show variations of each of these sections to users in different combinations and then statistically analyze which variations are the most effective. Only one URL is involved; the variations are inserted dynamically on the page.
-Depending on what types of content you’re testing, it may not even matter much if Googlebot crawls or indexes some of your content variations while you’re testing. Small changes, such as the size, color, or placement of a button or image, or the text of your “call to action” (“Add to cart” vs. “Buy now!”), can have a surprising impact on users’ interactions with your page, but often have little or no impact on that page’s search result snippet or ranking.
-In addition, if we crawl your site often enough to detect and index your experiment, we’ll probably index the eventual updates you make to your site fairly quickly after you’ve concluded the experiment.
+Website testing is when you try out different versions of your website (or a part of your
+website) and collect data about how users react to each version. Typically you will use
+software to compare behavior with two different variations of your pages (parts of a page,
+entire pages, or entire multi-page flows), and track which version is most effective with your
+users.
+A/B testing is when you run a test by creating multiple versions of a page,
+each with its own URL. When users try to access the original URL, you redirect some of them to
+each of the variation URLs and then compare users' behavior to see which page is most
+effective.
+Multivariate testing is when you use software to change different parts of
+your website on the fly. You can test changes to multiple parts of a page—say, the heading, a
+photo, and the 'Add to Cart' button—and the software will show variations of each of these
+sections to users in different combinations and then statistically analyze which variations
+are the most effective. Only one URL is involved; the variations are inserted dynamically on
+the page.
+Depending on what types of content you're testing, it may not even matter much if Googlebot
+crawls or indexes some of your content variations while you're testing. Small changes, such as
+the size, color, or placement of a button or image, or the text of your "call to action" ("Add
+to cart" vs. "Buy now!"), can have a surprising impact on users' interactions with your page,
+but often have little or no impact on that page's search result snippet or ranking.
+In addition, if we crawl your site often enough to detect and index your experiment, we'll
+probably index the eventual updates you make to your site fairly quickly after you've
+concluded the experiment.
 Best practices when testing
-Here is a list of best practices to avoid any bad effects on your Google Search behavior while testing site variations:
+Here is a list of best practices to avoid any bad effects on your Google Search behavior while
+testing site variations:
 Don't cloak your test pages
-Don't show one set of URLs to Googlebot, and a different set to humans. This is called Cloaking, and is against our Webmaster Guidelines, whether you’re running a test or not. Remember that infringing our Guidelines can get your site demoted or removed from Google search results—probably not the desired outcome of your test.
-Cloaking counts whether you do it by server logic or by robots.txt, or any other method. Instead, use links or redirects as described next.
-Userel="canonical"links
-If you’re running an A/B test with multiple URLs, you can use the rel="canonical" link attribute on all of your alternate URLs to indicate that the original URL is the preferred version. We recommend usingrel="canonical"rather than a noindex meta tag because it more closely matches your intent in this situation. For instance, if you are testing variations of your home page, you don’t want search engines not to index your homepage, you just want them to understand that all the test URLs are close duplicates or variations on the original URL and should be grouped together, with the original URL as the canonical. Using noindex rather thanrel="canonical"in such a situation can sometimes have unexpected bad effects.
+Don't show one set of URLs to Googlebot, and a different set to humans. This is called
+Cloaking,
+and is against our
+Webmaster Guidelines,
+whether you're running a test or not. Remember that infringing our Guidelines can get your
+site demoted or removed from Google search results—probably not the desired outcome of your
+test.
+Cloaking counts whether you do it by server logic or by robots.txt, or any other method.
+Instead, use links or redirects as described next.
+Use rel="canonical" links
+If you're running an A/B test with multiple URLs, you can use the
+rel="canonical" link attribute
+on all of your alternate URLs to indicate that the original URL is the preferred version. We
+recommend using rel="canonical" rather than a noindex meta tag
+because it more closely matches your intent in this situation. For instance, if you are
+testing variations of your home page, you don't want search engines not to index your
+homepage, you just want them to understand that all the test URLs are close duplicates or
+variations on the original URL and should be grouped together, with the original URL as the
+canonical. Using noindex rather than rel="canonical" in such a
+situation can sometimes have unexpected bad effects.
 Use 302 redirects, not 301 redirects
-If you’re running an A/B test that redirects users from the original URL to a variation URL, use a 302 (temporary) redirect, not a 301 (permanent) redirect. This tells search engines that this redirect is temporary—it will only be in place as long as you’re running the experiment—and that they should keep the original URL in their index rather than replacing it with the target of the redirect (the test page). JavaScript-based redirects are also fine.
+If you're running an A/B test that redirects users from the original URL to a variation URL,
+use a 302 (temporary) redirect, not a 301 (permanent) redirect. This tells search engines that
+this redirect is temporary—it will only be in place as long as you're running the experiment —
+and that they should keep the original URL in their index rather than replacing it with the
+target of the redirect (the test page). JavaScript-based redirects are also fine.
 Run the experiment only as long as necessary
-The amount of time required for a reliable test will vary depending on factors like your conversion rates, and how much traffic your website gets; a good testing tool should tell you when you’ve gathered enough data to draw a reliable conclusion. Once you’ve concluded the test, you should update your site with the desired content variation(s) and remove all elements of the test as soon as possible, such as alternate URLs or testing scripts and markup. If we discover a site running an experiment for an unnecessarily long time, we may interpret this as an attempt to deceive search engines and take action accordingly. This is especially true if you’re serving one content variant to a large percentage of your users.
+The amount of time required for a reliable test will vary depending on factors like your
+conversion rates, and how much traffic your website gets; a good testing tool should tell you
+when you've gathered enough data to draw a reliable conclusion. Once you've concluded the
+test, you should update your site with the desired content variation(s) and remove all
+elements of the test as soon as possible, such as alternate URLs or testing scripts and
+markup. If we discover a site running an experiment for an unnecessarily long time, we may
+interpret this as an attempt to deceive search engines and take action accordingly. This is
+especially true if you're serving one content variant to a large percentage of your users.
 More information about testing
-Google Analytics article on content experiments
+Google Analytics article
+on content experiments
 Google Analytics content testing tools
-Ask questions about testing on the Analytics Help Forum
-Ask questions about impact on search results in the Webmaster Help Forum.
+Ask questions about testing on the
+Analytics Help Forum
+Ask questions about impact on search results in the
+Google Search Central Help Forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

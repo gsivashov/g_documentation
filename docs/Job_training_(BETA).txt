@@ -4,13 +4,14 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Job training (BETA)
 Looking for other job-related features?
 Does your site provide job postings? Consider adding JobPosting structured data in addition to job training structured data.
 Does your site provide reviews about other employers? Add EmployerAggregateRating structured data.
 Does your site provide salary estimates? Add Estimated salary structured data.
 For job seekers and prospective students looking to acquire marketable skills for their next
-role, it’s often difficult to find programs, compare cost, and know which jobs are in demand. The
+role, it's often difficult to find programs, compare cost, and know which jobs are in demand. The
 job training experience on Google Search helps people discover a new career path and acquire skills for
 their next job. Learn more about the job
 training experience on Google.
@@ -29,7 +30,7 @@ job training providers in the
 US.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
-content. If you’re new to structured data, you can learn more about
+content. If you're new to structured data, you can learn more about
 how structured data works.
 Here's an overview of how to build, test, and release structured data. For a step-by-step guide
 on how to add structured data to a web page, check out the
@@ -428,7 +429,7 @@ aren't accepted.
 The program must have a local presence. Online-only programs are not accepted.
 Programs that require students to pay to attend are eligible, as long as the programs are intended to be
 around two years or less for full-time enrolled students.
-Programs that train for a job but don’t have credits or don’t lead to a degree are
+Programs that train for a job but don't have credits or don't lead to a degree are
 allowed.
 For the small subset of occupations that have programmatic accreditation according to the US DoE, programs must have
 programmatic accreditation (for example, physical therapy assistant).
@@ -692,7 +693,7 @@ P2Y
 P2M
 2 month, 2 year
 "P26M" "P2Y2M"
-If you don’t know the duration, we recommend you use the number of credits multiplied by
+If you don't know the duration, we recommend you use the number of credits multiplied by
 the expected full-time student workload. For example: 48 units divided by 12 units
 expected per semester for a full-time student x 4 months per semester = 16 months, or
 less than 1.5 years.
@@ -758,7 +759,7 @@ The number of credits earned by completing this program.
 "numberOfCredits": "30"
 occupationalCredentialAwarded
 EducationalOccupationalCredential
-The credential provided upon completion of the program. For example: Associate’s Degree,
+The credential provided upon completion of the program. For example: Associate's Degree,
 Certificate.
 Show example
 "occupationalCredentialAwarded": {
@@ -962,7 +963,7 @@ offered.
 "maximumEnrollment": "50"
 occupationalCredentialAwarded
 EducationalOccupationalCredential
-The credential provided upon completion of the program. For example: Associate’s Degree,
+The credential provided upon completion of the program. For example: Associate's Degree,
 Certificate.
 Show example
 "occupationalCredentialAwarded": {
@@ -1146,7 +1147,7 @@ P2Y
 P2M
 2 month, 2 year
 "P26M" "P2Y2M"
-If you don’t know the duration, we recommend you use the number of credits multiplied by
+If you don't know the duration, we recommend you use the number of credits multiplied by
 the expected full-time student workload. For example: 48 units divided by 12 units
 expected per semester for a full-time student x 4 months per semester = 16 months, or
 less than 1.5 years.
@@ -1281,12 +1282,12 @@ data errors.
 Troubleshoot
 missing rich results / drop in total rich results.
 For general questions about crawling and indexing, check the
-Webmaster FAQ.
+Google Search crawling and indexing FAQ.
 Note: Allow time for re-crawling and re-indexing. Remember that it
 may take several days after publishing a page for Google to find and crawl it.
-Ask a question in the Webmaster
-Office Hours.
-Post a question in the Webmaster
+Ask a question in the Google Search Central office hours.
+Post a question in the Google Search Central
 forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

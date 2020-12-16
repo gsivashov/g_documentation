@@ -4,22 +4,24 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Ad network support for Web Light pages in Google Search
 Google shows faster and lighter pages to people searching on slow mobile connections. To do this, we transcode (convert) web pages on the fly into a version optimized for slow networks, so that these pages load faster while saving data. These optimized pages preserve a majority of the relevant content and provide a link for users to view the original page. We call this technology "Web Light."Our experiments show that optimized pages load four times faster than the original page and use 80% fewer bytes. Because these pages load so much faster, we also saw a 50% increase in traffic to these pages.
 Google displays ads on these transcoded pages so that publishers can continue to monetize their traffic. At the outset we support several 3rd party ad networks, including Sovrn, Zedo. We are interested in supporting ads from other networks as well. Read on if you run an ad network and want your ads to be supported on Web Light pages.
 Our approach
 When Google optimizes pages for users on a slow network, several steps may be required. If the original page is not mobile-friendly, we convert the content into a mobile-friendly format. We also reduce the page size so that the page loads faster than the original. We do this by removing unnecessary JavaScript and CSS, compressing images, and doing other performance optimizations.
-After the content has been optimized, we place the publisher’s ads back into the Web Light page. We do this by detecting the existing ads on a publisher's page. If the original page was mobile-friendly, we can include the ad tags directly. If the original page was not mobile-friendly, we need to modify the ad tag's parameters to request a mobile ad from the appropriate ad network.
+After the content has been optimized, we place the publisher's ads back into the Web Light page. We do this by detecting the existing ads on a publisher's page. If the original page was mobile-friendly, we can include the ad tags directly. If the original page was not mobile-friendly, we need to modify the ad tag's parameters to request a mobile ad from the appropriate ad network.
 For more details, please see our FAQ.
 Participate
 If you're an ad network and interested in being included in Web Light pages, please contact us by filling out this form. We will need the following information:
 The format of your ad tags on a publisher's page
-Providing us with examples of your ad tags or with a way to identify your ad tags in the HTML of a publisher’s page.
+Providing us with examples of your ad tags or with a way to identify your ad tags in the HTML of a publisher's page.
 Parameters to request a mobile-friendly version of your ad
 If the page that we're optimizing is not mobile-friendly, we may need to modify the ad tag. Please provide documentation on the ad tag parameters that would need to be modified so that your servers return a mobile-friendly ad format.
 Supported formats
 We currently display ads only in the following formats: 320x50 and 300x250.
 Additional considerations
 To help Web Light pages load quickly, please make sure that your JavaScript bundle is not too large. It is also preferable that you support HTTPS requests.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

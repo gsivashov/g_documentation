@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Image Rights Metadata in Google Images
 Photographers, photo agencies, and other related industries provide information about their images in image metadata. Google Images exposes IPTC metadata in search results whenever it is available.
 Image rights metadata on mobile device
@@ -14,5 +15,6 @@ Whenever possible, try to specify the IPTC fields creator, credit line, and copy
 We recommend using metadata management software to manage your image metadata.
 Is it okay to remove image metadata?
 Removing image metadata can reduce image file size, which helps webpages load faster. However, you should be careful, since removing metadata may be illegal in certain jurisdictions. Image metadata provide image copyright and licensing information online. Google recommends that, at the very least, you retain critical metadata related to image rights information and identification. For example, whenever possible try to keep the IPTC fields creator, credit line, and copyright notice to provide proper attribution.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-03 UTC.

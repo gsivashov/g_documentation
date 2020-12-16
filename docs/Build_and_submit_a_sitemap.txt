@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Build and submit a sitemap
 This page describes how to build a sitemap and make it available to Google. Learn more about sitemaps here.
 Decide which pages on your site should be crawled by Google, and determine the canonical version of each page.
@@ -35,10 +36,10 @@ Guidelines for text file sitemaps:
 Encode your file using UTF-8 encoding.
 Your text file should contain nothing but the list of URLs.
 You can name the text file anything you wish, provided it has a .txt extension (for instance, sitemap.txt).
-Google sites
-If you've created and verified a site using Google Sites, Sites will automatically generate a sitemap for you. You cannot modify the sitemap, but you can submit it to Google if you want to read the sitemap report data. Note that your sitemap might not be displayed properly if you have more than 1,000 pages in a single sub-directory.
+Google Sites
+If you've used Google Sites to create and verify a site, Google Sites will automatically generate a sitemap for you. You cannot modify the sitemap, but you can submit it to Google if you want to read the sitemap report data. Note that your sitemap might not be displayed properly if you have more than 1,000 pages in a single sub-directory.
 If your site is hosted at Google Sites, your sitemap URL is http://sites.google.com/site/yoursitename/system/feeds/sitemap
-If you created your site using Google Apps, your sitemap URL is http://sites.google.com/yourdomain/yoursitename/system/feeds/sitemap
+If you created your site using Google Workspace, your sitemap URL is https://sites.google.com/yourdomain/yoursitename/system/feeds/sitemap
 Sitemap extensions for additional media types
 Google supports extended sitemap syntax for the following media types. Use these extensions to describe video files, images, and other hard-to-parse content on your site to improve indexing.
 Video
@@ -100,5 +101,6 @@ for example:
 http://www.google.com/ping?sitemap=https://example.com/sitemap.xml
 Troubleshooting sitemaps
 See the sitemaps troubleshooting guide.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-08 UTC.

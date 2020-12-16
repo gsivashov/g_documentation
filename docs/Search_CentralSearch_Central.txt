@@ -3,6 +3,7 @@ https://developers.google.com/search/tools
 Home
 Google Search Central
 Help
+Send feedback
 Get support for your site from Google Search
 Have questions about Search Console, search rankings, security issues, or content on your site? Take a look at our support resources.
 bookmark

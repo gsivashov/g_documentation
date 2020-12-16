@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Webmaster Guidelines
 Following the General Guidelines below will help Google find, index, and rank your site.
 We strongly encourage you to pay very close attention to the Quality Guidelines below, which outline some of the illicit practices that may lead to a site being removed entirely from the Google index or otherwise affected by an algorithmic or manual spam action. If a site has been affected by a spam action, it may no longer show up in results on Google.com or on any of Google's partner sites.
@@ -38,7 +39,7 @@ your site appears correctly in different browsers.
 If possible, secure your site's connections with HTTPS. Encrypting interactions between the user and your website is a good practice for communication on the web.
 Ensure that your pages are useful for readers with visual impairments, for example, by testing usability with a screen-reader.
 Quality guidelines
-These quality guidelines cover the most common forms of deceptive or manipulative behavior, but Google may respond negatively to other misleading practices not listed here. It's not safe to assume that just because a specific deceptive technique isn't included on this page, Google approves of it. Webmasters who spend their energies upholding the spirit of the basic principles will provide a much better user experience and subsequently enjoy better ranking than those who spend their time looking for loopholes they can exploit.
+These quality guidelines cover the most common forms of deceptive or manipulative behavior, but Google may respond negatively to other misleading practices not listed here. It's not safe to assume that just because a specific deceptive technique isn't included on this page, Google approves of it. Website owners who spend their energies upholding the spirit of the basic principles will provide a much better user experience and subsequently enjoy better ranking than those who spend their time looking for loopholes they can exploit.
 If you believe that another site is abusing Google's quality guidelines, please let us know by filing a spam report. Google prefers developing scalable and automated solutions to problems, and will use the report for further improving our spam detection systems.
 Basic principles
 Make pages primarily for users, not for search engines.
@@ -64,5 +65,6 @@ Follow good practices like these:
 Monitoring your site for hacking and removing hacked content as soon as it appears
 Preventing and removing user-generated spam on your site
 If your site violates one or more of these guidelines, then Google may take manual action against it. Once you have remedied the problem, you can submit your site for reconsideration.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-08 UTC.

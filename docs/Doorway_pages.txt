@@ -4,11 +4,13 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Doorway pages
 Doorways are sites or pages created to rank highly for specific search queries. They are bad for users because they can lead to multiple similar pages in user search results, where each result ends up taking the user to essentially the same destination. They can also lead users to intermediate pages that are not as useful as the final destination.
 Here are some examples of doorways:
 Having multiple domain names or pages targeted at specific regions or cities that funnel users to one page
 Pages generated to funnel visitors into the actual usable or relevant portion of your site(s)
 Substantially similar pages that are closer to search results than a clearly defined, browseable hierarchy
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-11 UTC.

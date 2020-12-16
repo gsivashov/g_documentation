@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 3D and AR Early Adopters Program
 3D and Augmented Reality (AR) results help people view your 3D content directly from Google
 Search results. If people tap the View in 3D chip, it takes them into an
@@ -33,8 +34,8 @@ granularity when the user rotates and zooms, whereas 360 panoramas only allow th
 rotate and zoom to preset angles.
 3D models can be used with AR to allow a user to place a model of an object in their space,
 which provides another level of immersion. While images can also be used with AR, they're 2D
-and won’t provide the level of realism that a 3D model does.
-3D model files store information about a model’s geometry, texture, and color and can also
+and won't provide the level of realism that a 3D model does.
+3D model files store information about a model's geometry, texture, and color and can also
 include information about its scene and animations. The glTF and USDZ formats are used to
 render a 3D model in real-time on mobile devices. To use this feature, you'll need to provide
 us with at least one glTF file. There are hundreds of other formats such as FBX, OBJ, and
@@ -44,5 +45,6 @@ To ensure the best experience for users, this feature is currently restricted to
 number of organizations. If you would like to participate,
 register your interest with our
 form.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2019-11-21 UTC.
+Last updated 2020-12-14 UTC.

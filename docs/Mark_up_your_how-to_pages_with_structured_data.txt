@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Mark up your how-to pages with structured data
 Does your page provide instructions for food or drinks? Add
 Recipe structured data instead of HowTo.
@@ -22,7 +23,7 @@ the images specified in the markup, fill out the
 interest form.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
-content. If you’re new to structured data, you can learn more about
+content. If you're new to structured data, you can learn more about
 how structured data works.
 Here's an overview of how to build, test, and release structured data. For a step-by-step guide
 on how to add structured data to a web page, check out the
@@ -162,7 +163,7 @@ for some steps.
 "text": "Thinset and other adhesives set quickly so make sure to work in a small area."
 }, {
 "@type": "HowToDirection",
-"text": "Once it’s applied, comb over it with a notched trowel."
+"text": "Once it's applied, comb over it with a notched trowel."
 }],
 "image": {
 "@type": "ImageObject",
@@ -196,7 +197,7 @@ for some steps.
 "url": "https://example.com/kitchen#step5",
 "itemListElement": [{
 "@type": "HowToDirection",
-"text": "Allow the thin-set mortar to set. This usually takes about 12 hours. Don’t mix the grout before the mortar is set, because you don’t want the grout to dry out!"
+"text": "Allow the thin-set mortar to set. This usually takes about 12 hours. Don't mix the grout before the mortar is set, because you don't want the grout to dry out!"
 }, {
 "@type": "HowToDirection",
 "text": "To apply, cover the area thoroughly with grout and make sure you fill all the joints by spreading it across the tiles vertically, horizontally, and diagonally. Then fill any remaining voids with grout."
@@ -322,7 +323,7 @@ for some steps.
 "text": "Thinset and other adhesives set quickly so make sure to work in a small area."
 }, {
 "@type": "HowToDirection",
-"text": "Once it’s applied, comb over it with a notched trowel."
+"text": "Once it's applied, comb over it with a notched trowel."
 }],
 "image": {
 "@type": "ImageObject",
@@ -356,7 +357,7 @@ for some steps.
 "url": "https://example.com/kitchen#step5",
 "itemListElement": [{
 "@type": "HowToDirection",
-"text": "Allow the thin-set mortar to set. This usually takes about 12 hours. Don’t mix the grout before the mortar is set, because you don’t want the grout to dry out!"
+"text": "Allow the thin-set mortar to set. This usually takes about 12 hours. Don't mix the grout before the mortar is set, because you don't want the grout to dry out!"
 }, {
 "@type": "HowToDirection",
 "text": "To apply, cover the area thoroughly with grout and make sure you fill all the joints by spreading it across the tiles vertically, horizontally, and diagonally. Then fill any remaining voids with grout."
@@ -468,7 +469,7 @@ other debris and tape off the area.
 <img itemprop="image" alt="image showing layout planning"
 src="https://example.com/photos/1x1/photo-step2.jpg"/>
 <div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-<div itemprop="text">Lay out your tile horizontally below the wall where you’re going to
+<div itemprop="text">Lay out your tile horizontally below the wall where you're going to
 place it. This makes it easy to ensure that your pattern will fit in the space provided.
 Also it helps you double check that you have enough tile and know exactly where each piece
 will go.
@@ -476,7 +477,7 @@ will go.
 </div>
 <div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 <div itemprop="text">Spread the mortar on a small section of the wall with a trowel. Thinset
-and other adhesives set quickly so make sure to work in a small area. Once it’s applied,
+and other adhesives set quickly so make sure to work in a small area. Once it's applied,
 comb over it with a notched trowel.
 </div>
 </div>
@@ -502,7 +503,7 @@ and tiling until your wall is completely tiled, working in small sections.
 src="https://example.com/photos/1x1/photo-step4.jpg"/>
 <div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 <div itemprop="text">Allow the thin-set mortar to set. This usually takes about 12 hours.
-Don’t mix the grout before the mortar is set, because you don’t want the grout to dry out!
+Don't mix the grout before the mortar is set, because you don't want the grout to dry out!
 To apply, cover the area thoroughly with grout and make sure you fill all the joints by
 spreading it across the tiles vertically, horizontally, and diagonally. Then fill any
 remaining voids with grout.
@@ -603,7 +604,7 @@ other debris and tape off the area.
 <img itemprop="image" alt="image showing layout planning"
 src="https://example.com/photos/1x1/photo-step2.jpg"/>
 <div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-<div itemprop="text">Lay out your tile horizontally below the wall where you’re going to
+<div itemprop="text">Lay out your tile horizontally below the wall where you're going to
 place it. This makes it easy to ensure that your pattern will fit in the space provided.
 Also it helps you double check that you have enough tile and know exactly where each piece
 will go.
@@ -611,7 +612,7 @@ will go.
 </div>
 <div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 <div itemprop="text">Spread the mortar on a small section of the wall with a trowel. Thinset
-and other adhesives set quickly so make sure to work in a small area. Once it’s applied,
+and other adhesives set quickly so make sure to work in a small area. Once it's applied,
 comb over it with a notched trowel.
 </div>
 </div>
@@ -637,7 +638,7 @@ and tiling until your wall is completely tiled, working in small sections.
 src="https://example.com/photos/1x1/photo-step4.jpg"/>
 <div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 <div itemprop="text">Allow the thin-set mortar to set. This usually takes about 12 hours.
-Don’t mix the grout before the mortar is set, because you don’t want the grout to dry out!
+Don't mix the grout before the mortar is set, because you don't want the grout to dry out!
 To apply, cover the area thoroughly with grout and make sure you fill all the joints by
 spreading it across the tiles vertically, horizontally, and diagonally. Then fill any
 remaining voids with grout.
@@ -669,7 +670,7 @@ for each step, users may see a preview with a carousel of images.
 "url": "https://example.com/1x1/photo.jpg"
 },
 "name": "How to tie a tie",
-"description": "The four-in-hand knot is a great look for any occasion. From formal suits to casual jacket and tie affairs, it’s a simple way to quickly look great. Once you have mastered the knot you can tie it in just a minute, so it’s also great when you’re in a pinch too. ",
+"description": "The four-in-hand knot is a great look for any occasion. From formal suits to casual jacket and tie affairs, it's a simple way to quickly look great. Once you have mastered the knot you can tie it in just a minute, so it's also great when you're in a pinch too. ",
 "totalTime": "PT2M",
 "video": {
 "@type": "VideoObject",
@@ -700,7 +701,7 @@ for each step, users may see a preview with a carousel of images.
 {
 "@type": "HowToStep",
 "name": "Preparations",
-"text": "Button your shirt how you’d like to wear it, then drape the tie around your neck. Make the thick end about 1/3rd longer than the short end. For formal button down shirts, it usually works best with the small end of the tie between 4th and 5th button.",
+"text": "Button your shirt how you'd like to wear it, then drape the tie around your neck. Make the thick end about 1/3rd longer than the short end. For formal button down shirts, it usually works best with the small end of the tie between 4th and 5th button.",
 "image": "https://example.com/1x1/step1.jpg",
 "url": "https://example.com/tie#step1"
 }, {
@@ -747,7 +748,7 @@ for each step, users may see a preview with a carousel of images.
 "url": "https://example.com/1x1/photo.jpg"
 },
 "name": "How to tie a tie",
-"description": "The four-in-hand knot is a great look for any occasion. From formal suits to casual jacket and tie affairs, it’s a simple way to quickly look great. Once you have mastered the knot you can tie it in just a minute, so it’s also great when you’re in a pinch too. ",
+"description": "The four-in-hand knot is a great look for any occasion. From formal suits to casual jacket and tie affairs, it's a simple way to quickly look great. Once you have mastered the knot you can tie it in just a minute, so it's also great when you're in a pinch too. ",
 "totalTime": "PT2M",
 "video": {
 "@type": "VideoObject",
@@ -778,7 +779,7 @@ for each step, users may see a preview with a carousel of images.
 {
 "@type": "HowToStep",
 "name": "Preparations",
-"text": "Button your shirt how you’d like to wear it, then drape the tie around your neck. Make the thick end about 1/3rd longer than the short end. For formal button down shirts, it usually works best with the small end of the tie between 4th and 5th button.",
+"text": "Button your shirt how you'd like to wear it, then drape the tie around your neck. Make the thick end about 1/3rd longer than the short end. For formal button down shirts, it usually works best with the small end of the tie between 4th and 5th button.",
 "image": "https://example.com/1x1/step1.jpg",
 "url": "https://example.com/tie#step1"
 }, {
@@ -824,7 +825,7 @@ for each step, users may see a preview with a carousel of images.
 <div itemscope itemtype="http://schema.org/HowTo">
 <strong><span itemprop="name">How to tie a tie</span></strong>
 <div>About <span itemprop="totalTime" content="PT2M">2 minutes</span></div>
-<div itemprop="description">The four-in-hand knot is a great look for any occasion. From formal suits to casual jacket and tie affairs, it’s a simple way to quickly look great. Once you have mastered the knot you can tie it in just a minute, so it’s also great when you’re in a pinch too. </div>
+<div itemprop="description">The four-in-hand knot is a great look for any occasion. From formal suits to casual jacket and tie affairs, it's a simple way to quickly look great. Once you have mastered the knot you can tie it in just a minute, so it's also great when you're in a pinch too. </div>
 <div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
 <meta itemprop="name" content="Tie a Tie" />
 <meta itemprop="description" content="How to tie a four-in-hand knot." />
@@ -842,7 +843,7 @@ for each step, users may see a preview with a carousel of images.
 <div>
 <div id="step1" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
 <div itemprop="name">Preparations</div>
-<div itemprop="text">Button your shirt how you’d like to wear it, then drape the tie around your neck. Make the thick end about 1/3rd longer than the short end. For formal button down shirts, it usually works best with the small end of the tie between 4th and 5th button.</div>
+<div itemprop="text">Button your shirt how you'd like to wear it, then drape the tie around your neck. Make the thick end about 1/3rd longer than the short end. For formal button down shirts, it usually works best with the small end of the tie between 4th and 5th button.</div>
 <div itemprop="image">https://example.com/1x1/photo1.jpg</div>
 <meta itemprop="url" content="https://example.com/tie#step1" />
 </div>
@@ -882,7 +883,7 @@ for each step, users may see a preview with a carousel of images.
 <div itemscope itemtype="http://schema.org/HowTo">
 <strong><span itemprop="name">How to tie a tie</span></strong>
 <div>About <span itemprop="totalTime" content="PT2M">2 minutes</span></div>
-<div itemprop="description">The four-in-hand knot is a great look for any occasion. From formal suits to casual jacket and tie affairs, it’s a simple way to quickly look great. Once you have mastered the knot you can tie it in just a minute, so it’s also great when you’re in a pinch too. </div>
+<div itemprop="description">The four-in-hand knot is a great look for any occasion. From formal suits to casual jacket and tie affairs, it's a simple way to quickly look great. Once you have mastered the knot you can tie it in just a minute, so it's also great when you're in a pinch too. </div>
 <div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
 <meta itemprop="name" content="Tie a Tie" />
 <meta itemprop="description" content="How to tie a four-in-hand knot." />
@@ -900,7 +901,7 @@ for each step, users may see a preview with a carousel of images.
 <div>
 <div id="step1" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
 <div itemprop="name">Preparations</div>
-<div itemprop="text">Button your shirt how you’d like to wear it, then drape the tie around your neck. Make the thick end about 1/3rd longer than the short end. For formal button down shirts, it usually works best with the small end of the tie between 4th and 5th button.</div>
+<div itemprop="text">Button your shirt how you'd like to wear it, then drape the tie around your neck. Make the thick end about 1/3rd longer than the short end. For formal button down shirts, it usually works best with the small end of the tie between 4th and 5th button.</div>
 <div itemprop="image">https://example.com/1x1/photo1.jpg</div>
 <meta itemprop="url" content="https://example.com/tie#step1" />
 </div>
@@ -1577,7 +1578,7 @@ HowToStep with text
 "step":[
 {
 "@type": "HowToStep",
-"text": "Button your shirt how you’d like to wear it, then drape the tie around your neck. Make the thick end about 1/3rd longer than the short end. For formal button down shirts, it usually works best with the small end of the tie between 4th and 5th button.",
+"text": "Button your shirt how you'd like to wear it, then drape the tie around your neck. Make the thick end about 1/3rd longer than the short end. For formal button down shirts, it usually works best with the small end of the tie between 4th and 5th button.",
 "image": "https://example.com/1x1/photo.jpg"
 }, {
 "@type": "HowToStep",
@@ -1654,7 +1655,7 @@ HowToStep with directions and tips
 "text": "Thinset and other adhesives set quickly so make sure to work in a small area."
 }, {
 "@type": "HowToDirection",
-"text": "Once it’s applied, comb over it with a notched trowel."
+"text": "Once it's applied, comb over it with a notched trowel."
 }],
 "image": {
 "@type": "ImageObject",
@@ -1686,7 +1687,7 @@ HowToStep with directions and tips
 "name": "Apply the grout",
 "itemListElement": [{
 "@type": "HowToDirection",
-"text": "Allow the thin-set mortar to set. This usually takes about 12 hours. Don’t mix the grout before the mortar is set, because you don’t want the grout to dry out!"
+"text": "Allow the thin-set mortar to set. This usually takes about 12 hours. Don't mix the grout before the mortar is set, because you don't want the grout to dry out!"
 }, {
 "@type": "HowToDirection",
 "text": "To apply, cover the area thoroughly with grout and make sure you fill all the joints by spreading it across the tiles vertically, horizontally, and diagonally. Then fill any remaining voids with grout."
@@ -1854,7 +1855,7 @@ Text
 The full instruction text of this step.
 Optional if itemListElement is used. Additional guidelines:
 Include only instructional text and don't include other text such as
-“Directions”, “Watch the video”, “Step 1”. Specify those phrases outside of the marked
+"Directions", "Watch the video", "Step 1". Specify those phrases outside of the marked
 up property.
 Show example
 Not recommended
@@ -1877,7 +1878,7 @@ Images must be in .jpg, .png, or. gif format.
 name
 Text
 The word or short phrase summarizing the step (for example, "Attach wires to post" or "Dig").
-Don't use non-descriptive text (for example, “Step 1: [text]”) or other form of step number
+Don't use non-descriptive text (for example, "Step 1: [text]") or other form of step number
 (for example, "1. [text]").
 url
 URL
@@ -2015,12 +2016,12 @@ data errors.
 Troubleshoot
 missing rich results / drop in total rich results.
 For general questions about crawling and indexing, check the
-Webmaster FAQ.
+Google Search crawling and indexing FAQ.
 Note: Allow time for re-crawling and re-indexing. Remember that it
 may take several days after publishing a page for Google to find and crawl it.
-Ask a question in the Webmaster
-Office Hours.
-Post a question in the Webmaster
+Ask a question in the Google Search Central office hours.
+Post a question in the Google Search Central
 forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

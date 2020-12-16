@@ -4,20 +4,33 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Submit your updated robots.txt to Google
-The Submit function of the robots.txt Tester tool
-allows you to easily put in place and ask Google to more quickly crawl and index a
-new robots.txt file for your site. Update and notify Google of changes
-to your robots.txt file by following the steps below.
-Click Submit in the bottom-right corner of the robots.txt editor. This action opens up a Submit dialog.
-Download your edited robots.txt code from the robots.txt Tester page by clicking Download in the Submit dialog.
-Upload your new robots.txt file to the root of your domain as a text file named robots.txt (the URL for your robots.txt file should be /robots.txt).
-If you do not have permission to upload files to the root of your domain, you should contact your domain manager to make changes.
-For example, if your site home page resides under subdomain.example.com/site/example/, you likely cannot update the robots file subdomain.example.com/robots.txt. In this case, you should contact the owner of example.com/ to make any necessary changes to the robots.txt file.
-Click Verify live version to see that your live robots.txt is the version that you want Google to crawl.
-Click Submit live version to notify Google that changes have been made to your robots.txt file and request that Google crawl it.
-Check that your newest version was successfully crawled by Google by refreshing the page in your
-browser to update the tool’s editor and see your live robots.txt code. After you
-refresh the page, you can also click the dropdown above the text editor to view the timestamp of when Google first saw the latest version of your robots.txt file.
+The Submit function of the robots.txt Tester tool allows you
+to easily update and ask Google to more quickly crawl and use a new robots.txt file for
+your site. Update and notify Google of changes to your robots.txt file by following the steps
+below.
+Click Submit in the bottom-right corner of the robots.txt editor. This action
+opens up a Submit dialog.
+Download your edited robots.txt code from the robots.txt Tester page by
+clicking Download in the Submit dialog.
+Upload your new robots.txt file to the root of your domain as a text file named robots.txt
+(the URL for your robots.txt file should be /robots.txt).
+If you do not have permission to upload files to the root of your domain, you should
+contact your domain manager to make changes.
+For example, if your site home page resides under
+subdomain.example.com/site/example/, you likely cannot update
+the robots.txt file at subdomain.example.com/robots.txt. In
+this case, you should contact the owner of example.com/ to
+make any necessary changes to the robots.txt file.
+Click View uploaded version to see that your live robots.txt is the version
+that you want Google to crawl.
+Click Submit to notify Google that changes have been made to your
+robots.txt file and request that Google crawl it.
+Check that your newest version was successfully crawled by Google by refreshing the page in
+your browser to update the tool's editor and see your live robots.txt code. After you refresh
+the page, you can also click the dropdown above the text editor to view the timestamp of when
+Google first saw the latest version of your robots.txt file.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Image License in Google Images
 When you specify license information for the images on your website, the image can display with
 a Licensable badge on image thumbnails in Google Images. This tells people that license
@@ -45,7 +46,7 @@ Note: If you choose to use both IPTC photo metadata and structured
 data, and if any information conflicts between the two, Google will use the structured data
 information.
 The following diagram shows how license information may show up in Google Images:
-A URL to a page that describes the license governing an image’s use. Specify this
+A URL to a page that describes the license governing an image's use. Specify this
 information with the Schema.org license property or the IPTC Web Statement of
 Rights field.
 A URL to a page that describes where the user can find information on how to license that
@@ -54,7 +55,7 @@ or the IPTC Licensor URL (of a Licensor) field.
 Structured data
 One way to tell Google that an image is licensable is to add structured data fields. Structured
 data is a standardized format for providing information about a page and classifying the page
-content. If you’re new to structured data, you can learn more about
+content. If you're new to structured data, you can learn more about
 how structured data works.
 Here's an overview of how to build, test, and release structured data. For a step-by-step guide
 on how to add structured data to a web page, check out the
@@ -337,7 +338,7 @@ property is not as precise and we recommend you use contentUrl instead, existing
 markup may still use url.
 license
 URL
-A URL to a page that describes the license governing an image’s use. For example, it
+A URL to a page that describes the license governing an image's use. For example, it
 could be the terms and conditions that you have on your website. Where applicable, it
 could also be a Creative Commons License (for example,
 BY-NC 4.0).
@@ -356,7 +357,7 @@ field for your image to be eligible to be shown with the licensable badge. We re
 you also add the Licensor URL field if you have that information.
 Required properties
 Web Statement of Rights
-A URL to a page that describes the license governing an image’s use, and optionally other
+A URL to a page that describes the license governing an image's use, and optionally other
 rights information. For example, it could be the terms and conditions that you have on
 your website. Where applicable, it could also be a Creative Commons License (for example,
 BY-NC 4.0).
@@ -419,5 +420,6 @@ Office Hours.
 Post a question in the Webmaster
 forum. For help with IPTC photo metadata, you can
 post in their forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

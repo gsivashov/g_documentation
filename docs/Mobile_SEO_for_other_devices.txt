@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Mobile SEO for other devices
 Tablets
 When thinking about how to configure your website for mobile users, it's common
@@ -100,5 +101,6 @@ the desktop site to the mobile site, or vice versa, be sure to configure
 your server to include the Vary HTTP header.
 Sitemaps
 Our recommendations for using feature phone sitemaps and sitemaps for smartphone alternate URLs remain unchanged.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2019-06-17 UTC.

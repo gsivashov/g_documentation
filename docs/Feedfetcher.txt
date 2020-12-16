@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Feedfetcher
 Feedfetcher is how Google grabs RSS or Atom feeds for Google Play Newsstand and PubSubHubbub. Feedfetcher collects and periodically refreshes these user-initiated feeds, but does not index them in Blog Search or Google's other search services (feeds appear in our search results only if they've been crawled by Googlebot). Find answers below to some of the most commonly asked questions about how this user-controlled feed grabber works.
 How do I request that Google not retrieve some or all of my site's feeds?
@@ -39,5 +40,6 @@ What kinds of links does Feedfetcher follow?
 Unlike normal web crawlers, Feedfetcher isn't following links at all; instead, it follows the requests given to it by users of a service or app that uses Feedfetcher.
 My Feedfetcher question isn't answered here. Where can I get more help?
 If you're still having trouble, try posting your question in the Search Console forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-11 UTC.

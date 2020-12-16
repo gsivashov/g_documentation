@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Dataset
 Datasets are easier to find when you provide supporting information such as their name, description, creator and distribution formats
 as structured data. Google's approach to dataset discovery
@@ -23,7 +24,7 @@ Files relating to machine learning, such as trained parameters or neural network
 Anything that looks like a dataset to you
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
-content. If you’re new to structured data, you can learn more about
+content. If you're new to structured data, you can learn more about
 how structured data works.
 Here's an overview of how to build, test, and release structured data. For a step-by-step guide
 on how to add structured data to a web page, check out the
@@ -412,7 +413,7 @@ material for. Examples (in JSON-LD format):
 "citation":
 "Doe J (2014) Influence of X ... https://doi.org/10.1111/111"
 Additional guidelines
-Don’t use this property to provide citation information for the dataset itself. It is
+Don't use this property to provide citation information for the dataset itself. It is
 intended to identify related academic articles, not the dataset itself. To provide
 information necessary to cite the dataset itself use name,
 identifier, creator, and publisher properties
@@ -797,12 +798,11 @@ data errors.
 Troubleshoot
 missing rich results / drop in total rich results.
 For general questions about crawling and indexing, check the
-Webmaster FAQ.
+Google Search crawling and indexing FAQ.
 Note: Allow time for re-crawling and re-indexing. Remember that it
 may take several days after publishing a page for Google to find and crawl it.
-Ask a question in the Webmaster
-Office Hours.
-Post a question in the Webmaster
+Ask a question in the Google Search Central office hours.
+Post a question in the Google Search Central
 forum.
 Specific dataset isn't showing up in Dataset Search results
 error What caused the issue: Your site doesn't have structured data on the page that describes the datasets or the page hasn't been crawled yet.
@@ -814,5 +814,6 @@ error What caused the issue: Your page may be missing schema.org markup for orga
 done Fix the issue
 Add logo structured data to your page.
 Establish your business details with Google.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

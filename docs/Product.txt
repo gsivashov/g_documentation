@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Product
 Add markup to your product pages so Google can provide detailed product information in
 rich Search results — including Google Images. Users can see price, availability, and
@@ -28,19 +29,19 @@ different sellers offering that product
 Based on how you mark up your content, your products may also be eligible for the following
 enhancements:
 Product enhancements
-Shipping details: Help people see shipping costs and estimated delivery timeframes based on their location and your company’s shipping policies. Shipping details can appear in the Overview and Stores tabs for a specific product result. This enhancement is only available in the US, in English, and on mobile devices.
+Shipping details: Help people see shipping costs and estimated delivery timeframes based on their location and your company's shipping policies. Shipping details can appear in the Overview and Stores tabs for a specific product result. This enhancement is only available in the US, in English, and on mobile devices.
 To be eligible for this enhancement, add OfferShippingDetails
 structured data. For more examples on how to model free shipping, multiple services, and
 regions you don't ship to, review the Shipping
 details best practices.
 Note: This approach will only make your shipping data eligible
 to be shown on certain Google Search results. To also show your shipping data in unpaid
-listings on the Google Shopping tab and other result types, you’ll need to configure
+listings on the Google Shopping tab and other result types, you'll need to configure
 shipping settings in Merchant Center. Learn
 more about shipping settings.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
-content. If you’re new to structured data, you can learn more about
+content. If you're new to structured data, you can learn more about
 how structured data works.
 Here's an overview of how to build, test, and release structured data. For a step-by-step guide
 on how to add structured data to a web page, check out the
@@ -1180,7 +1181,7 @@ For example, "shoes in our shop" is not a specific product. Currently, product r
 only support pages that focus on a single product. We recommend focusing on adding markup to
 product pages instead of pages that list products or a category of products.
 Adult-related products are not supported.
-If you add a review for the product, the reviewer’s name must be a valid name for a Person or
+If you add a review for the product, the reviewer's name must be a valid name for a Person or
 Team.
 Not recommended: 50% off on Black Friday
 Recommended: "James Smith" or "CNET Reviewers"
@@ -1363,7 +1364,7 @@ URL
 A URL to the product web page (that includes the Offer).
 OfferShippingDetails
 OfferShippingDetails enables people to see shipping costs and
-estimated delivery timeframes based on their location and your company’s shipping policies.
+estimated delivery timeframes based on their location and your company's shipping policies.
 To make your products eligible for the shipping details
 enhancement, add the following OfferShippingDetails
 properties to your product pages in addition to Product
@@ -1396,9 +1397,9 @@ The days that orders are processed. Specify the specific days with the
 deliveryTime.businessDays.dayOfWeek property.
 deliveryTime.businessDays.dayOfWeek
 DayOfWeek
-The days that orders are processed. For orders that are received outside of business days,
-processing starts on the next business day. The non-business days in between are added
-to the handling time.
+The name of the days when orders are processed. For orders that are received outside of
+business days, processing starts on the next business day. The non-business days in
+between are added to the handling time.
 Use the following enumerations:
 https://schema.org/Monday
 https://schema.org/Tuesday
@@ -1485,7 +1486,7 @@ Google may use this information to develop other rich results.
 Beta: recommended properties
 shippingSettingsLink
 URL
-The URL to a page on your site that outlines your company’s shipping policies. This page
+The URL to a page on your site that outlines your company's shipping policies. This page
 must contain one or more policies that are applicable to this product.
 Alternative approach to configuring shipping settings with Google
 Retailer shipping policies can get complicated and may change frequently. If you're having
@@ -1562,12 +1563,12 @@ data errors.
 Troubleshoot
 missing rich results / drop in total rich results.
 For general questions about crawling and indexing, check the
-Webmaster FAQ.
+Google Search crawling and indexing FAQ.
 Note: Allow time for re-crawling and re-indexing. Remember that it
 may take several days after publishing a page for Google to find and crawl it.
-Ask a question in the Webmaster
-Office Hours.
-Post a question in the Webmaster
+Ask a question in the Google Search Central office hours.
+Post a question in the Google Search Central
 forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Google Image best practices
 Google Images is a way to visually discover information on the web. Users can quickly explore information with more context around images with new features, such as image captions, prominent badges, and AMP results.
 By adding more context around images, results can become much more useful, which can lead to higher quality traffic to your site. You can aid in the discovery process by making sure that your images and your site are optimized for Google Images. Follow our guidelines to increase the likelihood that your content will appear in Google Images search results.
@@ -12,13 +13,13 @@ If you choose, you can prevent the full-sized image from appearing in Google's i
 To opt out of inline linking:
 When your image is requested, examine the HTTP referrer header in the request.
 If the request is coming from a Google domain, reply with HTTP 200 or 204 and no content.
-Google will still crawl your page and see the image, but will display a thumbnail image generated at crawl time in search results. This opt-out is possible at any time, and does not require re-processing of a website’s images. This behavior is not considered image cloaking and will not result in manual actions.
+Google will still crawl your page and see the image, but will display a thumbnail image generated at crawl time in search results. This opt-out is possible at any time, and does not require re-processing of a website's images. This behavior is not considered image cloaking and will not result in manual actions.
 You can also prevent the image from appearing in search results entirely.
 Create a great user experience
 To boost your content's visibility in Google Images, focus on the user by providing a great user experience: make pages primarily for users, not for search engines. Here are some tips:
 Provide good context: Make sure that your visual content is relevant to the topic of the page. We suggest that you display images only where they add original value to the page. We particularly discourage pages where neither the images or the text are original content.
 Optimize placement: Whenever possible, place images near relevant text. When it makes sense, consider placing the most important image near the top of the page.
-Don’t embed important text inside images: Avoid embedding text in images, especially important text elements like page headings and menu items, because not all users can access them (and page translation tools won't work on images). To ensure maximum accessibility of your content, keep text in HTML, provide alt text for images.
+Don't embed important text inside images: Avoid embedding text in images, especially important text elements like page headings and menu items, because not all users can access them (and page translation tools won't work on images). To ensure maximum accessibility of your content, keep text in HTML, provide alt text for images.
 Create informative and high quality sites: Good content on your webpage is just as important as visual content for Google Images - it provides context and makes the result more actionable. Page content may be used to generate a text snippet for the image, and Google considers the page content quality when ranking images.
 Create device-friendly sites: Users search on Google Images more from mobile than on desktop. For this reason, it is important that you design your site for all device types and sizes. Use the mobile friendly testing tool to test how well your pages work on mobile devices, and get feedback on what needs to be fixed.
 Create good URL structure for your images: Google uses the URL path as well as the file name to help it understand your images. Consider organizing your image content so that URLs are constructed logically.
@@ -59,7 +60,7 @@ Good: <img src="puppy.jpg" alt="A golden retriever puppy" />
 Bad: <div style="background-image:url(puppy.jpg)">A golden retriever puppy</div>
 Use an image sitemap
 Images are an important source of information about the content on your site. You can give Google additional details about your images, and provide the URL of images we might not have otherwise discover by adding information to an image sitemap.
-Image sitemaps can contain URLs from other domains, unlike regular sitemaps, which enforce cross-domain restrictions. This allows you to use CDNs (content delivery networks) to host images. We encourage you to verify the CDN’s domain name in Search Console so that we can inform you of any crawl errors that we may find.
+Image sitemaps can contain URLs from other domains, unlike regular sitemaps, which enforce cross-domain restrictions. This allows you to use CDNs (content delivery networks) to host images. We encourage you to verify the CDN's domain name in Search Console so that we can inform you of any crawl errors that we may find.
 Supported image formats
 Google Images supports images in the following formats: BMP, GIF, JPEG, PNG, WebP, and SVG.
 You can also inline images as Data URIs. Data URIs provide a way to include a file, such as an image, inline by setting the src of an img element as a Base64 encoded string using the following format:
@@ -90,12 +91,13 @@ SafeSearch is a setting in your account that specifies whether to show or block 
 Group adult-only images in a common URL location
 If your site contains adult images, we strongly recommend grouping the images separately from other images on your website. For example: http//www.example.com/adult/image.jpg.
 Add metadata to adult pages
-Our algorithms use a variety of signals to decide whether an image or a whole page should be filtered from the results when the user’s SafeSearch filter is turned on. In the case of images, some of these signals are generated using machine learning, but the SafeSearch algorithms also look at simpler things such as where the image was used previously and the context in which the image was used.
+Our algorithms use a variety of signals to decide whether an image or a whole page should be filtered from the results when the user's SafeSearch filter is turned on. In the case of images, some of these signals are generated using machine learning, but the SafeSearch algorithms also look at simpler things such as where the image was used previously and the context in which the image was used.
 One of the strongest signals is self-marked adult pages. If you publish adult content, we recommend that you add one of the following meta tags to your pages:
 <meta name="rating" content="adult" />
 <meta name="rating" content="RTA-5042-1996-1400-1577-RTA" />
 Many users prefer not to have adult content included in their search results (especially if kids use the same device). When you provide one of these meta tags, it helps to provide a better user experience because users don't see results which they don't want to or expect to see.
 And finally...
-Please read our SEO Starter Guide which contains lots of useful information to rank better, and if you have more questions please post them in the Webmaster Help Forum.
+Please read our SEO Starter Guide which contains lots of useful information to rank better, and if you have more questions please post them in the Google Search Central Help Forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

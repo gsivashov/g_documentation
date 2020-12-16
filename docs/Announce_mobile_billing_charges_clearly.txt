@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Announce mobile billing charges clearly
 If your site incurs mobile usage charges, you should clearly tell your users before any charges are applied.
 If Google has detected that your site is not sufficiently informing users about mobile charges, Chrome may display a warning before the user loads a page that incurs charges.
@@ -12,5 +13,6 @@ Display billing information. Inform users on what actions they will be charged f
 Billing information should be visible and obvious to the user. Don't hide or obfuscate crucial billing information. Ensure that the information is visible on all types of devices.
 Make sure that the fee structure is clearly understandable. Include information about fee amounts and billing frequency; for example, is the fee charged daily, weekly, or monthly?
 If your site or pages are triggering warnings in Chrome, check out your Security Issues report in Search Console for more information and example pages. After you have fixed the issue on your site, visit the report to request a review of your fixes. A successful review should halt the warnings.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-11 UTC.

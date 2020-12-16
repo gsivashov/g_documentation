@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Beginner SEO
+Send feedback
 Do you need an SEO?
 Check out our SEO Starter Guide
 If you're in a hurry, here's the one-page version.
@@ -16,7 +17,7 @@ Management of online business development campaigns
 Keyword research
 SEO training
 Expertise in specific markets and geographies.
-Advertising with Google won't have any effect on your site's presence in our search results. Google never accepts money to include or rank sites in our search results, and it costs nothing to appear in our organic search results. Free resources such as Search Console, the official Webmaster Central blog, and our discussion forum can provide you with a great deal of information about how to optimize your site for organic search.
+Advertising with Google won't have any effect on your site's presence in our search results. Google never accepts money to include or rank sites in our search results, and it costs nothing to appear in our organic search results. Free resources such as Search Console, the official Google Search Central blog, and our discussion forum can provide you with a great deal of information about how to optimize your site for organic search.
 Getting started
 If you run a small local business, you can probably do much of the work yourself. Here are some good resources:
 Check out our 30-minute video series on building an online presence for your business.
@@ -50,7 +51,7 @@ Ask for a technical and search audit for your site to learn what they think need
 Decide if you want to hire.
 Precautions
 While SEOs can provide clients with valuable services, some unethical SEOs have given the industry a black eye by using overly aggressive marketing efforts and attempting to manipulate search engine results in unfair ways. Practices that violate our guidelines may result in a negative adjustment of your site's presence in Google, or even the removal of your site from our index.
-When your SEO comes up with a set of recommendations for your site, ask her to corroborate these recommendations with a trusted source, such as a Search Console help page, Webmasters blog entry, or Google-sanctioned response in the webmasters' forum.
+When your SEO comes up with a set of recommendations for your site, ask her to corroborate these recommendations with a trusted source, such as a Search Console help page, Google Search Central blog entry, or Google-sanctioned response in the forum.
 Here are some things to consider:
 One common scam is the creation of "shadow" domains that funnel users to a site by using deceptive redirects. These shadow domains often will be owned by the SEO who claims to be working on a client's behalf. However, if the relationship sours, the SEO may point the domain to a different site, or even to a competitor's domain. If that happens, the client has paid to develop a competing site owned entirely by the SEO.
 Another illicit practice is to place "doorway" pages loaded with keywords on the client's site somewhere. The SEO promises this will make the page more relevant for more queries. This is inherently false since individual pages are rarely relevant for a wide range of keywords. More insidious, however, is that these doorway pages often contain hidden links to the SEO's other clients as well. Such doorway pages drain away the link popularity of a site and route it to the SEO and its other clients, which may include sites with unsavory or illegal content.
@@ -87,5 +88,6 @@ Guarantees ranking, but only on obscure, long keyword phrases you would get anyw
 Operates with multiple aliases or falsified WHOIS info
 Gets traffic from "fake" search engines, spyware, or scumware
 Has had domains removed from Google's index or is not itself listed in Google
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-08 UTC.

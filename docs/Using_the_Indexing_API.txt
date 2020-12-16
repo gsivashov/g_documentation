@@ -3,6 +3,7 @@ https://developers.google.com/search/apis/indexing-api/v3/using-api
 Home
 Google Search Central
 Indexing API
+Send feedback
 Using the Indexing API
 Overview
 You can use the Indexing API to tell Google to update or remove pages from the Google index.
@@ -13,8 +14,7 @@ BroadcastEvent embedded in a
 VideoObject.
 When you send a request to the Indexing API, define location of a standalone web page to
 notify Google that it can crawl or remove this page from its index.
-The following examples show the actions that you can perform with the Indexing
-API:
+The following examples show the actions that you can perform with the Indexing API:
 Update a URL
 Send the following HTTP POST request to https://indexing.googleapis.com/v3/urlNotifications:publish endpoint
 {
@@ -96,14 +96,14 @@ GET https://indexing.googleapis.com/v3/urlNotifications/metadata?url=https%3A%2F
 The Indexing API responds with an
 HTTP 200 message, with a payload that contains details about the notification. The following example shows the body of a response that contains information about an update and delete notification:
 {
-url: “http://foo.com“
+url: "http://foo.com"
 latest_update {
-type: “URL_UPDATED”
-notify_time: “2017-07-31T19:30:54.524457662Z”
+type: "URL_UPDATED"
+notify_time: "2017-07-31T19:30:54.524457662Z"
 }
 latest_remove {
-type: “URL_DELETED”
-notify_time: “2017-08-31T19:30:54.524457662Z”
+type: "URL_DELETED"
+notify_time: "2017-08-31T19:30:54.524457662Z"
 }
 }
 If you don't receive an HTTP 200 response, see the Indexing API specific errors.
@@ -166,5 +166,6 @@ content-length: 58
 --===============7330845974216740156==
 For more information, see
 Sending Batch Requests.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

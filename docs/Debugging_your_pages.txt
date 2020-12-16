@@ -3,6 +3,7 @@ https://developers.google.com/search/docs/guides/debug
 Home
 Google Search Central
 Help
+Send feedback
 Debugging your pages
 General tips
 Remember that Google does not crawl your page immediately after you publish a fix. Therefore
@@ -54,8 +55,8 @@ Rich Results Test - Test
 the validity of a structured data block in real time. The
 code can either be pasted into the tool, or hosted on a live page.
 More tools
-See the Google Webmasters Support Center
-for more tools, mailing lists, and office hours information.
+See our help page
+for more resources and office hours information.
 Testing locally-hosted or firewalled pages
 Google provides several testing tools to test a single live web page. For example, the
 AMP Test Tool,
@@ -107,5 +108,6 @@ If you get an access error using a Google testing tool:
 Check that your page is not protected by robots.txt or require a login
 Try accessing your page from outside your firewall, on another computer, using Chrome
 in Incognito mode.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-03 UTC.

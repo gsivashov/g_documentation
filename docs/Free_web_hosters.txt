@@ -1,9 +1,15 @@
 https://support.google.com/webmasters/answer/2583235
 
-Free web hostersFree web hosting services can help to lower costs and technical barriers for webmasters, enabling new site owners easily create their own websites. Unfortunately, spammers often take advantage of these services to quickly and inexpensively create dozens or hundreds of sites that violate our quality guidelines and add little or no value to the web.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Send feedback
+Free web hosters
+Free web hosting services can help to lower costs and technical barriers for webmasters, enabling new site owners easily create their own websites. Unfortunately, spammers often take advantage of these services to quickly and inexpensively create dozens or hundreds of sites that violate our quality guidelines and add little or no value to the web.
 Google makes a strong effort to take action only against individual spammy pages or sites. However, in some cases, when the spammers have pretty much taken over much or all of the free web hosting service, we may take action on how the free hosting service as a whole appears in search results in order to prevent spam from being shown to our users.
 If you have a free hosting service, here are some ways to reduce or prevent spam:
-Tell users that you don’t allow spam on your service
+Tell users that you don't allow spam on your service
 Publish a clear abuse policy and communicate it to your users, for example during the sign-up process.
 Block automated account creation
 In your sign-up form, consider using CAPTCHAs or similar verification tools to only allow human submissions and prevent automated scripts from generating a bunch of sites on your hosting service.
@@ -11,13 +17,13 @@ Monitor your service for abuse
 Monitor your free hosting service for spam signals such as redirects, large numbers of ad blocks, certain spammy keywords, and large sections of encoded JavaScript code. The site: operator query or Google Alerts are simple, free tools that can help detect problems.
 Keep an eye on your webserver log files for sudden traffic spikes, especially for newly created sites.
 Monitor your free web hosting service for phishing and malware-infected pages. For example, you can use the Google Safe Browsing API to regularly test URLs from your service, or sign up for Safe Browsing alerts.
-Come up with a few sanity checks. For example, if you’re running a local Polish free web hosting service, what are the odds of thousands of new and legitimate sites in Japanese being created overnight on your service? A number of tools are available to detect the language of newly created sites—for example language detection libraries or the Google Translate API v2.
+Come up with a few sanity checks. For example, if you're running a local Polish free web hosting service, what are the odds of thousands of new and legitimate sites in Japanese being created overnight on your service? A number of tools are available to detect the language of newly created sites—for example language detection libraries or the Google Translate API v2.
 Identify spammy accounts
 Keep a record of signups and try to identify typical spam patterns, such as:
 Form completion time
 Number of requests sent from the same IP address range
 User-agents used during signup
 User names or other form-submitted values chosen during signup.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-12-14 UTC.

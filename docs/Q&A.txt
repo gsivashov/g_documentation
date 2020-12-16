@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Q&A
 Does your site publish FAQ content, with no way for users to submit
 alternative answers? Use
@@ -23,7 +24,7 @@ In the example above, the content from the answers may appear in the basic resul
 result is not shown.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
-content. If you’re new to structured data, you can learn more about
+content. If you're new to structured data, you can learn more about
 how structured data works.
 Here's an overview of how to build, test, and release structured data. For a step-by-step guide
 on how to add structured data to a web page, check out the
@@ -290,7 +291,7 @@ if the forum also has pages that are not questions, those pages are not eligible
 Don't use QAPage markup for FAQ pages or pages where there are multiple questions
 per page. QAPage markup is for pages where the focus of the page is a single question
 and its answers.
-Don’t use QAPage markup for advertising purposes.
+Don't use QAPage markup for advertising purposes.
 Make sure each Question includes the entire text of the question and
 make sure each Answer includes the entire text of the answer.
 Answer markup is for answers to the question, not for comments on the question or
@@ -308,7 +309,7 @@ This section describes the structured data types related to QAPage.
 You must include the required properties for your content to be eligible for display as a rich result. You can also
 include the recommended properties to add more information to your structured data, which could
 provide a better user experience.
-You can use Google’s Rich Results Test to
+You can use Google's Rich Results Test to
 validate and preview your structured data.
 QAPage
 The QAPage type indicates that the
@@ -365,7 +366,7 @@ Date or DateTime
 The date at which the question was added to the page, in ISO-8601 format.
 text
 Text
-The full text of the long form of the question. For example, "I’m cooking, and I need to know how many
+The full text of the long form of the question. For example, "I'm cooking, and I need to know how many
 teaspoons are in a cup. How many teaspoons are in 1 cup?"
 upvoteCount
 Integer
@@ -448,12 +449,12 @@ data errors.
 Troubleshoot
 missing rich results / drop in total rich results.
 For general questions about crawling and indexing, check the
-Webmaster FAQ.
+Google Search crawling and indexing FAQ.
 Note: Allow time for re-crawling and re-indexing. Remember that it
 may take several days after publishing a page for Google to find and crawl it.
-Ask a question in the Webmaster
-Office Hours.
-Post a question in the Webmaster
+Ask a question in the Google Search Central office hours.
+Post a question in the Google Search Central
 forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

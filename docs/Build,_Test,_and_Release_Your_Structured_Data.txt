@@ -2,6 +2,7 @@ https://developers.google.com/search/docs/guides/prototype
 
 Home
 Google Search Central
+Send feedback
 Build, Test, and Release Your Structured Data
 Google recommends becoming a
 verified site owner
@@ -205,5 +206,6 @@ Recipe
 A page using recipe markup isn't about recipes.
 Relevant guidelines:
 Recipe guidelines.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-06-09 UTC.

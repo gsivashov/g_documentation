@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Mobile-first indexing best practices
 Mobile-first indexing means Google predominantly uses the mobile version of the content for
 indexing and ranking. Historically, the index primarily used the desktop version of a page's content
@@ -36,7 +37,7 @@ Make sure that your mobile site contains the same content as your desktop site.
 If your mobile site has less content than your desktop site, consider updating your mobile
 site so that its primary content is equivalent to your desktop site. Almost all indexing on
 your site comes from the mobile site.
-WARNING: If it’s your intention that the mobile page
+WARNING: If it's your intention that the mobile page
 should have less content than the desktop page, you can expect some traffic loss
 when your site is enabled mobile-first indexing, since Google can't get as much information
 from your page as before.
@@ -64,25 +65,24 @@ Make sure that the descriptive
 title and meta
 description are equivalent across both versions of your site.
 Check the placement of your ads
-Don’t let ads harm your mobile page ranking. Follow the
+Don't let ads harm your mobile page ranking. Follow the
 Better Ads Standard when
 displaying ads on mobile devices. For example, ads at the top of the page can take up too much
 room on a mobile device, which is a bad user experience
-Check
-visual content
+Check visual content
 Check your images
 Make sure that the images on your mobile site follow the
 image best
 practices. In particular, we recommend that you:
 Provide high quality
-images. Don’t use images that are too small or have a
+images. Don't use images that are too small or have a
 low resolution on the mobile site.
 Use a supported
-format for images. Don’t use unsupported formats or tags.
-For example, Google supports SVG format images, but our systems can’t index a .jpg image in
+format for images. Don't use unsupported formats or tags.
+For example, Google supports SVG format images, but our systems can't index a .jpg image in
 the <image> tag inside an inline SVG.
 Don't use URLs that change every time the page loads for images. Google
-won’t be able to process and index your resources properly if you use constantly-changing URLs
+won't be able to process and index your resources properly if you use constantly-changing URLs
 for them.
 Make sure that the mobile site has the same alt text for images as the desktop site.
 Use descriptive
@@ -102,7 +102,7 @@ Make sure that the videos on your mobile site follow the
 video best
 practices. In particular, we recommend that you:
 Don't use URLs that change every time the page loads for your videos.
-Google won’t be able to process and index your resources properly if you use constantly
+Google won't be able to process and index your resources properly if you use constantly
 changing URLs for them.
 Use a supported format
 for your videos and put videos in supported tags. Videos are identified in
@@ -111,13 +111,13 @@ the page by the presence of an HTML tag, for example: <video>,
 Use the same video structured data on both your mobile site
 and desktop site. For more information, check your structured data.
 Place the video in an easy to find position on the page when viewed on a mobile device. For
-example, it might harm the video’s ranking if users need to scroll down too much to find the
+example, it might harm the video's ranking if users need to scroll down too much to find the
 video on mobile page.
 Additional best practices for separate URLs
 If your site has separate URLs for the desktop and mobile versions of a page (also known as
 m-dot), we recommend the following additional best practices:
 Make sure that the error page status is the same on both the desktop and mobile sites. If a page on your desktop site serves normal contents and your mobile site's version of that page serves an error page, this page will be missing from the index.
-Make sure that your mobile version doesn’t have fragment URLs. The fragment
+Make sure that your mobile version doesn't have fragment URLs. The fragment
 part of the URL is the end of the URL that starts with #. Most of the time, fragment URLs are
 not indexable, these pages will be missing from the index after your domain is enabled for mobile-first indexing.
 Ensure that the desktop versions that serve different contents have equivalent mobile versions. If
@@ -193,7 +193,7 @@ noindex tag on pages
 error What caused the issue: A mobile page
 is blocked from indexing by a noindex tag.
 done Fix the issue: Use the same meta robots
-tags on the mobile site and the desktop site. Don’t use the
+tags on the mobile site and the desktop site. Don't use the
 noindex tag on the mobile page (otherwise, Google won't index your page when your site is
 enabled for mobile-first indexing).
 Missing image
@@ -204,12 +204,12 @@ Make sure that your mobile site contains the same content as your desktop site. 
 has less content than your desktop site, consider updating your mobile site so that its
 primary content is equivalent with your desktop site. Only the content shown on the mobile site
 is used for indexing.
-Use the same meta robots tags on the mobile site and the desktop site. Don’t use
+Use the same meta robots tags on the mobile site and the desktop site. Don't use
 the nofollow tag on the mobile page (otherwise, Google won't crawl and index the
 images on your page when your site is enabled for for mobile-first indexing).
 Use a supported
 format and tag for images. For example,
-Google supports SVG format images, but our systems can’t index a .jpg image in the
+Google supports SVG format images, but our systems can't index a .jpg image in the
 <image> tag inside an inline SVG.
 Don't lazy-load primary content upon user interaction. Googlebot won't load content that
 requires user interactions (for example, swiping, clicking, or typing) to load.
@@ -226,7 +226,7 @@ Low quality image
 error What caused the issue: An important image on the mobile page is too small
 or low resolution.
 done Fix the issue: Provide high quality
-images. Don’t use images that are too small or have a low resolution on
+images. Don't use images that are too small or have a low resolution on
 the mobile site.
 Missing alt text
 error What caused the issue: An important image on the mobile page is missing
@@ -254,7 +254,7 @@ Mobile URL has anchor fragment
 error What caused the issue: The mobile URL includes an anchor fragment; Google
 can't index URLs that include fragments.
 done Fix the issue: Make sure your mobile
-version doesn’t have fragment URLs. Most of the time, fragment URLs are not
+version doesn't have fragment URLs. Most of the time, fragment URLs are not
 indexable, and these pages will be missing from the index after your domain is enabled for for mobile-first indexing.
 Mobile page blocked by robots.txt
 error What caused the issue: The mobile page is blocked by a robots.txt rule.
@@ -278,7 +278,7 @@ Page quality issues
 error What caused the issue: The mobile page has issues with ads, missing
 content, titles, or descriptive elements for images on the page.
 done Fix the issue
-Don’t let ads harm your mobile page ranking. Follow the
+Don't let ads harm your mobile page ranking. Follow the
 Better Ads Standard when
 displaying ads on mobile devices.
 Make sure your mobile site contains the same content as your desktop site. If your mobile
@@ -303,7 +303,7 @@ requires user interactions (for example, swiping, clicking or typing) to load.
 Make sure Google can see lazy-loaded
 content.
 Place the video in an easy to find location on your mobile site. For example, it might harm
-the video’s ranking if users need to scroll down too much to find the video on mobile
+the video's ranking if users need to scroll down too much to find the video on mobile
 page.
 Hostload issues
 error What caused the issue: Some of the
@@ -314,7 +314,7 @@ crawl rate on
 the mobile version of your site.
 Recent updates
 We've announced a lot of updates around mobile-first indexing. Here's a log of everything
-we've announced on the Google Webmaster Central blog:
+we've announced on the Google Search Central blog:
 Updates
 March 4, 2020
 Mobile-first indexing will be enabled for all websites starting September 2020. In the meantime, we'll continue moving sites to mobile-first
@@ -328,7 +328,7 @@ March 26, 2018
 Mobile-first
 indexing is rolling out more broadly. We published documentation on how to
 prepare for mobile-first indexing.
-Content gathered by mobile-first indexing has no ranking advantage over mobile content that’s
+Content gathered by mobile-first indexing has no ranking advantage over mobile content that's
 not yet gathered this way or desktop content.
 December 19, 2018
 We
@@ -342,5 +342,6 @@ sites that are ready.
 November 4, 2016
 We are
 experimenting with making the index mobile-first.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

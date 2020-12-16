@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Speakable (BETA)
 This feature is in beta and subject to change. We're currently developing this
 feature and you may see changes in requirements or guidelines.
@@ -117,12 +118,11 @@ data errors.
 Troubleshoot
 missing rich results / drop in total rich results.
 For general questions about crawling and indexing, check the
-Webmaster FAQ.
+Google Search crawling and indexing FAQ.
 Note: Allow time for re-crawling and re-indexing. Remember that it
 may take several days after publishing a page for Google to find and crawl it.
-Ask a question in the Webmaster
-Office Hours.
-Post a question in the Webmaster
+Ask a question in the Google Search Central office hours.
+Post a question in the Google Search Central
 forum.
 Can't trigger content
 error Problem: You can't trigger your content
@@ -141,7 +141,7 @@ error Problem: You're experiencing other
 issues not covered by the documentation.
 done Fix the issue
 Visit the Google
-Webmaster Central Help Forum.
+Search Central Help Community.
 Contact your Google representative or
 audio news support.
 More audio solutions
@@ -150,5 +150,6 @@ audio solutions for your news content, such as advanced integration of Google As
 your own custom applications. For example, allowing users to interact with the app through
 Google Assistant. For more information, see the Actions on Google developer
 guide.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-03 UTC.

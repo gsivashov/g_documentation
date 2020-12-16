@@ -3,7 +3,8 @@ https://support.google.com/webmasters/answer/9128678
 Home
 Google Search Central
 Documentation
-Quickstart
+Just the basics
+Send feedback
 Optimize your site for search engines
 Here are a few simple ideas that can help Google understand your site, and help the right people find it.
 Google doesn't accept payment to rank a website higher, or rank websites higher if they advertise on Google. If anyone tells you otherwise, they're wrong.
@@ -14,5 +15,6 @@ Keep your site up to date: If you haven't updated your site since 1925, it's t
 Use text: Don't put your site content or page titles only in images, video, Flash animations, or other non-text formats that Google doesn't understand as easily as text. If you use a graphic for your site name, include the name in the page text as well.
 Get referrals: Have your site mentioned in useful places online. See if you can get into your local online news sites, or in any other appropriate resources.
 Want your site to do better, but don't have the time? If you think your site needs more help than you can provide, consider hiring a professional.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-11 UTC.

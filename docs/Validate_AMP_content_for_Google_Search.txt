@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Validate AMP content for Google Search
 After you've created AMP content, here are
 some ways to validate your AMP content for Google Search:
@@ -27,7 +28,7 @@ Did you add rel="canonical" to the AMP page?
 Follow the Google Search
 guidelines for AMP pages.
 Make your AMP content accessible to Googlebot:
-Edit your site’s robots.txt to allow Googlebot to crawl the canonical page, AMP page, and
+Edit your site's robots.txt to allow Googlebot to crawl the canonical page, AMP page, and
 links in the structured data (if applicable).
 Remove all robots meta tags and X-Robots-Tag HTTP headers from your
 canonical and AMP content. For more information, see Robots meta tag and X-Robots-Tag HTTP header specifications.
@@ -46,5 +47,6 @@ validation errors
 How
 do I fix validation errors?
 Debug AMP Cache issues
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

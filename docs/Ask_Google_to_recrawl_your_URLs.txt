@@ -4,8 +4,9 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Ask Google to recrawl your URLs
-If you’ve recently added or made changes to a page on your site, you can request that Google re-index your page using any of the methods listed here.
+If you've recently added or made changes to a page on your site, you can request that Google re-index your page using any of the methods listed here.
 General guidelines
 Crawling can take anywhere from a few days to a few weeks. Be patient and monitor progress using either the Index Status report or the URL Inspection tool.
 All methods described here have about the same response time.
@@ -30,5 +31,6 @@ Example:
 http://www.google.com/ping?sitemap=https://example.com/sitemap.xml
 Insert the following line anywhere in your robots.txt file, specifying the path to your sitemap. We will find it the next time we crawl your site:
 Sitemap: http://example.com/my_sitemap.xml
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

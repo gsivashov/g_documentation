@@ -4,9 +4,10 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Special tags that Google understands
 Google supports both page-level meta-tags as well as inline directives to help control how your site's pages will appear in Search.
-Page-level meta tags are a great way for webmasters to provide search engines with information about their sites. Meta tags can be used to provide information to all sorts of clients, and each system processes only the meta tags they understand and ignores the rest. Meta tags are added to the <head> section of your HTML page and generally look like this:
+Page-level meta tags are a great way for website owners to provide search engines with information about their sites. Meta tags can be used to provide information to all sorts of clients, and each system processes only the meta tags they understand and ignores the rest. Meta tags are added to the <head> section of your HTML page and generally look like this:
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,5 +66,6 @@ Inline directives
 Independently of page-level meta-tags, you can designate parts of an HTML page not to be used in snippets. This can be done with the data-nosnippet HTML attribute on span, div, or section HTML elements. For example:
 <p>This text can be included in a snippet <span data-nosnippet>and this part would not be shown</span>.</p>
 To ensure machine readability, the section must be valid HTML and all tags closed accordingly. More information.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-03 UTC.

@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Web Light: Faster and lighter mobile pages from search
 Google shows faster, lighter pages to people searching on slow mobile clients. To do this, we transcode (convert) web pages on the fly into a version optimized for slow clients, so that these pages load faster while saving data. This technology is called Web Light. Web Light pages preserve a majority of the relevant content and provide a link for users to view the original page. Our experiments show that optimized pages load four times faster than the original page and use 80% fewer bytes. Because these pages load so much faster, we also saw a 50% increase in traffic to these pages.
 Here's an example of a web page being loaded with and without transcoding:
@@ -59,5 +60,6 @@ Sites that use a significant amount of data (e.g. video sites)
 Other sites that are technically difficult to transcode.
 The Google Web Light user agent ignores robots.txt rules
 The Web Light user agent is used only for explicit browse requests of a human visitor, and so it can ignore robots.txt rules, which are used to block automated crawling requests.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-11 UTC.

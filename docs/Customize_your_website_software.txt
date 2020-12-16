@@ -4,17 +4,18 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Customize your website software
-There are many ways to manage your website’s content. Some site owners completely build their
+There are many ways to manage your website's content. Some site owners completely build their
 own website from scratch. Others may use an existing software package from a company like
 WordPress, Drupal, or Joomla, which can provide a theme, design, and templates. When using
-existing website software, the site owner doesn’t build the whole site by creating code, style
+existing website software, the site owner doesn't build the whole site by creating code, style
 sheets and scripts, but only provides the content (such as photos, images, and text).
 Create a new site
 If you are interested in creating an entirely new site and would like to use an existing
 software package, take a look some of the software packages listed below for some good
-starting points. Many of these software packages are referred to as “content management
-systems”, or by their acronym, CMS. Some companies may provide hosting services in addition to
+starting points. Many of these software packages are referred to as "content management
+systems", or by their acronym, CMS. Some companies may provide hosting services in addition to
 providing the software for your website.
 Make sure your existing site is mobile friendly
 Some CMSes have written dedicated guides for creating a mobile-friendly site:
@@ -32,9 +33,9 @@ Wix
 If your website software doesn't have documentation for creating a mobile-friendly site,
 follow our general guidelines to make sure your website software is mobile friendly:
 Back up your site. We recommend backing up your site before making any
-changes or updates. If you’re not sure how to backup your site, contact your CMS provider or
+changes or updates. If you're not sure how to backup your site, contact your CMS provider or
 browse through our
-webmaster support community.
+website owners support community.
 Update your CMS to the latest version. In some cases, an update to the
 latest version automatically applies the necessary security upgrades and make your site
 mobile-friendly. If the process is not automatically triggered, make sure to push the update
@@ -47,12 +48,13 @@ Mobile-Friendly Test to make
 sure it is mobile friendly.
 Make sure that template is fast by checking the Speed section of
 PageSpeed Insights and making sure that the Speed
-section has no issues marked as “Should Fix.”
+section has no issues marked as "Should Fix."
 Review support forums for your CMS to see what issues people might be having with
 the mobile versions of their sites. Visit
-our webmaster forum
+our Google Search Central forum
 for additional guidance and support.
 Use the Mobile-Friendly
 Test to make sure your site is mobile-friendly.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-09-11 UTC.
+Last updated 2020-12-14 UTC.

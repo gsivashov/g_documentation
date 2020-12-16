@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Consolidate duplicate URLs
 If you have a single page accessible by multiple URLs, or different pages with similar content (for example, a page with both a mobile and a desktop version), Google sees these as duplicate versions of the same page. Google will choose one URL as the canonical version and crawl that, and all other URLs will be considered duplicate URLs and crawled less often.
 If you don't explicitly tell Google which URL is canonical, Google will make the choice for you, or might consider them both of equal weight, which might lead to unwanted behavior, as explained below in Why should I choose a canonical URL?
@@ -12,7 +13,7 @@ A canonical URL is the URL of the page that Google thinks is most representative
 The canonical can be in a different domain than a duplicate.
 More details
 When Googlebot indexes a site, it tries to determine the primary content of each page. If Googlebot finds multiple pages on the same site that seem to be the same, it chooses the page that it thinks is the most complete and useful, and marks it as canonical. The canonical page will be crawled most regularly; duplicates are crawled less frequently in order to reduce Google crawling load on your site.
-Google chooses the canonical page based on a number of factors (or signals), such as whether the page is served via http or https; page quality; presence of the URL in a sitemap; and any "rel=canonical" labeling. You can indicate your preference to Google using these techniques, but Google may choose a different page as canonical than you do, for various reasons.
+Google chooses the canonical page based on a number of factors (or signals), such as whether the page is served via http or https; page quality; presence of the URL in a sitemap; and any rel=canonical labeling. You can indicate your preference to Google using these techniques, but Google may choose a different page as canonical than you do, for various reasons.
 Different language versions of a single page are considered duplicates only if the main content is in the same language (that is, if only the header, footer, and other non-critical text is translated, but the body remains the same, then the pages are considered to be duplicates).
 Google uses the canonical pages as the main sources to evaluate content and quality. Google Search result usually points to the canonical page, unless one of the duplicates is explicitly better suited for a user: for example, the search result will probably point to the mobile page if the user is on a mobile device, even if the desktop page is marked as canonical.
 Why would I have similar/duplicate pages?
@@ -50,12 +51,11 @@ Incorrect canonical tags: Some content management systems (CMS) or CMS plugins c
 Misconfigured servers: Some hosting misconfigurations may cause unexpected cross-domain URL selection. For example:
 A server may be misconfigured to return content from a.com in response to a request for a URL on b.com
 Two unrelated web servers may return identical soft 404 pages that Google fails to identify as error pages.
-Malicious hacking: Some attacks on websites introduce code that returns an HTTP 301 redirect or inserts a cross-domain rel=”canonical” link element into the HTML <head> or HTTP header, usually pointing to a URL hosting malicious or spammy content. In these cases our algorithms may select the malicious or spammy URL instead of the URL on the compromised website.
-A copycat website: In rare situations, our algorithm may select a URL from an external site that is hosting your content without your permission. If you believe that another site is duplicating your content in violation of copyright law, you may contact the site’s host to request removal. In addition, you can request that Google remove the infringing page from our search results by filing a request under the Digital Millennium Copyright Act.
+Malicious hacking: Some attacks on websites introduce code that returns an HTTP 301 redirect or inserts a cross-domain rel="canonical" link element into the HTML <head> or HTTP header, usually pointing to a URL hosting malicious or spammy content. In these cases our algorithms may select the malicious or spammy URL instead of the URL on the compromised website.
+A copycat website: In rare situations, our algorithm may select a URL from an external site that is hosting your content without your permission. If you believe that another site is duplicating your content in violation of copyright law, you may contact the site's host to request removal. In addition, you can request that Google remove the infringing page from our search results by filing a request under the Digital Millennium Copyright Act.
 Specify a canonical page
 There are a few different ways to specify the canonical page among a duplicate set, depending on your usage:
-Method
-Description
+Method and description
 General guidelines
 Follow these guidelines for all canonicalization methods.
 rel=canonical <link> tag
@@ -116,7 +116,7 @@ https://www.example.com/dresses/green.php
 Specific methods
 Choose one of the following methods to specify a canonical URL for duplicate URLs or duplicate/similar pages.
 Be sure to follow the general guidelines above for all methods.
-Use rel="canonical"link tag
+Use rel="canonical" link tag
 You can use a <link> tag in the page header to indicate when a page is a duplicate of another page.
 Suppose you want https://example.com/dresses/green-dresses to be the canonical URL, even though a variety of URLs can access this content. Indicate this URL as canonical with these steps:
 Mark all duplicate pages with arel="canonical"link element. Add a <link> element with the attribute rel="canonical" to the <head> section of duplicate pages, pointing to the canonical page, like this one:
@@ -129,7 +129,7 @@ Use absolute paths rather than relative paths with the rel="canonical" link elem
 Use this structure:
 https://www.example.com/dresses/green/greendresss.html
 Not this structure: /dresses/green/greendress.html
-Use rel="canonical"HTTP header
+Use rel="canonical" HTTP header
 If you can configure your server, you can use rel="canonical" HTTP headers (rather than HTML tags) to indicate the canonical URL for non-HTML documents such as PDF files.
 For example, if you expose a PDF file through multiple URLs, you can return a rel="canonical" HTTP header such as the following for the duplicate URLs to tell Googlebot what is the canonical URL for the PDF file:
 Link: <http://www.example.com/downloads/white-paper.pdf>; rel="canonical"
@@ -150,5 +150,6 @@ https://home.example.com
 https://www.example.com
 Pick one of those URLs as your canonical URL and use 301 redirects to send traffic from the other URLs to your preferred URL. A server-side 301 redirect is the best way to ensure that users and search engines are directed to the correct page. The 301 status code means that a page has permanently moved to a new location.
 If you are on a website hosting service, do a search for their documentation on setting up 301 redirects.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

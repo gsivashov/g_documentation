@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Estimated salary
 Does your site publish job postings with actual salary information?
 Add JobPosting structured data
@@ -17,7 +18,7 @@ Estimated salaries can appear in the job experience on Google Search and as a sa
 result for a given occupation.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
-content. If you’re new to structured data, you can learn more about
+content. If you're new to structured data, you can learn more about
 how structured data works.
 Here's an overview of how to build, test, and release structured data. For a step-by-step guide
 on how to add structured data to a web page, check out the
@@ -421,11 +422,11 @@ Include the description on all leaf pages that a user may land on, not just on
 the top-level page.
 The description must uniquely identify the occupation and provide a
 specific description of what the occupation entails.
-Not recommended: “Internship - An internship is
-a job training for white collar and professional careers.”
-Recommended: “Data Analyst Intern - An
+Not recommended: "Internship - An internship is
+a job training for white collar and professional careers."
+Recommended: "Data Analyst Intern - An
 internship working with a data analyst. A data analyst extracts insights from data
-to help make data driven decisions.”
+to help make data driven decisions."
 The description can't be the same as the name.
 Don't include the hiring organization in the description. Instead, use hiringOrganization.
 estimatedSalary.currency
@@ -519,8 +520,8 @@ For example, "Base", "Bonus", "Commission".
 hiringOrganization
 Organization
 The organization offering a position of this occupation. Set the @context to "https://schema.org/".
-The hiringOrganization should be the name of the company (for example, “Starbucks, Inc”), and not the specific address of the location that
-is hiring (for example, “Starbucks on Main Street”). For example:
+The hiringOrganization should be the name of the company (for example, "Starbucks, Inc"), and not the specific address of the location that
+is hiring (for example, "Starbucks on Main Street"). For example:
 "hiringOrganization": {
 "@context": "https://schema.org/",
 "@type": "Organization",
@@ -598,11 +599,11 @@ Include the description on all leaf pages that a user may land on, not just on
 the top-level page.
 The description must uniquely identify the occupation and provide a
 specific description of what the occupation entails.
-Not recommended: “Internship - An internship is
-a job training for white collar and professional careers.”
-Recommended: “Data Analyst Intern - An
+Not recommended: "Internship - An internship is
+a job training for white collar and professional careers."
+Recommended: "Data Analyst Intern - An
 internship working with a data analyst. A data analyst extracts insights from data
-to help make data driven decisions.”
+to help make data driven decisions."
 The description can't be the same as the name.
 Don't include the hiring organization in the description. Instead, use hiringOrganization.
 estimatedSalary.currency
@@ -675,12 +676,12 @@ data errors.
 Troubleshoot
 missing rich results / drop in total rich results.
 For general questions about crawling and indexing, check the
-Webmaster FAQ.
+Google Search crawling and indexing FAQ.
 Note: Allow time for re-crawling and re-indexing. Remember that it
 may take several days after publishing a page for Google to find and crawl it.
-Ask a question in the Webmaster
-Office Hours.
-Post a question in the Webmaster
+Ask a question in the Google Search Central office hours.
+Post a question in the Google Search Central
 forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

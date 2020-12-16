@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Robots.txt Specifications
 Abstract
 This document details how Google handles the robots.txt file that allows
@@ -220,7 +221,7 @@ group = startgroupline
 startgroupline = *WS "user-agent" *WS ":" *WS product-token EOL
 rule = *WS ("allow" / "disallow") *WS ":" *WS (path-pattern / empty-pattern) EOL
 ; parser implementors: add additional lines you need (for example, Sitemaps), and
-; be lenient when reading lines that don’t conform. Apply Postel’s law.
+; be lenient when reading lines that don't conform. Apply Postel's law.
 product-token = identifier / "*"
 path-pattern = "/" *(UTF8-char-noctl)
 ; valid URI path pattern; see 3.2.2
@@ -465,5 +466,6 @@ The
 robots.txt Tester in Search Console.
 Google's open source
 robots.txt library, which is also used in Google Search.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

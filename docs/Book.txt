@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Book
 Book actions make Google Search an entry point to discover books and authors. This enables
 Search users to quickly buy or borrow the books that they find directly from Search results.
@@ -26,7 +27,7 @@ The order of providers in the knowledge panel is personalized and dynamic to eac
 means different users see different orderings, and the same user might see different orderings
 at different times. There are a variety of factors that affect a given ordering. For example,
 if a user clicks a given provider link in the knowledge panel often, that provider is more
-likely to be positioned higher in an ordering. There’s no way to control the order.
+likely to be positioned higher in an ordering. There's no way to control the order.
 Get started
 To successfully implement Book actions, you must build your feed in accordance with the Book
 actions structured data type definitions,
@@ -97,7 +98,7 @@ ISBN and other supported identifiers
 The ISBN is the main reconciliation signal when Google
 Search matches your feed data to Google's data. You must provide an ISBN or other supported
 identifier for all the books you wish to have surfaced in Search results. Without it, it's
-likely that your books can't be matched and therefore won’t be served.
+likely that your books can't be matched and therefore won't be served.
 Google Search prefers ISBN-13, but you can alternatively provide the following:
 Online Computer Library Center (OCLC) Number
 Library of Congress Control Number (LCCN)
@@ -137,7 +138,7 @@ quantity, and format requirements
 The requirements are as follows:
 Feed file size requirements:
 An uncompressed feed file's size must be less than 1 GB.
-A feed file that’s to be compressed must be less than 1 GB. If your
+A feed file that's to be compressed must be less than 1 GB. If your
 uncompressed feed file exceeds 1 GB, you must split the uncompressed feed file
 into multiple files.
 You can compress feed files. They must be formatted into a zip, gz, tar, tar.gz, JAR,
@@ -148,7 +149,7 @@ sitemap index file.
 Single feed files must have the .json filename extension.
 Adhere to feed content requirements
 Be especially aware of the following feed content requirements that you must adhere to:
-The feed mustn’t contain stale entities. Stale entities are entities with
+The feed mustn't contain stale entities. Stale entities are entities with
 availabilityEnds set to a date that has passed or entities that are no longer
 available on your site.
 All deep links, such as urlTemplate, and all URLs, such as
@@ -777,7 +778,7 @@ rental: The book is accessible for a finite amount of time after the
 purchase.
 expectsAcceptanceOf.eligibleRegion
 Country
-The country that’s eligible for this Offer. This can be used to control
+The country that's eligible for this Offer. This can be used to control
 the country and region where this content is or isn't available.
 This property can be repeated.
 expectsAcceptanceOf.eligibleRegion.@type
@@ -1182,5 +1183,6 @@ Example LibrarySystem feed JSON file
 }
 ]
 }
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

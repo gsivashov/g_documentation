@@ -3,7 +3,8 @@ https://support.google.com/webmasters/answer/9131543
 Home
 Google Search Central
 Documentation
-Quickstart
+Just the basics
+Send feedback
 Measure your performance on Google
 Learn how often your site appears on Google and whether people click through to your site.
 Step 1: Is your site on Google?
@@ -21,5 +22,6 @@ Impressions: How many times your site has been seen by someone searching on Goog
 Clicks: How many times someone has clicked a link to your site in search results.
 Average position: The average position of your site in search results (where position 1 is the top position).
 Click through the chart in search results to see more information, including what terms people were searching for when your site came up.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-11 UTC.

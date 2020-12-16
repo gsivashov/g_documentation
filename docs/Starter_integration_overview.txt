@@ -4,6 +4,7 @@ Home
 Products
 Booking
 Guides
+Send feedback
 Starter integration overview
 Do you manage a platform that provides appointment and reservation services for
 restaurants and other businesses through a website or mobile app? If so, and
@@ -24,5 +25,6 @@ The process to launch your merchants on Reserve with Google is outlined in
 Figure 1.
 Note: Integration typically takes 2–3 weeks with dedicated technical resources.
 Figure 1: High-level starter integration steps
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-08-10 UTC.

@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Overview of Search appearance topics
 The topics in this section describe how you can change how your website appears in Search and
 other Google properties.
@@ -64,5 +65,6 @@ organizations. Here are the features that are currently in the Early Adopters Pr
 3D and AR
 Package tracking
 Mobile Recharge
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-03 UTC.

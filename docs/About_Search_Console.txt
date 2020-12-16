@@ -24,5 +24,5 @@ A valid Google account.
 NEXT: GET STARTED WITH SEARCH CONSOLE
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpAbout Search ConsoleGet started with Search ConsoleAdd a website propertyUsing Search Console with your websiteImportant concepts
+HelpAbout Search ConsoleGet started with Search ConsoleAdd a website propertyImportant concepts
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

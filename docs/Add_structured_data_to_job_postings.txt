@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Add structured data to job postings
 Due to COVID-19, Google has seen more job
 seeker interest in work-from-home and remote job opportunities. We encourage you to
@@ -18,7 +19,7 @@ For employers and job content site owners, this feature brings many benefits:
 More interactive results: Your postings can be eligible to be displayed in
 the job search experience on Google, featuring your logo, reviews, ratings, and job details.
 More, motivated applicants: The new user experience enables job seekers to
-filter by various criteria like location or job title, meaning you’re more likely to attract
+filter by various criteria like location or job title, meaning you're more likely to attract
 applicants who are looking exactly for that job.
 Increased chances of discovery and conversion: Job seekers will have a
 new avenue to interact with your postings and click through to your site.
@@ -26,7 +27,7 @@ Does your site provide salary estimates? Add Estimated salary structured data.
 Does your site provide reviews about other employers? Add EmployerAggregateRating structured data.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
-content. If you’re new to structured data, you can learn more about
+content. If you're new to structured data, you can learn more about
 how structured data works.
 Here's an overview of how to build, test, and release structured data. For a step-by-step guide
 on how to add structured data to a web page, check out the
@@ -337,10 +338,10 @@ Michigan or Texas. Use jobLocation, jobLocationType, and applicantLocationRequir
 }],
 "jobLocationType": "TELECOMMUTE"
 Update your company logo
-Google uses the same logo for your job postings as the image shown in your company’s Knowledge
+Google uses the same logo for your job postings as the image shown in your company's Knowledge
 Graph card. You can suggest
 a change if you prefer a different logo, or else indicate your preferred logo (for both your
-company’s Knowledge Graph card and its job postings)
+company's Knowledge Graph card and its job postings)
 using structured
 data.
 Note: In most cases, Google will review your request within a few
@@ -398,7 +399,7 @@ that are open, relevant, and easy to apply to. The
 general structured data guidelines and
 webmaster
 quality guidelines also apply to job postings. If we find content that violates these
-policies, we’ll respond appropriately, which may include taking
+policies, we'll respond appropriately, which may include taking
 manual action and removing
 the job posting(s) from the job search experience on Google.
 Irrelevant content
@@ -406,7 +407,7 @@ The JobPosting markup must only be used on pages that contain a single job
 posting. We don't allow the use of JobPosting markup in any other page, including
 pages that do not list any job.
 Incomplete content
-We don’t allow job postings with incomplete job descriptions.
+We don't allow job postings with incomplete job descriptions.
 Misrepresentation
 We don't allow job postings that attempt to impersonate another person or organization, or
 otherwise engage in activities intended to deceive, defraud, or mislead others. This includes
@@ -425,7 +426,7 @@ Job postings on behalf of an organization or company without authorization.
 Profanity and vulgar language
 We don't allow job postings that contain obscene, profane, or offensive language.
 Advertisements disguised as a job posting
-We don’t allow promotional content disguised as a job posting, such as those posted by a
+We don't allow promotional content disguised as a job posting, such as those posted by a
 third party (for example, affiliate programs).
 Legal removal requests
 If Google receives a complaint that content in a job posting may violate the law,
@@ -448,7 +449,7 @@ Job postings must describe the open position, include any qualifications needed,
 other information that would be relevant to a user looking for a job. We don't allow job
 postings where the job applicant is offering to perform a job.
 Payment required
-We don’t allow job postings that require payment from applicants.
+We don't allow job postings that require payment from applicants.
 Structured data type definitions
 This section describes the structured data types related to job postings.
 You must include the required properties for your content to be eligible for display in the job
@@ -703,12 +704,11 @@ data errors.
 Troubleshoot
 missing rich results / drop in total rich results.
 For general questions about crawling and indexing, check the
-Webmaster FAQ.
+Google Search crawling and indexing FAQ.
 Note: Allow time for re-crawling and re-indexing. Remember that it
 may take several days after publishing a page for Google to find and crawl it.
-Ask a question in the Webmaster
-Office Hours.
-Post a question in the Webmaster
+Ask a question in the Google Search Central office hours.
+Post a question in the Google Search Central
 forum.
 If your job posting isn't appearing in the job search results or if you've received
 a manual action for
@@ -787,7 +787,7 @@ reconsideration.
 Logo is incorrect
 error What caused the issue: Your site doesn't
 have a Knowledge Graph or the Knowledge Graph shows an incorrect logo for your site. Google
-uses the same logo for your job postings as the image shown in your company’s Knowledge Graph
+uses the same logo for your job postings as the image shown in your company's Knowledge Graph
 card. For more information about how Google selects your logo, see
 Update your company logo.
 done Fix the issue
@@ -845,9 +845,13 @@ Uzbekistan
 Vietnam
 Europe: Available in the following countries:
 Belarus
+Belgium
 France
 Germany
+Greece
 Italy
+Netherlands
+Portugal
 Russia
 Spain
 Switzerland
@@ -871,5 +875,6 @@ Tunisia
 United Arab Emirates
 North America: Available in the entire region
 Sub-Saharan Africa: Available in the entire region
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

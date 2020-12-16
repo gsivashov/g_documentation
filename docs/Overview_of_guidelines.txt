@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Overview of guidelines
 The guidelines provide advice on how to code your site in order to be eligible to appear
 on Google. These guidelines fall into the following categories:
@@ -41,6 +42,7 @@ action for your site.
 Automatically generated content
 Sneaky redirects
 Link schemes
+Paid links
 Cloaking
 Hidden text and links
 Doorway pages
@@ -51,5 +53,6 @@ Creating pages with malicious behavior
 User-generated spam
 Ways to Prevent Comment Spam
 Report spam, paid links, or malware
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-03 UTC.

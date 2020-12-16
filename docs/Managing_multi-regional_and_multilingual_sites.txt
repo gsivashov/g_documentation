@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Managing multi-regional and multilingual sites
 If your site offers different content to users in different languages, countries, or regions, you can optimize Google Search results for your site.
 Background:
@@ -19,22 +20,22 @@ If you prefer to dynamically change content or reroute the user based on languag
 Tell Google about your different language versions
 Google supports several different methods for labeling language or region variants of a page, including hreflang annotations and sitemaps. Mark your pages appropriately.
 Make sure the page language is obvious
-Google uses the visible content of your page to determine its language. We don’t use any code-level language information such as lang attributes, or the URL. You can help Google determine the language correctly by using a single language for content and navigation on each page, and by avoiding side-by-side translations.
+Google uses the visible content of your page to determine its language. We don't use any code-level language information such as lang attributes, or the URL. You can help Google determine the language correctly by using a single language for content and navigation on each page, and by avoiding side-by-side translations.
 Translating only the boilerplate text of your pages while keeping the bulk of your content in a single language (as often happens on pages featuring user-generated content) can create a bad user experience if the same content appears multiple times in search results with various boilerplate languages.
-Use robots.txt to block search engines from crawling automatically translated pages on your site. Automated translations don’t always make sense and could be viewed as spam. More importantly, a poor or artificial-sounding translation can harm your site’s perception.
+Use robots.txt to block search engines from crawling automatically translated pages on your site. Automated translations don't always make sense and could be viewed as spam. More importantly, a poor or artificial-sounding translation can harm your site's perception.
 Let the user switch the page language
 If you have multiple versions of a page:
 Consider adding hyperlinks to other language versions of a page. That way users can click to choose a different language version of the page.
-Avoid automatic redirection based on the user’s perceived language. These redirections could prevent users (and search engines) from viewing all the versions of your site.
+Avoid automatic redirection based on the user's perceived language. These redirections could prevent users (and search engines) from viewing all the versions of your site.
 Use language-specific URLs
-It’s fine to use localized words in the URL, or to use an Internationalized Domain Name (IDN). However, be sure to use UTF-8 encoding in the URL (in fact, we recommend using UTF-8 wherever possible) and remember to escape the URLs properly when linking to them.
+It's fine to use localized words in the URL, or to use an Internationalized Domain Name (IDN). However, be sure to use UTF-8 encoding in the URL (in fact, we recommend using UTF-8 wherever possible) and remember to escape the URLs properly when linking to them.
 Targeting site content to a specific country (geotargeting)
 You can target your website or parts of it to users in a single specific country speaking a specific language. This can improve your page rankings in the target country, but at the expense of results in other locales/languages.
 To geotarget your site on Google:
 Page or site level: Use locale-specific URLs for your site or page.
 Page level: Use hreflang or sitemaps to tell Google which pages apply to which locations or languages.
-Site level: If your site has a generic top-level domain (for example, .com, .org, or .eu), specify your site's target locale using the International Targeting report. Don’t use this tool if your site targets more than a single country. For example, it would make sense to set the target as Canada for a site about restaurants in Montreal; it would not make sense to set the target as Canada if it also targets French speakers in France, Canada, and Mali.
-Remember that geotargeting isn’t an exact science, so it's important to consider users who land on the "wrong" version of your site. One way to do this could be to show links on all pages for users to select their region and/or language of choice.
+Site level: If your site has a generic top-level domain (for example, .com, .org, or .eu), specify your site's target locale using the International Targeting report. Don't use this tool if your site targets more than a single country. For example, it would make sense to set the target as Canada for a site about restaurants in Montreal; it would not make sense to set the target as Canada if it also targets French speakers in France, Canada, and Mali.
+Remember that geotargeting isn't an exact science, so it's important to consider users who land on the "wrong" version of your site. One way to do this could be to show links on all pages for users to select their region and/or language of choice.
 Do not use IP analysis to adapt your content. IP location analysis is difficult and generally not reliable. Furthermore, Google may not be able to crawl variations of your site properly. Most, but not all, Google crawls originate from the US, and we do not attempt to vary the location to detect site variations. Use one of the explicit methods shown here (hreflang, alternate URLs, and explicit links).
 Using locale-specific URLs
 Consider using a URL structure that makes it easy to geotarget your site, or parts of it, to different regions. The following table describes your options:
@@ -74,9 +75,9 @@ Geotargeting in Search Console is not possible
 How does Google determine a target locale?
 Google relies on a number of signals to determine the best target audience for a page:
 A target locale specified using Search Console's International Targeting report. If you use a generic top-level domain (gTLD) and use a hosting provider in another country, we recommend using Search Console to tell us which country your site should be associated with (if you want to geotarget your site).
-Country-code top-level domain names (ccTLDs). These are tied to a specific country (for example .de for Germany, .cn for China), and therefore are a strong signal to both users and search engines that your site is explicitly intended for a certain country. (Some countries have restrictions on who can use ccTLDs, so be sure to do your research first.) We also treat some vanity ccTLDs (such as .tv, .me, etc.) as gTLDs, as we've found that users and webmasters frequently see these as being more generic than country-targeted (we don't have a complete list of such vanity ccTLDs that we treat as gTLDs, because such a list would change over time). See Google's list of gTLDs.
+Country-code top-level domain names (ccTLDs). These are tied to a specific country (for example .de for Germany, .cn for China), and therefore are a strong signal to both users and search engines that your site is explicitly intended for a certain country. (Some countries have restrictions on who can use ccTLDs, so be sure to do your research first.) We also treat some vanity ccTLDs (such as .tv, .me, etc.) as gTLDs, as we've found that users and website owners frequently see these as being more generic than country-targeted (we don't have a complete list of such vanity ccTLDs that we treat as gTLDs, because such a list would change over time). See Google's list of gTLDs.
 hreflang statements, whether in tags, headers, or sitemaps.
-Server location (through the IP address of the server). The server location is often physically near your users and can be a signal about your site’s intended audience. Some websites use distributed content delivery networks (CDNs) or are hosted in a country with better webserver infrastructure, so it is not a definitive signal.
+Server location (through the IP address of the server). The server location is often physically near your users and can be a signal about your site's intended audience. Some websites use distributed content delivery networks (CDNs) or are hosted in a country with better webserver infrastructure, so it is not a definitive signal.
 Other signals. Other sources of clues as to the intended audience of your site can include local addresses and phone numbers on the pages, the use of local language and currency, links from other local sites, and/or the use of Google My Business (where available).
 What Google doesn't do:
 Google crawls the web from different locations around the world. We do not attempt to vary the crawler source used for
@@ -96,7 +97,7 @@ and many more...
 Generic regional top-level domains: Although these domains are associated with a geographical region, they are generally treated as generic top-level domains (much like .com or .org):
 .eu
 .asia
-Generic Country Code Top Level Domains (ccTLDs): Google treats some ccTLDs (such as .tv, .me, etc.) as gTLDs, as we've found that users and webmasters frequently see these more generic than country-targeted. Here is a list of those ccTLDs (this list may change).
+Generic Country Code Top Level Domains (ccTLDs): Google treats some ccTLDs (such as .tv, .me, etc.) as gTLDs, as we've found that users and website owners frequently see these more generic than country-targeted. Here is a list of those ccTLDs (this list may change).
 .ad
 .as
 .bz
@@ -116,5 +117,6 @@ Generic Country Code Top Level Domains (ccTLDs): Google treats some ccTLDs (such
 .tv
 .tk
 .ws
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

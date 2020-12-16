@@ -4,10 +4,11 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Create a robots.txt file
 If you use a site hosting service, such as Wix or Blogger, you might not need to create or edit a robots.txt file.
 Getting started
-A robots.txt file lives at the root of your site. So, for site www.example.com, the robots.txt file lives at www.example.com/robots.txt. robots.txt is a plain text file that follows the Robots Exclusion Standard. A robots.txt file consists of one or more rules. Each rule blocks (or or allows) access for a given crawler to a specified file path in that website.
+A robots.txt file lives at the root of your site. So, for site www.example.com, the robots.txt file lives at www.example.com/robots.txt. robots.txt is a plain text file that follows the Robots Exclusion Standard. A robots.txt file consists of one or more rules. Each rule blocks (or allows) access for a given crawler to a specified file path in that website.
 Here is a simple robots.txt file with two rules, explained below:
 # Group 1
 User-agent: Googlebot
@@ -116,5 +117,6 @@ Allow: /
 Match URLs that end with a specific string, use $. For instance, the sample code blocks any URLs that end with .xls:
 User-agent: Googlebot
 Disallow: /*.xls$
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-07 UTC.

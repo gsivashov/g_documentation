@@ -7,7 +7,9 @@ Overview page
 Shows a summary of your property's health, including any manual actions or security issues applied to your site, graphs of total clicks and error/valid indexed pages, and summaries of error/valid enhancements for your site (mobile-friendly URLs, AMP pages, structured data found on your site).
 Suggested use: If only checking in periodically, check for manual actions or security issues. Look for spikes in coverage or enhancement errors, and if found, open the report to troubleshoot. Look for dramatic dips in your click count; if found, open the report to investigate.
 Useful for: Everyone
-Performance report for Search and Discover
+Performance reports:
+Web Search
+Discover
 Explore how many people saw and clicked on your site in Google Search, what queries showed your site in Search, and your average search position.
 If your site has Discover data, you will also see a similar report just for your Discover data.
 Data includes clicks, impressions, CTR, and position for your site, as well as query strings that users were searching for.
@@ -66,14 +68,15 @@ Useful for: Site owners, site developers [Documentation and tool link]
 Removals Tool
 Allows you to temporarily block URLs on your site from appearing in Google Search, or to clear the search snippet until the next document crawl. Also shows a history of your block requests, as well as a history of user requests to mark pages on your site as adult-only.
 Useful for: Site owners [Documentation]
+Crawl Stats
+Shows how often Google is crawling your site, and how many requests it is making.
+Suggested use: If your site is being overloaded by Google crawl requests, you can track the issue here, and request a reduced crawl rate.
+This report is available only for domain-level properties (example.com, m.example.com, http://example.com) not for URL-prefix properties (example.com/somepath/).
+Useful for: Advanced SEO, website administrators [Documentation]
 Legacy tools and reports
 These tools and reports do not yet have a full replacement in new Search Console, but can still be reached at the links given below. The Search Console team is working on a replacement strategy for these items.
 Report or tool
 Description
-Crawl Stats
-Shows how often Google is crawling your site, and how many requests it is making.
-Suggested use: If your site is being overloaded by Google crawl requests, you can track the issue here, and request a reduced crawl rate.
-Useful for: Advanced SEO, website administrators [Documentation]
 robots.txt Tester
 Test the syntax of your robots.txt file, and whether it will block a given URL.
 Suggested use: Good for syntax testing of your robots.txt files, and also for debugging/fixing blocked resources or pages on your site.
@@ -95,7 +98,7 @@ A simple tool to help Google extract data from template pages on your site.
 Suggested use: If your site has many pages with templated data (for example, bus routes or event schedules) and you can't use structured data for some reason, you can use this tool to help Google extract similar data from identically coded pages. You must retrain Google every time you change the design of the page.
 Useful for: Site owners on basic site hosting services [Documentation]
 Messages report
-See messages sent to your properties before May 23, 2019. For later messages, use the new message panel.
+Replaced by the new message panel.
 Crawl rate settings
 Lower Google's crawling traffic to your site.
 Suggested use: Use only if Google seems to be overloading your site with crawling requests.
@@ -104,5 +107,5 @@ Web tools
 Various other tools that might be useful for your site.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpReports at a glanceAll reports and toolsUsing Search Console with your websiteSettingsGet your site on Search ConsoleMigrating from old Search Console to new Search Console
+HelpReports at a glanceAll reports and toolsManaging properties and users on Search ConsoleMigrating from old Search Console to new Search Console
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

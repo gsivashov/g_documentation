@@ -7,5 +7,5 @@ Open Search Console. Be sure that you are signed in with the same account that y
 To disable specific messages, select Mute next to the message you wish to disable.To disable all messages, uncheck Enable email notifications.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Basic usersHow search works (for beginners)Optimize your site for search enginesMeasure your performance on GoogleWhy did I get an email from Search Console?
+Basic usersUsing Search Console with your websiteHow search works (for beginners)Optimize your site for search enginesMeasure your performance on GoogleWhy did I get an email from Search Console?
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

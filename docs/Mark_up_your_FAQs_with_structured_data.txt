@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Mark up your FAQs with structured data
 Does your site allow users to submit answers to a single
 question? Use QAPage structured
@@ -14,7 +15,7 @@ Search and an Action on the Google Assistant, which can
 help your site reach the right users. Here's an example of an FAQ rich result:
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
-content. If you’re new to structured data, you can learn more about
+content. If you're new to structured data, you can learn more about
 how structured data works.
 Here's an overview of how to build, test, and release structured data. For a step-by-step guide
 on how to add structured data to a web page, check out the
@@ -270,7 +271,7 @@ Invalid use cases:
 A forum page where users can submit answers to a single question
 A product support page where users can submit answers to a single question
 A product page where users can submit multiple questions and answers on a single page
-Don’t use FAQPage for advertising purposes.
+Don't use FAQPage for advertising purposes.
 Make sure each Question includes the entire text of the question and
 make sure each Answer includes the entire text of the answer. The entire
 question text and answer text may be displayed.
@@ -365,12 +366,12 @@ data errors.
 Troubleshoot
 missing rich results / drop in total rich results.
 For general questions about crawling and indexing, check the
-Webmaster FAQ.
+Google Search crawling and indexing FAQ.
 Note: Allow time for re-crawling and re-indexing. Remember that it
 may take several days after publishing a page for Google to find and crawl it.
-Ask a question in the Webmaster
-Office Hours.
-Post a question in the Webmaster
+Ask a question in the Google Search Central office hours.
+Post a question in the Google Search Central
 forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

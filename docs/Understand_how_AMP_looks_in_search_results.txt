@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Understand how AMP looks in search results
 Google Search indexes AMP pages to provide a
 fast, reliable web experience. When an AMP page is available, it can be featured on mobile
@@ -16,7 +17,7 @@ AMP Project success stories.
 On mobile search, the AMP icon helps users quickly identify pages that load quickly and
 smoothly. When users select an AMP page, Google Search retrieves the page from the
 Google AMP Cache, enabling a variety of load optimizations that often
-make these pages appear instantly, such as prerendering. Currently, AMP pages on desktop don’t
+make these pages appear instantly, such as prerendering. Currently, AMP pages on desktop don't
 display with rich features (such as the AMP logo and carousels) and aren't served from the
 Google AMP Cache/AMP Viewer.
 Canonical AMP Pages behave
@@ -87,7 +88,7 @@ as belonging to your
 Origin.
 About the Google AMP Viewer
 The Google AMP Viewer is a hybrid environment where you can collect data about the user. Data
-collection by Google is governed by Google’s
+collection by Google is governed by Google's
 privacy policy. As an AMP page publisher
 whose content is displayed in the Google AMP Viewer, your data collection is governed by your
 privacy policy. Because you choose the behaviors and vendor integrations in your AMP page, you
@@ -101,5 +102,6 @@ you must publish AMP content as a signed exchange in addition to the regular AMP
 Currently, signed exchange is only supported in Google Search for rich results and basic
 results, not carousels. To learn more about setting up signed exchange for AMP pages, visit
 Serve AMP using Signed Exchanges.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

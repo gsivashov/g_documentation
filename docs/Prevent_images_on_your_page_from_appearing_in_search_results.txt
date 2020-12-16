@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Prevent images on your page from appearing in search results
 For quick removal
 Use the Remove URLs tool. You should see results fairly quickly.
@@ -22,5 +23,6 @@ Disallow: /*.gif$
 By specifying Googlebot-Image as the User-agent, the images will be excluded from Google Image Search. It will also prevent cropping of the image for display within Mobile Image Search, as the image will be completely removed from Google's Image index. If you would like to exclude the images from all Google searches (including Google web search and Google Images), specify User-agent Googlebot.
 How do I remove images from properties that I don't own?
 See the Google Search help documentation on how to remove an image from search results.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-12 UTC.

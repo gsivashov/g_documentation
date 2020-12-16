@@ -7,7 +7,7 @@ You will no longer receive notifications for the removed property.
 If other verified property owners remain, the only effect is to remove the property from your list; other users will not be affected.
 You will not be able to see any information about the property or access the property settings.
 Your message history for the property will be retained.
-If you are the last verified owner of a property, all users or delegated owners of the property will lose access to the property in Search Console.
+If you are the last verified owner of a property, all users of the property will lose access to the property in Search Console.
 Remove a property from your own list
 You can either mute or permanently remove a property from your account. Both actions will have the effects listed at the top of this page.
 To mute a property (owners or users)
@@ -19,18 +19,17 @@ Remove the access token you used to verify ownership. So, for example, if you us
 In the Settings page, click Remove property.
 Remove a property from someone else's account
 Removing a property from someone else's account has the following rules and effects:
-A verified owner can remove access for any delegated owner or user.
-A delegated owner can remove access for any non-owner.
+An owner can remove access for any user. However, removing access for another owner will only work if that owner's access token (HTML file, meta tag, or whatever was used to prove ownership) is also removed. If the access token still exists and is valid, ownership status will be re-granted to the removed owner the next time Google sees the access token.
 Removing a property from someone else's account deletes their access to the property.
 In order to regain access, the removed user must be re-granted access by an owner, or else verify themselves as described in Verification.
 The removed user's verification history for the property will be deleted after 18 months.
 To remove a property from someone else's account:
-If they are an owner: Follow the appropriate instructions for removing owners, depending on whether they're a verified or delegated owner.
+If they are an owner: Follow the appropriate instructions for removing owners.
 If they are not an owner: Follow the instructions for removing users.
 Re-add a removed property
 If your property was only muted, you can re-add it to your list without verification (as long as the property still has at least one verified owner).
 If you were a verified owner and you permanently removed it, you must add a property in the normal manner.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Get your site on Search ConsoleAdd a website propertyRemove a propertyVerify your site ownershipManaging owners, users, and permissionsI don't recognize this new owner
+Managing properties and users on Search ConsoleAdd a website propertyRemove a propertyVerify your site ownershipManaging owners, users, and permissionsProperty and user settingsI don't recognize this new owner
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

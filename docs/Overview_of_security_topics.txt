@@ -1,0 +1,26 @@
+https://support.google.com/webmasters/topic/4596795
+
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Send feedback
+Overview of security topics
+The following topics describe how you can secure your site and prevent malware.
+Topics
+Secure your site with HTTPS
+Learn what HTTPS is, how to implement HTTPS, and how to migrate from HTTP to HTTPS.
+What is hacking or hacked content?
+Learn what hacked content is and how to fix a hacked site.
+Malware and unwanted software
+Learn what malware and unwanted software is, guidelines for avoiding distribution of unwanted software,
+and how to fix problems related to unwanted software.
+Preventing malware infection
+This article contains tips and pointers for preventing malware infection.
+Social Engineering (Phishing and Deceptive Sites)
+Learn what social engineering is and how to fix it.
+Google Safe Browsing Repeat Offenders Policy
+Google Safe Browsing helps protect users by showing warnings on dangerous sites or dangerous download files.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-12-15 UTC.

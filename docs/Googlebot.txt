@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Googlebot
 Googlebot is the generic name for Google's
 web crawler.
@@ -56,7 +57,7 @@ of the difference between preventing Googlebot from crawling a page, preventing 
 indexing a page, and preventing a page from being accessible at all by both crawlers or users.
 Verifying Googlebot
 Before you decide to block Googlebot, be aware that the user-agent string used by Googlebot
-is often spoofed by other crawlers. It’s important to verify that a problematic request
+is often spoofed by other crawlers. It's important to verify that a problematic request
 actually comes from Google. The best way to verify that a request actually comes from
 Googlebot is to
 use a reverse DNS lookup
@@ -65,5 +66,6 @@ Googlebot and all respectable search engine bots will respect the directives in 
 but some nogoodniks and spammers do not. Google actively fights spammers; if you notice spam
 pages or sites in Google Search results, you can
 report spam to Google.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-19 UTC.
+Last updated 2020-12-14 UTC.

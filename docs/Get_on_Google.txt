@@ -3,7 +3,8 @@ https://support.google.com/webmasters/answer/6259634
 Home
 Google Search Central
 Documentation
-Quickstart
+Just the basics
+Send feedback
 Get on Google
 Do you have content that you want on Google? Here are a few ways to submit it to us.
 What content do you have?
@@ -30,5 +31,6 @@ Transit Partner Program – Encourage use of public transit by making it easy to
 Media
 Video on Google Search – Make your videos findable and crawlable by Google Search.
 YouTube – Upload, distribute, and monetize your videos.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-12 UTC.

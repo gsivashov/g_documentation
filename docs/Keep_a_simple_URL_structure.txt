@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Keep a simple URL structure
 A site's URL structure should be as simple as possible. Consider organizing your content so that URLs are constructed logically and in a manner that is most intelligible to humans (when possible, readable words rather than long ID numbers). For example, if you're searching for information about aviation, a URL like http://en.wikipedia.org/wiki/Aviation will help you decide whether to click that link. A URL like http://www.example.com/index.php?id_sezione=360&sid=3a5ebc944f41daa6f849f730f1, is much less appealing to users.
 Consider using punctuation in your URLs. The URL http://www.example.com/green-dress.html is much more useful to us than http://www.example.com/greendress.html. We recommend that you use hyphens (-) instead of underscores (_) in your URLs.
@@ -40,5 +41,6 @@ Wherever possible, avoid the use of session IDs in URLs. Consider using cookies 
 Whenever possible, shorten URLs by trimming unnecessary parameters.
 If your site has an infinite calendar, add a nofollow attribute to links to dynamically created future calendar pages.
 Check your site for broken relative links.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-03 UTC.

@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Image sitemaps
 Add images to an existing sitemap, or create a separate sitemap just for your images. Adding images to a sitemap helps Google discover images that we might not otherwise find (such as images your site reaches with JavaScript code).
 Best practices
@@ -40,7 +41,7 @@ Encloses all information about a single image. Each <url> tag can contain up to 
 <image:loc>
 Yes
 The URL of the image.
-In some cases, the image URL may not be on the same domain as your main site. This is fine, as long as both domains are verified in Search Console. If, for example, you use a content delivery network such as Google Sites to host your images, make sure that the hosting site is verified in Search Console. In addition, make sure that your robots.txt file doesn’t disallow the crawling of any content you want indexed.
+In some cases, the image URL may not be on the same domain as your main site. This is fine, as long as both domains are verified in Search Console. If, for example, you use a content delivery network such as Google Sites to host your images, make sure that the hosting site is verified in Search Console. In addition, make sure that your robots.txt file doesn't disallow the crawling of any content you want indexed.
 <image:caption>
 Optional
 A caption for the image.
@@ -53,5 +54,6 @@ The title of the image.
 <image:license>
 Optional
 A URL to the license of the image. You can use image metadata instead, if you like.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Responsive Web Design
 Responsive web design is a setup where the server always sends the same
 HTML code to all devices and CSS is used to alter the rendering of the page on
@@ -58,7 +59,7 @@ retrieve all versions of the content. This improvement in crawling efficiency
 can indirectly help Google index more of your site's content and keep it
 appropriately fresh.
 If you're interested in responsive web design, start with our blog post
-on Webmaster Central and visit the Web Fundamentals site.
+on the Google Search Central blog and visit the Web Fundamentals site.
 Important: Be sure not to block the crawling of any page assets (CSS, JavaScript, and
 images) for any Googlebot using robots.txt or other methods. Being able to
 fully access these external files helps our algorithms detect your site's
@@ -126,5 +127,6 @@ In this case, we recommend that the JavaScript file be served with the "Vary:
 User-agent" HTTP header. This is a signal to Internet caches and Googlebot that
 the JavaScript can be different for different user agents, and is a signal for
 Googlebot to crawl the JavaScript file using different Googlebot user-agents.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-01-06 UTC.
+Last updated 2020-12-04 UTC.

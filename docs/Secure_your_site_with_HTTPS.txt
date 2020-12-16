@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Secure your site with HTTPS
 What is HTTPS?
 HTTPS (Hypertext Transfer Protocol Secure) is an internet communication protocol that protects the integrity and confidentiality of data between the user's computer and the site. Users expect a secure and private online experience when using a website. We encourage you to adopt HTTPS in order to protect your users' connections to your website, regardless of the content on the site.
@@ -67,5 +68,6 @@ More information
 More details on implementing TLS on your site:
 Qualys SSL/TLS best practices
 SSL/TLS Mozilla wiki
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-19 UTC.
+Last updated 2020-12-09 UTC.

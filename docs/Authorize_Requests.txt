@@ -3,6 +3,7 @@ https://developers.google.com/search/apis/indexing-api/v3/authorizing
 Home
 Google Search Central
 Indexing API
+Send feedback
 Authorize Requests
 When your application requests private data, the request must be authorized by an authenticated user who has access to that data.
 Every request your application sends to the Indexing API must include an authorization token. The token also identifies your application to Google.
@@ -29,5 +30,6 @@ To request access using OAuth 2.0, your application needs the scope information
 information that Google supplies when you register your application (such as the client ID and the
 client secret).
 Tip: The Google APIs client libraries can handle some of the authorization process for you. They are available for a variety of programming languages; check the page with libraries and samples for more details.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-11 UTC.

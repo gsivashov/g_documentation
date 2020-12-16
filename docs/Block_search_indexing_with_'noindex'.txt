@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Block search indexing with 'noindex'
 You can prevent a page from appearing in Google Search by including a noindex meta tag in the page's HTML code, or by returning a noindex header in the HTTP request. When Googlebot next crawls that page and sees the tag or header, Googlebot will drop that page entirely from Google Search results, regardless of whether other sites link to it.
 Important: For the noindex directive to be effective, the page must not be blocked by a robots.txt file. If the page is blocked by a robots.txt file, the crawler will never see the noindex directive, and the page can still appear in search results, for example if other pages link to it.
@@ -26,5 +27,6 @@ HTTP/1.1 200 OK
 X-Robots-Tag: noindex
 (…)
 Read more about the noindex response header.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-16 UTC.

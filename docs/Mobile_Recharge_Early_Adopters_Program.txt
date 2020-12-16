@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Mobile Recharge Early Adopters Program
 Mobile Recharge on Search enables people to easily search for and compare offers and discounts
 for prepaid mobile recharge plans on their Android device. People can also use the mobile wallet
@@ -16,8 +17,8 @@ Once a user submits the form, they can tap Browse plans to view available
 prepaid plans.
 After a user chooses a plan, they are given a list of valid offers from all the providers who
 can fulfill the selected plan. The user can then tap a provider to complete checkout through
-the provider’s app or mobile site.
-When the user completes the transaction, the provider’s confirmation page includes a
+the provider's app or mobile site.
+When the user completes the transaction, the provider's confirmation page includes a
 Back to Google button that directs the user back to Search. On the
 confirmation page, users are also given access to customer support information about the
 recharge.
@@ -29,5 +30,6 @@ If you're interested in participating in the Mobile Recharge Early Adopters Prog
 fill out the form.
 Once you submit the form, our team checks that you meet the requirements and guides you on
 how to proceed.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-01-28 UTC.
+Last updated 2020-12-14 UTC.

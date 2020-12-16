@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Create a List of URLs
 In order for our systems to find your content, we need their URLs. As stated in
 Introduction to Indexing, our systems can crawl
@@ -52,7 +53,7 @@ for many content management systems, such as WordPress and Drupal. Sitemap
 generators typically generate XML files, which we also support.
 A text-based sitemap only helps with content discovery.
 It does not help our
-systems know when your content has been updated because it doesn’t contain
+systems know when your content has been updated because it doesn't contain
 additional meta-data such as the change date, or a list of alternate URLs.
 Indicate any alternate content by linking to it from within the canonical page,
 and make sure that the alternate pages link back to the canonical URL, as
@@ -86,5 +87,6 @@ URLs into multiple files.
 See the complete list of sitemap guidelines under
 Build and
 Submit a Sitemap in the Search Console Help Center.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

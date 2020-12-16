@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Define a favicon to show in search results
 If your site has a favicon, it can be included in Google Search results for your site:
 Implementation
@@ -25,7 +26,8 @@ You must follow these guidelines to be eligible for a favicon next to your searc
 Both the favicon file and the home page must be crawlable by Google (that is, they cannot be blocked to Google).
 Your favicon should be a visual representation of your website's brand, in order to help users quickly identify your site when they scan through search results.
 Your favicon should be a multiple of 48px square, for example: 48x48px, 96x96px, 144x144px and so on. SVG files, of course, do not have a specific size. Any valid favicon format is supported. Google will rescale your image to 16x16px for use in search results, so make sure that it looks good at that resolution. Note: do not provide a 16x16px favicon.
-The favicon URL should be stable (don’t change the URL frequently).
+The favicon URL should be stable (don't change the URL frequently).
 Google will not show any favicon that it deems inappropriate, including pornography or hate symbols (for example, swastikas). If this type of imagery is discovered within a favicon, Google will replace it with a default icon.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

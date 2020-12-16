@@ -4,17 +4,19 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Hidden text and links
-Hiding text or links in your content to manipulate Google’s search rankings can be seen as deceptive and is a violation of Google’s Webmaster Guidelines. Text (such as excessive keywords) can be hidden in several ways, including:
+Hiding text or links in your content to manipulate Google's search rankings can be seen as deceptive and is a violation of Google's Webmaster Guidelines. Text (such as excessive keywords) can be hidden in several ways, including:
 Using white text on a white background
 Locating text behind an image
 Using CSS to position text off-screen
 Setting the font size to 0
 Hiding a link by only linking one small character—for example, a hyphen in the middle of a paragraph
 When evaluating your site to see if it includes hidden text or links, look for anything that's not easily viewable by visitors of your site. Are any text or links there solely for search engines rather than visitors?
-However, not all hidden text is considered deceptive. For example, if your site includes technologies that search engines have difficulty accessing, like JavaScript, images, or Flash files, using descriptive text for these items can improve the accessibility of your site. Remember that many human visitors using screen readers, mobile browsers, browsers without plug-ins, and slow connections will not be able to view that content either and will benefit from the descriptive text as well. You can test your site’s accessibility by turning off JavaScript, Flash, and images in your browser, or by using a text-only browser such as Lynx. Some tips on making your site accessible include:
+However, not all hidden text is considered deceptive. For example, if your site includes technologies that search engines have difficulty accessing, like JavaScript, images, or Flash files, using descriptive text for these items can improve the accessibility of your site. Remember that many human visitors using screen readers, mobile browsers, browsers without plug-ins, and slow connections will not be able to view that content either and will benefit from the descriptive text as well. You can test your site's accessibility by turning off JavaScript, Flash, and images in your browser, or by using a text-only browser such as Lynx. Some tips on making your site accessible include:
 Images: Use the alt attribute to provide descriptive text. In addition, we recommend using a human-readable caption and descriptive text around the image. See this article for more advice on publishing images.
-JavaScript: Place the same content from the JavaScript in a <noscript> tag. If you use this method, ensure the contents are exactly the same as what’s contained in the JavaScript, and that this content is shown to visitors who do not have JavaScript enabled in their browser.
+JavaScript: Place the same content from the JavaScript in a <noscript> tag. If you use this method, ensure the contents are exactly the same as what's contained in the JavaScript, and that this content is shown to visitors who do not have JavaScript enabled in their browser.
 Videos: Include descriptive text about the video in HTML. You might also consider providing transcripts. See this article for more advice on publishing videos.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

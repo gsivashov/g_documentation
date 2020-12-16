@@ -132,7 +132,7 @@ To verify ownership using Google Tag Manager:
 Choose Google Tag Manager in the verification details page for your site, and follow the instructions shown.
 You must have Publish permission for the Google Tag Manager container on the page.
 Place the <noscript> portion of the Tag Manager code immediately after the opening <body> tag of your page. If you do not, verification will fail.
-You cannot insert a data layer (or anything other than HTML comments) between the <body> tag and the tag manager code. If you do, verification will fail.
+You cannot insert a data layer (or anything other than HTML comments) between the <body> tag and the Tag Manager code. If you do, verification will fail.
 Use the code exactly as provided; do no modify it. If you modify it, verification will fail.
 The user agent that performs Google Tag Manager verification has the user agent token Google-Site-Verification and the full user agent string Mozilla/5.0 (compatible; Google-Site-Verification/1.0)
 Potential errors:
@@ -181,5 +181,5 @@ Could not find your domain
 We tried to resolve the site URL that you gave us, but it is unknown to the DNS service. Check that you are providing the correct URL for your property.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Get your site on Search ConsoleAdd a website propertyRemove a propertyVerify your site ownershipManaging owners, users, and permissionsI don't recognize this new owner
+Managing properties and users on Search ConsoleAdd a website propertyRemove a propertyVerify your site ownershipManaging owners, users, and permissionsProperty and user settingsI don't recognize this new owner
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

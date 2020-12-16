@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Overview of Google crawlers (user agents)
 "Crawler" is a generic term for any program (such as a robot or spider) that is used to automatically discover and scan websites by following links from one webpage to another. Google's main crawler is called Googlebot. This table lists information about the common Google crawlers you may see in your referrer logs, and how they should be specified in robots.txt, the robots meta tags, and the X-Robots-Tag HTTP directives.
 The following table shows the crawlers used by various products and services at Google:
@@ -103,5 +104,6 @@ Some pages use multiple robots meta tags to specify directives for different cra
 <meta name="robots" content="nofollow">
 <meta name="googlebot" content="noindex">
 In this case, Google will use the sum of the negative directives, and Googlebot will follow both the noindex and nofollow directives. More detailed information about controlling how Google crawls and indexes your site.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-19 UTC.
+Last updated 2020-12-07 UTC.

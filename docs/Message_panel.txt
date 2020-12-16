@@ -2,7 +2,7 @@ https://support.google.com/webmasters/answer/9388335
 
 Message panelRead your Search Console messages for the current property in the message panel. All property-level messages sent to your by email are available in the message panel.
 Read messages
-Open the message panel by clicking the bell icon  at the top of Search Console.
+Open the message panel by clicking the bell icon  at the top of Search Console. Quick link
 If a number is shown on top of the message icon, it indicates the number of unread messages. A number will only be shown when a new message arrives, and will disappear after you open the panel.
 Click a message in the panel to view it.
 Types of messages and where you can read them

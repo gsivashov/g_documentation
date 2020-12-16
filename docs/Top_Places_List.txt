@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Top Places List
 If your business is mentioned in any "top places" lists online, Google might show a rich result that shows the lists that mention your business. For example, if your restaurant appears in a "Top 10 Chinese restaurants in NYC" list and a "Best restaurants in the city" list on qualified websites, these lists would be shown in your business's search result. This feature is only for businesses with a physical location.
 Here is an example Top Places List search result for a restaurant, showing three top lists, with a link to 31 more lists associated with the restaurant:
@@ -14,5 +15,6 @@ The list must not consist of templated sentences built from data or automated me
 The list must not contain vulgar or potentially offensive language.
 Prevent your website's lists from appearing in a Top Places List feature
 To prevent lists from your site from appearing in a Top Places List, opt out of display on Google Local and other Google properties.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-11 UTC.

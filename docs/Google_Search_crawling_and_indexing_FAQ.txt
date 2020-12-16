@@ -3,6 +3,7 @@ https://support.google.com/webmasters/answer/1050724
 Home
 Google Search Central
 Help
+Send feedback
 Google Search crawling and indexing FAQ
 This article brings together answers to the questions about crawling and indexing that we at Google hear most often.
 How do I get my site into Google?
@@ -10,7 +11,7 @@ Crawling and indexing are processes which can take some time and which rely on m
 See guides about these processes
 How Google Search works: Explains how crawling, indexing, and ranking works.
 Why is my page missing from Google Search?: Explains common questions and issues.
-Google's Webmaster Guidelines: Provide technical, content and quality guidelines for webmasters.
+Google's Webmaster Guidelines: Provide technical, content and quality guidelines for website owners.
 Google-friendly sites: Provides some information about how to create a website so that it can easily be crawled and indexed.
 Adding a site to Google: For specific advice and additional tips.
 Index Coverage report: Learn which of your pages have been indexed and any problems encountered when indexing your site.
@@ -53,5 +54,6 @@ Verify your site in Search Console, then check to see if there's a manual action
 Can't find the answer?
 If you can't find the answer to your question on this page, check out Google's help resources for site owners.
 We also provide official Google Search Central help communities in the following languages: English • Deutsch • Español • Français • Italiano • Nederlands • Polski • Português • Türkçe • Русский • العربية • 中文（简体） • 日本語 • 한국어
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-03 UTC.

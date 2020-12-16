@@ -94,8 +94,8 @@ Supported search appearance types include:
 AMP on image result - An Image Search result, where the image is hosted in an AMP page.
 AMP non-rich results - A basic, non-graphical (plain blue link) search result for an AMP page.
 AMP article - A visually-decorated search result link, such as an image from the AMP page, plus a content summary. The result can be either free-standing in the results page, or embedded in a carousel of similar result types. AMP article rich results are also counted as rich results.
-Web Story - a visual storytelling format built on AMP that enables a user to tap through full screen images and videos.
 Android App - An Android app installation link or Android app page result in a mobile search. To get your Android app indexed and in search results, follow the Firebase Android App indexing guidelines.
+Cross-language results - Search results in a language different from the query language, from selected sources.
 Event - An event rich result. Read about measuring clicks and impressions for Event items.
 FAQ rich results - A FAQ page.
 How-to rich results - A How-to rich result.
@@ -108,8 +108,9 @@ Recipe gallery - A Recipe rich result that appeared in a collection of Recipe ri
 Rich results - Any type of rich result defined in structured data listed in the search gallery. This includes all rich-result subtypes such as job listing and AMP article rich results.
 Review snippet - A review snippet rich result.
 Special Announcement - A SpecialAnnouncements structured data element with information about COVID-19.
-Web Light results - A lightweight, transcoded version of a webpage, optimized for viewing over slow data connections.
 Videos - Videos that appear in either general search results (type Web) or Discover.
+Web Light results - A lightweight, transcoded version of a webpage, optimized for viewing over slow data connections.
+Web Story - a visual storytelling format built on AMP that enables a user to tap through full screen images and videos.
 Google Play Instant - [Deprecated; new data is no longer collected for this type] A mobile app designed to run in a trial form on a mobile device directly from Search results, without needing to be installed on the phone first.
 Search result link - [Deprecated; new data is no longer collected for this type] Any link shown in search results.
 Dimensioning or filtering by search appearance will aggregate data by page rather than by property in the table only; data in the graph will still be grouped by property.

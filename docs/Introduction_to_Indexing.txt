@@ -4,11 +4,12 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Introduction to Indexing
 The indexing of your content by Google is determined by system algorithms that
 take into account user demand and quality checks. You can influence the Google
 indexing process by how you manage the discovery of your content, which relies
-on the URL of the page. Without your pages’ URLs, our systems cannot crawl,
+on the URL of the page. Without your pages' URLs, our systems cannot crawl,
 index, and ultimately present your information in Search.
 This document
 introduces the notion of getting into the Google index by helping you decide
@@ -42,7 +43,7 @@ This might cause problems for new content that you are eager to see
 in Search, such as content you mark up especially for inclusion in rich results.
 B. Actively manage your URLs
 By providing our systems a direct list of URLs to your content, known as a
-sitemap, our ability to find your pages no longer relies solely on your page’s
+sitemap, our ability to find your pages no longer relies solely on your page's
 relationship to other referring pages on the wider web. This speeds up the
 process of our systems discovering your content. Typically, you host the
 sitemap on your domain in a place accessible by Googlebot.
@@ -80,9 +81,10 @@ resource on your server—a process known as verifying—and then make that cont
 ready for our indexing process.
 Advantages: Submitting URLs to Google helps drive the timeliness of content
 updates from your domain to Search.
-Disadvantages: Not many. Once you’ve done the work of creating a sitemap,
+Disadvantages: Not many. Once you've done the work of creating a sitemap,
 submitting it to Google is a simple process and many content management systems offer
 programmatic sitemap updates.
 Learn more about sitemaps and why you might need one for your site in the Search Console Help Center.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Enhance AMP content for Google Search
 You can enhance your AMP content for Google Search by creating a basic AMP page, adding structured
 data, monitoring your pages, and practicing with codelabs.
@@ -33,7 +34,7 @@ If you serve your web content through a Content Management System (CMS), you can
 use an existing CMS plugin (such as for WordPress, Drupal, or Joomla) or implement
 custom functionality in your CMS to generate AMP content. If you intend to
 customize your CMS, follow these guidelines in addition to Create a basic AMP page:
-Consider how AMP HTML files will fit your site's URL path scheme. If you’re generating an AMP
+Consider how AMP HTML files will fit your site's URL path scheme. If you're generating an AMP
 page in addition to a canonical non-AMP page, we recommend choosing one of the following URL schemes:
 http://www.example.com/myarticle/amp
 http://www.example.com/myarticle.amp.html
@@ -90,5 +91,6 @@ Manager to optimize and measure marketing initiatives.
 Add analytics
 to your AMP pages to track user interactions with built-in Google Analytics
 support.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

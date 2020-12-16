@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Provide a publication date to Google Search
 When Google can determine the publication and update dates of your page or video, it can expose this information in Search results, if this information is considered to be useful to the user.
 You can provide information to help Google determine the publication and last updated date.
@@ -25,5 +26,6 @@ Don't specify future dates, or the date of the action described on the page. The
 ​Minimize the presence of other dates on the page: If you've followed the best practices above and find incorrect dates are being selected, consider removing some or all other dates that appear on the page.
 If your page is intended to show up in Google News search, you should follow these additional guidelines.
 While Google doesn't guarantee that a date, whether visible or in structured data, will be shown in search results, following these guidelines does help our algorithms find and process the information.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-12 UTC.

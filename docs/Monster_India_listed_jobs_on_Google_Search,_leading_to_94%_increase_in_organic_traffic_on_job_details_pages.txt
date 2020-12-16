@@ -3,6 +3,7 @@ https://developers.google.com/search/case-studies/monster-india-case-study
 Home
 Google Search Central
 Case studies
+Send feedback
 Monster India listed jobs on Google Search, leading to 94% increase in organic traffic on job details pages
 check_circle_outline 94%
 increase in organic traffic on job details pages
@@ -14,7 +15,7 @@ need great people. They have expanded from being a job board to being a global p
 array of job seeking, career management, recruitment, and talent management products and
 services. Monster India started its operations in 2001 and has presence in 11 cities of India.
 Jobs on Google Search
-Monster India’s search engine optimization (SEO) team began
+Monster India's search engine optimization (SEO) team began
 using structured data in April 2018 with
 the goal to improve their applicant and resume database. The team launched
 JobPosting structured data
@@ -32,5 +33,6 @@ Monster Philippines, Monster Singapore, Monster Malaysia, and the results are gr
 regions. The organic traffic to website has almost doubled since we have launched this across
 countries."
 — Anshul Punhani, Chief Marketing Officer, (APAC and Gulf regions), Monster.com
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-12-14 UTC.

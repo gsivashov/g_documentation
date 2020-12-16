@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Fix Search-related JavaScript problems
 This guide helps you identify and fix JavaScript issues that may be blocking your page, or
 specific content on JavaScript powered pages, from showing up in Google Search. While
@@ -16,8 +17,8 @@ Googlebot is designed to be a good citizen of the web. Crawling is its
 main priority,
 while making sure it doesn't degrade the experience of users visiting the site. Googlebot and
 its Web Rendering Service (WRS) component continuously analyze and identify resources that
-don’t contribute to essential page content and may not fetch such resources. For example,
-reporting and error requests that don’t contribute to essential page content, and other
+don't contribute to essential page content and may not fetch such resources. For example,
+reporting and error requests that don't contribute to essential page content, and other
 similar types of requests are unused or unnecessary to extract essential page content.
 Client-side analytics may not provide a full or accurate
 representation of Googlebot and WRS activity on your site. Use
@@ -52,7 +53,7 @@ e.message,
 'Stack: ' + (e.error && e.error.stack || '(no stack trace)')
 ].join('\n');
 // Example: log errors as visual output into the host page.
-// Note: you probably don’t want to show such errors to users, or
+// Note: you probably don't want to show such errors to users, or
 //
 have the errors get indexed by Googlebot; however, it may
 //
@@ -177,5 +178,6 @@ If you fixed the issue, a green check mark appears and no errors display. If you
 see errors, post in the
 JavaScript
 Sites in Search Working Group.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-09-09 UTC.
+Last updated 2020-12-14 UTC.

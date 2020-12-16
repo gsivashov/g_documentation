@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Robots meta tag, data-nosnippet, and X-Robots-Tag specifications
 Abstract
 This document details how the page- and text-level settings can be used to adjust how Google
@@ -267,5 +268,6 @@ If a page is disallowed from crawling through the robots.txt file, then any info
 indexing or serving directives will not be found and will therefore be ignored. If indexing or
 serving directives must be followed, the URLs containing those directives cannot be disallowed from
 crawling.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-11 UTC.

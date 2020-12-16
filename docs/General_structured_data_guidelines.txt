@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 General structured data guidelines
 These are the general guidelines that apply to all structured data. These guidelines
 must be followed to enable structured
@@ -36,7 +37,7 @@ You can test compliance with technical guidelines using the
 Rich Results Test and the
 URL Inspection tool, which catches most technical errors.
 Format
-In order to be eligible for rich results, you should mark up your site’s pages
+In order to be eligible for rich results, you should mark up your site's pages
 using one of three supported formats:
 JSON-LD (recommended)
 Microdata
@@ -52,7 +53,7 @@ to be marked as spam.
 Content
 Follow the Google
 webmasters quality guidelines.
-Provide up-to-date information. We won’t show a rich result for time-sensitive
+Provide up-to-date information. We won't show a rich result for time-sensitive
 content that is no longer relevant.
 Provide original content that you or your users have generated.
 Don't mark up content that is not visible to readers of the page. For example, if the JSON-LD
@@ -199,5 +200,6 @@ structured data items are complete. For example, if you include multiple reviews
 that you include all of the reviews that are visible to people on the page. If a page didn't
 mark up all of the reviews on a page, this would be misleading for people who expect to see
 all of those reviews, based on the appearance of the page in Search results.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

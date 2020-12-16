@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Enable Search result features for your site
 Google supports many interesting search appearance elements that can be applied to your page in search results:
 A few of these result types are generated automatically by Google Search, but most of them can be coded for by your site, as we will explain. But first, let's talk about the general categories of Search results.
@@ -101,5 +102,6 @@ You probably want to compare performance of your pages with search features with
 Take some pages on your site that are not using any structured data, and have several months of data in Search Console. Be sure to choose pages that won't be affected by the time of year or timeliness of the page content; use pages that won't change much, but are still popular enough to be read often enough to generate meaningful data.
 Add structured data or other features to your pages. Confirm that your page code is valid, and that Google has found your features using the URL Inspection tool on your page.
 Record the performance for a few months in the Performance report, filter by URL to compare performance of your page.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-12 UTC.

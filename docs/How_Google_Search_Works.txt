@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Beginner SEO
+Send feedback
 How Google Search Works
 How does Google work? Here is a short version and a long version.
 Google gets information from many different sources, including:
@@ -44,7 +45,7 @@ The long version
 Crawling
 Crawling is the process by which Googlebot visits new and updated pages to be added to the Google index.
 We use a huge set of computers to fetch (or "crawl") billions of pages on the web. The program that does the fetching is called Googlebot (also known as a robot, bot, or spider). Googlebot uses an algorithmic process to determine which sites to crawl, how often, and how many pages to fetch from each site.
-Google's crawl process begins with a list of web page URLs, generated from previous crawl processes, augmented by Sitemap data provided by webmasters. When Googlebot visits a page it finds links on the page and adds them to its list of pages to crawl. New sites, changes to existing sites, and dead links are noted and used to update the Google index.
+Google's crawl process begins with a list of web page URLs, generated from previous crawl processes, augmented by Sitemap data provided by website owners. When Googlebot visits a page it finds links on the page and adds them to its list of pages to crawl. New sites, changes to existing sites, and dead links are noted and used to update the Google index.
 During the crawl, Google renders the page using a recent version of Chrome. As part of the rendering process, it runs any page scripts it finds. If your site uses dynamically-generated content, be sure that you follow the JavaScript SEO basics.
 Primary crawl / secondary crawl
 Google uses two different crawlers for crawling websites: a mobile crawler and a desktop crawler. Each crawler type simulates a user visiting your page with a device of that type.
@@ -75,11 +76,11 @@ There are many techniques to improve Google's ability to understand the content 
 Prevent Google from crawling or finding pages that you want to hide using noindex. Do not "noindex" a page that is blocked by robots.txt; if you do so, the noindex won't be seen and the page might still be indexed.
 Use structured data.
 Follow the Google Webmaster Guidelines.
-Read our basic SEO guide and advanced user guide for more tips.
+Read our SEO starter guide and advanced user guide for more tips.
 What is a "document"?
 Internally, Google represents the web as an (enormous) set of documents. Each document represents one or more web pages. These pages are either identical or very similar, but are essentially the same content, reachable by different URLs. The different URLs in a document can lead to exactly the same page (for instance, example.com/dresses/summer/1234 and example.com?product=1234 might show the same page), or the same page with small variations intended for users on different devices (for example, example.com/mypage for desktop users and m.example.com/mypage for mobile users).
 Google chooses one of the URLs in a document and defines it as the document's canonical URL. The document's canonical URL is the one that Google crawls and indexes most often; the other URLs are considered duplicates or alternates, and may occasionally be crawled, or served according to the user request: for instance, if a document's canonical URL is the mobile URL, Google will still probably serve the desktop (alternate) URL for users searching on desktop.
-Most reports in Search Console attribute data to the document's canonical URL. Some tools (such as the Inspect URL tool) support testing alternate URLs, but inspecting the canonical URL should provide information about the alternate URLs as well.
+Most reports in Search Console attribute data to the document's canonical URL. Some tools (such as the URL Inspection tool) support testing alternate URLs, but inspecting the canonical URL should provide information about the alternate URLs as well.
 You can tell Google which URL you prefer to be canonical, but Google may choose a different canonical for various reasons.
 Here is a summary of terms, and how they are used in Search Console:
 Document: A collection of similar pages. Has a canonical URL, and possibly alternate URLs, if your site has duplicate pages. URLs in the document can be from the same or different organization (the root domain, for example "google" in www.google.com). Google chooses the best URL to show in Search results according to the platform (mobile/desktop), user language‡ or location, and many other variables. Google discovers related pages on your site by organic crawling, or by site-implemented features such as redirects or <link rel=alternate/canonical> tags. Related pages on other organizations can only be marked as alternates if explicitly coded by your site (through redirects or link tags).
@@ -101,5 +102,6 @@ Implement AMP for faster loading pages on mobile devices. Some AMP pages are als
 Google's algorithm is constantly being improved; rather than trying to guess the algorithm and design your page for that, work on creating good, fresh content that users want, and following our guidelines.
 An even longer version
 You can find an even longer version about how Google Search works here (with pictures and video!)
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-09 UTC.

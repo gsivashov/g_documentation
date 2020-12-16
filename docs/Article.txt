@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Article
 Adding Article structured data to your news, blog, and sports
 article page can enhance your appearance in Google Search results. Your page may be eligible
@@ -150,8 +151,8 @@ specifications.
 Follow the additional page guidelines to ensure that
 Google can crawl your page.
 Add a structured data element describing the article on the page.
-If you have duplicate pages for the same content, we recommend placing the
-same structured data on all page duplicates, not just on the canonical page. For more
+If you have AMP and non-AMP versions of a page for the same content, we recommend placing the
+same structured data on all versions, not just on the canonical page. For more
 information on placement, see the Structured Data
 General Guidelines.
 Test your structured data using the Rich Results Test.
@@ -332,12 +333,12 @@ data errors.
 Troubleshoot
 missing rich results / drop in total rich results.
 For general questions about crawling and indexing, check the
-Webmaster FAQ.
+Google Search crawling and indexing FAQ.
 Note: Allow time for re-crawling and re-indexing. Remember that it
 may take several days after publishing a page for Google to find and crawl it.
-Ask a question in the Webmaster
-Office Hours.
-Post a question in the Webmaster
+Ask a question in the Google Search Central office hours.
+Post a question in the Google Search Central
 forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-11 UTC.

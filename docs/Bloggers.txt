@@ -1,6 +1,12 @@
 https://support.google.com/webmasters/answer/70950
 
-BloggersIf you have a website but don't have a blog, consider creating one: A blog is a great way to connect with people who share your interests, or to publicize your site or product. Blogs are easy to create and update, and rich, useful, and original blog content will encourage readers to come back to your site. Here are some tips for making the most of your blog.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Send feedback
+Bloggers
+If you have a website but don't have a blog, consider creating one: A blog is a great way to connect with people who share your interests, or to publicize your site or product. Blogs are easy to create and update, and rich, useful, and original blog content will encourage readers to come back to your site. Here are some tips for making the most of your blog.
 Create great content
 Write well and often. A frequently updated site encourages people to return - as long as your content remains relevant and engaging. A useful post once a week is better than low-quality content published daily. A great idea is to search Google for subjects of interest in your field. If you can't find a good answer, create a blog post about the subject - chances are that other people are searching for the same thing.
 Follow the Webmaster Guidelines. Just like with any other site, make sure you follow our Webmaster Guidelines for creating rich, relevant, and useful content. Similarly, check out our recommendations for using images, Flash, and other rich media in your blog.
@@ -16,6 +22,6 @@ Your blog and Search Console
 Add your blog to your Search Console account. Adding a blog to your account is easy: Just follow the instructions for adding a regular site. If you use Blogger, you can add your sites to your account by clicking Search Console under Tools and Resources on the Blogger dashboard.
 Verify your blog. To see detailed stats and diagnostics about your site, verify your ownership. You can verify your site by uploading an HTML file with the filename we specify, or by adding a meta tag to your blog's template.
 Submit a Sitemap. Sitemaps are a great way to tell Google about content on your site we might not otherwise discover. Google prefers Sitemaps created using the Sitemap protocol; however, we'll accept several different formats. If you publish an RSS or Atom feed of your site, you can submit the feed URL as a Sitemap.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2020-12-04 UTC.

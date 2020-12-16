@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Video best practices
 Of the billions of Google searches done every day, many are looking for video content. Following the best practices listed here (as well as our usual Webmaster Guidelines) can increase the likelihood that your videos will be returned in search results.
 Video results in Google Search appear both in combined Search results and in Video Search results. When a user clicks the video result they will be taken to your page, where they can watch your video.
@@ -270,5 +271,6 @@ When designing your site, it's important to configure your video pages without a
 If you are using on-page structured data, the structured data should be present without running Flash or other embedded players.
 Small, hidden, or difficult to find videos
 Make sure that your videos are visible and easy to find on your video pages. Google suggests using a standalone page for each video with a descriptive title or description unique to each individual video. Videos should be prominent on the page and should not be hidden or difficult to find.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-11 UTC.

@@ -4,20 +4,21 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Fact Check
 If you have a web page that reviews a claim made by others, you can include
 ClaimReview structured data on your web page. ClaimReview structured
 data can enable a summarized version of your fact check to display in Google Search results
 when your page appears in search results for that claim.
 This guide describes the details on how to implement ClaimReview structured data.
-If you don’t want to add structured data manually, you can check out the
+If you don't want to add structured data manually, you can check out the
 Fact Check
 Markup Tool. To learn more, visit
 About the Fact Check
 Markup Tool.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
-content. If you’re new to structured data, you can learn more about
+content. If you're new to structured data, you can learn more about
 how structured data works.
 Here's an overview of how to build, test, and release structured data. For a step-by-step guide
 on how to add structured data to a web page, check out the
@@ -433,12 +434,12 @@ data errors.
 Troubleshoot
 missing rich results / drop in total rich results.
 For general questions about crawling and indexing, check the
-Webmaster FAQ.
+Google Search crawling and indexing FAQ.
 Note: Allow time for re-crawling and re-indexing. Remember that it
 may take several days after publishing a page for Google to find and crawl it.
-Ask a question in the Webmaster
-Office Hours.
-Post a question in the Webmaster
+Ask a question in the Google Search Central office hours.
+Post a question in the Google Search Central
 forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

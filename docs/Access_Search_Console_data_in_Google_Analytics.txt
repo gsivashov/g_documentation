@@ -27,4 +27,5 @@ Analytics uses the term "keywords" to describe both search engine queries and Go
 The Search Console Search Analytics page lists shows the total number of keyword search queries in which your page's listing was seen in search results, and this is a smaller number. Also, Search Console rounds search query data to one or two significant digits.
 Was this helpful?How can we improve it?YesNoSubmit
 true
+Property and user settingsProperty SettingsUser SettingsAccess Search Console data in Google Analytics
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

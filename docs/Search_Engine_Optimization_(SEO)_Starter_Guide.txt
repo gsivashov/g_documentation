@@ -4,11 +4,12 @@ Home
 Google Search Central
 Documentation
 Beginner SEO
+Send feedback
 Search Engine Optimization (SEO) Starter Guide
 Who is this guide for?
-If you own, manage, monetize, or promote online content via Google Search, this guide is meant for you. You might be the owner of a growing and thriving business, the webmaster of a dozen sites, the SEO specialist in a Web agency or a DIY SEO ninja passionate about the mechanics of Search : this guide is meant for you. If you're interested in having a complete overview of the basics of SEO according to our best practices, you are indeed in the right place. This guide won't provide any secrets that'll automatically rank your site first in Google (sorry!), but following the best practices outlined below will hopefully make it easier for search engines to crawl, index and understand your content.
+If you own, manage, monetize, or promote online content via Google Search, this guide is meant for you. You might be the owner of a growing and thriving business, the website owner of a dozen sites, the SEO specialist in a Web agency or a DIY SEO ninja passionate about the mechanics of Search : this guide is meant for you. If you're interested in having a complete overview of the basics of SEO according to our best practices, you are indeed in the right place. This guide won't provide any secrets that'll automatically rank your site first in Google (sorry!), but following the best practices outlined below will hopefully make it easier for search engines to crawl, index and understand your content.
 Search engine optimization (SEO) is often about making small modifications to parts of your website. When viewed individually, these changes might seem like incremental improvements, but when combined with other optimizations, they could have a noticeable impact on your site's user experience and performance in organic search results. You're likely already familiar with many of the topics in this guide, because they're essential ingredients for any web page, but you may not be making the most out of them.
-You should build a website to benefit your users, and any optimization should be geared toward making the user experience better. One of those users is a search engine, which helps other users discover your content. Search Engine Optimization is about helping search engines understand and present content. Your site may be smaller or larger than our example site and offer vastly different content, but the optimization topics we discuss below should apply to sites of all sizes and types. We hope our guide gives you some fresh ideas on how to improve your website, and we'd love to hear your questions, feedback, and success stories in the Google Webmaster Help Forum1.
+You should build a website to benefit your users, and any optimization should be geared toward making the user experience better. One of those users is a search engine, which helps other users discover your content. Search Engine Optimization is about helping search engines understand and present content. Your site may be smaller or larger than our example site and offer vastly different content, but the optimization topics we discuss below should apply to sites of all sizes and types. We hope our guide gives you some fresh ideas on how to improve your website, and we'd love to hear your questions, feedback, and success stories in the Google Search Central Help Community1.
 We hope you will enjoy the content and we hope to hear and integrate your feedback via our Google support Forums
 Feel free to save, print off the guide responsibly and re-share it: let's improve the quality of the web.
 Happy reading!
@@ -78,7 +79,7 @@ Tell Google which pages shouldn't be crawled
 Best Practices
 For non-sensitive information, block unwanted crawling by using robots.txt
 A "robots.txt" file tells search engines whether they can access and therefore crawl parts of your site. This file, which must be named "robots.txt", is placed in the root directory of your site. It is possible that pages blocked by robots.txt can still be crawled, so for sensitive pages you should use a more secure method.
-You may not want certain pages of your site crawled because they might not be useful to users if found in a search engine's search results. If you do want to prevent search engines from crawling your pages, Google Search Console has a friendly robots.txt generator to help you create this file. Note that if your site uses subdomains and you wish to have certain pages not crawled on a particular subdomain, you'll have to create a separate robots.txt file for that subdomain. For more information on robots.txt, we suggest this Webmaster Help Center guide on using robots.txt files13.
+You may not want certain pages of your site crawled because they might not be useful to users if found in a search engine's search results. If you do want to prevent search engines from crawling your pages, Google Search Console has a friendly robots.txt generator to help you create this file. Note that if your site uses subdomains and you wish to have certain pages not crawled on a particular subdomain, you'll have to create a separate robots.txt file for that subdomain. For more information on robots.txt, we suggest this guide on using robots.txt files13.
 Read about several other ways to prevent content from appearing in search results.14
 Avoid:
 Don't let your internal search result pages be crawled by Google. Users dislike clicking a search engine result only to land on another search result page on your site.
@@ -114,7 +115,7 @@ Stuffing unneeded keywords in your title tags.
 Use the "description" meta tag
 A page's description meta tag gives Google and other search engines a summary of what the page is about. A page's title may be a few words or a phrase, whereas a page's description meta tag might be a sentence or two or even a short paragraph. Like the <title> tag, the description meta tag is placed within the <head> element of your HTML document.
 What are the merits of description meta tags?
-Description meta tags are important because Google might use them as snippets for your pages. Note that we say "might" because Google may choose to use a relevant section of your page's visible text if it does a good job of matching up with a user's query. Adding description meta tags to each of your pages is always a good practice in case Google cannot find a good selection of text to use in the snippet. The Webmaster Central Blog has informative posts on improving snippets with better description meta tags18 and better snippets for your users19. We also have a handy Help Center article on how to create good titles and snippets20.
+Description meta tags are important because Google might use them as snippets for your pages. Note that we say "might" because Google may choose to use a relevant section of your page's visible text if it does a good job of matching up with a user's query. Adding description meta tags to each of your pages is always a good practice in case Google cannot find a good selection of text to use in the snippet. The Google Search Central blog has informative posts on improving snippets with better description meta tags18 and better snippets for your users19. We also have a handy Help Center article on how to create good titles and snippets20.
 Best Practices
 Accurately summarize the page content
 Write a description that would both inform and interest users if they saw your description meta tag as a snippet in a search result. While there's no minimal or maximal length for the text in a description meta tag, we recommend making sure that it's long enough to be fully shown in Search (note that users may see different sized snippets depending on how and where they search), and contains all the relevant information users would need to determine whether the page will be useful and relevant to them.
@@ -185,10 +186,10 @@ Path, filename, and query string determine which content from your server is acc
 A fragment (in this case, "#info") generally identifies which part of the page the browser scrolls to. Because the content itself is usually the same regardless of the fragment, search engines commonly ignore any fragment used.
 When referring to the homepage, a trailing slash after the hostname is optional since it leads to the same content ("https://example.com/" is the same as "https://example.com"). For the path and filename, a trailing slash would be seen as a different URL (signaling either a file or a directory), for example, "https://example.com/fish" is not the same as "https://example.com/fish/".
 Navigation is important for search engines
-The navigation of a website is important in helping visitors quickly find the content they want. It can also help search engines understand what content the webmaster thinks is important. Although Google's search results are provided at a page level, Google also likes to have a sense of what role a page plays in the bigger picture of the site.
+The navigation of a website is important in helping visitors quickly find the content they want. It can also help search engines understand what content the website owner thinks is important. Although Google's search results are provided at a page level, Google also likes to have a sense of what role a page plays in the bigger picture of the site.
 Plan your navigation based on your homepage
 All sites have a home or "root" page, which is usually the most frequented page on the site and the starting place of navigation for many visitors. Unless your site has only a handful of pages, you should think about how visitors will go from a general page (your root page) to a page containing more specific content. Do you have enough pages around a specific topic area that it would make sense to create a page describing these related pages (for example, root page -> related topic listing -> specific topic)? Do you have hundreds of different products that need to be classified under multiple category and subcategory pages?
-Using ‘breadcrumb lists'
+Using 'breadcrumb lists'
 A breadcrumb is a row of internal links at the top or bottom of the page that allows visitors to quickly navigate back to a previous section or the root page. Many breadcrumbs have the most general page (usually the root page) as the first, leftmost link and list the more specific sections out to the right. We recommend using breadcrumb structured data markup28 when showing breadcrumbs.
 Create a simple navigational page for users
 A navigational page is a simple page on your site that displays the structure of your website, and usually consists of a hierarchical listing of the pages on your site. Visitors may visit this page if they are having problems finding pages on your site. While search engines will also visit this page, getting good crawl coverage of the pages on your site, it's mainly aimed at human visitors.
@@ -272,9 +273,9 @@ Act in a way that cultivates user trust
 Users feel comfortable visiting your site if they feel that it's trustworthy.
 A site with a good reputation is trustworthy. Cultivate a reputation for expertise and trustworthiness in a specific area.
 Provide information about who publishes your site, provides the content, and its goals. Shopping and other financial transaction websites should have clear and satisfying customer service information to help users resolve issues. News sites should provide clear information about who is responsible for the content.
-Using appropriate technologies is also important. If a shopping checkout page doesn’t have a secure connection, users cannot trust the site.
+Using appropriate technologies is also important. If a shopping checkout page doesn't have a secure connection, users cannot trust the site.
 Make expertise and authoritativeness clear
-Expertise and authoritativeness of a site increases its quality. Be sure that content on your site is created or edited by people with expertise in the topic. For example, providing expert or experienced sources can help users understand articles’ expertise. Representing well-established consensus in pages on scientific topics is a good practice if such consensus exists.
+Expertise and authoritativeness of a site increases its quality. Be sure that content on your site is created or edited by people with expertise in the topic. For example, providing expert or experienced sources can help users understand articles' expertise. Representing well-established consensus in pages on scientific topics is a good practice if such consensus exists.
 Provide an appropriate amount of content for your subject
 Creating high quality content takes a significant amount of at least one of the following: time, effort, expertise, and talent/skill. Content should be factually accurate, clearly written, and comprehensive. So, for example, if you describe your page as a recipe, provide a complete recipe that is easy to follow, rather than just a set of ingredients or a basic description of the dish.
 Avoid:
@@ -309,8 +310,8 @@ Using excessively keyword-filled or lengthy anchor text just for search engines.
 Creating unnecessary links that don't help with the user's navigation of the site.
 Be careful who you link to
 You can confer some of your site's reputation to another site when your site links to it. Sometimes users can take advantage of this by adding links to their own site in your comment sections or message boards. Or sometimes you might mention a site in a negative way and don't want to confer any of your reputation upon it. For example, imagine that you're writing a blog post on the topic of comment spamming and you want to call out a site that recently comment spammed your blog. You want to warn others of the site, so you include the link to it in your content; however, you certainly don't want to give the site some of your reputation from your link. This would be a good time to use nofollow.
-Another example when the “nofollow" attribute can come handy are widget links. If you are using a third party's widget to enrich the experience of your site and engage users, check if it contains any links that you did not intend to place on your site along with the widget. Some widgets may add links to your site which are not your editorial choice and contain anchor text that you as a webmaster may not control. If removing such unwanted links from the widget is not possible, you can always disable them with “nofollow". If you create a widget for functionality or content that you provide, make sure to include the nofollow on links in the default code snippet.
-Lastly, if you're interested in nofollowing all of the links on a page, you can add the tag <meta name="robots" content="nofollow"> inside the <head> tag for the page. You can find more details about robots meta tag on the Webmaster Blog39.
+Another example when the "nofollow" attribute can come handy are widget links. If you are using a third party's widget to enrich the experience of your site and engage users, check if it contains any links that you did not intend to place on your site along with the widget. Some widgets may add links to your site which are not your editorial choice and contain anchor text that you as a website owner may not control. If removing such unwanted links from the widget is not possible, you can always disable them with "nofollow". If you create a widget for functionality or content that you provide, make sure to include the nofollow on links in the default code snippet.
+Lastly, if you're interested in nofollowing all of the links on a page, you can add the tag <meta name="robots" content="nofollow"> inside the <head> tag for the page. You can find more details about robots meta tag on the Google Search Central blog39.
 Combat comment spam with "nofollow"
 Setting the value of the "rel" attribute of a link to "nofollow" or "ugc" will tell Google that certain links on your site shouldn't be followed or pass your page's reputation to the pages linked to. Nofollowing a link means adding rel="nofollow" or a more specific attribute such as "ugc" inside the link's anchor tag, as shown here:
 <a href="http://www.example.com" rel="nofollow">Anchor text here</a>
@@ -318,7 +319,7 @@ or:
 <a href="http://www.example.com" rel="ugc">Anchor text here</a>
 When would this be useful? If your site has a blog with public commenting turned on, links within those comments could pass your reputation to pages that you may not be comfortable vouching for. Blog comment areas on pages are highly susceptible to comment spam. Nofollowing these user-added links ensures that you're not giving your page's hard-earned reputation to a spammy site.
 Automatically add "nofollow" to comment columns and message boards
-Many blogging software packages automatically nofollow user comments, but those that don't can most likely be manually edited to do this. This advice also goes for other areas of your site that may involve user-generated content, such as guest books, forums, shout-boards, referrer listings, etc. If you're willing to vouch for links added by third parties (for example, if a commenter is trusted on your site), then there's no need to use nofollow on links; however, linking to sites that Google considers spammy can affect the reputation of your own site. The Webmaster Help Center has more tips on avoiding comment spam40, for example by using CAPTCHAs and turning on comment moderation.
+Many blogging software packages automatically nofollow user comments, but those that don't can most likely be manually edited to do this. This advice also goes for other areas of your site that may involve user-generated content, such as guest books, forums, shout-boards, referrer listings, etc. If you're willing to vouch for links added by third parties (for example, if a commenter is trusted on your site), then there's no need to use nofollow on links; however, linking to sites that Google considers spammy can affect the reputation of your own site. The Google Search Central documentation has more tips on avoiding comment spam40, for example by using CAPTCHAs and turning on comment moderation.
 Optimize your images
 Use HTML images
 Use HTML image elements to embed images in your content.
@@ -350,7 +351,7 @@ Use commonly supported filetypes - Most browsers support JPEG, GIF, PNG, BMP and
 Make your site mobile-friendly
 The world is mobile today. Most people are searching on Google using a mobile device. The desktop version of a site might be difficult to view and use on a mobile device. As a result, having a mobile ready site is critical to your online presence. In fact, starting in late 2016, Google has begun experiments to primarily use the mobile version of a site's content42 for ranking, parsing structured data, and generating snippets.
 Understand the difference between devices
-Smartphone - In this document, "mobile" or “mobile devices" refers to smartphones, such as devices running Android, iPhone, or Windows Phone. Mobile browsers are similar to desktop browsers in that they can render a broad set of the HTML5 specification, although their screen size is smaller and in almost all cases their default orientation is vertical.
+Smartphone - In this document, "mobile" or "mobile devices" refers to smartphones, such as devices running Android, iPhone, or Windows Phone. Mobile browsers are similar to desktop browsers in that they can render a broad set of the HTML5 specification, although their screen size is smaller and in almost all cases their default orientation is vertical.
 Tablet - We consider tablets as devices in their own class, so when we speak of mobile devices, we generally do not include tablets in the definition. Tablets tend to have larger screens, which means that, unless you offer tablet-optimized content, you can assume that users expect to see your site as it would look on a desktop browser rather than on a smartphone browser.
 Multimedia phone - These are phones with browsers that are able to render pages coded to meet XHTML standards, support HTML5 Markup, JavaScript/ECMAScript but might not support some of the extension APIs in the HTML5 standard. This generally describes the browser in most 3G-ready phones that are not smartphones.
 Feature phones - On these phones, browsers lack the capability to render normal desktop web pages coded using standard HTML. This includes browsers that render only cHTML (iMode), WML, XHTML-MP, etc.
@@ -360,7 +361,7 @@ There are multiple ways of making your website mobile ready and Google supports 
 Responsive web design43 (Recommended)
 Dynamic serving44
 Separate URLs45
-After you have created a mobile-ready site, you can use Google's Mobile-friendly test46 to check if pages on your site meet the criteria for being labeled “Mobile-friendly" on Google Search result pages. You can also check out the Search Console Mobile Usability report47 to fix mobile usability issues affecting your site.
+After you have created a mobile-ready site, you can use Google's Mobile-friendly test46 to check if pages on your site meet the criteria for being labeled "Mobile-friendly" on Google Search result pages. You can also check out the Search Console Mobile Usability report47 to fix mobile usability issues affecting your site.
 If your site serves lots of static content (like blog posts or product landing pages) across multiple pages, consider implementing it using AMP48 (Accelerated Mobile Pages). It's a special flavor of HTML that ensures your site stays fast and user friendly, and can be further accelerated by various platforms, including Google Search.
 Configure mobile sites so that they can be indexed accurately
 Regardless of which configuration you choose to set up your mobile site, there are key points that you should take note of:
@@ -377,7 +378,7 @@ If you use separate URLs for your mobile pages, make sure to test both the mobil
 For more information, see Google's mobile-friendly guide.51
 Promote your website
 While most of the links to your site will be added gradually, as people discover your content through search or other ways and link to it, Google understands that you'd like to let others know about the hard work you've put into your content. Effectively promoting your new content will lead to faster discovery by those who are interested in the same subject. As with most points covered in this document, taking these recommendations to an extreme could actually harm the reputation of your site.
-A blog post on your own site letting your visitor base know that you added something new is a great way to get the word out about new content or services. Other webmasters who follow your site or RSS feed could pick the story up as well.
+A blog post on your own site letting your visitor base know that you added something new is a great way to get the word out about new content or services. Other website owners who follow your site or RSS feed could pick the story up as well.
 Putting effort into the offline promotion of your company or site can also be rewarding. For example, if you have a business site, make sure its URL is listed on your business cards, letterhead, posters, etc. You could also send out recurring newsletters to clients through the mail letting them know about new content on the company's website.
 If you run a local business, adding its information to Google My Business52 will help you reach customers on Google Maps and web search.
 Best Practices
@@ -393,10 +394,10 @@ Spamming link requests out to all sites related to your topic area.
 Purchasing links from another site with the aim of getting PageRank.
 Analyze your search performance and user behavior
 Analyzing your search performance
-Major search engines, including Google, provide free tools for webmasters to analyze their performance in their search engine. For Google, that tool is Search Console54.
+Major search engines, including Google, provide free tools for website owners to analyze their performance in their search engine. For Google, that tool is Search Console54.
 Search Console provides two important categories of information: Can Google find my content? How am I performing in Google Search results?
 Using Search Console won't help your site get preferential treatment; however, it can help you identify issues that, if addressed, can help your site perform better in search results.
-With the service, webmasters can:
+With the service, website owners can:
 See which parts of a site Googlebot had problems crawling
 Test and submit sitemaps
 Analyze or generate robots.txt files
@@ -406,7 +407,7 @@ Identify issues with title and description meta tags
 Understand the top searches used to reach a site
 Get a glimpse at how Googlebot sees pages
 Receive notifications of quality guidelines violations and request a site reconsideration
-Microsoft's Bing Webmaster Tools55 also offers free tools for webmasters.
+Microsoft's Bing Webmaster Tools55 also offers free tools for website owners.
 Analyzing user behavior on your site
 If you've improved the crawling and indexing of your site using Google Search Console or other services, you're probably curious about the traffic coming to your site. Web analytics programs like Google Analytics are a valuable source of insight for this. You can use these to:
 Get insight into how users reach and behave on your site
@@ -414,16 +415,16 @@ Discover the most popular content on your site
 Measure the impact of optimizations you make to your site, for example, did changing those title and description meta tags improve traffic from search engines?
 For advanced users, the information an analytics package provides, combined with data from your server log files, can provide even more comprehensive information about how visitors are interacting with your documents (such as additional keywords that searchers might use to find your site).
 Additional Resources
-Webmaster Central Blog56
-Get the latest information from our Webmaster Central blog. You can find information about updates to Google Search, new Search Console features, and much more.
-Webmaster Help Forum57
-Post questions about your site’s issues and find tips to create high quality sites from the product forum for webmasters. There are many experienced contributors in the forum, including Top Contributors58 and occasionally Googlers.
-Google Webmasters Twitter59
+Google Search Central blog56
+Get the latest information from our Google Search Central blog. You can find information about updates to Google Search, new Search Console features, and much more.
+Google Search Central Help Forum57
+Post questions about your site's issues and find tips to create high quality sites from the product forum for website owners. There are many experienced contributors in the forum, including Top Contributors58 and occasionally Googlers.
+Google Search Central Twitter59
 Follow us for news and resources to help you make a great site.
-Google Webmasters YouTube Channel60
-Watch hundreds of helpful videos created for the webmaster community and get your questions answered by Googlers.
+Google Search Central YouTube Channel60
+Watch hundreds of helpful videos created for the website owner community and get your questions answered by Googlers.
 How Search Works61
-See what happens behind the scenes as you search for something in Google Search. You’ll learn some really cool facts!
+See what happens behind the scenes as you search for something in Google Search. You'll learn some really cool facts!
 Get Your Business Online62
 Register a free website if you have a small business. GYBO is a partnership between Google and Homestead to help small businesses register a free website for one year.
 Appendix: Link URLs used in this paper
@@ -442,11 +443,11 @@ https://developers.google.com/search/docs/beginner/do-i-need-seo
 https://developers.google.com/search/docs/advanced/sitemaps/overview
 https://developers.google.com/search/docs/advanced/robots/intro
 https://support.google.com/webmasters/topic/4598466
-https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html
+https://developers.google.com/search/blog/2014/05/understanding-web-pages-better.html
 https://support.google.com/webmasters/answer/9012289
 https://www.youtube.com/watch?v=MOfhHPp5sWs
-http://googlewebmastercentral.blogspot.com/2007/09/improve-snippets-with-meta-description.html
-https://webmasters.googleblog.com/2017/06/better-snippets-for-your-users.html
+https://developers.google.com/search/blog/2007/09/improve-snippets-with-meta-description.html
+https://developers.google.com/search/blog/2017/06/better-snippets-for-your-users.html
 https://developers.google.com/search/docs/advanced/appearance/good-titles-snippets
 https://developers.google.com/search/docs/guides/intro-structured-data
 https://developers.google.com/search/docs/guides/search-gallery
@@ -458,7 +459,7 @@ https://developers.google.com/search/docs/guides/search-gallery
 https://developers.google.com/search/docs/data-types/breadcrumbs
 https://developers.google.com/search/docs/advanced/guidelines/rich-media-files
 https://developers.google.com/search/docs/advanced/crawling/custom-404-pages
-http://googlewebmastercentral.blogspot.com/2008/10/webmaster-tools-shows-crawl-error.html
+https://developers.google.com/search/blog/2008/10/webmaster-tools-shows-crawl-error.html
 http://support.google.com/webmasters/answer/93633
 https://developers.google.com/search/docs/advanced/crawling/consolidate-duplicate-urls
 https://ads.google.com/home/tools/keyword-planner/
@@ -466,17 +467,17 @@ https://support.google.com/webmasters/answer/7576553
 https://developers.google.com/search/docs/advanced/guidelines/duplicate-content
 https://developers.google.com/search/docs/advanced/guidelines/hidden-text-links
 https://www.thinkwithgoogle.com/marketing-resources/better-ad-standards/
-https://webmasters.googleblog.com/2007/03/using-robots-meta-tag.html
+https://developers.google.com/search/blog/2007/03/using-robots-meta-tag.html
 https://developers.google.com/search/docs/advanced/guidelines/prevent-comment-spam
 https://developers.google.com/search/docs/advanced/sitemaps/image-sitemaps
-https://webmasters.googleblog.com/2016/11/mobile-first-indexing.html
+https://developers.google.com/search/blog/2016/11/mobile-first-indexing.html
 https://developers.google.com/search/mobile-sites/mobile-seo/responsive-design
 https://developers.google.com/search/mobile-sites/mobile-seo/dynamic-serving
 https://developers.google.com/search/mobile-sites/mobile-seo/separate-urls
 https://search.google.com/test/mobile-friendly
 https://www.google.com/webmasters/tools/mobile-usability
 https://www.ampproject.org/
-https://webmasters.googleblog.com/2016/08/helping-users-easily-access-content-on.html
+https://developers.google.com/search/blog/2016/08/helping-users-easily-access-content-on.html
 https://search.google.com/test/mobile-friendly
 https://developers.google.com/search/mobile-sites/
 https://www.google.com/business/
@@ -486,9 +487,10 @@ https://www.bing.com/toolbox/webmaster
 https://support.google.com/webmasters/go/blog
 https://g.co/WebmasterHelpForum
 http://www.google.com/get/topcontributor/
-http://twitter.com/googlewmc
-http://www.youtube.com/GoogleWebmasterHelp
+https://twitter.com/googlesearchc
+https://www.youtube.com/c/GoogleSearchCentral
 http://www.google.com/insidesearch/howsearchworks/thestory/index.html
 http://www.gybo.com/
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

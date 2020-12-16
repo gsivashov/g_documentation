@@ -1,27 +1,189 @@
 https://support.google.com/webmasters/answer/35253
 
-Crawl Stats reportThe Crawl Stats report provides information on Googlebot's activity on your site for the last 90 days. These stats take into account all content types that we download (such as CSS, JavaScript, Flash, and PDF files, and images).
-Open the Crawl Stats report
-Crawl stats are available only for verified websites.
-Understanding the data
-There's no "good" crawl number, but you should see a relatively even chart that increases over time as you increase the size of your site. If you see a sudden drop or spike, read on.
+Crawl Stats reportThe Crawl Stats report shows you statistics about Google's crawling history on your website. For instance, how many requests were made and when, what your server response was, and any availability issues encountered. You can use this report to detect whether Google encounters serving problems when crawling your site.
+This report is aimed at advanced users. If you have a site with fewer than a thousand pages, you should not need to use this report or worry about this level of crawling detail.
+This report is available only for domain-level properties. That is, the property must be either a Domain property (such as example.com or m.example.com) or a URL-prefix property at the domain level (https://example.com, http://example.com, http://m.example.com).
+Open Crawl Stats report
+You can reach the Crawl Stats report in Search Console by clicking
+(Property settings) > Crawl stats.
+Getting started
+You should understand the following information before using this report:
+How Google Search works (the long version).
+Advanced users topics, especially the crawling and indexing, and sitemaps topics.
+Various topics on managing access to your site, including robots.txt blocking.
+If you have a large site (hundreds of thousands of pages), here's a guide about managing and troubleshooting your crawl budget.
+About the data
+All URLs shown and counted are the actual URLs requested by Google; data is not assigned to canonical URLs as is done in some other reports.
+If a URL has a redirect, each request in the redirect chain is counted as a separate request. So if page1 redirects to page2, which redirects to page3, if Google requests page1, you will see separate requests for page1 (returns 301/302), page2 (returns 301/302), and page3 (hopefully returns 200). Note that only pages on the current domain are shown.
+Crawls that were considered but not made because robots.txt was unavailable are counted in the crawl totals, but not in the crawl details sections. More information
+Resources and scope:
+All data is limited to the currently selected domain. Requests to other domains will not be shown. This includes requests for any page resources (such as images) hosted outside this property. So if your page example.com/mypage includes the image google.com/img.png, the request for google.com/img.png will not be shown in the Crawl Stats report for property example.com.
+Similarly, requests to a sibling domain (en.example and de.example) will not be shown. So if you are looking at the Crawl Stats report for en.example, requests for an image on de.example are not shown.
+However, requests between subdomains can be seen from the parent domain. So for example, if you view data for example.com, you can see all requests to example.com, en.example, de.example.com, and any other child domains at any level below example.com.
+Conversely, if your property's resources are used by a page in another domain, you may see crawl requests associated with the host page, but you will not see any context indicating that the resource is being crawled because it is used by a page on another domain (that is, you won't see that the image example.com/imageX.png was crawled because it is included in the page anotherexample.com/mypage.)
+Crawl data includes both http and https protocols, even for URL-prefix properties. This means that the Crawl Stats report for http://example.com includes requests to both http://example.com and https://example.com. However, the example URLs for URL-prefix properties are limited to the protocol defined for property (http or https).
+Known issue: The Crawl Stats report currently reports most crawl requests, but some requests might not be counted for various reasons. We expect our coverage to increase over time to cover most, if not all requests. Therefore you might see slight differences between your site's request logs and the numbers reported here.
+Navigating the report
+The report shows the following crawl information about your site:
+Total crawl requests
+Total download size
+Average response time
+Host status
+Crawl responses
+File type
+Crawl purpose
+Googlebot type
+Click any table entry to get a detailed view for that item, including a list of example URLs; click a URL to get details for that specific crawl request. For example, in the table showing responses grouped by type, click the HTML row to see aggregated crawl information for all HTML pages crawled on your site, as well as details such as the crawl time, response code, response size, and more for an example selection of those URLs.
+Hosts and child domains
+If your property is at the domain level (example.com, http://example.com, https://m.example.com), and it contains two or more child domains (say fr.example.com and de.example.com), you can see data for the parent, which includes all children, or scoped to a single child domain.
+To see the report scoped to a specific child, click the child in the Hosts lists on the landing page of the parent domain. Only the top 20 child domains that received traffic in the past 90 days are shown.
+Example URLs
+You can click into any of the grouped data type entries (response, file type, purpose, Googlebot type) to see a list of example URLs of that type.
+Example URLs are not comprehensive, but just a representative example. If you don't find a URL listed, it doesn't mean that we didn't request it. The number of examples can be weighted by day, and so you might find that some types of requests might have more examples than other types. This should balance out over time.
+Total crawl requests
+The total number of crawl requests issued for URLs on your site, whether successful or not. Includes requests for resources used by the page if these resources are on your site; requests to resources hosted outside of your site are not counted. Duplicate requests for the same URL are counted individually. If your robots.txt file is insufficiently available, potential fetches are counted.
+Unsuccessful requests that are counted include the following:
+Fetches that were never made because the robots.txt file was insufficiently available.
+Fetches that failed due to DNS resolution issues
+Fetches that failed due to server connectivity issues
+Fetches abandoned due to redirect loops
+Total download size
+Total number of bytes downloaded from your site during crawling, for the specified time period. If Google cached a page resource that is used by multiple pages, the resource is only requested the first time (when it is cached).
+Average response time
+Average response time for all resources fetched from your site during the specified time period. Each resource linked by a page is counted as a separate response.
+Host status
+Host status describes whether or not Google encountered availability issues when trying to crawl your site. Status can be one of the following values:
+Google didn't encounter any significant crawl availability issues on your site in the past 90 days--good job! Nothing else to do here.
+Google encountered at least one significant crawl availability issue in the last 90 days on your site, but it occurred more than a week ago. The error might have been a transient issue, or the issue might have been resolved. You should inspect the Response table to see what the problems were, and decide whether you need to take any action.
+Google encountered at least one significant crawl availability issue in the last week on your site. Because the error occurred recently, you should try to determine whether this is a recurring problem. Inspect the Response table to see what the problems were, and decide whether you need to take any action.
+What to look for
+Ideally your host status should be Green. If your availability status is red, click to see availability details for robots.txt availability, DNS resolution, and host connectivity.
+Host status details
+Host availability status is assessed in the following categories. A significant error in any category can lead to a lowered availability status. Click on a category in the report to get more details.
+For each category, you'll see a chart of crawl data for the time period. The chart has a dotted red line; if the metric was above the dotted line for this category (for example, if DNS resolution fails for more than 5% of requests on a given day), that is considered an issue for that category, and the status will reflect the recency of the last issue.
+robots.txt fetching
+The graph shows the failure rate for robots.txt requests during a crawl. Google requests this file frequently, and if the request doesn't return either a valid file (either populated or empty) or a 404 (file does not exist) response, then Google will slow or stop crawling your site until it can get an acceptable robots.txt response. (See below for details)
+DNS resolution
+The graph shows when your DNS server didn't recognize your hostname or didn't respond during crawling. If you see errors, check with your registrar to make that sure your site is correctly set up and that your server is connected to the Internet.
+Server connectivity
+The graph shows when your server was unresponsive or did not provide a full response for a URL during a crawl. See Server errors to learn about fixing these errors.
+More robots.txt availability details
+Here is a more detailed description of how Google checks (and depends on) robots.txt files when crawling your site.
+Your site is not required to have a robots.txt file, but it must return a successful response (as defined below) when asked for this file, or else Google might stop crawling your site.
+Successful robots.txt responses
+Any of the following are considered successful responses:
+HTTP 200 and a robots.txt file (the file can be valid, invalid, or empty). If the file has syntax errors in it, the request is still considered successful, though Google might ignore any rules with a syntax error.
+HTTP 403/404/410 (the file does not exist). Your site is not required to have a robots.txt file.
+Unsuccessful robots.txt responses
+HTTP 429/5XX (connection issue)
+Here is how Google requests and uses robots.txt files when crawling a site:
+Before Google crawls your site, it first checks if there's a recent successful robots.txt request (less than 24 hours old).
+If Google has a recent successful robots.txt response, crawling will start, respecting the retrieved robots.txt rules.
+If Google doesn't have a recent successful robots.txt response, or if the last response was unsuccessful, Google will request your robots.txt file:
+If successful, the crawl can start.
+If not successful, Google will stop crawling, but will continue to request your robots.txt file for about 30 days. If Google still cannot get a successful robots.txt response after 30 days:
+If most other URLs on the site are accessible, Google uses the last successfully fetched robots.txt rules and will crawl based on that.
+If the site is generally inaccessible, Google will slowly stop crawling your site.
+Any crawls that were abandoned because the robots.txt file was unavailable are counted in crawling totals. However, these crawls were not actually made, so you won't see any data for them in the grouping reports (crawls by purpose, crawls by response, and so on).
+Crawl responses
+This table shows the responses that Google received when crawling your site, grouped by response type, as a percentage of all crawl responses. Data is based on total number requests, not by URL, so if Google requested a URL twice and got Server error (500) the first time, and OK (200) the second time, the response would be 50% Server error and 50% OK.
+What to look for
+Most responses should be 200 or other "Good"-type responses, unless you are doing a site reorganization or site move. See the list below to learn how to handle other response codes.
+Here are some common response codes, and how to handle them:
+Good response codes
+These pages are fine and not causing any issues.
+OK (200): In normal circumstances, the vast majority of responses should be 200 responses.
+Moved permanently (301): Your page is returning an HTTP 301 (permanently moved) response, which is probably what you wanted.
+Moved temporarily (302): Your page is returning an HTTP 302 (temporarily moved) response, which is probably what you wanted. If this page is permanently moved, change this to 301.
+Moved (other): Another 300 redirect response (not 301 or 302).
+Not modified (304): The page has not changed since the last crawl request.
+Possibly good response codes
+These responses might be fine, but you might check to make sure that this is what you intended.
+Blocked by robots.txt: This is typically working as you intended. However, you might want to ensure that you are not blocking any pages or resources that you do want Google to crawl. Learn more about robots.txt files.
+Not found (404) errors might be because of broken links within your site, or outside your site. It's not possible, worthwhile, or even desirable to fix all 404 errors on your site, and often 404 is the correct thing to return (for example, if the page is truly gone without a replacement). Learn how, or whether, to fix 404 errors.
+Bad response codes
+You should fix pages returning these errors to improve your crawling.
+robots.txt not available: If your robots.txt file remains unavailable for a day, Google will halt crawling for a while until it can get an acceptable response to a request for robots.txt. This is not the same as Not found (404) for a robots.txt file, which is acceptable. See more robots.txt details.
+Unauthorized (401/407): You should either block these pages from crawling with robots.txt, or decide whether they should be unblocked. If these pages do not have secure data and you want them crawled, you might consider moving the information to non-secured pages, or allowing entry to Googlebot without a login (although be warned that Googlebot can be spoofed, so allowing entry for Googlebot effectively removes the security of the page).
+Server error (5XX): These errors cause availability warnings and should be fixed if possible. The thumbnail chart shows approximately when these errors occurred; click to see more details and exact times. Decide whether these were transitory issues or represent deeper availability errors in your site. If Google is overcrawling your site, you can request a lower crawl rate. If this is an indication of a serious availability issue, read about crawling spikes. See Server errors to learn about fixing these errors.
+Other client error (4XX): Another 4XX (client-side) error not specified here. Best to fix these issues.
+DNS unresponsive: Your DNS server was not responding to requests for URLs on your site.
+DNS error: Another, unspecified DNS error.
+Fetch error: Page could not be fetched because of a bad port number, IP address, or unparseable response.
+Page could not be reached: Any other error in retrieving the page, where the request never reached the server. Because these requests never reached the server, these requests will not appear in your logs.
+Page timeout: Page request timed out.
+Redirect error: A request redirection error, such as too many redirects, empty redirect, or circular redirect.
+Other error: Another error that does not fit into any of the categories above.
+Crawled file types
+The file type returned by the request. Percentage value for each type is the percentage of responses of that type, not the percentage of of bytes retrieved of that type.
+Possible values:
+HTML
+Image
+Video - One of the supported video formats.
+JavaScript
+CSS
+PDF
+Other XML - An XML file not including RSS, KML, or any other formats built on top of XML.
+JSON
+Syndication - An RSS or Atom feed
+Audio
+Geographic data - KML or other geographic data.
+Other file type - Another file type not specified here.
+Unknown (Failed) - If the request fails, the file type isn't known.
+What to look for
+If you are seeing availability issues or slow response rates, check this table to get a feel for what types of resources Google is crawling, and why this might be slowing down your crawl. Is Google requesting many small images that should be blocked? Is Google requesting resources that are hosted on another, less responsive site? Click into different file types to see a chart of average response time by date, and number of requests by date, to see if spikes in slow responses of that type correspond to spikes in general slowness or unavailability.
+Crawl purpose
+Discovery: The URL requested was never crawled by Google before.
+Refresh: A recrawl of a known page.
+If you have rapidly changing pages that are not being recrawled often enough, ensure that they are included in a sitemap. For pages that update less rapidly, you might need to specifically ask for a recrawl. If you recently added a lot of new content, or submitted a sitemap, you should ideally see a bump in discovery crawls on your site.
+Googlebot type
+The type of user agent used to make the crawl request. Google has a number of user agents that crawl for different reasons and have different behaviors. The following types are reported.
+Smartphone: Googlebot smartphone
+Desktop: Googlebot desktop
+Image: Googlebot image. If the image is loaded as a page resource, the Googlebot type is counted as Page resource load, not as Image.
+Video: Googlebot video. If the video is loaded as a page resource, the Googlebot type is counted as Page resource load, not as Video.
+Page resource load: A secondary fetch for resources used by your page. When Google crawls the page, it fetches important linked resources such as images or CSS files, in order to render the page before trying to index it. This is the user agent that makes these resource requests.
+AdsBot: One of the AdsBot crawlers. If you are seeing a spike in these requests, it's likely that you have recently created a number of new targets for Dynamic Search Ads on your site. See Why did my crawl rate spike. AdsBot crawls URLs about every 2 weeks.
+StoreBot: The product shopping crawler.
+Other agent type: Another Google crawler not specified here.
+The majority of your crawl requests should come from your primary crawler. If you are having crawling spikes, check the user agent type. If the spikes seem to be caused by the AdsBot crawler, see Why did my crawl rate spike.
+Troubleshooting
+Crawl rate too high
+Googlebot has algorithms to prevent it from overloading your site during crawling. However if, for some reason, you need to limit the crawl rate, learn how to do so here.
+Some tips for reducing your crawl rate:
+Fine tune your robots.txt file to block out pages that shouldn't be called.
+You can set your preferred maximum crawl rate in Search Console as a short-term solution. We don't recommend using this long term, because it doesn't let you tell us specifically which pages or resources you do want crawled versus those you don't want crawled.
+Be sure that you don't allow crawling to pages with "infinite" results, like an infinite calendar or infinite search page. Block them with robots.txt or nofollow tags.
+If URLs no longer exist or have moved, be sure to return the correct response codes: use 404 or 410 for URLs that no longer exist or which are invalid; use 301 redirects for URLs that were permanently replaced by others (302 if it's not permanent); use 503 for temporary planned downtime; make sure your server returns a 500 error when it sees issues that it can't handle.
+If your site is being overwhelmed and you need an emergency reduction, see Why did my crawl rate spike? below.
+Why did my crawl rate spike?
+If you put up a bunch of new information, or have some really useful information on your site, you might be crawled a bit more than you'd like. For example:
+You unblocked a large section of your site from crawling
+You added a large new section of your site
+You added a large number of new targets for Dynamic Search Ads by adding new page feeds or URL_Equals rules
+If your site is being crawled so heavily that your site is having availability issues, here is how to protect it:
+Determine which Google crawler is overcrawling your site. Look at your website logs or use the Crawl Stats report.
+Immediate relief:
+If you want a simple solution, use robots.txt to block crawling for the overloading agent (googlebot, adsbot, etc.). However, this can take up to a day to take effect.
+If you're able to detect and respond to increased load dynamically, return HTTP 5XX/429 when you're nearing your serving limit. Be sure not to return 5XX or 429 for more than two or three days, though, or it can signal Google to crawl your site less frequently in the long term.
+Change your crawl rate using the Crawl Rate Settings page, if the option is available.
+Two or three days later, when Google's crawl rate has adapted, you can remove your robots.txt blocks or stop returning error codes from step 1.
+If you are being overwhelmed by AdsBot crawls, the problem is likely that you have created too many targets for Dynamic Search Ads on your site using URL_Equals or page feeds. If you don't have the server capacity to handle these crawls you should either limit your ad targets, add URLs in smaller batches, or increase your serving capacity. Note that AdsBot will crawl your pages every 2 weeks, so you will need to fix the issue or it will recur.
+Note that if you've limited the crawl rate using the crawl settings page, the crawl rate will return to automatic adjustment after 90 days.
+Crawl rate too low
+You can't tell Google to increase your crawl rate (unless you've explicitly reduced it for your property). However, you can learn more about how to manage your crawling for very large or frequently updated websites.
+For small or medium websites, if you find that Google isn't crawling all of your site, try updating your website's sitemaps, and make sure that you're not blocking any pages.
 Why did my crawl rate drop?
 In general, your Google crawl rate should be relatively stable over the time span of a week or two; if you see a sudden drop, here are a few possible reasons:
 You added a new (or very broad) robots.txt rule. Make sure that you are only blocking the resources that you need to. If Google needs specific resources such as CSS or JavaScript to understand the content, be sure you do not block them from Googlebot.
-Broken HTML or unsupported content on your pages: If Googlebot can't parse the content of the page, perhaps because it uses an unsupported media type or the page is only images, it won't be able to crawl them. Use the URL Inspection tool to see how Googlebot sees your page.
+Broken HTML or unsupported content on your pages: If Googlebot can't parse the content of the page, perhaps because it uses an unsupported media type or the page is only images, it won't be able to crawl them. Use the URL Inspection tool to see how Googlebot sees your page.
 If your site is responding slowly to requests, Googlebot will throttle back its requests to avoid overloading your server. Check the Crawl Stats report to see if your site has been responding more slowly.
 If your server error rate increases, Googlebot will throttle back its requests to avoid overloading your server.
 Ensure that you haven't lowered your preferred maximum crawl rate.
-If a site has information that changes less frequently, or isn't very high quality, we might not crawl it as frequently.  Take an honest look at your site, get neutral feedback from people not associated with your site, and think about how or where your site could be improved overall.
-Why did my crawl rate spike?
-If you put up a bunch of new information, or have some really useful information on your site, you might be crawled a bit more than you'd like. Here are some tips for managing Googlebot's crawl rate for your site, if you feel that your server is being overwhelmed:
-Confirm that Googlebot is accessing your site and not another requester by looking at the Crawl Stats report and also checking the user agent in your logs.
-If you need to urgently block Googlebot crawling, return 503 HTTP result codes to its requests.
-Fine tune your robots.txt file to block out pages that shouldn't be called.
-You can set your  preferred maximum crawl rate in Search Console as a short-term solution. We don't recommend using this long term, because it doesn't let you tell us specifically which pages or resources you do want crawled versus those you don't want crawled.
-Be sure that you don't allow crawling to pages with "infinite" results, like an infinite calendar or infinite search page. Block them with robots.txt or nofollow tags.
-If URLs no longer exist or have moved, be sure to return the correct response codes: use 404 or 410 for URLs that no longer exist or which are invalid; use 301 redirects for URLs that were permanently replaced by others (302 if it's not permanent); use 503 for temporary planned downtime; make sure your server returns a 500 error when it sees issues that it can't handle.
+If a site has information that changes less frequently, or isn't very high quality, we might not crawl it as frequently. Take an honest look at your site, get neutral feedback from people not associated with your site, and think about how or where your site could be improved overall.
+Crawl totals much higher than crawling logs or crawl details section totals
+If the total crawl count seems much higher than the totals for the Crawl requests breakdown sections (by response, by type, and so on), this can occur when Google cannot crawl your site because your robots.txt file is unavailable for too long. In that circumstance, Google counts crawls that it might have made if your robots.txt file were available, but doesn't actually make those calls. Check your robots.txt fetching status to confirm if this is the issue.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Crawling and indexingOverview of crawling and indexing topicsManage your sitemapsBlock access to your contentRemove information from GoogleTell Google about your duplicate contentAsk Google to recrawl your URLsMake sure Googlebot is not blockedCreate custom 404 pagesTransfer, move, or migrate your siteInternational and multilingual sitesSpecial tags that Google understandsGoogle crawlersCrawl Stats reportChange Googlebot crawl rate
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats report
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

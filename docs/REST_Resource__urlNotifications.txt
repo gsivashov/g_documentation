@@ -4,6 +4,7 @@ Home
 Google Search Central
 Indexing API
 Reference
+Send feedback
 REST Resource: urlNotifications
 Resource: UrlNotification
 JSON representation
@@ -41,5 +42,6 @@ getMetadata
 Gets metadata about a Web Document.
 publish
 Notifies that a URL has been updated or deleted.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-11 UTC.

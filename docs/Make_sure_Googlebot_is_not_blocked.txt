@@ -4,9 +4,11 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Make sure Googlebot is not blocked
-Blocking Googlebot from accessing a site can directly affect Googlebot’s ability to crawl and index the site’s content, and may lead to a loss of ranking in Google’s search results. Unfortunately, many webmasters accidentally block Googlebot from accessing their site and, because Googlebot needs to be able to access a site in order to retrieve and honor the directions in its robots.txt file, may not even know it.
+Blocking Googlebot from accessing a site can directly affect Googlebot's ability to crawl and index the site's content, and may lead to a loss of ranking in Google's search results. Unfortunately, many website owners accidentally block Googlebot from accessing their site and, because Googlebot needs to be able to access a site in order to retrieve and honor the directions in its robots.txt file, may not even know it.
 When Google detects this issue, we may notify you that Googlebot is being blocked.
 You can see all pages blocked on your site in the Index Coverage report, or test a specific page using the URL Inspection tool.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

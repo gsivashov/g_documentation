@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Critic review
 Does your site provide combined rating scores from reviewers?
 Use review snippet structured data.
@@ -27,7 +28,7 @@ Google doesn't guarantee that your structured data will show up in search result
 your page is marked up correctly according to the Rich Results Test.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
-content. If you’re new to structured data, you can learn more about
+content. If you're new to structured data, you can learn more about
 how structured data works.
 Here's an overview of how to build, test, and release structured data. For a step-by-step guide
 on how to add structured data to a web page, check out the
@@ -476,7 +477,7 @@ The lowest value allowed in the reviewer's rating system. If this property is om
 author
 Person or
 Organization
-The author of the review. The reviewer’s name must be a valid name. For example,
+The author of the review. The reviewer's name must be a valid name. For example,
 "50% off until Saturday" is not a valid name for a reviewer.
 author.name
 Text
@@ -557,7 +558,7 @@ you define the best and worst score in the bestRating and
 worstRating properties. The rating
 can be a nested Rating or more specific
 subtype. The most typical subtype is
-AggregateRating. Here’s an
+AggregateRating. Here's an
 example of reviewRating.Rating:
 "reviewRating": [{
 "@type": "Rating",
@@ -569,7 +570,7 @@ EndorsementRating
 A rating that expresses some level of positive endorsement for the item being
 reviewed. For example, inclusion in a "critic's pick" blog, a "Like", or "+1" on a
 social network. EndorsementRating is a rating by itself (for example,
-“2 thumbs up”), not a rating on a scale. Here’s an example of
+"2 thumbs up"), not a rating on a scale. Here's an example of
 reviewRating.EndorsementRating:
 "reviewRating": [{
 "@type": "EndorsementRating",
@@ -651,12 +652,12 @@ data errors.
 Troubleshoot
 missing rich results / drop in total rich results.
 For general questions about crawling and indexing, check the
-Webmaster FAQ.
+Google Search crawling and indexing FAQ.
 Note: Allow time for re-crawling and re-indexing. Remember that it
 may take several days after publishing a page for Google to find and crawl it.
-Ask a question in the Webmaster
-Office Hours.
-Post a question in the Webmaster
+Ask a question in the Google Search Central office hours.
+Post a question in the Google Search Central
 forum.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-14 UTC.

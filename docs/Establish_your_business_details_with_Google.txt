@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Beginner SEO
+Send feedback
 Establish your business details with Google
 You can enhance the appearance and coverage of your official website and presence in Search
 results by first establishing it with Google. This makes it easier for users to recognize your
@@ -23,11 +24,11 @@ verify website ownership in Search Console. This
 process verifies the owners and operators of the site. Once you've verified your website,
 you can use Search Console to understand and monitor how Google displays information about your
 site.
-Update your site’s Google knowledge panel
+Update your site's Google knowledge panel
 Google algorithms find information, like your site's name, corporate contact
 information, and social profiles, that is publicly available on the web. You can update
 or provide more information for your site for broader reach and recognition in Search
-results. If you’re verified as an official representative, you can
+results. If you're verified as an official representative, you can
 update
 your Google knowledge panel to override the information Google finds automatically.
 Add structured data
@@ -62,5 +63,6 @@ Use the
 Structured Data Testing
 Tool to test your markup. Give our system a week to find and update your site
 details in Search results.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2020-12-14 UTC.

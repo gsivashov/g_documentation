@@ -152,5 +152,5 @@ Click Get Info.
 Check the Last successful fetch time to see when Google was last able to access your RSS feed. Note that this doesn't mean that Google was able to read and understand the feed, only that it accessed the feed.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpAbout podcasts on GoogleGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageMarket your podcast with Google Podcasts brandingTroubleshooting
+HelpAbout podcasts on GoogleGet your podcast on GoogleManage your podcast and episodes on GoogleMarket your podcast with Google Podcasts brandingMonitor your podcast usageTroubleshooting
 Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

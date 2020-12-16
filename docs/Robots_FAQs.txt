@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Robots FAQs
 General robots questions
 Does my website need a robots.txt file?
@@ -19,7 +20,6 @@ What happens if I have a mistake in my robots.txt file or use an unsupported dir
 What program should I use to create a robots.txt file?
 If I block Google from crawling a page using a robots.txt disallow directive, will it disappear from search results?
 How long will it take for changes in my robots.txt file to affect my search results?
-How do I specify AJAX-crawling URLs in the robots.txt file?
 How can I temporarily suspend all crawling of my website?
 My server is not case-sensitive. How can I disallow crawling of some folders completely?
 I return 403 "Forbidden" for all URLs including the robots.txt file. Why is the site still being crawled?
@@ -31,17 +31,17 @@ Does the robots meta tag disallow crawling?
 How does the nofollow robots meta tag compare to the rel="nofollow" link attribute?
 X-Robots-Tag HTTP header questions
 How can I check the X-Robots-Tag for a URL?
-Have we missed an FAQ? Feel free to post in our Webmaster Help Forum for more help!
+Have we missed an FAQ? Feel free to post in our Google Search Central Help Community for more help!
 General robots questions
 Does my website need a robots.txt file?
 No. When Googlebot visits a website, we first ask for permission to crawl by attempting to retrieve the robots.txt file. A website without a robots.txt file, robots meta tags or X-Robots-Tag HTTP headers will generally be crawled and indexed normally.
 Which method should I use?
 It depends. In short, there are good reasons to use each of these methods:
-robots.txt: Use it if crawling of your content is causing issues on your server. For example, you may want to disallow crawling of infinite calendar scripts. You should not use the robots.txt to block private content (use server-side authentication instead), or handle canonicalization (see our Help Center). If you must be certain that a URL is not indexed, use the robots meta tag or X-Robots-Tag HTTP header instead.
+robots.txt: Use it if crawling of your content is causing issues on your server. For example, you may want to disallow crawling of infinite calendar scripts. You should not use the robots.txt to block private content (use server-side authentication instead), or handle canonicalization. If you must be certain that a URL is not indexed, use the robots meta tag or X-Robots-Tag HTTP header instead.
 robots meta tag: Use it if you need to control how an individual HTML page is shown in search results (or to make sure that it's not shown).
 X-Robots-Tag HTTP header: Use it if you need to control how non-HTML content is shown in search results (or to make sure that it's not shown).
 Can I use these methods to remove someone else's site?
-No. These methods are only valid for sites where you can modify the code or add files. If you want to remove content from a third-party site, you need to contact the webmaster to have them remove the content.
+No. These methods are only valid for sites where you can modify the code or add files. If you want to remove content from a third-party site, you need to contact the website owner to have them remove the content.
 How can I slow down Google's crawling of my website?
 You can generally adjust the crawl rate setting in your Google Search Console account.
 Robots.txt questions
@@ -82,5 +82,6 @@ The nofollow robots meta tag applies to all links on a page. The rel="nofollow" 
 X-Robots-Tag HTTP header questions
 How can I check the X-Robots-Tag for a URL?
 A simple way to view the server headers is to use a web-based server header checker or to use the "Fetch as Googlebot" feature in Google Search Console.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-09 UTC.

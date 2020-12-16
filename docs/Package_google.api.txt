@@ -4,6 +4,7 @@ Home
 Google Search Central
 Indexing API
 Reference
+Send feedback
 Package google.api
 Index
 HttpBody (message)
@@ -37,5 +38,6 @@ HTTP body binary data.
 extensions[]
 Any
 Application specific response metadata. Must be set in the first response for streaming APIs.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 Last updated 2020-11-11 UTC.

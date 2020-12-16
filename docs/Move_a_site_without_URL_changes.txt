@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Move a site without URL changes
 This guide shows how to minimize the impact on your Google Search performance when migrating your site's hosting infrastructure. For example, when switching hosting providers or moving to a content distribution network (CDN). This guide is only for migrations that don't affect the user-visible URL.
 Changing the URLs? If you're making visible URL changes, start here instead.
@@ -12,7 +13,7 @@ Review FAQs and basic information about site moves. Know what to expect, and how
 Prepare the new hosting infrastructure. Upload your content to the new servers or configure your CDN and your origin servers, and test it.
 Start the site move. Change the DNS settings of your domain name to point to the new hosting infrastructure. This step is the actual site move step that starts the process of sending your traffic to the new infrastructure.
 Monitor traffic. Keep tabs on the traffic served by the old and new hosting.
-Shut down. Shut down the old hosting infrastructure when you’re confident that all users are receiving content correctly from the new infrastructure and no one is using the old infrastructure.
+Shut down. Shut down the old hosting infrastructure when you're confident that all users are receiving content correctly from the new infrastructure and no one is using the old infrastructure.
 Prepare the new hosting infrastructure
 This section covers steps to take before you start the actual site move.
 Copy and test your new site
@@ -22,10 +23,10 @@ Create a testing environment, perhaps with IP-restricted access, through which y
 Allow for public testing with a temporary hostname for your new infrastructure (like beta.example.com) so you can test accessibility by browsers. A temporary hostname can help you test whether Googlebot can reach your site or not.
 Test the new site with a small portion of your live traffic if possible.
 Check that Googlebot is able to access the new hosting infrastructure
-If you don’t already have a Search Console account, create a new account for your site to help you monitor Google access and traffic. If you created a
+If you don't already have a Search Console account, create a new account for your site to help you monitor Google access and traffic. If you created a
 temporary hostname for your new site, create an account for that hostname as well. Check that
 Googlebot can access your new infrastructure using the URL Inspection Tool in Search Console.
-Check your firewall configuration or denial of service (DoS) protection. Make sure it does not block Googlebot’s ability to reach the DNS or the hosting provider’s servers.
+Check your firewall configuration or denial of service (DoS) protection. Make sure it does not block Googlebot's ability to reach the DNS or the hosting provider's servers.
 Lower the TTL value for your DNS records
 You can help make your site move go faster if you lower your site DNS records' TTL value, which
 will allow the new settings to propagate to ISPs faster. DNS settings are
@@ -35,20 +36,20 @@ Consider lowering the TTL to a conservative low value (for example, a few hours)
 in advance of the site move to refresh DNS caches faster.
 Review Search Console verification
 Make sure your Search Console verification will continue to work after the site move.
-If you’re using the HTML file method to verify ownership of your site in Search Console, make sure you don’t forget to include your current verification file in your new copy of the site.
-Likewise, if you include in your content management system’s templates a meta tag or Google Analytics to verify ownership, ensure the new CMS copy includes these as well.
+If you're using the HTML file method to verify ownership of your site in Search Console, make sure you don't forget to include your current verification file in your new copy of the site.
+Likewise, if you include in your content management system's templates a meta tag or Google Analytics to verify ownership, ensure the new CMS copy includes these as well.
 Start the site move
 The move process is as follows.
 Remove any temporary blocks to crawling. While building the new copy of
 a site, some site owners use a robots.txt file to disallow all crawling by Googlebot and
 other crawlers, or use noindex meta tags or HTTP headers to block indexing of
-content. Be sure to remove any such blocks from the new copy of the site when you’re ready
+content. Be sure to remove any such blocks from the new copy of the site when you're ready
 to start the move.
 Update the DNS settings. You start the site move by updating the DNS records to point to the new hosting provider. Check with your DNS provider for how to do that. Because the DNS cache setting is cached, the records takes some time to fully propagate to all users on the internet.
 Monitor traffic
 Here are three things you can do to make sure your move is going smoothly:
 Keep an eye on the server logs on both new and old servers.
-As DNS setting propagates and the site traffic moves, you’ll notice a drop in traffic
+As DNS setting propagates and the site traffic moves, you'll notice a drop in traffic
 logged on the old servers and a corresponding increase in traffic on the new servers.
 Use different public DNS checking tools.
 Check that different ISPs around the world are updating to your new DNS settings correctly.
@@ -59,10 +60,11 @@ Rather than manually setting a maximum crawl rate in
 Search Console, keep the setting at Let Googlebot decide. This way,
 settings designed only for the old system won't interfere with the requirements of your
 new system.
-A note about Googlebot’s crawl rate
-It’s normal to see a temporary drop in Googlebot’s crawl rate immediately after the launch, followed by a steady increase over the next few weeks, potentially to rates that may be higher than before the move.
+A note about Googlebot's crawl rate
+It's normal to see a temporary drop in Googlebot's crawl rate immediately after the launch, followed by a steady increase over the next few weeks, potentially to rates that may be higher than before the move.
 This fluctuation occurs because we determine crawl rate for a site based on many signals, and these signals change when your hosting changes. As long as Googlebot doesn't encounter any serious problems or slowdowns when accessing your new serving infrastructure, it will try to crawl your site as fast as necessary and possible.
 Shut down old hosting
 Check the server logs on the old provider and, once the traffic to the old provider reaches zero, you can shut down your old hosting infrastructure. This completes the site move.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-10-28 UTC.
+Last updated 2020-12-14 UTC.

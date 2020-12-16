@@ -92,5 +92,5 @@ You can re-add a property that you have removed without verification, as long as
 To re-add the property, simply add the property as described above in steps 1-3, and you should automatically be re-verified.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpAbout Search ConsoleGet started with Search ConsoleAdd a website propertyUsing Search Console with your websiteImportant concepts
+HelpAbout Search ConsoleGet started with Search ConsoleAdd a website propertyImportant concepts
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

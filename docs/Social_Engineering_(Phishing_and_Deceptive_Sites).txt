@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Social Engineering (Phishing and Deceptive Sites)
 Social engineering is content that tricks visitors into doing something dangerous, such as revealing confidential information or downloading software. If Google detects that your website contains social engineering content, the Chrome browser may display a "Deceptive site ahead" warning when visitors view your site. You can check if any pages on your site are suspected of containing social engineering attacks by visiting the Security Issues report.
 Open the Security Issues Report
@@ -12,12 +13,12 @@ What is social engineering?
 A social engineering attack is when a web user is tricked into doing something dangerous online.
 There are different types of social engineering attacks:
 Phishing: The site tricks users into revealing their personal information (for example, passwords, phone numbers, or credit cards). In this case, the content pretends to act, or looks and feels, like a trusted entity — for example, a browser, operating system, bank, or government.
-Deceptive content: The content tries to trick you into doing something you’d only do for a trusted entity — for example, sharing a password, calling tech support, downloading software, or the content contains an ad that falsely claims that device software is out-of-date, prompting users into installing unwanted software.
+Deceptive content: The content tries to trick you into doing something you'd only do for a trusted entity — for example, sharing a password, calling tech support, downloading software, or the content contains an ad that falsely claims that device software is out-of-date, prompting users into installing unwanted software.
 Insufficiently labeled third-party services: A third-party service is someone that operates a site or service on behalf of another entity. If you (third party) operate a site on behalf of another (first) party without making the relationship clear, that might be flagged as social engineering. For example, if you (first party) run a charity website that uses a donation management website (third party) to handle collections for your site, the donation site must clearly identify that it is a third-party platform acting on behalf of that charity site, or else it could be considered social engineering.
 Google Safe Browsing protects web users by warning users before they visit pages that consistently engage in social engineering.
 Web pages are considered social engineering when they either:
 Pretend to act, or look and feel, like a trusted entity, like your own device or browser, or the website itself, or
-Try to trick you into doing something you’d only do for a trusted entity, like sharing a password,
+Try to trick you into doing something you'd only do for a trusted entity, like sharing a password,
 or calling a tech support number, or downloading software.
 Social engineering in embedded content
 Social engineering can also show up in content that is embedded in otherwise benign websites, usually in ads. Embedded social engineering content is a policy violation for the host page.
@@ -41,7 +42,7 @@ Fixing the problem
 If your site is flagged for containing social engineering (deceptive content), ensure that your page doesn't engage in any of the practices described above, and then follow these steps:
 Check in with Search Console.
 Verify that you own your site in Search Console and that no new, suspicious owners have been added.
-Check the Security Issues report to see if your site is listed as containing deceptive content (the reporting term for social engineering). Visit some sample flagged URLs listed in the report, but use a computer that's not inside the network that is serving your website (clever hackers can disable their attacks if they think the visitor is a site webmaster).
+Check the Security Issues report to see if your site is listed as containing deceptive content (the reporting term for social engineering). Visit some sample flagged URLs listed in the report, but use a computer that's not inside the network that is serving your website (clever hackers can disable their attacks if they think the visitor is a website owner).
 Remove deceptive content. Ensure that none of your site's pages contain deceptive content. If you believe Safe Browsing has classified a web page in error, please report it here.
 Check the third-party resources included in your site. Ensure that any ads, images, or other embedded third-party resources on your site's pages are not deceptive.
 Note that ad networks may rotate the ads shown on your site's pages. You therefore might need to refresh a page a few times before you're able to see any social engineering ads appear.
@@ -56,5 +57,6 @@ For example, a statement like this:
 This service is hosted by Example.com on behalf of Example.charities.com. More information
 A good usability guideline is whether a user viewing the page in isolation understands which site they are on, and the relationship between the first and third party at all times.
 Best practice: If you need a third-party to perform a basic support service for your site, a best practice is to use an industry standard third party for that service. For example, to manage user authentication on your site, you should use OAuth rather than managing authentication yourself.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-19 UTC.
+Last updated 2020-12-14 UTC.

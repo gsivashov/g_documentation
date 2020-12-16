@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Getting started: Advanced users
 If you've already mastered the basic tasks of maintaining a website on Google and using Search Console, this page goes into more advanced topics in managing and maintaining a website.
 Getting started
@@ -37,7 +38,7 @@ JavaScript usage: See Google's recommendations for JavaScript on websites.
 Multi-page articles: If you have an article broken into several pages, be sure that there are prominent next and previous links for users to click (and that these are crawlable links). That's all you need for the page set to be crawled by Google.
 Infinite scroll pages: Google can have trouble scrolling through infinite scroll pages; you should provide a paginated version if you want the page to be crawled. Learn more about search-friendly infinite scroll pages.
 Block access to URLs that change state, such as posting comments, creating accounts, adding items to a cart, and so on. Use robots.txt to block these URLs.
-See the list of which file types are indexable by Google. If your file type is not natively crawlable, be sure that it is linked by text that describes it, or (video, image, or podcast feed) provide metadata in a sitemap.
+See the list of which file types are indexable by Google.
 In the unlikely situation that Google seems to be crawling your site too much, you can turn down the crawl rate for your site. However, this should be a rare occurrence.
 If your site is still http, we recommend migrating to https, for your users' security, as well as your own.
 Help Google understand your site
@@ -64,7 +65,7 @@ If you want to provide a limited number of free views to visitors, read about fl
 See how to indicate subscription and paywalled content on your site to Google while still enabling crawling.
 See how to use meta tags to limit text or image use when generating search result snippets.
 Consider using AMP or Web Stories for fast-loading content.
-Other sites (businesses, books/apps,/scholarly works): See other Google services where you can post your information.
+Other sites (for example, sites about businesses, books, apps, scholarly works): See other Google services where you can post your information.
 See if Google supports a search feature specific for your content type. Google supports specialized search features for recipes, events, job posting sites, and more.
 Manage the user experience
 Providing a good user experience should be your site's top goal, and a good user experience is a ranking factor. There are many elements to providing a good user experience; here are a few of them.
@@ -90,6 +91,7 @@ If you have AMP on your site, verify your site-wide AMP status in the AMP status
 Use the Sitemaps report to submit new sitemaps, or monitor Google's success in reading your sitemaps.
 Verify a good user experience by checking your site-wide user performance in the Core Web Vitals report, and your mobile-usability in the Mobile Usability report, especially when changing site templates or making other changes that affect large portions of your site.
 You can find troubleshooting guides here, and you can always reach out to the forum page for help from other users.
-Your main SEO report is the Performance report for web pages. (There is also a Performance report for Discover). This report provides key metrics including impressions and CTR by keyword (query), device, and much more. You can find a lot of information on SEO best practices on the web using this data; just be sure that you don't follow rumors or bad practices. Read the SEO Starter Guide and Webmasters blog, ask questions on the Webmasters forum, attend a community event or online office hours, or use other official sources to get reliable information about best practices for your site.
+Your main SEO report is the Performance report for web pages. (There is also a Performance report for Discover). This report provides key metrics including impressions and CTR by keyword (query), device, and much more. You can find a lot of information on SEO best practices on the web using this data; just be sure that you don't follow rumors or bad practices. Read the SEO Starter Guide and Google Search Central blog, ask questions on the Google Search Central Help Community, attend a community event or online office hours, or use other official sources to get reliable information about best practices for your site.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2020-12-11 UTC.

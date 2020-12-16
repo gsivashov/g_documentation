@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Create a Google News sitemap
 News sitemap guidelines
 When you create your News sitemap, follow the requirements below:
@@ -13,7 +14,7 @@ Add up to 1,000 full URLs to include more, break these URLs into multiple sitema
 Update your current sitemap with your new article URLs. Do not create a new sitemap with each update.
 Do not use the Google sitemap Generator to create a News sitemap. The generator includes URLs that don't correspond to specific news articles.
 Example sitemap entry
-A Google News sitemap uses the sitemap protocol. Here’s an example of a News sitemap entry:
+A Google News sitemap uses the sitemap protocol. Here's an example of a News sitemap entry:
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
@@ -55,5 +56,6 @@ Complete date plus hours, minutes, seconds, and a decimal fraction of a second: 
 Yes
 The title of the news article.
 Tip: The title can be shortened for space reasons when shown on Google News. Include the title of the article as it appears on your site. Do not include author name, publication name, or publication date in the title tag.
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.

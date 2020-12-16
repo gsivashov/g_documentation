@@ -4,6 +4,7 @@ Home
 Google Search Central
 Documentation
 Advanced SEO
+Send feedback
 Resources for developing mobile-friendly pages
 Users now browse websites from a mobile site as often (or more often) from a mobile device as from a desktop computer. You should design your website to be viewed by mobile devices.
 Mobile devices generally fall into two classes: smartphones and feature phones. Smartphones are essentially mini desktop computers with small screens, and include Android and iPhone devices (we include tablet devices in this classification for design purposes). Feature phones are less capable devices, and are handled differently by Google than smartphones.
@@ -21,7 +22,7 @@ Images in SERP are resized on slow connections in specific countries, unless the
 The Chrome browser supports several smartphone layouts in the device mode & mobile emulator.
 Resources and information for feature phone site developers
 SERP and any pages linked by SERP are transcoded globally on any speed network unless either:
-The page is already “feature-phone ready”,
+The page is already "feature-phone ready",
 or
 The page has a <link rel="alternate" media="handheld" href="alternate_page.htm" /> tag.
 All images in SERP and any pages linked by SERP are resized unless user specifically opts out.
@@ -37,5 +38,6 @@ Mobile-readiness checker (.mobi)
 Feature phone emulators
 i-mode emulator (DoCoMo)
 User-Agent Switcher (Firefox plug-in)
+Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2020-12-14 UTC.
