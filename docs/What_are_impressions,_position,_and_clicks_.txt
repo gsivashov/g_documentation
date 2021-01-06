@@ -2,6 +2,12 @@ https://support.google.com/webmasters/answer/7042828
 
 What are impressions, position, and clicks?This page helps explain impressions, position values, and click data in the Search Analytics report.
 The heuristics described here—such as the visibility requirement for an item in a carousel, or the position numbering—are subject to change.
+Topics
+What is an impression?
+What is search result position?
+What is a click?
+What URL is my data assigned to?
+Additional details by result type
 What is an impression?
 A link URL records an impression when it appears in a search result for a user. Whether or not the link must actually be scrolled into view or otherwise visible depends on the type of search element that contains the link, as described later.
 For example, here is a very basic search result that includes only one link: the title "The Compleat Guide to Daffodils - Example.com".
@@ -43,7 +49,7 @@ On mobile, it could mean the sixth row of results (visible only with scrolling)
 As you can see, a position number can mean different things in different situations, and so you should not make simple assumptions. We recommend that you monitor change in position over time, particularly sudden position changes, as well as absolute position.
 Search Analytics says my page position is 5, but when I do a search it's in position 8!
 Position value is the average position for all searches. For your specific search your position might be different than the average because of many variables, such as your search history, location, and so on.
-What is a click?
+What is a click?
 For most result types, any click that sends the user to a page outside of Google Search is counted as a click, and clicking a link that stays inside search results is not counted as a click. See What is a query refinement? for more information.
 Clicking a search result to an outside page, returning, then clicking the same link again counts as only one click. Clicking a different link counts as a click for each link clicked.
 Some types of search results can count clicks differently; read the search element type click details.
@@ -55,6 +61,14 @@ If a user follows a query refinement link they are essentially performing the ne
 What URL is my search analytics data assigned to?
 Clicks, impressions, and position are assigned to the URL to which the user is directed by Google Search. In some cases, this might not be the URL displayed visibly in the search result. For example, if a property hosts a page at example.com/mypage for desktops and m.example.com/mypage for mobile devices (perhaps indicated by a rel=”alternate” tag), the search result on a mobile device might show example.com, but the link target would be m.example.com. In this case, Search Console would assign the impression and click to m.example.com/mypage (the actual target).
 If the target page redirects the user to another page, that has no effect on the URL assigned the impression or click.
+Additional details by result type
+Here are additional details about how clicks, impressions, and position are recorded for specific types of results. If a specific type is not given below, then the general rules described above apply.
+AMP page
+An AMP page can appear as a standard result link or in summarized format inside a carousel. Clicking a summarized AMP page in a carousel opens the full AMP page in a special AMP viewer. Users can page through full AMP pages in this viewer in the order in which they are hosted in the carousel.
+Click: Clicking a summarized AMP page in the carousel (opening the page) counts as a click. Viewing a full AMP page in the AMP viewer counts as both a click and an impression; therefore, if you have the AMP viewer open and page through it, a click (and impression) is counted for each page the first (and only the first) time you see it.
+Impression: An impression for an AMP page is counted when the AMP page is visible either in the carousel in search results or in the full-page AMP viewer. An impression is counted only once no matter how many times the user sees the page in either the carousel or in the viewer. If a search result link points to the AMP page as a simple "blue link" result (not in a carousel), that is also counted as an impression.
+Position: The position is the position of the containing search result element (the carousel, the blue link group, and so on). The position within a carousel is not noted.
+URL: The URL reported is the URL of the AMP page.
 Discover result
 Discover is a scrollable list of topic cards that users can browse on their mobile devices. Discover content is shown to users based on their interests. Each topic card includes a title, a few lines of text, and an image from the source page. Users tap the card to visit the source page.
 Discover can also host a horizontally scrollable carousel within a card. This carousel contains a set of related pages for a given topic.
@@ -62,33 +76,31 @@ Impression: An impression is counted when a Discover card is scrolled into view
 Unlike Search results, Discover impressions are never aggregated by property; if two Discover results from the same property appear in the same Discover list, each impression is counted separately.
 Click: A click (tap) is counted toward the result URL only when the user clicks the card, not when the user shares or performs another action on the result.
 Position: Position is not recorded for Discover results.
-Search result element details
-Clicks, impressions, and position count can have subtle differences depending on the result element type, as described here.
-Carousel
-Carousels are scrolling containers (typically horizontally scrolling) that contain a set of items of the same type, such as image thumbnails or AMP pages.
-Click: Behavior depends on the contained item type.
-Impression: An item must be scrolled into view in the carousel to register an impression. The carousel itself need not be scrolled into view in the current page.
-Position: A carousel occupies a single position in search results, and all items in the carousel are assigned that same position. However, a carousel occupies a search position only if the contained element type can occupy a search position: for example, a carousel of AMP pages has a position because AMP pages can have a position, but a carousel of links to refined Google queries would not occupy a search position, because such links cannot occupy a search position.
-URL: The carousel itself has no URL; data is assigned to the URLs of the contained elements.
-AMP page
-An AMP page can appear as a standard result link or in summarized format inside a carousel. Clicking a summarized AMP page in a carousel opens the full AMP page in a special AMP viewer. Users can page through full AMP pages in this viewer in the order in which they are hosted in the carousel.
-Click: Clicking a summarized AMP page in the carousel (opening the page) counts as a click. Viewing a full AMP page in the AMP viewer counts as both a click and an impression; therefore, if you have the AMP viewer open and page through it, a click (and impression) is counted for each page the first (and only the first) time you see it.
-Impression: An impression for an AMP page is counted when the AMP page is visible either in the carousel in search results or in the full-page AMP viewer. An impression is counted only once no matter how many times the user sees the page in either the carousel or in the viewer. If a search result link points to the AMP page as a simple "blue link" result (not in a carousel), that is also counted as an impression.
-Position: The position is the position of the containing search result element (the carousel, the blue link group, and so on). The position within a carousel is not noted.
-URL: The URL reported is the URL of the AMP page.
 Featured snippet
 A featured snippet displays information extracted from a single, specific web page. It includes a link to the source web page.
 Click: Clicking the link to the external page in the featured snippet counts as a click.
 Impression: Standard impression rules apply.
 Position: Standard position rules apply.
 URL: The final URL to which the user is redirected when clicking the link in the featured snippet.
-Rich result
-Rich results are defined using structured data and can be displayed in a variety of ways in Google Search results.
+Generic rich result
+Rich results are defined using structured data and can be displayed in a variety of ways in Google Search results. The following general rules apply to all rich results that aren't described elsewhere on this page.
 Click: Clicking a link in a result that takes the user outside of search results counts as a click.
 Impression: Standard impression rules apply..
 Position: Standard position rules apply.
-URL: The URL of the page containing the rich card structured markup.
-List/Details rich results
+URL: The URL of the page containing the rich result structured markup.
+Carousel rich result
+Carousel rich results are scrolling containers (typically horizontally scrolling) that contain a set of items of the same type, such as image thumbnails or AMP pages.
+Click: Behavior depends on the contained item type.
+Impression: An item must be scrolled into view in the carousel to register an impression. The carousel itself need not be scrolled into view in the current page.
+Position: A carousel occupies a single position in search results, and all items in the carousel are assigned that same position. However, a carousel occupies a search position only if the contained element type can occupy a search position: for example, a carousel of AMP pages has a position because AMP pages can have a position, but a carousel of links to refined Google queries would not occupy a search position, because such links cannot occupy a search position.
+URL: The carousel itself has no URL; data is assigned to the URLs of the contained elements.
+FAQ rich result and "People also ask" result
+FAQ rich results and "People also ask" suggestions are expandable question/answer items in search results that contain content from your site. FAQ is a rich result, and can be explicitly coded with structured data on your site. "People also ask" sections are algorithmic suggestions by Google that provides information from, and a link to, your site.
+Click: Clicking to expand the item is not counted. Clicking any link to your site in the expanded section counts as a click.
+Impression: When the item is expanded, an impression is counted for any links within the expanding section.
+Position: Standard position rules apply.
+URL: The URL of the page to which the user is directed.
+List/Details rich result types (Job and Event)
 Some rich result types have a two-stage search result: the initial search result is a short list containing the top results, with minimal information and a link to a detailed view of each item (list view); clicking a list item opens a detailed view of the selected item (details view), which contains links to one or more providers for that item.
 The list view supports the following actions:
 Click to expand the list:
@@ -99,7 +111,7 @@ In mobile results, this opens only the detail view of the clicked item.
 In desktop results, this expands the list and also shows the detail view for the clicked item.
 See the sections below to learn how clicks, impressions, and position are calculated for each view.
 Here is a mobile result showing the initial list view and a details view for a specific job posting.
-The following rich result types are shown as list/details items in search results:
+The following rich result types are list/details types:
 Job posting
 Event
 Filter the Performance report to show list view or details view data for a given rich result type (for example, Job listing/Job details, Event listing/Event details).
@@ -177,7 +189,7 @@ Click: Clicking the link to the install location counts as a click. This does no
 Impression: Standard impression rules apply.
 Position: Standard position rules apply.
 URL: The URL associated with an app install link is the root URI of the device (without the app://<package_or_id> prefix), which is "/".
-Image
+Image search result
 Image results can appear as embedded thumbnails in the combined search results page or inline in the image search results page. In the combined search results page they sometimes appear in a carousel of images.
 In search analytics data, an image is simply a link to the URL of the host page. This means that Search Console doesn't distinguish between different images on the same page; all are considered identical links as far as clicks, impressions, and position are concerned.
 An image can appear in both web and image search results. Search Analytics records data for each search type separately; it does not combine the data across search types.
@@ -185,7 +197,7 @@ Click: Clicks to expand a thumbnail image are not counted as clicks. Clicks on e
 Impression: Impressions are counted when the user sees either the thumbnail or expanded image. An impression is counted only once per host page URL, so if a user scrolls away and returns, or expands a thumbnail into a large image, it is counted as a single impression. Only a single impression is recorded per URL; if a query shows multiple different images from the same page, only one impression is recorded. When an impression is recorded depends on the search view that the user has open:
 Combined results tab - In the default search results page, which combines results of all types, image impressions are counted whether or not the image is scrolled into view in the browser window; however, if an image is inside a carousel on this (or any) page, it must be scrolled into view within the carousel for an impression to be counted.
 Image search tab - Image impressions are counted only when the image has been scrolled into view.
-Position: Standard position rules apply.
+Position:
 Position in the combined results tab is calculated using the standard position rules, where a block of images occupies the same position.
 Position in image search results is counted left to right, then top to bottom, (or right to left for right-to-left languages). For example, English language image results in a left-to-right page would count positions this way:
 In the image search results page, a wider screen shows more results per row. Because the number of images per row varies depending on the screen size as well as each image's width, it can be hard to judge the exact meaning of a position value in image search results.
@@ -196,13 +208,13 @@ Click: The user clicked on an Google Play Instant result.
 Impression: When an Google Play Instant result is shown for the user.
 Position: Standard position rules apply.
 URL:  The app link specified for your Instant App.
-Web Light Result
+Web Light
 A Web Light result is a page that was transcoded to a simpler and faster version by Google Search for users on slower connections or devices.
 Click: The user clicked to open a transcoded page result.
 Impression: The user saw a search result for a transcoded page.
 Position: Standard position rules apply.
 URL: The URL of the original page on the web.
-Media Actions
+Media Action
 A Media Action result enables a user to initiate playback of audio or video content directly from search results. (Podcast results are not counted as media action results.)
 Click: The user clicked to begin playback on a browser or application.
 Impression: The user saw a search result with a media action.

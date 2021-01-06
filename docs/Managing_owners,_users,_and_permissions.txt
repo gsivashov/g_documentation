@@ -14,6 +14,7 @@ Feature
 Owner
 Full user
 Restricted user
+View all reports
 Property settings (geotargeting, crawl rate)
 View only
 URL Parameters
@@ -44,6 +45,7 @@ Data Highlighter
 Verify fixes
 Share report links
 Add users
+Submit sitemap
 1 Restricted users receive only messages that specifically affect them.
 We lost our site owner!
 If the verified owner of your site leaves, or you're not sure who the verified owner is, verify another site owner. The new owner will be able to see the list of all owners and users verified to that site, as well as the verification methods for each owner. You can then optionally unverify previous owners by removing their verification token (for example, removing the HTML tag from the site, for HTML-tag-verified owners). See Add or remove owners for more information.

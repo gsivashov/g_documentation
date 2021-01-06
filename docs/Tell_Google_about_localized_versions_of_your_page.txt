@@ -162,7 +162,6 @@ You can use the International Targeting report to debug the most common problems
 There are also many third-party tools available. Here are a few popular tools. (These tools are not maintained or checked by Google.)
 Aleyda Solis's hreflang tags generator tool for generating or modifying hreflang tags.
 Merkle SEO hreflang tag testing tool for validating hreflang tags on a single live page.
-HREFLang checker and validator for validating hreflang tags on a single live page.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2021-01-05 UTC.

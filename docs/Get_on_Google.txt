@@ -18,11 +18,13 @@ Google for Small Business - See what resources Google offers to help your small 
 Google My Business – Get your business on Google Maps.
 Street View – Invite customers on a virtual tour of your business.
 Knowledge panel – If you want to manage your identity as a person, business, or organization on Google, you can suggest changes to your knowledge panel entry.
+People card - Add a card about yourself to Google Search results (only available for users in certain countries).
 Digital content
 Google Books and eBooks – Promote your books online and sell your titles through our eBook store.
 Google News – Share timely reporting on matters that are important or interesting to our audience.
 Scholar – Include scholarly works in Google's academic index.
 Google News – Appear in Google News search results, or provide digital editions for subscription.
+Podcast - Add your podcast to Google Podcasts.
 Local information
 Geo Data Upload – If you are an authoritative or official source of regional data, publish it through Google.
 Photo Sphere – Photograph and share the world with 360° pictures.
@@ -33,4 +35,4 @@ Video on Google Search – Make your videos findable and crawlable by Google Sea
 YouTube – Upload, distribute, and monetize your videos.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2021-01-03 UTC.

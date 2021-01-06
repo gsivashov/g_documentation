@@ -107,5 +107,5 @@ Web tools
 Various other tools that might be useful for your site.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpReports at a glanceAll reports and toolsManaging properties and users on Search ConsoleMigrating from old Search Console to new Search Console
+HelpReports at a glanceAll reports and toolsManaging properties and users on Search Console
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

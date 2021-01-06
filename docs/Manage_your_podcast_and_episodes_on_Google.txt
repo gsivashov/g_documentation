@@ -54,5 +54,5 @@ Our podcast search algorithms are based on the same principles as web search, so
 Google checks known feeds several times a day for any updates. You can check when Google last read your feed
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpAbout podcasts on GoogleGet your podcast on GoogleManage your podcast and episodes on GoogleMarket your podcast with Google Podcasts brandingMonitor your podcast usageTroubleshooting
+HelpAbout podcasts on GoogleGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageMarket your podcast with Google Podcasts brandingTroubleshooting
 Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

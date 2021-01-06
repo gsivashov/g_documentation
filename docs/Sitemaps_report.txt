@@ -9,7 +9,7 @@ If you have a small site (fewer than 100 pages) and you can reach any page on yo
 Learn more about sitemaps here.
 Managing sitemaps
 Sitemaps API
-You can also also use the Search Console Sitemaps API to manage your sitemaps. The API provides all the same functionality and information as this report.
+You can also use the Search Console Sitemaps API to manage your sitemaps. The API provides all the same functionality and information as this report.
 Submit a sitemap
 "Submitting" a sitemap means telling Google where to find it on your site. You cannot actually upload a sitemap to Google.
 To submit a new sitemap for crawling:
@@ -63,7 +63,7 @@ Opens a report showing the index coverage of all URLs in this sitemap. For a sit
 My sitemap isn't listed!
 Here are a few reasons that your sitemap might be not listed in the report:
 It lives in another property. Sitemaps associated with one property won't be visible in another property. Thus, sitemaps that you've submitted for the site http://example.com won't be visible in the Sitemaps report for http://m.example.com. or https://example.com. To address this issue, make sure that you've added all versions of your site.
-You didn't submit the sitemap using this report. Only sitemaps submitted using this report are listed; sitemaps found or submitted other methods won't be shown, even if Google can find and use them.
+You didn't submit the sitemap using this report. Only sitemaps submitted using this report are listed; sitemaps found or submitted using other methods won't be shown, even if Google can find and use them.
 Sitemap errors
 The following errors are reported by the sitemaps report.
 Complete error list

@@ -26,15 +26,18 @@ Data discrepancies
 I'm told that I already verified ownership of a feed, but I didn't
 Podcast is not on Google
 If your podcast isn't appearing in Google Search or other Google Podcasts platforms, you will see a notification in Google Podcasts Manager for your show. To fix this, try the following steps. Note that Google doesn't guarantee that every podcast will show up on Google.
-It takes Podcasts Manager about a day after a successful fix to confirm that Google can access your feed again. Additionally, there is a 2-3 day data latency in Podcasts Manager data, so it can take a few days after a successful fix or newly discovered feed to begin to see data for your show.
 1. Check that your feed is indexed
 A feed must be indexed by Google before it can appear on any Google Podcasts platform. Being indexed means that Google has found and stored your RSS feed in the Google index.
 To check whether your feed is indexed by Google:
-Find the served feed URL for your podcast.
-Open the link generator tool, enter your feed URL from step 1, and click Generate.
-If the tool can generate a link, your feed is indexed.
-If the link generator reports a problem, request a recrawl of your feed and see whether it succeeds.
-If the recrawl fails, continue to step 2.
+Search for your show on Google Podcasts:
+Open Google Podcasts.
+Search for your podcast.
+If the show isn't present:
+Remember that it takes 2-3 days after you first submit a show to Google for it to appear in Google Podcasts. If, after 2-3 days time, the show is still missing, request a recrawl of your feed and see whether it succeeds.
+Check that Google could reach your RSS feed:
+Open the Google PubSubHubbub site.
+In the Publisher Diagnostics enter your feed URL in the Topic URL text box, then click Get Info.
+Check the last successful fetch time. This is the last time that Google was able to see your feed (not whether feed was valid). If there is no fetch time, request a recrawl of your feed. If the feed was fetched, move on to step 2.
 2. Check the validity of your RSS feed
 Confirm the validity and completeness of your RSS feed:
 Check validity: Use an RSS validator to confirm that your feed is well-formed, but note that Google can tolerate some RSS errors. Validate your feed by URL, rather than simply pasting your code into a validator, to ensure that the feed is reachable.
@@ -75,6 +78,7 @@ Confirm that Google can access the linked homepage. Enter the homepage URL in an
 Confirm that your homepage complies with Google webmaster guidelines. Your homepage, unlike your RSS feed, must comply with those guidelines in order to appear in Search results.
 Google doesn't guarantee special formatting or features for podcast search results. Even if you have done everything properly, in some cases Google Search might decide that a different format is more appropriate for search results for your podcast.
 Google isn't noticing your feed updates
+It takes Podcasts Manager about a day after a successful fix to confirm that Google can access your feed again. Additionally, there is a 2-3 day data latency in Podcasts Manager data, so it can take a few days after a successful fix or newly discovered feed to begin to see data for your show.
 If your podcast already appears on Google, but updates are not being picked up (for example, new episodes, or podcast description changes):
 Be aware that removing an episode will remove it from Google Podcasts platforms for listeners, but if the episode has any listening data, it will stay on Podcasts Manager.
 Google should pick up changes to an existing feed in less than a day. If it's only been ten minutes since you published your change, wait a few hours then check again.
@@ -152,5 +156,5 @@ Click Get Info.
 Check the Last successful fetch time to see when Google was last able to access your RSS feed. Note that this doesn't mean that Google was able to read and understand the feed, only that it accessed the feed.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpAbout podcasts on GoogleGet your podcast on GoogleManage your podcast and episodes on GoogleMarket your podcast with Google Podcasts brandingMonitor your podcast usageTroubleshooting
+HelpAbout podcasts on GoogleGet your podcast on GoogleManage your podcast and episodes on GoogleMonitor your podcast usageMarket your podcast with Google Podcasts brandingTroubleshooting
 Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

@@ -1,15 +1,15 @@
 https://support.google.com/webmasters/answer/7450883
 
-AMP status reportThis report helps you fix errors that prevent your AMP pages from appearing in Google Search results with AMP-specific features.
-The top level view shows all AMP pages with issues found by Google on your site, grouped by issue. Click a specific issue to see issue details, including a sample list of pages affected by that issue, information about how to fix it, and a process to notify Google about your fixes.
+AMP status reportThis report helps you fix errors that prevent your AMP pages from appearing in Google Search results with AMP-specific features.
+The top level view shows all AMP pages with issues found by Google on your site, grouped by issue. Click a specific issue to see issue details, including a sample list of pages affected by that issue, information about how to fix it, and a process to notify Google about your fixes.
 To see charts showing the affect of issues and fixes, visit the Status page.
-Why is this a sample list? We show as many pages affected by errors as we can. However we have a hard limit of 1,000 urls that we can show in our table. Also, it's possible that there are additional pages that we didn't detect or count for some reason.
+Why is this a sample list? We show as many pages affected by errors as we can. However we have a hard limit of 1,000 urls that we can show in our table. Also, it's possible that there are additional pages that we didn't detect or count for some reason.
 OPEN AMP REPORT
 AMP status report in Search Console - Google Search Console Training
 What to look for
 Ideally you should see this on the report:
-Zero AMP errors on your site (warnings are considered recommendations, not errors; see Understanding warnings below). If not, see Prioritize and fix issues.
-The total count of AMP pages on the report (valid + warning + error pages) should equal the number of AMP pages on your site. If not, see Missing AMP pages.
+Zero AMP errors on your site (warnings are considered recommendations, not errors; see Understanding warnings below). If not, see Prioritize and fix issues.
+The total count of AMP pages on the report (valid + warning + error pages) should be close to the number of AMP pages on your site. If not, see Missing AMP pages.
 List of AMP issues
 In addition to standard AMP-specific errors, the report can expose the following additional issues (errors and warnings).
 Google-specific AMP issues
@@ -205,15 +205,15 @@ Verify that your front-end reverse-proxy is not altering the content-type header
 Verify that you are running the latest release of AMP Packager.
 If you have ruled out all of the above, there may be a bug in AMP Packager; please file a bug.
 Prioritize and fix issues
-On the summary AMP page, filter out the warnings and focus on the errors first. By default, issues are sorted by a combination of severity, validation state, and number of affected pages; we recommend that you address them in this default order. Fix errors caused by a common cause first (such as a bad template), then fix errors that are unique to each page.
-See if any increase in the total error count is caused mostly by a single error: look for a corresponding spike in a single issue in the table.
+On the summary page, filter out the warnings and focus on the errors first. By default, issues are sorted by a combination of severity, validation state, and number of affected pages; we recommend that you address them in this default order. Fix errors caused by a common cause first (such as a bad template), then fix errors that are unique to each page.
+See if any increase in the total error count is caused mostly by a single error: look for a corresponding spike in a single issue in the table.
 See information below about debugging spikes and missing AMP pages.
-Click a row in the table to see the error details page:
+Click a row in the table to see the error details page:
 The details page includes a sample of affected URLs. The list is not always complete, because it is limited to 1,000 rows, and might not include very recently discovered instances of this error.
-If it is a syntax error, click Learn more to get official documentation about the proper syntax.
+If it is a syntax error, click Learn more to get official documentation about the proper syntax.
 Click the inspect icon to run a validity test against an affected page. This test will pinpoint all errors (not just the current issue) and provide a code explorer highlighting the errors and providing more information. It is possible that an error has been fixed in the live page but is still listed as an error because it has not yet been recrawled; if so, request validation after you have fixed all instances of this issue.
 Fix all instances of the issue on your site, test your fix, and ensure that your fixes are live on the web.
-Return to the issue details page and click the Validate Fix button to begin the validation process. This process is not immediate. See About validation to understand the validation process.
+Return to the issue details page and click the Validate Fix button to begin the validation process. This process is not immediate. See About validation to understand the validation process.
 Continue fixing errors.
 When all errors have been fixed, remove the filter for warnings, and consider fixing the warnings. Some warnings are about missing optional structured data markup, which can enable new search features for pages with relevant content.
 Sharing the report
@@ -230,12 +230,13 @@ If the URLs moved from one state to another, determine what you changed to cause
 The most common reason for a spike in errors is adding an error to a template used by many pages on your site.
 Troubleshooting missing AMP pages
 If the count of AMP pages (valid + warning + error) in the report is less than the count of AMP pages on your site, here are some possible reasons:
+The URLs reported in this report represent a sample of all known AMP URLs for your site. The list of URLs is not meant to be comprehensive.
 Confirm that your canonical non-AMP page is correctly linking to your AMP page.
 Confirm that your AMP or canonical pages are not roboted or noindexed, or protected by auth or login requirements.
-Check for the presence of your AMP and canonical pages in the index by searching Google for the URL of the canonical page. If it is not listed, it's not indexed.
+Check for the presence of your AMP and canonical pages in the index by searching Google for the URL of the canonical page. If it is not listed, it's not indexed.
 If the canonical is there, confirm that it correctly links to your AMP page.
 If the canonical is not there, submit it for indexing.
-Is your AMP/canonical linked to by other pages? Are they listed in a sitemap? Use the URL Inspection tool on the canonical to request indexing for a small number of AMP pages, but for large numbers of pages, use sitemaps. (You only need to list the canonical in the sitemap.) Consider using the Sitemaps report to submit a sitemap.
+Is your AMP/canonical linked to by other pages? Are they listed in a sitemap? Use the URL Inspection tool on the canonical to request indexing for a small number of AMP pages, but for large numbers of pages, use sitemaps. (You only need to list the canonical in the sitemap.) Consider using the Sitemaps report to submit a sitemap.
 It can take a few days for Google to find and crawl the missing pages, depending on how you notify Google about the new pages.
 Some valid AMP pages might not be included in this report, although they might be listed in the Index Coverage report. This is because the Index Coverage report must be more comprehensive in order to help you debug indexing issues on your report, while the AMP Status report potentially covers fewer, but more relevant pages, but in greater detail, in order to help you debug specific AMP issues on your site. To confirm whether an AMP page is indexed, use the URL Inspection tool, which will have the definitive answer.
 Understanding warnings

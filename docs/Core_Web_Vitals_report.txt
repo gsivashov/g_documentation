@@ -62,15 +62,15 @@ Good
 Needs improvement
 Poor
 LCP
-<2.5s
+<=2.5s
 <=4s
 >4s
 FID
-<100ms
+<=100ms
 <=300ms
 >300ms
 CLS
-<0.1
+<=0.1
 <=0.25
 >0.25
 LCP (largest contentful paint): The amount of time to render the largest content element visible in the viewport, from when the user requests the URL. The largest element is typically an image or video, or perhaps a large block-level text element. This is important because it tells the reader that the URL is actually loading.

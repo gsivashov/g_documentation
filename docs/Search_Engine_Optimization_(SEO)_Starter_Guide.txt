@@ -79,6 +79,12 @@ Tell Google which pages shouldn't be crawled
 Best Practices
 For non-sensitive information, block unwanted crawling by using robots.txt
 A "robots.txt" file tells search engines whether they can access and therefore crawl parts of your site. This file, which must be named "robots.txt", is placed in the root directory of your site. It is possible that pages blocked by robots.txt can still be crawled, so for sensitive pages you should use a more secure method.
+# brandonsbaseballcards.com/robots.txt
+# Tell Google not to crawl any URLs in the shopping cart or images in the icons folder,
+# because they won't be useful in Google Search results.
+User-agent: googlebot
+Disallow: /checkout/
+Disallow: /icons/
 You may not want certain pages of your site crawled because they might not be useful to users if found in a search engine's search results. If you do want to prevent search engines from crawling your pages, Google Search Console has a friendly robots.txt generator to help you create this file. Note that if your site uses subdomains and you wish to have certain pages not crawled on a particular subdomain, you'll have to create a separate robots.txt file for that subdomain. For more information on robots.txt, we suggest this guide on using robots.txt files13.
 Read about several other ways to prevent content from appearing in search results.14
 Avoid:
@@ -94,6 +100,15 @@ Recommended action:
 Use the URL Inspection tool16. It will allow you to see exactly how Googlebot sees and renders your content, and it will help you identify and fix a number of indexing issues on your site.
 Create unique, accurate page titles
 A <title> tag tells both users and search engines what the topic of a particular page is. The <title> tag should be placed within the <head> element of the HTML document. You should create a unique title for each page on your site.
+<html>
+<head>
+<title>Brandon's Baseball Cards - Buy Cards, Baseball News, Card Prices</title>
+<meta name="description" content="Brandon's Baseball Cards provides a large selection of
+vintage and modern baseball cards for sale.
+We also offer daily baseball news and events.">
+</head>
+<body>
+...
 Create good titles and snippets in search results
 If your document appears in a search results page, the contents of the title tag may appear in the first line of the results (if you're unfamiliar with the different parts of a Google search result, you might want to check out the anatomy of a search result video17).
 The title for your homepage can list the name of your website/business and could include other bits of important information like the physical location of the business or maybe a few of its main focuses or offerings.
@@ -114,6 +129,13 @@ Using extremely lengthy titles that are unhelpful to users.
 Stuffing unneeded keywords in your title tags.
 Use the "description" meta tag
 A page's description meta tag gives Google and other search engines a summary of what the page is about. A page's title may be a few words or a phrase, whereas a page's description meta tag might be a sentence or two or even a short paragraph. Like the <title> tag, the description meta tag is placed within the <head> element of your HTML document.
+<html>
+<head>
+<title>Brandon's Baseball Cards - Buy Cards, Baseball News, Card Prices</title>
+<meta name="description" content="Brandon's Baseball Cards provides a large selection of vintage and modern baseball cards for sale. We also offer daily baseball news and events.">
+</head>
+<body>
+...
 What are the merits of description meta tags?
 Description meta tags are important because Google might use them as snippets for your pages. Note that we say "might" because Google may choose to use a relevant section of your page's visible text if it does a good job of matching up with a user's query. Adding description meta tags to each of your pages is always a good practice in case Google cannot find a good selection of text to use in the snippet. The Google Search Central blog has informative posts on improving snippets with better description meta tags18 and better snippets for your users19. We also have a handy Help Center article on how to create good titles and snippets20.
 Best Practices
@@ -218,8 +240,10 @@ Providing only a vague message like "Not found", "404", or no 404 page at all.
 Using a design for your 404 pages that isn't consistent with the rest of your site.
 Simple URLs convey content information
 Creating descriptive categories and filenames for the documents on your website not only helps you keep your site better organized, it can create easier, "friendlier" URLs for those that want to link to your content. Visitors may be intimidated by extremely long and cryptic URLs that contain few recognizable words.
-URLs like the one shown in the following image can be confusing and unfriendly.
-If your URL is meaningful, it can be more useful and easily understandable in different contexts.
+URLs like the following can be confusing and unfriendly:
+https://www.brandonsbaseballcards.com/folder1/22447478/x2/14032015.html
+If your URL is meaningful, it can be more useful and easily understandable in different contexts:
+https://www.brandonsbaseballcards.com/article/ten-rarest-baseball-cards.htm
 URLs are displayed in search results
 Lastly, remember that the URL to a document is usually displayed in a search result in Google below the document title.
 Google is good at crawling all types of URL structures, even if they're quite complex, but spending the time to make your URLs as simple as possible is a good practice.
@@ -418,7 +442,7 @@ Additional Resources
 Google Search Central blog56
 Get the latest information from our Google Search Central blog. You can find information about updates to Google Search, new Search Console features, and much more.
 Google Search Central Help Forum57
-Post questions about your site's issues and find tips to create high quality sites from the product forum for website owners. There are many experienced contributors in the forum, including Top Contributors58 and occasionally Googlers.
+Post questions about your site's issues and find tips to create high quality sites from the product forum for website owners. There are many experienced contributors in the forum, including Product Experts58 and occasionally Googlers.
 Google Search Central Twitter59
 Follow us for news and resources to help you make a great site.
 Google Search Central YouTube Channel60
@@ -486,11 +510,11 @@ https://www.google.com/webmasters/tools/home
 https://www.bing.com/toolbox/webmaster
 https://support.google.com/webmasters/go/blog
 https://g.co/WebmasterHelpForum
-http://www.google.com/get/topcontributor/
+https://productexperts.withgoogle.com/
 https://twitter.com/googlesearchc
 https://www.youtube.com/c/GoogleSearchCentral
 http://www.google.com/insidesearch/howsearchworks/thestory/index.html
 http://www.gybo.com/
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-05 UTC.
