@@ -36,7 +36,7 @@ crawl rate setting in your
 Google Search Console account.
 Robots.txt questions
 I use the same robots.txt for multiple websites. Can I use a full URL instead of a relative path?
-No. The directives in the robots.txt file (with exception of Sitemap:code>) are
+No. The directives in the robots.txt file (with exception of Sitemap:) are
 only valid for relative paths.
 Can I place the robots.txt file in a subdirectory?
 No. The file must be placed in the topmost directory of the website.
@@ -44,7 +44,7 @@ I want to block a private folder. Can I prevent other people from reading my
 robots.txt file?
 No. The robots.txt file may be read by various users. If folders or filenames of content should
 not be public, they should not be listed in the robots.txt file. It is not recommended to serve
-different robots.txt files based on the user-agent or other attributes.
+different robots.txt files based on the user agent or other attributes.
 Do I have to include an allow directive to allow crawling?
 No, you do not need to include an allow directive. The allow directive
 is used to override disallow directives in the same robots.txt file.
@@ -63,7 +63,7 @@ robots.txt tester.
 If I block Google from crawling a page using a robots.txt disallow directive, will
 it disappear from search results?
 Blocking Google from crawling a page is likely to remove the page from Google's index.
-However, robots.txt Disallow does not guarantee that a page will not appear in
+However, the Disallow directive does not guarantee that a page will not appear in
 results: Google may still decide, based on external information such as incoming links, that it
 is relevant. If you wish to explicitly block a page from being indexed, you should instead use
 the noindex robots meta tag or X-Robots-Tag HTTP header. In this case,
@@ -97,7 +97,7 @@ still being crawled?
 The HTTP result code 403—as all other 4xx HTTP result codes—is seen as a sign that the
 robots.txt file does not exist. Because of this, crawlers will generally assume that they can
 crawl all URLs of the website. In order to block crawling of the website, the robots.txt must be
-returned normally (with a 200 "OK" HTTP result code) with an appropriate "disallow" in it.
+returned normally (with a 200 "OK" HTTP result code) with an appropriate disallow directive in it.
 Robots meta tag questions
 Is the robots meta tag a replacement for the robots.txt file?
 No. The robots.txt file controls which pages are accessed. The robots meta tag controls whether
@@ -127,4 +127,4 @@ use the Fetch as Googlebot
 feature in Google Search Console.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-16 UTC.
+Last updated 2021-01-15 UTC.

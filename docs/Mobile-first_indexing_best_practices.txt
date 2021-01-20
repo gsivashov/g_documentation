@@ -22,8 +22,8 @@ To make sure that your users have the best experience, follow the best practices
 Make sure that Googlebot can access and render your content
 Make sure that Googlebot can access and render your mobile page content and resources.
 Use the same meta robots tags on the mobile and desktop site.
-If you use a different meta robots tag on the mobile site (especially noindex or
-nofollow), Google may fail to crawl and index your page when your site is enabled
+If you use a different meta robots tag on the mobile site (especially the noindex or
+nofollow tags), Google may fail to crawl and index your page when your site is enabled
 for mobile-first indexing.
 Don't lazy-load primary content upon user interaction. Googlebot won't load
 content that requires user interactions (for example, swiping, clicking, or typing) to load.
@@ -344,4 +344,4 @@ We are
 experimenting with making the index mobile-first.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-15 UTC.

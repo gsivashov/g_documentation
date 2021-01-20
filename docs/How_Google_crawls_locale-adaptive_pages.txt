@@ -6,15 +6,30 @@ Documentation
 Advanced SEO
 Send feedback
 How Google crawls locale-adaptive pages
-If your site has locale-adaptive pages (that is, your site returns different content based on the perceived country or preferred language of the visitor), Google might not crawl, index, or rank all your content for different locales. This is because the default IP addresses of the Googlebot crawler appear to be based in the USA. In addition, the crawler sends HTTP requests without setting Accept-Language in the request header.
-IMPORTANT: We recommend using separate locale URL configurations and annotating them with rel=alternate hreflang annotations.
+If your site has locale-adaptive pages (that is, your site returns different content
+based on the perceived country or preferred language of the visitor), Google might not crawl,
+index, or rank all your content for different locales. This is because the default IP
+addresses of the Googlebot crawler appear to be based in the USA. In addition, the crawler
+sends HTTP requests without setting Accept-Language in the request header.
+IMPORTANT: We recommend using separate locale URL
+configurations and annotating them with rel="alternate"
+hreflang annotations.
 Geo-distributed crawling
 Googlebot crawls with IP addresses based outside the USA, in addition to the US-based IP addresses.
-As we have always recommended, when Googlebot appears to come from a certain country, treat it like you would treat any other user from that country. This means that if you block USA-based users from accessing your content, but allow visitors from Australia to see it, your server should block a Googlebot that appears to be coming from the USA, but allow access to a Googlebot that appears to come from Australia.
+As we have always recommended, when Googlebot appears to come from a certain country, treat
+it like you would treat any other user from that country. This means that if you block
+USA-based users from accessing your content, but allow visitors from Australia to see it,
+your server should block a Googlebot that appears to be coming from the USA, but allow access
+to a Googlebot that appears to come from Australia.
 Other considerations
-Googlebot uses the same user-agent string for all crawling configurations. Learn more about the user-agent strings used by Google crawlers in our Help Center.
-You can verify Googlebot geo-distributed crawls using reverse DNS lookups.
-Make sure that your site applies the robots exclusion protocol consistently for every locale. This means that robots meta tags and the robots.txt file should specify the same directives in each locale.
+Googlebot uses the same user agent string for all crawling configurations. Learn more about
+the user agent strings used
+by Google crawlers.
+You can verify Googlebot
+geo-distributed crawls using reverse DNS lookups.
+Make sure that your site applies the robots exclusion protocol consistently for
+every locale. This means that robots meta tags and the robots.txt file should
+specify the same directives in each locale.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-03 UTC.
+Last updated 2021-01-15 UTC.

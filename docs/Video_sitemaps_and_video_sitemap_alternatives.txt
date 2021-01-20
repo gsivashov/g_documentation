@@ -1,4 +1,4 @@
-https://support.google.com/webmasters/topic/6080646
+https://support.google.com/webmasters/answer/80471
 
 Home
 Google Search Central
@@ -8,7 +8,7 @@ Send feedback
 Video sitemaps and video sitemap alternatives
 A video sitemap is a sitemap with additional information about video hosted on your pages. Creating a video sitemap is an excellent way to help Google find and understand the video content on your site, especially content that was recently added or that we might not otherwise discover with our usual crawling mechanisms. Google Video Sitemap is an extension to the Sitemap standard.
 While Google recommends using video sitemaps, we also support mRSS feeds.
-You should follow the video best practices to get the best results in Google Search.
+To get the best results in Google Search, follow the video best practices.
 Guidelines for video sitemaps
 Here are basic guidelines for video sitemaps:
 You can create a separate sitemap just for video, or you can embed a video sitemap within an existing sitemap, whichever is more convenient for you.
@@ -21,12 +21,12 @@ Each sitemap entry is the URL of a page that hosts one or more videos. The struc
 ... as many additional <video> entries as you need ...
 </url>
 Don't list videos that are unrelated to the host page. For example, if the video is a small addendum to the page, or unrelated to the main text content.
-Each entry in a video sitemap includes a set of required, recommended, or optional values that you supply. Recommended and optional values provide useful metadata that can enhance your video results and improve Google's ability to include your video in search results. See the table below for a list of sitemap elements.
+Each entry in a video sitemap includes a set of required, recommended, or optional values that you supply. Recommended and optional values provide useful metadata that can enhance your video results and improve Google's ability to include your video in search results. refer to the list of sitemap elements.
 Google might use text on the video landing page rather than the text you supply in your sitemap, if the page text is deemed more useful than the information in the sitemap.
 Google can't guarantee when or if your videos will be indexed, as Google relies on complex indexing algorithms.
-If Google cannot discover video content at the URL you provide, the sitemap entry will be ignored.
-Each sitemap file that you provide must have no more than 50,000 URL elements. If you have more than 50,000 videos, you can submit multiple sitemaps and a sitemap index file. You cannot nest sitemap index files. Keep in mind that if you are adding optional tags, you may hit the 50MB uncompressed limit before you hit the 50,000 video limit.
-Google must be able to access the source file or player (that is, the file or player cannot be blocked by robots.txt, require a login, or be otherwise inaccessible to Googlebot). Metafiles that require a download of the source via streaming protocols are not supported.
+If Google can't discover video content at the URL you provide, the sitemap entry is ignored.
+Each sitemap file that you provide must have no more than 50,000 URL elements. If you have more than 50,000 videos, you can submit multiple sitemaps and a sitemap index file. You can't nest sitemap index files. Keep in mind that if you are adding optional tags, you may hit the 50MB uncompressed limit before you hit the 50,000 video limit.
+Google must be able to access the source file or player (that is, the file or player can't be blocked by robots.txt, require a login, or be otherwise inaccessible to Googlebot). Metafiles that require a download of the source via streaming protocols are not supported.
 All files must be accessible to Googlebot. If you want to prevent spammers from accessing your video content at the <player_loc> or <content_loc> URLs, verify that any bots accessing your server are really Googlebot.
 Make sure that your robots.txt file isn't blocking any of the items (including the host page URL, the video URL, and the thumbnail URL) included in each sitemap entry. More information about robots.txt.
 Google verifies that the information you provide for each video matches what is on the site. If not, your video might not be indexed.
@@ -75,8 +75,9 @@ Required
 Parent tag for a single host page on your site. Defined by the basic sitemaps format.
 <loc>
 Required
-Specifies the host page where one or more videos are hosted. When a user clicks on a video result in Google Search, they will be sent to this page. This URL must be a unique within the sitemap. Defined by the basic Sitemaps format.
-For multiple videos on a single page, create a single <loc> tag for the page, with a child <video> element for each video on that page.
+Specifies the host page where one or more videos are hosted. When a user clicks on a video result in Google Search, they are sent to this page. This URL must be a unique within the sitemap. Defined by the basic Sitemaps format.
+For multiple videos on a single page, create a single
+<loc> tag for the page, with a child <video> element for each video on that page.
 <video:video>
 Required
 Parent element for all information about a single video on the page specified by <loc>.
@@ -85,36 +86,35 @@ Required
 A URL pointing to the video thumbnail image file. See thumbnail requirements.
 <video:title>
 Required
-The title of the video. All HTML entities should be escaped or wrapped in a CDATA block. Recommended that this match the video title displayed on the web page.
+The title of the video. All HTML entities should be escaped or wrapped in a CDATA block. We recommend that this match the video title displayed on the web page.
 <video:description>
 Required
-A description of the video. Maximum 2048 characters. All HTML entities should be escaped or wrapped in a CDATA block. Must match the description displayed on the web page (need not be a word-for-word match).
+A description of the video. Maximum 2048 characters. All HTML entities should be escaped or wrapped in a CDATA block. It must match the description displayed on the web page (it doesn't need to be a word-for-word match).
 <video:content_loc>
-Required: either
-video:content_loc
-or
-video:player_loc
+Required: either <video:content_loc> or
+<video:player_loc>
 A URL pointing to the actual video media file. Should be one of the supported formats.
-HTML is not a supported format. Flash is allowed, but no longer supported on most mobile platforms, and so may be indexed less well.
+Additional guidelines
+HTML and Flash aren't supported formats.
 Must not be the same as the <loc> URL.
 This is the equivalent of VideoObject.contentUrl in structured data.
 Best practice: If you want to restrict access to your content but still have it crawled, ensure that Googlebot can access your content by using a reverse DNS lookup.
 <video:player_loc>
-Required: either
-video:content_loc
-or
-video:player_loc
-A URL pointing to a player for a specific video. Usually this is the information in the src element of an <embed> tag. Must not be the same as the <loc> URL. For YouTube video, this value is used rather than video:content_loc. This is the equivalent of VideoObject.embedUrl in structured data.
+Required: either <video:content_loc> or
+<video:player_loc>
+A URL pointing to a player for a specific video. Usually this is the information in the src element of an <embed> tag.
+Additional guidelines
 Must not be the same as the <loc> URL.
+For YouTube videos, this value is used rather than video:content_loc. This is the equivalent of VideoObject.embedUrl in structured data.
+Best practice: If you want to restrict access to your content but still have it crawled, ensure that Googlebot can access your content by using a reverse DNS lookup.
 Attributes:
 allow_embed [Optional] Whether Google can embed the video in search results. Allowed values are yes or no.
-Best practice: If you want to restrict access to your content but still have it crawled, ensure that Googlebot can access your content by using a reverse DNS lookup.
 <video:duration>
 Recommended
 The duration of the video, in seconds. Value must be from 1 to 28800 (8 hours) inclusive.
 <video:expiration_date>
 Recommended when applicable
-The date after which the video will no longer be available, in W3C format. Omit this tag if your video does not expire. If present, Google Search will not show your video after this date.
+The date after which the video is no longer be available, in W3C format. Omit this tag if your video does not expire. If present, Google Search won't show your video after this date.
 Supported values are complete date (YYYY-MM-DD), or complete date plus hours, minutes and seconds, and timezone (YYYY-MM-DDThh:mm:ss+TZD).
 Example: 2012-07-16T19:20:30+08:00.
 <video:rating>
@@ -129,12 +129,14 @@ The date the video was first published, in W3C format. Supported values are comp
 Example: 2007-07-16T19:20:30+08:00
 <video:family_friendly>
 Optional
-yes (or omitted) if the video can be available with SafeSearch on.
-no if the video should be available only with SafeSearch off.
+Whether the video is available with SafeSearch. If you omit this tag, the video is available when SafeSearch is turned on.
+Supported values:
+yes: The video is available when SafeSearch is turned on.
+no: The video is only available when SafeSearch is turned off.
 <video:restriction>
 Optional
 Whether to show or hide your video in search results from specific countries.
-Specify a space-delimited list of country codes in ISO 3166 format. Only one <video:restriction> tag can be used for each video. If there is no <video:restriction> tag, Google assumes that the video can be played in all locations. Note that this tag affects only search results; it does not prevent a user from finding or playing your video in a restricted location though other means. Learn more about applying country restrictions.
+Specify a space-delimited list of country codes in ISO 3166 format. Only one <video:restriction> tag can be used for each video. If there is no <video:restriction> tag, Google assumes that the video can be played in all locations. Note that this tag only affects search results; it doesn't prevent a user from finding or playing your video in a restricted location though other means. Learn more about applying country restrictions.
 Attributes:
 relationship [Required] Whether the video is allowed or denied in search results in the specified countries. Supported values are allow or deny. If allow, listed countries are allowed, unlisted countries are denied; if deny, listed countries are denied, unlisted countries are allowed.
 Example: This example allows the video search result to be shown only in Canada and Mexico:
@@ -148,7 +150,7 @@ web - Traditional computer browsers on desktops and laptops.
 mobile - Mobile browsers, such as those on cellular phones or tablets.
 tv - TV browsers, such as those available through GoogleTV devices and game consoles.
 Attributes:
-relationship [Required] specifies whether the video is restricted or permitted for the specified platforms. Supported values are allow or deny. If allow, any omitted platforms will be denied; if deny, any omitted platforms will be allowed.
+relationship [Required] specifies whether the video is restricted or permitted for the specified platforms. Supported values are allow or deny. If the allow value is used, any omitted platforms will be denied; if the deny value is used, any omitted platforms will be allowed.
 Example: The following example allows users on web or TV, but not mobile devices:
 <video:platform relationship="allow">web tv</video:platform>
 <video:price>
@@ -156,7 +158,7 @@ Optional
 The price to download or view the video. Omit this tag for free videos. More than one <video:price> element can be listed (for example, in order to specify various currencies, purchasing options, or resolutions).
 Attributes:
 currency [Required] Specifies the currency in ISO 4217 format.
-type [Optional] Specifies the purchase option. Supported values are rent and own. If this is not specified, the default value is own.
+type [Optional] Specifies the purchase option. Supported values are rent and own. If this isn't specified, the default value is own.
 resolution [Optional] Specifies the resolution of the purchased version. Supported values are hd and sd.
 <video:requires_subscription>
 Optional
@@ -174,7 +176,7 @@ Optional
 An arbitrary string tag describing the video. Tags are generally very short descriptions of key concepts associated with a video or piece of content. A single video could have several tags, although it might belong to only one category. For example, a video about grilling food may belong in the "grilling" category, but could be tagged "steak", "meat", "summer", and "outdoor". Create a new <video:tag> element for each tag associated with a video. A maximum of 32 tags is permitted.
 <video:category>
 Optional
-A short description of the broad category that the video belongs to. This is a string no longer than 256 characters. In general, categories are broad groupings of content by subject. Usually a video will belong to a single category. For example, a site about cooking could have categories for broiling, baking, and grilling.
+A short description of the broad category that the video belongs to. This is a string no longer than 256 characters. In general, categories are broad groupings of content by subject. Usually a video belongs to a single category. For example, a site about cooking could have categories for broiling, baking, and grilling, and the video could belong to one of those categories.
 <video:gallery_loc>
 Not used
 Currently not used.
@@ -218,13 +220,13 @@ Required
 Encloses information about the video.
 Attributes:
 medium [Required] Type of content. This should be set to video.
-url [Required] The direct URL to the raw video content. If this is not specified, you must specify the <media:player> tag.
+url [Required] The direct URL to the raw video content. If this isn't specified, you must specify the <media:player> tag.
 duration [Optional but recommended] Length of the video in seconds.
 For all of the other optional attributes and child fields of the <media:content> tag, see the mRSS specification.
 <media:player>
 Depends
 You must specify at least one of <media:player> or the url attribute in <media:content>.
-A URL pointing to a player for a specific video. Usually this is the information in the src element of an <embed> tag and should not be the same as the content of the <loc> tag. Cannot be the same URL as the <link> tag. <link> should point to the URL of the page hosting the video, while this tag should point to a player.
+A URL pointing to a player for a specific video. Usually this is the information in the src element of an <embed> tag and should not be the same as the content of the <loc> tag. Can't be the same URL as the <link> tag. <link> should point to the URL of the page hosting the video, while this tag should point to a player.
 <media:title>
 Required
 The title of the video. Maximum 100 characters. All HTML entities should be escaped or wrapped in a CDATA bock.
@@ -251,11 +253,11 @@ The required attribute relationship specifies whether the video is restricted or
 Learn more about using country restrictions.
 <media:price>
 Optional
-The price to download or view the video. Do not use this tag for free videos. More than one <media:price> element can be listed (for example, in order to specify various currencies or purchasing options).
+The price to download or view the video. Don't use this tag for free videos. More than one <media:price> element can be listed (for example, in order to specify various currencies or purchasing options).
 Attributes:
 currency [Required] The currency in ISO 4217 format.
 type [Required] The purchase option. Allowed values are rent, purchase, package, and subscription.
 The full mRSS specification contains many more optional tags, best practices, and examples. Once you have an mRSS feed, you can test and submit it just like any other sitemap.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-03 UTC.
+Last updated 2021-01-14 UTC.

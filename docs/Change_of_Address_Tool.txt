@@ -48,5 +48,5 @@ Add 301 redirects from the new site to the old site.
 Open the Change of address tool in the old site and click Cancel Move. Repeat for every old site that you no longer want to move.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats report
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats reportOpt out of display on Google Local and other Google properties
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -36,7 +36,7 @@ max-image-preview:[size] - Limit the size of any image associated with this page
 max-video-preview:[number] - Limit any video preview associated with this page to [number] seconds; specify 0 to allow only a still image or -1 to allow any preview length
 noarchive - Don't show a Cached link for a page in search results.
 unavailable_after:[date] - Lets you specify the exact time and date you want to stop crawling and indexing of this page.
-noimageindex - Don't show the page as the referring page for an image in Google Image search results. This has the effect of preventing all images on this page from being indexed in this page; if the image appears in another page, it might be crawled and indexed according to the permissions on that page. Note that this is not yet an internet standard; the standard way to block images is to use a robots.txt rule.
+noimageindex - Don't show the page as the referring page for an image in Google Images results. This has the effect of preventing all images on this page from being indexed. If an image also appears in another page, Google might crawl and index the image according to the permissions on that other page. Note that this is not yet an internet standard; the standard way to block images is to use a robots.txt rule.
 none - Equivalent to noindex, nofollow.
 all - [Default] Equivalent to "index, follow".
 You can also specify this information in the header of your pages using the "X-Robots-Tag" HTTP header directive. This is particularly useful if you wish to limit indexing of non-HTML files like graphics or other kinds of documents. More information about robots meta tags
@@ -68,4 +68,4 @@ Independently of page-level meta-tags, you can designate parts of an HTML page n
 To ensure machine readability, the section must be valid HTML and all tags closed accordingly. More information.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-03 UTC.
+Last updated 2021-01-15 UTC.

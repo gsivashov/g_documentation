@@ -27,7 +27,7 @@ The following guidelines are additional tips for specific content types on your 
 including images, video, AMP, AJAX, and mobile-friendly sites. For more information about
 general best practices, or how to enable specific features for your site, see the
 Search Appearance topic.
-Google Image best practices
+Google Images best practices
 Video best practices
 Rich media file best practices
 AMP on Google Search guidelines
@@ -55,4 +55,4 @@ Ways to Prevent Comment Spam
 Report spam, paid links, or malware
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-03 UTC.
+Last updated 2021-01-14 UTC.

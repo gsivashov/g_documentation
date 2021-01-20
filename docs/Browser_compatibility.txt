@@ -17,4 +17,4 @@ Consider accessibility
 Not all users may have JavaScript enabled in their browsers. In addition, technologies such as Flash and ActiveX may not render well (or at all) in every browser. We recommend following our guidelines for using Flash and other rich media, and testing your site in a text-only browser such as Lynx. As a bonus, providing text-only alternatives to rich-media content and functionality will make it easier for search engines to crawl and index your site, and also make your site more accessible to users who use alternative technologies such as screenreaders.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2021-01-12 UTC.

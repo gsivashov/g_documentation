@@ -8,14 +8,14 @@ Send feedback
 Duplex on the Web user agent
 DuplexWeb-Google is the user agent that supports the Duplex on the web service. You can see the user agent token and full user agent strings here.
 Crawl frequency and behavior
-No services that use DuplexWeb-Google will perform any purchases or perform any other significant actions when crawling your site.
-DuplexWeb-Google crawls occur a few times a day to a few times an hour, depending on the feature being trained, but these runs are calculated not to overload your site or disturb your traffic.
-DuplexWeb-Google crawls are not used by Google Search for indexing. Because they are not used for indexing, the DuplexWeb-Google user agent does not recognize the noindex directive.
-Google Analytics does not record page requests made by DuplexWeb-Google during crawling and analysis.
+No services that use the DuplexWeb-Google user agent will perform any purchases or perform any other significant actions when crawling your site.
+The DuplexWeb-Google user agent crawls occur a few times a day to a few times an hour, depending on the feature being trained, but these runs are calculated to not overload your site or disturb your traffic.
+The DuplexWeb-Google user agent crawls are not used by Google Search for indexing. Because they are not used for indexing, the DuplexWeb-Google user agent does not recognize the noindex directive.
+Google Analytics does not record page requests made by the DuplexWeb-Google user agent during crawling and analysis.
 Use robots.txt rules to control crawling
-You must explicitly block DuplexWeb-Google using the Disallow robots.txt rule to prevent it from crawling your site. Disabling crawling (training) in your Search Console property setting is not enough.
-DuplexWeb-Google obeys robots.txt rules normally, with the following significant exception:
-When Duplex on the web is enabled using Search Console (the default), the DuplexWeb-Google user agent is not affected by the * wildcard user-agent string in Disallow statements. When Duplex on the web is disabled using Search Console, the DuplexWeb-Google user agent respects the * wildcard user-agent string in Disallow statements. Examples:
+You must explicitly block the DuplexWeb-Google user agent using the Disallow robots.txt rule to prevent it from crawling your site. Disabling crawling (training) in your Search Console property setting is not enough.
+The DuplexWeb-Google user agent obeys robots.txt rules normally, with the following significant exception:
+When Duplex on the web is enabled using Search Console (the default), the DuplexWeb-Google user agent is not affected by the * wildcard user agent string in Disallow statements. When Duplex on the web is disabled using Search Console, the DuplexWeb-Google user agent respects the * wildcard user agent string in Disallow statements. Examples:
 # Example 1: Block DuplexWeb-Google from crawling your site
 User-agent: DuplexWeb-Google
 Disallow: /
@@ -30,4 +30,4 @@ User-agent: *
 Disallow: /
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2021-01-15 UTC.

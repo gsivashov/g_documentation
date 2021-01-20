@@ -13,7 +13,17 @@ Limit the crawl rate
 Open the Crawl Rate Settings page for your property.
 If your crawl rate is described as "calculated as optimal," the only way to reduce the crawl rate is by filing a special request. You cannot increase the crawl rate.
 Otherwise, select the option you want and then limit the crawl rate as desired. The new crawl rate will be valid for 90 days.
+Emergency crawl limitation
+If your site is being crawled so heavily that your site is having availability issues, here is how to protect it:
+Determine which Google crawler is overcrawling your site. Look at your website logs or use the Crawl Stats report.
+Immediate relief:
+If you want a simple solution, use robots.txt to block crawling for the overloading agent (googlebot, adsbot, etc.). However, this can take up to a day to take effect.
+If you're able to detect and respond to increased load dynamically, return HTTP 5XX/429 when you're nearing your serving limit. Be sure not to return 5XX or 429 for more than two or three days, though, or it can signal Google to crawl your site less frequently in the long term.
+Change your crawl rate using the Crawl Rate Settings page, if the option is available.
+Two or three days later, when Google's crawl rate has adapted, you can remove your robots.txt blocks or stop returning error codes from step 1.
+If you are being overwhelmed by AdsBot crawls, the problem is likely that you have created too many targets for Dynamic Search Ads on your site using URL_Equals or page feeds. If you don't have the server capacity to handle these crawls you should either limit your ad targets, add URLs in smaller batches, or increase your serving capacity. Note that AdsBot will crawl your pages every 2 weeks, so you will need to fix the issue or it will recur.
+Note that if you've limited the crawl rate using the crawl settings page, the crawl rate will return to automatic adjustment after 90 days.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats report
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats reportOpt out of display on Google Local and other Google properties
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

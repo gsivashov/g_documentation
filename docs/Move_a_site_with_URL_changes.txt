@@ -201,7 +201,7 @@ mapping will vary depending on your current website infrastructure and the detai
 site move.
 1. Determine your current URLs
 In the simplest of site moves, you may not need to generate a list of your current URLs. For
-example, you could use a wildcard server-side redirect if you're changing just your site's host
+example, you could use a wildcard server-side redirect if you're changing your site's domain
 (for example, moving from example.com to example.net).
 In more complex site moves, you will need to generate a list of old URLs and map them to
 their new destinations. How you get a listing of old URLs depends on your current website's
@@ -271,10 +271,10 @@ This allows Googlebot to discover all redirects to the new site and update our i
 On the new site, make sure the robots.txt file
 allows all crawling. This includes crawling of images, CSS, JavaScript, and other page
 assets, apart from the URLs you are certain you do not want crawled.
+Configure the old website to redirect users and Googlebot to the new site based on the URL mapping.
 Submit a Change of Address in Search Console for the old site.
 If you're moving your site from HTTP to HTTPS, you don't need to use the
 Change of Address tool.
-Configure the old website to redirect users and Googlebot to the new site based on the URL mapping.
 On the old site, submit the two sitemaps you prepared previously
 containing the old and new URLs.This helps our crawlers discover the redirects from the old
 URLs to the new URLs, and facilitates the site move.
@@ -355,4 +355,4 @@ If you used Data
 Highlighter to map your old pages, you will need to redo your mappings for your new site.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-14 UTC.

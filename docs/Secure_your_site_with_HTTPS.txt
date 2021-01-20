@@ -24,7 +24,7 @@ Use server-side 301 redirects
 Redirect your users and search engines to the HTTPS page or resource with server-side 301 HTTP redirects.
 Verify that your HTTPS pages can be crawled and indexed by Google
 Do not block your HTTPS pages by robots.txt files.
-Do not include meta noindex tags in your HTTPS pages.
+Do not include noindex tags in your HTTPS pages.
 Use the URL Inspection tool to test whether Googlebot can access your pages.
 Support HSTS
 We recommend that HTTPS sites support HSTS (HTTP Strict Transport Security). HSTS tells the browser to request HTTPS pages automatically, even if the user enters http in the browser location bar. It also tells Google to serve secure URLs in the search results. All this minimizes the risk of serving unsecured content to your users.
@@ -49,7 +49,7 @@ Make sure your web server supports SNI and that your audience uses supported bro
 Crawling issues
 Don't block your HTTPS site from crawling using robots.txt.
 Indexing issues
-Allow indexing of your pages by search engines where possible. Avoid the noindex meta tag.
+Allow indexing of your pages by search engines where possible. Avoid the noindex tag.
 Old protocol versions
 Old protocol versions are vulnerable; make sure you have the latest and newest versions of TLS libraries and implement the newest protocol versions.
 Mixed security elements
@@ -70,4 +70,4 @@ Qualys SSL/TLS best practices
 SSL/TLS Mozilla wiki
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-09 UTC.
+Last updated 2021-01-15 UTC.

@@ -1,0 +1,60 @@
+https://support.google.com/webmasters/answer/9606710
+
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Send feedback
+Google News sitemaps
+When you create a Google News sitemap, follow these requirements:
+Include URLs for articles that were published in the last two days. You can remove articles after two days from the News sitemap, but they remain in the index for the regular 30-day period.
+Update your News sitemap with new articles as they're published. Google News crawls News sitemaps as often as it crawls the rest of your site.
+You can add up to 1,000 URLs in a sitemap. If there are more than 1,000 URLs in a sitemap, break your sitemap into several smaller sitemaps, and use a sitemap index file to manage them. Use the XML format provided in the sitemap protocol. Don't list more than 50,000 sitemaps in a single sitemap file. These limits help ensure that your web server isn't using large files.
+Update your current sitemap with your new article URLs. Don't create a new sitemap with each update.
+Don't use the Google sitemap generator to create a News sitemap. The generator includes URLs that don't correspond to specific news articles.
+Example sitemap entry
+A Google News sitemap uses the sitemap protocol. Here's an example of a News sitemap entry:
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<url>
+<loc>http://www.example.org/business/article55.html</loc>
+<news:news>
+<news:publication>
+<news:name>The Example Times</news:name>
+<news:language>en</news:language>
+</news:publication>
+<news:publication_date>2008-12-23</news:publication_date>
+<news:title>Companies A, B in Merger Talks</news:title>
+</news:news>
+</url>
+</urlset>
+Sites with a News sitemap aren't favored in ranking results. Google News uses normal crawl methods to search and label the homepages and sections of all news sites, regardless of the availability of a News sitemap.
+Submit your sitemap
+After you've created your News sitemap, submit it through Search Console. We recommend that you upload your sitemap to the highest level directory that contains your news articles. For more information, learn how to manage sitemaps.
+News-specific tag definitions
+Review the following Google News tags for sitemaps:
+Tag
+Required?
+Description
+<publication>
+Yes
+The publication where the article appears. It has two required child tags: <name> and <language>.
+The <name> tag is the name of the news publication. It must exactly match the name as it appears on your articles on news.google.com, except for anything in parentheses.
+The <language> tag is the language of your publication. Use an ISO 639 language code (two or three letters).
+Exception: For Simplified Chinese, use zh-cn and for Traditional Chinese, use zh-tw.
+<publication_date>
+Yes
+The article publication date in W3C format. Use either the "complete date" format (YYYY-MM-DD) or the "complete date plus hours, minutes, and seconds" format with time zone designator format (YYYY-MM-DDThh:mm:ssTZD). Specify the original date and time when the article was published on your site. Don't specify the time when you added the article to your sitemap.
+The Google News crawler accepts any of the following formats:
+Complete date: YYYY-MM-DD (1997-07-16)
+Complete date plus hours and minutes: YYYY-MM-DDThh:mmTZD (1997-07-16T19:20+01:00)
+Complete date plus hours, minutes, and seconds: YYYY-MM-DDThh:mm:ssTZD (1997-07-16T19:20:30+01:00)
+Complete date plus hours, minutes, seconds, and a decimal fraction of a second: YYYY-MM-DDThh:mm:ss.sTZD (1997-07-16T19:20:30.45+01:00)
+<title>
+Yes
+The title of the news article.
+Tip: Google may shorten the title of the news article for space reasons when displaying the article on Google News. Include the title of the article as it appears on your site. Don't include the author name, publication name, or publication date in the <title> tag.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2021-01-15 UTC.

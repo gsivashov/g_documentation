@@ -69,5 +69,5 @@ Snippet: A computer-generated summary of the page. Learn more.
 Cached copy: When Googlebot (Google's crawler) crawls a page, it makes a copy of the page that can be viewed in Search results. This stored copy of the page is called a cached copy or cached version.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Removing informationGet my personal information off GoogleRemove Outdated Content tool
+Removing informationGet my personal information off GoogleRemove Outdated Content toolRemovals Tool
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

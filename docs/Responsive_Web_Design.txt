@@ -84,7 +84,7 @@ different content to different devices.
 Dynamically-served JavaScript: In this configuration, all devices are
 served the same HTML, but the JavaScript is served from a URL that
 dynamically serves different JavaScript code depending on the device's
-user-agent.
+user agent.
 Let's look at each of these configurations in detail.
 JavaScript-adaptive
 In this configuration, a URL serves the same contents (HTML, CSS, JavaScript, an
@@ -113,20 +113,20 @@ include JavaScript that detects the screen dimensions, which are then sent to
 the server that updates or alters the code sent to the device. Typically, the
 JavaScript stores the detected device capabilities in a cookie that the server
 reads on subsequent visits from the same device.
-Given that the server returns different HTML to different user-agents, combined
+Given that the server returns different HTML to different user agents, combined
 detection is considered a type of dynamic serving configuration. The details are
 described in full in the dynamic serving section, but to briefly summarize,
 the website should include the "Vary: User-agent" HTTP response header when a
-URL that serves different HTML content to different user-agents is requested.
+URL that serves different HTML content to different user agents is requested.
 Dynamically-served JavaScript
 In this configuration, all devices are served the same HTML which includes a
 <script> element to include an external JavaScript file that can have
-different content depending on the requesting user-agent. That is, the
+different content depending on the requesting user agent. That is, the
 JavaScript code is dynamically served.
 In this case, we recommend that the JavaScript file be served with the "Vary:
 User-agent" HTTP header. This is a signal to Internet caches and Googlebot that
 the JavaScript can be different for different user agents, and is a signal for
-Googlebot to crawl the JavaScript file using different Googlebot user-agents.
+Googlebot to crawl the JavaScript file using different Googlebot user agents.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-04 UTC.
+Last updated 2021-01-15 UTC.

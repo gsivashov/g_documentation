@@ -62,7 +62,7 @@ The video must be in a supported format.
 The video host page and streaming file bytes must not be blocked to Google. (Blocked means that the page or file are paywall-protected, login required, noindex or robots.txt blocked.)
 The video host page and the server streaming the actual video must have the bandwidth to be crawled. So if your landing page at example.com/puppies.html has an embedded puppies video served by somestreamingservice.com, both example.com and somestreamingservice.com must be unblocked and have available server load.
 Supported video encodings
-Google can crawl the following video file types: .3g2, .3gp2, .3gp, .3gpp, .asf, .avi, .divx, .f4v, .flv, .m2v,, .m3u8, .m4v, .mkv, .mov, .mp4, .mpe, .mpeg, .mpg, .ogv, .qvt, .ram, .rm, .vob, .webm, .wmv, .xap
+Google can crawl the following video file types: .3g2, .3gp2, .3gp, .3gpp, .asf, .avi, .divx, .f4v, .flv, .m2v, .m3u8, .m4v, .mkv, .mov, .mp4, .mpe, .mpeg, .mpg, .ogv, .qvt, .ram, .rm, .vob, .webm, .wmv, .xap
 Flash is no longer supported in most mobile web browsers, and is planned to be deprecated by Adobe in 2020. If your video is in Flash format, consider transcoding it to another format supported by mobile browsers.
 Describe your video using structured data or a video sitemap
 You can provide additional information about your video to Google using structured data, a video sitemap, or both. Providing this extra information can enable more features in search results and help us understand and rank your video better.
@@ -273,4 +273,4 @@ Small, hidden, or difficult to find videos
 Make sure that your videos are visible and easy to find on your video pages. Google suggests using a standalone page for each video with a descriptive title or description unique to each individual video. Videos should be prominent on the page and should not be hidden or difficult to find.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2021-01-15 UTC.

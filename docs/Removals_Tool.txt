@@ -1,47 +1,52 @@
 https://support.google.com/webmasters/answer/9689846
 
-Removals ToolTemporarily block search results from your site, or manage SafeSearch filteringThe Removals tool enables you to temporarily block pages from Google Search results on sites that you own. For sites that you don't own, use this troubleshooter.
-The tool also allows you to see any URLs on your site that were reported as containing adult content.
-Sections:
-Temporarily block URLs
-See outdated content removal requests
-See URLs on your site reported as adult content
+Removals ToolTemporarily block search results from your site, or manage SafeSearch filteringThe Removals tool enables you to temporarily block pages from Google Search results on sites that you own, see a history of removal requests from both property owners and non-owners, and also to see any URLs on your site that were reported as containing adult content.
+To remove content on sites that you don't own, see this page.
 Removals in Search Console - Google Search Console Training
-Temporarily block URLs
-Follow this procedure to temporarily block a URL from appearing in Google Search results.
+Contents:
+Temporarily block URLs on my site
+See history of removal requests
+See URLs on your site reported as adult content
+Temporarily block URLs on your site
+Follow this procedure to temporarily block a URL on your site from appearing in Google Search results.
 When to use this tool
 You have a URL on a Search Console property that you own, and you need to take it off Google Search quickly. You must take additional steps to remove the URL permanently. The URL to remove can be for a web page or an image.
-You've removed sensitive content from a page and want Google to remove that content from Search results without removing the page from Search.
+You've updated the page to remove sensitive content, and want Google to reflect the change in Search results.
 When not to use this tool
-To block a page on a property that you don't own. See I don't control the web page.
-To permanently remove a URL from Search. This is a middle step in permanent removal, not a first step. To permanently remove a URL, follow the instructions to make a removal permanent.
+To block a page on a property that you don't own. See If you don't control the page.
+To permanently remove a URL from Search. Use the Removals tool as part of this process to remove a URL permanently. This tool is just one step in the process.
 To remove content from the internet. This tool removes content only from Google Search.
 To remove results from other search engines. This tool removes content only from Google Search.
+To clean up cruft, like old pages that 404. If you recently changed your site and now have some outdated URLs in the index, Google's crawlers will see this as we recrawl your URLs, and those pages will naturally drop out of our search results. There's no need to request an urgent update.
+To address crawl errors from your Search Console account. The blocking tool blocks URLs from Google's search results, not from your Search Console account. You don’t need to manually remove URLs from this report; they will drop out naturally over time.
+To "start from scratch" with your site. If you're worried that your site might have a manual action, or you want to start with a clean slate after purchasing a domain from someone else, we recommend filing a reconsideration request letting us know what you're worried about and what has changed.
+To take your site "offline" after being hacked. If your site was hacked and you want to get rid of bad URLs that got indexed, use the URL blocking tool to block any new URLs that the hacker created—for example, http://www.example.com/buy-cheap-cialis-skq3w598.html. But we don't recommend blocking your entire site, or blocking URLs that you'll eventually want indexed. Instead, clean up the hacking and let us recrawl your site. More information about dealing with a hacked site.
+To get the right "version" of your site indexed. Many sites make the same HTML content or files available via different URLs. If you do this, and don’t want duplicates to appear in search results, review our recommended methods of canonicalization. Don’t use the URL tool to block the URLs you don’t want in search results. It won't keep your favorite version of a page; instead, could remove all versions (http/https and www/non-www) of a URL.
+Block a URL
 Very important notes:
 A successful request lasts only about six months. After that, your information can appear on Google search results (see Making removal permanent).
-Blocking a URL does not prevent Google from crawling your page, only from showing it in Search results. When you request a temporary block of a URL, Google can continue to crawl the URL if it exists and isn't blocked by another method (such as a noindex tag). Because of this, it is possible that your page can be crawled and cached again before you remove or password-protect your page, and can appear in search results after your temporary blackout expires.
-If your URL becomes unreachable by Google, it will assume that the page is gone and your block request will be ended. Any page found at that URL at a later time will be considered a new page that can appear in Google Search results.
-Use the Removals tool
+Blocking a URL does not prevent Google from crawling your page, only from showing it in Search results. When you request a temporary block of a URL, Google can continue to crawl the URL if it exists and isn't blocked by another method (such as a noindex tag). Because of this, it is possible that your page can be crawled and cached again before you remove or password-protect your page, and can appear in search results after your temporary blackout expires.
+If your URL is unreachable by Google (404, 502/3) when you use this tool, it will assume that the page is gone, and your block request will expire. Any page found at that URL at a later time will be considered a new page that can appear in Google Search results.
 To temporarily block a URL from Google Search, or update Google's view when a page has changed:
-The URL must be in a Search Console property that you own. If it's not, follow these instructions instead.
+The URL must be in a Search Console property that you own. If it's not, follow these instructions instead.
 Open the Removals tool.
-Select the Temporary Removals tab.
-Click New Request.
+Select the Temporary Removals tab.
+Click New Request.
 Select either Temporarily remove URL or Clear cached URL:
 Temporarily remove URL
 What does it do?
-Blocks the URL from Google Search results for about six months. The page can reappear in Search results after the blackout period. The page should be recrawled before appearing in Search results again.
-Also clears cached copy of the page and the page snippet.
+Blocks the URL from Google Search results for about six months. The page can reappear in Search results after the blackout period. The page should be recrawled before appearing in Search results again.
+Also clears cached copy of the page and the page snippet.
 Use this feature as the first step in permanently blocking a page from Google Search results.
 You can block either a specific URL or all URLs that start with a specific prefix.
 Block a specific URL
 Select Remove this URL only
 Blocks only the exact matching URL from Search results, including the page extension (for example, .html).
-Use the URL exactly as it appears in Google Search results.
+Use the correct URL as described below.
 Anchors are never matched and should be omitted from your URL (mypage#anchor).
 See additional notes below.
 Block URLs that start with a prefix
-Select Remove all URLs with this prefix
+Select Remove all URLs with this prefix
 Blocks all URLs beginning with the specified prefix, both www and non-www. For example, if your property is example.com, and you specify "foods/", then both of the following URLs will match:
 example.com/foods/pizza https://www.example.com/foods/bread?type=whole_wheat
 www.example.com/foods/pasta/spaghetti/bologonese.html
@@ -54,69 +59,69 @@ https://example.com/mypage matches
 http://example.com/mypage matches
 https://www.example.com/mypage matches
 http://www.example.com/mypage matches
-Other subdomains (such as m. or amp.) do not match. So http://m.example.com/mypage does not match.
+Other subdomains (such as m. or amp.) do not match. So http://m.example.com/mypage does not match.
 Clear cached URL
 What does it do?
-Wipes out the page description snippet in Search results until the page is crawled again, when the snippet is generated from the new content. Until the next crawl, the page description will say something like "No page description available."
-Use this feature when you remove sensitive information from a page and want to update your result snippet in Google Search. Note that the page might still appear in search results for the removed information until the page is recrawled; however the removed information won't appear in the snippet or cached version.
+Wipes out the page description snippet in Search results until the page is crawled again, when the snippet will be generated from the new content. Until that next crawl, the page description will say something like "No page description available."
+Use this feature when you remove sensitive information from a page and want to update your result snippet in Google Search. Note that the page might still appear in Search results that match the removed information until the page is recrawled; but the removed information won't appear in the snippet or cached version.
 Notes:
-Use the URL exactly as it appears in Google Search results. The URL must match exactly, including the page extension (for example, .html). Therefore, if you specify path/mypage, then the following URLs will NOT be matched:
+Use the correct URL as described below. The URL must match exactly, including the page extension (for example, .html). Therefore, if you specify path/mypage, then the following URLs will NOT be matched:
 path/MyPage, path/mypage?1234
 path/mypage.html
 Anchors are never matched and should be omitted from your URL (mypage#anchor).
-Select Next to complete the process. The request usually takes up to a day to process, and is not guaranteed to be accepted. Check back to see the status of the request. If your request has been denied, click Learn more to learn why.
-Submit additional removal requests for any additional URLs that might point to the same page, as well as any variations in URL casing that your server handles. For example, all the following URLs might point to the same page:
+Select Next to complete the process. The request usually takes up to a day to process, and is not guaranteed to be accepted. Check back to see the status of the request. If your request has been denied, click Learn more to learn why.
+Submit additional removal requests for any additional URLs that might point to the same page, as well as any variations in URL casing that your server handles. For example, all the following URLs might point to the same page:
 example.com/mypage
 example.com/MyPage
 example.com/page?1234
 To make your removal permanent, read the next section.
+Find the correct URL for blocking
+Here's how to find the correct URL to submit to the tool in order to block it in Search results.
+Web page URL
+For a page, you must enter the exact URL that appears in Google Search results. Small variations in URLs—such as www.example.com/dragon vs. www.example.com/Dragon—are two different URLs. In order for Google to remove the content you want, you must enter the exact URL that you found in Google Search results.
+To find the correct URL:
+Visit the page and copy the URL in your browser URL bar.
+Find any additional URLs for the same page: It's common for the same content to appear in multiple URLs. For example, all the following blog post URLs all point to the same page:
+http://www.example.com/forum/thread/123
+http://www.example.com/forum/post/456
+http://www.example.com/forum/thread/123?post=456
+http://www.example.com/forum/thread/123?post=456&sessionid=12837460
+Even if you successfully request removal of one URL, if the content you're trying to remove appears in our search results under other URLs, it can still appear. If this is the case, submit additional removal requests, one for each URL that displays this content.
+Image URL
+Here’s how to find the URL of an image to temporarily block that image:
+Find the image on Google Images using Google Chrome browser.
+Right-click the image and select Copy Link Address. Do not left-click the image first. (The URL should be something like this: https://www.google.com/imgres?imgurl=https....)
+Paste the URL into a file or document, so it’s available when you use the URL removal tool.
+Find any additional URLs for the same image; an image can be hosted at multiple URLs on the same site, or on different sites. To find additional copies of an image:
+Right-click an image in search results and choose Search Google for Image
+Click Find other sizes of this image: All sizes to get a page with all sizes
+Also browse "Pages that include matching images" on the bottom of the results page.
 Make your removal permanent
-The Removals tool provides only a temporary removal of about six months. To remove content or a URL from Google search permanently:
+The Removals tool provides only a temporary removal of about six months. To remove content or a URL from Google search permanently:
 Take one of the following actions to remove the page permanently:
-Remove or update the content on your site (images, pages, directories) and make sure that your web server returns either a 404 (Not Found) or 410 (Gone) HTTP status code. Non-HTML files (like PDFs) should be completely removed from your server. (Learn more about HTTP status codes)
+Remove or update the content on your site (images, pages, directories) and make sure that your web server returns either a 404 (Not Found) or 410 (Gone) HTTP status code. Non-HTML files (like PDFs) should be completely removed from your server. (Learn more about HTTP status codes)
 Block access to the content, for example by requiring a password.
 Indicate that the page should not be indexed using the noindex meta tag. This is less secure than the other methods.
 Do not use robots.txt as a blocking mechanism.
 If you blocked the page before removing your content permanently (step 1), unblock and then reblock the page. This clears the page from the index, if it was recrawled after blocking.
-View your temporary removal request history
-You can see a history of all removal requests for this site filed with this tool for the past 6 months.
-The history table includes the following information:
-URL
-The URL requested. All www/non-www/http/https variations of the URL shown are also included in the request.
-Type
-The type of request issues:
-Clear cached URL: A cache removal request
-Temporarily remove URL: A temporary removal request
-Status
-The status of the request:
-Processing request: The request is in progress.
-Request denied: The request was denied, typically because there is another identical request already in force. See more possible reasons that a request can be denied.
-Request canceled: You canceled the request.
-Temporarily removed: The URL has been temporarily removed from Google Search results. You should make removal permanent or the page could appear again after about six months.
-Removal expired: The URL removal request has expired, and the page is eligible to appear in Search results again unless you file another removal request.
-Cleared: The cache clear request has completed.
-Cancel a Removal request
+Cancel a request
 If you want to cancel your temporary block from search results:
 Open the Removals tool.
 Find your request in the history table.
-Click the inline menu button  next to the request and select Cancel request.
-Misuse of the Removals tool
-The URL removal tool is intended as a first step for content that you urgently need blocked—for example, if it contains confidential data that was accidentally exposed. Using the tool for other purposes such as the following might cause problems for your site:
-Do not use the tool to clean up cruft, like old pages that 404. If you recently changed your site and now have some outdated URLs in the index, Google's crawlers will see this as we recrawl your URLs, and those pages will naturally drop out of our search results. There's no need to request an urgent update.
-Do not use the tool to address crawl errors from your Search Console account. The blocking tool blocks URLs from Google's search results, not from your Search Console account. You don’t need to manually remove URLs from this report; they will drop out naturally over time.
-Do not use the tool to "start from scratch" with your site. If you're worried that your site might have a manual action, or you want to start with a clean slate after purchasing a domain from someone else, we recommend filing a reconsideration request letting us know what you're worried about and what has changed.
-Do not use the tool to take your site "offline" after being hacked. If your site was hacked and you want to get rid of bad URLs that got indexed, use the URL blocking tool to block any new URLs that the hacker created—for example, http://www.example.com/buy-cheap-cialis-skq3w598.html. But we don't recommend blocking your entire site, or blocking URLs that you'll eventually want indexed. Instead, clean up the hacking and let us recrawl your site. More information about dealing with a hacked site.
-Do not use the tool to get the right "version" of your site indexed. Many sites make the same HTML content or files available via different URLs. If you do this, and don’t want duplicates to appear in search results, review our recommended methods of canonicalization. Don’t use the URL tool to block the URLs you don’t want in search results. It won't keep your favorite version of a page; instead, could remove all versions (http/https and www/non-www) of a URL.
-See outdated content removal requests
-You can see a history of all requests to update or remove outdated Google Search results for your site that were made using the Remove Outdated Content tool in the past 6 months. The Remove Outdated Content tool is used by non-site-owners to update search results when Google Search shows information that is no longer present on the site. Successful requests will update the result in Google: if the page is no longer present, the result will be removed from the index and will no longer be shown; if the content on the page is removed, Google Search will no longer trigger for, or show, the removed content.
-To see your request history:
-Open the Removals tool.
-Select the Outdated content tab. The history table includes the following information:
+Click the menu button
+next to the request and select Cancel request.
+See history of removal requests
+You can see a history of all current and expired removal requests for your site that were made in the past 6 months.
+See removal requests from non-owners
+These are removal requests filed using the Remove Outdated Content tool. The Remove Outdated Content tool is used by non-site-owners to update search results when Google Search shows information that is no longer present on the site. Successful requests will update the result in Google: if the page is no longer present, the result will be removed from the index and will no longer be shown; if the content on the page is removed, Google Search will no longer trigger for, or show, the removed content.
+You can see a list of your own removal requests, both current and expired, for the past 6 months in the Outdated content tab.
+To see removal requests from non-owners:
+Open the Outdated content tab in the Removals tool. The history table includes the following information:
 URL
 The URL requested. All www/non-www/http/https variations of the URL shown are also included in the request.
 Type
 The type of request; can be one of the following:
-Outdated cache removal: The page still exists, but some content has been removed. Clears the page snippet in the result until the next crawl; Google searches for the removed content will no longer show this page.
+Outdated cache removal: The page still exists, but some content has been removed. Clears the page snippet in the result until the next crawl; Google searches for the removed content will no longer show this page.
 Outdated page removal: The page no longer exists, and has been cleared from the Google index and search results.
 Requested
 The date when the request was filed, in Pacific Time.
@@ -129,18 +134,41 @@ Denied: Page not indexed - The URL submitted is not in our index.
 Denied: Duplicate request - A similar request is still pending.
 Denied: Page not removed - A page flagged as removed by the requestor still exists.
 Denied: Unspecified - Request could not be fulfilled for another, unspecified reason.
+See removal requests from property owners
+You can see a list of your own removal requests, both current and expired, for the past 6 months.
+To see your removal request history:
+Open the Temporary Removals tab in the Removals tool. The history table includes the following information:
+URL
+The URL requested. All www/non-www/http/https variations of the URL shown are also included in the request.
+Type
+The type of request issues:
+Clear cached URL: A cache removal request
+Temporarily remove URL: A temporary removal request
+Status
+The status of the request:
+Processing request: The request is in progress.
+Request denied: The request was denied, typically because there is another identical request already in force. See more possible reasons that a request can be denied.
+Request canceled: You canceled the request.
+Temporarily removed: The URL has been temporarily removed from Google Search results. You should make removal permanent or the page could appear again after about six months.
+Removal expired: The URL removal request has expired, and the page is eligible to appear in Search results again unless you file another removal request.
+Cleared: The cache clear request has completed.
 See URLs on your site reported as adult content
 Google users can report specific URLs as adult-only to Google using the SafeSearch suggestion tool. URLs submitted using this tool are reviewed, and if Google feels that this content should be filtered from SafeSearch results, these URLs are tagged as adult content.
 To see a list of URLs on your site that were reported as adult content:
 Open the Removals tool.
-Select the SafeSearch Filtering tab.
+Select the SafeSearch Filtering tab.
 The history table shows the list of requests to label your content as adult material. If you feel that a page on your site has been labeled incorrectly, you can report it in the Webmaster Forum.
 SafeSearch filtering requests can have the following status values:
 Processing request: Requests can take a few days or longer to process after being received.
 Request canceled: The user who made the request canceled it.
 Request denied: The request was denied for one of these reasons.
 Filtered: The request was granted, and the URL will not be shown in Google Search results to users with SafeSearch turned on.
+Difference between the Removals tool and the Remove Outdated Content tool
+Search Console exposes two tools for removing content from Search results:
+Removals tool (this tool): The page or image still exists, and you want to remove it from Google Search results for a limited period of time (180 days), or the page or image is already removed, but still appears in Google Search result. You must own the property in Search Console to use this tool.
+Remove Outdated Content tool: The page or image no longer exists on the web, or has been updated, but the old result is still returned in Google Search results. A successful request will remove the image or page (if it is no longer available) or update it in Search results (if it has been changed). You do not need to own the website to use this tool.
+In order to remove or block a page or image, you need to provide the correct URLs to Google, as described here:
 Was this helpful?How can we improve it?YesNoSubmit
 true
-All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemovals ToolRich Results Tools and ReportsSecurity Issues reportSitemaps reportCore Web Vitals reportURL Inspection ToolBlock crawling of parameterized duplicate contentLegacy or external reports and tools
+Removing informationGet my personal information off GoogleRemove Outdated Content toolRemovals Tool
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

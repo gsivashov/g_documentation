@@ -1,4 +1,4 @@
-https://support.google.com/webmasters/topic/9268559
+https://support.google.com/webmasters/answer/70897
 
 Home
 Google Search Central
@@ -104,4 +104,4 @@ An even longer version
 You can find an even longer version about how Google Search works here (with pictures and video!)
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-09 UTC.
+Last updated 2021-01-12 UTC.

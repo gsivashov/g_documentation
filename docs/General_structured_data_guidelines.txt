@@ -43,7 +43,7 @@ JSON-LD (recommended)
 Microdata
 RDFa
 Access
-Do not block your structured data pages to Googlebot using robots.txt, noindex,
+Do not block your structured data pages to Googlebot using robots.txt, the noindex tag,
 or any other access control methods.
 Quality guidelines
 These guidelines are not easily testable using an automated tool.
@@ -202,4 +202,4 @@ mark up all of the reviews on a page, this would be misleading for people who ex
 all of those reviews, based on the appearance of the page in Search results.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-15 UTC.

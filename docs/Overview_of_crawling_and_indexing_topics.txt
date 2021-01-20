@@ -26,6 +26,8 @@ Create custom 404 pages
 How to properly create a custom 404 page that works for users as well as Googlebot.
 Transfer, move, or migrate your site
 If you're moving your site from one domain to another, here's how to minimize any disruption in search results.
+International and multilingual sites
+If your site contains content in different languages, or with different content for different locations, here's how to help Google understand your site.
 Special tags that Google understands
 Google supports several tag extensions that govern search appearance and behavior.
 Google crawlers
@@ -36,4 +38,4 @@ Change Googlebot crawl rate
 In the unlikely chance that Google is making too many crawl requests to your site, you can tell us to slow down our requests.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-03 UTC.
+Last updated 2021-01-14 UTC.

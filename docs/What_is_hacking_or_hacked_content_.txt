@@ -16,9 +16,9 @@ Sometimes, due to security flaws, hackers are able to add new pages to your site
 Hidden content
 Hackers might also try to subtly manipulate existing pages on your site. Their goal is to add content to your site that search engines can see but which may be harder for you and your users to spot. This can involve adding hidden links or hidden text to a page by using CSS or HTML, or it can involve more complex changes like cloaking.
 Redirects
-Hackers might inject malicious code to your website that redirects some users to harmful or spammy pages. The kind of redirect sometimes depends on referrer, user-agent, or device. For example, clicking a URL in Google search results could redirect you to a suspicious page, but there is no redirect when you visit the same URL directly from a browser.
+Hackers might inject malicious code to your website that redirects some users to harmful or spammy pages. The kind of redirect sometimes depends on referrer, user agent, or device. For example, clicking a URL in Google search results could redirect you to a suspicious page, but there is no redirect when you visit the same URL directly from a browser.
 Fixing hacked sites
 Here are our tips on fixing hacked sites and avoiding being hacked.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-15 UTC.

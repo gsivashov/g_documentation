@@ -7,22 +7,35 @@ Advanced SEO
 Send feedback
 Prevent images on your page from appearing in search results
 For quick removal
-Use the Remove URLs tool. You should see results fairly quickly.
+Use the Remove URLs tool
+to remove images hosted on your site from Google's search results within hours.
 For non-emergency image removal
-To prevent images from your site appearing in Google's search results, add a robots.txt file to the root of the server that blocks the image. It takes longer to remove an image from search results than the Remove URLs tool, but is an Internet standard that applies to all search engines, and you have more flexible control through the use of wildcards or subpath blocking.
-For example, if you want Google to exclude the dogs.jpg image that appears on your site at www.yoursite.com/images/dogs.jpg, add the following to your robots.txt file:
+To prevent images from your site appearing in Google's search results, add a
+robots.txt file to the root of the server
+that blocks the image. It takes longer to remove an image from search results than the Remove
+URLs tool, but is an Internet standard that applies to all search engines, and you have more
+flexible control through the use of wildcards or subpath blocking.
+For example, if you want Google to exclude the dogs.jpg image that appears on your site at
+www.yoursite.com/images/dogs.jpg, add the following to your robots.txt file:
 User-agent: Googlebot-Image
 Disallow: /images/dogs.jpg
-The next time Google crawls your site, we'll see this directive and drop your image from our search results.
-To remove all the images on your site from our index, place the following robots.txt file in your server root:
+The next time Google crawls your site, we'll see this directive and drop your image from our
+search results.
+To remove all the images on your site from our index, place the following robots.txt file in
+your server root:
 User-agent: Googlebot-Image
 Disallow: /
-Additionally, Google has introduced increased flexibility to the robots.txt file standard through the use asterisks. Disallow patterns may include "*" to match any sequence of characters, and patterns may end in "$" to indicate the end of a name. To remove all files of a specific file type (for example, to include .jpg but not .gif images), you'd use the following robots.txt entry:
+Additionally, disallow patterns may include "*" to match any sequence of characters, and
+patterns may end in "$" to indicate the end of a name. To remove all files of
+a specific file type (for example, to include .jpg but not .gif images), you'd use the
+following robots.txt entry:
 User-agent: Googlebot-Image
 Disallow: /*.gif$
-By specifying Googlebot-Image as the User-agent, the images will be excluded from Google Image Search. It will also prevent cropping of the image for display within Mobile Image Search, as the image will be completely removed from Google's Image index. If you would like to exclude the images from all Google searches (including Google web search and Google Images), specify User-agent Googlebot.
+By specifying Googlebot-Image as the User-agent, the images will be excluded from Google
+Images. If you would like to exclude the images from all Google searches (including Google web
+search and Google Images), specify the Googlebot user agent.
 How do I remove images from properties that I don't own?
 See the Google Search help documentation on how to remove an image from search results.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2021-01-15 UTC.

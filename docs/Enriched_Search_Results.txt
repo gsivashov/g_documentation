@@ -5,7 +5,7 @@ Google Search Central
 Documentation
 Advanced SEO
 Send feedback
-Enriched Search Results
+Enriched search results
 In addition to standard rich results, Google Search supports a more interactive and enhanced class of rich result called enriched search results. Enriched search results often include an immersive popup experience or other advanced interaction feature. For example, here is a Jobs enriched result popup that might appear if a user searched for "jobs in Mountain View":
 Enriched search enables the user to search across the various properties of a structured data item; for instance, a user might search for chicken soup recipes under 200 calories, or recipes that take less than 1 hour of preparation time.
 Implementing enriched search
@@ -34,4 +34,4 @@ A page listing all the jobs at Mountain View, CA, with links to individual jobs.
 Content policies: Individual enriched search has additional content-type-specific policies for each data type, as described in its documentation. Documents or sites that violate these content policies may receive less favorable ranking or ineligible for the feature.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2021-01-14 UTC.

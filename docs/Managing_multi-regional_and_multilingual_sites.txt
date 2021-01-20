@@ -30,7 +30,7 @@ Avoid automatic redirection based on the user's perceived language. These redire
 Use language-specific URLs
 It's fine to use localized words in the URL, or to use an Internationalized Domain Name (IDN). However, be sure to use UTF-8 encoding in the URL (in fact, we recommend using UTF-8 wherever possible) and remember to escape the URLs properly when linking to them.
 Targeting site content to a specific country (geotargeting)
-You can target your website or parts of it to users in a single specific country speaking a specific language. This can improve your page rankings in the target country, but at the expense of results in other locales/languages.
+You can target your website or parts of it to users in a single specific country that speaks a specific language. This can improve your page rankings in the target country, but at the expense of results in other locales or languages.
 To geotarget your site on Google:
 Page or site level: Use locale-specific URLs for your site or page.
 Page level: Use hreflang or sitemaps to tell Google which pages apply to which locations or languages.
@@ -75,20 +75,19 @@ Geotargeting in Search Console is not possible
 How does Google determine a target locale?
 Google relies on a number of signals to determine the best target audience for a page:
 A target locale specified using Search Console's International Targeting report. If you use a generic top-level domain (gTLD) and use a hosting provider in another country, we recommend using Search Console to tell us which country your site should be associated with (if you want to geotarget your site).
-Country-code top-level domain names (ccTLDs). These are tied to a specific country (for example .de for Germany, .cn for China), and therefore are a strong signal to both users and search engines that your site is explicitly intended for a certain country. (Some countries have restrictions on who can use ccTLDs, so be sure to do your research first.) We also treat some vanity ccTLDs (such as .tv, .me, etc.) as gTLDs, as we've found that users and website owners frequently see these as being more generic than country-targeted (we don't have a complete list of such vanity ccTLDs that we treat as gTLDs, because such a list would change over time). See Google's list of gTLDs.
+Country-code top-level domain names (ccTLDs). These are tied to a specific country (for example .de for Germany, .cn for China), and therefore provide a strong signal to both users and search engines that your site is explicitly intended for a certain country. (Some countries have restrictions on who can use ccTLDs, so be sure to do your research first.) We also treat some vanity ccTLDs (such as .tv and .me) as gTLDs, as we've found that users and website owners frequently see these as being more generic than country-targeted (we don't have a complete list of such vanity ccTLDs that we treat as gTLDs, because such a list would change over time). See Google's list of gTLDs.
 hreflang statements, whether in tags, headers, or sitemaps.
 Server location (through the IP address of the server). The server location is often physically near your users and can be a signal about your site's intended audience. Some websites use distributed content delivery networks (CDNs) or are hosted in a country with better webserver infrastructure, so it is not a definitive signal.
 Other signals. Other sources of clues as to the intended audience of your site can include local addresses and phone numbers on the pages, the use of local language and currency, links from other local sites, and/or the use of Google My Business (where available).
 What Google doesn't do:
-Google crawls the web from different locations around the world. We do not attempt to vary the crawler source used for
-a single site in order to find any possible variations in a page. Therefore, any locale or language variations that your site exposes should be communicated to Google explicitly through the methods shown here (such as hreflang entries, ccTLDs, or explicit links).
+Google crawls the web from different locations around the world. We do not attempt to vary the crawler source used for a single site in order to find any possible variations in a page. Therefore, any locale or language variations that your site exposes should be communicated to Google explicitly through the methods shown here (such as hreflang entries, ccTLDs, or explicit links).
 Google ignores locational meta tags (like geo.position or distribution) or geotargeting HTML attributes.
 Handling duplicate pages with multilingual/multi-regional sites
-If you provide similar or duplicate content on different URLs in the same language as part of a multi-regional site (for instance, if both example.de/ and example.com/de/ show similar German language content), you should pick a preferred version and use the rel=canonical element and hreflang tags to make sure that the correct language or regional URL is served to searchers.
+If you provide similar or duplicate content on different URLs in the same language as part of a multi-regional site (for instance, if both example.de/ and example.com/de/ show similar German language content), you should pick a preferred version and use the rel="canonical" element and hreflang tags to make sure that the correct language or regional URL is served to searchers.
 Generic top-level domains
 Generic top-level domains (gTLDs) are domains that aren't associated with specific locations. If your site has a generic top-level domain such as .com, .org, or any of the domains listed below, and wants to target users in a particular geographic location, you should explicitly set a country target using one of the methods described previously.
 Google treats the following as gTLDs that can be geotargeted in Search Console:
-Generic Top Level Domains (gTLDs): Unless a top level domain is registered as a country code top level domain (ccTLD) with ICANN, Google will treat any TLD that resolves through the IANA DNS root zone as a gTLD. Examples:
+Generic Top Level Domains (gTLDs): Unless a top-level domain is registered as a country code top-level domain (ccTLD) with ICANN, Google will treat any TLD that resolves through the IANA DNS root zone as a gTLD. Examples:
 .com
 .org
 .edu
@@ -97,7 +96,7 @@ and many more...
 Generic regional top-level domains: Although these domains are associated with a geographical region, they are generally treated as generic top-level domains (much like .com or .org):
 .eu
 .asia
-Generic Country Code Top Level Domains (ccTLDs): Google treats some ccTLDs (such as .tv, .me, etc.) as gTLDs, as we've found that users and website owners frequently see these more generic than country-targeted. Here is a list of those ccTLDs (this list may change).
+Generic Country Code Top Level Domains (ccTLDs): Google treats some ccTLDs (such as .tv and .me) as gTLDs, as we've found that users and website owners frequently see these more generic than country-targeted. Here is a list of those ccTLDs (this list may change).
 .ad
 .as
 .bz
@@ -119,4 +118,4 @@ Generic Country Code Top Level Domains (ccTLDs): Google treats some ccTLDs (such
 .ws
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-15 UTC.

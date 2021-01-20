@@ -6,7 +6,7 @@ Documentation
 Advanced SEO
 Send feedback
 Featured snippets and your website
-Featured snippets are special boxes where the format of regular listings is reversed, showing
+Featured snippets are special boxes where the format of a regular search result is reversed, showing
 the descriptive snippet
 first. Read more about how Google's Featured Snippets work.
 How can I opt out of featured snippets?
@@ -51,4 +51,4 @@ within a page to direct a click, clicking a featured snippet will take a user to
 the source web page.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-11 UTC.
+Last updated 2021-01-12 UTC.

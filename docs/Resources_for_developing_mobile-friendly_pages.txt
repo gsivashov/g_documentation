@@ -6,19 +6,29 @@ Documentation
 Advanced SEO
 Send feedback
 Resources for developing mobile-friendly pages
-Users now browse websites from a mobile site as often (or more often) from a mobile device as from a desktop computer. You should design your website to be viewed by mobile devices.
-Mobile devices generally fall into two classes: smartphones and feature phones. Smartphones are essentially mini desktop computers with small screens, and include Android and iPhone devices (we include tablet devices in this classification for design purposes). Feature phones are less capable devices, and are handled differently by Google than smartphones.
+Users now browse the mobile version of a site as often (or more often) with a mobile device,
+rather than browsing with a desktop computer. You should design your website to be viewed by
+mobile devices.
+Mobile devices generally fall into two classes: smartphones and feature phones. Smartphones
+are essentially mini desktop computers with small screens, and include Android and iPhone
+devices (we include tablet devices in this classification for design purposes). Feature phones
+are less capable devices, and are handled differently by Google than smartphones.
 For both types of devices:
-The Google search results page is designed for the type of phone making the request (feature or smart phone).
+The Google search results page is designed for the type of phone making the request
+(feature or smart phone).
 You can use App Indexing Search Preview to see what the page looks like on that phone type.
 You can block a user agent specific to the mobile device type (smart or feature) in your robots.txt file.
-PageSpeed insights can analyze a page and provide tips for making the page load faster.
+PageSpeed
+insights can analyze a page and provide tips for making the page load faster.
 Learn more about developing mobile-friendly sites.
 Resources and information for smartphone site developers
-In selected countries, when Google detects a slow connection, Google will automatically transcode pages linked to by search results. You can see what the page would look like using the Low Bandwidth Transcoder testing tool. Learn more.
-The mobile-friendly test describes issues that can affect your page when accessed on a smartphone.
+In selected countries, when Google detects a slow connection, Google automatically transcodes
+pages that are linked to by search results. You can see what the page would look like using
+the Low Bandwidth
+Transcoder testing tool. Learn more.
+The Mobile-Friendly
+Test describes issues that can affect your page when accessed on a smartphone.
 The Search Console mobile usability report describes issues that can affect your page when accessed on a smartphone.
-Images in SERP are resized on slow connections in specific countries, unless the page owner specifically opts out.
 The Chrome browser supports several smartphone layouts in the device mode & mobile emulator.
 Resources and information for feature phone site developers
 SERP and any pages linked by SERP are transcoded globally on any speed network unless either:
@@ -28,11 +38,12 @@ The page has a <link rel="alternate" media="handheld" href="alternate_page.htm" 
 All images in SERP and any pages linked by SERP are resized unless user specifically opts out.
 PageSpeed insights
 Feature phone markup
-Feature phone web pages come in several markup dialects, including WML, XHTML Basic, XHTML MP, and cHTML. Your choice will vary according to your target market.
-Feature phone markup standards:
+Feature phone web pages come in several markup dialects, including WML, XHTML Basic, XHTML
+MP, and cHTML. Your choice will vary according to your target market.
+Feature phone markup standards
 cHTML
 WML 1.3
-Feature phone validators:
+Feature phone validators
 Mobile-friendly XHTML Validator (W3C)
 Mobile-readiness checker (.mobi)
 Feature phone emulators
@@ -40,4 +51,4 @@ i-mode emulator (DoCoMo)
 User-Agent Switcher (Firefox plug-in)
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-14 UTC.

@@ -18,7 +18,7 @@ What if my app doesn't use hash fragments?
 Maybe it should! You can greatly speed up your application by using hash fragments, because hash fragments are handled by the browser on the client side and do not cause the entire page to refresh. Additionally, they will allow you to make history work in your application (the infamous "browser back button"). Various AJAX frameworks support hash fragments. For example, see Really Simple History, jQuery's history plugin, Google Web Toolkit's history mechanism, or ASP.NET AJAX's support for history management.
 If, however, it is not feasible to structure your app to use hash fragments, you can do the following use a special token in your hash fragments (that is, everything after the # sign in a URL). Hash fragments that represent unique page states must begin with an exclamation mark. For example, if your AJAX app contains a URL like this:
 www.example.com/ajax.html#mystate
-it should now become this:
+It should now become this:
 www.example.com/ajax.html#!mystate
 When your site adopts the scheme, your site will be considered "AJAX crawlable." This means that the crawler will see the content of your app if your site supplies HTML snapshots.
 Will this approach lead to a proliferation of "ugly" _escaped_fragment_ URLs?
@@ -41,7 +41,7 @@ Use <link rel="canonical" href="http://example.com/ajax.html#!foo=123" /> (don't
 Which URL should I include in my Sitemap?
 Your Sitemap should include the version you prefer displayed in search results, so it should be http://example.com/ajax.html#!foo=123.
 How will the #! URLs affect product feeds?
-It's common for sites to want the same URLs for Product Search and Web Search. Generally, the #! version of the URL should be treated as the "canonical" version that should be used in all contexts. The _escaped_fragment_ URL is considered a temporary URL that end users should never see.
+It's common for sites to want the same URLs for Google Shopping and Web Search. Generally, the #! version of the URL should be treated as the "canonical" version that should be used in all contexts. The _escaped_fragment_ URL is considered a temporary URL that end users should never see.
 I'm using HtmlUnit as the headless browser, and it doesn't work. Why not?
 If "doesn't work" means that HtmlUnit does not return the snapshot you were expecting to see, it's very likely that the culprit is that you didn't give it enough time to execute the JavaScript and/or XHR requests. To fix this, try any or all of the following:
 Use NicelyResynchronizingAJAXController. This will cause HtmlUnit to wait for any outstanding XHR calls.
@@ -49,4 +49,4 @@ Bump up the wait time for waitForBackgroundJavaScript and/or waitForBackgroundJa
 This will very likely fix your problem. If it doesn't, you can also try the FAQ for HtmlUnit here: http://htmlunit.sourceforge.net/faq.html. HtmlUnit also has a user forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-03 UTC.
+Last updated 2021-01-19 UTC.

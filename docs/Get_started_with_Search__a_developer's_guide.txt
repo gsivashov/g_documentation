@@ -102,11 +102,11 @@ page).
 To block Googlebot from crawling your page,
 create a robots.txt.
 A robots.txt is not a mechanism for keeping a web page out of Google. To
-keep a web page out of Google, you should use noindex tags or directives, or
+keep a web page out of Google, you should use the noindex tag or directives, or
 password-protect your page.
 To block Googlebot from indexing your page, allow crawling and
-add a noindex
-meta tag.
+add a
+noindex tag.
 Combining multiple crawling and indexing directives might cause some
 directives to counteract other directives. Learn how to configure these directives properly
 by reading
@@ -118,7 +118,7 @@ URL inspection tool.
 Check your
 robot.txt file to see if you're unintentionally blocking Googlebot from crawling your
 site.
-Check your HTML for "noindex" rules in meta tags.
+Check your HTML for noindex rules in meta tags.
 Enable rich results for your site
 A rich result can include styling, images, or other interactive features that can help your
 site stand out more in Search results. You can help Google understand your page better and
@@ -128,4 +128,4 @@ you're not sure where to start, explore our
 gallery of available features.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2021-01-15 UTC.

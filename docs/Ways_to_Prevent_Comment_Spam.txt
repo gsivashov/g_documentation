@@ -48,4 +48,4 @@ Monitor your site for spammy content
 One of the best tools for this is Google Alerts. Set up a site: query using commercial or adult keywords that you wouldn't expect to see on your site. Google Alerts is also a great tool to help detect hacked pages.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-12 UTC.

@@ -212,5 +212,5 @@ Average position: 2
 (1 + 2 + 3) / 3 = 2
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Performance ReportsPerformance report (Search)Performance report (Discover)
+Performance ReportsPerformance report (Search)Performance report (Discover)Performance report (Google News)
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -103,7 +103,7 @@ showProductDetails(product); // shows the product information on the page
 window.location.href = '/not-found'; // redirect to 404 page on the server.
 }
 })
-Here is sample code for the noindex approach:
+Here is sample code for the noindex tag approach:
 fetch(`/api/products/${productId}`)
 .then(response => response.json())
 .then(product => {
@@ -195,12 +195,12 @@ return;
 });
 When Googlebot encounters noindex in the robots meta tag before running JavaScript,
 it doesn't render or index the page.
-If Googlebot encounters noindex, it skips rendering and JavaScript execution.
+If Googlebot encounters the noindex tag, it skips rendering and JavaScript execution.
 Because Googlebot skips your JavaScript in this case, there is no chance to remove the tag from
 the page.
 Using JavaScript to change or remove the robots meta tag might not work as expected. Googlebot
 skips rendering and JavaScript execution if the meta robots tag initially contains noindex.
-If there is a possibility that you do want the page indexed, don't use a noindex
+If there is a possibility that you do want the page indexed, don't use a noindex tag
 in the original page code.
 Use long-lived caching
 Googlebot caches aggressively in order to reduce
@@ -253,4 +253,4 @@ in a search-friendly way, follow
 our lazy-loading guidelines.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-03 UTC.
+Last updated 2021-01-15 UTC.

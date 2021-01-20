@@ -83,7 +83,7 @@ Use Search Console. If you're a verified user for the site,
 we'll send you a notification in the Message Center.
 If you have a smartphone site on a separate URL, set up your server so that it
 redirects smartphone users to the equivalent URL on your smartphone site.
-If you use Dynamic serving, ensure that your user-agent detection is correctly configured.
+If you use Dynamic serving, ensure that your user agent detection is correctly configured.
 If a page on your site doesn't have a smartphone equivalent, keep users on the desktop
 page. Showing the content the user was looking for is a much better experience than
 showing an error page.
@@ -155,4 +155,4 @@ size and space buttons and navigational links suitably for your mobile
 visitors. Read more in Size Tap Targets Appropriately.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-03 UTC.
+Last updated 2021-01-15 UTC.

@@ -230,7 +230,6 @@ If the URLs moved from one state to another, determine what you changed to cause
 The most common reason for a spike in errors is adding an error to a template used by many pages on your site.
 Troubleshooting missing AMP pages
 If the count of AMP pages (valid + warning + error) in the report is less than the count of AMP pages on your site, here are some possible reasons:
-The URLs reported in this report represent a sample of all known AMP URLs for your site. The list of URLs is not meant to be comprehensive.
 Confirm that your canonical non-AMP page is correctly linking to your AMP page.
 Confirm that your AMP or canonical pages are not roboted or noindexed, or protected by auth or login requirements.
 Check for the presence of your AMP and canonical pages in the index by searching Google for the URL of the canonical page. If it is not listed, it's not indexed.

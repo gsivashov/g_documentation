@@ -14,4 +14,4 @@ You're merging two websites and want to make sure that links to outdated URLs ar
 To implement a 301 redirect for websites that are hosted on servers running Apache, you'll need access to your server's .htaccess file. (If you're not sure about your access or your server software, check with your webhoster.) For more information, consult the Apache .htaccess Tutorial and the Apache URL Rewriting Guide. If your site is hosted on a server running other software, check with your hoster for more details.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2021-01-12 UTC.

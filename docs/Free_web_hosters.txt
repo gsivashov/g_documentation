@@ -22,8 +22,8 @@ Identify spammy accounts
 Keep a record of signups and try to identify typical spam patterns, such as:
 Form completion time
 Number of requests sent from the same IP address range
-User-agents used during signup
+User agents used during signup
 User names or other form-submitted values chosen during signup.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-15 UTC.

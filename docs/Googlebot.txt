@@ -14,7 +14,7 @@ Your website will probably be crawled by both Googlebot Desktop and Googlebot Sm
 can identify the subtype of Googlebot by looking at the
 user agent string
 in the request. However, both crawler types obey the same product token (user agent token) in
-robots.txt, and so you cannot selectively target either Googlebot smartphone or Googlebot desktop
+robots.txt, and so you cannot selectively target either Googlebot Smartphone or Googlebot Desktop
 using robots.txt.
 If your site has been converted to
 mobile first
@@ -29,7 +29,7 @@ over short periods.
 Googlebot was designed to be run simultaneously by thousands of machines to improve
 performance and scale as the web grows. Also, to cut down on bandwidth usage, we run many
 crawlers on machines located near the sites that they might crawl. Therefore, your logs may
-show visits from several machines at google.com, all with the user-agent Googlebot. Our goal
+show visits from several machines at google.com, all with the Googlebot user agent. Our goal
 is to crawl as many pages from your site as we can on each visit without overwhelming your
 server's bandwidth. If your site is having trouble keeping up with Google's crawling requests,
 you can
@@ -56,7 +56,7 @@ number of options. Be aware
 of the difference between preventing Googlebot from crawling a page, preventing Googlebot from
 indexing a page, and preventing a page from being accessible at all by both crawlers or users.
 Verifying Googlebot
-Before you decide to block Googlebot, be aware that the user-agent string used by Googlebot
+Before you decide to block Googlebot, be aware that the user agent string used by Googlebot
 is often spoofed by other crawlers. It's important to verify that a problematic request
 actually comes from Google. The best way to verify that a request actually comes from
 Googlebot is to
@@ -68,4 +68,4 @@ pages or sites in Google Search results, you can
 report spam to Google.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-15 UTC.

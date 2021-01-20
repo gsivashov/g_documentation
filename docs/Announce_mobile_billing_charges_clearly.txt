@@ -15,4 +15,4 @@ Make sure that the fee structure is clearly understandable. Include information 
 If your site or pages are triggering warnings in Chrome, check out your Security Issues report in Search Console for more information and example pages. After you have fixed the issue on your site, visit the report to request a review of your fixes. A successful review should halt the warnings.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2021-01-14 UTC.

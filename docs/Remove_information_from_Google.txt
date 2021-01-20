@@ -97,4 +97,4 @@ If you use a robots.txt file on your website, you can tell Google not crawl a 
 This does not apply to images; for images, robots.txt is the correct way to block images from search results.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-14 UTC.

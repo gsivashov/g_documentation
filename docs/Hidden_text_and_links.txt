@@ -19,4 +19,4 @@ JavaScript: Place the same content from the JavaScript in a <noscript> tag. If y
 Videos: Include descriptive text about the video in HTML. You might also consider providing transcripts. See this article for more advice on publishing videos.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-14 UTC.

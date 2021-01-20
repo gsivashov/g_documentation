@@ -38,10 +38,10 @@ That's not to say you don't benefit. Preview content helps users understand what
 Q: Does content in "data-nosnippet" blocks still get indexed?
 A: Yes. Using any of the methods to prevent text from being shown in a snippet won't prevent that content from being indexed. These methods only limit what's being shown in the search results snippet.
 Q: I prefer you not show my pages at all, how can I do that?
-A: You can block individual pages from being shown in search by using the "noindex" robots meta tag. This meta tag would prevent the whole page from being shown in search, once it has been processed. Please note that in order for this meta tag to be seen, the page must not be disallowed from crawling through the robots.txt file.
+A: You can block individual pages from being shown in search by using the noindex tag. This meta tag would prevent the whole page from being shown in search, once it has been processed. Please note that in order for this meta tag to be seen, the page must not be disallowed from crawling through the robots.txt file.
 Can't find the answer?
 If you can't find the answer to your question on this page, check out Google's help resources for site owners.
 We also provide official Google Search Central help communities in the following languages: English • Deutsch • Español • Français • Italiano • Nederlands • Polski • Português • Türkçe • Русский • العربية • 中文（简体） • 日本語 • 한국어
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-15 UTC.

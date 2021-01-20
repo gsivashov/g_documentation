@@ -45,7 +45,7 @@ Groups are processed from top to bottom, and a user agent can match only one rul
 The default assumption is that a user agent can crawl any page or directory not blocked by a Disallow: rule.
 Rules are case-sensitive. For instance, Disallow: /file.asp applies to http://www.example.com/file.asp, but not http://www.example.com/FILE.asp.
 The following directives are used in robots.txt files:
-User-agent: [Required, one or more per group] The name of a search engine robot (web crawler software) that the rule applies to. This is the first line for any rule. Most Google user-agent names are listed in the Web Robots Database or in the Google list of user agents. Supports the * wildcard for a path prefix, suffix, or entire string. Using an asterisk (*) as in the example below will match all crawlers except the various AdsBot crawlers, which must be named explicitly. (See the list of Google crawler names.) Examples:
+User-agent: [Required, one or more per group] The name of a search engine robot (web crawler software) that the rule applies to. This is the first line for any rule. Most Google user agent names are listed in the Web Robots Database or in the Google list of user agents. Supports the * wildcard for a path prefix, suffix, or entire string. Using an asterisk (*) as in the example below will match all crawlers except the various AdsBot crawlers, which must be named explicitly. (See the list of Google crawler names.) Examples:
 # Example 1: Block only Googlebot
 User-agent: Googlebot
 Disallow: /
@@ -57,7 +57,7 @@ Disallow: /
 User-agent: *
 Disallow: /
 Disallow: [At least one or more Disallow or Allow entries per rule] A directory or page, relative to the root domain, that should not be crawled by the user agent. If a page, it should be the full page name as shown in the browser; if a directory, it should end in a / mark. Supports the * wildcard for a path prefix, suffix, or entire string.
-Allow: [At least one or more Disallow or Allow entries per rule] A directory or page, relative to the root domain, that should be crawled by the user agent just mentioned. This is used to override Disallow to allow crawling of a subdirectory or page in a disallowed directory. If a page, it should be the full page name as shown in the browser; if a directory, it should end in a / mark. Supports the * wildcard for a path prefix, suffix, or entire string.
+Allow: [At least one or more Disallow or Allow entries per rule] A directory or page, relative to the root domain, that should be crawled by the user agent just mentioned. This is used to override a Disallow directive to allow crawling of a subdirectory or page in a disallowed directory. If a page, it should be the full page name as shown in the browser; if a directory, it should end in a / mark. Supports the * wildcard for a path prefix, suffix, or entire string.
 Sitemap: [Optional, zero or more per file] The location of a sitemap for this website. Must be a fully-qualified URL; Google doesn't assume or check http/https/www.non-www alternates. Sitemaps are a good way to indicate which content Google should crawl, as opposed to which content it can or cannot crawl. Learn more about sitemaps. Example:
 Sitemap: https://example.com/sitemap.xml
 Sitemap: http://www.example.com/sitemap.xml
@@ -119,4 +119,4 @@ User-agent: Googlebot
 Disallow: /*.xls$
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-07 UTC.
+Last updated 2021-01-15 UTC.

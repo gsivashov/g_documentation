@@ -51,14 +51,13 @@ In this step, you'll verify that you have control over your web property.
 To verify ownership of your site:
 Follow the recommended steps to verify ownership of your property.
 After your property has been verified, open Search Console.
-Click your verified property.
-Select Verification details from the Settings gear
-next to your verified property.
-Under Verified owners, click Add an owner.
-Add your service account email address as an owner to the property. You can find your
-service account email address in two places:
-The client_email field in the JSON private key that you downloaded when
-you created your project.
+Select your verified property.
+Open the property's settings from the left navigation.
+Select Users and permissions. Click Add an owner.
+Enter your service account email address. In the Permission drop-down list, select
+Full. You can find your service account email address in two places:
+The client_email field in the JSON private key that you
+downloaded when you created your project.
 The Service account ID column of the Service Accounts view in
 the Developers Console.
 The email address has a format similar to the following:
@@ -173,4 +172,4 @@ the request message. For information about the types of calls you can make, and 
 message bodies for those calls, see Using the API.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-11 UTC.
+Last updated 2021-01-12 UTC.

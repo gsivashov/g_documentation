@@ -5,17 +5,15 @@ Product-wide notes
 April 12, 2020 onward
 AMP, Mobile Usability, Speed, all rich result reports
 These reports have been changed to cover a smaller number of pages, in order to provide better performance in Search Console. Because of this, you might see a decrease in the number of items and pages tracked in these reports. This change does not affect Search results, only the data reporting in Search Console.
-April 9-25, 2019
-Search Console experienced a data outage that ceased on April 26. The outage affected all reports except the Performance report. All missing data from April 9-25 was replaced with the data from April 26, when data began to be available again.
 Remove URLs Report
 No issues.
 URL Inspection tool
 2020
 October 14, ongoing
-The "Request Indexing" feature of the URL Inspection Tool has been disabled in order to make some technical updates. We expect it to be re-enabled in the coming weeks. In the meanwhile, Google continues to find and index content through our regular methods, as covered here.
+The "Request Indexing" feature of the URL Inspection Tool has been disabled in order to make some technical updates. We expect it to be re-enabled in the coming weeks. In the meanwhile, Google continues to find and index content through our regular methods, as covered here.
 Performance reports (Search Results / Discover)
 October 28 (Discover)
-A previous issue in which some Discover data were mis-classified as video in the Performance report has been fixed. Because of this, you may see a drop in your Discover report's video appearance statistics. This mis-classification did not affect Discover results for users, only the data reporting.
+A previous issue in which some Discover data were mis-classified as video in the Performance report has been fixed. Because of this, you may see a drop in your Discover report's video appearance statistics. This mis-classification did not affect Discover results for users, only the data reporting.
 October 6, ongoing (Discover)
 Following the launch of the Stories carousel feature on Discover, you might see a significant increase in Web Story stats on Discover reporting for your site.
 September 25-28 (Discover)
@@ -31,15 +29,15 @@ June 5-7
 Some image search statistics were not captured during this period due to an internal issue. Because of this, you may see a drop in your image search statistics during this period. The change did not affect user Search results, only the data reporting.
 February 6
 All data from January 10, 2018 onward was converted to use canonical URLs.
-2018
-December 1 - December 3
-Some data for clicks in Google Images from mobile devices was dropped. This change only affects Search Console reporting, not your actual performance on Google Search.
-Crawl Status Report (Legacy report)
-No issues.
+Crawl Stats Report
+January 16, 2021 onward
+The crawl stats report has increased its reporting coverage for additional types of crawls. As a result, you may see a jump in the number of crawls reported for your site. This does not reflect additional crawling of your site, only improved reporting.
 Mobile Usability Report
 April 12, 2020 onward
 The report has been changed to cover a smaller number of pages, in order to provide better performance in Search Console. Because of this, you might see a decrease in the number of items and pages tracked in the report. This change does not affect Search results, only the data reporting in Search Console.
 Index Coverage Report
+January 9, 2021
+Additional, more fine-grained index coverage statuses are now available. This will cause some pages in the report to be relabeled with the new, more specific categories (for example, "Crawl anomaly" is no longer reported, and has been replaced with more specific issues). As a result, you will see the appearance of new status types in your report, although the total number of items in each category (error, warning, valid, excluded) should not change significantly, only the status descriptions of any labeled items. Read more about this feature in the blog.
 Sept 1, 2020 ongoing
 An internal systems error caused a delay in processing index coverage information. No data has been lost, and the report will show accurate data after processing is complete.
 December 15, 2019 onward
@@ -48,7 +46,7 @@ International Targeting Report
 No issues
 AMP enhancement report
 August 18, 2020 onward
-The report has been updated to include Signed Exchange related issues.  This change does not affect Search results, only the data reporting in Search Console. Read more.
+The report has been updated to include Signed Exchange related issues. This change does not affect Search results, only the data reporting in Search Console. Read more.
 April 12, 2020 onward
 The report has been changed to cover a smaller number of pages, in order to provide better performance in Search Console. Because of this, you might see a decrease in the number of items and pages tracked in the report. This change does not affect Search results, only the data reporting in Search Console.
 January 23, 2019
@@ -56,7 +54,7 @@ Some users may see elevated error levels of type "Crawl Issue" on their AMP URLs
 Rich result reports
 August 26, 2020
 Dataset
-Search Console began marking as "warning" any Dataset object that is missing the recommended property creator. Therefore you may see an increase in warnings for Dataset instances on your website.
+Search Console began marking as "warning" any Dataset object that is missing the recommended property creator. Therefore you may see an increase in warnings for Dataset instances on your website.
 July 1, 2020 onward
 Video
 Search Console began marking as "warning" any Video object that is missing both embedUrl and contentUrl properties. This is not a change in requirements or behavior, but an improvement in our reporting system to better reflect the actual indexing behavior. Video objects that are missing both embedUrl and contentUrl properties can still appear as rich results but additional content based features of videos such as animated previews and key moments may not work. Therefore you might see an increase in warnings in Video items on your site. To fix this issue, define either of these two properties in your Video object. (Note that this does not affect Video items embedded within other types, such as Video within Recipe.)

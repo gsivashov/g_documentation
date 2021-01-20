@@ -13,11 +13,11 @@ In this configuration, the desktop and mobile pages have different URLs.
 A common setup would be pages on www.example.com serving desktop users with
 corresponding pages served on m.example.com for mobile users. Google does not
 favor any particular URL format as long as they are all accessible for all
-Googlebot user-agents.
+Googlebot user agents.
 TL;DR
 Signal the relationship between two URLs by <link> tag with rel="canonical"
 and rel="alternate" elements.
-Detect user-agent strings and redirect them correctly.
+Detect user agent strings and redirect them correctly.
 Annotations for desktop and mobile URLs
 To help our algorithms understand separate mobile URLs, we recommend using the
 following annotations:
@@ -87,7 +87,7 @@ When a website is configured to serve desktop and mobile browsers using
 different URLs, webmasters may want to automatically redirect users to the URL
 that best serves them.
 If your website uses automatic redirection, be sure to
-treat all Googlebots just like any other user-agent and redirect
+treat all Googlebots just like any other user agent and redirect
 them appropriately.
 Supported redirection techniques
 Googlebot supports the following two redirection implementations:
@@ -95,7 +95,7 @@ HTTP redirects
 JavaScript redirects
 Using HTTP redirects
 HTTP redirection is a commonly used to redirect clients to device-specific URLs.
-Usually, the redirection is done based on the user-agent in the HTTP request
+Usually, the redirection is done based on the user agent in the HTTP request
 headers.
 It is important to keep the redirection consistent with the alternate
 URL specified in the page's rel="alternate" tag or in the Sitemap.
@@ -129,4 +129,4 @@ the mobile page if they so choose.
 Caution: Visit our common mistakes section to make sure you don't run into one.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-01-06 UTC.
+Last updated 2021-01-15 UTC.

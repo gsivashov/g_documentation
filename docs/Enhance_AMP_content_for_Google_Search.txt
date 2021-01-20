@@ -25,7 +25,7 @@ ensure that your page meets the Google Search requirements for a valid AMP HTML 
 Use the same structured data markup across both the canonical and AMP pages.
 Apply common content best practices:
 Make sure that your robots.txt
-file doesn't block your AMP page. Use the meta robots noindex, block indexing,
+file doesn't block your AMP page. Use the noindex tag, block indexing,
 and robots meta tags.
 Follow the guidelines for hreflang for
 language and regional URLs. For AMP specific examples, see Internationalization.
@@ -93,4 +93,4 @@ to your AMP pages to track user interactions with built-in Google Analytics
 support.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-15 UTC.

@@ -29,7 +29,7 @@ Deploy a few pages using your structured data and use the
 URL Inspection tool to test
 how Google sees the page. If you have both a mobile and desktop version of your pages, add
 structured data to both. Be sure that your page is accessible to Google and not blocked by
-robots, noindex, or login requirements. If the page looks okay, use that tool to request an
+robots, the noindex tag, or login requirements. If the page looks okay, use that tool to request an
 index of the page. Read here to find out how
 to test a page hosted on a local server or behind a firewall.
 After Google has indexed the page, look for errors and properly processed data using the applicable
@@ -57,7 +57,7 @@ If you see a total decrease in structured data, check whether the
 sudden decrease in indexed structured data is matched by an
 increase in errors. If not, perhaps you are
 no longer embedding structured data in your pages, or the pages are inaccessible to
-Google (perhaps pages are blocked by robots.txt or noindex). Test page
+Google (perhaps pages are blocked by robots.txt or the noindex tag). Test page
 availability using the
 URL Inspection tool.
 Don't use cached links to debug your pages. Instead, use the URL Inspection Tool because it has the most up-to-date version of your pages.
@@ -208,4 +208,4 @@ Relevant guidelines:
 Recipe guidelines.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-06-09 UTC.
+Last updated 2021-01-15 UTC.

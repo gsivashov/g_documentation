@@ -9,9 +9,9 @@ Cloaking
 Cloaking refers to the practice of presenting different content or URLs to human users and search engines. Cloaking is considered a violation of Google's Webmaster Guidelines because it provides our users with different results than they expected.
 Some examples of cloaking include:
 Serving a page of HTML text to search engines, while showing a page of images or Flash to users
-Inserting text or keywords into a page only when the User-agent requesting the page is a search engine, not a human visitor
+Inserting text or keywords into a page only when the user agent that's requesting the page is a search engine, not a human visitor
 If your site uses technologies that search engines have difficulty accessing, like JavaScript, images, or Flash, see our recommendations for making that content accessible to search engines and users without cloaking.
 If a site gets hacked, it's not uncommon for the hacker to use cloaking to make the hack harder for the site owner to detect. Read more about hacked sites.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-15 UTC.

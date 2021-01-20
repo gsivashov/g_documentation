@@ -234,7 +234,7 @@ Creating a navigational page that simply lists pages without organizing them, fo
 Show useful 404 pages
 Users will occasionally come to a page that doesn't exist on your site, either by following a broken link or typing in the wrong URL. Having a custom 404 page30 that kindly guides users back to a working page on your site can greatly improve a user's experience. Your 404 page should probably have a link back to your root page and could also provide links to popular or related content on your site. You can use Google Search Console to find the sources of URLs causing "not found" errors31.
 Avoid:
-Allowing your 404 pages to be indexed in search engines (make sure that your web server is configured to give a 404 HTTP status code or - in the case of JavaScript-based sites - include a noindex robots meta-tag when non-existent pages are requested).
+Allowing your 404 pages to be indexed in search engines (make sure that your web server is configured to give a 404 HTTP status code or - in the case of JavaScript-based sites - include the noindex tag when non-existent pages are requested).
 Blocking 404 pages from being crawled through the robots.txt file.
 Providing only a vague message like "Not found", "404", or no 404 page at all.
 Using a design for your 404 pages that isn't consistent with the rest of your site.
@@ -390,9 +390,14 @@ If your site serves lots of static content (like blog posts or product landing p
 Configure mobile sites so that they can be indexed accurately
 Regardless of which configuration you choose to set up your mobile site, there are key points that you should take note of:
 If you use Dynamic Serving or have a separate mobile site, signal to Google when a page is formatted for mobile (or has an equivalent page that's formatted for mobile). This helps Google accurately serve mobile searchers your content in search results.
-If you are using Responsive Web Design, use meta name="viewport" tag to tell the browser how to adjust the content. If you use Dynamic Serving, use the Vary HTTP header to signal your changes depending on the user-agent. If you are using separate URLs, signal the relationship between two URLs by <link> tag withrel="canonical"and rel="alternate" elements.
+If you are using Responsive Web Design, use meta name="viewport" tag to tell the browser how
+to adjust the content. If you use Dynamic Serving, use the Vary HTTP header to signal your
+changes depending on the user agent. If you are using separate URLs, signal the relationship
+between two URLs by adding the <link> tag with
+rel="canonical" and rel="alternate"
+elements to the page.
 Keep resources crawlable. Blocking page resources can give Google an incomplete picture of your website. This often happens when your robots.txt file is blocking access to some or all of your page resources. If Googlebot doesn't have access to a page's resources, such as CSS, JavaScript, or images, we may not detect that it's built to display and work well on a mobile browser. In other words, we may not detect that the page is "mobile-friendly," and therefore not properly serve it to mobile searchers.
-Avoid common mistakes that frustrate mobile visitors, such as featuring unplayable videos (for example,, Flash video as the page's significant content).
+Avoid common mistakes that frustrate mobile visitors, such as featuring unplayable videos (for example, Flash video as the page's significant content).
 Mobile pages that provide a poor searcher experience can be demoted in rankings or displayed with a warning in mobile search results. This includes but is not limited to full page interstitials49 on mobile that hinder user experience.
 Provide full functionality on all devices. Mobile users expect the same functionality - such as commenting and check-out - and content on mobile as well as on all other devices that your website supports. In addition to textual content, make sure that all important images and videos are embedded and accessible on mobile devices. For search engines, provide all structured data and other metadata - such as titles, descriptions, link-elements, and other meta-tags - on all versions of the pages.
 Make sure that the structured data, images, videos, and metadata you have on your desktop site are also included on the mobile site.
@@ -456,56 +461,56 @@ The following URLs are referenced in this paper:
 https://g.co/WebmasterHelpForum
 https://www.google.com/search?q=site:wikipedia.org
 https://support.google.comwebmasters/answer/70897
-https://developers.google.com/search/docs/advanced/guidelines/webmaster-guidelines
+/search/docs/advanced/guidelines/webmaster-guidelines
 https://search.google.com/search-console
 http://g.co/webmasters
 http://g.co/WebmasterChecklist
-https://developers.google.com/search/docs/beginner/how-search-works
-https://developers.google.com/search/docs/advanced/guidelines/webmaster-guidelines
+/search/docs/beginner/how-search-works
+/search/docs/advanced/guidelines/webmaster-guidelines
 https://www.youtube.com/watch?v=piSvFxV_M04
-https://developers.google.com/search/docs/beginner/do-i-need-seo
-https://developers.google.com/search/docs/advanced/sitemaps/overview
-https://developers.google.com/search/docs/advanced/robots/intro
+/search/docs/beginner/do-i-need-seo
+/search/docs/advanced/sitemaps/overview
+/search/docs/advanced/robots/intro
 https://support.google.com/webmasters/topic/4598466
-https://developers.google.com/search/blog/2014/05/understanding-web-pages-better.html
+/search/blog/2014/05/understanding-web-pages-better.html
 https://support.google.com/webmasters/answer/9012289
 https://www.youtube.com/watch?v=MOfhHPp5sWs
-https://developers.google.com/search/blog/2007/09/improve-snippets-with-meta-description.html
-https://developers.google.com/search/blog/2017/06/better-snippets-for-your-users.html
-https://developers.google.com/search/docs/advanced/appearance/good-titles-snippets
-https://developers.google.com/search/docs/guides/intro-structured-data
-https://developers.google.com/search/docs/guides/search-gallery
+/search/blog/2007/09/improve-snippets-with-meta-description.html
+/search/blog/2017/06/better-snippets-for-your-users.html
+/search/docs/advanced/appearance/good-titles-snippets
+/search/docs/guides/intro-structured-data
+/search/docs/guides/search-gallery
 https://www.google.com/webmasters/tools/data-highlighter
 https://www.google.com/webmasters/markup-helper/
 https://search.google.com/test/rich-results
 https://support.google.com/webmasters/answer/7552505
-https://developers.google.com/search/docs/guides/search-gallery
-https://developers.google.com/search/docs/data-types/breadcrumbs
-https://developers.google.com/search/docs/advanced/guidelines/rich-media-files
-https://developers.google.com/search/docs/advanced/crawling/custom-404-pages
-https://developers.google.com/search/blog/2008/10/webmaster-tools-shows-crawl-error.html
+/search/docs/guides/search-gallery
+/search/docs/data-types/breadcrumbs
+/search/docs/advanced/guidelines/rich-media-files
+/search/docs/advanced/crawling/custom-404-pages
+/search/blog/2008/10/webmaster-tools-shows-crawl-error.html
 http://support.google.com/webmasters/answer/93633
-https://developers.google.com/search/docs/advanced/crawling/consolidate-duplicate-urls
+/search/docs/advanced/crawling/consolidate-duplicate-urls
 https://ads.google.com/home/tools/keyword-planner/
 https://support.google.com/webmasters/answer/7576553
-https://developers.google.com/search/docs/advanced/guidelines/duplicate-content
-https://developers.google.com/search/docs/advanced/guidelines/hidden-text-links
+/search/docs/advanced/guidelines/duplicate-content
+/search/docs/advanced/guidelines/hidden-text-links
 https://www.thinkwithgoogle.com/marketing-resources/better-ad-standards/
-https://developers.google.com/search/blog/2007/03/using-robots-meta-tag.html
-https://developers.google.com/search/docs/advanced/guidelines/prevent-comment-spam
-https://developers.google.com/search/docs/advanced/sitemaps/image-sitemaps
-https://developers.google.com/search/blog/2016/11/mobile-first-indexing.html
-https://developers.google.com/search/mobile-sites/mobile-seo/responsive-design
-https://developers.google.com/search/mobile-sites/mobile-seo/dynamic-serving
-https://developers.google.com/search/mobile-sites/mobile-seo/separate-urls
+/search/blog/2007/03/using-robots-meta-tag.html
+/search/docs/advanced/guidelines/prevent-comment-spam
+/search/docs/advanced/sitemaps/image-sitemaps
+/search/blog/2016/11/mobile-first-indexing.html
+/search/mobile-sites/mobile-seo/responsive-design
+/search/mobile-sites/mobile-seo/dynamic-serving
+/search/mobile-sites/mobile-seo/separate-urls
 https://search.google.com/test/mobile-friendly
 https://www.google.com/webmasters/tools/mobile-usability
 https://www.ampproject.org/
-https://developers.google.com/search/blog/2016/08/helping-users-easily-access-content-on.html
+/search/blog/2016/08/helping-users-easily-access-content-on.html
 https://search.google.com/test/mobile-friendly
-https://developers.google.com/search/mobile-sites/
+/search/mobile-sites/
 https://www.google.com/business/
-https://developers.google.com/search/docs/advanced/guidelines/link-schemes
+/search/docs/advanced/guidelines/link-schemes
 https://www.google.com/webmasters/tools/home
 https://www.bing.com/toolbox/webmaster
 https://support.google.com/webmasters/go/blog
@@ -517,4 +522,4 @@ http://www.google.com/insidesearch/howsearchworks/thestory/index.html
 http://www.gybo.com/
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-05 UTC.
+Last updated 2021-01-15 UTC.

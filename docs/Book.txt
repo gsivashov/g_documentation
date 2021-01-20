@@ -203,8 +203,7 @@ Update your feed as needed
 We recommend that you update your feed daily, but this ultimately depends on how often your
 catalog changes. Be aware of the following conditions and tips:
 Google Search doesn't support real-time updates.
-Google Search fetches your feed once a day and runs the ingestion once a day. If there
-are no major issues that block the release, the ingestion usually takes two days.
+Google Search fetches your feed once a day and typically indexes the content within two days.
 If there's a foreseeable change in an edition's availability, use
 availabilityStarts and availabilityEnds
 to set the exact dates. If the entity is no longer available, remove the entity completely
@@ -358,8 +357,8 @@ The edition(s) of the work.
 Recommended properties
 sameAs
 URL
-The URL of a reference web page that unambiguously indicates the work's identity. For
-example, a Wikipedia, Wikidata, VIAF, or Library of Congress page for the book.
+The URL of a reference page that identifies the work. For example, a Wikipedia,
+Wikidata, VIAF, or Library of Congress page for the book.
 Book (Edition)
 The workExample property uses this Book entity. It represents an
 edition of a work.
@@ -1185,4 +1184,4 @@ Example LibrarySystem feed JSON file
 }
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-14 UTC.

@@ -6,10 +6,11 @@ Documentation
 Advanced SEO
 Send feedback
 Submit your updated robots.txt to Google
-The Submit function of the robots.txt Tester tool allows you
-to easily update and ask Google to more quickly crawl and use a new robots.txt file for
-your site. Update and notify Google of changes to your robots.txt file by following the steps
-below.
+The Submit function of the
+robots.txt Tester
+tool allows you to easily update and ask Google to more quickly crawl and use a new robots.txt
+file for your site. Update and notify Google of changes to your robots.txt file by following the
+steps below.
 Click Submit in the bottom-right corner of the robots.txt editor. This action
 opens up a Submit dialog.
 Download your edited robots.txt code from the robots.txt Tester page by
@@ -33,4 +34,4 @@ the page, you can also click the dropdown above the text editor to view the time
 Google first saw the latest version of your robots.txt file.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-11 UTC.

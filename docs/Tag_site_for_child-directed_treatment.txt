@@ -6,7 +6,7 @@ Documentation
 Advanced SEO
 Send feedback
 Tag site for child-directed treatment
-If you think that your website or mobile app is intended specifically for children, please visit the Tag for Child Directed Treatment page to tag a site or service that you would like Google to treat as child-directed in whole or in part for the purposes of the Children's Online Privacy Protection Act (COPPA). If you have not already added a site to Search Console, you must first add the site and verify ownership.
+If you think that your website or mobile app is intended specifically for children, visit the Tag for Child Directed Treatment page to tag a site or service that you would like Google to treat as child-directed in whole or in part for the purposes of the Children's Online Privacy Protection Act (COPPA). If you have not already added a site to Search Console, you must first add the site and verify ownership.
 Note that marking your site or app as child-directed does not affect its ranking in Google Search results.
 Keep in mind the following:
 You can tag an entire domain or portions of a domain (subdomain or subdirectory) for treatment as child-directed
@@ -17,4 +17,4 @@ For finer control over how your content is treated, you can also tag individual 
 Note: Tagging individual ad units has immediate effect on the ad served. An ad unit tag takes precedence over any applicable site-level settings.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-14 UTC.

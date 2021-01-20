@@ -1,0 +1,31 @@
+https://support.google.com/webmasters/answer/6258314
+
+Basic Search Console usage for website ownersIf you're a light user of Search Console (meaning that your website isn't your business, it just describes your business), here's a good way to use Search Console:
+Day to day...
+Relax — After you've signed up for Search Console, you'll receive email if any unusual events occur with your website. Unusual events include indications that your website has been hacked or problems that Google had when crawling or indexing your site. We will also email you if we detect that your site violates any of Google’s search quality guidelines.
+Note: It can take some time after verifying your site to start seeing data in Search Console reports; we’ll let you know when your data becomes available.
+Monthly...
+Every month or so, take a look at your Search Console dashboard; the overview page is the simplest way to get a quick health check on your site:
+Make sure that you aren’t experiencing an increase in errors for your site.
+Check that you don’t have any unusual dips in your click counts. Note that a weekly rhythm of weekend dips, or dips or spikes over holidays, is normal.
+If you have questions about how to read a report, click the help button  at the top of the page to learn more. See a list of our reports and what they're used for.
+OPEN YOUR DASHBOARD
+When your content changes...
+Check Search Console whenever you make important site changes to monitor your site’s behavior in Google Search.
+Adding new content to your site:
+Test that Google can access your pages using the URL Inspection tool.
+Tell Google which pages to crawl by updating your sitemap.
+Tell Google which pages not to crawl using robots.txt or noindex tags.
+A few weeks after you post content, confirm that the number of indexed pages in your site is rising.
+Adding new properties:
+We recommend using a single site that adapts to users on any device, but if you decide to have a separate site for mobile users, be sure to add it to Search Console, and add <link rel=”alternate”> tags to connect it to your existing site.
+For sites targeted at a specific country or language, follow our guidelines for international or multilingual sites.
+If you change your site’s domain name:
+Use the change of address tool to point Google search to your new location.
+Removing a page from search results:
+If you don't need a page removed immediately from Search, simply remove (or redirect) the page, and Google will notice and remove the page from Search. However, if you really must remove a page immediately, remove the page from the web and then use the Removals tool.
+If you want to block pages from indexing, here are other appropriate steps to block crawling and/or indexing.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Beginning usersGetting started with Search ConsoleUsing help and feedback in Search ConsoleAdd a website propertyBasic Search Console usage for website ownersHow are you performing on Google?Has Google found all your pages?How usable is your website?Why did I get an email from Search Console?
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

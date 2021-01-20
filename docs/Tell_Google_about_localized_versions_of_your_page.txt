@@ -143,7 +143,7 @@ de-ES: German language content, for users in Spain
 Do not specify a country code by itself. Google does not automatically derive the language from the country code. You can specify a language code by itself if you want to simplify your labeling.
 Adding the country code after the language to restrict the page to a specific region.
 Examples:
-be: Belarusian language, independent of region (not Belgium French)
+be: Belarusian language, independent of region (not French for Belgium)
 nl-be: Dutch for Belgium
 fr-be: French for Belgium
 For language script variations, the proper script is derived from the country. For example, when using zh-TW for users in Taiwan, the language script is automatically derived (in this example: Chinese-Traditional). You can also specify the script itself explicitly using ISO 15924, like this:
@@ -164,4 +164,4 @@ Aleyda Solis's hreflang tags generator tool for generating or modifying hreflang
 Merkle SEO hreflang tag testing tool for validating hreflang tags on a single live page.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-05 UTC.
+Last updated 2021-01-12 UTC.

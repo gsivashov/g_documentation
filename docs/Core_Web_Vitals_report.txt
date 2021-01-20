@@ -1,6 +1,6 @@
 https://support.google.com/webmasters/answer/9205520
 
-Core Web Vitals reportFix poor user experiences on your siteThe Core Web Vitals report shows how your pages perform based on real world usage data (sometimes called field data). You can read more about this initiative on the Google Webmaster blog.
+Core Web Vitals reportFix poor user experiences on your siteThe Core Web Vitals report shows how your pages perform, based on real world usage data (sometimes called field data). You can read more about this initiative on the Google Search Central blog.
 OPEN REPORT
 Why page performance matters
 Longer page load times have a severe effect on bounce rates. For example:
@@ -9,6 +9,7 @@ If page load time increases from 1 second to 6 seconds, bounce rate increases by
 Read case studies here.
 Understand the report
 The Core Web Vitals report shows URL performance grouped by status, metric type, and URL group (groups of similar web pages).
+Only indexed URLs can appear in this report. The URLs shown are the actual URLs for which data was recorded (that is, data is not assigned only to a page's canonical URL, as it is in most other reports).
 The report is based on three metrics: LCP, FID, and CLS. If a URL does not have a minimum amount of reporting data for any of these metrics, it is omitted from the report. Once a URL has a threshold amount of data for any metric, the page status is the status of its most poorly performing metric.
 "No data available"
 If you see a "No data available" screen, it means either that your property is new in Search Console, or that there is not enough data available in the CrUX report to provide meaningful information for the chosen device type (desktop or mobile).
@@ -142,5 +143,5 @@ The Passed and Failed URL statuses can be reached only during a validation tra
 Any URLs that have been removed from the web and have no data in the last 28 days will no longer appear in the validation history or the report.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemovals ToolRich Results Tools and ReportsSecurity Issues reportSitemaps reportCore Web Vitals reportURL Inspection ToolBlock crawling of parameterized duplicate contentLegacy or external reports and tools
+All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemovals ToolRich Results Tools and ReportsSecurity Issues reportSitemaps reportCore Web Vitals reportURL Inspection ToolBlock crawling of parameterized duplicate contentLegacy or external reports and toolsManaging properties and users on Search Console
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

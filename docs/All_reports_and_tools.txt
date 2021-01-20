@@ -1,3 +1,3 @@
 https://support.google.com/webmasters/topic/9456557
 
-All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemovals ToolRich Results Tools and ReportsSecurity Issues reportSitemaps reportCore Web Vitals reportURL Inspection ToolBlock crawling of parameterized duplicate contentLegacy or external reports and tools
+All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemovals ToolRich Results Tools and ReportsSecurity Issues reportSitemaps reportCore Web Vitals reportURL Inspection ToolBlock crawling of parameterized duplicate contentLegacy or external reports and toolsManaging properties and users on Search Console

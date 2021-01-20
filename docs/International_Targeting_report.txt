@@ -26,5 +26,5 @@ Check the Geographic target checkbox and choose your country target. If you want
 This setting is only for geographic data. If you're targeting users in different locations—for example, if you have a site in French that you want users in France, Canada, and Mali to read—don't use this tool to set France as a geographic target. A good example of where it would be useful is for a restaurant website: if the restaurant is in Canada, it's probably not of interest to folks in France. But if your content is in French and is of interest to people in multiple countries/regions, it's probably better not to restrict it.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats report
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats reportOpt out of display on Google Local and other Google properties
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

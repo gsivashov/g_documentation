@@ -44,13 +44,13 @@ Googlebot Video
 Googlebot-Video
 Googlebot
 Googlebot-Video/1.0
-Googlebot (Desktop)
+Googlebot Desktop
 Googlebot
 Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/W.X.Y.Z‡ Safari/537.36
 or (rarely used):
 Googlebot/2.1 (+http://www.google.com/bot.html)
-Googlebot (Smartphone)
+Googlebot Smartphone
 Googlebot
 Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/W.X.Y.Z‡ Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 Mobile AdSense
@@ -68,12 +68,12 @@ Google Read Aloud
 Google-Read-Aloud
 error Does not respect robots.txt rules - here's why
 Current agents:
-Desktop agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36 (compatible; Google-Read-Aloud; +https://developers.google.com/search/docs/advanced/crawling/overview-google-crawlers)
-Mobile agent: Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36 (compatible; Google-Read-Aloud; +https://developers.google.com/search/docs/advanced/crawling/overview-google-crawlers)
+Desktop agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36 (compatible; Google-Read-Aloud; +/search/docs/advanced/crawling/overview-google-crawlers)
+Mobile agent: Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36 (compatible; Google-Read-Aloud; +/search/docs/advanced/crawling/overview-google-crawlers)
 Former agent (deprecated): google-speakr
 Duplex on the web
 DuplexWeb-Google
-error May ignore the * user-agent wildcard - here's why
+error May ignore the * wildcard - here's why
 Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012; DuplexWeb-Google/1.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Mobile Safari/537.36
 Google Favicon
 (Retrieves favicons for various services)
@@ -84,17 +84,25 @@ Web Light
 googleweblight
 error Does not respect robots.txt rules - here's why
 Mozilla/5.0 (Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko; googleweblight) Chrome/38.0.1025.166 Mobile Safari/535.19
+Google StoreBot
+Storebot-Google
+Desktop agent:
+Mozilla/5.0 (X11; Linux x86_64; Storebot-Google/1.0)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36
+Mobile agent:
+Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012; Storebot-Google/1.0)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36
 ‡ Chrome/W.X.Y.Z in user agents
 Wherever you see the string Chrome/W.X.Y.Z in the user agent strings in the table, W.X.Y.Z is actually a placeholder that represents the version of the Chrome browser used by that user agent: for example, 41.0.2272.96. This version number will increase over time to match the latest Chromium release version used by Googlebot.
 If you are searching your logs or filtering your server for a user agent with this pattern, you probably should use wildcards for the version number rather than specifying an exact version number.
 User agents in robots.txt
-Where several user-agents are recognized in the robots.txt file, Google will follow the most specific. If you want all of Google to be able to crawl your pages, you don't need a robots.txt file at all. If you want to block or allow all of Google's crawlers from accessing some of your content, you can do this by specifying Googlebot as the user-agent. For example, if you want all your pages to appear in Google search, and if you want AdSense ads to appear on your pages, you don't need a robots.txt file. Similarly, if you want to block some pages from Google altogether, blocking the user-agent Googlebot will also block all Google's other user-agents.
-But if you want more fine-grained control, you can get more specific. For example, you might want all your pages to appear in Google Search, but you don't want images in your personal directory to be crawled. In this case, use robots.txt to disallow the user-agent Googlebot-image from crawling the files in your /personal directory (while allowing Googlebot to crawl all files), like this:
+Where several user agents are recognized in the robots.txt file, Google will follow the most specific. If you want all of Google to be able to crawl your pages, you don't need a robots.txt file at all. If you want to block or allow all of Google's crawlers from accessing some of your content, you can do this by specifying Googlebot as the user agent. For example, if you want all your pages to appear in Google Search, and if you want AdSense ads to appear on your pages, you don't need a robots.txt file. Similarly, if you want to block some pages from Google altogether, blocking the Googlebot user agent will also block all Google's other user agents.
+But if you want more fine-grained control, you can get more specific. For example, you might want all your pages to appear in Google Search, but you don't want images in your personal directory to be crawled. In this case, use robots.txt to disallow the Googlebot-Image user agent from crawling the files in your personal directory (while allowing Googlebot to crawl all files), like this:
 User-agent: Googlebot
 Disallow:
 User-agent: Googlebot-Image
 Disallow: /personal
-To take another example, say that you want ads on all your pages, but you don't want those pages to appear in Google Search. Here, you'd block Googlebot, but allow Mediapartners-Google, like this:
+To take another example, say that you want ads on all your pages, but you don't want those pages to appear in Google Search. Here, you'd block Googlebot, but allow the Mediapartners-Google user agent, like this:
 User-agent: Googlebot
 Disallow: /
 User-agent: Mediapartners-Google
@@ -106,4 +114,4 @@ Some pages use multiple robots meta tags to specify directives for different cra
 In this case, Google will use the sum of the negative directives, and Googlebot will follow both the noindex and nofollow directives. More detailed information about controlling how Google crawls and indexes your site.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-07 UTC.
+Last updated 2021-01-15 UTC.

@@ -1,4 +1,4 @@
-https://support.google.com/webmasters/topic/4581190
+https://support.google.com/webmasters/answer/35654
 
 Home
 Google Search Central
@@ -26,4 +26,4 @@ Your site is comprehensively linked internally. This means that Google can find 
 You don't have many media files (video, image) or news pages that you need to appear in the index. Sitemaps can help Google find and understand video and image files, or news articles, on your site, if you want them to appear in Google Search results. If you don't need these results to appear in Image, Video, or News results, you might not need a sitemap.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-12 UTC.

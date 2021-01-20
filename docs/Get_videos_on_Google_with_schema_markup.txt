@@ -7,9 +7,11 @@ Advanced SEO
 Send feedback
 Get videos on Google with schema markup
 Does your video give users step-by-step guidance to make food or drinks?
-Embed your video content within Recipe structured data.
+Embed your video content within
+Recipe structured data.
 Or, does your video give users step-by-step guidance for some other task?
-Embed your video content within How-to structured data.
+Embed your video content within
+HowTo structured data.
 Google Search is an entry point for people to discover and watch videos. While Google
 tries to automatically understand details about your video, you can explicitly provide
 information, such as the
@@ -907,7 +909,7 @@ A URL pointing to the video thumbnail image file.
 Image URLs must be
 crawlable and indexable.
 Images must represent the marked up content.
-Images must be in .jpg, .png, or. gif format.
+Images must be in .jpg, .jpeg, .png, or .gif format.
 Images must 60px x 30px, at minimum.
 uploadDate
 Date
@@ -1028,7 +1030,8 @@ and is no longer live. If endDate is in the future, it indicates stream is
 scheduled to end at that time.
 publication.isLiveBroadcast
 Boolean
-Set to true if the video is, has been, or will be streamed live.
+Set to true if the video is, has been, or will be streamed
+live.
 publication.startDate
 DateTime
 Time and date of when the livestream starts or is expected to start, in
@@ -1144,4 +1147,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-01-14 UTC.
