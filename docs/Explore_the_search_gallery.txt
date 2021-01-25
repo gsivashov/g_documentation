@@ -107,12 +107,12 @@ training program.
 Get started
 Jobs, Education and Science
 Local Business
-Business details displayed in the Google Knowledge Graph, including open hours,
+Business details displayed in the Google knowledge panel, including open hours,
 ratings, directions, and actions to book appointments or order items.
 Get started
 Organizations
 Logo
-Your organization's logo in search results and Google Knowledge Graph.
+Your organization's logo in search results and Google knowledge panel.
 Get started
 Organizations, Jobs
 Movie
@@ -181,4 +181,4 @@ Get started
 Food and Drink, News, Education and Science, Sports
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-14 UTC.
+Last updated 2021-01-21 UTC.

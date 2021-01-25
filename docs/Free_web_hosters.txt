@@ -14,7 +14,7 @@ Publish a clear abuse policy and communicate it to your users, for example durin
 Block automated account creation
 In your sign-up form, consider using CAPTCHAs or similar verification tools to only allow human submissions and prevent automated scripts from generating a bunch of sites on your hosting service.
 Monitor your service for abuse
-Monitor your free hosting service for spam signals such as redirects, large numbers of ad blocks, certain spammy keywords, and large sections of encoded JavaScript code. The site: operator query or Google Alerts are simple, free tools that can help detect problems.
+Monitor your free hosting service for spam signals such as redirects, large numbers of ad blocks, certain spammy keywords, and large sections of encoded JavaScript code. The site: search operator or Google Alerts are simple, free tools that can help detect problems.
 Keep an eye on your webserver log files for sudden traffic spikes, especially for newly created sites.
 Monitor your free web hosting service for phishing and malware-infected pages. For example, you can use the Google Safe Browsing API to regularly test URLs from your service, or sign up for Safe Browsing alerts.
 Come up with a few sanity checks. For example, if you're running a local Polish free web hosting service, what are the odds of thousands of new and legitimate sites in Japanese being created overnight on your service? A number of tools are available to detect the language of newly created sites—for example language detection libraries or the Google Translate API v2.
@@ -26,4 +26,4 @@ User agents used during signup
 User names or other form-submitted values chosen during signup.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-01-21 UTC.

@@ -128,7 +128,7 @@ parseable [number] is specified.
 Special values:
 0: No snippet is to be shown. Equivalent to
 nosnippet.
--1: Google will chose the snippet length that it
+-1: Google will choose the snippet length that it
 believes is most effective to help users discover your content and direct users to
 your site.
 Example:
@@ -270,4 +270,4 @@ serving directives must be followed, the URLs containing those directives cannot
 crawling.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-01-21 UTC.

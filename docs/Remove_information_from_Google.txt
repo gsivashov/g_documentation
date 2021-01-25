@@ -88,8 +88,8 @@ Adult material: Report adult material to Google SafeSearch, which blocks some ex
 Google policy violations: Review Google's removal policies to learn which types of material we remove from Google Search results upon request.
 Legal violations: Ask Google to evaluate a removal request under applicable law.
 Copyright violations: if you have found content violating your copyright, you can submit a DMCA takedown request.
-How do I remove or update information from the Knowledge Graph in search results?
-Learn how to update a Google knowledge panel. Keep in mind that information in the Knowledge Graph may come from multiple sources.  For legal requests, see here.
+How do I remove or update information from the Google knowledge panel in search results?
+Learn how to update a Google knowledge panel. Keep in mind that information in the knowledge panel may come from multiple sources.  For legal requests, see here.
 How do I get a video or post off YouTube, Google+, Blogger, or other Google properties?
 See Get information off the web.
 Why can't I use robots.txt to block my file?
@@ -97,4 +97,4 @@ If you use a robots.txt file on your website, you can tell Google not crawl a 
 This does not apply to images; for images, robots.txt is the correct way to block images from search results.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-14 UTC.
+Last updated 2021-01-21 UTC.

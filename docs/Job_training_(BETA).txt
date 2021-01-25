@@ -12,22 +12,19 @@ Does your site provide reviews about other employers? Add EmployerAggregateRatin
 Does your site provide salary estimates? Add Estimated salary structured data.
 For job seekers and prospective students looking to acquire marketable skills for their next
 role, it's often difficult to find programs, compare cost, and know which jobs are in demand. The
-job training experience on Google Search helps people discover a new career path and acquire skills for
+goal of the job training experience on Google Search is to help people discover a new career path and acquire skills for
 their next job. Learn more about the job
-training experience on Google.
-You can integrate with the job training experience by adding structured data to your program
+search experience on Google.
+To be eligible for the job training experience, add structured data to your program
 web pages. Structured data helps Google better understand the content of your page, and
 therefore enables Google to better surface job training programs to users. If you're getting
 started with structured data, read our guide to
 Understand how structured data works.
-Note: The actual appearance in search results might be different.
+Note: This appearance isn't available on Google Search right now.
 Feature availability
-To ensure a good user experience, we're slowly rolling out coverage throughout the US. We are
-currently developing this feature and you may see changes in requirements or guidelines. You
-may not see results in Google Search right away. To ensure robust coverage and better serve our
-users, this feature is currently limited to
-job training providers in the
-US.
+We are
+currently developing this feature and you may see changes in requirements or guidelines. This
+appearance isn't available on Google Search right now.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
 content. If you're new to structured data, you can learn more about
@@ -1290,4 +1287,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-01-20 UTC.

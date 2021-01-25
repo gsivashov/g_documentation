@@ -2,7 +2,7 @@ https://support.google.com/webmasters/answer/35253
 
 Crawl Stats reportThe Crawl Stats report shows you statistics about Google's crawling history on your website. For instance, how many requests were made and when, what your server response was, and any availability issues encountered. You can use this report to detect whether Google encounters serving problems when crawling your site.
 This report is aimed at advanced users. If you have a site with fewer than a thousand pages, you should not need to use this report or worry about this level of crawling detail.
-This report is available only for domain-level properties. That is, the property must be either a Domain property (such as example.com or m.example.com) or a URL-prefix property at the domain level (https://example.com, http://example.com, http://m.example.com).
+This report is available only for root-level properties. That is, the property must be either a Domain property (such as example.com or m.example.com) or a URL-prefix property at the root level (https://example.com, http://example.com, http://m.example.com).
 Open Crawl Stats report
 You can reach the Crawl Stats report in Search Console by clicking
 (Property settings) > Crawl stats.

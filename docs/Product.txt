@@ -39,6 +39,13 @@ to be shown on certain Google Search results. To also show your shipping data in
 listings on the Google Shopping tab and other result types, you'll need to configure
 shipping settings in Merchant Center. Learn
 more about shipping settings.
+Price drop: Help people understand the lowest price for your product.
+Based on the running historical average of your product's pricing, Google automatically
+calculates the price drop. The price drop appearance is available in English in the US,
+on both desktop and mobile.
+To be eligible for the price drop appearance, add an Offer to your
+Product structured data. The price must be
+a specific price, not a range (for example, it can't be $50.99 to $99.99).
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
 content. If you're new to structured data, you can learn more about
@@ -1291,11 +1298,13 @@ For example:
 ]
 offers
 Offer or AggregateOffer
-An nested Offer or
+A nested Offer or
 AggregateOffer to sell the product. Include the required and
 recommended properties for either Offer
 or AggregateOffer (whichever
 is applicable to your content).
+To be eligible for the price drop appearance, add Offer,
+not AggregateOffer.
 review
 Review
 A nested Review of the product. Follow the
@@ -1320,7 +1329,8 @@ price
 Number
 The offer price of a product. Follow
 schema.org usage guidelines.
-For Google Images: This property is required for your product to be eligible for the rich image viewer and the Related Items feature in Google Images.
+For Google Images: This property is required for your product
+to be eligible for the rich image viewer and the Related Items feature in Google Images.
 Recommended properties
 availability
 ItemAvailability
@@ -1571,4 +1581,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-01-22 UTC.

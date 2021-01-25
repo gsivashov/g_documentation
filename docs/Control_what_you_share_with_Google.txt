@@ -70,7 +70,7 @@ Add the <meta name="robots" content="nosnippet" /> tag to your
 page's HTML head section to prevent a snippet from appearing in Search.
 However, note that this can generate a confusing message in search results ("No
 information is available for this page").
-Web pages (and general URL spaces)
+Web pages, site sections, URL patterns
 warningURL Parameters tool
 Advanced users can use the URL Parameters tool to block crawling of URLs with specific
 parameters. We recommend using this method only if you are a very advanced user, as it
@@ -81,4 +81,4 @@ If the content already exists on Google, and you want to remove it, you might ne
 take additional steps.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-14 UTC.
+Last updated 2021-01-22 UTC.

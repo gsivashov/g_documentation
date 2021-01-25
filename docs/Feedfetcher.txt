@@ -29,7 +29,7 @@ Feedfetcher shouldn't retrieve feeds from most sites more than once every hour o
 Some frequently updated sites may be refreshed more often. Note, however, that due to network
 delays, it's possible that Feedfetcher may briefly appear to retrieve your feeds more
 frequently.
-Why is Feedfetcher trying to download incorrect links from my server, or from a server that
+Why is Feedfetcher trying to download incorrect links from my server, or from a domain that
 doesn't exist?
 Feedfetcher retrieves feeds at the request of services or apps installed by users. It is
 possible that a user has requested a feed URL location that does not exist.
@@ -67,4 +67,4 @@ If you're still having trouble, try posting your question in the Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-01-22 UTC.

@@ -99,10 +99,10 @@ to include a smartphone-friendly image or add code instead of the
 desktop alternatives.
 This configuration is very closely related to responsive web design and our
 algorithms can detect this setup automatically. Further, this configuration does
-not have a requirement for the Vary HTTP header because the URLs of the page and
-its assets do not dynamically serve content. Because of these advantages, if
-your website requires the use of JavaScript, this is our recommended
-configuration.
+not have a requirement for the Vary HTTP header because the URLs of the
+page and its assets do not dynamically serve content. Because of these
+advantages, if your website requires the use of JavaScript, this is our
+recommended configuration.
 Combined detection
 Combined detection is a setup where the server works in tandem with JavaScript
 on the client to detect the device's capabilities and alter the content being
@@ -116,17 +116,19 @@ reads on subsequent visits from the same device.
 Given that the server returns different HTML to different user agents, combined
 detection is considered a type of dynamic serving configuration. The details are
 described in full in the dynamic serving section, but to briefly summarize,
-the website should include the "Vary: User-agent" HTTP response header when a
-URL that serves different HTML content to different user agents is requested.
+the website should include the Vary: User-agent HTTP response header
+when a URL that serves different HTML content to different user agents is
+requested.
 Dynamically-served JavaScript
 In this configuration, all devices are served the same HTML which includes a
 <script> element to include an external JavaScript file that can have
 different content depending on the requesting user agent. That is, the
 JavaScript code is dynamically served.
-In this case, we recommend that the JavaScript file be served with the "Vary:
-User-agent" HTTP header. This is a signal to Internet caches and Googlebot that
-the JavaScript can be different for different user agents, and is a signal for
-Googlebot to crawl the JavaScript file using different Googlebot user agents.
+In this case, we recommend that the JavaScript file be served with the Vary:
+User-agent HTTP header. This is a signal to Internet caches and Googlebot
+that the JavaScript can be different for different user agents, and is a signal
+for Googlebot to crawl the JavaScript file using different Googlebot user
+agents.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-01-22 UTC.

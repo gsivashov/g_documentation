@@ -341,14 +341,14 @@ Update your company logo
 Google uses the same logo for your job postings as the image shown in your company's Knowledge
 Graph card. You can suggest
 a change if you prefer a different logo, or else indicate your preferred logo (for both your
-company's Knowledge Graph card and its job postings)
+company's Google knowledge panel and its job postings)
 using structured
 data.
 Note: In most cases, Google will review your request within a few
 days.
 If you have a third-party job site, you can provide a different logo for a given organization
-than the image shown in the organization's Knowledge Graph card. Google will pick the best logo
-to display in Search results, whether it's the Knowledge Graph logo or the
+than the image shown in the organization's Google knowledge panel. Google will pick the best logo
+to display in Search results, whether it's the knowledge panel logo or the
 hiringOrganization logo. The logo property is only eligible to be shown on your
 job site, and isn't treated as the canonical logo for the organization. For more information,
 see hiringOrganization.
@@ -493,7 +493,7 @@ example, "Starbucks, Inc"), and not the specific location that is hiring (for ex
 }
 Logos on third-party job sites
 If you have a third-party job site, you can provide a different logo for a given
-organization than the image shown in the organization's Knowledge Graph card. To
+organization than the image shown in the organization's Google knowledge panel. To
 request a different logo for a hiring organization, add the logo property to the
 hiringOrganization array. For JobPosting structured data, the image width and height ratio must be between 0.75 and 2.5.
 Make sure that you follow the
@@ -786,8 +786,8 @@ submit your site for
 reconsideration.
 Logo is incorrect
 error What caused the issue: Your site doesn't
-have a Knowledge Graph or the Knowledge Graph shows an incorrect logo for your site. Google
-uses the same logo for your job postings as the image shown in your company's Knowledge Graph
+have a Google knowledge panel or the knowledge panel shows an incorrect logo for your site. Google
+uses the same logo for your job postings as the image shown in your company's knowledge panel
 card. For more information about how Google selects your logo, see
 Update your company logo.
 done Fix the issue
@@ -795,10 +795,10 @@ There are two ways you can fix the issue:
 Make sure you specify the correct logo with the
 hiringOrganization.logo property.
 Make sure that the image width and height ratio is between 0.75 and 2.5.
-Updating the structured data is faster than updating the Knowledge Graph and doesn't require you to be verified for
-your Knowledge Graph.
+Updating the structured data is faster than updating the Google knowledge panel and doesn't require you to be verified for
+your knowledge panel.
 Suggest a change to your
-Knowledge Graph. Updating your Knowledge Graph provides more control over how your organization
+knowledge panel. Updating your knowledge panel provides more control over how your organization
 appears on Google, but it may take longer to update. If you need to fix a logo issue quickly,
 add the hiringOrganization.logo property.
 Job location is missing or incorrect
@@ -877,4 +877,4 @@ North America: Available in the entire region
 Sub-Saharan Africa: Available in the entire region
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-01-21 UTC.

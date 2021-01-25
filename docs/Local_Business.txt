@@ -7,7 +7,7 @@ Advanced SEO
 Send feedback
 Local Business
 When users search for businesses on Google Search or Maps, Search results may
-display a prominent Knowledge Graph card with details about a business that matched
+display a prominent Google knowledge panel with details about a business that matched
 the query. When users query for a type of business (for example, "best NYC restaurants"), they
 may see a carousel of businesses related to the query. With Local Business structured data, you
 can tell Google about your business hours, different departments within a business, reviews for
@@ -739,4 +739,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-01-21 UTC.
