@@ -104,7 +104,7 @@ create a robots.txt.
 A robots.txt is not a mechanism for keeping a web page out of Google. To
 keep a web page out of Google, you should use the noindex tag or directives, or
 password-protect your page.
-To block Googlebot from indexing your page, allow crawling and
+To block Googlebot from indexing your page but still allow crawling,
 add a
 noindex tag.
 Combining multiple crawling and indexing directives might cause some
@@ -115,7 +115,7 @@ If your content isn't showing up in Google Search and you want it to show up, fo
 steps below:
 Check if Googlebot can access the page with the
 URL inspection tool.
-Check your
+Test your
 robot.txt file to see if you're unintentionally blocking Googlebot from crawling your
 site.
 Check your HTML for noindex rules in meta tags.
@@ -128,4 +128,4 @@ you're not sure where to start, explore our
 gallery of available features.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-01-25 UTC.

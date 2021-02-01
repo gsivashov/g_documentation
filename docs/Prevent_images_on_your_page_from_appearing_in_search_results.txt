@@ -12,9 +12,10 @@ to remove images hosted on your site from Google's search results within hours.
 For non-emergency image removal
 To prevent images from your site appearing in Google's search results, add a
 robots.txt file to the root of the server
-that blocks the image. It takes longer to remove an image from search results than the Remove
-URLs tool, but is an Internet standard that applies to all search engines, and you have more
-flexible control through the use of wildcards or subpath blocking.
+that blocks the image. While it takes longer to remove an image from search results than it
+does to use the Remove URLs tool, it gives you more flexibility and control through the use
+of wildcards or subpath blocking. It also applies to all search engines, whereas the Remove
+URLs tool only applies to Google.
 For example, if you want Google to exclude the dogs.jpg image that appears on your site at
 www.yoursite.com/images/dogs.jpg, add the following to your robots.txt file:
 User-agent: Googlebot-Image
@@ -32,10 +33,10 @@ following robots.txt entry:
 User-agent: Googlebot-Image
 Disallow: /*.gif$
 By specifying Googlebot-Image as the User-agent, the images will be excluded from Google
-Images. If you would like to exclude the images from all Google searches (including Google web
-search and Google Images), specify the Googlebot user agent.
+Images. If you would like to exclude the images from all Google searches (including Google Web
+Search and Google Images), specify the Googlebot user agent.
 How do I remove images from properties that I don't own?
 See the Google Search help documentation on how to remove an image from search results.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-01-27 UTC.

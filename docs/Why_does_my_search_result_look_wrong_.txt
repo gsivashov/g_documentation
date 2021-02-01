@@ -5,6 +5,7 @@ If the appearance or text of your Google search results look different than you 
 Title or snippet issues
 If your result title or page description isn't what you want or expect, please be aware that search result titles and snippets are determined algorithmically. Read how to improve your page title or snippet in search.
 If your snippet is absent, with a message like this, you've used robots.txt to block the page. To enable a page snippet you must unblock your page from robots.txt.
+If your snippet or title are shorter than you'd expect (or perhaps longer than you'd expect) you might have a <meta> tag on the page with nosnippet or max-snippet specified. You might also have your European press publication setting set to "yes" and be subject to display limitations.
 Rich result or search feature issue
 If you have implemented a job posting, event, sitelinks search box, or other rich result or search feature on your page and it's not appearing, here's how to troubleshoot the issue:
 Test whether your page is appearing in search results at all, with or without a rich result. If your page is not appearing at all in search results, a rich result will never be shown.

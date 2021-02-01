@@ -1,43 +1,130 @@
-https://developers.google.com/search/mobile-sites/faq
+https://support.google.com/webmasters/answer/174993
 
+This recommendation is officially deprecated as of October 2015.
 Home
 Google Search Central
-Documentation
-Advanced SEO
-Send feedback
+AJAX Crawling (Deprecated)
+Guides
 Frequently Asked Questions
-What's the difference between the PageSpeed Insights UX Score and the Mobile-Friendly Test results?
-The Mobile-Friendly Test uses Googlebot to fetch the page. PageSpeed
-Insights does not use Googlebot, but fetches the page in a way that mimics how a
-real user fetches the page.
-This means that the Mobile-Friendly Test follows robots.txt rules rules and PSI does not.
-If Googlebot is blocked from fetching the page, JavaScript, CSS, or other
-resources, the Mobile-Friendly Test may not be able to detect if a page is mobile-friendly.
-To
-find out if your page is mobile friendly, use the
-Mobile-Friendly Test.
-I have a separate mobile website on m.example.com, while my desktop site is at www.example.com. What should I do with mobile pages on m.example.com that don't have an equivalent desktop page on www.example.com?
-It's fine to have a mobile page without a desktop equivalent (just make
-sure these pages don't include a rel="canonical" to a non-corresponding desktop
-version). Mobile-only pages need to build a reputation on their own (in other words, contain unique content, be well-linked from
-other pages on your site or the web) because they don't receive shared
-indexing signals from an existing desktop version of the page.
-Is it okay if I have some pages using responsive design and others using dynamic serving?
-Yes, it's fine to use more than one configuration for your site. Check
-that on a page-level basis, each provides the right indications to search
-engines (for example, the responsive page has the @media only screen and (max-width:
-600px) {...} information and the dynamic serving page uses the Vary HTTP
-header). Or, if you're using a hybrid of responsive design (for example, responsive
-but with images dynamically served), Google still considers that responsive since
-the page is nearly the same – keep the markup @media only screen and
-(max-width: 600px) {...} and forego the Vary HTTP header if it's included
-specifically for Google. If you're using responsive images, include the
-<picture> element.
-I have both a mobile website and an app. Any advice?
-Build your mobile website and apps with "deep linking
-capability" or URIs that provide pointers to specific areas of content. Deep links and URIs
-provide more acquisition possibilities for your business through Search or
-social sharing.
-Send feedback
+When should I use _escaped_fragment_ and when should I use #! in my AJAX URLs?
+Where can I see this scheme in action?
+What happens if I choose not to implement the AJAX crawling scheme (with #!) on my site?
+Where will my pages appear in the search results?
+How current should I keep my content?
+What if my app doesn't use hash fragments?
+What about URLs that don't have a hash fragment?
+Can I use redirects to point the crawler at my static content?
+Will this approach lead to a proliferation of "ugly" _escaped_fragment_ URLs?
+Does this scheme open the door to cloaking?
+Can I use this scheme to help with making my Flash or other rich media files more crawlable?
+What if my site has some hash fragment URLs that should not be crawled?
+Will I be able to search for _escaped_fragment_ URLs?
+What about existing uses of #! in hash fragments?
+What about accessibility?
+If using rel="canonical", should website owners use <link rel="canonical" href="http://example.com/ajax.html?_escaped_fragment_=foo=123" /> or <link rel="canonical" href="http://example.com/ajax.html#!foo=123" />?
+What URL should I put in my Sitemap?
+How will the #! URLs affect product feeds that companies are submitting? They would like the same URLs for Product Search and general Web Search.
+I'm using HtmlUnit as the headless browser, and it "doesn't work." Why not?
+Question: When should I use _escaped_fragment_ and when should I use #! in my AJAX URLs?
+Your site should always use the #! syntax in all URLs that have adopted the AJAX crawling scheme. Googlebot will not follow hyperlinks in the _escaped_fragment_ format.
+Question: Where can I see this scheme in action?
+Have a look at a sample AJAX application at http://gwt.google.com/samples/Showcase/Showcase.html. If you click on any of the links on the left, you'll see that the URL will contain a #! hash fragment, and the application will navigate to the state corresponding to this hash fragment.
+If you change the #! (for example, http://gwt.google.com/samples/Showcase/Showcase.html#!CwRadioButton) to ?_escaped_fragment_= (for example, http://gwt.google.com/samples/Showcase/Showcase.html?_escaped_fragment_=CwRadioButton), you will see that the site returns an HTML snapshot. If you try the query "site:gwt.google.com showcase text-entry", you will see not only an AJAX URL in the search result, but also that the crawler was able to index the content that was previously not seen by the crawler ("text-entry").
+You can verify this by following the search result link and looking at the source of the page ("View Source").
+Question: What happens if I choose not to implement the AJAX crawling scheme (with #!) on my site?
+In the near term, your site will remain indexed by Google as-is, with many pages likely not fully
+represented in search results. However, we are continously working to make Googlebot behave more like
+a browser. As we implement more features, Google may start to index your pages properly without help.
+That said, the AJAX crawling scheme provides a solution for sites that
+are already using AJAX and wish to ensure that their content is
+properly indexed today. We expect that it will be a good solution for
+anyone who already has HTML snapshots of their pages, can easily produce them, or who chooses to use a headless browser to get such HTML snapshots.
+Question: Where will my pages appear in the search results?
+The content from your AJAX URLs are treated similarly to other content on the
+web.
+From the Google
+Webmaster Guidelines on content and design:
+Create a useful, information-rich site, and write pages that clearly and
+accurately describe your content.
+Think about the words users would type to find your pages, and make sure that
+your site actually includes those words within it.
+What is different for AJAX pages is that Googlebot must be able to see the page's content. Just as with static web pages, Google makes no guarantee about search rankings.
+Question: How current should I keep my content?
+The answer to this question depends entirely on how frequently your app's content changes. If it changes frequently, you should always construct a fresh HTML snapshot in response to a crawler request.
+On the other hand, consider an online library archive whose inventory does not change on a regular basis. In order to keep the server from having to produce the same HTML snapshots over and over, it may be preferable to create all relevant HTML snapshots once, possibly offline, and then to save them for future reference, or respond to Googlebot with a 304 ("not modified") code.
+Question: What if my app doesn't use hash fragments?
+Maybe it should! You can greatly speed up your application by using hash fragments. Hash fragments are handled by the browser on the client side and do not cause the entire page to refresh. Additionally, they will allow you to make history work in your application (the infamous "browser back button"). Various AJAX frameworks support hash fragments. For example, see Really Simple History, jQuery's history plugin, Google Web Toolkit's history mechanism, or ASP.NET AJAX's support for history management.
+If, however, it is not feasible to structure your app to use hash fragments, you can still use
+the syntax we provide for pages without hash fragments.
+Please refer to the Getting Started Guide.
+Note:Make sure you use this option only for pages that contain dynamic, Ajax-created content.
+For pages that have only static content, it would not give extra information to the crawler, but it would put extra load on your and Google's servers.
+Question: What about URLs that don't have a hash fragment?
+We provide a special syntax for pages without hash fragments. For details, please refer to the Getting Started Guide.
+Question: Can I use redirects to point the crawler at my static content?
+Redirects are okay to use, as long as they eventually get you
+to a page that's equivalent to what the user would see on
+the #! version of the page. This may be more convenient for some
+webmasters than serving up the content directly. If you choose this approach, please keep the following in mind:
+Compared to serving the content directly, using redirects
+will result in extra traffic because the crawler has to follow
+redirects to get the content. This will result in a somewhat higher
+number of fetches/second in crawl activity.
+Note that if you use a permanent (301) redirect, the url shown in our
+search results will typically be the target of the redirect, whereas
+if a temporary (302) redirect is used, we'll typically show the #! url
+in search results.
+Depending on how your site is set up, showing #! may produce a
+better user experience, because the user will be taken straight into
+the AJAX experience from the Google search results page. Clicking on a
+static page will take them to the static content, and they may
+experience avoidable extra page load time if the site later wants to
+switch them to the AJAX experience.
+Question: Will this approach lead to a proliferation of "ugly" _escaped_fragment_ URLs?
+The _escaped_fragment_ syntax for URLs is a temporary URL that should never be seen by the end user.
+In all contexts that the user will see, the pretty URL (with #! instead of _escaped_fragment_) should be used: in normal app interaction, in Sitemaps, in hyperlinks, and in any other situation where the user might see the URL. For the same reason, search results include pretty URLs rather than ugly URLs.
+Question: Does this scheme open the door to cloaking?
+Cloaking is serving different content to crawlers than to users in response to a given URL. This is generally done with the intent of boosting one's ranking in search results. Cloaking has always been (and will always be) an important issue for search engines, and it's important to note that making AJAX applications crawlable is by no means an invitation to make cloaking easier. For this reason, the HTML snapshot must contain the same content as the end user would see in a browser.
+If this is not the case, it may be considered cloaking. See our article on
+cloaking for more details.
+Can I use this scheme to help with making my Flash or other rich media files more crawlable?
+Although Google does index several types of rich media files, and although we are continuously working on improving our crawling and indexing capabilities, there are circumstances under which it may be appropriate to provide the crawler with content that is otherwise not visible to it.
+For example, the crawler may not see all the content of your Flash application. As this is a parallel situation to dynamic Ajax content not being visible to the crawler, you are free to use the scheme described here to provide the crawler with the additional content. However, you have to make sure that your site will not be suspected of cloaking. Again, the HTML snapshot must contain the same content as the end user would see in a browser, and Google reserves the right to exclude sites from its index that are considered cloaking.
+Question: What if my site has some hash fragment URLs that should not be crawled?
+When your site adopts the AJAX crawling scheme, Googlebot will process your hash fragment URLs accordingly. However, if you have hash fragment URLs that should not be crawled, we suggest that you add a disallow directive to your robots.txt file. You can use a convention in your hash fragments that should not be crawled and then exclude all URLs that match it in your robots.txt file. Suppose all your non-indexable states are of the form #!DONOTCRAWLmyfragment (for example http://www.example.com/ajax.html#!DONOTCRAWLkey=value). Then you can prevent Googlebot from crawling these pages by adding the following to your robots.txt:
+Disallow: /*_escaped_fragment_=DONOTCRAWL
+Question: Will I be able to search for _escaped_fragment_ URLs?
+No. Properly-constructed _escaped_fragment_ URLs are converted
+back to the equivalent #! url by Googlebot, and as such, will not
+match a query for inurl:_escaped_fragment_. Any results showing for
+this query usually indicate that a site is serving invalid URLs to
+Googlebot, for example URLs containing multiple '?' characters. These may be
+due to legacy uses of #! and do not necessarily indicate that the site
+implemented support for the AJAX crawling scheme.
+In other words, it will generally be invisible to the end user that a site has adopted the AJAX crawling scheme, except in the site's use of AJAX URLs that contain #!.
+One such example is facebook.com. If you use facebook, you will see #! AJAX URLs frequently now.
+Question: What about existing uses of #! in hash fragments?
+#! is an infrequently used token in existing hash fragments; however, it is not disallowed by the URL
+specification. What happens if your application uses #! but does not want to adopt the new AJAX crawling scheme? One approach you can take is to add a directive in your robots.txt to indicate this to the crawler.
+Disallow: /*_escaped_fragment_
+Please note that this means that if your application contains only this URL: www.example.com/ajax.html#!key=value, then this URL will not be crawled. However, if your application additionally contains the bare URL www.example.com/ajax.html, this URL remains crawlable with the above robots.txt.
+Question: What about accessibility?
+A positive side effect of the AJAX crawling scheme is that website owners make their applications more accessible to users with disabilities. This new
+agreement takes accessibility to a new level: without manual intervention, website owners can produce
+HTML snapshots, for example with headless browser, which contain all the relevant content and are
+usable by screen readers. (This also means that it's easier to keep the static content up-to-date,
+as less manual work is required.) In other words, website owners now have an even greater incentive to
+make their applications accessible to those with disabilities.
+Question: If using rel="canonical", should website owners use <link rel="canonical" href="http://example.com/ajax.html?_escaped_fragment_=foo=123" /> or <link rel="canonical" href="http://example.com/ajax.html#!foo=123" />?
+They should use <link rel="canonical" href="http://example.com/ajax.html#!foo=123" />.
+Question: What URL should I put in my Sitemap?
+Your Sitemap should include the version you prefer to have displayed in search results, so it should be http://example.com/ajax.html#!foo=123.
+Question: How will the #! URLs affect product feeds that companies are submitting? They would like the same URLs for Product Search and general Web Search.
+Generally, the #! version of the URL should be treated as the "canonical" version that should be used in all contexts. The _escaped_fragment_ URL is considered a temporary URL that end users should never see.
+Question: I'm using HtmlUnit as the headless browser, and it "doesn't work." Why not?
+If "doesn't work" means that HtmlUnit does not return the snapshot you were expecting to see, it's very likely that the culprit is that you didn't give it enough time to execute the JavaScript and/or XHR requests. To fix this, try any or all of the following:
+Use NicelyResynchronizingAjaxController. This will cause HtmlUnit to wait for any outstanding XHR calls.
+Bump up the wait time for waitForBackgroundJavaScript and/or waitForBackgroundJavaScriptStartingBefore
+This will very likely fix your problem. If it doesn't, you can also try the FAQ for HtmlUnit. HtmlUnit also has a user forum.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-07-14 UTC.
+Last updated 2021-01-12 UTC.

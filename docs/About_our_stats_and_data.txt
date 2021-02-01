@@ -19,5 +19,5 @@ Search Console does some additional data processing - for example, to eliminate 
 Some tools, such as Google Analytics, track traffic only from users who have enabled JavaScript in their browser.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Important conceptsHow Google Search WorksWhat are impressions, position, and clicks?About our stats and data
+Important conceptsHow Google Search WorksWhat are impressions, position, and clicks?About our stats and dataNavigating a Search Console report
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

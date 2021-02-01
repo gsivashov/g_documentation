@@ -1,10 +1,10 @@
 https://support.google.com/webmasters/topic/6003039
 
+This recommendation is officially deprecated as of October 2015.
 Home
 Google Search Central
-Documentation
-Advanced SEO
-Send feedback
+AJAX Crawling (Deprecated)
+Guides
 Design AJAX-powered sites for accessibility
 Many website owners have discovered the advantages of using AJAX to improve the user experience on their sites, creating dynamic pages that act as powerful web applications. But like Flash, AJAX can make a site difficult for search engines to index if the technology is not implemented carefully. There are two main search engine issues around AJAX: Making sure that search engine bots can see your content, and making sure they can see and follow your navigation.
 While Googlebot is great at understanding the structure of HTML links, it can have difficulty finding its way around sites which use JavaScript for navigation. We're working on doing a better job of understanding JavaScript, but your best bet for creating a site that's crawlable by Google and other search engines is to provide HTML links to your content.
@@ -24,6 +24,5 @@ Follow the guidelines
 In addition to the tips described here, we encourage you to also check out our Webmaster Guidelines for more information about what can make a site good for Google and your users. The guidelines also point out some practices to avoid, including sneaky JavaScript redirects. A general rule to follow is that while you can provide users different experiences based on their capabilities, the content should remain the same. For example, imagine we've created a page for Wysz's Hamster Farm. The top of the page has a heading of "Wysz's Hamster Farm," and below it is an AJAX-powered slideshow of the latest hamster arrivals. Turning JavaScript off on the same page shouldn't surprise a user with additional text reading:
 Wysz's Hamster Farm -- hamsters, best hamsters, cheap hamsters, free hamsters, pets, farms, hamster farmers, dancing hamsters, rodents, hampsters, hamsers, best hamster resource, pet toys, dancing lessons, cute, hamster tricks, pet food, hamster habitat, hamster hotels, hamster birthday gift ideas and more!
 A better implementation would display the same text whether JavaScript was enabled or not, and in the best scenario, offer an HTML version of the slideshow to non-JavaScript users. More information about hidden text.
-Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-01-27 UTC.

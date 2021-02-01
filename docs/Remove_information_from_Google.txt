@@ -12,8 +12,8 @@ You must answer the following two questions before you can try to remove your in
 Remove information from Google or from the web?
 Do you want to remove the information only from Google Search, or from the web? Removing information from Google won't remove it from the web, and removing information from the web requires a few extra steps to remove from Google.
 Who controls the source page of the information?
-Information in Google Search results is taken from a source (often, but not always, a web page). You need to know the source of that content, and who controls that source, in order to block or remove it.
-Here are examples of sources that you control:
+Information in Google Search results is taken from a source (often, but not always, a web page). You need to know the source of that content, and who controls that source, in order to block or remove it.
+Here are examples of sources that you control:
 Your Blogger pages
 A website that you own (for example, Brandon owns www.brandonsbaseballcards.com)
 A Wix or Wordpress site that you run
@@ -26,23 +26,23 @@ A Pinterest page that has pinned a photo that you took, or a photo of you
 A Wikipedia article about you
 Someone else's social media profile on Twitter or Facebook.
 Step 2: Take action
-You'll probably want to get your information off both Google Search Results and the web; you must handle these steps separately.
-Protect or remove all variations of the URL for the content that you want to hide, because in many cases, different URLs can point to the same page, for example: example.com/puppies, example.com/PUPPIES, and example.com/petchooser?pet=puppies. Learn how to find the right URL to block.
+You'll probably want to get your information off both Google Search Results and the web; you must handle these steps separately.
+Protect or remove all variations of the URL for the content that you want to hide, because in many cases, different URLs can point to the same page, for example: example.com/puppies, example.com/PUPPIES, and example.com/petchooser?pet=puppies. Learn how to find the right URL to block.
 Get information off Google Search results
 How to remove information from Google Search results depends on whether you have control of the page that hosts the information.
-If you own the content but not the page where it lives, see I don't control the web page; for example, if someone copies material from your website to theirs without your permission.
+If you own the content but not the page where it lives, see I don't control the web page; for example, if someone copies material from your website to theirs without your permission.
 I control the web page
-If the content is on a website that you control, or is managed by an account that you control (for example, in your Blogger page), or you are the verified site owner in Google Search Console, here is how to remove your content from Google Search results.
+If the content is on a website that you control, or is managed by an account that you control (for example, in your Blogger page), or you are the verified site owner in Google Search Console, here is how to remove your content from Google Search results.
 If the source page no longer exists (or is inaccessible) on the web
-If the page where the information came from is no longer on the web, or it is now protected by a login, file a URL removal request. (Requires you to be logged in with a Google account.)
-First confirm that the page is truly gone before doing this! You can check by opening an incognito window in Chrome and trying to visit the page. If the page can't be reached, it is gone.
+If the page where the information came from is no longer on the web, or it is now protected by a login, file a URL removal request. (Requires you to be logged in with a Google account.)
+First confirm that the page is truly gone before doing this! You can check by opening an incognito window in Chrome and trying to visit the page. If the page can't be reached, it is gone.
 If the information still exists on the web
-If the page where the information comes from is still accessible on the web, and doesn't require a login or have a noindex directive, follow these steps:
+If the page where the information comes from is still accessible on the web, and doesn't require a login or have a noindex directive, follow these steps:
 Temporarily hide information from Google Search by filing a URL removal request. This takes effect in about a day, but it is only temporary (after about 90 days it will reappear in search results). You must take the additional steps described next to remove it from Google Search results permanently. You must be a verified site owner of the page in Search Console to do this. We recommend removing the page from both search results and the cache in your request.
-Permanently remove information from Google Search results. To permanently remove your page or file from Google Search:
+Permanently remove information from Google Search results. To permanently remove your page or file from Google Search:
 Block access to it, as described in Get information off the web.
 OR
-Add a noindex tag or header to your page. Important: When using this method, be sure that your page is not blocked by a robots.txt file.
+Add a noindex tag or header to your page. Important: When using this method, be sure that your page is not blocked by a robots.txt file.
 OR
 Remove an image from search results using robots.txt to block either the image or the page that hosts it. Again, this is to remove only an image; not the entire page, from search results. If you use robots.txt it is possible for the page, but not the image, to appear in search results. To block the hosting page from search results, you must use one of the other two techniques mentioned previously.
 [Optional] Remove or limit access to your information. See Get information off the web. If you don't do this, users with a link can still access your content. This also prevents your information from appearing in a search engine that might not respect robots.txt or noindex, or from being linked to by a website.
@@ -50,29 +50,29 @@ I don't control the web page
 The removal process depends on whether or not the information is still visible on the page where Google found it:
 The content no longer exists on the source web page
 If the content is no longer available, you can request that Google remove it from Google Search results using the Remove Outdated Content tool:
-This request works only for pages and images that have already been updated or removed from the web.
+This request works only for pages and images that have already been updated or removed from the web.
 Use the correct URL in your request. If you use the wrong URL, the result won't be removed.
 Add a separate request for each URL found in Google web search results and image search results.
 Please remember that Google doesn't own the web; we just help you find stuff on it. If you don't like something on a website that Google doesn't own, we really can't make the website owner remove it, we can only remove it from Google Search results (if appropriate). Sorry!
 However, if you think there is a legal or Google Policy violation, see More Information below.
 The content still exists on the source web page
-Contact the website owner and ask them to remove the page. Remember to ask for removal all copies of the information on all their pages, as well as any images.
+Contact the website owner and ask them to remove the page. Remember to ask for removal all copies of the information on all their pages, as well as any images.
 If you cannot contact the site owner, or they are unwilling to remove the information:
-If the information lives on a Google property such as YouTube or Blogger, see the removal troubleshooter for Google Properties.
+If the information lives on a Google property such as YouTube or Blogger, see the removal troubleshooter for Google Properties.
 If the information lives on a non-Google property, use the Removal Troubleshooter for third-party pages.
 After the source content is removed, remove the information from Google search results using the Remove Outdated Content tool. You must request removal for the URL of each page or image that appears in Google Search results.
 Please remember that Google doesn't own the web; we just help you find stuff on it. If you don't like something on a website that Google doesn't own, we really can't make the website owner remove it, we can only remove it from Google Search results (if appropriate). Sorry!
 However, if you think there is a legal or Google Policy violation, see More Information below.
 Get information off the web
 If you want information removed from the web (not just from Google), you'll need to remove or block the page.
-If you only remove information from Google, but don't remove or block the source page, that won't keep someone who has a link from visiting the page. People can have links to your unlisted page because they visited it earlier, or someone sent it to them, or because other pages link to it.
+If you only remove information from Google, but don't remove or block the source page, that won't keep someone who has a link from visiting the page. People can have links to your unlisted page because they visited it earlier, or someone sent it to them, or because other pages link to it.
 If you control the page
 Password-protect your file or page.
 Delete your file or page.
 For Google properties:
-Google Shopping, Google+, and some other properties: You can opt out of search results for specific Google properties here.
-Business information: You can edit business information that you added in Google My Business.
-Other Google properties: To remove content from other Google properties, search the help documentation for your product to learn how to remove it.
+Google Shopping and some other properties: You can opt out of search results for specific Google properties here.
+Business information: You can edit business information that you added in Google My Business.
+Other Google properties: To remove content from other Google properties, search the help documentation for your product to learn how to remove it.
 If you don't control the page
 Try to contact the page owner and ask them to remove the content. Then remove the information from Google search results as described in The content no longer exists on the source web page.
 For pages hosted on Google properties (such as Google Play Music, Google Ads, or YouTube), try this troubleshooter.
@@ -85,16 +85,18 @@ I object to something that I've found on Google Search. Can I have it taken down
 Remember that the Internet is a big place, and you might not like or agree with everything that you see. Google's goal is to identify what information from the web is relevant to users' queries, not to determine whether that material is in some sense wrongful.
 However, if you think it really is a problem, here are some options:
 Adult material: Report adult material to Google SafeSearch, which blocks some explicit material from Google search results.
-Google policy violations: Review Google's removal policies to learn which types of material we remove from Google Search results upon request.
+Google policy violations: Review Google's removal policies to learn which types of material we remove from Google Search results upon request.
 Legal violations: Ask Google to evaluate a removal request under applicable law.
 Copyright violations: if you have found content violating your copyright, you can submit a DMCA takedown request.
 How do I remove or update information from the Google knowledge panel in search results?
-Learn how to update a Google knowledge panel. Keep in mind that information in the knowledge panel may come from multiple sources.  For legal requests, see here.
-How do I get a video or post off YouTube, Google+, Blogger, or other Google properties?
+Learn how to update a Google knowledge panel. Keep in mind that information in the knowledge panel may come from multiple sources.
+For legal requests, see here.
+How do I get a video or post off YouTube, Blogger, or other Google properties?
 See Get information off the web.
 Why can't I use robots.txt to block my file?
-If you use a robots.txt file on your website, you can tell Google not crawl a page. However, if Google finds a link to your page on another site, with descriptive text, we might generate a search result from that. If you have included a noindex tag on the page, Google won't see it, because Google must crawl (fetch) the page in order to see that tag, but Google won't fetch your page if there's a robots.txt file blocking it! Therefore, you should let Google crawl the page and see the noindex tag or header. It sounds counterintuitive, but you need to let Google try to fetch the page and fail (because of password protection) or see the noindex tag  to ensure it's omitted from search results.
+If you use a robots.txt file on your website, you can tell Google not crawl a page. However, if Google finds a link to your page on another site, with descriptive text, we might generate a search result from that. If you have included a noindex tag on the page, Google won't see it, because Google must crawl (fetch) the page in order to see that tag, but Google won't fetch your page if there's a robots.txt file blocking it! Therefore, you should let Google crawl the page and see the noindex tag or header. It sounds counterintuitive, but you need to let Google try to fetch the page and fail (because of password protection) or see the noindex tag
+to ensure it's omitted from search results.
 This does not apply to images; for images, robots.txt is the correct way to block images from search results.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-21 UTC.
+Last updated 2021-01-28 UTC.

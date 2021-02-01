@@ -21,7 +21,7 @@ Each sitemap entry is the URL of a page that hosts one or more videos. The struc
 ... as many additional <video> entries as you need ...
 </url>
 Don't list videos that are unrelated to the host page. For example, if the video is a small addendum to the page, or unrelated to the main text content.
-Each entry in a video sitemap includes a set of required, recommended, or optional values that you supply. Recommended and optional values provide useful metadata that can enhance your video results and improve Google's ability to include your video in search results. refer to the list of sitemap elements.
+Each entry in a video sitemap includes a set of required, recommended, or optional values that you supply. Recommended and optional values provide useful metadata that can enhance your video results and improve Google's ability to include your video in search results. Refer to the list of sitemap elements.
 Google might use text on the video landing page rather than the text you supply in your sitemap, if the page text is deemed more useful than the information in the sitemap.
 Google can't guarantee when or if your videos will be indexed, as Google relies on complex indexing algorithms.
 If Google can't discover video content at the URL you provide, the sitemap entry is ignored.
@@ -31,6 +31,7 @@ All files must be accessible to Googlebot. If you want to prevent spammers from 
 Make sure that your robots.txt file isn't blocking any of the items (including the host page URL, the video URL, and the thumbnail URL) included in each sitemap entry. More information about robots.txt.
 Google verifies that the information you provide for each video matches what is on the site. If not, your video might not be indexed.
 You can specify pages from different sites in one sitemap. All sites, including the one containing your sitemap, must be verified in Search Console. More information about managing sitemaps for multiple sites.
+Learn how to submit your sitemap to Google. For large sites, we recommend using the Search Console API to submit your sitemaps.
 Example sitemap
 Here is a sample video sitemap with one page hosting one video. This example includes all of the tags that Google uses.
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -260,4 +261,4 @@ type [Required] The purchase option. Allowed values are rent, purchase, package,
 The full mRSS specification contains many more optional tags, best practices, and examples. Once you have an mRSS feed, you can test and submit it just like any other sitemap.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-14 UTC.
+Last updated 2021-01-26 UTC.

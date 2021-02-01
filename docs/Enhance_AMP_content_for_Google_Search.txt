@@ -6,29 +6,35 @@ Documentation
 Advanced SEO
 Send feedback
 Enhance AMP content for Google Search
-You can enhance your AMP content for Google Search by creating a basic AMP page, adding structured
-data, monitoring your pages, and practicing with codelabs.
+You can enhance your AMP content for Google
+Search by creating a basic AMP page, adding structured data, monitoring your pages, and
+practicing with codelabs.
 Create a basic AMP page
-Create your
-first AMP page.
+Create your first AMP page.
 Follow the Google Search guidelines for AMP pages.
-Make your content discoverable by linking
-your pages. For crawling and indexing, Google Search requires that an AMP
-page links to a canonical page.
-The canonical page can be either a non-AMP version of the page or it can be the AMP page itself.
-For more information, see the What's in an
-AMP URL? developer blog post.
+Make your content
+discoverable by linking your pages.
+For crawling and indexing, Google Search requires that an AMP page links to a
+canonical page. The
+canonical page can be either a non-AMP version of the page or it can be the AMP page itself. For
+more information, see the
+What's in an AMP URL?
+developer blog post.
 Ensure that users can experience the same content and complete the same actions on AMP pages as
 on the corresponding canonical pages, where possible.
-Use the AMP Test Tool to
-ensure that your page meets the Google Search requirements for a valid AMP HTML document.
-Use the same structured data markup across both the canonical and AMP pages.
+Use the AMP Test Tool to ensure that your page
+meets the Google Search requirements for a valid AMP HTML document.
+Use the same
+structured data markup across both the
+canonical and AMP pages.
 Apply common content best practices:
-Make sure that your robots.txt
-file doesn't block your AMP page. Use the noindex tag, block indexing,
-and robots meta tags.
-Follow the guidelines for hreflang for
-language and regional URLs. For AMP specific examples, see Internationalization.
+Make sure that your robots.txt file doesn't
+block your AMP page, and there is no
+noindex meta tag on the AMP page.
+Follow the guidelines for
+hreflang for language and regional URLs.
+For AMP specific examples, see
+Internationalization.
 Create an AMP page using a CMS
 If you serve your web content through a Content Management System (CMS), you can
 use an existing CMS plugin (such as for WordPress, Drupal, or Joomla) or implement
@@ -66,7 +72,7 @@ If you need to immediately update the Google AMP Cache to serve the latest
 version of your content, refer to Update AMP
 Content.
 If you need to stop serving your AMP pages from Google Search results, follow Remove AMP from Google Search results.
-Practice with Codelabs
+Practice with codelabs
 Here are some codelabs to practice building AMP pages for Google Search:
 Learn how to build AMP pages with the AMP
 foundations codelab.
@@ -93,4 +99,4 @@ to your AMP pages to track user interactions with built-in Google Analytics
 support.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-01-27 UTC.

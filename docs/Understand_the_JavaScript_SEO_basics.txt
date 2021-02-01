@@ -8,7 +8,7 @@ Send feedback
 Understand the JavaScript SEO basics
 Do you suspect that JavaScript issues might be blocking your page or some of your content from
 showing up in Google Search? Learn how to fix JavaScript-related problems with our
-troubleshooting guide
+troubleshooting guide.
 JavaScript is an important part of the web platform because it provides many features that turn
 the web into a powerful application platform. Making your JavaScript-powered web applications
 discoverable via Google Search can help you find new users and re-engage existing users as they
@@ -251,6 +251,14 @@ Images can be quite costly on bandwidth and performance. A good strategy is to u
 to only load images when the user is about to see them. To make sure you're implementing lazy-loading
 in a search-friendly way, follow
 our lazy-loading guidelines.
+Design for accessibility
+Create pages for users, not just search engines. When you're designing your site, think about
+the needs of your users, including those who may not be using a JavaScript-capable browser
+(for example, people who use screen readers or less advanced mobile devices). One of the
+easiest ways to test your site's accessibility is to preview it in your browser with
+JavaScript turned off, or to view it in a text-only browser such as Lynx. Viewing a site as
+text-only can also help you identify other content which may be hard for Googlebot to see,
+such as text embedded in images.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-01-27 UTC.

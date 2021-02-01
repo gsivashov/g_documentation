@@ -1,4 +1,4 @@
-https://developers.google.com/search/reference/podcast/rss-feed
+https://support.google.com/webmasters/answer/9579369
 
 About podcasts on GoogleThis guide shows you how Google exposes podcasts to Google users, and how to get your own podcast on Google.
 Where will Google show my podcast?

@@ -349,9 +349,9 @@ days.
 If you have a third-party job site, you can provide a different logo for a given organization
 than the image shown in the organization's Google knowledge panel. Google will pick the best logo
 to display in Search results, whether it's the knowledge panel logo or the
-hiringOrganization logo. The logo property is only eligible to be shown on your
-job site, and isn't treated as the canonical logo for the organization. For more information,
-see hiringOrganization.
+hiringOrganization logo. The logo
+property is only eligible to be shown on your job site, and isn't treated as the canonical logo
+for the organization. For more information, see hiringOrganization.
 Monitor performance in Search
 You can understand how users interact with your job posting by using the following Google tools:
 Use the
@@ -877,4 +877,4 @@ North America: Available in the entire region
 Sub-Saharan Africa: Available in the entire region
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-21 UTC.
+Last updated 2021-01-29 UTC.

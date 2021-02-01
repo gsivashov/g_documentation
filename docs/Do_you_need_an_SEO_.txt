@@ -23,13 +23,13 @@ If you run a small local business, you can probably do much of the work yourself
 Check out our 30-minute video series on building an online presence for your business.
 Google Webmaster Guidelines
 Google 101: How Google crawls, indexes and serves the web.
-The SEO starter guide describes much of what your SEO will do for you. Although you don't need to know this guide well yourself if you're hiring a professional to do the work for you, it is useful to be familiar with these techniques, so that you can be aware if an SEO wants to use a technique that is not recommended or, worse, strongly discouraged.
+The SEO starter guide describes much of what your SEO will do for you. Although you don't need to know this guide well yourself if you're hiring a professional to do the work for you, it is useful to be familiar with these techniques, so that you can be aware if an SEO wants to use a technique that is not recommended or, worse, strongly discouraged.
 Remember that it will take time for you to see results: typically from four months to a year from the time you begin making changes until you start to see the benefits.
 If you think that you still need extra help from a professional, continue reading about how to choose an SEO.
 Choosing an SEO
 If you're thinking about hiring an SEO, the earlier the better. A great time to hire is when you're considering a site redesign, or planning to launch a new site. That way, you and your SEO can ensure that your site is designed to be search engine-friendly from the bottom up. However, a good SEO can also help improve an existing site.
 Be committed to implementing the recommended changes. Making the changes recommended by an SEO takes time and effort; if you aren't going to take the time to make these changes, it's not worthwhile hiring a professional.
-Interview your potential SEO. Some useful questions to ask an SEO include:
+Interview your potential SEO. Some useful questions to ask an SEO include:
 Can you show me examples of your previous work and share some success stories?
 Do you follow the Google Webmaster Guidelines?
 Do you offer any online marketing services or advice to complement your organic search business?
@@ -47,7 +47,7 @@ How does your business make money, and how can search results help?
 What other advertising channels are you using?
 Who are your competitors?
 Check your SEO's business references. Ask past clients if they felt that this SEO provided useful service, was easy to work with, and produced positive results.
-Ask for a technical and search audit for your site to learn what they think needs to be done, why, and what the expected outcome should be. You'll probably have to pay for this. You will probably have to give them read-only access to your site on Search Console. (At this stage, don't grant them write access.) Your prospective SEO should be able to give you realistic estimates of improvement, and an estimate of the work involved. If they guarantee you that their changes will give you first place in search results, find someone else.
+Ask for a technical and search audit for your site to learn what they think needs to be done, why, and what the expected outcome should be. You'll probably have to pay for this. You will probably have to give them read-only access to your site on Search Console. (At this stage, don't grant them write access.) Your prospective SEO should be able to give you realistic estimates of improvement, and an estimate of the work involved. If they guarantee you that their changes will give you first place in search results, find someone else.
 Decide if you want to hire.
 Precautions
 While SEOs can provide clients with valuable services, some unethical SEOs have given the industry a black eye by using overly aggressive marketing efforts and attempting to manipulate search engine results in unfair ways. Practices that violate our guidelines may result in a negative adjustment of your site's presence in Google, or even the removal of your site from our index.
@@ -75,7 +75,7 @@ Ask for explanations if something is unclear. If an SEO creates deceptive or mis
 You should never have to link to an SEO.
 Avoid SEOs that talk about the power of "free-for-all" links, link popularity schemes, or submitting your site to thousands of search engines. These are typically useless exercises that don't affect your ranking in the results of the major search engines -- at least, not in a way you would likely consider to be positive.
 Choose wisely.
-While you consider whether to go with an SEO, you may want to do some research on the industry. Google is one way to do that, of course. While Google doesn't comment on specific companies, we've encountered firms calling themselves SEOs who follow practices that are clearly beyond the pale of accepted business behavior. Be careful.
+While you consider whether to go with an SEO, you may want to do some research on the industry. Google is one way to do that, of course. While Google doesn't comment on specific companies, we've encountered firms calling themselves SEOs who follow practices that are clearly beyond the pale of accepted business behavior. Be careful.
 Be sure to understand where the money goes.
 While Google never sells better ranking in our search results, several other search engines combine pay-per-click or pay-for-inclusion results with their regular web search results. Some SEOs will promise to rank you highly in search engines, but place you in the advertising section rather than in the search results. A few SEOs will even change their bid prices in real time to create the illusion that they "control" other search engines and can place themselves in the slot of their choice. This scam doesn't work with Google because our advertising is clearly labeled and separated from our search results, but be sure to ask any SEO you're considering which fees go toward permanent inclusion and which apply toward temporary advertising.
 What are some other things to look out for?
@@ -90,4 +90,4 @@ Gets traffic from "fake" search engines, spyware, or scumware
 Has had domains removed from Google's index or is not itself listed in Google
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-14 UTC.
+Last updated 2021-01-28 UTC.

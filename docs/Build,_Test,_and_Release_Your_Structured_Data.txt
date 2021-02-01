@@ -118,8 +118,8 @@ Description
 All items
 The information in the structured data is not shown in the user-visible text. For
 example, review stars are in the structured data but not on the page. This would cause the
-stars to appear only in Search results, but not on the page. This often occurs with Products
-or Reviews.
+stars to appear only in search results, but not on the page. This often occurs with product
+or review rich results.
 Relevant guidelines:
 The marked-up content is hidden
 from the user.
@@ -208,4 +208,4 @@ Relevant guidelines:
 Recipe guidelines.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-01-27 UTC.

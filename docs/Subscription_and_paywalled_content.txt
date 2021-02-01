@@ -6,17 +6,20 @@ Documentation
 Advanced SEO
 Send feedback
 Subscription and paywalled content
-This page describes how to use schema.org JSON-LD to indicate paywalled content on your site with
-CreativeWork properties. This
-structured data helps Google differentiate paywalled content from the
+This page describes how to use schema.org JSON-LD to indicate paywalled content on your site
+with
+CreativeWork
+properties. This structured data helps Google differentiate paywalled content from the
 practice of cloaking, which
-violates our
-guidelines. Learn more about
+violates our guidelines.
+Learn more about
 subscription and paywalled content.
+This guide only applies to content that should be crawled and indexed. If you don't want to
+have your paywalled content indexed, you can stop reading now.
 Example
 Here's an example of
-NewsArticle structured data with
-paywalled content.
+NewsArticle
+structured data with paywalled content.
 <html>
 <head>
 <title>Article headline</title>
@@ -65,23 +68,27 @@ Paywalled Content
 </body>
 </html>
 Guidelines
-You must follow the general structured data guidelines and
-technical guidelines for your
-page to be eligible to appear in search results. In addition, the following guidelines apply
-to paywalled content:
-Note: If you violate these policies, your page might not be
-eligible to be displayed in Search results. Read about
+You must follow the
+general structured data guidelines and
+technical guidelines for
+your page to be eligible to appear in search results. In addition, the following guidelines
+apply to paywalled content:
+Note: If you violate these policies, your page might not be eligible
+to be displayed in Search results. Read about
 Spammy Structured Markup
 to learn more.
 JSON-LD and microdata formats are accepted methods for specifying structured data for
 paywalled content.
 Don't nest content sections.
-Only use .class selectors for the cssSelector property.
+Only use .class selectors for the
+cssSelector property.
 Add markup to paywalled content
-If you offer any subscription-based
-access to your website content, or if users must register for access to any content you want to be indexed, follow
-the steps below. The following example applies to NewsArticle structured data. Make
-sure to follow these steps for all versions of your page (including AMP and non-AMP).
+If you offer any
+subscription-based access to
+your website content, or if users must register for access to any content you want to be
+indexed, follow the steps below. The following example applies to
+NewsArticle structured data. Make sure to follow these steps for
+all versions of your page (including AMP and non-AMP).
 Add a class name around each paywalled section of your page. For example:
 <body>
 <p>This content is outside a paywall and is visible to all.</p>
@@ -89,9 +96,10 @@ Add a class name around each paywalled section of your page. For example:
 </body>
 Add NewsArticle
 structured data.
-Add the highlighted JSON-LD structured data to your NewsArticle structured data.
-Note: The cssSelector references the class name that you
-added in Step 1.
+Add the highlighted JSON-LD structured data to your
+NewsArticle structured data.
+Note: The cssSelector references the
+class name that you added in Step 1.
 {
 "@context": "https://schema.org",
 "@type": "NewsArticle",
@@ -140,8 +148,8 @@ structured data with multiple paywalled sections.
 }
 Supported types
 This markup is supported for the
-CreativeWork type
-or one of the following more specific types of CreativeWork:
+CreativeWork
+type or one of the following more specific types of CreativeWork:
 Article
 NewsArticle
 Blog
@@ -156,23 +164,26 @@ Multiple schema.org types can be used, such as the following:
 AMP considerations
 Here's a list of considerations to keep in mind if you use AMP pages:
 If you have an AMP page with paywalled content, use
-amp-subscriptions where appropriate.
+amp-subscriptions
+where appropriate.
 Make sure that your authorization endpoint grants access to content to the appropriate bots
 from Google and others. This is different per publisher.
 Ensure that your bot access policy is the same for AMP and non-AMP pages, otherwise this can
 result in content mismatch errors that appear in Search Console.
 Make sure Google can crawl and index your pages
+If you want Google to crawl and index your content, including the paywalled sections, make
+sure Googlebot, and
+Googlebot-News if
+applicable, can access your page.
 Use the URL Inspection tool
 to test how Google crawls and renders a URL on your site.
-There are several ways to make sure Google can crawl and index the content on your page:
-If you only want Google to crawl and index the content of a page that's outside of a paywall
-and visible to all, skip this step.
-If you want Google to crawl and index your entire page, including the paywalled sections, make sure
-Googlebot, and Googlebot-News
-if applicable, can access your page.
-If you want to prevent Google from showing the cached link for your page, use the
-noarchive robots
-meta tag.
+Control what information is shown in search results
+To prevent Google from showing a cached link for your page, use the
+noarchive robots meta tag.
+To exclude certain sections of your content from appearing in search result snippets, use the
+data-nosnippet HTML attribute.
+You can also limit how many characters a search result snippet may have by using the
+max-snippet robots meta tag.
 Troubleshooting
 Important: Google does not guarantee that features that consume structured data will
 show up in search results. For a list of common reasons why Google may not
@@ -193,4 +204,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-01-28 UTC.
