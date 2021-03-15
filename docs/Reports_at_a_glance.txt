@@ -9,13 +9,15 @@ Suggested use: If only checking in periodically, check for manual actions or sec
 Useful for: Everyone
 Performance reports:
 Web Search
-Discover
+Discover‡
+News‡
+‡ Available only if your property has sufficient traffic on this platform
 Explore how many people saw and clicked on your site in Google Search, what queries showed your site in Search, and your average search position.
 If your site has Discover data, you will also see a similar report just for your Discover data.
 Data includes clicks, impressions, CTR, and position for your site, as well as query strings that users were searching for.
 Data can be grouped by page URL, country of query, or device type.
 Suggested use: Periodically review to check for spikes or dips in clicks or impressions. Examine the query strings that show your site, and see if the queries that you expect show your site. Read more about traffic drops on your site.
-Useful for: SEOs, site owners [Performance (Search) documentation] [Performance (Discover) documentation]
+Useful for: SEOs, site owners [Performance on Search results documentation] [Performance on Discover documentation] [Performance on Google News documentation]
 URL Inspection tool
 See the information that the Google index has about a specific URL on your site, or test a live page. Information is quite extensive, and includes page HTML code and errors, AMP/mobile usability errors and code, JavaScript output and errors encountered when rendering the page, any canonicals selected for a page, and more. Use the tool by typing a URL in the bar at the top of Search Console.
 Suggested use: Use this report to troubleshoot any crawling errors that Google encountered on your site. You can reach this tool by clicking into a specific URL in the Coverage report. You can also use this report to fix and retest a page before resubmitting the page for indexing.
@@ -73,6 +75,9 @@ Shows how often Google is crawling your site, and how many requests it is making
 Suggested use: If your site is being overloaded by Google crawl requests, you can track the issue here, and request a reduced crawl rate.
 This report is available only for domain-level properties (example.com, m.example.com, http://example.com) not for URL-prefix properties (example.com/somepath/).
 Useful for: Advanced SEO, website administrators [Documentation]
+Associations
+Manage your property associations to enable data sharing and more between your property and Google Analytics, YouTube channels, Android apps, and other Google services.
+Useful for: Site owners [Documentation]
 Legacy tools and reports
 These tools and reports do not yet have a full replacement in new Search Console, but can still be reached at the links given below. The Search Console team is working on a replacement strategy for these items.
 Report or tool
@@ -89,10 +94,6 @@ International Targeting
 Debug hreflang settings on multi-lingual sites, or set a country to target in your search results.
 Suggested use: Use when adding hreflang tags to your site to ensure proper crawling for different languages or regions. Use to set a single top target country for your site, if not evident in your site content.
 Useful for: SEOs [Documentation]
-Google Analytics association
-Other associations
-Import Search Console analytics data for your property into your Google Analytics account. For other property types (YouTube channel, Android app, and so on), approve or deny association requests.
-Useful for: Site owners [Google Analytics association documentation]
 Data Highlighter tool
 A simple tool to help Google extract data from template pages on your site.
 Suggested use: If your site has many pages with templated data (for example, bus routes or event schedules) and you can't use structured data for some reason, you can use this tool to help Google extract similar data from identically coded pages. You must retrain Google every time you change the design of the page.

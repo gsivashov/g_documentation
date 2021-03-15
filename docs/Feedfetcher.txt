@@ -54,7 +54,7 @@ near the sites that they're retrieving in the network.
 Can you tell me the IP addresses from which Feedfetcher makes requests so that I can filter my
 logs?
 The IP addresses used by Feedfetcher change from time to time. The best way to identify
-Feedburner requests is to look for its user agent, Feedfetcher-Google.
+Feedfetcher requests is to look for its user agent, Feedfetcher-Google.
 Why is Feedfetcher downloading the same page on my site multiple times?
 In general, Feedfetcher should only download one copy of each file from your site during a
 given feed retrieval. Very occasionally, the machines are stopped and restarted, which may
@@ -67,4 +67,4 @@ If you're still having trouble, try posting your question in the Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-29 UTC.
+Last updated 2021-03-05 UTC.

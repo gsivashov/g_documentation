@@ -1427,7 +1427,9 @@ deliveryTime.handlingTime
 QuantitativeValue
 The typical delay between the receipt of the order and the goods either leaving the
 warehouse or being prepared for pickup, in case the delivery method is on site pickup. Specify
-the deliveryTime.handlingTime.minValue and deliveryTime.handlingTime.maxValue properties.
+the deliveryTime.handlingTime.minValue
+and deliveryTime.handlingTime.maxValue
+properties.
 deliveryTime.handlingTime.minValue
 Number
 The minimum number of days that a product is in transit between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup.
@@ -1581,4 +1583,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-22 UTC.
+Last updated 2021-03-11 UTC.

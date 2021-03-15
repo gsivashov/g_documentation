@@ -32,7 +32,10 @@ You can use robots.txt to block resource files such as unimportant image, script
 I use a site hosting service
 If you use a website hosting service, such as Wix, Drupal, or Blogger, you might not need to (or be able to) edit your robots.txt file directly. Instead, your provider might expose a search settings page or some other mechanism to tell search engines whether or not to crawl your page.
 To see if your page has been crawled by Google, search for the page URL in Google.
-If you want to hide (or unhide) your page from search engines, add (or remove) any page login requirements that might exist, and search for instructions about modifying your page visibility in search engines on your hosting service, for example: wix hide page from search engines
+If you want to hide (or unhide) your page from search engines, add (or remove) any page login
+requirements that might exist, and search for instructions about modifying your page
+visibility in search engines on your hosting service, for example:
+wix hide page from search engines
 Understand the limitations of robots.txt
 Before you create or edit robots.txt, you should know the limits of this URL blocking method. At times, you might want to consider other mechanisms to ensure your URLs are not findable on the web.
 Robots.txt directives may not be supported by all search engines
@@ -47,4 +50,4 @@ You can test if a page or resource is blocked by a robots.txt rule.
 To test for noindex directives, use the URL Inspection tool.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-25 UTC.
+Last updated 2021-03-15 UTC.

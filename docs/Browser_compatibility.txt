@@ -6,15 +6,46 @@ Documentation
 Advanced SEO
 Send feedback
 Browser compatibility
-Users typically view your website using a browser. Each browser interprets your website code in a slightly different manner, which means that it may appear differently to visitors using different browsers. In general, you should avoid relying on browser specific behavior, such as relying on a browser to correctly detect a content-type or encoding when you did not specify one. In addition, there are some steps you can take to make sure your site doesn't behave in unexpected ways.
+Users typically view your website using a browser. Each browser interprets your website code in
+a slightly different manner, which means that it may appear differently to visitors using different
+browsers. In general, you should avoid relying on browser specific behavior, such as relying on a
+browser to correctly detect a content-type or encoding when you did not specify one. In addition,
+there are some steps you can take to make sure your site doesn't behave in unexpected ways.
 Test your site in as many browsers as possible
-Once you've created your web design, you should review your site's appearance and functionality on multiple browsers to make sure that all your visitors are getting the experience you worked so hard to design. Ideally, you should start testing as early in your site development process as possible. Different browsers - and even different versions of the same browser - can see your site differently. You can use services such as Google Analytics to get a good idea of the most popular browsers used to view your site.
+Once you've created your web design, you should review your site's appearance and functionality
+on multiple browsers to make sure that all your visitors are getting the experience you worked so
+hard to design. Ideally, you should start testing as early in your site development process as
+possible. Different browsers - and even different versions of the same browser - can see your site
+differently. You can use services such as Google
+Analytics to get a good idea of the most popular browsers used to view your site.
 Write good, clean HTML
-While your site may appear correctly in some browsers even if your HTML is not valid, there's no guarantee that it will appear correctly in all browsers - or in all future browsers. The best way to make sure that your page looks the same in all browsers is to write your page using valid HTML and CSS, and then test it in as many browsers as possible. Clean, valid HTML is a good insurance policy, and using CSS separates presentation from content, and can help pages render and load faster. Validation tools, such as the free online HTML and CSS validators provided by the W3 Consortium, are useful for checking your site, and tools such as HTML Tidy can help you quickly and easily clean up your code. (Although we do recommend using valid HTML, it's not likely to be a factor in how Google crawls and indexes your site.)
+While your site may appear correctly in some browsers even if your HTML is not valid, there's no
+guarantee that it will appear correctly in all browsers - or in all future browsers. The best way
+to make sure that your page looks the same in all browsers is to write your page using valid HTML
+and CSS, and then test it in as many browsers as possible. Clean, valid HTML is a good insurance
+policy, and using CSS separates presentation from content, and can help pages render and load
+faster. Validation tools, such as the free online HTML
+and CSS validators provided by
+the W3 Consortium, are useful for checking your site, and tools such as
+HTML Tidy can help you
+quickly and easily clean up your code. (Although we do recommend using valid HTML, it's not
+likely to be a factor in how Google crawls and indexes your site.)
 Specify your character encoding
-To help browsers render the text on your page, you should always specify an encoding for your document. This encoding should appear at the top of the document (or frame) as some browsers won't recognize charset declarations that appear deep in the document. In addition, you should make sure that your web server is not sending conflicting HTTP headers. A header such as content-type: text/html; charset=ISO-8859-1 will override any charset declarations in your page.
+To help browsers render the text on your page, you should always specify an encoding for your
+document. This encoding should appear at the top of the document (or frame) as some browsers won't
+recognize charset declarations that appear deep in the document. In addition, you should make sure
+that your web server is not sending conflicting HTTP headers. A header such as
+content-type: text/html; charset=ISO-8859-1 will override any charset declarations
+in your page.
 Consider accessibility
-Not all users may have JavaScript enabled in their browsers. In addition, technologies such as Flash and ActiveX may not render well (or at all) in every browser. We recommend following our guidelines for using Flash and other rich media, and testing your site in a text-only browser such as Lynx. As a bonus, providing text-only alternatives to rich-media content and functionality will make it easier for search engines to crawl and index your site, and also make your site more accessible to users who use alternative technologies such as screenreaders.
+Not all users may have JavaScript enabled in their browsers. In addition, technologies such as
+ActiveX may not render well (or at all) in every browser. We recommend following our
+guidelines for using rich media
+files, and testing your site in a text-only browser such as
+Lynx. As a bonus, providing text-only
+alternatives to rich-media content and functionality will make it easier for search engines to
+crawl and index your site, and also make your site more accessible to users who use alternative
+technologies such as screenreaders.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-02-16 UTC.

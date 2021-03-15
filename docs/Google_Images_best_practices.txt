@@ -8,8 +8,8 @@ Send feedback
 Google Images best practices
 Google Images is a way to visually discover information on the web. Users can quickly explore information with more context around images with new features, such as image captions, prominent badges, and AMP results.
 By adding more context around images, results can become much more useful, which can lead to higher quality traffic to your site. You can aid in the discovery process by making sure that your images and your site are optimized for Google Images. Follow our guidelines to increase the likelihood that your content will appear in Google Images search results.
-Opt out of image search inline linking
-If you choose, you can prevent the full-sized image from appearing in Google's image search results page by opting out of inline linking in Google image search results.
+Opt out of Google Images inline linking
+If you choose, you can prevent the full-sized image from appearing in the Google Images search results page by opting out of inline linking in Google Images search results.
 To opt out of inline linking:
 When your image is requested, examine the HTTP referrer header in the request.
 If the request is coming from a Google domain, reply with HTTP 200 or 204 and no content.
@@ -21,7 +21,7 @@ Provide good context: Make sure that your visual content is relevant to the topi
 Optimize placement: Whenever possible, place images near relevant text. When it makes sense, consider placing the most important image near the top of the page.
 Don't embed important text inside images: Avoid embedding text in images, especially important text elements like page headings and menu items, because not all users can access them (and page translation tools won't work on images). To ensure maximum accessibility of your content, keep text in HTML, provide alt text for images.
 Create informative and high quality sites: Good content on your webpage is just as important as visual content for Google Images - it provides context and makes the result more actionable. Page content may be used to generate a text snippet for the image, and Google considers the page content quality when ranking images.
-Create device-friendly sites: Users search on Google Images more from mobile than on desktop. For this reason, it is important that you design your site for all device types and sizes. Use the mobile friendly testing tool to test how well your pages work on mobile devices, and get feedback on what needs to be fixed.
+Create device-friendly sites: Users search on Google Images more from mobile than on desktop. For this reason, it is important that you design your site for all device types and sizes. Use the Mobile-Friendly Test to test how well your pages work on mobile devices, and get feedback on what needs to be fixed.
 Create good URL structure for your images: Google uses the URL path as well as the file name to help it understand your images. Consider organizing your image content so that URLs are constructed logically.
 Check your page title and description
 Google Images automatically generates a title and snippet to best explain each result and how it relates to the user query. This helps users decide whether or not to click on a result.
@@ -100,4 +100,4 @@ And finally...
 Please read our SEO Starter Guide which contains lots of useful information to rank better, and if you have more questions please post them in the Google Search Central Help Forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-14 UTC.
+Last updated 2021-02-24 UTC.

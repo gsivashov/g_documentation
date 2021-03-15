@@ -59,4 +59,4 @@ A good usability guideline is whether a user viewing the page in isolation under
 Best practice: If you need a third-party to perform a basic support service for your site, a best practice is to use an industry standard third party for that service. For example, to manage user authentication on your site, you should use OAuth rather than managing authentication yourself.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-03-10 UTC.

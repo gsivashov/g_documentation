@@ -33,7 +33,6 @@ Rich media file best practices
 AMP on Google Search guidelines
 Best practices for education sites in Google Search
 COVID-19 resources for sites from Google Search
-Design AJAX-powered sites for accessibility
 Quality guidelines
 The following guidelines describe specific prohibited techniques that can get your page or
 site omitted from Search results. Engaging in these techniques can incur a
@@ -50,9 +49,10 @@ Scraped content
 Affiliate programs
 Irrelevant keywords
 Creating pages with malicious behavior
+Automated queries
 User-generated spam
-Ways to Prevent Comment Spam
+Ways to prevent comment spam
 Report spam, paid links, or malware
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-14 UTC.
+Last updated 2021-03-05 UTC.

@@ -80,7 +80,7 @@ meta
 description. Unique titles and meta descriptions help Google show how your
 pages are relevant to users, which in turn can increase your search traffic.
 Use semantic HTML. While Googlebot indexes HTML, PDF content, images,
-and videos, it doesn't index content that requires plugins (for example, Flash, Java, or Silverlight)
+and videos, it doesn't index content that requires plugins (for example, Java or Silverlight)
 or content that is rendered in a canvas. Instead of using a plugin, use semantic HTML markup
 for your content whenever possible.
 Tell Google about other versions of your content
@@ -128,4 +128,4 @@ you're not sure where to start, explore our
 gallery of available features.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-25 UTC.
+Last updated 2021-02-09 UTC.

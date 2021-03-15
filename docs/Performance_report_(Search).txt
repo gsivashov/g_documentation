@@ -69,7 +69,7 @@ The type of device on which the user is searching: desktop, tablet, or mobile. I
 Search Type [Filter only]
 Which search tab contained the link seen by the user:
 Web: Results that appear in the All tab. This includes any image or video results shown in the All results tab.
-Image: Results that appear in the Image search results tab.
+Image: Results that appear in the Images search results tab.
 Video: Results that appear in the Videos search results tab.
 News: Results that show in the News search results tab.
 Grouping is not supported for search type because the results page layout is very different for different search types. For example, position 30 in image search results might be on the first result page, but position 30 in web search would be on page three.
@@ -95,7 +95,6 @@ AMP on image result - An Image Search result, where the image is hosted in an AM
 AMP non-rich results - A basic, non-graphical (plain blue link) search result for an AMP page.
 AMP article - A visually-decorated search result link, such as an image from the AMP page, plus a content summary. The result can be either free-standing in the results page, or embedded in a carousel of similar result types. AMP article rich results are also counted as rich results.
 Android App - An Android app installation link or Android app page result in a mobile search. To get your Android app indexed and in search results, follow the Firebase Android App indexing guidelines.
-Cross-language results - Search results in a language different from the query language, from selected sources.
 Event - An event rich result. Read about measuring clicks and impressions for Event items.
 FAQ rich results - A FAQ page.
 How-to rich results - A How-to rich result.
@@ -159,6 +158,7 @@ https://example.com/
 http://example.com/
 http://m.example.com/
 However, if you use a Domain property, all data from the same domain is combined, for both http and https.
+The data does not include impressions or clicks from ads in Google Search that lead to your website.
 Last updated date
 The Last updated date on the report shows the last date for which the report has any data.
 How are clicks, impressions, and position calculated?

@@ -6,12 +6,29 @@ Documentation
 Advanced SEO
 Send feedback
 Change page URLs with 301 redirects
-If you need to change the URL of a page as it is shown in search engine results, we recommend that you use a server-side 301 redirect. This is the best way to ensure that users and search engines are directed to the correct page. The 301 status code means that a page has permanently moved to a new location.
+If you need to change the URL of a page as it is shown in search engine results, we
+recommend that you use a server-side 301 redirect. This is the best way to ensure that users
+and search engines are directed to the correct page. The 301 status code means that a page has
+permanently moved to a new location.
 301 redirects are particularly useful in the following circumstances:
-You've moved your site to a new domain, and you want to make the transition as seamless as possible.
-People access your site through several different URLs. If, for example, your home page can be reached in multiple ways - for instance, http://example.com/home, http://home.example.com, or http://www.example.com - it's a good idea to pick one of those URLs as your preferred (canonical) destination, and use 301 redirects to send traffic from the other URLs to your preferred URL.
-You're merging two websites and want to make sure that links to outdated URLs are redirected to the correct pages.
-To implement a 301 redirect for websites that are hosted on servers running Apache, you'll need access to your server's .htaccess file. (If you're not sure about your access or your server software, check with your webhoster.) For more information, consult the Apache .htaccess Tutorial and the Apache URL Rewriting Guide. If your site is hosted on a server running other software, check with your hoster for more details.
+You've moved your site to a new domain, and you want to make the transition as seamless as
+possible.
+People access your site through several different URLs. If, for example, your home page
+can be reached in multiple ways—for instance, http://example.com/home,
+http://home.example.com, or http://www.example.com—it's a
+good idea to pick one of those URLs as your preferred
+(canonical)
+destination, and use 301 redirects to send traffic from the other URLs to your preferred
+URL.
+You're merging two websites and want to make sure that links to outdated URLs are
+redirected to the correct pages.
+To implement a 301 redirect for websites that are hosted on servers running Apache, you'll
+need access to your server's .htaccess file. (If you're not sure about your access or your
+server software, check with your webhoster.) For more information, consult the
+Apache .htaccess
+Tutorial and the Apache
+URL Rewriting Guide. If your site is hosted on a server running other software, check with
+your hoster for more details.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-02-16 UTC.

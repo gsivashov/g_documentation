@@ -12,9 +12,10 @@ Check to see if TEST button now reads ACCEPTED or BLOCKED to find out if the URL
 Edit the file on the page and retest as necessary. Note that changes made in the page are not saved to your site! See the next step.
 Copy your changes to your robots.txt file on your site. This tool does not make changes to the actual file on your site, it only tests against the copy hosted in the tool.
 Limitations of the robots.txt Tester tool:
+The tool works only with URL-prefix properties; it does not work with Domain properties.
 Changes you make in the tool editor are not automatically saved to your web server. You need to copy and paste the content from the editor into the robots.txt file stored on your server.
 The robots.txt Tester tool only tests your robots.txt with Google user-agents or web crawlers, like Googlebot. We cannot predict how other web crawlers interpret your robots.txt file.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Legacy or external reports and toolsTest your robots.txt with the robots.txt TesterAccess Search Console data in Google AnalyticsBlock crawling of parameterized duplicate contentInternational Targeting report
+Legacy or external reports and toolsTest your robots.txt with the robots.txt TesterBlock crawling of parameterized duplicate contentInternational Targeting report
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

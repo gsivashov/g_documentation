@@ -44,7 +44,7 @@ Your site is "small". By small, we mean about 500 pages or less on your
 site. (Only pages that you think need to be in search results count toward this total.)
 You're on a simple site hosting service like Blogger or Wix. If your site
 is on a service that helps you set up a site quickly with pre-formatted pages and navigation
-elements, your service might create a sitemap for your automatically, and you don't need to
+elements, your service might create a sitemap for your site automatically, and you don't need to
 do anything. Search your service's documentation for the word "sitemap" to see if a sitemap
 is generated automatically, or if they recommend creating your own (and if so, how to submit
 a sitemap on your hosting service).
@@ -57,4 +57,4 @@ want them to appear in Google Search results. If you don't need these results to
 Image, Video, or News results, you might not need a sitemap.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-28 UTC.
+Last updated 2021-03-05 UTC.

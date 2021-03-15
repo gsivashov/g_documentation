@@ -90,13 +90,21 @@ Here's an example of a dataset in JSON-LD:
 "@type": "Dataset",
 "name": "Sub dataset 01",
 "description": "Informative description of the first subdataset...",
-"license" : "https://creativecommons.org/publicdomain/zero/1.0/"
+"license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+"creator":{
+"@type":"Organization",
+"name": "Sub dataset 01 creator"
+}
 },
 {
 "@type": "Dataset",
 "name": "Sub dataset 02",
 "description": "Informative description of the second subdataset...",
-"license" : "https://creativecommons.org/publicdomain/zero/1.0/"
+"license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+"creator":{
+"@type":"Organization",
+"name": "Sub dataset 02 creator"
+}
 }
 ],
 "creator":{
@@ -165,13 +173,21 @@ Here's an example of a dataset in JSON-LD:
 "@type": "Dataset",
 "name": "Sub dataset 01",
 "description": "Informative description of the first subdataset...",
-"license" : "https://creativecommons.org/publicdomain/zero/1.0/"
+"license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+"creator":{
+"@type":"Organization",
+"name": "Sub dataset 01 creator"
+}
 },
 {
 "@type": "Dataset",
 "name": "Sub dataset 02",
 "description": "Informative description of the second subdataset...",
-"license" : "https://creativecommons.org/publicdomain/zero/1.0/"
+"license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+"creator":{
+"@type":"Organization",
+"name": "Sub dataset 02 creator"
+}
 }
 ],
 "creator":{
@@ -439,13 +455,21 @@ Examples:
 "@type": "Dataset",
 "name": "Sub dataset 01",
 "description": "Informative description of the first subdataset...",
-"license" : "https://creativecommons.org/publicdomain/zero/1.0/"
+"license": "https://creativecommons.org/publicdomain/zero/1.0/",
+"creator": {
+"@type":"Organization",
+"name": "Sub dataset 01 creator"
+}
 },
 {
 "@type": "Dataset",
 "name": "Sub dataset 02",
 "description": "Informative description of the second subdataset...",
-"license" : "https://creativecommons.org/publicdomain/zero/1.0/"
+"license": "https://creativecommons.org/publicdomain/zero/1.0/",
+"creator": {
+"@type":"Organization",
+"name": "Sub dataset 02 creator"
+}
 }
 ]
 "isPartOf" : "https://example.com/aggregate_dataset"
@@ -816,4 +840,4 @@ Add logo structured data to your page.
 Establish your business details with Google.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-03-10 UTC.

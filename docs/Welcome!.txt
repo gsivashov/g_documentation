@@ -52,9 +52,8 @@ Furthermore, if your website was created several years ago, a new developer
 might recommend starting from scratch (so you'll be paying for a complete
 makeover). This is because there are new web development techniques and
 themes (or page templates) that may make it more efficient to re-do -- rather
-than modify -- your site. This is especially the case for sites:
-Built with Flash
-Using outdated e-commerce platforms
+than modify -- your site. This is especially the case for sites that are using
+outdated e-commerce platforms.
 The good news is that if you start from scratch there may be an existing
 template or theme that you can utilize. You may be able to reuse your
 existing content which can hopefully save time and money.
@@ -68,4 +67,4 @@ If you're ready to build a mobile-friendly site, choose responsive web design.
 View our docs on Mobile SEO or go straight to Web Fundamentals.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-09-22 UTC.
+Last updated 2021-02-09 UTC.

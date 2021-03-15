@@ -1,7 +1,20 @@
 https://support.google.com/webmasters/answer/66357
 
-Automated queriesGoogle's Terms of Service do not allow the sending of automated queries of any sort to our system without express permission in advance from Google. Sending automated queries consumes resources and includes using any software (such as WebPosition Gold) to send automated queries to Google to determine how a website or webpage ranks in Google search results for various queries. In addition to rank checking, other types of automated access to Google without permission are also a violation of our Webmaster Guidelines and Terms of Service.
-Was this helpful?How can we improve it?YesNoSubmit
-true
-Quality guidelinesAutomatically generated contentSneaky redirectsLink schemesCloakingHidden text and linksDoorway pagesScraped contentAffiliate programsIrrelevant keywordsCreating pages with malicious behaviorUser-generated spamWays to Prevent Comment SpamReport spam, paid links, or malware
-New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.
+Home
+Google Search Central
+Documentation
+Advanced SEO
+Send feedback
+Automated queries
+Google's Terms of Service do not allow the sending of
+automated
+queries of any sort to our system without express permission in advance from Google.
+Sending automated queries consumes resources and includes using any software (such as
+WebPosition Gold) to send automated queries to Google to determine how a website or web page
+ranks in Google search results for various queries. In addition to rank checking, other types
+of automated access to Google without permission are also a violation of our
+Webmaster Guidelines and
+Terms of Service.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2021-03-05 UTC.

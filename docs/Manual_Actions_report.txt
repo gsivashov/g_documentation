@@ -1,6 +1,6 @@
 https://support.google.com/webmasters/answer/9044175
 
-Manual Actions reportSee if your site has any manual actions issued against it and view the site's manual action history.
+Manual Actions report See if your site has any manual actions issued against it and view the site's manual action history.
 If a site has a manual action, some or all of that site will not be shown in Google search results.
 OPEN THE MANUAL ACTIONS REPORT
 Manual Actions report in Search Console - Google Search Console Training
@@ -8,7 +8,7 @@ What is a manual action?
 Google issues a manual action against a site when a human reviewer at Google has determined that pages on the site are not compliant with Google's webmaster quality guidelines. Most manual actions address attempts to manipulate our search index. Most issues reported here will result in pages or sites being ranked lower or omitted from search results without any visual indication to the user.
 If your site is affected by a manual action, we will notify you in the Manual Actions report and in the Search Console message center.
 Why do manual actions exist?
-Ever since there have been search engines, there have been people dedicated to tricking their way to the top of the results page. This is bad for searchers because more relevant pages get buried under irrelevant results, and it’s bad for legitimate websites because these sites become harder to find. For these reasons, we’ve been working since the earliest days of Google to fight spammers, helping people find the answers they’re looking for, and helping legitimate websites get traffic from search.
+Ever since there have been search engines, there have been people dedicated to tricking their way to the top of the results page. This is bad for searchers because more relevant pages get buried under irrelevant results, and it's bad for legitimate websites because these sites become harder to find. For these reasons, we've been working since the earliest days of Google to fight spammers, helping people find the answers they're looking for, and helping legitimate websites get traffic from search.
 Google is constantly working to improve search. We take a data-driven approach and employ analysts, researchers, and statisticians to evaluate search quality on a full-time basis. Changes to our algorithms undergo extensive quality evaluation before being released. More information about our algorithm.
 Our algorithms are extremely good at detecting spam, and in most cases we automatically discover it and remove it from our search results. However, to protect the quality of our index, we're also willing to take manual action to remove spam from our search results.
 Do I have any manual actions against my site?
@@ -29,7 +29,7 @@ Fix the issue on all affected pages. Fixing the issue on just some pages will no
 Be sure that Google can reach your pages; affected pages should not require a login, be behind a paywall, or be blocked by robots.txt or a noindex directive. You can test accessibility by using the URL Inspection tool.
 When all issues listed in the report are fixed in all pages, select Request Review in this report. In your reconsideration request, describe your fixes. A good request does three things:
 Explains the exact quality issue on your site.
-Describes the steps you’ve taken to fix the issue.
+Describes the steps you've taken to fix the issue.
 Documents the outcome of your efforts.
 Reconsideration reviews can take several days or a week. You will be informed of progress by email. You will get a review confirmation message when you send your request, to inform you that the review is in progress; don't resubmit your request before you get a final decision on your outstanding request.
 How long will my reconsideration review take?
@@ -40,18 +40,18 @@ User-generated spam
 Google has detected spam on your pages submitted by site visitors. Typically, this kind of spam is found on forum pages, guestbook pages, or in user profiles.
 Matt Cutts explains the "User-Generated Spam" manual action
 Recommended actions
-Review Google’s Webmaster Guidelines on user-generated spam, then follow these steps to identify and correct the violation(s) on your site:
+Review Google's Webmaster Guidelines on user-generated spam, then follow these steps to identify and correct the violation(s) on your site:
 Users commonly add content to sites in forums, blog comments, and user profiles. Identify pages on your site where users could have added content.
 Look for profiles with commercial usernames like “Discount Insurance” or posts with advertisements, off-topic links, or gibberish text. Check these areas for the following:
 Posts or profiles that look like advertisements
 Posts or profiles with out-of-context or off-topic links
-Posts or profiles with commercial usernames — names like “Discount Insurance," that don’t sound like real human names — that link to unrelated sites
+Posts or profiles with commercial usernames — names like “Discount Insurance," that don't sound like real human names — that link to unrelated sites
 Posts or profiles that appear to be automatically generated (not written by a real user)
-Search your site for unexpected or spammy content using the site: operator in Google search, adding commercial or adult keywords that are unrelated to your site’s topic. For example, search for [site:example.com viagra] to search for the term "viagra" on your site.
+Search your site for unexpected or spammy content using the site: operator in Google search, adding commercial or adult keywords that are unrelated to your site's topic. For example, search for [site:example.com viagra] to search for the term "viagra" on your site.
 Remove any inappropriate content.
 Consider implementing measures to prevent user-generated spam.
 When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report.
-After you’ve submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we’ll let you know when we’ve reviewed your site. If we determine that your site is no longer in violation of our guidelines, we’ll revoke the manual action.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
 Spammy free host
 A significant fraction of sites hosted on your free web hosting service are spammy.
 Google tries to be precise when taking manual action related to spam. However, if a significant fraction of the pages on a given web hosting service are spammy, we may take manual action on the whole service.
@@ -60,7 +60,7 @@ Get tips for preventing and identifying abuse of your service.
 Remove any existing spammy accounts from your service.
 Contact the technical team at your hosting service and tell them about the manual action.
 When you're satisfied that your site follows Google's Webmaster Guidelines, select Request Review on the Manual Actions report.
-After you’ve submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we’ll let you know when we’ve reviewed your site. If we determine that your site is no longer in violation of our guidelines, we’ll revoke the manual action.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
 Structured data issue
 Google has detected that some of the markup on your pages may be using techniques that are outside our structured data guidelines, for example: marking up content that is invisible to users, marking up irrelevant or misleading content, or other manipulative behavior.
 Here are some of the structured data issues that might apply to your site:
@@ -115,12 +115,12 @@ The description field is incomplete or unintelligible. Learn more
 Recommended actions
 Make sure that the markup on your site meets Google's structured data guidelines if you would like it featured in Google search results. This might require updating existing markup or removing any markup that violates our guidelines.
 When you've made these changes, select Request Review on the Manual Actions report.
-After you’ve submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we’ll let you know when we’ve reviewed your site. If we determine that your site is no longer in violation of our guidelines, we’ll revoke the manual action.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
 Unnatural links to your site
 Google has detected a pattern of unnatural, artificial, deceptive, or manipulative links pointing to your site. Buying links or participating in link schemes in order to manipulate PageRank is a violation of Google's Webmaster Guidelines. This can result in some or all of your site getting a manual action.
 Matt Cutts and Alex explain the "Unnatural links to your site" manual action
 Recommended actions
-First, review Google’s Webmaster Guidelines on linking.
+First, review Google's Webmaster Guidelines on linking.
 Next, follow the steps below to identify and correct the violation(s):
 Download a list of links to your site from Search Console. You can download your links arranged either by hostname (Top linking sites > Export) or in chronological order (Links report > Export external links > Latest links).
 Check this list for any links that violate our guidelines on linking. If the list is large, start by looking at the sites that link to you the most, or links that were created recently (in the last few months).
@@ -130,25 +130,25 @@ If you can get a backlink removed, make a good-faith effort to remove the link f
 For multiple links from the same domain to your site, use the "domain:" operator in the disavow file for convenience.
 Make sure that you don't disavow organic links to your site.
 Simply disavowing all backlinks without attempting to remove them might lead to rejection of your request.
-When you’ve removed or disavowed the artificial links, select Request Review on the Manual Actions report. Include documentation about the links you’ve had removed and an explanation of any links you were unable to remove, to help us process your request.
-After you’ve submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we’ll let you know when we’ve reviewed your site. If we determine that your site is no longer in violation of our guidelines, we’ll revoke the manual action.
+When you've removed or disavowed the artificial links, select Request Review on the Manual Actions report. Include documentation about the links you've had removed and an explanation of any links you were unable to remove, to help us process your request.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
 Unnatural links from your site
 Google has detected a pattern of unnatural artificial, deceptive, or manipulative outbound links on your site. Buying links or participating in link schemes in order to manipulate PageRank is a violation of Google's Webmaster Guidelines.
 Matt Cutts and Sandy discuss the "Unnatural links from your site" manual action.
 Recommended actions
-First, review Google’s Webmaster Guidelines on linking.
+First, review Google's Webmaster Guidelines on linking.
 Next, follow the steps below to identify and correct the violation(s) on your site:
 Identify any links on your site that were paid for or that appear to violate our linking guidelines, such as excessive link exchanges.
 Either remove these links, or change them so that they no longer pass PageRank, for example by adding a rel=”nofollow” or a more specific attribute, or by redirecting them through a page blocked by robots.txt.
 When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report. Provide examples of bad content that you removed and good content that you added.
-After you’ve submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we’ll let you know when we’ve reviewed your site. If we determine that your site is no longer in violation of our guidelines, we’ll revoke the manual action.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
 Thin content with little or no added value
 Google has detected low-quality pages or shallow pages on your site. Here are a few common examples of pages that often have thin content with little or no added value:
 Automatically generated content
 Thin affiliate pages
 Content from other sources. For example: scraped content or low-quality guest blog posts
 Doorway pages
-These techniques don’t provide users with substantially unique or valuable content, and are in violation of our Webmaster Guidelines.
+These techniques don't provide users with substantially unique or valuable content, and are in violation of our Webmaster Guidelines.
 Matt Cutts explains the "Thin Content with little or no added value" manual action.
 Recommended actions
 First, review the following sections of our Webmaster Guidelines:
@@ -164,32 +164,32 @@ If your site contains any of these types of content, think about whether your si
 Tip: Consider asking friends or family — real people not affiliated with your site — to use or critique your site to get ideas for improving it.
 Improve your website so that it provides significant value for your users.
 When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report. Provide examples of bad content that you removed and good content that you added.
-After you’ve submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we’ll let you know when we’ve reviewed your site. If we determine that your site is no longer in violation of our guidelines, we’ll revoke the manual action.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
 Cloaking and/or sneaky redirects
 Your site may be showing different pages to users than are shown to Google, or redirecting users to a different page than Google saw. Cloaking and sneaky redirects are a violation of Google's Webmaster Guidelines.
 Matt Cutts explains cloaking
 Subscription and paywalled content: Publishers should enclose paywalled content with structured data in order to help Google differentiate paywalled content from the practice of cloaking, where the content served to Googlebot is different from the content served to users.
 Recommended actions
-First, review Google’s Webmaster Guidelines on cloaking and sneaky redirects.
+First, review Google's Webmaster Guidelines on cloaking and sneaky redirects.
 Next, follow the steps below to identify and correct the violation(s) on your site:
 Use the URL Inspection tool in Search Console to fetch pages from the affected area of your site.
 Compare the content fetched by Google to the content seen by a human user (you!) when visiting the site.
-If the content differs, identify and remove the part of your site that’s serving different content to Google and users. This will require looking through your site’s code on the server.
+If the content differs, identify and remove the part of your site that's serving different content to Google and users. This will require looking through your site's code on the server.
 Check for URLs on your site that redirect users to somewhere other than where they expected to go.
 Check for URLs on your site that redirect conditionally, for example that redirect only users coming from Google search, or only users coming from a particular range of IP addresses.
-If your site redirects users in any of these ways, identify and remove the part of your site that generates these redirects. This will require looking through your site’s code on the server.
+If your site redirects users in any of these ways, identify and remove the part of your site that generates these redirects. This will require looking through your site's code on the server.
 Tip: These types of redirects are often written in JavaScript or in your .htaccess file. You might also check your content management system and any plugins.
 When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report.
-After you’ve submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we’ll let you know when we’ve reviewed your site. If we determine that your site is no longer in violation of our guidelines, we’ll revoke the manual action.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
 Pure spam
-Some of your pages may be using techniques that are outside our Webmaster Guidelines. The site appears to use aggressive spam techniques such as automatically generated gibberish, cloaking, scraping content from other websites, and/or other repeated or egregious violations of Google’s quality guidelines.
+Some of your pages may be using techniques that are outside our Webmaster Guidelines. The site appears to use aggressive spam techniques such as automatically generated gibberish, cloaking, scraping content from other websites, and/or other repeated or egregious violations of Google's quality guidelines.
 Matt Cutts explains what it means if your site has a manual action labeled as "Pure spam" and what you can do to fix it.
 Recommended actions
 Update your site so that it meets Google's Webmaster Guidelines.
 When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report. Provide examples of bad content that you removed and good content that you added.
-After you’ve submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we’ll let you know when we’ve reviewed your site. If we determine that your site is no longer in violation of our guidelines, we’ll revoke the manual action.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
 Cloaked images
-Some of your site’s images may display differently in Google’s search results than when viewed on your site. Cloaking is the practice of presenting different content to human users than to search engines. Cloaking is considered a violation of Google’s Webmaster Guidelines because it provides our users with different results than they expected. Cloaking images can provide a bad user experience for Google image search results, as obscured images and mismatched thumbnails do not present the user with the image that they are searching for.
+Some of your site's images may display differently in Google's search results than when viewed on your site. Cloaking is the practice of presenting different content to human users than to search engines. Cloaking is considered a violation of Google's Webmaster Guidelines because it provides our users with different results than they expected. Cloaking images can provide a bad user experience for Google image search results, as obscured images and mismatched thumbnails do not present the user with the image that they are searching for.
 Examples of cloaked images
 Here are some examples of image cloaking behavior:
 Serving images to Google that are obscured by another image, for example: a block of text blocking an image.
@@ -197,33 +197,33 @@ Serving images to Google that are different than the image served to a page visi
 If you need to block images from Google search results, use the method described below.
 Recommended actions
 Ensure that your site displays exactly the same images to users on your site and in Google search results. Cloaking is acceptable only for opting out of image search inline linking as detailed below.
-When you’re sure that your site’s images are exactly the same whether viewed directly on your site or from Google search results, select Request Review on the Manual Actions report.
-After you’ve submitted a reconsideration request, be patient and watch for review status messages in your Search Console account; we’ll let you know when we’ve reviewed your site. If we determine that your site is no longer in violation of our guidelines, we’ll revoke the manual action.
+When you're sure that your site's images are exactly the same whether viewed directly on your site or from Google search results, select Request Review on the Manual Actions report.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account; we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
 Minimize or block an image in search results
 To prevent the full-sized image from appearing in the Google search results, opt out of inline linking.
 To prevent the image from appearing at all in search results, follow these steps.
 To opt out of inline linking:
 When your image is requested, examine the HTTP referrer header in the request.
 If the request is coming from a Google domain, reply with HTTP 200 or 204 and no content.
-Google will still crawl your page and see the image, but will display a thumbnail image generated at crawl time in search results. This opt-out is possible at any time, and does not require re-processing of a website’s images. This behavior is not considered image cloaking and will not result in a manual action.
+Google will still crawl your page and see the image, but will display a thumbnail image generated at crawl time in search results. This opt-out is possible at any time, and does not require re-processing of a website's images. This behavior is not considered image cloaking and will not result in a manual action.
 Hidden text and/or keyword stuffing
 Some of your pages may contain
 hidden text or keyword stuffing, techniques that are not allowed by our
 Webmaster Guidelines.
 Matt Cutts and Nelson explain what it means if your site has a manual action labeled as "Hidden text and/or keyword stuffing" and what you can do to fix it.
 Recommended actions
-First, review Google’s Webmaster Guidelines on hidden text and keyword stuffing.
+First, review Google's Webmaster Guidelines on hidden text and keyword stuffing.
 Next, follow the steps below to identify and correct the violation(s) on your site:
-Use the URL Inspection tool in Search Console to check for content that’s visible to our crawler but isn’t visible to a human user (you!) when visiting the site.
-Check for text that’s the same, or similar, color as the background of the webpage.
+Use the URL Inspection tool in Search Console to check for content that's visible to our crawler but isn't visible to a human user (you!) when visiting the site.
+Check for text that's the same, or similar, color as the background of the webpage.
 Tip: You can often reveal such text by selecting all the text on the page, for example by pressing Ctrl + A or Command + A.
 Check for any text hidden using CSS styling or positioning.
-Remove or re-style any hidden text so that it’s equally discoverable by search engine crawlers and by human users.
+Remove or re-style any hidden text so that it's equally discoverable by search engine crawlers and by human users.
 Check for lists or paragraphs of repeated words without any context.
 Check <title> tags and alt text for strings of repeated words.
 Remove any such words or other instances of keyword stuffing.
 When you're sure your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report.
-After you’ve submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we’ll let you know when we’ve reviewed your site. If we determine that your site is no longer in violation of our guidelines, we’ll revoke the manual action.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
 AMP content mismatch
 There is a difference in content between the AMP version and its canonical web page.
 The content of the AMP version and its canonical web page should be essentially the same. The text need not be identical, but the topic should be the same, and users should be able to accomplish the same tasks on both the AMP and the canonical page.
@@ -233,13 +233,13 @@ Ensure that the AMP is referencing the correct canonical web page.
 Ensure that the general content of the AMP and canonical page are the same.
 Check that Google's view of the page is not different from the user's view of the page by using the URL Inspection tool for both the AMP and the canonical page. A mismatch can occur when a robots.txt file blocks significant resources on one or the other. Blocked resources will also be shown in the URL Inspection tool.
 When your AMP and canonical pages are essentially the same, select Request Review on the Manual Actions report.
-After you’ve submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we’ll let you know when we’ve reviewed your site. If we determine that your site is no longer in violation of our guidelines, we’ll revoke the manual action.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
 Sneaky mobile redirects
 Some pages on this site appear to be redirecting mobile device users to content not available to search engine crawlers. These sneaky redirects are a violation of Google Webmaster Guidelines. To ensure quality search results for our users, the Google Search Quality team can take action on such sites, including removal of URLs from our index.
 Overview
 In many cases, it is okay to show slightly different content on different devices. For example, optimizing for the smaller space of a smartphone screen can mean that some content, like images, need to be modified. Similarly, for mobile-only redirects, redirecting mobile users to improve their mobile experience (like redirecting mobile users from example.com/url1 to m.example.com/url1) is often beneficial to them. However, redirecting mobile users sneakily to different content is bad for the user experience.
 A frustrating experience: The same URL shows up in search result pages on desktop and on mobile. However, when a user clicks on this result on their desktop computer, they visit URL A, but users clicking on the same result on a smartphone are redirected to unrelated URL B.
-Sneaky mobile redirects can be created intentionally by a site owner, but we’ve also seen situations where mobile-only sneaky redirects happen without the site owner's knowledge. The following are examples of configurations that can cause sneaky mobile redirects:
+Sneaky mobile redirects can be created intentionally by a site owner, but we've also seen situations where mobile-only sneaky redirects happen without the site owner's knowledge. The following are examples of configurations that can cause sneaky mobile redirects:
 Adding code that creates redirection rules for mobile users
 Using a script or element to display ads and monetize content that redirect mobile users
 A script or element added by hackers that redirects your mobile users to malicious sites
@@ -256,22 +256,98 @@ If you are engaging in this behavior intentionally:
 Fix your pages.
 Confirm your fix by visiting your pages from Google search results with a smartphone or in a mobile device emulator.
 When the issue is fixed on all pages in your site, select Request Review on the Manual Actions report.
-After you’ve submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we’ll let you know when we’ve reviewed your site. If we determine that your site is no longer in violation of our guidelines, we’ll revoke the manual action.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
 Avoiding sneaky mobile redirects in the future
-To diminish the risk of unknowingly redirecting your own users, be sure to choose advertisers who are transparent on how they handle user traffic. If you are interested in building trust in the online advertising space, you should research industry-wide best practices when participating in ad networks. For example, the Trustworthy Accountability Group’s (Interactive Advertising Bureau) Inventory Quality Guidelines are a good place to start. There are many ways to monetize your content with mobile solutions that provide a high quality user experience. Be sure to use them.
+To diminish the risk of unknowingly redirecting your own users, be sure to choose advertisers who are transparent on how they handle user traffic. If you are interested in building trust in the online advertising space, you should research industry-wide best practices when participating in ad networks. For example, the Trustworthy Accountability Group's (Interactive Advertising Bureau) Inventory Quality Guidelines are a good place to start. There are many ways to monetize your content with mobile solutions that provide a high quality user experience. Be sure to use them.
 To check for sneaky mobile redirects on your site, walk through the following steps:
 Check if you are redirected when you navigate to your site on your smartphone
 We recommend you check the mobile user experience of your site by visiting your pages from Google search results with a smartphone. When debugging, mobile emulation in desktop browsers is handy because you can test for many different devices. You can, for example, view pages as a mobile device straight from your browser in Chrome, Firefox or Safari (for the latter, make sure you have enabled the “Show Develop menu in menu bar” feature).
 Listen to your users
-Your users can see your site in different ways than you. It’s always important to pay attention to user complaints, so you can hear of any issue related to the mobile user experience.
-Monitor your mobile users in your site’s analytics data
+Your users can see your site in different ways than you. It's always important to pay attention to user complaints, so you can hear of any issue related to the mobile user experience.
+Monitor your mobile users in your site's analytics data
 Unusual mobile user activity can be detected by looking at some of the data in your website's analytics data. For example, keep an eye on the average time spent on your site by your mobile users: if all of a sudden, only your mobile users start spending much less time on your site than they used to, there might be an issue related to mobile redirections.
-Monitoring for any large changes in your mobile user activity can help you proactively identify sneaky mobile redirects. You can set up Google Analytics alerts that will warn you of sharp drops in average time spent on your site by mobile users or drops in mobile users. While these alerts do not necessarily mean that you have mobile sneaky redirects, it’s something worth investigating.
+Monitoring for any large changes in your mobile user activity can help you proactively identify sneaky mobile redirects. You can set up Google Analytics alerts that will warn you of sharp drops in average time spent on your site by mobile users or drops in mobile users. While these alerts do not necessarily mean that you have mobile sneaky redirects, it's something worth investigating.
+News and Discover policy violations
+You have violated content policies for Google News and/or Discover. The following sections describe the type of violation.
+Discover policy violation: Adult-themed content
+Google has detected content on your site that appears to violate our adult-themed content policy because it contains nudity, sex acts, sexually suggestive activities, or sexually explicit material.
+Recommended actions
+Review and update your pages to comply with the Discover policy by removing the adult-themed content.
+When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report and provide evidence of changed editorial practices including new editorial guidelines and an editorial board with a history of improved practices.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
+News and Discover policy violation: Dangerous content
+Google has detected content on your site that appears to violate our dangerous content policy because it contains content that could directly facilitate serious and immediate harm to people or animals.
+Recommended actions
+Review and update your pages to comply with the policy by removing the dangerous content. (News policy / Discover policy)
+When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report and provide evidence of changed editorial practices including new editorial guidelines and an editorial board with a history of improved practices.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
+News and Discover policy violation: Harassing content
+Google has detected content on your site that appears to violate our harassing content policy because it contains harassment, bullying, or threatening content, including but not limited to, that which might single someone out for malicious abuse, threaten someone with serious harm, sexualize someone in an unwanted way, expose private information of someone else that could be used to carry out threats, disparage, or belittle victims of violence or tragedy, deny an atrocity, or harass in other ways.
+Recommended actions
+Review and update your pages to comply with the policy by removing the harassing content. (News policy / Discover policy)
+When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report and provide evidence of changed editorial practices including new editorial guidelines and an editorial board with a history of improved practices.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
+News and Discover policy violation: Hateful content
+Google has detected content on your site that appears to violate our hateful content policy with content that incites hatred.
+We do not allow content that promotes or condones violence, or has the primary purpose of inciting hatred against an individual or group, including but not limited to, on the basis of their race or ethnic origin, religion, disability, age, nationality, veteran status, sexual orientation, gender, gender identity, or any other characteristic that is associated with systemic discrimination or marginalization.
+Recommended actions
+Review and update your pages to comply with the policy by removing the hateful content. (News policy / Discover policy)
+When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report and provide evidence of changed editorial practices including new editorial guidelines and an editorial board with a history of improved practices.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
+News and Discover policy violation: Manipulated media
+Google has detected content on your site that appears to violate our manipulated media policy. We do not allow audio, video or image content that has been manipulated to deceive, defraud, or mislead by means of creating a representation of actions or events that verifiably did not take place and would cause a reasonable person to have a fundamentally different understanding or impression thereof - such that it may cause significant harm to groups or individuals, or significantly undermine participation or trust in electoral or civic processes.
+Recommended actions
+Review and update your pages to comply with the policy by identifying media manipulation, disclosing satirical or parody intent, or removing misleading content that significantly undermines participation or trust in civic or electoral processes. (News policy / Discover policy)
+When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report and provide evidence of changed editorial practices including new editorial guidelines and an editorial board with a history of improved practices.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
+News and Discover policy violation: Medical content
+Google has detected content on your site that appears to violate our medical content policy because it contains content primarily aimed at providing medical advice, diagnosis or treatment for commercial purposes. We also do not allow content from any site that contradicts or runs contrary to scientific or medical consensus and evidence-based best practices.
+Recommended actions
+Review and update your pages to comply with the policy by removing the medical content. (News policy / Discover policy)
+When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report and provide evidence of changed editorial practices including new editorial guidelines and an editorial board with a history of improved practices.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
+Discover policy violation: Misleading content
+Google has detected content on your site that appears to violate our misleading content policy and misleads users into engaging with it by promising a topic or story which is not reflected in the content.
+Recommended actions
+Review and update your pages to comply with the Discover policy by removing the misleading content.
+When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report and provide evidence of changed editorial practices including new editorial guidelines and an editorial board with a history of improved practices.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
+News and Discover policy violation: Sexually explicit content
+Google has detected content on your site that appears to violate our sexually explicit content policy because it contains explicit sexual imagery or videos primarily intended to cause sexual arousal.
+Recommended actions
+Review and update your pages to comply with the policy by removing the sexually explicit content. (News policy / Discover policy)
+When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report and provide evidence of changed editorial practices including new editorial guidelines and an editorial board with a history of improved practices.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
+News and Discover policy violation: Terrorist content
+Google has detected content on your site that appears to violate our terrorist content policy and promotes terrorist or extremist acts, including recruitment, inciting violence, or celebrating terrorist attacks.
+Recommended actions
+Review and update your pages to comply with the policy by removing the terrorist content. (News policy / Discover policy)
+When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report and provide evidence of changed editorial practices including new editorial guidelines and an editorial board with a history of improved practices.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
+News policy violation: Transparency
+Google has detected content on your site that appears to violate our transparency policy.
+Visitors to your site want to trust and understand who publishes the content they are consuming, and information about those who have written articles. That's why news sources on Google should provide clear dates and bylines, as well as information about authors, the publication, the publisher, company or network behind it, and contact information.
+Recommended actions
+Review and update your pages to comply with the News policy by providing clear dates, non-generic information about authors, the publication, the publisher, editorial board, company or network behind it, and non-generic contact information.
+When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report and provide evidence of changed editorial practices including new editorial guidelines and an editorial board with a history of improved practices.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
+News and Discover policy violation: Violence and gore content
+Google has detected content on your site that appears to violate our violence and gore policy because it contains content that incites or glorifies violence. We also do not allow extremely graphic or violent materials for the sake of disgusting others.
+Recommended actions
+Review and update your pages to comply with the policy by removing the violent or gory content. (News policy / Discover policy)
+When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report and provide evidence of changed editorial practices including new editorial guidelines and an editorial board with a history of improved practices.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
+News and Discover policy violation: Vulgar language and profanity
+Google has detected content on your site that appears to violate our vulgar language and profanity policy because it contains gratuitous obscenities or profanities.
+Recommended actions
+Review and update your pages to comply with the policy by removing the offensive content. (News policy / Discover policy)
+When you're sure that your site is no longer in violation of our guidelines, select Request Review on the Manual Actions report and provide evidence of changed editorial practices including new editorial guidelines and an editorial board with a history of improved practices.
+After you've submitted a reconsideration request, be patient and watch for review status messages in your Search Console account — we'll let you know when we've reviewed your site. If we determine that your site is no longer in violation of our guidelines, we'll revoke the manual action.
 What's the difference between the Manual Actions report and the Security Issues report?
 There is some conceptual overlap between the Manual Actions report and the Security Issues report, so it is useful to know the difference between them:
 The Manual Actions report lists manually detected issues with a page or site that are mostly attempts to manipulate our search index, but are not necessarily dangerous for users. Most issues reported here will result in pages or site being ranked lower or omitted from search results without any visual indication to the user.
 The Security Issues report lists indications that your site was hacked, or behavior on your site that could potentially harm a visitor or their computer: for example, phishing attacks or installing malware or unwanted software on the user's computer. These pages can appear with a warning label in search results, or a browser can display an interstitial warning page when a user tries to visit them.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemovals ToolRich Results Tools and ReportsSecurity Issues reportSitemaps reportCore Web Vitals reportURL Inspection ToolBlock crawling of parameterized duplicate contentLegacy or external reports and toolsManaging properties and users on Search Console
+All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemovals ToolRich Results Tools and ReportsSecurity Issues reportManage your sitemaps using the Sitemaps reportCore Web Vitals reportURL Inspection ToolBlock crawling of parameterized duplicate contentLegacy or external reports and toolsManaging properties and users on Search Console
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

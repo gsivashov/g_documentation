@@ -1,71 +1,82 @@
 https://support.google.com/webmasters/answer/9216516
 
-Performance report (Discover)The Performance report for Discover shows important metrics about how your site performs on Discover. This report is visible only if your property has reached a minimum threshold of impressions in Discover.
+Performance report (Discover)The Performance report for Discover shows important metrics about how your site performs on Discover. This report is visible only if your property has reached a minimum threshold of impressions in Discover.
 OPEN THE DISCOVER PERFORMANCE REPORT
-Why can't I see the report?
+Why can't I see the report?
 The Performance report for Discover is visible only if your property reaches a threshold number of Discover impressions in the past 16 months.
 Performance reports in Search Console - Google Search Console Training
 Configuring the report
 The default view of the report shows the total clicks and impressions for your property.
-Choose which metrics to see by selecting the desired metrics above the chart.
-Group your data by selecting a grouping tab in the table. You can group data by page, country, appearance type, and day.
-Optionally filter your data by date, page, or country.
+Choose which metrics to see by selecting the desired metrics above the chart.
+Group your data by selecting a grouping tab in the table. You can group data by page, country, appearance type, and day.
+Optionally filter your data by date, page, or country.
 Optionally compare data groups: for example, you can compare impressions from Brazil and China.
-Change the date range, if you want something different from the default value of the last three months. To change the date range, click the Date filter at the top of the report.
+Change the date range, if you want something different from the default value of the last three months. To change the date range, click the Date filter at the top of the report.
 Exporting report data
 Many reports provide an export button
 to export the report data. Both chart and table data are exported. Values shown as either ~ or - in the report (not available/not a number) will be zeros in the downloaded data.
 About the data
 This report will be visible only if your site has a minimum threshold of impressions in Discover.
 A specific page URL will be shown only if it has a minimum threshold of impressions in Discover. However, data for URLs below this threshold will still be added to the site's totals.
-Data is limited to the time period specified by the Date filter. The default date period is the last 3 months. You can change this date range by clicking the date filter and changing the range.
+Data is limited to the time period specified by the Date filter. The default date period is the last 3 months. You can change this date range by clicking the date filter and changing the range.
 All data is aggregated by page: if two Discover results from the same property appear in the same Discover list, each impression is counted separately.
 All page metrics are assigned to the canonical URL, not to the page where the user lands when they click a Discover result. This has two important effects:
 The URL credited in the table will be the canonical URL.
-Data will only be shown in the property that contains the canonical URL. Therefore, if you have both AMP and desktop versions of a page, the desktop property (which is usually the canonical property) will contain all the data for both AMP and desktop clicks, impressions, and CTR.
-Preliminary data in the report: The newest data in the Performance report is sometimes preliminary – this means that the data might change slightly before it is confirmed. Preliminary data is usually less than three days old; at some point, all preliminary data is confirmed. Preliminary data is indicated when you hover over it in the chart. Preliminary data is included in both the chart and the tables, as well as the Performance chart in the Search Console Overview page.
+Data will only be shown in the property that contains the canonical URL. Therefore, if you have both AMP and desktop versions of a page, the desktop property (which is usually the canonical property) will contain all the data for both AMP and desktop clicks, impressions, and CTR.
+Preliminary data in the report: The newest data in the Performance report is sometimes preliminary – this means that the data might change slightly before it is confirmed. Preliminary data is usually less than three days old; at some point, all preliminary data is confirmed. Preliminary data is indicated when you hover over it in the chart. Preliminary data is included in both the chart and the tables, as well as the Performance chart in the Search Console Overview page.
 Metrics
 Choose which metrics to display by selecting the appropriate tab on the report. The following metrics are available:
-Impression: The Discover item was scrolled into view, either as a standard Discover item, or embedded in a carousel. Only one impression is counted per result per session; if a user scrolls past an item and then scrolls back, only one impression is recorded.
-Click: The user clicked the Discover item. A click is not counted if the user shares the item, or performs any another action.
+Impression: The Discover item was scrolled into view, either as a standard Discover item, or embedded in a carousel. Only one impression is counted per result per session; if a user scrolls past an item and then scrolls back, only one impression is recorded. For Web Stories, an impression is counted for the story viewed in Discover, as well as for any additional story that the user opens from that initial Web Story clicked in Discover. (Impressions are not counted twice if the user saw the same Web Story multiple times in a session.)
+Click: The user clicked the Discover item. A click is not counted if the user shares the item, or performs any another action. For Web Stories, a click is counted for the story clicked in Discover, as well as for any additional story that the user opens from that initial Web Story clicked in Discover.
 Average CTR: Clicks/impressions.
 Reading the chart
 Choose which metrics to show in the chart by selecting or deselecting metrics at the top of the chart.
-The totals for each metric are shown above the chart. These totals are accurate for the selected time span, and are not truncated.
+The totals for each metric are shown above the chart. These totals are accurate for the selected time span, and are not truncated.
 Reading the table
 The table shows data grouped by the selected dimension. Data is shown for the metrics selected in the chart above.
 Note that the table is limited to 1,000 rows. The data is truncated to 1,000 rows before it reaches this report, so if the data potentially would be 1,001 rows, reversing the sort order of the table will not show the (pre-truncated) 1,001st row.
 The table data is limited to the same time period as the chart, which is specified by the Date filter. Modify the date filter by clicking it and changing the date range.
 Group the table data
 You can group your metrics in the table by the following categories:
-Page: The page that served as the source of the information shown to the user. This is the canonical page URL, not the page where the user lands when they click a Discover result. If the canonical URL is not in this property, the alternate page URL will not appear in the table for this property.
-Country: The country where the content was viewed or clicked.
-Discover appearance: The type of page linked to by the result. One of the following values:
-AMP article: Any AMP page, including AMP story results.
-Web Story: A subset of AMP articles that are optimized for visual content rather than textual content.
+Page: The page that served as the source of the information shown to the user. This is the canonical page URL, not the page where the user lands when they click a Discover result. If the canonical URL is not in this property, the alternate page URL will not appear in the table for this property.
+Country: The country where the content was viewed or clicked.
+Discover appearance: The type of page linked to by the result. One of the following values:
+AMP article: Any AMP page, including AMP story results.
+Web Story: A subset of AMP articles that are optimized for visual content rather than textual content.
 Videos: A video on your site that appears in Discover.
-Date: Data grouped by the day on which it occurred. The date is the Pacific Time day, not the user's local time. Data for individual days in the chart can be truncated if it falls below a certain value. Totals are for the time range specified by the date filter.
-Filter your data
-You can filter data by date, page, country, or Discover appearance type.
+Date: Data grouped by the day on which it occurred. The date is the Pacific Time day, not the user's local time. Data for individual days in the chart can be truncated if it falls below a certain value. Totals are for the time range specified by the date filter.
+Filter your data
+You can filter data by date, page, country, or Discover appearance type.
 To add a filter:
-Click the + NEW label next to the existing filters on the page.
+Click the + NEW label next to the existing filters on the page.
 To remove a filter:
-Click the X next to an existing filter. You cannot remove the date filter.
+Click the X next to an existing filter. You cannot remove the date filter.
 To modify a filter:
 Click the filter and change the values.
-Compare groups
+Note that filters can cause some data discrepancies
+Compare groups
 You can compare data between two groups of the same type. For example, you can compare data between France and England (countries), or between this month and last month (dates). The comparison appears in both the chart and the table.
 To compare data for groups:
-Comparisons are managed by filters (for example, Date or Search type). Either edit an existing filter or click New to add a new filter.
-In the filter properties dialog box, choose Compare.
-Add the dimensions or times to compare, and click Apply.
+Comparisons are managed by filters (for example, Date or Search type). Either edit an existing filter or click New to add a new filter.
+In the filter properties dialog box, choose Compare.
+Add the dimensions or times to compare, and click Apply.
 You can have only one comparison at a time. Adding a new comparison filter will clear the existing comparison. For example, if you are comparing dates, and then add a comparison between countries, the country comparison will erase the date comparison.
 You can compare data in only one dimension at a time (Date, Country, and so on). Adding a new comparison in another grouping dimension will remove the existing comparison. For example, if you are comparing clicks for this week versus last week (Date), and then add a comparison between US and Japan (Country), the country comparison will erase the date comparison, and date range will reset to the default.
 Data discrepancies
+Discrepancies between chart totals and table totals
+You can see differences between the chart totals and the table totals for several reasons:
+General:
+In some unusual cases, when you filter on a page, you might see a discrepancy between chart and table data. This is because the data is truncated differently, depending on the grouping and filtering combinations used. In these cases, when the totals differ, the actual total will be at least the larger value shown (and possibly more).
+When filtering by page, the "contains" and "does not contain" totals might not add up to the unfiltered total. For example, adding the totals for "URLs containing 'https://'" and "URLs not containing 'https://'" might be lower than the totals without a URLs filter. This is because data is truncated due to serving limitations.
+Adding an ineffective filter (such as filtering results to your site's root URL - "example.com/") can cause discrepancies for various reasons.
+Chart totals higher:
+The table can show a maximum of 1,000 rows, so some rows might be omitted.
+Table totals higher:
+Some search appearances are subcategories of others. For example, Job listing is a subcategory of Rich result, so the same result will be listed in both rows.
+Discrepancies between Search Console and other data sources
 Search Console data can differ slightly from the data displayed in other tools. Here are possible reasons for the differences:
 There can be a lag between when the numbers are calculated and when they are visible to webmasters. Although data gets published in intervals, we continually collect it. Normally, however, collected data should be available in 2-3 days. The report can also include preliminary data.
 Time zones matter. The Performance report tracks daily data according to local time in California, where data for each day is labeled according to the local time in California. If your other systems use different time zones, your daily views may not match exactly. For example, Google Analytics shows time in the webmaster’s local time zone.
-Daily chart totals might be less than chart totals. If your property has few impressions on a given day, that day will be shown as zero impressions on the chart. Similarly, rare query combinations can be omitted from daily totals to protect user privacy. However, we will still count these impressions in the totals shown.
 Table totals might be less than the chart totals. The table is limited to 1,000 rows, which can limit the amount of data shown.
 Was this helpful?How can we improve it?YesNoSubmit
 true

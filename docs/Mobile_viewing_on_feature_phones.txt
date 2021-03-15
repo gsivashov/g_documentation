@@ -6,11 +6,22 @@ Documentation
 Advanced SEO
 Send feedback
 Mobile viewing on feature phones
-Looking for transcoding on smartphones? See here.
-Google Web Search on feature phones allows users to search all the content in the Google index for desktop web browsers. Because this content isn't written specifically for feature phones and devices and thus might not display properly, web search results are viewed through our transcoder, which analyzes the original HTML code and converts it to a mobile-ready format. To ensure that the highest quality and most useable web page is displayed on your mobile phone or device, Google may resize, adjust, or convert images, text formatting and/or certain aspects of web page functionality.
-If you do not want Google to transcode your web page on feature phones, you may request that Google redirect the user to an alternate page whenever the user attempts to view the page through the transcoder. You can do so by including the following line in the <head> section of the HTML file for your page:
+Looking for transcoding on smartphones? Learn
+more about Web Light.
+When users search on Google with a feature phone, Google shows all of the content in the Google
+index that's available to desktop web browsers. Because this content isn't written specifically for
+feature phones and devices, this content might not display properly. Web search results are
+viewed through our transcoder, which analyzes the original HTML code and converts it to a
+mobile-ready format. To ensure that the highest quality and most useable web page is displayed on
+a mobile phone or device, Google may resize, adjust, or convert images, text formatting and/or
+certain aspects of web page functionality.
+If you don't want Google to transcode your web page on feature phones, you may request that
+Google redirect the user to an alternate page whenever the user attempts to view the page through
+the transcoder. You can do so by including the following line in the <head>
+section of the HTML file for your page:
 <link rel="alternate" media="handheld" href="alternate_page.htm" />
-The alternate page should be a mobile-optimized version of the original page or a message informing the user that the site is not available on the phone.
+The alternate page should be a mobile-optimized version of the original page or a message
+informing the user that the site is not available on the phone.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-02-16 UTC.

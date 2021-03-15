@@ -1,0 +1,36 @@
+https://support.google.com/webmasters/answer/9579369
+
+About podcasting on GoogleLearn how to make your podcast available in Google Search, on the Google Podcast player app, and on other Google surfaces.
+What are podcasts on Google?
+When your podcast is "on Google," listeners can find and play your podcast on many different Google services:
+Listeners can find and play your podcast in the browser
+Or in the Google Podcasting App for Android or iOS
+Or on many other Google services
+How podcasting works on Google
+In order to get the most out of your podcast on Google, you should know how podcasting works on Google.
+Google podcasting basics
+Google Podcasts is a podcasting directory; this means that podcast listening apps and other podcast listening services use Google Podcasts to find podcasts and enable playback. Google Podcasts does not store your RSS feed or audio files, but rather points to the RSS feed and audio files that you have posted elsewhere.
+Google Podcasts powers the discovery and playback of podcasts on many Google services, including the Google Podcasts app for Android and iOS, Google Home devices, The Google Podcasts website in the browser, and more. Additionally, listeners can subscribe on any podcast playback app to any podcast listed in Google Podcasts.
+Therefore your RSS feed must be available to, and readable, by Google's crawlers.
+How Google finds and presents a podcast
+Google constantly crawls the web looking for RSS feeds the same way it crawls the internet to look for new or updated web pages. Publishers can also explicitly tell Google about new feeds (most podcast hosting services automatically tell Google whenever a new feed or episode is published).
+When Google finds or is told about a new feed, it crawls the feed and creates an entry for the show in Google Podcasts where people can listen to the show on various listening platforms, such as the Google Podcasts app or Google Home, or any RSS-compliant podcast player.
+However, before creating a new show in Google Podcasts, Google first checks whether a new feed describes a show that is already on Google Podcasts.
+Let's talk about that next...
+One show, many feeds
+In practice, a podcast can have more than one feed. This happens for various reasons: for example, a podcast might have a "Top 10" feed, a "Holiday playlist" feed and a "Latest episodes" feed.
+If Google finds multiple feeds that seem to describe the same podcast, Google groups them together. From this feed group, Google selects one feed as the best representative for the podcast, and serves only that feed on Google Podcasts. This is called the served feed. Google Podcasts doesn't disclose the full list of members of a podcast's feed group, only the served feed.
+Google finds RSS feeds as it crawls the web
+Google groups the feeds that it thinks describe the same show
+Google selects one feed from each group and serves that feed on all Google Podcasts platforms. This feed is called the served feed.
+Listeners see the served feed for their show in their app or service.
+The served feed can change
+Occasionally, Google can change which feed it serves for a show on Google Podcasts. There are a few reasons this can happen:
+Google might determine that a different feed in the group is more representative of the podcast than the currently chosen feed.
+The feed owner might change the URL of the feed (perhaps moving it to a new host) and Google found the feed in its new location. (Ideally the feed owner tells Google about the move to ensure that Google finds it.)
+When the served feed changes, Google will start serving the new feed instead of the previous feed. Listeners subscribed to the show on Google Podcasts will see the show and episode information from the new feed. If episodes from the previous feed are not in the new feed, those episodes will no longer appear in the show playlist (unless the episodes were downloaded). It takes 2-3 days to migrate all Google Podcasts listeners or services to a new feed.
+Next: Get your podcast on Google
+Was this helpful?How can we improve it?YesNoSubmit
+true
+HelpAbout podcasting on GoogleGet your podcast on GoogleMonitor your podcast listening dataManage your podcast and episodes on Google PodcastsTroubleshootingReference
+Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

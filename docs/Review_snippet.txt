@@ -807,6 +807,7 @@ content.
 Provide review information about a specific item, not about a category or a list of
 items. For examples, refer to the common
 errors associated with list items.
+Don't aggregate reviews from other websites.
 If the review snippet is for a local business or an organization, you must follow these additional guidelines:
 Pages using LocalBusiness or any other type of Organization
 structured data are ineligible for star review feature if the entity being reviewed
@@ -817,7 +818,6 @@ Ratings must be sourced directly from users.
 Don't rely on human editors to create, curate, or compile ratings information for
 local businesses; instead, use critic
 review structured data.
-Sites must collect ratings information directly from users and not from other sites.
 Structured data type definitions
 You must include the required properties for your structured data to display in search
 results. You can also include the recommended properties to add more information to your
@@ -832,12 +832,12 @@ Organization
 The author of the review. The reviewer's name must be a valid name. For example,
 "50% off until Saturday" is not a valid name for a reviewer.
 itemReviewed
-Thing
+One of the valid types
 The item that is being reviewed. However, if the review is nested into another
 schema.org type using the
 review property,
-you can omit the itemReviewed property. The valid types for the
-reviewed item are:
+you can omit the itemReviewed property.
+The valid types for the reviewed item are:
 Book
 Course
 CreativeWorkSeason
@@ -913,12 +913,12 @@ The full definition of AggregateRating is available at
 schema.org/AggregateRating.
 Required properties
 itemReviewed
-Thing
+One of the valid types
 The item that is being rated. However, if the aggregate rating is nested into
 another schema.org type using the
 aggregateRating
-property, you can omit the itemReviewed property. The valid types for the
-reviewed item are:
+property, you can omit the itemReviewed property.
+The valid types for the reviewed item are:
 Book
 Course
 CreativeWorkSeason
@@ -1029,4 +1029,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-14 UTC.
+Last updated 2021-03-10 UTC.

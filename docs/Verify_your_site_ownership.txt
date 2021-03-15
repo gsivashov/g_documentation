@@ -12,7 +12,7 @@ You can add additional verification methods in your property's verification sett
 To add an additional verification method, visit the Settings page for the property and click Ownership verification.
 How long does verification last?
 Google periodically checks if your verification is valid (for example, checking if your HTML verification tag is still present). If verification can no longer be confirmed, your permissions on that property will expire after a certain grace period.
-If all verified owners lose access to a property, all delegated owners (owners added by a verified owner), users, and associates of the property will lose access to the Search Console property.
+If all verified owners lose access to a property, all users and associates of the property will lose access to the Search Console property.
 When will I start to see data?
 Data is collected for a property from the time that you first add it as a Search Console property. Any gaps in verification do not typically cause a gap in data collection.
 We lost our site owner!

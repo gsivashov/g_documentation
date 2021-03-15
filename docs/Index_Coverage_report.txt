@@ -209,10 +209,11 @@ Submitted URL returned 403: The submitted URL requires authorized access, but G
 Submitted URL blocked due to other 4xx issue: The server returned a 4xx response code not covered by any other issue type described here for the submitted URL. You should either fix this error, or not submit this URL for indexing. Try debugging your page using the URL Inspection tool.
 Warning
 Pages with a warning status might require your attention, and may or may not have been indexed, according to the specific result.
-Indexed, though blocked by robots.txt: The page was indexed, despite being blocked by your website's robots.txt file. (Google always respects robots.txt, but this doesn't necessarily prevent indexing if someone else links to your page). We're not sure if you intended to block the page from search results:
-If you do want to block this page, robots.txt is not the correct mechanism to avoid being indexed. To avoid being indexed you should either use 'noindex' or limit access to the page by requiring users to log in. You can use the robots.txt tester to determine which rule is blocking this page. Because of the robots.txt rule, any snippet shown in Google Search results for the page will probably be very limited.
-If you do not want to block this page, update your robots.txt file to unblock your page.
-Indexed without content: This page appears in the Google index, but for some reason Google could not read the content. Possible reasons are that the page might be cloaked to Google or the page might be in a format that Google can't index. This is not a case of robots.txt blocking.
+Indexed, though blocked by robots.txt: The page was indexed, despite being blocked by your website's robots.txt file. Google always respects robots.txt, but this doesn't necessarily prevent indexing if someone else links to your page. Google won't request and crawl the page, but we can still index it, using the information from the page that links to your blocked page. Because of the robots.txt rule, any snippet shown in Google Search results for the page will probably be very limited.
+Next steps:
+If you do want to block this page from Google Search, robots.txt is not the correct mechanism to avoid being indexed. To avoid being indexed, remove the robots.txt block and use 'noindex'.
+If you do not want to block this page, update your robots.txt file to unblock your page. You can use the robots.txt tester to determine which rule is blocking this page.
+Page indexed without content: This page appears in the Google index, but for some reason Google could not read the content. Possible reasons are that the page might be cloaked to Google or the page might be in a format that Google can't index. This is not a case of robots.txt blocking. Inspect the page, and look at the Coverage section for details.
 Valid
 Pages with a valid status have been indexed.
 Submitted and indexed: You submitted the URL for indexing, and it was indexed.
@@ -236,5 +237,5 @@ Blocked due to access forbidden (403): The user agent provided credentials, but
 Blocked due to other 4xx issue: The server encountered a 4xx error not covered by any other issue type described here.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemovals ToolRich Results Tools and ReportsSecurity Issues reportSitemaps reportCore Web Vitals reportURL Inspection ToolBlock crawling of parameterized duplicate contentLegacy or external reports and toolsManaging properties and users on Search Console
+All reports and toolsReports at a glanceSearch console overview pageAMP Tools and ReportsChange of Address ToolIndex Coverage reportLinks reportManual Actions reportMobile Usability Tools and ReportsPerformance ReportsRemovals ToolRich Results Tools and ReportsSecurity Issues reportManage your sitemaps using the Sitemaps reportCore Web Vitals reportURL Inspection ToolBlock crawling of parameterized duplicate contentLegacy or external reports and toolsManaging properties and users on Search Console
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

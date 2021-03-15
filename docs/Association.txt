@@ -1,0 +1,51 @@
+https://support.google.com/webmasters/answer/1120006
+
+AssociationAssociate your Search Console property with another Google serviceView or manage associations for all your properties using the Associations settings page.
+Open the Associations settings page
+About association
+Association is a connection between a Search Console property, and some other entity or property in another Google service: for example, between a Search Console property and a Google Analytics property, a YouTube channel, or a Chrome Web Store account. A Search Console association is usually requested by the owner of the other entity to the Search Console property owner.
+The effect of an association depends on the association type. For example, a Google Analytics association shares your Search Console performance data with the associated Google Analytics property; an Android Play Store app association enables app indexing (when Google Search shows deep links into the associated app).
+Read about association in your product documentation to learn about all the benefits of association.
+Types of association
+The following items can be associated with a Search Console property:
+Google Analytics property
+Chrome Web Store account
+Android Play Store app
+Google Ads account
+YouTube channel
+Google Assistant Actions Console project
+Check the help page for association in the other service to see what happens if an association is created.
+Association flow
+All association requests except for Google Analytics must be performed in the product that requests association with your site. Here is what happens:
+A property owner in another Google service requests association with your site. The request is made using the product interface for their service: for example, for a YouTube channel, the channel owner uses the YouTube Studio settings  page. The requester requests association with your site's root URL.
+Search Console sends a notification of the request to all property owners of the corresponding Search Console property.
+The Search Console property owner gets the notification, and approves or denies the request in the Search Console Associations settings page. (If the requester and approver are the same Google account, the request is granted automatically, without any notification).
+A single Search Console property can be associated with multiple other entities (for example, example.com could be associated with both a YouTube channel and an Android app).
+Request an association
+You can request association with a Google Analytics property or with another service.
+Note that a Google Analytics property can be associated with only one Search Console property at a time, and vice-versa. If you no longer see a previously created Analytics association, it means that you or another site owner either removed it or overwrote the association with another.
+Request Google Analytics association
+You can associate your Google Analytics property with your Search Console property to see Search Console data directly in Google Analytics.
+Any Search Console data exported from Search Console to your associated Google Analytics property will be subject to the Google Analytics terms of service. At the same time, any data exported from your Google Analytics property to your associated Search Console property will be subject to the Search Console terms of service.
+Learn how to associate your Google Analytics property with your Search Console property.
+When you associate a Search Console property with a Google Analytics property, Search Console data is enabled for all reporting views associated with that property by default. As a result, anybody with access to that Google Analytics property or one of its views may be able to see Search Console data for that site. For example, if a Google Analytics administrator adds a user to a property or view, that user may be able to see Search Console data in Search Optimization reports.
+Google Analytics account administrators can move their Analytics property from one Analytics account to another. Any associated Search Console properties will maintain their association as part of the move. After the move, any users of the new Analytics account will be able to see data from the associated Search Console property without a notification in Search Console. Learn more
+Request association with another service
+All services other than Google Analytics use their own product's management console to request association with a Search Console property. For example, in YouTube you would use the Advanced Channel Settings page. Search your product's help center to see how to request association with a website.
+Approve or deny an association request
+If you've received an association request, decide if this is an account that you want to associate with your site. Review the permissions that an association grants to the other service. If you want the association, click Approve next to the request in the Pending Requests table, otherwise click Deny. Approval requests that have not been approved or denied will remain active indefinitely in the Pending requests table.
+Remove an association
+You can delete any association type at any time for your property.
+To delete an association within Search Console:
+You must be an owner of the Search Console property.
+Open the Associations settings page in Search Console.
+Find the association that you want to delete in the table.
+Select the more settings icon
+and click Remove association.
+To delete a Search Console association within the other service, use the other product's management console, similar to the way you request an association.
+About the Associations settings page
+The Associations settings page shows active and pending associations for all your sites. Active associations have been approved by you or another Search Console property owner. Pending requests are requests for association that have not yet been approved or denied by a Search Console property owner. When an association is removed, its history is lost.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats reportOpt out of display on Google Local and other Google properties
+New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

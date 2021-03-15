@@ -52,6 +52,9 @@ Return to the issue details page and click the Validate Fix button to begin the 
 If all instances of that issue are found to be fixed (that is, the fix is validated), the count of pages affected by that issue will become 0 and the issue status will be updated.
 Continue fixing errors.
 When all errors have been fixed, remove the filter for warnings, and consider fixing the warnings. Most warnings are about missing optional properties in your structured data. Having more information in rich result can be more useful to your site visitors.
+Useful troubleshooting resources:
+Structured data documentation
+Rich Results test
 Inspecting errors
 You can use several different tools to inspect your structured data errors:
 In the error details page:
@@ -60,7 +63,7 @@ Click the inspect icon
 next to the URL in the table to run the URL Inspection tool, which offers error details, indexed and live test results, and a screenshot.
 Use the Rich Results Test tool to test your page, or to iteratively test, modify, and retest your code directly in the browser. Either submit the URL of the page to test, or copy and paste code into the tool.
 Troubleshoot error spikes
-The most common reason for a spike in errors is adding an error to a template used by many pages on your site.
+The most common reason for a spike in errors is an error introduced to a template used by many pages on your site.
 Determine if a spike caused was by a group of items moving from one severity to another:
 If you see a spike, look for a corresponding drop in another state (warning or valid).
 If you find a corresponding drop, confirm that the spike and drop are the same URLs.
@@ -77,9 +80,7 @@ Your rich result might not be supported for your location yet. Check the documen
 Use the Rich Results test on your page to see if Google can access your page and see the rich result code, and to confirm the validity of the rich result code.
 Use the URL Inspection tool to see if the page is indexed, and if it is accessible by Google. Test the live version of the page as well to confirm that Google can access it.
 List of structured data errors
-Here is a list of the most common errors shown in this report.
-Open structured data documentation
-Test your code with the Rich Results test
+Here is a list of the most common errors shown in this report:
 Error
 Description
 Invalid URL in property "property name"
@@ -163,9 +164,9 @@ Summary page
 In the graph, an item is assigned the most severe status that affects it: so an item with both an error and a warning is assigned the status "Error". An item is counted only once in the graph. See A note about the status totals.
 In the table, issue status is assigned to a specific item property (not to the entire item), so a structured data item can appear multiple times in the table.
 The following statuses apply:
-Error: A rich result with an error cannot appear in Google Search as a rich result. Items in error state have at least one error, and can also have one or more warnings.
-Warning: A rich result with a warning issue is eligible to appear in Google Search as a rich result. Warning issues are either suggestions for missing or invalid optional values, errors in non-critical properties, or warnings about usage of deprecated properties. Providing more optional properties in your structured data can often enable a better experience for the user.
-Complete: A rich result with status complete is eligible to appear in Google Search as a rich result. All required and optional data is correctly provided.
+Error: The rich result cannot appear in Google Search as a rich result. Items in error state have at least one error, and can also have one or more warnings.
+Valid with warnings: The rich result is eligible to appear in Google Search as a rich result. Warning issues are either suggestions for missing or invalid optional values, errors in non-critical properties, or warnings about usage of deprecated properties. Providing more optional properties in your structured data can often enable a better experience for the user.
+Valid: The rich result is eligible to appear in Google Search as a rich result. All required and optional data is correctly provided.
 If you want to see all issues for a single rich result, see Inspecting errors.
 A note about the status totals
 The total value per status in the table can exceed the total value in the corresponding status for the graph. Two examples why this is so:
@@ -239,7 +240,6 @@ Note that the same URL can have different states for different issues; For examp
 Known issues
 The following are known issues in Search Console. No need to report them to us, but we'd love your feedback on any other features or issues you spot. Use the Feedback mechanism built into the navigation bar.
 Some issues have long names that are not easy to understand.
-If your site has a very large number of issues (whether or not there are active instances), the report will show only the first 200 issues, sorted by importance.
 Was this helpful?How can we improve it?YesNoSubmit
 true
 Rich Results Tools and ReportsRich result status reportsRich Results TestTools for adding structured data (for beginners)Unparsable structured data report

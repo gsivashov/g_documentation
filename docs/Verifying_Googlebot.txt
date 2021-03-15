@@ -10,9 +10,9 @@ You can verify if a web crawler accessing your server really is Googlebot (or an
 Google user agent). This
 is useful if you're concerned that spammers or other troublemakers are accessing your site
 while claiming to be Googlebot. Google doesn't post a public list of IP addresses for website
-owners to whitelist. This is because these IP address ranges can change, causing problems for
+owners to allowlist. This is because these IP address ranges can change, causing problems for
 any website owners who have hard-coded them, so you must run a DNS lookup as described next.
-To verify Googlebot as the caller:
+To verify that Googlebot is the crawler:
 Run a reverse DNS lookup on the accessing IP address from your logs, using the
 host command.
 Verify that the domain name is either googlebot.com or
@@ -32,4 +32,4 @@ Example 2:
 rate-limited-proxy-66-249-90-77.google.com has address 66.249.90.77
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-03-03 UTC.

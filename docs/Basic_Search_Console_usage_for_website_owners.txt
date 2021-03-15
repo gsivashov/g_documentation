@@ -27,5 +27,5 @@ If you don't need a page removed immediately from Search, simply remove (or redi
 If you want to block pages from indexing, here are other appropriate steps to block crawling and/or indexing.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Beginning usersGetting started with Search ConsoleUsing help and feedback in Search ConsoleAdd a website propertyBasic Search Console usage for website ownersHow are you performing on Google?Has Google found all your pages?How usable is your website?Why did I get an email from Search Console?
+Beginning usersGetting started with Search ConsoleUsing help and feedback in Search ConsoleAdd a website propertyBasic Search Console usage for website ownersHow are you performing on Google?Has Google found all your pages?Why did I get an email from Search Console?
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

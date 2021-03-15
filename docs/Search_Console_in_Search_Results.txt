@@ -1,6 +1,7 @@
 https://support.google.com/webmasters/answer/9419847
 
 Search Console in Search ResultsIf you search Google and get results from one of your Search Console properties, you might also see a card showing a summary of your site's performance on Google Search. This card can appear only if you are an owner or full user of the site in Search Console, and you are signed in with that Google account while searching.
+This feature is not currently available for Domain properties.
 Open the Search Console in Search setting
 Show or hide the summary card
 You can control whether the site performance card shows for any or all of your sites.

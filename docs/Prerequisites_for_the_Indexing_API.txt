@@ -49,13 +49,10 @@ View Client ID, to obtain and make a note of the client ID.
 Verify site ownership in Search Console
 In this step, you'll verify that you have control over your web property.
 To verify ownership of your site:
-Follow the recommended steps to verify ownership of your property.
-After your property has been verified, open Search Console.
-Select your verified property.
-Open the property's settings from the left navigation.
-Select Users and permissions. Click Add an owner.
-Enter your service account email address. In the Permission drop-down list, select
-Full. You can find your service account email address in two places:
+Verify ownership of your property.
+After your property has been verified, add
+your service account email as a delegated owner. You can find your service account email
+address in two places:
 The client_email field in the JSON private key that you
 downloaded when you created your project.
 The Service account ID column of the Service Accounts view in
@@ -172,4 +169,4 @@ the request message. For information about the types of calls you can make, and 
 message bodies for those calls, see Using the API.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-03-11 UTC.

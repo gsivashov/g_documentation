@@ -12,9 +12,9 @@ Be descriptive: Use accurate, descriptive titles for your pages. We recommend pu
 Be complete: Mention everything that you have to offer. Google is smart, but we can't guess what you don't tell us.
 Be topical: Update your content to account for seasons, trends, or new offerings. For example, if you run an ice cream store that also sells hot chocolate, be sure to feature your ice cream in the summer, and your hot chocolate (or coffee, or sandwiches) prominently in the winter, when people won't be looking for ice cream stores. If a new trend starts for kiwi ice cream and you have it in your store, feature it prominently.
 Keep your site up to date: If you haven't updated your site since 1925, it's time to remove the references to Calvin Coolidge in your current events blog.
-Use text: Don't put your site content or page titles only in images, video, Flash animations, or other non-text formats that Google doesn't understand as easily as text. If you use a graphic for your site name, include the name in the page text as well.
+Use text: Don't put your site content or page titles only in images, video, animations, or other non-text formats that Google doesn't understand as easily as text. If you use a graphic for your site name, include the name in the page text as well.
 Get referrals: Have your site mentioned in useful places online. See if you can get into your local online news sites, or in any other appropriate resources.
 Want your site to do better, but don't have the time? If you think your site needs more help than you can provide, consider hiring a professional.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-28 UTC.
+Last updated 2021-02-09 UTC.

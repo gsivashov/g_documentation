@@ -4,6 +4,7 @@ Crawl Stats reportThe Crawl Stats report shows you statistics about Google's cra
 This report is aimed at advanced users. If you have a site with fewer than a thousand pages, you should not need to use this report or worry about this level of crawling detail.
 This report is available only for root-level properties. That is, the property must be either a Domain property (such as example.com or m.example.com) or a URL-prefix property at the root level (https://example.com, http://example.com, http://m.example.com).
 Open Crawl Stats report
+Crawl Budget and the Crawl Stats report - Google Search Console Training
 You can reach the Crawl Stats report in Search Console by clicking
 (Property settings) > Crawl stats.
 Getting started
@@ -185,5 +186,5 @@ Crawl totals much higher than crawling logs or crawl details section totals
 If the total crawl count seems much higher than the totals for the Crawl requests breakdown sections (by response, by type, and so on), this can occur when Google cannot crawl your site because your robots.txt file is unavailable for too long. In that circumstance, Google counts crawls that it might have made if your robots.txt file were available, but doesn't actually make those calls. Check your robots.txt fetching status to confirm if this is the issue.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webInternational Targeting reportChange Googlebot crawl rateCrawl Stats reportOpt out of display on Google Local and other Google properties
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats reportOpt out of display on Google Local and other Google properties
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

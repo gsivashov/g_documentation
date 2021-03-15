@@ -88,7 +88,7 @@ Important! Providing structured data to enable an enhanced search feature is no 
 To implement search features:
 Use the table to help choose features appropriate for your page or site. Some features are available for all content types (for example, preferred site name can be used for all types of pages), and some rich results are specific to the content type (for example a recipe rich card is only available for a recipe).
 Read the detailed information about each appearance element to decide if it's right for you.
-Implement the feature as described on the Google Developers website. The developer should validate any structured data using the Rich Results Test tool to ensure that it is valid and complete. Be sure to follow the structured data quality guidelines to ensure that the contents of your page, and your usage, complies with these guidelines. Pages that do not comply will not be eligible for structured data usage.
+Implement the feature as described in the documentation. The developer should validate any structured data using the Rich Results Test tool to ensure that it is valid and complete. Be sure to follow the structured data quality guidelines to ensure that the contents of your page, and your usage, complies with these guidelines. Pages that do not comply will not be eligible for structured data usage.
 Use the appropriate Rich Result Status report to see whether Google has found, and can process, your structured data.
 Periodically check the Rich Result Status report for errors. Structured data that was valid in the past can suddenly develop errors if you change a site template or as a result of other unforeseen events.
 Monitor clicks and impressions for your search elements.
@@ -104,4 +104,4 @@ Add structured data or other features to your pages. Confirm that your page code
 Record the performance for a few months in the Performance report, filter by URL to compare performance of your page.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-03-05 UTC.

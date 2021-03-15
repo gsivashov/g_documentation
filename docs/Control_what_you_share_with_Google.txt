@@ -71,7 +71,7 @@ page's HTML head section to prevent a snippet from appearing in Search.
 However, note that this can generate a confusing message in search results ("No
 information is available for this page").
 Web pages, site sections, URL patterns
-warningURL Parameters tool
+URL Parameters tool
 Advanced users can use the URL Parameters tool to block crawling of URLs with specific
 parameters. We recommend using this method only if you are a very advanced user, as it
 can block large portions of your site's URL space in a way that isn't easy to debug if
@@ -81,4 +81,4 @@ If the content already exists on Google, and you want to remove it, you might ne
 take additional steps.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-22 UTC.
+Last updated 2021-03-10 UTC.

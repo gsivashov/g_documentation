@@ -6,22 +6,22 @@ Documentation
 Advanced SEO
 Send feedback
 Robots meta tag, data-nosnippet, and X-Robots-Tag specifications
-Abstract
 This document details how the page- and text-level settings can be used to adjust how Google
-presents your content in search results. You can specify page-level settings by including a meta tag
-on HTML pages or in an HTTP header. You can specify text-level settings with the data-
-nosnippet attribute on HTML elements within a page.
-Keep in mind that these settings can be read and followed only if
-crawlers are allowed to access the pages that include these settings.
-The <meta name="robots" content="noindex" /> tag or directive applies to
-search engine crawlers. To block non-search crawlers, such as AdsBot-Google, you might need to add
-directives targeted to the specific crawler (for example, <meta name="AdsBot-Google"
-content="noindex" />).
+presents your content in search results. You can specify page-level settings by including a
+meta tag on HTML pages or in an HTTP header. You can specify text-level settings with the
+data-nosnippet attribute on HTML elements within a page.
+Keep in mind that these settings can be read and followed only if crawlers are allowed to
+access the pages that include these settings.
+The <meta name="robots" content="noindex" /> tag or
+directive applies to search engine crawlers. To block non-search crawlers, such as
+AdsBot-Google, you might need to add directives targeted to the specific
+crawler (for example,
+<meta name="AdsBot-Google" content="noindex" />).
 Using the robots meta tag
-The robots meta tag lets you utilize a granular, page-specific
-approach to controlling how an individual page should be indexed and served
-to users in Google Search results. Place the robots meta tag in the
-<head> section of a given page, like this:
+The robots meta tag lets you utilize a granular, page-specific approach to controlling how an
+individual page should be indexed and served to users in Google Search results. Place the
+robots meta tag in the <head> section of a given page, like
+this:
 <!DOCTYPE html>
 <html><head>
 <meta name="robots" content="noindex" />
@@ -29,41 +29,44 @@ to users in Google Search results. Place the robots meta tag in the
 </head>
 <body>(…)</body>
 </html>
-The robots meta tag in the above example instructs search engines not to show the page in search
-results. The value of the name attribute (robots) specifies that the
-directive applies to all crawlers. To address a specific crawler, replace the robots
-value of the name attribute with the name of the crawler that you are addressing.
-Specific crawlers are also known as user agents (a crawler uses its user agent to request a page.)
-Google's standard web crawler has the user agent name Googlebot. To prevent only
-Googlebot from indexing your page, update the tag as follows:
+The robots meta tag in the above example instructs search engines not to show the page in
+search results. The value of the name attribute (
+robots) specifies that the directive applies to all crawlers. To
+address a specific crawler, replace the robots value of the
+name attribute with the name of the crawler that you are
+addressing. Specific crawlers are also known as user agents (a crawler uses its user agent to
+request a page.) Google's standard web crawler has the user agent name
+Googlebot. To prevent only Googlebot from indexing your page,
+update the tag as follows:
 <meta name="googlebot" content="noindex" />
-This tag now instructs Google specifically not to show this page in its search results. Both the
-name and the content attributes are non-case sensitive.
+This tag now instructs Google specifically not to show this page in its search results. Both
+the name and the content attributes
+are non-case sensitive.
 Search engines may have different crawlers for different properties or
-purposes. See the complete list
-of Google's crawlers. For example, to show a page in Google's
-web search results, but not in Google News, use the following meta tag:
+purposes. See the
+complete list of Google's crawlers.
+For example, to show a page in Google's web search results, but not in Google News, use the
+following meta tag:
 <meta name="googlebot-news" content="noindex" />
 To specify multiple crawlers individually, use multiple robots meta tags:
 <meta name="googlebot" content="noindex">
 <meta name="googlebot-news" content="nosnippet">
 Using the X-Robots-Tag HTTP header
-The X-Robots-Tag can be used as an element of the HTTP
-header response for a given URL. Any directive that can be used in a robots
-meta tag can also be specified as an X-Robots-Tag. Here's an
-example of an HTTP response with an X-Robots-Tag instructing
-crawlers not to index a page:
+The X-Robots-Tag can be used as an element of the HTTP header
+response for a given URL. Any directive that can be used in a robots meta tag can also be
+specified as an X-Robots-Tag. Here's an example of an HTTP
+response with an X-Robots-Tag instructing crawlers not to index a
+page:
 HTTP/1.1 200 OK
 Date: Tue, 25 May 2010 21:42:43 GMT
 (…)
 X-Robots-Tag: noindex
 (…)
-Multiple X-Robots-Tag headers can be combined within the
-HTTP response, or you can specify a comma-separated list of directives.
-Here's an example
-of an HTTP header response which has a noarchive
-X-Robots-Tag combined
-with an unavailable_after X-Robots-Tag.
+Multiple X-Robots-Tag headers can be combined within the HTTP
+response, or you can specify a comma-separated list of directives. Here's an example of an
+HTTP header response which has a noarchive
+X-Robots-Tag combined with an
+unavailable_after X-Robots-Tag.
 HTTP/1.1 200 OK
 Date: Tue, 25 May 2010 21:42:43 GMT
 (…)
@@ -72,34 +75,33 @@ X-Robots-Tag: unavailable_after: 25 Jun 2010 15:00:00 PST
 (…)
 The X-Robots-Tag may optionally specify a user agent before the
 directives. For instance, the following set of X-Robots-Tag HTTP
-headers can be used to conditionally allow showing of a page in
-search results for different search engines:
+headers can be used to conditionally allow showing of a page in search results for different
+search engines:
 HTTP/1.1 200 OK
 Date: Tue, 25 May 2010 21:42:43 GMT
 (…)
 X-Robots-Tag: googlebot: nofollow
 X-Robots-Tag: otherbot: noindex, nofollow
 (…)
-Directives specified without a user agent are valid for all crawlers.
-The HTTP header, the user agent name, and the specified values are not case sensitive.
-Conflicting robots directives:
-In the case of conflicting robots directives, the more restrictive directive applies. For example,
-if a page has both max-snippet:50 and nosnippet directives, the
-nosnippet directive will apply.
+Directives specified without a user agent are valid for all crawlers. The HTTP header, the
+user agent name, and the specified values are not case sensitive.
+Conflicting robots directives: In the case of conflicting robots
+directives, the more restrictive directive applies. For example, if a page has both
+max-snippet:50 and nosnippet
+directives, the nosnippet directive will apply.
 Valid indexing & serving directives
-The following directives can be used to control indexing and serving of a snippet with the robots meta tag and
-the X-Robots-Tag. Within search results, a snippet is a brief extract of text used to
-demonstrate the relevance of a document to a user's query. The following table shows all the
-directives that Google honors and their meaning. Each value represents a specific directive.
-Multiple directives may be combined in a comma-separated list. These
-directives are case-insensitive.
-It is possible that these directives
-may not be treated the same by all other search engines.
+The following directives can be used to control indexing and serving of a snippet with the
+robots meta tag and the X-Robots-Tag. Within search results, a
+snippet is a brief extract of text used to demonstrate the relevance of a document to a user's
+query. The following table shows all the directives that Google honors and their meaning. Each
+value represents a specific directive. Multiple directives may be
+combined in a comma-separated list. These directives are
+case-insensitive.
+It is possible that these directives may not be treated the same by all other search engines.
 Directives
 all
-There are no restrictions for indexing or serving. This
-directive is the default value and has no effect if explicitly
-listed.
+There are no restrictions for indexing or serving. This directive is the default value and
+has no effect if explicitly listed.
 noindex
 Do not show this page in search results.
 To remove information from Google, follow our
@@ -109,22 +111,24 @@ Do not follow the links on this page.
 none
 Equivalent to noindex, nofollow.
 noarchive
-Do not show a cached link
+Do not show a
+cached link
 in search results.
 nosnippet
 Do not show a text snippet or video preview in the search results for this page. A static
-image thumbnail (if available) may still be visible, when it results in a better user-experience.
-This applies to all forms of search results (at Google: web search, Google Images, Discover).
-max-snippet:[number]
-Use a maximum of [number] characters as a textual snippet
-for this search result. (Note that a URL may appear as multiple search results within a
-search results page.) This does not affect image or video previews. This applies to all
-forms of search results (such as Google web search, Google Images, Discover, Assistant).
-However, this limit does not apply in cases where a publisher has separately granted
-permission for use of content. For instance, if the publisher supplies content in the
-form of in-page structured data or has a license agreement with Google, this setting
-does not interrupt those more specific permitted uses. This directive is ignored if no
-parseable [number] is specified.
+image thumbnail (if available) may still be visible, when it results in a better
+user experience. This applies to all forms of search results (at Google: web search,
+Google Images, Discover).
+max-snippet: [number]
+Use a maximum of [number] characters as a textual snippet for this search result. (Note
+that a URL may appear as multiple search results within a search results page.) This
+does not affect image or video previews. This applies to all forms of search results
+(such as Google web search, Google Images, Discover, Assistant). However, this limit
+does not apply in cases where a publisher has separately granted permission for use of
+content. For instance, if the publisher supplies content in the form of in-page
+structured data or has a license agreement with Google, this setting does not interrupt
+those more specific permitted uses. This directive is ignored if no parseable [number]
+is specified.
 Special values:
 0: No snippet is to be shown. Equivalent to
 nosnippet.
@@ -133,34 +137,36 @@ believes is most effective to help users discover your content and direct users 
 your site.
 Example:
 <meta name="robots" content="max-snippet:20">
-max-image-preview:[setting]
+max-image-preview: [setting]
 Set the maximum size of an image preview for this page in a search results.
-Accepted setting values:
+Accepted [setting] values:
 none:
 No image preview is to be shown.
 standard: A default image preview may be shown.
-large: A larger image preview, up to the width of the viewport, may be shown.
+large: A larger image preview, up to the width of the
+viewport, may be shown.
 This applies to all forms of search results (such as Google web search, Google Images,
 Discover, Assistant). However, this limit does not apply in cases where a publisher has
-separately granted permission for use of content. For instance, if the publisher supplies
-content in the form of in-page structured data (such as AMP and canonical versions of an
-article) or has a license agreement with Google, this
-setting will not interrupt those more specific permitted uses.
-Publishers who do not want Google to use larger thumbnail images when their AMP pages and
-canonical version of an article are shown in Search or Discover should specify a
-max-image-preview value of standard
-or none.
+separately granted permission for use of content. For instance, if the publisher
+supplies content in the form of in-page structured data (such as AMP and canonical
+versions of an article) or has a license agreement with Google, this setting will not
+interrupt those more specific permitted uses.
+Publishers who do not want Google to use larger thumbnail images when their AMP pages
+and canonical version of an article are shown in Search or Discover should specify a
+max-image-preview value of
+standard or none.
 Example:
 <meta name="robots" content="max-image-preview:standard">
-max-video-preview:[number]
-Use a maximum of [number] seconds as a video snippet for
-videos on this page in search results.
-Other supported values:
-0: At most, a static image may be used, in accordance to the max-image-preview setting.
+max-video-preview: [number]
+Use a maximum of [number] seconds as a video snippet for videos on this page in search
+results.
+Special values:
+0: At most, a static image may be used, in accordance to
+the max-image-preview setting.
 -1: There is no limit.
 This applies to all forms of search results (at Google: web search, Google Images,
-Google Videos, Discover, Assistant). This directive is ignored if no parseable
-[number] is specified.
+Google Videos, Discover, Assistant). This directive is ignored if no parseable [number]
+is specified.
 Example:
 <meta name="robots" content="max-video-preview:-1">
 notranslate
@@ -173,75 +179,85 @@ must be specified in a widely adopted format including, but not limited to
 RFC 822,
 RFC 850, and
 ISO 8601.
-The directive is ignored if no valid [date/time] is
-specified. By default there is no expiration date for content.
+The directive is ignored if no valid date/time is specified. By default there is no
+expiration date for content.
 Example:
 <meta name="robots" content="unavailable_after: 2020-09-21">
 Handling combined indexing and serving directives
-You can create a multi-directive instruction by combining robots meta tag
-directives with commas. Here is an example of a robots meta tag that
-instructs web crawlers to not index the page and to not crawl any of the
-links on the page:
+You can create a multi-directive instruction by combining robots meta tag directives with
+commas. Here is an example of a robots meta tag that instructs web crawlers to not index the
+page and to not crawl any of the links on the page:
 <meta name="robots" content="noindex, nofollow">
-Here is an example that limits the text snippet to 20 characters, and allows a large image preview:
+Here is an example that limits the text snippet to 20 characters, and allows a large image
+preview:
 <meta name="robots" content="max-snippet:20, max-image-preview:large">
-For situations where multiple crawlers are specified along with different
-directives, the search engine will use the sum of the negative
-directives. For example:
+For situations where multiple crawlers are specified along with different directives, the
+search engine will use the sum of the negative directives. For example:
 <meta name="robots" content="nofollow">
 <meta name="googlebot" content="noindex">
 The page containing these meta tags will be interpreted as having a
 noindex, nofollow directive when crawled by Googlebot.
 Using the data-nosnippet HTML attribute
-You can designate textual parts of a HTML page not to be used as a snippet. This can be done on a
-HTML-element level with the data-nosnippet HTML attribute on span,
-div, and section elements. The data-nosnippet is considered a
-boolean attribute, it is valid with or without a value. To ensure machine-
-readability, the HTML section must be valid HTML and all appropriate tags must be closed
-accordingly.
+You can designate textual parts of an HTML page not to be used as a snippet. This can be done
+on an HTML-element level with the data-nosnippet HTML attribute on
+span, div, and
+section elements. The data-nosnippet
+is considered a
+boolean attribute.
+As with all boolean attributes, any value specified is ignored. To ensure machine-readability,
+the HTML section must be valid HTML and all appropriate tags must be closed accordingly.
 Examples:
 <p>This text can be shown in a snippet
 <span data-nosnippet>and this part would not be shown</span>.</p>
 <div data-nosnippet>not in snippet</div>
 <div data-nosnippet="true">also not in snippet</div>
+<div data-nosnippet="false">also not in snippet</div>
+<!-- all values are ignored -->
 <div data-nosnippet>some text</html>
 <!-- unclosed "div" will include all content afterwards -->
 <mytag data-nosnippet>some text</mytag>
 <!-- NOT VALID: not a span, div, or section -->
 Google typically renders pages in order to index them, however rendering is not guaranteed.
-Because of this, extraction of data-nosnippet may happen both before and after
-rendering. To avoid uncertainty from rendering, do not add or remove the data-nosnippet
-attribute of existing nodes through JavaScript. When adding DOM elements through JavaScript, include
-the data-nosnippet attribute as necessary when initially adding the element to the
-page's DOM. If custom elements are used, wrap or render them with div,
-span, or section elements if you need to use data-
-nosnippet.
+Because of this, extraction of data-nosnippet may happen both
+before and after rendering. To avoid uncertainty from rendering, do not add or remove the
+data-nosnippet attribute of existing nodes through JavaScript.
+When adding DOM elements through JavaScript, include the
+data-nosnippet attribute as necessary when initially adding the
+element to the page's DOM. If custom elements are used, wrap or render them with
+div, span, or
+section elements if you need to use
+data-nosnippet.
 Using structured data
-Robots meta tags govern the amount of content that Google extracts automatically from web pages
-for display as search results. But many publishers also use schema.org structured data to make
-specific information available for search presentation. Robots meta tag limitations don't affect the use of
-that structured data, with the exception of article.description and the
-description values for structured data specified for other creative works.
-To specify the maximum length of a preview based on these description values,
-use the max-snippet robots meta tag. For example, recipe structured data
-on a page is eligible for inclusion in the recipe carousel, even if the text preview would
-otherwise be limited. You can limit the length of a text preview with max-snippet,
-but that robots meta tag doesn't apply when the information is provided using structured data
-for rich results.
-To manage the use of structured data for your web pages, modify
-the structured data types and values themselves, adding or removing information in order to provide
-only the data you want to make available. Also note that structured data remains usable for search
-results when declared within a data-nosnippet element.
+Robots meta tags govern the amount of content that Google extracts automatically from web
+pages for display as search results. But many publishers also use schema.org structured data
+to make specific information available for
+search presentation. Robots meta tag
+limitations don't affect the use of that structured data, with the exception of
+article.description and the
+description values for structured data specified for other
+creative works. To specify the maximum length of a preview based on these
+description values, use the
+max-snippet robots meta tag. For example,
+recipe structured data on a page is eligible for inclusion in the
+recipe carousel, even if the text preview would otherwise be limited. You can limit the length
+of a text preview with max-snippet, but that robots meta tag
+doesn't apply when the information is provided using structured data for rich results.
+To manage the use of structured data for your web pages, modify the structured data types and
+values themselves, adding or removing information in order to provide only the data you want
+to make available. Also note that structured data remains usable for search results when
+declared within a data-nosnippet element.
 Practical implementation of X-Robots-Tag
-You can add the X-Robots-Tag to a site's HTTP responses through the configuration
-files of your site's web server software. For example, on Apache-based web servers you can use
-.htaccess and
-httpd.conf files. The benefit of using an X-Robots-Tag with HTTP
-responses is that you can specify crawling directives that are applied globally across a site. The
-support of regular expressions allows a high level of flexibility.
-For example, to add a noindex, nofollow X-Robots-Tag to the HTTP
-response for all .PDF files across an entire site, add the following snippet to the site's root
-.htaccess file or httpd.conf file on Apache, or the site's .conf file on NGINX
+You can add the X-Robots-Tag to a site's HTTP responses through
+the configuration files of your site's web server software. For example, on Apache-based web
+servers you can use .htaccess and
+httpd.conf files. The benefit of using an
+X-Robots-Tag with HTTP responses is that you can specify crawling
+directives that are applied globally across a site. The support of regular expressions allows
+a high level of flexibility.
+For example, to add a noindex, nofollow
+X-Robots-Tag to the HTTP response for all .PDF files across an
+entire site, add the following snippet to the site's root .htaccess file or httpd.conf file on
+Apache, or the site's .conf file on NGINX
 Apache:
 <Files ~ "\.pdf$">
 Header set X-Robots-Tag "noindex, nofollow"
@@ -250,10 +266,10 @@ NGINX:
 location ~* \.pdf$ {
 add_header X-Robots-Tag "noindex, nofollow";
 }
-You can use the X-Robots-Tag for non-HTML files like image files where the usage of
-robots meta tags in HTML is not possible. Here's an example of adding a noindex
-X-Robots-Tag directive for images files (.png, .jpeg, .jpg, .gif) across an entire
-site:
+You can use the X-Robots-Tag for non-HTML files like image files
+where the usage of robots meta tags in HTML is not possible. Here's an example of adding a
+noindex X-Robots-Tag directive for
+images files (.png, .jpeg, .jpg, .gif) across an entire site:
 Apache:
 <Files ~ "\.(png|jpe?g|gif)$">
 Header set X-Robots-Tag "noindex"
@@ -263,11 +279,11 @@ location ~* \.(png|jpe?g|gif)$ {
 add_header X-Robots-Tag "noindex";
 }
 Combining crawling with indexing / serving directives
-Robots meta tags and X-Robots-Tag HTTP headers are discovered when a URL is crawled.
-If a page is disallowed from crawling through the robots.txt file, then any information about
-indexing or serving directives will not be found and will therefore be ignored. If indexing or
-serving directives must be followed, the URLs containing those directives cannot be disallowed from
-crawling.
+Robots meta tags and X-Robots-Tag HTTP headers are discovered when
+a URL is crawled. If a page is disallowed from crawling through the robots.txt file, then any
+information about indexing or serving directives will not be found and will therefore be
+ignored. If indexing or serving directives must be followed, the URLs containing those
+directives cannot be disallowed from crawling.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-21 UTC.
+Last updated 2021-03-09 UTC.

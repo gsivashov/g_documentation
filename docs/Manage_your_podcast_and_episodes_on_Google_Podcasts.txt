@@ -1,0 +1,54 @@
+https://developers.google.com/search/docs/guides/podcast-management
+
+Manage your podcast and episodes on Google PodcastsIf you are a podcast publisher, here is how to manage your podcast on Google Podcasts after Google Podcasts has found your show.
+Related topics:
+Learn how to manage your show on Google Podcasts Manager.
+Learn how to manage your feeds.
+Managing podcasts
+Google Podcasts checks known feeds several times a day for updates, but changes can take some time to propagate to Google Podcasts platforms. If you are using a podcast hosting service, they may or may not expedite any changes you make. You can check the last time Google saw your feed.
+Add a podcast
+See if your podcast is already on Google:
+Open Google Podcasts.
+Search for your podcast.
+If you find your podcast, there's no need to do anything more.
+If don't find your podcast on Google Podcasts, add it as described in Get your podcast on Google.
+Update podcast information
+You can update information about your podcast, such as the name or description, by updating your RSS feed. (If you use a podcast hosting service, make your changes in the management pages of your hosting service.)
+Google checks known feeds for changes several times a day; changes can take a few days to appear in Google Podcasts.
+If you move the location of your RSS feed, for example, to another hosting service, see Move your show's feed to a new URL.
+Remove a podcast
+To remove a podcast from Google Podcasts platforms quickly (3-5 days):
+Add one of the following tags to your RSS feed as a direct child of the <channel> element:
+<googleplay:block>yes</googleplay:block>
+<itunes:block>yes</itunes:block>
+Ask Google to recrawl your feed.
+Alternatively, you can remove or password-protect your RSS feed, use robots.txt, or noindex to block access to your RSS feed. However, these methods can take 3-4 weeks to take effect.
+Move your feed / Change podcasting hosts
+If you move your podcast feed to a new URL, you should tell Google about the new location:
+Move your feed:
+If you are using a podcast hosting service:
+Search for information about how to move from another hosting provider. Your provider should provide a mechanism for telling people about your feed move. If your podcasting service doesn't support migrating your feed to a new location, then create your new feed and contact Podcasts Manager support with your old and new feed URLs.
+If you are managing your RSS feed directly:
+Post your feed in the new location, and add the following tag, replacing new_feed_URL with new feed's URL (that is, the file points to itself):
+<itunes:new-feed-url>new_feed_URL</itunes:new_feed_url>
+Create a 301 (permanent) redirect from your old feed URL to your new feed URL.
+Ask Google to recrawl your feed.
+Re-verify ownership in Podcasts Manager. If you are using Podcasts Manager, you will need to re-verify your feed ownership. Visit your show in Podcasts Manager to see when Google has noticed the change and requires re-verification.
+Get your podcast indexed
+See the full topic page to learn how to get your show indexed.
+Managing episodes
+Add or update an episode
+To add, update, or remove an episode from Google Podcasts platforms, update your RSS feed (or your show on your hosting service). Google checks known feeds for changes several times a day. In most cases, this is frequent enough that you don't need to do anything else. However, you can explicitly request a recrawl of your feed if you need an update within 30 minutes.
+Remove an episode
+To remove an episode from your show on Google Podcasts platforms:
+Use either of the following methods:
+Add one of the following tags to your RSS feed as a child of the <item> to block. These tags prevent the podcast from appearing in Google Podcasts platforms, but they don't affect the visibility of the host page in Google Search. Removal from Google Podcasts platforms should occur in 3-5 days.
+<googleplay:block>yes</googleplay:block>
+<itunes:block>yes</itunes:block>
+Remove the episode from your RSS feed. Removal from Google Podcasts platforms should occur in 3-4 weeks.
+Ask Google to recrawl your feed.
+Update all your feeds when making changes. Only the served feed is used by Google but Google can change the served feed without notice.
+Was this helpful?How can we improve it?YesNoSubmit
+true
+HelpAbout podcasting on GoogleGet your podcast on GoogleMonitor your podcast listening dataManage your podcast and episodes on Google PodcastsTroubleshootingReference
+Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

@@ -6,26 +6,38 @@ Documentation
 Advanced SEO
 Send feedback
 Rich media file best practices
-Google can index most types of pages and files. Here are a few details about some specific rich media types:
+Google can index most
+types of pages and files. Here are a few details about some specific rich media types:
 General best practices
-If you do plan to use rich media on your site, here are some recommendations that can help prevent problems.
-Try to use rich media only where it is needed. We recommend that you use HTML for content and navigation.
-Provide text versions of pages. If you use a non-HTML splash screen on the home page, make sure to include a regular HTML link on that front page to a text-based page where a user (or Googlebot) can navigate throughout your site without the need for rich media.
-In general, search engines are text based. This means that in order to be crawled and indexed, your content needs to be in text format. (Google can now index text content contained in Flash files, but other search engines may not.)
-This doesn't mean that you can't include rich media content such as Flash, Silverlight, or videos on your site; it just means that any content you embed in these files should also be available in text format or it might not be accessible to all search engines. The examples below focus on the most common types of non-text content, but the guidelines are similar for any other types: Provide text equivalents for all non-text files. (Also note that Flash no longer works on most mobile browsers.)
-This will not only increase Googlebot's ability to successfully crawl and index your content; it will also make your content more accessible. Many people, for example users with visual impairments, who use screen readers, or have low bandwidth connections, cannot see images on web pages, and providing text equivalents widens your audience.
+If you do plan to use rich media on your site, here are some recommendations that can help
+prevent problems.
+Try to use rich media only where it is needed. We recommend that you use
+HTML for content and navigation.
+Provide text versions of pages. If you use a non-HTML splash screen on
+the home page, make sure to include a regular HTML link on that front page to a text-based
+page where a user (or Googlebot) can navigate throughout your site without the need for
+rich media.
+In general, search engines are text based. This means that in order to be crawled and
+indexed, your content needs to be in text format.
+This doesn't mean that you can't include rich media content such as Silverlight or videos on
+your site; it just means that any content you embed in these files should also be available in
+text format or it might not be accessible to all search engines. The examples below focus on
+the most common types of non-text content, but the guidelines are similar for any other types:
+provide text equivalents for all non-text files. (Also note that Flash is no longer supported.)
+This will not only increase Googlebot's ability to successfully crawl and index your content;
+it will also make your content more accessible. Many people, for example users with visual
+impairments, who use screen readers, or have low bandwidth connections, cannot see images on
+web pages, and providing text equivalents widens your audience.
 Video
 See video best practices.
 IFrames
-IFrames are sometimes used to display content on web pages. Content displayed via iFrames may not be indexed and available to appear in Google's search results. We recommend that you avoid the use of iFrames to display content. If you do include iFrames, make sure to provide additional text-based links to the content they display, so that Googlebot can crawl and index this content.
+IFrames are sometimes used to display content on web pages. Content displayed via iFrames
+may not be indexed and available to appear in Google's search results. We recommend that you
+avoid the use of iFrames to display content. If you do include iFrames, make sure to provide
+additional text-based links to the content they display, so that Googlebot can crawl and index
+this content.
 Flash
-Flash is no longer supported in most mobile Web browsers, and is planned to be deprecated by Adobe in 2020. We recommend using a different format, such as HTML5
-Googlebot can index almost any text a user can see as they interact with any Flash SWF file on your site, and can use that text to generate a snippet or match query terms in Google searches. Additionally, Googlebot can also discover URLs in SWF files (for example, links to other pages on your site) and follow those links.
-We'll crawl and index this content in the same way that we crawl and index other content on your site—you don't need to take any special action. However, we don't guarantee that we'll crawl or index all the content, Flash or otherwise.
-When a SWF file loads content from some other file—whether it's text, HTML, XML, another SWF, etc.—Google can index this external content too, and associate it with the parent SWF file and any documents that embed it.
-We're continually working to improve our indexing of Flash files, but there are some limitations. For example, we're currently unable to index the bidirectional language content (for example, Hebrew or Arabic) in Flash files.
-Note that while Google can index the content of Flash files, other search engines may not be able to. Therefore, we recommend that you use rich-media technologies like Flash primarily for decorative purposes, and instead use HTML for content and navigation. This makes your site more crawler-friendly, and also makes it accessible to a larger audience including, for example, readers with visual impairments that require the use of screen readers, users of old or non-standard browsers, and users with limited or low-bandwidth connections such as a cellphone or mobile device. An added bonus? Using HTML for navigation will allow users to bookmark content and send direct links in email.
-You could also consider using sIFR (Scalable Inman Flash Replacement). sIFR (an open-source project) lets website owners replace text elements with Flash equivalents. Using this technique, content and navigation is displayed by an embedded Flash object but, because the content is contained in the HTML source, it can be read by non-Flash users (including search engines).
+Flash is no longer supported. We recommend using a different format, such as HTML5.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-02-16 UTC.

@@ -38,8 +38,7 @@ requirements for AMP, see About AMP on Google Search.
 If your AMP page still isn't appearing in Google Search after completing the
 above steps, here are some additional reasons:
 Certain Google Search features might not be available in your country.
-Your site might not be indexed yet. For more information about crawling and indexing, see the Webmaster
-FAQ.
+Your site might not be indexed yet. For more information about crawling and indexing, see the Webmaster FAQ.
 Resources
 To debug validation and cache errors, see the following ampproject.org resources:
 AMP
@@ -49,4 +48,4 @@ do I fix validation errors?
 Debug AMP Cache issues
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-02-16 UTC.

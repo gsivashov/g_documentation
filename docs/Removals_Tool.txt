@@ -4,7 +4,7 @@ Removals ToolTemporarily block search results from your site, or manage SafeSear
 To remove content on sites that you don't own, see this page.
 Removals in Search Console - Google Search Console Training
 Contents:
-Temporarily block URLs on my site
+Temporarily block URLs on your site
 See history of removal requests
 See URLs on your site reported as adult content
 Temporarily block URLs on your site
@@ -74,7 +74,7 @@ Submit additional removal requests for any additional URLs that might point to t
 example.com/mypage
 example.com/MyPage
 example.com/page?1234
-To make your removal permanent, read the next section.
+To make your removal permanent, read the next sections.
 Find the correct URL for blocking
 Here's how to find the correct URL to submit to the tool in order to block it in Search results.
 Web page URL
@@ -141,7 +141,7 @@ Open the Temporary Removals tab in the Removals tool. The history table includes
 URL
 The URL requested. All www/non-www/http/https variations of the URL shown are also included in the request.
 Type
-The type of request issues:
+The type of request:
 Clear cached URL: A cache removal request
 Temporarily remove URL: A temporary removal request
 Status
@@ -167,7 +167,6 @@ Difference between the Removals tool and the Remove Outdated Content tool
 Search Console exposes two tools for removing content from Search results:
 Removals tool (this tool): The page or image still exists, and you want to remove it from Google Search results for a limited period of time (180 days), or the page or image is already removed, but still appears in Google Search result. You must own the property in Search Console to use this tool.
 Remove Outdated Content tool: The page or image no longer exists on the web, or has been updated, but the old result is still returned in Google Search results. A successful request will remove the image or page (if it is no longer available) or update it in Search results (if it has been changed). You do not need to own the website to use this tool.
-In order to remove or block a page or image, you need to provide the correct URLs to Google, as described here:
 Was this helpful?How can we improve it?YesNoSubmit
 true
 Removing informationGet my personal information off GoogleRemove Outdated Content toolRemovals Tool

@@ -193,7 +193,8 @@ However, it is more important to supply fewer but complete and accurate
 recommended properties rather than trying to provide every possible recommended property with
 less complete, badly-formed, or inaccurate data.
 In addition to the properties and objects documented here, Google can make general use of the
-sameAs property and other schema.org
+sameAs property and other
+schema.org
 structured data. Some of these elements may be used to enable future Search features, if they
 are deemed useful.
 Google Search supports structured data in the following formats, unless documented otherwise:
@@ -228,4 +229,4 @@ structured data to a simple HTML site, including where to place structured data 
 how to validate it.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-02-16 UTC.

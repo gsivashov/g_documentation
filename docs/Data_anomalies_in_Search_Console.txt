@@ -8,27 +8,23 @@ These reports have been changed to cover a smaller number of pages, in order to 
 Remove URLs Report
 No issues.
 URL Inspection tool
-2020
-October 14, ongoing
+October 14 2020, ongoing
 The "Request Indexing" feature of the URL Inspection Tool has been disabled in order to make some technical updates. We expect it to be re-enabled in the coming weeks. In the meanwhile, Google continues to find and index content through our regular methods, as covered here.
 Performance reports (Search Results / Discover)
-October 28 (Discover)
+Feb 16, 2021 (Discover)
+Previously, if a viewer clicked into a Web Story on Discover, then continued from there into additional Web Stories, only the first Web Story was credited with an impression and click. From this date onward, any additional Web Stories that were reached from the first Web Story in Discover will also be credited with an impression and click in the Performance report for Discover. Therefore, you might see an increase in your Discover data.
+October 28 2020 (Discover)
 A previous issue in which some Discover data were mis-classified as video in the Performance report has been fixed. Because of this, you may see a drop in your Discover report's video appearance statistics. This mis-classification did not affect Discover results for users, only the data reporting.
-October 6, ongoing (Discover)
+October 6, 2020 ongoing (Discover)
 Following the launch of the Stories carousel feature on Discover, you might see a significant increase in Web Story stats on Discover reporting for your site.
-September 25-28 (Discover)
+September 25-28 2020 (Discover)
 Web Stories were shown less often to Discover users during this period, so you will see a drop in impressions and clicks for this type in the Performance report for Discover.
-May 12-15 (Discover)
+May 12-15 2020 (Discover)
 Due to internal logging issues, you might see a significant drop in Discover reporting for your site. Please note that this did not reflect any user-facing changes for your site, only the data reporting in Search Console.
-2019
-December 8-13 (Discover)
+December 8-13 2019 (Discover)
 Because of an internal issue, you will see a data drop in the Performance report for Discover during this period. This issue has been fixed. Please note that this does not reflect any user-facing changes for your site, only the data reporting in Search Console.
-November 14-19
+November 14-19 2019
 Some image click data was dropped; as a result, you might see a dip in both click rate and CTR during this period. The issue has been fixed. This issue affected only Search Console reporting, not your performance on Google Search.
-June 5-7
-Some image search statistics were not captured during this period due to an internal issue. Because of this, you may see a drop in your image search statistics during this period. The change did not affect user Search results, only the data reporting.
-February 6
-All data from January 10, 2018 onward was converted to use canonical URLs.
 Crawl Stats Report
 January 16, 2021 onward
 The crawl stats report has increased its reporting coverage for additional types of crawls. As a result, you may see a jump in the number of crawls reported for your site. This does not reflect additional crawling of your site, only improved reporting.
@@ -51,9 +47,13 @@ August 18, 2020 onward
 The report has been updated to include Signed Exchange related issues. This change does not affect Search results, only the data reporting in Search Console. Read more.
 April 12, 2020 onward
 The report has been changed to cover a smaller number of pages, in order to provide better performance in Search Console. Because of this, you might see a decrease in the number of items and pages tracked in the report. This change does not affect Search results, only the data reporting in Search Console.
-January 23, 2019
-Some users may see elevated error levels of type "Crawl Issue" on their AMP URLs due to a processing error on our side. The issue is now fixed and error counts should return to their actual levels within few days
 Rich result reports
+March 11, 2021
+Job posting
+Search Console has changed the requirements for the Education, Experience, and ExperienceInPlaceOfEducation properties of job posting markup. Therefore you may see an increase in warnings for Job Posting instances on your property. See more details about the updated requirements in the Job Posting documentation.
+March 2, 2021
+Q&A and FAQ
+Search Console now checks the validity of FAQ and Q&A structured data that is below the root entity level. Previously, we only checked entities at the root level. Therefore, you may see an increase in valid/warning/invalid FAQ and Q&A items to reflect an accurate count of root and nested entities that we found on your site.
 February 1, 2021
 The data-vocabulary.org format is no longer supported by Google for rich results. All warnings about usage of data-vocabulary.org structured data will now appear as errors in your rich results reports. Therefore you might see a decrease in warnings and increase in errors in your reports. There is no penalty for using data-vocabulary.org data, but it will not be used to generate rich results.
 August 26, 2020
@@ -86,12 +86,9 @@ Search Console now reports more specific error types of Job Posting errors. Ther
 October 16, 2019 onward
 Product
 Search Console improved its error detection pipeline for Product structured data. Product items are now validated wherever they occur in a structured data tree rather than just at the top level. This may cause errors or warnings to appear on pages that were previously shown as valid.
-September 26, 2019 onward
-Breadcrumb
-Google fixed an error in Breadcrumb validation (the last crumb in the chain does not, in fact, require an explicit URL target). As a result, you may see a reduction in errors in your Breadcrumbs report going forward.
-August 13, 2019 onward
-Product, Sitelink Searchbox, Unparsable types
-Some new issue types have been added to these rich result reports. The ability to report on these issues is new; the issues reported may or may not be new.
+Core Web Vitals
+February 17, 2021
+The metrics defining the boundaries for LCP, FID, CLS, which used to be < (less than), are now defined as <= (less than or equal to). Therefore you might see a change in statuses (for the better) in this report.
 Was this helpful?How can we improve it?YesNoSubmit
 true
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

@@ -11,6 +11,8 @@ indexing and ranking. Historically, the index primarily used the desktop version
 when evaluating the relevance of a page to a user's query. Since the majority of users now access
 Google Search with a mobile device, Googlebot primarily crawls and indexes pages with the
 smartphone agent going forward.
+While it's not required to have a mobile version of your pages to have your
+content included in Google's Search results, it is very strongly recommended.
 Starting July 1, 2019, mobile-first indexing is enabled by default for all new websites (new to
 the web or previously unknown to Google Search). For older or existing websites, we continue to
 monitor and evaluate pages based on the best practices detailed in this guide. We inform site
@@ -344,4 +346,4 @@ We are
 experimenting with making the index mobile-first.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-03-11 UTC.

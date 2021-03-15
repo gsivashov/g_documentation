@@ -25,7 +25,7 @@ Each entry in a video sitemap includes a set of required, recommended, or option
 Google might use text on the video landing page rather than the text you supply in your sitemap, if the page text is deemed more useful than the information in the sitemap.
 Google can't guarantee when or if your videos will be indexed, as Google relies on complex indexing algorithms.
 If Google can't discover video content at the URL you provide, the sitemap entry is ignored.
-Each sitemap file that you provide must have no more than 50,000 URL elements. If you have more than 50,000 videos, you can submit multiple sitemaps and a sitemap index file. You can't nest sitemap index files. Keep in mind that if you are adding optional tags, you may hit the 50MB uncompressed limit before you hit the 50,000 video limit.
+Each sitemap file that you provide must have no more than 50,000 URL elements. If you have more than 50,000 videos, you can submit multiple sitemaps and a sitemap index file. You can't nest sitemap index files. Keep in mind that if you are adding optional tags, you may reach the 50MB uncompressed limit before you reach the 50,000 video limit.
 Google must be able to access the source file or player (that is, the file or player can't be blocked by robots.txt, require a login, or be otherwise inaccessible to Googlebot). Metafiles that require a download of the source via streaming protocols are not supported.
 All files must be accessible to Googlebot. If you want to prevent spammers from accessing your video content at the <player_loc> or <content_loc> URLs, verify that any bots accessing your server are really Googlebot.
 Make sure that your robots.txt file isn't blocking any of the items (including the host page URL, the video URL, and the thumbnail URL) included in each sitemap entry. More information about robots.txt.
@@ -261,4 +261,4 @@ type [Required] The purchase option. Allowed values are rent, purchase, package,
 The full mRSS specification contains many more optional tags, best practices, and examples. Once you have an mRSS feed, you can test and submit it just like any other sitemap.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-26 UTC.
+Last updated 2021-03-03 UTC.

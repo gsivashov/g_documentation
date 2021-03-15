@@ -6,28 +6,47 @@ Documentation
 Advanced SEO
 Send feedback
 Define a favicon to show in search results
-If your site has a favicon, it can be included in Google Search results for your site:
+If your site has a favicon,
+it can be included in Google Search results for your site.
 Implementation
-Here is how to make your site eligible for a favicon in search results:
-Create a favicon that follows the guidelines below.
-Add a <link> tag to the header of your home page with the following syntax:
+Here's how to make your site eligible for a favicon in search results:
+Create a favicon that follows the guidelines.
+Add a <link> tag to the header of your home page with the following
+syntax:
 <link rel="shortcut icon" href="/path/to/favicon.ico">
+Attributes
 rel
-Can be any of the following strings:
-"shortcut icon"
-"icon"
-"apple-touch-icon"
-"apple-touch-icon-precomposed"
+Set the rel attribute to one of the following strings:
+shortcut icon
+icon
+apple-touch-icon
+apple-touch-icon-precomposed
 href
-The URL of the favicon. Can be a relative path (/smile.ico) or absolute path (https://example.com/smile.ico), but must be in the same domain as the home page.
-Google will look for and update your favicon whenever it crawls your home page. If you make changes to your favicon and want to inform Google about the changes, you can request indexing of your site's homepage. Updates can take a few days or longer to appear in search results.
+The URL of the favicon. The URL can be a relative path (/smile.ico) or
+absolute path (https://example.com/smile.ico). The URL must be in the same
+domain as the home page.
+Google will look for and update your favicon whenever it crawls your home page. If you
+make changes to your favicon and want to inform Google about the changes, you can
+request indexing of your
+site's homepage. Updates can take a few days or longer to appear in search results.
 Guidelines
-You must follow these guidelines to be eligible for a favicon next to your search results. Note that a favicon isn't guaranteed in search results even if all guidelines are met.
-Both the favicon file and the home page must be crawlable by Google (that is, they cannot be blocked to Google).
-Your favicon should be a visual representation of your website's brand, in order to help users quickly identify your site when they scan through search results.
-Your favicon should be a multiple of 48px square, for example: 48x48px, 96x96px, 144x144px and so on. SVG files, of course, do not have a specific size. Any valid favicon format is supported. Google will rescale your image to 16x16px for use in search results, so make sure that it looks good at that resolution. Note: do not provide a 16x16px favicon.
+You must follow these guidelines to be eligible for a favicon next to your search results.
+Note that a favicon isn't guaranteed in search results, even if all guidelines are met.
+Both the favicon file and the home page must be crawlable by Google (that is, they cannot
+be blocked
+to Google).
+Your favicon should be a visual representation of your website's brand, in order to help
+users quickly identify your site when they scan through search results.
+Your favicon should be a multiple of 48px square, for example: 48x48px, 96x96px, 144x144px
+and so on. SVG files, of course, do not have a specific size. Any
+valid
+favicon format is supported. Google will rescale your image to 16x16px for use in
+search results, so make sure that it looks good at that resolution.
+Caution: Don't provide a 16x16px favicon.
 The favicon URL should be stable (don't change the URL frequently).
-Google will not show any favicon that it deems inappropriate, including pornography or hate symbols (for example, swastikas). If this type of imagery is discovered within a favicon, Google will replace it with a default icon.
+Google will not show any favicon that it deems inappropriate, including pornography or
+hate symbols (for example, swastikas). If this type of imagery is discovered within a favicon,
+Google will replace it with a default icon.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-03-11 UTC.

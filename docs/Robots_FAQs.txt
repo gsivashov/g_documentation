@@ -8,123 +8,145 @@ Send feedback
 Robots FAQs
 Have we missed an FAQ? Feel free to post in our
 Google Search Central Help Community
-for more help!
+for more help.
 General robots questions
 Does my website need a robots.txt file?
-No. When Googlebot visits a website, we first ask for permission to crawl by attempting to
-retrieve the robots.txt file. A website without a robots.txt file, robots meta tags or
-X-Robots-Tag HTTP headers will generally be crawled and indexed normally.
-Which method should I use?
+No. When Googlebot visits a website, we first ask for permission to crawl by
+attempting to retrieve the robots.txt file. A website without a robots.txt file,
+robots meta tags, or X-Robots-Tag HTTP headers will
+generally be crawled and indexed normally.
+Which method should I use to block crawlers?
 It depends. In short, there are good reasons to use each of these methods:
-robots.txt: Use it if crawling of your content is causing issues on your server. For example,
-you may want to disallow crawling of infinite calendar scripts. You should not use the
-robots.txt to block private content (use server-side authentication instead), or
-handle canonicalization. If
-you must be certain that a URL is not indexed, use the robots meta tag or
+robots.txt: Use it if crawling of your content is causing issues on
+your server. For example, you may want to disallow crawling of infinite calendar
+scripts. You should not use the robots.txt to block private content (use server-side
+authentication instead), or
+handle canonicalization.
+To make sure that a URL is not indexed, use the robots meta tag or
 X-Robots-Tag HTTP header instead.
-robots meta tag: Use it if you need to control how an individual HTML page is shown in search
-results (or to make sure that it's not shown).
-X-Robots-Tag HTTP header: Use it if you need to control how non-HTML content is
-shown in search results (or to make sure that it's not shown).
-Can I use these methods to remove someone else's site?
-No. These methods are only valid for sites where you can modify the code or add files. If you
-want to remove content from a third-party site, you need to contact the website owner to have
-them remove the content.
+robots meta tag: Use it if you need to control how an individual
+HTML page is shown in search results (or to make sure that it's not shown).
+X-Robots-Tag HTTP header: Use it if you
+need to control how non-HTML content is shown in search results (or to make sure
+that it's not shown).
+Can I use these methods to remove someone else's site from search results?
+No. These methods are only applicable to sites where you can modify the code or add
+files. Learn more about how to
+remove information from Google.
 How can I slow down Google's crawling of my website?
 You can generally adjust the
-crawl rate setting in your
-Google Search Console account.
+crawl rate setting in
+your Google Search Console
+account.
 Robots.txt questions
-I use the same robots.txt for multiple websites. Can I use a full URL instead of a relative path?
-No. The directives in the robots.txt file (with exception of Sitemap:) are
-only valid for relative paths.
+I use the same robots.txt for multiple websites. Can I use a
+full URL instead of a relative path?
+No. The directives in the robots.txt file (with exception of
+Sitemap:code>) are only valid for relative paths.
 Can I place the robots.txt file in a subdirectory?
 No. The file must be placed in the topmost directory of the website.
-I want to block a private folder. Can I prevent other people from reading my
-robots.txt file?
-No. The robots.txt file may be read by various users. If folders or filenames of content should
-not be public, they should not be listed in the robots.txt file. It is not recommended to serve
-different robots.txt files based on the user agent or other attributes.
-Do I have to include an allow directive to allow crawling?
-No, you do not need to include an allow directive. The allow directive
-is used to override disallow directives in the same robots.txt file.
+I want to block a private folder. Can I prevent other people
+from reading my robots.txt file?
+No. The robots.txt file may be read by various users. If folders or filenames of
+content should not be public, they should not be listed in the robots.txt file. It is
+not recommended to serve different robots.txt files based on the user-agent or other
+attributes.
+Do I have to include an allow
+directive to allow crawling?
+No, you do not need to include an allow directive. The
+allow directive is used to override
+disallow directives in the same robots.txt file.
 What happens if I have a mistake in my robots.txt file or use an unsupported directive?
-Web-crawlers are generally very flexible and typically will not be swayed by minor mistakes in
-the robots.txt file. In general, the worst that can happen is that incorrect / unsupported
-directives will be ignored. Bear in mind though that Google can't read minds when interpreting
-a robots.txt file; we have to interpret the robots.txt file we fetched. That said, if you are
-aware of problems in your robots.txt file, they're usually easy to fix.
+Web crawlers are generally very flexible and typically will not be swayed by minor
+mistakes in the robots.txt file. In general, the worst that can happen is that
+incorrect / unsupported directives will be ignored. Bear in mind though that Google
+can't read minds when interpreting a robots.txt file; we have to interpret the
+robots.txt file we fetched. That said, if you are aware of problems in your robots.txt
+file, they're usually easy to fix.
 What program should I use to create a robots.txt file?
-You can use anything that creates a valid text file. Common programs used to create robots.txt
-files are Notepad, TextEdit, vi, or emacs.
+You can use anything that creates a valid text file. Common programs used to create
+robots.txt files are Notepad, TextEdit, vi, or emacs.
 Read more about creating robots.txt files.
 After creating your file, validate it using the
 robots.txt tester.
-If I block Google from crawling a page using a robots.txt disallow directive, will
-it disappear from search results?
+If I block Google from crawling a page using a robots.txt
+disallow directive, will it disappear from search results?
 Blocking Google from crawling a page is likely to remove the page from Google's index.
-However, the Disallow directive does not guarantee that a page will not appear in
-results: Google may still decide, based on external information such as incoming links, that it
-is relevant. If you wish to explicitly block a page from being indexed, you should instead use
-the noindex robots meta tag or X-Robots-Tag HTTP header. In this case,
-you should not disallow the page in robots.txt, because the page must be crawled in order for
-the tag to be seen and obeyed.
+However, robots.txt Disallow does not guarantee that a page
+will not appear in results: Google may still decide, based on external information
+such as incoming links, that it is relevant. If you wish to explicitly block a page
+from being indexed, you should instead use the noindex
+robots meta tag or X-Robots-Tag HTTP header. In this case,
+you should not disallow the page in robots.txt, because the page must be crawled in
+order for the tag to be seen and obeyed.
 How long will it take for changes in my robots.txt file to affect my search results?
-First, the cache of the robots.txt file must be refreshed (we generally cache the contents for
-up to one day). Even after finding the change, crawling and indexing is a complicated process
-that can sometimes take quite some time for individual URLs, so it's impossible to give an exact
-timeline. Also, keep in mind that even if your robots.txt file is disallowing access to a URL,
-that URL may remain visible in search results despite that fact that we can't crawl it. If you
-wish to expedite removal of the pages you've blocked from Google, please submit a removal
-request via Google Search Console.
+First, the cache of the robots.txt file must be refreshed (we generally cache the
+contents for up to one day). Even after finding the change, crawling and indexing is a
+complicated process that can sometimes take quite some time for individual URLs, so
+it's impossible to give an exact timeline. Also, keep in mind that even if your
+robots.txt file is disallowing access to a URL, that URL may remain visible in search
+results despite that fact that we can't crawl it. If you wish to expedite removal of
+the pages you've blocked from Google, submit a removal request via
+Google Search Console.
 How can I temporarily suspend all crawling of my website?
-You can temporarily suspend all crawling by returning a HTTP result code of 503 for all URLs,
-including the robots.txt file. The robots.txt file will be retried periodically until it can be
-accessed again. We do not recommend changing your robots.txt file to disallow crawling.
+You can temporarily suspend all crawling by returning a HTTP result code of 503 for
+all URLs, including the robots.txt file. The robots.txt file will be retried
+periodically until it can be accessed again. We do not recommend changing your
+robots.txt file to disallow crawling.
 My server is not case-sensitive. How can I disallow crawling of some folders completely?
-Directives in the robots.txt file are case-sensitive. In this case, it is recommended to make
-sure that only one version of the URL is indexed using
+Directives in the robots.txt file are case-sensitive. In this case, it is recommended
+to make sure that only one version of the URL is indexed using
 canonicalization methods.
-Doing this allows you to simplify your robots.txt file. Should this not be possible, we
-recommended that you list the common combinations of the folder name, or to shorten it as much
-as possible, using only the first few characters instead of the full name. For instance, instead
-of listing all upper and lower-case permutations of /MyPrivateFolder, you could
-list the permutations of "/MyP" (if you are certain that no other, crawlable URLs exist with
-those first characters). Alternately, it may make sense to use a robots meta tag or
-X-Robots-Tag HTTP header instead, if crawling is not an issue.
-I return 403 Forbidden for all URLs, including the robots.txt file. Why is the site
-still being crawled?
-The HTTP result code 403—as all other 4xx HTTP result codes—is seen as a sign that the
-robots.txt file does not exist. Because of this, crawlers will generally assume that they can
-crawl all URLs of the website. In order to block crawling of the website, the robots.txt must be
-returned normally (with a 200 "OK" HTTP result code) with an appropriate disallow directive in it.
+Doing this allows you to have fewer lines in your robots.txt file, so it's easier for
+you to manage it. Should this not be possible, we recommended that you list the common
+combinations of the folder name, or to shorten it as much as possible, using only the
+first few characters instead of the full name. For instance, instead of listing all
+upper and lower-case permutations of /MyPrivateFolder, you
+could list the permutations of "/MyP" (if you are certain that no other, crawlable
+URLs exist with those first characters). Alternately, it may make sense to use a
+robots meta tag or X-Robots-Tag HTTP header instead, if
+crawling is not an issue.
+I return 403 Forbidden for all URLs, including the robots.txt
+file. Why is the site still being crawled?
+The 403 Forbidden HTTP status code (and all other 4xx HTTP
+status codes) is interpreted as the robots.txt file does not exist. This means that
+crawlers will generally assume that they can crawl all URLs of the website. In order
+to block crawling of the website, the robots.txt must be returned with a
+200 OK HTTP status code, and must contain an appropriate
+disallow rule.
 Robots meta tag questions
 Is the robots meta tag a replacement for the robots.txt file?
-No. The robots.txt file controls which pages are accessed. The robots meta tag controls whether
-a page is indexed, but to see this tag the page needs to be crawled. If crawling a page is
-problematic (for example, if the page causes a high load on the server), you should use the
-robots.txt file. If it is only a matter of whether or not a page is shown in search results, you
-can use the robots meta tag.
+No. The robots.txt file controls which pages are accessed. The robots meta tag
+controls whether a page is indexed, but to see this tag the page needs to be crawled.
+If crawling a page is problematic (for example, if the page causes a high load on the
+server), you should use the robots.txt file. If it is only a matter of whether or not
+a page is shown in search results, you can use the robots meta tag.
 Can the robots meta tag be used to block a part of a page from being indexed?
 No, the robots meta tag is a page-level setting.
 Can I use the robots meta tag outside of a <head> section?
-No, the robots meta tag currently needs to be in the <head> section of a page.
+No, the robots meta tag needs to be in the <head>
+section of a page.
 Does the robots meta tag disallow crawling?
-No. Even if the robots meta tag currently says noindex, we'll need to recrawl that
-URL occasionally to check if the meta tag has changed.
-How does the nofollow robots meta tag compare to the rel="nofollow"
-link attribute?
-The nofollow robots meta tag applies to all links on a page. The
-rel="nofollow" link attribute only applies to specific links on a page. For more
-information on the rel="nofollow" link attribute, please see our Help Center
-articles on user-generated spam
-and the rel="nofollow".
+No. Even if the robots meta tag currently says noindex,
+we'll need to recrawl that URL occasionally to check if the meta tag has changed.
+How does the nofollow robots meta tag compare to the
+rel="nofollow" link attribute?
+The nofollow robots meta tag applies to all links on a
+page. The rel="nofollow" link attribute only applies to
+specific links on a page. For more information on the
+rel="nofollow" link attribute, see our documentation on
+user-generated spam
+and the
+rel="nofollow".
 X-Robots-Tag HTTP header questions
 How can I check the X-Robots-Tag for a URL?
 A simple way to view the server headers is to use a web-based
-server header checker or to
-use the Fetch as Googlebot
+server header checker
+or to use the URL Inspection Tool
 feature in Google Search Console.
+Can't find the answer?
+If you can't find the answer to your question on this page, check out Google's help resources for site owners.
+We also provide official Google Search Central help communities in the following languages: English • Deutsch • Español • Français • Italiano • Nederlands • Polski • Português • Türkçe • Русский • العربية • 中文（简体） • 日本語 • 한국어
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-03-03 UTC.

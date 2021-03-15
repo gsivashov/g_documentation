@@ -6,21 +6,44 @@ Documentation
 Advanced SEO
 Send feedback
 AMP on Google Search guidelines
-All of our guidelines for making a site Google-friendly also apply to AMP. This document covers additional guidelines that are specific to AMP on Google Search. To learn more about AMP on Google Search, read our developer guide.
-Your AMP page must follow the AMP HTML specification. If you're just getting started, learn how to create your first AMP HTML page.
-Users must be able to experience the same content and complete the same actions on AMP pages as on the corresponding canonical pages, where possible.
+All of our guidelines
+for making a site Google-friendly also apply to AMP. This document covers additional
+guidelines that are specific to AMP on Google Search. To learn more about AMP on Google
+Search, read our developer guide.
+Your AMP page must follow the AMP
+HTML specification. If you're just getting started, learn how to
+create
+your first AMP HTML page.
+Users must be able to experience the same content and complete the same actions on AMP
+pages as on the corresponding canonical pages, where possible.
 Your AMP URL scheme should make sense to the user.
-For instance, if your canonical page is example.com/giraffes, you should host the AMP somewhere like amp.example.com/giraffes or example.com/amp/giraffes, rather than at test.com/giraffes. This is because when users click a link to your AMP page from Google Search, the AMP URL is visible to the user in the browser (like any web page), and showing a URL that is completely unrelated to your main website can be confusing to users.
-Your AMP page must be valid so that your pages work as expected for users and can be included in AMP-related features. Pages with invalid AMP will not be eligible for some Search features.
-If you add structured data to your page, make sure that you follow our structured data policies.
+For instance, if your canonical page is example.com/giraffes,
+you should host the AMP somewhere like amp.example.com/giraffes or
+example.com/amp/giraffes, rather than at test.com/giraffes.
+This is because when users click a link to your AMP page from Google Search, the AMP URL
+is visible to the user in the browser (like any web page), and showing a URL that is
+completely unrelated to your main website can be confusing to users.
+Your AMP page must be valid
+so that your pages work as expected for users and can be included in AMP-related features.
+Pages with invalid AMP will not be eligible for some Search features.
+If you add structured data to your page, make sure that you follow our
+structured data policies.
 FAQs
 Why aren't my AMP-specific features appearing on tablet or desktop?
-AMP-specific features on Google, such as the Top Stories carousel, are currently available only on mobile. Although AMP itself works on all device types, including desktop, there are currently no plans to expand AMP-specific features to non-mobile platforms.
+AMP-specific features on Google, such as the Top Stories carousel, are currently available
+only on mobile. Although AMP itself works on all device types, including desktop, there are
+currently no plans to expand AMP-specific features to non-mobile platforms.
 Are AMP pages mobile-only?
 No. Since AMP pages can be viewed on all device types,
-build your AMP pages with responsive design.
+build your AMP pages with
+responsive
+design.
 How does AMP look on desktop?
-AMP pages display equally well on both mobile and desktop screens. If AMP supports all the functionality that you need, you might consider creating your pages as standalone AMP pages to support both desktop and mobile visitors for the same page. However, AMP on desktop doesn't get search-specific features in Google Search results.
+AMP pages display equally well on both mobile and desktop screens. If AMP supports all the
+functionality that you need, you might consider creating your pages as
+standalone
+AMP pages to support both desktop and mobile visitors for the same page. However, AMP
+on desktop doesn't get search-specific features in Google Search results.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-02-16 UTC.

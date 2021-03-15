@@ -10,9 +10,9 @@ A breadcrumb trail on a page indicates the page's position in the site hierarchy
 help users understand and explore a site effectively. A user can navigate all the way up in
 the site hierarchy, one level at a time, by starting from the last breadcrumb in the
 breadcrumb trail.
-As of January 29, 2021, data-vocabulary.org markup will no longer be
-eligible for Google rich result features. To be eligible after January 29, 2021, you
-need to replace data-vocabulary.org markup with schema.org markup. Learn more about
+As of January 29, 2021, data-vocabulary.org markup is no longer
+eligible for Google rich result features. To be eligible, replace data-vocabulary.org markup
+with schema.org markup. Learn more about
 sunsetting support for data-vocabulary.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
@@ -48,12 +48,6 @@ search queries. While each search may return the same web page, the breadcrumb
 categorizes the content within the context of the Google Search query. The page
 ancillaryjustice.html might display the following breadcrumb trails
 depending upon the search context.
-A common way to implement breadcrumbs is to use the path part of the URL as the breadcrumb
-trail. Keep in mind that some parts of the URL path don't help people understand how the page
-fits in your website. For example, given the URL
-"https://example.com/pages/books/catcher_in_the_rye.html", "pages" doesn't add any information,
-and neither does the top level element "example.com". We recommend providing breadcrumbs that
-represent a typical user path to that web page, instead of mirroring the URL structure.
 Single breadcrumb trail
 A search query for a year and genre-based award, "2014 Nebula Award best novel", may generate
 the following breadcrumb:
@@ -565,6 +559,12 @@ may be using techniques that are outside our structured data guidelines, your si
 a manual action.
 Webmaster guidelines
 General structured data guidelines
+We recommend providing breadcrumbs that represent a typical user path to a page, instead of
+mirroring the URL structure. Some parts of the URL path don't help people understand how the
+page fits in your website. For example, given the URL
+https://example.com/pages/books/catcher_in_the_rye.html, the pages
+path in the URL doesn't add any information, and neither does the top level element
+example.com.
 Structured data type definitions
 To specify breadcrumbs, define an BreadcrumbList that contains at least two
 ListItems. You must include the required properties for your content to be eligible
@@ -677,4 +677,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-03-10 UTC.

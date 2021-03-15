@@ -21,4 +21,4 @@ Google Discover and your website
 Learn how Google Discover is different from Google Search, how content appears on Discover, and how to monitor your perforamnce.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-11-12 UTC.
+Last updated 2021-02-24 UTC.

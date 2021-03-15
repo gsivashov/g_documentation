@@ -7,10 +7,16 @@ Advanced SEO
 Send feedback
 Submit URLs to Google
 The simplest way to submit your new and updated URLs is to
-verify your site ownership on Search Console. After you verify, use the
+verify your site ownership
+on Search Console. After you verify, use the
 Sitemaps report to see
 which sitemaps were processed for your site, any processing errors, or to submit a new sitemap
-for your site. The video below explains what a sitemap is, whether you need one or not, and how to submit a sitemap and track its status using Search Console..
+for your site.
+Are you using a hosted content management platform (for example, Blogger or
+Wordpress)? In most cases, the platform submits your new content to search engines automatically.
+Check your platform's support articles.
+The video below explains what a sitemap is, whether you need one or not, and how to submit
+a sitemap and track its status using Search Console.
 Notify us of changes
 When you make changes to your structured data and you want to notify our
 systems ahead of our regular schedule, you can resubmit your sitemap to Search
@@ -31,4 +37,4 @@ Learn more about how to build
 a sitemap and make it available to Google.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-03-11 UTC.

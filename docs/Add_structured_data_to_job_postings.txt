@@ -94,7 +94,7 @@ Here's an example of an individual job posting using JSON-LD code.
 "address": {
 "@type": "PostalAddress",
 "streetAddress": "1600 Amphitheatre Pkwy",
-"addressLocality": ", Mountain View",
+"addressLocality": "Mountain View",
 "addressRegion": "CA",
 "postalCode": "94043",
 "addressCountry": "US"
@@ -143,7 +143,7 @@ Here's an example of an individual job posting using JSON-LD code.
 "address": {
 "@type": "PostalAddress",
 "streetAddress": "1600 Amphitheatre Pkwy",
-"addressLocality": ", Mountain View",
+"addressLocality": "Mountain View",
 "addressRegion": "CA",
 "postalCode": "94043",
 "addressCountry": "US"
@@ -692,6 +692,165 @@ Google continues to support TELECOMMUTE as an
 additionalProperty of jobLocation. While we don't have immediate
 plans to deprecate additionalProperty, we encourage the use of the new schema
 where possible.
+Education and experience properties (beta)
+In addition to the recommended JobPosting properties, you can add the following
+beta properties to add more information about the education and experience of a job posting.
+Since we are still developing how we are using this information, you may not see any
+appearance or effect in Google Search right away.
+Show example
+Here's an example of a job posting that requires a bachelor’s degree and three years of experience.
+<html>
+<head>
+<title>Software Engineer</title>
+<script type="application/ld+json">
+{
+"@context" : "https://schema.org/",
+"@type" : "JobPosting",
+"title" : "Software Engineer",
+"educationRequirements" : {
+"@type" : "EducationalOccupationalCredential",
+"credentialCategory" : "bachelor degree"
+},
+"experienceRequirements" : {
+"@type" : "OccupationalExperienceRequirements",
+"monthsOfExperience" : "36"
+},
+"description" : "<p>Google aspires to be an organization that reflects the globally diverse audience that our products and technology serve. We believe that in addition to hiring the best talent, a diversity of perspectives, ideas and cultures leads to the creation of better products and services.</p>",
+"identifier": {
+"@type": "PropertyValue",
+"name": "Google",
+"value": "1234567"
+},
+"datePosted" : "2017-01-18",
+"validThrough" : "2017-03-18T00:00",
+"employmentType" : "CONTRACTOR",
+"hiringOrganization" : {
+"@type" : "Organization",
+"name" : "Google",
+"sameAs" : "http://www.google.com",
+"logo" : "http://www.example.com/images/logo.png"
+},
+"jobLocation": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "1600 Amphitheatre Pkwy",
+"addressLocality": ", Mountain View",
+"addressRegion": "CA",
+"postalCode": "94043",
+"addressCountry": "US"
+}
+},
+"baseSalary": {
+"@type": "MonetaryAmount",
+"currency": "USD",
+"value": {
+"@type": "QuantitativeValue",
+"value": 40.00,
+"unitText": "HOUR"
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head>
+<title>Software Engineer</title>
+<script type="application/ld+json">
+{
+"@context" : "https://schema.org/",
+"@type" : "JobPosting",
+"title" : "Software Engineer",
+"educationRequirements" : {
+"@type" : "EducationalOccupationalCredential",
+"credentialCategory" : "bachelor degree"
+},
+"experienceRequirements" : {
+"@type" : "OccupationalExperienceRequirements",
+"monthsOfExperience" : "36"
+},
+"description" : "<p>Google aspires to be an organization that reflects the globally diverse audience that our products and technology serve. We believe that in addition to hiring the best talent, a diversity of perspectives, ideas and cultures leads to the creation of better products and services.</p>",
+"identifier": {
+"@type": "PropertyValue",
+"name": "Google",
+"value": "1234567"
+},
+"datePosted" : "2017-01-18",
+"validThrough" : "2017-03-18T00:00",
+"employmentType" : "CONTRACTOR",
+"hiringOrganization" : {
+"@type" : "Organization",
+"name" : "Google",
+"sameAs" : "http://www.google.com",
+"logo" : "http://www.example.com/images/logo.png"
+},
+"jobLocation": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "1600 Amphitheatre Pkwy",
+"addressLocality": ", Mountain View",
+"addressRegion": "CA",
+"postalCode": "94043",
+"addressCountry": "US"
+}
+},
+"baseSalary": {
+"@type": "MonetaryAmount",
+"currency": "USD",
+"value": {
+"@type": "QuantitativeValue",
+"value": 40.00,
+"unitText": "HOUR"
+}
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Recommended properties (beta)
+educationRequirements
+EducationalOccupationalCredential or
+Text
+The educational background needed for the job posting. If there aren't any educational
+requirements, use the no requirements value. If you don't know the educational
+requirements, don't add this property.
+educationRequirements.credentialCategory
+EducationalOccupationalCredential or
+Text
+The level of education that's required for the job posting. This property can be repeated
+in an array. Use one of the following values:
+high school
+associate degree
+bachelor degree
+professional certificate
+postgraduate degree
+The list of values may not apply to all countries; you can pick the closest equivalent.
+In addition to adding this property, continue to describe the education requirements in
+the description property.
+experienceRequirements
+OccupationalExperienceRequirements or
+Text
+The experience that's required for the job posting. If there aren't any
+requirements, use the no requirements value.
+In addition to adding this property, continue to describe the experience requirements in
+the description property.
+experienceRequirements.monthsOfExperience
+Number
+The minimum number of months of experience that are required for the job posting.
+If there are more complex experience requirements (for example, 12 months as a chef or 24
+months as a sous chef), use the minimum number that's required, assuming that all other
+requirements are met.
+experienceInPlaceOfEducation
+Boolean
+If set to true, this property indicates whether a job posting will accept experience in
+place of its formal educational qualifications. If set to true, you must include both the
+experienceRequirements and educationRequirements properties.
 Troubleshooting
 Important: Google does not guarantee that features that consume structured data will
 show up in search results. For a list of common reasons why Google may not
@@ -735,7 +894,7 @@ content that doesn't match the structured data on the page. For example, the tit
 the page doesn't match the value listed for the title property. There may also be
 spammy content, like click-baity titles and descriptions, the job seems to be fake, or the
 job posting isn't representative of the actual job. For a full
-list of examples, see the examples in our content guidelines.
+list of examples, see the examples in our content policies.
 You may have received this Search Console message: "Structured data policy violation -
 Content on pages found to be different than structured data on the page".
 done Fix the issue
@@ -877,4 +1036,4 @@ North America: Available in the entire region
 Sub-Saharan Africa: Available in the entire region
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-29 UTC.
+Last updated 2021-03-15 UTC.

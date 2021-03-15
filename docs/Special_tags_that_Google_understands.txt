@@ -6,8 +6,13 @@ Documentation
 Advanced SEO
 Send feedback
 Special tags that Google understands
-Google supports both page-level meta-tags as well as inline directives to help control how your site's pages will appear in Search.
-Page-level meta tags are a great way for website owners to provide search engines with information about their sites. Meta tags can be used to provide information to all sorts of clients, and each system processes only the meta tags they understand and ignores the rest. Meta tags are added to the <head> section of your HTML page and generally look like this:
+Google supports both page-level meta-tags and inline directives to help control how your
+site's pages will appear in Google Search.
+Page-level meta tags are a great way for website owners to provide search engines with
+information about their sites. Meta tags can be used to provide information to all sorts of
+clients, and each system processes only the meta tags they understand and ignores the rest.
+Meta tags are added to the <head> section of your HTML page and generally
+look like this:
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,55 +22,87 @@ Page-level meta tags are a great way for website owners to provide search engine
 <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="/>
 <title>Example Books - high-quality used books for children</title>
 <meta name="robots" content="noindex,nofollow">
+</head>
+</html>
 Google understands the following meta tags (this list is not exhaustive):
+Meta tags that Google understands
 <meta name="description" content="A description of the page" />
-Use this tag to provide a short description of the page. In some situations this description is used as a part of the snippet shown in the search results. More information
+Use this tag to provide a short description of the page. In some situations, this
+description is used in the
+snippet shown in search
+results.
 <meta name="robots" content="..., ..." />
 <meta name="googlebot" content="..., ..." />
 These meta tags control the behavior of search engine crawling and indexing.
-The <meta name="robots"> tag applies to all search engines, while the <meta name="googlebot"> tag is specific to Google.
-In the case of conflicting robots (or googlebot) meta tags, the more restrictive tag applies. For example, if a page has both max-snippet:50 and nosnippet tags, the nosnippet tag will apply.
-The default values are "index, follow" and do not need to be specified. We understand the following values (when specifying multiple values, separate them with a comma):
-index - Allow the page to be indexed.
-follow - Follow any links in the page as part of crawling.
-noindex - Prevents the page from being indexed.
-nofollow - Don't follow links from this page as part of crawling.
-nosnippet - Don't show a text snippet or video preview from being shown in the search results. For video, a static image will be shown instead, if possible. Example: <meta name="robots" content="nosnippet">
-max-snippet:[number] - Limit the text snippet length for this page to [number] characters; specify 0 for no snippet or -1 to allow Google to chose the snippet length that it believes is most effective to help users discover your content and direct users to your site.
-max-image-preview:[size] - Limit the size of any image associated with this page. [size] can be "none", "standard", or "large".
-max-video-preview:[number] - Limit any video preview associated with this page to [number] seconds; specify 0 to allow only a still image or -1 to allow any preview length
-noarchive - Don't show a Cached link for a page in search results.
-unavailable_after:[date] - Lets you specify the exact time and date you want to stop crawling and indexing of this page.
-noimageindex - Don't show the page as the referring page for an image in Google Images results. This has the effect of preventing all images on this page from being indexed. If an image also appears in another page, Google might crawl and index the image according to the permissions on that other page. Note that this is not yet an internet standard; the standard way to block images is to use a robots.txt rule.
-none - Equivalent to noindex, nofollow.
-all - [Default] Equivalent to "index, follow".
-You can also specify this information in the header of your pages using the "X-Robots-Tag" HTTP header directive. This is particularly useful if you wish to limit indexing of non-HTML files like graphics or other kinds of documents. More information about robots meta tags
+The <meta name="robots"> tag applies to all search engines, while
+the <meta name="googlebot"> tag is specific to Google.
+In the case of conflicting robots (or googlebot) meta
+tags, the more restrictive tag applies. For example, if a page has both the
+max-snippet:50 and nosnippet tags, the nosnippet
+tag will apply.
+The default values are index, follow and don't need to be specified.
+For a full list of values that Google understands, see the list
+of valid directives.
+You can also specify this information in the header of your pages using the
+"X-Robots-Tag" HTTP header directive. This is particularly useful if you wish to limit
+indexing of non-HTML files like graphics or other kinds of documents.
+More
+information about robots meta tags.
 <meta name="google" content="nositelinkssearchbox" />
-When users search for your site, Google Search results sometimes display a search box specific to your site, along with other direct links to your site. This tag tells Google not to show the sitelinks search box. Learn more about sitelinks search box.
+When users search for your site, Google Search results sometimes display a search box
+specific to your site, along with other direct links to your site. This tag tells
+Google not to show the sitelinks search box. Learn more about
+sitelinks search box.
 <meta name="google" content="notranslate" />
-When Google recognizes that the contents of a page are not in the language that the user is likely to want to read, Google often provides a link to a translation in the search results. In general, this gives you the chance to provide your unique and compelling content to a much larger group of users. However, there may be situations where this is not desired. This meta tag tells Google that you don't want us to provide a translation for this page.
+When Google recognizes that the contents of a page aren't in the language that the
+user is likely to want to read, Google often provides a link to a translation in the
+search results. In general, this gives you the chance to provide your unique and
+compelling content to a much larger group of users. However, there may be situations
+where this is not desired. This meta tag tells Google that you don't want us to provide
+a translation for this page.
 <meta name="google" content="nopagereadaloud" />
-Prevents web browsers from reading aloud the tagged page using the Google Assistant voice commands "Read this page" and "Read it."
+Prevents web browsers from reading aloud the tagged page using the Google Assistant
+voice commands "Read this page" and "Read it."
 <meta name="google-site-verification" content="..." />
-You can use this tag on the top-level page of your site to verify ownership for Search Console. Please note that while the values of the "name" and "content" attributes must match exactly what is provided to you (including upper and lower case), it doesn't matter if you change the tag from XHTML to HTML or if the format of the tag matches the format of your page. More information
+You can use this tag on the top-level page of your site to verify ownership for
+Search Console. Please note that while the values of the name and
+content attributes must match exactly what is provided to you (including
+upper and lower case), it doesn't matter if you change the tag from XHTML to HTML or
+if the format of the tag matches the format of your page.
 <meta http-equiv="Content-Type" content="...; charset=..." />
 <meta charset="..." >
-This defines the page's content type and character set. Make sure that you surround the value of the content attribute with quotes - otherwise the charset attribute may be interpreted incorrectly. We recommend using Unicode/UTF-8 where possible. More information
+This defines the page's content type and character set. Make sure that you surround
+the value of the content attribute with quotes - otherwise the charset attribute may be
+interpreted incorrectly. We recommend using Unicode/UTF-8 where possible.
+More information.
 <meta http-equiv="refresh" content="...;url=..." />
-This tag sends the user to a new URL after a certain amount of time, and is sometimes used as a simple form of redirection. However, it is not supported by all browsers and can be confusing to the user. The W3C recommends that this tag not be used. We recommend using a server-side 301 redirect instead.
+This tag sends the user to a new URL after a certain amount of time, and is sometimes
+used as a simple form of redirection. However, it is not supported by all browsers and
+can be confusing to the user. The W3C recommends
+that this tag not be used. We recommend using a server-side 301 redirect instead.
 <meta name="viewport" content="...">
-This tag tells the browser how to render a page on a mobile device. Presence of this tag indicates to Google that the page is mobile friendly. Read more about how to configure the viewport meta tag.
+This tag tells the browser how to render a page on a mobile device. Presence of this
+tag indicates to Google that the page is mobile friendly. Read
+more about how to configure the viewport meta tag.
 <meta name="rating" content="adult" />
 <meta name="rating" content="RTA-5042-1996-1400-1577-RTA" />
-Labels a page as containing adult content, to signal that it be filtered by SafeSearch results. Learn more about labeling SafeSearch pages.
+Labels a page as containing adult content, to signal that it be filtered by SafeSearch
+results. Learn more
+about labeling SafeSearch pages.
 Other points to note
 Google can read both HTML and XHTML-style meta tags, regardless of the code used on the page.
-With the exception of google-site-verification, case is generally not important in meta tags.
-This is not an exclusive list of available meta tags, and you should feel free to use other meta tags if they are important to your site. Just remember that Google will ignore meta tags that it doesn't know.
+With the exception of google-site-verification, letter case is generally not
+important in meta tags.
+This is not an exclusive list of available meta tags, and you should feel free to use
+other meta tags if they are important to your site. Just remember that Google will ignore
+meta tags that it doesn't know.
 Inline directives
-Independently of page-level meta-tags, you can designate parts of an HTML page not to be used in snippets. This can be done with the data-nosnippet HTML attribute on span, div, or section HTML elements. For example:
+Independently of page-level meta-tags, you can designate parts of an HTML page not to be
+used in snippets. This can be done with the data-nosnippet HTML attribute on
+span, div, or section HTML elements. For example:
 <p>This text can be included in a snippet <span data-nosnippet>and this part would not be shown</span>.</p>
-To ensure machine readability, the section must be valid HTML and all tags closed accordingly. More information.
+To ensure machine readability, the section must be valid
+HTML and all tags closed accordingly.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-03-05 UTC.

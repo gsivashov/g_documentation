@@ -11,10 +11,10 @@ This document details how Google handles the robots.txt file that allows
 you to control how Google's website crawlers crawl and index
 publicly accessible websites.
 What changed
-On July 1, 2019, Google
-announced that the robots.txt protocol is
-working towards becoming an
-Internet standard. Those changes are reflected in this document.
+On July 1, 2019, Google announced that the
+robots.txt protocol is
+working towards
+becoming an Internet standard. Those changes are reflected in this document.
 List of changes
 Here's what changed:
 Removed the "Requirements Language" section in this document because the language is
@@ -168,8 +168,8 @@ return 5xx instead of a 404 for missing pages, we treat a 5xx error from that si
 as a 404.
 Unsuccessful requests or incomplete data
 Handling of a robots.txt file which cannot be fetched due to DNS or networking issues, such
-as timeouts, invalid responses, reset or hung up connections, and HTTP chunking errors, is
-treated as a server error.
+as timeouts, invalid responses, reset or interrupted connections, and HTTP chunking errors,
+is treated as a server error.
 Caching
 robots.txt content is generally cached for up to 24 hours, but may be cached longer in
 situations where refreshing the cached version is not possible (for example, due to timeouts
@@ -425,15 +425,22 @@ Matches:
 /fishheads/catfish.php?parameters
 Does not match: /Fish.PHP
 Google-supported non-group-member lines
-Google, Bing,and other major search engines support sitemap,
-as defined by sitemaps.org.
+Google, Bing,and other major search engines support sitemap, as
+defined by sitemaps.org.
 Usage:
 sitemap: [absoluteURL]
-[absoluteURL] points to a Sitemap, Sitemap Index file, or equivalent URL.
-The URL does not have to be on the same host as the robots.txt file.
-Multiple sitemap entries may exist. As non-group-member
-lines, these are not tied to any specific user agents and may be followed
-by all crawlers, provided it is not disallowed.
+[absoluteURL] points to a sitemap, sitemap Index file, or
+equivalent URL. It must be a fully qualified URL, including the protocol and host, and does
+not have to be URL-encoded. The URL does not have to be on the same host as the robots.txt
+file. Multiple sitemap entries may exist. As non-group-member
+lines, these are not tied to any specific user agents and may be followed by all crawlers,
+provided it is not disallowed.
+Example
+user-agent: otherbot
+disallow: /kale
+sitemap: https://example.com/sitemap.xml
+sitemap: https://cdn.example.org/other-sitemap.xml
+sitemap: https://ja.example.org/テスト-サイトマップ.xml
 Order of precedence for group-member lines
 At a group-member level, in particular for allow and
 disallow directives, the most specific rule based on the
@@ -468,4 +475,4 @@ Google's open source
 robots.txt library, which is also used in Google Search.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-03-11 UTC.

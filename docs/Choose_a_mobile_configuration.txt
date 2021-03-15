@@ -44,8 +44,7 @@ JavaScript, or images, we may not detect that it's built to display and work
 well on a mobile browser. In other words, we may not detect that the page is
 "mobile-friendly," and therefore not properly serve it to mobile searchers.
 Avoid common mistakes that frustrate mobile visitors, such as
-featuring unplayable videos (for example, Flash video as the page's significant
-content). Mobile pages that provide a poor searcher experience can be
+featuring unplayable videos. Mobile pages that provide a poor searcher experience can be
 demoted in rankings or displayed with a warning in mobile search results.
 More information in Common mistakes section.
 Understand the difference between devices
@@ -69,4 +68,4 @@ render only cHTML (iMode), WML, and XHTML-MP.
 Note: Our recommendations are geared toward smartphones, but we encourage multimedia and feature phones site owners to follow the same advice where they feel appropriate.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-02-09 UTC.

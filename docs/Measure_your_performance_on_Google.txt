@@ -12,7 +12,7 @@ If you use a site hosting service such as Squarespace or Wix, you're probably se
 If no pages from your site appear in the search results, here are the most common reasons why:
 Your site isn't linked to by many other sites on the web. See if you can get your site linked to by other sites (but please don't pay them to link to you; that could be considered a violation of Google's guidelines).
 You've just launched a new site and Google hasn't found it yet. It can take a few weeks for Google to notice a new site, or any changes in your existing site.
-The design of the site makes it difficult for Google to crawl its content effectively. If your site is built on Flash, or some other specialized technology, rather than HTML, Google might have trouble crawling it correctly. Remember to use text, not just images or video, on your site.
+The design of the site makes it difficult for Google to crawl its content effectively. If your site is built on some other specialized technology, rather than HTML, Google might have trouble crawling it correctly. Remember to use text, not just images or video, on your site.
 Google received an error when trying to crawl your site. Most common reasons for this are that you have a login page for your site, or that your site disallows Google for some reason. Make sure that you can access your site in an incognito window.
 Google missed it: Although Google crawls billions of pages, it's inevitable that we'll miss a few sites, especially small ones. Wait a while, and try to get linked from other sites. If that doesn't work, sign up for Search Console, then ask Google to crawl and index your homepage.
 Step 2: Measure your search performance
@@ -24,4 +24,4 @@ Average position: The average position of your site in search results (where pos
 Click through the chart in search results to see more information, including what terms people were searching for when your site came up.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-28 UTC.
+Last updated 2021-02-09 UTC.

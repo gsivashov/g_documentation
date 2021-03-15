@@ -153,4 +153,4 @@ Pick one of those URLs as your canonical URL and use 301 redirects to send traff
 If you are on a website hosting service, do a search for their documentation on setting up 301 redirects.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-22 UTC.
+Last updated 2021-03-05 UTC.

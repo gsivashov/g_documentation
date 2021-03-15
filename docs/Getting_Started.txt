@@ -10,10 +10,8 @@ What are the top three things I should know when building a site for mobile devi
 1. Make it easy for customers.
 Help your site's visitors to complete their objectives. They may want to be
 entertained by your blog posts, get your restaurant's address, or check reviews
-on your products. Walgreens GVP and Chief Technology Officer of eCommerce, Abhi
-Dhar, explains,
-"Our goal with everything we do on mobile is to make our customers' lives easier."
-Design your site to help make it easier for your customer to visit your site and complete a task.
+on your products. Design your site to help make it easier for your customer to
+visit your site and complete a task.
 Outline the potential steps in your customers' journey to make sure
 that the steps are easy to complete on a mobile device. Try to streamline the
 experience and reduce the number of user interactions. In this example: (1) the
@@ -70,9 +68,6 @@ Mistake 3 - Working in isolation rather than looking around for inspiration.
 Check out other sites in your space or your competitors for inspiration and
 best practices. While you may not be the first in your industry with a mobile
 site, you have the benefit of being able to learn from those before you.
-The Mobile Playbook and
-Google
-Multi-screen Success Stories are also full of ideas.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2019-06-17 UTC.
+Last updated 2021-03-10 UTC.

@@ -102,6 +102,7 @@ likely that your books can't be matched and therefore won't be served.
 Google Search prefers ISBN-13, but you can alternatively provide the following:
 Online Computer Library Center (OCLC) Number
 Library of Congress Control Number (LCCN)
+JP e-code
 Warning: Google Search doesn't accept ISBN-10. For books that have
 only ISBN-10 information, use an ISBN conversion tool to convert to ISBN-13 before you send
 your feed to Google.
@@ -110,10 +111,10 @@ They might not be surfaced to users in Google Search. However, the
 following practices might help facilitate a correct match:
 Group all of the Edition entities under the same
 Work, and ensure at least one of the editions has an ISBN, OCLC
-Number, or LCCN. Google Search may be able to leverage the available ISBN or other
+Number, LCCN, or JP e-code. Google Search may be able to leverage the available ISBN or other
 supported identifier from another edition.
 Add third-party identifiers. Google Search currently supports two widely used library
-control numbers: OCLC Number and LCCN. If you have either of these, provide them.
+control numbers: OCLC Number or LCCN. If you have either of these, provide them.
 Links
 To make sure people have the best experience finding your books, links in your feed must
 adhere to the following guidelines:
@@ -522,6 +523,7 @@ ISBN and other supported
 identifiers, it must be either of the following:
 OCLC_NUMBER
 LCCN
+JP_E-CODE
 value
 Text
 The ID value. The external ID that unambiguously identifies this edition. Remove all
@@ -546,6 +548,11 @@ Example with multiple identifier properties:
 "propertyID": "LCCN",
 "value":
 "220123456"
+},{
+"@type": "PropertyValue",
+"propertyID": "JP_E-CODE",
+"value":
+"12345678901234567890"
 }]
 Example ReadAction Book feed JSON file
 {
@@ -1184,4 +1191,4 @@ Example LibrarySystem feed JSON file
 }
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-14 UTC.
+Last updated 2021-03-09 UTC.

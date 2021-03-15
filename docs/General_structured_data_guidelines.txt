@@ -194,7 +194,7 @@ data in addition to Video and
 Review structured data. This is an opportunity for that
 page to be eligible for multiple search appearances (recipe rich results, video search, and
 review snippets). If the page only contained Video structured data, Google Search wouldn't know
-enough about the page to also dispaly it as a recipe rich result.
+enough about the page to also display it as a recipe rich result.
 To ensure that the page fully represents the content that's visible to users, make sure all
 structured data items are complete. For example, if you include multiple reviews, make sure
 that you include all of the reviews that are visible to people on the page. If a page didn't
@@ -202,4 +202,4 @@ mark up all of the reviews on a page, this would be misleading for people who ex
 all of those reviews, based on the appearance of the page in Search results.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-15 UTC.
+Last updated 2021-03-11 UTC.
