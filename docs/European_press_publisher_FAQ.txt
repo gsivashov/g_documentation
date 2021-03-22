@@ -1,8 +1,8 @@
 https://support.google.com/webmasters/answer/9476993
 
 Home
-Google Search Central
-Help
+Search Central
+Support
 Send feedback
 European press publisher FAQ
 Google helps people find relevant and diverse content, and helps publishers reach readers.
@@ -140,4 +140,4 @@ If you can't find the answer to your question on this page, check out Google's h
 We also provide official Google Search Central help communities in the following languages: English • Deutsch • Español • Français • Italiano • Nederlands • Polski • Português • Türkçe • Русский • العربية • 中文（简体） • 日本語 • 한국어
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-05 UTC.
+Last updated 2021-03-16 UTC.

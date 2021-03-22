@@ -1,7 +1,7 @@
 https://developers.google.com/search/docs/data-types/video
 
 Home
-Google Search Central
+Search Central
 Documentation
 Advanced SEO
 Send feedback
@@ -39,7 +39,7 @@ eligible for this rich result, with no additional steps needed.
 For more information
 about feature availability, guidelines, and examples, see
 Home activities.
-Clips (limited access): Help users quickly navigate to specific points in a
+Key moments (limited access): Help users quickly navigate to specific points in a
 video.
 If your video is hosted on YouTube, Google Search may automatically enable clips
 based on the video description on YouTube. Check out the
@@ -108,7 +108,7 @@ JSON-LD
 "interactionType": { "@type": "http://schema.org/WatchAction" },
 "userInteractionCount": 5647018
 },
-"regionsAllowed": "NL"
+"regionsAllowed": "US,NL"
 }
 </script>
 </head>
@@ -138,7 +138,7 @@ JSON-LD
 "interactionType": { "@type": "http://schema.org/WatchAction" },
 "userInteractionCount": 5647018
 },
-"regionsAllowed": "NL"
+"regionsAllowed": "US,NL"
 }
 </script>
 </head>
@@ -576,7 +576,7 @@ title="Tie a Tie">
 </span>
 </div>
 </div>
-Clips (limited access)
+Key moments (limited access)
 Here's an example of VideoObject
 and Clip. This feature is currently limited
 to a small set of providers. If you would like to participate,
@@ -834,7 +834,7 @@ Video best practices
 Video sitemap guidelines
 Livestream guidelines (if applicable)
 Carousel guidelines (if applicable)
-Clip guidelines (if applicable)
+Key moments guidelines (if applicable)
 Best practices for marking timestamps on YouTube (if applicable)
 LIVE badge guidelines
 If you're adding BroadcastEvent to livestream
@@ -849,7 +849,7 @@ to indicate the endDate
 Whenever a change has happened in the markup and Google needs to be notified
 The Indexing API only supports livestream videos.
 Best practices for marking timestamps on YouTube
-If your video is hosted on YouTube, Google Search may automatically enable clips for your video based
+If your video is hosted on YouTube, Google Search may automatically enable key moments for your video based
 on the video description on YouTube, and you may not have to mark specific timestamps in your
 YouTube description. However, you can tell us more explicitly about the important points in
 your video and we will prefer that information. The following diagram shows how timestamps and
@@ -863,8 +863,9 @@ Place each timestamp on a new line in the video description.
 Link the timestamp to the specified point in the video.
 Make sure the label contains at least one word.
 List the timestamps in chronological order.
-Clip guidelines (limited access)
-If you're adding Clip to mark video segments, follow these guidelines:
+Key moments guidelines (limited access)
+If you're adding Clip structured data to
+mark video segments, follow these guidelines:
 The video must be publicly available to watch without a subscription.
 The video must have the ability to deep link into some point other than the start
 point in the video URL. For example, http://www.example.com/example?t=30 starts
@@ -1006,7 +1007,8 @@ regionsAllowed
 Place
 The regions where the video is allowed. If not specified, then Google assumes the video is
 allowed everywhere. Specify the countries in
-ISO 3166 format.
+ISO 3166 format. For
+multiple values, use a space or comma as a delimiter.
 BroadcastEvent
 To be eligible for display with a LIVE badge, nest the following
 properties in your VideoObject. While
@@ -1071,7 +1073,7 @@ Clip (limited access)
 This feature is currently limited to a small set of providers. If you
 would like to participate,
 register your interest in our form.
-To be eligible for clips, nest the following properties in your
+To be eligible for key moments, nest the following properties in your
 VideoObject. While
 Clip properties aren't required, you must add the following properties if you
 want your video to display with video segments.
@@ -1132,7 +1134,10 @@ Important: Google does not guarantee that features that consume structured data 
 show up in search results. For a list of common reasons why Google may not
 show your content in a rich result, see the General
 Structured Data Guidelines.
-If you're having trouble implementing structured data, here are some resources that may help you.
+If you're having trouble implementing or debugging structured data, here are some resources that
+may help you.
+If you're using a content management system (CMS) or someone else is taking care of your site,
+ask them to help you. Make sure to forward any Search Console message that details the issue to them.
 You might have an error in your structured data. Check the
 list of structured
 data errors.
@@ -1147,4 +1152,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-10 UTC.
+Last updated 2021-03-19 UTC.

@@ -1,7 +1,7 @@
 https://support.google.com/webmasters/topic/6080547
 
 Home
-Google Search Central
+Search Central
 Documentation
 Advanced SEO
 Send feedback
@@ -36,13 +36,27 @@ http://www.example.com/green-dresses
 If content you provide on a blog for syndication to other sites is replicated in part or in full on those domains:
 https://news.example.com/green-dresses-for-every-day-155672.html (syndicated post) https://blog.example.com/dresses/green-dresses-are-awesome/3245/ (original post)
 Why should I choose a canonical URL?
-There are a number of reasons why you would want to explicitly choose a canonical page in a set of duplicate/similar pages:
-To specify which URL that you want people to see in search results. You might prefer people reach your green dresses product page via https://www.example.com/dresses/green/greendress.html rather than https://example.com/dresses/cocktail?gclid=ABCD.
-To consolidate link signals for similar or duplicate pages. It helps search engines to be able to consolidate the information they have for the individual URLs (such as links to them) into a single, preferred URL. This means that links from other sites to http://example.com/dresses/cocktail?gclid=ABCD get consolidated with links to https://www.example.com/dresses/green/greendress.html.
-To simplify tracking metrics for a single product/topic. With a variety of URLs, it's more challenging to get consolidated metrics for a specific piece of content.
-To manage syndicated content. If you syndicate your content for publication on other domains, you want to consolidate page ranking to your preferred URL.
-To avoid spending crawling time on duplicate pages. You want Googlebot to get the most out of your site, so it's better for it to
-spend time crawling new (or updated) pages on your site, rather than crawling the desktop and mobile versions of the same pages.
+There are a number of reasons why you would want to explicitly choose a canonical page in a
+set of duplicate/similar pages:
+To specify which URL that you want people to see in search results. You
+might prefer people reach your green dresses product page via
+https://www.example.com/dresses/green/greendress.html rather
+than https://example.com/dresses/cocktail?gclid=ABCD.
+To consolidate link signals for similar or duplicate pages. It helps search
+engines to be able to consolidate the information they have for the individual URLs (such as
+links to them) into a single, preferred URL. This means that links from other sites to
+http://example.com/dresses/cocktail?gclid=ABCD get consolidated
+with links to
+https://www.example.com/dresses/green/greendress.html.
+To simplify tracking metrics for a single product/topic. With a variety of
+URLs, it's more challenging to get consolidated metrics for a specific piece of content.
+To manage syndicated content. If you syndicate your content for publication
+on other domains, you want to ensure that your preferred URL appears in search results.
+To avoid spending crawling time on duplicate pages. You want Googlebot to
+get the most out of your site, so it's better for it to
+spend time crawling new (or
+updated) pages on your site, rather than crawling the desktop and mobile versions of the
+same pages.
 Which is my canonical URL, according to Google?
 Use the URL Inspection tool to learn which page Google considers canonical. Note that even if you explicitly designate a canonical page, Google might choose a different canonical for various reasons, such as performance or content.
 Troubleshooting
@@ -153,4 +167,4 @@ Pick one of those URLs as your canonical URL and use 301 redirects to send traff
 If you are on a website hosting service, do a search for their documentation on setting up 301 redirects.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-05 UTC.
+Last updated 2021-03-16 UTC.

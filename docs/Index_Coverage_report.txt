@@ -1,23 +1,26 @@
 https://support.google.com/webmasters/answer/7440203
 
 Index Coverage reportLearn which of your pages have been indexed and any problems encountered when indexing your site.
+Do I need this report?
+If your site has fewer than 500 pages, you probably don't need to use this report. Instead, it's much simpler to search for your site on Google by entering site:your_site, where "your_site" is your site's homepage URL without the "http://" or "https://" prefix. For example, site:example.com or site:example.com/petstore. The search results show pages that Google knows about on your site. You can add search terms to find specific pages on your site, for example: site:example.com/petstore iguanas zebras.
 INDEX COVERAGE REPORT
 Index coverage status in Search Console - Google Search Console Training
 Understanding the report
-This report is much easier to understand if you have read how Google Search works first.
-This report shows the indexing state of all URLs that Google has visited, or tried to visit, in your property. The summary page shows the results for all URLs in your property grouped by status (error, warning, or valid) and specific reason for that status (such as Submitted URL not found (404)). Click a table row in the summary page to see all URLs with the same status/reason and more details about the issue.
-Do I need this report?
-If your site has fewer than 500 pages, you probably don't need to use this report. Instead, it's much simpler to search for your site on Google by entering site:your_site, where "your_site" is your site's homepage URL without the "http://" or "https://" prefix. For example, site:example.com or site:example.com/petstore. The search results show pages that Google knows about on your site. You can add search terms to find specific pages on your site, for example: site:example.com/petstore iguanas zebras.
+This report is much easier to understand, and more useful, if you have read how Google Search works first.
+The Index Coverage report shows the Google-index state of all URLs in your property.
+The top-level summary page shows the results for all URLs in your property grouped by status (error, warning, or valid) and specific reason for that status (such as Submitted URL not found (404)).
+Click a table row in the summary page to see a details page that focuses on all URLs with the same status/reason.
 Summary page
 The top level report shows the index status of all pages that Google has attempted to crawl on your site, grouped by status and reason.
 Primary crawler
-The Primary crawler value on the summary page shows the default user agent type that Google uses to crawl your site: Smartphone or Desktop, simulating a user on a mobile device or a desktop, respectively.
-Google crawls all pages on your site using this primary crawler. In addition, Google may also crawl a subset of your pages using a secondary crawler (sometimes called alternate crawler), which is the other user agent type. For example, if the primary crawler for your site is Smartphone, the secondary crawler is Desktop; if the primary crawler is Desktop, your secondary crawler is Smartphone. The purpose of a secondary crawl is to try to get more information about how your site behaves when visited by users on another device type.
+The Primary crawler value on the summary page shows the default user agent type that Google uses to crawl your site: Smartphone or Desktop. These crawlers simulate a visitor using a mobile device or a desktop computer, respectively.
+Google crawls all pages on your site using this primary crawler type. Google may additionally crawl a subset of your pages using a secondary crawler (sometimes called alternate crawler), which is the other user agent type. For example, if the primary crawler for your site is Smartphone, the secondary crawler is Desktop; if the primary crawler is Desktop, your secondary crawler is Smartphone. The purpose of a secondary crawl is to try to get more information about how your site behaves when visited by users on another device type.
 What to look for
-Ideally you should see a gradually increasing count of valid indexed pages as your site grows. If you see drops or spikes, see the troubleshooting section. The status table in the summary page is grouped and sorted by "status + reason"; you should fix your most impactful errors first.
+Ideally you should see a gradually increasing count of valid indexed pages as your site grows. If you see drops or spikes, see the troubleshooting section. The status table in the summary page is grouped and sorted by "status + reason".
+Your goal is to get the canonical version of every important page indexed. Any duplicate or alternate pages should be labeled "Excluded" in this report. Duplicate or alternate pages have substantially the same content as the canonical page. Having a page marked duplicate or alternate is usually a good thing; it means that we've found the canonical page and indexed it. You can find the canonical for any URL by running the URL Inspection tool. See more reasons why pages might be missing.
 What not to look for
-You should not expect all URLs on your site to be indexed. Your goal is to get the canonical version of every page indexed. Any duplicate or alternate pages will be labeled "Excluded" in this report. Duplicate or alternate pages have substantially the same content as the canonical page. Having a page marked duplicate or alternate is a good thing; it means that we've found the canonical page and indexed it. You can find the canonical for any URL by running the URL Inspection tool. See more reasons why pages might be missing.
-When you add new content, it can take a few days for Google to index it. You can reduce the indexing lag by requesting indexing.
+100% coverage: You should not expect all URLs on your site to be indexed, only the canonical pages, as described above.
+Immediate indexing: When you add new content, it can take a few days for Google to index it. You can reduce the indexing lag by requesting indexing.
 Status
 Each page can have one of the following status values:
 Error: The page is not indexed. See the specific error type description to learn more about the error and how to fix it. You should concentrate on these issues first.
@@ -78,23 +81,22 @@ Failed: Google checked for the issue instance and it's still there. Can reach th
 Other: [Not available in all reports] Google couldn't reach the URL hosting the instance, or (for structured data) couldn't find the item on the page any more. Considered equivalent to Passed.
 Note that the same URL can have different states for different issues; For example, if a single page has both issue X and issue Y, issue X can be in validation state Passed and issue Y on the same page can be in validation state Pending.
 URL discovery dropdown filter
-Use the dropdown filter above the chart to filter index results by how Google discovered the URL. The following values are available:
+You can use the dropdown filter above the chart to filter index results by how Google discovered the URL. The following values are available:
 All known pages [Default] - Show all URLs discovered by Google through any means.
 All submitted pages - Show only pages submitted in a sitemap to this report or by sitemap ping.
 Specific sitemap URL - Show only URLs listed in a specific sitemap that was submitted using this report. This includes any URLs in nested sitemaps.
 A URL is considered to submitted by a sitemap even if it was also discovered through some other mechanism (for example, by organic crawling from another page).
 Details page
-Click on a row in the summary page to open a details page for that status + reason combination. You can see details about the chosen issue by clicking Learn more on the details page.
-The graph on this page shows the count affected pages over time.
-The table shows an example list of pages affected by the issue:
-Open a URL in the table by clicking the jump link
-on the table row.
-Inspect a URL in the table by clicking the inspect icon
-on the table row.
-When you've fixed all instances of an error or warning, you can ask Google to validate your fixes.
+Click on a row in the summary page to open a details page for that status + reason combination. You can see details about the chosen issue by clicking Learn more at the top of the page.
+The graph on this page shows the count of affected pages over time.
+The table shows an example list of pages affected by this status + reason. You can click the following row elements:
+Click the row to see more details about that URL.
+opens the URL in a new tab.
+opens URL Inspection for that URL.
+copies the URL
+The Source value on the details page shows which user agent type (Smartphone or Desktop) was used to crawl the URLs listed.
+When you've fixed all instances of an error or warning, click Validate Fix to let Google know that you've fixed the issue.
 See a URL marked with an issue that you've already fixed? Perhaps you fixed the issue AFTER the last Google crawl. Therefore, if you see a URL with an issue that you have fixed, be sure to check the crawl date for that URL. Check and confirm your fix, then request re-indexing
-Source
-The Source value on the details page shows which user agent type (Smartphone or Desktop) was used to crawl the URLs listed. Each user agent type simulates a user visiting the page from a given device type (mobile or desktop, respectively).
 Sharing the report
 You can share issue details in the coverage or enhancement reports by clicking the Share
 button on the page. This link grants access only to the current issue details page, plus any validation history pages for this issue, to anyone with the link. It does not grant access to other pages for your resource, or enable the shared user to perform any actions on your property or account. You can revoke the link at any time by disabling sharing for this page.
@@ -103,30 +105,35 @@ Many reports provide an export button
 to export the report data. Both chart and table data are exported. Values shown as either ~ or - in the report (not available/not a number) will be zeros in the downloaded data.
 Troubleshooting
 You can confirm the indexing status for any URL shown in this report by inspecting the URL thusly:
-From the details page, click a URL in the examples table to open a side panel that lists testing options.
-In the side panel, click Inspect URL to see further details about the Google Index version of the page.
-In the indexed report, examine the Coverage > Crawl and Coverage > Indexing sections to see details about the crawl and index status of the page. To test the live version of the page, click Test live URL.
+Decide whether the index status really is a problem based on the status type, indexing goal, and specific error.
+Read the specific information about the issue.
+Inspect the URL with the URL Inspection tool:
+Click the inspect iconnext to the URL in the examples table to open URL Inspection for that URL.
+See crawl and index details for that URL in the Coverage > Crawl and Coverage > Indexing sections of the URL Inspection report.
+To test the live version of the page, click Test live URL.
 Common issues
 Here are some of the most common indexing issues that you might see in this report:
 Drop in total indexed pages without corresponding errors
-If you see a drop in total indexed pages without corresponding errors, you might be blocking access to your existing pages (via robots.txt, 'noindex', or a required login), but only for pages that you haven't submitted for indexing. If you had submitted these pages for indexing, you would see a corresponding set of errors. Look at the Excluded URLs for a spike that corresponds to your drop in Valid pages.
+If you see a drop in total indexed pages without a corresponding increase in errors, you might be blocking access to your existing pages via robots.txt, 'noindex' or a required login. Look at the Excluded URLs for a spike that corresponds to your drop in Valid pages. Note that if these URLs were submitted in a sitemap, they would be marked as errors, not excluded.
 More Excluded than Valid pages
 If you see more Excluded than Valid pages, look at the exclusion reasons. Common exclusion reasons include:
 You have a robots.txt rule that blocks Google from crawling large sections of your site. If you are blocking the wrong pages, unblock them.
 Your site has a large number of duplicate pages, probably because it uses parameters to filter or sort a common collection (for example: type=dress or color=green or sort=price). These page probably should be excluded, if they are just showing the same content that is sorted, filtered, or reached in different ways. If you are an advanced user, and you think that Google is misunderstanding parameters on your site, you can use the URL Parameters tool to customize the handling of your site's parameters.
 Error spikes
-Error spikes might be caused by a change in your template that introduces a new error, or you might have submitted a sitemap that includes URLs that are blocked for crawling (for example, by robots.txt or noindex, or a login requirement). Click into an issue, and inspect a page to see what the error is.
+Error spikes might be caused by a change in your template that introduces a new error, or you might have submitted a sitemap that includes URLs that are blocked for crawling by robots.txt, noindex, or a login requirement.
 If you see an error spike:
 See if you can find any correspondence between the total number of indexing errors or total indexed count and the sparkline
 next to a specific error row on the summary page as a clue to which issue might be affecting your total error or total indexed page count.
-Click any error rows that seem to be contributing to your error spike to get to the details page with more information. Read the description about the specific error type to learn how to handle it best.
+Click into the details pages for any errors that seem to be contributing to your error spike. Read the description about the specific error type to learn how to handle it best.
+Click into an issue, and inspect an example page to see what the error is, if necessary.
 Fix all instances for the error, and request validation by clicking Validate Fix in the details page for that reason. Read more about validation.
 You'll get notifications as your validation proceeds, but you can check back after a few days to see whether your error count has gone down.
-Periodically remove the filter for excluded URLs, sort them by number of affected pages, and scan them for any unwanted issues.
 Server errors
 A server error means that Googlebot couldn't access your URL, the request timed out, or your site was busy. As a result, Googlebot was forced to abandon the request.
+Check the host status verdict for your site in the Crawl Stats report to see if Google is reporting site availability issues that you can confirm and fix.
 Testing server connectivity
 You can use the the URL Inspection tool to see if you can reproduce a server error reported by the Index Coverage report.
+You can also check your host availability in the Crawl Stats report.
 Fixing server connectivity errors
 Reduce excessive page loading for dynamic page requests.
 A site that delivers the same content for multiple URLs is considered to deliver content dynamically (for example, www.example.com/shoes.php?color=red&size=7 serves the same content as www.example.com/shoes.php?size=7&color=red). Dynamic pages can take too long to respond, resulting in timeout issues. Or the server might return an overloaded status to ask Googlebot to crawl the site more slowly. In general, we recommend keeping parameter lists short and using them sparingly. If you're confident about how parameters work for your site, you can tell Google how we should handle these parameters.
@@ -140,8 +147,7 @@ To control Googlebot's crawling of your content, use a robots.txt file and confi
 If you're worried about rogue bots using the Googlebot user-agent, you can verify whether a crawler is actually Googlebot.
 If you would like to change how frequently Googlebot crawls your site, you can request a change in Googlebot's crawl rate. Hosting providers can verify ownership of their IP addresses to enable this.
 404 errors
-In general, we recommend spending time to fix only 404 error pages, not 404 excluded pages. 404 error URLs are URLs that you explicitly asked Google to index, but were not found. 404 excluded URLs are URLs that Google discovered through some other mechanism.
-Evaluate and fix 404 errors.
+In general, we recommend fixing only 404 error pages, not 404 excluded pages. 404 error pages are pages that you explicitly asked Google to index, but were not found, which is obviously a bug. 404 excluded pages are pages that Google discovered through some other mechanism, such as a link from another page. If the page has been moved, you should return a 3XX redirect to the new page. Learn more about evaluating and fixing 404 errors.
 Missing pages or sites
 If your page is not in the report at all, one of the following is probably true:
 Google doesn't know about the page. Some notes about page discoverability:
@@ -149,16 +155,19 @@ If this is a new site or page, remember that it can take some time for Google to
 In order for Google to learn about a page, you must either submit a sitemap or page crawl request, or else Google must find a link to your page somewhere.
 After a page URL is known, it can take some time (up to a few weeks) before Google crawls some or all of your site.
 Indexing is never instant, even when you submit a crawl request directly.
+Google doesn't guarantee that all pages everywhere will make it into the Google index.
 Google can't reach your page (it requires a login, or is otherwise not available to all users on the internet)
-The page has a noindex tag, which prevents Google from indexing it, or
+The page has a noindex tag, which prevents Google from indexing it
 The page was dropped from the index for some reason.
 To fix:
 Use the URL Inspection tool to test the problem on your page. If the page is not in the Index Coverage report but it is listed as indexed in the URL Inspection report, it was probably indexed recently, and will appear in the Index Coverage report soon. If the page is listed as not indexed in the URL Inspection tool (which is what you'd expect), test the live page. The live page test results should indicate what the issue is: use the information from the test and the test documentation to learn how to fix the issue.
-"Submitted but/Submitted and" errors and exclusions
-Any indexing reason that uses the word "Submitted" in the title (for example, "Submitted but URL has crawl issue", means that the URL is listed in a sitemap that is either referenced by your robots.txt file or submitted using the Sitemaps report.
+"Submitted" errors and exclusions
+Any indexing reason that uses the word "Submitted" in the title (for example, "Submitted URL returned 403") means that the URL is listed in a sitemap that is either referenced by your robots.txt file or submitted using the Sitemaps report.
 To fix a "Submitted" issue:
-Fix the issue that prevents the page from being crawled, or
-Remove the URL from your sitemap and resubmit the sitemap in the Sitemaps report (for fastest service), or
+Fix the issue that prevents the page from being crawled
+or
+Remove the URL from your sitemap and resubmit the sitemap in the Sitemaps report (for fastest service)
+or
 Using the Sitemaps report, delete any sitemaps that contain the URL (and ensure that no sitemaps listed in your robots.txt file include this URL).
 FAQs
 Why is my page in the index? I don't want it indexed.
@@ -186,7 +195,7 @@ You might have fixed the error after the URL was last crawled by Google. Look at
 How do I find the index state of a specific URL?
 To learn the index status of a specific URL, use the URL Inspection tool. You can't search or filter by URL in the Index Coverage report.
 Status reasons
-Here are the possible reasons for each issue status:
+The following status types are exposed by the Index Coverage report:
 Error
 Pages with errors have not been indexed
 Server error (5xx): Your server returned a 500-level error when the page was requested. See Fixing server errors.

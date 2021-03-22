@@ -1,7 +1,7 @@
 https://developers.google.com/search/apis/indexing-api/v3/quota-pricing
 
 Home
-Google Search Central
+Search Central
 Indexing API
 Send feedback
 Quota and pricing

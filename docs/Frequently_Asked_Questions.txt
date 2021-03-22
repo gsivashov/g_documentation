@@ -2,7 +2,7 @@ https://support.google.com/webmasters/answer/174993
 
 This recommendation is officially deprecated as of October 2015.
 Home
-Google Search Central
+Search Central
 AJAX Crawling (Deprecated)
 Guides
 Frequently Asked Questions

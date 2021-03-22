@@ -1,7 +1,7 @@
 https://support.google.com/webmasters/answer/99170
 
 Home
-Google Search Central
+Search Central
 Documentation
 Advanced SEO
 Send feedback
@@ -35,7 +35,13 @@ here is a JSON-LD structured data snippet that might appear on a recipe page, de
 <body>
 <h2>Party coffee cake recipe</h2>
 <p>
+<em>by Mary Stone, 2018-03-10</em>
+</p>
+<p>
 This coffee cake is awesome and perfect for parties.
+</p>
+<p>
+Preparation time: 20 minutes
 </p>
 </body>
 </html>
@@ -229,4 +235,4 @@ structured data to a simple HTML site, including where to place structured data 
 how to validate it.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-02-16 UTC.
+Last updated 2021-03-16 UTC.

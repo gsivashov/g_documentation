@@ -1,7 +1,7 @@
 https://developers.google.com/search/docs/guides/about-amp
 
 Home
-Google Search Central
+Search Central
 Documentation
 Advanced SEO
 Send feedback
@@ -105,4 +105,4 @@ results, not carousels. To learn more about setting up signed exchange for AMP p
 Serve AMP using Signed Exchanges.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-10 UTC.
+Last updated 2021-03-16 UTC.

@@ -1,7 +1,7 @@
 https://developers.google.com/search/reference/robots_meta_tag
 
 Home
-Google Search Central
+Search Central
 Documentation
 Advanced SEO
 Send feedback
@@ -103,22 +103,28 @@ all
 There are no restrictions for indexing or serving. This directive is the default value and
 has no effect if explicitly listed.
 noindex
-Do not show this page in search results.
+Do not show this page in search results. If you don't specify this directive, the page
+may be indexed and shown in search results.
 To remove information from Google, follow our
 step-by-step guide.
 nofollow
-Do not follow the links on this page.
+Do not follow the links on this page. If you don't specify this directive, Google may use
+the links on the page to discover those linked pages. Learn more about
+nofollow.
 none
 Equivalent to noindex, nofollow.
 noarchive
 Do not show a
 cached link
-in search results.
+in search results. If you don't specify this directive, Google may generate a cached page
+and users may access it through the search results.
 nosnippet
-Do not show a text snippet or video preview in the search results for this page. A static
-image thumbnail (if available) may still be visible, when it results in a better
+Do not show a text snippet or video preview in the search results for this page. A
+static image thumbnail (if available) may still be visible, when it results in a better
 user experience. This applies to all forms of search results (at Google: web search,
 Google Images, Discover).
+If you don't specify this directive, Google may generate a text snippet and video
+preview based on information found on the page.
 max-snippet: [number]
 Use a maximum of [number] characters as a textual snippet for this search result. (Note
 that a URL may appear as multiple search results within a search results page.) This
@@ -129,19 +135,29 @@ content. For instance, if the publisher supplies content in the form of in-page
 structured data or has a license agreement with Google, this setting does not interrupt
 those more specific permitted uses. This directive is ignored if no parseable [number]
 is specified.
+If you don't specify this directive, Google will choose the length of the snippet,
+taking into account the site's
+European Press Publication status.
 Special values:
 0: No snippet is to be shown. Equivalent to
 nosnippet.
 -1: Google will choose the snippet length that it
 believes is most effective to help users discover your content and direct users to
 your site.
-Example:
+Examples:
+To stop a snippet from displaying in search results:
+<meta name="robots" content="max-snippet:0">
+To allow up to 20 characters to be shown in the snippet:
 <meta name="robots" content="max-snippet:20">
+To specify that there's no limit on the number of characters that can be shown in the
+snippet:
+<meta name="robots" content="max-snippet:-1">
 max-image-preview: [setting]
 Set the maximum size of an image preview for this page in a search results.
+If you don't specify the max-image-preview directive, Google may show an
+image preview of the default size.
 Accepted [setting] values:
-none:
-No image preview is to be shown.
+none: No image preview is to be shown.
 standard: A default image preview may be shown.
 large: A larger image preview, up to the width of the
 viewport, may be shown.
@@ -160,6 +176,9 @@ Example:
 max-video-preview: [number]
 Use a maximum of [number] seconds as a video snippet for videos on this page in search
 results.
+If you don't specify the max-video-preview directive, Google may show a
+video snippet in search results, and you leave it up to Google to decide how long the
+preview may be.
 Special values:
 0: At most, a static image may be used, in accordance to
 the max-image-preview setting.
@@ -170,9 +189,12 @@ is specified.
 Example:
 <meta name="robots" content="max-video-preview:-1">
 notranslate
-Do not offer translation of this page in search results.
+Do not offer translation of this page in search results. If you don't specify this
+directive, Google may show a link next to the result to help users view translated content
+on your page.
 noimageindex
-Do not index images on this page.
+Do not index images on this page. If you don't specify this value, images on the page
+may be indexed and shown in search results.
 unavailable_after: [date/time]
 Do not show this page in search results after the specified date/time. The date/time
 must be specified in a widely adopted format including, but not limited to
@@ -181,6 +203,8 @@ RFC 850, and
 ISO 8601.
 The directive is ignored if no valid date/time is specified. By default there is no
 expiration date for content.
+If you don't specify this directive, this page may be shown in search results
+indefinitely.
 Example:
 <meta name="robots" content="unavailable_after: 2020-09-21">
 Handling combined indexing and serving directives
@@ -286,4 +310,4 @@ ignored. If indexing or serving directives must be followed, the URLs containing
 directives cannot be disallowed from crawling.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-09 UTC.
+Last updated 2021-03-16 UTC.

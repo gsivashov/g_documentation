@@ -1,7 +1,7 @@
 https://developers.google.com/search/case-studies/rakuten-case-study
 
 Home
-Google Search Central
+Search Central
 Case studies
 Send feedback
 Rakuten increases time on site 1.5x with the recipe search experience on Google

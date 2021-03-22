@@ -1,8 +1,8 @@
 https://developers.google.com/search/docs/guides/debug
 
 Home
-Google Search Central
-Help
+Search Central
+Support
 Send feedback
 Debugging your pages
 General tips

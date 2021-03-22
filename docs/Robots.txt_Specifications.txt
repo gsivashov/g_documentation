@@ -1,7 +1,7 @@
 https://developers.google.com/search/reference/robots_txt
 
 Home
-Google Search Central
+Search Central
 Documentation
 Advanced SEO
 Send feedback

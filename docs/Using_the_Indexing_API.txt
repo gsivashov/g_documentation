@@ -1,7 +1,7 @@
 https://developers.google.com/search/apis/indexing-api/v3/using-api
 
 Home
-Google Search Central
+Search Central
 Indexing API
 Send feedback
 Using the Indexing API

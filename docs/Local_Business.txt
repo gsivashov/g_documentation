@@ -1,7 +1,7 @@
 https://developers.google.com/search/docs/data-types/local-business
 
 Home
-Google Search Central
+Search Central
 Documentation
 Advanced SEO
 Send feedback
@@ -724,7 +724,10 @@ Important: Google does not guarantee that features that consume structured data 
 show up in search results. For a list of common reasons why Google may not
 show your content in a rich result, see the General
 Structured Data Guidelines.
-If you're having trouble implementing structured data, here are some resources that may help you.
+If you're having trouble implementing or debugging structured data, here are some resources that
+may help you.
+If you're using a content management system (CMS) or someone else is taking care of your site,
+ask them to help you. Make sure to forward any Search Console message that details the issue to them.
 You might have an error in your structured data. Check the
 list of structured
 data errors.
@@ -739,4 +742,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-21 UTC.
+Last updated 2021-03-18 UTC.

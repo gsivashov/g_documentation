@@ -1,8 +1,8 @@
 https://support.google.com/webmasters/answer/1050724
 
 Home
-Google Search Central
-Help
+Search Central
+Support
 Send feedback
 Google Search crawling and indexing FAQ
 This article brings together answers to the questions about crawling and indexing that we at Google hear most often.

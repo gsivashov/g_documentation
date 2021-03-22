@@ -32,5 +32,5 @@ When the served feed changes, Google will start serving the new feed instead of
 Next: Get your podcast on Google
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpAbout podcasting on GoogleGet your podcast on GoogleMonitor your podcast listening dataManage your podcast and episodes on Google PodcastsTroubleshootingReference
+HelpAbout podcasting on GoogleGet your podcast on GoogleMonitor your podcast listening dataManage your podcast and episodes on Google PodcastsTroubleshootingReferenceGoogle Podcasts policies
 Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.
