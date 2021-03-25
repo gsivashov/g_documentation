@@ -843,9 +843,9 @@ the description property.
 experienceRequirements.monthsOfExperience
 Number
 The minimum number of months of experience that are required for the job posting.
-If there are more complex experience requirements (for example, 12 months as a chef or 24
-months as a sous chef), use the minimum number that's required, assuming that all other
-requirements are met.
+If there are more complex experience requirements, use the experience that represents the minimum number that is required for a candidate. For example:
+12 months as a chef or 24 months as a sous chef: This implies that the candidate may have either experience of the two required options, and the minimum requirement is 12 months.
+12 months as a chef and 24 months as a sous chef: This is implies that the candidate has to fulfill all given requirements, and the minimum requirement is 24 months.
 experienceInPlaceOfEducation
 Boolean
 If set to true, this property indicates whether a job posting will accept experience in
@@ -1039,4 +1039,4 @@ North America: Available in the entire region
 Sub-Saharan Africa: Available in the entire region
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-18 UTC.
+Last updated 2021-03-25 UTC.

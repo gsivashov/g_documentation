@@ -26,6 +26,8 @@ Because of an internal issue, you will see a data drop in the Performance report
 November 14-19 2019
 Some image click data was dropped; as a result, you might see a dip in both click rate and CTR during this period. The issue has been fixed. This issue affected only Search Console reporting, not your performance on Google Search.
 Crawl Stats Report
+March 10-23, 2021
+You may see a drop in data in this period due to an internal reporting issue. This issue did not affect actual page fetches, only the reporting of fetch activity during this period.
 January 16, 2021 onward
 The crawl stats report has increased its reporting coverage for additional types of crawls. As a result, you may see a jump in the number of crawls reported for your site. This does not reflect additional crawling of your site, only improved reporting.
 Mobile Usability Report

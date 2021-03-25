@@ -85,6 +85,7 @@ Here's an example of a dataset in JSON-LD:
 "ATMOSPHERE > ATMOSPHERIC PHENOMENA > FREEZE"
 ],
 "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+"isAccessibleForFree" : true,
 "hasPart" : [
 {
 "@type": "Dataset",
@@ -168,6 +169,7 @@ Here's an example of a dataset in JSON-LD:
 "ATMOSPHERE > ATMOSPHERIC PHENOMENA > FREEZE"
 ],
 "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+"isAccessibleForFree" : true,
 "hasPart" : [
 {
 "@type": "Dataset",
@@ -478,6 +480,9 @@ URL, Text, or PropertyValue
 An identifier, such as a DOI or a Compact Identifier. If the dataset has more than one
 identifier, repeat the identifier property. If using JSON-LD, this is represented
 using JSON list syntax.
+isAccessibleForFree
+Boolean
+Whether the dataset is accessible for free.
 keywords
 Text
 Keywords summarizing the dataset.
@@ -843,4 +848,4 @@ Add logo structured data to your page.
 Establish your business details with Google.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-18 UTC.
+Last updated 2021-03-24 UTC.

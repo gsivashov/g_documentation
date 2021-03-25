@@ -29,7 +29,7 @@ You can list up to 1,000 images for each page, using the syntax outline in the e
 Image sitemap reference
 XML namespace
 The image tags are defined in the following namespace:
-image:xmlns="http://www.google.com/schemas/sitemap-image/1.1"
+xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 Image tag definitions
 The following sitemap tags apply specifically to images. You must use the required tags; we recommend using the optional tags to provide more information and a better user experience.
 Tag

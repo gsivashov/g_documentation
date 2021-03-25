@@ -429,12 +429,12 @@ Google, Bing,and other major search engines support sitemap, as
 defined by sitemaps.org.
 Usage:
 sitemap: [absoluteURL]
-[absoluteURL] points to a sitemap, sitemap Index file, or
-equivalent URL. It must be a fully qualified URL, including the protocol and host, and does
-not have to be URL-encoded. The URL does not have to be on the same host as the robots.txt
-file. Multiple sitemap entries may exist. As non-group-member
-lines, these are not tied to any specific user agents and may be followed by all crawlers,
-provided it is not disallowed.
+[absoluteURL] points to the location of a sitemap or sitemap Index
+file. It must be a fully qualified URL, including the protocol and host, and does not have to
+be URL-encoded. The URL does not have to be on the same host as the robots.txt file. Multiple
+sitemap entries may exist. As non-group-member lines, these are
+not tied to any specific user agents and may be followed by all crawlers, provided it is not
+disallowed.
 Example
 user-agent: otherbot
 disallow: /kale
@@ -475,4 +475,4 @@ Google's open source
 robots.txt library, which is also used in Google Search.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-11 UTC.
+Last updated 2021-03-23 UTC.
