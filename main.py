@@ -26,7 +26,8 @@ def get_content_from_request(response):
 
 def getTextContent(response):
 
-    h1 = ''.join(response.html.xpath('//h1/text()')).replace('?', '_').replace(':','_')
+    h1 = ''.join(response.html.xpath('//h1/text()')
+                 ).replace('?', '_').replace(':', '_')
     article = get_content_from_request(response)
     if not article:
         return h1, None
