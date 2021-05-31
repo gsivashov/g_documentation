@@ -182,8 +182,7 @@ structured data with special meaning to Google Search. Most Search structured da
 schema.org vocabulary, but you should rely
 on the documentation on developers.google.com as definitive
 for Google Search behavior, rather than the schema.org documentation. Attributes or
-objects not described here are not required by Google Search, even if marked as required
-by schema.org.
+objects not described here are not required by Google Search, although they might be useful for other services, tools, and platforms.
 As of January 29, 2021, data-vocabulary.org markup will no longer be
 eligible for Google rich result features. To be eligible after January 29, 2021, you
 need to replace data-vocabulary.org markup with schema.org markup. Learn more about
@@ -235,4 +234,4 @@ structured data to a simple HTML site, including where to place structured data 
 how to validate it.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-16 UTC.
+Last updated 2021-05-26 UTC.

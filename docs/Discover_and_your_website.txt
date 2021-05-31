@@ -13,48 +13,56 @@ How Discover is different from Search
 With Search, users enter a search term to find helpful information related to their query, but
 Discover takes a different approach. Instead of showing results in response to a query,
 Discover surfaces content primarily based on what Google's automated systems believe to be a
-good match with a user's interests. The content in Discover changes regularly based on newly
-published web content or evolving user interests.
-Given the serendipitous nature of Discover, traffic from Discover is less predictable or
-dependable when compared to Search, and should be considered supplemental to your
-Search traffic. This means that you might create and optimize content to fulfill specific
-search needs for search engine traffic, but there is no way to create content that explicitly
-targets Discover's interest matching.
+good match with a user's interests.
+As a highly personalized feed, Discover actively tunes itself to a user’s interests and
+displays content that aligns with those interests. The content in Discover is automatically
+refreshed as new content is published, however Discover is designed to show all types of
+helpful content from across the web, not just newly published content.
+We are always improving Discover to serve personalized, helpful content to users. Given the
+serendipitous nature of Discover, traffic from Discover is less predictable or dependable when
+compared to Search, and should be considered supplemental to your Search traffic. Our ongoing
+work to improve Discover’s user experience means sites may see changes in their traffic
+unrelated to the quality or publishing frequency of their content.
 How content appears in Discover
 Content is automatically eligible to appear in Discover if it is indexed by Google and meets
 Discover's content
 policies. No special tags or structured data are required. Please note that being
 eligible to appear in Discover is not a guarantee of appearing.
-To increase the likelihood of success, ensure that you are posting outstanding and engaging
-content that you think users would find interesting. Especially consider the following:
-Having page titles that capture the essence of the content, but in a non-clickbait
+Our automated systems surface content in Discover from sites that have many individual pages
+that demonstrate expertise, authoritativeness, and trustworthiness (E-A-T). Those looking to
+improve E-A-T can consider some of the same questions
+we encourage site owners to consider for Search. While Search and Discover are different, the
+overall principles for E-A-T as it applies to content within them are similar.
+To increase the likelihood of your content appearing in Discover, we recommend the following:
+Use page titles that capture the essence of the content, but in a non-clickbait
 fashion.
-Avoiding tactics to artificially inflate engagement by using misleading or exaggerated
-details in preview content (title, snippets, images) to increase appeal, or by withholding
-crucial information required to understand what the content is about.
-Avoiding tactics that manipulate appeal by catering to morbid curiosity, titillation, or
-outrage.
-Having content that's timely for current interests, tells a story well, or provides unique
-insights.
-Providing clear dates, bylines, information about authors, the publication, the publisher,
-company or network behind it, and contact information to better build trust and transparency
-with visitors.
-Including compelling, high-quality images in your content, especially large images that
+Include compelling, high-quality images in your content, especially large images that
 are more likely to generate visits from Discover. Large images need to be at least 1200 px
 wide and enabled by the max-image-preview:large
 setting, or by using AMP.
 Avoid using a site logo as your image.
-Our automated systems surface content in Discover from sites that have many individual pages
-that demonstrate expertise, authoritativeness, and trustworthiness (E-A-T). Those looking to
-improve E-A-T can consider some of the same
-questions we encourage site owners to consider for Search. While Search and Discover are
-different, the overall principles for E-A-T as it applies to content within them are similar.
+Avoid tactics to artificially inflate engagement by using misleading or exaggerated
+details in preview content (title, snippets, or images) to increase appeal, or by withholding
+crucial information required to understand what the content is about.
+Avoid tactics that manipulate appeal by catering to morbid curiosity, titillation, or
+outrage.
+Provide content that's timely for current interests, tells a story well, or provides unique
+insights.
+To deliver a good user experience, Discover seeks to present content that's suitable for
+interest-based feeds, such as articles and videos, as well as filter out content
+that's not desired or that might confuse readers. For example, Discover might not
+recommend job applications, petitions, forms, code repositories, or satirical
+content without any context.
 Monitor your performance on Discover
 If you have content on Discover, you can monitor your performance using the
 Performance
 report for Discover. This report shows impressions, clicks, and CTR for any of your
 content that has appeared in on Discover in the last 16 months, as long as your data reaches
-a minimum threshold of impressions.
+a minimum threshold of impressions. We’ve recently added traffic from Chrome to the Discover
+performance report, and now this report fully tracks a site’s Discover traffic across all
+surfaces where users interact with Discover.
+Read more in the Google
+Search Central blog.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-02 UTC.
+Last updated 2021-04-18 UTC.

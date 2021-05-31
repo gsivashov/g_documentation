@@ -61,8 +61,8 @@ require a login or have a noindex
 directive, follow these steps:
 Temporarily hide information from Google Search by filing a
 URL removal
-request. This takes effect in about a day, but it is only temporary (after about 90
-days it will reappear in search results). You must take the additional steps described next to
+request. This takes effect in about a day, but it is only temporary (a successful request
+only lasts about 6 months). You must take the additional steps described next to
 remove it from Google search results permanently. You must be a verified site owner of
 the page in Search Console to do this. We recommend removing the page from both
 search results and the cache in your request.
@@ -189,4 +189,4 @@ This does not apply to images; for images, robots.txt is the correct way to bloc
 search results.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-11 UTC.
+Last updated 2021-04-20 UTC.

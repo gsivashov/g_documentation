@@ -11,5 +11,5 @@ Note that for Google Local, this opt-out option applies globally. For the remain
 View or change your opt-out setting in Search Console
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats reportOpt out of display on Google Local and other Google properties
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the WebAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats reportOpt out of display on Google Local and other Google properties
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

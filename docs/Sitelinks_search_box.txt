@@ -6,17 +6,21 @@ Documentation
 Advanced SEO
 Send feedback
 Sitelinks search box
-A sitelinks search box is a quick way for people to search your site or app immediately on the
-search results page. The search box implements real-time suggestions and other features.
+A sitelinks search box is a quick way for people to search your site or app immediately on
+the search results page. The search box implements real-time suggestions and other features.
 Google Search may automatically expose a search box scoped to your website when it appears as
 a search result, without you having to do anything additional to make this happen. This search
 box is powered by Google Search. However, you can explicitly provide information by adding
-WebSite structured data, which can help Google better understand your site.
-Important: Google doesn't guarantee that a sitelinks search box
-will be shown in search results. Additionally, using the sitelinks search box markup doesn't
-make it more likely that a sitelinks search box will be shown. For a list of common reasons why Google may not
-show structured data in search results, review the General
-Structured Data Guidelines.
+WebSite structured data, which can help Google better understand
+your site.
+If Google Search already exposed a sitelink search box for your site, you can control certain
+aspects of the sitelink search box by adding WebSite structured
+data.
+Important: Google doesn't guarantee that a sitelinks search box will be shown in search
+results. Additionally, using the sitelinks search box markup doesn't make it more likely that
+a sitelinks search box will be shown. For a list of common reasons why Google may not show
+structured data in search results, review the
+General Structured Data Guidelines.
 How to implement sitelinks search box
 Here are the steps to make your site eligible to display with a search box in Google Search results:
 Install a working search engine on your web site or Android app.
@@ -66,6 +70,9 @@ App Indexing for Android.
 Example
 Here is an example search result for "Pinterest" on Google that returns a sitelinks search box
 for the Pinterest website:
+Note: The actual appearance in search results might be different. You can
+preview most features with the
+Rich Results Test.
 Here is some example markup that would implement a sitelinks search box that uses the
 website's custom search engine:
 JSON-LD
@@ -301,4 +308,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-18 UTC.
+Last updated 2021-05-31 UTC.

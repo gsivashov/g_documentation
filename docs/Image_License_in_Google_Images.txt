@@ -46,6 +46,9 @@ Note: If you choose to use both IPTC photo metadata and structured
 data, and if any information conflicts between the two, Google will use the structured data
 information.
 The following diagram shows how license information may show up in Google Images:
+Note: The actual appearance in search results might be different. You can
+preview most features with the
+Rich Results Test.
 A URL to a page that describes the license governing an image's use. Specify this
 information with the Schema.org license property or the IPTC Web Statement of
 Rights field.
@@ -422,4 +425,4 @@ forum. For help with IPTC photo metadata, you can
 post in their forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-05-31 UTC.

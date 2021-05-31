@@ -5,19 +5,59 @@ Search Central
 Case studies
 Send feedback
 Eventbrite boosts traffic 100% with the events search experience on Google
-check_circle_outline 100%
-increase in the typical YOY growth of traffic from Google Search to event listing pages,
-according to Google Analytics
 Challenge
-Eventbrite is the world's largest event technology platform, powering millions of events in 180+ countries and territories. Their search engine optimization (SEO) team began using Event structured data on their website in 2015 to boost the online visibility and discoverability of creator's events. This made them perfectly prepared to participate in Google's new search experience for events on mobile when it launched in May 2017. "We had seen some great traction through our SEO efforts," says Allen Jilo, an Eventbrite product manager. "Around the time Google started to leverage the schema.org markup for events, we noticed that events were showing up in search results in a different way. We were interested in working more closely with Google on scaling that."
+Eventbrite is the world's largest event technology platform, powering millions of events in
+180+ countries and territories. Their search engine optimization (SEO) team began using
+Event structured data
+on their website in 2015 to boost the online visibility and discoverability of creator's
+events. This made them perfectly prepared to participate in Google's new search experience
+for events on mobile when it launched in May 2017. "We had seen some great traction through
+our SEO efforts," says Allen Jilo, an Eventbrite product manager. "Around the time Google
+started to leverage the schema.org markup for events, we noticed that events were showing up
+in search results in a different way. We were interested in working more closely with Google
+on scaling that."
 Solution
-The new search experience, which leverages Event structured data, helps users find events through Google Search and other products such as Google Maps. In addition, enriched search results often include advanced interactive features, which let users perform certain actions (such as viewing event details) while still in Search. For example, if a user searches for "concerts in Denver," an immersive-event discovery experience appears in markets where the enriched event search is active.
-Eventbrite's SEO team followed Google's event documentation when implementing Event structured data more widely across their website. Working with a base template, "the actual implementation time wasn't too long at all," Jilo says. The team made only minor tweaks to their structured data afterward, and found the events experience to be extremely scalable. Now, any event published across Eventbrite has structured data markup, and consumers in the US will be shown the enriched search results, allowing them to more easily browse and discover things to do. Eventbrite also used Search Console and Structured Data Testing Tool to eliminate any errors in the markup data.
-After adding Google recommended structured data properties, the team ran tests on various event pages. "Because of the structured data, Google was able to surface the event date, venue, and other key details to make the information stand out from other search results," Jilo says. "Initially, we weren't exactly sure what benefits we would see."
+The new search experience, which leverages Event structured data,
+helps users find events through Google Search and other products such as Google Maps. In
+addition, enriched search
+results often include advanced interactive features, which let users perform certain
+actions (such as viewing event details) while still in Search. For example, if a user
+searches for "concerts in Denver," an immersive-event discovery experience appears in
+markets where the enriched event search is active.
+Eventbrite's SEO team followed Google's event
+documentation when implementing Event structured data more
+widely across their website. Working with a base template, "the actual implementation time
+wasn't too long at all," Jilo says. The team made only minor tweaks to their structured data
+afterward, and found the events experience to be extremely scalable. Now, any event published
+across Eventbrite has structured data markup, and
+consumers in the US will be shown the enriched search results, allowing them to more easily
+browse and discover things to do. Eventbrite also used Search Console
+and Structured
+Data Testing Tool to eliminate any errors in the markup data.
+After adding Google recommended structured data properties,
+the team ran tests on various event pages. "Because of the structured data, Google was able
+to surface the event date, venue, and other key details to make the information stand out from
+other search results," Jilo says. "Initially, we weren't exactly sure what benefits we would
+see."
 Result
-Multiple ongoing SEO projects can make it difficult to determine exactly what results in increased traffic, conversions, or sales. But Eventbrite believes the Google Event search experience has been effective. Jilo carefully delineates the results: "In the month following implementation of the new search experience, we saw roughly a 100-percent increase in the typical year-over-year growth of traffic from Google Search to our event listing pages, according to Google Analytics." The enriched search experience "definitely has been helpful for driving traffic and getting additional ticket sales."
-"Within two or three weeks we started seeing a visual difference in our event search results on Google," Jilo says. "The Google Search experience definitely helps drive more eyeballs to event pages. And when those people convert, it translates to incremental ticket sales for our event creators."
-Having implemented Event structured data on their primary discovery pages, Eventbrite expects to keep this functionality on any new discovery page types. "We certainly will be looking at adding Event structured data on those pages as well," Jilo says. "The Google search experience for events has definitely been a positive step."
+Multiple ongoing SEO projects can make it difficult to determine exactly what results in
+increased traffic, conversions, or sales. But Eventbrite believes the Google Event search
+experience has been effective. Jilo carefully delineates the results: "In the month following
+implementation of the new search experience, we saw roughly a 100-percent increase in the
+typical year-over-year growth of traffic from Google Search to our event listing pages,
+according to Google Analytics." The enriched search experience "definitely has been helpful
+for driving traffic and getting additional ticket sales."
+100%
+Increase in the typical YOY growth of traffic from Google Search to event listing pages, according to Google Analytics
+"Within two or three weeks we started seeing a visual difference in our event search
+results on Google," Jilo says. "The Google Search experience definitely helps drive more
+eyeballs to event pages. And when those people convert, it translates to incremental
+ticket sales for our event creators."
+Having implemented Event structured data on their primary discovery
+pages, Eventbrite expects to keep this functionality on any new discovery page types. "We
+certainly will be looking at adding Event structured data on
+those pages as well," Jilo says. "The Google search experience for events has definitely been
+a positive step."
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-04-22 UTC.

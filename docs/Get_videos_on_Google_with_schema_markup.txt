@@ -19,6 +19,9 @@ description, thumbnail URL, upload date, and duration, by marking up
 your video with VideoObject. Videos can appear in
 Google Search results, video search results, Google Images, and
 Google Discover.
+Note: The actual appearance in search results might be different. You can
+preview most features with the
+Rich Results Test.
 Based on how you mark up your content, your videos may also be eligible for the following video
 enhancements:
 Video enhancements
@@ -39,17 +42,27 @@ eligible for this rich result, with no additional steps needed.
 For more information
 about feature availability, guidelines, and examples, see
 Home activities.
-Key moments (limited access): Help users quickly navigate to specific points in a
-video.
-If your video is hosted on YouTube, Google Search may automatically enable clips
-based on the video description on YouTube. Check out the
-best practices for marking timestamps in YouTube
-descriptions.
-If your video is hosted on your web page, you can add
-Clip structured data to your VideoObject to
-help Google understand the important points in your video.
-This feature is currently limited to a
-small set of providers. If you would like to participate, register your interest in our form.
+Key moments
+The key moments feature is a way for users to navigate video segments like chapters in a book, which can help
+users engage more deeply with your content. Google Search tries to automatically detect the
+segments in your video and show key moments to users, without any effort on your part. Alternatively,
+you can manually tell Google about the important points of your video.
+If your video is hosted on your web page, there are two ways that you can enable key moments:
+Clip structured data: Specify the exact
+start and end point to each segment, and what label to display for each segment.
+SeekToAction
+structured data (beta): Tell Google where timestamps typically go in your URL
+structure, so that Google can automatically identify key moments and link users to those points within the video.
+Beta: SeekToAction structured data is
+currently in the beta phase of development, so that we can catch any bugs before
+supporting the markup more broadly. We'll update this page when it becomes more stable,
+and you're welcome to implement the markup on your own site in advance.
+If your video is hosted on YouTube, you can specify the exact timestamps and labels
+in the video description on YouTube. Check out the best
+practices for marking timestamps in YouTube descriptions.
+To opt out of the key moments feature completely (including any efforts Google may make to
+show key moments automatically for your video), use the
+nosnippet meta tag.
 Video host carousel (limited access): Enable users to explore your video gallery
 pages by adding ItemList structured data.
 This feature is currently limited to a small set of providers. Google
@@ -576,11 +589,9 @@ title="Tie a Tie">
 </span>
 </div>
 </div>
-Key moments (limited access)
+Clip
 Here's an example of VideoObject
-and Clip. This feature is currently limited
-to a small set of providers. If you would like to participate,
-register your interest in our form.
+and Clip.
 JSON-LD
 <html>
 <head>
@@ -709,6 +720,87 @@ Microdata
 <meta itemprop="contentUrl" content="http://www.example.com/cat_video_full.mp4" />
 <meta itemprop="regionsAllowed" content="US" />
 <meta itemprop="thumbnailUrl" content="http://www.example.com/cat.jpg" />
+</body>
+</html>
+SeekToAction (beta)
+Here's an example of a single VideoObject
+that includes the additional properties needed for SeekToAction markup.
+JSON-LD
+<html>
+<head>
+<title>John Smith (@johnsmith123) on VideoApp: My daily workout! #stayingfit</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "VideoObject",
+"potentialAction" : {
+"@type": "SeekToAction",
+"target": "https://video.example.com/watch/videoID?t={seek_to_second_number}",
+"startOffset-input": "required name=seek_to_second_number"
+},
+"name": "My daily workout!",
+"uploadDate": "2020-07-19",
+"thumbnailUrl": "http://www.example.com/daily-workout.jpg",
+"description": "My daily workout!",
+"embedUrl": "https://example.com/daily-workout"
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head>
+<title>John Smith (@johnsmith123) on VideoApp: My daily workout! #stayingfit</title>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "VideoObject",
+"potentialAction" : {
+"@type": "SeekToAction",
+"target": "https://video.example.com/watch/videoID?t={seek_to_second_number}",
+"startOffset-input": "required name=seek_to_second_number"
+},
+"name": "My daily workout!",
+"uploadDate": "2020-07-19",
+"thumbnailUrl": "http://www.example.com/daily-workout.jpg",
+"description": "My daily workout!",
+"embedUrl": "https://example.com/daily-workout"
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+Microdata
+<html itemscope itemprop="VideoObject" itemtype="https://schema.org/VideoObject">
+<head>
+<title itemprop="name">John Smith (@johnsmith123) on VideoApp: My daily workout! #stayingfit</title>
+</head>
+<body>
+<meta itemprop="uploadDate" content="2020-07-19" />
+<p itemprop="description">My daily workout!</p>
+<div itemprop="potentialAction" itemtype="http://schema.org/SeekToAction" itemscope>
+<meta itemprop="target" content="https://video.example.com/watch/videoID?t={seek_to_second_number}" />
+<meta itemprop="startOffset-input" content="required name=seek_to_second_number" />
+</div>
+<link itemprop="embedUrl" href="https://example.com/daily-workout" />
+<meta itemprop="thumbnailUrl" content="http://www.example.com/daily-workout.jpg" />
+</body>
+</html>
+<html itemscope itemprop="VideoObject" itemtype="https://schema.org/VideoObject">
+<head>
+<title itemprop="name">John Smith (@johnsmith123) on VideoApp: My daily workout! #stayingfit</title>
+</head>
+<body>
+<meta itemprop="uploadDate" content="2020-07-19" />
+<p itemprop="description">My daily workout!</p>
+<div itemprop="potentialAction" itemtype="http://schema.org/SeekToAction" itemscope>
+<meta itemprop="target" content="https://video.example.com/watch/videoID?t={seek_to_second_number}" />
+<meta itemprop="startOffset-input" content="required name=seek_to_second_number" />
+</div>
+<link itemprop="embedUrl" href="https://example.com/daily-workout" />
+<meta itemprop="thumbnailUrl" content="http://www.example.com/daily-workout.jpg" />
 </body>
 </html>
 AMP page with a video
@@ -834,7 +926,7 @@ Video best practices
 Video sitemap guidelines
 Livestream guidelines (if applicable)
 Carousel guidelines (if applicable)
-Key moments guidelines (if applicable)
+Clip and Seek guidelines (if applicable)
 Best practices for marking timestamps on YouTube (if applicable)
 LIVE badge guidelines
 If you're adding BroadcastEvent to livestream
@@ -853,7 +945,7 @@ If your video is hosted on YouTube, Google Search may automatically enable key m
 on the video description on YouTube, and you may not have to mark specific timestamps in your
 YouTube description. However, you can tell us more explicitly about the important points in
 your video and we will prefer that information. The following diagram shows how timestamps and
-labels in a YouTube video description can appear in Search results:
+labels in a YouTube video description can appear in search results:
 1. Timestamp: When a clip starts.2. Label: The name of the clip.
 Keep in mind the following guidelines when formatting timestamps and labels for YouTube descriptions:
 Format the timestamp in the following format: [hour]:[minute]:[second]. If
@@ -863,19 +955,19 @@ Place each timestamp on a new line in the video description.
 Link the timestamp to the specified point in the video.
 Make sure the label contains at least one word.
 List the timestamps in chronological order.
-Key moments guidelines (limited access)
-If you're adding Clip structured data to
+Clip and SeekToAction guidelines
+If you're adding Clip or SeekToAction structured data to
 mark video segments, follow these guidelines:
-The video must be publicly available to watch without a subscription.
 The video must have the ability to deep link into some point other than the start
 point in the video URL. For example, http://www.example.com/example?t=30 starts
 30 seconds into a video.
-Clip structured data must be added to a page where users can watch the video. It's
+VideoObject structured data must be added to a page where users can watch the video. It's
 a bad user experience to point users to a page where they can't watch the video.
 The total video duration must be a minimum of 30 seconds.
-Make sure that no two clips on the same video defined on the same page share a start
+The video must include the required properties that are listed in the VideoObject structured data documentation.
+For Clip structured data only: Make sure that no two clips on the same video defined on the same page share a start
 time.
-The video must have VideoObject structured data.
+For SeekToAction structured data only: Google must be able to fetch your video content files.
 Structured data type definitions
 This section describes the structured data types related to video features in Google Search.
 You must include the required VideoObject properties for your
@@ -887,8 +979,10 @@ BroadcastEvent: Mark up livestream
 videos to enable a LIVE badge on your video.
 ItemList: Mark up pages with a list of videos
 to enable a video host carousel.
-Clip: Mark important segments in your video to help
+Clip: Manually mark important segments in your video to help
 users quickly navigate to specific points in a video.
+SeekToAction: Enable key moments by indicating how your URL structure
+works, so that Google can automatically identify key moments and link users to those points within the video.
 Does your video teach users how to complete a task step-by-step?
 Embed your video content within HowTo.
 VideoObject
@@ -906,12 +1000,7 @@ Text
 The title of the video
 thumbnailUrl
 Repeated URL
-A URL pointing to the video thumbnail image file.
-Image URLs must be
-crawlable and indexable.
-Images must represent the marked up content.
-Images must be in .jpg, .jpeg, .png, or .gif format.
-Images must 60px x 30px, at minimum.
+A URL pointing to the video thumbnail image file. Follow the thumbnail image guidelines.
 uploadDate
 Date
 The date the video was first published, in
@@ -943,10 +1032,8 @@ URL
 We recommend that you provide a URL to your video. You can provide a
 URL by using one or both of the following properties: contentUrl and
 embedUrl.
-A URL pointing to a player for the specific video, in one of the
-supported
-encoding formats. Don't link to the page where the video lives; this must be the
-URL of the video media file itself. Usually this is the information in
+A URL pointing to a player for the specific video. Don't link to the page where the
+video lives; this must be the URL of the video player itself. Usually this is the information in
 the src element of an <embed> tag.
 Example
 "embedUrl": "https://www.example.com/embed/123"
@@ -1069,14 +1156,12 @@ Ordinal position of the item page in the list. For example:
 ListItem.url
 URL
 The canonical URL of the item page. Every item should have a unique URL.
-Clip (limited access)
-This feature is currently limited to a small set of providers. If you
-would like to participate,
-register your interest in our form.
-To be eligible for key moments, nest the following properties in your
+Clip
+To manually tell Google what timestamp and label to use for the key moments feature, nest the following properties in your
 VideoObject. While
 Clip properties aren't required, you must add the following properties if you
-want your video to display with video segments.
+want Google to show the timestamps and labels that you specify for your video, instead of the
+video segments that Google may automatically show for your video.
 The full definition of Clip is
 available at schema.org/Clip.
 Required properties
@@ -1100,6 +1185,50 @@ endOffset
 Number
 The end time of the clip expressed as the number of seconds from the
 beginning of the work.
+SeekToAction (beta)
+To tell Google how your URL structure works (so that Google can display key moments
+that are automatically identified for your video), nest the following properties in your
+VideoObject. While
+SeekToAction properties aren't required, you must add the following properties if you
+want Google to understand how your URL structure works, so Google can link users to a point within the video.
+If you prefer to identify key moments in a video yourself, instead
+of letting Google automatically identify key moments, use Clip
+markup instead of SeekToAction.
+The full definition of SeekToAction is
+available at schema.org/SeekToAction.
+Required properties
+potentialAction
+SeekToAction
+Indicates a potential action. Include the following nested properties
+potentialAction.startOffset-input
+potentialAction.target
+For example:
+{
+"@context": "https://schema.org",
+"@type": "VideoObject",
+"potentialAction" : {
+"@type": "SeekToAction",
+"target": "https://video.example.com/watch/videoID?t={seek_to_second_number}",
+"startOffset-input": "required name=seek_to_second_number"
+}
+)
+potentialAction.startOffset-input
+Text
+The placeholder string that Google will identify as your timestamp structure and then
+replace with the number of seconds to skip to. Use the following value:
+"startOffset-input": "required name=seek_to_second_number"
+potentialAction.target
+EntryPoint
+The URL of the page that contains this VideoObject, including a placeholder in the URL structure
+that indicates where Google should insert the number of seconds to skip to in the video.
+This is how Google understands your URL structure and how you format your timestamps.
+Replace the timestamp part of the URL with the following placeholder
+string:
+{seek_to_second_number}
+For example, replace the timestamp part of the URL:
+"target": "https://video.example.com/watch/videoID?t=30"
+So that the timestamp now looks like this:
+"target": "https://video.example.com/watch/videoID?t={seek_to_second_number}"
 Monitor rich results with Search Console
 Search Console is a tool that helps you monitor how your pages perform in Google Search.
 You don't have to sign up for Search Console to be included in Google Search results,
@@ -1152,4 +1281,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-19 UTC.
+Last updated 2021-05-31 UTC.

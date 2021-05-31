@@ -56,6 +56,9 @@ variant may be displayed if your how-to contains an image of the completed how-t
 step. Make sure to add as many required and recommended properties as possible
 so your how-to can be most effectively represented in Google Search.
 Standard How-to rich result
+Note: The actual appearance in search results might be different. You can
+preview most features with the
+Rich Results Test.
 JSON-LD
 Here's an example of a text based how-to page using JSON-LD. The example only has one image that
 represents the final state of the how-to. In this result, users may see a preview of the content
@@ -2027,4 +2030,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-18 UTC.
+Last updated 2021-05-31 UTC.

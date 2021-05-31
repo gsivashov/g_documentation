@@ -2,94 +2,111 @@ https://support.google.com/webmasters/answer/6211453
 
 Data anomalies in Search ConsoleWhat's up with my graph?On rare occasions, there might be an event in Search Console that could affect your report data. For example, if we change our data aggregation methods or there is a logging error, you might see a dip or bump in your chart. This page records known issues that might affect your data.
 Product-wide notes
-April 12, 2020 onward
+2020
+April 12 onward
 AMP, Mobile Usability, Speed, all rich result reports
 These reports have been changed to cover a smaller number of pages, in order to provide better performance in Search Console. Because of this, you might see a decrease in the number of items and pages tracked in these reports. This change does not affect Search results, only the data reporting in Search Console.
 Remove URLs Report
 No issues.
 URL Inspection tool
-October 14 2020, ongoing
+2020
+October 14
 The "Request Indexing" feature of the URL Inspection Tool has been disabled in order to make some technical updates. We expect it to be re-enabled in the coming weeks. In the meanwhile, Google continues to find and index content through our regular methods, as covered here.
 Performance reports (Search Results / Discover)
-Feb 16, 2021 (Discover)
+2021
+April 6 (Search)
+Search Console improved the algorithm for counting image impressions in Search results. As a result, you may see a small drop in your image impressions in Search. This is not a drop in actual impressions, just a more accurate calculation of image impressions when type=image is specified in the Search Performance report.
+February 16 (Discover)
 Previously, if a viewer clicked into a Web Story on Discover, then continued from there into additional Web Stories, only the first Web Story was credited with an impression and click. From this date onward, any additional Web Stories that were reached from the first Web Story in Discover will also be credited with an impression and click in the Performance report for Discover. Therefore, you might see an increase in your Discover data.
-October 28 2020 (Discover)
+2020
+October 28 (Discover)
 A previous issue in which some Discover data were mis-classified as video in the Performance report has been fixed. Because of this, you may see a drop in your Discover report's video appearance statistics. This mis-classification did not affect Discover results for users, only the data reporting.
-October 6, 2020 ongoing (Discover)
+October 6 (Discover)
 Following the launch of the Stories carousel feature on Discover, you might see a significant increase in Web Story stats on Discover reporting for your site.
-September 25-28 2020 (Discover)
+September 25-28 (Discover)
 Web Stories were shown less often to Discover users during this period, so you will see a drop in impressions and clicks for this type in the Performance report for Discover.
-May 12-15 2020 (Discover)
+May 12-15 (Discover)
 Due to internal logging issues, you might see a significant drop in Discover reporting for your site. Please note that this did not reflect any user-facing changes for your site, only the data reporting in Search Console.
-December 8-13 2019 (Discover)
+2019
+December 8-13 (Discover)
 Because of an internal issue, you will see a data drop in the Performance report for Discover during this period. This issue has been fixed. Please note that this does not reflect any user-facing changes for your site, only the data reporting in Search Console.
-November 14-19 2019
-Some image click data was dropped; as a result, you might see a dip in both click rate and CTR during this period. The issue has been fixed. This issue affected only Search Console reporting, not your performance on Google Search.
 Crawl Stats Report
-March 10-23, 2021
+2021
+March 10-23
 You may see a drop in data in this period due to an internal reporting issue. This issue did not affect actual page fetches, only the reporting of fetch activity during this period.
-January 16, 2021 onward
+January 16 onward
 The crawl stats report has increased its reporting coverage for additional types of crawls. As a result, you may see a jump in the number of crawls reported for your site. This does not reflect additional crawling of your site, only improved reporting.
 Mobile Usability Report
 April 12, 2020 onward
 The report has been changed to cover a smaller number of pages, in order to provide better performance in Search Console. Because of this, you might see a decrease in the number of items and pages tracked in the report. This change does not affect Search results, only the data reporting in Search Console.
 Index Coverage Report
-January 9, 2021
+2021
+January 9
 Additional, more fine-grained index coverage statuses are now available. This will cause some pages in the report to be relabeled with the new, more specific categories (for example, "Crawl anomaly" is no longer reported, and has been replaced with more specific issues). As a result, you will see the appearance of new status types in your report, although the total number of items in each category (error, warning, valid, excluded) should not change significantly, only the status descriptions of any labeled items. Read more about this feature in the blog.
-Sept 1, 2020 ongoing
+2020
+Sept 1 ongoing
 An internal systems error caused a delay in processing index coverage information. No data has been lost, and the report will show accurate data after processing is complete.
-December 15, 2019 onward
+2019
+December 15 onward
 The Index Coverage report can now more accurately report on indexed pages. Because of this, some pages that were Crawled - currently not indexed are now known to be indexed. As a result, you may see a transfer of pages from Excluded to Valid state. This does not reflect any changes in your site, but a more accurate accounting system.
 International Targeting Report
 No issues
 AMP enhancement report
-January 19, 2021 onward
+2021
+January 19 onward
 Search Console has added a check for a new AMP issue type: disallowed !important CSS qualifier. As a result, you may see an increase in the total number of AMP issues reported for your site. This doesn't necessarily indicate new errors on your site, only that we are now checking for this error.
-August 18, 2020 onward
+2020
+August 18 onward
 The report has been updated to include Signed Exchange related issues. This change does not affect Search results, only the data reporting in Search Console. Read more.
-April 12, 2020 onward
+April 12 onward
 The report has been changed to cover a smaller number of pages, in order to provide better performance in Search Console. Because of this, you might see a decrease in the number of items and pages tracked in the report. This change does not affect Search results, only the data reporting in Search Console.
 Rich result reports
-March 11, 2021
+2021
+May 10
+Event
+Search Console has changed the way that it evaluates and reports errors in Event structured data. As a result, you may see small increases in the number of Event entities and issues reported for your property, as well as a change in severity of some issues from errors to warnings. Specifically, Search Console is now detecting Event entities at all hierarchy levels, not just at the root level, and errors in recommended properties are now flagged as warnings rather than errors.
+March 11
 Job posting
 Search Console has changed the requirements for the Education, Experience, and ExperienceInPlaceOfEducation properties of job posting markup. Therefore you may see an increase in warnings for Job Posting instances on your property. See more details about the updated requirements in the Job Posting documentation.
-March 2, 2021
+March 2
 Q&A and FAQ
 Search Console now checks the validity of FAQ and Q&A structured data that is below the root entity level. Previously, we only checked entities at the root level. Therefore, you may see an increase in valid/warning/invalid FAQ and Q&A items to reflect an accurate count of root and nested entities that we found on your site.
-February 1, 2021
+February 1
 The data-vocabulary.org format is no longer supported by Google for rich results. All warnings about usage of data-vocabulary.org structured data will now appear as errors in your rich results reports. Therefore you might see a decrease in warnings and increase in errors in your reports. There is no penalty for using data-vocabulary.org data, but it will not be used to generate rich results.
-August 26, 2020
+2020
+August 26
 Dataset
 Search Console began marking as "warning" any Dataset object that is missing the recommended property creator. Therefore you may see an increase in warnings for Dataset instances on your website.
-July 1, 2020 onward
+July 1 onward
 Video
 Search Console began marking as "warning" any Video object that is missing both embedUrl and contentUrl properties. This is not a change in requirements or behavior, but an improvement in our reporting system to better reflect the actual indexing behavior. Video objects that are missing both embedUrl and contentUrl properties can still appear as rich results but additional content based features of videos such as animated previews and key moments may not work. Therefore you might see an increase in warnings in Video items on your site. To fix this issue, define either of these two properties in your Video object. (Note that this does not affect Video items embedded within other types, such as Video within Recipe.)
 April 29, 2020 onward
 Event
 A new, optional property "Organizer" was introduced for Event items. Previously valid Event items might be labeled warning if you do not use this new properties, or error if you incorrectly defined it.
-April 12, 2020 onward
+April 12 onward
 All rich result types
 These reports have been changed to cover a smaller number of pages, in order to provide better performance in Search Console. Because of this, you might see a decrease in the number of items and pages tracked in these reports. This change does not affect Search results, only the data reporting in Search Console.
-March 19, 2020 onward
+March 19 onward
 Event
 New optional event properties and property values for virtual and canceled events were introduced. If you previously had a valid event, it might show valid with warnings if you do not use these new properties, or error if you incorrectly define these new properties.
-January 21, 2020 onward
+January 21 onward
 All rich result types
 Starting April 6, 2020, Google will no longer support data-vocabulary.org structured data to enable rich results in Google Search. From January 20 until April 6, any data-vocabulary.org structured data on a web page will trigger a warning for the appropriate rich result type. After April 6, an error will be triggered. Read the Webmaster Central Blog posting for more background and detail.
-January 13-16, 2020
+January 13-16
 Unparsable structured data
 Some users may see a spike in unparsable structured data errors. This was due to an internal misconfiguration that will be fixed soon, and can be ignored.
-December 3, 2019 onward
+2019
+December 3 onward
 All rich result types
 Rich results implemented with RDFa or microdata that incorrectly tag a URL where a text value is expected are now shown as an error in the rich result report. The most common case is pages that incorrectly label <a href=...> tags with itemprop, expecting the text content of the <a> tag to be used, when in fact the href value will be used. A correct implementation in this case would use a nested <span itemprop> tag inside the <a> tag, where the <span> contains the non-URL value.
-December 10, 2019 onward
+December 10 onward
 Job Postings
 Search Console now reports more specific error types of Job Posting errors. Therefore you might see a reduction in certain generic error types, with a corresponding increase in new, more specific error types (if you have not already fixed those issues). The total number of errors should not change as a result of this update.
-October 16, 2019 onward
-Product
-Search Console improved its error detection pipeline for Product structured data. Product items are now validated wherever they occur in a structured data tree rather than just at the top level. This may cause errors or warnings to appear on pages that were previously shown as valid.
 Core Web Vitals
-February 17, 2021
+2021
+April 13
+The CLS metrics have been updated to reflect a more accurate representation of layout shifts on the page. You might see changes in your page CLS statuses (mostly positive) reflecting this change.
+February 17
 The metrics defining the boundaries for LCP, FID, CLS, which used to be < (less than), are now defined as <= (less than or equal to). Therefore you might see a change in statuses (for the better) in this report.
 Was this helpful?How can we improve it?YesNoSubmit
 true

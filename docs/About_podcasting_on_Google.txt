@@ -1,6 +1,9 @@
 https://support.google.com/webmasters/answer/9579369
 
-About podcasting on GoogleLearn how to make your podcast available in Google Search, on the Google Podcast player app, and on other Google surfaces.
+About podcasting on Google
+This website is for podcast publishers
+If you have questions about listening to a podcast on the Google Podcasts app (or any other Google product), visit the podcast listener guide.
+Learn how to make your podcast available in Google Search, on the Google Podcasts app, and on other Google surfaces.
 What are podcasts on Google?
 When your podcast is "on Google," listeners can find and play your podcast on many different Google services:
 Listeners can find and play your podcast in the browser
@@ -32,5 +35,5 @@ When the served feed changes, Google will start serving the new feed instead of
 Next: Get your podcast on Google
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpAbout podcasting on GoogleGet your podcast on GoogleMonitor your podcast listening dataManage your podcast and episodes on Google PodcastsTroubleshootingReferenceGoogle Podcasts policies
+HelpAbout podcasting on GoogleGet your podcast on GoogleMonitor your podcast listening dataManage your podcast and episodes on Google PodcastsTroubleshootingReferenceGoogle Podcasts policiesFAQs
 Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

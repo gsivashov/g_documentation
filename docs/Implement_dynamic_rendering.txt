@@ -51,7 +51,6 @@ specific configuration details on how to update or add user agents. Here's an ex
 list of common user agents in the Rendertron middleware:
 export const botUserAgents = [
 'googlebot',
-'google-structured-data-testing-tool',
 'bingbot',
 'linkedinbot',
 'mediapartners-google',
@@ -104,8 +103,7 @@ error Try again: If the content you see
 doesn't match what you expect, see the troubleshooting
 section.
 If you use structured data, test that your structured data renders properly with the
-Structured Data Testing
-Tool.
+Rich Results Test.
 done Success: The structured data appears
 as you expect it to.
 error Try again: If the structured data
@@ -154,11 +152,10 @@ structured data user agent, or not including JSON-LD script tags in the output c
 structured data errors.
 done Fix the issue
 Use the
-Structured Data Testing
-Tool to make sure the structured data is present on the page. Then configure the
-user agent for the Structured Data Testing Tool to test the pre-rendered content.
+Rich Results Test to make sure the structured data is present on the page. Then configure the
+user agent to test the pre-rendered content with the desktop or mobile Googlebot.
 Make sure JSON-LD script tags are included in the dynamically rendered HTML of your
 content. Consult the documentation of your rendering solution for more information.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-04-07 UTC.

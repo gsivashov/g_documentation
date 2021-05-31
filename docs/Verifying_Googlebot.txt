@@ -12,7 +12,8 @@ is useful if you're concerned that spammers or other troublemakers are accessing
 while claiming to be Googlebot. Google doesn't post a public list of IP addresses for website
 owners to allowlist. This is because these IP address ranges can change, causing problems for
 any website owners who have hard-coded them, so you must run a DNS lookup as described next.
-To verify that Googlebot is the crawler:
+Verify that Googlebot is the crawler
+Use command line tools
 Run a reverse DNS lookup on the accessing IP address from your logs, using the
 host command.
 Verify that the domain name is either googlebot.com or
@@ -30,6 +31,10 @@ Example 2:
 77.90.249.66.in-addr.arpa domain name pointer rate-limited-proxy-66-249-90-77.google.com.
 > host rate-limited-proxy-66-249-90-77.google.com
 rate-limited-proxy-66-249-90-77.google.com has address 66.249.90.77
+Use automatic solutions
+Google doesn't provide software libraries that can identify its crawlers. You can use an
+open source library
+to verify Googlebot.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-03 UTC.
+Last updated 2021-05-27 UTC.

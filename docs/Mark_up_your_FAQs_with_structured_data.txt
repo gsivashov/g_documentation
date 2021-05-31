@@ -13,6 +13,9 @@ A Frequently Asked Question (FAQ) page contains a list of questions and answers 
 particular topic. Properly marked up FAQ pages may be eligible to have a rich result on
 Search and an Action on the Google Assistant, which can
 help your site reach the right users. Here's an example of an FAQ rich result:
+Note: The actual appearance in search results might be different. You can
+preview most features with the
+Rich Results Test.
 How to add structured data
 Structured data is a standardized format for providing information about a page and classifying the page
 content. If you're new to structured data, you can learn more about
@@ -377,4 +380,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-18 UTC.
+Last updated 2021-05-31 UTC.

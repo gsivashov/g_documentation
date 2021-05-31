@@ -24,7 +24,7 @@ guide to basic Search Console usage. A beginner typically needs only a quick sit
 once a month, unless we alert you that we've found a problem.
 Learn the basics of how Google Search
 works. You'll understand a lot more of the information that you read here, and it will
-make troubleshooting much easier .
+make troubleshooting much easier.
 Read our SEO starter guide. This is
 an introduction to best practices for your website to ensure that Google is able to find,
 understand, and present your site properly in search results. It contains a lot of
@@ -40,4 +40,4 @@ SEO or Search Console, you can continue
 with the SEO track.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-02-26 UTC.
+Last updated 2021-04-29 UTC.

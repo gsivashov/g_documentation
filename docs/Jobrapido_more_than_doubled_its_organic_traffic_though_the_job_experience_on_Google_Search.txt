@@ -5,13 +5,6 @@ Search Central
 Case studies
 Send feedback
 Jobrapido more than doubled its organic traffic though the job experience on Google Search
-check_circle_outline 115%
-increase in organic traffic
-check_circle_outline 270%
-increase of new user registrations from organic traffic since launch of the new job experience
-on Google Search
-check_circle_outline 15%
-lower bounce rate for Google visitors to job pages
 About Jobrapido
 Jobrapido is one of the global leaders for job search engines with more than 20 million unique job
 postings every month and more than 80 million registered users. Being present in 58 countries,
@@ -27,11 +20,19 @@ allowed us to get the best of the job experience on Google Search rather quickly
 Increased international traffic
 Jobrapido has seen positive metrics and feedback from job seekers on their site across multiple
 geographies. In Spain, Nigeria, and South Africa, the company's overall organic traffic grew by
-115%, and they have seen a 270% increase in new user registrations from organic traffic since launch of the new job experience on Google Search. Jobrapido also noted a 15% drop in user bounce
+115%, and they have seen a 270% increase in new user registrations from organic traffic since
+launch of the new job experience on Google Search. Jobrapido also noted a 15% drop in user bounce
 rate, which means the quality of the end user journey also increased.
+115%
+Increase in organic traffic
+270%
+Increase of new user registrations from organic traffic since launch of the new job experience
+on Google Search
+15%
+Lower bounce rate for Google visitors to job pages
 "Integrating with the jobs experience on Google Search is a great way for us to easily increase
 international traffic", added Rabbath. "This is just the beginning for us, and we are looking
 forward to the rollout of this search feature in other markets."
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-04-22 UTC.

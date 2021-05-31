@@ -5,10 +5,6 @@ Search Central
 Case studies
 Send feedback
 Monster India listed jobs on Google Search, leading to 94% increase in organic traffic on job details pages
-check_circle_outline 94%
-increase in organic traffic on job details pages
-check_circle_outline 10%
-increase in applications
 About Monster India
 Monster.com is a global online employment solution for people seeking jobs and the employers who
 need great people. They have expanded from being a job board to being a global provider of a full
@@ -26,6 +22,10 @@ Jobs on Google Search provided huge incremental traffic, detail views, and appli
 Monster.com was previously able to achieve with SEO efforts as well as paid campaigns.
 Monster.com is set to launch in South East Asia as soon as Jobs on Google Search is live in these
 markets.
+94%
+Increase in organic traffic on job details pages
+10%
+Increase in applications
 "Jobs on Google Search is a great way for job seekers to find relevant content in an easy-to-use
 format. We tested it first for Monster India and saw an increase in organic traffic as well as
 job applications. Based on this experience, the integration was implemented for Monster Gulf,
@@ -35,4 +35,4 @@ countries."
 — Anshul Punhani, Chief Marketing Officer, (APAC and Gulf regions), Monster.com
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-04-22 UTC.

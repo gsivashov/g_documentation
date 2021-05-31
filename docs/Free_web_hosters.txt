@@ -38,9 +38,7 @@ created sites.
 Monitor your free web hosting service for phishing and malware-infected pages. For example,
 you can use the
 Google Safe Browsing API
-to regularly test URLs from your service, or
-sign up for Safe
-Browsing alerts.
+to regularly test URLs from your service.
 Come up with a few confidence checks. For example, if you're running a local Polish free web
 hosting service, what are the odds of thousands of new and legitimate sites in Japanese
 being created overnight on your service? A number of tools are available to detect the
@@ -56,4 +54,4 @@ User agents used during signup
 User names or other form-submitted values chosen during signup.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-03 UTC.
+Last updated 2021-05-12 UTC.

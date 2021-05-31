@@ -35,7 +35,7 @@ See more common structured data errors here.
 Technical guidelines
 You can test compliance with technical guidelines using the
 Rich Results Test and the
-URL Inspection tool, which catches most technical errors.
+URL Inspection tool, which catch most technical errors.
 Format
 In order to be eligible for rich results, you should mark up your site's pages
 using one of three supported formats:
@@ -67,7 +67,12 @@ or cruel acts, targeted hatred, or dangerous activities.
 Don't mark up content that engages in illegal activities or promotes goods, services,
 or information that facilitates serious and immediate harm to others. Marking up content that
 provides information about such content for educational purposes is permitted.
-Content in JobPosting structured data must also follow the additional job posting content policies.
+Content in structured data must also follow the additional content guidelines or policies, as
+documented in the specific feature guide. For example, content in JobPosting
+structured data must follow the job
+posting content policies. Content in Practice problems structured data must follow the
+Practice
+problems content guidelines.
 Relevance
 Your structured data should be a true representation of the page content. Here
 are some examples of irrelevant data:
@@ -202,4 +207,4 @@ mark up all of the reviews on a page, this would be misleading for people who ex
 all of those reviews, based on the appearance of the page in Search results.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-11 UTC.
+Last updated 2021-04-13 UTC.

@@ -13,8 +13,9 @@ You can improve the job seeking experience by adding JobPosting structured data 
 posting web pages. Adding structured data makes your job postings eligible to appear in a special
 user experience in Google Search results. You can also integrate with Google by
 using a third party job site.
-Note: The actual appearance in search results might be different. Preview the structured data
-in the Rich Results Test for the most up-to-date layout.
+Note: The actual appearance in search results might be different. You can
+preview most features with the
+Rich Results Test.
 For employers and job content site owners, this feature brings many benefits:
 More interactive results: Your postings can be eligible to be displayed in
 the job search experience on Google, featuring your logo, reviews, ratings, and job details.
@@ -605,11 +606,11 @@ salary estimate for an occupation type using the Occupation type.
 For the unitText of
 QuantitativeValue, use one of the
 following case-sensitive values:
-"HOUR"
-"DAY"
-"WEEK"
-"MONTH"
-"YEAR"
+HOUR
+DAY
+WEEK
+MONTH
+YEAR
 For example:
 "baseSalary": {
 "@type": "MonetaryAmount",
@@ -637,14 +638,14 @@ Text
 Type of employment. For example:
 "employmentType": "CONTRACTOR"
 Choose one or more of the following case-sensitive values:
-"FULL_TIME"
-"PART_TIME"
-"CONTRACTOR"
-"TEMPORARY"
-"INTERN"
-"VOLUNTEER"
-"PER_DIEM"
-"OTHER"
+FULL_TIME
+PART_TIME
+CONTRACTOR
+TEMPORARY
+INTERN
+VOLUNTEER
+PER_DIEM
+OTHER
 You can include more than one employmentType property. For example:
 "employmentType": ["FULL_TIME", "CONTRACTOR"]
 identifier
@@ -1006,8 +1007,10 @@ Thailand
 Uzbekistan
 Vietnam
 Europe: Available in the following countries:
+Austria
 Belarus
 Belgium
+Denmark
 France
 Germany
 Greece
@@ -1039,4 +1042,4 @@ North America: Available in the entire region
 Sub-Saharan Africa: Available in the entire region
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-25 UTC.
+Last updated 2021-05-31 UTC.

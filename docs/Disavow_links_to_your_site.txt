@@ -1,7 +1,7 @@
 https://support.google.com/webmasters/answer/2648487
 
 Disavow links to your siteIf you have a manual action against your site for unnatural links to your site, or if you think you're about to get such a manual action (because of paid links or other link schemes that violate our quality guidelines), you should try to remove the links from the other site to your site. If you can't remove those links yourself, or get them removed, then you should disavow the URLs of the questionable pages or domains that link to your website.
-This is an advanced feature and should only be used with caution. If used incorrectly, this feature can potentially harm your site’s performance in Google Search results.
+This is an advanced feature and should only be used with caution. If used incorrectly, this feature can potentially harm your site’s performance in Google Search results.
 Step 0: Decide if this is necessary
 In most cases, Google can assess which links to trust without additional guidance, so most sites will not need to use this tool.
 You should disavow backlinks only if:
@@ -9,6 +9,7 @@ You have a considerable number of spammy, artificial, or low-quality links point
 AND
 The links have caused a manual action, or likely will cause a manual action, on your site.
 Google works very hard to make sure that actions on third-party sites do not negatively affect a website. In some circumstances, incoming links can affect Google’s opinion of a page or site. For example, you or an SEO that you’ve hired may have built bad links to your site via paid links or other link schemes that violate our quality guidelines. First and foremost, we recommend that you remove as many spammy or low-quality links from the web as possible.
+The disavow links tool does not support Domain properties. If you have a Domain property, this page does not apply to you.
 Step 1: Create a list of links to disavow
 Assemble your list of pages or domains to disavow in a text file that you will upload to Google.
 Link file format:

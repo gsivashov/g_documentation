@@ -17,6 +17,9 @@ Properly marked up pages are eligible to have a rich result displayed on the sea
 page. This rich treatment helps your site reach the right users on Search.
 Here's an example of a result you might see for the user query "How do I remove a cable that is
 stuck in a USB port?" if the page has been marked up to answer that question:
+Note: The actual appearance in search results might be different. You can
+preview most features with the
+Rich Results Test.
 In addition to enabling your content for the rich result treatment shown above, marking up
 your Q&A page helps Google generate a better
 snippet for your page.
@@ -460,4 +463,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-18 UTC.
+Last updated 2021-05-31 UTC.

@@ -24,14 +24,14 @@ Sites at the domain level (such as example.com, https://example.com, m.example.c
 Step 2: Use the Change of Address tool
 After performing the pre-work, if you fulfill the requirements below, you can use the Change of Address tool to forward your old site signals to your new site.
 Requirements:
-You must be a verified owner of both the old and new properties in Search Console. You must use the same Google account to manage both sites.
-The Change of Address tool can be used only on domain-level properties: that is, example.com, m.example.com, or http://example.com. It cannot be used for properties below the domain level, such as http://example.com/petstore/
+You must be a verified owner of both the old and new properties in Search Console. You must use the same Google account to manage both properties.
+The Change of Address tool can be used only on properties at the domain level: that is, you can move example.com, m.example.com, or http://example.com. You cannot move properties at the path level, such as http://example.com/petstore/
 The tool does not move any subdomains below the specified domain (including www). So if you specify example.com in the tool, it will not move www.example.com or m.example.com. However, all paths under the domain are affected (example.com/any/path/here).
 The tool moves all protocols of your source property. So if you specify http://example.com, it also moves https://example.com
 Use the Change of Address tool:
 Perform Step 1: Pre-work.
 Ensure that you fulfill all the requirements listed above.
-Open the Change of Address tool.
+Open the Change of Address tool in a property that is at the domain level (that is, it has no path segments--example.com, not example.com/petstore).
 Follow the instructions provided in the tool. The tool runs a few pre-move checks before telling Google about the move. If you fail any critical pre-move checks, you must fix the issue before you can continue. If you fail non-critical pre-move checks, you will see a warning with recommendations, but your request can continue.
 If critical pre-checks pass, all sites being migrated from or to will display a notification in Search Console that the move is in progress. You will see these notifications for 180 days.
 Monitor your traffic as indicated in Move a site with URL changes.
@@ -48,5 +48,5 @@ Add 301 redirects from the new site to the old site.
 Open the Change of address tool in the old site and click Cancel Move. Repeat for every old site that you no longer want to move.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats reportOpt out of display on Google Local and other Google properties
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the WebAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats reportOpt out of display on Google Local and other Google properties
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

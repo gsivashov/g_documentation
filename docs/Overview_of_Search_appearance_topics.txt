@@ -49,7 +49,9 @@ Job Posting
 Job Training
 Local Business
 Logo
+Math solvers
 Movie
+Practice problems
 Product
 Q&A
 Recipe
@@ -62,9 +64,8 @@ Video
 Early Adopters Program
 To ensure the best experience for users, Google pilots some features with a limited number of
 organizations. Here are the features that are currently in the Early Adopters Program:
-3D and AR
 Package tracking
 Mobile Recharge
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-14 UTC.
+Last updated 2021-03-26 UTC.

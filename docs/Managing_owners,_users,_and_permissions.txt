@@ -1,7 +1,7 @@
 https://support.google.com/webmasters/answer/7687615
 
 Managing owners, users, and permissionsYou can be an owner or user of a property. Each of these roles has different rights and capabilities. You can grant permissions to other users only if you are a property owner.
-See and manage the user list on the Users and Permissions page.
+See and manage the user list in (site) Settings  > Users and permissions in Search Console.
 MANAGE USERS AND PERMISSIONS
 Permissions
 Each user for a Search Console property is assigned one of the following permissions:
@@ -48,9 +48,11 @@ Add users
 Submit sitemap
 1 Restricted users receive only messages that specifically affect them.
 We lost our site owner!
-If the verified owner of your site leaves, or you're not sure who the verified owner is, verify another site owner. The new owner will be able to see the list of all owners and users verified to that site, as well as the verification methods for each owner. You can then optionally unverify previous owners by removing their verification token (for example, removing the HTML tag from the site, for HTML-tag-verified owners). See Add or remove owners for more information.
+If the only verified owner of your site leaves your team, or you're not sure who the verified owner is, you (or someone you know) should verify ownership to maintain (or regain) access to the property.
+If you are taking over a site from another owner, after you verify ownership you can unverify previous owners by removing their verification token (for example, removing the HTML tag from the site, for HTML-tag-verified owners). See Add or remove owners for more information.
 Add or remove users
 A property can have a maximum of 100 users with edit or view-only permissions.
+You must be a property owner (or an owner of a parent property) to add or remove a user.
 To add a new user
 Choose a property in Search Console.
 Click the Settings icon  in the navigation pane.
@@ -64,17 +66,19 @@ Click the Settings icon  in the navigation pane.
 Click Users & permissions.
 Select the  menu next to the user to delete and click Remove access. The change should take effect very quickly.
 Add or remove owners
-Verified owners
-A verified owner has verified themselves through some sort of verification token (HTML page or tag, DNS record, or some other method).
-If all verified owners are removed, then all users will lose access to the property, after a grace period. Data for the property will continue to be collected, but nobody will have access to it until someone verifies ownership of the property.
-To add yourself as a verified owner
+A property owner has verified themself through some sort of verification token (HTML page or tag, DNS record, or some other method).
+If all owners are removed, then all users will lose access to the property, after a grace period. Data for the property will continue to be collected, but nobody will have access to it until someone verifies ownership of the property.
+To add yourself as an owner
 Follow the verification flow.
-You can't add someone else as verified owner, because they need to create a token associated with their personal Google account. If they follow the verification flow and give you the token (for instance, an HTML file for HTML file verification), you can upload the token for them to verify their ownership.
-To delete a verified owner
+You can't add someone else as verified owner from within Search Console, because they need to create a token themself associated with their personal Google account. However, they can share their token with someone who can take the appropriate action to verify them as a property owner (for instance, upload their HTML verification file to the appropriate site location).
+To delete an owner
 To remove a verified owner from a property, you must delete all tokens used to verify their ownership of the property. For example, the HTML verification file for HTML file upload, or the Google Analytics tracking code for the Analytics code verification method.
 Open the Users and Permissions page.
 Next to the owner that you want to remove, select Manage property owners.
-Follow the flow to unverify the given owner immediately. The owner's verification token must be gone, or else the unverify request will fail.
+See all the verification methods listed for that user. You must remove the verification token for each verification method listed. For instance, if "HTML Tag" is listed, you must remove the HTML <meta> tag for that person from the site. If "HTML File" is listed, you must remove the HTML verification file for that person from the site. See details about each verification method here. If you don't remove all verification tokens for a user, they will be reverified as an owner on any remaining tokens.
+Click Unverify next to the user's name to unverify the unwanted owner. The owner's verification token must be gone, or else the unverify request will fail.
+Don't recognize an owner?
+If you've found an owner that you don't recognize, you might have been hacked. A hacker can probably add their token back after you've removed it, so you should either visit the Webmasters Hacked! site and try to secure your website yourself, or else contact a website security professional to help you secure your site.
 Change permissions for an existing user
 You must be a verified owner to be able to change permissions of another user.
 You can change permissions for any non-verified owner.

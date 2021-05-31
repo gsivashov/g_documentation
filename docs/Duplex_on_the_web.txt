@@ -1,50 +1,88 @@
 https://support.google.com/webmasters/answer/9353008
 
-Duplex on the webDuplex on the web automates certain user tasks, such as buying movie tickets, for your site visitors. This page describes how to enable or disable Duplex on the web for your website.
+Duplex on the WebDuplex on the Web is a technology that enables Google Assistant to automate certain user tasks for your site visitors. This page describes how to enable or disable Duplex on the Web for your website.
+This feature is only available if your site is eligible, and you have been contacted about participating.
 Overview
-Duplex on the web operates in two stages.
-Training: Duplex on the web trains periodically against your site to perform certain actions. To control how Duplex on the web crawls and analyzes your site, see Duplex on the web user agent.
-Serving: Serving is controlled by a setting in Search Console. If Duplex on the web is enabled for your site in Search Console, Duplex on the web can offer to perform supported actions for site visitors, such as purchasing movie tickets. Duplex on the web is enabled by default for all sites that fulfill the requirements described on this page. If this setting is disabled in Search Console, Duplex on the web will not be able to perform supported actions on your site.
-If serving is enabled but training is disabled, Duplex on the web might work poorly or not at all on your site for supported actions.
+Duplex on the Web operates in two stages.
+Training: Duplex on the Web trains periodically against your site to enable Google Assistant to perform certain actions. To control how how Duplex on the Web crawls and analyzes your site, see Duplex on the Web user agent.
+Serving: Serving is controlled by a setting in Search Console. If Duplex on the Web is enabled for your site in Search Console, Google Assistant can offer to perform supported actions for site visitors. Duplex on the Web is enabled by default for all sites that fulfill the requirements described on this page. If Duplex on the Web is disabled for your property in Search Console, then Google Assistant will not be able to perform supported actions on your site.
+If serving is enabled but training is disabled for Duplex on the Web, then Google Assistant might work poorly or not at all on your site for supported actions.
 Requirements and rules
-The following rules apply to the Duplex on the web setting in Search Console:
-You must be a property owner to see or change the settings for Duplex on the web.
-Enabling Duplex on the web for your site can take a few hours or days. Disabling it takes place immediately.
+The following rules apply to the Duplex on the Web setting in Search Console:
+The feature is limited to certain partners in specific industries and locations. The settings page will not be visible unless your site is eligible and you have been contacted about participating.
+You must be a property owner to see or change the settings for Duplex on the Web.
+Enabling Duplex on the Web for your site can take a few hours or days. Disabling it takes place immediately.
 Property owners will be notified when the property settings change.
-Duplex on the web settings are visible and configurable only in a Domain property. URL-prefix properties cannot see or modify these settings.
-Duplex on the web settings are inherited from the topmost containing property, and can be modified only in that topmost property. Child properties have read-only access to the settings. For example, in the properties m.example.com , m.support.example.com, and example.com, the setting can be viewed in all properties, but changed only in the topmost property example.com.
-Duplex on the web currently works only for users in the US and the UK.
-Enable Duplex on the web for your site
-To enable Duplex on the web supported actions for your site:
+Duplex on the Web settings are visible and configurable only in a Domain property. URL-prefix properties cannot see or modify these settings.
+Duplex on the Web settings are inherited from the topmost containing property, and can be modified only in that topmost property. Child properties have read-only access to the settings. For example, in the properties m.example.com , m.support.example.com, and example.com, the setting can be viewed in all properties, but changed only in the topmost property example.com.
+Duplex on the Web currently only works in the Chrome browser or the Android Google Search App on Android devices for users in the US and the UK.
+Enable Duplex on the Web for your site
+To enable Google Assistant to perform supported actions using Duplex on the Web technology:
 Read the Requirements and Rules.
 Follow the General guidelines for all actions.
 Follow the specific guidelines for the features that you want to support on your site.
-Open the Duplex on the web settings page for your property and click Enable (if not already selected). Enabling this setting takes a few hours or days.These rules apply when changing this setting.
-Optional: If your site is password-protected, we recommend providing a name and password in the Testing credentials section in your Search Console settings page. This enables Duplex on the web access to train against your site.
-Google will notify you when your request to enable serving has been processed and the Duplex on the web has begun training against your site.
-Disable Duplex on the web on your site
-To disable serving (allowing Duplex on the web to perform actions on your site), click Disable in the Duplex on the web settings page. Disabling should be effective within a few minutes. You can enable it again later, but enabling can take a few days. Note that Duplex on the web will continue training against your site unless you explicitly disable training as described in the next bullet.
-To disable training by Duplex on the web, add one of these robots.txt rules to your site. The robots.txt rules take effect at the next training attempt. Note that Duplex on the web might continue to work on your site (although sub-optimally) when users visit, unless you specifically disable serving, as described in the previous bullet.
-Supported actions for Duplex on the web
-Duplex on the web can perform different actions on your site. The following list shows what actions are supported, and the requirements for that action.
-General guidelines for all actions
-Sites should follow these guidelines to enable any Duplex on the web actions, in addition to any additional guidelines for a specific action:
+Open the Duplex on the Web settings page for your property and click Enable (if not already selected). Enabling this setting takes a few hours or days. These requirements and rules apply when enabling or disabling Duplex on the Web.
+Optional: If your site is password-protected, we recommend providing a username and password in the Testing credentials section in your Search Console settings page. This enables Duplex on the Web to access your site for training.
+Google will notify you when your request to enable serving has been processed and the Duplex on the Web has begun training against your site.
+Disable Duplex on the Web on your site
+To disable serving (allowing Google Assistant to perform actions on your site using Duplex on the Web technology), click Disable in the Duplex on the Web settings page. Disabling should be effective within a few minutes. You can enable it again later, but enabling can take a few days. Note that Duplex on the Web will continue training against your site unless you explicitly disable training as described in the next bullet.
+To disable training by Duplex on the Web, add one of these robots.txt rules to your site. The robots.txt rules take effect at the next training attempt. Note that Duplex on the Web might continue to work on your site (although sub-optimally) when users visit, unless you specifically disable serving, as described in the previous bullet.
+Supported actions for Duplex on the Web
+Duplex on the Web enables Google Assistant to perform different actions on your site. The available actions and requirements for each are described below. These actions are performed in full view of the user, who can stop the process and take back control at any time.
+General requirements for all actions
+Sites should follow these guidelines to enable any Duplex on the Web actions, plus any additional guidelines for a specific action:
 Enable training:
-You must either allow anonymous access to your site, or provide a name and password to Duplex on the web using the Search Console setting for your site.
-Do not block crawling by the Duplex on the web user agent.
+You must either allow anonymous access to your site, or provide a username and password to Duplex on the Web using the Search Console setting for your site.
+Do not block crawling by the Duplex on the Web user agent.
 Follow HTML standards and best practices on your site.
+Your site must use HTTPS, not HTTP.
+Note: With Duplex on the Web enabled on your site, all existing Google Ads tags and Google Analytics tags will continue to work as usual.
 Specific guidelines
 Ticket purchases (movie theaters only)
-Enable Google Assistant to purchase movie theater tickets for users on your website.
+Enable Google Assistant (powered by Duplex on the Web) to purchase movie theater tickets for users on your website.
 Requirements
-The following additional requirements apply, in addition to the other requirements for enabling Duplex on the web:
+The following requirements apply, in addition to the other requirements for enabling Duplex on the Web:
 You will be contacted when your site becomes eligible for this feature.
-This action is supported in the US and UK only: both the theater and the user (based on query location) must be in the US or UK.
+This action is supported in the US and UK only: both the theater and the user (based on query location) must be in the US or UK.
 The search language must be in English.
 You must not show paid ads in the movie ticket checkout flow on your website.
-You must offer credit card payment in the movie ticket checkout flow on your website. Other payment services are not yet supported.
+You must offer credit card payment in the movie ticket checkout flow on your website. Other payment services are not yet supported.
 You can test whether the movie ticket checkout flow is enabled for your site by doing a Google search for movies being screened by your theater, clicking links for showtimes, and confirming whether your theater is listed as one of the ticket suppliers.
+Assisted checkout for retail websites (Shopping)
+Enable Google Assistant (powered by Duplex on the Web) to help users with an optimized and automated checkout experience on your website.
+The Google Assistant checkout flow is activated only when:
+The user enters your site through a Google Ad click (Product Listing Ad on google.com).
+The user visits the cart or checkout page, and the cart is not empty.
+All requirements below have been met.
+Requirements
+The following requirements apply, in addition to the other requirements for enabling Duplex on the Web:
+This experience is only available for retailers who have signed up for the Google Merchant Center. Learn how to join this program. Note: After you have signed up, you will be contacted through Search Console (not Merchant Center) when your site is eligible for assisted checkout.
+You must have purchased Product Listing Ads on google.com.
+This experience is supported in the US and UK only: both your store and the user (based on query location) must be in the US or UK.
+The search language must be in English.
+Your website must offer a guest checkout flow.
+You must offer credit card payment in the checkout flow on your website. Other payment services are not yet supported.
+Food ordering for restaurant websites
+Enable Google Assistant (powered by Duplex on the Web) to help users place food orders on your website.
+Requirements
+The following requirements apply, in addition to the other requirements for enabling Duplex on the Web:
+You will be contacted when your site becomes eligible for this feature.
+Your website must have a functional online ordering system that doesn't open up any new tabs during the ordering process.
+Your website must offer a guest checkout flow.
+This experience is supported in the US only: both the chain location and the user (based on query location) must be in the US.
+The search language must be in English.
+You must not show paid ads in the checkout flow on your website.
+You must offer credit card payment on your website. Other payment services are not yet supported.
+Assisted flight check-in for airline websites
+Enable Google Assistant (powered by Duplex on the Web) to help users check-in to their flight on your site. Android users will receive a Google Assistant Notification offering to check them in for their flight. The user's details will be pre-filled into your website's check-in form using their flight booking information from Gmail.
+Requirements
+The following requirements apply, in addition to the other requirements for enabling Duplex on the Web:
+You will be contacted when your site becomes eligible for this feature.
+Your website must offer a functional web check-in flow.
+The action is supported for domestic US flights only: both your airline and the user (based on query location) must be in the US.
+The search language must be in English
+You must not show paid ads in the check-in flow on your website.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats reportOpt out of display on Google Local and other Google properties
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the WebAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats reportOpt out of display on Google Local and other Google properties
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

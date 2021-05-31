@@ -46,6 +46,9 @@ Example
 Imagine a page that evaluates the claim that the earth is flat. Here is what a
 search for "the world is flat" might look like in Google Search results if the page
 provides a ClaimReview element (note that the actual visual design may change):
+Note: The actual appearance in search results might be different. You can
+preview most features with the
+Rich Results Test.
 Here's an example of structured data on the page that hosts this fact check:
 <html>
 <head>
@@ -445,4 +448,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-18 UTC.
+Last updated 2021-05-31 UTC.

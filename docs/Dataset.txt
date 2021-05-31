@@ -12,6 +12,9 @@ makes use of schema.org and other metadata standards that can be added to pages 
 improve discovery of datasets from fields such as life sciences, social sciences, machine
 learning, civic and government data, and more. You can find datasets by using the
 Dataset Search tool.
+Note: The actual appearance in search results might be different. You can
+preview most features with the
+Rich Results Test.
 Here are some examples of what can qualify as a dataset:
 A table or a CSV file with some data
 An organized collection of tables
@@ -848,4 +851,4 @@ Add logo structured data to your page.
 Establish your business details with Google.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-24 UTC.
+Last updated 2021-05-31 UTC.

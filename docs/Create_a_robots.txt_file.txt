@@ -26,8 +26,8 @@ Sitemap: http://www.example.com/sitemap.xml
 Explanation:
 The user agent named "Googlebot" is not allowed to crawl the
 http://example.com/nogooglebot/ directory or any subdirectories.
-All other user agents are allowed to crawl the entire site. (This could have been omitted
-and the result would be the same, as full access is the assumption.)
+All other user agents are allowed to crawl the entire site. This could have been omitted
+and the result would be the same; the default behavior is that user agents are allowed to crawl the entire site.
 The site's sitemap file is located at
 http://www.example.com/sitemap.xml.
 See the syntax section for more examples.
@@ -44,7 +44,7 @@ Use the robots.txt Tester tool
 to write or edit robots.txt files for your site. This tool enables you to test the syntax and
 behavior against your site.
 Format and location rules:
-The file must be named robots.txt
+The file must be named robots.txt.
 Your site can have only one robots.txt file.
 The robots.txt file must be located at the root of the website host to
 which it applies. For instance, to control crawling on all URLs below
@@ -57,17 +57,16 @@ method such as meta tags.
 A robots.txt file can apply to subdomains (for example,
 http://website.example.com/robots.txt) or on non-standard
 ports (for example, http://example.com:8181/robots.txt).
-Comments are any content after a # mark.
 Syntax
-robots.txt must be an UTF-8 encoded text file (which includes ASCII). Using other character
+A robots.txt file must be an UTF-8 encoded text file (which includes ASCII). Using other character
 sets is not possible.
 A robots.txt file consists of one or more groups.
 Each group consists of multiple rules or
 directives (instructions), one directive per line.
 A group gives the following information:
 Who the group applies to (the user agent)
-Which directories or files that agent can access, and/or
-Which directories or files that agent cannot access.
+Which directories or files that agent can access
+Which directories or files that agent cannot access
 Groups are processed from top to bottom, and a user agent can match only one rule set, which
 is the first, most specific rule that matches a given user agent.
 The default assumption is that a user agent can crawl any page or directory
@@ -75,6 +74,7 @@ not blocked by a Disallow: rule.
 Rules are case-sensitive. For instance, Disallow: /file.asp
 applies to http://www.example.com/file.asp, but not
 http://www.example.com/FILE.asp.
+Comments are any content after a # mark.
 The following directives are used in robots.txt files:
 User-agent: [Required, one or more per group] The
 directive specifies the name of the automatic client known as search engine crawler that
@@ -194,4 +194,4 @@ User-agent: Googlebot
 Disallow: /*.xls$
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-09 UTC.
+Last updated 2021-04-12 UTC.

@@ -59,8 +59,9 @@ descriptions in our guidelines.
 You can use JavaScript to set or change the meta description as well as the title.
 Google Search might show a different title or description based on the user's query.
 This happens when the title or description have a low relevance for the page content or when
-we found alternatives in the page that better match the search query. See this page for more
-information on titles and the description snippet.
+we found alternatives in the page that better match the search query. Learn more
+about why
+the search result title might differ from the page's <title> tag.
 Write compatible code
 Browsers offer many APIs and JavaScript is a quickly-evolving language. Googlebot has some
 limitations regarding which APIs and JavaScript features it supports. To make sure your code is
@@ -261,4 +262,4 @@ text-only can also help you identify other content which may be hard for Googleb
 such as text embedded in images.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-27 UTC.
+Last updated 2021-04-13 UTC.

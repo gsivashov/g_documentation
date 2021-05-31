@@ -32,7 +32,8 @@ can submit up to 500 sitemap index files for each site in your account.
 Manage sitemaps for multiple sites
 If you have multiple websites, you can simplify the process of creating and submitting
 sitemaps by creating one or more sitemaps that include URLs for all your verified sites, and
-saving the sitemap(s) to a single location. All sites must be verified in Search Console. You
+saving the sitemap(s) to a single location. All sites must be
+verified in Search Console. You
 can choose to use:
 A single sitemap that includes URLs for multiple websites, including sites from different
 domains. For example, the sitemap located at
@@ -48,7 +49,9 @@ http://host1.example.com/host2-example-sitemap.xml
 http://host1.example.com/host3-example-sitemap.xml
 http://host1.example.com/host1-example1-sitemap.xml
 http://host1.example.com/host1-example-ch-sitemap.xml
-Note that cross-site submissions work only if all sites have been verified in Search Console.
+Note: Cross-site submissions work only if all sites have
+been verified in
+Search Console.
 To host cross-site sitemaps in a single location, follow the steps below:
 Make sure that you have
 verified ownership of all the sites.
@@ -59,4 +62,4 @@ Using Google Search Console,
 submit your sitemap(s).
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-05-25 UTC.

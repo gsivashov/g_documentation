@@ -11,12 +11,15 @@ Best practices
 Follow best practices for publishing images and the Webmaster Guidelines.
 You can add image metadata, such as contact information and licensing information, which will appear in image search results.
 Example sitemap
-The following example shows a sitemap entry for the page http://example.com/sample.html, which contains two images.
+The following example shows a sitemap entry for the page
+http://example.com/sample1.html, which contains two images, and an entry for
+http://example.com/sample2.html, which contains one image and all the optional
+metadata that can be provided in an image sitemap.
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
-<loc>http://example.com/sample.html</loc>
+<loc>http://example.com/sample1.html</loc>
 <image:image>
 <image:loc>http://example.com/image.jpg</image:loc>
 </image:image>
@@ -24,8 +27,18 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <image:loc>http://example.com/photo.jpg</image:loc>
 </image:image>
 </url>
+<url>
+<loc>http://example.com/sample2.html</loc>
+<image:image>
+<image:loc>http://example.com/picture.jpg</image:loc>
+<image:caption>A funny picture of a cat eating cabbage</image:caption>
+<image:geo_location>Lyon, France</image:geo_location>
+<image:title>Cat vs Cabbage</image:title>
+<image:license>http://example.com/image-license</image:license>
+</image:image>
+</url>
 </urlset>
-You can list up to 1,000 images for each page, using the syntax outline in the example above!
+You can list up to 1,000 images for each page, using the syntax outline in the example above.
 Image sitemap reference
 XML namespace
 The image tags are defined in the following namespace:
@@ -54,3 +67,6 @@ The title of the image.
 <image:license>
 Optional
 A URL to the license of the image. You can use image metadata instead, if you like.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2021-05-17 UTC.

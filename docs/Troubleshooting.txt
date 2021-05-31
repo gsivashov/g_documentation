@@ -176,5 +176,5 @@ Other show actions on Google Podcasts Manager
 See how to manage your show on Google Podcasts Manager
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpAbout podcasting on GoogleGet your podcast on GoogleMonitor your podcast listening dataManage your podcast and episodes on Google PodcastsTroubleshootingReferenceGoogle Podcasts policies
+HelpAbout podcasting on GoogleGet your podcast on GoogleMonitor your podcast listening dataManage your podcast and episodes on Google PodcastsTroubleshootingReferenceGoogle Podcasts policiesFAQs
 Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

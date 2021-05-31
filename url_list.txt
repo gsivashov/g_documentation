@@ -1,5 +1,5 @@
-https://developers.google.com/search/apis/indexing-api/v3/core-errors
 https://developers.google.com/search/apis/indexing-api/v3/authorizing
+https://developers.google.com/search/apis/indexing-api/v3/core-errors
 https://developers.google.com/search/apis/indexing-api/v3/libraries
 https://developers.google.com/search/apis/indexing-api/v3/prereqs
 https://developers.google.com/search/apis/indexing-api/v3/quickstart
@@ -339,6 +339,7 @@ https://support.google.com/webmasters/answer/96569
 https://support.google.com/webmasters/answer/9689846
 https://support.google.com/webmasters/answer/9696313
 https://support.google.com/webmasters/answer/99170
+https://support.google.com/webmasters/thread/104436075
 https://support.google.com/webmasters/thread/1962236
 https://support.google.com/webmasters/thread/20217325
 https://support.google.com/webmasters/thread/25990256

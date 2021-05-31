@@ -1,7 +1,6 @@
 https://support.google.com/webmasters/answer/35287
 
 File types indexable by GoogleGoogle can index the content of most types of pages and files. The most common file types we index include:
-Adobe Flash (.swf)
 Adobe Portable Document Format (.pdf)
 Adobe PostScript (.ps)
 Autodesk Design Web Format (.dwf)

@@ -16,8 +16,11 @@ If you're interested in improving your site's appearance on Google Search, and y
 You don't need to understand HTML or coding, but you do need to spend some time thinking about how your site is organized and written, and be willing to make some changes to your site. The good news is that a little effort can go a long way in improving your search results.
 Get started
 SEO (advanced user)
-If you're ready to spend more time digging into the reports, learning how Google Search works, and redesigning your site, you can really analyze and customize your site's performance on Google Search. This track assumes that you are familiar with basic SEO practices and terms.
-Get started
+If you're ready to spend more time digging into Search Console's reports, learning how Google Search works, and redesigning your site, you can really analyze and customize your site's performance on Google Search. This track assumes that you are familiar with basic SEO practices and terms.
+Understand how Google works with your site. There are a lot of things to know about how Google crawls and presents your site content. Start with this guide and learn what you need to know for your specific site.
+Browse the list of key tools and reports in Search Console. This list shows the most important tools and reports in Search Console. Be sure you read the full documentation for a tool at least once before you use it; otherwise you might misunderstand some subtle concepts in the tool, which will end up costing you more time and effort in the long run. You can find the full list of reports here.
+Learn how impressions, clicks, and position are calculated in Search Console
+Take advantage of the online help community, SEO office hours, twitter feed, blog.
 Web developer
 If you build or manage the website, implement structured data, or generally do most of your work in a code editor, you'll use Search Console for monitoring, testing, and debugging your site code. Here are our recommendations:
 Learn how search works. Understanding the basics of crawling, indexing, and serving is important in order to help you debug Search-related issues on your site.

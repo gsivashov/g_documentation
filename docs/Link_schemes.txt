@@ -50,8 +50,8 @@ Thanks, that's great info!
 - Paul
 paul's pizza san
 diego pizza best pizza san diego
-Note that pay-per-click (PPC) advertising links that don't pass PageRank to the buyer of the
-ad do not violate our guidelines. You can prevent PageRank from passing in several ways, such
+As long as you don't pass PageRank to the buyer of the ad, your pay-per-click (PPC) advertising
+links won't violate our guidelines. You can prevent PageRank from passing in several ways, such
 as:
 Indicating the link is sponsored adding a
 qualifying attribute
@@ -68,4 +68,4 @@ let us know.
 We'll use your information to improve our algorithmic detection of such links.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-02-16 UTC.
+Last updated 2021-04-22 UTC.

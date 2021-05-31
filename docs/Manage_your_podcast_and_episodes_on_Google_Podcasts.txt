@@ -50,5 +50,5 @@ Ask Google to recrawl your feed.
 Update all your feeds when making changes. Only the served feed is used by Google but Google can change the served feed without notice.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-HelpAbout podcasting on GoogleGet your podcast on GoogleMonitor your podcast listening dataManage your podcast and episodes on Google PodcastsTroubleshootingReferenceGoogle Podcasts policies
+HelpAbout podcasting on GoogleGet your podcast on GoogleMonitor your podcast listening dataManage your podcast and episodes on Google PodcastsTroubleshootingReferenceGoogle Podcasts policiesFAQs
 Get started with Google Podcasts Manager After you've gotten your podcast on Google, monitor and analyze your listener data on Google Podcasts Manager.

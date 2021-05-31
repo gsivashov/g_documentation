@@ -147,12 +147,25 @@ allow Google to fetch your video content files. You can set the maximum duration
 previews using the max-video-preview
 robots meta tag.
 Key moments
-Google surfaces video segments through features such as key moments so users can navigate them
-like chapters in a book, engaging more deeply with your content. To enable this feature, use
-Clip structured data to identify
-segments and add descriptions. If your video is hosted on YouTube, you can also enable this
-feature by marking timestamps in
-your YouTube description. To opt out of this feature, use the
+The key moments feature is a way for users to navigate video segments like chapters in a book, which can help
+users engage more deeply with your content. Google Search tries to automatically detect the
+segments in your video and show key moments to users, without any effort on your part. Alternatively,
+you can manually tell Google about the important points of your video.
+If your video is hosted on your web page, there are two ways that you can enable key moments:
+Clip structured data: Specify the exact
+start and end point to each segment, and what label to display for each segment.
+SeekToAction
+structured data (beta): Tell Google where timestamps typically go in your URL
+structure, so that Google can automatically identify key moments and link users to those points within the video.
+Beta: SeekToAction structured data is
+currently in the beta phase of development, so that we can catch any bugs before
+supporting the markup more broadly. We'll update this page when it becomes more stable,
+and you're welcome to implement the markup on your own site in advance.
+If your video is hosted on YouTube, you can specify the exact timestamps and labels
+in the video description on YouTube. Check out the best
+practices for marking timestamps in YouTube descriptions.
+To opt out of the key moments feature completely (including any efforts Google may make to
+show key moments automatically for your video), use the
 nosnippet meta tag.
 Live Badge
 For livestreaming videos, you can enable a red "LIVE" badge to appear in search results by
@@ -246,4 +259,4 @@ http://www.example.com/player?video=123
 </url>
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-19 UTC.
+Last updated 2021-05-25 UTC.

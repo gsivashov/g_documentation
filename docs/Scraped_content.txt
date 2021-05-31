@@ -6,12 +6,24 @@ Documentation
 Advanced SEO
 Send feedback
 Scraped content
-Some website owners use content taken ("scraped") from other, more reputable sites on the assumption that increasing the volume of pages on their site is a good long-term strategy regardless of the relevance or uniqueness of that content. Purely scraped content, even from high-quality sources, may not provide any added value to your users without additional useful services or content provided by your site; it may also constitute copyright infringement in some cases. It's worthwhile to take the time to create original content that sets your site apart. This will keep your visitors coming back and will provide more useful results for users searching on Google.
+Some website owners use content taken ("scraped") from other, more reputable sites on the
+assumption that increasing the volume of pages on their site is a good long-term strategy
+regardless of the relevance or uniqueness of that content. Purely scraped content, even from
+high-quality sources, may not provide any added value to your users without additional useful
+services or content provided by your site; it may also constitute copyright infringement in
+some cases. It's worthwhile to take the time to create original content that sets your site
+apart. This will keep your visitors coming back and will provide more useful results for users
+searching on Google.
 Some examples of scraping include:
-Sites that copy and republish content from other sites without adding any original content or value
-Sites that copy content from other sites, modify it slightly (for example, by substituting synonyms or using automated techniques), and republish it
-Sites that reproduce content feeds from other sites without providing some type of unique organization or benefit to the user
-Sites dedicated to embedding content such as video, images, or other media from other sites without substantial added value to the user
+Sites that copy and republish content from other sites without adding any original content
+or value
+Sites that copy content from other sites, modify it slightly (for example, by substituting
+synonyms or using automated
+techniques), and republish it
+Sites that reproduce content feeds from other sites without providing some type of unique
+organization or benefit to the user
+Sites dedicated to embedding content such as video, images, or other media from other
+sites without substantial added value to the user
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-12 UTC.
+Last updated 2021-04-14 UTC.

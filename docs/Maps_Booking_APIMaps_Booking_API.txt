@@ -1,0 +1,32 @@
+https://developers.google.com/search/docs/data-types/place-action
+
+Home
+Products
+Maps Booking verticals
+Not the page you expected?
+To find your content, explore the following vertical links.
+Google Maps Booking verticals
+spa
+Beauty Enable beauty appointments at a salon.
+spaSummary
+spaReference
+restaurant
+Dining Enable restaurant reservations, waitlists, and food offers.
+restaurantSummary
+restaurantReference
+fitness_center
+Fitness Enable fitness class scheduling or wellness appointments.
+fitness_centerSummary
+fitness_centerReference
+account_balance
+Financial Services Enable financial services consultations.
+account_balanceSummary
+account_balanceReference
+local_shipping
+Local Services Enable booking for local repairs and services quotes.
+local_shippingSummary
+local_shippingReference
+local_grocery_store
+Shopping Enable pick-up and delivery for retail merchants.
+local_grocery_storeSummary
+local_grocery_storeReference

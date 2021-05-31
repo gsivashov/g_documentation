@@ -141,6 +141,9 @@ Non-AMP pages have different recommendations than AMP pages.
 </html>
 Implementation
 AMP with structured data
+Note: The actual appearance in search results might be different. You can
+preview most features with the
+Rich Results Test.
 AMP pages that have structured data can appear in a carousel of stories in search results.
 Without structured data, AMP pages may only appear as standard blue links in Google Search results.
 For more information about AMP in search results, see
@@ -262,11 +265,32 @@ publisher
 Organization
 The publisher of the article.
 publisher.logo
-ImageObject
-The logo of the publisher. See the AMP logo guidelines for details.
-publisher.logo.url
-URL
-The URL of the logo.
+URL or ImageObject
+The logo of the publisher. See the AMP logo guidelines for image content details.
+If you use the ImageObject type, set the url field to the URL of the logo.
+For example:
+{
+"@context": "https://schema.org",
+"@type": "NewsArticle",
+"publisher": {
+"@type": "Organization",
+"name": "Google",
+"logo": {
+"@type": "ImageObject",
+"url": "https://google.com/logo.jpg"
+}
+}
+}
+Here's an example using the URL type:
+{
+"@context": "https://schema.org",
+"@type": "NewsArticle",
+"publisher": {
+"@type": "Organization",
+"name": "Google",
+"logo": "https://google.com/logo.jpg"
+}
+}
 publisher.name
 Text
 The name of the publisher.
@@ -344,4 +368,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-18 UTC.
+Last updated 2021-05-31 UTC.

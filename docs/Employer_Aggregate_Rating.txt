@@ -6,10 +6,24 @@ Documentation
 Advanced SEO
 Send feedback
 Employer Aggregate Rating
-Does your site provide salary estimates? Consider adding Estimated salary structured data.
-Does your site provide job postings? Consider adding JobPosting structured data.
-If your site publishes user-generated ratings about hiring organizations, you should add EmployerAggregateRating structured data to your site. EmployerAggregateRating is an evaluation of a hiring organization compiled from many users. Adding EmployerAggregateRating can provide job seekers with ratings about a hiring organization to help them choose a job. It also offers prominent brand placement in the enriched job search experience on Google.
-During the beta phase, we recommended adding review snippet structured data for your page to be eligible for the jobs enriched search results. If you currently have review snippet structured data on your site, we recommend that you transition from review snippet structured data to EmployerAggregateRating structured data soon.
+Does your site provide salary estimates? Consider adding
+Estimated salary structured data.
+Does your site provide job postings? Consider adding
+JobPosting structured data.
+If your site publishes user-generated ratings about hiring organizations, you should add
+EmployerAggregateRating structured data to your site.
+EmployerAggregateRating is an evaluation of a hiring organization
+compiled from many users. Adding EmployerAggregateRating can
+provide job seekers with ratings about a hiring organization to help them choose a job. It
+also offers prominent brand placement in the enriched job search experience on Google.
+During the beta phase, we recommended adding
+review snippet structured data for your
+page to be eligible for the jobs enriched search results. If you currently have review snippet
+structured data on your site, we recommend that you transition from review snippet structured
+data to EmployerAggregateRating structured data soon.
+Note: The actual appearance in search results might be different. You can
+preview most features with the
+Rich Results Test.
 Example
 Here's an example for EmployerAggregateRating using JSON-LD code.
 <html>
@@ -166,4 +180,4 @@ Post a question in the Google Search Central
 forum.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-18 UTC.
+Last updated 2021-05-31 UTC.

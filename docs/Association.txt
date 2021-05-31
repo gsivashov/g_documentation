@@ -27,7 +27,7 @@ Note that a Google Analytics property can be associated with only one Search Con
 Request Google Analytics association
 You can associate your Google Analytics property with your Search Console property to see Search Console data directly in Google Analytics.
 Any Search Console data exported from Search Console to your associated Google Analytics property will be subject to the Google Analytics terms of service. At the same time, any data exported from your Google Analytics property to your associated Search Console property will be subject to the Search Console terms of service.
-Learn how to associate your Google Analytics property with your Search Console property.
+To associate your property, open the associations page for your Search Console property, Click Associate, then follow the instructions in the dialog.
 When you associate a Search Console property with a Google Analytics property, Search Console data is enabled for all reporting views associated with that property by default. As a result, anybody with access to that Google Analytics property or one of its views may be able to see Search Console data for that site. For example, if a Google Analytics administrator adds a user to a property or view, that user may be able to see Search Console data in Search Optimization reports.
 Google Analytics account administrators can move their Analytics property from one Analytics account to another. Any associated Search Console properties will maintain their association as part of the move. After the move, any users of the new Analytics account will be able to see data from the associated Search Console property without a notification in Search Console. Learn more
 Request association with another service
@@ -47,5 +47,5 @@ About the Associations settings page
 The Associations settings page shows active and pending associations for all your sites. Active associations have been approved by you or another Search Console property owner. Pending requests are requests for association that have not yet been approved or denied by a Search Console property owner. When an association is removed, its history is lost.
 Was this helpful?How can we improve it?YesNoSubmit
 true
-Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the webAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats reportOpt out of display on Google Local and other Google properties
+Property SettingsProperty Settings pageChange of Address ToolEuropean press publication settingDuplex on the WebAssociationInternational Targeting reportChange Googlebot crawl rateCrawl Stats reportOpt out of display on Google Local and other Google properties
 New to Search Console? Never used Search Console before? Start here, whether you're a complete beginner, an SEO expert, or a website developer.

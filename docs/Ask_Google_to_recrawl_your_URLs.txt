@@ -43,16 +43,17 @@ If you have not changed your sitemap since the last time Google crawled it, resu
 sitemap won't have any additional benefit. If you have updated pages in the sitemap, mark
 them with <lastmod>.
 Here are the different ways that you can alert Google about your sitemap:
-Submit a sitemap using the sitemaps
-report.
+Submit a sitemap using the
+Sitemaps report.
 Use the ping tool. Send a GET request in your browser or the command line
-to this address, specifying the full URL of the sitemap. Be sure that the sitemap file is accessible:
-http://www.google.com/ping?sitemap=FULL_URL_OF_SITEMAP
+to this address, specifying the full URL of the sitemap. Be sure that the sitemap file is
+accessible:
+https://www.google.com/ping?sitemap=FULL_URL_OF_SITEMAP
 Example:
-http://www.google.com/ping?sitemap=https://example.com/sitemap.xml
-Insert the following line anywhere in your robots.txt file, specifying
-the path to your sitemap. We will find it the next time we crawl your site:
-Sitemap: http://example.com/my_sitemap.xml
+https://www.google.com/ping?sitemap=https://example.com/sitemap.xml
+Insert the following line anywhere in your robots.txt file, specifying the
+path to your sitemap. We will find it the next time we crawl your site:
+Sitemap: https://example.com/my_sitemap.xml
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-15 UTC.
+Last updated 2021-05-25 UTC.

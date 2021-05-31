@@ -19,7 +19,11 @@ to generate your sitemap for you.
 Make your sitemap available to Google by adding it to your
 robots.txt file or directly submitting it to Search Console.
 Sitemap formats
-Google supports several sitemap formats, described here. Google expects the
+Google supports several sitemap formats:
+XML
+RSS, mRSS, and Atom 1.0
+Text
+Google expects the
 standard sitemap protocol in all formats. Google does
 not currently consume the <priority> attribute in sitemaps.
 All formats limit a single sitemap to 50MB (uncompressed) and 50,000 URLs. If you have a
@@ -54,7 +58,7 @@ If your sitemap includes only web page URLs, you can provide Google with a simpl
 file that contains one URL per line. For example:
 http://www.example.com/file1.html
 http://www.example.com/file2.html
-Guidelines for text file sitemaps:
+Guidelines for text file sitemaps
 Encode your file using UTF-8 encoding.
 Don't put anything other than URLs in the sitemap file.
 You can name the text file anything you wish, provided it has a .txt extension (for
@@ -74,7 +78,7 @@ as https://example.com/ (missing www) or
 A sitemap can be posted anywhere on your site, but a sitemap affects only
 descendants of the parent directory. Therefore, a sitemap posted at the site root
 can affect all files on the site, which is where we recommend posting your sitemaps.
-Don't include session IDs from URLs in your sitemap to reduce duplicate crawling of
+Don't include session IDs from URLs in your sitemap. This reduces duplicate crawling of
 those URLs.
 Tell Google about alternate language versions of a URL using
 hreflang annotations.
@@ -109,6 +113,7 @@ characters; it can't contain upper ASCII characters or certain control codes or 
 characters such as * and {}. If your sitemap URL contains these
 characters, you'll receive an error when you try to add it.
 Character
+Symbol
 Escape Code
 Ampersand
 &
@@ -149,7 +154,7 @@ important; Google does not pledge to crawl every URL in a sitemap.
 Google ignores <priority> and <changefreq> values.
 Google uses the <lastmod> value if it's consistently and verifiably (for
 example by comparing to the last modification of the page) accurate.
-Position of a URL in a sitemap is not important; Google does not crawl URLs in the order in
+The position of a URL in a sitemap is not important; Google does not crawl URLs in the order in
 which they appear in your sitemap.
 Make your sitemap available to Google (Submit your sitemap to Google)
 Google doesn't check a sitemap every time a site is crawled; a sitemap is checked only the
@@ -157,18 +162,18 @@ first time that we notice it, and thereafter only when you ping us to let us kno
 changed. You should alert Google about a sitemap only when it's new or updated; do not submit
 or ping unchanged sitemaps multiple times.
 There are a few different ways to make your sitemap available to Google:
-Submit it to Google using the Search Console Sitemaps report
+Submit it to Google using the Search Console Sitemaps report.
 Insert the following line anywhere in your robots.txt file, specifying the path
 to your sitemap:
 Sitemap: http://example.com/sitemap_location.xml
 Use the "ping" service to request Google to crawl the sitemap. Send an HTTP GET request like
 this:
 http://www.google.com/ping?sitemap=<complete_url_of_sitemap>
-for example:
+For example:
 http://www.google.com/ping?sitemap=https://example.com/sitemap.xml
 Troubleshooting sitemaps
 See the
 sitemaps troubleshooting guide.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-01 UTC.
+Last updated 2021-05-18 UTC.

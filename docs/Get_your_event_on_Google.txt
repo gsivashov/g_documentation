@@ -22,6 +22,9 @@ Increased chances of discovery and conversion: People have a new way to
 interact with your event posting and click through to your site. Learn how
 Eventbrite saw a 100% increase in
 the typical year-over-year growth of traffic from Google Search.
+Note: The actual appearance in search results might be different. You can
+preview most features with the
+Rich Results Test.
 Based on how you mark up your content, your events may also be eligible for the following event
 enhancements:
 Event enhancements
@@ -969,7 +972,9 @@ Required properties
 location.url
 URL
 The URL of the online event, where people can join. This property is required if your
-event is happening online.
+event is happening online. If the URL to join the event isn't available until after
+registering for the event, provide the registration URL where people can take the next
+steps to join your event.
 Show example
 "location": {
 "@type": "VirtualLocation",
@@ -1404,4 +1409,4 @@ Not recommended: 2019-08-15T00:00:01+00:00
 Not recommended2019-08-15T00:00:00+00:00
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-18 UTC.
+Last updated 2021-05-31 UTC.

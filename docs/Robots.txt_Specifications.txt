@@ -50,7 +50,7 @@ Crawler
 A crawler is a service or agent that crawls websites. Generally speaking, a crawler
 automatically and recursively accesses known URLs of a host that exposes content which can
 be accessed with standard web-browsers. As new URLs are found (through various means, such
-as from links on existing, crawled pages or from Sitemap files), these are also crawled in
+as from links on existing, crawled pages, or from sitemap files), these are also crawled in
 the same way.
 User-agent
 A means of identifying a specific crawler or set of crawlers.
@@ -71,14 +71,14 @@ File location and range of validity
 The robots.txt file must be in the top-level directory of the host,
 accessible through the appropriate protocol and port number. Generally accepted protocols for
 robots.txt are all URI-based, and for Google Search specifically (for example, crawling of websites) are "http"
-and "https". On http and https, the robots.txt file is fetched using a HTTP non-conditional GET
+and "https". On HTTP and HTTPS, the robots.txt file is fetched using a HTTP non-conditional GET
 request.
 Google-specific: Google also accepts and follows robots.txt files
 for FTP sites. FTP-based robots.txt files are accessed via the
 FTP protocol, using an anonymous login.
 The directives listed in the robots.txt file apply only to the
-host, protocol and port number where the file is hosted.
-The URL for the robots.txt file is - like other URLs - case-sensitive.
+host, protocol, and port number where the file is hosted.
+The URL for the robots.txt file is—like other URLs—case-sensitive.
 Examples of valid robots.txt URLs
 Robots.txt URL examples
 http://example.com/robots.txt
@@ -90,8 +90,8 @@ http://other.example.com/
 https://example.com/
 http://example.com:8181/
 This is the general case. It is not valid for other subdomains,
-protocols or port numbers. It is valid for all files in all subdirectories on the same host,
-protocol and port number.
+protocols, or port numbers. It is valid for all files in all subdirectories on the same host,
+protocol, and port number.
 http://www.example.com/robots.txt
 Valid for: http://www.example.com/
 Not valid for:
@@ -126,7 +126,7 @@ Valid for:
 http://example.com:80/
 http://example.com/
 Not valid for: http://example.com:81/
-Standard port numbers (80 for http, 443 for https, 21 for ftp) are
+Standard port numbers (80 for HTTP, 443 for HTTPS, 21 for FTP) are
 equivalent to their default host names. See also [portnumbers].
 http://example.com:8181/robots.txt
 Valid for: http://example.com:8181/
@@ -220,7 +220,7 @@ group = startgroupline
 ; followed by rules relevant for UAs
 startgroupline = *WS "user-agent" *WS ":" *WS product-token EOL
 rule = *WS ("allow" / "disallow") *WS ":" *WS (path-pattern / empty-pattern) EOL
-; parser implementors: add additional lines you need (for example, Sitemaps), and
+; parser implementors: add additional lines you need (for example, sitemaps), and
 ; be lenient when reading lines that don't conform. Apply Postel's law.
 product-token = identifier / "*"
 path-pattern = "/" *(UTF8-char-noctl)
@@ -295,11 +295,11 @@ are ignored.
 Googlebot (web)
 The group followed is group 3.
 Googlebot Images
-The group followed is group 3. There is no specific
+The group followed is group 2. There is no specific
 googlebot-images group, so the more generic group is
 followed.
 Googlebot News (when crawling images)
->The group followed is group 1. These images are crawled for and by Googlebot News,
+The group followed is group 1. These images are crawled for and by Googlebot News,
 therefore only the Googlebot News group is followed.
 Otherbot (web)
 The group followed is group 2.
@@ -394,6 +394,7 @@ Does not match:
 The trailing slash means this matches anything in this folder.
 Matches:
 /fish/
+/animals/fish/
 /fish/?id=anything
 /fish/salmon.htm
 Does not match:
@@ -425,11 +426,11 @@ Matches:
 /fishheads/catfish.php?parameters
 Does not match: /Fish.PHP
 Google-supported non-group-member lines
-Google, Bing,and other major search engines support sitemap, as
+Google, Bing, and other major search engines support sitemap, as
 defined by sitemaps.org.
 Usage:
 sitemap: [absoluteURL]
-[absoluteURL] points to the location of a sitemap or sitemap Index
+The [absoluteURL] line points to the location of a sitemap or sitemap index
 file. It must be a fully qualified URL, including the protocol and host, and does not have to
 be URL-encoded. The URL does not have to be on the same host as the robots.txt file. Multiple
 sitemap entries may exist. As non-group-member lines, these are
@@ -475,4 +476,4 @@ Google's open source
 robots.txt library, which is also used in Google Search.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-23 UTC.
+Last updated 2021-05-27 UTC.

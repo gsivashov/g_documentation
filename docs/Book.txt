@@ -14,6 +14,9 @@ buy or borrow the book. As a provider of books, you can provide a feed of data t
 with the structured data schema provided here. Our specification provides
 ReadAction to let users buy a book and BorrowAction to borrow
 a book.
+Note: The actual appearance in search results might be different. You can
+preview most features with the
+Rich Results Test.
 Note: To ensure robust coverage and better serve Search users, this feature
 is currently limited to book providers with a wide selection of available books. If you'd
 like to participate,
@@ -449,7 +452,7 @@ Example Book (Edition):
 {
 "@type": "Book",
 "@id": "http://example.com/book/100",
-"inlanguage": "en",
+"inLanguage": "en",
 "isbn": "8920000030001",
 "bookEdition": "20 Anniversary Edition",
 "datePublished": "2000-02-26",
@@ -461,7 +464,7 @@ Example Book (Edition) with multiple workExample properties:
 {
 "@type": "Book",
 "@id": "http://example.com/book/200",
-"inlanguage": "zh",
+"inLanguage": "zh",
 "isbn": "9000031676948",
 "bookEdition": "2nd Edition",
 "bookFormat": "http://schema.org/Hardcover",
@@ -470,7 +473,7 @@ Example Book (Edition) with multiple workExample properties:
 {
 "@type": "Book",
 "@id": "http://example.com/book/300",
-"inlanguage": "zh",
+"inLanguage": "zh",
 "isbn": "90000031676947",
 "bookEdition": "1st Edition",
 "bookFormat": "http://schema.org/EBook",
@@ -599,7 +602,7 @@ Example ReadAction Book feed JSON file
 "expectsAcceptanceOf": {
 "@type": "Offer",
 "category": "purchase",
-"Price": 6.99,
+"price": 6.99,
 "priceCurrency": "USD",
 "availabilityStarts": "2020-01-01T11:0:00-04:00",
 "availabilityEnds": "2050-06-30T23:59:00-04:00",
@@ -1191,4 +1194,4 @@ Example LibrarySystem feed JSON file
 }
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-03-09 UTC.
+Last updated 2021-05-31 UTC.

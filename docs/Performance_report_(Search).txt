@@ -94,22 +94,23 @@ Supported search appearance types:
 AMP on image result - An Image Search result, where the image is hosted in an AMP page.
 AMP non-rich results - A basic, non-graphical (plain blue link) search result for an AMP page.
 AMP article - A visually-decorated search result link, such as an image from the AMP page, plus a content summary. The result can be either free-standing in the results page, or embedded in a carousel of similar result types. AMP article rich results are also counted as rich results.
-Android App - An Android app installation link or Android app page result in a mobile search. To get your Android app indexed and in search results, follow the Firebase Android App indexing guidelines.
+Android App - An Android app page result in a mobile search. To get your Android app indexed and in search results, follow the Firebase Android App indexing guidelines.
 Event - An event rich result. Read about measuring clicks and impressions for Event items.
 FAQ rich results - A FAQ page.
 How-to rich results - A How-to rich result.
 Job details - A job posting result that shows an expanded description of a job. Read about measuring clicks and impressions for jobs.
 Job listing - A job posting result that shows a summarized view of a job. Read about measuring clicks and impressions for jobs.
+Practice Problems - A practice problem.
 Product results - Items marked up with Product schema.org markup, or identified as a product result by some other mechanism.
 Q&A rich results - A Q&A page rich result.
 Recipe rich result - A Recipe rich result that appeared outside of a collection in search results.
 Recipe gallery - A Recipe rich result that appeared in a collection of Recipe rich results.
-Rich results - Any type of rich result defined in structured data listed in the search gallery. This includes all rich-result subtypes such as job listing and AMP article rich results.
 Review snippet - A review snippet rich result.
 Special Announcement - A SpecialAnnouncements structured data element with information about COVID-19.
 Videos - Videos that appear in either general search results (type Web) or Discover.
 Web Light results - A lightweight, transcoded version of a webpage, optimized for viewing over slow data connections.
 Web Story - a visual storytelling format built on AMP that enables a user to tap through full screen images and videos.
+Rich results - Any type of rich result defined in structured data listed in the search gallery. This includes all rich-result subtypes such as job listing and AMP article rich results.
 Google Play Instant - [Deprecated; new data is no longer collected for this type] A mobile app designed to run in a trial form on a mobile device directly from Search results, without needing to be installed on the phone first.
 Search result link - [Deprecated; new data is no longer collected for this type] Any link shown in search results.
 Dimensioning or filtering by search appearance will aggregate data by page rather than by property in the table only; data in the graph will still be grouped by property.
@@ -117,7 +118,7 @@ The filter feature list shows filter options only for types for which you have i
 The same page can have multiple search appearance features in a single session, but only one impression is counted for each feature type. For example, a page can have both a rich result and a search result link in one query.
 Filtered click counts
 If you filter by search appearance, it is not guaranteed that all clicks for a given URL were on the link with the filtered feature type. This is because clicks are assigned to a URL, not to a (URL + feature). However it is guaranteed that the user saw a link with this URL and feature in the same set of results where she clicked a link with that URL.
-For example: A user searches Google for "new cars" and the results show both a standard result link and an AMP link pointing to the same page on Bob's Car Dealership. A click on either link will count toward the same URL, of course. The next day, Bob (owner of the website) opens Search Analytics for his site, groups results by page, filters by AMP feature, and sees that URL listed with 1 click, no matter whether the user clicked the AMP link or the standard link.
+For example: A user searches Google for "new cars" and the results show both a standard result link and an AMP link pointing to the same page on Bob's Car Dealership. A click on either link will count toward the same URL, of course. The next day, Bob (owner of the website) opens the Performance report for his site, groups results by page, filters by AMP feature, and sees that URL listed with 1 click, no matter whether the user clicked the AMP link or the standard link.
 Dates
 Groups your data by day. This data can include preliminary data. All dates are in Pacific Time Zone (PT)
 By default, only complete days are included (days where we have data from midnight to midnight); if you want to include partial days (for example, today), you must change the date filter to specify the exact starting date.
@@ -140,6 +141,56 @@ To modify a filter:
 Click the filter and reset the values.
 Filtering your data by query or URL can affect the totals.
 When filtering data by date, only complete days of information are included. So, for example, if you choose "last 7 days," only the most recent seven complete days of data are covered; if there is half a day of data for today, the seven day span is yesterday plus the six earlier days.
+Case-sensitivity
+All query and page URL filters are case-insensitive except for Exact URL, which is case-sensitive. This means URLs or queries  containing/not containing/exact/Custom (regex) filters, but not Exact URL filters.
+You can make regular expressions case-sensitive as described below.
+Regular expression filter
+If you choose the Custom (regex) filter, you can filter by a regular expression (a wildcard match) for the selected item. You can use regular expression filters for page URLs and user queries. The RE2 syntax is used.
+You can choose whether to show strings that do match your regular expression or that don't match your regular expression. Default is to show strings that do match your regular expression.
+The default matching is "partial match", which means that your regular expression can match anywhere in the target string unless you use ^ or $ to require matching from the start or end of the string, respectively.
+Default regex matching is not case-sensitive. You can prepend "(?-i)" to the beginning of your regular expression string for case-sensitive matches. Example: (?-i)AAA will match https://example.com/AAA but not https://example.com/aaa
+Invalid regular expression syntax will return no matches.
+Regular expression matching is tricky; try out your expression on a live testing tool, or read the full RE2 syntax guide
+Common regular expressions
+Here are a few basic regular expressions:
+Wildcard
+Description
+.
+Matches any single character.
+"m.n" matches "men" and "man" but not "meen"
+[characters]
+Matches any single item inside [ ].
+"c[aie]t" matches "cat", "cit", and "cet"
+"i[o0-9]n" matches "ion" and "i7n" but not "ian"
+*
+Matches the preceding letter or pattern zero or more times:
+"fo*d" matches "fd", "fod", "food", and "foooooooood"
+"https*://example" matches http://example" and "https://example"
++
+Matches the preceding letter or pattern 1 or more times
+"fo+d" matches "fod", "food", "foooooooood" but not "fd"
+|
+OR operator, matches either the expression before or after the | operator.
+"New York|San Francisco" matches both "I love New York" and "I love San Francisco"
+\d
+One digit 0-9
+"\d\d\d abc" matches "123 abc"
+\D
+Any non-digit (for example, any letter, or characters such as + or , or ?)
+"\D\D\D 123" matches "aaa 123" but not "123 123"
+\s
+Any whitespace (tab, space)
+"1\s2\s3" matches "1 2 3"
+\S
+Any non-whitespace.
+(\S)+ matches "fire" "and" "ice" in the string "fire and ice", but none of the spaces, and not the whole string.
+(?-i)
+Specifies case-sensitive matches for all following characters.
+"(?-i)AAA will match https://example.com/AAA but not https://example.com/aaa
+^
+At the start of your expression, limits matches to the start of the target string.
+"^example" matches "example" but not "an example"
+"example" matches both "example" and "an example"
 Comparing groups
 You can compare data between two values in any one grouping dimension, whether or not it is the currently selected grouping. For example, when grouped by Query you can compare clicks between two dates (this week vs last week), or two countries (USA vs France). Comparing by page or search appearance can change the metric calculation for CTR, impressions, and clicks. When comparing values for a single metric, the results table will display a Difference column to compare values in each row.
 To compare group data:
@@ -149,11 +200,11 @@ Add the dimensions or times to compare, and click Apply.
 You can have only one comparison at a time. Adding a new comparison filter will replace an existing comparison. For example, if you are comparing dates and then add a comparison between countries, the country comparison will replace the date comparison.
 Some useful comparisons:
 Sort by difference to see queries with significant change from the previous week.
-Compare total searches on your mobile site to mobile searches on your desktop site. If you aren't using a Domain property, you'll need to open a separate Search Analytics report for each site and compare searches from mobile devices on your desktop site (www.example.com) to all searches on your mobile site (m.example.com).
+Compare total searches on your mobile site to mobile searches on your desktop site. If you aren't using a Domain property, you'll need to open a separate Performance report for each site and compare searches from mobile devices on your desktop site (www.example.com) to all searches on your mobile site (m.example.com).
 You can compare data in only one dimension at a time (Dates, Queries, and so on). Adding a new comparison in another grouping dimension will remove the existing comparison. For example, if you are comparing clicks for this week versus last week (Date), then add a comparison between US and Japan (Country), the date range will reset to the default.
 If you compare two groups, and a value is very rare in one group but not rare in the other group, the rare group will show ~ for that row to indicate that the number is not available. For example, if you compare query impressions between Germany and Thailand, the result row for "Deutsche Bundesbank" will probably show an impression number for Germany, and a ~ (not available) for Thailand. This is because the impression count for Thailand is at the end of a very long tail of results. It does not necessarily mean zero, but it is far down the list for that group. However, if you filter by the rare value (in this example "Deutsche Bundesbank"), you should see data values for both dimensions.
 More about the data
-Search analytics counts data independently for each unique property. That is, data are counted separately for each of the following:
+The Performance report counts data independently for each unique property. That is, data are counted separately for each of the following:
 https://example.com/
 http://example.com/
 http://m.example.com/
@@ -171,8 +222,9 @@ You might see a few kinds of data discrepancies in Search Console
 Discrepancies between chart totals and table totals
 You can see differences between the chart totals and the table totals for several reasons:
 General:
+When you add a Page or Search Appearance filter, you can sometimes see an increase (sometimes a very large increase) in the click and impression data shown in and above the chart. This is because these filters cause your data to be aggregated (grouped) by page rather than by property. (Note that in rare cases the totals can drop rather than rise for technical reasons.) Conversely, removing all Page and Search Appearance filters from the report can show a decrease in click and impression totals, as all data is then aggregated (grouped by) property rather than URL.
+When filtering by page or query, the "matches" and "does not match" totals might not add up to the unfiltered total. For example, adding the totals for "Queries containing:mouse" and "Queries not containing:mouse" might not equal the total value when no query filters are applied. This is because anonymized queries are omitted, and data is truncated due to serving limitations.
 In some unusual cases, when you filter on a page or query, you might see a discrepancy between chart and table data. This is because the data is truncated differently, depending on the grouping and filtering combinations used. In these cases, when the totals differ, the actual total will be at least the larger value shown (and possibly more).
-When filtering by page or query, the "matches" and "does not match" totals might not add up to the unfiltered total. For example, adding the totals for "Queries containing:mouse" and "Queries not containing:mouse" might not equal the total values when no query filters are applied. This is because anonymized queries are omitted, and data is truncated due to serving limitations.
 Adding an ineffective filter (such as filtering results to your site's root URL - "example.com/") can cause discrepancies for various reasons.
 Chart totals higher:
 The table can show a maximum of 1,000 rows, so some rows might be omitted.
@@ -183,7 +235,7 @@ When the table is grouped by page or search appearance, the table totals are gro
 Some search appearances are subcategories of others. For example, Job listing is a subcategory of Rich result, so the same result will be listed in both rows.
 Discrepancies between Search Console and other tools
 Search Console data can differ slightly from the data displayed in other tools. Possible reasons for this include the following:
-To protect user privacy, Search Analytics doesn't show all data. For example, we might not track some queries that are made a very small number of times or those that contain personal or sensitive information.
+To protect user privacy, the Performance report doesn't show all data. For example, we might not track some queries that are made a very small number of times or those that contain personal or sensitive information.
 Some processing of our source data might cause these stats to differ from stats listed in other sources (for example, to eliminate duplicates). However, these changes should not be significant.
 There can be a lag between when the numbers are calculated and when they are visible to webmasters. Although data gets published in intervals, we continually collect it. Normally, however, collected data should be available in 2-3 days.
 Time zones matter. The Performance report tracks daily data according to local time in California, where data for each day is labeled according to the local time in California. If your other systems use different time zones, your daily views may not match exactly. For example, Google Analytics shows time in the webmaster’s local time zone.

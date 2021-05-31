@@ -5,12 +5,6 @@ Search Central
 Case studies
 Send feedback
 StyleCraze improved site CTR 1.2x by leveraging How-to structured data
-check_circle_outline 1.2x
-CTR improvement
-check_circle_outline 100%
-URLs with markup observed a positive uplift on CTR
-check_circle_outline
-Implemented markup in 3 languages (English, Hindi, and Telugu)
 Challenge
 StyleCraze is an online magazine that focuses on the latest updates, tips, and resources in
 beauty, health and wellness, and all topics that matter the most to the woman of today. The
@@ -35,8 +29,12 @@ expanded markup implementation to
 regional language articles as well. "We saw tremendous
 impact in CTRs from using How-to Structured data on our website", says Abhishek Jha, VP
 Marketing at StyleCraze.
+1.2x
+CTR improvement
+100%
+URLs with markup observed a positive uplift on CTR
 What's next for StyleCraze? They plan to implement Howto structured data to all
 how-to articles on their site.
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2020-12-14 UTC.
+Last updated 2021-04-22 UTC.

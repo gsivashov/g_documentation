@@ -10,6 +10,9 @@ Google uses structured data to understand the content on the page. You can help 
 providing specific information about your site, which can help your site display in richer
 features in search results. If you're just getting started, visit
 Understand how structured data works.
+Note: The actual appearance in search results might be different. You can
+preview most features with the
+Rich Results Test.
 Choose a category that describes your website
 Filter by...
 Ecommerce
@@ -115,6 +118,11 @@ Logo
 Your organization's logo in search results and Google knowledge panel.
 Get started
 Organizations, Jobs
+Math solvers
+Help students, teachers, and others with math problems by adding structured data to
+indicate the type of math problems and step-by-step walkthroughs for specific math problems.
+Get started
+Education and Science
 Movie
 The movie carousel helps users explore lists of movies on Google Search (for example,
 "best movies of 2019"). You can provide details about the movies, such as the title of
@@ -132,6 +140,10 @@ other Google Podcasts platforms such as the Google Podcasts app, Google Assistan
 and more.
 Get started
 Entertainment, News
+Practice problems
+Help students, teachers, and parents with education by adding structured data to your practice problems in math and science subjects.
+Get started
+Education and Science
 Product
 Information about a product, including price, availability, and review ratings.
 Get started
@@ -181,4 +193,4 @@ Get started
 Food and Drink, News, Education and Science, Sports
 Send feedback
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-Last updated 2021-01-21 UTC.
+Last updated 2021-05-31 UTC.
